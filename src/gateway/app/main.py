@@ -1,3 +1,4 @@
+import sys
 import time
 from contextlib import asynccontextmanager
 
@@ -8,7 +9,9 @@ from .cache import cache
 from .config import settings
 from .middleware.logging import LoggingMiddleware, log_llm_request, log_llm_response
 from .middleware.retry import RetryableProvider
+from .openai_client import validate_api_key, OpenAIClientError
 from .providers import OpenAIProvider, ResponseRequest
+from ...fact_check import FactChecker, VerificationResult
 
 # Provider instances
 providers = {}
@@ -21,15 +24,16 @@ async def lifespan(app: FastAPI):
     await cache.connect()
 
     # Initialize providers with retry wrapper
-    if settings.openai_api_key:
-        providers["openai"] = RetryableProvider(OpenAIProvider())
+    try:
+        if validate_api_key():
+            providers["openai"] = RetryableProvider(OpenAIProvider())
+    except OpenAIClientError as e:
+        print(f"[gateway] Warning: {e}", file=sys.stderr, flush=True)
 
     # Fail-fast: if no provider could be configured the gateway is unusable.
     if not providers:
         # Log a clear error message and abort startup so orchestration platforms
         # mark the container as failed rather than letting it run half-alive.
-        import sys
-
         print(
             "[gateway] Fatal: no LLM provider configured. Set OPENAI_API_KEY or "
             "check provider settings.",
@@ -269,6 +273,47 @@ async def get_pricing():
             "billing": "All tokens from stored turns are billed on each request",
         },
     }
+
+
+@app.post("/v1/fact-check")
+async def fact_check(request: Request, body: dict):
+    """Fact-checking endpoint using Reasoner + Quote Verifier agent."""
+    request_id = request.state.request_id
+    
+    # Extract claim and document from request
+    claim = body.get("claim")
+    document_text = body.get("document_text")
+    
+    if not claim or not document_text:
+        raise HTTPException(
+            status_code=400, 
+            detail="Both 'claim' and 'document_text' are required"
+        )
+    
+    # Get provider
+    provider = providers.get("openai")
+    if not provider:
+        raise HTTPException(status_code=500, detail="Provider not configured")
+    
+    # Create fact checker with provider
+    fact_checker = FactChecker(provider)
+    
+    try:
+        # Run fact checking
+        result = await fact_checker.check_claim(claim, document_text)
+        
+        # Log the fact check request
+        log_llm_request(
+            request_id, 
+            "fact-checker", 
+            "gpt-4.1", 
+            {"claim": claim, "document_length": len(document_text)}
+        )
+        
+        return result.model_dump()
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Fact check error: {e!s}")
 
 
 if __name__ == "__main__":

@@ -20,14 +20,23 @@ from .agent.refine_layout import Box, RefinedPage, refine_page_layout
 # ---------------------------------------------------------------------------
 
 
-def ingest_pdf(pdf_path: str | os.PathLike[str]) -> List[RefinedPage]:
-    """Run full ingestion on *pdf_path* and return refined pages."""
+def ingest_pdf(pdf_path: str | os.PathLike[str], detection_dpi: int = 200) -> List[RefinedPage]:
+    """Run full ingestion on *pdf_path* and return refined pages.
+    
+    Args:
+        pdf_path: Path to PDF file
+        detection_dpi: DPI for detection and processing (default: 200)
+        
+    Returns:
+        List of refined pages with consistent DPI handling
+    """
 
-    detector = LayoutDetectionPipeline()
+    detector = LayoutDetectionPipeline(detection_dpi=detection_dpi)
     raw_layouts: List[Sequence[lp.Layout]] = detector.process_pdf(pdf_path)
 
     # Rasterise pages again to obtain PIL images for vision model
-    images = convert_from_path(str(pdf_path), fmt="png")
+    # CRITICAL: Use same DPI as detection to ensure coordinate consistency
+    images = convert_from_path(str(pdf_path), fmt="png", dpi=detection_dpi)
 
     refined_pages: List[RefinedPage] = []
     for page_idx, (page_layout, page_img) in enumerate(zip(raw_layouts, images)):
@@ -48,6 +57,8 @@ def ingest_pdf(pdf_path: str | os.PathLike[str]) -> List[RefinedPage]:
         ]
 
         refined = refine_page_layout(page_idx, boxes, page_image=page_img)
+        refined.page_index = page_idx
+        refined.detection_dpi = detection_dpi
         refined_pages.append(refined)
 
     return refined_pages

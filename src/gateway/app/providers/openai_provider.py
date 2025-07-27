@@ -14,7 +14,7 @@ from typing import Any, Union
 import openai
 from openai import AsyncOpenAI
 
-from ..config import settings
+from ..openai_client import get_async_openai_client, OpenAIClientError
 from .base import Provider, ResponseObject, ResponseRequest
 
 logger = logging.getLogger(__name__)
@@ -24,9 +24,10 @@ class OpenAIProvider(Provider):
     """Provider wrapper for OpenAI's *Responses* endpoint (latest schema only)."""
 
     def __init__(self) -> None:
-        if not settings.openai_api_key:
-            raise RuntimeError("OPENAI_API_KEY is not configured")
-        self.client: AsyncOpenAI = AsyncOpenAI(api_key=settings.openai_api_key)
+        try:
+            self.client: AsyncOpenAI = get_async_openai_client()
+        except OpenAIClientError as e:
+            raise RuntimeError(str(e)) from e
         logger.info("Using OpenAI SDK version %s", openai.__version__)
 
     # ------------------------------------------------------------------

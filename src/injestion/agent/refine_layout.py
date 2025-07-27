@@ -44,6 +44,8 @@ class Box(BaseModel):
 class RefinedPage(BaseModel):
     boxes: List[Box]
     reading_order: List[str]
+    page_index: int = 0
+    detection_dpi: int = 200  # DPI at which detection was performed
 
 
 # ---------------------------------------------------------------------------
@@ -85,9 +87,8 @@ def refine_page_layout(
     raw_boxes: Sequence[Box],
     *,
     page_image: Image.Image,
-    *,
     retries: int = 3,
-    model: str = "gpt-4o-mini",
+    model: str = "gpt-4.1",
 ) -> RefinedPage:
     """Return an LLM-refined layout for a single page."""
 
@@ -107,11 +108,13 @@ def refine_page_layout(
         encoded = base64.b64encode(buf.getvalue()).decode()
         return f"data:image/png;base64,{encoded}"
 
+    # For Responses API, we need to format images with "input_image" type
     image_blocks = [
-        {"type": "image_url", "url": _crop_to_data_url(b.bbox), "detail": "low"}
+        {"type": "input_image", "image_url": _crop_to_data_url(b.bbox)}
         for b in raw_boxes
     ]
 
+    # Combine text and images in the content array
     input_blocks = [
         {"type": "text", "text": user_prompt},
         *image_blocks,

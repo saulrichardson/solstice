@@ -1,0 +1,25 @@
+# Detectron2 and layout parser requirements
+# Python 3.11 required (3.13+ not supported by Detectron2)
+
+# Core dependencies from pyproject.toml
+-e .
+
+# PyTorch (required before Detectron2)
+torch>=2.7.0
+torchvision>=0.22.0
+
+# Detectron2 - build from source
+git+https://github.com/facebookresearch/detectron2.git
+
+# CRITICAL: Patched iopath that fixes the ?dl=1 query parameter issue
+# This MUST be installed AFTER detectron2 to override its iopath dependency
+git+https://github.com/facebookresearch/iopath@e348b6797c40c9eb4c96bf75e9aaf1b248297548
+
+# Additional dependencies for layout detection
+pdf2image>=1.17.0
+layoutparser[layoutmodels]>=0.3.4
+
+# System dependencies (must be installed separately):
+# macOS: brew install poppler
+# Ubuntu/Debian: apt-get install poppler-utils
+# Windows: Download from https://github.com/oschwartz10612/poppler-windows/releases

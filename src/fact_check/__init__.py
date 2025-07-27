@@ -1,2 +1,5 @@
-"""Fact Check - Citation finder for scientific publications."""
-__version__ = "0.1.0"
+"""Fact Checker Agent - Reasoner + Quote Verifier"""
+
+from .fact_checker import FactChecker, VerificationResult
+
+__all__ = ["FactChecker", "VerificationResult"]

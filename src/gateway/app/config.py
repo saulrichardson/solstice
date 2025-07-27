@@ -13,7 +13,7 @@ from pydantic import Field
 
 class Settings(BaseSettings):
     # API Keys
-    openai_api_key: str | None = None
+    openai_api_key: str | None = Field(None, alias="OPENAI_API_KEY")
 
     # Gateway network settings (used when the process binds its socket)
     solstice_gateway_host: str = Field("0.0.0.0", alias="SOLSTICE_GATEWAY_HOST")
@@ -29,8 +29,8 @@ class Settings(BaseSettings):
     solstice_cache_enabled: bool = Field(True, alias="SOLSTICE_CACHE_ENABLED")
     solstice_cache_ttl: int = Field(3600, alias="SOLSTICE_CACHE_TTL")
 
-    # Cache settings
-    redis_url: str | None = Field("redis://localhost:6379", alias="REDIS_URL")
+    # Cache settings – filesystem based; Redis no longer used
+    filesystem_cache_dir: str = Field(".cache", alias="FILESYSTEM_CACHE_DIR")
 
     model_config = {
         "env_file": ".env",

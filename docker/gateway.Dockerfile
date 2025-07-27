@@ -13,4 +13,4 @@ RUN pip install --no-cache-dir -e .
 EXPOSE ${SOLSTICE_GATEWAY_PORT:-4000}
 
 # Run with uvicorn - port from environment
-CMD uvicorn gateway.app.main:app --host 0.0.0.0 --port ${SOLSTICE_GATEWAY_PORT:-4000} --reload
+CMD uvicorn src.gateway.app.main:app --host 0.0.0.0 --port ${SOLSTICE_GATEWAY_PORT:-4000} --reload

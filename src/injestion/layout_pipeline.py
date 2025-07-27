@@ -36,15 +36,17 @@ from pdf2image import convert_from_path
 class LayoutDetectionPipeline:
     """Detect high-level layout regions on each page of a PDF document."""
 
-    #: Highest-accuracy out-of-the-box model in the LayoutParser / PubLayNet zoo
-    # (Mask-RCNN with a ResNet-101-FPN backbone, 3× schedule).  Slower and more
-    # memory-hungry than the default R-50 model but ~2 mAP points better.
-    DEFAULT_CONFIG: str = "lp://PubLayNet/mask_rcnn_R_101_FPN_3x/config"
+    #: Using the standard mask_rcnn_R_50_FPN_3x model for reliability
+    DEFAULT_CONFIG: str = "lp://PubLayNet/mask_rcnn_R_50_FPN_3x/config"
+    
+    #: Default DPI for PDF to image conversion and detection
+    DEFAULT_DPI: int = 200
 
     def __init__(
         self,
         model: lp.LayoutModel | None = None,
         score_threshold: float = 0.5,
+        detection_dpi: int = 200,
     ):  # noqa: D401 (simple verb phrase is fine here)
         """Create a new pipeline.
 
@@ -57,10 +59,14 @@ class LayoutDetectionPipeline:
         score_threshold
             Minimum confidence required for a detection to be returned.  Passed
             to the Detectron2 model through the *extra_config* mechanism.
+        detection_dpi
+            DPI to use for PDF to image conversion. Default is 200 (pdf2image default).
+            All detection coordinates will be relative to this DPI.
         """
 
         self._model = model  # may be None – will be created on first use
         self._score_threshold = score_threshold
+        self._detection_dpi = detection_dpi
 
     # ---------------------------------------------------------------------
     # Public helpers
@@ -74,7 +80,7 @@ class LayoutDetectionPipeline:
             raise FileNotFoundError(pdf_path)
 
         # pdf2image requires a path – we cannot stream directly from bytes
-        images = list(_pdf_to_images(pdf_path))
+        images = list(_pdf_to_images(pdf_path, dpi=self._detection_dpi))
 
         model = self._ensure_model()
 
@@ -115,17 +121,21 @@ class LayoutDetectionPipeline:
 # -------------------------------------------------------------------------
 
 
-def _pdf_to_images(pdf_path: pathlib.Path) -> Iterable["Image.Image"]:  # noqa: ANN401
+def _pdf_to_images(pdf_path: pathlib.Path, dpi: int = 200) -> Iterable["Image.Image"]:  # noqa: ANN401
     """Convert *pdf_path* into a sequence of PIL images.*
 
     The conversion is done via the *pdf2image* library which is a thin wrapper
     around Poppler's *pdftocairo* utility.  We use `convert_from_path` instead
     of reading the PDF into memory to keep the surface small.
+    
+    Args:
+        pdf_path: Path to PDF file
+        dpi: DPI for conversion (default: 200, which is pdf2image's default)
     """
 
     # The Poppler stack occasionally fails when asked to read from arbitrary
     # working directories that might not be writeable.  We therefore make sure
     # that the temporary files end up in the system temp directory.
     with tempfile.TemporaryDirectory() as tmp:
-        images = convert_from_path(str(pdf_path), output_folder=tmp, fmt="png")
+        images = convert_from_path(str(pdf_path), output_folder=tmp, fmt="png", dpi=dpi)
     return images
