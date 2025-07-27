@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=64.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fact-check"
+version = "0.1.0"
+description = "Citation finder for scientific publications"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+    "pydantic>=2.5.3",
+    "pydantic-settings>=2.1.0",
+    "openai==1.97.1",  # Pin specific version for deterministic CI
+    "httpx>=0.26.0",
+    "redis>=5.0.1",
+    "python-json-logger>=2.0.7",
+    "tenacity>=8.2.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.7.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+    "pre-commit>=3.3.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["fact_check*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings  
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+    "PYI", # flake8-pyi
+    "RUF", # Ruff-specific rules
+    "TCH", # flake8-type-checking
+    "FA",  # flake8-future-annotations
+]
+ignore = ["E501"]  # line too long (handled by black)
+
+[tool.ruff.pyupgrade]
+keep-runtime-typing = false
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+pythonpath = ["src"]
+asyncio_mode = "auto"
+addopts = "-p no:warnings"

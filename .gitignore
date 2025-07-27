@@ -1,0 +1,76 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Static analysis & other tooling
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.nox/
+
+# Caches
+.cache/
+
+# Packaging / build artefacts
+*.whl
+*.egg
+
+# Jupyter & notebooks
+.ipynb_checkpoints/
+
+# Tox
+.tox/
+
+# Backup & swap files
+*.bak
+*.tmp
+*~
+
+# Databases / local data
+*.sqlite
+*.db
+
+# Node / front-end (if ever used for dashboard)
+node_modules/
+
+# Docker
+.docker/
