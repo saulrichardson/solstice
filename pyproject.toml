@@ -16,6 +16,7 @@ dependencies = [
     "pydantic-settings>=2.1.0",
     "openai==1.97.1",  # Pin specific version for deterministic CI
     "httpx>=0.26.0",
+    "python-dotenv>=1.0.1",
     "redis>=5.0.1",
     "python-json-logger>=2.0.7",
     "tenacity>=8.2.3",
@@ -45,7 +46,7 @@ line-length = 88
 target-version = "py311"
 select = [
     "E",   # pycodestyle errors
-    "W",   # pycodestyle warnings  
+    "W",   # pycodestyle warnings
     "F",   # pyflakes
     "I",   # isort
     "B",   # flake8-bugbear

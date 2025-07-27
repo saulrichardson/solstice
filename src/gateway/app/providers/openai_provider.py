@@ -8,13 +8,14 @@ from __future__ import annotations
 
 import json
 import logging
-from typing import Any, AsyncIterator, Dict, List, Union
+from collections.abc import AsyncIterator
+from typing import Any, Union
 
 import openai
 from openai import AsyncOpenAI
 
-from .base import Provider, ResponseRequest, ResponseObject
 from ..config import settings
+from .base import Provider, ResponseObject, ResponseRequest
 
 logger = logging.getLogger(__name__)
 
@@ -36,7 +37,7 @@ class OpenAIProvider(Provider):
         payload = self._build_api_request(request)
         try:
             rsp = await self.client.responses.create(**payload)
-        except Exception as exc:  # noqa: BLE001 – re‑raised after mapping
+        except Exception as exc:  # – re‑raised after mapping
             self._handle_openai_error(exc, request.model)
         return self._to_response_object(rsp.model_dump())
 
@@ -62,9 +63,9 @@ class OpenAIProvider(Provider):
     # ------------------------------------------------------------------
 
     @staticmethod
-    def _normalize_tools(tools: List[Union[str, dict]]) -> List[dict]:
+    def _normalize_tools(tools: list[Union[str, dict]]) -> list[dict]:
         """Convert built‑in & function tools into the canonical structure."""
-        normalized: List[dict] = []
+        normalized: list[dict] = []
         for tool in tools:
             if isinstance(tool, str):
                 normalized.append({"type": tool.replace("_", "-")})
@@ -86,9 +87,11 @@ class OpenAIProvider(Provider):
             return {"effort": reasoning}
         return reasoning
 
-    def _build_api_request(self, request: ResponseRequest, *, stream: bool = False) -> Dict[str, Any]:
+    def _build_api_request(
+        self, request: ResponseRequest, *, stream: bool = False
+    ) -> dict[str, Any]:
         """Transform a `ResponseRequest` into kwargs for the SDK call."""
-        payload: Dict[str, Any] = {"model": request.model}
+        payload: dict[str, Any] = {"model": request.model}
         if stream:
             payload["stream"] = True
 
@@ -126,7 +129,10 @@ class OpenAIProvider(Provider):
     @staticmethod
     def _to_response_object(data: dict) -> ResponseObject:
         usage = data.get("usage", {})
-        total_tokens = sum(usage.get(k, 0) for k in ("prompt_tokens", "completion_tokens", "reasoning_tokens"))
+        total_tokens = sum(
+            usage.get(k, 0)
+            for k in ("prompt_tokens", "completion_tokens", "reasoning_tokens")
+        )
         return ResponseObject(
             id=data.get("id", ""),
             object=data.get("object", "response"),
@@ -149,9 +155,8 @@ class OpenAIProvider(Provider):
             },
         )
 
-    def _handle_openai_error(self, exc: Exception, requested_model: str) -> None:  # noqa: D401
+    def _handle_openai_error(self, exc: Exception, requested_model: str) -> None:
         if hasattr(exc, "status_code") and exc.status_code == 404:
             raise ValueError(f"Model '{requested_model}' not found") from exc
         logger.error("OpenAI API error: %s", exc)
         raise exc
-

@@ -4,17 +4,18 @@ Modern LLM client using the OpenAI Responses API.
 This client requires the gateway to be running with OpenAI SDK >= 1.50.0
 for full Responses API support. No fallback to Chat Completions API is provided.
 """
-import os
 import json
+import os
+from collections.abc import Iterator
+
 import httpx
-from collections.abc import AsyncIterator, Iterator
 
 
 class ResponsesClient:
     def __init__(self, base_url: str | None = None, api_key: str | None = None):
         """
         Initialize client for the Responses API gateway.
-        
+
         Args:
             base_url: Gateway URL, defaults to http://localhost:4000
             api_key: API key for authentication
@@ -23,15 +24,17 @@ class ResponsesClient:
         default_url = f"http://localhost:{default_port}"
         self.base_url = base_url or os.getenv("SOLSTICE_GATEWAY_URL", default_url)
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
-        
+
         if not self.api_key:
-            raise ValueError("API key required. Set OPENAI_API_KEY environment variable.")
-        
+            raise ValueError(
+                "API key required. Set OPENAI_API_KEY environment variable."
+            )
+
         self.headers = {
             "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
         }
-    
+
     def create_response(
         self,
         input: str | list[dict] | None = None,
@@ -45,11 +48,11 @@ class ResponsesClient:
         reasoning: dict | None = None,
         temperature: float | None = None,
         max_output_tokens: int | None = None,
-        **kwargs
+        **kwargs,
     ) -> dict:
         """
         Create a response using the Responses API.
-        
+
         Args:
             input: Text or message history
             model: Model to use (gpt-4.1, gpt-4.1-mini, o4-mini, etc.)
@@ -62,14 +65,14 @@ class ResponsesClient:
             reasoning: Reasoning configuration for o4-mini
             temperature: Sampling temperature
             max_output_tokens: Maximum output tokens
-            
+
         Returns:
             Response object with output, tool calls, and usage info
         """
         request_data = {
             "model": model,
         }
-        
+
         # Add optional fields
         if input is not None:
             request_data["input"] = input
@@ -91,59 +94,56 @@ class ResponsesClient:
             request_data["temperature"] = temperature
         if max_output_tokens is not None:
             request_data["max_output_tokens"] = max_output_tokens
-            
+
         # Add any extra kwargs
         request_data.update(kwargs)
-        
+
         with httpx.Client() as client:
             response = client.post(
                 f"{self.base_url}/v1/responses",
                 json=request_data,
                 headers=self.headers,
-                timeout=120.0
+                timeout=120.0,
             )
             try:
                 response.raise_for_status()
                 return response.json()
             except httpx.HTTPStatusError as e:
                 if e.response.status_code == 500:
-                    error_detail = e.response.json().get('detail', '')
-                    if 'OpenAI SDK does not support Responses API' in error_detail:
+                    error_detail = e.response.json().get("detail", "")
+                    if "OpenAI SDK does not support Responses API" in error_detail:
                         raise RuntimeError(
                             "Gateway requires OpenAI SDK >= 1.50.0 for Responses API support. "
                             "Please upgrade the SDK on the gateway server."
                         ) from e
                 raise
-    
+
     def stream_response(
         self,
         input: str | list[dict] | None = None,
         model: str = "gpt-4.1-mini",
-        **kwargs
+        **kwargs,
     ) -> Iterator[dict]:
         """
         Stream a response for real-time output.
-        
+
         Yields:
             Response chunks as they arrive
         """
-        request_data = {
-            "model": model,
-            "stream": True
-        }
-        
+        request_data = {"model": model, "stream": True}
+
         if input is not None:
             request_data["input"] = input
-            
+
         request_data.update(kwargs)
-        
+
         with httpx.Client() as client:
             with client.stream(
                 "POST",
                 f"{self.base_url}/v1/responses",
                 json=request_data,
                 headers=self.headers,
-                timeout=120.0
+                timeout=120.0,
             ) as response:
                 response.raise_for_status()
                 for line in response.iter_lines():
@@ -155,87 +155,77 @@ class ResponsesClient:
                             yield json.loads(data)
                         except json.JSONDecodeError:
                             continue
-    
+
     def retrieve_response(self, response_id: str) -> dict:
         """
         Retrieve a stored response.
-        
+
         Args:
             response_id: The ID of the response to retrieve
-            
+
         Returns:
             The stored response object
         """
         with httpx.Client() as client:
             response = client.get(
-                f"{self.base_url}/v1/responses/{response_id}",
-                headers=self.headers
+                f"{self.base_url}/v1/responses/{response_id}", headers=self.headers
             )
             response.raise_for_status()
             return response.json()
-    
+
     def delete_response(self, response_id: str) -> dict:
         """
         Delete a stored response.
-        
+
         Args:
             response_id: The ID of the response to delete
-            
+
         Returns:
             Deletion confirmation
         """
         with httpx.Client() as client:
             response = client.delete(
-                f"{self.base_url}/v1/responses/{response_id}",
-                headers=self.headers
+                f"{self.base_url}/v1/responses/{response_id}", headers=self.headers
             )
             response.raise_for_status()
             return response.json()
-    
+
     def complete(self, prompt: str, model: str = "gpt-4.1-mini", **kwargs) -> str:
         """
         Simple completion wrapper for basic use cases.
-        
+
         Args:
             prompt: The user prompt
             model: Model to use
             **kwargs: Additional parameters
-            
+
         Returns:
             The assistant's response as a string
         """
-        response = self.create_response(
-            input=prompt,
-            model=model,
-            **kwargs
-        )
+        response = self.create_response(input=prompt, model=model, **kwargs)
         return response.get("output_text", "")
-    
+
     def complete_with_tools(
-        self,
-        prompt: str,
-        tools: list[dict],
-        model: str = "gpt-4.1-mini",
-        **kwargs
+        self, prompt: str, tools: list[dict], model: str = "gpt-4.1-mini", **kwargs
     ) -> dict:
         """
         Complete with tool support.
-        
+
         Args:
             prompt: The user prompt
             tools: Tool definitions or built-in tool names
             model: Model to use
-            
+
         Returns:
             Response object with potential tool calls
-            
+
         Example:
             # Using built-in tools
             response = client.complete_with_tools(
                 "Search for recent AI news",
                 tools=["web-search-preview"]
             )
-            
+
             # Using custom tools
             response = client.complete_with_tools(
                 "Calculate the area of a circle with radius 5",
@@ -255,58 +245,48 @@ class ResponsesClient:
                 }]
             )
         """
-        return self.create_response(
-            input=prompt,
-            model=model,
-            tools=tools,
-            **kwargs
-        )
-    
+        return self.create_response(input=prompt, model=model, tools=tools, **kwargs)
+
     def complete_with_reasoning(
         self,
         prompt: str,
         model: str = "o4-mini",
         reasoning_level: str = "medium",
-        **kwargs
+        **kwargs,
     ) -> str:
         """
         Use reasoning models with encrypted reasoning.
-        
+
         Args:
             prompt: The prompt
             model: o4-mini or other reasoning model
             reasoning_level: "low", "medium", or "high"
-            
+
         Returns:
             The reasoned response
         """
-        reasoning_config = {
-            "level": reasoning_level
-        }
-        
+        reasoning_config = {"level": reasoning_level}
+
         response = self.create_response(
-            input=prompt,
-            model=model,
-            reasoning=reasoning_config,
-            **kwargs
+            input=prompt, model=model, reasoning=reasoning_config, **kwargs
         )
         return response.get("output_text", "")
-    
+
     def create_stateful_conversation(
         self,
         initial_message: str,
         model: str = "gpt-4.1-mini",
         instructions: str | None = None,
-        **kwargs
+        **kwargs,
     ) -> dict:
         """
         Start a stateful conversation.
-        
+
         Args:
             initial_message: The first message
             model: Model to use
             instructions: System instructions
-            
+
         Returns:
             Response with ID for continuation
         """
@@ -315,24 +295,24 @@ class ResponsesClient:
             model=model,
             instructions=instructions,
             store=True,
-            **kwargs
+            **kwargs,
         )
-    
+
     def continue_conversation(
         self,
         message: str,
         previous_response_id: str,
         model: str = "gpt-4.1-mini",
-        **kwargs
+        **kwargs,
     ) -> dict:
         """
         Continue a stateful conversation.
-        
+
         Args:
             message: The next message
             previous_response_id: ID from previous response
             model: Model to use (should match previous)
-            
+
         Returns:
             Response with new ID for further continuation
         """
@@ -341,8 +321,9 @@ class ResponsesClient:
             model=model,
             previous_response_id=previous_response_id,
             store=True,
-            **kwargs
+            **kwargs,
         )
+
 
 # ---------------------------------------------------------------------------
 # Note for maintainers:

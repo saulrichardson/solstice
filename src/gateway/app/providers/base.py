@@ -1,10 +1,12 @@
 from abc import ABC, abstractmethod
 from collections.abc import AsyncIterator
+
 from pydantic import BaseModel
 
 
 class ResponseRequest(BaseModel):
     """Request model for Responses API"""
+
     model: str
     input: str | list[dict] | None = None
     previous_response_id: str | None = None
@@ -31,6 +33,7 @@ class ResponseRequest(BaseModel):
 
 class ResponseObject(BaseModel):
     """Response model for Responses API"""
+
     id: str
     object: str = "response"
     created: int
@@ -51,22 +54,22 @@ class ResponseObject(BaseModel):
 
 class Provider(ABC):
     """Base class for LLM providers using Responses API"""
-    
+
     @abstractmethod
     async def create_response(self, request: ResponseRequest) -> ResponseObject:
         """Create a response using the Responses API"""
         pass
-    
+
     @abstractmethod
     async def stream_response(self, request: ResponseRequest) -> AsyncIterator[str]:
         """Stream a response"""
         pass
-    
+
     @abstractmethod
     async def retrieve_response(self, response_id: str) -> ResponseObject:
         """Retrieve a stored response"""
         pass
-    
+
     @abstractmethod
     async def delete_response(self, response_id: str) -> dict:
         """Delete a stored response"""

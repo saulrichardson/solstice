@@ -28,7 +28,7 @@ repos:
       - id: mypy
         additional_dependencies: [types-redis, types-requests]
         files: ^(gateway|pkg|apps)/
-  
+
   - repo: local
     hooks:
       - id: check-modern-python
