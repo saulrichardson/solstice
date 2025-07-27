@@ -72,20 +72,9 @@ htmlcov/
 # Node / front-end (if ever used for dashboard)
 node_modules/
 
-# ---------------------------------------------------------------------------
-# Hidden files & directories
-# ---------------------------------------------------------------------------
-# Ignore everything that starts with a dot (hidden on *nix)
-# Then explicitly re-include the handful that should live in the repo.
-.*
-
-# Exceptions – keep configuration and CI directories in version control
-!.gitignore
-!.gitattributes
-!.github/
-!.gitlab/
-!.dockerignore
-!.env.example
+# Internal hidden project dirs that should never be tracked
+.internal_docs/
+.attic/
 
 # Docker
 .docker/
