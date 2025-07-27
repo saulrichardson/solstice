@@ -3,6 +3,7 @@ requires = ["setuptools>=64.0", "setuptools-scm>=8.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
+# Renamed project
 name = "fact-check"
 version = "0.1.0"
 description = "Citation finder for scientific publications"
@@ -33,7 +34,7 @@ dev = [
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["fact_check*"]
+include = ["fact_check*", "gateway*"]
 
 [tool.black]
 line-length = 88

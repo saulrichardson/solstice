@@ -1,1 +1,0 @@
-"""Applications built on top of the fact check framework."""
