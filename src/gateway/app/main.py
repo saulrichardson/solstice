@@ -63,16 +63,8 @@ async def create_response(request: Request, body: dict):
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
     
-    # Get model config
-    model_config = settings.model_mapping.get(response_request.model)
-    if not model_config:
-        raise HTTPException(
-            status_code=400,
-            detail=f"Unknown model: {response_request.model}"
-        )
-    
-    # Get provider
-    provider_name = model_config["provider"]
+    # For now, we only support OpenAI provider
+    provider_name = "openai"
     provider = providers.get(provider_name)
     if not provider:
         raise HTTPException(
@@ -182,21 +174,15 @@ async def delete_response(response_id: str):
 
 @app.get("/models")
 async def list_models():
-    """List available models."""
+    """List available OpenAI models."""
+    # Return commonly used OpenAI models
+    # Users can use any valid OpenAI model name
     return {
         "models": [
-            {
-                "id": model_id,
-                "provider": config["provider"],
-                "max_tokens": config.get("max_tokens"),
-                "context_window": f"{config.get('max_tokens', 0):,} tokens",
-                "supports_tools": config.get("supports_tools", False),
-                "supports_reasoning": config.get("supports_reasoning", False),
-                "builtin_tools": config.get("builtin_tools", []),
-                "encrypted_reasoning": config.get("encrypted_reasoning", False)
-            }
-            for model_id, config in settings.model_mapping.items()
-        ]
+            {"id": "gpt-4.1", "provider": "openai"},
+            {"id": "o4-mini", "provider": "openai"},
+        ],
+        "note": "You can use any valid OpenAI model name"
     }
 
 

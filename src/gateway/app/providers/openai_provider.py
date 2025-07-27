@@ -49,11 +49,6 @@ class OpenAIProvider(Provider):
         
         return None
     
-    def _normalize_response(self, response_dict: dict) -> dict:
-        """Normalize response to handle different SDK versions and beta bugs."""
-        # No legacy normalisation: gateway expects the latest nested structure
-        return response_dict
-    
     def _normalize_tools(self, tools: list[str | dict] | None) -> list[dict] | None:
         """Normalize tool definitions to match API expectations."""
         if not tools:
@@ -93,14 +88,9 @@ class OpenAIProvider(Provider):
     async def create_response(self, request: ResponseRequest) -> ResponseObject:
         """Create a response using OpenAI's Responses API"""
         
-        # Get the actual model name from config
-        from ..config import settings
-        model_config = settings.model_mapping.get(request.model, {})
-        actual_model = model_config.get("model", request.model)
-        
         # Build the API request
         api_request = {
-            "model": actual_model,
+            "model": request.model,
         }
         
         # Add optional fields only if provided
@@ -237,14 +227,9 @@ class OpenAIProvider(Provider):
         """Stream a response"""
         request.stream = True
         
-        # Get the actual model name from config
-        from ..config import settings
-        model_config = settings.model_mapping.get(request.model, {})
-        actual_model = model_config.get("model", request.model)
-        
         # Build the API request (same as create_response)
         api_request = {
-            "model": actual_model,
+            "model": request.model,
             "stream": True
         }
         
@@ -346,17 +331,14 @@ class OpenAIProvider(Provider):
             logger.error(f"Error retrieving response: {e}")
             raise
         
-        # The SDK object may not support model_dump in older versions
-        response_dict = response.model_dump() if hasattr(response, 'model_dump') else response.__dict__
+        # Convert response to dict using model_dump
+        response_dict = response.model_dump()
 
-        # Normalize to account for possible beta format changes
-        response_dict = self._normalize_response(response_dict)
-
-        # Build usage dict with sensible defaults
+        # Build usage dict from response
         usage = response_dict.get('usage', {})
-        input_tokens = usage.get('prompt_tokens', response_dict.get('input_tokens', 0))
-        output_tokens = usage.get('completion_tokens', response_dict.get('output_tokens', 0))
-        reasoning_tokens = usage.get('reasoning_tokens', response_dict.get('reasoning_tokens', 0))
+        input_tokens = response_dict.get('input_tokens', 0)
+        output_tokens = response_dict.get('output_tokens', 0)
+        reasoning_tokens = response_dict.get('reasoning_tokens', 0)
 
         # Attempt to extract assistant tool calls if embedded in choices
         tool_calls = response_dict.get('tool_calls')
