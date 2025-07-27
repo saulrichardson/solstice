@@ -1,8 +1,10 @@
 """
 Modern LLM client using the OpenAI Responses API.
 
-This client requires the gateway to be running with OpenAI SDK >= 1.50.0
-for full Responses API support. No fallback to Chat Completions API is provided.
+This client talks to the Solstice Gateway that implements the OpenAI
+"Responses" API.  The gateway itself may need an `OPENAI_API_KEY` to reach
+OpenAI, but *clients are no longer required* to supply such a key.  An
+`Authorization` header is only sent when an explicit key is provided.
 """
 import json
 import os
@@ -22,18 +24,22 @@ class ResponsesClient:
         """
         default_port = os.getenv("SOLSTICE_GATEWAY_PORT", "4000")
         default_url = f"http://localhost:{default_port}"
+
         self.base_url = base_url or os.getenv("SOLSTICE_GATEWAY_URL", default_url)
+
+        # ------------------------------------------------------------------
+        # Authentication header is optional.  Historically we forwarded the
+        # user's personal OpenAI key to the gateway, but the gateway never
+        # validated it.  To avoid needless friction we now only attach the
+        # header when an explicit `api_key` is supplied or the developer sets
+        # OPENAI_API_KEY in their environment for another reason.
+        # ------------------------------------------------------------------
+
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
 
-        if not self.api_key:
-            raise ValueError(
-                "API key required. Set OPENAI_API_KEY environment variable."
-            )
-
-        self.headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json",
-        }
+        self.headers = {"Content-Type": "application/json"}
+        if self.api_key:
+            self.headers["Authorization"] = f"Bearer {self.api_key}"
 
     def create_response(
         self,

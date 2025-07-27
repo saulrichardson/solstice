@@ -24,6 +24,21 @@ async def lifespan(app: FastAPI):
     if settings.openai_api_key:
         providers["openai"] = RetryableProvider(OpenAIProvider())
 
+    # Fail-fast: if no provider could be configured the gateway is unusable.
+    if not providers:
+        # Log a clear error message and abort startup so orchestration platforms
+        # mark the container as failed rather than letting it run half-alive.
+        import sys
+
+        print(
+            "[gateway] Fatal: no LLM provider configured. Set OPENAI_API_KEY or "
+            "check provider settings.",
+            file=sys.stderr,
+            flush=True,
+        )
+        # Exit during lifespan startup phase.
+        raise RuntimeError("No provider configured for Solstice Gateway")
+
     yield
 
     # Shutdown
@@ -44,12 +59,20 @@ app.add_middleware(LoggingMiddleware)
 @app.get("/health")
 async def health():
     """Health check endpoint."""
-    return {
-        "status": "healthy",
+    healthy = bool(providers)
+
+    payload = {
+        "status": "healthy" if healthy else "unhealthy",
         "providers": list(providers.keys()),
         "cache_enabled": cache.enabled,
         "api_version": "responses",
     }
+
+    if not healthy:
+        # Surface the problem clearly to callers (e.g., readiness probes).
+        raise HTTPException(status_code=503, detail=payload)
+
+    return payload
 
 
 @app.post("/v1/responses")
@@ -251,6 +274,7 @@ async def get_pricing():
 if __name__ == "__main__":
     import uvicorn
 
+    host = settings.solstice_gateway_host
     port = settings.solstice_gateway_port
-    print(f"Starting Solstice Gateway on port {port}")
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    print(f"Starting Solstice Gateway on {host}:{port}")
+    uvicorn.run(app, host=host, port=port)
