@@ -1,4 +1,4 @@
-"""High-level orchestration that combines CV detection with LLM refinement."""
+"""High-level orchestration for PDF layout detection and processing."""
 
 from __future__ import annotations
 
@@ -16,23 +16,148 @@ from .storage import pages_dir, stage_dir, save_json, final_doc_path
 import layoutparser as lp
 
 from .layout_pipeline import LayoutDetectionPipeline
-from .agent.refine_layout import Box, RefinedPage, refine_page_layout
+from .agent.refine_layout import Box
+from .agent.merge_boxes_weighted import smart_merge_and_resolve
 from .document import Block, Document
+
+# ---------------------------------------------------------------------------
+# Column detection and reading order
+# ---------------------------------------------------------------------------
+
+def detect_columns(boxes: List[Box], page_width: float = 1600) -> List[List[Box]]:
+    """Detect column structure in the page layout."""
+    if not boxes:
+        return []
+    
+    # Get horizontal positions of text boxes (exclude wide elements like titles)
+    text_boxes = [b for b in boxes if b.label in ['Text', 'List']]
+    if not text_boxes:
+        return [boxes]
+    
+    # Calculate box widths to identify potential column elements
+    box_widths = [(b.bbox[2] - b.bbox[0]) for b in text_boxes]
+    avg_width = sum(box_widths) / len(box_widths)
+    
+    # Filter out wide boxes (likely titles or spanning elements)
+    column_candidates = [b for b in text_boxes if (b.bbox[2] - b.bbox[0]) < page_width * 0.6]
+    
+    if len(column_candidates) < 4:
+        # Not enough boxes to determine columns
+        return [boxes]
+    
+    # Analyze x-positions to find column boundaries
+    x_positions = sorted([b.bbox[0] for b in column_candidates])
+    
+    # Look for gaps in x-positions
+    gaps = []
+    for i in range(1, len(x_positions)):
+        gap = x_positions[i] - x_positions[i-1]
+        if gap > avg_width * 0.5:  # Significant gap
+            gaps.append((x_positions[i-1], x_positions[i]))
+    
+    if not gaps:
+        # No clear column separation
+        return [boxes]
+    
+    # For now, assume 2 columns if we found a clear gap
+    if len(gaps) == 1 and gaps[0][0] < page_width * 0.6:
+        # Two column layout detected
+        middle = (gaps[0][0] + gaps[0][1]) / 2
+        
+        left_column = []
+        right_column = []
+        spanning_elements = []
+        
+        for box in boxes:
+            box_center = (box.bbox[0] + box.bbox[2]) / 2
+            box_width = box.bbox[2] - box.bbox[0]
+            
+            # Check if element spans columns
+            if box_width > page_width * 0.6 or (box.bbox[0] < middle - 50 and box.bbox[2] > middle + 50):
+                spanning_elements.append(box)
+            elif box_center < middle:
+                left_column.append(box)
+            else:
+                right_column.append(box)
+        
+        return [spanning_elements, left_column, right_column]
+    
+    # Default: single column
+    return [boxes]
+
+
+def determine_reading_order(boxes: List[Box], page_width: float = 1600) -> List[str]:
+    """Determine reading order based on column layout analysis."""
+    if not boxes:
+        return []
+    
+    # Detect columns
+    columns = detect_columns(boxes, page_width)
+    
+    reading_order = []
+    
+    # Process each column
+    for column_boxes in columns:
+        if not column_boxes:
+            continue
+            
+        # Sort boxes in column top to bottom
+        sorted_column = sorted(column_boxes, key=lambda b: b.bbox[1])
+        
+        # For spanning elements at the top (like titles), process them first
+        if len(columns) > 1 and columns[0] == column_boxes:
+            # This is the spanning elements group
+            reading_order.extend([box.id for box in sorted_column])
+        else:
+            # Regular column - group nearby boxes
+            column_order = []
+            i = 0
+            while i < len(sorted_column):
+                current_y = sorted_column[i].bbox[1]
+                row_boxes = [sorted_column[i]]
+                
+                # Collect boxes at similar y-position (same row)
+                j = i + 1
+                while j < len(sorted_column) and abs(sorted_column[j].bbox[1] - current_y) < 20:
+                    row_boxes.append(sorted_column[j])
+                    j += 1
+                
+                # Sort row boxes left to right
+                row_boxes.sort(key=lambda b: b.bbox[0])
+                column_order.extend([box.id for box in row_boxes])
+                
+                i = j
+            
+            reading_order.extend(column_order)
+    
+    return reading_order
+
 
 # ---------------------------------------------------------------------------
 # Public orchestrator
 # ---------------------------------------------------------------------------
 
 
-def ingest_pdf(pdf_path: str | os.PathLike[str], detection_dpi: int = 200) -> List[RefinedPage]:
-    """Run full ingestion on *pdf_path* and return refined pages.
+def ingest_pdf(
+    pdf_path: str | os.PathLike[str], 
+    detection_dpi: int = 200,
+    merge_overlapping: bool = True,
+    merge_threshold: float = 0.1,
+    confidence_weight: float = 0.7,
+    area_weight: float = 0.3
+) -> Document:
+    """Run full ingestion on *pdf_path* and return document with detected layout.
     
     Args:
         pdf_path: Path to PDF file
         detection_dpi: DPI for detection and processing (default: 200)
+        merge_overlapping: Whether to merge overlapping boxes (default: True)
+        merge_threshold: IoU threshold for merging same-type boxes (default: 0.1)
+        confidence_weight: Weight for confidence in conflict resolution (default: 0.7)
+        area_weight: Weight for box area in conflict resolution (default: 0.3)
         
     Returns:
-        List of refined pages with consistent DPI handling
+        Document object with detected and optionally merged layout elements
     """
 
     detector = LayoutDetectionPipeline(detection_dpi=detection_dpi)
@@ -48,10 +173,13 @@ def ingest_pdf(pdf_path: str | os.PathLike[str], detection_dpi: int = 200) -> Li
     # Run detection on the same images (avoids double rasterisation)
     raw_layouts: List[Sequence[lp.Layout]] = detector.process_pdf(pdf_path)
 
-    refined_pages: List[RefinedPage] = []
-    for page_idx, (page_layout, page_img) in enumerate(zip(raw_layouts, images)):
-        # Convert lp.Layout → Box dataclass for the LLM
-        boxes = [
+    # Process layout detection results
+    blocks: List[Block] = []
+    reading_order_by_page: List[List[str]] = []
+    
+    for page_idx, page_layout in enumerate(raw_layouts):
+        # Convert layout elements to Box objects for merging
+        page_boxes = [
             Box(
                 id=str(uuid.uuid4())[:8],
                 bbox=(
@@ -65,11 +193,37 @@ def ingest_pdf(pdf_path: str | os.PathLike[str], detection_dpi: int = 200) -> Li
             )
             for layout in page_layout
         ]
-
-        refined = refine_page_layout(page_idx, boxes, page_image=page_img)
-        refined.page_index = page_idx
-        refined.detection_dpi = detection_dpi
-        refined_pages.append(refined)
+        
+        # Apply merging if requested
+        if merge_overlapping and page_boxes:
+            page_boxes = smart_merge_and_resolve(
+                boxes=page_boxes,
+                merge_same_type=True,
+                merge_threshold=merge_threshold,
+                confidence_weight=confidence_weight,
+                area_weight=area_weight
+            )
+        
+        # Convert Box objects to Block objects
+        for box in page_boxes:
+            block = Block(
+                id=box.id,
+                page_index=page_idx,
+                role=box.label,
+                bbox=box.bbox,
+                metadata={
+                    "score": box.score,
+                    "detection_dpi": detection_dpi
+                }
+            )
+            blocks.append(block)
+        
+        # Determine reading order for this page after merging
+        page_reading_order = determine_reading_order(
+            page_boxes, 
+            page_width=images[page_idx].width if page_idx < len(images) else 1600
+        )
+        reading_order_by_page.append(page_reading_order)
 
     # Save raw layout detection output for debugging / future stages
     layout_dir = stage_dir("layout", pdf_path)
@@ -81,27 +235,20 @@ def ingest_pdf(pdf_path: str | os.PathLike[str], detection_dpi: int = 200) -> Li
         layout_dir / "layout.json",
     )
 
-    # Assemble final Document object with placeholders for text/tables/figures
-    blocks: List[Block] = []
-    for refined in refined_pages:
-        for b in refined.boxes:
-            blocks.append(
-                Block(
-                    id=b.id,
-                    page_index=refined.page_index,
-                    role=b.label,
-                    bbox=b.bbox,
-                )
-            )
+    # Create Document object with detected blocks and reading order
+    document = Document(
+        source_pdf=str(pdf_path), 
+        blocks=blocks, 
+        metadata={
+            "detection_dpi": detection_dpi,
+            "total_pages": len(raw_layouts)
+        },
+        reading_order=reading_order_by_page
+    )
 
-    document = Document(source_pdf=str(pdf_path), blocks=blocks, metadata={})
-
-    # Persist artefacts
-    # 1. raster pages already saved earlier
-    stage_dir("refine", pdf_path).mkdir(parents=True, exist_ok=True)
-    save_json([p.model_dump() for p in refined_pages], stage_dir("refine", pdf_path) / "refined.json")
+    # No refinement stage - just save raw detection results
 
     document_path = final_doc_path(pdf_path)
     document.save(document_path)
 
-    return refined_pages
+    return document

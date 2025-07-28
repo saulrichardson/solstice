@@ -127,19 +127,18 @@ def smart_merge_and_resolve(boxes: List[Box],
                           merge_same_type: bool = True,
                           merge_threshold: float = 0.1,
                           confidence_weight: float = 0.7,
-                          area_weight: float = 0.3,
-                          abstract_hint_area: float = 0.1) -> List[Box]:
-    """Smart merging with abstract detection heuristics.
+                          area_weight: float = 0.3) -> List[Box]:
+    """Smart merging with weighted conflict resolution.
     
-    This function tries to identify likely abstracts and adjusts weights accordingly.
+    This function merges same-type boxes and resolves conflicts between
+    different types using weighted scoring.
     
     Args:
         boxes: Input boxes
         merge_same_type: Whether to merge same-type boxes first
         merge_threshold: IoU threshold for merging
         confidence_weight: Weight for confidence in conflict resolution
-        area_weight: Weight for area in conflict resolution  
-        abstract_hint_area: Minimum area ratio to consider as possible abstract
+        area_weight: Weight for area in conflict resolution
         
     Returns:
         Processed boxes
@@ -149,31 +148,11 @@ def smart_merge_and_resolve(boxes: List[Box],
         from .merge_boxes import merge_overlapping_boxes
         boxes = merge_overlapping_boxes(boxes, iou_threshold=merge_threshold)
     
-    # Analyze boxes to identify potential abstracts
-    page_area = 2000 * 2000  # Approximate page size
-    type_adjustments = {}
-    
-    for box in boxes:
-        box_area = get_box_area(box.bbox)
-        area_ratio = box_area / page_area
-        
-        # Heuristics for abstract detection
-        is_near_top = box.bbox[1] < 800  # Top portion of page
-        is_wide = (box.bbox[2] - box.bbox[0]) > 1000  # Wide box
-        is_substantial = area_ratio > abstract_hint_area
-        
-        # If a "List" box looks like it might be an abstract
-        if box.label == "List" and is_near_top and is_wide and is_substantial:
-            # Penalize it in conflict resolution
-            type_adjustments["List"] = -0.3
-            print(f"Potential abstract detected as List: area_ratio={area_ratio:.2f}")
-    
     # Resolve conflicts with weighted approach
     return resolve_conflicts_weighted(
         boxes,
         confidence_weight=confidence_weight,
-        area_weight=area_weight,
-        type_adjustments=type_adjustments
+        area_weight=area_weight
     )
 
 

@@ -16,12 +16,14 @@ class Block(BaseModel):
     text: str | None = None
     html: str | None = None  # tables
     image_path: str | None = None  # figures
+    metadata: dict = Field(default_factory=dict)  # Additional metadata like score, dpi
 
 
 class Document(BaseModel):
     source_pdf: str = Field(..., description="Original PDF path or URI")
     blocks: List[Block]
     metadata: dict = {}
+    reading_order: List[List[str]] = Field(default_factory=list, description="Reading order per page")
 
     def save(self, path: str | Path) -> None:
         Path(path).write_text(self.model_dump_json(indent=2, ensure_ascii=False))
