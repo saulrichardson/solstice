@@ -17,7 +17,6 @@ dependencies = [
     "openai==1.97.1",  # Pin specific version for deterministic CI
     "httpx>=0.26.0",
     "python-dotenv>=1.0.1",
-    "redis>=5.0.1",
     "python-json-logger>=2.0.7",
     "tenacity>=8.2.3",
     # Layout detection stack (core only – no OCR)

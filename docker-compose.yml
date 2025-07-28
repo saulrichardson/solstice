@@ -1,13 +1,4 @@
 services:
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6379:6379"
-    networks:
-      - app-network
-    volumes:
-      - redis-data:/data
-
   gateway:
     build:
       context: .
@@ -17,12 +8,9 @@ services:
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - SOLSTICE_GATEWAY_PORT=${SOLSTICE_GATEWAY_PORT:-8000}
-      - REDIS_URL=redis://redis:6379
       - LOG_LEVEL=INFO
     volumes:
       - ./src:/app/src  # hot reload for development
-    depends_on:
-      - redis
     networks:
       - app-network
     restart: unless-stopped
@@ -40,6 +28,3 @@ services:
 networks:
   app-network:
     driver: bridge
-
-volumes:
-  redis-data:
