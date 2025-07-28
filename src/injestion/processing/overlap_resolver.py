@@ -107,17 +107,33 @@ def merge_overlapping_boxes(boxes: List[Box], iou_threshold: float = 0.5) -> Lis
                 if merged[j]:
                     continue
                     
-                # Check if this box overlaps with any box in the merge group
-                should_merge = False
-                for group_box in merge_group:
-                    iou = calculate_iou(group_box.bbox, type_boxes[j].bbox)
-                    if iou > iou_threshold:
-                        should_merge = True
-                        break
-                
-                if should_merge:
-                    merge_group.append(type_boxes[j])
-                    merged[j] = True
+                # For text blocks, use stricter criteria
+                if box_type in ["Text", "Paragraph", "text"]:
+                    # Check direct overlap with the original box only
+                    # Also check intersection ratio instead of just IoU
+                    overlap_area = get_overlap_area(type_boxes[i].bbox, type_boxes[j].bbox)
+                    area_i = get_box_area(type_boxes[i].bbox)
+                    area_j = get_box_area(type_boxes[j].bbox)
+                    
+                    # Calculate intersection over smaller box
+                    intersection_ratio = overlap_area / min(area_i, area_j) if min(area_i, area_j) > 0 else 0
+                    
+                    # Only merge if significant overlap (80% of smaller box)
+                    if intersection_ratio > 0.8:
+                        merge_group.append(type_boxes[j])
+                        merged[j] = True
+                else:
+                    # For non-text, keep the transitive merging
+                    should_merge = False
+                    for group_box in merge_group:
+                        iou = calculate_iou(group_box.bbox, type_boxes[j].bbox)
+                        if iou > iou_threshold:
+                            should_merge = True
+                            break
+                    
+                    if should_merge:
+                        merge_group.append(type_boxes[j])
+                        merged[j] = True
             
             # Create merged box from the group
             if len(merge_group) == 1:
@@ -196,9 +212,33 @@ def determine_overlap_strategy(box1: Box, box2: Box, overlap_info: Dict) -> Over
         # For text elements, keep the more specific one
         return OverlapStrategy.KEEP_HIGHER_WEIGHT
     
-    # Same type boxes - merge them
+    # Same type boxes – only merge if they significantly overlap.
+    # For multi–column PDFs it is fairly common that text blocks that live in
+    # different columns share a very small sliver of horizontal or vertical
+    # space (e.g. because the detector slightly over-extends the bounding box
+    # of one paragraph).  Blindly merging any two boxes that have the same
+    # label therefore tends to collapse otherwise separate blocks into one
+    # huge box that spans multiple columns.  To avoid that we only merge
+    # when the intersecting area constitutes a substantial part of at least
+    # one of the boxes.  Empirically, requiring an 80 % overlap with the
+    # smaller of the two boxes works well and is consistent with the logic
+    # used in the dedicated `merge_overlapping_boxes` helper.
+
     if box1.label == box2.label:
-        return OverlapStrategy.MERGE
+        # Determine intersection over the smaller box.
+        intersection_ratio = max(
+            overlap_info["overlap_ratio_box1"], overlap_info["overlap_ratio_box2"]
+        )
+
+        # Merge only if the vast majority (≥ 80 %) of the smaller box is
+        # covered by the overlap; otherwise try to keep the boxes separate.
+        if intersection_ratio >= 0.8:
+            return OverlapStrategy.MERGE
+        else:
+            # Prefer shrinking so that both boxes can coexist without
+            # overlap.  Falling back to KEEP_HIGHER_WEIGHT would discard
+            # information from the lower-weighted box.
+            return OverlapStrategy.SHRINK_TO_NON_OVERLAP
     
     # Small overlap - try to shrink boxes
     if overlap_info["overlap_ratio_box1"] < 0.2 and overlap_info["overlap_ratio_box2"] < 0.2:
@@ -433,7 +473,7 @@ def resolve_all_overlaps(boxes: List[Box],
 
 def no_overlap_pipeline(boxes: List[Box],
                         merge_same_type_first: bool = True,
-                        merge_threshold: float = 0.1,
+                        merge_threshold: float = 0.5,
                         confidence_weight: float = 0.7,
                         area_weight: float = 0.3) -> List[Box]:
     """Complete pipeline that guarantees no overlapping boxes.

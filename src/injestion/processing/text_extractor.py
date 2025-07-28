@@ -41,9 +41,11 @@ def extract_text_from_bbox(
     
     # Convert and scale coordinates
     x1 = bbox[0] * scale_factor
-    y1 = bbox[1] * scale_factor
     x2 = bbox[2] * scale_factor
-    y2 = bbox[3] * scale_factor
+    
+    # Flip Y coordinates and scale
+    y1 = pdf_height - (bbox[3] * scale_factor)  # bbox[3] is bottom in image coords
+    y2 = pdf_height - (bbox[1] * scale_factor)  # bbox[1] is top in image coords
     
     # Create rect in PDF coordinate system
     rect = fitz.Rect(x1, y1, x2, y2)

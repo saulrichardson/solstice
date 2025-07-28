@@ -128,15 +128,20 @@ Return a JSON response in this exact format:
 }}"""
 
         # Make LLM call
-        from ..gateway.app.providers.base import ResponseRequest
         # For Responses API, include JSON instruction in the prompt
         json_prompt = prompt + "\n\nIMPORTANT: Return ONLY valid JSON, no other text."
-        request = ResponseRequest(
-            model="gpt-4.1",
-            input=json_prompt,
-            temperature=0.1
-        )
-        response = await self.llm_client.create_response(request)
+        
+        # Build request parameters
+        request_params = {
+            "model": "gpt-4.1",
+            "input": json_prompt
+        }
+        
+        # Only add temperature for models that support it (not o4-mini)
+        if "o4-mini" not in request_params["model"]:
+            request_params["temperature"] = 0.1
+            
+        response = self.llm_client.create_response(**request_params)
         
         # Parse response
         try:
@@ -174,6 +179,12 @@ Return a JSON response in this exact format:
             if not content:
                 logger.error(f"No content found in response output: {output}")
                 raise ValueError("No content in response")
+            
+            # Handle markdown-wrapped JSON
+            if content.startswith('```json') and content.endswith('```'):
+                content = content[7:-3].strip()
+            elif content.startswith('```') and content.endswith('```'):
+                content = content[3:-3].strip()
                 
             data = json.loads(content)
             return ReasonerOutput(**data)
@@ -259,14 +270,19 @@ DOCUMENT:
 
 Return the corrected JSON with the same structure as before."""
 
-        from ..gateway.app.providers.base import ResponseRequest
         json_prompt = prompt + "\n\nIMPORTANT: Return ONLY valid JSON, no other text."
-        request = ResponseRequest(
-            model="gpt-4.1",
-            input=json_prompt,
-            temperature=0.1
-        )
-        response = await self.llm_client.create_response(request)
+        
+        # Build request parameters  
+        request_params = {
+            "model": "gpt-4.1",
+            "input": json_prompt
+        }
+        
+        # Only add temperature for models that support it (not o4-mini)
+        if "o4-mini" not in request_params["model"]:
+            request_params["temperature"] = 0.1
+            
+        response = self.llm_client.create_response(**request_params)
         
         try:
             # Extract content - same logic as _reasoner
@@ -299,6 +315,12 @@ Return the corrected JSON with the same structure as before."""
                 
             if not content:
                 raise ValueError("No content in response")
+            
+            # Handle markdown-wrapped JSON
+            if content.startswith('```json') and content.endswith('```'):
+                content = content[7:-3].strip()
+            elif content.startswith('```') and content.endswith('```'):
+                content = content[3:-3].strip()
                 
             data = json.loads(content)
             return ReasonerOutput(**data)

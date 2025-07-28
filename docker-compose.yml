@@ -13,10 +13,10 @@ services:
       context: .
       dockerfile: docker/gateway.Dockerfile
     ports:
-      - "${SOLSTICE_GATEWAY_PORT:-4000}:${SOLSTICE_GATEWAY_PORT:-4000}"
+      - "${SOLSTICE_GATEWAY_PORT:-8000}:${SOLSTICE_GATEWAY_PORT:-8000}"
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
-      - SOLSTICE_GATEWAY_PORT=${SOLSTICE_GATEWAY_PORT:-4000}
+      - SOLSTICE_GATEWAY_PORT=${SOLSTICE_GATEWAY_PORT:-8000}
       - REDIS_URL=redis://redis:6379
       - LOG_LEVEL=INFO
     volumes:
@@ -31,7 +31,7 @@ services:
   # citation-finder:
   #   build: ./apps/citation-finder
   #   environment:
-  #     - LLM_GATEWAY_URL=http://gateway:4000
+  #     - LLM_GATEWAY_URL=http://gateway:8000
   #   depends_on:
   #     - gateway
   #   networks:

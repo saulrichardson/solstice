@@ -8,6 +8,8 @@ using the structure::
       cache/
         pages/<doc>/     page-NNN.png
         layout/<doc>/    layout.json
+        raw_layouts/<doc>/    raw_layout_boxes.json
+                              visualizations/  page_NNN_raw_layout.png
         merged/<doc>/    merged_boxes.json
         reading_order/<doc>/  reading_order.json
         extracted/<doc>/ content.json, figures/

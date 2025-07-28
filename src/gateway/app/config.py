@@ -17,7 +17,7 @@ class Settings(BaseSettings):
 
     # Gateway network settings (used when the process binds its socket)
     solstice_gateway_host: str = Field("0.0.0.0", alias="SOLSTICE_GATEWAY_HOST")
-    solstice_gateway_port: int = Field(4000, alias="SOLSTICE_GATEWAY_PORT")
+    solstice_gateway_port: int = Field(8000, alias="SOLSTICE_GATEWAY_PORT")
 
     # Optional convenience override – currently only used by clients but we
     # accept it here so that the variable doesn't raise a validation error.

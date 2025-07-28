@@ -19,10 +19,10 @@ class ResponsesClient:
         Initialize client for the Responses API gateway.
 
         Args:
-            base_url: Gateway URL, defaults to http://localhost:4000
+            base_url: Gateway URL, defaults to http://localhost:8000
             api_key: API key for authentication
         """
-        default_port = os.getenv("SOLSTICE_GATEWAY_PORT", "4000")
+        default_port = os.getenv("SOLSTICE_GATEWAY_PORT", "8000")
         default_url = f"http://localhost:{default_port}"
 
         self.base_url = base_url or os.getenv("SOLSTICE_GATEWAY_URL", default_url)

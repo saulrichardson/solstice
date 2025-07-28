@@ -7,7 +7,7 @@ from typing import Dict, Any
 class GatewayLLMClient:
     """Client for making LLM calls through the Solstice Gateway"""
     
-    def __init__(self, gateway_url: str = "http://localhost:4000"):
+    def __init__(self, gateway_url: str = "http://localhost:8000"):
         self.gateway_url = gateway_url
         self.client = httpx.AsyncClient()
     
