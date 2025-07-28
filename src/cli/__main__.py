@@ -39,8 +39,8 @@ def main():
         help="[DEPRECATED - use run-study] Extract supporting evidence"
     )
     
-    # Parse arguments
-    args = parser.parse_args()
+    # Parse only known args to get the command
+    args, remaining = parser.parse_known_args()
     
     # Route to appropriate command
     if args.command == "ingest":
@@ -52,12 +52,14 @@ def main():
         ingest_main()
     elif args.command == "run-study":
         from .run_study import main as study_main
-        # Just pass through to run_study which handles its own args
+        # Set sys.argv to include remaining args
+        sys.argv = [sys.argv[0]] + remaining
         study_main()
     elif args.command == "extract-evidence":
         # Deprecated - redirect to run-study
         print("Note: extract-evidence is deprecated. Using run-study instead.\n")
         from .run_study import main as study_main
+        sys.argv = [sys.argv[0]] + remaining
         study_main()
     else:
         parser.print_help()

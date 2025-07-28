@@ -59,6 +59,16 @@ This will:
 - Extract text, tables, and document structure
 - Save results to `data/cache/`
 
+Run fact-checking on ingested documents:
+
+```bash
+# Extract supporting evidence for claims
+python -m src.cli run-study
+
+# Run specific agents only
+python -m src.cli run-study --agents supporting_evidence regex_verifier
+```
+
 ### Docker Setup (Alternative)
 
 For running the gateway service in a containerized environment:
@@ -84,8 +94,8 @@ The gateway runs on http://localhost:8000 and provides API access to the process
 ## Architecture
 
 - **Ingestion Pipeline**: Processes PDFs using layout detection to extract structured content
-- **Fact Checking**: Verifies claims against a corpus of clinical documents
-- **Gateway Service**: Provides API access to the processing capabilities
+- **Fact Checking**: Agent-based system that extracts supporting evidence for claims from clinical documents
+- **Gateway Service**: Proxy service for LLM API calls (OpenAI, Anthropic, etc.)
 
 ## Troubleshooting
 

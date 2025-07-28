@@ -1,4 +1,6 @@
-# Solstice Architecture Analysis: Modularity & Orchestration
+# Solstice Architecture Analysis: Modularity & Orchestration (PARTIALLY OUTDATED)
+
+**⚠️ Note: The fact-checking section of this document describes the OLD architecture. See `src/fact_check/docs/ARCHITECTURE.md` for the current agent-based fact-checking system.**
 
 ## Executive Summary
 

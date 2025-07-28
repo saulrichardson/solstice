@@ -107,7 +107,6 @@ Return your response as a JSON object with this structure:
 {{
     "snippets": [
         {{
-            "id": 1,
             "quote": "exact text from document",
             "relevance_explanation": "why this quote supports the claim",
             "context": "optional surrounding text for context"
@@ -170,7 +169,7 @@ Find all supporting evidence for the claim.'''
                     continue
                     
                 snippet = SupportingSnippet(
-                    id=snippet_data.get("id", i + 1),
+                    id=i + 1,  # Always assign IDs programmatically
                     quote=snippet_data.get("quote", ""),
                     relevance_explanation=snippet_data.get("relevance_explanation", ""),
                     context=snippet_data.get("context")

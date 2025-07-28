@@ -1,30 +1,35 @@
-# Fact-Check Pipeline Documentation
+# Fact-Check Documentation
 
 ## Overview
 
-The fact-check pipeline is an agent-based system designed to verify claims against extracted PDF documents. It builds on top of the ingestion pipeline output and provides a modular, extensible architecture for claim verification.
+The fact-check system is an agent-based architecture designed to extract supporting evidence for claims from clinical documents. It processes claims across multiple documents using a modular pipeline of specialized agents.
 
 ## Architecture
 
 ### Core Components
 
-1. **Pipeline Orchestrator** (`pipeline.py`)
-   - Manages agent lifecycle
-   - Tracks pipeline state and progress
-   - Handles error recovery and continuation
-   - Saves results and manifests
+1. **Study Orchestrator** (`orchestrators/study_orchestrator.py`)
+   - Processes all claims across all documents
+   - Manages high-level workflow
+   - Saves consolidated results
 
-2. **Base Agent** (`agents/base.py`)
+2. **Claim Orchestrator** (`orchestrators/claim_orchestrator.py`)
+   - Processes one claim across all documents
+   - Manages agent pipeline execution
+   - Handles caching and error recovery
+
+3. **Base Agent** (`agents/base.py`)
    - Abstract base class for all agents
    - Provides I/O helpers and metadata management
    - Enforces consistent agent interface
 
-3. **Text Evidence Finder** (`agents/text_evidence_finder.py`)
-   - Verifies claims against document text
-   - Uses LLM to analyze claims and find supporting/contradicting evidence
-   - Extracts quotes and reasoning steps
+4. **Agent Pipeline**
+   - **SupportingEvidenceExtractor**: Extracts text snippets that support claims
+   - **RegexVerifier**: Verifies quotes exist in the document
+   - **EvidenceCritic**: Critiques evidence quality (stub)
+   - **EvidenceJudge**: Makes final judgment (stub)
 
-4. **Responses Client** (`core/responses_client.py`)
+5. **Responses Client** (`core/responses_client.py`)
    - Communicates with Solstice Gateway
    - Handles LLM API calls
    - No hardcoded URLs - uses environment configuration
@@ -34,7 +39,14 @@ The fact-check pipeline is an agent-based system designed to verify claims again
 ### Basic Command
 
 ```bash
-python -m src.fact_check <pdf_name> <config_file>
+# Run with all defaults (Flublok claims, all documents)
+python -m src.cli run-study
+
+# Run specific agents only
+python -m src.cli run-study --agents supporting_evidence regex_verifier
+
+# Run on specific documents
+python -m src.cli run-study --documents FlublokPI "Liu et al. (2024)"
 ```
 
 ### Configuration Options
@@ -150,25 +162,52 @@ if "my_new_agent" in agent_configs:
     self.register_agent(MyNewAgent(...))
 ```
 
-## Verification Results Format
+## Output Format
 
-Each claim verification produces:
+### Supporting Evidence Extractor
 ```json
 {
+  "claim_id": "claim_001",
   "claim": "Original claim text",
-  "verdict": "supports|contradicts|insufficient",
-  "confidence": 0.0-1.0,
-  "success": true|false,
-  "reasoning_steps": [
+  "document": {
+    "pdf_name": "FlublokPI",
+    "source_pdf": "FlublokPI.pdf"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3
+  },
+  "supporting_snippets": [
     {
       "id": 1,
-      "reasoning": "Explanation of finding",
       "quote": "Exact quote from document",
-      "start": 1234,  // Character position
-      "end": 5678
+      "relevance_explanation": "Why this supports the claim",
+      "location": {
+        "start": 1234,
+        "end": 5678,
+        "page_number": 1
+      }
     }
-  ],
-  "error": "Error message if failed"
+  ]
+}
+```
+
+### Study Results
+```json
+{
+  "metadata": {
+    "claims_file": "data/claims/Flublok_Claims.json",
+    "documents": ["FlublokPI", "Liu et al. (2024)"],
+    "total_claims": 10
+  },
+  "claims": {
+    "claim_001": {
+      "claim": "Flublok is a recombinant vaccine",
+      "documents": {
+        "FlublokPI": { /* agent results */ }
+      }
+    }
+  }
 }
 ```
 
@@ -184,9 +223,9 @@ Each claim verification produces:
 
 ### Common Issues
 
-1. **"Gateway URL must be provided"**
-   - Set `SOLSTICE_GATEWAY_URL` environment variable
-   - Or provide `gateway_url` in agent config
+1. **Connection errors to gateway**
+- Ensure the gateway is running locally (default at http://localhost:8000)
+- To override, set the `SOLSTICE_GATEWAY_URL` environment variable or provide `gateway_url` in agent config
 
 2. **"Input validation failed"**
    - Ensure required input files exist

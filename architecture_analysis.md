@@ -1,4 +1,6 @@
-# Fact-Check Pipeline Architecture Analysis
+# Fact-Check Pipeline Architecture Analysis (OUTDATED)
+
+**⚠️ Note: This document describes the OLD monolithic architecture. The system has been refactored to use an agent-based pipeline. See `src/fact_check/docs/ARCHITECTURE.md` for the current architecture.**
 
 ## Current Structure
 

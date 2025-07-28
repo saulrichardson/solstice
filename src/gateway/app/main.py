@@ -11,7 +11,6 @@ from .middleware.logging import LoggingMiddleware, log_llm_request, log_llm_resp
 from .middleware.retry import RetryableProvider
 from .openai_client import validate_api_key, OpenAIClientError
 from .providers import OpenAIProvider, ResponseRequest
-from ...fact_check import FactChecker, VerificationResult
 
 # Provider instances
 providers = {}
@@ -275,45 +274,6 @@ async def get_pricing():
     }
 
 
-@app.post("/v1/fact-check")
-async def fact_check(request: Request, body: dict):
-    """Fact-checking endpoint using Reasoner + Quote Verifier agent."""
-    request_id = request.state.request_id
-    
-    # Extract claim and document from request
-    claim = body.get("claim")
-    document_text = body.get("document_text")
-    
-    if not claim or not document_text:
-        raise HTTPException(
-            status_code=400, 
-            detail="Both 'claim' and 'document_text' are required"
-        )
-    
-    # Get provider
-    provider = providers.get("openai")
-    if not provider:
-        raise HTTPException(status_code=500, detail="Provider not configured")
-    
-    # Create fact checker with provider
-    fact_checker = FactChecker(provider)
-    
-    try:
-        # Run fact checking
-        result = await fact_checker.check_claim(claim, document_text)
-        
-        # Log the fact check request
-        log_llm_request(
-            request_id, 
-            "fact-checker", 
-            "gpt-4.1", 
-            {"claim": claim, "document_length": len(document_text)}
-        )
-        
-        return result.model_dump()
-        
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Fact check error: {e!s}")
 
 
 if __name__ == "__main__":

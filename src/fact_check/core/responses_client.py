@@ -22,14 +22,14 @@ class ResponsesClient:
             base_url: Gateway URL (required if SOLSTICE_GATEWAY_URL not set)
             api_key: API key for authentication
         """
-        # No localhost defaults - must be provided by caller or environment
+        # Determine gateway URL: use provided base_url or env var, else fallback to localhost defaults
         self.base_url = base_url or os.getenv("SOLSTICE_GATEWAY_URL")
-        
         if not self.base_url:
-            raise ValueError(
-                "Gateway URL must be provided via base_url parameter or "
-                "SOLSTICE_GATEWAY_URL environment variable"
-            )
+            host = os.getenv("SOLSTICE_GATEWAY_HOST", "localhost")
+            port = os.getenv("SOLSTICE_GATEWAY_PORT", "8000")
+            self.base_url = f"http://{host}:{port}"
+        # Normalize URL to remove trailing slash
+        self.base_url = self.base_url.rstrip("/")
 
         # ------------------------------------------------------------------
         # Authentication header is optional.  Historically we forwarded the
