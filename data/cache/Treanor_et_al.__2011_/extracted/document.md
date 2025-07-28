@@ -12,7 +12,7 @@
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_a3abd81c.png)
+![Figure from page 1](figures/figure_p1_706bdb1d.png)
 
 
 ### Although
@@ -1111,7 +1111,7 @@ even
 
 **[TABLE]**
 
-![Table from page 3](figures/table_p3_1d8f7d5b.png)
+![Table from page 3](figures/table_p3_da08f8a7.png)
 
 groups)
  and
@@ -1192,7 +1192,7 @@ suming
 
 **[FIGURE]**
 
-![Figure from page 3](figures/figure_p3_07385938.png)
+![Figure from page 3](figures/figure_p3_330f3158.png)
 
 J J
 
@@ -1588,7 +1588,7 @@ ture
 
 **[TABLE]**
 
-![Table from page 4](figures/table_p4_677d911c.png)
+![Table from page 4](figures/table_p4_bd7af8c9.png)
 
 Among
  FluBlok
@@ -2440,7 +2440,7 @@ ndpoint for this study was the development of culture-conﬁrmed
 
 **[FIGURE]**
 
-![Figure from page 5](figures/figure_p5_96dbdf45.png)
+![Figure from page 5](figures/figure_p5_10b3e1fa.png)
 
 2 K
 l
@@ -2464,7 +2464,7 @@ CDC ILI
 
 **[TABLE]**
 
-![Table from page 5](figures/table_p5_f6c93261.png)
+![Table from page 5](figures/table_p5_c5d0e6d0.png)
 
 J.J.
  Treanor

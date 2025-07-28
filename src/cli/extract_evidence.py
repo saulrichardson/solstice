@@ -11,21 +11,51 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from src.fact_check.claim_orchestrator import ClaimOrchestrator
 
 
+def get_default_documents():
+    """Get list of PDF names from clinical_files directory (without .pdf extension)."""
+    clinical_dir = Path("data/clinical_files")
+    if clinical_dir.exists():
+        return [f.stem for f in clinical_dir.glob("*.pdf")]
+    return []
+
+
 def main():
+    # Check if we have defaults available
+    default_claims = "data/claims/Flublok_Claims.json"
+    has_default_claims = Path(default_claims).exists()
+    available_docs = get_default_documents()
+    
     parser = argparse.ArgumentParser(
         description="Extract supporting evidence for claims across multiple documents",
-        formatter_class=argparse.RawDescriptionHelpFormatter
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=f"""
+Examples:
+  # Use all defaults (Flublok claims and all documents)
+  python -m src.cli extract-evidence
+  
+  # Use default claims with specific documents
+  python -m src.cli extract-evidence --documents FlublokPI "Liu et al. (2024)"
+  
+  # Use custom claims file
+  python -m src.cli extract-evidence --claims path/to/claims.json
+  
+Available documents: {', '.join(available_docs) if available_docs else 'None found'}
+Default claims: {default_claims if has_default_claims else 'Not found'}
+"""
     )
     
     parser.add_argument(
-        "claims_file",
-        help="Path to JSON file containing claims"
+        "--claims",
+        dest="claims_file",
+        default=default_claims if has_default_claims else None,
+        help=f"Path to JSON file containing claims (default: {default_claims})"
     )
     
     parser.add_argument(
-        "documents",
+        "--documents",
         nargs="+",
-        help="List of PDF names to search for evidence"
+        default=available_docs,
+        help="List of PDF names to search (default: all documents in data/clinical_files)"
     )
     
     parser.add_argument(
@@ -59,6 +89,17 @@ def main():
     )
     
     args = parser.parse_args()
+    
+    # Validate inputs
+    if not args.claims_file:
+        print("Error: No claims file specified and no default claims found.")
+        print("Please create data/claims/Flublok_Claims.json or specify --claims")
+        sys.exit(1)
+    
+    if not args.documents:
+        print("Error: No documents found in data/clinical_files/")
+        print("Please run ingestion first or specify --documents")
+        sys.exit(1)
     
     # Build config
     config = {

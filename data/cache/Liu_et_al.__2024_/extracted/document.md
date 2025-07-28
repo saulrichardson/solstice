@@ -17,47 +17,8 @@ immune memory to egg-adapted epitopes and re-focus the immune respons
 towards epitopes on the circulating viruses to improve vaccine effectivenes
 Inﬂuenza viruses are a common cause of respiratory infections in
 humans, annual inﬂuenza vaccination has been recommended in the
-i
-d S
-( S) f
-d
-d
-C
-i
-ll
-i ﬂ
 manufacturing process can lead to egg-adapted mutations in t
 hemagglutinin (HA) protein in IIV, that could result in altered an
-i i
-d
-d
-d
-i
-ff
-i
-(
-)
-i
-h
-i
-l
-i
-
-A(H3N2) immunogenicity. In year 1, RIV4 induced higher neutralizing and total
-HA head binding antibodies to cell- A(H3N2) virus than ccIIV4 and IIV4. In year
-2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4-
-ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with
-either RIV4 or ccIIV4 further improved antibody responses to circulating
-i
-i h d
-d
-li i
-ib d
-/
-ll
-i
-RIV4 l
-h d
 
 p
 g
@@ -91,6 +52,8 @@ esponses from egg-
 
 ## Page 2
 
+(
+)
 IIV4-ccIIV4
 n=106 (*51)
 IIV4-RIV4
@@ -115,9 +78,9 @@ RIV n=198
 18-44 years: n=99
 45-64 years: n=99
 Completed day 0 (n=19
-1 month (n=196) and
-6 months (n=177) vis
-Year 2: Year 1 participan
+1 month (n=196) and 
+6 months (n=177) visit
+Year 2: Year 1 participant
 IIV4 in Year 1
 n=318 (*139)
 Re-randomized to ccIIV4, RIV4, or IIV4
@@ -128,19 +91,12 @@ Year 2: 2019-2020
 
 **[FIGURE]**
 
-![Figure from page 2](figures/figure_p2_3b1dc510.png)
+![Figure from page 2](figures/figure_p2_86f8d1c0.png)
 
 a cell culture based inﬂuenza vaccine (Flucelvax Quadrivalent
 by
 Seqirus, Inc., ccIIV4) and a recombinant inﬂuenza vaccine (Flublok
-Quadrivalent® by SanoﬁPasteur, RIV4). RIV4 contains 3 times the
-d
-/d
-/
-d
-h
-d
-d d
+Quadrivalent® by SanoﬁPasteur RIV4) RIV4 contains 3 times the
 
 RIV4-RIV4
 n=74
@@ -158,8 +114,7 @@ Did not meet per protocol criteria
 
 ### None
 
-p
-y
+sas/14/2017 (H3N2) like virus respectively while the B/Victoria and B/
 Yamagata components remained the same (Table 1).
 Enrolled and Randomized n=723
 accine Allocation
@@ -181,20 +136,6 @@ n=214
 RIV4 in Year 1
 n=152
 
-epitopes could be preferentially boosted from repeat vaccination with
-egg-based vaccines3. The potential of non-egg-based vaccines to miti-
-h i
-f
-i
-b
-d
-i
-i
-i
-l
-I
-hi
-
 
 ## Page 3
 
@@ -204,7 +145,7 @@ antibody responses to both egg- (GMT 122) and cell- (GMT 137
 
 **[TABLE]**
 
-![Table from page 3](figures/table_p3_0702adab.png)
+![Table from page 3](figures/table_p3_5c91de2e.png)
 
 Year 2
 A/Kansas/14/2017 cell a,d
@@ -244,7 +185,6 @@ G
 T(CHO-)
 T
 B/Maryland/15/2016 BX-69A egg CVV
-(EPI1061863) b,c
 D
 N(CHO-)
 I
@@ -256,7 +196,6 @@ S
 K
 T
 
-gg
 the study
 Viruses
 Amino acids difference
@@ -353,7 +292,7 @@ G
 N
 H
 
-n the HA head domain
+on the HA head domain
 164
 183
 209
@@ -443,7 +382,7 @@ H
 
 **[FIGURE]**
 
-![Figure from page 4](figures/figure_p4_f4865143.png)
+![Figure from page 4](figures/figure_p4_cd67a96c.png)
 
 Day 0
 1 m
@@ -736,7 +675,7 @@ Day 0
 
 **[FIGURE]**
 
-![Figure from page 5](figures/figure_p5_dca5161e.png)
+![Figure from page 5](figures/figure_p5_33cf7478.png)
 
 Antibody responses to egg-adapted epitopes measured by
 antibody GMT egg/cell titer ratio in year 1
@@ -749,27 +688,20 @@ year 1, a total of 26 breakthrough infection cases were identiﬁed with
 Pre-existing A(H3N2) and A(H1N1)pdm09 HA stalk antibodies
 were detected in participants at varies levels. Comparing HA stalk
 antibody titers at 1-month post-vaccination versus day 0, vaccination
-signiﬁcantly boosted A(H1N1)pdm09 HA stalk antibodies in all 4 vac-
+signiﬁcantly boosted A(H1N1)pdm09 HA stalk antibodies in all 4 vac
 cine groups (p < 0.01), and signiﬁcantly boosted A(H3N2) HA stalk
-antibodies in 3 of the 4 vaccine groups (p < 0.001, Fluzone IIV4, ccIIV4,
+antibodies in 3 of the 4 vaccine groups (p < 0.001, Fluzone IIV4, ccIIV4
 and RIV4) (Fig. 4C). The RIV4 group had the highest A(H1N1)pdm09 HA
-stalk and A(H3N2) HA stalk antibodies at 1-month post-vaccination,
+stalk and A(H3N2) HA stalk antibodies at 1-month post-vaccination
 however the fold rises of HA stalk antibodies were low (<1.8) and
-similar among all 4 vaccine groups (Fig. 4D). At 6-months post-vacci-
+similar among all 4 vaccine groups (Fig. 4D). At 6-months post-vacci
 nation, waning of HA stalk antibodies were more notable in ccIIV4 and
 
 (n = 98)) age groups respectively (A, B). Antibody waning was expressed as the GM
 fold-reduction of titers from 1-month to 6-months (1 m/6 m) post-vaccination for
 
 
-### (
-)
-y
-(
-/
-y
-)
-groups were calculated for egg- and cell-propagated vaccine viruses, and for 18
+### groups were calculated for egg- and cell-propagated vaccine viruses, and for 18
 years (Fluzone IIV4 (n = 52), Fluarix IIV4 (n = 55), ccIIV4 (n = 133), RIV4 (n = 98))
 
 0
@@ -779,7 +711,6 @@ years (Fluzone IIV4 (n = 52), Fluarix IIV4 (n = 55), ccIIV4 (n = 133), RIV4 (n =
 4
 5
 6
-18-44 years
 0.0058
 0.0088
 0.0001
@@ -810,7 +741,6 @@ Fluzone IIV4
 Fluarix IIV4
 ccIIV4
 RIV4
-Fluzone IIV4
 Fluarix IIV4
 ccIIV4
 RIV4
@@ -950,7 +880,7 @@ C
 
 **[FIGURE]**
 
-![Figure from page 6](figures/figure_p6_b0a88f0c.png)
+![Figure from page 6](figures/figure_p6_7a3ee58a.png)
 
 (n = 24), 6 m (n = 23); ccIIV4: Day 0 (n = 56), 1 m (n = 54), 6 m (n = 51); RIV4: Day 0
 (n = 40), 1 m (n = 40), 6 m (n = 38). A: HA (A(H1N1)pdm09) or HA head (A(H3N2), B/
@@ -1008,7 +938,7 @@ Day 0
 
 
 ### B/VIC
-ers (Log2 scale)
+ers (Log2 scale
 3200
 6400
 12800
@@ -1131,9 +1061,13 @@ indicated by p values on the horizontal bars.*: In (C), paired t test (two-taile
 used for comparing the pre- and 1 m post-vaccination stalk antibody titers within
 the same vaccine group: signiﬁcantly higher HA stalk antibody titers were detected
 in 1 m post-vaccination than pre-vaccination for H3 stalk binding antibody in Flu-
-one IIV4 (p
-0 0009) ccIIV4 (p
-0 0004) RIV4 (p < 0 0001); and for H1 stalk
+IIV4 (
+0 0009)
+IIV4 (
+0 0004) RIV4 (
+0 0001)
+d f
+H1 t lk
 
 Day 0
 1 m
@@ -1246,7 +1180,7 @@ Egg/Cell HA ELISA titer ratio (1m)
 
 **[FIGURE]**
 
-![Figure from page 7](figures/figure_p7_d52355c3.png)
+![Figure from page 7](figures/figure_p7_9b110238.png)
 
 A(H3N2) and B/VIC in the 18−44 years group, B/VIC virus and B/YAM
 virus in the 45−64 years group, suggesting repeated boost to anti
@@ -1338,7 +1272,7 @@ RIV4
 
 Comparing pre- and 1-month post-vaccination, A(H3N2) HA stalk
 binding antibodies were signiﬁcantly boosted in ccIIV4-RIV4, RIV4-RIV4,
-IV4-ccIIV4, and IIV4-RIV4 arms, while A(H1N1)pdm09 HA stalk binding
+IIV4-ccIIV4, and IIV4-RIV4 arms, while A(H1N1)pdm09 HA stalk binding
 antibodies were also signiﬁcantly boosted in ccIIV4-ccIIV4 and RIV4-ccIIV4
 arms (Fig. 8C). However, fold rise in both A(H1N1)pdm09 HA stalk and
 A(H3N2) HA stalk antibodies were low (GM fold rise <1.78) with no sig-
@@ -1352,9 +1286,6 @@ comparing proportions of ≥4 -fold reduced titer to cell vaccine virus between 
 and 1-month post-vaccination in each vaccine group. MN titers were measured for
 A(H3N2) virus, while HI titers were measured for A(H1N1)pdm09, B/VIC, and B/
 YAM viruses. Statistically signiﬁcant differences between groups are indicated by p
-
-
-### 0
 
 0
 Proportion of ≥4 -fold reduced titer to cell va
@@ -1410,21 +1341,17 @@ B/YAM
 
 **[FIGURE]**
 
-![Figure from page 8](figures/figure_p8_fe11606f.png)
+![Figure from page 8](figures/figure_p8_ba9ef512.png)
 
-g
-|
-y
-p
-gg
-p
-p g
+g. 6 |
+a t body espo ses to egg a d ce
+p opagated vacc
+e v uses at
 pre- and 1-month post-vaccination in year 2 stratiﬁed by 7 repeat
 vaccination arms. HI antibody titers from each of the 7 repeat vaccine arms were
 presented as geometric mean titers (GMTs) with 95% conﬁdence interval (CI)
 respectively for 18−44 years and 45−64 years age groups. Gray dots represented
-individual titers. 18−44 years: ccIIV4-ccIIV4 (n = 42), ccIIV4-RIV4 (n = 45), RIV4-
-ccIIV4 (n = 28), RIV4-RIV4 (n = 30), IIV4-ccIIV4 (n = 49), IIV4-RIV4 (n = 48), IIV4-IIV4
+individual titers 18−44 years: ccIIV4-ccIIV4 (n = 42) ccIIV4-RIV4 (n = 45) RIV4-
 
 B/VIC
 B/YAM
@@ -1703,7 +1630,7 @@ IIV4-IIV4
 
 **[FIGURE]**
 
-![Figure from page 9](figures/figure_p9_607ba538.png)
+![Figure from page 9](figures/figure_p9_fe2d7660.png)
 
 years, it also signiﬁcantly increased the quantity of the total A(H3N2)
 cell HA head binding antibodies (Fig. 4A, Fig. S1A). However, for
@@ -1712,14 +1639,16 @@ otal HA head binding antibody levels among 4 vaccine groups was less
 consistent suggesting that the magnitude of improvement differ
 
 IIV4 and ccIIV4 (15 µg HA/dose/strain). For A(H3N2), RIV4 vaccination
+t
 l i
-d h
-li
-f h f
-i
+d th
+lit
+f th f
+ti
 l
+t
 li i
-ib d
+tib d
 Fig. 7 | Dynamics of proportion of participants with HI GMT egg/cell ratio ≥4
 fold among seven repeat vaccination arms in Year 2. Proportions of Year 2
 participants who had ≥4 -fold reduced titer to cell vaccine virus (egg/cell titer ratio)
@@ -1745,7 +1674,7 @@ between pre- and post-vaccination.
 
 **[FIGURE]**
 
-![Figure from page 10](figures/figure_p10_90bee6e4.png)
+![Figure from page 10](figures/figure_p10_a3f917d5.png)
 
 pre- and 1-month post-vaccination in 7 repeat vaccination arms. Antibody titers
 from each of the 7 vaccine arms were presented as geometric mean titers (GMTs)
@@ -1754,15 +1683,26 @@ groups. Gray dots represented individual titers. ccIIV4-ccIIV4 (n = 20), ccIIV4-
 (n = 22), RIV4-ccIIV4 (n = 16), RIV4-RIV4 (n = 16), IIV4-ccIIV4 (n = 22), IIV4-RIV4
 
 B/YAM
+Day 0
+1 m
+400
+800
+1600
 3200
 6400
 12800
 25600
-iters (Log2 sca
+ELISA titers (Log2 sca
+Day 0
+1 m
+400
+800
+1600
 3200
 6400
 12800
 25600
+Fig. 8 | HA head and stalk binding antibody responses measured by ELISA at
 
 A(H1N1)pdm09
 B/VIC
@@ -1849,7 +1789,7 @@ IIV4-IIV4
 H3 stalk
 H1 stalk
 Geometric mean fold
-titers to HA stal
+titers to HA stalk
 within the same age group (A). One-way ANOVA corrected for multiple compar-
 sons (Tukey’s test) was used to compare the GMTs of stalk binding antibody at
 each time point among the 4 vaccine groups (C). One-way ANOVA nonparametri
@@ -1936,7 +1876,7 @@ Egg/cell HA ELISA ter rao (1m)
 
 **[TABLE]**
 
-![Table from page 11](figures/table_p11_23a8f5b2.png)
+![Table from page 11](figures/table_p11_f1293855.png)
 
 blinding were previously described27–29. Participant characterisitcs in
 year 1 are described in Table 2. During Year 1, HCP were stratiﬁed by two
@@ -1979,6 +1919,8 @@ vaccination(2017−2018)
 176
 89
 
+g
+y
 (11)
 (11)
 (11)
@@ -2160,7 +2102,7 @@ quadrivalent subunit inﬂuenza virus vaccines compared to trivalent
 
 ### vaccine e
 
-with MN or HI GMT egg/cell titer ratio ≥4-fold was calculated to
+with MN or HI GMT egg/cell titer ratio ≥4 fold was calculated to
 quantify the percent of participants with antibodies predominantly
 targeting egg-adapted epitopes per vaccine group. One-way ANOVA
 corrected for multiple comparisons (Tukey’s test) or nonparametric
@@ -2214,70 +2156,21 @@ adapted vaccine strains. Proc. Natl. Acad. Sci. USA 114,
 7.
 Barr, I. G. et al. Cell culture-derived inﬂuenza vaccines in the severe
 2017-2018 epidemic season: a step towards improved inﬂuenza
-subunit inﬂuenza virus vaccines in healthy children: a phase III
-randomized, multicenter, double-blind clinical trial. Int. J. Infect.
-Dis. 41, 65–72 (2015).
 13.
-Gouma, S. et al. Comparison of human H3N2 antibody responses
-elicited by egg-based, cell-based, and recombinant protein-based
-inﬂuenza vaccines during the 2017-2018 season. Clin. Infect. Dis. 71
-1447–1453 (2020).
 14.
-Izurieta, H. S. et al. Relative effectiveness of cell-cultured and egg
-based inﬂuenza vaccines among elderly persons in the United
-States, 2017-2018. J. Infect. Dis. 220, 1255–1264 (2019).
 15.
-Dunkle, L. M. et al. Efﬁcacy of recombinant inﬂuenza vaccine in
-adults 50 years of age or older. N. Engl. J. Med. 376,
-2427–2436 (2017).
 16.
-Boikos, C., Sylvester, G. C., Sampalis, J. S. & Mansi, J. A. Relative
-effectiveness of the cell-cultured quadrivalent inﬂuenza vaccine
-compared to standard, egg-derived quadrivalent inﬂuenza vac-
-cines in preventing inﬂuenza-like illness in 2017-2018. Clin. Infect.
-Dis. 71, e665–e671 (2020).
 17.
-Thompson, M. G. et al. Effects of repeated annual inactivated
-inﬂuenza vaccination among healthcare personnel on serum
-hemagglutinin inhibition antibody response to A/Perth/16/2009
-(H3N2)-like virus during 2010-11. Vaccine 34, 981–988 (2016).
 18.
-Nabeshima, S. et al. Antibody response to inﬂuenza vaccine in
-adults vaccinated with identical vaccine strains in consecutive
-years. J. Med. Virol. 79, 320–325 (2007).
 19.
-Leung, V. K. Y. et al. Inﬂuenza vaccination responses: evaluating
-impact of repeat vaccination among health care workers. Vaccine
-35, 2558–2568 (2017).
-20. Khurana, S. et al. Repeat vaccination reduces antibody afﬁnity
-maturation across different inﬂuenza vaccine platforms in humans
-Nat. Commun. 10, 3338 (2019).
+20.
 21.
-Keitel, W. A., Cate, T. R., Couch, R. B., Huggins, L. L. & Hess, K. R.
-Efﬁcacy of repeated annual immunization with inactivated inﬂuenza
-virus vaccines over a ﬁve year period. Vaccine 15, 1114–1122 (1997)
-22. Skowronski, D. M. et al. A perfect storm: impact of genomic varia-
-tion and serial vaccination on low inﬂuenza vaccine effectiveness
-during the 2014-2015 season. Clin. Infect. Dis. 63, 21–32 (2016).
-23. Ohmit, S. E. et al. Inﬂuenza vaccine effectiveness in the 2011-2012
-season: protection against each circulating virus and the effect of
-prior vaccination on estimates. Clin. Infect. Dis. 58, 319–327 (2014)
-24. Ohmit, S. E. et al. Inﬂuenza vaccine effectiveness in the community
-and the household. Clin. Infect. Dis. 56, 1363–1369 (2013).
-25. McLean, H. Q. et al. Impact of repeated vaccination on vaccine
-effectiveness against inﬂuenza A(H3N2) and B during 8 seasons.
-Clin. Infect. Dis. 59, 1375–1385 (2014).
-26. Belongia, E. A. et al. Repeated annual inﬂuenza vaccination and
-vaccine effectiveness: review of evidence. Expert Rev. Vaccines 16
-1–14 (2017).
+22.
+23.
+24.
+25.
+26.
 27.
-Dawood, F. S. et al. Comparison of the immunogenicity of cell
-culture-based and recombinant quadrivalent inﬂuenza vaccines to
-conventional egg-based quadrivalent inﬂuenza vaccines among
-
-WHO. Recommendations for inﬂuenza vaccine composition.
-https://www.who.int/teams/global-inﬂuenza-programme/
-vaccines/who-recommendations.).
 
 
 ## Page 13
@@ -2376,27 +2269,21 @@ the US; foreign copyright protection may apply 2024
 Temple, TX, USA. 4Texas A & M University, College of Medicine, Temple, TX, USA. 5Kaiser Permanente Northwest Center for Health Research, Portland,
 OR, USA. 6Abt Associates, Atlanta, GA, USA.
 e-mail: mlevine@cdc.gov
-N
-C
-i
-i
-| (2024)15 254
-13
 
 States During the 2018 2019 Inﬂuenza Season. Clin. Infect. Dis. 71,
 e368–e376 (2020).
 32. Ramsay, L. C. et al. The impact of repeated vaccination on inﬂuenza
-vaccine effectiveness: a systematic review and meta-analysis BMC
-CDC for providing the recombinant HA proteins. We also thank Maked
-Kay and Stacie Jefferson from inﬂuenza division of CDC for their assis
-tance with the study. Funding: This study was funded by the US Cente
-for Disease Control and Prevention (contract 75D30118F02850) Dis-
+vaccine effectiveness: a systematic review and meta-analysis. BMC
+CDC for providing the recombinant HA proteins. We also thank Makeda
+Kay and Stacie Jefferson from inﬂuenza division of CDC for their assis-
+tance with the study. Funding: This study was funded by the US Centers
+for Disease Control and Prevention (contract 75D30118F02850). Dis-
 
 
 ---
 
 ## Extraction Metadata
 
-- Text blocks: 90
+- Text blocks: 86
 
 - Figures/Tables: 10

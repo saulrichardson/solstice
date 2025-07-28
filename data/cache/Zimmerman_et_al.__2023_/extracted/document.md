@@ -12,7 +12,7 @@
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_ceca2f96.png)
+![Figure from page 1](figures/figure_p1_e151c01c.png)
 
 
 ### 1. Introduction
@@ -45,20 +45,15 @@ merase chain reaction (RT-PCR) assays were included. The hospital system electro
 EMR) and the state immunization registry were used to conﬁrm inﬂuenza vaccination. Propensity scores
 with inverse probability weighting were used to adjust for potential confounders and determine rVE.
 Results: Of the 14,590 individuals included in the primary analysis, 3,338 were vaccinated with RIV4 and
-976 were vaccinated with SD-IIV4, with the balance of 10,276 being unvaccinated. Most participants
+976 were vaccinated with SD-IIV4 with the balance of 10 276 being unvaccinated Most participants
 
 
-### acc
-es a
-test negat
+### test negat
 
 Vaccine effectiveness of recombinant an
-i
-i
-i ﬂ
+ﬂ
 l
 d h
-i
 
 Va
 journal homepage: www
@@ -88,8 +83,6 @@ and Pennsylvania Statewide Immunization Information System
 August 1 and the date of illness/PCR testing. Exclusion criteria were
 testing within 2 weeks of vaccination, having 2 different types of
 
-y
-g
 approved this retrospective study using EMR databases. A test-
 negative case-control study estimates VE by comparing the odds
 of vaccination among patients hospitalized with inﬂuenza like ill-
@@ -211,7 +204,7 @@ HD-IIV4 and adjuvanted inﬂuenza vaccine (Adj-IV)). The CDC has
 recommended the use of ‘‘enhanced vaccines” for adults ages 65
 and older beginning in 2022 [13]. Inﬂuenza vaccines were identi-
 ﬁed through the EMR; SD-IIV4 included Aﬂuria, Fluarix, FluLaval,
-S
+St
 d
 d D
 Fl
@@ -302,7 +295,7 @@ The total number of inﬂuenza test results among inpatients was
 
 **[FIGURE]**
 
-![Figure from page 3](figures/figure_p3_3aa00b55.png)
+![Figure from page 3](figures/figure_p3_467fe8bd.png)
 
 
 ### vaccine (RIV4), standard dose
@@ -347,7 +340,7 @@ Vaccine 41 (2023) 5134–5140
 
 **[FIGURE]**
 
-![Figure from page 4](figures/figure_p4_b8c643b1.png)
+![Figure from page 4](figures/figure_p4_4b69dc92.png)
 
 RIV4: Flublok.
 c SD-IIV4: Aﬂuria, Fluarix, FluLaval, Standard Dose Fluzone and FlucelVax.
@@ -374,7 +367,7 @@ Inﬂuenza case, ref. = non-case, n (%)
 
 **[TABLE]**
 
-![Table from page 4](figures/table_p4_f3cac1fd.png)
+![Table from page 4](figures/table_p4_d2763d7c.png)
 
 quadrivalent inﬂuenza vaccine (SD-IIV4), high dose quadrivalent inﬂuenza vaccine (HD-IIV4), adjuvanted inﬂuenza v
 otherwise excluded.
@@ -406,14 +399,13 @@ In a 2019 editorial Flannery and Fry stated ‘‘Evidence to inform
 
 **[TABLE]**
 
-![Table from page 5](figures/table_p5_a9211535.png)
+![Table from page 5](figures/table_p5_d7d3d606.png)
 
 ble 4
-djusted vaccine effectiveness (VE) of recombinant quadrivalent inﬂuenza vaccine (RIV4), standard dose quadrivalent inﬂuenza vaccine (SD-IIV4), and RIV4 + high dose
+justed vaccine effectiveness (VE) of recombinant quadrivalent inﬂuenza vaccine (RIV4), standard dose quadrivalent inﬂuenza vaccine (SD-IIV4), and RIV4 + high dose
 adrivalent inﬂuenza vaccine (HD-IIV4) + adjuvanted inﬂuenza vaccine (Adj-IV), compared with no vaccination, by age group.
 18–64 years
 65 years
-dj
 
 
 ### c RIV4
@@ -428,34 +420,34 @@ Adj IV Fl Ad
 
 **[TABLE]**
 
-![Table from page 5](figures/table_p5_e15e2392.png)
+![Table from page 5](figures/table_p5_8bce5130.png)
 
 able 3
-haracteristics of participants by age group and vaccine received including recombinant
-V4), high dose quadrivalent inﬂuenza vaccine (HD-IIV4) and adjuvanted inﬂuenza vac
+haracteristics of participants by age group and vaccine received including recombinant q
+V4), high dose quadrivalent inﬂuenza vaccine (HD-IIV4) and adjuvanted inﬂuenza vacc
 
 
-### Groups)
+### p
+Groups)
 
-u t
-a ab e og st c eg ess o
-ode adjusted o age, ace, se , seaso , a d
 g
-s
-co d t o s, e cept t at t e st at
-ed
-a ab e s
-ot
-c uded as a
-adjust
-e t
+g
+j
+g ,
+,
+,
+,
+g
+,
+p
+j
 ts own analysis.
 d Propensity score: Generalized Boosted Regression Method was used to calculate the propensity score using TWANG (Toolkit for Weighting and Analysis of Nonequivalen
 
 
 **[TABLE]**
 
-![Table from page 5](figures/table_p5_164b7ad8.png)
+![Table from page 5](figures/table_p5_ccff1749.png)
 
 Table 2
 Vaccine effectiveness (VE) of recombinant quadrivalent inﬂuenza vaccine (RIV4) a
@@ -469,7 +461,7 @@ compared to no
 vaccination
 R.K. Zimmerman, M. Patricia Nowalk, K. Dauer et al.
 
-lative vaccine effectiveness of RIV4
+ative vaccine effectiveness of RIV4
 mpared to SD-IIV4, % (95 % CI)
 justed using a priori
 riablesc
@@ -488,12 +480,9 @@ Vaccine 41 (2023) 5134–5140
 
 **[TABLE]**
 
-![Table from page 6](figures/table_p6_f26a09c2.png)
+![Table from page 6](figures/table_p6_51771b8f.png)
 
-j
-(
-) g y
-y
+because it is not subject to mutations to the A(H3N2) glycosylation
 binding site that reduce the effectiveness of egg-based vaccines.
 5. Conclusions
 
@@ -565,6 +554,7 @@ ability. Moreover, the health system includes urban tertiary and
 quaternary care hospitals as well as suburban and rural commu-
 nity hospitals. It has a 60 % market share of all hospital beds in
 the county and accepts patients with all insurance products. Sec-
+ond as an integrated healthcare system its EMR is robust with
 
 
 ### ate potential im
@@ -607,8 +597,8 @@ References
 ### manu
 procu
 
-d edited the manuscript. GKB oversaw the data preparat
-alyses and edited the manuscript MPN drafted and edi
+nd edited the manuscript. GKB oversaw the data preparat
+nalyses and edited the manuscript MPN drafted and edi
 
 
 ### RKZ
@@ -622,12 +612,12 @@ Author contributions
 
 
 ### This work
-initiated gr
+initiated gra
 
-eceived investigator-initiated grant funding from Sanoﬁfor this
-roject. Drs. Nowalk and Balasubramani, have grant funding from
+eceived investigator initiated grant funding from Sanoﬁfor this
+project. Drs. Nowalk and Balasubramani, have grant funding from
 Merck & Co., Inc. for an unrelated project. Ms. Dauer and Mr. Clarke
-ave no conﬂicts to report.
+have no conﬂicts to report.
 Acknowledgements
 
 
