@@ -1,0 +1,64 @@
+[
+  {
+    "claim": "Flublok is approved for use in persons 18 years of age and older.",
+    "verdict": "supports",
+    "confidence": 1.0,
+    "success": true,
+    "reasoning_steps": [
+      {
+        "id": 1,
+        "reasoning": "This quote directly states the approved age range for Flublok, confirming it is approved for use in persons 18 years of age and older.",
+        "quote": "Flublok is approved for use in persons 18 years of age and older. (1)",
+        "start": 1120,
+        "end": 1189
+      }
+    ]
+  },
+  {
+    "claim": "Flublok is approved for use in children under 12 years old.",
+    "verdict": "insufficient",
+    "confidence": 0.0,
+    "success": false,
+    "reasoning_steps": [],
+    "error": "Quote not found: Data froma randomized, controlled trial demonstrated that children 6 months to less than years of age had diminished hemagglutinin inhibition (HI) responses to Flublok compared to a U.S.-licensed in\ufb02uenza vaccine approved for use in this population, strongly suggesting that Flublok would not be effective in children younger than 3 years of age (6). Safety and effectiveness of Flublok have not been established in children 3 years to less than 18 years of age."
+  },
+  {
+    "claim": "The most common side effect of Flublok is injection site pain.",
+    "verdict": "insufficient",
+    "confidence": 0.0,
+    "success": false,
+    "reasoning_steps": [],
+    "error": "Quote not found: In adults 18 through 49 years of age, the most common (\u226510%) injection-site adverse reaction was pain (37%); the most common (\u226510%) solicited systemic adverse reactions were headache (15%), fatigue (15%) and muscle pain (11%). (6.1)"
+  },
+  {
+    "claim": "Flublok contains egg proteins.",
+    "verdict": "does_not_support",
+    "confidence": 1.0,
+    "success": true,
+    "reasoning_steps": [
+      {
+        "id": 1,
+        "reasoning": "This quote directly addresses the presence of egg proteins in Flublok, stating that it contains none. This is directly relevant to the claim.",
+        "quote": "Flublok contains no egg proteins, antibiotics, or preservatives.",
+        "start": 16950,
+        "end": 17014
+      }
+    ]
+  },
+  {
+    "claim": "Guillain-Barr\u00e9 syndrome history requires careful consideration before giving Flublok.",
+    "verdict": "insufficient",
+    "confidence": 0.0,
+    "success": false,
+    "reasoning_steps": [],
+    "error": "Quote not found: If Guillain-Barr\u00e9 syndrome has occurred within 6 weeks of receipt of a prior in\ufb02uenza vaccine, the decision to give Flublok should be based on careful consideration of potential bene\ufb01ts and risks. (5.2)"
+  },
+  {
+    "claim": "Flublok is a recombinant influenza vaccine.",
+    "verdict": "insufficient",
+    "confidence": 0.0,
+    "success": false,
+    "reasoning_steps": [],
+    "error": "Quote not found: Flublok [In\ufb02uenza Vaccine] is a sterile, clear, colorless injection containing recombinant hemagglutinin(HA) proteins from three in\ufb02uenza viruses for intramuscular use."
+  }
+]

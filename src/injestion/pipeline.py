@@ -24,43 +24,42 @@ from .processing.reading_order import determine_reading_order_simple
 from .visualization.layout_visualizer import visualize_page_layout
 
 # ---------------------------------------------------------------------------
+# Pipeline configuration - optimized for clinical documents
+# ---------------------------------------------------------------------------
+DETECTION_DPI = 400  # High quality for clinical documents
+MERGE_OVERLAPPING = True  # Always merge for cleaner output
+MERGE_THRESHOLD = 0.3  # IoU threshold for merging same-type boxes
+CONFIDENCE_WEIGHT = 0.7  # Weight for confidence in conflict resolution
+AREA_WEIGHT = 0.3  # Weight for box area in conflict resolution
+CREATE_VISUALIZATIONS = True  # Always create visualizations
+
+# ---------------------------------------------------------------------------
 # Helper functions
 # ---------------------------------------------------------------------------
 
-def _save_page_images(pdf_path: str | os.PathLike[str], detection_dpi: int) -> List:
+def _save_page_images(pdf_path: str | os.PathLike[str]) -> List:
     """Rasterize PDF pages to PNG images and save them.
     
     Args:
         pdf_path: Path to PDF file
-        detection_dpi: DPI for image conversion
         
     Returns:
         List of PIL images
     """
     page_dir = pages_dir(pdf_path)
-    images = list(convert_from_path(str(pdf_path), fmt="png", dpi=detection_dpi))
+    images = list(convert_from_path(str(pdf_path), fmt="png", dpi=DETECTION_DPI))
     for idx, img in enumerate(images):
         img.save(page_dir / f"page-{idx:03}.png")
     return images
 
 
 def _process_page_layouts(
-    raw_layouts: List[Sequence[lp.Layout]], 
-    merge_overlapping: bool,
-    merge_threshold: float,
-    confidence_weight: float,
-    area_weight: float,
-    detection_dpi: int
+    raw_layouts: List[Sequence[lp.Layout]]
 ) -> Tuple[List[List[Box]], List[Block]]:
     """Process raw layouts into boxes and blocks.
     
     Args:
         raw_layouts: Raw layout detections from LayoutParser
-        merge_overlapping: Whether to merge overlapping boxes
-        merge_threshold: IoU threshold for merging same-type boxes
-        confidence_weight: Weight for confidence in conflict resolution
-        area_weight: Weight for area in conflict resolution
-        detection_dpi: DPI used for detection
         
     Returns:
         Tuple of (all_page_boxes, blocks)
@@ -86,14 +85,14 @@ def _process_page_layouts(
         ]
         
         # Apply merging if requested
-        if merge_overlapping and page_boxes:
+        if MERGE_OVERLAPPING and page_boxes:
             # Always use no-overlap pipeline to guarantee clean output
             page_boxes = no_overlap_pipeline(
                 boxes=page_boxes,
                 merge_same_type_first=True,
-                merge_threshold=merge_threshold,
-                confidence_weight=confidence_weight,
-                area_weight=area_weight
+                merge_threshold=MERGE_THRESHOLD,
+                confidence_weight=CONFIDENCE_WEIGHT,
+                area_weight=AREA_WEIGHT
             )
         
         # Store processed boxes for this page
@@ -108,7 +107,7 @@ def _process_page_layouts(
                 bbox=box.bbox,
                 metadata={
                     "score": box.score,
-                    "detection_dpi": detection_dpi
+                    "detection_dpi": DETECTION_DPI
                 }
             )
             blocks.append(block)
@@ -243,52 +242,31 @@ def _save_pipeline_outputs(
 # ---------------------------------------------------------------------------
 
 
-def ingest_pdf(
-    pdf_path: str | os.PathLike[str], 
-    detection_dpi: int = 400,
-    merge_overlapping: bool = True,
-    merge_threshold: float = 0.3,
-    confidence_weight: float = 0.7,
-    area_weight: float = 0.3,
-    create_visualizations: bool = True
-) -> Document:
-    """Run full ingestion on *pdf_path* and return document with detected layout.
+def ingest_pdf(pdf_path: str | os.PathLike[str]) -> Document:
+    """Process a PDF file with optimized settings for clinical documents.
     
     Args:
         pdf_path: Path to PDF file
-        detection_dpi: DPI for detection and processing (default: 400)
-        merge_overlapping: Whether to merge overlapping boxes (default: True)
-        merge_threshold: IoU threshold for merging same-type boxes (default: 0.3)
-        confidence_weight: Weight for confidence in conflict resolution (default: 0.7)
-        area_weight: Weight for box area in conflict resolution (default: 0.3)
-        create_visualizations: Whether to create visualization images (default: True)
         
     Returns:
-        Document object with detected and optionally merged layout elements
+        Document object with detected layout elements, extracted text, and visualizations
     """
 
     # Initialize detector
-    detector = LayoutDetectionPipeline(detection_dpi=detection_dpi)
+    detector = LayoutDetectionPipeline(detection_dpi=DETECTION_DPI)
 
     # Save page images for downstream processing
-    images = _save_page_images(pdf_path, detection_dpi)
+    images = _save_page_images(pdf_path)
 
     # Run detection on the PDF
     raw_layouts: List[Sequence[lp.Layout]] = detector.process_pdf(pdf_path)
 
     # Create visualizations of raw layouts if requested
-    if create_visualizations:
+    if CREATE_VISUALIZATIONS:
         _create_raw_layout_visualizations(pdf_path, raw_layouts, images)
 
     # Process all pages to get boxes and blocks
-    all_page_boxes, blocks = _process_page_layouts(
-        raw_layouts,
-        merge_overlapping,
-        merge_threshold,
-        confidence_weight,
-        area_weight,
-        detection_dpi
-    )
+    all_page_boxes, blocks = _process_page_layouts(raw_layouts)
     
     # Second pass: Determine reading order for each page
     reading_order_by_page: List[List[str]] = []
@@ -310,20 +288,20 @@ def ingest_pdf(
         source_pdf=str(pdf_path), 
         blocks=blocks, 
         metadata={
-            "detection_dpi": detection_dpi,
+            "detection_dpi": DETECTION_DPI,
             "total_pages": len(raw_layouts),
             "merge_settings": {
-                "merge_overlapping": merge_overlapping,
-                "merge_threshold": merge_threshold,
-                "confidence_weight": confidence_weight,
-                "area_weight": area_weight
+                "merge_overlapping": MERGE_OVERLAPPING,
+                "merge_threshold": MERGE_THRESHOLD,
+                "confidence_weight": CONFIDENCE_WEIGHT,
+                "area_weight": AREA_WEIGHT
             }
         },
         reading_order=reading_order_by_page
     )
     
     # Extract text and figure content
-    document = extract_document_content(document, pdf_path, detection_dpi)
+    document = extract_document_content(document, pdf_path, DETECTION_DPI)
     
     # Save the final extracted document with content
     extracted_dir = stage_dir("extracted", pdf_path)
@@ -350,7 +328,7 @@ def ingest_pdf(
     generate_html_document(document, html_path, include_images=True)
     
     # Create visualizations if requested
-    if create_visualizations:
+    if CREATE_VISUALIZATIONS:
         from .visualization.layout_visualizer import visualize_document
         
         viz_paths = visualize_document(
