@@ -17,8 +17,10 @@ import layoutparser as lp
 
 from .layout_pipeline import LayoutDetectionPipeline
 from .agent.refine_layout import Box
-from .agent.merge_boxes_weighted import smart_merge_and_resolve
+from .agent.no_overlap_resolver import no_overlap_pipeline
 from .document import Block, Document
+from .text_extractor import extract_document_content
+from .reading_order_simple import determine_reading_order_simple
 
 # ---------------------------------------------------------------------------
 # Column detection and reading order
@@ -146,7 +148,7 @@ def determine_reading_order(boxes: List[Box], page_width: float = 1600) -> List[
 
 def ingest_pdf(
     pdf_path: str | os.PathLike[str], 
-    detection_dpi: int = 200,
+    detection_dpi: int = 300,
     merge_overlapping: bool = True,
     merge_threshold: float = 0.1,
     confidence_weight: float = 0.7,
@@ -157,7 +159,7 @@ def ingest_pdf(
     
     Args:
         pdf_path: Path to PDF file
-        detection_dpi: DPI for detection and processing (default: 200)
+        detection_dpi: DPI for detection and processing (default: 300)
         merge_overlapping: Whether to merge overlapping boxes (default: True)
         merge_threshold: IoU threshold for merging same-type boxes (default: 0.1)
         confidence_weight: Weight for confidence in conflict resolution (default: 0.7)
@@ -181,9 +183,9 @@ def ingest_pdf(
     # Run detection on the same images (avoids double rasterisation)
     raw_layouts: List[Sequence[lp.Layout]] = detector.process_pdf(pdf_path)
 
-    # Process layout detection results
+    # First pass: Process all pages to get boxes
+    all_page_boxes = []
     blocks: List[Block] = []
-    reading_order_by_page: List[List[str]] = []
     
     for page_idx, page_layout in enumerate(raw_layouts):
         # Convert layout elements to Box objects for merging
@@ -204,13 +206,17 @@ def ingest_pdf(
         
         # Apply merging if requested
         if merge_overlapping and page_boxes:
-            page_boxes = smart_merge_and_resolve(
+            # Always use no-overlap pipeline to guarantee clean output
+            page_boxes = no_overlap_pipeline(
                 boxes=page_boxes,
-                merge_same_type=True,
+                merge_same_type_first=True,
                 merge_threshold=merge_threshold,
                 confidence_weight=confidence_weight,
                 area_weight=area_weight
             )
+        
+        # Store processed boxes for this page
+        all_page_boxes.append(page_boxes)
         
         # Convert Box objects to Block objects
         for box in page_boxes:
@@ -225,14 +231,24 @@ def ingest_pdf(
                 }
             )
             blocks.append(block)
-        
-        # Determine reading order for this page after merging
+    
+    # Second pass: Determine reading order for each page
+    reading_order_by_page: List[List[str]] = []
+    from .reading_order_simple import Box as SimpleBox
+    
+    for page_idx, page_boxes in enumerate(all_page_boxes):
         page_width = images[page_idx].width if page_idx < len(images) else 1600
-        page_reading_order = determine_reading_order(page_boxes, page_width)
-        reading_order_by_page.append(page_reading_order)
         
-        # Detect columns for auditing
-        columns = detect_columns(page_boxes, page_width)
+        # Convert to SimpleBox format for reading order
+        simple_page_boxes = [
+            SimpleBox(id=b.id, bbox=b.bbox, label=b.label, score=b.score)
+            for b in page_boxes
+        ]
+        page_reading_order = determine_reading_order_simple(
+            simple_page_boxes, page_width
+        )
+        
+        reading_order_by_page.append(page_reading_order)
 
     # Skip saving raw layout - not needed for downstream
 
@@ -302,5 +318,13 @@ def ingest_pdf(
             show_reading_order=True
         )
         # Visualizations saved directly by visualize_document
+    
+    # Extract text and figure content
+    document = extract_document_content(document, pdf_path, detection_dpi)
+    
+    # Save the final extracted document with content
+    extracted_dir = stage_dir("extracted", pdf_path)
+    final_path = extracted_dir / "content.json"
+    document.save(final_path)
 
     return document

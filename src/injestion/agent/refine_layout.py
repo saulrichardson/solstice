@@ -25,7 +25,7 @@ from PIL import Image
 
 from pydantic import BaseModel, Field, ValidationError
 
-from .llm_client import call_llm
+# from .llm_client import call_llm  # LLM agent removed from pipeline
 
 logger = logging.getLogger(__name__)
 
