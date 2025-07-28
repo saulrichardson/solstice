@@ -1,0 +1,49 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "verification_stats": {
+    "total_snippets": 3,
+    "verified": 3,
+    "failed": 0,
+    "modified": 0
+  },
+  "verified_snippets": [
+    {
+      "id": 1,
+      "quote": "Vaccine efficacy against antigenically matched culture-confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenically matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any ubject with an ILI, not necessarily meeting CDCILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0).",
+      "relevance_explanation": "This quote provides direct evidence that Flublok (a recombinant influenza vaccine) demonstrated efficacy (44.8%) against all influenza strains, regardless of whether they matched the vaccine strains. This supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+      "context": "Vaccine efficacy against antigenically matched culture-confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenically matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any ubject with an ILI, not necessarily meeting CDCILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0). See Table 4 for a presentation of VE by case definition and antigenic similarity.",
+      "location": {
+        "start": 22208,
+        "end": 22695,
+        "page_index": 3,
+        "page_number": 4
+      }
+    },
+    {
+      "id": 2,
+      "quote": "Antibodies against one influenza virus type or subtype confer limited or no protection against another. Furthermore, antibodies to one antigenic variant of influenza virus might not protect against a new antigenic variant of the same type or subtype. Frequent development of antigenicvariantsthroughantigenicdrift isthevirologicbasisfor seasonal epidemicsandthereasonfor theusual replacement of oneor moreinfluenzavirusstrains in each year\u2019s influenza vaccine.",
+      "relevance_explanation": "This quote provides context for why cross-protection is important: due to antigenic drift, vaccine strains often do not match circulating strains. The subsequent evidence of Flublok's efficacy in mismatch seasons (as above) is thus highly relevant to the claim.",
+      "context": "Antibodies against one influenza virus type or subtype confer limited or no protection against another. Furthermore, antibodies to one antigenic variant of influenza virus might not protect against a new antigenic variant of the same type or subtype. Frequent development of antigenicvariantsthroughantigenicdrift isthevirologicbasisfor seasonal epidemicsandthereasonfor theusual replacement of oneor moreinfluenzavirusstrains in each year\u2019s influenza vaccine.",
+      "location": {
+        "start": 15619,
+        "end": 16079,
+        "page_index": 2,
+        "page_number": 3
+      }
+    },
+    {
+      "id": 3,
+      "quote": "Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements.",
+      "relevance_explanation": "This quote describes the mechanism of action of Flublok, emphasizing that it uses recombinant HA proteins to induce a humoral immune response. This is relevant to the claim because the use of recombinant technology is what enables the broader immune response and potential cross-protection.",
+      "context": "Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements.",
+      "location": {
+        "start": 16174,
+        "end": 16470,
+        "page_index": 2,
+        "page_number": 3
+      }
+    }
+  ],
+  "failed_snippets": []
+}

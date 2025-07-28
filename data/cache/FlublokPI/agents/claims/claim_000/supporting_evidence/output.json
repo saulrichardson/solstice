@@ -9,9 +9,46 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 0,
+    "total_snippets_found": 3,
     "error": null
   },
-  "supporting_snippets": [],
+  "supporting_snippets": [
+    {
+      "id": 1,
+      "quote": "Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine.",
+      "relevance_explanation": "This quote directly supports the claim by stating that Flublok contains hemagglutinin (HA) proteins from the exact three strains of influenza virus that are specified by health authorities (such as WHO and FDA) for the annual vaccine. This ensures that the antigenic match is identical to the strains selected by these organizations.",
+      "context": "12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements. For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021.",
+      "location": {
+        "start": 16174,
+        "end": 16331,
+        "page_index": 2,
+        "page_number": 3
+      }
+    },
+    {
+      "id": 2,
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) [ ] j g hemagglutinin(HA) proteinsfromthreeinfluenzavirusesfor intramuscular use. It contains purifiedHAproteins producedinacontinuous insect cell line(expresSF+\u00ae) that is derived rom Sf9 cells of the fall armyworm, Spodoptera frugiperda (which is related to moths, caterpillars and butterflies), and grown in serum-free medium composed of chemicallydefined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is manufactured using the same process and have overlapping compositions.",
+      "relevance_explanation": "This quote further supports the claim by stating that Flublok is standardized according to USPHS requirements, which are aligned with WHO and FDA recommendations for influenza vaccine composition. The mention of 'hemagglutinin(HA) proteinsfromthreeinfluenzaviruses' confirms that the vaccine's antigens are matched to the selected strains.",
+      "context": "xpressed in this cell line using a baculovirus vector (Autographa californica nuclear olyhedrosis virus), extracted from the cells with Triton X-100 and further purified by olumn chromatography. The purified HAs are then blended and filled into single-dose yringes. Flublok is standardized according to United States Public Health Service (USPHS) [ ] j g hemagglutinin(HA) proteinsfromthreeinfluenzavirusesfor intramuscular use. It contains purifiedHAproteins producedinacontinuous insect cell line(expresSF+\u00ae) that is derived rom Sf9 cells of the fall armyworm, Spodoptera frugiperda (which is related to moths, caterpillars and butterflies), and grown in serum-free medium composed of chemicallydefined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is manufactured using the same process and have overlapping compositions.",
+      "location": {
+        "start": 17475,
+        "end": 18059,
+        "page_index": 2,
+        "page_number": 3
+      }
+    },
+    {
+      "id": 3,
+      "quote": "For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021.",
+      "relevance_explanation": "This quote provides the specific strains included in the 2024-2025 formulation of Flublok, which are the same as those selected by WHO and FDA for that influenza season. This demonstrates that Flublok ensures an identical antigenic match to the recommended strains.",
+      "context": "These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements. For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021.",
+      "location": {
+        "start": 16471,
+        "end": 16737,
+        "page_index": 2,
+        "page_number": 3
+      }
+    }
+  ],
   "model_used": "gpt-4.1"
 }

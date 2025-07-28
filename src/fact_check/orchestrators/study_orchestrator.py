@@ -136,8 +136,8 @@ class StudyOrchestrator:
         for doc_name, doc_result in claim_results["documents"].items():
             if doc_result.get("success"):
                 successful_docs += 1
-                judgment = doc_result.get("final_judgment", {})
-                if judgment.get("verdict") in ["strongly_supported", "supported"]:
+                judgment = doc_result.get("final_judgment")
+                if judgment and judgment.get("verdict") in ["strongly_supported", "supported"]:
                     strong_support += 1
         
         print(f"\n  Processed: {successful_docs}/{len(self.documents)} documents")
@@ -159,8 +159,9 @@ class StudyOrchestrator:
             for doc_name, doc_result in claim_data["documents"].items():
                 if doc_result.get("success"):
                     successful_pairs += 1
-                    verdict = doc_result.get("final_judgment", {}).get("verdict")
-                    if verdict in judgment_counts:
+                    judgment = doc_result.get("final_judgment")
+                    verdict = judgment.get("verdict") if judgment else None
+                    if verdict and verdict in judgment_counts:
                         judgment_counts[verdict] += 1
         
         self.results["summary"] = {

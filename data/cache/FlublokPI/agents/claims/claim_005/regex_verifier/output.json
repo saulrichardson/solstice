@@ -1,0 +1,49 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "verification_stats": {
+    "total_snippets": 3,
+    "verified": 3,
+    "failed": 0,
+    "modified": 0
+  },
+  "verified_snippets": [
+    {
+      "id": 1,
+      "quote": "Study 6 (NCT02285998) enrolled subjects 50 years of age and older, randomized to receive Flublok Quadrivalent or Comparator (Fluarix Quadrivalent, manufactured by GlaxoSmithKline) as an active control [see Clinical Studies (14.1)]. The safety analysis population included 4328 Flublok Quadrivalent recipients and 4344 Comparator vaccine recipients.",
+      "relevance_explanation": "This quote directly states that Flublok Quadrivalent was evaluated in a trial (Study 6) against Fluarix Quadrivalent, which is a standard-dose quadrivalent influenza vaccine. This supports the claim that Flublok (quadrivalent) was evaluated in a pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "context": "Flublok Quadrivalent FlublokQuadrivalent hasbeenadministeredtoandsafetydatacollectedfrom4328adults 50 years of age and older (Study 61) and 998 adults 18-49 years of age (Study 72). SAEs were collected for 6 months post-vaccination via clinic visit or remote contact. Study 6 (NCT02285998) enrolled subjects 50 years of age and older, randomized to receive Flublok Quadrivalent or Comparator (Fluarix Quadrivalent, manufactured by GlaxoSmithKline) as an active control [see Clinical Studies (14.1)]. The safety analysis population included 4328 Flublok Quadrivalent recipients and 4344 Comparator vaccine recipients.",
+      "location": {
+        "start": 9489,
+        "end": 9837,
+        "page_index": 2,
+        "page_number": 3
+      }
+    },
+    {
+      "id": 2,
+      "quote": "Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quadrivalent or a Comparator inactivated influenza vaccine (Fluarix\u00ae Quadrivalent, manufacturedby GlaxoSmithKline). Thesafety analysis populationincluded 998recipients of Flublok Quadrivalent and332Comparator vaccinerecipients.",
+      "relevance_explanation": "This quote shows that in another age group (18-49 years), Flublok Quadrivalent was also evaluated against Fluarix Quadrivalent, further supporting the claim that these two vaccines were compared in pivotal trials.",
+      "context": "Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quadrivalent or a Comparator inactivated influenza vaccine (Fluarix\u00ae Quadrivalent, manufacturedby GlaxoSmithKline). Thesafety analysis populationincluded 998recipients of Flublok Quadrivalent and332Comparator vaccinerecipients. Themean age of participants was 33.5 years. Overall, 65% of subjects were female, 59% white/Caucasian, 37% black/African American, 1.0% Native Hawaiian/Pacific Islander, 0.8%American Indian/Alaskan Native, 0.5%Asian, 1.4%other racial groups, and 16%of Hispanic/Latino ethnicity. Amongadults18-49yearsof age(Study7), through6monthspost-vaccination, therewere no SAEs considered related to study vaccine.",
+      "location": {
+        "start": 10215,
+        "end": 10539,
+        "page_index": 2,
+        "page_number": 3
+      }
+    },
+    {
+      "id": 3,
+      "quote": "Abbreviations: rtPCR=reversetranscriptasepolymerasechainreaction; Comparator=U.S.- icensedquadrivalent inactivatedinfluenzavaccine, FluarixQuadrivalent, manufacturedby GlaxoSmithKline; n=number of influenzacases; N=number of subjectsintreatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) \u00d7 100]. *Study 6 is registered as NCT02285998.",
+      "relevance_explanation": "This quote clarifies that the comparator in Study 6 was Fluarix Quadrivalent, a U.S.-licensed quadrivalent inactivated influenza vaccine, confirming the head-to-head comparison between Flublok Quadrivalent and Fluarix Quadrivalent.",
+      "context": "All Culture-confirmed Protocoldefined ILI\u00a7,\u00b6 58 1.3 101 2.3 0.57 43 (21, 59) Abbreviations: rtPCR=reversetranscriptasepolymerasechainreaction; Comparator=U.S.- icensedquadrivalent inactivatedinfluenzavaccine, FluarixQuadrivalent, manufacturedby GlaxoSmithKline; n=number of influenzacases; N=number of subjectsintreatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) \u00d7 100]. *Study 6 is registered as NCT02285998.",
+      "location": {
+        "start": 25341,
+        "end": 25710,
+        "page_index": 3,
+        "page_number": 4
+      }
+    }
+  ],
+  "failed_snippets": []
+}

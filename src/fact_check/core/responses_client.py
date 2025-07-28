@@ -8,9 +8,12 @@ OpenAI, but *clients are no longer required* to supply such a key.  An
 """
 import json
 import os
+import logging
 from collections.abc import Iterator
 
 import httpx
+
+logger = logging.getLogger(__name__)
 
 
 class ResponsesClient:
@@ -107,6 +110,16 @@ class ResponsesClient:
 
         # Add any extra kwargs
         request_data.update(kwargs)
+        
+        # Debug logging for LLM calls
+        if logger.isEnabledFor(logging.DEBUG):
+            logger.debug(f"\n{'='*60}")
+            logger.debug(f"🤖 LLM CALL - Model: {model}")
+            logger.debug(f"🌡️  Temperature: {temperature if temperature is not None else 'default'}")
+            logger.debug(f"📊 Max tokens: {max_output_tokens if max_output_tokens is not None else 'default'}")
+            prompt = input if isinstance(input, str) else str(input)[:500]
+            logger.debug(f"📝 Prompt preview: {prompt[:200]}..." if len(prompt) > 200 else f"📝 Prompt: {prompt}")
+            logger.debug(f"{'='*60}\n")
 
         with httpx.Client() as client:
             response = client.post(
@@ -117,7 +130,38 @@ class ResponsesClient:
             )
             try:
                 response.raise_for_status()
-                return response.json()
+                result = response.json()
+                
+                # Debug log the response
+                if logger.isEnabledFor(logging.DEBUG):
+                    try:
+                        text = self.extract_text(result)
+                        logger.debug(f"\n{'='*60}")
+                        logger.debug(f"✅ LLM RESPONSE")
+                        logger.debug(f"📄 Response preview: {text[:300]}..." if len(text) > 300 else f"📄 Response: {text}")
+                        
+                        # Log usage information if available
+                        if "usage" in result:
+                            usage = result["usage"]
+                            logger.debug(f"📊 Token Usage:")
+                            logger.debug(f"   - Total tokens: {usage.get('total_tokens', 'N/A')}")
+                            logger.debug(f"   - Prompt tokens: {usage.get('prompt_tokens', 'N/A')}")
+                            logger.debug(f"   - Completion tokens: {usage.get('completion_tokens', 'N/A')}")
+                            
+                            # Check for cached tokens in prompt_tokens_details
+                            if "prompt_tokens_details" in usage and usage["prompt_tokens_details"]:
+                                details = usage["prompt_tokens_details"]
+                                cached_tokens = details.get("cached_tokens", 0)
+                                logger.debug(f"   - Cached tokens: {cached_tokens}")
+                                if cached_tokens > 0:
+                                    logger.debug(f"   ⚡ CACHE HIT: {cached_tokens} tokens were cached!")
+                        
+                        logger.debug(f"{'='*60}\n")
+                    except Exception as e:
+                        logger.debug(f"✅ LLM Response received (could not extract text: {e})")
+                
+                return result
+                
             except httpx.HTTPStatusError as e:
                 if e.response.status_code == 500:
                     error_detail = e.response.json().get("detail", "")
@@ -127,6 +171,34 @@ class ResponsesClient:
                             "Please upgrade the SDK on the gateway server."
                         ) from e
                 raise
+    
+    @staticmethod
+    def extract_text(response: dict) -> str:
+        """
+        Extract text content from Responses API response.
+        
+        Args:
+            response: Response dict from create_response()
+            
+        Returns:
+            str: Extracted text content
+            
+        Raises:
+            ValueError: If response doesn't match expected format
+        """
+        # Standard Responses API format: response.output[0].content[0].text
+        if not isinstance(response.get("output"), list) or not response["output"]:
+            raise ValueError(f"Invalid response format: 'output' must be a non-empty list")
+            
+        output = response["output"][0]
+        if not isinstance(output.get("content"), list) or not output["content"]:
+            raise ValueError(f"Invalid response format: 'output[0].content' must be a non-empty list")
+            
+        content = output["content"][0]
+        if "text" not in content:
+            raise ValueError(f"Invalid response format: 'output[0].content[0].text' not found")
+            
+        return content["text"]
 
     def stream_response(
         self,

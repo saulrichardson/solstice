@@ -1,0 +1,37 @@
+{
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "verification_stats": {
+    "total_snippets": 2,
+    "verified": 2,
+    "failed": 0,
+    "modified": 0
+  },
+  "verified_snippets": [
+    {
+      "id": 1,
+      "quote": "Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements. For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021. A single 0.5 mL dose of Flublok contains sodium chloride (4.4 mg), monobasic sodium phosphate (0.2 mg), dibasic sodiumphosphate (0.5 mg), and polysorbate 20 (Tween\u00ae20) (27.5mcg). Each0.5mLdoseof Flublokmayalsocontainresidual amountsof baculovirus andSpodopterafrugiperdacell proteins (\u226414.3mcg), baculovirus andcellular DNA(\u226410 ng), and Triton X-100 (\u2264100 mcg). Flublok contains no egg proteins, antibiotics, or preservatives. The single-dose, prefilled i t i t l bb l t xpressed in this cell line using a baculovirus vector (Autographa californica nuclear olyhedrosis virus), extracted from the cells with Triton X-100 and further purified by olumn chromatography. The purified HAs are then blended and filled into single-dose yringes.",
+      "relevance_explanation": "This quote describes the manufacturing process of Flublok, a cell-based (insect cell) recombinant influenza vaccine. It notes that the hemagglutinin proteins are produced in a continuous insect cell line using a baculovirus vector. The use of cell lines and baculovirus vectors is relevant to the claim because mutations can potentially arise during the propagation of viruses or recombinant proteins in cell culture, which could affect the antigenic properties and thus the effectiveness of the vaccine.",
+      "context": "Section 1 DESCRIPTION and Section 12 CLINICAL PHARMACOLOGY",
+      "location": {
+        "start": 16174,
+        "end": 17474,
+        "page_index": 2,
+        "page_number": 3
+      }
+    },
+    {
+      "id": 2,
+      "quote": "Antibodies against one influenza virus type or subtype confer limited or no protection against another. Furthermore, antibodies to one antigenic variant of influenza virus might not protect against a new antigenic variant of the same type or subtype. Frequent development of antigenicvariantsthroughantigenicdrift isthevirologicbasisfor seasonal epidemicsandthereasonfor theusual replacement of oneor moreinfluenzavirusstrains in each year\u2019s influenza vaccine.",
+      "relevance_explanation": "This quote explains that antigenic drift (mutations in the virus) can result in new variants that are not well-matched by existing antibodies. While this primarily refers to natural viral evolution, it is relevant to the claim because it highlights the importance of antigenic match for vaccine effectiveness. If mutations occur during vaccine production (as can happen in cell- or egg-based systems), the resulting vaccine antigens may not match circulating strains, reducing effectiveness.",
+      "context": "Section 14 CLINICAL STUDIES",
+      "location": {
+        "start": 15619,
+        "end": 16079,
+        "page_index": 2,
+        "page_number": 3
+      }
+    }
+  ],
+  "failed_snippets": []
+}

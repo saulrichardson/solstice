@@ -75,10 +75,15 @@ class SupportingEvidenceExtractor(BaseAgent):
         
         # Create fact check interface
         interface = FactCheckInterface(document)
-        document_text = interface.get_full_text(include_figure_descriptions=True)
+        
+        # Get normalized text (our single operating model)
+        normalized_text = interface.get_full_text(include_figure_descriptions=True, normalize=True)
         
         # Extract supporting evidence
-        result = await self.evidence_extractor.extract_supporting_evidence(claim, document_text)
+        result = await self.evidence_extractor.extract_supporting_evidence(
+            claim=claim,
+            document_text=normalized_text
+        )
         
         # Structure output
         output = {
@@ -122,21 +127,40 @@ class SupportingEvidenceExtractor(BaseAgent):
         return output
     
     def _find_snippet_page(self, snippet, interface: FactCheckInterface) -> Dict[str, Any]:
-        """Find which page a snippet appears on."""
+        """Find which page a snippet appears on using normalized positions."""
         if snippet.start is None:
             return {"page_index": None, "page_number": None}
             
-        # Get text with locations to find the page
-        text_with_locs = interface.get_text_with_locations()
+        # Get normalized text to reconstruct the same document the LLM saw
+        full_text = interface.get_full_text(include_figure_descriptions=True, normalize=True)
+        
+        # Get normalized text blocks with locations
+        text_with_locs = interface.get_text_with_locations(normalize=True)
+        
+        # Build position map matching get_full_text construction
         current_pos = 0
+        last_page = -1
         
         for text, metadata in text_with_locs:
+            page_idx = metadata["page_index"]
+            
+            # Add page separator if we moved to a new page
+            if page_idx > last_page and last_page >= 0:
+                separator = f"\n\n[Page {page_idx + 1}]\n"
+                current_pos += len(separator)
+                last_page = page_idx
+            elif last_page == -1:
+                last_page = page_idx
+            
+            # Check if snippet starts within this block
             text_len = len(text)
             if current_pos <= snippet.start < current_pos + text_len:
                 return {
                     "page_index": metadata["page_index"],
                     "page_number": metadata["page_index"] + 1
                 }
-            current_pos += text_len + 1  # +1 for space between blocks
+            
+            # Move position forward (text + "\n\n" separator)
+            current_pos += text_len + 2
         
         return {"page_index": None, "page_number": None}

@@ -70,14 +70,7 @@ class ClaimOrchestrator:
             logger.info(f"  Processing document: {document}")
             
             try:
-                # Check if already processed
-                cached_result = self._get_cached_result(document)
-                if cached_result:
-                    logger.info(f"    Using cached result")
-                    results["documents"][document] = cached_result
-                    continue
-                
-                # Run agent pipeline
+                # Run agent pipeline (no caching on read)
                 doc_result = await self._process_document(document)
                 results["documents"][document] = doc_result
                 
@@ -167,26 +160,3 @@ class ClaimOrchestrator:
         with open(output_file, 'w') as f:
             json.dump(output, f, indent=2)
     
-    def _get_cached_result(self, document: str) -> Optional[Dict[str, Any]]:
-        """Check if we already have complete results for this document."""
-        # Check if final agent (judge) has output
-        judge_output = (
-            self.cache_dir / document / "agents" / "claims" / 
-            self.claim_id / "evidence_judge" / "output.json"
-        )
-        
-        if judge_output.exists():
-            # Load and return summary
-            import json
-            with open(judge_output, 'r') as f:
-                judge_data = json.load(f)
-            
-            return {
-                "document": document,
-                "success": True,
-                "cached": True,
-                "final_judgment": judge_data.get("judgment"),
-                "agents_run": ["supporting_evidence", "regex_verifier", "evidence_critic", "evidence_judge"]
-            }
-        
-        return None

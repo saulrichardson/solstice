@@ -23,14 +23,11 @@ class Settings(BaseSettings):
     # accept it here so that the variable doesn't raise a validation error.
     solstice_gateway_url: str | None = Field(None, alias="SOLSTICE_GATEWAY_URL")
 
-    # Logging & cache toggles
+    # Logging
     log_level: str = Field("INFO", alias="SOLSTICE_LOG_LEVEL")
 
-    solstice_cache_enabled: bool = Field(True, alias="SOLSTICE_CACHE_ENABLED")
-    solstice_cache_ttl: int = Field(3600, alias="SOLSTICE_CACHE_TTL")
-
-    # Cache settings – filesystem based; Redis no longer used
-    filesystem_cache_dir: str = Field(".cache", alias="FILESYSTEM_CACHE_DIR")
+    # Gateway cache directory – write-only snapshots, never read by runtime
+    filesystem_cache_dir: str = Field("data/cache/gateway", alias="FILESYSTEM_CACHE_DIR")
 
     model_config = {
         "env_file": ".env",

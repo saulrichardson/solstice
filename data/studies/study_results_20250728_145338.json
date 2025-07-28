@@ -1,0 +1,249 @@
+{
+  "metadata": {
+    "claims_file": "data/claims/Flublok_Claims.json",
+    "documents": [
+      "FlublokPI"
+    ],
+    "total_claims": 9,
+    "started_at": "2025-07-28T14:52:32.697992",
+    "completed_at": "2025-07-28T14:53:38.676084"
+  },
+  "claims": {
+    "claim_000": {
+      "claim_id": "claim_000",
+      "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+      "started_at": "2025-07-28T14:52:32.698021",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T14:52:32.754113"
+            },
+            {
+              "agent": "regex_verifier",
+              "success": true,
+              "timestamp": "2025-07-28T14:52:32.754395"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T14:52:32.754401"
+    },
+    "claim_001": {
+      "claim_id": "claim_001",
+      "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+      "started_at": "2025-07-28T14:52:32.754425",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T14:52:32.781148"
+            },
+            {
+              "agent": "regex_verifier",
+              "success": true,
+              "timestamp": "2025-07-28T14:52:32.781401"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T14:52:32.781406"
+    },
+    "claim_002": {
+      "claim_id": "claim_002",
+      "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+      "started_at": "2025-07-28T14:52:32.781429",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T14:52:32.801071"
+            },
+            {
+              "agent": "regex_verifier",
+              "success": true,
+              "timestamp": "2025-07-28T14:52:32.801322"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T14:52:32.801331"
+    },
+    "claim_003": {
+      "claim_id": "claim_003",
+      "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+      "started_at": "2025-07-28T14:52:32.801356",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T14:52:32.819560"
+            },
+            {
+              "agent": "regex_verifier",
+              "success": true,
+              "timestamp": "2025-07-28T14:52:32.819790"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T14:52:32.819797"
+    },
+    "claim_004": {
+      "claim_id": "claim_004",
+      "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "started_at": "2025-07-28T14:52:32.819818",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T14:52:55.211046"
+            },
+            {
+              "agent": "regex_verifier",
+              "success": true,
+              "timestamp": "2025-07-28T14:52:55.211308"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T14:52:55.211314"
+    },
+    "claim_005": {
+      "claim_id": "claim_005",
+      "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "started_at": "2025-07-28T14:52:55.211339",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T14:53:03.597934"
+            },
+            {
+              "agent": "regex_verifier",
+              "success": true,
+              "timestamp": "2025-07-28T14:53:03.598192"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T14:53:03.598198"
+    },
+    "claim_006": {
+      "claim_id": "claim_006",
+      "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+      "started_at": "2025-07-28T14:53:03.598222",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T14:53:13.070067"
+            },
+            {
+              "agent": "regex_verifier",
+              "success": true,
+              "timestamp": "2025-07-28T14:53:13.070340"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T14:53:13.070346"
+    },
+    "claim_007": {
+      "claim_id": "claim_007",
+      "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+      "started_at": "2025-07-28T14:53:13.070375",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T14:53:27.823007"
+            },
+            {
+              "agent": "regex_verifier",
+              "success": true,
+              "timestamp": "2025-07-28T14:53:27.823438"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T14:53:27.823446"
+    },
+    "claim_008": {
+      "claim_id": "claim_008",
+      "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+      "started_at": "2025-07-28T14:53:27.823472",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T14:53:38.675791"
+            },
+            {
+              "agent": "regex_verifier",
+              "success": true,
+              "timestamp": "2025-07-28T14:53:38.676068"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T14:53:38.676074"
+    }
+  },
+  "summary": {
+    "total_claim_document_pairs": 9,
+    "successfully_processed": 9,
+    "processing_rate": 1.0,
+    "judgment_distribution": {
+      "strongly_supported": 0,
+      "supported": 0,
+      "weakly_supported": 0,
+      "unsupported": 0
+    }
+  }
+}

@@ -131,6 +131,9 @@ visualizations/
 !data/
 !data/**
 
+# Gateway request/response snapshots — keep them out of git
+data/cache/gateway/
+
 # Model outputs
 *.onnx
 *.pt

@@ -1,0 +1,61 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "verification_stats": {
+    "total_snippets": 4,
+    "verified": 4,
+    "failed": 0,
+    "modified": 0
+  },
+  "verified_snippets": [
+    {
+      "id": 2,
+      "quote": "Each0.5mLdoseof Flublokmayalsocontainresidual amountsof baculovirus andSpodopterafrugiperdacell proteins (\u226414.3mcg), baculovirus andcellular DNA(\u226410 ng), and Triton X-100 (\u2264100 mcg).",
+      "relevance_explanation": "This quote provides supporting evidence that baculovirus and insect cell components are present in the final product, which is consistent with the use of a baculovirus expression vector system (BEVS) in insect cells for production.",
+      "context": "A single 0.5 mL dose of Flublok contains sodium chloride (4.4 mg), monobasic sodium phosphate (0.2 mg), dibasic sodiumphosphate (0.5 mg), and polysorbate 20 (Tween\u00ae20) (27.5mcg). Each0.5mLdoseof Flublokmayalsocontainresidual amountsof baculovirus andSpodopterafrugiperdacell proteins (\u226414.3mcg), baculovirus andcellular DNA(\u226410 ng), and Triton X-100 (\u2264100 mcg). Flublok contains no egg proteins, antibiotics, or preservatives.",
+      "location": {
+        "start": 16917,
+        "end": 17099,
+        "page_index": 2,
+        "page_number": 3
+      }
+    },
+    {
+      "id": 3,
+      "quote": "FlublokQuadrivalent is relevant to Flublok because both nes are manufactured using the same process and have overlapping compositions.",
+      "relevance_explanation": "This quote clarifies that Flublok and Flublok Quadrivalent are produced using the same manufacturing process, which is described elsewhere as involving recombinant HA expression in insect cells using a baculovirus vector. This supports the generalizability of the production platform described for Flublok.",
+      "context": "safety experience with Flublok Quadrivalent is relevant to Flublok because both nes are manufactured using the same process and have overlapping compositions.",
+      "location": {
+        "start": 2604,
+        "end": 2739,
+        "page_index": 0,
+        "page_number": 1
+      }
+    },
+    {
+      "id": 4,
+      "quote": "2. Baxter R, Patriarca PA, Ensor K, et al. Evaluation of the safety, reactogenicity and mmunogenicity of FluBlok trivalent recombinant baculovirus-expressed hemagglutinin nfluenza vaccine administered intramuscularly to healthy adults 50-64 years of age. Vaccine. 2011, Vol. 29, pp. 2272-2278.",
+      "relevance_explanation": "This reference title explicitly states that Flublok is a 'recombinant baculovirus-expressed hemagglutinin influenza vaccine,' directly supporting the claim that the HA is expressed using a baculovirus system.",
+      "context": "15 REFERENCES 2. Baxter R, Patriarca PA, Ensor K, et al. Evaluation of the safety, reactogenicity and mmunogenicity of FluBlok trivalent recombinant baculovirus-expressed hemagglutinin nfluenza vaccine administered intramuscularly to healthy adults 50-64 years of age. Vaccine. 2011, Vol. 29, pp. 2272-2278.",
+      "location": {
+        "start": 24156,
+        "end": 24449,
+        "page_index": 3,
+        "page_number": 4
+      }
+    },
+    {
+      "id": 5,
+      "quote": "5. TreanorJJ, Schiff GM, HaydenFG, et.al. Safetyandimmunogenicityof abaculovirusexpressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007, Vol. 297, pp. 1577-1582.",
+      "relevance_explanation": "This reference title also describes the vaccine as a 'baculovirus-expressed hemagglutinin influenza vaccine,' further supporting the claim that Flublok uses a baculovirus expression system.",
+      "context": "15 REFERENCES 5. TreanorJJ, Schiff GM, HaydenFG, et.al. Safetyandimmunogenicityof abaculovirusexpressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007, Vol. 297, pp. 1577-1582.",
+      "location": {
+        "start": 24904,
+        "end": 25094,
+        "page_index": 3,
+        "page_number": 4
+      }
+    }
+  ],
+  "failed_snippets": []
+}

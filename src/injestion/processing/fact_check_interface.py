@@ -9,6 +9,7 @@ from typing import Dict, List, Optional, Tuple
 import base64
 
 from ..models.document import Document, Block
+from src.core.text_processing import get_default_normalizer
 
 
 class FactCheckInterface:
@@ -18,6 +19,11 @@ class FactCheckInterface:
         """Initialize with an extracted document."""
         self.document = document
         self._blocks_by_page = self._organize_blocks_by_page()
+        self.normalizer = get_default_normalizer()
+        
+        # Cache for normalized text
+        self._normalized_full_text = None
+        self._raw_full_text = None
     
     def _organize_blocks_by_page(self) -> Dict[int, Dict[str, Block]]:
         """Organize blocks by page for efficient access."""
@@ -28,15 +34,22 @@ class FactCheckInterface:
             blocks_by_page[block.page_index][block.id] = block
         return blocks_by_page
     
-    def get_full_text(self, include_figure_descriptions: bool = True) -> str:
+    def get_full_text(self, include_figure_descriptions: bool = True, normalize: bool = False) -> str:
         """Get the full document text in reading order.
         
         Args:
             include_figure_descriptions: Whether to include figure/table placeholder text
+            normalize: Whether to return normalized text (for LLM consumption)
             
         Returns:
             Complete document text as a single string
         """
+        # Check cache based on normalization flag
+        if normalize and self._normalized_full_text is not None:
+            return self._normalized_full_text
+        elif not normalize and self._raw_full_text is not None:
+            return self._raw_full_text
+            
         text_parts = []
         
         # Process each page in order
@@ -68,10 +81,24 @@ class FactCheckInterface:
                     else:
                         text_parts.append(f"[{block.role} on page {page_idx + 1}]")
         
-        return '\n\n'.join(text_parts)
+        raw_text = '\n\n'.join(text_parts)
+        
+        # Cache raw text
+        self._raw_full_text = raw_text
+        
+        if normalize:
+            # Normalize the text
+            normalized_text = self.normalizer.normalize(raw_text)
+            self._normalized_full_text = normalized_text
+            return normalized_text
+        else:
+            return raw_text
     
-    def get_text_with_locations(self) -> List[Tuple[str, Dict]]:
+    def get_text_with_locations(self, normalize: bool = False) -> List[Tuple[str, Dict]]:
         """Get document text with location metadata for each block.
+        
+        Args:
+            normalize: Whether to return normalized text blocks
         
         Returns:
             List of (text, metadata) tuples where metadata includes:
@@ -93,13 +120,17 @@ class FactCheckInterface:
                 block = page_blocks[block_id]
                 
                 if block.text:
+                    block_text = block.text
+                    if normalize:
+                        block_text = self.normalizer.normalize(block_text)
+                    
                     metadata = {
                         'block_id': block.id,
                         'page_index': block.page_index,
                         'role': block.role,
                         'bbox': block.bbox
                     }
-                    text_with_locations.append((block.text, metadata))
+                    text_with_locations.append((block_text, metadata))
         
         return text_with_locations
     

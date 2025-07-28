@@ -1,0 +1,66 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": {
+    "pdf_name": "FlublokPI",
+    "source_pdf": "data/clinical_files/FlublokPI.pdf",
+    "total_pages": 5,
+    "total_blocks": 76
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4,
+    "error": null
+  },
+  "supporting_snippets": [
+    {
+      "id": 1,
+      "quote": "For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021.",
+      "relevance_explanation": "This quote specifies that Flublok contains 135mcg of HA per 0.5mL dose, which is 45mcg HA per strain. Standard-dose flu vaccines typically contain 15mcg HA per strain, so this demonstrates that Flublok contains 3 times the HA antigen content of standard-dose flu vaccines.",
+      "context": "12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements. For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021.",
+      "location": {
+        "start": 16471,
+        "end": 16737,
+        "page_index": 2,
+        "page_number": 3
+      }
+    },
+    {
+      "id": 2,
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) [ ] j g hemagglutinin(HA) proteinsfromthreeinfluenzavirusesfor intramuscular use. It contains purifiedHAproteins producedinacontinuous insect cell line(expresSF+\u00ae) that is derived rom Sf9 cells of the fall armyworm, Spodoptera frugiperda (which is related to moths, caterpillars and butterflies), and grown in serum-free medium composed of chemicallydefined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is manufactured using the same process and have overlapping compositions.",
+      "relevance_explanation": "This quote confirms that Flublok contains hemagglutinin (HA) proteins from three influenza viruses, supporting the claim that the vaccine's antigen content is based on HA.",
+      "context": "1 DESCRIPTION Flublok [Influenza Vaccine] is a sterile, clear, colorless injection containing recombina 8.5 Geriatric Use Data froman efficacy study (Study 6), which included 1759 subjects \u226565 years and 525 subjects \u226575 years who received Flublok Quadrivalent, are insufficient to determine whether elderly subjects respond differently from younger subjects (See Clinical Studies Data froma randomized, controlled trial demonstrated that children 6 months to less than years of age had diminished hemagglutinin inhibition (HI) responses to Flublok omparedtoaU.S.-licensedinfluenzavaccineapprovedforuseinthispopulation, strongly uggestingthat Flublok wouldnot beeffectiveinchildrenyounger than3years of age(6). Safety and effectiveness of Flublok have not been established in children 3 years to less han 18 years of age. The developmental and health benefits of breastfeeding should be considered along wit the mother\u2019s clinical need for Flublok and any potential adverse effects on the breastfe child fromFlublok or fromthe underlying maternal condition. For preventive vaccines, th underlying condition is susceptibility to disease prevented by the vaccine the effects of Flublok on the breastfed infant or on milk pr evelopment or female fertility were observed in the study. .2 Lactation isk Summary isnot knownwhether Flublokisexcretedinhumanmilk Dataarenot availabletoassess Clinical Considerations Disease-associated Maternal and/or Embryo/Fetal Risk Pregnant womenareat increasedriskof complicationsassociatedwithinfluenzainfection compared to non-pregnant women. Pregnant women with influenza may be at increased risk for adverse pregnancy outcomes, including preterm labor and delivery. Data Animal In a developmental toxicity study, female rats were administered Flublok by intramuscular injectiontwiceprior tomating(35days and14days prior tomating) andongestationDay 6. The total dose was 0.5 mL (divided) on each occasion (a human dose is 0.5 mL). No vaccine-related fetal malformations or variations and no adverse effects on pre-weaning [Page 4] The primary efficacy endpoint of Study 6 was rtPCR-positive, protocol-defined ILI due to any strain of influenza. Attack rates and relative vaccine efficacy (rVE), defined as 1 - [Attack rate Flublok Quadrivalent/ Attack Rate Comparator], were calculated for the total efficacy population (n=8604) for the primary efficacy endpoint and for several alternative efficacy endpoints (Table 5).",
+      "location": {
+        "start": 17475,
+        "end": 18059,
+        "page_index": 2,
+        "page_number": 3
+      }
+    },
+    {
+      "id": 3,
+      "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
+      "relevance_explanation": "This reference is cited in the context of clinical studies comparing the immunogenicity of Flublok (recombinant HA) and standard trivalent inactivated vaccines (TIVs), supporting the claim that higher HA content is linked to greater immunogenicity.",
+      "context": "15 REFERENCES 1. Treanor JJ, El Sahly HM, King J, et. al. Protective efficacy of a trivalent recombinant hemagglutininproteinvaccine(FluBlok) against influenzainhealthyadults: arandomized, placebo-controlled trial. Vaccine. 2011, Vol. 29, pp. 7733-7739. 2. Baxter R, Patriarca PA, Ensor K, et al. Evaluation of the safety, reactogenicity and mmunogenicity of FluBlok trivalent recombinant baculovirus-expressed hemagglutinin nfluenza vaccine administered intramuscularly to healthy adults 50-64 years of age. Vaccine. 2011, Vol. 29, pp. 2272-2278. 3. Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385. 4. Izikson R, Leffell DJ, Bock SA, et. al. Randomized comparison of the safety of Flublok\u00aeversus licensed inactivated influenza vaccine in healthy, medically stable adults \u226550years of age. Vaccine. 2015, Vol. 33, pp. 6622-6628. 5. TreanorJJ, Schiff GM, HaydenFG, et.al. Safetyandimmunogenicityof abaculovirusexpressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007, Vol. 297, pp. 1577-1582.",
+      "location": {
+        "start": 24450,
+        "end": 24675,
+        "page_index": 3,
+        "page_number": 4
+      }
+    },
+    {
+      "id": 4,
+      "quote": "Data froma randomized, controlled trial demonstrated that children 6 months to less than years of age had diminished hemagglutinin inhibition (HI) responses to Flublok omparedtoaU.S.-licensedinfluenzavaccineapprovedforuseinthispopulation, strongly uggestingthat Flublok wouldnot beeffectiveinchildrenyounger than3years of age(6).",
+      "relevance_explanation": "This quote references hemagglutinin inhibition (HI) responses, which are a measure of immunogenicity, in the context of Flublok compared to a standard U.S.-licensed influenza vaccine. It supports the claim that immunogenicity is a key consideration and is measured in clinical studies comparing Flublok to standard-dose vaccines.",
+      "context": "8.5 Geriatric Use Data froman efficacy study (Study 6), which included 1759 subjects \u226565 years and 525 subjects \u226575 years who received Flublok Quadrivalent, are insufficient to determine whether elderly subjects respond differently from younger subjects (See Clinical Studies Data froma randomized, controlled trial demonstrated that children 6 months to less than years of age had diminished hemagglutinin inhibition (HI) responses to Flublok omparedtoaU.S.-licensedinfluenzavaccineapprovedforuseinthispopulation, strongly uggestingthat Flublok wouldnot beeffectiveinchildrenyounger than3years of age(6).",
+      "location": {
+        "start": 18440,
+        "end": 18769,
+        "page_index": 2,
+        "page_number": 3
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

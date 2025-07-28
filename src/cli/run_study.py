@@ -89,6 +89,13 @@ Default claims: {default_claims if has_default_claims else 'Not found'}
         help="Which agents to run (default: all agents)"
     )
     
+    
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Enable debug output (shows LLM calls and responses)"
+    )
+    
     args = parser.parse_args()
     
     # Validate inputs
@@ -102,14 +109,31 @@ Default claims: {default_claims if has_default_claims else 'Not found'}
         print("Please run ingestion first or specify --documents")
         sys.exit(1)
     
+    # Clear cache if requested
+    
+    # Configure logging if debug mode
+    if args.debug:
+        import logging
+        logging.basicConfig(
+            level=logging.DEBUG,
+            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+            force=True
+        )
+        # Also set httpx logging for API calls
+        logging.getLogger("httpx").setLevel(logging.INFO)
+        logging.getLogger("httpcore").setLevel(logging.INFO)
+        print("🔍 Debug mode enabled - LLM calls will be shown\n")
+    
     # Build config
     config = {
         "agent_config": {
-            "model": args.model
+            "model": args.model,
+            "debug": args.debug
         },
         "continue_on_error": args.continue_on_error,
         "agents": args.agents
     }
+
     
     # Create orchestrator
     orchestrator = StudyOrchestrator(

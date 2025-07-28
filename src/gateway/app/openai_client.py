@@ -25,47 +25,42 @@ class OpenAIClientError(Exception):
 
 @lru_cache(maxsize=1)
 def get_openai_api_key() -> str:
-    """Get the OpenAI API key from central configuration.
-    
-    This function ensures we always use the API key from our settings,
-    not from shell environment variables.
-    
-    Returns:
-        The OpenAI API key
-        
-    Raises:
-        OpenAIClientError: If no API key is configured
+    """Return the OpenAI API key prioritising explicit project settings.
+
+    The precedence order is:
+
+    1. `settings.openai_api_key` – value injected via *pydantic-settings* which
+       already resolves `.env` files and regular environment variables.
+    2. ``OPENAI_API_KEY`` environment variable – fallback so that existing
+       shell workflows keep working when the settings object is not used.
+
+    Having a single helper centralises the logic, avoids the need for callers
+    to deal with ``Settings`` directly and, crucially, **does not** mutate the
+    process environment (the previous implementation deleted / restored
+    ``OPENAI_API_KEY`` which created hard-to-debug race-conditions in
+    concurrent code and side-effects in unrelated threads).
     """
-    # Force reload settings from .env file only, ignoring shell env vars
+
+    # 1. Primary source – project configuration
+    if settings.openai_api_key:
+        key = settings.openai_api_key
+        logger.debug("Using OpenAI API key from Settings")
+        return key
+
+    # 2. Fallback – raw environment variable (allows quick experimentation)
     import os
-    from dotenv import load_dotenv
-    
-    # Save current env var
-    shell_key = os.environ.get('OPENAI_API_KEY')
-    
-    # Temporarily remove it
-    if shell_key:
-        del os.environ['OPENAI_API_KEY']
-    
-    # Load from .env file
-    load_dotenv(override=True)
-    env_file_key = os.environ.get('OPENAI_API_KEY')
-    
-    # Restore shell key (but we won't use it)
-    if shell_key:
-        os.environ['OPENAI_API_KEY'] = shell_key
-    
-    if not env_file_key:
-        raise OpenAIClientError(
-            "OpenAI API key not configured. "
-            "Please set OPENAI_API_KEY in your .env file."
-        )
-    
-    # Log first/last few chars for debugging (but not the full key)
-    key_preview = f"{env_file_key[:10]}...{env_file_key[-4:]}"
-    logger.debug(f"Using OpenAI API key from .env: {key_preview}")
-    
-    return env_file_key
+
+    env_key = os.environ.get("OPENAI_API_KEY")
+    if env_key:
+        logger.debug("Using OpenAI API key from environment variable")
+        return env_key
+
+    # If we reach this point no key is configured ⇒ raise a descriptive error
+    raise OpenAIClientError(
+        "OpenAI API key not configured. Set it via the OPENAI_API_KEY "
+        "environment variable or the .env file recognised by the Settings "
+        "object (see src/gateway/app/config.py)."
+    )
 
 
 @lru_cache(maxsize=1)

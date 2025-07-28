@@ -1,0 +1,42 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": {
+    "pdf_name": "FlublokPI",
+    "source_pdf": "data/clinical_files/FlublokPI.pdf",
+    "total_pages": 5,
+    "total_blocks": 76
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 2,
+    "error": null
+  },
+  "supporting_snippets": [
+    {
+      "id": 2,
+      "quote": "Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements. For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021. A single 0.5 mL dose of Flublok contains sodium chloride (4.4 mg), monobasic sodium phosphate (0.2 mg), dibasic sodiumphosphate (0.5 mg), and polysorbate 20 (Tween\u00ae20) (27.5mcg). Each0.5mLdoseof Flublokmayalsocontainresidual amountsof baculovirus andSpodopterafrugiperdacell proteins (\u226414.3mcg), baculovirus andcellular DNA(\u226410 ng), and Triton X-100 (\u2264100 mcg). Flublok contains no egg proteins, antibiotics, or preservatives.",
+      "relevance_explanation": "This quote provides supporting details that Flublok contains recombinant HA proteins and may contain residual amounts of baculovirus and Spodoptera frugiperda cell proteins and DNA, which is consistent with production in insect cells using a baculovirus expression system.",
+      "context": "12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. ... Each0.5mLdoseof Flublokmayalsocontainresidual amountsof baculovirus andSpodopterafrugiperdacell proteins (\u226414.3mcg), baculovirus andcellular DNA(\u226410 ng), and Triton X-100 (\u2264100 mcg). Flublok contains no egg proteins, antibiotics, or preservatives.",
+      "location": {
+        "start": 16174,
+        "end": 17164,
+        "page_index": 2,
+        "page_number": 3
+      }
+    },
+    {
+      "id": 3,
+      "quote": "syringes contain no natural rubber latex. 12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements. For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021. A single 0.5 mL dose of Flublok contains sodium chloride (4.4 mg), monobasic sodium phosphate (0.2 mg), dibasic sodiumphosphate (0.5 mg), and polysorbate 20 (Tween\u00ae20) (27.5mcg). Each0.5mLdoseof Flublokmayalsocontainresidual amountsof baculovirus andSpodopterafrugiperdacell proteins (\u226414.3mcg), baculovirus andcellular DNA(\u226410 ng), and Triton X-100 (\u2264100 mcg). Flublok contains no egg proteins, antibiotics, or preservatives. The single-dose, prefilled i t i t l bb l t xpressed in this cell line using a baculovirus vector (Autographa californica nuclear olyhedrosis virus), extracted from the cells with Triton X-100 and further purified by olumn chromatography. The purified HAs are then blended and filled into single-dose yringes.",
+      "relevance_explanation": "This longer quote combines the two previous key sections, showing both the composition (recombinant HA, residual baculovirus and insect cell proteins) and the explicit statement that the HA is expressed in insect cells using a baculovirus vector. This directly supports the claim about the novel production platform.",
+      "context": "12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action ... Each0.5mLdoseof Flublokmayalsocontainresidual amountsof baculovirus andSpodopterafrugiperdacell proteins (\u226414.3mcg), baculovirus andcellular DNA(\u226410 ng), and Triton X-100 (\u2264100 mcg). Flublok contains no egg proteins, antibiotics, or preservatives. The single-dose, prefilled i t i t l bb l t xpressed in this cell line using a baculovirus vector (Autographa californica nuclear olyhedrosis virus), extracted from the cells with Triton X-100 and further purified by olumn chromatography. The purified HAs are then blended and filled into single-dose yringes.",
+      "location": {
+        "start": 16082,
+        "end": 17474,
+        "page_index": 2,
+        "page_number": 3
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

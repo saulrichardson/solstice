@@ -25,7 +25,9 @@ async def lifespan(app: FastAPI):
     # Initialize providers with retry wrapper
     try:
         if validate_api_key():
+            print("[DEBUG] Creating OpenAI provider", flush=True)
             providers["openai"] = RetryableProvider(OpenAIProvider())
+            print(f"[DEBUG] Provider created: {providers}", flush=True)
     except OpenAIClientError as e:
         print(f"[gateway] Warning: {e}", file=sys.stderr, flush=True)
 
@@ -67,7 +69,7 @@ async def health():
     payload = {
         "status": "healthy" if healthy else "unhealthy",
         "providers": list(providers.keys()),
-        "cache_enabled": cache.enabled,
+        "cache_enabled": cache.cache_enabled,
         "api_version": "responses",
     }
 
@@ -102,7 +104,7 @@ async def create_response(request: Request, body: dict):
         request_id, provider_name, response_request.model, response_request.model_dump()
     )
 
-    # Check cache (only for non-streaming and non-stateful requests)
+    # Prepare cache key for write-only snapshot (non-streaming, non-stateful requests)
     cache_key = None
     if not response_request.stream and not response_request.previous_response_id:
         # Create cache key from request
@@ -113,9 +115,8 @@ async def create_response(request: Request, body: dict):
             "tools": response_request.tools,
             "temperature": response_request.temperature,
         }
-        cached = await cache.get_response(cache_data)
-        if cached:
-            return cached
+        # Note: Cache is write-only for audit/debugging purposes
+        # get_response() always returns None by design
         cache_key = cache_data
 
     # Handle streaming
@@ -132,20 +133,26 @@ async def create_response(request: Request, body: dict):
     start_time = time.time()
 
     try:
+        print(f"[MAIN] Calling provider.create_response", flush=True)
         response = await provider.create_response(response_request)
+        print(f"[MAIN] Got response back from provider", flush=True)
         duration = time.time() - start_time
+
+        # Debug: Log raw response
+        response_dict = response.model_dump()
+        print(f"[DEBUG] Response dict keys: {list(response_dict.keys())}")
+        print(f"[DEBUG] Usage data: {response_dict.get('usage', 'NO USAGE KEY')}")
 
         # Log response
         log_llm_response(
             request_id,
             provider_name,
             response_request.model,
-            response.model_dump(),
+            response_dict,
             duration,
         )
 
         # Cache response if applicable
-        response_dict = response.model_dump()
         if cache_key and not response_request.previous_response_id:
             await cache.set_response(cache_key, response_dict)
 

@@ -1,0 +1,54 @@
+{
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "document": {
+    "pdf_name": "FlublokPI",
+    "source_pdf": "data/clinical_files/FlublokPI.pdf",
+    "total_pages": 5,
+    "total_blocks": 76
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3,
+    "error": null
+  },
+  "supporting_snippets": [
+    {
+      "id": 1,
+      "quote": "Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements. For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021. A single 0.5 mL dose of Flublok contains sodium chloride (4.4 mg), monobasic sodium phosphate (0.2 mg), dibasic sodiumphosphate (0.5 mg), and polysorbate 20 (Tween\u00ae20) (27.5mcg). Each0.5mLdoseof Flublokmayalsocontainresidual amountsof baculovirus andSpodopterafrugiperdacell proteins (\u226414.3mcg), baculovirus andcellular DNA(\u226410 ng), and Triton X-100 (\u2264100 mcg). Flublok contains no egg proteins, antibiotics, or preservatives. The single-dose, prefilled i t i t l bb l t xpressed in this cell line using a baculovirus vector (Autographa californica nuclear olyhedrosis virus), extracted from the cells with Triton X-100 and further purified by olumn chromatography. The purified HAs are then blended and filled into single-dose yringes. Flublok is standardized according to United States Public Health Service (USPHS) [ ] j g hemagglutinin(HA) proteinsfromthreeinfluenzavirusesfor intramuscular use. It contains purifiedHAproteins producedinacontinuous insect cell line(expresSF+\u00ae) that is derived rom Sf9 cells of the fall armyworm, Spodoptera frugiperda (which is related to moths, caterpillars and butterflies), and grown in serum-free medium composed of chemicallydefined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is manufactured using the same process and have overlapping compositions.",
+      "relevance_explanation": "This quote describes the manufacturing process of Flublok, a cell-based (insect cell) flu vaccine, and notes that the hemagglutinin (HA) proteins are produced in a continuous insect cell line using a baculovirus vector. The use of cell lines and baculovirus vectors is relevant to the claim because mutations can potentially arise during the propagation of viruses or recombinant proteins in cell culture, which may affect the antigenic properties of the vaccine and thus its effectiveness.",
+      "context": "Section 1 DESCRIPTION and Section 12 CLINICAL PHARMACOLOGY",
+      "location": {
+        "start": 16174,
+        "end": 18059,
+        "page_index": 2,
+        "page_number": 3
+      }
+    },
+    {
+      "id": 2,
+      "quote": "Antibodies against one influenza virus type or subtype confer limited or no protection against another. Furthermore, antibodies to one antigenic variant of influenza virus might not protect against a new antigenic variant of the same type or subtype. Frequent development of antigenicvariantsthroughantigenicdrift isthevirologicbasisfor seasonal epidemicsandthereasonfor theusual replacement of oneor moreinfluenzavirusstrains in each year\u2019s influenza vaccine.",
+      "relevance_explanation": "This quote explains that antigenic drift (mutations in the virus) can result in new variants that are not well-matched by existing antibodies, which is the underlying reason why mutations during vaccine production (such as in cell- or egg-based systems) could reduce vaccine effectiveness. It provides context for why mutations in the vaccine strain are problematic.",
+      "context": "Section 14 CLINICAL STUDIES",
+      "location": {
+        "start": 15619,
+        "end": 16079,
+        "page_index": 2,
+        "page_number": 3
+      }
+    },
+    {
+      "id": 3,
+      "quote": "Vaccine efficacy against antigenically matched culture-confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenically matched to the strains represented in the vaccine.",
+      "relevance_explanation": "This quote highlights that a large proportion of circulating influenza viruses were not antigenically matched to the vaccine strains, which can occur if mutations arise during vaccine production (such as in cell- or egg-based systems) or in circulating viruses. This mismatch can reduce vaccine effectiveness, supporting the claim that mutations during production may impact efficacy.",
+      "context": "Section 14.1 Efficacy Against Laboratory-Confirmed Influenza",
+      "location": {
+        "start": 22208,
+        "end": 22459,
+        "page_index": 3,
+        "page_number": 4
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}
