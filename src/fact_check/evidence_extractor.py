@@ -135,11 +135,17 @@ Document:
 Find all supporting evidence for the claim.'''
 
         try:
+            # We explicitly set store=False so that OpenAI *does not* cache the
+            # completion.  Without this flag the Responses API keeps an
+            # internal copy and will serve identical requests instantly on
+            # subsequent calls, which can hide legitimate issues during
+            # development and debugging.
             response = self.llm_client.create_response(
                 input=prompt,
                 model=self.llm_client.model if hasattr(self.llm_client, 'model') else "gpt-4.1",
                 temperature=0.0,
-                max_output_tokens=4000
+                max_output_tokens=4000,
+                store=False,  # disable server-side caching
             )
             
             # Parse response

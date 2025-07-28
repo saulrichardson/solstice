@@ -9,58 +9,9 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 4,
+    "total_snippets_found": 0,
     "error": null
   },
-  "supporting_snippets": [
-    {
-      "id": 1,
-      "quote": "Vaccine efficacy against antigenically matched culture-confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenically matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any ubject with an ILI, not necessarily meeting CDCILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0).",
-      "relevance_explanation": "This quote directly supports the claim by showing that Flublok (a recombinant influenza vaccine) provided significant efficacy (44.8%) against all influenza strains, regardless of whether they matched the vaccine strains. This suggests a broader immune response and potential cross-protection, even in a season where the circulating strains do not match the vaccine.",
-      "context": "Vaccine efficacy against antigenically matched culture-confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenically matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any ubject with an ILI, not necessarily meeting CDCILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0). See Table 4 for a presentation of VE by case definition and antigenic similarity.",
-      "location": {
-        "start": 22208,
-        "end": 22695,
-        "page_index": 3,
-        "page_number": 4
-      }
-    },
-    {
-      "id": 2,
-      "quote": "Antibodies against one influenza virus type or subtype confer limited or no protection against another. Furthermore, antibodies to one antigenic variant of influenza virus might not protect against a new antigenic variant of the same type or subtype. Frequent development of antigenicvariantsthroughantigenicdrift isthevirologicbasisfor seasonal epidemicsandthereasonfor theusual replacement of oneor moreinfluenzavirusstrains in each year\u2019s influenza vaccine.",
-      "relevance_explanation": "This quote provides context for why a broader immune response and cross-protection are important. It explains that traditional immunity is often limited to specific strains, and frequent antigenic drift leads to mismatches. This sets up the rationale for why recombinant technology, which can induce broader responses, is valuable.",
-      "context": "Antibodies against one influenza virus type or subtype confer limited or no protection against another. Furthermore, antibodies to one antigenic variant of influenza virus might not protect against a new antigenic variant of the same type or subtype. Frequent development of antigenicvariantsthroughantigenicdrift isthevirologicbasisfor seasonal epidemicsandthereasonfor theusual replacement of oneor moreinfluenzavirusstrains in each year\u2019s influenza vaccine.",
-      "location": {
-        "start": 15619,
-        "end": 16079,
-        "page_index": 2,
-        "page_number": 3
-      }
-    },
-    {
-      "id": 3,
-      "quote": "Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements.",
-      "relevance_explanation": "This quote describes the mechanism of action of Flublok, highlighting that it uses recombinant HA proteins to induce a humoral immune response. This is relevant because recombinant technology allows for the production of highly purified antigens, which can lead to a broader and potentially more cross-reactive immune response.",
-      "context": "Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements.",
-      "location": {
-        "start": 16174,
-        "end": 16470,
-        "page_index": 2,
-        "page_number": 3
-      }
-    },
-    {
-      "id": 4,
-      "quote": "Flublok [Influenza Vaccine] is a sterile, clear, colorless injection containing recombina 8.5 Geriatric Use Data froman efficacy study (Study 6), which included 1759 subjects \u226565 years and 525 subjects \u226575 years who received Flublok Quadrivalent, are insufficient to determine whether elderly subjects respond differently from younger subjects (See Clinical Studies Data froma randomized, controlled trial demonstrated that children 6 months to less than years of age had diminished hemagglutinin inhibition (HI) responses to Flublok omparedtoaU.S.-licensedinfluenzavaccineapprovedforuseinthispopulation, strongly uggestingthat Flublok wouldnot beeffectiveinchildrenyounger than3years of age(6). Safety and effectiveness of Flublok have not been established in children 3 years to less han 18 years of age.",
-      "relevance_explanation": "This quote notes that Flublok induces hemagglutinin inhibition (HI) responses, which are a measure of immune response breadth. The mention of diminished HI responses in very young children (compared to another vaccine) indirectly supports the idea that in adults, Flublok is expected to induce a robust and potentially broader immune response.",
-      "context": "Flublok [Influenza Vaccine] is a sterile, clear, colorless injection containing recombina 8.5 Geriatric Use Data froman efficacy study (Study 6), which included 1759 subjects \u226565 years and 525 subjects \u226575 years who received Flublok Quadrivalent, are insufficient to determine whether elderly subjects respond differently from younger subjects (See Clinical Studies Data froma randomized, controlled trial demonstrated that children 6 months to less than years of age had diminished hemagglutinin inhibition (HI) responses to Flublok omparedtoaU.S.-licensedinfluenzavaccineapprovedforuseinthispopulation, strongly uggestingthat Flublok wouldnot beeffectiveinchildrenyounger than3years of age(6). Safety and effectiveness of Flublok have not been established in children 3 years to less han 18 years of age.",
-      "location": {
-        "start": 18074,
-        "end": 18880,
-        "page_index": 2,
-        "page_number": 3
-      }
-    }
-  ],
+  "supporting_snippets": [],
   "model_used": "gpt-4.1"
 }

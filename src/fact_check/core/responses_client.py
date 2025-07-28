@@ -145,12 +145,15 @@ class ResponsesClient:
                             usage = result["usage"]
                             logger.debug(f"📊 Token Usage:")
                             logger.debug(f"   - Total tokens: {usage.get('total_tokens', 'N/A')}")
-                            logger.debug(f"   - Prompt tokens: {usage.get('prompt_tokens', 'N/A')}")
-                            logger.debug(f"   - Completion tokens: {usage.get('completion_tokens', 'N/A')}")
+                            # Support both Chat Completions API and Responses API field names
+                            input_tokens = usage.get('input_tokens', usage.get('prompt_tokens', 'N/A'))
+                            output_tokens = usage.get('output_tokens', usage.get('completion_tokens', 'N/A'))
+                            logger.debug(f"   - Input tokens: {input_tokens}")
+                            logger.debug(f"   - Output tokens: {output_tokens}")
                             
-                            # Check for cached tokens in prompt_tokens_details
-                            if "prompt_tokens_details" in usage and usage["prompt_tokens_details"]:
-                                details = usage["prompt_tokens_details"]
+                            # Check for cached tokens in input_tokens_details (Responses API) or prompt_tokens_details (Chat API)
+                            details = usage.get("input_tokens_details") or usage.get("prompt_tokens_details")
+                            if details:
                                 cached_tokens = details.get("cached_tokens", 0)
                                 logger.debug(f"   - Cached tokens: {cached_tokens}")
                                 if cached_tokens > 0:

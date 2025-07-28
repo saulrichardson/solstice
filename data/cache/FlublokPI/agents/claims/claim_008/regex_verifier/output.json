@@ -2,36 +2,11 @@
   "claim_id": "claim_008",
   "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
   "verification_stats": {
-    "total_snippets": 2,
-    "verified": 2,
+    "total_snippets": 0,
+    "verified": 0,
     "failed": 0,
     "modified": 0
   },
-  "verified_snippets": [
-    {
-      "id": 1,
-      "quote": "For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021.",
-      "relevance_explanation": "This quote directly states that Flublok contains 45 mcg of HA per strain (for each of the three influenza virus strains), supporting the claim.",
-      "context": "12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. ... For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021.",
-      "location": {
-        "start": 16471,
-        "end": 16737,
-        "page_index": 2,
-        "page_number": 3
-      }
-    },
-    {
-      "id": 3,
-      "quote": "Across three clinical trials (Studies 2 - 4, Tables 2 and 3) a total of 2050 adults age 50 years and older received Flublok and 2048 received a U.S.-licensed trivalent inactivated influenza vaccine (IIV3) comparator.",
-      "relevance_explanation": "This quote is relevant because it establishes that the comparator in the clinical trials is a standard-dose influenza vaccine (IIV3), which is known to contain 15 mcg of HA per strain. This context supports the comparison in the claim.",
-      "context": "Across three clinical trials (Studies 2 - 4, Tables 2 and 3) a total of 2050 adults age 50 years and older received Flublok and 2048 received a U.S.-licensed trivalent inactivated influenza vaccine (IIV3) comparator.",
-      "location": {
-        "start": 5713,
-        "end": 5929,
-        "page_index": 1,
-        "page_number": 2
-      }
-    }
-  ],
+  "verified_snippets": [],
   "failed_snippets": []
 }

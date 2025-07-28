@@ -48,9 +48,6 @@ down:
 logs:
 	docker compose logs -f gateway
 
-test-gateway:
-	@./scripts/test-gateway.sh
-
 lint:
 	ruff check .
 	mypy .

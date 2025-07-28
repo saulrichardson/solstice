@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "claims_file": "data/claims/Flublok_Claims.json",
+    "documents": [
+      "FlublokPI"
+    ],
+    "total_claims": 9,
+    "started_at": "2025-07-28T18:14:27.047043",
+    "completed_at": "2025-07-28T18:14:27.150679"
+  },
+  "claims": {
+    "claim_000": {
+      "claim_id": "claim_000",
+      "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+      "started_at": "2025-07-28T18:14:27.047084",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T18:14:27.090506"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T18:14:27.090513"
+    },
+    "claim_001": {
+      "claim_id": "claim_001",
+      "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+      "started_at": "2025-07-28T18:14:27.090545",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T18:14:27.097987"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T18:14:27.097997"
+    },
+    "claim_002": {
+      "claim_id": "claim_002",
+      "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+      "started_at": "2025-07-28T18:14:27.098021",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T18:14:27.105549"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T18:14:27.105554"
+    },
+    "claim_003": {
+      "claim_id": "claim_003",
+      "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+      "started_at": "2025-07-28T18:14:27.105580",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T18:14:27.113184"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T18:14:27.113194"
+    },
+    "claim_004": {
+      "claim_id": "claim_004",
+      "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "started_at": "2025-07-28T18:14:27.113221",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T18:14:27.120890"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T18:14:27.120896"
+    },
+    "claim_005": {
+      "claim_id": "claim_005",
+      "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "started_at": "2025-07-28T18:14:27.120922",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T18:14:27.128301"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T18:14:27.128306"
+    },
+    "claim_006": {
+      "claim_id": "claim_006",
+      "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+      "started_at": "2025-07-28T18:14:27.128330",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T18:14:27.135917"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T18:14:27.135923"
+    },
+    "claim_007": {
+      "claim_id": "claim_007",
+      "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+      "started_at": "2025-07-28T18:14:27.135951",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T18:14:27.143372"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T18:14:27.143377"
+    },
+    "claim_008": {
+      "claim_id": "claim_008",
+      "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+      "started_at": "2025-07-28T18:14:27.143401",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "supporting_evidence",
+              "success": true,
+              "timestamp": "2025-07-28T18:14:27.150670"
+            }
+          ],
+          "final_judgment": null,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-28T18:14:27.150675"
+    }
+  },
+  "summary": {
+    "total_claim_document_pairs": 9,
+    "successfully_processed": 9,
+    "processing_rate": 1.0,
+    "judgment_distribution": {
+      "strongly_supported": 0,
+      "supported": 0,
+      "weakly_supported": 0,
+      "unsupported": 0
+    }
+  }
+}

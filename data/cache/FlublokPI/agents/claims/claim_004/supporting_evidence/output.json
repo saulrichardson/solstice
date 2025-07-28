@@ -9,58 +9,9 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 4,
+    "total_snippets_found": 0,
     "error": null
   },
-  "supporting_snippets": [
-    {
-      "id": 1,
-      "quote": "For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021.",
-      "relevance_explanation": "This quote specifies that Flublok contains 45mcg of hemagglutinin (HA) per strain, which is a higher dose than standard egg-based influenza vaccines (which typically contain 15mcg HA per strain). This higher dose is relevant to the claim that a higher-dose recombinant vaccine may induce a more robust antibody response.",
-      "context": "12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements. For the2024-2025influenzaseasonit is formulatedtocontain135mcgHA per 0.5mLdose, with45mcgHAof eachof thefollowing3influenzavirusstrains:A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/ 2022 (H3N2) and B/Austria/1359417/2021.",
-      "location": {
-        "start": 16471,
-        "end": 16737,
-        "page_index": 2,
-        "page_number": 3
-      }
-    },
-    {
-      "id": 2,
-      "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
-      "relevance_explanation": "This reference is to a published study that directly compares the immunogenicity (antibody response) of recombinant influenza hemagglutinin (rHA, i.e., Flublok) and standard trivalent inactivated vaccines (TIVs) in older adults. The inclusion of this reference in the clinical studies section supports the claim that the recombinant vaccine's antibody response has been compared to that of standard egg-based vaccines, and the cited study is known to show higher antibody responses with the recombinant vaccine.",
-      "context": "15 REFERENCES 3. Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
-      "location": {
-        "start": 24450,
-        "end": 24675,
-        "page_index": 3,
-        "page_number": 4
-      }
-    },
-    {
-      "id": 3,
-      "quote": "Data froma randomized, controlled trial demonstrated that children 6 months to less than years of age had diminished hemagglutinin inhibition (HI) responses to Flublok omparedtoaU.S.-licensedinfluenzavaccineapprovedforuseinthispopulation, strongly uggestingthat Flublok wouldnot beeffectiveinchildrenyounger than3years of age(6).",
-      "relevance_explanation": "This quote discusses the hemagglutinin inhibition (HI) antibody response to Flublok compared to a standard U.S.-licensed influenza vaccine. While it notes diminished responses in very young children, it demonstrates that antibody response is a key measured outcome in comparing recombinant and standard vaccines, supporting the relevance of antibody response as a differentiator.",
-      "context": "8.5 Geriatric Use Data froman efficacy study (Study 6), which included 1759 subjects \u226565 years and 525 subjects \u226575 years who received Flublok Quadrivalent, are insufficient to determine whether elderly subjects respond differently from younger subjects (See Clinical Studies Data froma randomized, controlled trial demonstrated that children 6 months to less than years of age had diminished hemagglutinin inhibition (HI) responses to Flublok omparedtoaU.S.-licensedinfluenzavaccineapprovedforuseinthispopulation, strongly uggestingthat Flublok wouldnot beeffectiveinchildrenyounger than3years of age(6).",
-      "location": {
-        "start": 18440,
-        "end": 18769,
-        "page_index": 2,
-        "page_number": 3
-      }
-    },
-    {
-      "id": 4,
-      "quote": "Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements.",
-      "relevance_explanation": "This quote explains that Flublok induces a humoral immune response, measured by hemagglutination inhibition (HI) antibody titers. This is the standard measure of antibody response, directly relating to the claim about robust antibody responses.",
-      "context": "12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Flublok contains recombinant HAproteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination hibiti (HI) tib d ) requirements.",
-      "location": {
-        "start": 16174,
-        "end": 16470,
-        "page_index": 2,
-        "page_number": 3
-      }
-    }
-  ],
+  "supporting_snippets": [],
   "model_used": "gpt-4.1"
 }
