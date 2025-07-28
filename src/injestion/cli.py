@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 from .pipeline import ingest_pdf
-from .storage.paths import final_doc_path
+from .storage.paths import extracted_content_path
 
 
 def main():
@@ -49,14 +49,6 @@ def main():
             detection_dpi=args.dpi
         )
         
-        # Get output path
-        if args.output:
-            output_path = args.output
-        else:
-            # Generate a default output filename based on input
-            output_name = args.pdf_path.stem + "_extracted.json"
-            output_path = Path(output_name)
-        
         # Display extracted content summary
         print("\nExtracted Content Summary:")
         text_blocks = sum(1 for b in document.blocks if b.text and b.role not in ['Figure', 'Table'])
@@ -81,17 +73,12 @@ def main():
                         else:
                             print(f"  {position}. {block.role} [no text extracted]")
         
-        # Save output
-        doc_dict = document.model_dump()
-        output = json.dumps(doc_dict, indent=2)
-        
+        # Save output only if explicitly requested
         if args.output:
-            output_path.write_text(output)
-            print(f"\n✓ Output saved to {output_path}")
-        else:
-            # Default: save with auto-generated name
-            output_path.write_text(output)
-            print(f"\n✓ Output saved to {output_path}")
+            doc_dict = document.model_dump()
+            output = json.dumps(doc_dict, indent=2)
+            args.output.write_text(output)
+            print(f"\n✓ Output saved to {args.output}")
         
         # Summary statistics
         total_blocks = len(document.blocks)

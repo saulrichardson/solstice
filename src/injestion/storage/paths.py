@@ -8,10 +8,9 @@ using the structure::
       cache/
         pages/<doc>/     page-NNN.png
         layout/<doc>/    layout.json
-        refine/<doc>/    refined.json
-        ocr/<doc>/       ocr.json
-        agent/<doc>/     reasoning.json  …
-      docs/              # final, merged document objects
+        merged/<doc>/    merged_boxes.json
+        reading_order/<doc>/  reading_order.json
+        extracted/<doc>/ content.json, figures/
 
 Where ``<doc>`` is the first 8 characters of the SHA-256 hash of the original
 PDF bytes.  This guarantees a stable path for every document without risk of
@@ -31,9 +30,8 @@ from typing import Any
 # ---------------------------------------------------------------------------
 
 
-_DATA_DIR = Path(__file__).resolve().parents[2] / "data"
+_DATA_DIR = Path(__file__).resolve().parents[3] / "data"
 _CACHE_DIR = _DATA_DIR / "cache"
-_DOCS_DIR = _DATA_DIR / "docs"
 
 
 # ---------------------------------------------------------------------------
@@ -44,7 +42,7 @@ _DOCS_DIR = _DATA_DIR / "docs"
 def ensure_dirs() -> None:
     """Create *data* root folders if they do not yet exist."""
 
-    for d in (_DATA_DIR, _CACHE_DIR, _DOCS_DIR):
+    for d in (_DATA_DIR, _CACHE_DIR):
         d.mkdir(parents=True, exist_ok=True)
 
 
@@ -73,11 +71,10 @@ def pages_dir(pdf_path: os.PathLike | str) -> Path:
     return stage_dir("pages", pdf_path)
 
 
-def final_doc_path(pdf_path: os.PathLike | str) -> Path:
-    """Path to the final assembled JSON document for *pdf_path*."""
-
-    ensure_dirs()
-    return _DOCS_DIR / f"{doc_id(pdf_path)}.json"
+def extracted_content_path(pdf_path: os.PathLike | str) -> Path:
+    """Path to the final extracted content JSON for *pdf_path*."""
+    
+    return stage_dir("extracted", pdf_path) / "content.json"
 
 
 # ---------------------------------------------------------------------------

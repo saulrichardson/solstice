@@ -254,11 +254,11 @@ def visualize_pipeline_results(
     Returns:
         List of paths to saved visualization files
     """
-    from ..storage.paths import final_doc_path
+    from ..storage.paths import extracted_content_path
     from ..models.document import Document
     
     # Load the processed document
-    doc_path = final_doc_path(pdf_path)
+    doc_path = extracted_content_path(pdf_path)
     if not doc_path.exists():
         raise FileNotFoundError(f"No processed document found for {pdf_path}")
     
