@@ -16,8 +16,8 @@ from .storage import pages_dir, stage_dir, save_json, load_json, final_doc_path,
 import layoutparser as lp
 
 from .layout_pipeline import LayoutDetectionPipeline
-from .agent.refine_layout import Box
-from .agent.no_overlap_resolver import no_overlap_pipeline
+from .processing.box import Box
+from .processing.no_overlap_resolver import no_overlap_pipeline
 from .document import Block, Document
 from .text_extractor import extract_document_content
 from .reading_order_simple import determine_reading_order_simple

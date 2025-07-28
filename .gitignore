@@ -82,3 +82,44 @@ node_modules/
 # Model weights (use git-lfs if needed)
 assets/tatr/*.pth
 assets/tatr/*.bin
+
+# Project-specific data and output
+data/
+output/
+input/
+*.pdf
+*.json
+*.png
+*.jpg
+*.jpeg
+
+# Extracted content
+*_extracted.json
+*_order.json
+*_overlaps.json
+
+# Detectron2 repo (if cloned locally)
+detectron2_repo/
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# Cache directories
+data/cache/
+data/docs/
+visualizations/
+
+# Large data files
+*.csv
+*.xlsx
+*.docx
+*.zip
+*.tar.gz
+*.pkl
+*.pickle
+
+# Model outputs
+*.onnx
+*.pt
