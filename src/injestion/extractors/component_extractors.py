@@ -248,20 +248,35 @@ class TableExtractor:
         detection_dpi: int,
         page_image: Optional[Image.Image] = None
     ) -> Dict[str, Any]:
-        """Extract table using Table Transformer (TATR) with official package."""
+        """Extract table using Table Transformer (TATR) with proper PyPI package."""
         try:
             # Lazy import and initialization
             if self.tatr_extractor is None:
-                from .tatr_extractor import TATRStructureExtractor
-                self.tatr_extractor = TATRStructureExtractor()
+                try:
+                    from .tatr_extractor import ProperTATRExtractor
+                    self.tatr_extractor = ProperTATRExtractor(use_pdf_words=True)
+                except Exception as init_error:
+                    logger.warning(
+                        f"TATR initialization failed (likely due to model incompatibility): {init_error}. "
+                        "This is a known issue with HuggingFace models and table-transformer package. "
+                        "Falling back to Camelot."
+                    )
+                    # Convert to PDF coordinates for camelot
+                    scale = 72 / detection_dpi
+                    pdf_bbox = (
+                        bbox[0] * scale,
+                        bbox[1] * scale,
+                        bbox[2] * scale,
+                        bbox[3] * scale
+                    )
+                    return self._extract_with_camelot(pdf_path, page_num, pdf_bbox)
             
-            # Use the new TATR extractor
+            # Use the proper TATR extractor
             result = self.tatr_extractor.extract_from_pdf_bbox(
                 pdf_path,
                 page_num,
                 bbox,
-                detection_dpi,
-                extraction_dpi=300  # Recommended for TATR
+                detection_dpi
             )
             
             # Convert to expected format
@@ -270,20 +285,38 @@ class TableExtractor:
                     "data": result.get("json_data", {}).get("data", []),
                     "dataframe": result.get("dataframe"),
                     "shape": result.get("shape"),
-                    "method": "tatr",
+                    "method": result.get("method", "tatr"),
                     "html": result.get("html"),
                     "markdown": result.get("markdown"),
-                    "cells": result.get("cells", [])
+                    "cells": result.get("cells", []),
+                    "objects": result.get("objects", []),
+                    "used_pdf_words": result.get("used_pdf_words", False)
                 }
             else:
                 # Fallback to camelot on error
                 logger.warning(f"TATR failed: {result['error']}, falling back to camelot")
-                return self._extract_with_camelot(pdf_path, page_num, bbox)
+                # Convert to PDF coordinates for camelot
+                scale = 72 / detection_dpi
+                pdf_bbox = (
+                    bbox[0] * scale,
+                    bbox[1] * scale,
+                    bbox[2] * scale,
+                    bbox[3] * scale
+                )
+                return self._extract_with_camelot(pdf_path, page_num, pdf_bbox)
                 
         except Exception as e:
             logger.error(f"TATR extraction failed: {e}")
             # Fallback to camelot
-            return self._extract_with_camelot(pdf_path, page_num, bbox)
+            # Convert to PDF coordinates for camelot
+            scale = 72 / detection_dpi
+            pdf_bbox = (
+                bbox[0] * scale,
+                bbox[1] * scale,
+                bbox[2] * scale,
+                bbox[3] * scale
+            )
+            return self._extract_with_camelot(pdf_path, page_num, pdf_bbox)
 
 
 class FigureExtractor:

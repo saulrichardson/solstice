@@ -1,4 +1,4 @@
-.PHONY: help check up down logs test-gateway test-fact-checker lint format clean shell restart
+.PHONY: help check up down logs test-gateway lint format clean shell restart
 
 help:
 	@echo "Available commands:"
@@ -7,9 +7,9 @@ help:
 	@echo "  make down               Stop all services"
 	@echo "  make logs               Show gateway logs"
 	@echo "  make test-gateway       Test gateway is working"
-	@echo "  make test-fact-checker  Test fact-checker endpoint"
 	@echo "  make install            Install Python package for development"
 	@echo "  make install-detectron2 Install Detectron2 for layout detection (Python 3.11 required)"
+	@echo "  make install-tatr       Install Table Transformer (TATR) with weights"
 	@echo "  make lint               Run linting"
 	@echo "  make format             Format code"
 	@echo "  make clean              Clean up cache files"
@@ -36,9 +36,6 @@ logs:
 
 test-gateway:
 	@./scripts/test-gateway.sh
-
-test-fact-checker:
-	@./scripts/test-fact-checker.sh
 
 lint:
 	ruff check .
@@ -83,6 +80,41 @@ install-detectron2: install
 	@pip install torch torchvision
 	@echo "Installing Detectron2..."
 	@pip install git+https://github.com/facebookresearch/detectron2.git
-	@echo "Installing patched iopath (fixes ?dl=1 issue)..."
-	@pip install --force-reinstall git+https://github.com/facebookresearch/iopath@e348b6797c40c9eb4c96bf75e9aaf1b248297548
+	@echo "Installing compatible iopath for detectron2..."
+	@pip install "iopath>=0.1.7,<0.1.10"
 	@echo "✓ Detectron2 setup complete"
+
+install-tatr: install
+	@echo "Installing Table Transformer (TATR) dependencies..."
+	@command -v tesseract >/dev/null 2>&1 || \
+		{ echo "Warning: Tesseract not installed. Install with: brew install tesseract tesseract-lang"; }
+	@echo "Resolving dependency conflicts..."
+	@pip install "pillow~=9.5.0"
+	@echo "Installing TATR package with OCR support..."
+	@pip install -e ".[tatr]"
+	@echo ""
+	@echo "Downloading TATR weights..."
+	@mkdir -p assets/tatr
+	@echo "1. Downloading detection model (45MB)..."
+	@if [ -f assets/tatr/pubtables1m_det_r18.pth ]; then \
+		echo "   ✓ Detection weights already downloaded"; \
+	else \
+		curl -L -o assets/tatr/pubtables1m_det_r18.pth \
+			https://huggingface.co/microsoft/table-transformer-detection/resolve/main/pytorch_model.bin || \
+		{ echo "Error: Failed to download detection weights"; exit 1; }; \
+		echo "   ✓ Detection weights downloaded"; \
+	fi
+	@echo "2. Downloading structure recognition model v1.1 (195MB)..."
+	@if [ -f assets/tatr/tatr_v1.1_pub.pth ]; then \
+		echo "   ✓ Structure weights already downloaded"; \
+	else \
+		curl -L -o assets/tatr/tatr_v1.1_pub.pth \
+			https://huggingface.co/microsoft/table-transformer-structure-recognition-v1.1-pub/resolve/main/pytorch_model.bin || \
+		{ echo "Error: Failed to download structure weights"; exit 1; }; \
+		echo "   ✓ Structure weights downloaded"; \
+	fi
+	@echo ""
+	@echo "Verifying installation..."
+	@python -c "from table_transformer import TableExtractionPipeline; print('✓ Table Transformer imported successfully')" || \
+		{ echo "Error: Failed to import Table Transformer"; exit 1; }
+	@echo "✓ Table Transformer setup complete"

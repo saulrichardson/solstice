@@ -1,0 +1,12 @@
+# Dependency constraints to resolve conflicts between packages
+
+# Table Transformer requires Pillow ~9.5.0
+pillow~=9.5.0
+
+# Detectron2 requires specific iopath version
+iopath>=0.1.7,<0.1.10
+
+# These constraints ensure compatibility between:
+# - table-transformer 1.0.6
+# - detectron2 0.6
+# - Other packages in the project

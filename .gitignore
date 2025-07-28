@@ -78,3 +78,7 @@ node_modules/
 
 # Docker
 .docker/
+
+# Model weights (use git-lfs if needed)
+assets/tatr/*.pth
+assets/tatr/*.bin

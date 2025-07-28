@@ -6,16 +6,12 @@ from .component_extractors import (
     FigureExtractor,
     ComponentRouter
 )
-from .tatr_extractor import (
-    TATRStructureExtractor,
-    download_tatr_weights
-)
+from .tatr_extractor import ProperTATRExtractor
 
 __all__ = [
     "TextExtractor",
     "TableExtractor", 
     "FigureExtractor",
     "ComponentRouter",
-    "TATRStructureExtractor",
-    "download_tatr_weights"
+    "ProperTATRExtractor"
 ]

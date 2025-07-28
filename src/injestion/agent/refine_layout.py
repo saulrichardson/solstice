@@ -110,7 +110,10 @@ def refine_page_layout(
 
     # For Responses API, we need to format images with "input_image" type
     image_blocks = [
-        {"type": "input_image", "image_url": _crop_to_data_url(b.bbox)}
+        {
+            "type": "image_url",
+            "image_url": {"url": _crop_to_data_url(b.bbox), "detail": "low"},
+        }
         for b in raw_boxes
     ]
 
