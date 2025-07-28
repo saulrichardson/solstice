@@ -1,0 +1,1092 @@
+# Extracted Document
+
+**Source:** data/clinical_files/Arunachalam et al. (2021).pdf
+
+**Pages:** 8
+
+---
+
+
+## Page 1
+
+
+### Unique features of a recombinant haemagglutinin inﬂuenza
+vaccine that inﬂuence vaccine performance
+
+Arun B. Arunachalam
+1✉, Penny Post2 and Deborah Rudin3
+
+The inﬂuenza vaccine ﬁeld has been constantly evolving to improve the speed, scalability, and ﬂexibility of manufacturing, and to
+improve the breadth and longevity of the protective immune response across age groups, giving rise to an array of next generation
+vaccines in development. Among these, the recombinant inﬂuenza vaccine tetravalent (RIV4), using a baculovirus expression vector
+system to express recombinant haemagglutinin (rHA) in insect cells, is the only one to have reached the market and has been
+studied extensively. We describe how the unique structural features of rHA in RIV4 improve protective immune responses compared
+to conventional inﬂuenza vaccines made from propagated inﬂuenza virus. In addition to the sequence integrity, characteristic of
+recombinant proteins, unique post-translational processing of the rHA in insect cells instills favourable tertiary and quaternary
+structural features. The absence of protease-driven cleavage and addition of simple N-linked glycans help to preserve and expose
+certain conserved epitopes on HA molecules, which are likely responsible for the high levels of broadly cross-reactive and protective
+antibodies with rare speciﬁcities observed with RIV4. Furthermore, the presence of uniform compact HA oligomers and absence of
+egg proteins, viral RNA or process impurities, typically found in conventional vaccines, are expected to eliminate potential adverse
+reactions to these components in susceptible individuals with the use of RIV4. These distinct structural features and purity of the
+recombinant HA vaccine thus provide a number of beneﬁts in vaccine performance which can be extended to other viral targets,
+such as for COVID-19.
+
+npj Vaccines  (2021) 6:144 ; https://doi.org/10.1038/s41541-021-00403-7
+
+
+### INTRODUCTION
+
+Seasonal inﬂuenza is responsible for 290,000–650,000 deaths per
+year due to respiratory diseases alone and 3–5 million cases of
+severe illness worldwide1–3. In the USA, inﬂuenza was thought to
+account for 52.7 hospitalisations per 100,000 people during the
+2019–2020 season. These numbers are signiﬁcantly higher in
+young children and adults aged 65 and older1,2,4. Extra-pulmonary
+complications of inﬂuenza infection constitute a further under-
+recognised disease burden4,5. Overall, such a high disease burden
+carries substantial social and economic cost6,7. Prevention of
+seasonal inﬂuenza epidemics, as well as preparedness for future
+pandemics, is thus a global priority.
+Inﬂuenza A subtypes H1N1 and H3N2, and inﬂuenza B lineages
+B/Yamagata and B/Victoria circulate routinely in humans and are
+included in seasonal inﬂuenza vaccines8. Inﬂuenza A subtypes can
+also give rise to highly pathogenic viruses through cross-over from
+animal reservoirs to humans9. In the past century, four novel
+inﬂuenza A virus strains have emerged in this way, each leading to
+a global pandemic (H1N1 in 1918; H2N2 in 1957; H3N2 in 1968;
+and H1N1 in 2009). Vaccines against such strains are prepared and
+stockpiled as government initiatives for emergency use in
+potential future pandemics.
+Haemagglutinin (HA) is the primary antigen in the induction of
+a protective immune response against the inﬂuenza virus, and
+thus a key vaccine target. Expressed as trimeric glycoproteins on
+the viral surface, HA binds to sialic acid on target cells to facilitate
+host cell entry and mediates the fusion of the viral envelope to the
+late endosomal membrane. Neutralising antibodies that block HA
+effectively prevent viral entry into target cells and have been
+shown to protect the host from infection10,11. Another viral surface
+protein, neuraminidase (NA), cleaves sialic acid and releases
+
+1Analytical Sciences, R&D SanoﬁPasteur, 1 Discovery Drive, Swiftwater, PA 18370, USA. 2Regulatory Affairs, Protein Sciences, a SanoﬁCompany, 1000 Research Parkway, Meriden
+CT 06450, USA. 3Global Medical Affairs, SanoﬁPasteur, 1 Discovery Drive, Swiftwater, PA 18370, USA. ✉email: Arun.Arunachalam@sanoﬁ.com
+
+budding virus from the infected cells, thus serving as another
+important vaccine target. Although the presence of NA is not
+required for effective vaccine performance12, its inclusion in
+annual inﬂuenza vaccination may help to broaden protection and
+reduce inﬂuenza severity13,14.
+
+y
+The preparation of the annual inﬂuenza vaccine ﬁrstly requires
+the identiﬁcation of the inﬂuenza strains and their like strains,
+most likely to spread during the upcoming season, for inclusion in
+the vaccine. Identiﬁcation of the target inﬂuenza strains is based
+on surveillance data collected by World Health Organization
+(WHO) collaborating centres at six locations in the UK, USA
+(including the Centers for Disease Control and Prevention [CDC]),
+Japan, China and Australia as part of the WHO Global Inﬂuenza
+Surveillance and Response System (GISRS)15. The ﬁnal decision on
+resulting vaccine targets is made by individual regulatory bodies.
+Inﬂuenza vaccines can afford signiﬁcant protection against
+inﬂuenza illness, even when there is an antigenic mismatch
+against the predominant circulating virus strains16,17. Such cross-
+protection can occur through the priming of the immune system
+by vaccination or natural infection and is primarily due to
+antibodies speciﬁc to conserved regions on the HA head and
+stem18. Vaccines that can induce immunity speciﬁc to circulating
+wild-type strains and cross-protection to related strains would be
+ideal against constantly evolving inﬂuenza viruses. As such, the
+conserved regions on the HA head and stem present attractive
+targets for development of universal inﬂuenza vaccines19,20.
+The annual production of inﬂuenza vaccine through conven-
+tional, mostly egg-based platforms, is arduous and a race-
+against-time21. The production process, from the selection of
+inﬂuenza
+strains
+to
+vaccine
+manufacture
+and
+release
+for
+distribution, takes eight to nine months each year. Agile, reliable
+
+
+## Page 2
+
+and egg-free technologies allowing for guaranteed and faster
+manufacture of inﬂuenza vaccines are needed to ensure timely
+delivery for upcoming epidemic seasons and during potential
+avian ﬂu pandemics, when egg supply may be impacted. The
+adoption
+of
+alternative
+vaccine
+development
+approaches
+(including mRNA, vector, and recombinant protein strategies)
+in
+the
+urgent
+response
+to
+the
+COVID-19
+pandemic
+has
+demonstrated the feasibility of using more efﬁcient methods to
+produce new, effective vaccines within accelerated development
+timelines. The recombinant quadrivalent inﬂuenza vaccine (RIV4,
+Flublok®, Supemtek® [EU, Canada], SanoﬁPasteur) was the ﬁrst
+licensed inﬂuenza vaccine to be produced using recombinant
+viral proteins instead of antigens derived from live inﬂuenza virus
+(as for inactivated split-virion and subunit vaccines). RIV4 is an
+unadjuvanted vaccine containing 45 µg of HA/dose from each of
+the four strains. The production of RIV4 is based on a novel
+production platform in which recombinant HA (rHA) is expressed
+in insect cells using a baculovirus expression vector system
+(BEVS)22. In brief, expresSF+ insect cells are infected with
+recombinant baculovirus carrying the relevant inﬂuenza HA
+genes, which are expressed under the control of a baculovirus
+polyhedrin promotor. rHA molecules from the infected cells are
+extracted using detergent and puriﬁed from the clariﬁed cell
+extract using column chromatographies followed by Q mem-
+brane ﬁltration. Puriﬁed rHA is suspended in relevant buffer
+using tangential ﬂow ﬁltration and passed through sterile
+ﬁltration for storage and formulation22. RIV4 has undergone
+extensive clinical assessment23, and was ﬁrst approved by FDA in
+2013. It is now licensed in the USA, Canada, Europe, Australia,
+and various other countries.
+This review focuses on the structural features of BEVS-derived
+rHA that make RIV4 unique from conventional vaccines, and how
+these features help to maximise vaccine performance. Notably,
+the beneﬁts of this manufacturing process can be extended to
+other viral targets, such as COVID-19, where the preservation of
+conserved epitopes is critical for imparting cross-protection
+against a constantly evolving and mutating virus.
+
+
+### POTENTIAL ANTIGENIC MISMATCH OF INFLUENZA VACCINE
+VIRUS GROWN IN EGG OR CELLS DUE TO ADAPTIVE
+MUTATIONS IN THE HA PRIMARY STRUCTURE
+
+A known risk of traditional split or subunit vaccines is the potential
+for the candidate vaccine virus or working virus seeds to acquire
+adaptive mutations as they grow in embryonated chicken egg or
+mammalian host cells during vaccine manufacture. Such adaptive
+mutations in HA peptides may reduce the effectiveness of the
+resultant vaccine24–26. Raymond et al.24 showed that an egg-
+adapted A/California/07/2009 (H1N1) vaccine strain acquired a
+mutation resulting in the substitution of glutamine with arginine
+at position 226 which in turn induced antibodies speciﬁc to
+receptor binding site that bound to vaccine-derived HA preferen-
+tially over the circulating wild-type virus24. During the 2012–2013
+northern hemisphere inﬂuenza vaccination campaign, HA from an
+egg-adapted A/Victoria/361/2011 (H3N2) virus used for vaccine
+manufacturing differed from the WHO-recommended prototype
+and several other wild-type inﬂuenza viruses in three positions,
+H156Q, G186V, and S219Y25. The low vaccine effectiveness (41%)
+observed for H3N2 in the 2012–2013 season was attributed to
+these
+three
+mutations
+during
+vaccine
+production25.
+Other
+antigenic mutations introduced by egg-adaptation of the vaccine
+strain
+during
+vaccine
+manufacturing
+are
+thought
+to
+have
+contributed to low vaccine effectiveness estimates for H3N2 in
+other inﬂuenza seasons26,27.
+Lower vaccine effectiveness estimates have been observed for
+H3N2 than for other strains since 2009, even during seasons when
+the selected vaccine strain appeared to be well matched to
+circulating strains27. Differences in HA glycosylation between the
+
+vaccine strains and circulating strains are thought to have
+contributed to this reduced vaccine effectiveness26. During the
+2014–2015 inﬂuenza season, a clade 3 C.2a H3N2 strain possessing
+a new predicted HA glycosylation site emerged26. For the
+2016–2017 season, the inﬂuenza vaccine was updated to include
+a clade 3 C.2a H3N2 strain (A/Colorado/15/2014) containing
+the new glycosylation site26. However, this particular glycosylation
+site was absent in the egg-adapted virus. Consequently, anti-
+bodies induced in humans, and in ferrets, poorly neutralised the
+glycosylated clade 3 C.2a H3N2 strain26. Contrary to the egg-
+derived vaccines and as expected, rHA containing the new
+glycosylation site induced optimal levels of antibodies that
+efﬁciently recognised the glycosylated clade 3 C.2a H3N2 virus26.
+The chances of introducing deleterious mutations through the
+adaptation of seed virus during vaccine manufacturing today are
+low due to the stringent quality control of the working seed virus.
+Indeed, as per current regulatory requirements, seed viruses must
+be conﬁrmed for both genetic and antigenic match with their
+originating wild-type virus before they can be used for vaccine
+production. Nonetheless, the time it takes to generate appropriate
+seeds could hinder the timely availability of the vaccines.
+Recombinant DNA technology avoids the risk of the virus
+acquiring egg- or cell-adapted mutations during the manufactur-
+ing process as it does not use ‘live’ inﬂuenza virus. Instead, DNA
+coding for HA is cloned from a reference virus published in the
+Global Initiative on Sharing All Inﬂuenza Data (GISAID) database
+and is conﬁrmed for ﬁdelity at the working virus bank level28. As
+such, the primary amino-acid sequence of the rHA produced using
+baculovirus or other recombinant expression system is identical to
+the HA from the wild-type virus isolate selected for seasonal
+inﬂuenza vaccine production. Thus, the risk of antigenic mismatch
+of RIV4, or other rHA vaccines in development, with the wildtype
+inﬂuenza strain selected for vaccines is eliminated.
+
+
+### RECOMBINANT HA EXPRESSION SYSTEMS
+
+Both prokaryotic and eukaryotic expression systems have been
+used for the manufacture of rHA vaccine antigens. The ﬁrst
+candidate recombinant inﬂuenza vaccines to be successfully
+manufactured using an Escherichia coli fermentation system
+involved expression of the globular head domain of the HA
+protein genetically fused with the Toll-like receptor 5 agonist,
+Salmonella typhimurium ﬂagellin type 229. The resultant vaccines
+elicited strong and protective antibody responses in mouse
+models29. In Phase 1 clinical evaluation, a prototypic quadrivalent
+vaccine developed using this E. coli platform elicited immune
+responses in healthy adults with favourable tolerability30. The
+E. coli expression system has been shown to generate a high
+yields of rHA (200 mg/L of puriﬁed HA protein) using a minimal
+number of bioreactors31. The authors projected that the strategy
+could yield up to half a billion doses of vaccine per month in a
+medium-scale pharmaceutical production facility31. This approach
+will likely shorten the entire vaccine manufacturing process32.
+However, E. coli-expressed rHA proteins can be subject to mis-
+folding, contain impurities (e.g., host-cell proteins), and do not
+undergo glycosylation33. They therefore need extensive proces-
+sing to attain desired purity and to fold to their native
+conformation31.
+The
+resulting
+processed
+proteins
+are
+less
+immunogenic than egg-derived antigens, with around a 10-fold
+greater quantity needed to generate protective immunity in
+animal models31. These inherent complications have prevented
+large scale manufacturing and eventual commercialisation of
+E. coli-expressed inﬂuenza vaccines.
+Vaccines containing plant-derived rHA either in soluble form or
+in virus-like particles (VLPs) have been shown to be safe and
+immunogenic
+in
+humans34–37.
+A
+plant-derived
+recombinant
+quadrivalent VLP (QVLP) at 30 µg dose per strain was found to
+be non-inferior in terms of vaccine efﬁcacy against respiratory
+
+
+## Page 3
+
+
+**[FIGURE]**
+
+![Figure from page 3](figures/figure_p3_824c8186.png)
+
+Fig. 1
+Generation of rHA using the baculovirus-insect cell expression system for the manufacture of RIV4. BV baculovirus. Figure adapted
+from Cox, M. M. & Hashimoto, Y (2011). A fast track inﬂuenza virus vaccine produced in insect cells. J Invertebr Pathol 107 Suppl, S31-41 © 2011
+Elsevier Inc, with permission from Elsevier23.
+
+illness and inﬂuenza-like illness to a quadrivalent inactivated
+inﬂuenza vaccine (QIV; Fluarix Quadrivalent, GlaxoSmithKline)
+given at 15 µg dose/strain in adults aged 18 to 64 years37.
+However, inconsistency in the expression levels of target proteins,
+due to nonspeciﬁc integration of transgene(s) into the host
+genome, has been a major challenge with plant-based expression
+systems34. The unpredictable yield could adversely impact timely
+vaccine production, which typically involves updating at least one
+HA component of the vaccine to reﬂect antigenic change in
+the circulating inﬂuenza viruses each season. A unique positive
+attribute of plant-derived rHA is that it can stimulate innate
+immunity that predominantly facilitates Type 1 pro-inﬂammatory
+cellular immune responses, potentially as a direct effect of the
+plant-origin lipids/glycolipids in the vaccine formulation38. These
+stimulatory components in a plant-derived vaccine may need to
+be controlled and kept at a constant level, for commercialisation,
+to avoid potential severe adverse events caused by enhanced
+immune responses in vaccinees.
+Several groups have explored the use of adenovirus (AdV),
+primarily as a replication-defective vector, for gene delivery and
+transgene expression of rHA in the host cells. AdV vectors induce
+both cell-mediated and humoral immunity against the expressed
+protein,
+providing
+robust
+protection
+against
+the
+targeted
+disease39–41. However, pre-existing or acquired immunity against
+adenovirus can hamper vaccine effectiveness by neutralising
+the vaccine vector and clearing the vector-infected cells. While
+the use of non-human adenovirus vectors could potentially
+overcome this issue, AdV vector immunity developed through
+repeated immunisation (for example during repeated annual
+inﬂuenza vaccinations) can dampen the immune response
+against the vaccine antigens39,40.
+RIV4 is one of only two available inﬂuenza vaccines that are
+egg-free. Like other recombinant vaccines, expression of HA in
+insect cells does not depend on the generation of reassortant
+candidate vaccine viruses selected for robust growth in embryo-
+nated
+eggs
+or
+mammalian
+cell-lines.
+Instead,
+HA
+genetic
+sequences from the wild-type strains selected for inclusion in
+the vaccine are inserted into the BEVS, from which high yields of
+rHA are harvested and puriﬁed (Fig. 1). This process requires less
+than half the time (2–3 months) required for the manufacture of
+conventional inﬂuenza vaccines42,43. This is a critical advantage for
+the timely supply of inﬂuenza vaccine for both seasonal epidemics
+and in pandemic situations. VLPs have been produced successfully
+
+by integrating HA, capsid protein (M1) and neuraminidase (NA)
+expressed in insect cells44–46. Although presenting proteins in VLP
+structures enhanced their immunogenicity, it compromised the
+purity of the vaccines considerably, as VLP structures also
+integrated both baculovirus and Sf9 cell proteins. Elimination of
+these unwanted proteins from the vaccine required extensive
+disassembly and reassembly processing of puriﬁed VLPs, which is
+a constraint for the commercial scale manufacturing of vaccines
+annually. It also raises the cost and the time it takes to bring the
+vaccines to the market. The yield and the cost of various
+manufacturing processes and technologies are critical elements
+to ensure adequate supply of vaccine at an affordable cost,
+especially in a pandemic situation. This aspect of the vaccine
+manufacturing has been discussed exhaustively in a report
+published by the Program for Appropriate Technology in Health
+(PATH) and is not covered here47.
+Insect cell-derived rHA (RIV4) has been studied extensively by
+various groups in both pre-clinical models and humans. The rHA
+contained in RIV4 differs from that expressed in other systems in
+terms of speciﬁc structural features, the nature of the source
+material and the manufacturing process, which have an impact on
+certain aspects of vaccine safety and efﬁcacy (Fig. 2). Based on
+these unique features, RIV4 received ‘product exclusivity’ protec-
+tion from FDA, a ‘new active substance’ designation from EMA
+Committee for Medicinal Products for Human Use (CHMP)48 and
+an ‘innovative drug’ designation from Health Canada49. The use of
+this technology, together with the molecular characterisation of
+the product, should facilitate continued evolution of inﬂuenza
+vaccines with improved effectiveness and their timely availability
+to the public.
+
+
+### THE TERTIARY STRUCTURE OF RECOMBINANT HA PRODUCED
+IN INSECT CELLS CAN INFLUENCE VACCINE IMMUNOGENICITY
+
+Inﬂuenza HA is synthesised as a single precursor polypeptide
+(HA0), which is generally cleaved into two polypeptides (HA1 and
+HA2) extracellularly by trypsin-like serine proteases, furin and
+other subtilisin family endoproteases after newly synthesised
+virions are released from infected cells50,51. HA cleavage is
+essential for the infectivity of inﬂuenza virus. Thus, expression of
+these proteases exclusively in the respiratory tract is responsible
+for inﬂuenza virus tropism to epithelial cells of the upper and
+lower respiratory tract. However, HA from inﬂuenza subtypes H5
+
+
+## Page 4
+
+
+**[FIGURE]**
+
+![Figure from page 4](figures/figure_p4_4be6804f.png)
+
+and H7 contains multi-basic cleavage sites that are cleaved by
+ubiquitously expressed furin in the trans-Golgi network, making
+these strains highly virulent50,52,53. The HA1 and HA2 polypeptides
+remain covalently linked by a disulﬁde bond to form heterodimers
+(Fig. 2). These molecules, either uncleaved HA0 or cleaved
+HA1–HA2 heterodimers, are expressed on the viral membrane
+surface as trimers (HA ‘rosettes’). The conversion of HA0 to
+HA1–HA2 heterodimers leads to conformational changes that
+render the molecule fusion-competent, thus enabling the virus to
+infect a new host cell52,54. In inactivated (split and subunit)
+vaccines, the HA molecules derived from live inﬂuenza viruses are
+present predominantly as HA1–HA2 heterodimers. By contrast, the
+rHA included in RIV4 is designed to yield predominantly as a single
+HA0 polypeptide (Fig. 2). A previous biochemical study (using SDS-
+PAGE under reducing conditions) clearly demonstrated the
+predominance of HA0 in recombinant HA H7 subunit complexes,
+produced using a BEVS, with no protein bands indicative of HA1 or
+HA2 molecules55. Poor processing of HA0 to HA1 and HA2
+polypeptides in Sf9 cells has been shown to be due to insufﬁcient
+levels of furin-like proteases in the cells56.
+The conformational differences between pre-fusion and post-
+fusion states of HA and the process of exposure of the fusion
+peptide have been well described54. Webster et al.57 demon-
+strated, using monoclonal antibodies, that neutralising epitopes
+present in the pre-fusion HA0 molecule were lost upon conversion
+to the post-fusion HA1–HA2 heterodimer at an acidic pH57.
+Similarly, several broadly neutralising antibodies directed against
+the highly conserved HA stem region have been shown to block
+HA maturation and fusion58. Some of these antibodies are likely to
+bind near the uncleaved fusion peptide that protrudes at the
+surface of the HA0 rosettes. Turner et al.59 identiﬁed a monoclona
+antibody that binds to an epitope on HA molecules that are partly
+and
+transiently
+exposed
+in
+the
+pre-fusion
+conformation59
+Structural analysis of the antigen-antibody complex revealed a
+potential dynamic state where HA undergoes structural ﬂuctua
+tions in its pre-fusion state59. A recent study by Khurana et al.60
+further demonstrated, using surface plasmon resonance technol
+ogy, that the observed broader speciﬁcity of antibodies induced
+by RIV4 may be linked to the presence of unique epitopes on
+HA060. Additionally, several groups have isolated, using HA0 as the
+immunogen or from a phage display library, protective antibodies
+speciﬁc to epitopes in the fusion loop region present only in
+HA061,62. These antibodies exhibited unprecedented breadth and
+potency and neutralised a diverse panel of representative viruses
+in group 1 and group 2 inﬂuenza A, blocked protease cleavage o
+HA0 and locked HA in the pre-fusion state. Thus, these antibodies
+make the virus non-infectious by inhibiting the pH-induced
+conformation change and the HA-mediated membrane fusion
+that are essential for the virus infectivity. HA molecules presented
+on inﬂuenza virions are predominantly in the pre-fusion state
+Once the virus binds to a cell or enters the acidic endosome o
+infected cells, the fusion loop is cleaved to yield HA1 and HA2, and
+the hydrophobic fusion peptide in the N-terminus of HA2 is
+sequestered away from membranes in a pocket, limiting its
+exposure52,63. Nonetheless, it would be of interest to examine the
+immunogenicity of released HA fusion peptides in the post-fusion
+state and their potential role in protection, as these are present in
+conventional inﬂuenza vaccines. Together, these critical ﬁndings
+Fig. 2
+Structural features of native HA expressed on inﬂuenza virus and rHA produced in insect cells using the baculovirus expression
+vector system. a HA protein (shown as monomer) extracted from inﬂuenza virus is a heterodimer comprising HA1 (turquoise) and HA2
+(orange) linked though an inter-disulﬁde (S–S) bond and contains complex-type sialylated N-linked glycans. Cleaved fusion peptides (green
+and complex glycans74 eliminate and mask unique epitopes on HA respectively. b Recombinant HA protein (shown as monomer) expressed in
+insect cells as a single precursor polypeptide (HA0) with amino acid sequence identical to wildtype HA sequence and contains unsialylated
+paucimannosidic N-linked glycans74. HA0 is coloured in turquoise and orange to show HA1 and HA2 segments combined as a single
+polypeptide. Uncleaved fusion-peptide loop (green) and simpler glycans preserve and expose unique epitopes on rHA.
+
+
+## Page 5
+
+clearly demonstrate structural differences between HA pre-fusion
+and post-fusion states, and the presence of unique neutralising
+epitopes in the pre-fusion HA0 molecules, which are present in
+RIV4 (Fig. 2).
+Structural differences in the HA polypeptides and rosettes
+between recombinant and split vaccines have been shown to
+result in differences, both qualitative and quantitative, in the
+immune response to vaccines in humans and animals. Portnoff
+et al.64 demonstrated that recombinant HA antigens (speciﬁcally
+for the H3 strain) produced using BEVS (as used for RIV4), induced
+signiﬁcantly higher levels of broadly cross-reactive antibodies
+against highly conserved regions of the HA head and stem
+domains than egg-derived split vaccines64. Recently Richards
+et al.65 examined CD4 T-cell and antibody responses in healthy
+adults who received egg-derived split vaccine, cell-derived split
+vaccine or RIV4 for three successive inﬂuenza seasons (2015–2016,
+2016–2017, and 2017–2018)65. RIV4 elicited the most robust
+responses, with signiﬁcantly higher T-cell and antibody levels than
+the other two vaccines. Authors postulated that simpler glycosyla-
+tion of rHA and absence of other inﬂuenza viral proteins in RIV4
+contributed to the observed robust immune response for RIV4 and
+emphasised the relevance of these features in determining
+vaccine efﬁcacy and long-term immunity65.
+
+
+### THE HOMOGENEITY OF RECOMBINANT HA ANTIGENS IN RIV4
+MAY IMPROVE THE SAFETY PROFILE OVER CONVENTIONAL
+INFLUENZA VACCINES
+
+As described above, HA is expressed on the viral surface as a HA
+trimer (rosette). When these are extracted from inﬂuenza viruses,
+they form clusters of varying sizes. This has been observed in
+conventional inﬂuenza virus-derived vaccines, with estimates of 18
+to 1100 trimers per cluster55,66,67. Two distinct populations of
+cluster have been observed; the majority have an average diameter
+of 150 nm, while the remainder are larger (average diameter,
+5500 nm)66. However, the rosette clusters in RIV4 are uniform in size
+and presentation, containing around six to eight HA trimers per
+cluster at an average diameter of approximately 30–40 nm55,67. The
+elution of rHA from RIV4 drug substance as a single peak in size-
+exclusion high-performance liquid chromatography is monitored
+for the release and the stability of RIV4.
+Further
+characterisation
+by
+cryo-electron
+microscopy
+has
+revealed that the HA rosette clusters in RIV4 are uniformly
+starﬁsh-shaped; whereas in the split vaccine they are mostly non-
+symmetrical and agglomerated into huge structures, resulting in
+both starﬁsh- and peanut-shaped heterogeneous particles55.
+Additional electron microscopy analysis of split vaccine clusters
+showed a highly heterogeneous mixture containing different
+types of viral particles containing HA and NA as well as split viral
+membrane folded in various shapes, slightly disrupted virions, and
+whole virions66.
+In Canada between 2000 and 2004, an unusual number of
+cases of a syndrome termed as oculo-respiratory syndrome (ORS)
+were reported following immunisation with the inactivated
+inﬂuenza split-virus vaccine68. Detailed analysis revealed that
+ORS, induced within 2 to 24 h of vaccination, was suspected to
+be due to the presence of micro-aggregates of unsplit virions in
+the conventional egg-derived inﬂuenza vaccines69. High levels of
+aggregate content in the split vaccine are believed to have
+induced a Type-2 polarised immune response resulting in ORS
+based on study results from a mouse model70. Although
+extremely rare, this is unlikely to occur with RIV4 that contains
+HA rosettes of small and uniform size.
+
+
+### THE N-LINKED GLYCAN STRUCTURE OF RECOMBINANT HA
+PRODUCED IN INSECT CELLS DIFFERS SIGNIFICANTLY FROM
+HA IN OTHER INFLUENZA VACCINES
+
+Inﬂuenza HA has a variable number of N-linked glycosylation sites
+(depending on the virus strain and subtype) in the globular head
+region and the conserved stem region71. The glycosylation of HA
+has various functions, including regulation of the virus life-cycle
+and a role in disease pathogenesis71. During vaccine manufacture,
+the host cells used for the production of HA play a major role in
+determining
+HA
+N-glycan
+composition72,73.
+Glycoproteins
+expressed in mammalian cells typically have sialylated complex-
+type N-linked glycans, while those expressed in insect cells
+typically have simple unsialylated glycans (either truncated,
+paucimannosidic
+or oligomannosidic
+glycans)74. An et al.72
+showed that egg-derived and mammalian (Madin-Darby canine
+kidney) cell-derived HA predominantly contained highly-branched
+complex or high-mannose glycans, whereas HA expressed in Sf9
+insect cells had relatively small paucimannose glycans (Fig. 2)72.
+The peptide sequences around glycosylation sites are highly
+conserved and, as such, antibodies directed against these regions
+could provide broader speciﬁcity. Antisera raised against simple
+monoglycosylated HA in mice were shown to improve the breadth
+and capacity of HA-neutralising antibodies to protect against
+lethal challenge with H5N1 compared to antisera raised against
+fully glycosylated HA75. Thus, elimination of parts of glycans that
+are not essential for HA structure may improve vaccine-induced
+protection. Subsequent studies showed that HA with simpler
+glycans induce more broadly protective antibodies with superior
+cross-clade protection compared to HA with more complex
+glycans76–79. The presence of simpler glycans appears to be
+equally efﬁcient to that of chicken or mammalian cell-derived
+glycosylation in ensuring the proper folding of HA, and exposes
+conserved regions of the molecule for the induction of immunity
+with broader protection12,71,76–80.
+In a study by Nachbagauer et al.78, RIV4 induced HA stem-
+speciﬁc neutralising antibodies directed against inﬂuenza subtypes
+H1, H3 and B haemagglutinin in an age-dependent manner in
+humans, with the highest titres observed in the elderly78. RIV4 also
+induces antibodies, in both humans and mice, that are speciﬁc to
+epitopes in the HA head region, at greater proportions than a
+traditional mammalian cell-derived subunit vaccine (Flucelvax®
+[Trivalent])77. Higher magnitudes of haemagglutination inhibitory
+antibody response against HA1 have also been observed with RIV4
+compared to egg- or mammalian cell-derived split vaccines
+(Flucelvax® Tetra, Seqirus, and Fluzone® quadrivalent SD, Sanoﬁ
+Pasteur)60. These data warrant additional studies to verify whether
+rHA elicits a broader antibody repertoire than conventional
+vaccines and whether this underlies the cross-protection against
+antigenic drift variants previously observed in clinical trials12,81.
+RIV4 has a unique ability to induce broadly cross-reactive
+antibody responses to antigenically drifted A/H3N2 viruses in
+humans. In a small study by Belongia et al.82, participants aged
+65–74 years were immunised with RIV4, a high-dose split-virion
+inactivated trivalent inﬂuenza vaccine (Fluzone® High Dose,
+SanoﬁPasteur; HD-IIV3) or adjuvanted-IIV3 (aIIV3)82. Participant
+sera were tested against four A/H3N2 viruses including a cell-
+propagated reference vaccine strain, two circulating viruses and
+an antigenically advanced virus with evidence of antigenic drift.
+The post-vaccination geometric mean fold rise against the two
+circulating viruses was twice as high for RIV4 as for HD-IIV3 or
+aIIV3. Post-vaccination titre against the antigenically drifted
+H3N2 were generally low and similar across all groups, however,
+receipt of RIV4 was strongly associated with seroconversion to
+this strain (p = 0.003). The investigators suggested that although
+the circulating A/H3N2 viruses were antigenically similar to the
+cell-grown vaccine reference virus, egg propagation of the
+vaccine strains had led to loss of a glycosylation site and
+
+
+## Page 6
+
+impaired antibody response to circulating viruses, consistent
+with previous reports26.
+In addition to the above referenced studies, in a recent study
+by Shinde et al.83 baculovirus-expressed rHA generated cross-
+protective
+responses
+against
+both
+circulating
+and
+drifted
+A/H3N2 strains, including in older adults who are at a higher
+risk for inﬂuenza and associated medical complications83,84. This
+unique characteristic of the recombinant vaccine is likely related
+to glycosylation of rHA in the insect cell line, leaving it uncleaved.
+The higher quantity and greater accessibility of the genetically
+conserved stem region of rHA produced in insect cells (resulting
+in smaller N-linked glycans) may contribute to cross-protection
+against mismatched inﬂuenza strains12,75. The study by Nachba-
+gaeur et al.78 supports the hypothesis that a recombinant
+vaccine results in increased titre of broadly neutralising HA stem-
+reactive antibodies and that these immune responses increase
+with age78. This increase with age is possibly due to repeated
+exposure to divergent inﬂuenza viruses similar to the multiple A/
+H3N2 virus strains evaluated by Belongia et al.82. Therefore,
+vaccine constructs that preserve the highly conserved HA stem
+can protect against drifted viruses and thus may confer a greater
+breadth of protection against inﬂuenza.
+
+
+### RECOMBINANT HA ANTIGENS ARE NOT SUBJECTED TO
+CHEMICAL MODIFICATIONS
+
+In all conventional inﬂuenza vaccines, whether derived from eggs
+or mammalian cells, the antigens are exposed to inactivation
+agents such as formaldehyde or β-propiolactone (BPL). These
+inactivating agents cause numerous modiﬁcations to the antigenic
+epitopes on HA through cross-linking or formation of bis-alkylated
+groups85–87. These modiﬁcations often result in changes to protein
+folding, conformation, and stability88. Unlike conventional vac-
+cines, RIV4 does not go through an inactivation step, thus
+preserving the native HA conformation of the wild-type virus,
+required for optimal protective immune response.
+
+
+### ABSENCE OF EGG OR OTHER INFLUENZA VIRAL COMPONENTS
+IN RECOMBINANT HA VACCINE IS LIKELY TO FAVOUR ITS
+SAFETY PROFILE
+
+As most split and subunit vaccines are prepared from inﬂuenza
+viruses that are grown in embryonated chicken eggs, they contain
+egg proteins. Testing of 58 vaccine lots covering six different
+seasonal inﬂuenza vaccines produced by ﬁve different manufac-
+turers showed that the median ovalbumin concentration was
+350 ng/mL89. Moreover, another study of commercial inﬂuenza
+vaccine preparations detected other viral proteins such as
+nucleoprotein and matrix protein (conﬁrmed by a chromato-
+graphic separation) that are not shown to be relevant for vaccine
+effectiveness, and viral RNA fragments (conﬁrmed by activity
+assay)90,91. Such egg-derived or other inﬂuenza virus-derived
+proteins (as described above) and inﬂuenza viral RNA fragments
+are not present in recombinant vaccines.
+Although uncommon, some individuals may be at increased
+risk of hypersensitivity reactions to component proteins such as
+ovalbumin and those who are sensitised may be at higher risk of
+clinical manifestations of allergic disease upon exposure92. Egg
+protein, viral RNA, and process impurities such as inactivating
+agents or hydrocortisone that are typically present in conven-
+tional vaccines are absent in RIV4 would eliminate potential
+adverse reactions, although rare, to these components in
+vulnerable individuals93.
+
+
+### CONCLUSIONS
+
+The evidence reviewed here demonstrates several advantages of
+the BEVS used in the manufacture of RIV4 over conventional
+
+inﬂuenza vaccines that rely on inﬂuenza virions propagated in egg
+or mammalian cells, split with detergents with or without further HA
+enrichment. The use of recombinant protein technology eliminates
+the risk of antigenic mismatch due to potential changes in primary
+HA structure through egg- or cell-adaptation. We also describe
+features of the rHA tertiary structure that are likely to be responsible
+for the generation of broad cross-reactive and protective antibodies,
+together with the direct or indirect evidence supporting this. The
+homogeneity of rHA rosettes and
+negligible
+process-related
+impurities are the hallmarks of RIV4. As rHA production bypasses
+the need for a viral inactivation step and avoids the use of eggs,
+related process-impurities such as inactivating agents or residual
+egg-protein,
+and
+thus
+potential
+adverse
+reactions
+to
+these
+impurities in vulnerable individuals are eliminated. This well-
+established and validated platform for vaccine manufacture could
+be extended to address other emerging infectious diseases where
+cross-protection against constantly evolving variants is critical, such
+as pandemic inﬂuenza and/or COVID-19.
+
+
+### DATA AVAILABILITY
+
+
+### No data were generated for the review article
+
+Received: 24 May 2021; Accepted: 3 November 2021;
+
+
+### REFERENCES
+
+mortality: a modelling study. Lancet 391, 1285 1300 (2018).
+2. World Health Organization. Fact-sheet. Inﬂuenza (Seasonal). Available at https://
+www.who.int/en/news-room/fact-sheets/detail/inﬂuenza-(seasonal). Accessed 12
+March 2021. (2018).
+3. Lafond, K. E. et al. Global burden of inﬂuenza-associated lower respiratory tract
+infections and hospitalizations among adults: a systematic review and meta-
+analysis. PLoS Med. 18, e1003550 (2021).
+4. US Centers for Disease Control and Prevention (CDC). Weekly U.S. Inﬂuenza
+Surveillance Report. https://www.cdc.gov/ﬂu/weekly/index.htm. Accessed 16
+March 2021.
+5. Sellers, S. A., Hagan, R. S., Hayden, F. G. & Fischer, W. A. II The hidden burden of
+inﬂuenza: a review of the extra-pulmonary complications of inﬂuenza infection.
+Inﬂuenza Other Respir. Viruses 11, 372–393 (2017).
+6. de Francisco Shapovalova, N., Donadel, M., Jit, M. & Hutubessy, R. A systematic
+review of the social and economic burden of inﬂuenza in low- and middle-
+income countries. Vaccine 33, 6537–6544 (2015).
+7. Szucs, T. The socio-economic burden of inﬂuenza. J. Antimicrob. Chemother. 44
+Suppl B, 11–15 (1999).
+8. Krammer, F. et al. Inﬂuenza. Nat. Rev. Dis. Prim. 4, 3 (2018).
+9. Paules, C. & Subbarao, K. Inﬂuenza. Lancet 390, 697–708 (2017).
+10. Hobson, D., Curry, R. L., Beare, A. S. & Ward-Gardner, A. The role of serum
+haemagglutination-inhibiting antibody in protection against challenge infection
+with inﬂuenza A2 and B viruses. Epidemiol. Infect. 70, 767–777 (1972).
+11. Ohmit, S. E. et al. Inﬂuenza hemagglutination-inhibition antibody titer as a cor-
+relate of vaccine-induced protection. J. Infect. Dis. 204, 1879–1885 (2011).
+12. Dunkle, L. M. et al. Efﬁcacy of recombinant inﬂuenza vaccine in adults 50 years of
+age or older. N. Engl. J. Med. 376, 2427–2436 (2017).
+13. Wohlbold, T. J. & Krammer, F. In the shadow of hemagglutinin: a growing interest
+in inﬂuenza viral neuraminidase and its role as a vaccine antigen. Viruses 6,
+2465–2494 (2014).
+14. Giurgea, L. T., Morens, D. M., Taubenberger, J. K. & Memoli, M. J. Inﬂuenza
+neuraminidase: a neglected protein and its potential for a better inﬂuenza vac-
+cine. Vaccines 8, 409 (2020).
+15. World Health Organization. Global Inﬂuenza Surveillance and Response System
+(GISRS). Available at https://www.who.int/inﬂuenza/gisrs_laboratory/en/. Acces-
+sed 17 February 2021. (2021).
+16. Camilloni, B., Neri, M., Lepri, E. & Iorio, A. M. Cross-reactive antibodies in middle-
+aged and elderly volunteers after MF59-adjuvanted subunit trivalent inﬂuenza
+vaccine against B viruses of the B/Victoria or B/Yamagata lineages. Vaccine 27,
+4099–4103 (2009).
+17. Tricco, A. C. et al. Comparing inﬂuenza vaccine efﬁcacy against mismatched and
+matched strains: a systematic review and meta analysis BMC Med 11 153 (2013)
+
+
+## Page 7
+
+18. Raymond, D. D. et al. Conserved epitope on inﬂuenza virus hemagglutinin head
+deﬁned by a vaccine-induced antibody. Proc. Natl Acad. Sci. USA 115, 168–173
+(2018).
+19. Sautto, G. A., Kirchenbaum, G. A. & Ross, T. M. Towards a universal inﬂuenza
+vaccine: different approaches for one goal. Virol. J. 15, 17 (2018).
+20. Nachbagauer, R. et al. A chimeric hemagglutinin-based universal inﬂuenza virus
+vaccine approach induces broad and long-lasting immunity in a randomized,
+placebo-controlled phase I trial. Nat. Med. 27, 106–114 (2021).
+21. Orenstein, W. A. & Schaffner, W. Lessons learned: role of inﬂuenza vaccine pro-
+duction, distribution, supply, and demand–what it means for the provider. Am. J.
+Med. 121, S22–S27 (2008).
+22. Felberbaum, R. S. The baculovirus expression vector system: a commercial
+manufacturing platform for viral vaccines and gene therapy vectors. Biotechnol. J.
+10, 702–714 (2015).
+23. Cox, M. M. & Hashimoto, Y. A fast track inﬂuenza virus vaccine produced in insect
+cells. J. Invertebr. Pathol. 107, S31–S41 (2011).
+24. Raymond, D. D. et al. Inﬂuenza immunization elicits antibodies speciﬁc for an
+egg-adapted vaccine strain. Nat. Med. 22, 1465–1469 (2016).
+25. Skowronski, D. M. et al. Low 2012-13 inﬂuenza vaccine effectiveness associated
+with mutation in the egg-adapted H3N2 vaccine strain not antigenic drift in
+circulating viruses. PLoS ONE 9, e92153 (2014).
+26. Zost, S. J. et al. Contemporary H3N2 inﬂuenza viruses have a glycosylation site
+that alters binding of antibodies elicited by egg-adapted vaccine strains. Proc.
+Natl Acad. Sci. USA 114, 12578–12583 (2017).
+27. Flannery, B. et al. Interim estimates of 2016-17 seasonal inﬂuenza vaccine
+effectiveness - United States, February 2017. MMWR Morb. Mortal. Wkly Rep. 66,
+167–171 (2017).
+28. Shu, Y. & McCauley, J. GISAID: Global initiative on sharing all inﬂuenza data - from
+vision to reality. Euro surveillance: bulletin Europeen sur les maladies transmis-
+sibles = European communicable disease bulletin 22, https://doi.org/10.2807/
+1560-7917.Es.2017.22.13.30494 (2017).
+29. Song, L. et al. Efﬁcacious recombinant inﬂuenza vaccines produced by high yield
+bacterial expression: a solution to global pandemic and seasonal needs. PLoS
+ONE 3, e2257 (2008).
+30. Tussey, L. et al. Phase 1 safety and immunogenicity study of a quadrivalent
+seasonal ﬂu vaccine comprising recombinant hemagglutinin-ﬂagellin fusion
+proteins. Open Forum Infect. Dis. 3, ofw015 (2016).
+31. Aguilar-Yanez, J. M. et al. An inﬂuenza A/H1N1/2009 hemagglutinin vaccine
+produced in Escherichia coli. PLoS ONE 5, e11694 (2010).
+32. Saczynska, V. Inﬂuenza virus hemagglutinin as a vaccine antigen produced in
+bacteria. Acta Biochim Pol. 61, 561–572 (2014).
+33. Davis, A. R. et al. Immune response to human inﬂuenza virus hemagglutinin
+expressed in Escherichia coli. Gene 21, 273–284 (1983).
+34. Rosales-Mendoza, S. et al. What does plant-based vaccine technology offer to the
+ﬁght against COVID-19? Vaccines 8, 183 (2020).
+35. Pillet, S. et al. A plant-derived quadrivalent virus like particle inﬂuenza vaccine
+induces cross-reactive antibody and T cell response in healthy adults. Clin.
+Immunol. 168, 72–87 (2016).
+36. Pillet, S. et al. Immunogenicity and safety of a quadrivalent plant-derived virus
+like particle inﬂuenza vaccine candidate-two randomized Phase II clinical trials in
+18 to 49 and >/=50 years old adults. PLoS ONE 14, e0216533 (2019).
+37. Ward, B. J. et al. Efﬁcacy, immunogenicity, and safety of a plant-derived, quad-
+rivalent, virus-like particle inﬂuenza vaccine in adults (18-64 years) and older
+adults (>/=65 years): two multicentre, randomised phase 3 trials. Lancet 396,
+1491–1503 (2020).
+38. Won, S. Y. et al. Characterization of the innate stimulatory capacity of plant-
+derived
+virus-like
+particles
+bearing
+inﬂuenza
+hemagglutinin.
+Vaccine
+36,
+8028–8038 (2018).
+39. Pandey, A. et al. Impact of preexisting adenovirus vector immunity on immu-
+nogenicity and protection conferred with an adenovirus-based H5N1 inﬂuenza
+vaccine. PLoS ONE 7, e33428–e33428 (2012).
+40. Sayedahmed, E. E. et al. Adenoviral vector-based vaccine platforms for devel-
+oping the next generation of inﬂuenza vaccines. Vaccines 8, 574 (2020).
+41. Xiang, K. et al. Progress on adenovirus-vectored universal inﬂuenza vaccines.
+Hum. Vaccin Immunother. 11, 1209–1222 (2015).
+42. Chen, J. R. et al. Better inﬂuenza vaccines: an industry perspective. J. Biomed. Sci.
+27, 33 (2020).
+43. Report to the president on reengeneering the inﬂuenza vaccine production
+enterprise to meet the challenges of pandemic inﬂuenza. Available at https://
+obamawhitehouse.archives.gov/sites/default/ﬁles/microsites/ostp/PCAST-
+Inﬂuenza-Vaccinology-Report.pdf. Accessed August 2021.
+44. López-Macías, C. et al. Safety and immunogenicity of a virus-like particle pan-
+demic inﬂuenza A (H1N1) 2009 vaccine in a blinded, randomized, placebo-
+controlled trial of adults in Mexico. Vaccine 29, 7826–7834 (2011).
+45. Pincus, S. et al. Release and stability testing programs for a novel virus like par
+ticle vaccine. Biopharm. Int 23 Suppl 10, 26–34 (2010).
+46. Fernandes, F. et al. Insect cells as a production platform of complex virus-like
+particles. Expert Rev. Vaccines 12, 225–236 (2013).
+47. Inﬂuenza vaccine strategies for broad global access. Available at https://path.
+azureedge.net/media/documents/VAC_inﬂ_publ_rpt_10-07.pdf. Accessed August
+2021.
+48. European Medicines Agency. Assessment report. Supemtek. Procedure No.
+EMEA/H/C/005159/0000. Available at https://www.ema.europa.eu/en/documents/
+assessment-report/supemtek-epar-public-assessment-report_en.pdf. Accessed 17
+February 2021.
+49. Health Canada. Register of Innovative Drugs [Updated 15 April 2021]. Available
+from
+https://www.canada.ca/en/health-canada/services/drugs-health-products/
+drug-products/applications-submissions/register-innovative-drugs.html.
+Acces-
+sed 19 April 2021.
+50. Taubenberger, J. K. Inﬂuenza virus hemagglutinin cleavage into HA1, HA2: no
+laughing matter. Proc. Natl Acad. Sci. USA 95, 9713–9715 (1998).
+51. Stieneke-Gröber, A. et al. Inﬂuenza virus hemagglutinin with multibasic cleavage
+site is activated by furin, a subtilisin-like endoprotease. EMBO J. 11, 2407–2414
+(1992). PMC556715.
+52. Chen, J. et al. Structure of the hemagglutinin precursor cleavage site, a deter-
+minant of inﬂuenza pathogenicity and the origin of the labile conformation. Cell
+95, 409–417 (1998).
+53. Luczo, J. M. et al. Molecular pathogenesis of H5 highly pathogenic avian inﬂu-
+enza: the role of the haemagglutinin cleavage site motif. Rev. Med Virol. 25,
+406–430 (2015).
+54. Boonstra, S. et al. Hemagglutinin-mediated membrane fusion: a biophysical
+perspective. Annu Rev. Biophys. 47, 153–173 (2018).
+55. McCraw, D. M., Gallagher, J. R. & Harris, A. K. Characterization of inﬂuenza vaccine
+hemagglutinin complexes by cryo-electron microscopy and image analyses
+reveals structural polymorphisms. Clin. Vaccin. Immunol. 23, 483–495 (2016).
+56. Kost, T. A. & Condreay, J. P. Recombinant baculoviruses as expression vectors for
+insect and mammalian cells. Curr. Opin. Biotechnol. 10, 428–433 (1999).
+57. Webster, R. G., Brown, L. E. & Jackson, D. C. Changes in the antigenicity of the
+hemagglutinin molecule of H3 inﬂuenza virus at acidic pH. Virology 126, 587–599
+(1983).
+58. Lee, P. S. & Wilson, I. A. Structural characterization of viral epitopes recognized by
+broadly cross-reactive antibodies. Curr. Top. Microbiol. Immunol. 386, 323–341
+(2015).
+59. Turner, H. L. et al. Potent anti-inﬂuenza H7 human monoclonal antibody induces
+separation of hemagglutinin receptor-binding head domains. PLoS Biol. 17,
+e3000139 (2019).
+60. Khurana, S. et al. Repeat vaccination reduces antibody afﬁnity maturation across
+different inﬂuenza vaccine platforms in humans. Nat. Commun. 10, 3338 (2019).
+61. Ekiert, D. C. et al. Antibody recognition of a highly conserved inﬂuenza virus
+epitope. Science 324, 246–251 (2009).
+62. Kallewaard, N. L. et al. Structure and function analysis of an antibody recognizing
+all inﬂuenza A subtypes. Cell 166, 596–608 (2016).
+63. Benhaim, M. A. et al. Structural monitoring of a transient intermediate in the
+hemagglutinin fusion machinery on inﬂuenza virions. Sci. Adv. 6, eaaz8822 (2020).
+64. Portnoff, A. D. et al. Inﬂuenza hemagglutinin nanoparticle vaccine elicits broadly
+neutralizing antibodies against structurally distinct domains of H3N2 HA. Vaccines
+8, 99 (2020).
+65. Richards, K. A. et al. Recombinant HA-based vaccine outperforms split and sub-
+unit vaccines in elicitation of inﬂuenza-speciﬁc CD4 T cells and CD4 T cell-
+dependent antibody responses in humans. NPJ Vaccines 5, 77 (2020).
+66. Tay, T. et al. Investigation into alternative testing methodologies for characteriza-
+tion of inﬂuenza virus vaccine. Hum. Vaccines Immunother. 11, 1673–1684 (2015).
+67. Gallagher, J. R. et al. Characterization of hemagglutinin antigens on inﬂuenza
+virus and within vaccines using electron microscopy. Vaccines https://doi.org/
+10.3390/vaccines6020031 (2018).
+68. Public Health Agency of Canada. Oculo-respiratory syndrome following inﬂuenza
+vaccination: review of post-marketing surveillance through four inﬂuenza sea-
+sons in Canada. Can. Commun. Dis. Rep. 31, 217–225 (2005).
+69. Choudhri, Y. & Walop, W. Inﬂuenza vaccine-associated adverse events: results of
+passive surveillance, Canada 2001-2002. Can. Commun. Dis. Rep. 28, 189–196
+(2002).
+70. Babiuk, S. et al. Aggregate content inﬂuences the Th1/Th2 immune response to
+inﬂuenza vaccine: evidence from a mouse model. J. Med. Virol. 72, 138–142 (2004).
+71. Wei, C. J. et al. Cross-neutralization of 1918 and 2009 inﬂuenza viruses: role of
+glycans in viral evolution and vaccine design. Sci. Transl. Med. 2, 24ra21 (2010).
+72. An, Y. et al. N-glycosylation of seasonal inﬂuenza vaccine hemagglutinins:
+implication for potency testing and immune processing. J Virol. https://doi.org/
+10.1128/JVI.01693-18 (2019).
+
+
+## Page 8
+
+73. Schwarzer, J. et al. Glycan analysis in cell culture-based inﬂuenza vaccine pro
+duction: inﬂuence of host cell line and virus strain on the glycosylation pattern o
+viral hemagglutinin. Vaccine 27, 4325–4336 (2009).
+74. Chung, C. Y. et al. SnapShot: N-glycosylation processing pathways across king
+doms. Cell 171, 258–258.e251 (2017).
+75. Wang, C. C. et al. Glycans on inﬂuenza hemagglutinin affect receptor binding and
+immune response. Proc. Natl Acad. Sci. USA 106, 18137–18142 (2009).
+76. Chen, J. R. et al. Vaccination of monoglycosylated hemagglutinin induces cross
+strain protection against inﬂuenza virus infections. Proc. Natl Acad. Sci. USA 111
+2476–2481 (2014).
+77. Henry, C. et al. Monoclonal antibody responses after recombinant hemagglutinin
+vaccine versus subunit inactivated inﬂuenza virus vaccine: a comparative study. J
+Virol. https://doi.org/10.1128/JVI.01150-19 (2019).
+78. Nachbagauer, R. et al. Age dependence and isotype speciﬁcity of inﬂuenza virus
+hemagglutinin stalk-reactive antibodies in humans. mBio 7, e01996–01915 (2016)
+79. Reichert, T. et al. Does glycosylation as a modiﬁer of original antigenic sin explain
+the case age distribution and unusual toxicity in pandemic novel H1N1 inﬂuenza?
+BMC Infect. Dis. 10, 5 (2010).
+80. Wang, K. et al. Expression and puriﬁcation of an inﬂuenza hemagglutinin–one
+step closer to a recombinant protein-based inﬂuenza vaccine. Vaccine 24
+2176–2185 (2006).
+81. Treanor, J. J. et al. Protective efﬁcacy of a trivalent recombinant hemagglutinin
+protein vaccine (FluBlok(R)) against inﬂuenza in healthy adults: a randomized
+placebo-controlled trial. Vaccine 29, 7733–7739 (2011).
+82. Belongia, E. A. et al. Clinical trial to assess immunogenicity of high-dose, adju
+vanted, and recombinant inﬂuenza vaccines against cell-grown A(H3N2) viruses
+in adults 65 to 74 years, 2017-2018. Vaccine 38, 3121–3128 (2020).
+83. Shinde, V. et al. Induction of cross-reactive hemagglutination inhibiting antibody
+and
+polyfunctional
+CD4+
+T-cell
+responses
+by
+a
+recombinant
+matrix-M
+adjuvanted hemagglutinin nanoparticle inﬂuenza vaccine. Clin. Infect. Dis
+https://doi.org/10.1093/cid/ciaa1673 (2020).
+84. Centers for Disease Control Prevention. Estimates of deaths associated with
+seasonal inﬂuenza — United States, 1976-2007. MMWR Morb. Mortal. Wkly Rep
+59, 1057–1062 (2010).
+85. Goldstein, M. A. & Tauraso, N. M. Effect of formalin, beta-propiolactone, mer
+thiolate, and ultraviolet light upon inﬂuenza virus infectivity chicken cell agglu
+tination, hemagglutination, and antigenicity. Appl. Microbiol. 19, 290–294 (1970)
+86. Uittenbogaard, J. P., Zomer, B., Hoogerhout, P. & Metz, B. Reactions of beta
+propiolactone with nucleobase analogues, nucleosides, and peptides: implica
+tions for the inactivation of viruses. J. Biol. Chem. 286, 36198–36214 (2011).
+87. She, Y. M. et al. Surface modiﬁcations of inﬂuenza proteins upon virus inactiva
+tion by β-propiolactone. Proteomics 13, 3537–3547 (2013).
+88. Herrera-Rodriguez, J. et al. Inactivated or damaged? Comparing the effect o
+inactivation methods on inﬂuenza virions to optimize. Vaccin. Prod. Vaccin. 37
+1630–1637 (2019).
+89. Li, J. T., Rank, M. A., Squillace, D. L. & Kita, H. Ovalbumin content of inﬂuenza
+vaccines. J. Allergy Clin. Immunol. 125, 1412–1413 (2010). author reply 1413-1414
+90. Garcia-Canas, V. et al. Selective and quantitative detection of inﬂuenza virus
+proteins in commercial vaccines using two-dimensional high-performance liquid
+chromatography and ﬂuorescence detection. Anal. Chem. 79, 3164–3172 (2007)
+91. Garcia-Canas, V., Lorbetskie, B. & Girard, M. Rapid and selective characterization o
+inﬂuenza virus constituents in monovalent and multivalent preparations using
+non-porous reversed-phase high performance liquid chromatography columns. J
+Chromatogr. A 1123, 225–232 (2006).
+
+92. Lin, Y. T. et al. Correlation of ovalbumin of egg white components with allergic
+diseases in children. J. Microbiol. Immunol. Infect. 49, 112–118 (2016).
+93. Vaccine excipient summary. Available at https://www.cdc.gov/vaccines/pubs/
+pinkbook/downloads/appendices/b/excipient-table-2.pdf. Accessed August
+2021.
+
+
+### ACKNOWLEDGEMENTS
+
+Editorial assistance with the preparation of the manuscript was provided by Juliette
+Gray, inScience Communications, Springer Healthcare Ltd, UK and was funded by
+SanoﬁPasteur. Graphic design support provided by Naveen Kandibanda (Sanoﬁ).
+The authors also thank Kathryn Bonaparte (SanoﬁPasteur) for editorial assistance and
+manuscript coordination.
+
+
+### AUTHOR CONTRIBUTIONS
+
+A.A. conceptualised, designed, and prepared the original draft and Fig. 2; D.R. and P.P
+expanded the clinical and the regulatory sections respectively; all authors reviewed
+and commented on the manuscript at all stages, approved the ﬁnal draft, and remain
+accountable for the accuracy and integrity of the work.
+
+
+### COMPETING INTERESTS
+
+All authors are employees of SanoﬁPasteur and may hold shares and/or stock
+options in the company.
+
+
+### ADDITIONAL INFORMATION
+
+Correspondence and requests for materials should be addressed to Arun B.
+Arunachalam.
+
+Reprints and permission information is available at http://www.nature.com/
+reprints
+
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims
+in published maps and institutional afﬁliations.
+
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as long as you give
+appropriate credit to the original author(s) and the source, provide a link to the Creative
+Commons license, and indicate if changes were made. The images or other third party
+material in this article are included in the article’s Creative Commons license, unless
+ndicated otherwise in a credit line to the material. If material is not included in the
+article’s Creative Commons license and your intended use is not permitted by statutory
+regulation or exceeds the permitted use, you will need to obtain permission directly
+from the copyright holder. To view a copy of this license, visit http://creativecommons.
+org/licenses/by/4 0/
+
+
+### © The Author(s) 2021
+
+
+---
+
+## Extraction Metadata
+
+- Text blocks: 54
+
+- Figures/Tables: 2

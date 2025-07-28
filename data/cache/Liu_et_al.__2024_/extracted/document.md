@@ -1,0 +1,1260 @@
+# Extracted Document
+
+**Source:** data/clinical_files/Liu et al. (2024).pdf
+
+**Pages:** 13
+
+---
+
+
+## Page 1
+
+
+### Redirecting antibody responses from egg-
+adapted epitopes following repeat vaccina-
+tion with recombinant or cell culture-based
+versus egg-based inﬂuenza vaccines
+
+Feng Liu
+1, F. Liaini Gross1, Sneha Joshi1, Manjusha Gaglani
+2,3,4,
+Allison L. Naleway5, Kempapura Murthy4, Holly C. Groom5, Meredith G. Wesley1,6,
+Laura J. Edwards6, Lauren Grant1, Sara S. Kim1, Suryaprakash Sambhara1,
+Shivaprakash Gangappa
+1, Terrence Tumpey1, Mark G. Thompson1,
+Alicia M. Fry1, Brendan Flannery
+1, Fatimah S. Dawood1 & Min Z. Levine
+1
+
+Repeat vaccination with egg-based inﬂuenza vaccines could preferentially
+boost antibodies targeting the egg-adapted epitopes and reduce immuno-
+genicity to circulating viruses. In this randomized trial (Clinicaltrials.gov:
+NCT03722589), sera pre- and post-vaccination with quadrivalent inactivated
+egg-based (IIV4), cell culture-based (ccIIV4), and recombinant (RIV4) inﬂuenza
+vaccines were collected from healthcare personnel (18-64 years) in 2018−19
+(N = 723) and 2019−20 (N = 684) inﬂuenza seasons. We performed an
+exploratory analysis. Vaccine egg-adapted changes had the most impact on
+A(H3N2) immunogenicity. In year 1, RIV4 induced higher neutralizing and total
+HA head binding antibodies to cell- A(H3N2) virus than ccIIV4 and IIV4. In year
+2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4-
+ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with
+either RIV4 or ccIIV4 further improved antibody responses to circulating
+viruses with decreased neutralizing antibody egg/cell ratio. RIV4 also had
+higher post-vaccination A(H1N1)pdm09 and A(H3N2) HA stalk antibodies in
+year 1, but there was no signiﬁcant difference in HA stalk antibody fold rise
+among vaccine groups in either year 1 or year 2. Multiple seasons of non-egg-
+based vaccination may be needed to redirect antibody responses from
+immune memory to egg-adapted epitopes and re-focus the immune responses
+towards epitopes on the circulating viruses to improve vaccine effectiveness.
+
+Inﬂuenza viruses are a common cause of respiratory infections in
+humans, annual inﬂuenza vaccination has been recommended in the
+United States (US) for many decades. Conventionally, inﬂuenza vac-
+cine seed viruses are propagated in embryonated chicken eggs to
+produce
+inactivated
+inﬂuenza
+vaccines
+(IIV).
+However,
+this
+
+A full list of afﬁliations appears at the end of the paper.
+e-mail: mlevine@cdc.gov
+
+manufacturing process can lead to egg-adapted mutations in the
+hemagglutinin (HA) protein in IIV, that could result in altered anti-
+genicity and reduced vaccine effectiveness (VE) against the circulating
+inﬂuenza strains1–6. Therefore, vaccine manufacturing platforms that
+do not rely on eggs have been established in the past decade including
+
+
+## Page 2
+
+a cell culture-based inﬂuenza vaccine (Flucelvax Quadrivalent™by
+Seqirus, Inc., ccIIV4) and a recombinant inﬂuenza vaccine (Flublok
+Quadrivalent® by SanoﬁPasteur, RIV4). RIV4 contains 3 times the
+antigen dose at 45 µg HA/dose/strain compared to the standard dose
+IIV4 and ccIIV4 (15 µg HA/dose/strain). Both ccIIV4 and RIV4 are cur-
+rently licensed in the US7. Clinical trials evaluating ccIIV and RIV have
+shown comparable to advantageous immunogenicity compared to
+standard-dose egg-based IIVs in different age groups8–13. Observational
+studies and clinical trials reported that ccIIV and RIV demonstrated
+modest to signiﬁcant improvement of VE over egg-based IIV in dif-
+ferent age groups and inﬂuenza seasons7,14–16.
+Repeat annual inﬂuenza vaccination is another factor that may
+affect the antibody responses elicited by inﬂuenza vaccines. Studies
+indicated that frequent prior vaccination could blunt the antibody
+responses to inﬂuenza vaccination over time11,13,17–21 which can lead to
+reduced vaccine effectiveness22–26. One study reported that repeat
+vaccination reduced antibody afﬁnity maturation to the HA antigens of
+all vaccine components from egg-based, cell-culture based, and
+recombinant inﬂuenza vaccines20. Thus far, there are few direct com-
+parisons of immunogenicity of the three vaccine platforms in popu-
+lations with a history of frequent inﬂuenza vaccinations. We recently
+reported the comparison of immunogenicity of ccIIV and RIV to egg-
+based standard dose IIVs among US healthcare personnel (HCP) aged
+18−64 years from a randomized, open-label trial during the 2018−2019
+season27 and the 2019−2020 season following repeat vaccination in 2
+consecutive years28,29. Those comparisons were focused on the neu-
+tralizing antibody responses to cell-propagated vaccine viruses only.
+RIV4 elicited higher neutralizing antibody responses than IIV4 against
+cell-propagated vaccine viruses27. Repeat vaccination with ccIIV4 or
+RIV4 in 2 seasons also resulted in signiﬁcantly higher post-vaccination
+antibody responses to cell-propagated vaccine viruses29. Most HCP
+participants had received egg-based inﬂuenza vaccines frequently
+during the preceding ﬁve seasons.
+
+
+**[FIGURE]**
+
+![Figure from page 2](figures/figure_p2_cd772c71.png)
+
+Fig. 1 | CONSORT diagrams for screening and Enrollment of participants in Year
+1 (2018−2019) and Year 2 (2019−2020). Abbreviations: IIV4: Inactivated inﬂuenza
+vaccine (Fluzone® or Fluarix® Quadrivalent); ccIIV4: Cell-culture based IIV
+
+We previously reported that antibodies targeting the egg-adapted
+epitopes could be preferentially boosted from repeat vaccination with
+egg-based vaccines3. The potential of non-egg-based vaccines to miti-
+gate the impact of prior egg-based vaccination remains unclear. In this
+study, we analyzed neutralizing antibody responses to both egg- and
+cell-propagated vaccine viruses, and total binding antibodies to both
+HA head and HA stalk among HCP following vaccination with RIV, ccIIV,
+and standard egg-based IIVs in two inﬂuenza seasons to investigate
+whether repeat vaccination with non-egg-based vaccines can overcome
+the effect of prior repeat vaccination with egg-based vaccines.
+
+
+### Results
+
+2018−2019 and 2019−2020 study seasons
+This study was a randomized, open-label trial conducted in the Uni-
+ted States during the Northern Hemisphere 2018−2019 (Year 1,
+n = 723) and 2019−2020 (Year 2, n = 684) inﬂuenza seasons (Fig. 1). In
+year 1, HCP were randomized to receive one of four inﬂuenza vac-
+cines: ccIIV4 (Flucelvax), RIV4 (Flublok), Fluzone IIV4 or Fluarix IIV4.
+Year 1 vaccines contain 2018−2019 Northern Hemisphere formula-
+tion including an A/Michigan/45/2015 (H1N1)pdm09-like virus; an A/
+Singapore/INFIMH-16-0019/2016 (H3N2)-like virus; a B/Colorado/06/
+2017-like virus (B/Victoria/2/87 lineage); and a B/Phuket/3073/2013-
+like virus (B/Yamagata/16/88 lineage) (Table 1). ccIIV4 in the
+2018−2019 season contained cell-culture derived seed strains for the
+inﬂuenza A(H3N2) and B vaccine strains but egg-based seed strain for
+A(H1N1)pdm09. In year 2 (2019−2020 season), HCP were re-
+randomized into 7 repeat vaccination arms: IIV4-IIV4, IIV4-ccIIV4,
+IIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4
+(Fig. 1). The A(H1N1)pdm09 and A(H3N2) components were upda-
+ted to a A/Brisbane/02/2018 (H1N1)pdm09-like virus and an A/Kan-
+sas/14/2017 (H3N2)-like virus respectively while the B/Victoria and B/
+Yamagata components remained the same (Table 1).
+
+(Flucelvax® Quadrivalent); RIV4: recombinant-hemagglutinin inﬂuenza vaccine
+(Flublok® Quadrivalent). *Numbers in parenthesis are new enrollees for Year 2.
+
+
+## Page 3
+
+Table 1 | Vaccine egg-adapted mutations in the HA head domain of egg-grown vaccine viruses and CVVs in year 1 and year 2 o
+the study
+
+
+**[TABLE]**
+
+![Table from page 3](figures/table_p3_936b07b6.png)
+
+aHA proteins of these vaccine viruses were included in the RIV4 vaccine.
+bCVV: candidate vaccine virus used in the Fluzone IIV4.
+cCVV used in the Fluarix IIV4 vaccine.
+dCVV used in the ccIIV4 vaccine. For A(H1N1)pdm09 virus, the egg CVV was passaged in qualiﬁed MDCK cells for manufacturing ccIIV4 used in Year 1.
+¶ Mix of D and G.
+CHO: Glycosylation motif. CHO-: Loss of glycosylation motif.
+Cell grown vaccine viruses used as reference are bolded. HA substitution due to egg-adaptions are italic and bold.
+Accession numbers were noted to those reference sequences downloaded from GISAID database.
+
+
+### Egg-adapted amino acid substitutions in egg-based vaccines in
+both study years
+
+HA sequences from components of IIV4, ccIV4 and RIV4 vaccines
+used in both study years were ﬁrst analyzed (Table 1). Within the
+same season, the study vaccines contained different candidate vac-
+cine viruses (CVVs) that are antigenically-like the prototype vaccine
+viruses recommended by the World Health Organization (WHO)30.
+Compared to the cell-grown vaccine prototype viruses, the vaccine
+antigens from all 4 subtypes in the egg-based vaccines had HA sub-
+stitutions due to egg-adaptation. A(H1N1)pdm09 egg CVV for-
+mulated in Fluzone IIV4 had Q223R substitution in both years, while
+the egg CVV used for Fluarix IIV4 and ccIIV4 in year 1 had G225A
+substitution instead (Table 1). For A(H3N2), year 1 egg-based vaccine
+had T160K (resulting in a loss of glycosylation motif at HA 158),
+L194P, and D225G egg-adapted changes, while year 2 egg-based
+vaccine had D190N and N246T substitutions. Inﬂuenza B vaccine
+viruses remained the same in both years. Egg-based B/Victoria vac-
+cine had T199I substitution, which can cause a loss of glycosylation
+motif at HA position 197; whereas egg-based B/Yamagata vaccine had
+
+a N197D substitution that can also cause a loss of glycosylation motif
+at HA position 197.
+
+
+### Antibody responses at pre-vaccination, 1-month and 6-months
+post-vaccination in Year 1
+
+We ﬁrst measured neutralizing antibody responses by micro-
+neutralization assays (MN) for A(H3N2) and hemagglutination
+inhibition assays (HI) for A(H1N1)dpm09 and Bs. In year 1 at base-
+line, pre-vaccination MN/HI geometric mean titers (GMTs) were
+similar (p > 0.05) among the 4 vaccine groups (Fig. 2). Signiﬁcant
+differences in neutralizing antibody responses were detected at
+1-month post-vaccination. For A(H3N2), RIV4 vaccination induced
+signiﬁcantly higher (p < 0.05) neutralizing antibody responses to
+the cell-propagated A(H3N2) virus than ccIIV4 and IIV4s (Fluarix and
+Fluzone) in both age groups; RIV4 group also mounted signiﬁcantly
+higher (p < 0.05) MN antibody responses to the egg-propagated
+A(H3N2) virus than ccIIV4 and Fluarix-IIV4. For A(H1N1)pdm09,
+RIV4 induced signiﬁcantly higher (p < 0.05) post-vaccination HI
+antibody responses to both egg- (GMT 122) and cell- (GMT 137)
+
+
+## Page 4
+
+
+**[FIGURE]**
+
+![Figure from page 4](figures/figure_p4_ed2eb1bf.png)
+
+Fig. 2 | MN or HI Antibody responses to egg- and cell-propagated vaccine
+viruses at pre-vaccination (Day 0), 1-month, and 6-months post-vaccination in
+Year 1. Antibody titers from each of the four vaccine groups were presented as
+geometric mean titers (GMTs) with 95% conﬁdence interval (CI) respectively for
+18−44 years and 45−64 years age groups. Gray dots represented individual titers.
+Fluzone IIV4 18−44 years: Day 0 (n = 52), 1 m (n = 52), 6 m (n = 47); Fluzone IIV4 45-
+64 years: Day 0 (n = 58), 1 m (n = 58), 6 m (n = 54); Fluarix IIV4 18−44 years: Day 0
+(n = 55), 1 m (n = 55), 6 m (n = 48); Fluarix IIV4 45−64 years: Day 0 (n = 65), 1 m
+(n = 63), 6 m (n = 59); ccIIV4 18−44 years: Day 0 (n = 135), 1 m (n = 133), 6 m (n = 124);
+
+propagated A(H1N1)pdm09 viruses than ccIIV4 (egg virus GMT 76;
+cell virus GMT 77) in the 18-44 years age group, and signiﬁcantly
+higher (p < 0.05) post-vaccination HI antibodies to egg- (GMT 82)
+and cell- (GMT 76) propagated A(H1N1)pdm09 viruses than
+Fluzone-IIV4 (egg virus GMT 43; cell virus GMT 36) in the 45-64
+years age group. In contrast, post-vaccination HI antibodies to B/
+Victoria and B/Yamagata viruses were mostly similar (p > 0.05)
+among the 4 vaccines in both age groups, except that RIV4 induced
+signiﬁcantly higher (p < 0.05) HI antibody responses (GMT: 117) to
+cell-propagated B/Yamagata vaccine virus than ccIIV4 (GMT: 80) in
+the 18−44 years age group (Fig. 2). RIV4 also had higher ser-
+opositivity rate (proportions of titers ≥40) and seroconversion rate
+(SCR) than egg-based IIV4 vaccines against the cell-grown A(H3N2)
+virus (Supplementary Tables S1 and S2)27.
+When comparing post-vaccination antibody responses by fold
+rise, RIV4 induced overall higher geometric mean fold rise of neu-
+tralizing antibody titers to the vaccine viruses (Fig. 3A, B). For A(H3N2),
+RIV4 induced higher fold rise of neutralizing antibodies to both cell-
+and egg-propagated A(H3N2) viruses compared to other vaccines in
+both age groups (Fig. 3A, B). MN fold rise to A(H3N2) cell vaccine virus
+was signiﬁcantly higher (p < 0.0001) in RIV4 groups (3.5 in 18−44 years,
+4.6 in 45−64 years) than those in IIV4 and ccIIV4 groups (range:
+1.0−1.6). Neutralizing antibody responses waned at 6-months post-
+vaccination in year 1. GMTs to each virus at 6-months reduced by 1−2.5
+folds comparing with the GMTs at 1-month post-vaccination (Fig. 3C,
+D).
+At
+6-months
+post-vaccination,
+although
+fold
+reduction
+in
+
+ccIIV4 45−64 years: Day 0 (n = 148), 1 m (n = 147), 6 m (n = 142); RIV4 18−44 years:
+Day 0 (n = 99), 1 m (n = 98), 6 m (n = 85); RIV4 45−64 years: Day 0 (n = 98), 1 m
+(n = 98), 6 m (n = 92); Microneutralization titers (MN) were measured for A(H3N2)
+virus, while hemagglutination inhibition (HI) titers were measured for A(H1N1)
+pdm09, B/Victoria (B/VIC), and B/Yamagata (B/YAM) viruses. One-way ANOVA
+corrected for multiple comparisons (Tukey’s test) was used to compare the GMTs
+of each time point among the 4 vaccine groups. Statistically signiﬁcant differences
+between groups are indicated by p values on the horizontal bars.
+
+neutralizing antibodies (6 month/1 month) was greater in RIV4 reci-
+pients to cell-A(H3N2) in both age groups, and to cell-A(H1N1)pdm09
+virus in the 45−64 years group (Fig. 3C, D), the titers of neutralizing
+antibodies to cell-grown viruses in RIV4 recipients still remained at
+similar or higher levels compared to other vaccine groups (Fig. 2).
+To further elucidate the quality of the antibody responses, we
+then analyzed the total binding antibodies by the enzyme linked
+immunosorbent assay (ELISA) to both HA head of the 4 antigen sub-
+types and HA stalk of the A(H3N2) and A(H1N1)pdm09 subtypes in the
+quadrivalent vaccines. Total binding antibodies include both neu-
+tralizing and non-neutralizing antibody responses. For A(H3N2), con-
+sistent with MN responses, RIV4 induced signiﬁcantly higher (p < 0.01)
+total binding antibodies (Fig. 4A) and signiﬁcantly higher (p < 0.001)
+fold rise (Fig. S1A) to the cell-A(H3N2) HA head at 1-month post-vac-
+cination compared to IIV4 and ccIIV4. For A(H1N1)pdm09, all 4 vac-
+cines induced similar fold rise (1 month/day 0) in the total binding
+antibodies to egg- and cell- A(H1N1)pdm09 HA (Fig. S1A), although
+RIV4 group had the highest total binding antibodies to the cell-A(H1N1)
+pdm09 HA at 1-month post-vaccination, it is likely due to the higher
+levels of pre-vaccination total binding antibodies (Fig. 4A). For inﬂu-
+enza Bs, RIV4 induced signiﬁcantly higher (p < 0.01) fold-rise against B/
+VIC and B/YAM cell virus HA head than Fluarix IIV4 but not Fluzone IIV4
+(Fig. S1A). At 6-months post-vaccination, total binding antibodies to
+the HA headwaned but the levels of totalbinding antibodies to the cell-
+grown virus HA head of all 4 subtypes in the RIV4 group remained the
+highest among the 4 vaccine groups (Fig. 4A).
+
+
+## Page 5
+
+
+**[FIGURE]**
+
+![Figure from page 5](figures/figure_p5_1079fde2.png)
+
+Fig. 3 | Fold rise of MN or HI antibody titers at 1-month post-vaccination and
+waning of antibody titers at 6-months post-vaccination in Year 1. Geometric
+mean (GM) fold rise of antibody titers (1 m/Day 0) from each of the four vaccine
+groups were calculated for egg- and cell-propagated vaccine viruses, and for 18−44
+years (Fluzone IIV4 (n = 52), Fluarix IIV4 (n = 55), ccIIV4 (n = 133), RIV4 (n = 98)) and
+45−64 years (Fluzone IIV4 (n = 58), Fluarix IIV4 (n = 63), ccIIV4 (n = 147), RIV4
+(n = 98)) age groups respectively (A, B). Antibody waning was expressed as the GM
+fold-reduction of titers from 1-month to 6-months (1 m/6 m) post-vaccination for
+
+Pre-existing A(H3N2) and A(H1N1)pdm09 HA stalk antibodies
+were detected in participants at varies levels. Comparing HA stalk
+antibody titers at 1-month post-vaccination versus day 0, vaccination
+signiﬁcantly boosted A(H1N1)pdm09 HA stalk antibodies in all 4 vac-
+cine groups (p < 0.01), and signiﬁcantly boosted A(H3N2) HA stalk
+antibodies in 3 of the 4 vaccine groups (p < 0.001, Fluzone IIV4, ccIIV4,
+and RIV4) (Fig. 4C). The RIV4 group had the highest A(H1N1)pdm09 HA
+stalk and A(H3N2) HA stalk antibodies at 1-month post-vaccination,
+however the fold rises of HA stalk antibodies were low (<1.8) and
+similar among all 4 vaccine groups (Fig. 4D). At 6-months post-vacci-
+nation, waning of HA stalk antibodies were more notable in ccIIV4 and
+RIV4 groups compared to IIV4 (Fig. S2).
+
+Active surveillance was conducted during the inﬂuenza season in
+year 1, a total of 26 breakthrough infection cases were identiﬁed with
+an attack rate of 3.6% (26/723) (Supplementary Table S3).
+
+
+### Antibody responses to egg-adapted epitopes measured by
+antibody GMT egg/cell titer ratio in year 1
+
+To assess the levels of antibody responses targeting the egg-adapted
+epitopes, we used the antibody “GMT egg/cell titer ratio” as a proxy to
+quantify the extent of difference in antibody responses to egg- versus
+cell-viruses in each vaccine group (Fig. 5A, B). The post-vaccination
+neutralizing antibody GMT egg/cell titer ratio was the most pro-
+nounced for A(H3N2), with elevated MN GMT egg/cell titer ratios in all
+vaccine groups (Fig. 5A, B), suggesting vaccination induced signiﬁcant
+levels of neutralizing antibody responses targeting A(H3N2) egg-
+adapted epitopes related to 158 (CHO-), 194 P, and 225 G (Table 1). The
+post-vaccination A(H3N2) neutralizing antibody GMT egg/cell ratio
+from the 18−44 years group who received Fluzone IIV4 (3.7), Fluarix
+IIV4 (3.8), and ccIIV4 (3.0) were signiﬁcantly higher (p < 0.05) than
+those in the same age groups who received RIV4 (2.1) (Fig. 5A). Similar
+trend was also observed in the 45−64 years group, the post-vaccination
+A(H3N2) neutralizing antibody GMT egg/cell titer ratios in those who
+received Fluzone IIV4 (4.0), Fluarix IIV4 (3.5), and ccIIV4 (2.6) were
+signiﬁcantly
+higher
+(p < 0.01)
+than
+those
+who
+received
+RIV4
+(1.7) (Fig. 5B).
+
+In contrast, the impact of egg-adaption is less profound in HI
+antibody responses to A(H1N1)pdm09 and both B lineage viruses. For
+
+18−44 years (Fluzone IIV4 (n = 47), Fluarix IIV4 (n = 48), ccIIV4 (n = 124), RIV4
+(n = 85)) and 45−64 years (Fluzone IIV4 (n = 54), Fluarix IIV4 (n = 59), ccIIV4
+(n = 142), RIV4 (n = 92)) respectively (C, D). MN titers were measured for A(H3N2)
+virus, while HI titers were measured for A(H1N1)pdm09, B/VIC, and B/YAM viruses.
+One-way ANOVA corrected for multiple comparisons (Tukey’s test) was used to
+compare the GM fold-rise or fold-reduction of each time point among the 4 vaccine
+groups. Statistically signiﬁcant differences between groups are indicated by p
+values on the horizontal bars.
+
+A(H1N1)pdm09 and B/Yamagata, the post-vaccination HI antibody
+GMT egg/cell titer ratios were all <2 and similar (p > 0.05) among the
+vaccine groups (Fig. 5A, B). For B/Victoria, the post-vaccination HI GMT
+egg/cell titer ratios were slightly elevated (range: 2−3) with the ratio in
+Fluzone IIV4 recipients signiﬁcantly higher (p < 0.05) than those in
+RIV4 recipients from the 45−64 years group (Fig. 5B).
+
+Next, to assess whether vaccination with non-egg-based vaccines
+can overcome the impact of egg-adaptation and reduce the GMT egg/
+cell ratio in the vaccine responses, we calculated the “proportion of the
+participants with egg/cell ratio ≥4” in MN/HI titers at pre- and 1-month
+post-vaccination (Fig. 5C, D). At pre-vaccination, there was no sig-
+niﬁcant difference in the proportion of participants with GMT egg/cell
+ratio ≥4 among the 4 vaccine groups. At baseline, around 40% of
+participants had GMT egg/cell ratio ≥4 to A(H3N2) and B/Victoria
+viruses, suggesting a high prevalence of pre-existing neutralizing
+antibodies targeting HA egg-adapted epitopes in this highly vaccinated
+HCP population. After vaccination, in both age groups, the two egg-
+based
+vaccines
+generally
+reinforced
+the
+neutralizing
+antibody
+responses to egg-adapted epitopes as evidenced by an increased trend
+in the proportion of participants with GMT egg/cell titer ratio ≥4. In
+contrast, among RIV4 and ccIIV4 recipients, the proportion of parti-
+cipants with GMT egg/cell titer ratio ≥4 was overall lower at 1-month
+post-vaccination compared to pre-vaccination (Fig. 5C, D), demon-
+strating the potential of non-egg-based vaccines to reduce the neu-
+tralizing antibody response difference to egg versus cell viruses. Most
+notably, only in the RIV4 groups to A(H3N2) virus, the proportions of
+GMT egg/cell titer ratio ≥4-fold were signiﬁcantly (p < 0.01) decreased
+in both age groups (from 58% down to 26% in 18−44 years, and from
+40% down to 21% in 45−64 years), suggesting RIV4 vaccination can
+potentially mitigate the pre-existing antibody memory to egg-adapted
+epitopes by improving the magnitude of neutralizing antibody
+responses to cell-propagated viruses (Fig. 5C, D).
+
+We then also analyzed the HA binding antibody “GMT egg/cell titer
+ratio” measured by ELISA. Similar trend was observed as with MN/HI
+antibodies that GMT egg/cell ratios were higher (p < 0.05) in the egg-
+based IIV4 groups than those in the ccIIV4 and RIV4 groups for A(H3N2)
+HA head and B/VIC HA head binding antibodies (Fig. 4B). However, the
+GMT egg/cell HA binding antibody ratios (Fig. 4B) were around 1 for all
+
+
+## Page 6
+
+
+**[FIGURE]**
+
+![Figure from page 6](figures/figure_p6_05b25146.png)
+
+Fig. 4 | Total HA binding antibody and HA stalk antibody responses measured
+by ELISA at pre-vaccination (Day 0), 1-month, and 6-months post-vaccination
+in Year 1. Antibody titers from each of the four vaccine groups were presented as
+geometric mean titers (GMTs) with 95% conﬁdence interval (CI) for combined
+18−44 years and 45−64 years age groups. Gray dots represented individual titers.
+Fluzone IIV4: Day0 (n = 24), 1 m (n = 24), 6 m (n = 21); Fluarix IIV4: Day 0 (n = 24), 1 m
+(n = 24), 6 m (n = 23); ccIIV4: Day 0 (n = 56), 1 m (n = 54), 6 m (n = 51); RIV4: Day 0
+(n = 40), 1 m (n = 40), 6 m (n = 38). A: HA (A(H1N1)pdm09) or HA head (A(H3N2), B/
+VIC, B/YAM) binding antibodies. B: Ratios of egg/cell HA or HA head binding
+antibody titers with 95% CI. C: H3 stalk and H1 stalk antibody responses at day 0,
+1-month and 6-months post vaccination. D: Fold rise of H3 stalk and H1 stalk anti-
+body titers from pre to 1-month post-vaccination with 95% CI. One-way ANOVA
+
+vaccine groups and subtypes, even for A(H3N2), suggesting that unlike
+the neutralizing antibody responses, most total binding antibody
+responses do not target the egg-adapted epitopes on HA.
+
+
+### Redirecting neutralizing antibody responses from egg-adapted
+epitopes following repeat vaccination with non-egg vs egg-
+based vaccines in year 2
+
+y
+In year 2, participants who received ccIIV4, RIV4, and Fluzone IIV4 or
+Fluarix IIV4 in year 1 were re-randomized into seven repeat-vaccination
+arms: ccIIV4-ccIIV4, ccIIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, IIV4-ccIIV4,
+IIV4-RIV4, IIV4-IIV4 (Fluzone) (Fig. 1).
+We compared the post-vaccination HI GMTs to the cell-vaccine
+viruses between IIV4-IIV4 (Fluzone) and each of the 6 repeat vaccina-
+tion arms with non-egg-based vaccines (Fig. 6). Participants in younger
+age group (18−44 years) in the ccIIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, and
+IIV4-RIV4 arms, and the older age group (45−64 years) in ccIIV4-RIV4
+and RIV4-RIV4 arms, all mounted signiﬁcantly higher (p < 0.05) neu-
+tralizing antibody titers to cell-A(H3N2) virus than those in the IIV4-IIV4
+(Fluzone) arm. For HI antibody response to A(H1N1)pdm09 cell virus,
+RIV4-RIV4 and IIV4-RIV4 arms in 18−44 years, ccIIV4-RIV4, RIV4-ccIIV4,
+RIV4-RIV4 arms in 45−64 years all had signiﬁcantly higher (p < 0.05) HI
+antibody responses than those in the IIV4-IIV4 (Fluzone) arm. Vacci-
+nees in the 18−44 years group in the ccIIV4-RIV4, RIV4-RIV4, and IIV4-
+
+corrected for multiple comparisons (Tukey’s test) was used to compare the GMTs
+of each time point among the 4 vaccine groups (A, C). One-way ANOVA nonpara-
+metric Kruskal-Wallis test was used to compare the fold changes among the 4
+vaccine groups (B, D). Statistically signiﬁcant differences between groups are
+indicated by p values on the horizontal bars.*: In (C), paired t test (two-tailed) was
+used for comparing the pre- and 1 m post-vaccination stalk antibody titers within
+the same vaccine group: signiﬁcantly higher HA stalk antibody titers were detected
+in 1 m post-vaccination than pre-vaccination for H3 stalk binding antibody in Flu-
+zone IIV4 (p = 0.0009), ccIIV4 (p = 0.0004), RIV4 (p < 0.0001); and for H1 stalk
+binding antibody in Fluzone IIV4 (p = 0.0005), Fluarix IIV4 (p = 0.0092), ccIIV4
+(p < 0.0001), RIV4 (p = 0.0015).
+
+RIV4 arms had signiﬁcantly higher (p < 0.05) HI antibody responses to
+both B/VIC and B/YAM cell viruses versus those in the IIV4-IIV4 (Flu-
+zone) arm. Participants in the older age group (45−64 years) who
+received non-egg-based vaccine in year 2, most had signiﬁcantly higher
+(p < 0.05) HI GMTs to both B/VIC and B/YAM cell virus compared to
+those in the IIV4-IIV4 (Fluzone) arm, except ccIIV4-ccIIV4 and IIV4-
+ccIIV4 arms for B/YAM cell virus (Fig. 6). It is worth noting that those
+who received IIV4 in Year 1 then RIV4 in Year 2 demonstrated improved
+antibody responses to cell-grown vaccine viruses compared to those
+who received IIV4-IIV4 (Fluzone). The seropositivity rates (Supple-
+mentary Table S4) and seroconversion rates (Table S5) to both egg-
+and cell- viruses in year 2 are summarized in the supplementary
+materials28,29. Overall, in year 2 participants who received one or two
+non-egg-based vaccines mounted higher post-vaccination HI antibody
+responses to cell-grown vaccine viruses than those who received
+repeated egg-based IIV4 vaccination in both years (IIV4-IIV4).
+At 1-month post-vaccination during Year 1, 21−40% of HCP who
+received only one season of non-egg-based vaccine including RIV4 still
+had A(H3N2) GMT egg/cell titer ratio ≥4 (Fig. 5C, D). We therefore
+investigated whether repeat vaccination with non-egg-based vaccines
+in year 2 could further reduce the HI GMT egg/cell titer ratio (Fig. 7).
+Among recipients of IIV4-IIV4 (Fluzone), the proportion of participants
+with HI GMT egg/cell titer ratio ≥4 generally increased, especially for
+
+
+## Page 7
+
+
+**[FIGURE]**
+
+![Figure from page 7](figures/figure_p7_74b11064.png)
+
+Fig. 5 | Difference in MN or HI antibody responses to egg-adapted epitopes
+stratiﬁed by age groups and vaccine type in Year 1. A, B: Geometric mean ratio
+of egg/cell virus titers at 1-month post-vaccination with 95% CI for each vaccine
+component among the 4 vaccine groups for 18-44 years (A Fluzone IIV4: n = 52,
+Fluarix IIV4: n = 55, ccIIV4: n = 133, RIV4: n = 98) and 45−64 years (B Fluzone IIV4:
+n = 58, Fluarix IIV4: n = 63, ccIIV4: n = 147, RIV4: n = 98) age groups. One-way
+ANOVA nonparametric Kruskal-Wallis test was used for comparison of geometric
+mean ratio of egg/cell virus titers among the 4 vaccine groups. C, D: Proportion of
+participants with GMT egg/cell ratio ≥4 fold pre- and 1-month post-vaccination in
+each vaccine group. Proportions of participants who had ≥4 -fold reduced titer to
+
+A(H3N2) and B/VIC in the 18−44 years group, B/VIC virus and B/YAM
+virus in the 45−64 years group, suggesting repeated boost to anti-
+bodies targeting egg-adapted epitopes in these participants after
+receiving consecutive egg-based IIV4 vaccination. In contrast, among
+recipients of non-egg-based vaccines in just one study year (IIV4-ccIIV4
+or IIV4-RIV4) or in both study years (ccIIV4-ccIIV4, ccIIV4-RIV4, RIV4-
+ccIIV4, RIV4-RIV4), the proportions of participants with egg/cell ratio
+≥4 to generally decreased post-vaccination though did not reach sta-
+tistical signiﬁcance in some repeat vaccination groups (Fig. 7). Among
+those, the ccIIV4-RIV4 arm had signiﬁcant (p < 0.05) reduction in the
+proportion of HI GMT egg/cell ratio ≥4 against A(H3N2) viruses com-
+paring pre- vs post-vaccination in the 45−64 years group, and the RIV4-
+ccIIV4 arm had signiﬁcant (p < 0.05) reduction in the proportion of HI
+GMT egg/cell ratio ≥4 against A(H1N1)pdm09 virus in the younger age
+group in year 2, suggesting multiple seasons of repeat vaccination with
+non-egg-based vaccines may be needed to overcome the dominant
+antibody responses to the egg-adapted epitopes and redirect the
+antibody responses away from the egg-adapted epitopes.
+Total binding antibodies to HA head and HA stalk in year 2 were
+also analyzed (Fig. 8). At 1-month post-vaccination, the levels of total
+HA binding antibodies were similar in most repeat vaccination arms,
+except ccIIV4-RIV4 arm induced signiﬁcantly higher (p < 0.05) HA head
+binding antibodies to A(H3N2), both ccIIV4-RIV4 and IIV4-RIV4 arms
+induced signiﬁcantly higher (p < 0.05) HA head binding to B/Vic and B/
+Yam than the IIV4-IIV4 (Fluzone) arm (Fig. 8A). The total HA binding
+antibody GMT egg/cell ratio was around 1 against all 4 vaccine com-
+ponents with no signiﬁcant difference between 7 repeat vaccination
+arms (Fig. 8B), indicating most of the total HA binding antibodies are
+not targeting the egg-adapted epitopes.
+
+cell vaccine virus (egg/cell titer ratio) at pre- and 1-month post-vaccination were
+presented for each vaccine component among the 4 vaccine groups for 18−44
+years (C) and 45−64 years (D). Fisher’s exact test (two-tailed) was performed for
+comparing proportions of ≥4 -fold reduced titer to cell vaccine virus between pre-
+and 1-month post-vaccination in each vaccine group. MN titers were measured for
+A(H3N2) virus, while HI titers were measured for A(H1N1)pdm09, B/VIC, and B/
+YAM viruses. Statistically signiﬁcant differences between groups are indicated by p
+values on the horizontal bars (A, B). P values on the trend lines of RIV4 group
+indicate signiﬁcantly reduced proportions from pre- to 1-month post-vaccina-
+tion (C, D).
+
+Comparing pre- and 1-month post-vaccination, A(H3N2) HA stalk
+binding antibodies were signiﬁcantly boosted in ccIIV4-RIV4, RIV4-RIV4,
+IIV4-ccIIV4, and IIV4-RIV4 arms, while A(H1N1)pdm09 HA stalk binding
+antibodies were also signiﬁcantly boosted in ccIIV4-ccIIV4 and RIV4-ccIIV4
+arms (Fig. 8C). However, fold rise in both A(H1N1)pdm09 HA stalk and
+A(H3N2) HA stalk antibodies were low (GM fold rise <1.78) with no sig-
+niﬁcant difference (p > 0.05) among all 7 repeat vaccination arms (Fig. 8D).
+
+
+### Discussion
+
+In this study, we compared the antibody responses to egg- versus cell-
+propagated vaccine viruses following vaccination with RIV4, ccIIV4 or
+IIV4 among HCP aged 18−44 and 45−64 years. RIV4 induced more
+robust HI and MN antibody responses than ccIIV4 and egg-based IIV4
+against multiple vaccine strains including cell-propagated A(H3N2),
+consistent with previous reports9,13,15,27–29. Our analysis also indicates
+that repeat vaccination with non-egg-based vaccines could overcome
+pre-existing egg/cell titer differences in neutralizing antibody levels by
+re-directing vaccine-induced neutralizing antibody responses away
+from egg-adapted epitopes, resulting in higher antibody responses to
+circulating cell-grown viruses, even with frequent prior vaccination
+with egg-based inﬂuenza vaccines in HCP.
+Reported VE against A(H3N2) virus was low during the 2016−17 to
+2018−19 seasons despite the absence of apparent antigenic drift of the
+circulating viruses1,4,31. The egg-adapted changes on the HA head
+domain in the egg-grown A(H3N2) vaccine virus: T160K, L194P, and
+D225G resulted in an “antigenic mismatch” from circulating strains that
+likely contributed to the low observed VE3,5,6. Our study showed that
+even at pre-vaccination, a high proportion of HCP in this study had MN
+GMT egg/cell ratio ≥4 to A(H3N2) virus, suggesting the high prevalence
+
+
+## Page 8
+
+
+**[FIGURE]**
+
+![Figure from page 8](figures/figure_p8_2bf7a688.png)
+
+Fig. 6 | HI antibody responses to egg- and cell-propagated vaccine viruses at
+pre- and 1-month post-vaccination in year 2 stratiﬁed by 7 repeat
+vaccination arms. HI antibody titers from each of the 7 repeat vaccine arms were
+presented as geometric mean titers (GMTs) with 95% conﬁdence interval (CI)
+respectively for 18−44 years and 45−64 years age groups. Gray dots represented
+individual titers. 18−44 years: ccIIV4-ccIIV4 (n = 42), ccIIV4-RIV4 (n = 45), RIV4-
+ccIIV4 (n = 28), RIV4-RIV4 (n = 30), IIV4-ccIIV4 (n = 49), IIV4-RIV4 (n = 48), IIV4-IIV4
+
+of pre-existing neutralizing antibodies targeting 158 (loss of glycosy-
+lation caused by T160K) 194P, and 225G epitopes, likely due to the prior
+repeat vaccination with egg-based vaccines. More than 68% of the HCP
+in this study received inﬂuenza egg-based vaccine in all ﬁve preceding
+inﬂuenza seasons (Table 2). The imprinting effect of egg-based vac-
+cines could be lifelong resulting in a persistence of antibodies targeting
+egg-adapted sites that could be preferentially reinforced following
+repeat egg-based vaccination3. This may impede the quality of anti-
+body response to the circulating inﬂuenza strains and negatively affect
+VE. Our study suggests that non-egg-based vaccines, especially RIV4,
+might circumvent the effect of repeat vaccination with egg-based
+inﬂuenza vaccines that contain egg-adapted changes.
+Repeat vaccination can lead to reduced VE23,32,33. In year 1, the
+frequent prior repeat egg-based vaccinations may blunt the antibody
+responses to the subsequent vaccination as reﬂected by the limited
+fold rise in MN/HI antibody titers (Fig. 3). Khurana et al. also observed
+signiﬁcantly lower fold rise to A(H3N2), A(H1N1) and inﬂuenza B viru-
+ses in those with prior vaccination irrespective of vaccine platforms
+received20. In a highly vaccinated population such as HCP, an effective
+vaccine should be able to overcome issues with both repeat vaccina-
+tion and vaccine egg-adapted mutations. RIV4 vaccination reduced the
+proportions of participants with MN GMT egg/cell ratio ≥4 against
+A(H3N2) by two-fold in both age groups (Fig. 5C, D). In year 2, all 4
+repeat vaccination arms with non-egg-based vaccines (ccIIV-ccIIV4,
+ccIIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4) further reduced the proportion of
+participants with HI GMT egg/cell ratio ≥4 against A(H3N2) to less than
+10% (Fig. 7), of which 3 in 18−44 years group (ccIIV4-RIV4, RIV4-ccIIV4,
+RIV4-RIV4) and 2 in 45−64 years group (ccIIV4-RIV4, RIV4-RIV4)
+
+(n = 47). 45−64 years: ccIIV4-ccIIV4 (n = 59), ccIIV4-RIV4 (n = 61), RIV4-ccIIV4
+(n = 45), RIV4-RIV4 (n = 44), IIV4-ccIIV4 (n = 57), IIV4-RIV4 (n = 56), IIV4-IIV4 (n = 56).
+Unpaired t test (two-tailed) was used to compare the post-vaccination GMTs to cell
+vaccine viruses between IIV4-IIV4 (Fluzone) arm and each of the remaining 6 vac-
+cine arms within the same age group. Statistically signiﬁcant differences between
+groups are indicated by p values on the horizontal bars.
+
+induced signiﬁcantly higher HI antibodies to A(H3N2) cell virus than
+IIV4-IIV4 arm (Fig. 6). Collectively, these ﬁndings suggest that multiple
+seasons of vaccination with non-egg-based vaccines may be needed to
+overcome the pre-existing immune memory to egg-adapted epitopes
+and re-direct the neutralizing antibody responses towards epitopes on
+cell-grown viruses that better represent circulating strains.
+
+Furthermore, the difference in antigenicity and egg-adaption
+between vaccine viruses from consecutive inﬂuenza seasons could
+further confound the effect of repeat vaccination. The A(H3N2) vaccine
+virus in year 2 was updated to a 3 C.3a A/Kansas/14/2017-like virus,
+which is genetically and antigenically distant from the 3 C.2a vaccine
+virus A/Singapore/INFIMH-16-0019/2016 in year 1. Year 2 vaccine virus
+A/Kansas/14/2017 virus bears different egg-adapted changes at D190N
+and N246T but possess 194 L and 225D that are the same as cell-
+propagated A(H3N2) vaccine virus in Year 1 (Table 1). This could have
+also contributed to the improved antibody response to the cell-grown
+A(H3N2) vaccine virus after the repeat vaccination in year 2. Thus far,
+most reported VE from repeated vaccination studies were from egg-
+based vaccines, evaluation of whether repeat vaccination with non-egg-
+based vaccines will improve VE, especially for A(H3N2), is warranted.
+To fully characterize the quantity as well as the quality of the
+antibody responses, we measured both functional, neutralizing anti-
+body responses to egg- versus cell- propagated viruses (by MN or HI),
+and the total HA binding antibodies (by ELISA) that include both
+neutralizing and non-neutralizing antibody responses. For RIV4, both
+increased antigen dose and the absence of egg-adapted mutations may
+have led to the improved immunogenicity13. RIV4 contains 3 times the
+antigen dose at 45 µg HA/dose/strain compared to the standard dose
+
+
+## Page 9
+
+
+**[FIGURE]**
+
+![Figure from page 9](figures/figure_p9_864d601e.png)
+
+Fig. 7 | Dynamics of proportion of participants with HI GMT egg/cell ratio ≥4
+old among seven repeat vaccination arms in Year 2. Proportions of Year 2
+participants who had ≥4 -fold reduced titer to cell vaccine virus (egg/cell titer ratio)
+t pre- and 1-month post-vaccination were presented for each vaccine component
+mong the seven Year 1-Year 2 vaccine arms. A: 18-44 years age group and B: 45−64
+
+IIV4 and ccIIV4 (15 µg HA/dose/strain). For A(H3N2), RIV4 vaccination
+not only improved the quality of the functional neutralizing antibody
+responses (Fig. 2) by reducing the MN GMT egg/cell ratios in both
+years, it also signiﬁcantly increased the quantity of the total A(H3N2)
+cell HA head binding antibodies (Fig. 4A, Fig. S1A). However, for
+A(H1N1)pdm09 and B viruses, the difference in HI antibody versus the
+total HA head binding antibody levels among 4 vaccine groups was less
+consistent, suggesting that the magnitude of improvement differ
+between subtypes and were likely determined by the relative immu-
+nodominance of the egg-adapted HA epitopes for each subtype. In
+addition, the egg/cell HA head binding ELISA titer ratios were around 1
+for all vaccine antigen subtypes irrespective of vaccine platforms
+(Fig. 4B), suggesting the total HA binding antibody responses induced
+by vaccination cannot differentiate egg-adapted epitopes on HA even
+for A(H3N2). This is in stark contrast to the highly elevated egg/cell
+GMT ratio in neutralizing antibody responses to egg- vs cell-A(H3N2)
+viruses (Fig. 5A, B), highlighting the importance of inducing high
+quality, neutralizing antibody responses from vaccination.
+Our study also demonstrated that the impact of vaccine egg-
+adaption may differ between inﬂuenza virus subtypes, with the biggest
+impact on neutralizing antibodies to A(H3N2) and moderate impact for
+inﬂuenza B vaccine viruses. HA changes due to egg-adaptation resulted
+in a loss of glycosylation at HA position 197 for both B/Victoria and B/
+Yamagata egg vaccine viruses (Table 1), which could alter the anti-
+genicity of inﬂuenza B virus, particularly for B/Victoria lineage34–36.
+Disproportional impact of the egg-adapted mutation at HA position 197
+on the two B lineages were also observed in this study. B/Victoria virus
+had a much higher GMT egg/cell titer ratio and proportion of partici-
+pants with GMT egg/cell ratio ≥4 than B/Yamagata virus in year 1 (Fig. 5).
+Similar to what was observed for A(H3N2), in Year 2, repeat vaccination
+with IIV4 boosted the antibody responses to egg-adapted epitopes at
+HA 197 in B/Victoria vaccine virus, resulting in substantially increased
+proportions of GMT egg/cell ratio ≥4 only in the IIV4-IIV4 arm (Fig. 7).
+
+years age group. Fisher’s exact test (two-tailed) was performed for comparing
+proportions of ≥4 -fold reduced titer to cell vaccine virus between pre- and
+1-month post-vaccination in each vaccine group. P values noted on the corre-
+sponding trend lines indicate statistically signiﬁcant difference of the proportions
+between pre- and post-vaccination.
+
+The impact of egg-adaptation was the least profound on the
+antibody response to A(H1N1)pdm09. Both Year 1 and Year 2 A(H1N1)
+pdm09 vaccine viruses bear egg-adapted change at HA Q223R. Studies
+have reported that Q223R egg-adapted change at the HA head domain
+of A(H1N1)pdm09 virus can promote virus replication in eggs, alter
+antigenicity and inﬂuence immune response37–42. In this study, 1-month
+post-vaccination GMTs to both egg- and cell-propagated A(H1N1)
+pdm09 vaccine viruses in year 1 were similar among the 4 vaccine
+groups, with GMT egg/cell titer ratio around 1.0, and the proportion of
+HCP with egg/cell titer ratio ≥4 was only 2−11% (Fig. 5), indicating a less
+immunodominant role of Q223R change. Furthermore, the two egg
+IIV4 vaccines induced similar antibody responses to A(H1N1)pdm09
+viruses regardless of the variation at 223. These ﬁndings are consistent
+with our previous report in which we found that among over 300
+adults who received egg-based A(H1N1)pdm09 vaccines with Q223R
+egg-adapted epitope during 5 inﬂuenza seasons, only 9% of partici-
+pants mounted antibodies speciﬁc to 223R38.
+Multiple immune mechanisms can contribute to the protection
+from inﬂuenza infection. Broadly cross-reactive HA stalk antibodies
+have been considered as one of the targets for universal vaccine
+development. Here, we assessed both A(H1N1)pdm09 and A(H3N2)
+HA stalk antibody responses in all vaccine groups in both years. When
+comparing the post-vs pre-vaccination HA stalk antibody levels,
+vaccination induced HA stalk antibody rise in several vaccine groups
+and repeat vaccination arms. However, the levels of geometric mean
+titer fold rise were low (close to 1, Figs. 4D, 8D) with no signiﬁcant
+difference in fold rise among different vaccine groups in both years,
+even in RIV4 group that received 3 times more antigen doses; the
+difference in HA stalk antibody titers post-vaccination mostly mir-
+rored the difference in pre-existing HA stalk antibody levels. To this
+end, development of next generations vaccines that can induce
+multiple arms of immune responses could improve the effectiveness
+of the vaccines.
+
+
+## Page 10
+
+
+**[FIGURE]**
+
+![Figure from page 10](figures/figure_p10_871d5860.png)
+
+Fig. 8 | HA head and stalk binding antibody responses measured by ELISA at
+pre- and 1-month post-vaccination in 7 repeat vaccination arms. Antibody titers
+from each of the 7 vaccine arms were presented as geometric mean titers (GMTs)
+with 95% conﬁdence interval (CI) for combined 18−44 years and 45−64 years age
+groups. Gray dots represented individual titers. ccIIV4-ccIIV4 (n = 20), ccIIV4-RIV4
+(n = 22), RIV4-ccIIV4 (n = 16), RIV4-RIV4 (n = 16), IIV4-ccIIV4 (n = 22), IIV4-RIV4
+(n = 22), IIV4-IIV4 (n = 22). A: HA head binding antibodies. B: Ratios of Egg/cell HA
+head binding antibody titers expressed as GM fold change with 95% CI. C: HA stalk
+binding antibodies for H3 and H1 stalk respectively. D: Fold-rise of HA stalk binding
+antibody titers from pre to 1 m post-vaccination expressed as GMFR with 95% CI.
+Unpaired t test (two-tailed) was used to compare the post-vaccination GMTs to cell
+virus HA between IIV4-IIV4 (Fluzone) arm and each of the remaining 6 vaccine arms
+
+Human immunity to inﬂuenza is quite complex and present chal-
+lenges to improve vaccine effectiveness. Immune priming can play dual
+roles and is largely directed by the immunodominance of imprinted HA
+epitopes upon ﬁrst exposure to inﬂuenza antigen, as well as the repe-
+ated inﬂuenza exposures by vaccinations or infections later in
+lifetime3,38. Here, our study demonstrated how immunodominant egg-
+adapted epitopes on A(H3N2) HA can impact the immunogenicity from
+repeated vaccination. Collectively with previous reports3, ﬁndings from
+this study could provide a few meaningful insights to improve vacci-
+nation strategy. First, for those who were repeat vaccinated with egg-
+based vaccines such as HCP and older adults, vaccination with non-egg-
+based vaccines could be especially beneﬁcial; second, it would also be
+important not to prime naive children with egg-adapted epitopes3, it
+might be necessary to immunize naive children with non-egg-based
+inﬂuenza vaccines as their ﬁrst priming dose. In addition, improved
+vaccine formulations, such as higher vaccine doses and the use of
+adjuvants, could also improve vaccine immunogenicity.
+Our study has several limitations. First, we only compared the
+immunogenicity of egg- vs non-egg-based vaccines in two inﬂuenza
+seasons. The effect of the vaccine egg-adapted changes on vaccine
+immunogenicity will vary by season depending on the antigenic
+properties of the vaccine viruses. A(H3N2) vaccine was updated to a
+
+within the same age group (A). One-way ANOVA corrected for multiple compar-
+sons (Tukey’s test) was used to compare the GMTs of stalk binding antibody at
+each time point among the 4 vaccine groups (C). One-way ANOVA nonparametri
+Kruskal-Wallis test was used to compare the fold changes among the 4 vaccine
+groups (B, D).Statistically signiﬁcant differences between groups are indicated by p
+values on the horizontal bars (A, C). *In (C), paired t test (two-tailed) was used fo
+comparing the pre- and 1 m post-vaccination stalk antibody titers within the sam
+vaccine group: signiﬁcantly higher HA stalk antibody titers were detected in 1 m
+post-vaccination than pre-vaccination for H3 stalk antibody titers in ccIIV4-RIV4
+p = 0.0001), RIV4-RIV4 (p = 0.004), IIV4-ccIIV4 (p = 0.03), IIV4-RIV4 (p = 0.03); and
+or H1 stalk antibodies in ccIIV4-ccIIV4 (p = 0.008), RIV4-ccIIV4 (p = 0.006).
+
+3 C.2a virus in 2021−2022 inﬂuenza season with the same T160K egg-
+adapted change in the egg-based vaccines and was updated again in
+2022−23 and 2023−24 seasons with the egg-based vaccines carrying a
+different set of egg-adapted mutations30, thus, continued effort is
+needed to assess vaccine immunogenicity and VE. Second, we only
+focused on the antibody responses to HA. RIV4 lacks the neur-
+aminidase (NA) component that also could contribute to the protec-
+tive efﬁcacy of inﬂuenza vaccines. Thus, whether the improved
+antibody responses to HA alone in RIV4 will translate into improved
+vaccine efﬁcacy and effectiveness still needs to be assessed. Other
+humoral immune responses, such as antibody responses to NA,
+mucosal and cell-mediated immunity, also contribute to protection.
+Lastly, no correction for multiple comparisons was done because this
+was an exploratory analysis.
+
+Taken together, our study demonstrated that multiple seasons of
+vaccination with non-egg-based inﬂuenza vaccines can improve HA-
+mediated antibody immunogenicity to cell-propagated viruses repre-
+senting circulating strains. Our ﬁndings support the use of antibody
+responses to cell-propagated viruses, rather than to egg-propagated
+vaccine viruses, as the primary endpoint in future immunogenicity
+studies for licensure or comparison of inﬂuenza vaccines. Inﬂuenza
+product and platform speciﬁc VE estimates could help conﬁrm
+
+
+## Page 11
+
+
+### Table 2 | Participant characteristics in year 1
+
+
+**[TABLE]**
+
+![Table from page 11](figures/table_p11_0215998f.png)
+
+ﬁndings from comparative immunogenicity studies and provide
+additional information to identify optimal vaccination strategies to
+prevent inﬂuenza.
+
+
+### Materials and methods
+Study design
+
+y
+g
+The original study was a randomized, open-label trial conducted in the
+United States during the Northern Hemisphere 2018−2019 (Year 1) and
+2019−2020 (Year 2) inﬂuenza seasons. This study is an exploratory
+analysis. The detailed participant enrollment, randomization, and
+blinding were previously described27–29. Participant characterisitcs in
+year 1 are described in Table 2. During Year 1, HCP were stratiﬁed by two
+age groups (18−44 years and 45−64 years) and randomized at 4:4:2:2
+ratio to receive one of four quadrivalent vaccines: ccIIV4 (Flucelvax),
+RIV4 (Flublok), Fluzone IIV4 or Fluarix IIV4 (Fig. 1). Serum samples were
+collected at baseline (day 0 pre-vaccination), 1-month, and 6-months
+post-vaccination. The Year 2 study was designed to evaluate the anti-
+body responses following 7 different Year 1-Year 2 repeat vaccination
+regimens: IIV4-IIV4 (Fluzone), IIV4-ccIIV4, IIV4-RIV4, RIV4-ccIIV4, RIV4-
+RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4 (Fig. 1). Serum samples were col-
+lected at baseline (day 0) and 1-month post-vaccination.
+Fluzone IIV4 and Fluarix IIV4, the two egg-based vaccines were
+analyzed separately for this exploratory analysis because the two
+vaccines have different egg-adaptated mutation on the HA of the
+A(H1N1)pdm09 egg CVV (Table 1). Fluzone has Q223R substitution
+which was associated with focused antibody response to 223R in some
+vaccinees as we previously reported38, while the A(H1N1)pdm09 egg
+CVV in Fluarix had 223Q. In addition, the current analysis is also age-
+stratiﬁed by 18−44 years and 45−64 years age groups as we previously
+observed that the impact of vaccine egg-adaptation on antibody
+response to A(H3N2) virus may be age-related3.
+
+
+### Hemagglutination inhibition (HI) and microneutralization
+(MN) assays
+
+Antibody responses to A(H1N1)pdm09, B/Victoria and B/Yamagata
+lineage viruses were analyzed using HI assays using methods as pre-
+viously described43. HIs for A(H1N1)pdm09 and inﬂuenza B viruses
+were performed using 0.5% turkey erythrocytes. Egg-grown viruses
+
+were propagated in 10-day-old embryonated chicken eggs. Cell-grown
+A(H1N1)pdm09 and inﬂuenza B viruses were propagated in Madin-
+Darby canine kidney (MDCK) cells. Inﬂuenza B antigens were ether-
+treated prior to use in the HI assays. Egg- and cell (MDCK)-propagated
+A/Michigan/45/2015 (H1N1)pdm09, B/Colorado/06/2017 (B/Victoria),
+and B/Phuket/3073/2013 (B/Yamagata) viruses were tested in year 1,
+Egg-propagated A/Brisbane/02/2018 (H1N1)pdm09, cell-propagated
+A/Idaho/7/2018 (H1N1)pdm09, egg- and cell-propagated B/Colorado/
+06/2017 (B/Victoria) and B/Phuket/3073/2013 (B/Yamagata) viruses
+were tested in year 2 by HI using 0.5% turkey erythrocytes.
+Antibody responses to A(H3N2) viruses were analyzed by MN
+assays in year 1 (the cell-grown vaccine antigen of the study year does
+not hemagglutinate in the HI assays), and HI assays in year 2. Egg-grown
+A(H3N2) viruses were propagated in 10-day-old embryonated chicken
+eggs, cell-grown A(H3N2) viruses were propagated in stably transfected
+MDCK cells with cDNA of human
+2,6-sialyltransferase
+(MDCK-
+SIAT1 cells). Egg- and cell (MDCK-SIAT1)-grown A/Singapore/INFIMH-16-
+0019/2016 viruses were tested in MN assays in year 1 using MDCK-SIAT1
+cells using methods as previously described44. In Year 2, egg- and cell-
+propagated A/Kansas/14/2017 viruses were tested by HI assays using
+0.75% guinea pig erythrocytes in the presence of 20 nM oseltamivir.
+
+y
+y (
+)
+Twenty percent of participants were selected by random sampling from
+each vaccine group and age strata (18−44 yrs and 45−64 yrs) in year 1
+(n = 144) and year 2 (n = 140), the MN/HI antibody levels of the subset are
+representative of the whole study populations in year 1 (Fig. S3) and year
+2 (Fig. S4). These serum samples were tested by ELISA to evaluate the
+total binding antibodies against 8 recombinant HA proteins (rHA from
+both egg-and cell-propagated viruses of each of the 4 vaccine antigens),
+and 2 rHA stalk proteins (A(H1N1)pdm09 HA stalk, and A(H3N2) HA
+stalk). rHA from egg- and cell A/Michigan/45/2015 (H1N1)pdm09, rHA
+head from egg- and cell- A/Singapore/INFIMH-16-0019/2016 (H3N2), B/
+Colorado/06/2017 (B/Victoria), and B/Phuket/3073/2013 (B/Yamagata)
+were tested with year 1 sera; rHA from egg- A/Brisbane/02/2018 (H1N1)
+pdm09 and cell-A/Idaho/7/2018 (H1N1)pdm09, rHA head from egg- and
+cell- A/Kansas/14/2017 (H3N2), egg- and cell- B/Colorado/06/2017 (B/
+Victoria), egg- and cell-B/Phuket/3073/2013 (B/Yamagata) were tested
+with year 2 sera. The puriﬁed and trimeric recombinant HA proteins
+were expressed from the baculovirus system using the established
+procedures45. For ELISA, rHA antigens were coated at 100 ng/well. Serum
+samples were tested at an initial dilution of 1:400 followed by 2-fold
+serial dilution. Antibodies were detected by horseradish peroxidase
+(HRP)-conjugated goat anti-human pan immunoglobulin conjugate to
+detect total binding antibodies. ELISA was performed based on pre-
+viously described procedures46,47. The ELISA titers were determined as
+the reciprocal of the highest dilution of serum samples that achieved an
+optical density (OD) value of 0.2 or greater.
+
+
+### Sequence analyses
+
+All the testing viruses used in this study were sequenced. Sequences
+were analyzed against the sequences of candidate vaccine viruses (CVV)
+of the study vaccines as deposited in Global Initiative on Sharing Avian
+Inﬂuenza Data (GISAID) database by BioEdit version 7.0.9.0 (Table 1).
+
+
+### Statistical analyses
+
+Geometric mean titers (GMTs) at day 0, 1-month and 6-months, geo-
+metric mean fold rise (GMFR) of antibody titers at 1-month versus day
+0, and geometric mean fold reduction of antibody titers at 6 months
+versus 1-month were calculated per vaccine group. “GMT egg/cell titer
+ratio” (ratio = GMT to egg-grown vaccine virus or rHA/GMT to cell-
+grown vaccine virus or rHA) was calculated to quantify the difference
+in antibody response to egg- versus corresponding cell-propagated
+vaccine virus for each vaccine group. The proportion of participants
+
+
+## Page 12
+
+with MN or HI GMT egg/cell titer ratio ≥4 fold was calculated to
+quantify the percent of participants with antibodies predominantly
+targeting egg-adapted epitopes per vaccine group. One-way ANOVA
+corrected for multiple comparisons (Tukey’s test) or nonparametric
+Kruskal-Wallis test was used for multiple group comparison, two-tailed
+paired t test was used to compare pre- and post-vaccination; two-tailed
+unpaired t test was used to compare the post-vaccination titers
+between IIV4-IIV4 (Fluzone) arm and each of the remaining 6 arms in
+Year 2; Two-tailed Fisher’s exact test was used for comparing pro-
+portions. P < 0.05 is considered statistically signiﬁcant. SAS 9.4 (SAS
+Institute) and GraphPad Prism 8 (GraphPad Software, Inc.) were used
+for statistical analyses.
+Ethic review
+The study protocol was reviewed and approved by the institutional
+review boards (IRBs) of the study sites and the Centers for Disease
+Control and Prevention. Informed consent was obtained from the par-
+ticipants. This study is registered on ClinicalTrials.gov, NCT03722589.
+Reporting summary
+Further information on research design is available in the Nature
+Portfolio Reporting Summary linked to this article.
+Data availability
+The data that support the ﬁndings of this study are included in the
+manuscript, supplementary information, and the ﬁgshare repository
+https://doi.org/10.6084/m9.ﬁgshare.22666231. Additional raw data
+from the study are available from the corresponding author (mlevi-
+ne@cdc.gov) upon request.
+References
+1.
+Flannery, B. et al. Inﬂuenza vaccine effectiveness in the United
+States during the 2016-2017 season. Clin. Infect. Dis. 68,
+1798–1806 (2019).
+2.
+Levine, M. Z. et al. Antibodies Against Egg- and Cell-Grown Inﬂu-
+enza A(H3N2) viruses in adults hospitalized during the 2017-2018
+inﬂuenza season. J. Infect. Dis. 219, 1904–1912 (2019).
+3.
+Liu, F. et al. Age-speciﬁc effects of vaccine egg adaptation and
+immune priming on A(H3N2) antibody responses following inﬂu-
+enza vaccination. J. Clin. Investig. 131, e146138 (2021).
+4.
+Rolfes, M. A. et al. Effects of Inﬂuenza Vaccination in the United
+States During the 2017-2018 Inﬂuenza Season. Clin. Infect. Dis. 69,
+1845–1853 (2019).
+5.
+Wu,N.C.et al.Astructuralexplanationfortheloweffectivenessofthe
+seasonal inﬂuenza H3N2 vaccine. PLoS Pathog. 13, e1006682 (2017).
+6.
+Zost, S. J. et al. Contemporary H3N2 inﬂuenza viruses have a gly-
+cosylation site that alters binding of antibodies elicited by egg-
+adapted vaccine strains. Proc. Natl. Acad. Sci. USA 114,
+12578–12583 (2017).
+7.
+Barr, I. G. et al. Cell culture-derived inﬂuenza vaccines in the severe
+2017-2018 epidemic season: a step towards improved inﬂuenza
+vaccine effectiveness. NPJ Vaccines 3, 44 (2018).
+8.
+Dunkle, L. M. et al. Randomized comparison of immunogenicity and
+safety of quadrivalent recombinant versus inactivated inﬂuenza
+vaccine in healthy adults 18-49 years of age. J. Infect. Dis. 216,
+1219–1226 (2017).
+9.
+Dunkle, L. M. et al. Safety and immunogenicity of a recombinant
+inﬂuenza vaccine: a randomized trial. Pediatrics 141, e20173021 (2018).
+10.
+Nolan, T. et al. Efﬁcacy of a cell-culture-derived quadrivalent inﬂu-
+enza vaccine in children. N. Engl. J. Med. 385, 1485–1495 (2021).
+11.
+Moehling, K. K. et al. A randomized controlled trial of antibody
+response to 2018-19 cell-based vs. egg-based quadrivalent inacti-
+vated inﬂuenza vaccine in children. Vaccine 38, 5171–5177 (2020).
+12.
+Hartvickson, R. et al. Non-inferiority of mammalian cell-derived
+quadrivalent subunit inﬂuenza virus vaccines compared to trivalent
+subunit inﬂuenza virus vaccines in healthy children: a phase III
+randomized, multicenter, double-blind clinical trial. Int. J. Infect.
+Dis. 41, 65–72 (2015).
+13.
+Gouma, S. et al. Comparison of human H3N2 antibody responses
+elicited by egg-based, cell-based, and recombinant protein-based
+inﬂuenza vaccines during the 2017-2018 season. Clin. Infect. Dis. 71
+1447–1453 (2020).
+14.
+Izurieta, H. S. et al. Relative effectiveness of cell-cultured and egg
+based inﬂuenza vaccines among elderly persons in the United
+States, 2017-2018. J. Infect. Dis. 220, 1255–1264 (2019).
+15.
+Dunkle, L. M. et al. Efﬁcacy of recombinant inﬂuenza vaccine in
+adults 50 years of age or older. N. Engl. J. Med. 376,
+2427–2436 (2017).
+16.
+Boikos, C., Sylvester, G. C., Sampalis, J. S. & Mansi, J. A. Relative
+effectiveness of the cell-cultured quadrivalent inﬂuenza vaccine
+compared to standard, egg-derived quadrivalent inﬂuenza vac-
+cines in preventing inﬂuenza-like illness in 2017-2018. Clin. Infect.
+Dis. 71, e665–e671 (2020).
+17.
+Thompson, M. G. et al. Effects of repeated annual inactivated
+inﬂuenza vaccination among healthcare personnel on serum
+hemagglutinin inhibition antibody response to A/Perth/16/2009
+(H3N2)-like virus during 2010-11. Vaccine 34, 981–988 (2016).
+18.
+Nabeshima, S. et al. Antibody response to inﬂuenza vaccine in
+adults vaccinated with identical vaccine strains in consecutive
+years. J. Med. Virol. 79, 320–325 (2007).
+19.
+Leung, V. K. Y. et al. Inﬂuenza vaccination responses: evaluating
+impact of repeat vaccination among health care workers. Vaccine
+35, 2558–2568 (2017).
+20. Khurana, S. et al. Repeat vaccination reduces antibody afﬁnity
+maturation across different inﬂuenza vaccine platforms in humans
+Nat. Commun. 10, 3338 (2019).
+21.
+Keitel, W. A., Cate, T. R., Couch, R. B., Huggins, L. L. & Hess, K. R.
+Efﬁcacy of repeated annual immunization with inactivated inﬂuenza
+virus vaccines over a ﬁve year period. Vaccine 15, 1114–1122 (1997)
+22. Skowronski, D. M. et al. A perfect storm: impact of genomic varia-
+tion and serial vaccination on low inﬂuenza vaccine effectiveness
+during the 2014-2015 season. Clin. Infect. Dis. 63, 21–32 (2016).
+23. Ohmit, S. E. et al. Inﬂuenza vaccine effectiveness in the 2011-2012
+season: protection against each circulating virus and the effect of
+prior vaccination on estimates. Clin. Infect. Dis. 58, 319–327 (2014)
+24. Ohmit, S. E. et al. Inﬂuenza vaccine effectiveness in the community
+and the household. Clin. Infect. Dis. 56, 1363–1369 (2013).
+25. McLean, H. Q. et al. Impact of repeated vaccination on vaccine
+effectiveness against inﬂuenza A(H3N2) and B during 8 seasons.
+Clin. Infect. Dis. 59, 1375–1385 (2014).
+26. Belongia, E. A. et al. Repeated annual inﬂuenza vaccination and
+vaccine effectiveness: review of evidence. Expert Rev. Vaccines 16
+1–14 (2017).
+27.
+Dawood, F. S. et al. Comparison of the immunogenicity of cell
+culture-based and recombinant quadrivalent inﬂuenza vaccines to
+conventional egg-based quadrivalent inﬂuenza vaccines among
+healthcare personnel aged 18-64 years: a randomized open-label
+trial. Clin. Infect. Dis. 73, 1973–1981 (2021).
+28. Gaglani, M. et al. Effect of repeat vaccination on immunogenicity o
+quadrivalent cell-culture and recombinant inﬂuenza vaccines
+among healthcare personnel aged 18-64 years: a randomized,
+open-label trial. Clin. Infect. Dis. 76, e1168–e1176 (2023).
+29. Naleway, A. L. et al. Immunogenicity of high-dose egg-based,
+recombinant, and cell culture-based inﬂuenza vaccines compared
+with standard-dose egg-based inﬂuenza vaccine among health
+care personnel aged 18-65 years in 2019-2020. Open Forum Infect
+Dis. 10, ofad223 (2023).
+30. WHO. Recommendations for inﬂuenza vaccine composition.
+https://www.who.int/teams/global-inﬂuenza-programme/
+vaccines/who-recommendations.).
+
+
+## Page 13
+
+31.
+Chung, J. R. et al. Effects of inﬂuenza vaccination in the United
+States During the 2018-2019 Inﬂuenza Season. Clin. Infect. Dis. 71,
+e368–e376 (2020).
+32. Ramsay, L. C. et al. The impact of repeated vaccination on inﬂuenza
+vaccine effectiveness: a systematic review and meta-analysis. BMC
+Med. 17, 9 (2019).
+33. Jones-Gray, E., Robinson, E. J., Kucharski, A. J., Fox, A. & Sullivan, S.
+G. Does repeated inﬂuenza vaccination attenuate effectiveness? A
+systematic review and meta-analysis. Lancet Respir. Med. 11,
+27–44 (2023).
+34. Shaw, M. W. et al. Reappearance and global spread of variants of
+inﬂuenza B/Victoria/2/87 lineage viruses in the 2000-2001 and
+2001-2002 seasons. Virology 303, 1–8 (2002).
+35. Saito, T. et al. Antigenic alteration of inﬂuenza B virus associated
+with loss of a glycosylation site due to host-cell adaptation. J. Med.
+Virol. 74, 336–343 (2004).
+36. Robertson, J. S. et al. Alterations in the hemagglutinin associated
+with adaptation of inﬂuenza B virus to growth in eggs. Virology 143,
+166–174 (1985).
+37. Raymond, D. D. et al. Inﬂuenza immunization elicits antibodies
+speciﬁc for an egg-adapted vaccine strain. Nat. Med. 22,
+1465–1469 (2016).
+38. Liu, F. et al. Inﬂuence of immune priming and egg adaptation in the
+vaccine on antibody responses to circulating A(H1N1)pdm09 viru-
+ses after inﬂuenza vaccination in adults. J. Infect. Dis. 218,
+1571–1581 (2018).
+39. Koel, B. F. et al. Identiﬁcation of amino acid substitutions supporting
+antigenic change of inﬂuenza A(H1N1)pdm09 viruses. J. Virol. 89,
+3763–3775 (2015).
+40. Koel, B. F. et al. Substitutions near the receptor binding site deter-
+mine major antigenic change during inﬂuenza virus evolution. Sci-
+ence 342, 976–979 (2013).
+41.
+Chen, Z. et al. Generation of live attenuated novel inﬂuenza virus A/
+California/7/09 (H1N1) vaccines with high yield in embryonated
+chicken eggs. J. Virol. 84, 44–51 (2010).
+42. Caton, A. J., Brownlee, G. G., Yewdell, J. W. & Gerhard, W. The
+antigenic structure of the inﬂuenza virus A/PR/8/34 hemagglutinin
+(H1 subtype). Cell 31, 417–427 (1982).
+43. Network WGIS. Manual for the laboratory diagnosis and virological
+surveillance of inﬂuenza. https://iris.who.int/bitstream/handle/
+10665/44518/9789241548090_eng.pdf?sequence=1 (2011).
+44. Gross, F. L., Bai, Y., Jefferson, S., Holiday, C. & Levine, M. Z. Mea-
+suring Inﬂuenza Neutralizing Antibody Responses to A(H3N2) Viru-
+ses in Human Sera by Microneutralization Assays Using MDCK-SIAT1
+Cells. J. Vis. Exp. 56448, https://doi.org/10.3791/56448 (2017).
+45. Stevens, J. et al. Structure of the uncleaved human H1 hemagglu-
+tinin from the extinct 1918 inﬂuenza virus. Science 303,
+1866–1870 (2004).
+46. Li, Z. N. et al. IgM, IgG, and IgA antibody responses to inﬂuenza
+A(H1N1)pdm09 hemagglutinin in infected persons during the ﬁrst
+wave of the 2009 pandemic in the United States. Clin. Vaccin.
+Immunol. 21, 1054–1060 (2014).
+47. Li, Z. N. et al. Serologic evidence of inﬂuenza A(H1N1)pdm09 virus
+infection in northern sea otters. Emerg. Infect. Dis. 20, 915–917 (2014).
+Acknowledgements
+We thank the staff from Baylor Scott & White Health and Kaiser Perma-
+thank Dr James Stevens and Paul Carney from the inﬂuenza division,
+CDC for providing the recombinant HA proteins. We also thank Makeda
+Kay and Stacie Jefferson from inﬂuenza division of CDC for their assis-
+tance with the study. Funding: This study was funded by the US Centers
+for Disease Control and Prevention (contract 75D30118F02850). Dis-
+claimer: The ﬁndings and conclusions in this report are those of the
+authors and do not necessarily represent the views of the US Centers for
+Disease Control and Prevention.
+Author contributions
+M.Z.L., F.S.D., B.F., A.M.F., M.G.T., T.T., M.G. and A.L.N. were involved in
+the conception and the design of the studies. F.L., F.L.G., S.J., K.M., H.G.,
+M.G.W., L.J.E., L.G., S.S.K., S.S., S.G., performed the studies and acquired
+the data. F.L. and S.J. analyzed the data. F.L. and M.Z.L. wrote the
+manuscript. M.Z.L. supervised the study. All co-authors were involved in
+manuscript preparation process for important intellectual content.
+Competing interests
+M.G.received funding from Pﬁzer for anunrelated educational grant and
+Janssen for an unrelated study. A.L.N. received research funding from
+Pﬁzer and Vir Biotechnology for unrelated studies. All other authors
+declared no conﬂict of interest.
+Additional information
+Supplementary information The online version contains
+supplementary material available at
+https://doi.org/10.1038/s41467-023-44551-x.
+Correspondence and requests for materials should be addressed to Min
+Z. Levine.
+Peer review information Nature Communications thanks Surender
+Khurana and the other, anonymous, reviewer(s) for their contribution to
+the peer review of this work.
+Reprints and permissions information is available at
+http://www.nature.com/reprints
+Publisher’s note Springer Nature remains neutral with regard to jur-
+isdictional claims in published maps and institutional afﬁliations.
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as
+long as you give appropriate credit to the original author(s) and the
+source, provide a link to the Creative Commons licence, and indicate if
+changes were made. The images or other third party material in this
+article are included in the article’s Creative Commons licence, unless
+indicated otherwise in a credit line to the material. If material is not
+included in the article’s Creative Commons licence and your intended
+use is not permitted by statutory regulation or exceeds the permitted
+use, you will need to obtain permission directly from the copyright
+holder. To view a copy of this licence, visit http://creativecommons.org/
+licenses/by/4.0/.
+© This is a U.S. Government work and not under copyright protection in
+the US; foreign copyright protection may apply 2024
+Article
+https://doi.org/10.1038/s41467-023-44551-x
+
+1Inﬂuenza Division, Centers for Disease Control and Prevention, Atlanta, GA, USA. 2Baylor Scott & White Health, Temple, TX, USA. 3Baylor College of Medicin
+Temple, TX, USA. 4Texas A & M University, College of Medicine, Temple, TX, USA. 5Kaiser Permanente Northwest Center for Health Research, Portland,
+OR, USA. 6Abt Associates, Atlanta, GA, USA.
+e-mail: mlevine@cdc.gov
+
+
+---
+
+## Extraction Metadata
+
+- Text blocks: 74
+
+- Figures/Tables: 10

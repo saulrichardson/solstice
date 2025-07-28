@@ -12,9 +12,10 @@ using the structure::
         reading_order/<doc>/  reading_order.json
         extracted/<doc>/ content.json, figures/
 
-Where ``<doc>`` is the first 8 characters of the SHA-256 hash of the original
-PDF bytes.  This guarantees a stable path for every document without risk of
-name collisions.
+Where ``<doc>`` is the sanitized PDF filename (without extension). Special 
+characters are replaced with underscores to ensure filesystem compatibility.
+If the filename is empty or invalid, falls back to using the first 8 
+characters of the SHA-256 hash.
 """
 
 from __future__ import annotations
@@ -47,13 +48,27 @@ def ensure_dirs() -> None:
 
 
 def doc_id(pdf_path: os.PathLike | str) -> str:
-    """Return the first 8 hex digits of the SHA-256 hash of *pdf_path*."""
-
-    h = hashlib.sha256()
-    with open(pdf_path, "rb") as fh:
-        for chunk in iter(lambda: fh.read(65536), b""):
-            h.update(chunk)
-    return h.hexdigest()[:8]
+    """Return a sanitized version of the PDF filename without extension."""
+    
+    path = Path(pdf_path)
+    # Get filename without extension
+    filename = path.stem
+    
+    # Sanitize filename: replace problematic characters with underscore
+    # Keep alphanumeric, dash, underscore, and dot
+    import re
+    sanitized = re.sub(r'[^\w\-.]', '_', filename)
+    
+    # Ensure it's not empty and doesn't start with a dot
+    if not sanitized or sanitized.startswith('.'):
+        # Fallback to hash if filename is problematic
+        h = hashlib.sha256()
+        with open(pdf_path, "rb") as fh:
+            for chunk in iter(lambda: fh.read(65536), b""):
+                h.update(chunk)
+        return h.hexdigest()[:8]
+    
+    return sanitized
 
 
 def stage_dir(stage: str, pdf_path: os.PathLike | str) -> Path:

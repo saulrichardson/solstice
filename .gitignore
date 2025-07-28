@@ -84,8 +84,13 @@ assets/tatr/*.pth
 assets/tatr/*.bin
 
 # Project-specific data and output
-data/
+# The main data directory is now tracked in version control. Keep ignoring
+# other large or generated directories explicitly listed below.
+# NOTE: Do not add general catch-all patterns that prevent committed data.
+
+# output directories remain ignored
 output/
+# external input downloads remain ignored
 input/
 *.pdf
 *.json
@@ -119,6 +124,14 @@ visualizations/
 *.tar.gz
 *.pkl
 *.pickle
+
+# ---------------------------------------------------------------------------
+# DATA DIRECTORY: always track everything under `data/`, regardless of any
+# generic patterns (e.g., *.csv) listed above. These negation rules are placed
+# at the end so they override previous ignores.
+# ---------------------------------------------------------------------------
+!data/
+!data/**
 
 # Model outputs
 *.onnx

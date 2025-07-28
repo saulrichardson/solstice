@@ -4,10 +4,13 @@ from .layout_detector import LayoutDetectionPipeline
 from .overlap_resolver import no_overlap_pipeline
 from .reading_order import determine_reading_order_simple
 from .text_extractor import extract_document_content
+from .fact_check_interface import FactCheckInterface, prepare_for_fact_checking
 
 __all__ = [
     "LayoutDetectionPipeline",
     "no_overlap_pipeline", 
     "determine_reading_order_simple",
-    "extract_document_content"
+    "extract_document_content",
+    "FactCheckInterface",
+    "prepare_for_fact_checking"
 ]
