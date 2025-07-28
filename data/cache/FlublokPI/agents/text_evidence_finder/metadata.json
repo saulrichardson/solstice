@@ -1,0 +1,14 @@
+{
+  "agent_name": "text_evidence_finder",
+  "pdf_name": "FlublokPI",
+  "started_at": "2025-07-28T11:45:16.991722",
+  "completed_at": "2025-07-28T11:45:19.173600",
+  "status": "completed",
+  "error": null,
+  "config": {
+    "model": "o4-mini",
+    "standalone_claims": [
+      "Flublok is approved for people 18 years and older"
+    ]
+  }
+}

@@ -12,7 +12,7 @@
 5.2 Guillain Barré Syndrome
 If GBS has occurred within 6 weeks of receipt of a prior inﬂuenza vaccine, the deci
 togiveFlublokshouldbebasedoncareful considerationof thepotential beneﬁtsandr
-The 1976 swine inﬂuenza vaccine was associated with an increased frequency
+The 1976 swine inﬂuenza vaccine was associated with an increased frequenc
 Guillain-BarréSyndrome(GBS). Evidenceforacausal relationof GBSwithotherinﬂue
 vaccines is inconclusive; if an excess risk exists, it is probably slightly more than
 
@@ -22,10 +22,14 @@ WARNINGS AND PRECAUTIONS
 5.1 Managing Allergic Reactions
 Appropriate medical treatment must be immediately available to manage potentia
 
+g
+dminister Flublok as a single 0.5 mL dose.
+2 Administration
+
 
 **[TABLE]**
 
-![Table from page 1](figures/table_p1_4355512a.png)
+![Table from page 1](figures/table_p1_772dce4f.png)
 
 
 ### 2
@@ -36,7 +40,6 @@ Dosage
 FULL PRESCRIBING INFORMATION: CONTENTS*
 1
 INDICATIONS AND USAGE
-2
 DOSAGE AND ADMINISTRATION
 
 ————————————
@@ -51,7 +54,7 @@ WARNINGS AND PRECAUTIONS
 or intramuscular use (0.5 mL). (2)
 —————————
 DOSAGE FORMS AND
-lublok is an injection a single dose is 05mL
+ublok is an injection a single dose is 05mL
 
 vaccine. Flublok is approved for use in persons 18 years of age and older. (1)
 ——————————
@@ -63,18 +66,7 @@ Initial U.S. Approval: 2013
 ———————————
 INDICATIONS AND USAGE
 ———————————
-Fl bl k i
-i
-i di
-t d f
-ti
-i
-i
-ti
-f
-th
-ti
-f di
+Flublok is a vaccine indicated for active immunization for the prevention of disease
 
 HIGHLIGHTS OF PRESCRIBING INFORMATION
 Thesehighlightsdonot includeall theinformationneededtouseFlublok®safely
@@ -88,25 +80,22 @@ nted, followed by data pooled according to age group fromStudies 2 and 4 (adults
 ough 64 years of age) and Studies 3 and 4 (adults aged 65 years and older).
 
 
-### hrough 64 years of age, a
+### y
+hrough 64 years of age, a
 i
 d
 l
 b
 ti
 
-duts 65 yea s o age a d ode, t e
-ost co
-o (
-0%)
-jecto ste ad e se
-ion was pain (19%); the most common (≥10%) solicited systemic adverse reactions
+ults 65 years of age and older, the most common (≥10%) injection site adverse
+on was pain (19%); the most common (≥10%) solicited systemic adverse reactions
 fatigue (13%) and headache (10%). (6.1)
 Clinical Trials Experience
-ause clinical studies are conducted under widely varying conditions, adverse reaction
+use clinical studies are conducted under widely varying conditions, adverse reaction
 observed in the clinical studies of a vaccine cannot be directly compared to rates
-e clinical studies of another vaccine and may not reﬂect the rates observed in clinical
-ice.
+e clinical studies of another vaccine and may not reﬂect the rates observed in clinica
+ce.
 safety experience with Flublok Quadrivalent is relevant to Flublok because both
 nes are manufactured using the same process and have overlapping compositions.
 ok
@@ -119,6 +108,8 @@ re headache (17%), fatigue (13%), and muscle pain (11%). (6.1)
 
 adults 18 through 49 years of age, the most commo
 ction was pain (37%); the most common (≥10%) solic
+
+ection-site adverse
 
 • If Guillain-Barré syndrome has occurred within 6 weeks of receipt of a prior
 inﬂuenza vaccine, the decision to give Flublok should be based on careful
@@ -156,8 +147,6 @@ Pregnancy
 Lactation
 8.4
 Pediatric Use
-85
-G i t i U
 
 
 ## Page 2
@@ -237,7 +226,7 @@ Muscle Pain
 
 **[TABLE]**
 
-![Table from page 2](figures/table_p2_25315cc9.png)
+![Table from page 2](figures/table_p2_f34c0cf1.png)
 
 endpoint.
 Study 1 (NCT00539981) included 4648 subjects 18 through 49 years of age for safety
@@ -282,8 +271,10 @@ ever deﬁned as ≥100.4°F (38°C). Mild (≥100.4° to <101.1°F); Moderate (
 
 **[TABLE]**
 
-![Table from page 2](figures/table_p2_cc96443a.png)
+![Table from page 2](figures/table_p2_ec162437.png)
 
+Table 3: Frequency of Solicited Local Injection Site Adverse Reactions and
+Systemic Adverse Reactions within 7 Days of Administration of Flublok or
 Comparator in Adults ≥65 Years of Age, Studies 3 and 4, Total Vaccinated
 Cohort *,†
 Flublok
@@ -320,15 +311,6 @@ Firmness/Swelling
 <1
 <1
 
-T bl 3 F
-f S li it d L
-l I j
-ti
-Sit Ad
-R
-ti
-d
-
 r prescription medicine.
 ever deﬁned as ≥100.4°F (38°C). Mild (≥100.4° to <101.1°F); Moderate (≥101.2°F
 102.2°F); Severe(≥102.2°F) For fever, 12Flublokrecipientsand5IIV3recipientsw
@@ -337,7 +319,7 @@ issing data, making these denominators 964 and 962, respectively.
 
 **[TABLE]**
 
-![Table from page 2](figures/table_p2_21707f99.png)
+![Table from page 2](figures/table_p2_453fdd41.png)
 
 Flublok
 N=972
@@ -373,17 +355,12 @@ Redness
 1
 <1
 
-q
-y
-j
-Systemic Adverse Reactions within 7 Days of Administration of Flublok or
-omparator in Adults 50-64 Years of Age, Studies 2 and 4, Total Vaccinated
-
 
 ## Page 3
 
 y
 g
+,
 q
 y
 p
@@ -480,7 +457,7 @@ i f
 i
 
 subjects, 6 Flublok recipients and 4 IIV3 recipients. One of the SAEs, vasovagal syncope
-following injection of Flublok, was considered related to administration of study vaccine
+following injection of Flublok, was considered related to administration of study vaccine.
 A
 d lt 65
 f
@@ -494,17 +471,17 @@ t 6
 th
 
 p
-p
 y
 g
-neither was consideredvaccine-related. SAEs werereportedby 32Flublok recipients an
-35 placebo recipients. One SAE in a Flublok recipient was assessed as possibly relate
-o the vaccine: pleuropericarditis with effusions requiring hospitalization and drainage. N
-speciﬁc cause was identiﬁed. The patient recovered.
-Among adults 50 64 years of age (Studies 2 and 4 pooled) through up to 6 months o
+either was consideredvaccine-related. SAEs werereportedby 32Flublok recipients and
+5 placebo recipients. One SAE in a Flublok recipient was assessed as possibly related
+o the vaccine: pleuropericarditis with effusions requiring hospitalization and drainage. No
+peciﬁc cause was identiﬁed. The patient recovered.
+Among adults 50 64 years of age (Studies 2 and 4 pooled) through up to 6 months or
 
 mong adults 18-49 years of age (Studies 1 and 5 pooled), through 6 months
-ost-vaccination two deaths were reported one in a Flublok recipient and one in a
+ost-vaccination, two deaths were reported, one in a Flublok recipient and one in a
+acebo recipient Both deaths occurred more than 28 days following vaccination and
 
 
 ### headache, chills/sweats
@@ -520,7 +497,7 @@ headache chills/sweats or tiredness/malaise) For subjects with an episode of ILI
 n the U.S. during the 2007 2008 inﬂuenza season in adults 18 49 years of age (Study
 1). (1)
 Study 1 enrolled and vaccinated 4648 healthy adults (mean age 32.5 years) randomized
-n a 1:1 ratio to receive a single dose of Flublok (n=2344) or saline placebo (n=2304).
+n a 1:1 ratio to receive a single dose of Flublok (n=2344) or saline placebo (n=2304)
 Among enrolled subjects, 59%were female, 67%were white, 19%African-American, 2%
 Asian, < 1%otherraces, and11%of Latino/Hispanicethnicity. Culture-conﬁrmedinﬂuenza
 
@@ -542,6 +519,7 @@ not protect against a new antigenic variant of the same type or subtype. Frequen
 development of antigenicvariantsthroughantigenicdrift isthevirologicbasisfor seasonal
 epidemicsandthereasonfor theusual replacement of oneor moreinﬂuenzavirusstrains
 in each year’s inﬂuenza vaccine.
+G
 
 syringes contain no natural rubber latex.
 12
@@ -550,10 +528,11 @@ CLINICAL PHARMACOLOGY
 Flublok contains recombinant HAproteins of the three strains of inﬂuenza virus speciﬁed
 by health authorities for inclusion in the annual seasonal vaccine. These proteins function
 as antigens which induce a humoral immune response, measured by hemagglutination
-( )
-)
+hibiti
+(HI)
+tib d )
 
-requirements. For the2024 2025inﬂuenzaseasonit is formulatedtocontain135mcgHA
+requirements. For the2024-2025inﬂuenzaseasonit is formulatedtocontain135mcgHA
 per 0.5mLdose, with45mcgHAof eachof thefollowing3inﬂuenzavirusstrains:A/West
 Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/
 2022 (H3N2) and B/Austria/1359417/2021.
@@ -589,10 +568,8 @@ deﬁned lipids, vitamins, amino acids, and mineral salts. Each of the three HAs
 manufactured using the same process and have overlapping compositions.
 1
 DESCRIPTION
-lublok [Inﬂuenza Vaccine] is a sterile, clear, colorless injection containing recombina
+Flublok [Inﬂuenza Vaccine] is a sterile, clear, colorless injection containing recombina
 
-y
-g
 8.5 Geriatric Use
 Data froman efficacy study (Study 6), which included 1759 subjects ≥65 years and 525
 subjects ≥75 years who received Flublok Quadrivalent, are insufficient to determine
@@ -602,15 +579,13 @@ Data froma randomized, controlled trial demonstrated that children 6 months to l
 years of age had diminished hemagglutinin inhibition (HI) responses to Flublok
 omparedtoaU.S.-licensedinﬂuenzavaccineapprovedforuseinthispopulation, strongly
 uggestingthat Flublok wouldnot beeffectiveinchildrenyounger than3years of age(6).
-afety and effectiveness of Flublok have not been established in children 3 years to less
+Safety and effectiveness of Flublok have not been established in children 3 years to less
 han 18 years of age.
 
-The developmental and health beneﬁts of breastfeeding should be considered along
-the mother’s clinical need for Flublok and any potential adverse effects on the breas
-child fromFlublok or fromthe underlying maternal condition. For preventive vaccines
-underlying condition is susceptibility to disease prevented by the vaccine.
-84 P di
-i U
+The developmental and health beneﬁts of breastfeeding should be considered along wit
+the mother’s clinical need for Flublok and any potential adverse effects on the breastfe
+child fromFlublok or fromthe underlying maternal condition. For preventive vaccines, th
+underlying condition is susceptibility to disease prevented by the vaccine
 
 
 ### the effects of Flublok on the breastfed infant or on milk pr
@@ -627,8 +602,8 @@ compared to non-pregnant women. Pregnant women with inﬂuenza may be at increas
 risk for adverse pregnancy outcomes, including preterm labor and delivery.
 Data
 Animal
-n a developmental toxicity study, female rats were administered Flublok by intramuscular
-njectiontwiceprior tomating(35days and14days prior tomating) andongestationDay
+In a developmental toxicity study, female rats were administered Flublok by intramuscular
+injectiontwiceprior tomating(35days and14days prior tomating) andongestationDay
 6. The total dose was 0.5 mL (divided) on each occasion (a human dose is 0.5 mL). No
 vaccine-related fetal malformations or variations and no adverse effects on pre-weaning
 
@@ -653,17 +628,13 @@ chills, fatigue, headache and myalgia. For subjects with an episode of ILI, a na
 ryngeal swab sample was collected for rtPCR testing and reﬂex viral culture of rtPCR
 positive samples.
 
-p
-,
-Q
-,
-y
-) (
-)
-ong randomized subjects, 58%were female, 80%white, 18%black/African-Amer
-other races, and 5%of Hispanic/Latino ethnicity. Atotal of 5186 (60%) subjects w
 
-)
+**[FIGURE]**
+
+![Figure from page 4](figures/figure_p4_0bf416fd.png)
+
+atc ed st a s
+995)
 Any ILI, all
 matched strains¶,#
 2
@@ -736,16 +707,16 @@ n
 Rate,
 %
 
-n 4648).
-The pre-deﬁned success criterion for the primary efficacy analysis was that the lower
-ound of the 95%conﬁdence interval (CI) of VEshould be at least 40%. Vaccine efficacy
-gainst antigenically matched culture-conﬁrmed CDC-ILI could not be determined reliably
-ecause 96% of the inﬂuenza isolates obtained from subjects in Study 1 were not
-ntigenically matched to the strains represented in the vaccine. An exploratory analysis
-f VE of Flublok against all strains, regardless of antigenic match, isolated from any
+6 8)
+The pre-deﬁned success criterion for the primary efficacy analysis was that the lowe
+bound of the 95%conﬁdence interval (CI) of VEshould be at least 40%. Vaccine efficacy
+against antigenically matched culture-conﬁrmed CDC-ILI could not be determined reliably
+because 96% of the inﬂuenza isolates obtained from subjects in Study 1 were not
+antigenically matched to the strains represented in the vaccine. An exploratory analysis
+of VE of Flublok against all strains, regardless of antigenic match, isolated from any
 ubject with an ILI, not necessarily meeting CDC- ILI criteria, demonstrated an efficacy
-stimate of 44.8% (95% CI 24.4, 60.0). See Table 4 for a presentation of VE by case
-eﬁnition and antigenic similarity.
+estimate of 44.8% (95% CI 24.4, 60.0). See Table 4 for a presentation of VE by case
+deﬁnition and antigenic similarity.
 Table 4: Vaccine Efficacy Against Culture-Conﬁrmed Inﬂuenza in Healthy
 Adults 18-49 Years of Age, Study 1*
 
@@ -770,28 +741,11 @@ Inform the vaccine recipient that:
 
 **[FIGURE]**
 
-![Figure from page 4](figures/figure_p4_90d897c6.png)
+![Figure from page 4](figures/figure_p4_48e23826.png)
 
-Flublok®versus licensed inactivated inﬂuenza vaccine in healthy, medically stable adult
-≥50years of age. Vaccine. 2015, Vol. 33, pp. 6622–6628.
-5. TreanorJJ, Schiff GM, HaydenFG, et.al. Safetyandimmunogenicityof abaculovirus
-expressed hemagglutinin inﬂuenza vaccine: a randomized controlled trial. JAMA. 2007
-Vol. 297, pp. 1577-1582.
-C C
-
-,
-,
+§
 y
-,
-p
-g
-y
-nant inﬂuenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among
-rsons ≥65 years old. Vaccine. 2009, Vol. 28, pp. 379-385.
-
-g
-y
-g
+distinguished by lineage.
 ¶Culture of rtPCR-positive samples was performed in MDCK cells.
 15
 REFERENCES
@@ -803,9 +757,14 @@ mmunogenicity of FluBlok trivalent recombinant baculovirus-expressed hemagglutin
 nﬂuenza vaccine administered intramuscularly to healthy adults 50-64 years of age.
 Vaccine. 2011, Vol. 29, pp. 2272-2278.
 3. Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recom-
-
-y
-guished by lineage
+binant inﬂuenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among
+persons ≥65 years old. Vaccine. 2009, Vol. 28, pp. 379-385.
+4. Izikson R, Leffell DJ, Bock SA, et. al. Randomized comparison of the safety of
+Flublok®versus licensed inactivated inﬂuenza vaccine in healthy, medically stable adults
+≥50years of age. Vaccine. 2015, Vol. 33, pp. 6622–6628.
+5. TreanorJJ, Schiff GM, HaydenFG, et.al. Safetyandimmunogenicityof abaculovirus-
+expressed hemagglutinin inﬂuenza vaccine: a randomized controlled trial. JAMA. 2007,
+Vol. 297, pp. 1577-1582.
 
 Inﬂuenza
 96
@@ -859,7 +818,7 @@ should be not less than - 20%)
 
 **[TABLE]**
 
-![Table from page 4](figures/table_p4_0ac2043c.png)
+![Table from page 4](figures/table_p4_84684524.png)
 
 
 ## Page 5
@@ -869,6 +828,6 @@ should be not less than - 20%)
 
 ## Extraction Metadata
 
-- Text blocks: 66
+- Text blocks: 62
 
-- Figures/Tables: 6
+- Figures/Tables: 7

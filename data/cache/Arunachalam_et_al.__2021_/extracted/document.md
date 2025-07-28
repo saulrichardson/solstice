@@ -50,22 +50,22 @@ p
 g
 thus a key vaccine target. Expressed as trimeric glycoproteins
 
-ung children and adults aged 65 and older1,2,4. Extra-pulmonary
-mplications of inﬂuenza infection constitute a further under-
-cognised disease burden4,5. Overall, such a high disease burden
-rries substantial social and economic cost6,7. Prevention of
-asonal inﬂuenza epidemics, as well as preparedness for future
-ndemics, is thus a global priority.
+oung children and adults aged 65 and older1,2,4. Extra-pulmonary
+omplications of inﬂuenza infection constitute a further under-
+ecognised disease burden4,5. Overall, such a high disease burden
+arries substantial social and economic cost6,7. Prevention of
+easonal inﬂuenza epidemics, as well as preparedness for future
+andemics, is thus a global priority.
 Inﬂuenza A subtypes H1N1 and H3N2, and inﬂuenza B lineages
-Yamagata and B/Victoria circulate routinely in humans and are
-cluded in seasonal inﬂuenza vaccines8. Inﬂuenza A subtypes can
-o give rise to highly pathogenic viruses through cross-over from
-imal reservoirs to humans9. In the past century, four novel
-ﬂuenza A virus strains have emerged in this way, each leading to
+/Yamagata and B/Victoria circulate routinely in humans and are
+ncluded in seasonal inﬂuenza vaccines8. Inﬂuenza A subtypes can
+so give rise to highly pathogenic viruses through cross-over from
+nimal reservoirs to humans9. In the past century, four novel
+nﬂuenza A virus strains have emerged in this way, each leading to
 global pandemic (H1N1 in 1918; H2N2 in 1957; H3N2 in 1968;
-d H1N1 in 2009). Vaccines against such strains are prepared and
-ockpiled as government initiatives for emergency use in
-tential future pandemics.
+nd H1N1 in 2009). Vaccines against such strains are prepared and
+tockpiled as government initiatives for emergency use in
+otential future pandemics.
 H
 l ti i
 (HA) i th
@@ -76,18 +76,18 @@ th
 i d
 ti
 f
-the identiﬁcation of the inﬂuenza strains and their like stra
+the identiﬁcation of the inﬂuenza strains and their like str
 most likely to spread during the upcoming season, for inclusio
-the vaccine. Identiﬁcation of the target inﬂuenza strains is ba
+the vaccine. Identiﬁcation of the target inﬂuenza strains is b
 on surveillance data collected by World Health Organiza
 (WHO) collaborating centres at six locations in the UK,
-(including the Centers for Disease Control and Prevention [CD
-Japan, China and Australia as part of the WHO Global Inﬂue
-Surveillance and Response System (GISRS)15. The ﬁnal decision
-resulting vaccine targets is made by individual regulatory bod
+(including the Centers for Disease Control and Prevention [C
+Japan, China and Australia as part of the WHO Global Inﬂu
+Surveillance and Response System (GISRS)15. The ﬁnal decisio
+resulting vaccine targets is made by individual regulatory bo
 Inﬂuenza vaccines can afford signiﬁcant protection aga
-inﬂuenza illness, even when there is an antigenic misma
-against the predominant circulating virus strains16,17. Such cr
+inﬂuenza illness, even when there is an antigenic mism
+against the predominant circulating virus strains16,17. Such c
 protection can occur through the priming of the immune sys
 by vaccination or natural infection and is primarily due
 antibodies speciﬁc to conserved regions on the HA head
@@ -101,10 +101,17 @@ ti
 t
 l t d t
 i
-ld
+l
 
-9–2020 season. These numbers are signiﬁcantly higher in
+019–2020 season. These numbers are signiﬁcantly higher in
+h ld
+d d l
+d
+d
+ld
 1 2 4
+l
+T
 th
 
 
@@ -214,7 +221,7 @@ against a constantly evolving and mutating virus.
 
 
 ### ﬁltration for storage and formulation22. RIV4 has undergon
-extensive clinical assessment23, and was ﬁrst approved by FDA i
+extensive clinical assessment23, and was ﬁrst approved by FDA
 2013. It is now licensed in the USA, Canada, Europe, Australi
 
 p
@@ -355,7 +362,7 @@ a new predicted HA glycosylation site emerged26. For the
 
 **[FIGURE]**
 
-![Figure from page 3](figures/figure_p3_72d23235.png)
+![Figure from page 3](figures/figure_p3_bff8c554.png)
 
 primarily as a replication defective vector, for gene delivery and
 transgene expression of rHA in the host cells. AdV vectors induce
@@ -444,14 +451,14 @@ Purify
 DNA removal
 TFF/Formulation
 Purification
-system for the manufacture of RIV4. BV baculovirus. Figure adapted
+ystem for the manufacture of RIV4. BV baculovirus. Figure adapted
 e produced in insect cells. J Invertebr Pathol 107 Suppl, S31-41 © 2011
 
 
 ### ctor
 
-ct with 
-s bank
+t with 
+bank
 n 
 or
 Disc-stack
@@ -468,18 +475,16 @@ Clarification
 
 **[FIGURE]**
 
-![Figure from page 4](figures/figure_p4_1896b5df.png)
+![Figure from page 4](figures/figure_p4_17944b40.png)
 
-Internal
 C
 C
 Fig. 2
 Structural features of native HA expressed on inﬂuenza virus and rHA produced in insect cells using the baculovirus expression
 vector system. a HA protein (shown as monomer) extracted from inﬂuenza virus is a heterodimer comprising HA1 (turquoise) and HA2
-(orange) linked though an inter-disulﬁde (S–S) bond and contains complex-type sialylated N-linked glycans. Cleaved fusion peptides (green
+(orange) linked though an inter-disulﬁde (S–S) bond and contains complex-type sialylated N-linked glycans. Cleaved fusion peptides (green)
 and complex glycans74 eliminate and mask unique epitopes on HA respectively. b Recombinant HA protein (shown as monomer) expressed in
 insect cells as a single precursor polypeptide (HA0) with amino acid sequence identical to wildtype HA sequence and contains unsialylated
-paucimannosidic N linked glycans74 HA0 is coloured in turquoise and orange to show HA1 and HA2 segments combined as a single
 
 Fibrous
 Stem
@@ -505,7 +510,8 @@ a
 ed
 cans
 External
-Internal
+I t
+l
 Membrane
 N
 -S-S-
@@ -599,7 +605,7 @@ against highly conserved regions of the HA head and stem
 
 ### the circulating A/H3N2 viruses were antigenically similar to th
 cell-grown vaccine reference virus, egg propagation of th
-vaccine strains had led to loss of a glycosylation site and
+vaccine strains had led to loss of a glycosylation site an
 
 g
 p
@@ -683,8 +689,9 @@ insect cells had relatively small paucimannose glycans (Fig. 2)72.
 
 ## Page 6
 
-The evidence reviewed here demonstrates several advantages o
-the BEVS used in the manufacture of RIV4 over conventiona
+
+### The evidence reviewed here demonstrates several advantages of
+the BEVS used in the manufacture of RIV4 over conventional
 
 350 ng/mL89. Moreover, another study of commercial inﬂuenza
 vaccine preparations detected other viral proteins such as
@@ -706,8 +713,8 @@ vulnerable individuals93.
 CONCLUSIONS
 
 
-### viruses that are grown in embryonated chicken eggs, they co
-egg proteins. Testing of 58 vaccine lots covering six diff
+### viruses that are grown in embryonated chicken eggs, they c
+egg proteins. Testing of 58 vaccine lots covering six dif
 
 g
 p
@@ -727,6 +734,9 @@ As most split and subunit vaccines are prepared from inﬂuenza
 agents such as formaldehyde or β-propiolactone (BPL). These
 inactivating agents cause numerous modiﬁcations to the antigenic
 
+g
+pp
+yp
 vaccine results in increased titre of broadly neutralising HA stem-
 reactive antibodies and that these immune responses increase
 with age78. This increase with age is possibly due to repeated
@@ -781,13 +791,14 @@ vaccine against B viruses of the B/Victoria or B/Yamagata lineages. Vaccine 27,
 matched strains: a systematic review and meta-analysis. BMC Med. 11, 153 (2013).
 
 
-### 9. Paules, C. & Subbarao, K
+### ,
+9. Paules, C. & Subbarao, K
 
 
 ### Suppl B, 11 15 (1999).
-8 Krammer, F et al Inﬂuenza Nat Rev Dis
+8 Krammer F et al Inﬂuenza Nat Rev Dis
 
-review of the social and economic burden of inﬂuenza in low-
+review of the social and economic burden of inﬂuenza in low
 income countries. Vaccine 33, 6537–6544 (2015).
 7 Szucs T The socio economic burden of inﬂuenza J Antimicrob C
 
@@ -834,6 +845,7 @@ March 2021. (2018).
 infections and hospitalizations among adults: a systematic review and meta-
 analysis. PLoS Med. 18, e1003550 (2021).
 4. US Centers for Disease Control and Prevention (CDC). Weekly U.S. Inﬂuenza
+Surveillance Report. https://www.cdc.gov/ﬂu/weekly/index.htm. Accessed 16
 
 
 ## Page 7
@@ -920,76 +932,74 @@ Inﬂuenza-Vaccinology-Report.pdf. Accessed August 2021.
 demic inﬂuenza A (H1N1) 2009 vaccine in a blinded, randomized, placebo-
 controlled trial of adults in Mexico. Vaccine 29, 7826–7834 (2011).
 
-ction platform of complex virus-like
-2013).
-bal access. Available at https://path.
-ubl_rpt_10-07.pdf. Accessed August
-report. Supemtek. Procedure No.
-/www.ema.europa.eu/en/documents/
-essment-report_en.pdf. Accessed 17
-s [Updated 15 April 2021]. Available
-ada/services/drugs-health-products/
-ster-innovative-drugs.html.
+on platform of complex virus-like
+13).
+access. Available at https://path.
+l_rpt_10-07.pdf. Accessed August
+eport. Supemtek. Procedure No.
+ww.ema.europa.eu/en/documents/
+ment-report_en.pdf. Accessed 17
+Updated 15 April 2021]. Available
+da/services/drugs-health-products/
+er-innovative-drugs.html.
 Acces-
-glutinin cleavage into HA1, HA2: no
-5, 9713–9715 (1998).
-magglutinin with multibasic cleavage
-doprotease. EMBO J. 11, 2407–2414
-nin precursor cleavage site, a deter-
-origin of the labile conformation. Cell
-of H5 highly pathogenic avian inﬂu-
-vage site motif. Rev. Med Virol. 25,
-d membrane fusion: a biophysical
-(2018).
-Characterization of inﬂuenza vaccine
-n microscopy and image analyses
-in. Immunol. 23, 483–495 (2016).
-culoviruses as expression vectors for
-echnol. 10, 428–433 (1999).
-. Changes in the antigenicity of the
-s at acidic pH. Virology 126, 587–599
-ation of viral epitopes recognized by
-. Microbiol. Immunol. 386, 323–341
-uman monoclonal antibody induces
-ding head domains. PLoS Biol. 17,
-s antibody afﬁnity maturation across
-mans. Nat. Commun. 10, 3338 (2019).
-a highly conserved inﬂuenza virus
-n analysis of an antibody recognizing
-(2016).
-g of a transient intermediate in the
-a virions. Sci. Adv. 6, eaaz8822 (2020).
-n nanoparticle vaccine elicits broadly
-istinct domains of H3N2 HA. Vaccines
-vaccine outperforms split and sub-
-eciﬁc CD4 T cells and CD4 T cell-
-NPJ Vaccines 5, 77 (2020).
-sting methodologies for characteriza-
-s Immunother. 11, 1673–1684 (2015).
-emagglutinin antigens on inﬂuenza
-microscopy. Vaccines https://doi.org/
-ratory syndrome following inﬂuenza
-eillance through four inﬂuenza sea-
-217–225 (2005).
-associated adverse events: results of
-an. Commun. Dis. Rep. 28, 189–196
-es the Th1/Th2 immune response to
-odel. J. Med. Virol. 72, 138–142 (2004).
-and 2009 inﬂuenza viruses: role of
-n. Sci. Transl. Med. 2, 24ra21 (2010).
-inﬂuenza vaccine hemagglutinins:
-e processing. J Virol. https://doi.org/
+tinin cleavage into HA1, HA2: no
+9713–9715 (1998).
+gglutinin with multibasic cleavage
+oprotease. EMBO J. 11, 2407–2414
+precursor cleavage site, a deter-
+gin of the labile conformation. Cell
+H5 highly pathogenic avian inﬂu-
+ge site motif. Rev. Med Virol. 25,
+membrane fusion: a biophysical
+2018).
+aracterization of inﬂuenza vaccine
+microscopy and image analyses
+Immunol. 23, 483–495 (2016).
+loviruses as expression vectors for
+hnol. 10, 428–433 (1999).
+Changes in the antigenicity of the
+at acidic pH. Virology 126, 587–599
+on of viral epitopes recognized by
+Microbiol. Immunol. 386, 323–341
+man monoclonal antibody induces
+g head domains. PLoS Biol. 17,
+ntibody afﬁnity maturation across
+ns. Nat. Commun. 10, 3338 (2019).
+highly conserved inﬂuenza virus
+nalysis of an antibody recognizing
+016).
+of a transient intermediate in the
+virions. Sci. Adv. 6, eaaz8822 (2020).
+anoparticle vaccine elicits broadly
+inct domains of H3N2 HA. Vaccines
+accine outperforms split and sub-
+iﬁc CD4 T cells and CD4 T cell-
+PJ Vaccines 5, 77 (2020).
+ng methodologies for characteriza-
+mmunother. 11, 1673–1684 (2015).
+magglutinin antigens on inﬂuenza
+croscopy. Vaccines https://doi.org/
+tory syndrome following inﬂuenza
+ance through four inﬂuenza sea-
+17–225 (2005).
+sociated adverse events: results of
+Commun. Dis. Rep. 28, 189–196
+the Th1/Th2 immune response to
+el. J. Med. Virol. 72, 138–142 (2004).
+nd 2009 inﬂuenza viruses: role of
+Sci. Transl. Med. 2, 24ra21 (2010).
+nﬂuenza vaccine hemagglutinins:
+processing. J Virol. https://doi.org/
 
 
 ## Page 8
 
-p
-p
-2176–2185 (2006).
+2176 2185 (2006).
 81. Treanor, J. J. et al. Protective efﬁcacy of a trivalent recombinant hemagglutinin
-protein vaccine (FluBlok(R)) against inﬂuenza in healthy adults: a randomized
+protein vaccine (FluBlok(R)) against inﬂuenza in healthy adults: a randomized,
 placebo-controlled trial. Vaccine 29, 7733–7739 (2011).
-82. Belongia, E. A. et al. Clinical trial to assess immunogenicity of high-dose, adju
+82. Belongia, E. A. et al. Clinical trial to assess immunogenicity of high-dose, adju-
 vanted, and recombinant inﬂuenza vaccines against cell-grown A(H3N2) viruses
 in adults 65 to 74 years, 2017-2018. Vaccine 38, 3121–3128 (2020).
 83. Shinde, V. et al. Induction of cross-reactive hemagglutination inhibiting antibody
@@ -1001,32 +1011,33 @@ responses
 by
 a
 recombinant
-matrix-M
-adjuvanted hemagglutinin nanoparticle inﬂuenza vaccine. Clin. Infect. Dis
+matrix-M-
+adjuvanted hemagglutinin nanoparticle inﬂuenza vaccine. Clin. Infect. Dis.
 https://doi.org/10.1093/cid/ciaa1673 (2020).
 84. Centers for Disease Control Prevention. Estimates of deaths associated with
-seasonal inﬂuenza — United States, 1976-2007. MMWR Morb. Mortal. Wkly Rep
+seasonal inﬂuenza — United States, 1976-2007. MMWR Morb. Mortal. Wkly Rep.
 59, 1057–1062 (2010).
-85. Goldstein, M. A. & Tauraso, N. M. Effect of formalin, beta-propiolactone, mer
-thiolate, and ultraviolet light upon inﬂuenza virus infectivity chicken cell agglu
-tination, hemagglutination, and antigenicity. Appl. Microbiol. 19, 290–294 (1970)
-86. Uittenbogaard, J. P., Zomer, B., Hoogerhout, P. & Metz, B. Reactions of beta
-propiolactone with nucleobase analogues, nucleosides, and peptides: implica
+85. Goldstein, M. A. & Tauraso, N. M. Effect of formalin, beta-propiolactone, mer-
+thiolate, and ultraviolet light upon inﬂuenza virus infectivity chicken cell agglu-
+tination, hemagglutination, and antigenicity. Appl. Microbiol. 19, 290–294 (1970).
+86. Uittenbogaard, J. P., Zomer, B., Hoogerhout, P. & Metz, B. Reactions of beta-
+propiolactone with nucleobase analogues, nucleosides, and peptides: implica-
 tions for the inactivation of viruses. J. Biol. Chem. 286, 36198–36214 (2011).
-87. She, Y. M. et al. Surface modiﬁcations of inﬂuenza proteins upon virus inactiva
+87. She, Y. M. et al. Surface modiﬁcations of inﬂuenza proteins upon virus inactiva-
 tion by β-propiolactone. Proteomics 13, 3537–3547 (2013).
-88. Herrera-Rodriguez, J. et al. Inactivated or damaged? Comparing the effect o
-inactivation methods on inﬂuenza virions to optimize. Vaccin. Prod. Vaccin. 37
+88. Herrera-Rodriguez, J. et al. Inactivated or damaged? Comparing the effect of
+inactivation methods on inﬂuenza virions to optimize. Vaccin. Prod. Vaccin. 37,
 1630–1637 (2019).
 89. Li, J. T., Rank, M. A., Squillace, D. L. & Kita, H. Ovalbumin content of inﬂuenza
-vaccines. J. Allergy Clin. Immunol. 125, 1412–1413 (2010). author reply 1413-1414
+vaccines. J. Allergy Clin. Immunol. 125, 1412–1413 (2010). author reply 1413-1414.
 90. Garcia-Canas, V. et al. Selective and quantitative detection of inﬂuenza virus
 proteins in commercial vaccines using two-dimensional high-performance liquid
-chromatography and ﬂuorescence detection. Anal. Chem. 79, 3164–3172 (2007)
-91. Garcia-Canas, V., Lorbetskie, B. & Girard, M. Rapid and selective characterization o
+chromatography and ﬂuorescence detection. Anal. Chem. 79, 3164–3172 (2007).
+91. Garcia-Canas, V., Lorbetskie, B. & Girard, M. Rapid and selective characterization of
 inﬂuenza virus constituents in monovalent and multivalent preparations using
-non-porous reversed-phase high performance liquid chromatography columns. J
+non-porous reversed-phase high performance liquid chromatography columns. J.
 Chromatogr. A 1123, 225–232 (2006).
+npj Vaccines (2021)  144
 
 
 ### None

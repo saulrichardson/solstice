@@ -12,7 +12,7 @@
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_3bf5d0bf.png)
+![Figure from page 1](figures/figure_p1_a3abd81c.png)
 
 
 ### Although
@@ -75,56 +75,29 @@ optimally
  [1,2].
 Expression of proteins in insect cells using recombinant bac-
 
-simila
-FluBlo
-62.6%)
-deﬁnit
-Conclu
-conﬁrm
+simil
+FluB
+62.6%
+deﬁn
+Conc
+conﬁ
 
 
 ### uring
  the  2007–2008
 
-p
-gg
-(
-)
-uBlok®).
-thods:
- Healthy
- adult  subjects
- at 24  centers
- across
- the  US
- were  randomly
- assigned
- to  receive  a single
-ction
- of saline  placebo
- (2304  subjects),
- or trivalent
- FluBlok
- containing
- 45  mcg  of  each
- rHA0  component
-44
- subjects).
- Serum  samples
- for  assessment
- of  immune
- responses
- by  hemagglutination-inhibition
-
-b  s  t  r  a  c  t
-kground:
+s
+tates
+a
+ b  s  t  r  a  c  t
+Background:
  Development
  of inﬂuenza
  vaccines
  that  do  not  use  embryonated
  eggs  as  the substrate
  for
-cine
+vaccine
  production
  is  a high  priority.
  We  conducted
@@ -133,9 +106,40 @@ cine
  the  protective
  efﬁcacy
  a
-ombinant baculovirus-expressed seasonal trivalent inﬂuenza virus hemagglutinin (rHA0) vaccine
-
-es
+recombinant,
+ baculovirus-expressed
+ seasonal
+ trivalent
+ inﬂuenza
+ virus  hemagglutinin
+ (rHA0)
+ vaccine
+(FluBlok®).
+Methods:
+ Healthy
+ adult  subjects
+ at 24  centers
+ across
+ the  US
+ were  randomly
+ assigned
+ to  receive  a single
+injection
+ of saline  placebo
+ (2304  subjects),
+ or trivalent
+ FluBlok
+ containing
+ 45  mcg  of  each
+ rHA0  component
+(2344
+ subjects).
+ Serum  samples
+ for  assessment
+ of  immune
+ responses
+ by  hemagglutination-inhibition
+(HAI) were taken from a subset of subjects before and 28 days after immunization Subjects were followed
 
 
 ### None
@@ -145,7 +149,7 @@ rotective
  of
  a
  trivalent
- recombin
+ recombi
 FluBlok®)
  against
  inﬂuenza
@@ -169,11 +173,11 @@ lts:
  randomized,
  placebo-controlled
 h
-d
+d R
 i
-ik
-b
-hb
+I ik
+e R b
+K hb
 f
 
 at
@@ -185,7 +189,7 @@ nt hemagglutinin protein vaccine
 
 ## Page 2
 
-cal
+ocal
  and
  systemic
  reactions
@@ -202,7 +206,7 @@ nterfering
  “moderate”
  (some
  interference
-ith
+with
  normal
  activities),
  and
@@ -364,7 +368,7 @@ aterials
  least
  90%
  of
-e
+he
  total
  protein.
  Placebo
@@ -435,20 +439,19 @@ y
  pregnancy
  test
  at
-ti
+h
+i
 f
 d
 i
-ti
+i
 d
 i
-t
-t d t
-t
+d
 
 
 ### H1N1),
- A/Wisconsin/67/2
+ A/Wisconsin/67/20
 
 rmulation
  of
@@ -627,7 +630,7 @@ bjects
  65
  and
  older
-8]. These studies have consistently shown excellent tolerabil-
+,8]. These studies have consistently shown excellent tolerabil-
 
 est.
  Protective
@@ -749,7 +752,8 @@ hi-squared
 ny differences in incidence rates between groups Differences
 
 
-### mary
+### y
+mary
  immunogenicity
  en
 
@@ -765,7 +769,7 @@ o
  1:5.
  Assays
  were
-rformed
+erformed
  using
  turkey
  red
@@ -774,7 +778,7 @@ rformed
  (Viromed
  Laboratories,
  Min-
-tonka,
+etonka,
  MN).
 Swabs
  for
@@ -939,7 +943,7 @@ hibitors
  were
  tested
  in
-rial
+erial
  two-fold
  dilutions
  at
@@ -960,7 +964,7 @@ f 1 5 A
 
 ### emagglutination-inhibit
 
-e
+he
  diary
  and
  ascertain
@@ -1010,7 +1014,7 @@ brief
  combined
  nasal
  and
-roat
+hroat
  swabs
  for
  virus
@@ -1066,7 +1070,7 @@ During
  a
  weekly
  diary
-record
+ record
  inﬂuenza
  symptoms,
  and
@@ -1083,13 +1087,15 @@ the
  calls
  to
  review
+h
 di
 d
-i
-h
+t i
+th
 b
 f
 i
+t
 ill
 
 
@@ -1098,14 +1104,14 @@ ill
 
 ### None
 
-(n 2304) 
-(n 2344) 
+(n=2304) 
+(n=2344) 
 even
 
 
 **[TABLE]**
 
-![Table from page 3](figures/table_p3_3bacecd4.png)
+![Table from page 3](figures/table_p3_1d8f7d5b.png)
 
 groups)
  and
@@ -1171,6 +1177,9 @@ Results
  study,
  and
 
+p
+y
+g
 suming
  a
  5%
@@ -1183,7 +1192,7 @@ suming
 
 **[FIGURE]**
 
-![Figure from page 3](figures/figure_p3_2b7912b4.png)
+![Figure from page 3](figures/figure_p3_07385938.png)
 
 J J
 
@@ -1257,6 +1266,12 @@ signiﬁcantly
  frequently
  reported
  sys-
+f ll
+h
+d
+h (
+b
+h
 
 AE),
  there
@@ -1316,17 +1331,13 @@ ported
  and
  14
 
-2
- (<1)
- 
-177
- (8)
- 
-3
- (<1)
- 
-1
- (<1)
+(
+)
+( )
+(
+)
+(
+)
 1
  (<1)
 57
@@ -1444,6 +1455,10 @@ ajority
  the
  FluBlok
 
+(2011) 7733–
+ 7739
+7735
+.
 verity
  in
  each
@@ -1533,10 +1548,10 @@ Severe
  
 13
  (<1)
-6 (<1)
+6 ( 1)
 74 (3)
 25 (1)
-10 (<1)
+10 ( 1)
 
 
 ## Page 4
@@ -1549,7 +1564,7 @@ Severe
 ### y p
 r any a
 
-eekly
+weekly
  phone
  calls
  and
@@ -1573,7 +1588,7 @@ ture
 
 **[TABLE]**
 
-![Table from page 4](figures/table_p4_c5a53037.png)
+![Table from page 4](figures/table_p4_677d911c.png)
 
 Among
  FluBlok
@@ -1851,8 +1866,7 @@ There
  during
  the
  study;
-0
- in
+in
  the
  FluBlok
  group
@@ -2179,6 +2193,9 @@ reactivity
  reciprocal
  HAI
 
+p
+y
+p
 DC-ILI,
  and
  we
@@ -2287,9 +2304,9 @@ lly
  these
 ruses were A/Wisconsin/67/2005-like H3N2 viruses. Two of these
 
-2011) 7733
+(2011) 7733
  7739
-nts
+ents
  with
  or
  without
@@ -2300,7 +2317,7 @@ nts
  seasonal
  inﬂuenza
  vaccination.
-ody
+body
  titer
  (95%
  CI)
@@ -2314,7 +2331,7 @@ ody
  following
  vaccine
  antigens
-/2005
+7/2005
  (H3N2)
  
 B/Malaysia/2506/2004
@@ -2327,7 +2344,7 @@ Pre
 Post
  
 %Response
-5.1
+15.1
  
 3
  
@@ -2336,7 +2353,7 @@ Post
 19.8
  
 0
-13.0,
+(13.0,
  17.6)
  
 (1,
@@ -2359,7 +2376,7 @@ Post
 200.55
  
 52
-234.9,
+(234.9,
  292.4)
 (77,
  85)
@@ -2371,7 +2388,7 @@ Post
  
 (47,
  57)
-85.7
+185.7
  
 57
  
@@ -2380,7 +2397,7 @@ Post
 162.4
  
 22
-149.4,
+(149.4,
  230.9)
  
 (47,
@@ -2401,7 +2418,7 @@ Post
 212.0
  
 60
-253.3,
+(253.3,
  324.8)
  
 (84,
@@ -2415,7 +2432,7 @@ Post
  
 (55,
  65)
-dpoint for this study was the development of culture-conﬁrmed
+ndpoint for this study was the development of culture-conﬁrmed
 
 
 ## Page 5
@@ -2423,7 +2440,7 @@ dpoint for this study was the development of culture-conﬁrmed
 
 **[FIGURE]**
 
-![Figure from page 5](figures/figure_p5_baa3459e.png)
+![Figure from page 5](figures/figure_p5_96dbdf45.png)
 
 2 K
 l
@@ -2447,13 +2464,13 @@ CDC ILI
 
 **[TABLE]**
 
-![Table from page 5](figures/table_p5_2207c7a7.png)
+![Table from page 5](figures/table_p5_f6c93261.png)
 
 J.J.
  Treanor
  et
  al.
- / Vacc
+ / Vacci
 
 p
 y
@@ -2605,7 +2622,7 @@ sessments
  inﬂuenza
  vaccines
  are
-mplicated
+omplicated
  by
  differences
  in
@@ -2621,7 +2638,7 @@ ntigenic
  strains
  in
  the
-eciﬁc
+peciﬁc
  year
  that
  studies
@@ -2665,7 +2682,7 @@ verall
  vaccine
  against
  culture
-nﬁrmed
+onﬁrmed
  illness
  was
  63%,
@@ -2827,7 +2844,7 @@ me
  signiﬁcance
  of
  such
-association
+ association
  is
  unclear.
 FluBlok
@@ -3124,7 +3141,7 @@ Conﬂict
  grant
  support
  for
-inical trials from Protein Sciences Corporation, Wyeth, Sanoﬁ,
+inical trials from Protein Sciences Corporation Wyeth Sanoﬁ
 
 ubjects
  in
@@ -3278,7 +3295,7 @@ M D Benchmark Research Sacramento CA; Keith Reisinger M D
  Meye
 gators at the study sit
 
-cknowledgements
+knowledgements
 The authors acknowledge the efforts of Kerry Senger
 Tam
 
@@ -3425,7 +3442,7 @@ e
  inserted
  into
  this
-ctor
+ector
  facilitates
  updating
  the
@@ -3638,7 +3655,7 @@ mismatch
 fﬁ
 d
 
-ants
+nts
  to
  Protein
  Sciences
@@ -3665,7 +3682,6 @@ as
  Corporation,
  the
  manufacturers
-f
  the
  vaccine.
  Protein
@@ -4255,6 +4271,6 @@ inﬂuenza vaccine in a season with low attack rate and a mismatched vaccine B
 
 ## Extraction Metadata
 
-- Text blocks: 77
+- Text blocks: 75
 
 - Figures/Tables: 6

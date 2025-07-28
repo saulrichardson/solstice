@@ -13,10 +13,10 @@
 ### an were the standard dose vaccines.
 NCLUSIONS
 e high-dose recombinant vaccine conferred more protection against PCR-co
-med influenza than an egg based standard dose vaccine among adults betwe
+med influenza than an egg-based standard-dose vaccine among adults betwe
 
 uenza A was 15.7% (95% CI, 6.0 to 24.5; P = 0.002). The recombinant vacci
- not significantly more protective against influenza-related hospitalizatio
+not significantly more protective against influenza-related hospitalizati
 h
 d
 d d
@@ -30,12 +30,17 @@ The study population included 1,630,328 vaccinees between the ages of 18 and 64
 years (632,962 in the recombinant-vaccine group and 997,366 in the standard-dose 
 group). During this study period, 1386 cases of PCR-confirmed influenza were 
 diagnosed in the recombinant-vaccine group and 2435 cases in the standard-dose 
-ro p Amon
-th p rti ip nt
-ho
-r 50 to 64
-r of
-559 p rti ip nt
+A
+th
+ti i
+t
+h
+50 t
+64
+f
+559
+ti i
+t
 
 METHODS
 In this cluster-randomized observational study, Kaiser Permanente Northern Cali-
@@ -48,17 +53,17 @@ enza (A or B) confirmed by polymerase-chain-reaction (PCR) testing. Secondary
 outcomes included influenza A, influenza B, and influenza-related hospitalization 
 outcomes. We used Cox regression analysis to estimate the hazard ratio of the 
 recombinant vaccine as compared with the standard-dose vaccines against each 
-outcome We calculated the relative vaccine effectiveness as 1 minus the hazard
+outcome. We calculated the relative vaccine effectiveness as 1 minus the hazard
 
 
 ### standard
 f
 
 BACKGROUND
-Quadrivalent recombinant influenza vaccines contain three times the amount of 
-hemagglutinin protein as standard-dose egg-based vaccines, and the recombinant 
-formulation is not susceptible to antigenic drift during manufacturing. Data are 
-needed on the relative effectiveness of recombinant vaccines as compared with 
+Quadrivalent recombinant influenza vaccines contain three times the amount of
+hemagglutinin protein as standard-dose egg-based vaccines, and the recombinant
+formulation is not susceptible to antigenic drift during manufacturing. Data are
+needed on the relative effectiveness of recombinant vaccines as compared with
 standard dose vaccines against influenza related outcomes in adults under the age
 ABSTR ACT
 g
@@ -66,10 +71,15 @@ Amber Hsiao, Ph.D., M.P.H., Arnold Yee, M.B.A., Bruce Fireman, M.A.,
 John Hansen, M.P.H., Ned Lewis, M.P.H., and Nicola P. Klein, M.D., Ph.D.​
 
 
-### Vacci
+### Vaccin
 
 Recombinant or Standard-Dose Influenza 
 Original Article
+
+
+### None
+
+The new engl and jour nal of medicine
 
 
 ## Page 2
@@ -85,14 +95,14 @@ KPNC members include approximately a third
 of the population in Northern California and
 
 increased protective hemagglutinin antibodies.
-To estimate the relative effectiveness of the
+To estimate the relative effectiveness of the 
 recombinant vaccine as compared with standard-
 dose vaccines against laboratory-confirmed in-
 fluenza and influenza-related outcomes, we com-
-pared the two formulations of vaccines among
-members of the Kaiser Permanente Northern
-California (KPNC) health care system who were
-between 18 and 64 years of age during the two
+pared the two formulations of vaccines among 
+members of the Kaiser Permanente Northern 
+California (KPNC) health care system who were 
+between 18 and 64 years of age during the two 
 influenza seasons of 2018–2019 and 2019–2020.
 Methods
 Study Population and Oversight
@@ -100,14 +110,13 @@ KPNC is an integrated health care delivery sys-
 tem with 4.6 million members, nearly 65% of
 
 vaccine strain.4 The Flublok Quadrivalent influ-
-enza vaccine (RIV4, Sanofi) is manufactured
-without chicken eggs, resulting in a recombinant
+enza vaccine (RIV4, Sanofi) is manufactured 
+without chicken eggs, resulting in a recombinant 
 hemagglutinin protein that is genetically identi-
-cal to that in the selected strain.5 The vaccine
+cal to that in the selected strain.5 The vaccine 
 also contains three times the amount of hemag-
-glutinin protein as standard-dose vaccines, an
-ncreased level that has been correlated with
-ncreased protective hemagglutinin antibodies 6
+glutinin protein as standard-dose vaccines, an 
+increased level that has been correlated with
 
 
 ### eggs are used to manufacture t
@@ -126,6 +135,8 @@ activated influenza vaccines (SD-IIV4), chicken
 
 
 ### None
+
+The new engl and jour nal of medicine
 
 (Fig. 1). We randomly assigned Block A to start 
 with administration of a standard-dose vaccine 
@@ -169,15 +180,15 @@ care during the three influenza seasons from
 cated in March 2020 because of the outbreak of
 
 in other U.S. regions (Table S1 in the Supple-
-mentary Appendix, available with the full text of
-this article at NEJM.org).7 Approximately 10%
-of the members are covered by Medicaid.8 The
-KPNC institutional review board approved the
+mentary Appendix, available with the full text of 
+this article at NEJM.org).7 Approximately 10% 
+of the members are covered by Medicaid.8 The 
+KPNC institutional review board approved the 
 study with a waiver of informed consent.
-Representatives of the study sponsor, Sanofi,
-did not have a role in the design or conduct of
-the study or in the analyses of the data. The
-Flublok Quadrivalent influenza vaccine was
+Representatives of the study sponsor, Sanofi, 
+did not have a role in the design or conduct of 
+the study or in the analyses of the data. The 
+Flublok Quadrivalent influenza vaccine was 
 donated by Sanofi, and the two standard-dose
 
 nd multiracial residents are higher than those
@@ -188,26 +199,24 @@ nd multiracial residents are higher than those
 
 **[FIGURE]**
 
-![Figure from page 3](figures/figure_p3_69781118.png)
+![Figure from page 3](figures/figure_p3_d8faa5de.png)
 
 to Block A or Block B.
 Facility 1
 Facility 8
 Similarly sized
 
-Facility
-Facility 5
-Facility 6
-
 Facility 2
 Facility 7
 Facility 9
 Facility 8
 
+Facility
+Facility 5
+Facility 6
+
 
 ### None
-
-Recombinant or Standard-Dose Influenza Vaccine
 
 
 ## Page 4
@@ -229,26 +238,26 @@ against PCR-confirmed influenza in patients be-
 tween the ages of 50 and 64 years, the primary
 
 Exploratory outcomes were an influenza diag-
-nosis (PCR-confirmed or clinically diagnosed 
+nosis (PCR-confirmed or clinically diagnosed
 influenza on the basis of ICD-10 codes), nonelec-
-tive hospitalization for any cause, and death 
-from any cause. For each outcome except death 
-from any cause, we counted only the first event 
-during each season that occurred more than 14 
+tive hospitalization for any cause, and death
+from any cause. For each outcome except death
+from any cause, we counted only the first event
+during each season that occurred more than 14
 days after vaccination. All deaths after vaccina-
-tion within the study period were considered to 
+tion within the study period were considered to
 be a safety outcome and were counted even if they
 
 not performed.
 Secondary outcomes were PCR-confirmed in-
 fluenza A, PCR-confirmed influenza B, and hos-
-pitalization for PCR-confirmed influenza, for
+pitalization for PCR-confirmed influenza, for 
 community-acquired pneumonia, and for cardio-
-respiratory events including community-acquired
-pneumonia. We identified community-acquired
-pneumonia and other cardiorespiratory events
-using primary discharge diagnosis codes as listed
-in the International Classification of Diseases, 10th
+respiratory events including community-acquired 
+pneumonia. We identified community-acquired 
+pneumonia and other cardiorespiratory events 
+using primary discharge diagnosis codes as listed 
+in the International Classification of Diseases, 10th 
 Revision (ICD-10) (Table S2).
 
 
@@ -258,6 +267,7 @@ y
 y
 g
 y p
+,
 facilities administered primarily high-dose vac-
 cines to adults who were 65 years of age or
 older, which made it infeasible to include those
@@ -272,7 +282,10 @@ Physicians at each facility ordered influenza PCR
 
 ### None
 
-cine rather than a standard-dose vaccine with
+p
+y
+p
+cine rather than a standard-dose vaccine with 
 respect to sex, race, age, coexisting illnesses,
 
 
@@ -333,11 +346,11 @@ years each influenza season would provide the
 
 ## Page 5
 
-and Table S6). In both seasons, delays in ship-
-
 influenza A was 15.7% (95% CI, 6.0 to 24.5; 
 P = 0.002; the P value was below Holm’s multi-
 plicity-adjusted threshold of an alpha level of
+
+and Table S6). In both seasons, delays in ship-
 
 Results
 Study Participants
@@ -447,15 +460,13 @@ h
 
 ### None
 
-Recombinant or Standard-Dose Influenza Vaccine
-
 
 ## Page 6
 
 
 **[FIGURE]**
 
-![Figure from page 6](figures/figure_p6_c0167b23.png)
+![Figure from page 6](figures/figure_p6_fb86abac.png)
 
 
 ### None
@@ -473,22 +484,21 @@ at time of vaccination
 ### None
 
 
+### new engl and jour nal of
+
+
 ## Page 7
 
 
 **[TABLE]**
 
-![Table from page 7](figures/table_p7_670d888d.png)
+![Table from page 7](figures/table_p7_c4eb0b15.png)
 
 Hispanic ethnic group — no. (%)†
 Yes
 46,318 (17)
 65,868 (17)
 112,186 (17)
-No or unknown
-233 082 (83)
-329 984 (83)
-563 066 (83)
 
 no. of participants (%)
 0 (45)
@@ -500,7 +510,7 @@ no. of participants (%)
 7 (51)
 198,434 (50)
 341,191 (51)
-3 (5)
+ (5)
 20,814 (5)
 34,507 (5)
 6 (21)
@@ -516,31 +526,28 @@ no. of participants (%)
 10 908 (3)
 18 207 (3)
 
-(
-)
 Male
-124,54
+124,5
 Female
-154,86
+154,8
 Race or ethnic group — no. (%)†
 White
-142,75
+142,7
 Black
-13,69
+13,6
 Asian
-58,41
+58,4
 Pacific Islander
-1,68
+1,6
 Native American
-1,26
-M lti
-i l
-7 29
+1,2
+l
+l
 
 
 ### None
 
-Characteristic
+cteristic
 Recombinant 
 Vaccine 
 (N = 279,400)
@@ -561,33 +568,31 @@ Recombinant or Standard-Dose Influenza Vaccine
 
 **[TABLE]**
 
-![Table from page 8](figures/table_p8_a85e54cc.png)
+![Table from page 8](figures/table_p8_12033bd6.png)
 
 10.8% (95% CI, 6.6 to 14.7) against diagnosed 
 influenza, and 19.5% (95% CI, 5.4 to 31.5) 
 against influenza A in the subgroup with obe-
 sity (Tables S7 and S8).
 In the younger age group, the only explor-
-t
 bj
-ti
+i
 f
-hi h th
-l ti
+hi h h
+l i
 i
 f
 For both the PCR-confirmed influenza and
-hospitalization outcomes, the results of sensitiv-
+hospitalization outcomes, the results of sensitiv
 ity analyses were consistent with findings in the
-primary analyses (Tables S12 and S13). The esti-
+primary analyses (Tables S12 and S13). The esti
 mates of relative vaccine effectiveness from the
 RSV
-ti
-t
+i
 l
 l
 did
-t diff
+diff
 
 cine group as compared with 1510 participants
 (2.51 cases per 1000) in the standard-dose group
@@ -626,18 +631,17 @@ monia
 cardiorespira-
 631 (2.26)
 890 (2.25)
-1.0
+1.00
 merase chain reaction.
 ted for age, age squared, sex, and race or ethnic group after 
-it
+i
 l
 d l
 f
-th
+h
 dj
-t d f
-t
-ti l l
+d f
+i l l
 
 Recombinant 
 Vaccine 
@@ -645,15 +649,17 @@ Vaccine
 Standard-Dose 
 Vaccine 
 (N = 395,852)
-Unadju
-Rate R
+Unadjus
+Rate Ra
 
 
 ### None
 
+The new engl and jour nal of medicine
+
 S11). For the outcome of PCR-confirmed influ-
-enza among patients in the older age group, 
-relative vaccine effectiveness was 14.4% (95% CI, 
+enza among patients in the older age group,
+relative vaccine effectiveness was 14.4% (95% CI,
 −1.1 to 27.5) during 2018–2019 and 16.1% (95%
 
 weighting with stabilized facility-specific propensity scores. 
@@ -661,8 +667,8 @@ ering according to facility and yielded results similar to
 use of Holm’s adjustment method. The P values that were 
 orresponding adjusted nominal alpha values of 0.01, 0.0125,
 
-ted 
-tio
+sted 
+atio
 Adjusted 
 Hazard Ratio 
 (95% CI)†
@@ -690,13 +696,41 @@ P Value‡
 
 **[FIGURE]**
 
-![Figure from page 9](figures/figure_p9_0307d54a.png)
+![Figure from page 9](figures/figure_p9_01eea92a.png)
 
 rred more protection against influenza than nant-vaccine group than in the standar
 
-vaccine against influenza as confirmed by polymerase-chain-reaction (PCR) assay, hospitalization for PCR-confirmed 
+accine against influenza as confirmed by polymerase-chain-reaction (PCR) assay, hospitalization for PCR-confirmed 
 nfluenza, and hospitalization for community-acquired pneumonia among study participants in the older age group
-according to the presence of five prespecified preexisting conditions.
+ccording to the presence of five prespecified preexisting conditions.
+
+s against Influenza among Participants between 50  
+−10
+0
+10
+20
+−20
+15
+−15
+5
+−5
+25
+5
+40
+35
+45
+30
+55
+50
+Percentage
+
+Figure 3. Subgroup Analysis of Relative Vaccine Effectivenes
+d 6
+f
+di
+i i
+C
+di i
 
 −40 −35
 −45
@@ -780,15 +814,17 @@ y
 age group.11,12
 If standard-dose vaccines were already pre-
 venting most cases of influenza and break-
-through cases were uncommon, preventing 15% 
+through cases were uncommon, preventing 15%
 of breakthrough cases would be of modest pub-
-lic health benefit. However, since standard-dose 
-vaccines prevent at most 40 to 60% of influenza 
+lic health benefit. However, since standard-dose
+vaccines prevent at most 40 to 60% of influenza
 cases annually,13 reducing the incidence of break-
 through influenza by 15% would provide a sub-
 
 
 ### None
+
+The new engl and jour nal of medicine
 
 seasons, participants between the ages of 50 and 
 64 years who received the recombinant vaccine 
@@ -806,25 +842,25 @@ without whose support this study would not have been possible;
 and Ruvim Izikson of Sanofi for scientific discussions and co-
 ordination.
 
-in our real-world setting, compliance with the 
-weekly assigned vaccine schedule occasionally 
-varied because of logistic constraints, including 
-supply-chain issues for the recombinant vaccine, 
-which led to different numbers of participants in 
-the two groups. Second, our data were limited to 
+in our real-world setting, compliance with the
+weekly assigned vaccine schedule occasionally
+varied because of logistic constraints, including
+supply-chain issues for the recombinant vaccine,
+which led to different numbers of participants in
+the two groups. Second, our data were limited to
 two influenza seasons; relative vaccine effective-
-ness may vary across seasons, depending on the 
-vaccine match with circulating strains. Third, 
-our primary outcome did not include infections 
-in persons who did not undergo PCR testing, 
-which limits its generalizability. Fourth, the study 
+ness may vary across seasons, depending on the
+vaccine match with circulating strains. Third,
+our primary outcome did not include infections
+in persons who did not undergo PCR testing,
+which limits its generalizability. Fourth, the study
 had limited power to detect a clinically mean-
-ingful benefit of the recombinant vaccine as 
-compared with a standard-dose vaccine with 
+ingful benefit of the recombinant vaccine as
+compared with a standard-dose vaccine with
 respect to less frequent outcomes, such as hos-
-pitalization for PCR-confirmed influenza. Finally, 
-although KPNC has a diverse population, it may 
-not be representative of other populations in the 
+pitalization for PCR-confirmed influenza. Finally,
+although KPNC has a diverse population, it may
+not be representative of other populations in the
 United States.
 In this study performed during two influenza
 
@@ -858,7 +894,6 @@ analyses to address potential biases from clus-
 
 ### None
 
-g p
 cines worked better than reported & ACIP 
 recommends specific vaccines for seniors. 
 June 23, 2022 (https://www​.­cdc​.­gov/​­flu/​
@@ -867,16 +902,10 @@ Adams JL, McGlynn EA. Comparing Kai-
 
 resources/​­chis).
 8
-D
-i
-AC V
-lk l JL R
-CL
+Da is AC Voelkel JL Remmers CL
 
 
 ### None
-
-Recombinant or Standard-Dose Influenza Vaccine
 
 Dis 2021;​73(11):​e4312-e4320.
 Copyright © 2023 Massachusetts Medical Society.
@@ -889,6 +918,6 @@ i
 
 ## Extraction Metadata
 
-- Text blocks: 84
+- Text blocks: 88
 
 - Figures/Tables: 5

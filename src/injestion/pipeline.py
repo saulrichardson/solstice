@@ -258,8 +258,8 @@ def ingest_pdf(pdf_path: str | os.PathLike[str]) -> Document:
     # Save page images for downstream processing
     images = _save_page_images(pdf_path)
 
-    # Run detection on the PDF
-    raw_layouts: List[Sequence[lp.Layout]] = detector.process_pdf(pdf_path)
+    # Run layout detection on the saved page images (avoid re-rasterizing PDF)
+    raw_layouts: List[Sequence[lp.Layout]] = detector.detect_images(images)
 
     # Create visualizations of raw layouts if requested
     if CREATE_VISUALIZATIONS:

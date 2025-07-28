@@ -36,6 +36,35 @@ from typing import Any
 _DATA_DIR = Path(__file__).resolve().parents[3] / "data"
 _CACHE_DIR = _DATA_DIR / "cache"
 
+# ---------------------------------------------------------------------------
+# Runtime configuration
+# ---------------------------------------------------------------------------
+
+
+def set_cache_root(cache_root: os.PathLike | str) -> None:  # noqa: D401 – simple setter
+    """Override the root *cache* directory at runtime.
+
+    The ingest CLI exposes an ``--output-dir`` flag allowing users to route all
+    generated artefacts to a custom location.  We keep the default behaviour
+    (``data/cache``) while letting callers switch to an alternative path *before*
+    the first call to :func:`stage_dir` / :func:`pages_dir` / …  However, the
+    function is idempotent and can also be called later – all subsequent calls
+    to the helpers will respect the new directory.
+
+    Parameters
+    ----------
+    cache_root
+        Destination directory where pipeline artefacts will be written.
+    """
+
+    global _CACHE_DIR  # noqa: PLW0603 – allow reassignment of module-level var
+
+    # Convert eagerly to Path – makes later operations cheaper.
+    _CACHE_DIR = Path(cache_root)
+
+    # Make sure the directory exists so that later helper calls succeed.
+    _CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
 
 # ---------------------------------------------------------------------------
 # Public helpers
@@ -106,4 +135,3 @@ def save_json(data: Any, path: Path) -> None:
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text())
-

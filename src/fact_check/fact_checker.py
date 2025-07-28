@@ -187,6 +187,17 @@ Return a JSON response in this exact format:
                 content = content[3:-3].strip()
                 
             data = json.loads(content)
+            
+            # Handle case where LLM returns a list instead of dict
+            if isinstance(data, list):
+                logger.warning("LLM returned a list instead of dict, attempting to fix")
+                # Assume it's a list of steps
+                data = {
+                    "steps": data,
+                    "verdict": "insufficient",
+                    "confidence": 0.0
+                }
+            
             return ReasonerOutput(**data)
         except Exception as e:
             logger.error(f"Failed to parse reasoner output: {e}")
@@ -323,6 +334,17 @@ Return the corrected JSON with the same structure as before."""
                 content = content[3:-3].strip()
                 
             data = json.loads(content)
+            
+            # Handle case where LLM returns a list instead of dict
+            if isinstance(data, list):
+                logger.warning("LLM returned a list instead of dict, attempting to fix")
+                # Assume it's a list of steps
+                data = {
+                    "steps": data,
+                    "verdict": "insufficient",
+                    "confidence": 0.0
+                }
+            
             return ReasonerOutput(**data)
         except Exception as e:
             logger.error(f"Failed to parse fixed output: {e}")

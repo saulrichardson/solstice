@@ -1,4 +1,4 @@
-"""Claim verification agent that checks claims against document content"""
+"""Text evidence finder agent that searches for textual evidence supporting or contradicting claims"""
 
 import logging
 from typing import Dict, Any, List, Optional
@@ -13,23 +13,25 @@ from injestion.processing.fact_check_interface import FactCheckInterface
 logger = logging.getLogger(__name__)
 
 
-class ClaimVerifierAgent(BaseAgent):
-    """Agent that verifies claims against extracted document content"""
+class TextEvidenceFinder(BaseAgent):
+    """Agent that finds textual evidence for claims in document content"""
     
     @property
     def agent_name(self) -> str:
-        return "claim_verifier"
+        return "text_evidence_finder"
     
     @property
     def required_inputs(self) -> List[str]:
-        # Dynamic based on whether we're using standalone claims
-        if hasattr(self, 'standalone_claims') and self.standalone_claims:
-            return ["extracted/content.json"]
-        else:
-            return [
-                "extracted/content.json",  # Document content from ingestion
-                "agents/claim_extractor/output.json"  # Claims to verify (if using claim extractor)
-            ]
+        # Dynamic based on claims source
+        base_inputs = ["extracted/content.json"]
+        
+        # Check if we have standalone claims or claims_file
+        if hasattr(self, 'config'):
+            if self.config.get('standalone_claims') or self.config.get('claims_file'):
+                return base_inputs
+        
+        # Otherwise require claim extractor output
+        return base_inputs + ["agents/claim_extractor/output.json"]
     
     def __init__(
         self, 
@@ -38,12 +40,13 @@ class ClaimVerifierAgent(BaseAgent):
         config: Optional[Dict[str, Any]] = None
     ):
         """
-        Initialize claim verifier agent.
+        Initialize text evidence finder agent.
         
         Config options:
             - model: LLM model to use (default: "gpt-4.1")
             - gateway_url: Gateway URL (default: from environment)
             - standalone_claims: List of claims to verify (if not using claim extractor)
+            - claims_file: Path to JSON file containing claims
             - include_evidence_images: Whether to include figure/table images
         """
         super().__init__(pdf_name, cache_dir, config)
@@ -76,6 +79,19 @@ class ClaimVerifierAgent(BaseAgent):
         if self.standalone_claims:
             claims = self.standalone_claims
             logger.info(f"Verifying {len(claims)} standalone claims")
+        elif self.config.get("claims_file"):
+            # Load claims from file
+            claims_file = Path(self.config["claims_file"])
+            if not claims_file.is_absolute():
+                # Assume relative to project root
+                claims_file = Path("data/claims") / claims_file
+            
+            if claims_file.exists():
+                claims_data = self.load_json(claims_file)
+                claims = [c["claim"] for c in claims_data.get("claims", [])]
+                logger.info(f"Loaded {len(claims)} claims from {claims_file}")
+            else:
+                raise AgentError(f"Claims file not found: {claims_file}")
         else:
             # Load claims from claim extractor
             try:
@@ -89,7 +105,7 @@ class ClaimVerifierAgent(BaseAgent):
         # Verify each claim
         results = []
         for i, claim in enumerate(claims):
-            logger.info(f"Verifying claim {i+1}/{len(claims)}: {claim[:100]}...")
+            logger.info(f"Finding text evidence for claim {i+1}/{len(claims)}: {claim[:100]}...")
             
             try:
                 # Check the claim
@@ -120,7 +136,7 @@ class ClaimVerifierAgent(BaseAgent):
                 results.append(verification)
                 
             except Exception as e:
-                logger.error(f"Failed to verify claim: {e}")
+                logger.error(f"Failed to find evidence for claim: {e}")
                 results.append({
                     "claim": claim,
                     "verdict": "error",

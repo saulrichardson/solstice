@@ -23,8 +23,8 @@ up: check
 	@if [ ! -f .env ]; then cp .env.example .env; echo "Created .env file - please add your OpenAI API key"; fi
 	docker compose up -d
 	@echo ""
-	@echo "Gateway running at http://localhost:4000"
-	@echo "Test with: curl http://localhost:4000/health"
+	@echo "Gateway running at http://localhost:8000"
+	@echo "Test with: curl http://localhost:8000/health"
 
 
 down:
@@ -66,7 +66,7 @@ install:
 		echo "   Recommended: python3 -m venv venv && source venv/bin/activate"; \
 		echo ""; \
 	fi
-	pip install -e .
+	pip install -c requirements-constraints.txt -e .
 	@echo "✓ Package installed successfully"
 
 install-detectron2: install
@@ -82,14 +82,8 @@ install-detectron2: install
 		  echo "  Linux: sudo apt-get install poppler-utils"; }
 	@echo "Clearing iopath cache..."
 	@rm -rf ~/.torch/iopath_cache/
-	@echo "Installing PyTorch first (required for Detectron2 build)..."
-	@pip install torch torchvision
-	@echo "Installing Detectron2..."
-	@pip install git+https://github.com/facebookresearch/detectron2.git
-	@echo "Installing patched iopath (MUST be after Detectron2)..."
-	@pip install --force-reinstall git+https://github.com/facebookresearch/iopath@e348b6797c40c9eb4c96bf75e9aaf1b248297548
+	@echo "Installing Detectron2 and dependencies..."
+	@pip install -c requirements-constraints.txt -r requirements-detectron2.txt
 	@echo "Verifying installation..."
 	@python -c "import layoutparser as lp; assert lp.is_detectron2_available(), 'Detectron2 not available'" || \
 		{ echo "Error: Detectron2 installation failed"; exit 1; }
-	@echo ""
-	@echo "✓ Setup complete! You can now run: python test_layout_parser.py"

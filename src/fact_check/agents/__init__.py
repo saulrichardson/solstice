@@ -1,6 +1,6 @@
 """Fact-checking agents package"""
 
 from .base import BaseAgent, AgentError
-from .claim_verifier import ClaimVerifierAgent
+from .text_evidence_finder import TextEvidenceFinder
 
-__all__ = ["BaseAgent", "AgentError", "ClaimVerifierAgent"]
+__all__ = ["BaseAgent", "AgentError", "TextEvidenceFinder"]

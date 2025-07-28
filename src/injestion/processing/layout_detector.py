@@ -79,17 +79,14 @@ class LayoutDetectionPipeline:
         if not pdf_path.exists():
             raise FileNotFoundError(pdf_path)
 
-        # pdf2image requires a path – we cannot stream directly from bytes
+        # Convert PDF pages to images then detect on each image
         images = list(_pdf_to_images(pdf_path, dpi=self._detection_dpi))
+        return self.detect_images(images)
 
+    def detect_images(self, images: Iterable) -> List[Sequence[lp.Layout]]:
+        """Run layout detection on a sequence of page images."""
         model = self._ensure_model()
-
-        layouts: List[Sequence[lp.Layout]] = []
-        for image in images:
-            layout = model.detect(image)
-            layouts.append(layout)
-
-        return layouts
+        return [model.detect(image) for image in images]
 
     # ------------------------------------------------------------------
     # Internal helpers

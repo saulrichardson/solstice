@@ -1,37 +1,24 @@
 {
   "pdf_name": "FlublokPI",
-  "pipeline_started_at": "2025-07-28T09:47:57.369874",
-  "pipeline_completed_at": "2025-07-28T09:48:42.797161",
+  "pipeline_started_at": "2025-07-28T11:45:16.990983",
+  "pipeline_completed_at": "2025-07-28T11:45:19.173902",
   "pipeline_status": "completed",
   "agents": {
-    "claim_verifier": {
+    "text_evidence_finder": {
       "status": "completed",
-      "started_at": "2025-07-28T09:47:57.370079",
-      "completed_at": "2025-07-28T09:48:42.797056"
+      "started_at": "2025-07-28T11:45:16.991244",
+      "completed_at": "2025-07-28T11:45:19.173819"
     }
   },
   "config": {
     "continue_on_error": false,
     "agents": {
-      "claim_verifier": {
-        "model": "gpt-4.1",
+      "text_evidence_finder": {
+        "model": "o4-mini",
         "standalone_claims": [
-          "Flublok is approved for use in persons 18 years of age and older.",
-          "Flublok is approved for use in children under 12 years old.",
-          "The most common side effect of Flublok is injection site pain.",
-          "Flublok contains egg proteins.",
-          "Guillain-Barr\u00e9 syndrome history requires careful consideration before giving Flublok.",
-          "Flublok is a recombinant influenza vaccine."
+          "Flublok is approved for people 18 years and older"
         ]
       }
-    },
-    "claims": [
-      "Flublok is approved for use in persons 18 years of age and older.",
-      "Flublok is approved for use in children under 12 years old.",
-      "The most common side effect of Flublok is injection site pain.",
-      "Flublok contains egg proteins.",
-      "Guillain-Barr\u00e9 syndrome history requires careful consideration before giving Flublok.",
-      "Flublok is a recombinant influenza vaccine."
-    ]
+    }
   }
 }

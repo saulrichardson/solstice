@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional, Type
 
 from .agents.base import BaseAgent, AgentError
-from .agents.claim_verifier import ClaimVerifierAgent
+from .agents.text_evidence_finder import TextEvidenceFinder
 
 logger = logging.getLogger(__name__)
 
@@ -72,26 +72,26 @@ class FactCheckPipeline:
         
         if standalone_claims:
             # Direct claim verification mode
-            verifier_config = agent_configs.get("claim_verifier", {})
-            verifier_config["standalone_claims"] = standalone_claims
+            text_evidence_config = agent_configs.get("text_evidence_finder", {})
+            text_evidence_config["standalone_claims"] = standalone_claims
             
             self.agents.append(
-                ClaimVerifierAgent(
+                TextEvidenceFinder(
                     self.pdf_name,
                     self.cache_dir,
-                    verifier_config
+                    text_evidence_config
                 )
             )
         else:
             # Full pipeline mode (will add more agents here)
-            # For now, just the verifier with empty claims
-            verifier_config = agent_configs.get("claim_verifier", {})
+            # For now, just the text evidence finder with empty claims
+            text_evidence_config = agent_configs.get("text_evidence_finder", {})
             
             self.agents.append(
-                ClaimVerifierAgent(
+                TextEvidenceFinder(
                     self.pdf_name,
                     self.cache_dir,
-                    verifier_config
+                    text_evidence_config
                 )
             )
         
