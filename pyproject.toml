@@ -30,7 +30,7 @@ dependencies = [
     # Data processing
     "pandas>=2.0.0",
     "tabulate>=0.9.0",  # For DataFrame.to_markdown()
-    "pillow~=9.5.0",  # Constrained by table-transformer
+    "pillow~=9.5.0",
 ]
 
 [project.optional-dependencies]
@@ -42,14 +42,6 @@ dev = [
     "ruff>=0.1.0",
     "mypy>=1.5.0",
     "pre-commit>=3.3.3",
-]
-tatr = [
-    "table-transformer>=1.0.6",
-    "pytesseract>=0.3.10",
-    "torch>=2.0.0",
-    "torchvision>=0.15.0",
-    "timm>=0.9.0",  # Sometimes missing from table-transformer deps
-    "easyocr>=1.7.0",  # Required by table-transformer
 ]
 
 [tool.setuptools.packages.find]

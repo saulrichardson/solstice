@@ -80,8 +80,6 @@ node_modules/
 .docker/
 
 # Model weights (use git-lfs if needed)
-assets/tatr/*.pth
-assets/tatr/*.bin
 
 # Project-specific data and output
 # The main data directory is now tracked in version control. Keep ignoring

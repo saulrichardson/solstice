@@ -6,12 +6,9 @@ from .component_extractors import (
     FigureExtractor,
     ComponentRouter
 )
-from .tatr_extractor import ProperTATRExtractor
-
 __all__ = [
     "TextExtractor",
     "TableExtractor", 
     "FigureExtractor",
-    "ComponentRouter",
-    "ProperTATRExtractor"
+    "ComponentRouter"
 ]
