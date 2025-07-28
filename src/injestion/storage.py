@@ -62,7 +62,7 @@ def stage_dir(stage: str, pdf_path: os.PathLike | str) -> Path:
     """Return the cache directory for *stage* and *pdf_path* (created)."""
 
     ensure_dirs()
-    directory = _CACHE_DIR / stage / doc_id(pdf_path)
+    directory = _CACHE_DIR / doc_id(pdf_path) / stage
     directory.mkdir(parents=True, exist_ok=True)
     return directory
 

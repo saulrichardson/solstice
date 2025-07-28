@@ -6,12 +6,12 @@ import os
 import uuid
 import base64
 import io
-from typing import List, Sequence
+from typing import List, Sequence, Optional
 
 
 from pdf2image import convert_from_path
 
-from .storage import pages_dir, stage_dir, save_json, final_doc_path
+from .storage import pages_dir, stage_dir, save_json, load_json, final_doc_path, doc_id
 
 import layoutparser as lp
 
@@ -106,8 +106,14 @@ def determine_reading_order(boxes: List[Box], page_width: float = 1600) -> List[
         
         # For spanning elements at the top (like titles), process them first
         if len(columns) > 1 and columns[0] == column_boxes:
-            # This is the spanning elements group
-            reading_order.extend([box.id for box in sorted_column])
+            # This is the spanning elements group - sort by type priority then position
+            # Prioritize titles/headers at the top
+            def sort_key(box):
+                type_priority = 0 if box.label in ['Title', 'Header'] else 1
+                return (type_priority, box.bbox[1])  # Type first, then y-position
+            
+            sorted_spanning = sorted(column_boxes, key=sort_key)
+            reading_order.extend([box.id for box in sorted_spanning])
         else:
             # Regular column - group nearby boxes
             column_order = []
@@ -144,7 +150,8 @@ def ingest_pdf(
     merge_overlapping: bool = True,
     merge_threshold: float = 0.1,
     confidence_weight: float = 0.7,
-    area_weight: float = 0.3
+    area_weight: float = 0.3,
+    create_visualizations: bool = True
 ) -> Document:
     """Run full ingestion on *pdf_path* and return document with detected layout.
     
@@ -155,6 +162,7 @@ def ingest_pdf(
         merge_threshold: IoU threshold for merging same-type boxes (default: 0.1)
         confidence_weight: Weight for confidence in conflict resolution (default: 0.7)
         area_weight: Weight for box area in conflict resolution (default: 0.3)
+        create_visualizations: Whether to create visualization images (default: True)
         
     Returns:
         Document object with detected and optionally merged layout elements
@@ -219,36 +227,80 @@ def ingest_pdf(
             blocks.append(block)
         
         # Determine reading order for this page after merging
-        page_reading_order = determine_reading_order(
-            page_boxes, 
-            page_width=images[page_idx].width if page_idx < len(images) else 1600
-        )
+        page_width = images[page_idx].width if page_idx < len(images) else 1600
+        page_reading_order = determine_reading_order(page_boxes, page_width)
         reading_order_by_page.append(page_reading_order)
+        
+        # Detect columns for auditing
+        columns = detect_columns(page_boxes, page_width)
 
-    # Save raw layout detection output for debugging / future stages
-    layout_dir = stage_dir("layout", pdf_path)
-    save_json(
-        [
-            [l.to_dict() for l in page_layout]
-            for page_layout in raw_layouts
-        ],
-        layout_dir / "layout.json",
-    )
+    # Skip saving raw layout - not needed for downstream
 
+    # Save merged layout results
+    merged_dir = stage_dir("merged", pdf_path)
+    merged_data = []
+    for page_idx in range(len(raw_layouts)):
+        page_blocks = [b for b in blocks if b.page_index == page_idx]
+        merged_data.append([
+            {
+                "id": b.id,
+                "bbox": b.bbox,
+                "label": b.role,
+                "score": b.metadata.get("score", 0)
+            }
+            for b in page_blocks
+        ])
+    save_json(merged_data, merged_dir / "merged_boxes.json")
+    
+    # Skip saving column detection - intermediate data not needed
+    
+    # Save reading order
+    order_dir = stage_dir("reading_order", pdf_path)
+    save_json({
+        "pages": [
+            {
+                "page": idx,
+                "reading_order": order,
+                "num_elements": len(order)
+            }
+            for idx, order in enumerate(reading_order_by_page)
+        ]
+    }, order_dir / "reading_order.json")
+    
     # Create Document object with detected blocks and reading order
     document = Document(
         source_pdf=str(pdf_path), 
         blocks=blocks, 
         metadata={
             "detection_dpi": detection_dpi,
-            "total_pages": len(raw_layouts)
+            "total_pages": len(raw_layouts),
+            "merge_settings": {
+                "merge_overlapping": merge_overlapping,
+                "merge_threshold": merge_threshold,
+                "confidence_weight": confidence_weight,
+                "area_weight": area_weight
+            }
         },
         reading_order=reading_order_by_page
     )
 
-    # No refinement stage - just save raw detection results
-
+    # Save final document
     document_path = final_doc_path(pdf_path)
     document.save(document_path)
+    
+    # Skip saving summary - not needed for downstream processing
+    
+    # Create visualizations if requested
+    if create_visualizations:
+        from .visualize_layout import visualize_document
+        
+        viz_paths = visualize_document(
+            document,
+            pdf_path,
+            pages_to_show=None,  # Always visualize ALL pages
+            show_labels=True,
+            show_reading_order=True
+        )
+        # Visualizations saved directly by visualize_document
 
     return document

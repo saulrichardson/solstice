@@ -26,7 +26,14 @@ class Document(BaseModel):
     reading_order: List[List[str]] = Field(default_factory=list, description="Reading order per page")
 
     def save(self, path: str | Path) -> None:
-        Path(path).write_text(self.model_dump_json(indent=2, ensure_ascii=False))
+        # Handle both Pydantic v1 and v2
+        try:
+            # Pydantic v2
+            json_str = self.model_dump_json(indent=2)
+        except AttributeError:
+            # Pydantic v1
+            json_str = self.json(indent=2, ensure_ascii=False)
+        Path(path).write_text(json_str)
 
     @classmethod
     def load(cls, path: str | Path) -> "Document":
