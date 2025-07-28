@@ -362,7 +362,7 @@ a new predicted HA glycosylation site emerged26. For the
 
 **[FIGURE]**
 
-![Figure from page 3](figures/figure_p3_bff8c554.png)
+![Figure from page 3](figures/figure_p3_80b25e70.png)
 
 primarily as a replication defective vector, for gene delivery and
 transgene expression of rHA in the host cells. AdV vectors induce
@@ -475,7 +475,7 @@ Clarification
 
 **[FIGURE]**
 
-![Figure from page 4](figures/figure_p4_17944b40.png)
+![Figure from page 4](figures/figure_p4_8db3da42.png)
 
 C
 C

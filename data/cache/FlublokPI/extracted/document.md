@@ -29,7 +29,7 @@ dminister Flublok as a single 0.5 mL dose.
 
 **[TABLE]**
 
-![Table from page 1](figures/table_p1_772dce4f.png)
+![Table from page 1](figures/table_p1_ff89f192.png)
 
 
 ### 2
@@ -226,7 +226,7 @@ Muscle Pain
 
 **[TABLE]**
 
-![Table from page 2](figures/table_p2_f34c0cf1.png)
+![Table from page 2](figures/table_p2_89f0f042.png)
 
 endpoint.
 Study 1 (NCT00539981) included 4648 subjects 18 through 49 years of age for safety
@@ -271,7 +271,7 @@ ever deﬁned as ≥100.4°F (38°C). Mild (≥100.4° to <101.1°F); Moderate (
 
 **[TABLE]**
 
-![Table from page 2](figures/table_p2_ec162437.png)
+![Table from page 2](figures/table_p2_541a386d.png)
 
 Table 3: Frequency of Solicited Local Injection Site Adverse Reactions and
 Systemic Adverse Reactions within 7 Days of Administration of Flublok or
@@ -319,7 +319,7 @@ issing data, making these denominators 964 and 962, respectively.
 
 **[TABLE]**
 
-![Table from page 2](figures/table_p2_453fdd41.png)
+![Table from page 2](figures/table_p2_c21d3478.png)
 
 Flublok
 N=972
@@ -631,7 +631,7 @@ positive samples.
 
 **[FIGURE]**
 
-![Figure from page 4](figures/figure_p4_0bf416fd.png)
+![Figure from page 4](figures/figure_p4_48bdaf5c.png)
 
 atc ed st a s
 995)
@@ -741,7 +741,7 @@ Inform the vaccine recipient that:
 
 **[FIGURE]**
 
-![Figure from page 4](figures/figure_p4_48e23826.png)
+![Figure from page 4](figures/figure_p4_bc7bd783.png)
 
 §
 y
@@ -818,7 +818,7 @@ should be not less than - 20%)
 
 **[TABLE]**
 
-![Table from page 4](figures/table_p4_84684524.png)
+![Table from page 4](figures/table_p4_bb2dbd18.png)
 
 
 ## Page 5

@@ -1,5 +1,12 @@
-"""Fact Checker Agent - Reasoner + Quote Verifier"""
+"""Fact-checking package for evidence extraction from documents."""
 
-from .fact_checker import FactChecker, VerificationResult
+from .evidence_extractor import EvidenceExtractor, EvidenceExtractionResult
+from .pipeline import FactCheckPipeline
+from .claim_orchestrator import ClaimOrchestrator
 
-__all__ = ["FactChecker", "VerificationResult"]
+__all__ = [
+    "EvidenceExtractor", 
+    "EvidenceExtractionResult", 
+    "FactCheckPipeline",
+    "ClaimOrchestrator"
+]

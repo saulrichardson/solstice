@@ -252,8 +252,8 @@ def ingest_pdf(pdf_path: str | os.PathLike[str]) -> Document:
         Document object with detected layout elements, extracted text, and visualizations
     """
 
-    # Initialize detector
-    detector = LayoutDetectionPipeline(detection_dpi=DETECTION_DPI)
+    # Initialize detector (operates on page images only)
+    detector = LayoutDetectionPipeline()
 
     # Save page images for downstream processing
     images = _save_page_images(pdf_path)
