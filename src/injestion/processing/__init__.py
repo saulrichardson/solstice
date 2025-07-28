@@ -1,8 +1,13 @@
-"""Agentic helpers that interact with the LLM gateway.
+"""Core processing modules for document ingestion."""
 
-All code in this sub-package talks exclusively to the **Responses API** exposed
-by the gateway service.  Higher-level ingestion modules can therefore remain
-vendor-agnostic while still benefitting from retries, caching and analytics
-implemented inside the gateway.
-"""
+from .layout_detector import LayoutDetectionPipeline
+from .overlap_resolver import no_overlap_pipeline
+from .reading_order import determine_reading_order_simple
+from .text_extractor import extract_document_content
 
+__all__ = [
+    "LayoutDetectionPipeline",
+    "no_overlap_pipeline", 
+    "determine_reading_order_simple",
+    "extract_document_content"
+]

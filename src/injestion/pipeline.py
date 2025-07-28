@@ -11,16 +11,16 @@ from typing import List, Sequence, Optional
 
 from pdf2image import convert_from_path
 
-from .storage import pages_dir, stage_dir, save_json, load_json, final_doc_path, doc_id
+from .storage.paths import pages_dir, stage_dir, save_json, load_json, final_doc_path, doc_id
 
 import layoutparser as lp
 
-from .layout_pipeline import LayoutDetectionPipeline
-from .processing.box import Box
-from .processing.no_overlap_resolver import no_overlap_pipeline
-from .document import Block, Document
-from .text_extractor import extract_document_content
-from .reading_order_simple import determine_reading_order_simple
+from .processing.layout_detector import LayoutDetectionPipeline
+from .models.box import Box
+from .processing.overlap_resolver import no_overlap_pipeline
+from .models.document import Block, Document
+from .processing.text_extractor import extract_document_content
+from .processing.reading_order import determine_reading_order_simple
 
 # ---------------------------------------------------------------------------
 # Column detection and reading order
@@ -234,7 +234,7 @@ def ingest_pdf(
     
     # Second pass: Determine reading order for each page
     reading_order_by_page: List[List[str]] = []
-    from .reading_order_simple import Box as SimpleBox
+    from .processing.reading_order import Box as SimpleBox
     
     for page_idx, page_boxes in enumerate(all_page_boxes):
         page_width = images[page_idx].width if page_idx < len(images) else 1600
@@ -308,7 +308,7 @@ def ingest_pdf(
     
     # Create visualizations if requested
     if create_visualizations:
-        from .visualize_layout import visualize_document
+        from .visualization.layout_visualizer import visualize_document
         
         viz_paths = visualize_document(
             document,

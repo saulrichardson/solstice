@@ -11,7 +11,7 @@ from typing import List, Tuple, Optional, Dict
 from dataclasses import dataclass
 from enum import Enum
 
-from .box import Box
+from ..models.box import Box
 
 
 def calculate_iou(box1: Tuple[float, float, float, float], 

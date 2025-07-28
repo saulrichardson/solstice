@@ -9,8 +9,8 @@ from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 from PIL import Image
 
-from .document import Document, Block
-from .storage import pages_dir, stage_dir
+from ..models.document import Document, Block
+from ..storage.paths import pages_dir, stage_dir
 
 
 # Color map for different element types
@@ -254,8 +254,8 @@ def visualize_pipeline_results(
     Returns:
         List of paths to saved visualization files
     """
-    from .storage import final_doc_path
-    from .document import Document
+    from ..storage.paths import final_doc_path
+    from ..models.document import Document
     
     # Load the processed document
     doc_path = final_doc_path(pdf_path)

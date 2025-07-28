@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 from .pipeline import ingest_pdf
-from .storage import final_doc_path
+from .storage.paths import final_doc_path
 
 
 def main():
@@ -98,7 +98,7 @@ def main():
         total_pages = document.metadata.get('total_pages', 0)
         
         # Show visualization path
-        from .storage import doc_id, stage_dir
+        from .storage.paths import doc_id, stage_dir
         viz_dir = stage_dir("visualizations", args.pdf_path)
         
         print(f"\n✓ Processing complete!")

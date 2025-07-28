@@ -7,8 +7,8 @@ import fitz  # PyMuPDF
 from PIL import Image
 import numpy as np
 
-from .document import Document, Block
-from .storage import stage_dir
+from ..models.document import Document, Block
+from ..storage.paths import stage_dir
 
 logger = logging.getLogger(__name__)
 
