@@ -61,13 +61,26 @@ This will:
 
 ### Docker Setup (Alternative)
 
-For a containerized environment:
+For running the gateway service in a containerized environment:
 
 ```bash
-docker compose up -d
+# Check Docker is installed and running
+make check
+
+# Start the gateway service
+make up
+
+# View logs
+make logs
+
+# Test the service
+make test-gateway
+
+# Stop services
+make down
 ```
 
-This starts the Solstice Gateway service on http://localhost:8000.
+The gateway runs on http://localhost:8000 and provides API access to the processing capabilities.
 
 ## Architecture
 

@@ -15,6 +15,11 @@ Committee on Immunization Practices —
 United States, 2022–23 Influenza Season
 
 
+**[FIGURE]**
+
+![Figure from page 1](figures/figure_p1_9e6b4a41.png)
+
+
 ### None
 
 
@@ -33,8 +38,8 @@ Mary Dott, MD, MPH, Online Editor
 Terisa F. Rutledge, Managing Editor
 David C. Johnson, Lead Technical Writer-Editor
 Marella Meadows, Project Editor
-Martha F. Boyd, Lead
-Alexander J. Gott
+Martha F. Boyd, Lead 
+Alexander J. Gotta
 Julia C. Martinroe, Ste
 Visual Infor
 Quang M. Doan,
@@ -54,7 +59,7 @@ Jeff Nied
 
 **[FIGURE]**
 
-![Figure from page 2](figures/figure_p2_0766349b.png)
+![Figure from page 2](figures/figure_p2_8eef8eec.png)
 
 
 ### MPA
@@ -101,14 +106,14 @@ Visual Information Specialist
 ## Page 3
 
 
-### quadrivalent adjuvanted inactivated influenza vaccine (aIIV4). If none of these three vaccines is available at an opportunity for 
-vaccine administration, then any other age-appropriate influenza 
+### uadrivalent adjuvanted inactivated influenza vaccine (aIIV4). If none of these three vaccines is available at an opportunity fo
+vaccine administration, then any other age-appropriate influenza
 vaccine should be used.
-This report focuses on recommendations for the use of vaccines 
-for the prevention and control of seasonal influenza during the
-Corresponding author: Lisa A. Grohskopf, Influenza Division, 
-National Center for Immunization and Respiratory Diseases, CDC. 
-elephone: 404-639-2552; Email: lgrohskopf@cdc.gov.
+This report focuses on recommendations for the use of vaccine
+for the prevention and control of seasonal influenza during th
+rresponding author: Lisa A. Grohskopf, Influenza Division, 
+tional Center for Immunization and Respiratory Diseases, CDC. 
+ephone: 404-639-2552; Email: lgrohskopf@cdc.gov.
 
 mends that adults aged ≥65 years preferentially receive any one of the following higher dose or adjuvanted influenza va
 valent high-dose inactivated influenza vaccine (HD-IIV4), quadrivalent recombinant influenza vaccine (RIV
@@ -143,15 +148,19 @@ h
 h 8
 d 2 d
 h
-h ld
+hild
 h
 ld
-h f
+i
+h fi
 d
-bl
+ibl
 f
-l bl
-l d
+i
+i
+il bl
+i
+l di
 
 Recommendations of the Advisory Committee on Immunization 
 Practices — United States, 2022–23 Influenza Season
@@ -170,7 +179,7 @@ vaccine is available. All seasonal influenza vaccines expected to be available i
 quadrivalent, containing hemagglutinin (HA) derived from one influenza A(H1N1)pdm09 virus, one influenza A(H3N2) virus, 
 one influenza B/Victoria lineage virus and one influenza B/Yamagata lineage virus Inactivated influenza vaccines (IIV4s)
 
-Prevention and Control of Se
+Prevention and Control of S
 Recommendations of the Adv
 
 asonal Influenza with Vaccines:
@@ -195,6 +204,7 @@ updated periodically to reflect recent additions to the literatu
 
 ### viruses) (14).
 
+g
 2010–11 through 2015–16, influenza vaccination prevented 
 an estimated 1.6–6.7 million illnesses, 790,000–3.1 million 
 outpatient medical visits, 39,000–87,000 hospitalizations, and 
@@ -232,18 +242,16 @@ administered; the types, subtypes (for influenza A), and lineages
 of similarity between circulating viruses and those included in
 the vaccine (12) During each of the six influenza seasons from
 
-2022–23 influenza season in the United States. A brief summa
+2022–23 influenza season in the United States. A brief summar
 Document containing additional information are available a
-These recommendations apply to U.S.-licensed influenza va
-indications. Updates and other information are available fro
-and health care providers should check this site periodically fo
+These recommendations apply to U.S.-licensed influenza vac
+indications. Updates and other information are available from
+and health care providers should check this site periodically for
 I t
 d
 ti
 
-v
 p
-/ u
 Methods
 ACIP provides annual recommendations for the use of
 influenza vaccines for the prevention and control of seasonal
@@ -283,21 +291,20 @@ DC’s influenza website (https://www.cdc.gov/flu). Vaccination
 ditional information.
 2021–22 season, although severity indicators (e.g., influenza-
 associated hospitalizations and deaths) were overall lower than
-in recent previous seasons (16). Timing, intensity, and severity
+in recent previous seasons (16). Timing, intensity, and severity 
 of the 2022–23 influenza season cannot be predicted. Influenza
 vaccination remains an important tool for the prevention of
 potentially severe respiratory illness, which might decrease
 stress on the U.S. health care system during ongoing circulation
 
-he recommendations and a link to the most recent Background 
-s://www.cdc.gov/vaccines/hcp/acip-recs/vacc-specific/flu.html. 
+the recommendations and a link to the most recent Background 
+ps://www.cdc.gov/vaccines/hcp/acip-recs/vacc-specific/flu.html. 
 d
-di
+d
 F d
 d D
-Ad i i
-i
-li
+Ad
+l
 d
 
 
@@ -308,9 +315,8 @@ already recommended for vaccination, and changes that
 
 **[TABLE]**
 
-![Table from page 5](figures/table_p5_28fb101a.png)
+![Table from page 5](figures/table_p5_d549768d.png)
 
-y
 18 through 64 yrs 
 (jet injector)
 Fluarix Quadrivalent
@@ -416,7 +422,7 @@ IM¶
 
 **[TABLE]**
 
-![Table from page 6](figures/table_p6_81651a09.png)
+![Table from page 6](figures/table_p6_43433103.png)
 
 wheezing episode has occurred during the preceding 12 months
 •	Children and adults who are immunocompromised due to any cause, 
@@ -484,7 +490,7 @@ diabetes mellitus])
 ## Page 7
 
 g
-y
+5 y
 g
 includes the following:
 g
@@ -495,14 +501,12 @@ march-3-2022-meeting-announcement.
 
 **[TABLE]**
 
-![Table from page 7](figures/table_p7_de918d62.png)
+![Table from page 7](figures/table_p7_4fa9253b.png)
 
-ecommendations for influenza vaccination of adults aged 
 ≥65 years discussed in this document.
 Primary updates and changes to the recommendations 
 described in this report include 1) the vaccine virus 
-composition for 2022–23 U.S. seasonal influenza vaccines;
-authority over vaccines in the United States, convenes a meeting 
+composition for 2022–23 U S seasonal influenza vaccines;
 of its Vaccines and Related Biological Products Advisory 
 Committee (VRBPAC). This committee considers the 
 recommendations of WHO, reviews and discusses similar data, 
@@ -522,7 +526,7 @@ p
 y
 g
 ( g ,
-anaphylaxis) to any RIV of any valency, the provider can consider administering ccIIV4. Providers can also consider consulting with an allergist to help determine
+anaphylaxis) to any RIV of any valency, the provider can consider administering ccIIV4. Providers can also consider consulting with an allergist to help determine 
 which vaccine component is responsible for the allergic reaction.
 English-language articles on influenza and influenza vaccines. 
 Typically, systematic review and evaluation of evidence using 
@@ -535,49 +539,49 @@ recommended for vaccination or potential preferential
 recommendations for specific vaccines). Systematic review, 
 GRADE, and the ACIP Evidence to Recommendations 
 Framework were used in the development of the updated 
-recommendations for influenza vaccination of adults aged
-•	 Recommendations for the composition of Northern
-Hemisphere influenza vaccines are made by the World Health
-Organization (WHO), which organizes a consultation, usually
-in February of each year. Surveillance data are reviewed, and
-candidate vaccine viruses are discussed. Information about the
-WHO meeting on February 25, 2022, for selection of the
-2022–23 Northern Hemisphere vaccine viruses is available at
+recommendations for influenza vaccination of adults aged 
+•	 Recommendations for the composition of Northern 
+Hemisphere influenza vaccines are made by the World Health 
+Organization (WHO), which organizes a consultation, usually 
+in February of each year. Surveillance data are reviewed, and 
+candidate vaccine viruses are discussed. Information about the 
+WHO meeting on February 25, 2022, for selection of the 
+2022–23 Northern Hemisphere vaccine viruses is available at 
 https://www.who.int/news/item/25-02-2022-
 recommendations-announced-for-influenza-vaccine-
 composition-for-the-2022-2023-northern-hemisphere-
-influenza-season. Subsequently, FDA, which has regulatory
-authorityovervaccinesintheUnitedStates convenesameeting
+influenza-season. Subsequently, FDA, which has regulatory 
+authority over vaccines in the United States, convenes a meeting
 
 y
 y
 q
-* 	Vaccination providers should check FDA-approved prescribing information for 
+* 	Vaccination providers should check FDA-approved prescribing information for
 (but not limited to) indications, contraindications, warnings, and precautio
 vaccines-blood-biologics/vaccines/vaccines-licensed-use-united-states.
-†	When a contraindication is present, a vaccine should not be administered, cons
+	When a contraindication is present, a vaccine should not be administered, con
 Hunter P. General best practice guidelines for immunization: best practices g
-cdc.gov/vaccines/hcp/acip-recs/general-recs/index.html). In addition to the co
-are noted in the table, each individual influenza vaccine is contraindicated for 
-of that vaccine. Vaccine components can be found in package inserts. Although a
+cdc.gov/vaccines/hcp/acip-recs/general-recs/index.html). In addition to the c
+are noted in the table, each individual influenza vaccine is contraindicated for
+of that vaccine. Vaccine components can be found in package inserts. Although 
 to the use of egg-based IIV4s and LAIV4, ACIP recommends that persons wit
-that is otherwise appropriate for their age and health status. Those who report h
-or swelling, respiratory distress, lightheadedness, or recurrent emesis) or who re
+that is otherwise appropriate for their age and health status. Those who report 
+or swelling, respiratory distress, lightheadedness, or recurrent emesis) or who r
 in an inpatient or outpatient medical setting (including but not necessarily lim
-than ccIIV4 or RIV4 is used. Vaccine administration should be supervised by a 
-§	When a precaution is present, vaccination should generally be deferred but m
-an adverse reaction, consistent with ACIP General Best Practice Guidelines f
+than ccIIV4 or RIV4 is used. Vaccine administration should be supervised by a
+	When a precaution is present, vaccination should generally be deferred but m
+an adverse reaction, consistent with ACIP General Best Practice Guidelines 
 immunization: best practices guidance of the Advisory Committee on Immu
 index.html). Providers can consider using the following vaccines in these insta
 with supervision by a health care provider who is able to recognize and man
-(e g anaphylaxis) to any egg-based IIV or LAIV of any valency the provider ca
+(e.g., anaphylaxis) to any egg-based IIV or LAIV of any valency, the provider ca
 
 TABLE 3. Influenza vaccine contraindications and precautions for pe
 influenza vaccine* — United States, 2022–23 influenza season
 Vaccine (of any valency) associated with 
 previous severe allergic reaction
 (e.g., anaphylaxis)
-Egg-based IIV4s and LA
+Egg-based IIV4s and L
 Any egg-based IIV or LAIV
 Contraindication†
 Any ccIIV
@@ -602,20 +606,20 @@ Precaution§
 Contraindication†
 Allergist consultation recommended
 ure–based inactivated influenza vaccine (any valency); ccIIV4 = cell culture–
-IIV = inactivated influenza vaccine (any valency); IIV4 = inactivated influenz
-ve attenuated influenza vaccine, quadrivalent; RIV = recombinant influenz
+IIV = inactivated influenza vaccine (any valency); IIV4 = inactivated influenza
+ve attenuated influenza vaccine, quadrivalent; RIV = recombinant influenza
 influenza vaccines for the most complete and updated information, including
 ge inserts for U.S.-licensed vaccines are available at https://www.fda.gov
 th ACIP General Best Practice Guidelines for Immunization (Kroger A, Bahta L
 of the Advisory Committee on Immunization Practices [ACIP]. https://www
 cations based on history of severe allergic reaction to influenza vaccines tha
 who have had a severe allergic reaction (e.g., anaphylaxis) to any componen
-of severe allergic reaction (e.g., anaphylaxis) to egg is a labeled contraindicatio
-y of egg allergy may receive any licensed, recommended influenza vaccin
-d reactions to egg involving symptoms other than urticaria (e.g., angioedem
+of severe allergic reaction (e.g., anaphylaxis) to egg is a labeled contraindication
+y of egg allergy may receive any licensed, recommended influenza vaccine
+d reactions to egg involving symptoms other than urticaria (e.g., angioedema
 pinephrine or another emergency medical intervention should be vaccinated
 ospitals, clinics, health departments, and physician offices), if a vaccine othe
-are provider who is able to recognize and manage severe allergic reactions.
+re provider who is able to recognize and manage severe allergic reactions.
 ndicated if the benefit of protection from the vaccine outweighs the risk fo
 nization (Kroger A, Bahta L, Hunter P. General best practice guidelines fo
 Practices [ACIP]. https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs
@@ -640,6 +644,8 @@ p
 g
 A summary of the ACIP Evidence to Recommendations
 
+g
+p
 •	 Abbreviations for general vaccine categories (e.g., IIV) 
 might be used when discussing information that is not 
 specific to either trivalent or quadrivalent vaccines.
@@ -653,22 +659,22 @@ vaccine (e.g., ccIIV3 and ccIIV4)
 (e.g., HD-IIV3 and HD-IIV4)
 	ű SD for standard-dose inactivated influenza vaccine 
 (e.g. SD-IIV3 and SD-IIV4)
-•	 Regarding recommendations concerning newly license
+•	 Regarding recommendations concerning newly licensed
 influenza vaccines and changes to the licensed indication
 for existing vaccines, ACIP relies on FDA for review o
 safety, immunogenicity, and efficacy and effectiveness dat
 pertaining to licensure and labeling of influenza vaccines
-Vaccines that are expected to be available for the 2022–2
+Vaccines that are expected to be available for the 2022–23
 season are described (see Vaccines Available for th
-2022–23 Season) (Table 1). Regulatory informatio
-pertinent to the change in age indication for Flucelva
+2022–23 Season) (Table 1). Regulatory information
+pertinent to the change in age indication for Flucelvax
 Quadrivalent discussed in this report is available at https:/
 www.fda.gov/vaccines-blood-biologics/vaccines
 flucelvax-quadrivalent.
 •	 Regarding updated recommendations for influenz
 vaccines for adults aged ≥65 years, a summary of the review
 of evidence on this topic is available at https://www.cdc
-gov/vaccines/acip/recs/grade/influenza-older-adults.htm
+gov/vaccines/acip/recs/grade/influenza-older-adults.html
 
 s report
 •	 Main influenza vaccine types:
@@ -699,6 +705,9 @@ for influenza vaccination of persons aged ≥65 years
 ### ≥6 months.
 On the basis of review of evidence concerning high
 
+y
+g
+p
 Routine annual influenza vaccination of all persons aged 
 ≥6 months who do not have contraindications continues to be 
 recommended. Primary updates in this report include the following:
@@ -748,13 +757,15 @@ etr.html.
 
 u
 , p
+w
 g
+v
 du
 d
 unity over the course of a season, and programmatic 
 derations. Influenza vaccines might be available as early 
 y or August; however, vaccination during these months 
- recommended for most groups because of the possible 
+t recommended for most groups because of the possible 
 ng of immunity over the course of the influenza season 
 32). For most persons who need only 1 dose of influenza 
 ne for the season, vaccination should ideally be offered 
@@ -797,7 +808,7 @@ other age-appropriate influenza vaccine should be used
 Higher dose vaccines include HD-IIV4 and RIV4, both
 of which contain a higher dose of HA antigen per viru
 than standard-dose vaccines (60 µg for HD-IIV4 and
-45 µg for RIV4, compared with 15 µg for standard-dos
+45 µg for RIV4, compared with 15 µg for standard-dose
 inactivated vaccines). Adjuvanted inactivated influenza
 vaccine (aIIV4) contains MF59 adjuvant.
 Recommendations for the Use of 
@@ -849,6 +860,11 @@ vaccine for the season (see Children Aged 6 Months
 Through 8 Years: Number of Influenza Vaccine Doses)
 (Figure). These children should receive their first dose as
 soon as possible (including during July and August, if
+l bl )
+ll
+h
+d d
+( h h
 
 
 ## Page 10
@@ -860,10 +876,14 @@ start of seasonal influenza activity can occur as early as October.
 
 **[FIGURE]**
 
-![Figure from page 10](figures/figure_p10_2a3dc2d3.png)
+![Figure from page 10](figures/figure_p10_5d479ff2.png)
 
-, p
+, p v d
+u d
+v
+du
 g
+u
 ealth care visits and hospitalizations. No recommendation is 
 made for revaccination (i.e., providing a booster dose) later 
 n the season of persons who have been fully vaccinated for 
@@ -878,6 +898,9 @@ For children aged 8 years who require 2 doses of vaccine, both doses should
 be administered even if the child turns age 9 years between receipt of dose 1 
 and dose 2.
 
+trivalent or quadrivalent infuenza vaccine 
+before July 1, 2022? 
+(Doses need not have been received 
 during same or consecutive seasons.)
 Yes
 No or unknown
@@ -889,12 +912,6 @@ infuenza vaccine
 infuenza vaccine
 (administered 
 ≥4 weeks apart)
-
-FIGURE. Influenza vaccine dosing algorithm for children aged 
-6 months through 8 years* — Advisory Committee on Immunization 
-Practices, United States, 2022–23 influenza season
- Did the child receive ≥2 doses of 
-trivalent or quadrivalent infuenza vaccine
 
 of influenza vaccine effectiveness using the test-negative design 
 found a significant decline in effectiveness within 180 days 
@@ -940,7 +957,7 @@ season (27). A meta-analysis of 14 studies examining waning
 
 ## Page 11
 
-increased risk for severe illness and complications from influenza 
+ncreased risk for severe illness and complications from influenza 
 and for influenza-related outpatient, emergency department, 
 or hospital visits. When vaccine supply is limited, vaccination
 
@@ -989,9 +1006,9 @@ h
 ld
 
 
-### o might result in missed opportunities to vaccinate 
-l as difficulties in vaccinating a population within a mo
-nstrained period. The potential contributions of these facto
+### might result in missed opportunities to vaccinate
+as difficulties in vaccinating a population within a mo
+strained period. The potential contributions of these fact
 
 
 ### p
@@ -999,10 +1016,10 @@ g
 issues also are a consideration. Although delaying vaccinat
 might result in greater immunity later in the season, defe
 
-part attributable to bias, unmeasured confounding, or the
-late-season emergence of antigenic drift variants of influenza
+part attributable to bias, unmeasured confounding, or the 
+late-season emergence of antigenic drift variants of influenza 
 viruses that are less well-matched to the vaccine viruses.
-Varying data concerning the presence and rate of waning
+Varying data concerning the presence and rate of waning 
 immunity after influenza vaccination, coupled with the
 unpredictable timing of the influenza season each year, prevent 
 determination of an optimal time to vaccinate Programmatic
@@ -1019,7 +1036,7 @@ All persons aged ≥6 months without contraindications
 hould be vaccinated annually. However, emphasis also should
 be placed on vaccination of persons who live with or care for
 hose who are at increased risk for medical complications
-attributable to severe influenza. When vaccine supply is
+ttributable to severe influenza. When vaccine supply is
 imited, vaccination efforts should focus on administering
 vaccination to persons at higher risk for influenza-related
 omplications as well as persons who live with or care for such
@@ -1030,13 +1047,7 @@ exposure to patients or to infectious materials. These
 personnel might include but are not limited to physicians,
 nurses, nursing assistants, nurse practitioners, physician
 assistants, therapists, technicians, emergency medical service
-l d
-t l
-l
-h
-i t
-l b
-t
+personnel dental personnel pharmacists laborator
 
 for adults).
 An IIV4 or RIV4 (as appropriate for the recipient’s age) 
@@ -1047,8 +1058,15 @@ these listed groups. Contraindications and precautions for the
 
 ### facilities.
 •	 American Indian or Alaska Native persons.
-• Persons
-ho are e tremel obese (bod mass inde ≥
+• P r
+n
+h
+r
+tr m l
+b
+(b d m
+ind
+≥
 
 •	 Persons who are immunocompromised due to any cause 
 (including but not limited to immunosuppression caused 
@@ -1060,37 +1078,25 @@ medications and who might be at risk for experiencing
 Reye syndrome after influenza virus infection.
 •	 Residents of nursing homes and other long-term care
 
-fforts should focus on vaccination of persons at higher risk for 
-medical complications attributable to severe influenza who do 
-not have contraindications. These persons include the following 
+forts should focus on vaccination of persons at higher risk for
+medical complications attributable to severe influenza who do
+ot have contraindications. These persons include the following
 no hierarchy is implied by order of listing):
 •	 All children aged 6 through 59 months.
 •	 All persons aged ≥50 years.
-•	 Adults and children who have chronic pulmonary 
-(including asthma), cardiovascular (excluding isolated 
-hypertension), renal, hepatic, neurologic, hematologic, or 
+•	 Adults and children who have chronic pulmonary
+(including asthma), cardiovascular (excluding isolated
+hypertension), renal, hepatic, neurologic, hematologic, or
 metabolic disorders (including diabetes mellitus).
 
 
 ## Page 12
 
-c
-sco s ste tw t
-C
-Ge e a
-est
-act ceGu de
-es o
-mmunization (42). For persons who have mild or asymptomatic 
-OVID-19, further deferral might be considered to avoid 
-nfusing COVID-19 symptoms with postvaccination reactions. 
 ecause recommendations for vaccination of this population 
 ight continue to evolve, clinicians should check CDC guidance 
 ttps://www.cdc.gov/vaccines/pandemic-guidance/index.html) 
 r up-to-date information.
 
-p
-y
 However, such persons need not be restricted from caring for 
 or visiting less severely immunocompromised persons.
 Influenza Vaccination of Persons with COVID-19
@@ -1129,12 +1135,10 @@ providing care for severely immunocompromised persons
 requiring a protected environment for 7 days after vaccination
 and that hospital visitors who have received LAIV should avoid
 
-LAIV4 is not recommended for certain populations and is not 
-approved for children aged <2 years (see Contraindications and 
-Precautions for the Use of LAIV4) (Table 2). RIV4 is not approved 
-for children aged <18 years. High-dose inactivated influenza 
-vaccine (HD-IIV4) and adjuvanted inactivated influenza vaccine 
-(aIIV4) are not approved for persons aged <65 years.
+
+### 2022–23 influenza vaccine and 2) the number of doses
+influenza vaccine received in previous influenza seasons.
+
 Care should be taken to administer an age-appropriate vaccine at 
 the appropriate volume for each dose. For IIV4s, the recommended 
 volume may be administered from a prefilled syringe containing the 
@@ -1151,8 +1155,19 @@ Children aged 6 months through 8 years require 2 doses of
 influenza vaccine administered a minimum of 4 weeks apart 
 during their first season of vaccination for optimal protection 
 (45–48). Determination of the number of doses needed is 
-based on 1) the child’s age at the time of the first dose of 
-2022–23 influenza vaccine and 2) the number of doses of
+based on 1) the child’s age at the time of the first dose of
+
+should receive 0.5 mL per dose.
+Alternatively, healthy children aged ≥24 months (≥2 years) 
+may receive LAIV4, 0.2 mL intranasally (0.1 mL in each nostril). 
+LAIV4 is not recommended for certain populations and is not 
+approved for children aged <2 years (see Contraindications and 
+Precautions for the Use of LAIV4) (Table 2). RIV4 is not approved 
+for children aged <18 years. High-dose inactivated influenza 
+vaccine (HD-IIV4) and adjuvanted inactivated influenza vaccine 
+( IIV4)
+d f
+d 65
 
 2022–23 season. For children aged 6 through 35 months, a
 0.25-mL dose must be obtained from a multidose vial (43)
@@ -1164,7 +1179,12 @@ Per the package insert, each dose may be given at either
 volume (44); however, the 0.25-mL prefilled syringes are
 no longer available.
 For all of these IIV4s, persons aged ≥36 months (≥3 years)
-should receive 0 5 mL per dose
+h
+ld
+i
+0 5
+L
+d
 
 
 ### for children aged 6 through 35 months are as follows 
@@ -1195,7 +1215,7 @@ influenza vaccine for the 2022–23 season.
 
 **[TABLE]**
 
-![Table from page 13](figures/table_p13_c83d5ae9.png)
+![Table from page 13](figures/table_p13_c44f66dd.png)
 
 of doses of influenza vaccine needed for the 2022–23 
 influenza season is determined as follows (Figure):
@@ -1211,9 +1231,9 @@ apart before July 1, 2022, or whose previous influenza
 vaccination history is unknown, require 2 doses for the 
 2022–23 season. The interval between the 2 doses
 
-r children aged 6 through 35 months  
+children aged 6 through 35 months  
  United States, 2022 23 
-luenza season
+uenza season
 de name (Manufacturer)
 Dose volume for children 
 aged 6 through 35 mos
@@ -1221,34 +1241,34 @@ aged 6 through 35 mos
 uria Quadrivalent (Seqirus)
 0.25 mL (7.5 µg)†
 arix Quadrivalent 
-GlaxoSmithKline)
+laxoSmithKline)
 0.5 mL (15 µg)
 celvax Quadrivalent (Seqirus)
 0.5 mL (15 µg)
 Laval Quadrivalent 
-GlaxoSmithKline)
+laxoSmithKline)
 0.5 mL (15 µg)
 zone Quadrivalent (Sanofi 
-asteur)
+steur)
  0.5 mL (15 µg)§
 breviation: HA = hemagglutinin.
 or persons aged ≥36 months (≥3 years), the dose volume is 0.5 mL per dose 
-or all inactivated influenza vaccines with the exception of Fluzone High-Dose 
+r all inactivated influenza vaccines with the exception of Fluzone High-Dose 
 uadrivalent (HD-IIV4), which is licensed for persons aged ≥65 years and for 
-which the dose volume is 0.7 mL per dose.
+hich the dose volume is 0.7 mL per dose.
 he approved dose volume for Afluria Quadrivalent is 0.25 mL for children aged 
 through 35 months and 0.5 mL for persons aged ≥3 years. However, 0.25-mL 
-refilled syringes are not expected to be available for the 2022–23 season. For 
+efilled syringes are not expected to be available for the 2022–23 season. For 
 hildren aged 6 through 35 months, a 0.25-mL dose must be obtained from a 
-multidose vial. 
+ultidose vial. 
 er the package insert, Fluzone Quadrivalent is currently approved for children 
 ged 6 through 35 months at either 0.25 mL or 0.5 mL per dose; however, 0.25-mL 
 refilled syringes are no longer available. If a prefilled syringe of Fluzone 
 uadrivalent is used for a child in this age group, the dose volume will be 0.5 mL 
 er dose. The 0.5-mL single-dose vials should be accessed for only 1 dose and 
-multidose vials for only 10 doses, regardless of the volume of the doses obtained 
-r any remaining volume in the vial. Any vaccine remaining in a vial after the 
-maximum number of doses has been removed should be discarded.
+ultidose vials for only 10 doses, regardless of the volume of the doses obtained 
+any remaining volume in the vial. Any vaccine remaining in a vial after the 
+aximum number of doses has been removed should be discarded.
 
 
 ### receive any one of th
@@ -1273,18 +1293,18 @@ Older Adults
 ACIP recommends that adults aged ≥65 years preferentially
 receive any one of the following higher dose or adjuvanted
 
-can be used postpartum. Influenza vaccine can be administered
-at any time during pregnancy (i.e., during any trimester), before
-and during the influenza season. Early vaccination (i.e., during
-July and August) can be considered for persons who are in
-the third trimester during these months if vaccine is available
-because this can provide protection for the infant during the
+can be used postpartum. Influenza vaccine can be administered 
+at any time during pregnancy (i.e., during any trimester), before 
+and during the influenza season. Early vaccination (i.e., during 
+July and August) can be considered for persons who are in 
+the third trimester during these months if vaccine is available 
+because this can provide protection for the infant during the 
 first months of life when they are too young to be vaccinated.
-Although experience with the use of IIVs during pregnancy
-is substantial, data specifically reflecting administration of
-influenza vaccines during the first trimester are limited (see
-Safety of Influenza Vaccines in the supplementary Background
-Document). Most studies have not noted an association between
+Although experience with the use of IIVs during pregnancy 
+is substantial, data specifically reflecting administration of 
+influenza vaccines during the first trimester are limited (see 
+Safety of Influenza Vaccines in the supplementary Background 
+Document). Most studies have not noted an association between 
 influenza vaccination and adverse pregnancy outcomes, including 
 spontaneous abortion (miscarriage) (51–61). One observational
 
@@ -1297,13 +1317,7 @@ who are pregnant or who might be pregnant or postpartum
 during the influenza season receive influenza vaccine (50). Any
 licensed, recommended, and age-appropriate IIV4 or RIV4
 may be used. LAIV4 should not be used during pregnancy but
-b
-d
-I fl
-i
-b
-d i i
-d
+can be used postpartum Influenza vaccine can be administered
 
 
 ### higher risk for se
@@ -1374,7 +1388,7 @@ d 45
 f
 RIV4
 d
-i h 15
+h 15
 f
 
 influenza vaccines: quadrivalent high-dose inactivated influenza 
@@ -1385,64 +1399,55 @@ an opportunity for vaccine administration, then any other age-
 appropriate influenza vaccine should be administered.
 Older adults (aged ≥65 years) are at increased risk for severe
 
-g
-g
-g
-y
-(relative efficacy: 42%; 95% CI: 9%–65%) (68). No data are
-available from randomized trials of aIIV versus nonadjuvanted
-SD-IIVs against laboratory-confirmed influenza outcomes
+(relative efficacy: 42%; 95% CI: 9% 65%) (68). No data are 
+available from randomized trials of aIIV versus nonadjuvanted 
+SD-IIVs against laboratory-confirmed influenza outcomes 
 during nonpandemic influenza seasons.
-Randomized Studies Comparing HD-IIV, RIV, and aIIV
-with Nonadjuvanted SD-IIVs: Prevention of Influenza-
-Associated Hospitalizations and Other Serious Events. No
-data are available from randomized trials evaluating prevention
-of laboratory-confirmed influenza-associated hospitalizations
-as a primary outcome. In a secondary analysis from a two-
-season randomized trial of HD-IIV3 versus nonadjuvanted
-SD-IIV3 assessing serious adverse events (SAEs) (including
-hospitalizations) associated with laboratory confirmation of
-influenza performed outside of the study (82) and a post hoc
-analysis of pneumonia- and influenza-related hospitalizations
-from a randomized study of HD-IIV3 versus nonadjuvanted
-SD-IIV4 (83), there was no difference in risk for these
-events between the two groups (certainty level: 2, moderate).
-However, additional data are available from two single-
-season, cluster-randomized studies conducted among U.S.
-nursing homes (in which nursing homes were randomized to
-vaccine groups rather than individual persons) that examined
-prevention of pneumonia and influenza diagnostic–coded
-hospitalizations. One such study noted a benefit of HD-IIV3
-relative to nonadjuvanted SD-IIV3 (adjusted relative risk:
-0 79 95% CI 0 66 0 95
-i
-l
-l 2
-d
-) (84)
-
 Randomized Studies Comparing HD-IIV, RIV, and aIIV 
-with Nonadjuvanted SD-IIVs: Prevention of Influenza 
-Illnesses. Randomized studies comparing HD-IIV, RIV, 
+with Nonadjuvanted SD-IIVs: Prevention of Influenza-
+Associated Hospitalizations and Other Serious Events. No 
+data are available from randomized trials evaluating prevention 
+of laboratory-confirmed influenza-associated hospitalizations 
+as a primary outcome. In a secondary analysis from a two-
+season randomized trial of HD-IIV3 versus nonadjuvanted 
+SD-IIV3 assessing serious adverse events (SAEs) (including 
+hospitalizations) associated with laboratory confirmation of 
+influenza performed outside of the study (82) and a post hoc 
+analysis of pneumonia- and influenza-related hospitalizations 
+from a randomized study of HD-IIV3 versus nonadjuvanted 
+SD-IIV4 (83), there was no difference in risk for these 
+events between the two groups (certainty level: 2, moderate). 
+However, additional data are available from two single-
+season, cluster-randomized studies conducted among U.S. 
+nursing homes (in which nursing homes were randomized to 
+vaccine groups rather than individual persons) that examined 
+prevention of pneumonia and influenza diagnostic–coded 
+hospitalizations. One such study noted a benefit of HD-IIV3 
+relative to nonadjuvanted SD-IIV3 (adjusted relative risk: 
+0.79; 95% CI: 0.66–0.95; certainty level: 2, moderate) (84).
+
+Randomized Studies Comparing HD-IIV, RIV, and aIIV
+with Nonadjuvanted SD-IIVs: Prevention of Influenza
+Illnesses. Randomized studies comparing HD-IIV, RIV,
 and aIIV with nonadjuvanted SD-IIVs against laboratory-
-confirmed influenza illness are few in number and were 
-conducted over few influenza seasons. HD-IIV3 was more 
-effective than SD-IIV3 in prevention of polymerase chain 
-reaction (PCR)- or culture-confirmed influenza-like illness 
-(ILI) in a two-season randomized study conducted among 
-32,000 persons aged ≥65 years (relative efficacy: 24%; 
+confirmed influenza illness are few in number and were
+conducted over few influenza seasons. HD-IIV3 was more
+effective than SD-IIV3 in prevention of polymerase chain
+reaction (PCR)- or culture-confirmed influenza-like illness
+(ILI) in a two-season randomized study conducted among
+32,000 persons aged ≥65 years (relative efficacy: 24%;
 95% CI: 10%–36%; certainty level: 1, high) (66). Two single-
-season randomized trials of RIV versus nonadjuvanted SD-IIV, 
-one a comparison of RIV3 versus nonadjuvanted SD-IIV3 that 
-assessed culture-confirmed ILI (67) and the other a comparison 
+season randomized trials of RIV versus nonadjuvanted SD-IIV,
+one a comparison of RIV3 versus nonadjuvanted SD-IIV3 that
+assessed culture-confirmed ILI (67) and the other a comparison
 of RIV4 versus nonadjuvanted SD-IIV4 that examined PCR-
-confirmed ILI (68), did not demonstrate relative benefit of 
-RIV among those aged ≥65 years (pooled relative efficacy: 
-18%; 95% CI: −17% to 43%; certainty level: 2, moderate). 
-The larger of these two studies noted a relative benefit of RIV4 
-over nonadjuvanted SD-IIV4 in prevention of PCR-confirmed 
-influenza among the full study population of persons aged 
-≥50 years (relative efficacy: 30%; 95% CI: 10%–47%) as well 
+confirmed ILI (68), did not demonstrate relative benefit of
+RIV among those aged ≥65 years (pooled relative efficacy:
+18%; 95% CI: −17% to 43%; certainty level: 2, moderate).
+The larger of these two studies noted a relative benefit of RIV4
+over nonadjuvanted SD-IIV4 in prevention of PCR-confirmed
+influenza among the full study population of persons aged
+≥50 years (relative efficacy: 30%; 95% CI: 10%–47%) as well
 i
 l
 fi
@@ -1482,19 +1487,19 @@ persons vaccinated with HD-IIV3 and aIIV3 compared with
 nonadjuvanted SD-IIV3 (86,87). In a randomized trial of RIV4
 versus nonadjuvanted SD-IIV4 among persons aged ≥50 years,
 
-influenza seasons. Many of these studies assessed diagnostic
-code–defined (rather than laboratory-confirmed) outcomes. In
-these studies, an overall modest relative benefit in prevention of
-diagnostic code–defined influenza-associated hospitalizations
-has been observed for HD-IIV3 (70–77) and aIIV3 (70–72)
-versus nonadjuvanted SD-IIV3s. Relative benefit was not found
-in every study for all evaluated seasons for either HD-IIV3 or
-aIIV3. Published observational studies of RIV are fewer than for
-HD-IIV and aIIV. A retrospective analysis of relative effectiveness
-of RIV4 versus SD-IIV4 against influenza-coded hospitalizations
-among Medicare beneficiaries during the 2019–20 season noted a
-relative effectiveness of 17% (95% CI: 9%–24%; certainty level:
-3, low) (72). Observational studies that address relative benefit
+influenza seasons. Many of these studies assessed diagnostic 
+code–defined (rather than laboratory-confirmed) outcomes. In 
+these studies, an overall modest relative benefit in prevention of 
+diagnostic code–defined influenza-associated hospitalizations 
+has been observed for HD-IIV3 (70–77) and aIIV3 (70–72) 
+versus nonadjuvanted SD-IIV3s. Relative benefit was not found 
+in every study for all evaluated seasons for either HD-IIV3 or 
+aIIV3. Published observational studies of RIV are fewer than for 
+HD-IIV and aIIV. A retrospective analysis of relative effectiveness 
+of RIV4 versus SD-IIV4 against influenza-coded hospitalizations 
+among Medicare beneficiaries during the 2019–20 season noted a 
+relative effectiveness of 17% (95% CI: 9%–24%; certainty level: 
+3, low) (72). Observational studies that address relative benefit 
 in protection against influenza-associated deaths are limited. Two
 
 The second noted a benefit of aIIV3 relative to nonadjuvanted
@@ -1505,12 +1510,6 @@ with Nonadjuvanted SD-IIVs: Prevention of Influenza-
 Associated Hospitalizations and Deaths. Observational studies
 comparing HD-IIV and aIIV with nonadjuvanted SD-IIVs
 are more numerous than randomized studies and cover more
-i fl
-M
-f h
-di
-d di
-i
 
 Persons with a History of Guillain Barré Syndrome 
 After Influenza Vaccination
@@ -1527,6 +1526,9 @@ to vaccination, providers might consider using influenza
 
 ### immunosuppressive medications.
 
+y
+g
+g
 effectiveness of influenza vaccines in the setting of specific 
 immunocompromised states (89). Timing of vaccination 
 might be a consideration (e.g., vaccinating during a period 
@@ -1542,7 +1544,7 @@ i
 di
 i
 
-Immunocompromised Persons
+p
 ACIP recommends that persons with compromised
 immunity (including but not limited to persons with
 congenital and acquired immunodeficiency states, persons
@@ -1554,7 +1556,7 @@ but biologically plausible risk for disease attributable to the
 live vaccine virus. Use of LAIV4 in persons with these and
 other conditions is discussed in more detail (see Dosage,
 Administration, Contraindications, and Precautions) (Table 2).
-Immunocompromised states comprise a heterogeneous 
+Immunocompromised states comprise a heterogeneous
 range of conditions with varying risks for severe infections.
 
 
@@ -1696,7 +1698,7 @@ precautionfortheuseofccIIV4.IfccIIV4isadministered
 
 ## Page 17
 
-mulations are not licensed in the United States, and they 
+ulations are not licensed in the United States, and they 
 ypically not commercially available. More information on 
 enza vaccines and travel is available at https://wwwnc.cdc.
 travel/diseases/influenza-seasonal-zoonotic-and-pandemic.
@@ -1707,13 +1709,13 @@ United States Most Southern Hemisp
 
 influenza seasons vaccine is available should receive the current 
 vaccine the following fall or winter.
-Influenza vaccine formulated for the Southern Hemisphere
-might differ in viral composition from the Northern
-Hemisphere vaccine. For persons traveling to the Southern
+Influenza vaccine formulated for the Southern Hemisphere 
+might differ in viral composition from the Northern 
+Hemisphere vaccine. For persons traveling to the Southern 
 Hemisphere during the Southern Hemisphere influenza 
 season, receipt of a current U.S.-licensed Southern Hemisphere 
 influenza vaccine formulation before departure might be 
-reasonable but might not be feasible because of limited access to
+reasonable but might not be feasible because of limited access to 
 or unavailability of Southern Hemisphere formulations in the
 
 (e.g., on cruise ships) that include persons from areas of the
@@ -1735,7 +1737,6 @@ and other travel-related diseases before embarking on travel
 during the summer. All persons (regardless of risk status) who
 are vaccinated in preparation for travel before the upcoming
 fl
-’
 l bl
 h
 ld
@@ -1753,11 +1754,19 @@ April–September in the Southern Hemisphere. In the tropics,
 influenza might occur throughout the year. Travelers can be
 exposed to influenza when traveling to an area where influenza
 is circulating or when traveling as part of large tourist groups
-(e g on cruise ships) that include persons from areas of the
+(
+i
+hi
+) th t i
+l d
+f
+f th
 
 
 ### and should consult updated CDC guida
 
+g
+g
 approved or -authorized COVID-19 vaccines indicates that 
 these vaccines may be given with influenza vaccines (https://
 www.cdc.gov/vaccines/covid-19/clinical-considerations/
@@ -1765,6 +1774,7 @@ interim-considerations-us.html). Providers should be aware of
 the potential for increased reactogenicity with coadministration 
 and should consult updated CDC guidance as more
 
+a reasonable assumption is that that peramivir might interfere
 with the mechanism of LAIV4 if administered from 5 days
 before through 2 weeks after vaccination and baloxavir might
 interfere if administered from 17 days before through 2 weeks
@@ -1773,7 +1783,7 @@ and LAIV4 during which interference might occur could be
 further prolonged in the presence of medical conditions that
 delay medication clearance (e.g., renal insufficiency). Persons
 who receive these medications during these periods before or
-after receipt of LAIV4 should be revaccinated with another
+after receipt of LAIV4 should be revaccinated with another 
 appropriate influenza vaccine (e.g., IIV4 or RIV4).
 Administration of Influenza Vaccines with 
 Other Vaccines
@@ -1784,12 +1794,12 @@ be administered at separate anatomic sites. LAIV4 can be
 administered simultaneously with other live or inactivated
 vaccines. However, if two live vaccines are not given
 simultaneously, at least 4 weeks should pass after administration
-of one live vaccine (such as LAIV4) before another live vaccine
+of one live vaccine (such as LAIV4) before another live vaccine 
 is administered (42).
 Current guidance concerning administration of current U S
 
 
-### been studied, and the ideal intervals between adminis
+### been studied, and the ideal intervals between admini
 these medications and LAIV4 are not known. Assumin
 of at least 5 half-lives for substantial decrease in drug le
 
@@ -1822,12 +1832,14 @@ The package insert for LAIV4 notes that antiviral agents
 ## Page 18
 
 (
-)
+);
+,
 p
-and acellular pertussis (Tdap) vaccine among adults (108); and
-Tdap in pregnancy (111). Although increased prevalence of
-injection site or systemic adverse reactions has been noted with
-concurrent administration in certain studies, these symptoms
+,
+and acellular pertussis (Tdap) vaccine among adults (108); and 
+Tdap in pregnancy (111). Although increased prevalence of 
+injection site or systemic adverse reactions has been noted with 
+concurrent administration in certain studies, these symptoms 
 have usually been reported to be mild or moderate.
 Among children aged 6 through 23 months, coadministration 
 of IIV3 and PCV13 was associated with increased risk 
@@ -1899,6 +1911,7 @@ all vaccines, vaccines with nonaluminum adjuvants should be
 administered at separate anatomic sites from other vaccines that
 are given concomitantly (42).
 
+been noted within days 0–1 after coadministration of IIV
 with PCV7, PCV13, or DTaP vaccines during the 2006–07
 through 2010–11 seasons (114) and with PCV13 during the
 2014–15 season (115). Although concerning to parents, most
@@ -1926,14 +1939,6 @@ recombinant hepatitis B surface antigen vaccine) (121). Data are
 limited regarding coadministration of these vaccines with other
 adjuvanted or nonadjuvanted vaccines, including COVID-19
 vaccines. Coadministration of Shingrix with nonadjuvanted IIV4
-h
-b
-di d
-d
-id
-fd
-di
-i i
 
 
 ## Page 19
@@ -1946,12 +1951,14 @@ p-to-date information. Contraindications and precaution
 
 ### p
 luenza vaccine that is appropriate for the recipient’s a
-d health status should be used. Specific age indications 
+d health status should be used. Specific age indications f
 d
 fl
-d (T bl 1) C
+d (T bl
+) C
 
-3
+2022-meeting-announcement). All influenza vaccines expected 
+to be available in the United States for the 2022–23 season will be 
 quadrivalent vaccines. For the 2022–23 season, U.S. egg-based 
 influenza vaccines (i.e., vaccines other than ccIIV4 and RIV4) 
 will contain HA derived from
@@ -1991,13 +1998,14 @@ contain components derived from influenza viruses antigenically
 similar to those recommended by FDA (https://www.fda.gov/
 advisory committees/advisory committee calendar/vaccines
 
+Q
+Q
 and Fluzone Quadrivalent (44), reference vaccine viruses are
 
-,
 j
 µg
 per vaccine virus in a 0.5-mL dose (7.5 µg of HA per vaccine 
-virus in a 0.25-mL dose). For 2022–23, this category is 
+virus in a 0.25-mL dose). For 2022–23, this category is
 expected to include five different vaccines (Table 1). Four of 
 these are egg-based vaccines, and one is a cell culture–based 
 vaccine. All are approved for persons aged ≥6 months. Egg-
@@ -2007,7 +2015,7 @@ are propagated in quantities sufficient to produce the needed
 number of doses of vaccine. For the IIV4s Afluria Quadrivalent 
 (43), Fluarix Quadrivalent (123), FluLaval Quadrivalent (124),
 
-2022–23 (Table 1); all are expected to be quadrivalent (IIV4s)
+2022 23 (Table 1); all are expected to be quadrivalent (IIV4s).
 Standard-dose, nonadjuvanted IIV4s are licensed for persons
 aged as young as 6 months. However, for certain IIV4s, the
 approved dose volume for children aged 6 through 35 months
@@ -2019,12 +2027,8 @@ an age-appropriate vaccine to each recipient.
 Standard-dose nonadjuvanted IIV4s contain 15 µg of HA
 
 
-### adrivalent Inactivated Influenza Vaccines (IIV
-vailable Vaccines. As in recent seasons, various inactiv
-(IIV )
-d
-b
-l bl
+### drivalent Inactivated Influenza Vaccines (IIV
+ailable Vaccines. As in recent seasons, various inacti
 
 
 ### Contraindications, and Precautions
@@ -2040,6 +2044,7 @@ they will be reflected in the online version of Table 1, available
 at https://www.cdc.gov/flu/professionals/acip/2022-2023/
 acip-table.htm.
 Dosage, Administration, 
+C
 i di
 i
 d
@@ -2067,7 +2072,7 @@ the correct volume is 0.7 mL per dose. If a smaller vaccine
 dose (e.g., 0.25 mL) is inadvertently administered to a person
 
 of doses. Children in this age group who require 2 doses for
-2022–23 need 2 separate doses administered ≥4 weeks apart,
+2022–23 need 2 separate doses administered ≥4 weeks apart
 regardless of the specific IIV4 used and volume given for each
 dose (see Children Aged 6 Months Through 8 Years: Number
 of Influenza Vaccine Doses) (Figure).
@@ -2098,7 +2103,9 @@ per dose for all persons aged ≥6 months.
 0.5 mL per dose for all persons aged ≥6 months.
 •	 Fluzone Quadrivalent: The approved dose volume for 
 children aged 6 through 35 months is either 0.25 mL or 
+L
 d
+P
 d
 6
 h (
@@ -2117,11 +2124,10 @@ should be taken to administer an age-appropriate vaccine at
 the approved dose volume for each needed dose (see Children 
 A
 d 6Th
-h 5 M
-h I fl
-V
-D
-V l
+h
+h
+fl
+l
 )
 
 propagated in eggs. For Flucelvax Quadrivalent, reference 
@@ -2203,12 +2209,7 @@ viruses are cold adapted (so that they replicate efficiently at
 Quadrivalent Live Attenuated Influenza 
 Vaccine (LAIV4)
 Available Vaccine. One live attenuated influenza vaccine, 
-FluMist Quadrivalent (LAIV4), is expected to be available 
-d
-h
-fl
-4
-d
+FluMist Quadrivalent (LAIV4), is expected to be available
 
 
 ### influenza vaccines (Table 2). RIV4 is not licensed for children
@@ -2231,13 +2232,18 @@ h
 bl
 d
 
-acc e ( .e., a y egg based
-V, cc V, o
-V o a y va e cy)
+(
+,
+y gg
+,
+,
+y
+y)
+i
 f
 h
-f RIV4 If RIV4
-d
+f RIV4 If RIV4 i
+d i i
 d
 
 Quadrivalent Recombinant Influenza Vaccine (RIV4)
@@ -2316,25 +2322,28 @@ of the vaccine or to a previous dose of any influenza vaccine
 (i.e., any egg-based IIV, ccIIV, RIV, or LAIV of any valency; 
 a labeled contraindication noted in the package insert).
 
+p
+p
+p
 other influenza vaccines used within specified indications.
-Dosage and Administration. LAIV4 is administered
-intranasally using the supplied prefilled, single-use sprayer
-containing 0.2 mL of vaccine. Approximately 0.1 mL (i.e., half
+Dosage and Administration. LAIV4 is administered 
+intranasally using the supplied prefilled, single-use sprayer 
+containing 0.2 mL of vaccine. Approximately 0.1 mL (i.e., half 
 of the total sprayer contents) is sprayed into the first nostril while
-the recipient is in the upright position. An attached dose-divider
+the recipient is in the upright position. An attached dose-divider 
 clip is removed from the sprayer to permit administration of the
-second half of the dose into the other nostril. If the recipient
-sneezes immediately after administration, the dose should
-not be repeated. However, if nasal congestion is present that
-might impede delivery of the vaccine to the nasopharyngeal
-mucosa, deferral of administration should be considered until
-resolution of the illness, or another appropriate vaccine should
-be administered instead. Each total dose of 0.2 mL contains
+second half of the dose into the other nostril. If the recipient 
+sneezes immediately after administration, the dose should 
+not be repeated. However, if nasal congestion is present that 
+might impede delivery of the vaccine to the nasopharyngeal 
+mucosa, deferral of administration should be considered until 
+resolution of the illness, or another appropriate vaccine should 
+be administered instead. Each total dose of 0.2 mL contains 
 106.5–7.5 fluorescent focus units of each vaccine virus (99).
-Contraindications and Precautions for the Use of LAIV4.
-Conditions considered by ACIP to be contraindications and
-precautions for the use of LAIV4 are summarized (Table 2).
-These include two labeled contraindications that appear in
+Contraindications and Precautions for the Use of LAIV4. 
+Conditions considered by ACIP to be contraindications and 
+precautions for the use of LAIV4 are summarized (Table 2). 
+These include two labeled contraindications that appear in 
 the package insert (99) and other conditions for which there
 
 
@@ -2355,7 +2364,7 @@ metabolic disorders [including diabetes mellitus]).
 Recent Influenza Vaccine Labeling Changes
 lucelvax Quadrivalent
 Since the publication of the 2021–22 ACIP influenza vaccine 
-ecommendations, a labeling change for Flucelvax Quadrivalent 
+commendations, a labeling change for Flucelvax Quadrivalent 
 ccIIV4) has occurred. Flucelvax Quadrivalent was initially 
 pproved in 2016 for persons aged ≥4 years. Approval for persons 
 ged ≥18 years was based on a randomized immunogenicity 
@@ -2417,7 +2426,8 @@ that are not discussed in the package labeling.
 Specific recommendations for appropriate re
 erature monitoring equipment can be fou
 
-site and systemic reactions was similar between the two groups.
+d y
+g up
 Storage and Handling of 
 Influenza Vaccines
 In all instances, approved manufacturer packaging information 
@@ -2429,22 +2439,29 @@ storage temperatures are typically 36°F–46°F (2°C–8°C) and
 should be maintained at all times with adequate refrigeration
 
 efficacy trial conducted among 4,514 children aged ≥2 to
-<18 years over three influenza seasons (Southern Hemisphere 
+<18 years over three influenza seasons (Southern Hemisphere
 2017 and Northern Hemisphere 2017–18 and 2018–19) (129).
 Subsequently, in October 2021, FDA approved Flucelvax
-Quadrivalent for persons aged ≥6 months. Approval was based 
-on a randomized immunogenicity and safety study conducted 
+Quadrivalent for persons aged ≥6 months. Approval was based
+on a randomized immunogenicity and safety study conducted
 among 2,402 children aged 6 through 47 months (of whom 894 
-were aged 6 through 23 months). Children were randomized 
-n a 2:1 ratio to receive either Flucelvax Quadrivalent 
-0.5 mL/dose containing 15 µg HA per virus for all ages) or a 
-icensed comparator egg-based IIV4 (0.25 mL/dose containing 
-7.5 µg HA per virus for those aged 6 through 35 months and 
+were aged 6 through 23 months). Children were randomized
+n a 2:1 ratio to receive either Flucelvax Quadrivalent
+0.5 mL/dose containing 15 µg HA per virus for all ages) or a
+icensed comparator egg-based IIV4 (0.25 mL/dose containing
+7.5 µg HA per virus for those aged 6 through 35 months and
 0.5 mL/dose containing 15 µg HA per virus for those aged 
-36 through 47 months) (130). Flucelvax Quadrivalent met 
+36 through 47 months) (130). Flucelvax Quadrivalent met
 prespecified immunogenicity criteria for all four viruses. No new 
-afety signals were noted, and prevalence of solicited injection 
-ite and systemic reactions was similar between the two groups
+afety signals were noted, and prevalence of solicited injection
+it
+d
+t
+i
+ti
+i il
+b t
+th t
 
 
 ## Page 23
@@ -2501,9 +2518,6 @@ i
 oughout the year on FluView (https://www.cdc.gov/f
 ekly) and can be viewed in FluView Interactive (http
 
-dd t o a Sou ces o
-o
-at o
 Regarding Influenza and 
 Influenza Vaccines
 Influenza Surveillance, Prevention, 
@@ -2578,7 +2592,12 @@ AJPH.76.7.761
 2.	Barker WH, Mullooly JP. Impact of epidemic type A influenza in
 defined adult population Am J Epidemiol 1980;112:798 81
 
-clinical/clinical guidance/committee opinion/
+c
+ca /c
+ca
+gu da ce/co
+ttee op
+o /
 articles/2018/04/influenza-vaccination-during-pregnancy
 References
 1.	Barker WH. Excess pneumonia and influenza associated hospitalization 
@@ -2597,7 +2616,7 @@ ynecologists
 
 
 ### •	 2013 IDSA Clinical Practice Guideline for Vaccinatio
-of the Immunocompromised Host: https://academic.ou
+of the Immunocompromised Host: https://academic.oup
 / id/
 i l /58/3/ 44/336537
 
@@ -2616,7 +2635,7 @@ fl
 Management of Seasonal Influenza: https://academic.oup.
 com/cid/article/68/6/e1/5251935
 merican Academy of Pediatrics Guidance
-•	 American Academy of Pediatrics Recommendations for
+• American Academy of Pediatrics Recommendations for
 
 
 ### is, and In
@@ -2691,71 +2710,69 @@ and Human Services, CDC; 2013.
 
 ## Page 25
 
-5;
-5
-9
-75
 p
 g
 j
 vaccine.2014.06.052
-	20.	Radin JM, Hawksworth AW, Myers CA, Ricketts MN, Hansen EA, 
+20.	Radin JM, Hawksworth AW, Myers CA, Ricketts MN, Hansen EA, 
 Brice GT. Influenza vaccine effectiveness: maintained protection 
 throughout the duration of influenza seasons 2010–2011 through 
 2013–2014. Vaccine 2016;34:3907–12. PMID:27265447 https://doi.
 org/10.1016/j.vaccine.2016.05.034
-	21.	Ray GT, Lewis N, Klein NP, et al. Intraseason waning of influenza 
+21.	Ray GT, Lewis N, Klein NP, et al. Intraseason waning of influenza 
 vaccine effectiveness. Clin Infect Dis 2019;68:1623–30. PMID:30204855 
 https://doi.org/10.1093/cid/ciy770
-	22.	Powell LN, Bégué RE. Influenza vaccine effectiveness among children 
+22.	Powell LN, Bégué RE. Influenza vaccine effectiveness among children 
 for the 2017–2018 season. J Pediatric Infect Dis Soc 2020;9:468–73. 
 PMID:31774120 https://doi.org/10.1093/jpids/piz077
-	23.	Castilla J, Martínez-Baz I, Martínez-Artola V, et al.; Primary Health 
+23.	Castilla J, Martínez-Baz I, Martínez-Artola V, et al.; Primary Health 
 Care Sentinel Network; Network for Influenza Surveillance in Hospitals 
 of Navarre. Decline in influenza vaccine effectiveness with time after 
 vaccination, Navarre, Spain, season 2011/12. Euro Surveill 
 2013;18:20388. PMID:23399423 https://doi.org/10.2807/
 ese.18.05.20388-en
-	24.	Kissling E, Valenciano M, Larrauri A, et al. Low and decreasing vaccine 
+24.	Kissling E, Valenciano M, Larrauri A, et al. Low and decreasing vaccine 
 effectiveness against influenza A(H3) in 2011/12 among vaccination 
 target groups in Europe: results from the I-MOVE multicentre case-
 control study. Euro Surveill 2013;18:20390. PMID:23399425 https://
 doi.org/10.2807/ese.18.05.20390-en
-	25.	Ferdinands JM, Fry AM, Reynolds S, et al. Intraseason waning of 
+25.	Ferdinands JM, Fry AM, Reynolds S, et al. Intraseason waning of 
 influenza vaccine protection: evidence from the US Influenza Vaccine 
 Effectiveness Network, 2011–12 through 2014–15. Clin Infect Dis 
 2017;64:544–50. PMID:28039340
-	26.	Puig-Barberà J, Mira-Iglesias A, Tortajada-Girbés M, et al.; Valencia 
+26.	Puig-Barberà J, Mira-Iglesias A, Tortajada-Girbés M, et al.; Valencia 
 Hospital Network for the Study of Influenza and other Respiratory 
 Viruses (VAHNSI, Spain). Waning protection of influenza vaccination 
 during four influenza seasons, 2011/2012 to 2014/2015. Vaccine 
 2017;35:5799–807. PMID:28941618 https://doi.org/10.1016/j.
 vaccine.2017.09.035
-	27.	Kissling E, Nunes B, Robertson C, et al.; I-MOVE case–control study 
+27.	Kissling E, Nunes B, Robertson C, et al.; I-MOVE case–control study 
 team. I-MOVE multicentre case-control study 2010/11 to 2014/15: is 
 there within-season waning of influenza type/subtype vaccine 
 effectiveness with increasing time since vaccination? Euro Surveill 
 2016;21. PMID:27124420 https://doi.org/10.2807/1560-7917.
 ES.2016.21.16.30201
-	28.	Pebody R, Andrews N, McMenamin J, et al. Vaccine effectiveness of 
+28.	Pebody R, Andrews N, McMenamin J, et al. Vaccine effectiveness of 
 2011/12 trivalent seasonal influenza vaccine in preventing laboratory-
 confirmed influenza in primary care in the United Kingdom: evidence 
 of waning intra-seasonal protection. Euro Surveill 2013;18:20389. 
 PMID:23399424 https://doi.org/10.2807/ese.18.05.20389-en
-	29.	Ng Y, Nandar K, Chua LAV, et al. Evaluating the effectiveness of the 
+29.	Ng Y, Nandar K, Chua LAV, et al. Evaluating the effectiveness of the 
 influenza vaccine during respiratory outbreaks in Singapore’s long term 
 care facilities, 2017. Vaccine 2019;37:3925–31. PMID:31160102 
 https://doi.org/10.1016/j.vaccine.2019.03.054
-	30.	Young BE, Mak TM, Ang LW, et al. Influenza vaccine failure in the 
+30.	Young BE, Mak TM, Ang LW, et al. Influenza vaccine failure in the 
 tropics: a retrospective cohort study of waning effectiveness. Epidemiol 
 Infect 2020;148:e299. PMID:33261680 https://doi.org/10.1017/
 S0950268820002952
-	31.	Mira-Iglesias A, López-Labrador FX, García-Rubio J, et al. Influenza 
+31.	Mira-Iglesias A, López-Labrador FX, García-Rubio J, et al. Influenza 
 vaccine effectiveness and waning effect in hospitalized older adults. 
 Valencia Region, Spain, 2018/2019 season. Int J Environ Res Public 
 Health 2021;18:1129. PMID:33514058 https://doi.org/10.3390/
 ijerph18031129
 
+,
+p
 Vaccine Effectiveness Network. Clin Infect Dis 2021;73:726–9. 
 PMID:33462610 https://doi.org/10.1093/cid/ciab045
 	33.	Madhi SA, Cutland CL, Kuwanda L, et al.; Maternal Flu Trial (Matflu) 
@@ -2768,7 +2785,7 @@ infants in Mali: a prospective, active-controlled, observer-blind,
 randomised phase 4 trial. Lancet Infect Dis 2016;16:1026–35. 
 PMID:27261067 https://doi.org/10.1016/S1473-3099(16)30054-8
 	35.	Steinhoff MC, Katz J, Englund JA, et al. Year-round influenza 
-immunisation during pregnancy in Nepal: a phase 4, randomised, 
+immunisation during pregnancy in Nepal: a phase 4, randomised,
 placebo-controlled trial. Lancet Infect Dis 2017;17:981–9. 
 PMID:28522338 https://doi.org/10.1016/S1473-3099(17)30252-9
 	36.	Zaman K, Roy E, Arifeen SE, et al. Effectiveness of maternal influenza 
@@ -2792,18 +2809,18 @@ on Immunization Practices (ACIP). MMWR Recomm Rep
 	41.	Pearson ML, Bridges CB, Harper SA; Healthcare Infection Control 
 Practices Advisory Committee (HICPAC); Advisory Committee on 
 Immunization Practices (ACIP). Influenza vaccination of healthcare 
-personnel: recommendations of the Healthcare Infection Control 
-Practices Advisory Committee (HICPAC) and the Advisory Committee 
+personnel: recommendations of the Healthcare Infection Control
+Practices Advisory Committee (HICPAC) and the Advisory Committee
 on Immunization Practices (ACIP). MMWR Recomm Rep 
 2006;55(No. RR-2):1–16. PMID:16498385
 	42.	Kroger A, Bahta L, Hunter P. General best practice guidelines for 
 immunization: best practices guidance of the Advisory Committee on 
 Immunization Practices (ACIP). https://www.cdc.gov/vaccines/hcp/
 acip-recs/general-recs/index.html
-	43.	Afluria Quadrivalent [Package Insert]. Parkville, Victoria, Australia: 
+	43.	Afluria Quadrivalent [Package Insert]. Parkville, Victoria, Australia:
 Seqirus; 2022.
 	44.	Fluzone Quadrivalent [Package Insert]. Swiftwater, PA: Sanofi Pasteur; 2022.
-	45.	Neuzil KM, Jackson LA, Nelson J, et al. Immunogenicity and 
+	45.	Neuzil KM, Jackson LA, Nelson J, et al. Immunogenicity and
 reactogenicity of 1 versus 2 doses of trivalent inactivated influenza vaccine 
 in vaccine-naive 5–8-year-old children. J Infect Dis 2006;194:1032–9. 
 PMID:16991077 https://doi.org/10.1086/507309
@@ -2812,7 +2829,7 @@ in healthy 6- to 21-month-old children during the 2003–2004 season.
 J Pediatr 2006;149:755–62. PMID:17137887 https://doi.org/10.1016/j.
 jpeds.2006.06.036
 	47.	Ritzwoller DP, Bridges CB, Shetterly S, Yamasaki K, Kolczak M, France EK. 
-Effectiveness of the 2003–2004 influenza vaccine among children 6 months 
+Effectiveness of the 2003–2004 influenza vaccine among children 6 months
 to 8 years of age, with 1 vs 2 doses. Pediatrics 2005;116:153–9. 
 PMID:15995046 https://doi.org/10.1542/peds.2005-0049
 
@@ -2854,7 +2871,7 @@ PMID:24016809 https://doi.org/10.1016/j.vaccine.2013.08.097
 inactivated monovalent pandemic (H1N1) 2009 vaccination during 
 pregnancy: a population-based study in Taiwan. Vaccine 2014;32:6463–8. 
 PMID:25285884 https://doi.org/10.1016/j.vaccine.2014.09.054
-.	Ma F, Zhang L, Jiang R, et al. Prospective cohort study of the safety of 
+7.	Ma F, Zhang L, Jiang R, et al. Prospective cohort study of the safety of 
 an influenza A(H1N1) vaccine in pregnant Chinese women. Clin Vaccine 
 Immunol 2014;21:1282–7. PMID:24990911 https://doi.org/10.1128/
 CVI.00375-14
@@ -2941,73 +2958,69 @@ PMID:29452380 https://doi.org/10.1093/infdis/jiy088
 
 ## Page 27
 
-77.	Young-Xu Y, Snider JT, van Aalst R, et al. Analysis of relative effectiveness 
 of high-dose versus standard-dose influenza vaccines using an 
 instrumental variable method. Vaccine 2019;37:1484–90. 
 PMID:30745146 https://doi.org/10.1016/j.vaccine.2019.01.063
-	78.	Young-Xu Y, Thornton Snider J, Mahmud SM, et al. High-dose influenza 
+78.	Young-Xu Y, Thornton Snider J, Mahmud SM, et al. High-dose influenza 
 vaccination and mortality among predominantly male, white, senior veterans, 
 United States, 2012/13 to 2014/15. Euro Surveill 2020;25. PMID:32431290 
 https://doi.org/10.2807/1560-7917.ES.2020.25.19.1900401
-	79.	Pelton SI, Divino V, Shah D, et al. Evaluating the relative vaccine 
+79.	Pelton SI, Divino V, Shah D, et al. Evaluating the relative vaccine 
 effectiveness of adjuvanted trivalent influenza vaccine compared to 
 high-dose trivalent and other egg-based influenza vaccines among older 
 adults in the US during the 2017–2018 influenza season. Vaccines (Basel) 
 2020;8:446. PMID:32784684 https://doi.org/10.3390/vaccines8030446
-	80.	van Aalst R, Gravenstein S, Mor V, et al. Comparative effectiveness of 
+80.	van Aalst R, Gravenstein S, Mor V, et al. Comparative effectiveness of 
 high dose versus adjuvanted influenza vaccine: a retrospective cohort 
 study. Vaccine 2020;38:372–9. PMID:31606249 https://doi.
 org/10.1016/j.vaccine.2019.09.105
-	81.	Pelton SI, Divino V, Postma MJ, et al. A retrospective cohort study 
+81.	Pelton SI, Divino V, Postma MJ, et al. A retrospective cohort study 
 assessing relative effectiveness of adjuvanted versus high-dose trivalent 
 influenza vaccines among older adults in the United States during the 
 2018–19 influenza season. Vaccine 2021;39:2396–407. PMID:33810903 
 https://doi.org/10.1016/j.vaccine.2021.03.054
-	82.	DiazGranados CA, Robertson CA, Talbot HK, Landolfi V, Dunning AJ, 
+82.	DiazGranados CA, Robertson CA, Talbot HK, Landolfi V, Dunning AJ, 
 Greenberg DP. Prevention of serious events in adults 65 years of age or 
 older: a comparison between high-dose and standard-dose inactivated 
 influenza vaccines. Vaccine 2015;33:4988–93. PMID:26212007 https://
 doi.org/10.1016/j.vaccine.2015.07.006
-	83.	Vardeny O, Kim K, Udell JA, et al.; INVESTED Committees and 
+83.	Vardeny O, Kim K, Udell JA, et al.; INVESTED Committees and 
 Investigators. Effect of high-dose trivalent vs standard-dose quadrivalent 
 influenza vaccine on mortality or cardiopulmonary hospitalization in 
 patients with high-risk cardiovascular disease: a randomized clinical trial. 
 JAMA 2021;325:39–49. PMID:33275134 https://doi.org/10.1001/
 jama.2020.23649
-	84.	Gravenstein S, Davidson HE, Taljaard M, et al. Comparative effectiveness 
+84.	Gravenstein S, Davidson HE, Taljaard M, et al. Comparative effectiveness 
 of high-dose versus standard-dose influenza vaccination on numbers of 
 US nursing home residents admitted to hospital: a cluster-randomised 
 trial. Lancet Respir Med 2017;5:738–46. PMID:28736045 https://doi.
 org/10.1016/S2213-2600(17)30235-7
-	85.	McConeghy KW, Davidson HE, Canaday DH, et al. Cluster-randomized 
+85.	McConeghy KW, Davidson HE, Canaday DH, et al. Cluster-randomized 
 trial of adjuvanted versus nonadjuvanted trivalent influenza vaccine in 
 823 US nursing homes. Clin Infect Dis 2021;73:e4237–43. 
 PMID:32882710 https://doi.org/10.1093/cid/ciaa1233
-	86.	Falsey AR, Treanor JJ, Tornieporth N, Capellan J, Gorse GJ. Randomized, 
+86.	Falsey AR, Treanor JJ, Tornieporth N, Capellan J, Gorse GJ. Randomized, 
 double-blind controlled phase 3 trial comparing the immunogenicity 
 of high-dose and standard-dose influenza vaccine in adults 65 years of 
 age and older. J Infect Dis 2009;200:172–80. PMID:19508159 https://
 doi.org/10.1086/599790
-	87.	Frey SE, Reyes MR, Reynales H, et al. Comparison of the safety and 
+87.	Frey SE, Reyes MR, Reynales H, et al. Comparison of the safety and 
 immunogenicity of an MF59®-adjuvanted with a non-adjuvanted 
 seasonal influenza vaccine in elderly subjects. Vaccine 2014;32:5027–34. 
 PMID:25045825 https://doi.org/10.1016/j.vaccine.2014.07.013
-	 88.	Schmader KE, Liu CK, Harrington T, et al. Safety, reactogenicity, and 
+88.	Schmader KE, Liu CK, Harrington T, et al. Safety, reactogenicity, and 
 health-related quality of life after trivalent adjuvanted vs trivalent high-
 dose inactivated influenza vaccines in older adults: a randomized clinical 
 trial. JAMA Netw Open 2021;4:e2031266. PMID:33443580 https://
 doi.org/10.1001/jamanetworkopen.2020.31266
-	 89.	Bosaeed M, Kumar D. Seasonal influenza vaccine in immunocompromised 
+89.	Bosaeed M, Kumar D. Seasonal influenza vaccine in immunocompromised 
 persons. Hum Vaccin Immunother 2018;14:1311–22. PMID:29485353 
 https://doi.org/10.1080/21645515.2018.1445446
-	 90.	Rubin LG, Levin MJ, Ljungman P, et al.; Infectious Diseases Society 
+90.	Rubin LG, Levin MJ, Ljungman P, et al.; Infectious Diseases Society 
 of America. 2013 IDSA clinical practice guideline for vaccination of 
-the immunocompromised host. Clin Infect Dis 2014;58:e44–100. 
-PMID:24311479 https://doi.org/10.1093/cid/cit684
+the immunocompromised host. Clin Infect Dis 2014;58:e44–100.
 
-www.cdc.gov/ u/p o ess o a s/a t v a s/su
-a y c
-c a s. t .
+www.cdc.gov/flu/professionals/antivirals/summary clinicians.htm.
 	 92.	Woo EJ. Allergic reactions after egg-free recombinant influenza vaccine: 
 reports to the US Vaccine Adverse Event Reporting System. Clin Infect Dis 
 2015;60:777–80. PMID:25428412 https://doi.org/10.1093/cid/ciu948
@@ -3068,7 +3081,6 @@ org/10.1016/j.vaccine.2017.08.029
 p
 g
 j
-7
 109.	Nakashima K, Aoshima M, Ohfuji S, et al. Immunogenicity of
 simultaneous versus sequential administration of a 23-valent
 pneumococcal polysaccharide vaccine and a quadrivalent influenza
@@ -3098,40 +3110,34 @@ Pediatrics 2016;138:e20160320. PMID:27273711 https://doi.
 org/10.1542/peds.2016-0320
 
 130.	Food and Drug Administration. Clinical review: Flucelvax
-Quadrivalent. Silver Spring, MD: US Department of Health and 
+Quadrivalent. Silver Spring, MD: US Department of Health and
 Human Services, Food and Drug Administration; October 2021.
 
-g
-[
-g
-]
-g
-,
-;
-2017.
-120.	Fluad Quadrivalent [Package Insert]. Holly Springs, NC: Seqirus; 2022.
-121.	Heplisav-B [Package Insert]. Emeryville, CA: Dynavax; 2017.
-122.	Schwarz TF, Aggarwal N, Moeckesch B, et al. Immunogenicity and 
-safety of an adjuvanted herpes zoster subunit vaccine coadministered 
-with seasonal influenza vaccine in adults aged 50 years or older. J Infect 
-Dis 2017;216:1352–61. PMID:29029224 https://doi.org/10.1093/
-infdis/jix481
-123.	Fluarix Quadrivalent [Package Insert]. Dresden, Germany: 
+123.	Fluarix Quadrivalent [Package Insert]. Dresden, Germany
 GlaxoSmithKline; 2022.
-124.	FluLaval Quadrivalent [Package Insert]. Quebec City, QC, Canada: 
+124.	FluLaval Quadrivalent [Package Insert]. Quebec City, QC, Canada
 ID Biomedical Corporation of Quebec; 2022.
 125.	Flucelvax Quadrivalent [Package Insert]. Holly Springs, NC: Seqirus; 2022.
-126.	Fluzone High-Dose Quadrivalent [Package Insert]. Swiftwater, PA: 
+126.	Fluzone High-Dose Quadrivalent [Package Insert]. Swiftwater, PA
 Sanofi Pasteur; 2022.
 127.	Flublok Quadrivalent [Package Insert]. Meriden, CT: Protein Sciences; 2022.
-128.	Food and Drug Administration. Clinical review: Flucelvax 
-Quadrivalent. Silver Spring, MD: US Department of Health and 
+128.	Food and Drug Administration. Clinical review: Flucelvax
+Quadrivalent. Silver Spring, MD: US Department of Health and
 Human Services, Food and Drug Administration; 2016.
-129.	Food and Drug Administration. Clinical review: Flucelvax 
-Quadrivalent. Silver Spring, MD: US Department of Health and 
+129.	Food and Drug Administration. Clinical review: Flucelvax
+Quadrivalent. Silver Spring, MD: US Department of Health and
 Human Services, Food and Drug Administration; March 2021.
-130 Food and Drug Administration
-Clinical review: Flucelvax
+
+2017.
+120.	Fluad Quadrivalent [Package Insert]. Holly Springs, NC: Seqirus; 2022.
+121 H
+li
+B [P k
+I
+] E
+ill
+CA D
+2017
 
 
 ## Page 29
@@ -3174,7 +3180,6 @@ Sheffield MD Salt Lake City Utah; Angela Sinilaite MPH Ottawa Ontario Canada; Pa
 
 ### ,
 g ;
-u
 ,
 DO, Tulsa, Oklahoma; American Pharmacists As
 
@@ -3200,6 +3205,6 @@ Plans, Robert A. Gluckman, MD, Beaverton, Oregon; American Immunization Registry
 
 ## Extraction Metadata
 
-- Text blocks: 205
+- Text blocks: 207
 
-- Figures/Tables: 6
+- Figures/Tables: 7

@@ -199,7 +199,7 @@ nd multiracial residents are higher than those
 
 **[FIGURE]**
 
-![Figure from page 3](figures/figure_p3_d8faa5de.png)
+![Figure from page 3](figures/figure_p3_2cb7d41b.png)
 
 to Block A or Block B.
 Facility 1
@@ -466,7 +466,7 @@ h
 
 **[FIGURE]**
 
-![Figure from page 6](figures/figure_p6_fb86abac.png)
+![Figure from page 6](figures/figure_p6_16cbec9f.png)
 
 
 ### None
@@ -492,7 +492,7 @@ at time of vaccination
 
 **[TABLE]**
 
-![Table from page 7](figures/table_p7_c4eb0b15.png)
+![Table from page 7](figures/table_p7_1ae0de69.png)
 
 Hispanic ethnic group — no. (%)†
 Yes
@@ -568,7 +568,7 @@ Recombinant or Standard-Dose Influenza Vaccine
 
 **[TABLE]**
 
-![Table from page 8](figures/table_p8_12033bd6.png)
+![Table from page 8](figures/table_p8_6c9bd0b0.png)
 
 10.8% (95% CI, 6.6 to 14.7) against diagnosed 
 influenza, and 19.5% (95% CI, 5.4 to 31.5) 
@@ -696,7 +696,7 @@ P Value‡
 
 **[FIGURE]**
 
-![Figure from page 9](figures/figure_p9_01eea92a.png)
+![Figure from page 9](figures/figure_p9_b9366a63.png)
 
 rred more protection against influenza than nant-vaccine group than in the standar
 
