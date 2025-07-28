@@ -64,23 +64,22 @@ This will:
 For running the gateway service in a containerized environment:
 
 ```bash
-# Check Docker is installed and running
-make check
+# Check Docker status (supports Colima/Docker Desktop)
+make docker-status
 
-# Start the gateway service
+# Start the gateway service (auto-fixes Colima if needed)
 make up
 
 # View logs
 make logs
-
-# Test the service
-make test-gateway
 
 # Stop services
 make down
 ```
 
 The gateway runs on http://localhost:8000 and provides API access to the processing capabilities.
+
+**Note for Colima users:** The Makefile will automatically restart Colima if Docker is unresponsive.
 
 ## Architecture
 

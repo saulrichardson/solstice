@@ -27,10 +27,16 @@ def main():
         help="Custom output directory"
     )
     
-    # Extract evidence command
+    # Run study command
+    study_parser = subparsers.add_parser(
+        "run-study",
+        help="Run fact-checking study across claims and documents (uses Flublok defaults)"
+    )
+    
+    # Legacy extract evidence command (deprecated)
     evidence_parser = subparsers.add_parser(
         "extract-evidence",
-        help="Extract supporting evidence for claims across documents (uses Flublok defaults)"
+        help="[DEPRECATED - use run-study] Extract supporting evidence"
     )
     
     # Parse arguments
@@ -44,10 +50,15 @@ def main():
         if args.output_dir:
             sys.argv.extend(["--output-dir", args.output_dir])
         ingest_main()
+    elif args.command == "run-study":
+        from .run_study import main as study_main
+        # Just pass through to run_study which handles its own args
+        study_main()
     elif args.command == "extract-evidence":
-        from .extract_evidence import main as extract_main
-        # Just pass through to extract_evidence which handles its own args
-        extract_main()
+        # Deprecated - redirect to run-study
+        print("Note: extract-evidence is deprecated. Using run-study instead.\n")
+        from .run_study import main as study_main
+        study_main()
     else:
         parser.print_help()
         sys.exit(1)

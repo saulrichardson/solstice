@@ -1,4 +1,4 @@
-.PHONY: help check up down logs test-gateway lint format clean shell restart
+.PHONY: help check up down logs test-gateway lint format clean shell restart docker-status
 
 help:
 	@echo "Available commands:"
@@ -7,6 +7,7 @@ help:
 	@echo "  make down               Stop all services"
 	@echo "  make logs               Show gateway logs"
 	@echo "  make test-gateway       Test gateway is working"
+	@echo "  make docker-status      Show Docker runtime info"
 	@echo "  make install            Install Python package for development"
 	@echo "  make install-detectron2 Install Detectron2 for layout detection (Python 3.11 required)"
 	@echo "  make lint               Run linting"
@@ -15,7 +16,21 @@ help:
 
 check:
 	@command -v docker >/dev/null 2>&1 || { echo "Error: Docker is required but not installed."; echo "Install from: https://docs.docker.com/get-docker/"; exit 1; }
-	@docker info >/dev/null 2>&1 || { echo "Error: Docker daemon is not running. Start Docker and try again."; exit 1; }
+	@if ! docker info >/dev/null 2>&1; then \
+		if command -v colima >/dev/null 2>&1 && colima status >/dev/null 2>&1; then \
+			echo "Docker not responding. Restarting Colima..."; \
+			colima restart; \
+			sleep 2; \
+			docker info >/dev/null 2>&1 || { echo "Error: Docker still not working after Colima restart"; exit 1; }; \
+		else \
+			echo "Error: Docker daemon is not running."; \
+			echo "Try one of these:"; \
+			echo "  - Docker Desktop: Open Docker.app"; \
+			echo "  - Colima: Run 'colima start' or 'colima restart'"; \
+			echo "  - Rancher Desktop: Run 'rdctl start'"; \
+			exit 1; \
+		fi \
+	fi
 	@echo "✓ Docker is installed and running"
 
 
@@ -58,6 +73,20 @@ dev: dev-install up logs
 restart:
 	docker compose restart gateway
 	make logs
+
+docker-status:
+	@echo "=== Docker Runtime Status ==="
+	@if command -v colima >/dev/null 2>&1; then \
+		echo "Colima: $$(colima status 2>&1 | grep -E '(running|stopped)' | head -1 || echo 'not installed')"; \
+	fi
+	@if pgrep -x "Docker Desktop" >/dev/null 2>&1; then \
+		echo "Docker Desktop: running"; \
+	else \
+		echo "Docker Desktop: not running"; \
+	fi
+	@echo ""
+	@echo "Active context: $$(docker context show 2>/dev/null || echo 'unknown')"
+	@echo "Docker daemon: $$(docker info >/dev/null 2>&1 && echo 'accessible ✓' || echo 'not accessible ✗')"
 
 install:
 	@echo "Installing fact-check package..."

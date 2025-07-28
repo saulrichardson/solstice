@@ -28,55 +28,45 @@ class SupportingEvidenceExtractor(BaseAgent):
     
     def __init__(
         self, 
-        pdf_name: str, 
+        pdf_name: str,
+        claim_id: str,
         cache_dir: Path = Path("data/cache"),
         config: Optional[Dict[str, Any]] = None
     ):
         """
         Initialize supporting evidence extractor agent.
         
-        Config options:
-            - model: LLM model to use (default: "gpt-4.1")
-            - include_context: Whether to include surrounding context
-            - max_snippets_per_claim: Maximum snippets to extract per claim
+        Args:
+            pdf_name: Name of the PDF document
+            claim_id: ID of the claim being processed (e.g., "claim_001")
+            cache_dir: Base cache directory
+            config: Agent configuration
         """
         super().__init__(pdf_name, cache_dir, config)
+        self.claim_id = claim_id
+        
+        # Override agent directory to be claim-specific
+        self.agent_dir = self.pdf_dir / "agents" / "claims" / claim_id / self.agent_name
+        self.agent_dir.mkdir(parents=True, exist_ok=True)
         
         # Set up LLM client
         self.llm_client = ResponsesClient()
         self.llm_client.model = self.config.get("model", "gpt-4.1")
         self.evidence_extractor = EvidenceExtractor(self.llm_client)
-        
-        # Config options
-        self.include_context = self.config.get("include_context", True)
-        self.max_snippets = self.config.get("max_snippets_per_claim", 10)
     
     async def process(self) -> Dict[str, Any]:
         """
-        Process document and extract supporting evidence.
+        Extract supporting evidence for the claim.
         
-        This method is called by the pipeline but we won't use it directly
-        for claim processing. Instead, we'll have a separate method for
-        processing individual claims.
-        """
-        # This shouldn't be called in the new architecture
-        raise NotImplementedError(
-            "SupportingEvidenceExtractor should be called via process_claim() "
-            "in the claim-centric workflow"
-        )
-    
-    async def process_claim(self, claim: str, claim_id: str) -> Dict[str, Any]:
-        """
-        Extract supporting evidence for a single claim.
-        
-        Args:
-            claim: The claim text
-            claim_id: Unique identifier for this claim (e.g., "claim_001")
-            
         Returns:
             Dictionary containing extracted evidence
         """
-        logger.info(f"Extracting evidence for {claim_id}: {claim[:50]}...")
+        # Get the claim text from config
+        claim = self.config.get("claim")
+        if not claim:
+            raise AgentError("No claim provided in config")
+        
+        logger.info(f"Extracting evidence for {self.claim_id}: {claim[:50]}...")
         
         # Load document
         content_path = self.pdf_dir / "extracted" / "content.json"
@@ -92,7 +82,7 @@ class SupportingEvidenceExtractor(BaseAgent):
         
         # Structure output
         output = {
-            "claim_id": claim_id,
+            "claim_id": self.claim_id,
             "claim": claim,
             "document": {
                 "pdf_name": self.pdf_name,
@@ -126,20 +116,6 @@ class SupportingEvidenceExtractor(BaseAgent):
                 }
             }
             output["supporting_snippets"].append(snippet_data)
-        
-        # Get any relevant visual elements
-        if self.config.get("include_visual_references", False):
-            visual_elements = interface.get_figures_and_tables()
-            output["visual_elements"] = [
-                {
-                    "type": elem["role"],
-                    "page": elem["page_index"] + 1,
-                    "description": elem["description"][:200]
-                }
-                for elem in visual_elements
-            ]
-        else:
-            output["visual_elements"] = []
         
         output["model_used"] = self.llm_client.model
         
