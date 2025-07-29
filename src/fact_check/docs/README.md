@@ -105,8 +105,8 @@ Claims files should be placed in `data/claims/` and follow this format:
 ### Environment Setup
 
 ```bash
-# Required: Gateway URL
-export SOLSTICE_GATEWAY_URL=http://localhost:8000
+# Required: Gateway URL (set this to your gateway endpoint)
+export SOLSTICE_GATEWAY_URL=<your-gateway-url>
 
 # Optional: OpenAI API key (if gateway requires it)
 export OPENAI_API_KEY=your-key-here
@@ -224,8 +224,8 @@ if "my_new_agent" in agent_configs:
 ### Common Issues
 
 1. **Connection errors to gateway**
-- Ensure the gateway is running locally (default at http://localhost:8000)
-- To override, set the `SOLSTICE_GATEWAY_URL` environment variable or provide `gateway_url` in agent config
+- Ensure the gateway is running and accessible
+- Set the `SOLSTICE_GATEWAY_URL` environment variable or provide `gateway_url` in agent config
 
 2. **"Input validation failed"**
    - Ensure required input files exist

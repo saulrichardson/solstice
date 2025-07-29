@@ -52,7 +52,7 @@ class SupportingEvidenceExtractor(BaseAgent):
         # Set up LLM client
         self.llm_client = ResponsesClient()
         self.llm_client.model = self.config.get("model", "gpt-4.1")
-        self.evidence_extractor = EvidenceExtractor(self.llm_client)
+        self.evidence_extractor = EvidenceExtractor(self.llm_client, config={"disable_cache": True})
     
     async def process(self) -> Dict[str, Any]:
         """

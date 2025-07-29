@@ -38,8 +38,9 @@ up: check
 	@if [ ! -f .env ]; then cp .env.example .env; echo "Created .env file - please add your OpenAI API key"; fi
 	docker compose up -d
 	@echo ""
-	@echo "Gateway running at http://localhost:8000"
-	@echo "Test with: curl http://localhost:8000/health"
+	@PORT=$$(grep -E '^SOLSTICE_GATEWAY_PORT=' .env 2>/dev/null | cut -d= -f2 || echo "8000"); \
+	echo "Gateway running at http://localhost:$$PORT"; \
+	echo "Test with: curl http://localhost:$$PORT/health"
 
 
 down:

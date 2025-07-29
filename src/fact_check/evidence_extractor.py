@@ -38,14 +38,16 @@ class EvidenceExtractionResult(BaseModel):
 class EvidenceExtractor:
     """Extract supporting evidence snippets for claims from documents"""
     
-    def __init__(self, llm_client):
+    def __init__(self, llm_client, config=None):
         """
         Initialize the evidence extractor.
         
         Args:
             llm_client: Client for LLM interactions (ResponsesClient)
+            config: Optional configuration dict
         """
         self.llm_client = llm_client
+        self.config = config or {}
         
     async def extract_supporting_evidence(self, claim: str, document_text: str) -> EvidenceExtractionResult:
         """
@@ -145,7 +147,7 @@ Find all supporting evidence for the claim.'''
                 model=self.llm_client.model if hasattr(self.llm_client, 'model') else "gpt-4.1",
                 temperature=0.0,
                 max_output_tokens=4000,
-                store=False,  # disable server-side caching
+                disable_cache=self.config.get("disable_cache", False),
             )
             
             # Parse response

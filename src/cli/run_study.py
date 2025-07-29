@@ -95,6 +95,18 @@ Default claims: {default_claims if has_default_claims else 'Not found'}
         action="store_true",
         help="Enable debug output (shows LLM calls and responses)"
     )
+
+    # ------------------------------------------------------------------
+    # Caching control – we *disable* server-side caching by default so every
+    # run gets a fresh completion.  Power users can re-enable it with
+    # --enable-cache.
+    # ------------------------------------------------------------------
+
+    parser.add_argument(
+        "--enable-cache",
+        action="store_true",
+        help="Allow OpenAI server-side caching (default: disabled)"
+    )
     
     args = parser.parse_args()
     
@@ -128,7 +140,9 @@ Default claims: {default_claims if has_default_claims else 'Not found'}
     config = {
         "agent_config": {
             "model": args.model,
-            "debug": args.debug
+            "debug": args.debug,
+            # Disable cache unless user explicitly requested enabling it
+            "disable_cache": not args.enable_cache,
         },
         "continue_on_error": args.continue_on_error,
         "agents": args.agents

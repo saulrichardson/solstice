@@ -7,11 +7,12 @@ OpenAI, but *clients are no longer required* to supply such a key.  An
 `Authorization` header is only sent when an explicit key is provided.
 """
 import json
-import os
 import logging
 from collections.abc import Iterator
 
 import httpx
+
+from src.core.config import settings
 
 logger = logging.getLogger(__name__)
 
@@ -25,12 +26,8 @@ class ResponsesClient:
             base_url: Gateway URL (required if SOLSTICE_GATEWAY_URL not set)
             api_key: API key for authentication
         """
-        # Determine gateway URL: use provided base_url or env var, else fallback to localhost defaults
-        self.base_url = base_url or os.getenv("SOLSTICE_GATEWAY_URL")
-        if not self.base_url:
-            host = os.getenv("SOLSTICE_GATEWAY_HOST", "localhost")
-            port = os.getenv("SOLSTICE_GATEWAY_PORT", "8000")
-            self.base_url = f"http://{host}:{port}"
+        # Use provided base_url or get from centralized settings
+        self.base_url = base_url or settings.gateway_url
         # Normalize URL to remove trailing slash
         self.base_url = self.base_url.rstrip("/")
 
@@ -42,7 +39,7 @@ class ResponsesClient:
         # OPENAI_API_KEY in their environment for another reason.
         # ------------------------------------------------------------------
 
-        self.api_key = api_key or os.getenv("OPENAI_API_KEY")
+        self.api_key = api_key or settings.openai_api_key
 
         self.headers = {"Content-Type": "application/json"}
         if self.api_key:
@@ -61,6 +58,8 @@ class ResponsesClient:
         reasoning: dict | None = None,
         temperature: float | None = None,
         max_output_tokens: int | None = None,
+        *,
+        disable_cache: bool = False,
         **kwargs,
     ) -> dict:
         """
@@ -108,7 +107,31 @@ class ResponsesClient:
         if max_output_tokens is not None:
             request_data["max_output_tokens"] = max_output_tokens
 
-        # Add any extra kwargs
+        # ------------------------------------------------------------------
+        # Cache-busting: when disable_cache=True we attach a nonce to metadata
+        # and make sure the request itself is *not* stored on the OpenAI side
+        # so that subsequent identical calls still go through the model.
+        # The nonce lives in `metadata` which is excluded from the prompt and
+        # therefore does not influence the model or incur token costs.
+        # ------------------------------------------------------------------
+
+        if disable_cache:
+            from src.util.nonce import new_nonce  # local import to avoid cycles
+
+            nonce = new_nonce()
+
+            # Merge with any user-supplied metadata
+            metadata = request_data.get("metadata", {})
+            # We avoid overwriting an existing nonce key to keep idempotency if
+            # the caller purposely sets their own marker.
+            metadata.setdefault("nonce", nonce)
+            request_data["metadata"] = metadata
+
+            # Ensure the response itself is not persisted server-side unless
+            # the caller explicitly overrode `store` to True in their kwargs.
+            request_data["store"] = False
+
+        # Add any extra kwargs (after nonce injection so explicit kwargs win)
         request_data.update(kwargs)
         
         # Debug logging for LLM calls

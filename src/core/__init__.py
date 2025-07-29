@@ -1,1 +1,1 @@
-"""Core utilities shared across the application."""
+"""Core utilities and configuration for Solstice."""

@@ -87,7 +87,7 @@ make logs
 make down
 ```
 
-The gateway runs on http://localhost:8000 and provides API access to the processing capabilities.
+The gateway provides API access to the processing capabilities.
 
 **Note for Colima users:** The Makefile will automatically restart Colima if Docker is unresponsive.
 
