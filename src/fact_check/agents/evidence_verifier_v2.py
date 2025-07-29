@@ -116,6 +116,7 @@ class EvidenceVerifierV2(BaseAgent):
                 claim=claim,
                 quote=quote,
                 context=context,
+                full_document=full_text,
                 relevance_explanation=relevance_explanation
             )
             
@@ -189,6 +190,7 @@ class EvidenceVerifierV2(BaseAgent):
         claim: str, 
         quote: str, 
         context: str,
+        full_document: str,
         relevance_explanation: str
     ) -> Dict[str, Any]:
         """
@@ -201,9 +203,6 @@ class EvidenceVerifierV2(BaseAgent):
 CLAIM: {claim}
 
 QUOTE TO VERIFY: "{quote}"
-
-DOCUMENT CONTEXT:
-{context}
 
 ORIGINAL RELEVANCE EXPLANATION: {relevance_explanation}
 
@@ -219,13 +218,16 @@ Reject quotes that:
 
 Be strict - we want evidence that would convince a skeptical reader.
 
-First, confirm the exact quote as it appears in the context (accounting for minor formatting differences).
+First, confirm the exact quote as it appears in the document (accounting for minor formatting differences).
 
 Then provide your verdict in this format:
-ACTUAL_QUOTE: [exact quote from context]
+ACTUAL_QUOTE: [exact quote from document]
 VERDICT: KEEP or REJECT
 EXPLANATION: [Why this does/doesn't support the claim - 1-2 sentences]
-REASON_IF_REJECTED: [Only if REJECT - specific issue like "too tangential", "requires inference", etc.]"""
+REASON_IF_REJECTED: [Only if REJECT - specific issue like "too tangential", "requires inference", etc.]
+
+FULL DOCUMENT:
+{full_document}"""
 
         try:
             response = await self.llm_client.create_response(

@@ -85,22 +85,12 @@ class CompletenessChecker(BaseAgent):
         existing_snippets = verifier_data.get("verified_evidence", [])
         existing_quotes = [s.get("quote", "") for s in existing_snippets]
         
-        # Analyze completeness
-        completeness_analysis = await self._analyze_completeness(
+        # Check if there's any additional evidence we missed
+        additional_snippets = await self._check_for_additional_evidence(
             claim=claim,
-            existing_evidence=existing_snippets,
-            document_text=normalized_text[:5000]  # First 5000 chars for context
+            document_text=normalized_text,
+            existing_quotes=existing_quotes
         )
-        
-        # Find additional evidence if needed
-        additional_snippets = []
-        if completeness_analysis["needs_more_evidence"]:
-            additional_snippets = await self._find_additional_evidence(
-                claim=claim,
-                document_text=normalized_text,
-                existing_quotes=existing_quotes,
-                missing_aspects=completeness_analysis["missing_aspects"]
-            )
         
         # Combine all evidence (existing verified + new)
         all_snippets = existing_snippets + additional_snippets
@@ -109,11 +99,10 @@ class CompletenessChecker(BaseAgent):
             "claim_id": self.claim_id,
             "claim": claim,
             "document": self.pdf_name,
-            "completeness_assessment": {
-                "missing_aspects": completeness_analysis.get("missing_aspects", []),
-                "additional_evidence_found": additional_snippets,
-                "completeness_score": completeness_analysis["completeness_score"],
-                "analysis": completeness_analysis.get("analysis", "")
+            "additional_evidence_check": {
+                "checked_for_more": True,
+                "found_additional": len(additional_snippets) > 0,
+                "additional_count": len(additional_snippets)
             },
             "completeness_stats": {
                 "existing_evidence": len(existing_snippets),
@@ -127,106 +116,44 @@ class CompletenessChecker(BaseAgent):
         
         logger.info(
             f"Found {output['completeness_stats']['new_evidence_found']} additional snippets, "
-            f"total: {output['completeness_stats']['total_evidence']} "
-            f"(completeness: {completeness_analysis['completeness_score']:.0%})"
+            f"total: {output['completeness_stats']['total_evidence']}"
         )
         
         return output
     
-    async def _analyze_completeness(
-        self,
-        claim: str,
-        existing_evidence: List[Dict[str, Any]],
-        document_text: str
-    ) -> Dict[str, Any]:
-        """
-        Analyze whether existing evidence fully supports the claim.
-        
-        Returns:
-            Analysis of completeness with missing aspects
-        """
-        # Format existing evidence for analysis
-        evidence_summary = "\n".join([
-            f"- {e.get('quote', '')[:200]}... "
-            f"({e.get('explanation', 'N/A')})"
-            for e in existing_evidence[:10]  # Limit to top 10
-        ])
-        
-        prompt = f"""You are analyzing whether extracted evidence fully supports a claim.
-
-CLAIM: {claim}
-
-EXISTING EVIDENCE FOUND ({len(existing_evidence)} pieces):
-{evidence_summary}
-
-DOCUMENT PREVIEW (first 5000 characters):
-{document_text}
-
-Please analyze:
-1. Does the existing evidence fully support all aspects of the claim?
-2. What aspects of the claim might need additional evidence?
-3. Are there other sections of the document that might contain relevant evidence?
-
-Provide your response in this format:
-COMPLETENESS_SCORE: [0.0-1.0, where 1.0 means fully complete]
-NEEDS_MORE_EVIDENCE: [YES/NO]
-MISSING_ASPECTS: [List key aspects that need more evidence, one per line]
-SUGGESTED_SEARCH_AREAS: [Areas in document to search for additional evidence]
-ANALYSIS: [Brief explanation of completeness assessment]
-"""
-
-        try:
-            # Call the async LLM client
-            response_dict = await self.llm_client.create_response(
-                input=prompt,
-                model=self.llm_client.model,
-                temperature=0.0,
-                max_output_tokens=1000
-            )
-            response = self.llm_client.extract_text(response_dict)
-            return self._parse_completeness_response(response)
-            
-        except Exception as e:
-            logger.error(f"Error analyzing completeness: {e}")
-            # Default to not needing more evidence on error
-            return {
-                "completeness_score": 0.8,
-                "needs_more_evidence": False,
-                "missing_aspects": [],
-                "suggested_search_areas": [],
-                "analysis": "Error in completeness analysis, assuming sufficient evidence"
-            }
     
-    async def _find_additional_evidence(
+    async def _check_for_additional_evidence(
         self, 
         claim: str, 
         document_text: str,
-        existing_quotes: List[str],
-        missing_aspects: List[str]
+        existing_quotes: List[str]
     ) -> List[Dict[str, Any]]:
         """
-        Find additional evidence not in existing quotes.
+        Check if there's any additional supporting evidence we missed.
         
         Returns:
             List of new evidence snippets
         """
-        # Create focused prompt based on missing aspects
-        missing_aspects_text = "\n".join([f"- {aspect}" for aspect in missing_aspects]) if missing_aspects else "General additional support"
-        
-        # Format existing evidence to avoid duplicates
+        # Show LLM what we already found
         existing_evidence_text = "\n".join([f"- {quote[:150]}..." for quote in existing_quotes[:10]])
-        
-        # We'll use the regular evidence extractor and let it find additional evidence
 
         try:
-            # Use the evidence extractor to find additional evidence
-            # Modify the claim to focus on missing aspects
-            focused_claim = claim
-            if missing_aspects:
-                focused_claim = f"{claim} (specifically regarding: {', '.join(missing_aspects)})"
+            # Simply ask: is there any other evidence that supports this claim?
+            prompt = f"""You already found some evidence for a claim. Check if there's any additional supporting evidence.
+
+CLAIM: {claim}
+
+EVIDENCE ALREADY FOUND:
+{existing_evidence_text}
+
+Look through the document and find ANY OTHER quotes that support this claim that weren't already found.
+Don't force it - if there's no additional evidence, that's fine.
+
+Return ONLY genuinely supporting evidence that's different from what was already found.
+"""
             
             result = await self.evidence_extractor.extract_supporting_evidence(
-                claim=focused_claim,
+                claim=prompt,  # Pass the full context as the "claim"
                 document_text=document_text
             )
             
@@ -240,7 +167,7 @@ ANALYSIS: [Brief explanation of completeness assessment]
                     "source": "completeness_check",
                     "metadata": {
                         "extraction_round": 2,
-                        "targeted_aspect": missing_aspects[0] if missing_aspects else "general"
+                        "targeted_aspect": "general"
                     }
                 }
                 new_snippets.append(new_snippet)
@@ -252,72 +179,4 @@ ANALYSIS: [Brief explanation of completeness assessment]
             return []
     
     
-    def _parse_completeness_response(self, response: str) -> Dict[str, Any]:
-        """Parse the completeness analysis response."""
-        # Default values
-        result = {
-            "completeness_score": 0.8,
-            "needs_more_evidence": False,
-            "missing_aspects": [],
-            "suggested_search_areas": [],
-            "analysis": ""
-        }
-        
-        try:
-            lines = response.strip().split('\n')
-            current_key = None
-            
-            for line in lines:
-                line = line.strip()
-                if not line:
-                    # Reset on empty line
-                    current_key = None
-                    continue
-                
-                # Check for key:value pairs
-                if ':' in line and not current_key:
-                    parts = line.split(':', 1)
-                    if len(parts) == 2:
-                        key = parts[0].strip().upper()
-                        value = parts[1].strip()
-                        
-                        if key == "COMPLETENESS_SCORE":
-                            try:
-                                score = float(value.split()[0])  # Handle "0.8 (80%)"
-                                result["completeness_score"] = max(0.0, min(1.0, score))  # Clamp to 0-1
-                            except (ValueError, IndexError):
-                                logger.warning(f"Could not parse completeness score: {value}")
-                        elif key == "NEEDS_MORE_EVIDENCE":
-                            result["needs_more_evidence"] = value.upper().startswith("YES")
-                        elif key == "MISSING_ASPECTS":
-                            current_key = "missing_aspects"
-                            if value:  # If value on same line
-                                result["missing_aspects"].append(value)
-                        elif key == "SUGGESTED_SEARCH_AREAS":
-                            current_key = "suggested_search_areas"
-                            if value:
-                                result["suggested_search_areas"].append(value)
-                        elif key == "ANALYSIS":
-                            result["analysis"] = value
-                            current_key = "analysis"
-                elif current_key in ["missing_aspects", "suggested_search_areas"]:
-                    # Handle list items (with or without dash)
-                    item = line[1:].strip() if line.startswith("-") else line
-                    if item:
-                        result[current_key].append(item)
-                elif current_key == "analysis" and line:
-                    # Handle multi-line analysis
-                    result["analysis"] += " " + line
-            
-            # Ensure consistency between score and needs_more_evidence
-            if result["completeness_score"] < 0.7 and not result["needs_more_evidence"]:
-                logger.info("Low completeness score but needs_more_evidence=False, setting to True")
-                result["needs_more_evidence"] = True
-            
-            return result
-            
-        except Exception as e:
-            logger.error(f"Error parsing completeness response: {e}")
-            logger.debug(f"Response was: {response[:500]}...")
-            return result
     
