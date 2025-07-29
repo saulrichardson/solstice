@@ -2,7 +2,7 @@
 
 from typing import List
 
-from ..models.box import Box
+from .box import Box
 
 
 def determine_reading_order_simple(boxes: List[Box], page_width: float = 1600) -> List[str]:

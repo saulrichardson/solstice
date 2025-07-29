@@ -233,6 +233,23 @@ class FinalSpacingFixer:
         # Fix specific drug names that might be split wrong
         text = re.sub(r'Flu\s+blok', 'Flublok', text, flags=re.IGNORECASE)
         
+        # Fix common medical document patterns
+        text = re.sub(r'(\d+\.?\d*)\s*mLdose', r'\1 mL dose', text)
+        text = re.sub(r'mcgHA', 'mcg HA', text)
+        text = re.sub(r'HAof', 'HA of', text)
+        text = re.sub(r'Each(\d)', r'Each \1', text)
+        text = re.sub(r'(\d+)of', r'\1 of', text)
+        
+        # Fix specific concatenations found in medical docs
+        text = re.sub(r'isthe', 'is the', text)
+        text = re.sub(r'oneor', 'one or', text)
+        text = re.sub(r'forthe', 'for the', text)
+        text = re.sub(r'fromthe', 'from the', text)
+        text = re.sub(r'tothe', 'to the', text)
+        text = re.sub(r'ofthe', 'of the', text)
+        text = re.sub(r'inthe', 'in the', text)
+        text = re.sub(r'andthe', 'and the', text)
+        
         return text
 
 

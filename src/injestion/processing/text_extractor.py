@@ -40,6 +40,10 @@ def get_text_extractor(extractor_type: Optional[str] = None) -> TextExtractor:
     
     if extractor_type == 'pymupdf':
         return PyMuPDFExtractor()
+    elif extractor_type == 'hybrid':
+        from .text_extractors.hybrid_extractor import HybridTextExtractor
+        logger.info("Using hybrid text extractor for better spacing")
+        return HybridTextExtractor()
     else:
         # Default to PyMuPDF for any unknown type
         logger.warning(f"Unknown extractor type '{extractor_type}', using PyMuPDF")

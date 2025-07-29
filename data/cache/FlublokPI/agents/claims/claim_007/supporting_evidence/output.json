@@ -9,9 +9,25 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 0,
+    "total_snippets_found": 3,
     "error": null
   },
-  "supporting_snippets": [],
+  "supporting_snippets": [
+    {
+      "id": 1,
+      "quote": "Flublok [In\ufb02uenza Vaccine] is a sterile clear colorless injection containing recombinant hemagglutinin (HA) proteins from three in\ufb02uenza viruses for intramuscular use. It contains puri\ufb01ed HA proteins produced in a continuous insect cell line (expresSF+\u00ae) that is derived from Sf9 cells of the fall army worm, Spodoptera frugiperda ... Each of the three HAs is expressed in this cell line using a baculovirus vector (Autographa californica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further puri\ufb01ed by column chromatography.",
+      "relevance_explanation": "This quote establishes that Flublok is a recombinant HA antigen produced using the baculovirus expression vector system (BEVS), which is necessary context for the claim."
+    },
+    {
+      "id": 2,
+      "quote": "Flublok contains recombinant HA proteins of the three strains of in\ufb02uenza virus speci\ufb01ed by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response measured by hemagglutination inhibition (HI) antibodies.",
+      "relevance_explanation": "This quote confirms that the recombinant HA antigens in Flublok induce an antibody response, which is relevant to the claim about immunogenicity."
+    },
+    {
+      "id": 3,
+      "quote": "Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recombinant in\ufb02uenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
+      "relevance_explanation": "This reference is to a published study that directly compares the immunogenicity of recombinant HA (produced using BEVS) and egg-derived vaccines, supporting the claim contextually. However, the document does not provide the study's results verbatim."
+    }
+  ],
   "model_used": "gpt-4.1"
 }

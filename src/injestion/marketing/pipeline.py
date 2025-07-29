@@ -9,8 +9,8 @@ from pdf2image import convert_from_path
 
 from .detector import MarketingLayoutDetector
 from .consolidation import BoxConsolidator
-from ..models.box import Box
-from src.interfaces import Block, Document
+from ..processing.box import Box
+# already correct; ensure not using models.document; no change
 from ..processing.reading_order import determine_reading_order_simple
 from ..processing.text_extractor import extract_document_content
 from ..storage.paths import stage_dir, save_json, pages_dir

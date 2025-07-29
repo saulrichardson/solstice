@@ -3,7 +3,7 @@
 from pathlib import Path
 from typing import Dict, List, Optional
 
-from src.interfaces import Document, Block
+# Already correct import; leave
 
 
 def generate_readable_document(

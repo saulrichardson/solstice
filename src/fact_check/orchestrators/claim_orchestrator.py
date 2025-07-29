@@ -7,7 +7,7 @@ from typing import Dict, List, Any, Optional
 
 from ..agents import (
     SupportingEvidenceExtractor,
-    RegexVerifier, 
+    QuoteVerifier,
     EvidenceCritic,
     CompletenessChecker,
     EvidenceJudge
@@ -50,10 +50,9 @@ class ClaimOrchestrator:
         # Allow customizing which agents to run
         self.agents_to_run = self.config.get("agents", [
             "supporting_evidence", 
-            "regex_verifier", 
+            "quote_verifier", 
             "evidence_critic", 
             "completeness_checker",
-            "regex_verifier_final",
             "evidence_judge"
         ])
     
@@ -103,10 +102,9 @@ class ClaimOrchestrator:
         # Define agent sequence - filter based on config
         all_agents = [
             (SupportingEvidenceExtractor, "supporting_evidence"),
-            (RegexVerifier, "regex_verifier"),
+            (QuoteVerifier, "quote_verifier"),
             (EvidenceCritic, "evidence_critic"),
             (CompletenessChecker, "completeness_checker"),
-            (RegexVerifier, "regex_verifier_final"),
             (EvidenceJudge, "evidence_judge")
         ]
         
@@ -118,11 +116,8 @@ class ClaimOrchestrator:
             logger.info(f"    Running {agent_name}...")
             
             try:
-                # Special configuration for second regex verifier pass
+                # Use standard agent config
                 agent_config = self.agent_config.copy()
-                if agent_name == "regex_verifier_final":
-                    agent_config["upstream_agent"] = "completeness_checker"
-                    agent_config["input_field"] = "all_snippets"
                 
                 # Create agent instance
                 agent = agent_class(

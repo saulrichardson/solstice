@@ -3,13 +3,46 @@
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "document": "FlublokPI",
   "verification_stats": {
-    "total_snippets": 0,
-    "verified": 0,
+    "total_snippets": 2,
+    "verified": 2,
     "failed": 0,
     "modified": 0,
-    "exact_matches": 0,
+    "exact_matches": 2,
     "fuzzy_matches": 0
   },
-  "verified_snippets": [],
+  "verified_snippets": [
+    {
+      "id": 2,
+      "quote": "Abbreviations: rtPCR=reversetranscriptasepolymerasechainreaction; Comparator=U.S.- licensed quad rival ent inactivatedin\ufb02uenzavaccine, FluarixQuadrivalent, manufactured by GlaxoSmithKline; n=number of in\ufb02uenzacases; N=number of subjects in treatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) \u00d7 100]. *Study 6 is registered as NCT02285998.",
+      "relevance_explanation": "This quote clarifies that the comparator in Study 6 was Fluarix Quadrivalent, a U.S.-licensed quadrivalent inactivated influenza vaccine, confirming the head-to-head evaluation of Flublok Quadrivalent against Fluarix Quadrivalent.",
+      "location": {
+        "start": 24189,
+        "end": 24563,
+        "page_index": 3,
+        "page_number": 4
+      },
+      "verification_status": "exact_match",
+      "verified_location": {
+        "start": 24110,
+        "end": 24484
+      }
+    },
+    {
+      "id": 3,
+      "quote": "The primary efficacy endpoint of Study 6 was rtPCR-positive, protocol-de\ufb01ned ILI due to any strain of in\ufb02uenza. Attack rates and relative vaccine efficacy (rVE), de\ufb01ned as 1 \u2013 [Attack rate Flublok Quad rival ent Attack Rate Comparator], were calculated for the total efficacy population (n=8604) for the primary efficacy endpoint and for several alternative efficacy endpoints (Table 5).",
+      "relevance_explanation": "This quote describes the design of Study 6, indicating that Flublok Quadrivalent was directly compared to a comparator vaccine (Fluarix Quadrivalent) for efficacy, supporting the claim.",
+      "location": {
+        "start": 18822,
+        "end": 19209,
+        "page_index": 3,
+        "page_number": 4
+      },
+      "verification_status": "exact_match",
+      "verified_location": {
+        "start": 18755,
+        "end": 19142
+      }
+    }
+  ],
   "failed_snippets": []
 }

@@ -1,0 +1,52 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": "FlublokPI",
+  "verification_stats": {
+    "total_snippets": 3,
+    "verified": 3,
+    "failed": 0,
+    "high_confidence": 3,
+    "medium_confidence": 0,
+    "low_confidence": 0
+  },
+  "verified_snippets": [
+    {
+      "id": 1,
+      "quote": "Flublok contains recombinant HA proteins of the three strains of in\ufb02uenza virus speci\ufb01ed by health authorities for inclusion in the annual seasonal vaccine.",
+      "relevance_explanation": "This quote supports the claim because it states that Flublok contains hemagglutinin (HA) proteins from the exact strains specified by health authorities (such as WHO and FDA) for the annual flu vaccine, ensuring an identical antigenic match.",
+      "verification_status": "verified",
+      "confidence": "high",
+      "actual_text": "Flublok contains recombinant HAproteins of the three strains of in\ufb02uenza virus speci\ufb01ed by health authorities for inclusion in the annual seasonal vaccine.",
+      "differences": [
+        "Spacing difference: 'HAproteins' (document) vs 'HA proteins' (quote)"
+      ]
+    },
+    {
+      "id": 2,
+      "quote": "For the 2024-2025 in\ufb02uenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 in\ufb02uenza virus strains: A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
+      "relevance_explanation": "This quote provides the exact strains included in Flublok for the 2024-2025 season, which are the strains selected by WHO and FDA, directly supporting the claim of an identical antigenic match.",
+      "verification_status": "verified",
+      "confidence": "high",
+      "actual_text": "For the 2024-2025in\ufb02uenzaseasonit is formulatedtocontain135 mcgHA per 0.5 mLdose, with45 mcgHAof each of thefollowing3in\ufb02uenzavirusstrains:",
+      "differences": [
+        "Spacing differences: '2024-2025in\ufb02uenzaseasonit is formulatedtocontain135 mcgHA per 0.5 mLdose, with45 mcgHAof each of thefollowing3in\ufb02uenzavirusstrains' vs 'For the 2024-2025 in\ufb02uenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 in\ufb02uenza virus strains'",
+        "The actual strain names (A/West Virginia/30/2022, etc.) are not present in the provided document excerpt"
+      ]
+    },
+    {
+      "id": 3,
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements.",
+      "relevance_explanation": "This quote affirms that Flublok is produced to meet the official standards set by U.S. health authorities, which include using the exact strains selected for the season, supporting the claim of identical antigenic match.",
+      "verification_status": "verified",
+      "confidence": "high",
+      "actual_text": "Flublok is standardized according to United States Public Health Service (USPHS)",
+      "differences": [
+        "The quote in the document is missing the word 'requirements.' at the end.",
+        "The rest of the text matches exactly up to the point where the document text is cut off."
+      ]
+    }
+  ],
+  "failed_snippets": [],
+  "model_used": "gpt-4.1"
+}

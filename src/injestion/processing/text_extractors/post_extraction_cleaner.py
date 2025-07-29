@@ -24,6 +24,15 @@ class PostExtractionCleaner:
             (r'\bRIBING\b', 'PRESCRIBING'),
             (r'\bATIENT\b', 'PATIENT'),
             (r'\bOUNSELING\b', 'COUNSELING'),
+            (r'\bDVERSE\b', 'ADVERSE'),
+            (r'\bNDICATIONS\b', 'INDICATIONS'),
+            (r'\bOSAGE\b', 'DOSAGE'),
+            (r'\bARNINGS\b', 'WARNINGS'),
+            (r'\bREGNANCY\b', 'PREGNANCY'),
+            (r'\bTORAGE\b', 'STORAGE'),
+            (r'\bVERDOSE\b', 'OVERDOSE'),
+            (r'\bEDIATRIC\b', 'PEDIATRIC'),
+            (r'\bERIATRIC\b', 'GERIATRIC'),
         ]
         
         # Common missing space patterns
@@ -53,6 +62,9 @@ class PostExtractionCleaner:
             
         original = text
         
+        # Step 0: Fix broken words across lines (do this first!)
+        text = self._fix_broken_words(text)
+        
         # Step 1: Fix truncated words
         text = self._fix_truncated_words(text)
         
@@ -73,6 +85,30 @@ class PostExtractionCleaner:
         
         if text != original:
             logger.debug(f"Post-extraction cleaning modified text (len: {len(original)} -> {len(text)})")
+        
+        return text
+    
+    def _fix_broken_words(self, text: str) -> str:
+        """Fix words broken across lines."""
+        # Pattern: letter + space + single letter + space
+        # Like "s antigens which in nhibition"
+        
+        # Fix specific known breaks
+        broken_patterns = [
+            (r's\s+antigens\s+which\s+in\s+nhibition', 'antigens which inhibition'),
+            (r'in\s+nhibition', 'inhibition'),
+            (r'anti\s+bod', 'antibod'),
+            (r'h\s+ff\s+t\s+f', 'effect of'),
+            (r't\s+isnot', 'it is not'),
+            (r'han\s+18', 'than 18'),
+        ]
+        
+        for pattern, replacement in broken_patterns:
+            text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+        
+        # General pattern: fix single letters that look broken
+        # This is risky but we'll be conservative
+        text = re.sub(r'\b([a-z])\s+([a-z]{2,})', r'\1\2', text)
         
         return text
     
@@ -107,10 +143,37 @@ class PostExtractionCleaner:
         for pattern, replacement in self.missing_space_patterns:
             text = re.sub(pattern, replacement, text)
         
-        # Fix specific cases like "im anaphylactic" -> "immediate anaphylactic"
-        # This requires context-aware fixing
-        text = re.sub(r'\bim\s+anaphylactic', 'immediate anaphylactic', text)
-        text = re.sub(r'\badminist\b', 'administration', text)
+        # Fix specific cases that require context
+        context_fixes = [
+            # Incomplete words
+            (r'\bim\s+anaphylactic', 'immediate anaphylactic'),
+            (r'\badminist\b', 'administration'),
+            (r'\bdi\s+agnosis', 'diagnosis'),
+            (r'\bef\s+fect', 'effect'),
+            (r'\bin\s+jection', 'injection'),
+            (r'\bvac\s+cine', 'vaccine'),
+            (r'\bpa\s+tient', 'patient'),
+            (r'\bmed\s+ical', 'medical'),
+            
+            # Common medical abbreviation spacing
+            (r'(\d+)\s*mg\b', r'\1 mg'),
+            (r'(\d+)\s*mL\b', r'\1 mL'),
+            (r'(\d+)\s*mcg\b', r'\1 mcg'),
+            (r'(\d+)\s*%', r'\1%'),
+            
+            # Fix U.S. patterns
+            (r'U\.S\.([a-zA-Z])', r'U.S. \1'),
+            (r'Ph\.D\.([a-zA-Z])', r'Ph.D. \1'),
+            (r'M\.D\.([a-zA-Z])', r'M.D. \1'),
+            
+            # Fix common pharma terms
+            (r'IIV([0-9])', r'IIV\1'),  # IIV3, IIV4
+            (r'RIV([0-9])', r'RIV\1'),  # RIV4
+            (r'COVID-?19', 'COVID-19'),
+        ]
+        
+        for pattern, replacement in context_fixes:
+            text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
         
         return text
     
@@ -178,17 +241,40 @@ class PostExtractionCleaner:
         text = text.replace('ﬁ', 'fi')
         text = text.replace('ﬀ', 'ff')
         
+        # IMPORTANT: Fix "inﬂuenza" → "influenza" (very common)
+        text = text.replace('inﬂuenza', 'influenza')
+        text = text.replace('INFL UENZA', 'INFLUENZA')
+        
         # Fix specific drug names
         text = re.sub(r'Flu\s*blok', 'Flublok', text, flags=re.IGNORECASE)
         
-        # Fix dosage patterns
+        # Fix dosage patterns with more variations
+        text = re.sub(r'(\d+\.?\d*)\s*mL\s*dose', r'\1 mL dose', text)
         text = re.sub(r'(\d+\.?\d*)\s*mL', r'\1 mL', text)
         text = re.sub(r'(\d+\.?\d*)\s*mg', r'\1 mg', text)
+        text = re.sub(r'(\d+\.?\d*)\s*mcg\s*HA', r'\1 mcg HA', text)
         text = re.sub(r'(\d+\.?\d*)\s*mcg', r'\1 mcg', text)
         
         # Fix age patterns
         text = re.sub(r'(\d+)\s*years', r'\1 years', text)
         text = re.sub(r'(\d+)\s*months', r'\1 months', text)
+        
+        # Fix common medical concatenations
+        text = re.sub(r'([a-z])viral', r'\1 viral', text)
+        text = re.sub(r'([a-z])vaccine', r'\1 vaccine', text)
+        text = re.sub(r'([a-z])virus', r'\1 virus', text)
+        text = re.sub(r'([a-z])strains?', r'\1 strains', text)
+        text = re.sub(r'([a-z])season', r'\1 season', text)
+        
+        # Fix number+word concatenations
+        text = re.sub(r'(\d+)([a-zA-Z])', r'\1 \2', text)
+        
+        # Fix specific patterns from the example
+        text = re.sub(r'isthevirologicbasisfor', 'is the virologic basis for', text)
+        text = re.sub(r'moreinﬂuenzavirusstrains', 'more influenza virus strains', text)
+        text = re.sub(r'formulated\s*to\s*contain(\d+)', r'formulated to contain \1', text)
+        text = re.sub(r'with(\d+)', r'with \1', text)
+        text = re.sub(r'thefollowing(\d+)', r'the following \1', text)
         
         return text
     

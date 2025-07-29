@@ -1,7 +1,7 @@
 """Fixed box consolidation operations for marketing documents."""
 
 from typing import List, Tuple, Optional
-from ..models.box import Box
+from ..processing.box import Box
 
 
 class BoxConsolidator:

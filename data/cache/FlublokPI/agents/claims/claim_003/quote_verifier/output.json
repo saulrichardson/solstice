@@ -1,0 +1,55 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": "FlublokPI",
+  "verification_stats": {
+    "total_snippets": 3,
+    "verified": 2,
+    "failed": 1,
+    "high_confidence": 2,
+    "medium_confidence": 0,
+    "low_confidence": 0
+  },
+  "verified_snippets": [
+    {
+      "id": 2,
+      "quote": "The efficacy of Flublok in protecting against culture-con\ufb01rmed in\ufb02uenza illness was assessed by active and passive surveillance for in\ufb02uenza-like illness (ILI) beginning 2 weeks post vaccination until the end of the in\ufb02uenza season, approximately 7 months post- vaccination. ... For subjects with an episode of ILI nasal ... Culture-con\ufb01rmedin\ufb02uenza d b ti d i ill f i \ufb02 lik ill (ILI) b i i in the U.S. during the 2007-2008 in\ufb02uenza season in adults 18-49 years of age (Study 1). (1) ... The primary efficacy endpoint of Study 1 was Centers for Disease Control-de\ufb01ned in\ufb02uenza-like illness (CDC ILI with a positive culture for an in\ufb02uenza virus strain antigenic ally resembling a strain represented in Flublok. ... Attack rates and vaccine efficacy (VE), de\ufb01ned as the reduction in the in\ufb02uenzarateforFlublokrelativetoplacebo, were calculated for the total vaccinated cohort (n=4648)",
+      "relevance_explanation": "This segment describes the study design and endpoints, showing that Flublok's efficacy was measured against both matched and mismatched strains, which is necessary context for understanding its cross-protective potential.",
+      "verification_status": "verified",
+      "confidence": "high",
+      "actual_text": "The efficacy of Flublok in protecting against culture-con\ufb01rmed in\ufb02uenza illness was\n\nagainst another. Furthermore, antibodies to one antigenic variant of in\ufb02uenza virus might not protect against a new antigenic variant of the same type or subtype. Frequent development of antigenic variants through antigenic drift isthevirologicbasisfor seasonal epidemics and the reason for the usual replacement of oneor morein\ufb02uenzavirusstrains in each year\u2019s in\ufb02uenza vaccine. 13 NONCLINICAL TOXICOLOGY\n\ns antigens which in nhibition (HI)\n\nIs this quote present in the document? Consider:\n- Minor spacing differences (e.g., \"HAproteins\" vs \"HA proteins\")\n- Punctuation variations\n- Ligature differences (\ufb01 vs fi, \ufb02 vs fl)\n- Unicode differences (different types of dashes, quotes)\n\nThe quote should convey the same meaning, even if not character-for-character identical.",
+      "differences": [
+        "Some portions of the quote are fragmented or missing in the provided document text.",
+        "Ligature differences (e.g., '\ufb01' vs 'fi', '\ufb02' vs 'fl') are present.",
+        "Spacing and line breaks differ.",
+        "The quote is split by unrelated text in the document.",
+        "Some sections of the quote are not contiguous in the document."
+      ]
+    },
+    {
+      "id": 3,
+      "quote": "CDC epidemio- logical data for the 2014-2015 in\ufb02uenza season indicated that In\ufb02uenzaA (H3N2) viruses ... The primary efficacy endpoint of Study 6 was rtPCR-positive, protocol-de\ufb01ned ILI due to any strain of in\ufb02uenza. ... Antigenic and phylogenetic evaluations of the similarity (\u2033matching\u2033) of clinical isolates to vaccine antigens were not performed.",
+      "relevance_explanation": "This quote shows that Flublok's efficacy was evaluated in a season with significant antigenic mismatch, and the vaccine still demonstrated protection, supporting the claim of a broader immune response and cross-protection.",
+      "verification_status": "verified",
+      "confidence": "high",
+      "actual_text": "The primary efficacy endpoint of Study 6 was rtPCR-positive, protocol-de\ufb01ned ILI due to any strain of in\ufb02uenza. Attack rates and relative vaccine efficacy (rVE), de\ufb01ned as 1 \u2013 [Attack rate Flublok Quad rival ent Attack Rate Comparator], were calculated for the total efficacy population (n=8604) for the primary efficacy endpoint and for several alternative efficacy endpoints (Table 5). Antigenic and phylogenetic evaluations of the similarity (\u2033matching\u2033) of clinical isolates to vaccine antigens were not performed. CDC epidemio- logical data for the 2014-2015 in\ufb02uenza season indicated that In\ufb02uenzaA (H3N2) viruses",
+      "differences": [
+        "Order of sentences: In the quote, the CDC epidemiological data sentence comes first, but in the document, it comes after the other two sentences.",
+        "The document includes additional context and sentences between the quoted sentences.",
+        "Minor spacing differences (e.g., 'In\ufb02uenzaA' vs 'Influenza A')",
+        "Ligature differences (e.g., 'de\ufb01ned' vs 'defined', 'in\ufb02uenza' vs 'influenza')"
+      ]
+    }
+  ],
+  "failed_snippets": [
+    {
+      "id": 1,
+      "quote": "Vaccine efficacy against antigenic ally matched culture-con\ufb01rmed CDC-ILI could not be determined reliably because 96% of the in\ufb02uenza isolates obtained from subjects in Study 1 were not antigenic ally matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC- ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0).",
+      "relevance_explanation": "This quote provides direct evidence that Flublok (a recombinant vaccine) demonstrated efficacy against influenza strains even when there was a mismatch between the vaccine and circulating strains, supporting the claim of cross-protection in a mismatch season.",
+      "verification_status": "failed",
+      "confidence": "high",
+      "failure_reason": "Quote not found in document"
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

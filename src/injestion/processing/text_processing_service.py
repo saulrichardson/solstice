@@ -31,6 +31,11 @@ class TextProcessingService:
     The service is implemented as a singleton to ensure consistent processing
     across the entire pipeline and to avoid multiple initializations of heavy
     processors like WordNinja.
+    
+    Text processors (in order):
+    1. Post-extraction cleaner - Fixes PDF artifacts, truncated words, ligatures
+    2. SymSpell - General spell-checking and compound word splitting
+    3. WordNinja - Specialized concatenated word splitting
     """
     
     _instance: Optional['TextProcessingService'] = None
@@ -70,6 +75,15 @@ class TextProcessingService:
             logger.info("Initialized post-extraction cleaner")
         except ImportError as e:
             logger.warning(f"Could not import post-extraction cleaner: {e}")
+        
+        # SymSpell for spell-checking and compound splitting
+        try:
+            from .text_extractors.symspell_corrector_optimized import correct_medical_text_optimized
+            self._processors.append(('symspell', correct_medical_text_optimized))
+            logger.info("Initialized optimized SymSpell corrector")
+        except ImportError as e:
+            logger.warning(f"Could not import SymSpell corrector: {e}")
+            logger.info("Install with: pip install symspellpy")
         
         # WordNinja spacing fixes - this includes all heuristics
         try:

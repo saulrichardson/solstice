@@ -40,12 +40,6 @@ def main():
         add_help=False  # Let the actual command handle its own help
     )
     
-    # Legacy extract evidence command (deprecated)
-    evidence_parser = subparsers.add_parser(
-        "extract-evidence",
-        help="[DEPRECATED - use run-study] Extract supporting evidence"
-    )
-    
     # Parse only known args to get the command
     args, remaining = parser.parse_known_args()
     
@@ -63,12 +57,6 @@ def main():
         from .run_study import main as study_main
         # Set sys.argv to include the command name and remaining args
         sys.argv = ["run-study"] + remaining
-        study_main()
-    elif args.command == "extract-evidence":
-        # Deprecated - redirect to run-study
-        print("Note: extract-evidence is deprecated. Using run-study instead.\n")
-        from .run_study import main as study_main
-        sys.argv = [sys.argv[0]] + remaining
         study_main()
     else:
         parser.print_help()

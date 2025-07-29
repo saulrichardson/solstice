@@ -1,0 +1,60 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": "FlublokPI",
+  "verification_stats": {
+    "total_snippets": 3,
+    "verified": 3,
+    "failed": 0,
+    "high_confidence": 3,
+    "medium_confidence": 0,
+    "low_confidence": 0
+  },
+  "verified_snippets": [
+    {
+      "id": 1,
+      "quote": "Flublok [In\ufb02uenza Vaccine] is a sterile clear colorless injection containing recombinant hemagglutinin (HA) proteins from three in\ufb02uenza viruses for intramuscular use. It contains puri\ufb01ed HA proteins produced in a continuous insect cell line (expresSF+\u00ae) that is derived from Sf9 cells of the fall army worm, Spodoptera frugiperda ... Each of the three HAs is expressed in this cell line using a baculovirus vector (Autographa californica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further puri\ufb01ed by column chromatography.",
+      "relevance_explanation": "This quote establishes that Flublok is a recombinant HA antigen produced using the baculovirus expression vector system (BEVS), which is necessary context for the claim.",
+      "verification_status": "verified",
+      "confidence": "high",
+      "actual_text": "Flublok [In\ufb02uenza Vaccine] is a sterile clear colorless injection containing recombina hemagglutinin (HA) proteinsfromthreein\ufb02uenzavirusesfor intramuscular use. It contains puri\ufb01edHAproteins produced in a continuous insect cell line (expresSF+\u00ae) that is derived from Sf9 cells of the fall army worm, Spodoptera frugiperda (which is related to moths, caterpillars and butter ies, and grown in serum free medium composed of chemically- de\ufb01ned lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is d i thi ll li i b l i t (A t h lif i l Triton X-100 and further puri\ufb01ed by column chromatography.",
+      "differences": [
+        "Spacing differences: 'proteinsfromthreein\ufb02uenzavirusesfor' vs 'proteins from three in\ufb02uenza viruses for'",
+        "Line breaks and word splits due to formatting: 'recombina hemagglutinin', 'puri\ufb01edHAproteins', 'd i thi ll li i b l i t (A t h lif i l'",
+        "Some explanatory parenthetical text about moths, caterpillars, and butterflies is present in the document but not in the quote",
+        "Order of some phrases is slightly altered due to formatting, but all key information is present",
+        "Ellipsis in the quote is replaced by full parenthetical explanation in the document"
+      ]
+    },
+    {
+      "id": 2,
+      "quote": "Flublok contains recombinant HA proteins of the three strains of in\ufb02uenza virus speci\ufb01ed by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response measured by hemagglutination inhibition (HI) antibodies.",
+      "relevance_explanation": "This quote confirms that the recombinant HA antigens in Flublok induce an antibody response, which is relevant to the claim about immunogenicity.",
+      "verification_status": "verified",
+      "confidence": "high",
+      "actual_text": "Flublok contains recombinant HAproteins of the three strains of in\ufb02uenza virus speci\ufb01ed by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response measured by hemagglutination",
+      "differences": [
+        "Spacing difference: 'HAproteins' vs 'HA proteins'",
+        "The quote in the document is cut off and does not include '(HI) antibodies' at the end, but the meaning is preserved up to 'measured by hemagglutination'",
+        "Ligature differences: 'in\ufb02uenza', 'speci\ufb01ed'"
+      ]
+    },
+    {
+      "id": 3,
+      "quote": "Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recombinant in\ufb02uenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
+      "relevance_explanation": "This reference is to a published study that directly compares the immunogenicity of recombinant HA (produced using BEVS) and egg-derived vaccines, supporting the claim contextually. However, the document does not provide the study's results verbatim.",
+      "verification_status": "verified",
+      "confidence": "high",
+      "actual_text": "Keitel WA, Tre an or JJ, El Sahly HM, et.al. Comparative immunogen i city of recom- bin ant in\ufb02uenza hemagglutinin (rHA) and trivalent in activated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
+      "differences": [
+        "Spacing differences in author name: 'Treanor JJ' vs 'Tre an or JJ'",
+        "Spacing differences in 'immunogenicity': 'immunogenicity' vs 'immunogen i city'",
+        "Hyphenation in 'recombinant': 'recombinant' vs 'recom- bin ant'",
+        "Spacing in 'inactivated': 'inactivated' vs 'in activated'",
+        "Ligature differences: 'influenza' vs 'in\ufb02uenza'"
+      ]
+    }
+  ],
+  "failed_snippets": [],
+  "model_used": "gpt-4.1"
+}

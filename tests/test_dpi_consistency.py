@@ -84,7 +84,7 @@ class TestDPIConsistency:
     
     def test_metadata_preservation(self):
         """Test that DPI metadata is preserved in blocks."""
-        from src.injestion.models.document import Block
+        from src.interfaces import Block
         
         # Create block with DPI metadata
         block = Block(

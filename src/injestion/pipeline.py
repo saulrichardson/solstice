@@ -16,9 +16,12 @@ from .storage.paths import pages_dir, stage_dir, save_json, load_json, doc_id
 import layoutparser as lp
 
 from .processing.layout_detector import LayoutDetectionPipeline
-from .models.box import Box
+from .processing.box import Box
 from .processing.overlap_resolver import no_overlap_pipeline, expand_boxes
-from .models.document import Block, Document
+
+# Core data models are defined in ``src.interfaces``.  The previous import
+# path via ``injestion.models`` has been retired.
+from src.interfaces import Block, Document
 from .processing.text_extractor import extract_document_content
 from .processing.reading_order import determine_reading_order_simple
 from .visualization.layout_visualizer import visualize_page_layout

@@ -64,15 +64,11 @@ class RegexVerifier(BaseAgent):
         content_path = self.pdf_dir / "extracted" / "content.json"
         document_data = self.load_json(content_path)
         
-        # Import here to avoid circular imports
-        from src.injestion.models.document import Document
-        from src.injestion.processing.fact_check_interface import FactCheckInterface
+        # Import document utilities
+        from ..utils import document_utils
         
-        document = Document(**document_data)
-        interface = FactCheckInterface(document)
-        
-        # Get normalized full text
-        full_text = interface.get_full_text(include_figure_descriptions=True, normalize=True)
+        # Get normalized full text using utility
+        full_text = document_utils.get_text(document_data, include_figures=True)
         
         # Process snippets
         snippets_to_verify = evidence_data.get(self.input_field, [])
@@ -141,15 +137,14 @@ class RegexVerifier(BaseAgent):
         return output
     
     def _normalize_text(self, text: str) -> str:
-        """Normalize text for matching."""
-        # Normalize whitespace
-        text = " ".join(text.split())
-        # Remove extra spaces around punctuation
-        text = re.sub(r'\s+([.,;:!?])', r'\1', text)
-        text = re.sub(r'([.,;:!?])\s+', r'\1 ', text)
-        # Normalize quotes
+        """Minimal text normalization for matching.
+        
+        Note: Most normalization is already done by ingestion pipeline.
+        This only handles quote variations for better matching.
+        """
+        # Only normalize quote variations (not handled by ingestion)
         text = text.replace('"', '"').replace('"', '"').replace("'", "'").replace("'", "'")
-        return text.strip()
+        return text
     
     def _verify_exact(self, quote: str, document: str) -> Dict[str, Any]:
         """Verify exact match with normalized text."""

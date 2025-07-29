@@ -1,11 +1,11 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "document": "FlublokPI",
   "verification_stats": {
-    "total_snippets": 2,
+    "total_snippets": 1,
     "verified": 0,
-    "failed": 2,
+    "failed": 1,
     "modified": 0,
     "exact_matches": 0,
     "fuzzy_matches": 0
@@ -13,25 +13,12 @@
   "verified_snippets": [],
   "failed_snippets": [
     {
-      "id": 2,
-      "quote": "Across three clinical trials (Studies 2 \u2013 4, Tables 2 and 3) a total of 2050 adults age 50 years and older received Flublok and 2048 received a U.S.-licensed trivalent inactivated in\ufb02uenza vaccine (IIV3) comparator.",
-      "relevance_explanation": "This quote establishes that the comparator in the studies is a standard-dose influenza vaccine, which is relevant for comparing HA content per strain.",
+      "id": 1,
+      "quote": "Flublok contains recombinant HA proteins of the three strains of in\ufb02uenza virus speci\ufb01ed by health authorities for inclusion in the annual seasonal vaccine.",
+      "relevance_explanation": "This quote directly states that Flublok contains the hemagglutinin (HA) proteins from the three influenza virus strains specified by health authorities (such as WHO and FDA) for the annual vaccine, supporting the claim that Flublok ensures an identical antigenic match with the selected strains.",
       "location": {
-        "start": 3847,
-        "end": 4063,
-        "page_index": 1,
-        "page_number": 2
-      },
-      "verification_status": "failed",
-      "failure_reason": "Quote not found in document"
-    },
-    {
-      "id": 3,
-      "quote": "Data from a randomized, controlled trial demonstrated that children 6 months to less than 3 years of age had diminished hemagglutinin inhibition (HI) responses to Flublok compared to a U.S.-licensed in\ufb02uenza vaccine approved for use in this population, strongly suggesting that Flublok would not be effective in children younger than 3 years of age (6).",
-      "relevance_explanation": "This quote references a U.S.-licensed influenza vaccine as a comparator, which is typically a standard-dose vaccine containing 15 mcg HA per strain, supporting the context for the claim.",
-      "location": {
-        "start": 17134,
-        "end": 17475,
+        "start": 14703,
+        "end": 14858,
         "page_index": 2,
         "page_number": 3
       },

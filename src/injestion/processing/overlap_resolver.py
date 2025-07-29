@@ -11,7 +11,7 @@ from typing import List, Tuple, Optional, Dict
 from dataclasses import dataclass
 from enum import Enum
 
-from ..models.box import Box
+from .box import Box
 
 
 def expand_boxes(boxes: List[Box], padding: float = 10.0, page_width: float = None, page_height: float = None) -> List[Box]:

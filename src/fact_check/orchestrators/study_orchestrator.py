@@ -185,13 +185,12 @@ class StudyOrchestrator:
         for verdict, count in summary["judgment_distribution"].items():
             print(f"  {verdict}: {count}")
     
-    def save_results(self, output_path: Optional[Path] = None):
-        """Save study results to file."""
-        if output_path is None:
-            output_dir = Path("data/studies")
-            output_dir.mkdir(parents=True, exist_ok=True)
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            output_path = output_dir / f"study_results_{timestamp}.json"
+    def save_results(self):
+        """Save study results to timestamped file."""
+        output_dir = Path("data/studies")
+        output_dir.mkdir(parents=True, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_path = output_dir / f"study_results_{timestamp}.json"
         
         with open(output_path, 'w') as f:
             json.dump(self.results, f, indent=2)

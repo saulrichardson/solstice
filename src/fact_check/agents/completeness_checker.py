@@ -71,12 +71,11 @@ class CompletenessChecker(BaseAgent):
         content_path = self.pdf_dir / "extracted" / "content.json"
         document_data = self.load_json(content_path)
         
-        # Import here to avoid circular imports
-        from src.interfaces import Document, StandardDocumentReader
+        # Import document utilities
+        from ..utils import document_utils
         
-        document = Document(**document_data)
-        interface = StandardDocumentReader(document)
-        normalized_text = interface.get_full_text(include_figure_descriptions=True, normalize=True)
+        # Get normalized text using utility
+        normalized_text = document_utils.get_text(document_data, include_figures=True)
         
         claim = self.config.get("claim")
         if not claim:

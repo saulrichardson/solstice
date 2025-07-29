@@ -1,0 +1,58 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "FlublokPI",
+  "verification_stats": {
+    "total_snippets": 3,
+    "verified": 3,
+    "failed": 0,
+    "high_confidence": 3,
+    "medium_confidence": 0,
+    "low_confidence": 0
+  },
+  "verified_snippets": [
+    {
+      "id": 1,
+      "quote": "For the 2024-2025 in\ufb02uenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 in\ufb02uenza virus strains...",
+      "relevance_explanation": "This quote specifies the total hemagglutinin (HA) antigen content in Flublok (135 mcg per dose, 45 mcg per strain), which is three times the standard 15 mcg per strain in standard-dose flu vaccines.",
+      "verification_status": "verified",
+      "confidence": "high",
+      "actual_text": "For the 2024-2025in\ufb02uenzaseasonit is formulatedtocontain135 mcgHA per 0.5 mLdose, with45 mcgHAof each of thefollowing3in\ufb02uenzavirusstrains:",
+      "differences": [
+        "Spacing differences: '2024-2025in\ufb02uenzaseasonit is formulatedtocontain135 mcgHA per 0.5 mLdose, with45 mcgHAof each of thefollowing3in\ufb02uenzavirusstrains:' vs '2024-2025 in\ufb02uenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 in\ufb02uenza virus strains...'",
+        "Ellipsis at the end of the quote is not present in the document",
+        "Ligature differences (e.g., 'in\ufb02uenza' vs 'influenza')"
+      ]
+    },
+    {
+      "id": 2,
+      "quote": "Flublok contains recombinant HA proteins of the three strains of in\ufb02uenza virus speci\ufb01ed by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response measured by hemagglutination inhibition (HI) antibodies to each virus strain.",
+      "relevance_explanation": "This quote explains that the HA proteins in Flublok are the immunogenic components responsible for inducing an immune response, directly relating HA content to immunogenicity.",
+      "verification_status": "verified",
+      "confidence": "high",
+      "actual_text": "Flublok contains recombinant HAproteins of the three strains of in\ufb02uenza virus speci\ufb01ed by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response measured by hemagglutination",
+      "differences": [
+        "Spacing difference: 'HAproteins' vs 'HA proteins'",
+        "The document text is truncated and does not include the full phrase 'measured by hemagglutination inhibition (HI) antibodies to each virus strain.' However, the meaning is preserved up to 'measured by hemagglutination'."
+      ]
+    },
+    {
+      "id": 3,
+      "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recombinant in\ufb02uenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
+      "relevance_explanation": "This reference is cited in the context of clinical studies and supports the claim that Flublok (with higher HA content) has been shown to have greater immunogenicity compared to standard-dose flu vaccines.",
+      "verification_status": "verified",
+      "confidence": "high",
+      "actual_text": "3. Keitel WA, Tre an or JJ, El Sahly HM, et.al. Comparative immunogen i city of recom- bin ant in\ufb02uenza hemagglutinin (rHA) and trivalent in activated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
+      "differences": [
+        "Spacing differences in author name: 'Treanor JJ' vs 'Tre an or JJ'",
+        "Spacing differences in 'immunogenicity': 'immunogenicity' vs 'immunogen i city'",
+        "Hyphenation in 'recombinant': 'recombinant' vs 'recom- bin ant'",
+        "Spacing in 'inactivated': 'inactivated' vs 'in activated'",
+        "Ligature differences: 'fi' and 'fl' appear as '\ufb01' and '\ufb02' in document",
+        "Punctuation: period after 'et.al.' in both, but spacing may differ"
+      ]
+    }
+  ],
+  "failed_snippets": [],
+  "model_used": "gpt-4.1"
+}

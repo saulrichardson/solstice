@@ -8,8 +8,6 @@ import sys
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-# Import injestion first to ensure proper module setup
-import src.injestion
 from src.fact_check.orchestrators import StudyOrchestrator
 
 
@@ -67,11 +65,6 @@ Default claims: {default_claims if has_default_claims else 'Not found'}
     )
     
     parser.add_argument(
-        "--output",
-        help="Output file path for results"
-    )
-    
-    parser.add_argument(
         "--cache-dir",
         default="data/cache",
         help="Cache directory (default: data/cache)"
@@ -86,8 +79,8 @@ Default claims: {default_claims if has_default_claims else 'Not found'}
     parser.add_argument(
         "--agents",
         nargs="+",
-        choices=["supporting_evidence", "regex_verifier", "evidence_critic", "evidence_judge"],
-        default=["supporting_evidence", "regex_verifier", "evidence_critic", "evidence_judge"],
+        choices=["supporting_evidence", "quote_verifier", "evidence_critic", "completeness_checker", "evidence_judge"],
+        default=["supporting_evidence", "quote_verifier", "evidence_critic", "evidence_judge"],
         help="Which agents to run (default: all agents)"
     )
     
@@ -172,8 +165,7 @@ Default claims: {default_claims if has_default_claims else 'Not found'}
         results = asyncio.run(orchestrator.run())
         
         # Save results
-        output_path = Path(args.output) if args.output else None
-        saved_path = orchestrator.save_results(output_path)
+        saved_path = orchestrator.save_results()
         
     except KeyboardInterrupt:
         print("\n\nStudy interrupted by user")
