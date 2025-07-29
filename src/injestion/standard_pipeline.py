@@ -9,6 +9,7 @@ from .base_pipeline import BasePDFPipeline
 from .processing.layout_detector import LayoutDetectionPipeline
 from .processing.overlap_resolver import no_overlap_pipeline, expand_boxes
 from .processing.box import Box
+from .processing.noop_consolidator import NoOpConsolidator
 from src.interfaces import Block, Document
 from .processing.text_extractor import extract_document_content
 from .processing.reading_order import determine_reading_order_simple
@@ -31,8 +32,8 @@ class StandardPipeline(BasePDFPipeline):
         )
     
     def _create_consolidator(self):
-        """Standard pipeline uses functional consolidation."""
-        return None  # We use functional approach
+        """Standard pipeline uses functional consolidation via NoOpConsolidator."""
+        return NoOpConsolidator()
     
     def _apply_consolidation(self, layouts: List, images: List) -> List:
         """Apply functional box consolidation."""

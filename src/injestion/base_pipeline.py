@@ -4,13 +4,14 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
-from typing import List, Optional, Type
+from typing import List, Optional, Type, Union
 from abc import ABC, abstractmethod
 
 from pdf2image import convert_from_path
 from src.interfaces import Document
 from .storage.paths import pages_dir, stage_dir
 from .config import IngestionConfig, DEFAULT_CONFIG
+from .processing.box import Box
 
 
 class BasePDFPipeline(ABC):
@@ -90,13 +91,19 @@ class BasePDFPipeline(ABC):
         return images
     
     @abstractmethod
-    def _apply_consolidation(self, layouts: List, images: List) -> List:
-        """Apply box consolidation strategy."""
+    def _apply_consolidation(self, layouts: List, images: List) -> List[List[Box]]:
+        """Apply box consolidation strategy.
+        
+        Must return List[List[Box]] for consistency across pipelines.
+        """
         pass
     
     @abstractmethod
-    def _create_document(self, layouts: List, pdf_path: Path, images: List) -> Document:
-        """Convert layouts to Document format."""
+    def _create_document(self, layouts: List[List[Box]], pdf_path: Path, images: List) -> Document:
+        """Convert layouts to Document format.
+        
+        Expects layouts as List[List[Box]] from _apply_consolidation.
+        """
         pass
     
     @abstractmethod

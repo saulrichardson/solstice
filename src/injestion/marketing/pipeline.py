@@ -64,7 +64,7 @@ class MarketingPipeline(BasePDFPipeline):
         
         # Convert PDF to images
         print(f"Converting {pdf_path.name} to images...")
-        images = convert_from_path(str(pdf_path), dpi=self.detection_dpi)
+        images = convert_from_path(str(pdf_path), dpi=self.config.detection_dpi)
         
         # Save page images
         page_dir = pages_dir(pdf_path)
@@ -80,7 +80,7 @@ class MarketingPipeline(BasePDFPipeline):
         self._save_raw_layouts(layouts, pdf_path, images)
         
         # Apply consolidation
-        if self.expand_boxes or self.apply_overlap_resolution:
+        if self.config.expand_boxes or self.config.merge_overlapping:
             print("Applying consolidation...")
             layouts = self._apply_consolidation(layouts, images)
         
@@ -109,9 +109,11 @@ class MarketingPipeline(BasePDFPipeline):
         
         return document
     
-    def _apply_consolidation(self, layouts: List, images: List = None) -> List:
-        """Apply consolidation to layouts using the BoxConsolidator."""
-        import layoutparser as lp
+    def _apply_consolidation(self, layouts: List, images: List) -> List[List[Box]]:
+        """Apply consolidation to layouts using the BoxConsolidator.
+        
+        Returns List[List[Box]] for consistency with StandardPipeline.
+        """
         import uuid
         
         consolidated_layouts = []
@@ -135,8 +137,15 @@ class MarketingPipeline(BasePDFPipeline):
             
             # Apply consolidation if enabled
             if self.config.merge_overlapping and boxes:
-                image_width = images[page_idx].width if images and page_idx < len(images) else None
-                image_height = images[page_idx].height if images and page_idx < len(images) else None
+                # Fail-fast: require valid image dimensions
+                if page_idx >= len(images):
+                    raise IndexError(f"Page {page_idx} not found in images list")
+                
+                image_width = images[page_idx].width
+                image_height = images[page_idx].height
+                
+                if image_width <= 0 or image_height <= 0:
+                    raise ValueError(f"Invalid image dimensions on page {page_idx}: {image_width}x{image_height}")
                 
                 # Use the consolidator to handle all box operations
                 boxes = self.consolidator.consolidate_boxes(
@@ -145,42 +154,21 @@ class MarketingPipeline(BasePDFPipeline):
                     image_height=image_height
                 )
             
-            # Convert back to layoutparser format
-            new_layout = []
-            for box in boxes:
-                block = lp.Rectangle(box.bbox[0], box.bbox[1], box.bbox[2], box.bbox[3])
-                elem = lp.TextBlock(
-                    block,
-                    type=box.label,
-                    score=box.score
-                )
-                new_layout.append(elem)
-            
-            consolidated_layouts.append(lp.Layout(new_layout))
+            # Return Box objects directly
+            consolidated_layouts.append(boxes)
         
         return consolidated_layouts
     
-    def _create_document(self, layouts: List, pdf_path: Path, images: List) -> Document:
-        """Convert layout detection results to Document format."""
+    def _create_document(self, layouts: List[List[Box]], pdf_path: Path, images: List) -> Document:
+        """Convert layout detection results to Document format.
+        
+        Now expects layouts as List[List[Box]] for consistency.
+        """
         all_blocks = []
         reading_order_by_page = []
         
-        for page_idx, (layout, image) in enumerate(zip(layouts, images)):
-            # Convert to Box objects
-            page_boxes = []
-            for elem_idx, elem in enumerate(layout):
-                box = Box(
-                    id=f"p{page_idx}_e{elem_idx}",
-                    bbox=(
-                        elem.block.x_1,
-                        elem.block.y_1,
-                        elem.block.x_2,
-                        elem.block.y_2
-                    ),
-                    label=str(elem.type),
-                    score=float(elem.score)
-                )
-                page_boxes.append(box)
+        for page_idx, (page_boxes, image) in enumerate(zip(layouts, images)):
+            # page_boxes is already a list of Box objects
             
             # Determine reading order
             page_width = image.width
