@@ -95,10 +95,22 @@ The gateway provides API access to the processing capabilities.
 ## Architecture
 
 - **Ingestion Pipeline**: Processes PDFs using layout detection to extract structured content
-  - Uses native PDF text extraction (PyMuPDF)
+  - Uses native PDF text extraction (PyMuPDF) with automatic text processing
+  - Applies intelligent spacing fixes using WordNinja
   - Automatically handles tables and figures as images
+  - Modular text processing service for consistent text quality
 - **Fact Checking**: Agent-based system that extracts supporting evidence for claims from clinical documents
 - **Gateway Service**: Proxy service for LLM API calls (OpenAI, Anthropic, etc.)
+
+### Text Processing
+
+The ingestion pipeline includes an automatic text processing service that:
+- Fixes spacing issues common in PDFs (e.g., "theinformationneeded" → "the information needed")
+- Preserves medical terms and trademarks (e.g., "Flublok®")
+- Handles punctuation and unit normalization
+- Uses WordNinja for intelligent word segmentation based on Google n-grams
+
+This ensures that downstream components (fact-checking, LLMs) receive properly formatted text.
 
 ## Troubleshooting
 

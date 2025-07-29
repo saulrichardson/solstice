@@ -72,11 +72,10 @@ class CompletenessChecker(BaseAgent):
         document_data = self.load_json(content_path)
         
         # Import here to avoid circular imports
-        from src.injestion.models.document import Document
-        from src.injestion.processing.fact_check_interface import FactCheckInterface
+        from src.interfaces import Document, StandardDocumentReader
         
         document = Document(**document_data)
-        interface = FactCheckInterface(document)
+        interface = StandardDocumentReader(document)
         normalized_text = interface.get_full_text(include_figure_descriptions=True, normalize=True)
         
         claim = self.config.get("claim")

@@ -111,11 +111,16 @@ class FinalSpacingFixer:
         if word.lower() in self.preserve_words:
             return False
         
-        # Don't split if it has mixed case in the middle (likely correct)
-        # e.g., "JavaScript", "iPhone"
-        inner = word[1:-1] if len(word) > 2 else ''
-        if inner and any(c.isupper() for c in inner) and any(c.islower() for c in inner):
-            return False
+        # For very long words (likely concatenated), always try to split
+        if len(word) > 20:
+            # Skip the mixed case check for long words
+            pass
+        else:
+            # Don't split if it has mixed case in the middle (likely correct)
+            # e.g., "JavaScript", "iPhone"
+            inner = word[1:-1] if len(word) > 2 else ''
+            if inner and any(c.isupper() for c in inner) and any(c.islower() for c in inner):
+                return False
         
         # Try splitting to see if we get multiple valid words
         test_split = wordninja.split(word.lower())
@@ -123,8 +128,8 @@ class FinalSpacingFixer:
             # It split into multiple words, probably needs splitting
             return True
         
-        # Not a known word, probably needs splitting
-        return True
+        # Single word result - only split if it's very long
+        return len(word) > 15
     
     def _split_word(self, word: str) -> List[str]:
         """Split a word using WordNinja."""
@@ -141,9 +146,17 @@ class FinalSpacingFixer:
         
         # If we had a symbol, add it back to the appropriate word
         if has_symbol and '®' in word:
-            # Find which word should have the symbol
-            if 'flublok' in [w.lower() for w in split_words]:
-                idx = [w.lower() for w in split_words].index('flublok')
+            # Handle "flu blok" being split from "flublok"
+            words_lower = [w.lower() for w in split_words]
+            if 'flu' in words_lower and 'blok' in words_lower:
+                flu_idx = words_lower.index('flu')
+                blok_idx = words_lower.index('blok')
+                if blok_idx == flu_idx + 1:  # They're adjacent
+                    # Merge them back and add symbol
+                    split_words[flu_idx] = 'Flublok®'
+                    split_words.pop(blok_idx)
+            elif 'flublok' in words_lower:
+                idx = words_lower.index('flublok')
                 split_words[idx] = split_words[idx] + '®'
         
         # Restore capitalization
@@ -151,14 +164,20 @@ class FinalSpacingFixer:
     
     def _validate_split(self, split_words: List[str]) -> bool:
         """Check if a split is valid."""
-        # Don't accept too many tiny pieces
-        if len(split_words) > 5:
+        # Don't accept too many tiny pieces (unless they're mostly valid words)
+        if len(split_words) > 10:
             return False
         
         # Check each word
         for word in split_words:
             # Accept valid short words
             if word in self.valid_short_words:
+                continue
+            # Accept pure numeric tokens (e.g. "18") that are meaningful on
+            # their own. Treating them as invalid causes the entire split to
+            # be rejected which in turn prevents WordNinja from separating
+            # strings like "18yearsandolder".
+            if word.isdigit():
                 continue
             # Reject single letters except 'a' and 'i'
             if len(word) == 1 and word not in ['a', 'i']:

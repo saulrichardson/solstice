@@ -5,13 +5,25 @@
     "pdf_name": "FlublokPI",
     "source_pdf": "data/clinical_files/FlublokPI.pdf",
     "total_pages": 5,
-    "total_blocks": 76
+    "total_blocks": 73
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 0,
+    "total_snippets_found": 1,
     "error": null
   },
-  "supporting_snippets": [],
+  "supporting_snippets": [
+    {
+      "id": 2,
+      "quote": "Flublok contains recombinant HA proteins of the three strains of in\ufb02uenza virus speci\ufb01ed by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response measured by hemagglutination inhibition (HI) antibody titers.",
+      "relevance_explanation": "This quote supports the claim by confirming that Flublok contains recombinant HA proteins, which are the product of the novel production platform described in the claim.",
+      "location": {
+        "start": 14703,
+        "end": 14996,
+        "page_index": 2,
+        "page_number": 3
+      }
+    }
+  ],
   "model_used": "gpt-4.1"
 }

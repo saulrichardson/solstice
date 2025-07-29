@@ -33,7 +33,7 @@ CONFIDENCE_WEIGHT = 0.7  # Weight for confidence in conflict resolution
 AREA_WEIGHT = 0.3  # Weight for box area in conflict resolution
 CREATE_VISUALIZATIONS = True  # Always create visualizations
 EXPAND_BOXES = True  # Expand boxes to prevent text cutoffs
-BOX_PADDING = 10.0  # Pixels to expand in each direction
+BOX_PADDING = 20.0  # Pixels to expand in each direction (increased to prevent text cutoff)
 
 # ---------------------------------------------------------------------------
 # Helper functions

@@ -9,8 +9,8 @@ from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 from PIL import Image
 
-from ..models.document import Document, Block
-from ..storage.paths import pages_dir, stage_dir
+from src.interfaces import Document, Block
+from ..storage.paths import pages_dir, stage_dir, extracted_content_path
 
 
 # Color map for different element types
@@ -254,9 +254,6 @@ def visualize_pipeline_results(
     Returns:
         List of paths to saved visualization files
     """
-    from ..storage.paths import extracted_content_path
-    from ..models.document import Document
-    
     # Load the processed document
     doc_path = extracted_content_path(pdf_path)
     if not doc_path.exists():

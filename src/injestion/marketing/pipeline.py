@@ -1,4 +1,4 @@
-"""Marketing document processing pipeline."""
+"""Marketing document processing pipeline - Simplified version."""
 
 from __future__ import annotations
 
@@ -8,10 +8,9 @@ from typing import List, Optional
 from pdf2image import convert_from_path
 
 from .detector import MarketingLayoutDetector
-from .vision_adjuster import MarketingVisionAdjuster
+from .consolidation import BoxConsolidator
 from ..models.box import Box
-from ..models.document import Block, Document
-from ..processing.overlap_resolver import no_overlap_pipeline
+from src.interfaces import Block, Document
 from ..processing.reading_order import determine_reading_order_simple
 from ..processing.text_extractor import extract_document_content
 from ..storage.paths import stage_dir, save_json, pages_dir
@@ -23,40 +22,44 @@ class MarketingPipeline:
     
     This pipeline:
     1. Uses PrimaLayout for better marketing document detection
-    2. Optionally applies vision LLM adjustments
+    2. Applies advanced box consolidation and overlap resolution
     3. Integrates with existing document processing infrastructure
     """
     
     def __init__(
         self,
-        use_vision_adjustment: bool = True,
         score_threshold: float = 0.15,
         nms_threshold: float = 0.4,
         detection_dpi: int = 400,
-        create_visualizations: bool = True,
-        apply_overlap_resolution: bool = False,  # Default to False for marketing
+        apply_overlap_resolution: bool = True,
+        expand_boxes: bool = True,
+        box_padding: float = 20.0,
+        merge_threshold: float = 0.2,
     ):
         """Initialize marketing pipeline.
         
         Parameters
         ----------
-        use_vision_adjustment
-            Whether to use vision LLM for layout improvements
         score_threshold
             Detection confidence threshold
         nms_threshold
             Non-maximum suppression threshold
         detection_dpi
             DPI for PDF rasterization
-        create_visualizations
-            Whether to create visualization outputs
         apply_overlap_resolution
-            Whether to apply overlap resolution (can lose content if too aggressive)
+            Whether to apply overlap resolution
+        expand_boxes
+            Whether to expand boxes to prevent text cutoffs
+        box_padding
+            Pixels to expand boxes in each direction
+        merge_threshold
+            IoU threshold for merging same-type boxes (0.2 = 20% overlap)
         """
-        self.use_vision_adjustment = use_vision_adjustment
         self.detection_dpi = detection_dpi
-        self.create_visualizations = create_visualizations
         self.apply_overlap_resolution = apply_overlap_resolution
+        self.expand_boxes = expand_boxes
+        self.box_padding = box_padding
+        self.merge_threshold = merge_threshold
         
         # Initialize components
         self.detector = MarketingLayoutDetector(
@@ -64,30 +67,21 @@ class MarketingPipeline:
             nms_threshold=nms_threshold
         )
         
-        if use_vision_adjustment:
-            self.adjuster = MarketingVisionAdjuster()
-        else:
-            self.adjuster = None
+        # Initialize box consolidator
+        self.consolidator = BoxConsolidator(
+            merge_threshold=merge_threshold,
+            expand_padding=box_padding if expand_boxes else 0.0
+        )
     
     def process_pdf(self, pdf_path: str | os.PathLike[str]) -> Document:
-        """Process a marketing PDF document.
-        
-        Parameters
-        ----------
-        pdf_path
-            Path to PDF file
-            
-        Returns
-        -------
-        Document object with detected and processed content
-        """
+        """Process a marketing PDF document."""
         pdf_path = Path(pdf_path)
         
-        # Convert PDF to images and save them
+        # Convert PDF to images
         print(f"Converting {pdf_path.name} to images...")
         images = convert_from_path(str(pdf_path), dpi=self.detection_dpi)
         
-        # Save page images for visualization
+        # Save page images
         page_dir = pages_dir(pdf_path)
         page_dir.mkdir(parents=True, exist_ok=True)
         for idx, img in enumerate(images):
@@ -97,13 +91,13 @@ class MarketingPipeline:
         print("Running PrimaLayout detection...")
         layouts = self.detector.detect_images(images)
         
-        # Save raw layouts for debugging
+        # Save raw layouts
         self._save_raw_layouts(layouts, pdf_path, images)
         
-        # Apply vision adjustments if enabled
-        if self.use_vision_adjustment and self.adjuster:
-            print("Applying vision LLM adjustments...")
-            layouts = self.adjuster.adjust_layouts(layouts, images)
+        # Apply consolidation
+        if self.expand_boxes or self.apply_overlap_resolution:
+            print("Applying consolidation...")
+            layouts = self._apply_consolidation(layouts, images)
         
         # Convert to document format
         document = self._layouts_to_document(layouts, pdf_path, images)
@@ -114,32 +108,76 @@ class MarketingPipeline:
             document, 
             pdf_path, 
             self.detection_dpi,
-            text_extractor="pymupdf"  # Use PyMuPDF for marketing docs
+            text_extractor="pymupdf"
         )
         
         # Save outputs
         self._save_outputs(document, pdf_path)
         
-        # Create visualizations if requested
-        if self.create_visualizations:
-            print("Creating visualizations...")
-            visualize_document(
-                document,
-                pdf_path,
-                show_labels=True,
-                show_reading_order=True
-            )
+        # Create visualizations (always)
+        print("Creating visualizations...")
+        visualize_document(
+            document,
+            pdf_path,
+            show_labels=True,
+            show_reading_order=True
+        )
         
         return document
     
-    def _layouts_to_document(
-        self, 
-        layouts: List,
-        pdf_path: Path,
-        images: List
-    ) -> Document:
-        """Convert layout detection results to Document format."""
+    def _apply_consolidation(self, layouts: List, images: List = None) -> List:
+        """Apply consolidation to layouts using the BoxConsolidator."""
+        import layoutparser as lp
+        import uuid
         
+        consolidated_layouts = []
+        
+        for page_idx, layout in enumerate(layouts):
+            # Convert to Box objects
+            boxes = []
+            for elem in layout:
+                box = Box(
+                    id=str(uuid.uuid4())[:8],
+                    bbox=(
+                        elem.block.x_1,
+                        elem.block.y_1,
+                        elem.block.x_2,
+                        elem.block.y_2
+                    ),
+                    label=str(elem.type),
+                    score=float(elem.score)
+                )
+                boxes.append(box)
+            
+            # Apply consolidation if enabled
+            if self.apply_overlap_resolution and boxes:
+                image_width = images[page_idx].width if images and page_idx < len(images) else None
+                image_height = images[page_idx].height if images and page_idx < len(images) else None
+                
+                # Use the consolidator to handle all box operations
+                boxes = self.consolidator.consolidate_boxes(
+                    boxes, 
+                    image_width=image_width,
+                    image_height=image_height
+                )
+            
+            # Convert back to layoutparser format
+            new_layout = []
+            for box in boxes:
+                block = lp.Rectangle(box.bbox[0], box.bbox[1], box.bbox[2], box.bbox[3])
+                elem = lp.TextBlock(
+                    block,
+                    type=box.label,
+                    score=box.score
+                )
+                new_layout.append(elem)
+            
+            consolidated_layouts.append(lp.Layout(new_layout))
+        
+        return consolidated_layouts
+    
+    def _layouts_to_document(self, layouts: List, pdf_path: Path, images: List) -> Document:
+        """Convert layout detection results to Document format."""
         all_blocks = []
         reading_order_by_page = []
         
@@ -160,32 +198,25 @@ class MarketingPipeline:
                 )
                 page_boxes.append(box)
             
-            # Apply overlap resolution if enabled
-            if self.apply_overlap_resolution and page_boxes:
-                page_boxes = no_overlap_pipeline(
-                    boxes=page_boxes,
-                    merge_same_type_first=True,
-                    merge_threshold=0.1  # Only merge if 10%+ overlap
-                )
-            
             # Determine reading order
             page_width = image.width
             reading_order = determine_reading_order_simple(page_boxes, page_width)
             reading_order_by_page.append(reading_order)
             
             # Convert to Block objects
-            for box in page_boxes:
+            for box_idx, box in enumerate(page_boxes):
+                metadata = {
+                    "score": box.score,
+                    "detection_dpi": self.detection_dpi,
+                    "detector": "PrimaLayout"
+                }
+                
                 block = Block(
                     id=box.id,
                     page_index=page_idx,
                     role=self._map_role(box.label),
                     bbox=box.bbox,
-                    metadata={
-                        "score": box.score,
-                        "detection_dpi": self.detection_dpi,
-                        "detector": "PrimaLayout",
-                        "adjusted": self.use_vision_adjustment
-                    }
+                    metadata=metadata
                 )
                 all_blocks.append(block)
         
@@ -196,7 +227,6 @@ class MarketingPipeline:
             metadata={
                 "pipeline": "marketing",
                 "detection_dpi": self.detection_dpi,
-                "vision_adjusted": self.use_vision_adjustment,
                 "total_pages": len(layouts)
             },
             reading_order=reading_order_by_page
@@ -216,7 +246,6 @@ class MarketingPipeline:
     
     def _save_outputs(self, document: Document, pdf_path: Path):
         """Save processing outputs."""
-        # Save to marketing-specific directory
         output_dir = stage_dir("marketing", pdf_path)
         
         # Save document
@@ -228,8 +257,7 @@ class MarketingPipeline:
             "source": str(pdf_path),
             "pages": document.metadata.get("total_pages", 0),
             "blocks": len(document.blocks),
-            "blocks_by_type": {},
-            "vision_adjusted": self.use_vision_adjustment
+            "blocks_by_type": {}
         }
         
         for block in document.blocks:
@@ -258,56 +286,55 @@ class MarketingPipeline:
         
         save_json(raw_data, raw_dir / "raw_layouts.json")
         
-        # Create visualization of raw layouts
-        if self.create_visualizations:
-            viz_dir = raw_dir / "visualizations"
-            viz_dir.mkdir(exist_ok=True)
+        # Create visualization of raw layouts (always)
+        viz_dir = raw_dir / "visualizations"
+        viz_dir.mkdir(exist_ok=True)
+        
+        import matplotlib.pyplot as plt
+        import matplotlib.patches as patches
+        
+        for page_idx, (layout, image) in enumerate(zip(layouts, images)):
+            fig, ax = plt.subplots(1, 1, figsize=(12, 16))
+            ax.imshow(image)
             
-            import matplotlib.pyplot as plt
-            import matplotlib.patches as patches
+            colors = {
+                "TextRegion": "blue",
+                "ImageRegion": "green",
+                "TableRegion": "orange",
+                "SeparatorRegion": "red",
+                "OtherRegion": "purple"
+            }
             
-            for page_idx, (layout, image) in enumerate(zip(layouts, images)):
-                fig, ax = plt.subplots(1, 1, figsize=(12, 16))
-                ax.imshow(image)
+            for i, elem in enumerate(layout):
+                rect = patches.Rectangle(
+                    (elem.block.x_1, elem.block.y_1),
+                    elem.block.x_2 - elem.block.x_1,
+                    elem.block.y_2 - elem.block.y_1,
+                    linewidth=1,
+                    edgecolor=colors.get(str(elem.type), "black"),
+                    facecolor='none',
+                    alpha=0.6
+                )
+                ax.add_patch(rect)
                 
-                colors = {
-                    "TextRegion": "blue",
-                    "ImageRegion": "green",
-                    "TableRegion": "orange",
-                    "SeparatorRegion": "red",
-                    "OtherRegion": "purple"
-                }
-                
-                for i, elem in enumerate(layout):
-                    rect = patches.Rectangle(
-                        (elem.block.x_1, elem.block.y_1),
-                        elem.block.x_2 - elem.block.x_1,
-                        elem.block.y_2 - elem.block.y_1,
-                        linewidth=1,
-                        edgecolor=colors.get(str(elem.type), "black"),
-                        facecolor='none',
-                        alpha=0.6
-                    )
-                    ax.add_patch(rect)
-                    
-                    # Add number for reference
-                    ax.text(
-                        elem.block.x_1 + 5,
-                        elem.block.y_1 + 20,
-                        str(i+1),
-                        color='white',
-                        fontsize=8,
-                        bbox=dict(boxstyle="round,pad=0.3", facecolor=colors.get(str(elem.type), "black"), alpha=0.8)
-                    )
-                
-                ax.set_xlim(0, image.width)
-                ax.set_ylim(image.height, 0)
-                ax.axis('off')
-                plt.title(f"Raw PrimaLayout Detection - Page {page_idx + 1} ({len(layout)} regions)")
-                plt.tight_layout()
-                
-                output_path = viz_dir / f"page_{page_idx + 1:03d}_raw.png"
-                plt.savefig(output_path, dpi=150, bbox_inches='tight')
-                plt.close()
+                # Add number for reference
+                ax.text(
+                    elem.block.x_1 + 5,
+                    elem.block.y_1 + 20,
+                    str(i+1),
+                    color='white',
+                    fontsize=8,
+                    bbox=dict(boxstyle="round,pad=0.3", facecolor=colors.get(str(elem.type), "black"), alpha=0.8)
+                )
             
-            print(f"  Raw layout visualizations saved to: {viz_dir}")
+            ax.set_xlim(0, image.width)
+            ax.set_ylim(image.height, 0)
+            ax.axis('off')
+            plt.title(f"Raw PrimaLayout Detection - Page {page_idx + 1} ({len(layout)} regions)")
+            plt.tight_layout()
+            
+            output_path = viz_dir / f"page_{page_idx + 1:03d}_raw.png"
+            plt.savefig(output_path, dpi=150, bbox_inches='tight')
+            plt.close()
+        
+        print(f"  Raw layout visualizations saved to: {viz_dir}")

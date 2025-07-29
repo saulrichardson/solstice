@@ -28,13 +28,15 @@ import os
 from pathlib import Path
 from typing import Any
 
+from src.core.config import settings
+
 # ---------------------------------------------------------------------------
 # Root directories (created lazily when first used)
 # ---------------------------------------------------------------------------
 
 
 _DATA_DIR = Path(__file__).resolve().parents[3] / "data"
-_CACHE_DIR = _DATA_DIR / "cache"
+_CACHE_DIR = Path(settings.filesystem_cache_dir)
 
 # ---------------------------------------------------------------------------
 # Runtime configuration
@@ -90,13 +92,32 @@ def doc_id(pdf_path: os.PathLike | str) -> str:
     import re
     sanitized = re.sub(r'[^\w\-.]', '_', filename)
     
-    # Ensure it's not empty and doesn't start with a dot
+    # Ensure the derived identifier is safe.  When the *sanitised* filename is
+    # empty (happens for paths like ``/tmp/.pdf``) **or** still begins with a
+    # dot, we fall back to a stable eight-character prefix of a SHA-256 hash
+    # rather than returning an illegal directory name.  The preferred source
+    # for that hash is the *file contents* – it guarantees uniqueness for
+    # different, but equally named, temporary files.
+    #
+    # However, callers frequently use :func:`doc_id` for *non-existing* paths
+    # (e.g. to calculate where artefacts *will* be written later on).  Trying
+    # to read such a file would raise *FileNotFoundError* and therefore break
+    # perfectly valid workflows.  To make the helper robust we gracefully
+    # fall back to hashing the *string representation* of the path when the
+    # file is not yet available.
     if not sanitized or sanitized.startswith('.'):
-        # Fallback to hash if filename is problematic
         h = hashlib.sha256()
-        with open(pdf_path, "rb") as fh:
-            for chunk in iter(lambda: fh.read(65536), b""):
-                h.update(chunk)
+
+        try:
+            with open(pdf_path, "rb") as fh:  # type: ignore[arg-type]
+                for chunk in iter(lambda: fh.read(65536), b""):
+                    h.update(chunk)
+        except FileNotFoundError:
+            # Use the path itself as a reasonably unique source – we still get
+            # deterministic output for identical inputs and avoid blowing up
+            # when the file is created later on in the pipeline.
+            h.update(str(pdf_path).encode())
+
         return h.hexdigest()[:8]
     
     return sanitized

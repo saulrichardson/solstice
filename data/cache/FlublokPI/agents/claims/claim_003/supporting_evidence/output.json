@@ -5,13 +5,36 @@
     "pdf_name": "FlublokPI",
     "source_pdf": "data/clinical_files/FlublokPI.pdf",
     "total_pages": 5,
-    "total_blocks": 76
+    "total_blocks": 73
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 0,
+    "total_snippets_found": 2,
     "error": null
   },
-  "supporting_snippets": [],
+  "supporting_snippets": [
+    {
+      "id": 1,
+      "quote": "Vaccine efficacy against antigenic ally matched culture-con\ufb01rmed CDC-ILI could not be determined reliably because 96% of the in\ufb02uenza isolates obtained from subjects in Study 1 were not antigenic ally matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC- ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0).",
+      "relevance_explanation": "This quote provides direct evidence that Flublok (a recombinant vaccine) demonstrated efficacy against influenza strains even when there was a mismatch between the vaccine and circulating strains, supporting the claim of cross-protection in a mismatch season.",
+      "location": {
+        "start": 20923,
+        "end": 21413,
+        "page_index": 3,
+        "page_number": 4
+      }
+    },
+    {
+      "id": 2,
+      "quote": "CDC surveillance data indicated that the majority of in\ufb02uenza A/H3N2 wild type viruses were antigenic ally distinct whereas in\ufb02uenzaA/H1N1 and type B viruses were antigenic ally similar to vaccine antigens during the 2014-2015 season. Study 6 met the pre-speci\ufb01ed success criterion for the primary endpoint (lower limit of the 2 sided 95% CI of vaccine efficacy for Flublok Quad rival ent relative to Comparator should be not less than - 20%).",
+      "relevance_explanation": "This quote shows that Flublok Quadrivalent met efficacy criteria even in a season where the predominant circulating strain (H3N2) was antigenically distinct from the vaccine strain, indicating a broader immune response and potential cross-protection.",
+      "location": {
+        "start": 25026,
+        "end": 25469,
+        "page_index": 3,
+        "page_number": 4
+      }
+    }
+  ],
   "model_used": "gpt-4.1"
 }

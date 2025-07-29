@@ -1,4 +1,4 @@
-.PHONY: help check up down logs test-gateway lint format clean shell restart docker-status
+.PHONY: help check up down logs lint format clean shell restart docker-status
 
 help:
 	@echo "Available commands:"
@@ -6,7 +6,6 @@ help:
 	@echo "  make up                 Start all services"
 	@echo "  make down               Stop all services"
 	@echo "  make logs               Show gateway logs"
-	@echo "  make test-gateway       Test gateway is working"
 	@echo "  make docker-status      Show Docker runtime info"
 	@echo "  make install            Install Python package for development"
 	@echo "  make install-detectron2 Install Detectron2 for layout detection (Python 3.11 required)"
@@ -60,7 +59,7 @@ format:
 clean:
 	find . -type d -name __pycache__ -exec rm -rf {} +
 	find . -type f -name "*.pyc" -delete
-	rm -rf .pytest_cache .mypy_cache .ruff_cache
+	rm -rf .mypy_cache .ruff_cache
 
 shell:
 	docker compose exec gateway /bin/bash

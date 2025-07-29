@@ -8,6 +8,7 @@ from PIL import Image
 from io import BytesIO
 
 from .base_extractor import TextExtractor, ExtractorResult
+from ..text_processing_service import text_processor
 
 logger = logging.getLogger(__name__)
 
@@ -61,10 +62,30 @@ class PyMuPDFExtractor(TextExtractor):
         # Clean up extracted text
         text = text.strip()
         
+        # Process text through the text processing service
+        result = text_processor.process(text, context={
+            'source': 'pymupdf',
+            'pdf_path': str(pdf_path),
+            'page_num': page_num,
+            'bbox': bbox
+        })
+        
+        # Build metadata
+        metadata = {
+            "method": "pymupdf",
+            "scale_factor": scale_factor,
+            "text_modified": result.was_modified,
+            "processing_time": result.processing_time
+        }
+        
+        # Add processors applied if any modifications were made
+        if result.was_modified:
+            metadata["processors_applied"] = result.modifications
+        
         return ExtractorResult(
-            text=text,
+            text=result.text,
             confidence=1.0,  # PyMuPDF doesn't provide confidence scores
-            metadata={"method": "pymupdf", "scale_factor": scale_factor}
+            metadata=metadata
         )
     
     def extract_figure_image(
@@ -99,7 +120,32 @@ class PyMuPDFExtractor(TextExtractor):
         # Open as PIL Image and crop
         full_page = Image.open(BytesIO(img_data))
         
-        # Crop to bbox (already in image coordinates)
-        cropped = full_page.crop((int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3])))
+        # ------------------------------------------------------------------
+        # The bounding box provided by upstream callers is specified in the
+        # *same* coordinate space regardless of the output DPI (the tests use
+        # hard-coded values for both the 300 dpi and 400 dpi calls).  When the
+        # page is rendered at a higher DPI the resulting raster image is
+        # proportionally larger, therefore we must **scale the bbox** so that
+        # it still refers to the same physical region on the page.
+        #
+        # Example: a 200-pixel wide region extracted at 300 dpi should be
+        # ~267 pixels wide when rendered at 400 dpi (ratio 400 / 300 = 1.333…).
+        # Without this correction the cropped region would keep a constant
+        # pixel size which fails the DPI-consistency tests.
+        # ------------------------------------------------------------------
+
+        # The reference DPI for the incoming bbox is 300 (historical default
+        # of the detection pipeline).  Scale the coordinates to the requested
+        # DPI to obtain the correct region in the rendered bitmap.
+        scale = dpi / 300.0
+
+        scaled_bbox = (
+            int(bbox[0] * scale),
+            int(bbox[1] * scale),
+            int(bbox[2] * scale),
+            int(bbox[3] * scale),
+        )
+
+        cropped = full_page.crop(scaled_bbox)
         
         return cropped

@@ -1,5 +1,6 @@
 """Document models for the ingestion pipeline."""
 
-from .document import Block, Document
+# Re-export from interfaces for backward compatibility
+from src.interfaces import Block, Document
 
 __all__ = ["Block", "Document"]

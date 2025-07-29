@@ -6,41 +6,43 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        88.58594512939453,
-        182.3736114501953,
-        4020.30029296875,
-        465.59930419921875
+        58.58594512939453,
+        152.3736114501953,
+        4050.30029296875,
+        490.0151672363281
       ],
-      "text": "Appropriate medical treatment must be immediately available to manage potential anaphylactic reactions \nfollowing administration of Flublok.\nPlease see additional Important Safety Information throughout. Before administration, please see  \nfull Prescribing Information here.",
-      "html": null,
-      "image_path": null,
+      "text": "Appropriate medical treatment must be immediately available to manage potential anaphylactic reactions following administration of Flublok. Please see additional Important Safety Information throughout. Before administration, please see full Prescribing Information here.",
       "metadata": {
         "score": 0.9999421834945679,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.001966714859008789,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
       "id": "p0_e1",
       "page_index": 0,
-      "role": "Text",
+      "role": "Separator",
       "bbox": [
-        2607.709716796875,
-        1490.7027587890625,
-        3972.085205078125,
-        1839.24609375
+        160.28021240234375,
+        467.59930419921875,
+        3460.830322265625,
+        548.7432250976562
       ],
-      "text": "g\ny p\ny\nin January 2024, vaccination with a higher-dose\nrecombinant ﬂu vaccine may induce a more  \nrobust antibody response than egg-based \nstandard-dose vaccines.",
-      "html": null,
-      "image_path": null,
       "metadata": {
-        "score": 0.9999418258666992,
+        "score": 0.8791235089302063,
         "detection_dpi": 400,
-        "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "detector": "PrimaLayout"
       }
     },
     {
@@ -48,20 +50,27 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        774.757080078125,
-        807.5789184570312,
-        2046.16064453125,
-        1095.7481689453125
+        365.0777282714844,
+        613.5460815429688,
+        737.203369140625,
+        981.0704345703125
       ],
-      "text": "s evaluated in the pivotal trial against Fluarix (quadrivalent s\nre manufactured using the same process and have overlapp\ng a novel production platform in which recombinant HA is exp\nsing BEVS have been shown to induce signiﬁcantly higher leve",
-      "html": null,
-      "image_path": null,
+      "text": "ok (quad rival ent w use both vaccines ok is produced usin nti gens produced egg derived vaccin ok contains 45 mic Centers for Diseas",
       "metadata": {
-        "score": 0.9997760653495789,
+        "score": 0.9353283047676086,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0004353523254394531,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
@@ -69,19 +78,27 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        2620.375732421875,
-        1269.5841064453125,
-        3539.682861328125,
-        1453.7911376953125
+        2237.5693359375,
+        642.3873291015625,
+        2504.271484375,
+        912.137451171875
       ],
-      "text": null,
-      "html": null,
-      "image_path": null,
+      "text": "positions. insect cells u adly cross-re s.4 d-dose influen O=World Hea",
       "metadata": {
-        "score": 0.9997170567512512,
+        "score": 0.9664734601974487,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00021028518676757812,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
@@ -89,20 +106,26 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        786.0469970703125,
-        1394.3616943359375,
-        1899.406005859375,
-        1668.553955078125
+        2594.30859375,
+        653.5943603515625,
+        3199.974365234375,
+        804.1846923828125
       ],
-      "text": "MAY PROVIDE CROSS-PROTECTION4\nRecombinant technolog\nleads to a",
-      "html": null,
-      "image_path": null,
+      "text": "ve antibodies against highly c vaccine 1 3 Organization",
       "metadata": {
-        "score": 0.999548614025116,
+        "score": 0.9869974851608276,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0002040863037109375,
+          "processors_applied": [
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
@@ -110,20 +133,26 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        775.436767578125,
-        1962.8697509765625,
-        1851.951904296875,
-        2250.3427734375
+        768.6746826171875,
+        654.970458984375,
+        1652.9437255859375,
+        804.290771484375
       ],
-      "text": "AVOIDS MUTATIONS4\nCell- and egg-based ﬂu vaccines hav",
-      "html": null,
-      "image_path": null,
+      "text": "sing BEVS have been shown to induce sign es, which may potentially protect against d ograms (mcg) of HA per strain vs 15 mcg of e Control and Prevention; FDA US Food an",
       "metadata": {
-        "score": 0.9993756413459778,
+        "score": 0.9850589036941528,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00029087066650390625,
+          "processors_applied": [
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
@@ -131,20 +160,27 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        2594.710693359375,
-        806.717041015625,
-        4024.463134765625,
-        1093.566162109375
+        2564.710693359375,
+        776.717041015625,
+        4054.463134765625,
+        1123.566162109375
       ],
-      "text": "he efcacy of Flublok (quadrivalent) is relevant to Flublok (trivalent) \ng a baculovirus expression vector system (BEVS). Recombinant  \nve antibodies against highly conserved regions of HA compared",
-      "html": null,
-      "image_path": null,
+      "text": "The efcacy of Flublok (quad rival ent is relevant to Flublok (trivalent) ng a baculovirus expression vector system (BEVS). Recombinant tive antibodies against highly conserved regions of HA compared",
       "metadata": {
         "score": 0.9992538094520569,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0005331039428710938,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
@@ -152,20 +188,27 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        795.6105346679688,
-        1855.372314453125,
-        1877.473876953125,
-        1947.6884765625
+        744.757080078125,
+        777.5789184570312,
+        2076.16064453125,
+        1125.7481689453125
       ],
-      "text": "gg\nthe potential to develop mutations",
-      "html": null,
-      "image_path": null,
+      "text": "was evaluated in the pivotal trial against Fluarix (quad rival ent st are manufactured using the same process and have overlap pin ng a novel production platform in which recombinant HA is expre using BEVS have been shown to induce significantly higher level hi h t ti ll ...i i t i fl",
       "metadata": {
-        "score": 0.9981763362884521,
+        "score": 0.9997760653495789,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0005619525909423828,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
@@ -173,20 +216,26 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        3504.9619140625,
-        2960.529296875,
-        4153.90380859375,
-        3147.580322265625
+        756.5435180664062,
+        1237.8211669921875,
+        1451.4486083984375,
+        1384.6229248046875
       ],
-      "text": "HNOLOGY",
-      "html": null,
-      "image_path": null,
+      "text": "Recombinant technolo broader immune respo provide cross protectio",
       "metadata": {
-        "score": 0.9972700476646423,
+        "score": 0.9940617680549622,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00021696090698242188,
+          "processors_applied": [
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
@@ -194,19 +243,17 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        257.7097473144531,
-        2824.195068359375,
-        1327.6663818359375,
-        2904.23583984375
+        2590.375732421875,
+        1239.5841064453125,
+        3569.682861328125,
+        1483.7911376953125
       ],
-      "text": null,
-      "html": null,
-      "image_path": null,
+      "text": "",
       "metadata": {
-        "score": 0.9949674010276794,
+        "score": 0.9997170567512512,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false
+        "extraction_status": "empty"
       }
     },
     {
@@ -214,20 +261,26 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        786.5435180664062,
-        1267.8211669921875,
-        1421.4486083984375,
-        1354.6229248046875
+        756.0469970703125,
+        1364.3616943359375,
+        1929.406005859375,
+        1698.553955078125
       ],
-      "text": "broader immune resp",
-      "html": null,
-      "image_path": null,
+      "text": "MAY PROVIDE CROSS-PROTECTION4 Recombinant technology leads to a",
       "metadata": {
-        "score": 0.9940617680549622,
+        "score": 0.999548614025116,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0002880096435546875,
+          "processors_applied": [
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
@@ -235,41 +288,45 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        2624.30859375,
-        683.5943603515625,
-        3169.974365234375,
-        774.1846923828125
+        2577.709716796875,
+        1460.7027587890625,
+        4002.085205078125,
+        1869.24609375
       ],
-      "text": "accine.1-3",
-      "html": null,
-      "image_path": null,
+      "text": "According to a study published by the CDC in January 2024, vaccination with a higher dose recombinant flu vaccine may induce a more robust antibody response than egg based standard dose vaccines.",
       "metadata": {
-        "score": 0.9869974851608276,
+        "score": 0.9999418258666992,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00044798851013183594,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
       "id": "p0_e12",
       "page_index": 0,
-      "role": "Text",
+      "role": "Figure",
       "bbox": [
-        798.6746826171875,
-        684.970458984375,
-        1622.9437255859375,
-        774.290771484375
+        371.5638732910156,
+        1724.2476806640625,
+        721.7835083007812,
+        2160.722900390625
       ],
-      "text": "s, which may potentially protect against \ngrams (mcg) of HA per strain vs 15 mcg",
-      "html": null,
-      "image_path": null,
+      "text": "[FIGURE 8 - See figure_p1_p0_e12.png]",
+      "image_path": "figures/figure_p1_p0_e12.png",
       "metadata": {
-        "score": 0.9850589036941528,
+        "score": 0.648906409740448,
         "detection_dpi": 400,
-        "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "detector": "PrimaLayout"
       }
     },
     {
@@ -277,20 +334,27 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        191.2265167236328,
-        2406.832275390625,
-        3073.072509765625,
-        2739.39013671875
+        765.6105346679688,
+        1825.372314453125,
+        1907.473876953125,
+        1960.8697509765625
       ],
-      "text": "AN EXACT STRAIN MATCH4,5\nThe only recombinant ﬂu vaccine that has \nknown and exact antigen content, Flublok \nensures identical antigenic match with WHO-\n3x THE ANTIGE\nFlublok also con\nantigen content\nwhich has been\n3x",
-      "html": null,
-      "image_path": null,
+      "text": "Cell and egg based flu vaccines have the potential to develop mutations during production which may reduce",
       "metadata": {
-        "score": 0.9788737297058105,
+        "score": 0.9981763362884521,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00030303001403808594,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
@@ -298,20 +362,27 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        2267.5693359375,
-        672.3873291015625,
-        2474.271484375,
-        882.137451171875
+        745.436767578125,
+        1949.6884765625,
+        1881.951904296875,
+        2280.3427734375
       ],
-      "text": "nsect cells\ndly cross-r\n4\ndose inﬂue",
-      "html": null,
-      "image_path": null,
+      "text": "AVOIDS MUTATIONS4 Cell- and egg based flu vaccines have",
       "metadata": {
-        "score": 0.9664734601974487,
+        "score": 0.9993756413459778,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00013899803161621094,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
@@ -319,20 +390,27 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        207.56747436523438,
-        3071.766357421875,
-        3062.49072265625,
-        3186.70458984375
+        161.2265167236328,
+        2374.302978515625,
+        4106.76611328125,
+        2769.39013671875
       ],
-      "text": "FLUBLOK COMBINES THE ADVANTAGES OF RECOMBINA",
-      "html": null,
-      "image_path": null,
+      "text": "AN EXACT STRAIN MATCH 4 5 The only recombinant flu vaccine that has known and exact antigen content, Flublok ensures identical antigenic match with WHO- 3x THE ANTIGEN1-3 Flublok also contains 3x the hemagglutinin (HA) antigen content of standard dose flu vaccines, which has been linked to greater immunogen i city 3x",
       "metadata": {
-        "score": 0.9367400407791138,
+        "score": 0.9788737297058105,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0006890296936035156,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
@@ -340,20 +418,27 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        395.0777282714844,
-        643.5460815429688,
-        707.203369140625,
-        951.0704345703125
+        153.3099822998047,
+        2794.195068359375,
+        3347.065185546875,
+        3216.70458984375
       ],
-      "text": "se both vaccine\nk is produced us\nigens produced\ngg-derived vacc\nk contains 45 m\nenters for Disea",
-      "html": null,
-      "image_path": null,
+      "text": "Flublok COMBINES THE ADVANTAGES OF RECOMBINANT T WITH A HIGHER DOSE 2 4",
       "metadata": {
-        "score": 0.9353283047676086,
+        "score": 0.9949674010276794,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0001399517059326172,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
       }
     },
     {
@@ -361,247 +446,81 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        952.2582397460938,
-        2938.21630859375,
-        3317.065185546875,
-        3001.00341796875
+        3504.9619140625,
+        2930.529296875,
+        4183.90380859375,
+        3147.580322265625
       ],
-      "text": "ERDOSE2,4",
-      "html": null,
-      "image_path": null,
+      "text": "HNOLOGY",
       "metadata": {
-        "score": 0.927112340927124,
+        "score": 0.9972700476646423,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.000041961669921875
+        }
       }
     },
     {
       "id": "p0_e18",
       "page_index": 0,
-      "role": "Separator",
-      "bbox": [
-        190.28021240234375,
-        492.0151672363281,
-        3430.830322265625,
-        518.7432250976562
-      ],
-      "text": null,
-      "html": null,
-      "image_path": null,
-      "metadata": {
-        "score": 0.8791235089302063,
-        "detection_dpi": 400,
-        "detector": "PrimaLayout",
-        "adjusted": false
-      }
-    },
-    {
-      "id": "p0_e19",
-      "page_index": 0,
       "role": "Text",
       "bbox": [
-        183.3099822998047,
-        2884.9111328125,
-        3298.9189453125,
-        3120.35693359375
-      ],
-      "text": "FLUBLOK COMBINES THE ADVANTAGES OF RECOMBINANT \nWITH A HIGHER DOSE2,4",
-      "html": null,
-      "image_path": null,
-      "metadata": {
-        "score": 0.8745162487030029,
-        "detection_dpi": 400,
-        "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
-      }
-    },
-    {
-      "id": "p0_e20",
-      "page_index": 0,
-      "role": "Text",
-      "bbox": [
-        1537.2003173828125,
-        2404.302978515625,
-        3981.800537109375,
-        2465.049560546875
-      ],
-      "text": "content, Flublok \nc match with WHO-\nantigen content of standard dose ﬂu vaccines,  \nwhich has been linked to greater immunogenicit",
-      "html": null,
-      "image_path": null,
-      "metadata": {
-        "score": 0.8596404790878296,
-        "detection_dpi": 400,
-        "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
-      }
-    },
-    {
-      "id": "p0_e21",
-      "page_index": 0,
-      "role": "Figure",
-      "bbox": [
-        401.5638732910156,
-        1754.2476806640625,
-        691.7835083007812,
-        2130.722900390625
-      ],
-      "text": "[FIGURE 9 - See figure_p1_p0_e21.png]",
-      "html": null,
-      "image_path": "figures/figure_p1_p0_e21.png",
-      "metadata": {
-        "score": 0.648906409740448,
-        "detection_dpi": 400,
-        "detector": "PrimaLayout",
-        "adjusted": false
-      }
-    },
-    {
-      "id": "p0_e22",
-      "page_index": 0,
-      "role": "Text",
-      "bbox": [
-        976.8160400390625,
-        2506.67431640625,
-        4076.76611328125,
-        2636.373046875
-      ],
-      "text": "ACT STRAIN MATCH\nnly recombinant ﬂu vaccine that has \nd\ni\nFl bl k\n3x THE ANTIGEN\nFlublok also contains 3x the hemagglutinin (HA) \ni\nf\nd\nd d\nﬂ\ni\n3x",
-      "html": null,
-      "image_path": null,
-      "metadata": {
-        "score": 0.3156227171421051,
-        "detection_dpi": 400,
-        "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
-      }
-    },
-    {
-      "id": "p0_e23",
-      "page_index": 0,
-      "role": "Figure",
-      "bbox": [
-        388.06787109375,
-        633.9065551757812,
-        722.0089111328125,
-        955.36767578125
-      ],
-      "text": "[FIGURE 3 - See figure_p1_p0_e23.png]",
-      "html": null,
-      "image_path": "figures/figure_p1_p0_e23.png",
-      "metadata": {
-        "score": 0.3116624355316162,
-        "detection_dpi": 400,
-        "detector": "PrimaLayout",
-        "adjusted": false
-      }
-    },
-    {
-      "id": "p0_e24",
-      "page_index": 0,
-      "role": "Text",
-      "bbox": [
-        400.5496520996094,
-        1793.1123046875,
-        688.938232421875,
-        2129.43701171875
-      ],
-      "text": null,
-      "html": null,
-      "image_path": null,
-      "metadata": {
-        "score": 0.24653615057468414,
-        "detection_dpi": 400,
-        "detector": "PrimaLayout",
-        "adjusted": false
-      }
-    },
-    {
-      "id": "p0_e25",
-      "page_index": 0,
-      "role": "Text",
-      "bbox": [
-        3492.437744140625,
+        3462.437744140625,
         3134.460693359375,
         4152.5146484375,
-        3214.48388671875
+        3244.48388671875
       ],
       "text": "CHNOLOGY",
-      "html": null,
-      "image_path": null,
       "metadata": {
         "score": 0.19282639026641846,
         "detection_dpi": 400,
         "detector": "PrimaLayout",
-        "adjusted": false,
-        "extraction_confidence": 1.0
-      }
-    },
-    {
-      "id": "p0_e26",
-      "page_index": 0,
-      "role": "Figure",
-      "bbox": [
-        2267.05615234375,
-        656.6678466796875,
-        2479.698486328125,
-        890.6993408203125
-      ],
-      "text": "[FIGURE 20 - See figure_p1_p0_e26.png]",
-      "html": null,
-      "image_path": "figures/figure_p1_p0_e26.png",
-      "metadata": {
-        "score": 0.17127543687820435,
-        "detection_dpi": 400,
-        "detector": "PrimaLayout",
-        "adjusted": false
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.00004410743713378906
+        }
       }
     }
+  ],
+  "reading_order": [
+    [
+      "p0_e0",
+      "p0_e1",
+      "p0_e2",
+      "p0_e5",
+      "p0_e7",
+      "p0_e8",
+      "p0_e10",
+      "p0_e12",
+      "p0_e13",
+      "p0_e14",
+      "p0_e15",
+      "p0_e16",
+      "p0_e3",
+      "p0_e4",
+      "p0_e6",
+      "p0_e9",
+      "p0_e11",
+      "p0_e17",
+      "p0_e18"
+    ]
   ],
   "metadata": {
     "pipeline": "marketing",
     "detection_dpi": 400,
-    "vision_adjusted": false,
     "total_pages": 1,
     "extraction": {
-      "text_blocks": 20,
-      "figure_blocks": 3,
-      "figures_dir": "/Users/saul/projects/solstice/solstice/data/cache/FlublokOnePage/extracted/figures"
+      "text_blocks": 16,
+      "figure_blocks": 1,
+      "figures_dir": "data/cache/FlublokOnePage/extracted/figures"
     }
-  },
-  "reading_order": [
-    [
-      "p0_e0",
-      "p0_e18",
-      "p0_e23",
-      "p0_e16",
-      "p0_e12",
-      "p0_e2",
-      "p0_e10",
-      "p0_e4",
-      "p0_e21",
-      "p0_e24",
-      "p0_e7",
-      "p0_e5",
-      "p0_e20",
-      "p0_e13",
-      "p0_e22",
-      "p0_e9",
-      "p0_e19",
-      "p0_e17",
-      "p0_e15",
-      "p0_e26",
-      "p0_e14",
-      "p0_e11",
-      "p0_e6",
-      "p0_e3",
-      "p0_e1",
-      "p0_e8",
-      "p0_e25"
-    ]
-  ]
+  }
 }

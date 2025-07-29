@@ -109,7 +109,7 @@ wordninja>=2.0.0
 
 - WordNinja adds ~5ms per text block
 - For 100 blocks: ~0.5s total overhead
-- Still 10x faster than Tesseract
+- Minimal performance impact
 - Acceptable tradeoff for better quality
 
 ## Testing Plan

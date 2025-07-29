@@ -1,12 +1,42 @@
 {
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "FlublokPI",
   "verification_stats": {
-    "total_snippets": 0,
+    "total_snippets": 2,
     "verified": 0,
-    "failed": 0,
-    "modified": 0
+    "failed": 2,
+    "modified": 0,
+    "exact_matches": 0,
+    "fuzzy_matches": 0
   },
   "verified_snippets": [],
-  "failed_snippets": []
+  "failed_snippets": [
+    {
+      "id": 2,
+      "quote": "Data from a randomized, controlled trial demonstrated that children 6 months to less than 3 years of age had diminished hemagglutinin inhibition (HI) responses to Flublok compared to a U.S.-licensed in\ufb02uenza vaccine approved for use in this population, strongly suggesting that Flublok would not be effective in children younger than 3 years of age (6).",
+      "relevance_explanation": "While this quote is about children, it references hemagglutinin inhibition (HI) responses, which are a measure of immunogenicity. It indirectly supports the link between HA content and immunogenicity, though it is more about lack of efficacy in a specific population.",
+      "location": {
+        "start": 17134,
+        "end": 17475,
+        "page_index": 2,
+        "page_number": 3
+      },
+      "verification_status": "failed",
+      "failure_reason": "Quote not found in document"
+    },
+    {
+      "id": 4,
+      "quote": "Flublok contains recombinant HA proteins of the three strains of in\ufb02uenza virus speci\ufb01ed by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response measured by hemagglutination inhibition (HI) antibody titers.",
+      "relevance_explanation": "This quote explains that the HA proteins in Flublok are the antigens responsible for inducing the immune response, supporting the mechanism by which increased HA content could lead to greater immunogenicity.",
+      "location": {
+        "start": 14703,
+        "end": 14996,
+        "page_index": 2,
+        "page_number": 3
+      },
+      "verification_status": "failed",
+      "failure_reason": "Quote not found in document"
+    }
+  ]
 }

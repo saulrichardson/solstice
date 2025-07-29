@@ -4,8 +4,7 @@ import logging
 from pathlib import Path
 from typing import Dict, Any, List, Optional
 
-from src.injestion.models.document import Document
-from src.injestion.processing.fact_check_interface import FactCheckInterface
+from src.interfaces import Document, StandardDocumentReader
 
 from ..core.responses_client import ResponsesClient
 from ..evidence_extractor import EvidenceExtractor
@@ -74,7 +73,7 @@ class SupportingEvidenceExtractor(BaseAgent):
         document = Document(**document_data)
         
         # Create fact check interface
-        interface = FactCheckInterface(document)
+        interface = StandardDocumentReader(document)
         
         # Get normalized text (our single operating model)
         normalized_text = interface.get_full_text(include_figure_descriptions=True, normalize=True)
@@ -125,7 +124,7 @@ class SupportingEvidenceExtractor(BaseAgent):
         
         return output
     
-    def _find_snippet_page(self, snippet, interface: FactCheckInterface) -> Dict[str, Any]:
+    def _find_snippet_page(self, snippet, interface: StandardDocumentReader) -> Dict[str, Any]:
         """Find which page a snippet appears on using normalized positions."""
         if snippet.start is None:
             return {"page_index": None, "page_number": None}

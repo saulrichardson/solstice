@@ -14,12 +14,14 @@ from enum import Enum
 from ..models.box import Box
 
 
-def expand_boxes(boxes: List[Box], padding: float = 10.0) -> List[Box]:
+def expand_boxes(boxes: List[Box], padding: float = 10.0, page_width: float = None, page_height: float = None) -> List[Box]:
     """Expand all boxes by a fixed padding to prevent text cutoffs.
     
     Args:
         boxes: List of Box objects to expand
         padding: Number of pixels to expand in each direction (default: 10)
+        page_width: Optional page width for boundary clamping
+        page_height: Optional page height for boundary clamping
         
     Returns:
         List of expanded Box objects
@@ -29,15 +31,22 @@ def expand_boxes(boxes: List[Box], padding: float = 10.0) -> List[Box]:
         x1, y1, x2, y2 = box.bbox
         
         # Expand the box by padding in all directions
-        # Note: In a real implementation, you might want to clamp to page boundaries
+        new_x1 = x1 - padding
+        new_y1 = y1 - padding
+        new_x2 = x2 + padding
+        new_y2 = y2 + padding
+        
+        # Clamp to page boundaries if provided
+        if page_width is not None:
+            new_x1 = max(0, new_x1)
+            new_x2 = min(page_width, new_x2)
+        if page_height is not None:
+            new_y1 = max(0, new_y1)
+            new_y2 = min(page_height, new_y2)
+        
         expanded_box = Box(
             id=box.id,
-            bbox=(
-                x1 - padding,
-                y1 - padding,
-                x2 + padding,
-                y2 + padding
-            ),
+            bbox=(new_x1, new_y1, new_x2, new_y2),
             label=box.label,
             score=box.score
         )
