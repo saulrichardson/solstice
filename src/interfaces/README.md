@@ -35,9 +35,9 @@ text_block = Block(
 ```
 
 **Key Classes:**
-- `Document`: Top-level container for all document content
-- `Block`: Individual content unit (text, figure, table)
-- `DocumentMetadata`: Document-level information (pages, source, etc.)
+- `Document`: Top-level container with blocks, reading order, and metadata
+- `Block`: Individual content unit (text, figure, table) with bbox and role
+- Reading order tracked per page as list of block IDs
 
 ### content_types.py
 
@@ -114,21 +114,24 @@ visual_blocks = [b for b in doc.blocks if b.is_visual]
 page_1_blocks = [b for b in doc.blocks if b.page_index == 0]
 ```
 
-### Content Extraction
+### Working with Document Content
 
 ```python
 from src.interfaces.document import Document
 
-# Extract all text
-full_text = doc.get_text()
+# Access all blocks
+for block in doc.blocks:
+    if block.is_text:
+        print(block.text)
+    elif block.is_visual:
+        print(f"Visual content at: {block.image_path}")
 
-# Extract with placeholders
-text_with_refs = doc.get_text(include_placeholders=True)
-# Output: "Here is the data [FIGURE 1] showing..."
+# Get reading order for a page
+page_0_order = doc.reading_order[0]  # List of block IDs in order
 
-# Get structured content
-structured = doc.get_structured_content()
-# Returns list of {"type": "text", "content": "..."} items
+# Save/load documents
+doc.save("output.json")
+loaded_doc = Document.load("output.json")
 ```
 
 ## Block Types

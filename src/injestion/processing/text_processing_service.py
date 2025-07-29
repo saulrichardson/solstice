@@ -35,9 +35,9 @@ class TextProcessingService:
     processors like WordNinja.
     
     Text processors (in order):
-    1. Post-extraction cleaner - Fixes PDF artifacts, truncated words, ligatures
-    2. SymSpell - General spell-checking and compound word splitting
-    3. WordNinja - Specialized concatenated word splitting
+    1. Post-extraction cleaner – fixes PDF artifacts, truncated words, ligatures.
+    2. SymSpell – medical-aware spell-checking **and** compound/word segmentation.
+    3. WordNinja – fallback splitter for the rare cases SymSpell leaves untouched.
     """
     
     _instance: Optional['TextProcessingService'] = None
@@ -111,32 +111,37 @@ class TextProcessingService:
     def _initialize_processors(self):
         """Initialize all text processors in order."""
         # Post-extraction cleaning - fixes PDF extraction artifacts
-        try:
-            from .text_extractors.post_extraction_cleaner import clean_extracted_text
-            self._processors.append(('post_extraction_clean', clean_extracted_text))
-            logger.info("Initialized post-extraction cleaner")
-        except ImportError as e:
-            logger.warning(f"Could not import post-extraction cleaner: {e}")
+        from .text_extractors.post_extraction_cleaner import clean_extracted_text
+        self._processors.append(('post_extraction_clean', clean_extracted_text))
+        logger.info("Initialized post-extraction cleaner")
         
-        # SymSpell for spell-checking and compound splitting
-        try:
-            from .text_extractors.symspell_corrector_optimized import correct_medical_text_optimized
-            self._processors.append(('symspell', correct_medical_text_optimized))
-            logger.info("Initialized optimized SymSpell corrector")
-        except ImportError as e:
-            logger.warning(f"Could not import SymSpell corrector: {e}")
-            logger.info("Install with: pip install symspellpy")
-        
-        # WordNinja spacing fixes - this includes all heuristics
-        try:
-            from .text_extractors.final_spacing_fixer import fix_pdf_text_spacing, WORDNINJA_AVAILABLE
-            if WORDNINJA_AVAILABLE:
-                self._processors.append(('spacing_fix', fix_pdf_text_spacing))
-                logger.info("Initialized spacing fix processor with WordNinja")
-            else:
-                logger.warning("WordNinja not available - spacing fixes disabled")
-        except ImportError as e:
-            logger.warning(f"Could not import spacing fixer: {e}")
+        # ------------------------------------------------------------------
+        # NOTE ON PROCESSOR ORDERING
+        # ------------------------------------------------------------------
+        # 2025-07 update: we now **run SymSpell _before_ WordNinja**.
+        #
+        # Reasons:
+        # 1. SymSpell already performs word-segmentation during spelling
+        #    correction (via `word_segmentation` / `lookup_compound`).
+        # 2. Its dictionary is medical-aware, therefore produces safer splits
+        #    than WordNinja's generic Google n-gram model.
+        # 3. Avoids double work and the risk that WordNinja introduces splits
+        #    that SymSpell then tries to "correct" again.
+        #
+        # WordNinja acts as a secondary processor for the rare cases
+        # SymSpell leaves untouched (typically very long out-of-vocabulary
+        # strings).
+        # ------------------------------------------------------------------
+
+        # SymSpell for spell-checking and compound splitting (runs first)
+        from .text_extractors.symspell_corrector_optimized import correct_medical_text_optimized
+        self._processors.append(('symspell', correct_medical_text_optimized))
+        logger.info("Initialized optimized SymSpell corrector")
+
+        # WordNinja spacing fixes – runs after SymSpell
+        from .text_extractors.final_spacing_fixer import fix_pdf_text_spacing
+        self._processors.append(('spacing_fix', fix_pdf_text_spacing))
+        logger.info("Initialized spacing fix processor with WordNinja")
         
         # Future processors can be added here
         # Examples:

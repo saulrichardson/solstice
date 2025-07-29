@@ -26,9 +26,9 @@ PDF Input
     └─► Text Extraction (PyMuPDF)
              │
              ├─► Text Processing Service
-             │    ├─► Spacing Fixes (WordNinja)
-             │    ├─► Punctuation Normalization
-             │    └─► Medical Term Preservation
+             │    ├─► Post-extraction Cleaning (PDF artifacts)
+             │    ├─► WordNinja Spacing Fixes
+             │    └─► SymSpell Correction (optional)
              │
              └─► Content Assembly
                       │

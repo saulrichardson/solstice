@@ -6,7 +6,7 @@ A unified proxy service for LLM API calls with caching, retry logic, and provide
 
 The Gateway service acts as an intermediary between Solstice components and external LLM providers (OpenAI, Anthropic, etc.). It provides:
 - **Provider Abstraction**: Unified interface for multiple LLM providers
-- **Request Caching**: Redis-based caching to reduce API costs
+- **Request Snapshots**: Filesystem-based write-only cache for audit/debugging
 - **Retry Logic**: Automatic retry with exponential backoff
 - **Request Logging**: Detailed logging for debugging and monitoring
 - **Streaming Support**: Efficient handling of streaming responses
@@ -28,8 +28,8 @@ The Gateway service acts as an intermediary between Solstice components and exte
                 ┌────────────────┼────────────────┐
                 │                │                │
         ┌───────▼────────┐ ┌────▼─────┐ ┌───────▼────────┐
-        │     OpenAI     │ │  Redis   │ │   Anthropic    │
-        │   Provider     │ │  Cache   │ │   Provider     │
+        │     OpenAI     │ │Filesystem│ │   Anthropic    │
+        │   Provider     │ │Snapshots │ │   Provider     │
         └────────────────┘ └──────────┘ └────────────────┘
 ```
 
@@ -38,7 +38,7 @@ The Gateway service acts as an intermediary between Solstice components and exte
 ### App Structure
 - **main.py**: FastAPI application and lifecycle management
 - **config.py**: Environment-based configuration
-- **cache.py**: Redis caching implementation
+- **cache.py**: Filesystem-based snapshot implementation (write-only)
 - **openai_client.py**: OpenAI API client wrapper
 
 ### Middleware
@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 # Set environment variables
 export OPENAI_API_KEY=sk-...
-export REDIS_URL=redis://localhost:6379
+export FILESYSTEM_CACHE_DIR=data/cache/gateway
 
 # Run the service
 uvicorn src.gateway.app.main:app --reload
@@ -120,9 +120,7 @@ for line in response.iter_lines():
 
 ### Environment Variables
 - `OPENAI_API_KEY`: OpenAI API key (required)
-- `REDIS_URL`: Redis connection URL (default: redis://redis:6379)
-- `CACHE_TTL`: Cache time-to-live in seconds (default: 3600)
-- `ENABLE_CACHE`: Enable/disable caching (default: true)
+- `FILESYSTEM_CACHE_DIR`: Directory for response snapshots (default: data/cache)
 - `LOG_LEVEL`: Logging level (default: INFO)
 
 ### Provider Configuration
@@ -133,12 +131,13 @@ if validate_api_key():
     providers["openai"] = RetryableProvider(OpenAIProvider())
 ```
 
-## Caching Strategy
+## Snapshot Strategy
 
-The gateway uses Redis for caching:
-1. **Cache Key**: Generated from request parameters (model, messages, temperature, etc.)
-2. **TTL**: Configurable per environment (default 1 hour)
-3. **Streaming**: Caches are built during streaming and served on subsequent requests
+The gateway uses filesystem-based snapshots for audit and debugging:
+1. **Snapshot Key**: SHA-256 hash of request parameters (model, messages, temperature, etc.)
+2. **Write-Only**: Snapshots are never read during normal operation (always makes live requests)
+3. **Purpose**: Audit trail and debugging of LLM interactions
+4. **Location**: Stored in `FILESYSTEM_CACHE_DIR` as JSON files
 
 ## Error Handling
 
@@ -197,7 +196,7 @@ anthropic_api_key: str | None = Field(None)
 
 - API keys are never logged
 - Request/response bodies are logged at DEBUG level only
-- Cache keys are hashed to prevent sensitive data exposure
+- Snapshot filenames are SHA-256 hashes (no sensitive data in filenames)
 - All external API calls use HTTPS
 
 ## Future Enhancements

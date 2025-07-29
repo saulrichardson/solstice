@@ -19,7 +19,7 @@ Main visualization functions for document layouts:
 ```python
 from src.injestion.visualization.layout_visualizer import (
     visualize_page_layout,
-    create_summary_visualization,
+    create_summary_grid,
     visualize_document
 )
 
@@ -31,8 +31,8 @@ fig = visualize_page_layout(
     save_path="output.png"
 )
 
-# Create multi-page summary
-create_summary_visualization(
+# Create multi-page summary grid
+create_summary_grid(
     doc_id="clinical_study",
     max_pages=4
 )
@@ -70,7 +70,7 @@ Features:
 Grid view of multiple pages:
 
 ```python
-create_summary_visualization(
+create_summary_grid(
     doc_id="document",
     max_pages=8,          # Pages per grid
     fig_size=(20, 16)     # Overall figure size
@@ -188,7 +188,7 @@ visualize_page_layout(
 output_dir = Path("quality_report")
 
 # 1. Summary grid
-create_summary_visualization(
+create_summary_grid(
     doc_id=doc_id,
     save_path=output_dir / "summary.png"
 )

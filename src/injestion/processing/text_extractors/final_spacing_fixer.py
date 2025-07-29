@@ -3,19 +3,13 @@
 import re
 from typing import List, Set
 
-try:
-    import wordninja
-    WORDNINJA_AVAILABLE = True
-except ImportError:
-    WORDNINJA_AVAILABLE = False
+import wordninja
 
 
 class FinalSpacingFixer:
     """Production-ready spacing fixer for PyMuPDF text."""
     
     def __init__(self):
-        if not WORDNINJA_AVAILABLE:
-            raise ImportError("WordNinja is required. Install with: pip install wordninja")
         
         # Words that should never be split
         self.preserve_words = {

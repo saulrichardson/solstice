@@ -36,6 +36,7 @@ gateway_url = settings.gateway_url
 - `openai_api_key`: OpenAI API key for LLM calls
 - `solstice_log_level`: Logging level (DEBUG, INFO, WARNING, ERROR)
 - `filesystem_cache_dir`: Base cache directory (default: data/cache)
+- `text_extractor`: Text extraction method (default: pymupdf)
 
 ## Usage
 

@@ -2,7 +2,7 @@
 
 import logging
 from pathlib import Path
-from typing import Dict, Any, List, Optional, Tuple
+from typing import Dict, Any, List, Optional
 
 from ..core.responses_client import ResponsesClient
 from ..utils import document_utils
@@ -98,24 +98,10 @@ class EvidenceVerifierV2(BaseAgent):
             quote = quote_data.get("quote", "")
             relevance_explanation = quote_data.get("relevance_explanation", "")
             
-            # Find quote in document and get context
-            context = self._find_quote_context(quote, full_text)
-            
-            if context is None:
-                # Quote not found
-                rejected_evidence.append({
-                    "id": quote_data.get("id"),
-                    "quote": quote,
-                    "reason": "Quote not found in document",
-                    "original_explanation": relevance_explanation
-                })
-                continue
-            
             # Verify both existence and applicability
             verification = await self._verify_evidence(
                 claim=claim,
                 quote=quote,
-                context=context,
                 full_document=full_text,
                 relevance_explanation=relevance_explanation
             )
@@ -123,7 +109,7 @@ class EvidenceVerifierV2(BaseAgent):
             if verification["keep"]:
                 verified_evidence.append({
                     "id": quote_data.get("id"),
-                    "quote": verification["actual_quote"],
+                    "quote": quote,  # Use original quote
                     "supports_claim": True,
                     "explanation": verification["explanation"],
                     "original_relevance": relevance_explanation
@@ -158,38 +144,11 @@ class EvidenceVerifierV2(BaseAgent):
         
         return output
     
-    def _find_quote_context(self, quote: str, full_text: str, context_chars: int = 500) -> Optional[str]:
-        """
-        Find quote in document and return surrounding context.
-        
-        Returns None if quote not found.
-        """
-        # Normalize for searching
-        normalized_quote = " ".join(quote.split())
-        normalized_text = " ".join(full_text.split())
-        
-        # Try exact match first
-        idx = normalized_text.find(normalized_quote)
-        
-        if idx == -1:
-            # Try finding first 50 chars (might be truncated)
-            truncated = normalized_quote[:50]
-            idx = normalized_text.find(truncated)
-        
-        if idx == -1:
-            return None
-        
-        # Get surrounding context
-        start = max(0, idx - context_chars)
-        end = min(len(normalized_text), idx + len(normalized_quote) + context_chars)
-        
-        return normalized_text[start:end]
     
     async def _verify_evidence(
         self, 
         claim: str, 
         quote: str, 
-        context: str,
         full_document: str,
         relevance_explanation: str
     ) -> Dict[str, Any]:
@@ -198,7 +157,7 @@ class EvidenceVerifierV2(BaseAgent):
         
         Uses the standard: "Would this convince a skeptical reader?"
         """
-        prompt = f"""You are verifying if a quote genuinely supports a claim.
+        prompt = f"""You are verifying if a quote exists in the document AND genuinely supports a claim.
 
 CLAIM: {claim}
 
@@ -206,11 +165,15 @@ QUOTE TO VERIFY: "{quote}"
 
 ORIGINAL RELEVANCE EXPLANATION: {relevance_explanation}
 
-Determine if this quote genuinely supports the claim. Accept quotes that:
-1. Directly state what the claim asserts, OR
-2. Provide specific facts/numbers that substantiate the claim
+First, check if this quote (or a very similar version) exists in the document below.
+Then, determine if it genuinely supports the claim.
+
+Accept quotes that:
+1. Exist in the document (exact or with minor formatting differences), AND
+2. Directly state what the claim asserts, OR provide specific facts/numbers that substantiate the claim
 
 Reject quotes that:
+- Cannot be found in the document
 - Only tangentially relate to the topic
 - Require significant inference or assumptions  
 - Are about something else but happen to mention similar words
@@ -218,13 +181,10 @@ Reject quotes that:
 
 Be strict - we want evidence that would convince a skeptical reader.
 
-First, confirm the exact quote as it appears in the document (accounting for minor formatting differences).
-
-Then provide your verdict in this format:
-ACTUAL_QUOTE: [exact quote from document]
+Provide your verdict in this format:
 VERDICT: KEEP or REJECT
 EXPLANATION: [Why this does/doesn't support the claim - 1-2 sentences]
-REASON_IF_REJECTED: [Only if REJECT - specific issue like "too tangential", "requires inference", etc.]
+REASON_IF_REJECTED: [Only if REJECT - specific issue like "not found", "too tangential", "requires inference", etc.]
 
 FULL DOCUMENT:
 {full_document}"""
@@ -246,7 +206,6 @@ FULL DOCUMENT:
             # Default to rejecting on error
             return {
                 "keep": False,
-                "actual_quote": quote,
                 "reason": f"Verification error: {str(e)}",
                 "explanation": ""
             }
@@ -255,7 +214,6 @@ FULL DOCUMENT:
         """Parse the verification response."""
         result = {
             "keep": False,
-            "actual_quote": "",
             "explanation": "",
             "reason": ""
         }
@@ -268,9 +226,7 @@ FULL DOCUMENT:
                 if not line:
                     continue
                     
-                if line.startswith("ACTUAL_QUOTE:"):
-                    result["actual_quote"] = line.split(":", 1)[1].strip().strip('"')
-                elif line.startswith("VERDICT:"):
+                if line.startswith("VERDICT:"):
                     verdict = line.split(":", 1)[1].strip().upper()
                     result["keep"] = verdict == "KEEP"
                 elif line.startswith("EXPLANATION:"):
@@ -288,7 +244,6 @@ FULL DOCUMENT:
             logger.error(f"Error parsing verification response: {e}")
             return {
                 "keep": False,
-                "actual_quote": "",
                 "reason": "Failed to parse verification response",
                 "explanation": ""
             }

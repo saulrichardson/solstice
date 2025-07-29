@@ -90,11 +90,11 @@ fixed = service.process_text(text)
 # Output: "Flublok® prevents COVID-19" (unchanged)
 ```
 
-**Processing Steps:**
-1. **Spacing Correction**: WordNinja-based word segmentation
-2. **Punctuation Normalization**: Smart quotes, proper dashes
-3. **Medical Term Preservation**: Protects clinical terminology
-4. **Whitespace Cleanup**: Consistent spacing
+**Processing Steps (in order):**
+1. **Post-extraction Cleaning**: Fixes PDF artifacts, truncated words, ligatures
+2. **WordNinja Spacing**: Intelligent word segmentation for concatenated text (must run before SymSpell)
+3. **SymSpell Correction** (optional): Spell-checking and compound word splitting
+4. **Whitespace Cleanup**: Consistent spacing and formatting
 
 ### overlap_resolver.py
 Resolves conflicts between detected regions:
