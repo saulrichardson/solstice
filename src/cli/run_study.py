@@ -57,20 +57,6 @@ def main():
         help="Output directory for results (default: data/studies)"
     )
     
-    parser.add_argument(
-        "--max-loops",
-        type=int,
-        default=2,
-        help="Maximum completeness loops (default: 2)"
-    )
-    
-    parser.add_argument(
-        "--no-additional",
-        dest="reverify_additional",
-        action="store_false",
-        default=True,
-        help="Skip verification of additional evidence from completeness checker"
-    )
     
     args = parser.parse_args()
     
@@ -84,9 +70,7 @@ def main():
         "agent_config": {
             "model": args.model,
             "disable_cache": True
-        },
-        "max_completeness_loops": args.max_loops,
-        "reverify_additional": args.reverify_additional
+        }
     }
     
     # Print study info
@@ -95,7 +79,6 @@ def main():
     print(f"Claims file: {args.claims_file}")
     print(f"Documents: {', '.join(args.documents)}")
     print(f"Model: {args.model}")
-    print(f"Max loops: {args.max_loops}")
     print()
     
     # Create and run orchestrator

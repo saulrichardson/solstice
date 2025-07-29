@@ -47,15 +47,14 @@ class ClaimOrchestrator:
         self.agent_config["claim"] = claim_text
         
         # Fixed pipeline for streamlined architecture
+        # Note: Pipeline order matters for proper data flow
         self.pipeline = [
             (EvidenceExtractor, "evidence_extractor"),
             (EvidenceVerifierV2, "evidence_verifier_v2"),
             (CompletenessChecker, "completeness_checker"),
+            # Additional verifier run will happen if completeness checker finds new evidence
             (EvidencePresenter, "evidence_presenter")
         ]
-        
-        # Whether to re-verify additional evidence found by completeness checker
-        self.reverify_additional = self.config.get("reverify_additional", True)
     
     async def process(self) -> Dict[str, Any]:
         """
@@ -98,116 +97,92 @@ class ClaimOrchestrator:
         doc_result = {
             "document": document,
             "agents_run": [],
-            "supporting_evidence": [],
-            "loops_performed": 0
+            "supporting_evidence": []
         }
         
-        # Track all evidence across loops
+        # Track all evidence
         all_verified_evidence = []
         
-        # Maximum number of loops to prevent infinite recursion
-        max_loops = self.config.get("max_completeness_loops", 2)
-        current_loop = 0
+        logger.info(f"  Starting pipeline")
         
-        while current_loop < max_loops:
-            current_loop += 1
-            loop_found_new = False
-            
-            logger.info(f"  Starting pipeline loop {current_loop}")
-            
-            # Run the main pipeline
-            for agent_class, agent_name in self.pipeline:
-                logger.info(f"    Running {agent_name}...")
-                
-                try:
-                    # Use standard agent config
-                    agent_config = self.agent_config.copy()
-                    
-                    # Create agent instance
-                    agent = agent_class(
-                        pdf_name=document,
-                        claim_id=self.claim_id,
-                        cache_dir=self.cache_dir,
-                        config=agent_config
-                    )
-                    
-                    # Add loop suffix to agent directory for subsequent loops
-                    if current_loop > 1:
-                        agent.agent_dir = agent.agent_dir.parent / f"{agent_name}_loop{current_loop}"
-                        agent.agent_dir.mkdir(parents=True, exist_ok=True)
-                    
-                    # Run agent
-                    result = await agent.process()
-                    
-                    # Save agent output
-                    output_name = agent_name if current_loop == 1 else f"{agent_name}_loop{current_loop}"
-                    self._save_agent_output(document, output_name, result)
-                    
-                    doc_result["agents_run"].append({
-                        "agent": output_name,
-                        "success": True,
-                        "timestamp": datetime.now().isoformat(),
-                        "loop": current_loop
-                    })
-                    
-                    # Collect verified evidence
-                    if agent_name == "evidence_verifier_v2":
-                        verified = result.get("verified_evidence", [])
-                        all_verified_evidence.extend(verified)
-                        logger.info(f"      Verified {len(verified)} evidence pieces")
-                    
-                    # Check if completeness checker found new evidence
-                    if agent_name == "completeness_checker":
-                        new_evidence = result.get("new_evidence", [])
-                        if new_evidence and self.reverify_additional:
-                            logger.info(f"      Found {len(new_evidence)} additional evidence pieces")
-                            # Prepare for next loop
-                            loop_found_new = True
-                            # Update extractor output for next loop
-                            await self._prepare_next_loop(document, new_evidence, current_loop)
-                    
-                    # Skip presenter on intermediate loops
-                    if agent_name == "evidence_presenter" and loop_found_new and current_loop < max_loops:
-                        logger.info("      Skipping presenter - will run after verification loop")
-                        break
-                        
-                except Exception as e:
-                    output_name = agent_name if current_loop == 1 else f"{agent_name}_loop{current_loop}"
-                    logger.error(f"      Agent {agent_name} failed: {e}")
-                    doc_result["agents_run"].append({
-                        "agent": output_name,
-                        "success": False,
-                        "error": str(e),
-                        "timestamp": datetime.now().isoformat(),
-                        "loop": current_loop
-                    })
-                    
-                    # Decide whether to continue
-                    if not self.config.get("continue_on_error", True):
-                        break
-            
-            # If no new evidence found, break the loop
-            if not loop_found_new:
-                break
-                
-            doc_result["loops_performed"] = current_loop
+        # Run initial extraction and verification
+        initial_evidence_verified = False
+        additional_evidence_found = False
         
-        # Final presentation with all evidence
-        if all_verified_evidence:
-            await self._run_final_presenter(document, all_verified_evidence, doc_result)
+        for agent_class, agent_name in self.pipeline:
+            # Skip presenter until we've processed all evidence
+            if agent_name == "evidence_presenter" and additional_evidence_found:
+                continue
+                
+            logger.info(f"    Running {agent_name}...")
+            
+            try:
+                # Use standard agent config
+                agent_config = self.agent_config.copy()
+                
+                # Create agent instance
+                agent = agent_class(
+                    pdf_name=document,
+                    claim_id=self.claim_id,
+                    cache_dir=self.cache_dir,
+                    config=agent_config
+                )
+                
+                # Run agent
+                result = await agent.process()
+                
+                # Save agent output
+                self._save_agent_output(document, agent_name, result)
+                
+                doc_result["agents_run"].append({
+                    "agent": agent_name,
+                    "success": True,
+                    "timestamp": datetime.now().isoformat()
+                })
+                
+                # Collect verified evidence
+                if agent_name == "evidence_verifier_v2":
+                    verified = result.get("verified_evidence", [])
+                    all_verified_evidence.extend(verified)
+                    logger.info(f"      Verified {len(verified)} evidence pieces")
+                    initial_evidence_verified = True
+                
+                # Check if completeness checker found additional evidence
+                if agent_name == "completeness_checker":
+                    new_evidence = result.get("new_evidence", [])
+                    if new_evidence:
+                        logger.info(f"      Found {len(new_evidence)} additional evidence pieces")
+                        additional_evidence_found = True
+                        # Prepare additional evidence for verification
+                        await self._prepare_additional_evidence(document, new_evidence)
+                    
+            except Exception as e:
+                logger.error(f"      Agent {agent_name} failed: {e}")
+                doc_result["agents_run"].append({
+                    "agent": agent_name,
+                    "success": False,
+                    "error": str(e),
+                    "timestamp": datetime.now().isoformat()
+                })
+                
+                # Decide whether to continue
+                if not self.config.get("continue_on_error", True):
+                    break
+        
+        # If additional evidence was found, verify it
+        if additional_evidence_found:
+            await self._verify_additional_evidence(document, doc_result, all_verified_evidence)
+        
+        # Now run the presenter with all verified evidence
+        await self._run_presenter(document, doc_result, all_verified_evidence)
         
         doc_result["success"] = all(a["success"] for a in doc_result["agents_run"])
         return doc_result
     
-    async def _prepare_next_loop(
-        self,
-        document: str,
-        new_evidence: List[Dict],
-        current_loop: int
-    ):
-        """Prepare evidence extractor output for next loop."""
+    async def _prepare_additional_evidence(self, document: str, new_evidence: List[Dict]):
+        """Prepare additional evidence found by completeness checker for verification."""
         # Create output in format expected by verifier
-        next_extractor_output = {
+        additional_extractor_output = {
             "claim_id": self.claim_id,
             "claim": self.claim_text,
             "document": {
@@ -220,27 +195,73 @@ class ClaimOrchestrator:
             "extracted_evidence": new_evidence
         }
         
-        # Save for next loop's verifier to read
-        next_loop = current_loop + 1
-        output_dir = self.cache_dir / document / "agents" / "claims" / self.claim_id / f"evidence_extractor_loop{next_loop}"
+        # Save for additional verifier to read
+        output_dir = self.cache_dir / document / "agents" / "claims" / self.claim_id / "evidence_extractor_additional"
         output_dir.mkdir(parents=True, exist_ok=True)
         
         import json
         with open(output_dir / "output.json", 'w') as f:
-            json.dump(next_extractor_output, f, indent=2)
-            
-        logger.info(f"      Prepared evidence for loop {next_loop}")
+            json.dump(additional_extractor_output, f, indent=2)
     
-    async def _run_final_presenter(
+    async def _verify_additional_evidence(
+        self, 
+        document: str, 
+        doc_result: Dict[str, Any],
+        all_verified_evidence: List[Dict]
+    ):
+        """Verify additional evidence found by completeness checker."""
+        logger.info("    Running evidence_verifier_v2 for additional evidence...")
+        
+        try:
+            # Create verifier for additional evidence
+            agent_config = self.agent_config.copy()
+            verifier = EvidenceVerifierV2(
+                pdf_name=document,
+                claim_id=self.claim_id,
+                cache_dir=self.cache_dir,
+                config=agent_config
+            )
+            
+            # Point to additional evidence directory
+            verifier.agent_dir = verifier.agent_dir.parent / "evidence_verifier_v2_additional"
+            verifier.agent_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Run verification
+            result = await verifier.process()
+            
+            # Save output
+            self._save_agent_output(document, "evidence_verifier_v2_additional", result)
+            
+            # Collect additional verified evidence
+            additional_verified = result.get("verified_evidence", [])
+            all_verified_evidence.extend(additional_verified)
+            logger.info(f"      Verified {len(additional_verified)} additional evidence pieces")
+            
+            doc_result["agents_run"].append({
+                "agent": "evidence_verifier_v2_additional",
+                "success": True,
+                "timestamp": datetime.now().isoformat()
+            })
+            
+        except Exception as e:
+            logger.error(f"      Additional evidence verification failed: {e}")
+            doc_result["agents_run"].append({
+                "agent": "evidence_verifier_v2_additional",
+                "success": False,
+                "error": str(e),
+                "timestamp": datetime.now().isoformat()
+            })
+    
+    async def _run_presenter(
         self,
         document: str,
-        all_verified_evidence: List[Dict],
-        doc_result: Dict[str, Any]
+        doc_result: Dict[str, Any],
+        all_verified_evidence: List[Dict]
     ):
-        """Run final presenter with all collected evidence."""
-        logger.info(f"    Running final evidence presenter with {len(all_verified_evidence)} total pieces")
+        """Run presenter with all verified evidence."""
+        logger.info(f"    Running evidence_presenter with {len(all_verified_evidence)} total verified pieces...")
         
-        # Create consolidated verifier output
+        # Create consolidated verifier output for presenter
         consolidated_verifier = {
             "claim_id": self.claim_id,
             "claim": self.claim_text,
@@ -259,37 +280,36 @@ class ClaimOrchestrator:
         with open(verifier_dir / "output.json", 'w') as f:
             json.dump(consolidated_verifier, f, indent=2)
         
-        # Run presenter
         try:
-            presenter_config = self.agent_config.copy()
+            # Create presenter
+            agent_config = self.agent_config.copy()
             presenter = EvidencePresenter(
                 pdf_name=document,
                 claim_id=self.claim_id,
                 cache_dir=self.cache_dir,
-                config=presenter_config
+                config=agent_config
             )
             
-            # Point presenter to consolidated evidence directory
-            presenter.agent_dir = presenter.agent_dir.parent / "evidence_presenter_final"
-            presenter.agent_dir.mkdir(parents=True, exist_ok=True)
-            
+            # Run presenter
             result = await presenter.process()
             
-            self._save_agent_output(document, "evidence_presenter_final", result)
+            # Save output
+            self._save_agent_output(document, "evidence_presenter", result)
             
+            # Update doc_result with presenter output
             doc_result["supporting_evidence"] = result.get("supporting_evidence", [])
             doc_result["evidence_summary"] = result.get("evidence_summary", {})
             
             doc_result["agents_run"].append({
-                "agent": "evidence_presenter_final",
+                "agent": "evidence_presenter",
                 "success": True,
                 "timestamp": datetime.now().isoformat()
             })
             
         except Exception as e:
-            logger.error(f"      Final presenter failed: {e}")
+            logger.error(f"      Evidence presenter failed: {e}")
             doc_result["agents_run"].append({
-                "agent": "evidence_presenter_final",
+                "agent": "evidence_presenter",
                 "success": False,
                 "error": str(e),
                 "timestamp": datetime.now().isoformat()

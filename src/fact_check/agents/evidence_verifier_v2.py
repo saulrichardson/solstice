@@ -60,20 +60,16 @@ class EvidenceVerifierV2(BaseAgent):
         """
         logger.info(f"Verifying evidence for {self.claim_id}")
         
-        # Find the most recent extractor output (could be from a loop)
+        # Find the appropriate extractor output
         extractor_path = None
         base_claim_dir = self.pdf_dir / "agents" / "claims" / self.claim_id
         
-        # Check for loop extractor outputs first
-        for i in range(5, 0, -1):
-            loop_path = base_claim_dir / f"evidence_extractor_loop{i}" / "output.json"
-            if loop_path.exists():
-                extractor_path = loop_path
-                logger.info(f"  Using loop {i} extractor output")
-                break
-        
-        # Fall back to standard extractor
-        if extractor_path is None:
+        # Check if we're running as additional verifier
+        if "additional" in str(self.agent_dir):
+            extractor_path = base_claim_dir / "evidence_extractor_additional" / "output.json"
+            logger.info("  Using additional evidence from completeness checker")
+        else:
+            # Standard verification - use main extractor output
             extractor_path = base_claim_dir / "evidence_extractor" / "output.json"
         
         extractor_data = self.load_json(extractor_path)

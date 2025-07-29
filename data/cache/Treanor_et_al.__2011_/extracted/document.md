@@ -12,7 +12,7 @@
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_52a04a0b.png)
+![Figure from page 1](figures/figure_p1_87b6c67f.png)
 
 
 ### Although embryonated hen’seggs have been used to generate effective influenza vaccines for many years, this system does have several important drawbacks. Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg pro- growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2]. Expression of proteins in insect cells using recombinant bac-
@@ -22,7 +22,7 @@ similar Flublok 62 6 def in it Con clu confirm
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_c0f1c414.png)
+![Figure from page 1](figures/figure_p1_a11b072e.png)
 
 
 ### ) uring the 2007-2008
@@ -66,9 +66,9 @@ udy site. Vaccine was administered as a single intramuscular jection in the uppe
 
 ### H1 N1), A/Wisconsin/67/20
 
-p p young adults. Methods 1. Vaccine The vaccine (Flublok used in this study consisted of puri- ed hemagglutinin (HA) proteins produced in insect cells using baculo virus expression system as previously described [9]. The comb in ant HA protein is not cleaved in insect cells and is fer red to as rHA0. The trivalent vaccine contained 45 mcg smeasured by the single radial immuno diffusion as say of ch purified rHA0 derived from the A/Solomon Islands 3 2006
+rmulation of trivalent rHA0 vaccine in a population of healthy oung adults. Methods 1. Vaccine The vaccine (Flublok used in this study consisted of puri- ed hemagglutinin (HA) proteins produced in insect cells using baculo virus expression system as previously described [9]. The comb in ant HA protein is not cleaved in insect cells and is fer red to as rHA0. The trivalent vaccine contained 45 mcg smeasured by the single radial immuno diffusion as say of ch purified rHA0 derived from the A/Solomon Islands 3 2006
 
-, ] y yand antibody responses similar to those seen with egg derived nfluenza vaccines. Finally, in a preliminary field efficacy eval- ation, recipients of the rHA0 vaccine had reduced rates of ulture-positive CDC-defined influenza like illness compared with lacebo recipients, although the study was small [9]. In the present study, we performed amuch larger assessment fthe immunogen i city, safety, and protective efficacy of the final or mul ation of trivalent rHA0 vaccine in a population of healthy
+7,8]. These studies have consistently shown excellent to ler a bil yand antibody responses similar to those seen with egg derived nfluenza vaccines. Finally, in a preliminary field efficacy eval- ation, recipients of the rHA0 vaccine had reduced rates of ulture-positive CDC-defined influenza like illness compared with lacebo recipients, although the study was small [9]. In the present study, we performed amuch larger assessment fthe immunogen i city, safety, and protective efficacy of the final or mul ation of trivalent rHA0 vaccine in a population of healthy
 
 34 J. J. Tre an or et al. / Vaccin oung adults and adults 65 and older [3–5]. More recent stud- shave evaluated rHA0 vaccine formulations in healthy adults, ubjects aged 50–64 years of age [6] and subjects 65 and older ,8]. These studies have consistently shown excellent to ler a bil
 
@@ -84,14 +84,14 @@ trains comparing pre- and 28 day post vaccination samples. The rimary efficacy e
 
 ore activity at 1:10 were assigned a value of 1:5. As says were er formed using turkey red blood cells (Viro med Laboratories, Min- etonka, MN). Swabs for virus culture were stored at −70 ◦C and shipped on ry ice to a central laboratory (Cincinnati Children’s Hospital Med- al Center, Cincinnati, OH) where virus isolation was performed in rimary rhesus monkey kidney (RhMK) cells (Diagnostic Hybrids c (DHI), Athens, Ohio). The presence of influenza A or B viruses the culture was determined by immu no fluorescence using type- pec if ic monoclonal antibodies (DHI). All influenza isolates were ub sequently sub typed and antigenic ally characterized based on activity to ferret anti serum raised against WHO reference strains. 5. Statistical analyses The primary safety endpoints for this study were the rates d i fli i d dli i d d Th i
 
-vail able sera from vaccine recipients, and a randomly selected ubset of approximately 33% of placebo specimens were selected or testing. The antigens used in the as says were baculo virus eri ved rHAs representing the A/Solomon Islands 03 2006 (H1 N1), /Wisconsin 67 2005 (H3 N2), and B/Malaysia/2506/2004 viruses, rovided by Protein Sciences Corporation. Sera were treated with eur am in ida se (RDE, Denka-Seiken, Japan) to remove non specific nhibi tors of hem agglutination prior to testing, and were tested in erial two fold dilutions at an initial dilution of 1:10. Sera with i i 1 10 i d l f 1 5 A
+vail able sera from vaccine recipients, and a randomly selected ubset of approximately 33% of placebo specimens were selected or testing. The antigens used in the as says were baculo virus eri ved rHAs representing the A/Solomon Islands 03 2006 (H1 N1), /Wisconsin 67 2005 (H3 N2), and B/Malaysia/2506/2004 viruses, rovided by Protein Sciences Corporation. Sera were treated with eur am in ida se (RDE, Denka-Seiken, Japan) to remove non specific nhibi tors of hem agglutination prior to testing, and were tested in erial two fold dilutions at an initial dilution of 1:10. Sera with ore activity at 1:10 were assigned a value of 1:5 As says were
 
 
 ### yemagglutination-inhibit
 
 he diary and ascertain the presence or absence of respiratory ill- ess symptoms. Subjects were instructed to return to the clinic for lness evaluations if they observed any acute respiratory symp- oms or fever. During these illness visits, symptoms were reviewed, brief physical exam was conducted, and combined nasal and hroat swabs for virus culture were obtained. 4. Laboratory as says Sera from the immunogen i city subset were assessed for ib...b
 
-(2011) 7733– 7739 enter for review of interim safety data at day 28. A final phone call ccurred at the end of the influenza season. 3. Surveillance for influenza During the influenza season, subjects completed a weekly diary orecord influenza symptoms, and after influenza was recognized nthe community, subjects received weekly phone calls to review hdi ...iill
+(2011) 7733– 7739 enter for review of interim safety data at day 28. A final phone call ccurred at the end of the influenza season. 3. Surveillance for influenza During the influenza season, subjects completed a weekly diary orecord influenza symptoms, and after influenza was recognized nthe community, subjects received weekly phone calls to review he diary and ascertain the presence or absence of respiratory ill
 
 
 ## Page 3
@@ -104,7 +104,7 @@ he diary and ascertain the presence or absence of respiratory ill- ess symptoms.
 
 **[TABLE]**
 
-![Table from page 3](figures/table_p3_3a9c6bbf.png)
+![Table from page 3](figures/table_p3_efc29893.png)
 
 ( ) groups) and fatigue or lack of energy (14.5% in both groups). The majority (76%) of complaints of headache were also mild. There were 17 reports of fever (oral temperature >100.4 F) among Flublok
 
@@ -123,7 +123,7 @@ p y g , sum ing a 5% attrition rate. 6. Informed consent
 
 **[FIGURE]**
 
-![Figure from page 3](figures/figure_p3_6a144d35.png)
+![Figure from page 3](figures/figure_p3_3464cdf5.png)
 
 J. J. Tre a no
 
@@ -152,11 +152,11 @@ AE), there was 1 death in each group, and 9 and 13 subjects in he Flublok and pl
 
 **[TABLE]**
 
-![Table from page 4](figures/table_p4_6ce66aa5.png)
+![Table from page 4](figures/table_p4_49b782c3.png)
 
 Among Flublok recipients, subjects with ase seasonal influenza vaccine in the year prio h bli tit ftib d i tll th
 
-p pnduced serum antibody responses to all three components of the accine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vac- i nation geometric mean titers were substantially higher for all hree components in Flublok than in placebo recipients (P < .001 or all comparisons). The proportion of Flublok recipients with post vaccination HAI titer of 1:40 or greater was 99% for the H1 component (95% CI, 97.1%, 99 5, 97% for the H3 component
+luBlok and placebo recipients are shown in Table 2. Flublok nduced serum antibody responses to all three components of the accine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vac- i nation geometric mean titers were substantially higher for all hree components in Flublok than in placebo recipients (P < .001 or all comparisons). The proportion of Flublok recipients with post vaccination HAI titer of 1:40 or greater was 99% for the H1 component (95% CI, 97.1%, 99 5, 97% for the H3 component
 
 mong placebo recipients were uneventful and resulted in the birth a normal infant at 36 weeks gestation or later. Two women in the uBlok and three in the placebo group had associated AEs during heir pregnancy which all resolved. Elective or spontaneous abor- on occurred in three and four subjects in the Flublok and placebo roups, respectively. 2. Immunogen i city Serum HAI antibody titers before and after immunization in uBlok and placebo recipients are shown in Table 2. Flublok
 
@@ -174,13 +174,13 @@ Placebo 127 20.33 18.8 3 21.5 (16.5, 25.0) (15.2, 23.3) (1, 8) (18.1, 25.4 Flubl
 
 presenting a different clade from the vaccine strain, and one flu enz a B virus could not be antigenic ally characterized. The cumulative rates of culture confirmed influenza illness
 
-esting. These viruses included 12 H1 N1 viruses antigenic ally esembling H1 drift variant A/Brisbane/59/2007, 41 H3 N2 viruses ntigenically resembling the H3 drift variant A/Brisbane/10/2007, 2 H3 N2 viruses that could not be identified as either A/Wisconsin- ke or A/Brisbane-like, and 16 influenza viruses for which the ubtype was not determined. Fifty eight of the 59 influenza B iruses (98%) were antigenic ally similar to B/Florida/04/2006
+y p pesting. These viruses included 12 H1 N1 viruses antigenic ally esembling H1 drift variant A/Brisbane/59/2007, 41 H3 N2 viruses ntigenically resembling the H3 drift variant A/Brisbane/10/2007, 2 H3 N2 viruses that could not be identified as either A/Wisconsin- ke or A/Brisbane-like, and 16 influenza viruses for which the ubtype was not determined. Fifty eight of the 59 influenza B iruses (98%) were antigenic ally similar to B/Florida/04/2006
 
-ccurred in Flublok recipients and 6 occurred in placebo recipi- nts, and among these subjects one Flublok recipient and 5 placebo cipients met the CDC-ILI definition. Therefore, we were unable obtain a meaningful estimate of the efficacy of Flublok against DC-ILI due to strains represented in the vaccine. The remaining 111 influenza A viruses were characterized as ntigenic variants, i.e., they exhibited a 4 fold or greater decrease reactivity with post infection ferret anti sera in reciprocal HAI
+ruses were A/Wisconsin/67/2005 like H3 N2 viruses. Two of these ccurred in Flublok recipients and 6 occurred in placebo recipi- nts, and among these subjects one Flublok recipient and 5 placebo cipients met the CDC-ILI definition. Therefore, we were unable obtain a meaningful estimate of the efficacy of Flublok against DC-ILI due to strains represented in the vaccine. The remaining 111 influenza A viruses were characterized as ntigenic variants, i.e., they exhibited a 4 fold or greater decrease reactivity with post infection ferret anti sera in reciprocal HAI
 
-p y p DC-ILI, and we also assessed the effect of vaccination on rates of ny influenza culture positive illness. A total of 582 subjects were cultured for respiratory illness, and nfluenza virus was isolated from 178 subjects. There were a total f 120 subjects from whom influenza A was isolated, the majority fwhom (82 120, 68%) met the CDC-ILI case definition. There were total of 59 subjects with positive cultures for influenza B, and the majority of these subjects (41/59, 69%) also met the CDC-ILI case efinition. Only 8 isolates in the study (<5% of the total) were antigen i ally identical to the strains contained in the vaccine. All of these ruses were A Wisconsin 67 2005 Like H3 N2 viruses Two of these
+nd point for this study was the development of culture confirmed DC-ILI, and we also assessed the effect of vaccination on rates of ny influenza culture positive illness. A total of 582 subjects were cultured for respiratory illness, and nfluenza virus was isolated from 178 subjects. There were a total f 120 subjects from whom influenza A was isolated, the majority fwhom (82 120, 68%) met the CDC-ILI case definition. There were total of 59 subjects with positive cultures for influenza B, and the majority of these subjects (41/59, 69%) also met the CDC-ILI case ef in it ion. Only 8 isolates in the study (<5% of the total) were antigen i- ally identical to the strains contained in the vaccine. All of these ruses were A Wisconsin 67 2005 Like H3 N2 viruses. Two of these
 
-(2011) 7733– 7739 ients with or without self reported history of prior seasonal influenza vaccination. body titer (95% CI) and response rates (95% CI) to the following vaccine antigens 7 2005 (H3 N2) B/Malaysia/2506/2004 Post %Response Pre Post %Response 15.1 3 31.1 19.8 0 (13.0, 17.6) (1, 8) (24.6, 39.4) (15.8, 24.8) (0, 3.0) 262.1 81 55.27 200 55 52 (234.9, 292 4 (77, 85) (49.3, 62.0) (181.0, 222 2 (47, 57) 185.7 57 104.6 162.4 22 (149.4, 230 9 (47, 67) (82.0, 133 5 (132 4 199 2 (13 30 286.9 87 46.76 212.0 60 (253.3, 324 8 (84, 91) (41.3, 52.9) (188.6, 238 2 (55, 65) ndpoint for this study was the development of culture confirmed
+(2011) 7733– 7739 ients with or without self reported history of prior seasonal influenza vaccination. body titer (95% CI) and response rates (95% CI) to the following vaccine antigens 7 2005 (H3 N2) B/Malaysia/2506/2004 Post %Response Pre Post %Response 15.1 3 31.1 19.8 0 (13.0, 17.6) (1, 8) (24.6, 39.4) (15.8, 24.8) (0, 3.0) 262.1 81 55.27 200 55 52 (234.9, 292 4 (77, 85) (49.3, 62.0) (181.0, 222 2 (47, 57) 185.7 57 104.6 162.4 22 (149.4, 230 9 (47, 67) (82.0, 133 5 (132 4 199 2 (13 30 286.9 87 46.76 212.0 60 (253.3, 324 8 (84, 91) (41.3, 52.9) (188.6, 238 2 (55, 65) nd point for this study was the development of culture confirmed
 
 
 ## Page 5
@@ -188,7 +188,7 @@ p y p DC-ILI, and we also assessed the effect of vaccination on rates of ny infl
 
 **[FIGURE]**
 
-![Figure from page 5](figures/figure_p5_85f7de0c.png)
+![Figure from page 5](figures/figure_p5_0f9ebf23.png)
 
 g 2 Kaplan Meier plots of the cumulative incidence of culture positive CDC ILI
 
@@ -201,19 +201,19 @@ g 2 Kaplan Meier plots of the cumulative incidence of culture positive CDC ILI
 
 **[TABLE]**
 
-![Table from page 5](figures/table_p5_42ecc050.png)
+![Table from page 5](figures/table_p5_5da1b268.png)
 
 J. J. Tre an or et al. / Vaccin
 
 iruses and with overall low attack rates [20], and 49.3% over two easons, 2005-2007 with most cases due to antigenic ally variant iruses [21]. Because of the difficulty in conducting placebo controlled tudies of influenza vaccine especially as the target groups for vac- i nation have expanded, several recent assessments of influenza accine effectiveness have utilized a test negative, case control esign. Estimates of overall in activated vaccine protective effec-
 
-hich were mostly vaccine like. In another smaller study done on ollege campuses in Michigan [19], the protective efficacy of TIV gainst culture confirmed illness was 73% (95% CI, 51%, 85%). In hat study, 90% of influenza isolates were influenza A (H3 N2), but he antigenic characterization of isolates was not reported. In other ecent randomized trials, the protective efficacy of TIV was 22.3% the 2005-2006 influenza season predominated by influenza B
+yhich were mostly vaccine like. In another smaller study done on ollege campuses in Michigan [19], the protective efficacy of TIV gainst culture confirmed illness was 73% (95% CI, 51%, 85%). In hat study, 90% of influenza isolates were influenza A (H3 N2), but he antigenic characterization of isolates was not reported. In other ecent randomized trials, the protective efficacy of TIV was 22.3% the 2005-2006 influenza season predominated by influenza B
 
-Comparisons of these results with the results of other ssess men ts of the protective efficacy of influenza vaccines are omplica ted by differences in methodologies, populations, and nti genic match between vaccine and circulating strains in the pec if ic year that studies are carried out. Two recently published udies have evaluated egg grown in activated vaccines in healthy dults using a placebo controlled design during the 2007-2008 nfluenza season. In one study, conducted primarily in Europe, the ver all efficacy of egg grown in activated vaccine against culture on firmed illness was 63%, and the lower 95% CI was 46.7% [18]. The re dominant influenza A isolates in that study were H1 N1 viruses,
+ub st anti ally lower than that against influenza A. Comparisons of these results with the results of other ssess men ts of the protective efficacy of influenza vaccines are omplica ted by differences in methodologies, populations, and nti genic match between vaccine and circulating strains in the pec if ic year that studies are carried out. Two recently published udies have evaluated egg grown in activated vaccines in healthy dults using a placebo controlled design during the 2007-2008 nfluenza season. In one study, conducted primarily in Europe, the ver all efficacy of egg grown in activated vaccine against culture on firmed illness was 63%, and the lower 95% CI was 46.7% [18]. The re dominant influenza A isolates in that study were H1 N1 viruses,
 
-Consistent with the results of national surveillance in the US uring the 2007-2008 season [17], the majority of influenza A iruses detected in this study were H3 N2 viruses that represented substantial antigenic mismatch with the vaccine. However, even nder these circumstances, Flublok had significant protective effi- acy against culture confirmed influenza illness, including those meeting the CDC-ILI case definition. Influenza B viruses isolated in his study and elsewhere in North America during the 2007-2008 eason belonged to the Yamagata lineage of influenza B viruses, gainst which vaccines representing the Victoria lineage would be xpected to have little or no efficacy. We also found that the effi- acy of Flublok against CDC-ILI associated with influenza B was ub st anti ally lower than that against influenza A
+nti body [16]. Consistent with the results of national surveillance in the US uring the 2007-2008 season [17], the majority of influenza A iruses detected in this study were H3 N2 viruses that represented substantial antigenic mismatch with the vaccine. However, even nder these circumstances, Flublok had significant protective effi- acy against culture confirmed influenza illness, including those meeting the CDC-ILI case definition. Influenza B viruses isolated in his study and elsewhere in North America during the 2007-2008 eason belonged to the Yamagata lineage of influenza B viruses, gainst which vaccines representing the Victoria lineage would be xpected to have little or no efficacy. We also found that the effi- acy of Flublok against CDC-ILI associated with influenza B was ub st anti ally lower than that against influenza A.
 
-p p y gon with licensed, egg derived influenza vaccine with a similar me course [11]. The mechanism and clinical significance of such nassociation is unclear. Flublok induced serum HAI antibody responses to all three vac- ne components in the majority of recipients, and the lower limit the 95% confidence interval for response rate exceeded the US DA criteria for licensure for all three components (lower limit of e 95% confidence interval for response rate >40% and lower limit the 95% confidence interval for HAI titer of 1:40 or greater >70%) 2]. Although we did not attempt to verify vaccine histories by view of medical records, significant differences in both the fre- uency and the magnitude of the HAI response were shown when omparing the immune response between subjects with self- ported previous vaccination. Reduced antibody response rates, ecreased post vaccination titers, and decreased antibody secret- gcell responses have all been observed previously in adults with rior influenza vaccine compared to those without [13 16. The xact mechanism of this effect remains uncertain, although it may present interference with antigen presentation by pre existing nti body [16]
+eric ard it is has also been reported previously following vaccina on with licensed, egg derived influenza vaccine with a similar me course [11]. The mechanism and clinical significance of such nassociation is unclear. Flublok induced serum HAI antibody responses to all three vac- ne components in the majority of recipients, and the lower limit the 95% confidence interval for response rate exceeded the US DA criteria for licensure for all three components (lower limit of e 95% confidence interval for response rate >40% and lower limit the 95% confidence interval for HAI titer of 1:40 or greater >70%) 2]. Although we did not attempt to verify vaccine histories by view of medical records, significant differences in both the fre- uency and the magnitude of the HAI response were shown when omparing the immune response between subjects with self- ported previous vaccination. Reduced antibody response rates, ecreased post vaccination titers, and decreased antibody secret- gcell responses have all been observed previously in adults with rior influenza vaccine compared to those without [13 16. The xact mechanism of this effect remains uncertain, although it may present interference with antigen presentation by pre existing nti body [16].
 
 (2011) 7733– 7739-7737 HA0 vaccine produced using the baculo virus expression system healthy adults [9]. These vaccines have been well tolerated at all oses administered, and are associated with low rates of local reac- ons. One case of peri card it is was detected in a Flublok recipient. eric ard it is has also been reported previously following vaccina-
 
@@ -231,9 +231,9 @@ ubjects in this study: Mhorag Hay M. D., University of Rochester chool of Medici
 
 cknowledgements The authors acknowledge the efforts of Kerry Senger, Tam
 
-ponal influenza and supports that significant protection in a primed opulation can be obtained against influenza with apure he mag utinin vaccine. The efficacy results also demonstrate that in dults, the minor differences in HA glycosylation seen in insect cells ompared to mammalian cells and the synthesis of the HA as an ncleaved precursor do not preclude the generation of an effective mmune response in adults. The use of recombinant DNA techniques to express proteins cell culture has been a successful approach for generation of ghly effective vaccines for the prevention of hepatitis B (HBV) nd human papilloma virus (HPV), and baculo virus expression tech- ology is currently used for a licensed HPV vaccine [26]. Among he available expression technologies, recombinant baculo virus is specially well suited for production of influenza vaccine because he rapidity with which genes can be cloned and inserted into this ector facilitates updating the vaccine at regular intervals. Expres- on of the HA protein in insect cells using recombinant baculo virus so avoids the need to work with potentially pathogenic, live flu enz a viruses, and the attendant bio containment issues that ould be a particular concern for production of pandemic vaccines 7]. The results of the current study support the utility of insect ells for the production of well tolerated and effective vaccines for easonal influenza.
+baculo virus derived HA vaccine in adults for prevention of sea onal influenza and supports that significant protection in a primed opulation can be obtained against influenza with apure he mag utinin vaccine. The efficacy results also demonstrate that in dults, the minor differences in HA glycosylation seen in insect cells ompared to mammalian cells and the synthesis of the HA as an ncleaved precursor do not preclude the generation of an effective mmune response in adults. The use of recombinant DNA techniques to express proteins cell culture has been a successful approach for generation of ghly effective vaccines for the prevention of hepatitis B (HBV) nd human papilloma virus (HPV), and baculo virus expression tech- ology is currently used for a licensed HPV vaccine [26]. Among he available expression technologies, recombinant baculo virus is specially well suited for production of influenza vaccine because he rapidity with which genes can be cloned and inserted into this ector facilitates updating the vaccine at regular intervals. Expres- on of the HA protein in insect cells using recombinant baculo virus so avoids the need to work with potentially pathogenic, live flu enz a viruses, and the attendant bio containment issues that ould be a particular concern for production of pandemic vaccines 7]. The results of the current study support the utility of insect ells for the production of well tolerated and effective vaccines for easonal influenza.
 
-38 J. J. Tre an or et al. / Vaccin eclearly impacted by antigenic differences between vaccine and rculating viruses, with highest levels of effectiveness reported for 1 viruses [25] and lowest levels for influenza B. The current study provides evidence of protective efficacy of baculo virus derived HA vaccine in adults for prevention of sea-
+38 J. J. Tre an or et al. / Vaccin eclearly impacted by antigenic differences between vaccine and rculating viruses, with highest levels of effectiveness reported for 1 viruses [25] and lowest levels for influenza B. The current study provides evidence of protective efficacy of
 
 2] Belong i a EA, Kieke BA, Donahue JG, Green lee RT, Balish A, Foust A, et al. Effectiveness of in activated influenza vaccines varied substantially with anti- genic match from the 2004-2005 season to the 2006-2007 season. J Infect Dis 2009 199. 3] Skowr on ski DM, Masaro C, Kwindt TL, Mak A, Petric M, Li Y, et al. Estimating vaccine effectiveness against laboratory confirmed influenza using a sentinel physician network: Results from the 2005-2006 season of dual A and B vaccine mismatch in Canada. Vaccine 2007 25 2842 51. 4] Belong i a E Kieke B Coleman L Donahue J Irving S Meece J et al Interim
 

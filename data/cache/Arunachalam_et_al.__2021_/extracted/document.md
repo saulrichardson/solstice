@@ -69,7 +69,7 @@ vaccine strains and circulating strains are thought to have contributed to this 
 
 **[FIGURE]**
 
-![Figure from page 3](figures/figure_p3_b61bf44b.png)
+![Figure from page 3](figures/figure_p3_87a35769.png)
 
 primarily as a replication defective vector, for gene delivery and trans gene expression of rHA in the host cells. AdV vectors induce both cell mediated and humoral immunity against the expressed protein providing robust protection against the targeted terms of specific structural features, the nature of the source material and the manufacturing process, which have an impact on certain aspects of vaccine safety and efficacy (Fig. 2). Based on these unique features RIV4 received ‘product exclusivity’ pro tec
 
@@ -94,7 +94,7 @@ twith sbank nor Disc stack centrifugation Harvest Extraction Depth Filtration Cl
 
 **[FIGURE]**
 
-![Figure from page 4](figures/figure_p4_2275e46b.png)
+![Figure from page 4](figures/figure_p4_f7eacdf9.png)
 
 
 ### g p pyp p ( ) qyp q ypaucimannosidic N linked glycans74 HA0 is coloured in turquoise and orange to show HA1 and HA2 segments combined as a single

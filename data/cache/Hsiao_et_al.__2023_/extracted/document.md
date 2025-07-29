@@ -63,7 +63,7 @@ The new engl and jour nal of medicine
 
 (Fig. 1). We randomly assigned Block A to start with administration of a standard dose vaccine and Block B to start with administration of the recombinant vaccine. Thereafter, each facility alternated the administration of the two vac- cines weekly. Key features of the study design were that
 
-q yexcluded from the analyses because there were too few cases of influenza during the pandemic to be informative. During the study period, in flu enza vaccination coverage was similar to national coverage (Table S1). The study excluded unvac- cinated patients. The KPNC system includes seven geographic regions, each containing 8 to 12 medical fac ili ties. In each region, the facilities were assigned to either Block A or Block B to optimize the bal- ance between blocks with respect to facility size
+q yexcluded from the analyses because there were too few cases of influenza during the pandemic to be informative. During the study period, in flu enza vaccination coverage was similar to national coverage (Table S1). The study excluded unvac- cinated patients. The KPNC system includes seven geographic regions, each containing 8 to 12 medical fac ili ties. In each region, the facilities were assigned to either Block A or Block B to optimize the bal- ance between blocks with respect to facility size (Fi 1) W d l i d Bl k A
 
 
 ### the coronavir
@@ -80,7 +80,7 @@ nd multiracial residents are higher than those
 
 **[FIGURE]**
 
-![Figure from page 3](figures/figure_p3_604eb814.png)
+![Figure from page 3](figures/figure_p3_cbaab924.png)
 
 to Block A or Block B. Facility 1 Facility 8 Similarly sized
 
@@ -104,9 +104,9 @@ ness of the recombinant vaccine against second- ary outcomes in patients in the 
 
 ### age group
 
-had occurred within 14 days after vaccination. Objectives The primary objective was to estimate the rela- tive vaccine effectiveness of the recombinant vac- cine as compared with a standard dose vaccine against PCR-confirmed influenza in patients be- tween the ages of 50 and 64 years, the primary
+y yhad occurred within 14 days after vaccination. Objectives The primary objective was to estimate the rela- tive vaccine effectiveness of the recombinant vac- cine as compared with a standard dose vaccine against PCR-confirmed influenza in patients be- tween the ages of 50 and 64 years, the primary
 
-Exploratory outcomes were an influenza diag- nosis (PCR-confirmed or clinically diagnosed influenza on the basis of ICD-10 codes), none lec tive hospitalization for any cause, and death from any cause. For each outcome except death from any cause, we counted only the first event during each season that occurred more than 14 days after vaccination. All deaths after vaccina- tion within the study period were considered to be a safety outcome and were counted even if they
+( ) ( ) Exploratory outcomes were an influenza diag- nosis (PCR-confirmed or clinically diagnosed influenza on the basis of ICD-10 codes), none lec tive hospitalization for any cause, and death from any cause. For each outcome except death from any cause, we counted only the first event during each season that occurred more than 14 days after vaccination. All deaths after vaccina- tion within the study period were considered to be a safety outcome and were counted even if they h d d ihi 14 d f i i
 
 not performed. Secondary outcomes were PCR-confirmed in- flue nza A, PCR-confirmed influenza B, and hos- pita liz at ion for PCR-confirmed influenza, for community acquired pneumonia, and for car dio respiratory events including community acquired pneumonia. We identified community acquired pneumonia and other car dio respiratory events using primary discharge diagnosis codes as listed in the International Classification of Diseases, 10 th Revision (ICD 10 (Table S2).
 
@@ -130,14 +130,14 @@ p y pcine rather than a standard dose vaccine with respect to sex, race, age, co
 
 occurred in either study group. Each risk set contained every participant in follow up on that calendar date. Most of the participants had been vaccinated before the beginning of the influenza season and were included in every risk set throughout the season. The Cox model also used stabilized weights that were based on propensity scores. The stat is tical analysis plan pre specified the use of pro- pensity scores if imbalances were found in any study variables. We observed modest imbalances at some facilities in one or both seasons, although not overall (Tables S4 and S5). Thus, we created propensity scores that were specific for each fa- cility and season. The propensity scores were
 
-study with 86% power to detect a relative vaccine effectiveness of 10.0% against PCR-confirmed influenza. On the basis of previous data, we es- timated the occurrence of 2.18 PCR-confirmed influenza cases per 1000 participants in the standard dose group. We used Cox regression analysis to estimate the adjusted hazard ratio and 95% confidence intervals for the recombinant vaccine as com- pared with a standard dose vaccine for each outcome. The model specified a calendar time scale and included adjustments for sex, race or ethnic group, and age and an age squared factor (in case age and risk had either a linear or cur- vilinear association). Risk sets were formed on each date on which at least one outcome event ...k
+study with 86% power to detect a relative vaccine effectiveness of 10.0% against PCR-confirmed influenza. On the basis of previous data, we es- timated the occurrence of 2.18 PCR-confirmed influenza cases per 1000 participants in the standard dose group. We used Cox regression analysis to estimate the adjusted hazard ratio and 95% confidence intervals for the recombinant vaccine as com- pared with a standard dose vaccine for each outcome. The model specified a calendar time scale and included adjustments for sex, race or ethnic group, and age and an age squared factor (in case age and risk had either a linear or cur- vilinear association). Risk sets were formed on each date on which at least one outcome event occurred in either study group Each risk set
 
 p y g g pestimates of relative vaccine effectiveness were considered to be exploratory. Statistical Analysis We tested the null hypotheses that the recombi- nant vaccine would not be any more or any less effective than a standard dose vaccine against influenza, using a two sided test with a P value of less than 0.05 indicating statistical sign if i cance. We estimated that the administration of 400 000 doses each of the two vaccine formula- tions to patients between the ages of 18 and 64 years each influenza season would provide the
 
 
 ## Page 5
 
-influenza A was 15.7% (95% CI, 6.0 to 24.5; P = 0.002; the P value was below Holm’smulti- pli city adjusted threshold of an alpha level of
+y jinfluenza A was 15.7% (95% CI, 6.0 to 24.5; P = 0.002; the P value was below Holm’smulti- pli city adjusted threshold of an alpha level of
 
 and Table S6). In both seasons, delays in ship-
 
@@ -145,9 +145,9 @@ Results Study Participants The study population included 1 630 328 part ici pant
 
 compared with 925 (2.34 per 1000) in the stan- dard dose group (Table 2). For the primary ob- jective, the relative vaccine effectiveness of the recombinant vaccine as compared with standard- dose vaccines against all PCR-confirmed in flu enza was 15.3% (95% CI, 5.9 to 23.8; P = 0 002. The estimate of relative vaccine effectiveness for the secondary objective of PCR-confirmed
 
-cine and RSV infection would suggest bias in our estimate of the relative vaccine effectiveness against influenza. Conversely, a finding of no association between receipt of the recombinant vaccine and RSV infection would be reassuring that our estimates of relative vaccine effective- ness were not biased by unmeasured factors that might affect the risk of both laboratory con firmed RSV infection and influenza. All data analyses were performed with the use of SAS software, version 9.4 (SAS Institute).
+pcine and RSV infection would suggest bias in our estimate of the relative vaccine effectiveness against influenza. Conversely, a finding of no association between receipt of the recombinant vaccine and RSV infection would be reassuring that our estimates of relative vaccine effective- ness were not biased by unmeasured factors that might affect the risk of both laboratory con firmed RSV infection and influenza. All data analyses were performed with the use of SAS software, version 9.4 (SAS Institute).
 
-cine groups and in the two age groups (Table 1 and Table S6). There was some variation in the timing of the administration of the two vaccines according to geographic region, although during the two influenza seasons, most vaccinations in the two groups had occurred by mid to late November (Tables S4 and S5). Primary and Secondary Analyses In patients between the ages of 50 and 64 years, 559 (2.00 cases per 1000) tested positive for in- flue nza in the recombinant vaccine group as
+tic i pants at baseline were similar in the two vaccine groups and in the two age groups (Table 1 and Table S6). There was some variation in the timing of the administration of the two vaccines according to geographic region, although during the two influenza seasons, most vaccinations in the two groups had occurred by mid to late November (Tables S4 and S5). Primary and Secondary Analyses In patients between the ages of 50 and 64 years, 559 (2.00 cases per 1000) tested positive for in- flue nza in the recombinant vaccine group as d i h 925 (2 34 1000) i h
 
 For secondary objectives in participants be- tween the ages of 50 and 64 years, we adjusted for multiplicity by Holm’smethod.10 Subgroup analyses involving participants with preexisting conditions were not adjusted for multiplicity. We conducted sensitivity analyses in which we used propensity scores in alternative ways, used a robust variance estimator, stratified risk sets according to facility and vaccination week, and specified age as a spline (see the Supplementary Methods section). To assess possible residual confounding, we examined PCR-confirmed RSV infection as a negative control outcome because we would not expect influenza vaccination to be associated with a reduction in this infection. A nontrivial asso- cia tion between receipt of the recombinant vac-
 
@@ -182,7 +182,7 @@ Recombinant or Standard-Dose Influenza Vaccine
 
 **[FIGURE]**
 
-![Figure from page 6](figures/figure_p6_fe7539ed.png)
+![Figure from page 6](figures/figure_p6_a5960b78.png)
 
 
 ### 
@@ -203,7 +203,7 @@ The new engl and jour nal of medicine
 
 **[TABLE]**
 
-![Table from page 7](figures/table_p7_c5dbe94d.png)
+![Table from page 7](figures/table_p7_f50fcf90.png)
 
 Hispanic ethnic group — no. (%)† Yes 46 318 (17) 65 868 (17) 112 186 (17)
 
@@ -231,15 +231,15 @@ Recombinant or Standard-Dose Influenza Vaccine
 
 **[TABLE]**
 
-![Table from page 8](figures/table_p8_98112bc1.png)
+![Table from page 8](figures/table_p8_f9352755.png)
 
 10.8% (95% CI, 6.6 to 14.7) against diagnosed influenza, and 19.5% (95% CI, 5.4 to 31.5) against influenza A in the subgroup with obe- sity (Tables S7 and S8). In the younger age group, the only exp lor tbj ti fhi hth lti i f For both the PCR-confirmed influenza and hospitalization outcomes, the results of sensitiv- ity analyses were consistent with findings in the primary analyses (Tables S12 and S13). The esti- mates of relative vaccine effectiveness from the RSV ti t l ldid tdiff
 
 cine group as compared with 1510 participants (2.51 cases per 1000) in the standard dose group (Table S8). For three exploratory objectives in this age group, the relative vaccine effectiveness was vity analyses, models were further adjusted for potential clu Details are provided in Table S13. ltiplicity for the secondary outcomes was performed with th esecondary outcomes were rank ordered and compared with 0.05.
 
-no. of cases per 1000 luenza 559 (2.00) 925 (2.34) 0.8 es luenza A 522 (1.87) 862 (2.18) 0.8 luenza B 37 (0.13) 64 (0.16) 0.8 r PCR- uenza 95 (0.34) 153 (0.39) 0.8 rcommunity- monia 106 (0.38) 183 (0.46) 0.8 rca rdi ore spira 631 (2.26) 890 (2.25) 1.00 merase chain reaction. sted for age, age squared, sex, and race or ethnic group after ...hdj d f i l l
+no. of cases per 1000 luenza 559 (2.00) 925 (2.34) 0.8 es luenza A 522 (1.87) 862 (2.18) 0.8 luenza B 37 (0.13) 64 (0.16) 0.8 r PCR- uenza 95 (0.34) 153 (0.39) 0.8 rcommunity- monia 106 (0.38) 183 (0.46) 0.8 rca rdi ore spira 631 (2.26) 890 (2.25) 1.00 merase chain reaction. sted for age, age squared, sex, and race or ethnic group after it l d l fth dj t d f tti l l
 
-Recombinant Vaccine (N = 279 400 Standard-Dose Vaccine (N = 395 852 Unadju Rate R
+Recombinant Vaccine (N = 279 400 Standard-Dose Vaccine (N = 395 852 Unadjus Rate Ra
 
 
 ### 
@@ -256,7 +256,7 @@ weighting with stabilized facility specific propensity scores. ering according t
 
 ### o 1.06) 16.7 ( 5.6 to 3
 
-sted tio Adjusted Hazard Ratio (95% CI)† Relative Vaccine Effectiveness (95% CI) P Value‡ % 0.85 (0.76 to 0.94) 15.3 (5.9 to 23.8) 0.002 0.84 (0.76 to 0.94) 15.7 (6.0 to 24.5) 0.002 0.90 (0.60 to 1.34) 10.3 (−33.9 to 39.9) 0.59 0.84 (0.65 to 1.09) 15.9 (−9.2 to 35.2) 0.19 0 83 (0 66 1 06) 16 7 ( 5 6 34 4) 0 13
+sted atio Adjusted Hazard Ratio (95% CI)† Relative Vaccine Effectiveness (95% CI) P Value‡ % 6 0.85 (0.76 to 0.94) 15.3 (5.9 to 23.8) 0.002 6 0.84 (0.76 to 0.94) 15.7 (6.0 to 24.5) 0.002 2 0.90 (0.60 to 1.34) 10.3 (−33.9 to 39.9) 0.59 8 0.84 (0.65 to 1.09) 15.9 (−9.2 to 35.2) 0.19 2 0 83 (0 66 1 06) 16 7 ( 5 6 34 4) 0 13
 
 
 ## Page 9
@@ -264,15 +264,15 @@ sted tio Adjusted Hazard Ratio (95% CI)† Relative Vaccine Effectiveness (95% C
 
 **[FIGURE]**
 
-![Figure from page 9](figures/figure_p9_4bd9cd3c.png)
+![Figure from page 9](figures/figure_p9_94a2c64d.png)
 
 rred more protection against influenza than nant vaccine group than in the standar
 
 vaccine against influenza as confirmed by polymerase chain reaction (PCR) assay, hospitalization for PCR-confirmed nfluenza, and hospitalization for community acquired pneumonia among study participants in the older age group according to the presence of five pre specified preexisting conditions.
 
-sagainst Influenza among Participants between 50 −10 0 10 20 −20 15 −15 5 −5 25 5 40 35 45 30 55 50 Percentage
+ss against Influenza among Participants between 50 −10 0 10 20 −20 15 −15 5 −5 25 25 40 35 45 30 55 50 Percentage
 
-Figure 3. Subgroup Analysis of Relative Vaccine Effective nes d 64 Y f A A di t P iti C diti
+Figure 3. Subgroup Analysis of Relative Vaccine Effectiveness d 64 Y f A A di t P iti C diti
 
 −40 −35 −45 Any of the above conditions Hospitalization for PCR-confirmed influenza Cardiovascular disease Respiratory disease Car dio respiratory disease Obesity Diabetes Any of the above conditions Hospitalization for community acquired pneumonia Cardiovascular disease Respiratory disease Car dio respiratory disease Obesity Diabetes Any of the above conditions −3 −50
 
@@ -289,11 +289,11 @@ Recombinant or Standard-Dose Influenza Vaccine
 
 ## Page 10
 
-graphic characteristics, coexisting illnesses,
+pgraphic characteristics, coexisting illnesses,
 
-all associated with its higher dose of hemagglu- tinin antigen. A strength of our study is that the two study vaccine formulations were alternated in weekly intervals of time at each facility, which allowed us to balance covariates of interest as designed. In every KPNC geographic area, when influenza arrived, there were already participants who had received one of the two formulations of vaccine and who were similar with respect to demo-
+g gall associated with its higher dose of hemagglu- tinin antigen. A strength of our study is that the two study vaccine formulations were alternated in weekly intervals of time at each facility, which allowed us to balance covariates of interest as designed. In every KPNC geographic area, when influenza arrived, there were already participants who had received one of the two formulations of vaccine and who were similar with respect to demo-
 
-stantial public health benefit, especially during more severe influenza seasons. Several studies have shown benefit for the recombinant vaccine and other high dose in flu enza vaccines as compared with standard dose vaccines in adults who are 65 years of age or older, findings that have been attributed to an improved immune response 5 14 17 In the current study, we compared the effectiveness of the high dose recombinant vaccine with that of standard dose vaccines in patients between the ages of 18 and 64 years. The effectiveness of standard dose vaccines — especially against the influenza A H3 N2 subtype — may be attenuated by antigenic drift during egg based manufactur- ing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3 N2 strain circulated only during the second half of the 2018-2019 season 18 and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines 19 20 Dur- ing our study period, the observed benefit of the recombinant vaccine as compared with a stan dard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3 N2 than to higher effectiveness against influenza A over-
+through influenza by 15% would provide asub stantial public health benefit, especially during more severe influenza seasons. Several studies have shown benefit for the recombinant vaccine and other high dose in flu enza vaccines as compared with standard dose vaccines in adults who are 65 years of age or older, findings that have been attributed to an improved immune response 5 14 17 In the current study, we compared the effectiveness of the high dose recombinant vaccine with that of standard dose vaccines in patients between the ages of 18 and 64 years. The effectiveness of standard dose vaccines — especially against the influenza A H3 N2 subtype — may be attenuated by antigenic drift during egg based manufactur- ing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3 N2 strain circulated only during the second half of the 2018-2019 season 18 and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines 19 20 Dur- ing our study period, the observed benefit of the recombinant vaccine as compared with a stan dard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3 N2 than to higher effectiveness against influenza A over- ll i d i h ihi h d f h l
 
 mortality at KPNC and nationwide in a similar age group 11 12 If standard dose vaccines were already pre- venting most cases of influenza and break- through cases were uncommon, preventing 15% of breakthrough cases would be of modest pub- lic health benefit. However, since standard dose vaccines prevent at most 40 to 60% of influenza cases annually 13 reducing the incidence of break- through influenza by 15% would provide asub-
 
@@ -305,9 +305,9 @@ mortality at KPNC and nationwide in a similar age group 11 12 If standard dose v
 
 The new engl and jour nal of medicine
 
-seasons, participants between the ages of 50 and 64 years who received the recombinant vaccine had more protection against confirmed influenza than those who received a standard dose vaccine. Supported by San of i. Disclosure forms provided by the authors are available with the full text of this article at NEJM.org. We thank many groups within Kaiser Permanente Northern California for their dedication and contributions to this study, including the members of the KPNC Seasonal Flu Program, the clinical teams who managed and administered influenza vac- cines, the pharmacy teams, and the KPNC regional laboratory, without whose support this study would not have been possible; and Ruvim Izikson of San of i for scientific discussions and co- ordination.
+y p g seasons, participants between the ages of 50 and 64 years who received the recombinant vaccine had more protection against confirmed influenza than those who received a standard dose vaccine. Supported by San of i. Disclosure forms provided by the authors are available with the full text of this article at NEJM.org. We thank many groups within Kaiser Permanente Northern California for their dedication and contributions to this study, including the members of the KPNC Seasonal Flu Program, the clinical teams who managed and administered influenza vac- cines, the pharmacy teams, and the KPNC regional laboratory, without whose support this study would not have been possible; and Ruvim Izikson of San of i for scientific discussions and co- ordination.
 
-in our real world setting, compliance with the weekly assigned vaccine schedule occasionally varied because of logistic con strains ts, including supply chain issues for the recombinant vaccine, which led to different numbers of participants in the two groups. Second, our data were limited to two influenza seasons; relative vaccine effective- ness may vary across seasons, depending on the vaccine match with circulating strains. Third, our primary outcome did not include infections in persons who did not undergo PCR testing, which limits its genera liz ability. Fourth, the study had limited power to detect a clinically mean- ing ful benefit of the recombinant vaccine as compared with a standard dose vaccine with respect to less frequent outcomes, such as hos- pita liz at ion for PCR-confirmed influenza. Finally, although KPNC has a diverse population, it may not be representative of other populations in the United States. In this study performed during two influenza
+in our real world setting, compliance with the weekly assigned vaccine schedule occasionally varied because of logistic con strains ts, including supply chain issues for the recombinant vaccine, which led to different numbers of participants in the two groups. Second, our data were limited to two influenza seasons; relative vaccine effective- ness may vary across seasons, depending on the vaccine match with circulating strains. Third, our primary outcome did not include infections in persons who did not undergo PCR testing, which limits its genera liz ability. Fourth, the study had limited power to detect a clinically mean- ing ful benefit of the recombinant vaccine as compared with a standard dose vaccine with respect to less frequent outcomes, such as hos- pita liz at ion for PCR-confirmed influenza. Finally, although KPNC has a diverse population, it may not be representative of other populations in the United States. In this study performed during two influenza ...50 d
 
 p gweek (to compare between facilities) showed a relative vaccine effectiveness of approximately 15%, similar to the findings of our primary analysis. Our study also has several limitations. First,
 
@@ -326,7 +326,7 @@ g p y , handling of potential confounding bias has not been formally studied. Ou
 
 cines worked better than reported & ACIP recommends specific vaccines for seniors. June 23, 2022 (https www cdc gov flu
 
-8. Davis AC, Voelkel JL, Rem mers CL, Adams JL, McGlynn EA. Comparing Kai-
+Adams JL, McGlynn EA. Comparing Kai-
 
 ­resources/​­chis).
 

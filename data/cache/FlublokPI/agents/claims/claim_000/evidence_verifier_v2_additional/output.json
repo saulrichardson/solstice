@@ -1,0 +1,42 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok Quadrivalent is approved for adults 18 years and older.",
+  "document": "FlublokPI",
+  "verification_stats": {
+    "total_extracted": 3,
+    "verified": 3,
+    "rejected": 0,
+    "verification_rate": 1.0
+  },
+  "verified_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Flublok is approved for use in persons 18 years of age and older. (1)",
+      "supports_claim": true,
+      "explanation": "The quote 'Flublok is approved for use in persons 18 years of age and older. (1)' appears verbatim in the document under the section DOSAGE FORMS AND ADMINISTRATION on page 1.. The quote explicitly states that Flublok is approved for use in persons 18 years of age and older, which directly confirms the claim that Flublok Quadrivalent is approved for adults 18 years and older.",
+      "presence_explanation": "The quote 'Flublok is approved for use in persons 18 years of age and older. (1)' appears verbatim in the document under the section DOSAGE FORMS AND ADMINISTRATION on page 1.",
+      "support_explanation": "The quote explicitly states that Flublok is approved for use in persons 18 years of age and older, which directly confirms the claim that Flublok Quadrivalent is approved for adults 18 years and older.",
+      "original_relevance": "This quote explicitly states the approval age for Flublok, confirming it is for persons 18 years and older."
+    },
+    {
+      "id": "comp_2",
+      "quote": "Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quad rival ent or a Comparator in activated influenza vaccine (Fluarix\u00ae Quad rival ent, manufactured by Glaxo smith kline). The safety analysis population included 998 recipients of Flublok Quad rival ent and 332 Comparator vaccine recipients.",
+      "supports_claim": true,
+      "explanation": "The quote is found on page 3 of the document, stating: 'Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quad rival ent or a Comparator in activated influenza vaccine (Fluarix\u00ae Quad rival ent, manufactured by Glaxo smith kline). The safety analysis population included 998 recipients of Flublok Quad rival ent and 332 Comparator vaccine recipients.' The wording is slightly different with spacing and minor formatting differences, but the core content matches exactly.. The quote directly states that Flublok Quadrivalent was studied and administered to adults aged 18 through 49 years, which supports the claim that Flublok Quadrivalent is approved for adults 18 years and older. The clinical trial enrollment of adults starting at age 18 substantiates the age indication for approval.",
+      "presence_explanation": "The quote is found on page 3 of the document, stating: 'Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quad rival ent or a Comparator in activated influenza vaccine (Fluarix\u00ae Quad rival ent, manufactured by Glaxo smith kline). The safety analysis population included 998 recipients of Flublok Quad rival ent and 332 Comparator vaccine recipients.' The wording is slightly different with spacing and minor formatting differences, but the core content matches exactly.",
+      "support_explanation": "The quote directly states that Flublok Quadrivalent was studied and administered to adults aged 18 through 49 years, which supports the claim that Flublok Quadrivalent is approved for adults 18 years and older. The clinical trial enrollment of adults starting at age 18 substantiates the age indication for approval.",
+      "original_relevance": "This quote shows that Flublok Quadrivalent was studied and administered to adults aged 18 through 49, supporting its approval for adults 18 years and older."
+    },
+    {
+      "id": "comp_3",
+      "quote": "Flublok quad rival ent has been administered to and safety data collected from 4328 adults 0 years of age and older (Study 61) and 998 adults 18-49 years of age (Study 72).",
+      "supports_claim": true,
+      "explanation": "The quote is found near the bottom of page 3 in the document: 'Flublok quad rival ent has been administered to and safety data collected from 4328 adults 0 years of age and older (Study 61) and 998 adults 18-49 years of age (Study 72).' The wording is slightly spaced and split but the core content matches exactly.. The quote provides specific data on the administration of Flublok Quadrivalent to adults 18 years and older, including the number of adults in the relevant age groups studied, which directly supports the claim that Flublok Quadrivalent is approved for adults 18 years and older.",
+      "presence_explanation": "The quote is found near the bottom of page 3 in the document: 'Flublok quad rival ent has been administered to and safety data collected from 4328 adults 0 years of age and older (Study 61) and 998 adults 18-49 years of age (Study 72).' The wording is slightly spaced and split but the core content matches exactly.",
+      "support_explanation": "The quote provides specific data on the administration of Flublok Quadrivalent to adults 18 years and older, including the number of adults in the relevant age groups studied, which directly supports the claim that Flublok Quadrivalent is approved for adults 18 years and older.",
+      "original_relevance": "This quote provides data on the administration of Flublok Quadrivalent to adults 18 years and older, supporting its approved use in this age group."
+    }
+  ],
+  "rejected_evidence": [],
+  "model_used": "gpt-4.1-mini"
+}

@@ -14,7 +14,7 @@ The 1976 swine influenza vaccine was associated with an increased frequency Guil
 
 **[TABLE]**
 
-![Table from page 1](figures/table_p1_b5dfc744.png)
+![Table from page 1](figures/table_p1_f8743488.png)
 
 
 ### 2 DOSAGE AND ADMINISTRAT 2.1 Dosage
@@ -52,7 +52,7 @@ Fatigue 15 3 <1 14 3 <1 Muscle Pain 11 2 <1 7 <1 <1
 
 **[TABLE]**
 
-![Table from page 2](figures/table_p2_0a533184.png)
+![Table from page 2](figures/table_p2_47610ed2.png)
 
 edpo t Study 1 (NCT00539981) included 4648 subjects 18 through 49 years of age for safety analysis, randomized to receive Flublok (n=2344) or placebo (n=2304) (1) (see Clinical Studies [14 1. Study 2 (NCT00539864) included 602 subjects 50 through 64 years of age for safety analysis, randomized to receive Flublok (n=300) or another U.S.-licensed trivalent influenza vaccine (Flu zone, manufactured by San of i pasteur, Inc.) as an active control (n=302) (2). Study 3 (NCT00395174) included 869 subjects aged 65 years and older for safety analysis, randomized to receive Flublok (n=436) or another U.S.-licensed trivalent influenza vaccine (Flu zone as an active control (n=433) (3). Study 4 (NCT01825200) included 2627 subjects aged 50 years and older for safety analysis, randomized to receive Flublok (n=1314) or another U.S.-licensed trivalent influenza vaccine (Afluria, manufactured by bio cslpty ltd.) as an active control (n=1313). Among subjects 50 through 64 years of age 672 received Flublok and 665 received
 
@@ -67,7 +67,7 @@ or prescription medicine. ever defined as ≥100.4°F (38°C). Mild (≥100 4 to
 
 **[TABLE]**
 
-![Table from page 2](figures/table_p2_b6b79e34.png)
+![Table from page 2](figures/table_p2_443dc0f9.png)
 
 Table 3: Frequency of Solicited Local Injection Site Adverse Reactions and Systemic Adverse Reactions within 7 Days of Administration of Flublok or Comparator in Adults ≥65 Years of Age, Studies 3 and 4, Total Vaccinated Cohort *,† Flublok N=1078 IIV3† N=1081 Any Mod‡ Sev‡ Any Mod‡ Sev‡ Local % Pain 19 <1 <1 20 <1 <1 Redness 7 1 <1 7 1 1 Firmness/Swelling 7 2 <1 7 <1 <1
 
@@ -76,7 +76,7 @@ or prescription medicine. ever defined as ≥100.4°F (38°C). Mild (≥100 4 to
 
 **[TABLE]**
 
-![Table from page 2](figures/table_p2_6fe5dd21.png)
+![Table from page 2](figures/table_p2_c729aefc.png)
 
 N=972 N=967 Any Mod‡ Sev‡ Any Mod‡ Sev‡ Local % Pain 32 2 <1 37 <1 0 Firmness/Swelling 7 2 <1 6 1 <1 Redness 6 2 <1 5 1 <1
 
@@ -174,7 +174,7 @@ ong randomized subjects, 58 were female, 80 white, 18 black african a meri other
 
 **[FIGURE]**
 
-![Figure from page 4](figures/figure_p4_d58dc921.png)
+![Figure from page 4](figures/figure_p4_75f26dec.png)
 
 Any ILI, all matched strains¶,# 2 0.1 6 0.3 67.2 (-83.2, 96.8) Positive culture with any strain, regardless of match to the vaccine CDC-ILI, all strains‡,Þ 44 1.9 78 3.4 44.6 (18.8, 62.6) Sub-Type A 26 1.1 56 2.4 54.4 (26.1, 72.5) Type B 18 0.8 23 1.0 23.1 (-49.0, 60.9) Any ILI, all strains¶ 64 2.7 114 4.9 44.8 (24.4, 60.0)
 
@@ -195,7 +195,7 @@ The primary efficacy endpoint of Study 1 was Centers for Disease Control defined
 
 **[FIGURE]**
 
-![Figure from page 4](figures/figure_p4_4f97d62b.png)
+![Figure from page 4](figures/figure_p4_157f699e.png)
 
 Flublok® versus licensed in activated influenza vaccine in healthy, medically stable adults ≥50 years of age. Vaccine. 2015, Vol. 33, pp. 6622-6628. 5. TreanorJJ, Schiff GM, Hayden fg, et.al. Safety and immunogen i city of aba culo virus expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582. 6 Ki JC C MMJ R i i K t l E lti fth f t t iit d
 
@@ -215,7 +215,7 @@ nfluenza‡ 96 22 138 32 070 30 (10 47)
 
 **[TABLE]**
 
-![Table from page 4](figures/table_p4_451d39c4.png)
+![Table from page 4](figures/table_p4_7c88c7be.png)
 
 predominated and that most inflen aA/H3 N2 ir ses ere antigenic all dissimilar hile
 

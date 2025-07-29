@@ -15,12 +15,12 @@
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_a9982f2b.png)
+![Figure from page 1](figures/figure_p1_15809c2f.png)
 
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_e6cdee9e.png)
+![Figure from page 1](figures/figure_p1_72669e78.png)
 
 
 ## Page 2
@@ -28,7 +28,7 @@
 
 **[FIGURE]**
 
-![Figure from page 2](figures/figure_p2_a0da6ab5.png)
+![Figure from page 2](figures/figure_p2_e2fd4804.png)
 
 IM-administered influenza vaccines should be administered by needle and syringe only, with the exception of the MDV presentation of Afluria Quad rival ent, which may alternatively be given by the PharmaJet Strat is jet injector for persons age ¶
 
