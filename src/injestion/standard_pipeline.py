@@ -67,7 +67,8 @@ class StandardPipeline(BasePDFPipeline):
                     merge_same_type_first=True,
                     merge_threshold=self.config.merge_threshold,
                     confidence_weight=self.config.confidence_weight,
-                    area_weight=self.config.area_weight
+                    area_weight=self.config.area_weight,
+                    minor_overlap_threshold=self.config.minor_overlap_threshold
                 )
             
             consolidated_layouts.append(page_boxes)

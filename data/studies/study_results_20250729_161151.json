@@ -1,0 +1,420 @@
+{
+  "metadata": {
+    "claims_file": "data/claims/Flublok_Claims.json",
+    "documents": [
+      "FlublokPI"
+    ],
+    "total_claims": 9,
+    "started_at": "2025-07-29T16:08:23.305505",
+    "completed_at": "2025-07-29T16:11:51.151437"
+  },
+  "claims": {
+    "claim_000": {
+      "claim_id": "claim_000",
+      "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+      "started_at": "2025-07-29T16:08:23.305523",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:08:29.900835",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:08:59.282772",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:03.898761",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:03.899404",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter_final",
+              "success": false,
+              "error": "property 'required_inputs' of 'EvidencePresenter' object has no setter",
+              "timestamp": "2025-07-29T16:09:03.899803"
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 1,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:09:03.899818"
+    },
+    "claim_001": {
+      "claim_id": "claim_001",
+      "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+      "started_at": "2025-07-29T16:09:03.899846",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:11.687157",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:20.184671",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:31.239867",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:31.240970",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter_final",
+              "success": false,
+              "error": "property 'required_inputs' of 'EvidencePresenter' object has no setter",
+              "timestamp": "2025-07-29T16:09:31.241642"
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 1,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:09:31.241664"
+    },
+    "claim_002": {
+      "claim_id": "claim_002",
+      "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+      "started_at": "2025-07-29T16:09:31.241699",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:34.317088",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:37.754529",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:41.372954",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:41.374012",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 1,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-29T16:09:41.374039"
+    },
+    "claim_003": {
+      "claim_id": "claim_003",
+      "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+      "started_at": "2025-07-29T16:09:41.374071",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:46.294034",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:51.008083",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:56.735647",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:09:56.736755",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter_final",
+              "success": false,
+              "error": "property 'required_inputs' of 'EvidencePresenter' object has no setter",
+              "timestamp": "2025-07-29T16:09:56.737375"
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 1,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:09:56.737397"
+    },
+    "claim_004": {
+      "claim_id": "claim_004",
+      "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "started_at": "2025-07-29T16:09:56.737429",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:10:03.804079",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:10:12.091750",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:10:18.099707",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:10:18.100804",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 1,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-29T16:10:18.100820"
+    },
+    "claim_005": {
+      "claim_id": "claim_005",
+      "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "started_at": "2025-07-29T16:10:18.100858",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:10:24.688591",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:10:55.309931",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:10:59.096126",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:10:59.097107",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter_final",
+              "success": false,
+              "error": "property 'required_inputs' of 'EvidencePresenter' object has no setter",
+              "timestamp": "2025-07-29T16:10:59.097738"
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 1,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:10:59.097758"
+    },
+    "claim_006": {
+      "claim_id": "claim_006",
+      "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+      "started_at": "2025-07-29T16:10:59.097778",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:11:06.341823",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:11:18.655904",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:11:24.988856",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:11:24.989833",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter_final",
+              "success": false,
+              "error": "property 'required_inputs' of 'EvidencePresenter' object has no setter",
+              "timestamp": "2025-07-29T16:11:24.990592"
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 1,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:11:24.990614"
+    },
+    "claim_007": {
+      "claim_id": "claim_007",
+      "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+      "started_at": "2025-07-29T16:11:24.990643",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:11:28.221603",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:11:35.960115",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:11:37.065935",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:11:37.066731",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-29T16:11:37.066748"
+    },
+    "claim_008": {
+      "claim_id": "claim_008",
+      "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+      "started_at": "2025-07-29T16:11:37.066779",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:11:42.463457",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:11:46.093192",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:11:51.149973",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:11:51.150834",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter_final",
+              "success": false,
+              "error": "property 'required_inputs' of 'EvidencePresenter' object has no setter",
+              "timestamp": "2025-07-29T16:11:51.151405"
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 1,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:11:51.151422"
+    }
+  },
+  "summary": {
+    "total_claim_document_pairs": 9,
+    "successfully_processed": 3,
+    "processing_rate": 0.3333333333333333,
+    "average_evidence_per_claim": 0.0,
+    "coverage_distribution": {
+      "complete": 0,
+      "partial": 0,
+      "none": 3
+    }
+  }
+}

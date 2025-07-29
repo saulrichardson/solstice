@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": "FlublokPI",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 1
+  },
+  "completeness_stats": {
+    "existing_evidence": 0,
+    "new_evidence_found": 1,
+    "total_evidence": 1
+  },
+  "verified_evidence": [],
+  "new_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Vaccine efficacy against antigenic ally matched culture confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenic ally matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC- ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0).",
+      "relevance_explanation": "This quote provides direct evidence that Flublok (a recombinant vaccine) demonstrated efficacy against influenza strains even when there was a mismatch between the vaccine and circulating strains, supporting the claim of broader immune response and potential cross-protection.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

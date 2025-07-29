@@ -1,0 +1,43 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": {
+    "pdf_name": "FlublokPI"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Study 6 (NCT02285998) enrolled subjects 50 years of age and older, randomized to ece ive Flublok Quad rival ent or Comparator (Fluarix Quad rival ent, manufactured by Glaxo smith kline) as an active control [see Clinical Studies (14 1. The safety analysis opu lati on included 4328 Flublok Quad rival ent recipients and 4344 Comparator vaccine eci pie nts.",
+      "relevance_explanation": "This quote explicitly states that Study 6 randomized subjects to receive either Flublok Quadrivalent or Fluarix Quadrivalent (standard-dose vaccine) as an active control, directly supporting the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quad rival ent or a Comparator in activated influenza vaccine (Fluarix\u00ae Quad rival ent, manufactured by Glaxo smith kline). The safety analysis population included 998 recipients of Flublok Quad rival ent and 332 Comparator vaccine recipients.",
+      "relevance_explanation": "This quote shows that in Study 7, Flublok Quadrivalent was evaluated against Fluarix Quadrivalent, further supporting the claim that these two vaccines were compared in pivotal trials.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Comparator=U.S.- licensed quad rival ent in activated influenza vaccine, Fluarix quad rival ent, manufactured by Glaxo smith kline; n=number of influenza cases; N=number of subjects in treatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) \u00d7 100]. *Study 6 is registered as NCT02285998.",
+      "relevance_explanation": "This quote clarifies that the comparator in Study 6 was Fluarix Quadrivalent, confirming that Flublok Quadrivalent was evaluated against this standard-dose vaccine.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": "FlublokPI",
+  "supporting_evidence": [
+    {
+      "quote": "Vaccine efficacy against antigenic ally matched culture confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenic ally matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC- ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0).",
+      "explanation": "The quote appears on page 4 of the document, with only minor differences in formatting and punctuation. The relevant passage is: 'Vaccine efficacy against antigenic ally matched culture confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenic ally matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC- ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0).' This matches the quote to verify, with only trivial differences.. The quote directly supports the claim. It states that in a season where 96% of circulating influenza strains were not antigenically matched to the vaccine (i.e., a mismatch season), Flublok (a recombinant vaccine) still demonstrated 44.8% efficacy against all strains, regardless of antigenic match. This provides direct evidence that the recombinant vaccine induced a broader immune response that provided cross-protection, even when the vaccine and circulating strains did not match well."
+    }
+  ],
+  "evidence_summary": {
+    "total_evidence_found": 1,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_extracted": 1,
+      "verified": 1,
+      "rejected": 0,
+      "verification_rate": 1.0
+    },
+    "rejected_count": 0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": "FlublokPI",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 2
+  },
+  "completeness_stats": {
+    "existing_evidence": 0,
+    "new_evidence_found": 2,
+    "total_evidence": 2
+  },
+  "verified_evidence": [],
+  "new_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "It contains purified ha proteins produced in a continuous insect cell line (expresSF+\u00ae) that is derived rom Sf9 cells of the fall army worm, Spodoptera frug i per da (which is related to moths, caterpillars and butterflies), and grown in serum free medium composed of chemically- defined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is d ihi ll li i b l i (A hlif i l\n\nexpressed in this cell line using abaculo virus vector (Autograph a cali for nica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further purified by column chromatography.",
+      "relevance_explanation": "This quote explicitly states that the HA proteins in Flublok are produced in an insect cell line using a baculovirus vector, directly supporting the claim about the novel production platform (BEVS).",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "Each of the three HAs is d ihi ll li i b l i (A hlif i l\n\nexpressed in this cell line using abaculo virus vector (Autograph a cali for nica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further purified by column chromatography.",
+      "relevance_explanation": "This segment details that the hemagglutinin proteins are expressed in insect cells using a baculovirus vector, which is the core of the BEVS platform described in the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

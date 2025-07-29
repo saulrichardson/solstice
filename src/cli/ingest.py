@@ -61,22 +61,16 @@ def process_all_pdfs(output_dir: Optional[Path] = None) -> None:
         print(f"\n{'='*60}")
         print(f"Processing [{i}/{len(pdf_files)}]: {pdf_path.name}")
         print(f"{'='*60}")
-        try:
-            # Run ingestion pipeline with optimized settings
-            document = ingest_pdf(pdf_path)
-            
-            print(f"✓ Successfully processed {pdf_path.name}")
-            total_pages = document.metadata.get("total_pages", "?")
-            print(f"  - Total pages: {total_pages}")
-            print(f"  - Total blocks detected: {len(document.blocks)}")
-            print(f"  - Text extractor: PyMuPDF")
-            
-            successful += 1
-            
-        except Exception as e:
-            print(f"✗ Error processing {pdf_path.name}: {e}")
-            failed += 1
-            # Continue processing other files
+        # Run ingestion pipeline with optimized settings
+        document = ingest_pdf(pdf_path)
+        
+        print(f"✓ Successfully processed {pdf_path.name}")
+        total_pages = document.metadata.get("total_pages", "?")
+        print(f"  - Total pages: {total_pages}")
+        print(f"  - Total blocks detected: {len(document.blocks)}")
+        print(f"  - Text extractor: PyMuPDF")
+        
+        successful += 1
     
     # Summary
     print(f"\n{'='*60}")

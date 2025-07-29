@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "FlublokPI",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 2
+  },
+  "completeness_stats": {
+    "existing_evidence": 0,
+    "new_evidence_found": 2,
+    "total_evidence": 2
+  },
+  "verified_evidence": [],
+  "new_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "5. TreanorJJ, Schiff GM, Hayden fg, et.al. Safety and immunogen i city of aba culo virus expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582.",
+      "relevance_explanation": "This reference is to a published randomized controlled trial specifically evaluating the immunogenicity (antibody response) of a recombinant hemagglutinin influenza vaccine, which supports the claim that such vaccines may induce a robust antibody response.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "3 Keitel WA Tre an or JJ El Sahly HM et al Comparative immunogen i city of recom- nant influenza hemagglutinin (rHA) and trivalent in activated vaccines (TIVs) among rsons \u226565 years old Vaccine 2009 Vol 28 pp 379 385",
+      "relevance_explanation": "This reference describes a comparative study of the immunogenicity of recombinant hemagglutinin (rHA) and standard trivalent inactivated vaccines (TIVs) in older adults, directly supporting the claim by indicating a comparison of antibody responses between recombinant and standard egg-based vaccines.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

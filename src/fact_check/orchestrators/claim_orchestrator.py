@@ -269,11 +269,9 @@ class ClaimOrchestrator:
                 config=presenter_config
             )
             
-            # Override to use consolidated evidence
-            presenter.required_inputs = [
-                f"agents/claims/{self.claim_id}/evidence_verifier_v2_consolidated/output.json",
-                f"agents/claims/{self.claim_id}/completeness_checker/output.json"
-            ]
+            # Point presenter to consolidated evidence directory
+            presenter.agent_dir = presenter.agent_dir.parent / "evidence_presenter_final"
+            presenter.agent_dir.mkdir(parents=True, exist_ok=True)
             
             result = await presenter.process()
             

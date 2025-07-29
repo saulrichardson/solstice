@@ -1,0 +1,906 @@
+{
+  "metadata": {
+    "claims_file": "data/claims/Flublok_Claims.json",
+    "documents": [
+      "FlublokPI",
+      "Treanor_et_al.__2011_"
+    ],
+    "total_claims": 9,
+    "started_at": "2025-07-29T16:02:59.846029",
+    "completed_at": "2025-07-29T16:07:42.661902"
+  },
+  "claims": {
+    "claim_000": {
+      "claim_id": "claim_000",
+      "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+      "started_at": "2025-07-29T16:02:59.846044",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:11.243930",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:03:11.245595",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:17.090174",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:17.090941",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_extractor_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:21.085064",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_verifier_v2_loop2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:03:21.086307",
+              "loop": 2
+            },
+            {
+              "agent": "completeness_checker_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:31.192457",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_presenter_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:31.193110",
+              "loop": 2
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 2,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:35.122766",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:03:35.124611",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_000/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:03:35.124808",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_000/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:03:35.124914",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:03:35.124926"
+    },
+    "claim_001": {
+      "claim_id": "claim_001",
+      "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+      "started_at": "2025-07-29T16:03:35.124969",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:45.497274",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:03:45.499277",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:48.606054",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:48.606741",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_extractor_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:55.452834",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_verifier_v2_loop2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:03:55.453685",
+              "loop": 2
+            },
+            {
+              "agent": "completeness_checker_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:59.271668",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_presenter_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:03:59.272846",
+              "loop": 2
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 2,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:06.844216",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:04:06.845621",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_001/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:04:06.845787",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_001/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:04:06.845881",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:04:06.845895"
+    },
+    "claim_002": {
+      "claim_id": "claim_002",
+      "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+      "started_at": "2025-07-29T16:04:06.845926",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:09.908552",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:04:09.910673",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:12.363971",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:12.364757",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_extractor_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:16.661527",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_verifier_v2_loop2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:04:16.662836",
+              "loop": 2
+            },
+            {
+              "agent": "completeness_checker_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:20.413288",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_presenter_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:20.414333",
+              "loop": 2
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 2,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:24.958779",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:04:24.960726",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_002/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:04:24.960928",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_002/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:04:24.961032",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:04:24.961046"
+    },
+    "claim_003": {
+      "claim_id": "claim_003",
+      "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+      "started_at": "2025-07-29T16:04:24.961084",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:36.617281",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:04:36.619299",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:39.515223",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:39.516432",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_extractor_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:43.424608",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_verifier_v2_loop2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:04:43.425551",
+              "loop": 2
+            },
+            {
+              "agent": "completeness_checker_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:48.565345",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_presenter_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:48.566568",
+              "loop": 2
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 2,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:04:57.563897",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:04:57.565811",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_003/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:04:57.565991",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_003/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:04:57.566084",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:04:57.566095"
+    },
+    "claim_004": {
+      "claim_id": "claim_004",
+      "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "started_at": "2025-07-29T16:04:57.566126",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:06.251369",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:05:06.253005",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:10.734770",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:10.735679",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_extractor_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:17.894131",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_verifier_v2_loop2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:05:17.895375",
+              "loop": 2
+            },
+            {
+              "agent": "completeness_checker_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:21.566782",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_presenter_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:21.567816",
+              "loop": 2
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 2,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:34.343996",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:05:34.345295",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_004/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:05:34.345415",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_004/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:05:34.345478",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:05:34.345486"
+    },
+    "claim_005": {
+      "claim_id": "claim_005",
+      "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "started_at": "2025-07-29T16:05:34.345504",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:38.842505",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:05:38.843598",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:45.408674",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:45.409648",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_extractor_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:52.204398",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_verifier_v2_loop2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:05:52.205909",
+              "loop": 2
+            },
+            {
+              "agent": "completeness_checker_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:57.730768",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_presenter_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:57.731742",
+              "loop": 2
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 2,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:58.960833",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:05:58.963156",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:06:00.480857",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:06:00.481688",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-29T16:06:00.481700"
+    },
+    "claim_006": {
+      "claim_id": "claim_006",
+      "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+      "started_at": "2025-07-29T16:06:00.481729",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:06:06.634505",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:06:06.636452",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:06:12.708032",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:06:12.709005",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_extractor_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:06:49.522798",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_verifier_v2_loop2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:06:49.524383",
+              "loop": 2
+            },
+            {
+              "agent": "completeness_checker_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:06:54.541045",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_presenter_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:06:54.542303",
+              "loop": 2
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 2,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:07:01.259635",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:07:01.261374",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_006/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:07:01.261516",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_006/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:07:01.261596",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:07:01.261607"
+    },
+    "claim_007": {
+      "claim_id": "claim_007",
+      "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+      "started_at": "2025-07-29T16:07:01.261637",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:07:04.805410",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:07:04.806772",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:07:06.557798",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:07:06.558344",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:07:20.636229",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:07:20.638039",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_007/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:07:20.638223",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_007/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:07:20.638324",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:07:20.638339"
+    },
+    "claim_008": {
+      "claim_id": "claim_008",
+      "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+      "started_at": "2025-07-29T16:07:20.638370",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:07:24.374586",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:07:24.376272",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:07:27.526641",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:07:27.527690",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_extractor_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:07:34.177255",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_verifier_v2_loop2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:07:34.179994",
+              "loop": 2
+            },
+            {
+              "agent": "completeness_checker_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:07:38.186761",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_presenter_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:07:38.187614",
+              "loop": 2
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 2,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:07:42.660020",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "Invalid format specifier ' true/false,\n    \"found_explanation\": \"explanation of whether/where the quote appears (be specific about any differences found)\",\n    \"supports_claim\": true/false,\n    \"support_explanation\": \"explanation of why it does/doesn't support the claim\"\n' for object of type 'str'",
+              "timestamp": "2025-07-29T16:07:42.661643",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_008/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:07:42.661794",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_008/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:07:42.661879",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:07:42.661889"
+    }
+  },
+  "summary": {
+    "total_claim_document_pairs": 18,
+    "successfully_processed": 1,
+    "processing_rate": 0.05555555555555555,
+    "average_evidence_per_claim": 0.0,
+    "coverage_distribution": {
+      "complete": 0,
+      "partial": 0,
+      "none": 1
+    }
+  }
+}

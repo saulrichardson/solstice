@@ -1,0 +1,44 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": {
+    "pdf_name": "Treanor_et_al.__2011_",
+    "source_pdf": "data/clinical_files/Treanor et al. (2011).pdf",
+    "total_pages": 7,
+    "total_blocks": 97,
+    "total_characters": 28164
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 5,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Flublok induced serum antibody responses to all three components of the vaccine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vaccination geometric mean titers were substantially higher for all three components in Flublok than in placebo recipients (P < .001 for all comparisons).",
+      "relevance_explanation": "This quote directly states that the recombinant (Flublok) vaccine induced higher post-vaccination antibody titers compared to placebo, supporting the claim that it induces a robust antibody response."
+    },
+    {
+      "id": 2,
+      "quote": "Flublok induced serum HAI antibody responses to all three vaccine components in the majority of recipients, and the lower limit of the 95% confidence interval for response rate exceeded the US FDA criteria for licensure for all three components (lower limit of the 95% confidence interval for response rate >40% and lower limit of the 95% confidence interval for HAI titer of 1:40 or greater >70%) [2].",
+      "relevance_explanation": "This quote provides evidence that the recombinant vaccine (Flublok) meets or exceeds regulatory benchmarks for antibody response, indicating a robust immunogenicity."
+    },
+    {
+      "id": 3,
+      "quote": "More recent studies have evaluated rHA0 vaccine formulations in healthy adults, subjects aged 50\u201364 years of age [6] and subjects 65 and older [7,8]. These studies have consistently shown excellent tolerability and antibody responses similar to those seen with egg derived influenza vaccines.",
+      "relevance_explanation": "This quote notes that recombinant vaccines produce antibody responses at least similar to egg-based vaccines, supporting the claim of robust immunogenicity."
+    },
+    {
+      "id": 4,
+      "quote": "In the present study, we performed a much larger assessment of the immunogenicity, safety, and protective efficacy of the final formulation of trivalent rHA0 vaccine in a population of healthy young adults and adults 65 and older [3\u20135].",
+      "relevance_explanation": "This quote establishes that the study is directly assessing the immunogenicity (antibody response) of the recombinant vaccine, which is relevant to the claim."
+    },
+    {
+      "id": 5,
+      "quote": "Reduced antibody response rates, decreased post vaccination titers, and decreased antibody secreting cell responses have all been observed previously in adults with prior influenza vaccine compared to those without [13\u201316]. The exact mechanism of this effect remains uncertain, although it may represent interference with antigen presentation by pre existing antibody [16].",
+      "relevance_explanation": "This quote provides context that prior vaccination can blunt antibody responses, which is relevant when comparing robust responses between vaccine types and doses."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

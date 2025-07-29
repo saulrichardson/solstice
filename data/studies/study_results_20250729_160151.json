@@ -1,0 +1,718 @@
+{
+  "metadata": {
+    "claims_file": "data/claims/Flublok_Claims.json",
+    "documents": [
+      "FlublokPI",
+      "Treanor_et_al.__2011_"
+    ],
+    "total_claims": 9,
+    "started_at": "2025-07-29T15:58:47.143475",
+    "completed_at": "2025-07-29T16:01:51.011186"
+  },
+  "claims": {
+    "claim_000": {
+      "claim_id": "claim_000",
+      "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+      "started_at": "2025-07-29T15:58:47.143490",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T15:58:53.175987",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T15:58:53.178702",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T15:58:58.376600",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T15:58:58.377214",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T15:59:04.403466",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_000/evidence_extractor/output.json'",
+              "timestamp": "2025-07-29T15:59:04.404064",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_000/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T15:59:04.404202",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_000/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T15:59:04.404326",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T15:59:04.404331"
+    },
+    "claim_001": {
+      "claim_id": "claim_001",
+      "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+      "started_at": "2025-07-29T15:59:04.404349",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T15:59:09.776641",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T15:59:09.778143",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T15:59:17.246109",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T15:59:17.246361",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T15:59:21.397866",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_001/evidence_extractor/output.json'",
+              "timestamp": "2025-07-29T15:59:21.398320",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_001/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T15:59:21.398424",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_001/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T15:59:21.398510",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T15:59:21.398516"
+    },
+    "claim_002": {
+      "claim_id": "claim_002",
+      "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+      "started_at": "2025-07-29T15:59:21.398530",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T15:59:44.507509",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T15:59:44.509404",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T15:59:47.256582",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T15:59:47.256872",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T15:59:54.367841",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_002/evidence_extractor/output.json'",
+              "timestamp": "2025-07-29T15:59:54.368217",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_002/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T15:59:54.368330",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_002/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T15:59:54.368428",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T15:59:54.368433"
+    },
+    "claim_003": {
+      "claim_id": "claim_003",
+      "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+      "started_at": "2025-07-29T15:59:54.368452",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T16:00:00.283921",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:00:00.285178",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:00:04.801601",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:00:04.802214",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T16:00:17.927514",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_003/evidence_extractor/output.json'",
+              "timestamp": "2025-07-29T16:00:17.927936",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_003/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:00:17.928078",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_003/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:00:17.928190",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:00:17.928197"
+    },
+    "claim_004": {
+      "claim_id": "claim_004",
+      "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "started_at": "2025-07-29T16:00:17.928213",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T16:00:24.134166",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:00:24.136705",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:00:31.260273",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:00:31.260519",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T16:00:36.446148",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_004/evidence_extractor/output.json'",
+              "timestamp": "2025-07-29T16:00:36.446544",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_004/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:00:36.446637",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_004/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:00:36.446716",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:00:36.446721"
+    },
+    "claim_005": {
+      "claim_id": "claim_005",
+      "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "started_at": "2025-07-29T16:00:36.446735",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T16:00:41.316148",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:00:41.317812",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:00:47.468276",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:00:47.469526",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T16:01:01.616463",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_005/evidence_extractor/output.json'",
+              "timestamp": "2025-07-29T16:01:01.617066",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_005/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:01:01.617246",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_005/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:01:01.617385",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:01:01.617393"
+    },
+    "claim_006": {
+      "claim_id": "claim_006",
+      "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+      "started_at": "2025-07-29T16:01:01.617415",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T16:01:08.937079",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:01:08.940913",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:01:14.684747",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:01:14.685633",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T16:01:21.518086",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_006/evidence_extractor/output.json'",
+              "timestamp": "2025-07-29T16:01:21.518805",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_006/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:01:21.518996",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_006/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:01:21.519140",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:01:21.519149"
+    },
+    "claim_007": {
+      "claim_id": "claim_007",
+      "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+      "started_at": "2025-07-29T16:01:21.519182",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T16:01:28.463884",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:01:28.466426",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:01:29.676888",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:01:29.677129",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T16:01:34.534523",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_007/evidence_extractor/output.json'",
+              "timestamp": "2025-07-29T16:01:34.535150",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_007/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:01:34.535397",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_007/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:01:34.535570",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:01:34.535581"
+    },
+    "claim_008": {
+      "claim_id": "claim_008",
+      "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+      "started_at": "2025-07-29T16:01:34.535611",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T16:01:38.761540",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:01:38.764972",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:01:43.067099",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:01:43.068090",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        },
+        "Treanor_et_al.__2011_": {
+          "document": "Treanor_et_al.__2011_",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": false,
+              "error": "'ExtractorSnippet' object has no attribute 'id'",
+              "timestamp": "2025-07-29T16:01:51.009960",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_008/evidence_extractor/output.json'",
+              "timestamp": "2025-07-29T16:01:51.010741",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_008/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:01:51.010983",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": false,
+              "error": "[Errno 2] No such file or directory: 'data/cache/Treanor_et_al.__2011_/agents/claims/claim_008/evidence_verifier_v2/output.json'",
+              "timestamp": "2025-07-29T16:01:51.011157",
+              "loop": 1
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 0,
+          "success": false
+        }
+      },
+      "completed_at": "2025-07-29T16:01:51.011169"
+    }
+  },
+  "summary": {
+    "total_claim_document_pairs": 18,
+    "successfully_processed": 0,
+    "processing_rate": 0.0,
+    "average_evidence_per_claim": 0,
+    "coverage_distribution": {
+      "complete": 0,
+      "partial": 0,
+      "none": 0
+    }
+  }
+}

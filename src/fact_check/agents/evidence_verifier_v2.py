@@ -192,12 +192,12 @@ Reject quotes that:
 - Actually contradict the claim
 
 Return your response as a JSON object:
-{
+{{
     "quote_found": true/false,
     "found_explanation": "explanation of whether/where the quote appears (be specific about any differences found)",
     "supports_claim": true/false,
     "support_explanation": "explanation of why it does/doesn't support the claim"
-}
+}}
 
 FULL DOCUMENT:
 {full_document}"""

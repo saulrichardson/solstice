@@ -256,6 +256,7 @@ class OverlapStrategy(Enum):
     SPLIT_HORIZONTAL = "split_horizontal"
     SPLIT_VERTICAL = "split_vertical"
     SHRINK_TO_NON_OVERLAP = "shrink_to_non_overlap"
+    KEEP_BOTH = "keep_both"  # Keep both boxes without modification
 
 
 def get_overlap_info(box1: Box, box2: Box) -> Dict:
@@ -297,8 +298,21 @@ def get_overlap_info(box1: Box, box2: Box) -> Dict:
     }
 
 
-def determine_overlap_strategy(box1: Box, box2: Box, overlap_info: Dict) -> OverlapStrategy:
-    """Determine the best strategy for handling overlap between two boxes."""
+def determine_overlap_strategy(box1: Box, box2: Box, overlap_info: Dict, minor_overlap_threshold: float = 0.05) -> OverlapStrategy:
+    """Determine the best strategy for handling overlap between two boxes.
+    
+    Args:
+        box1: First box
+        box2: Second box
+        overlap_info: Dictionary with overlap metrics
+        minor_overlap_threshold: Overlaps below this ratio are considered minor and ignored
+    """
+    
+    # Check if this is a minor overlap that we should ignore
+    if (overlap_info["overlap_ratio_box1"] < minor_overlap_threshold and 
+        overlap_info["overlap_ratio_box2"] < minor_overlap_threshold):
+        # Minor overlap - keep both boxes as-is
+        return OverlapStrategy.KEEP_BOTH
     
     # If one box is nested inside another
     if overlap_info["is_nested"]:
@@ -328,7 +342,9 @@ def determine_overlap_strategy(box1: Box, box2: Box, overlap_info: Dict) -> Over
 
         # Merge only if the vast majority (≥ 80 %) of the smaller box is
         # covered by the overlap; otherwise try to keep the boxes separate.
-        if intersection_ratio >= 0.8:
+        # For single-column documents, consider using a lower threshold.
+        same_type_merge_threshold = 0.8  # TODO: Make this configurable
+        if intersection_ratio >= same_type_merge_threshold:
             return OverlapStrategy.MERGE
         else:
             # Prefer shrinking so that both boxes can coexist without
@@ -481,14 +497,16 @@ def shrink_boxes_to_remove_overlap(box1: Box, box2: Box) -> Tuple[Box, Box]:
 def resolve_all_overlaps(boxes: List[Box], 
                         confidence_weight: float = 0.7,
                         area_weight: float = 0.3,
-                        min_box_area: float = 100) -> List[Box]:
+                        min_box_area: float = 100,
+                        minor_overlap_threshold: float = 0.05) -> List[Box]:
     """Resolve all overlaps to guarantee no overlapping boxes in output.
     
     Args:
         boxes: Input boxes that may have overlaps
         confidence_weight: Weight for confidence in scoring
-        area_weight: Weight for area in scoring
+        area_weight: Weight for area in scoring  
         min_box_area: Minimum area for a box to be kept (filters out tiny fragments)
+        minor_overlap_threshold: Overlaps below this ratio are considered minor and kept
         
     Returns:
         List of boxes with no overlaps
@@ -548,11 +566,13 @@ def resolve_all_overlaps(boxes: List[Box],
                 if not overlap_info["has_overlap"]:
                     continue
                 
-                overlaps_found = True
-                overlap_found = True
-                
                 # Determine strategy
-                strategy = determine_overlap_strategy(box1, box2, overlap_info)
+                strategy = determine_overlap_strategy(box1, box2, overlap_info, minor_overlap_threshold)
+                
+                # Only count as "overlap found" if we actually need to resolve it
+                if strategy != OverlapStrategy.KEEP_BOTH:
+                    overlaps_found = True
+                    overlap_found = True
                 
                 if strategy == OverlapStrategy.KEEP_HIGHER_WEIGHT:
                     # Keep box with higher weight
@@ -587,6 +607,11 @@ def resolve_all_overlaps(boxes: List[Box],
                     processed.add(i)
                     processed.add(j)
                     break
+                
+                elif strategy == OverlapStrategy.KEEP_BOTH:
+                    # Minor overlap - keep both boxes as-is without modification
+                    # Don't mark as processed yet, let them be handled normally
+                    continue
             
             # If no overlap found, keep the box
             if not overlap_found:
@@ -618,7 +643,8 @@ def no_overlap_pipeline(boxes: List[Box],
                         merge_same_type_first: bool = True,
                         merge_threshold: float = 0.5,
                         confidence_weight: float = 0.7,
-                        area_weight: float = 0.3) -> List[Box]:
+                        area_weight: float = 0.3,
+                        minor_overlap_threshold: float = 0.05) -> List[Box]:
     """Complete pipeline that guarantees no overlapping boxes.
     
     Args:
@@ -627,9 +653,10 @@ def no_overlap_pipeline(boxes: List[Box],
         merge_threshold: IoU threshold for merging same-type boxes
         confidence_weight: Weight for confidence in conflict resolution
         area_weight: Weight for area in conflict resolution
+        minor_overlap_threshold: Overlaps below this ratio are considered minor and kept
         
     Returns:
-        List of boxes with no overlaps
+        List of boxes with no overlaps (except minor ones below threshold)
     """
     if merge_same_type_first:
         # First pass: merge same-type boxes that are close
@@ -639,5 +666,6 @@ def no_overlap_pipeline(boxes: List[Box],
     return resolve_all_overlaps(
         boxes,
         confidence_weight=confidence_weight,
-        area_weight=area_weight
+        area_weight=area_weight,
+        minor_overlap_threshold=minor_overlap_threshold
     )

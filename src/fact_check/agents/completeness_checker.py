@@ -7,7 +7,8 @@ from typing import Dict, Any, List, Optional
 
 from .base import BaseAgent, AgentError
 from ..core.responses_client import ResponsesClient
-from ..evidence_extractor import EvidenceExtractor
+from ..models.llm_outputs import ExtractorOutput
+from ..utils.llm_parser import LLMResponseParser
 
 logger = logging.getLogger(__name__)
 
@@ -52,7 +53,6 @@ class CompletenessChecker(BaseAgent):
         # Set up LLM client
         self.llm_client = ResponsesClient()
         self.llm_client.model = self.config.get("model", "gpt-4.1")
-        self.evidence_extractor = EvidenceExtractor(self.llm_client, config={"disable_cache": True})
     
     async def process(self) -> Dict[str, Any]:
         """
@@ -138,8 +138,19 @@ class CompletenessChecker(BaseAgent):
         existing_evidence_text = "\n".join([f"- {quote[:150]}..." for quote in existing_quotes[:10]])
 
         try:
-            # Simply ask: is there any other evidence that supports this claim?
-            prompt = f"""{claim}
+            # Build the full prompt for finding additional evidence
+            full_prompt = f'''Extract VERBATIM quotes from the document that support this claim.
+
+Rules:
+- Quotes must be exact text from the document (no modifications)
+- No ellipsis (...) - extract complete segments
+- Only return quotes that are DIFFERENT from the evidence already found
+- A quote supports the claim if it provides evidence, data, or statements that directly relate to and affirm the claim
+
+Standard for "supports the claim":
+"Would this quote help convince a skeptical reader that the claim is true?"
+
+CLAIM: {claim}
 
 Note: You already found some evidence for this claim. Look for ANY ADDITIONAL quotes that support it.
 
@@ -148,18 +159,35 @@ EVIDENCE ALREADY FOUND:
 
 Find ANY OTHER quotes that support this claim that weren't already found.
 Don't force it - if there's no additional evidence, that's fine.
-Return ONLY genuinely supporting evidence that's different from what was already found."""
-            
-            result = await self.evidence_extractor.extract_supporting_evidence(
-                claim=prompt,  # Pass the full context as the "claim"
-                document_text=document_text
+
+Return your response as a JSON object:
+{{
+    "snippets": [
+        {{
+            "quote": "exact quote from document",
+            "relevance_explanation": "1-2 sentences explaining how this supports the claim"
+        }}
+    ]
+}}
+
+DOCUMENT:
+{document_text}'''
+
+            # Call LLM directly using parser
+            result = await LLMResponseParser.parse_with_retry(
+                llm_client=self.llm_client,
+                prompt=full_prompt,
+                output_model=ExtractorOutput,
+                max_retries=2,
+                temperature=0.0,
+                max_output_tokens=4000
             )
             
             # Process results - trust the LLM to not duplicate
             new_snippets = []
-            for snippet in result.supporting_snippets:
+            for i, snippet in enumerate(result.snippets):
                 new_snippet = {
-                    "id": f"comp_{snippet.id}",
+                    "id": f"comp_{i+1}",
                     "quote": snippet.quote,
                     "relevance_explanation": snippet.relevance_explanation,
                     "source": "completeness_check",

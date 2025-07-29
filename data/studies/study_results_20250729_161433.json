@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "claims_file": "test_claims.json",
+    "documents": [
+      "FlublokPI"
+    ],
+    "total_claims": 1,
+    "started_at": "2025-07-29T16:13:32.606279",
+    "completed_at": "2025-07-29T16:14:33.668238"
+  },
+  "claims": {
+    "claim_000": {
+      "claim_id": "claim_000",
+      "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+      "started_at": "2025-07-29T16:13:32.606296",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:13:43.995252",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:14:02.801607",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:14:07.868900",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:14:07.869504",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_extractor_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:14:15.700480",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_verifier_v2_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:14:30.762873",
+              "loop": 2
+            },
+            {
+              "agent": "completeness_checker_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:14:33.666344",
+              "loop": 2
+            },
+            {
+              "agent": "evidence_presenter_loop2",
+              "success": true,
+              "timestamp": "2025-07-29T16:14:33.668186",
+              "loop": 2
+            }
+          ],
+          "supporting_evidence": [],
+          "loops_performed": 2,
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-29T16:14:33.668210"
+    }
+  },
+  "summary": {
+    "total_claim_document_pairs": 1,
+    "successfully_processed": 1,
+    "processing_rate": 1.0,
+    "average_evidence_per_claim": 0.0,
+    "coverage_distribution": {
+      "complete": 0,
+      "partial": 0,
+      "none": 1
+    }
+  }
+}

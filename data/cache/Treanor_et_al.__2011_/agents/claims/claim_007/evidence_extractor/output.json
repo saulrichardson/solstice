@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": {
+    "pdf_name": "Treanor_et_al.__2011_",
+    "source_pdf": "data/clinical_files/Treanor et al. (2011).pdf",
+    "total_pages": 7,
+    "total_blocks": 97,
+    "total_characters": 28164
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "More recent studies have evaluated rHA0 vaccine formulations in healthy adults, subjects aged 50\u201364 years of age [6] and subjects 65 and older [7,8]. These studies have consistently shown excellent tolerability and antibody responses similar to those seen with egg derived influenza vaccines.",
+      "relevance_explanation": "This quote establishes that recombinant HA antigens produced using BEVS (rHA0 vaccine) induce antibody responses comparable to egg-derived vaccines, which is a necessary foundation for comparing the breadth and magnitude of the immune response."
+    },
+    {
+      "id": 2,
+      "quote": "The use of recombinant DNA techniques to express proteins in cell culture has been a successful approach for generation of highly effective vaccines for the prevention of hepatitis B (HBV) and human papilloma virus (HPV), and baculovirus expression technology is currently used for a licensed HPV vaccine [26]. Among the available expression technologies, recombinant baculovirus is especially well suited for production of influenza vaccine because the rapidity with which genes can be cloned and inserted into this vector facilitates updating the vaccine at regular intervals.",
+      "relevance_explanation": "This quote supports the claim by highlighting the advantages of BEVS (baculovirus expression system) for producing recombinant HA antigens, which is relevant to the claim about the effectiveness and adaptability of BEVS-derived vaccines."
+    },
+    {
+      "id": 3,
+      "quote": "The results of the current study support the utility of insect cells for the production of well tolerated and effective vaccines for seasonal influenza.",
+      "relevance_explanation": "This quote affirms that vaccines produced using BEVS (insect cells) are effective, supporting the claim that BEVS-derived HA antigens can induce strong immune responses."
+    },
+    {
+      "id": 4,
+      "quote": "The efficacy results also demonstrate that in adults, the minor differences in HA glycosylation seen in insect cells compared to mammalian cells and the synthesis of the HA as an uncleaved precursor do not preclude the generation of an effective immune response in adults.",
+      "relevance_explanation": "This quote supports the claim by indicating that the structural differences in BEVS-produced HA do not negatively impact the immune response, implying that these vaccines can induce robust and potentially broad antibody responses."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

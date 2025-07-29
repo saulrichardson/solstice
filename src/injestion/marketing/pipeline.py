@@ -5,7 +5,6 @@ from __future__ import annotations
 import os
 from pathlib import Path
 from typing import List, Optional
-from pdf2image import convert_from_path
 
 from .detector import MarketingLayoutDetector
 from .consolidation import BoxConsolidator
@@ -58,56 +57,7 @@ class MarketingPipeline(BasePDFPipeline):
             expand_padding=self.config.box_padding if self.config.expand_boxes else 0.0
         )
     
-    def process_pdf_legacy(self, pdf_path: str | os.PathLike[str]) -> Document:
-        """Process a marketing PDF document."""
-        pdf_path = Path(pdf_path)
-        
-        # Convert PDF to images
-        print(f"Converting {pdf_path.name} to images...")
-        images = convert_from_path(str(pdf_path), dpi=self.config.detection_dpi)
-        
-        # Save page images
-        page_dir = pages_dir(pdf_path)
-        page_dir.mkdir(parents=True, exist_ok=True)
-        for idx, img in enumerate(images):
-            img.save(page_dir / f"page-{idx:03}.png")
-        
-        # Run layout detection
-        print("Running PrimaLayout detection...")
-        layouts = self.detector.detect_images(images)
-        
-        # Save raw layouts
-        self._save_raw_layouts(layouts, pdf_path, images)
-        
-        # Apply consolidation
-        if self.config.expand_boxes or self.config.merge_overlapping:
-            print("Applying consolidation...")
-            layouts = self._apply_consolidation(layouts, images)
-        
-        # Convert to document format
-        document = self._layouts_to_document(layouts, pdf_path, images)
-        
-        # Extract text content
-        print("Extracting text content...")
-        document = extract_document_content(
-            document, 
-            pdf_path, 
-            self.detection_dpi
-        )
-        
-        # Save outputs
-        self._save_outputs(document, pdf_path)
-        
-        # Create visualizations (always)
-        print("Creating visualizations...")
-        visualize_document(
-            document,
-            pdf_path,
-            show_labels=True,
-            show_reading_order=True
-        )
-        
-        return document
+    # Legacy method removed - base class process_pdf handles this now
     
     def _apply_consolidation(self, layouts: List, images: List) -> List[List[Box]]:
         """Apply consolidation to layouts using the BoxConsolidator.

@@ -51,9 +51,14 @@ class EvidencePresenter(BaseAgent):
         """
         logger.info(f"Presenting evidence for {self.claim_id}")
         
-        # Load verified evidence
+        # Load verified evidence - check for consolidated first
+        consolidated_path = self.pdf_dir / "agents" / "claims" / self.claim_id / "evidence_verifier_v2_consolidated" / "output.json"
         verifier_path = self.pdf_dir / "agents" / "claims" / self.claim_id / "evidence_verifier_v2" / "output.json"
-        verifier_data = self.load_json(verifier_path)
+        
+        if consolidated_path.exists():
+            verifier_data = self.load_json(consolidated_path)
+        else:
+            verifier_data = self.load_json(verifier_path)
         
         # Load completeness assessment
         completeness_path = self.pdf_dir / "agents" / "claims" / self.claim_id / "completeness_checker" / "output.json"

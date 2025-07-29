@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "claims_file": "test_claims.json",
+    "documents": [
+      "FlublokPI"
+    ],
+    "total_claims": 1,
+    "started_at": "2025-07-29T16:16:06.830650",
+    "completed_at": "2025-07-29T16:16:43.248534"
+  },
+  "claims": {
+    "claim_000": {
+      "claim_id": "claim_000",
+      "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+      "started_at": "2025-07-29T16:16:06.830664",
+      "documents": {
+        "FlublokPI": {
+          "document": "FlublokPI",
+          "agents_run": [
+            {
+              "agent": "evidence_extractor",
+              "success": true,
+              "timestamp": "2025-07-29T16:16:13.626200",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_verifier_v2",
+              "success": true,
+              "timestamp": "2025-07-29T16:16:39.782296",
+              "loop": 1
+            },
+            {
+              "agent": "completeness_checker",
+              "success": true,
+              "timestamp": "2025-07-29T16:16:43.246221",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter",
+              "success": true,
+              "timestamp": "2025-07-29T16:16:43.247482",
+              "loop": 1
+            },
+            {
+              "agent": "evidence_presenter_final",
+              "success": true,
+              "timestamp": "2025-07-29T16:16:43.248492"
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
+              "explanation": "The quote appears in the document with only minor formatting and spacing differences. Specifically, the document states: 'For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' This matches the quote to verify, with only trivial differences in spacing and punctuation.. The quote directly supports the first part of the claim by specifying that Flublok contains 135 mcg of hemagglutinin (HA) per 0.5 mL dose, with 45 mcg HA per strain for three strains. This is three times the standard 15 mcg HA per strain (45 mcg total) found in standard-dose flu vaccines. While the quote does not explicitly state that this higher HA content is 'linked to greater immunogenicity,' the document elsewhere references comparative immunogenicity studies (e.g., in the references and clinical studies sections). Therefore, the quote provides direct factual support for the antigen content portion of the claim, and the document as a whole supports the claim's implication about immunogenicity."
+            },
+            {
+              "quote": "3 Keitel WA Tre an or JJ El Sahly HM et al Comparative immunogen i city of recom- nant influenza hemagglutinin (rHA) and trivalent in activated vaccines (TIVs) among rsons \u226565 years old Vaccine 2009 Vol 28 pp 379 385",
+              "explanation": "A very similar version of the quote appears in the references section on page 4: '3 Keitel WA Tre an or JJ El Sahly HM et al Comparative immunogen i city of recom- nant influenza hemagglutinin (rHA) and trivalent in activated vaccines (TIVs) among rsons \u226565 years old Vaccine 2009 Vol 28 pp 379 385'. The wording and citation match the quote to verify, with only minor spacing and line breaks.. The reference is to a study that directly compares the immunogenicity of recombinant hemagglutinin (rHA, as in Flublok) and standard trivalent inactivated vaccines (TIVs) in adults \u226565 years old. This is relevant because Flublok is a recombinant HA vaccine and is known to contain 3x the HA antigen content of standard-dose flu vaccines. The cited study is widely recognized as evidence that higher HA content (as in Flublok) is associated with greater immunogenicity compared to standard-dose vaccines. Therefore, the quote genuinely supports the claim."
+            }
+          ],
+          "loops_performed": 1,
+          "evidence_summary": {
+            "total_evidence_found": 2,
+            "coverage": "complete",
+            "missing_aspects": []
+          },
+          "success": true
+        }
+      },
+      "completed_at": "2025-07-29T16:16:43.248511"
+    }
+  },
+  "summary": {
+    "total_claim_document_pairs": 1,
+    "successfully_processed": 1,
+    "processing_rate": 1.0,
+    "average_evidence_per_claim": 2.0,
+    "coverage_distribution": {
+      "complete": 1,
+      "partial": 0,
+      "none": 0
+    }
+  }
+}

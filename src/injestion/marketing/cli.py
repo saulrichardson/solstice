@@ -97,16 +97,30 @@ def main():
         args.box_padding = 5.0
         args.no_expand_boxes = True
     
-    # Initialize pipeline with CLI arguments
-    pipeline = MarketingPipeline(
+    # Create config from CLI arguments
+    from ..config import get_config
+    
+    # Start with marketing preset
+    config = get_config('marketing')
+    
+    # Override with CLI arguments
+    config = config.__class__(
         score_threshold=args.score_threshold,
         nms_threshold=args.nms_threshold,
         detection_dpi=args.detection_dpi,
-        apply_overlap_resolution=not args.no_overlap_resolution,
+        merge_overlapping=not args.no_overlap_resolution,
         expand_boxes=not args.no_expand_boxes,
         box_padding=args.box_padding,
-        merge_threshold=args.merge_threshold
+        merge_threshold=args.merge_threshold,
+        confidence_weight=config.confidence_weight,
+        area_weight=config.area_weight,
+        create_visualizations=config.create_visualizations,
+        apply_text_processing=config.apply_text_processing,
+        minor_overlap_threshold=config.minor_overlap_threshold
     )
+    
+    # Initialize pipeline with config
+    pipeline = MarketingPipeline(config=config)
     
     print(f"\nProcessing: {args.pdf_path}")
     print("=" * 60)
