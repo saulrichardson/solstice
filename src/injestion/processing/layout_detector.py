@@ -27,7 +27,8 @@ class LayoutDetectionPipeline:
     def __init__(
         self,
         model: lp.LayoutModel | None = None,
-        score_threshold: float = 0.5,
+        score_threshold: float = 0.2,  # Lowered from 0.5 to catch more regions
+        nms_threshold: float = 0.5,   # Keep permissive NMS
     ):
         """Initialize pipeline with an optional preloaded model.
 
@@ -37,10 +38,13 @@ class LayoutDetectionPipeline:
             Pre-initialized LayoutParser model instance. If None, a default
             PubLayNet model is loaded lazily on first use.
         score_threshold
-            Minimum confidence threshold for detections.
+            Minimum confidence threshold for detections. Lower values catch more regions.
+        nms_threshold
+            Non-maximum suppression threshold. Higher values allow more overlapping boxes.
         """
         self._model = model
         self._score_threshold = score_threshold
+        self._nms_threshold = nms_threshold
 
     def detect_images(self, images: Iterable) -> List[Sequence[lp.Layout]]:
         """Run layout detection on a sequence of page images."""
@@ -53,8 +57,8 @@ class LayoutDetectionPipeline:
             self._model = lp.Detectron2LayoutModel(
                 self.DEFAULT_CONFIG,
                 extra_config=[
-                    "MODEL.ROI_HEADS.SCORE_THRESH_TEST",
-                    self._score_threshold,
+                    "MODEL.ROI_HEADS.SCORE_THRESH_TEST", self._score_threshold,
+                    "MODEL.ROI_HEADS.NMS_THRESH_TEST", self._nms_threshold,
                 ],
                 label_map={
                     0: "Text",

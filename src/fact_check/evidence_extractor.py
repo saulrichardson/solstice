@@ -15,7 +15,6 @@ class SupportingSnippet(BaseModel):
     id: int
     quote: str
     relevance_explanation: str
-    context: Optional[str] = None  # Surrounding text for context
     start: Optional[int] = None  # Character position in document
     end: Optional[int] = None
     page_index: Optional[int] = None
@@ -49,7 +48,7 @@ class EvidenceExtractor:
         self.llm_client = llm_client
         self.config = config or {}
         
-    async def extract_supporting_evidence(self, claim: str, document_text: str) -> EvidenceExtractionResult:
+    def extract_supporting_evidence(self, claim: str, document_text: str) -> EvidenceExtractionResult:
         """
         Extract all text snippets that support the given claim.
         
@@ -62,7 +61,7 @@ class EvidenceExtractor:
         """
         try:
             # Step 1: Use LLM to find supporting snippets
-            extraction_output = await self._extract_snippets(claim, document_text)
+            extraction_output = self._extract_snippets(claim, document_text)
             
             # Step 2: Verify quotes and find positions in the same normalized text
             verified_snippets = self._verify_snippets(extraction_output.snippets, document_text)
@@ -83,7 +82,7 @@ class EvidenceExtractor:
                 error=str(e)
             )
     
-    async def _extract_snippets(self, claim: str, document_text: str) -> EvidenceExtractionOutput:
+    def _extract_snippets(self, claim: str, document_text: str) -> EvidenceExtractionOutput:
         """
         Use LLM to extract supporting snippets.
         
@@ -94,47 +93,37 @@ class EvidenceExtractor:
         Returns:
             EvidenceExtractionOutput from the LLM
         """
-        prompt = f'''You are an evidence extraction system. Your task is to find all text snippets 
-in the document that provide evidence supporting the following claim.
+        prompt = f'''Extract VERBATIM quotes from the document that support this claim.
 
-Claim: {claim}
+Rules:
+- Quotes must be exact text from the document (no modifications)
+- No ellipsis (...) - extract complete segments
+- A quote supports the claim if it provides evidence, data, or statements that directly relate to and affirm the claim
 
-Instructions:
-1. Search through the entire document for text that supports or is relevant to this claim
-2. Extract exact quotes (word-for-word) from the document
-3. For each quote, explain why it supports or relates to the claim
-4. Include surrounding context if helpful
-5. Find ALL relevant snippets, not just the first one
-
-CRITICAL - PDF Extraction Issues:
-The document has been extracted from a PDF and has formatting issues:
-- Missing spaces between words (e.g., "HAproteins" instead of "HA proteins")
-- Missing characters at the beginning of words (e.g., "yringes" instead of "syringes")
-- Missing letters within words (e.g., "olyhedrosis" instead of "polyhedrosis")
-
-IMPORTANT RULES:
-- DO NOT fix these issues - quote the text EXACTLY as it appears, including all errors
-- DO NOT add spaces between concatenated words
-- DO NOT correct misspellings or missing characters
-- DO NOT use ellipsis (...) to truncate quotes - always provide complete quotes
-- If you need to reference a long section, provide the full quote, not a truncated version
+CLAIM: {claim}
 
 Return your response as a JSON object with this structure:
 {{
     "snippets": [
         {{
-            "quote": "exact text from document including any PDF extraction errors",
-            "relevance_explanation": "why this quote supports the claim",
-            "context": "optional surrounding text for context"
+            "quote": "exact text from document",
+            "relevance_explanation": "why this quote supports the claim"
         }},
         ...
     ]
 }}
 
-Document:
-{document_text[:50000]}  # Limit to first 50k chars for context window
-
-Find all supporting evidence for the claim.'''
+Document text to search:'''
+        
+        # Handle long documents by warning and using what we can
+        if len(document_text) > 50000:
+            logger.warning(
+                f"Document is {len(document_text)} characters, truncating to 50k for LLM context window. "
+                f"Evidence beyond character 50,000 may be missed."
+            )
+            prompt += f"\n{document_text[:50000]}\n\n[Document truncated - showing first 50,000 of {len(document_text)} characters]"
+        else:
+            prompt += f"\n{document_text}"
 
         try:
             # We explicitly set store=False so that OpenAI *does not* cache the
@@ -193,37 +182,88 @@ Find all supporting evidence for the claim.'''
                     if extra_content:
                         logger.warning(f"LLM added extra content after JSON: {extra_content[:100]}...")
                     content = json_content
-                
-            data = json.loads(content)
+            
+            # Try to parse JSON with error recovery
+            try:
+                data = json.loads(content)
+            except json.JSONDecodeError as je:
+                logger.warning(f"JSON decode error: {je}")
+                # Try to fix common issues
+                # Remove trailing commas
+                content_fixed = content.replace(',]', ']').replace(',}', '}')
+                # Try again
+                try:
+                    data = json.loads(content_fixed)
+                    logger.info("Successfully parsed JSON after fixing trailing commas")
+                except:
+                    # If still failing, try to extract snippets manually
+                    logger.warning("Falling back to manual extraction")
+                    data = self._extract_snippets_manually(content)
             
             # Handle case where LLM returns a list instead of dict
             if isinstance(data, list):
                 logger.warning("LLM returned a list instead of dict, wrapping in snippets key")
                 data = {"snippets": data}
             
-            # Convert to our model
+            # Convert to our model with error handling for each snippet
             snippets = []
             for i, snippet_data in enumerate(data.get("snippets", [])):
-                # Ensure required fields
-                if not isinstance(snippet_data, dict):
-                    continue
+                try:
+                    # Ensure required fields
+                    if not isinstance(snippet_data, dict):
+                        logger.warning(f"Snippet {i} is not a dict, skipping")
+                        continue
                     
-                snippet = SupportingSnippet(
-                    id=i + 1,  # Always assign IDs programmatically
-                    quote=snippet_data.get("quote", ""),
-                    relevance_explanation=snippet_data.get("relevance_explanation", ""),
-                    context=snippet_data.get("context")
-                )
-                
-                if snippet.quote:  # Only add if quote is not empty
+                    quote = snippet_data.get("quote", "").strip()
+                    relevance = snippet_data.get("relevance_explanation", "").strip()
+                    
+                    if not quote:
+                        logger.warning(f"Snippet {i} has empty quote, skipping")
+                        continue
+                    
+                    snippet = SupportingSnippet(
+                        id=i + 1,
+                        quote=quote,
+                        relevance_explanation=relevance or "No explanation provided"
+                    )
                     snippets.append(snippet)
+                    
+                except Exception as e:
+                    logger.warning(f"Failed to parse snippet {i}: {e}")
+                    continue
             
+            logger.info(f"Successfully parsed {len(snippets)} snippets from LLM response")
             return EvidenceExtractionOutput(snippets=snippets)
             
         except Exception as e:
             logger.error(f"Failed to parse extraction output: {e}")
-            logger.error(f"Response was: {response}")
+            logger.debug(f"Response type: {type(response)}")
+            if isinstance(response, dict):
+                logger.debug(f"Response keys: {list(response.keys())}")
             return EvidenceExtractionOutput(snippets=[])
+    
+    def _extract_snippets_manually(self, content: str) -> Dict:
+        """Fallback manual extraction when JSON parsing fails."""
+        snippets = []
+        
+        # Look for quote patterns
+        import re
+        quote_pattern = r'"quote"\s*:\s*"([^"]+)"'
+        relevance_pattern = r'"relevance_explanation"\s*:\s*"([^"]+)"'
+        
+        quotes = re.findall(quote_pattern, content)
+        relevances = re.findall(relevance_pattern, content)
+        
+        # Pair them up
+        for i, quote in enumerate(quotes):
+            relevance = relevances[i] if i < len(relevances) else "Extracted from malformed response"
+            snippets.append({
+                "quote": quote,
+                "relevance_explanation": relevance
+            })
+        
+        logger.info(f"Manually extracted {len(snippets)} snippets from malformed JSON")
+        return {"snippets": snippets}
     
     def _verify_snippets(self, snippets: List[SupportingSnippet], document_text: str) -> List[SupportingSnippet]:
         """

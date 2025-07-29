@@ -39,10 +39,10 @@ class BaseAgent(ABC):
         # Set up directories
         self.pdf_dir = self.cache_dir / pdf_name
         self.agents_dir = self.pdf_dir / "agents"
-        self.output_dir = self.agents_dir / self.agent_name
         
-        # Ensure output directory exists
-        self.output_dir.mkdir(parents=True, exist_ok=True)
+        # Default agent directory (can be overridden by subclasses)
+        self.agent_dir = self.agents_dir / self.agent_name
+        self.agent_dir.mkdir(parents=True, exist_ok=True)
         
         # Initialize metadata
         self.metadata = {
@@ -150,7 +150,7 @@ class BaseAgent(ABC):
             data: Dictionary of output data to save
         """
         # Save main output
-        output_file = self.output_dir / "output.json"
+        output_file = self.agent_dir / "output.json"
         with open(output_file, 'w') as f:
             json.dump(data, f, indent=2)
         
@@ -163,13 +163,13 @@ class BaseAgent(ABC):
     
     def save_json(self, data: Dict[str, Any], filename: str) -> None:
         """Save JSON file helper"""
-        output_path = self.output_dir / filename
+        output_path = self.agent_dir / filename
         with open(output_path, 'w') as f:
             json.dump(data, f, indent=2)
     
     def _save_metadata(self) -> None:
         """Save agent metadata"""
-        metadata_file = self.output_dir / "metadata.json"
+        metadata_file = self.agent_dir / "metadata.json"
         with open(metadata_file, 'w') as f:
             json.dump(self.metadata, f, indent=2)
     

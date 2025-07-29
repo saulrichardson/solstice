@@ -26,11 +26,18 @@ def main():
         "--output-dir",
         help="Custom output directory"
     )
+    ingest_parser.add_argument(
+        "--text-extractor",
+        choices=["pymupdf"],
+        default="pymupdf",
+        help="Text extraction method to use"
+    )
     
     # Run study command
     study_parser = subparsers.add_parser(
         "run-study",
-        help="Run fact-checking study across claims and documents (uses Flublok defaults)"
+        help="Run fact-checking study across claims and documents (uses Flublok defaults)",
+        add_help=False  # Let the actual command handle its own help
     )
     
     # Legacy extract evidence command (deprecated)
@@ -49,11 +56,13 @@ def main():
         sys.argv = ["ingest"]
         if args.output_dir:
             sys.argv.extend(["--output-dir", args.output_dir])
+        if hasattr(args, 'text_extractor') and args.text_extractor:
+            sys.argv.extend(["--text-extractor", args.text_extractor])
         ingest_main()
     elif args.command == "run-study":
         from .run_study import main as study_main
-        # Set sys.argv to include remaining args
-        sys.argv = [sys.argv[0]] + remaining
+        # Set sys.argv to include the command name and remaining args
+        sys.argv = ["run-study"] + remaining
         study_main()
     elif args.command == "extract-evidence":
         # Deprecated - redirect to run-study

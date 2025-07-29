@@ -114,3 +114,4 @@ install-detectron2: install
 	@echo "Verifying installation..."
 	@python -c "import layoutparser as lp; assert lp.is_detectron2_available(), 'Detectron2 not available'" || \
 		{ echo "Error: Detectron2 installation failed"; exit 1; }
+

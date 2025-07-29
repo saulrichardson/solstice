@@ -46,6 +46,7 @@ A clinical document processing pipeline with advanced layout detection and fact-
 
    **Note:** This step can take 5-10 minutes as it builds Detectron2 from source.
 
+
 ### Quick Start
 
 Process clinical PDFs with layout detection:
@@ -94,6 +95,8 @@ The gateway provides API access to the processing capabilities.
 ## Architecture
 
 - **Ingestion Pipeline**: Processes PDFs using layout detection to extract structured content
+  - Uses native PDF text extraction (PyMuPDF)
+  - Automatically handles tables and figures as images
 - **Fact Checking**: Agent-based system that extracts supporting evidence for claims from clinical documents
 - **Gateway Service**: Proxy service for LLM API calls (OpenAI, Anthropic, etc.)
 

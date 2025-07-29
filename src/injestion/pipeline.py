@@ -17,7 +17,7 @@ import layoutparser as lp
 
 from .processing.layout_detector import LayoutDetectionPipeline
 from .models.box import Box
-from .processing.overlap_resolver import no_overlap_pipeline
+from .processing.overlap_resolver import no_overlap_pipeline, expand_boxes
 from .models.document import Block, Document
 from .processing.text_extractor import extract_document_content
 from .processing.reading_order import determine_reading_order_simple
@@ -32,6 +32,8 @@ MERGE_THRESHOLD = 0.3  # IoU threshold for merging same-type boxes
 CONFIDENCE_WEIGHT = 0.7  # Weight for confidence in conflict resolution
 AREA_WEIGHT = 0.3  # Weight for box area in conflict resolution
 CREATE_VISUALIZATIONS = True  # Always create visualizations
+EXPAND_BOXES = True  # Expand boxes to prevent text cutoffs
+BOX_PADDING = 10.0  # Pixels to expand in each direction
 
 # ---------------------------------------------------------------------------
 # Helper functions
@@ -83,6 +85,10 @@ def _process_page_layouts(
             )
             for layout in page_layout
         ]
+        
+        # Expand boxes to prevent text cutoffs
+        if EXPAND_BOXES and page_boxes:
+            page_boxes = expand_boxes(page_boxes, padding=BOX_PADDING)
         
         # Apply merging if requested
         if MERGE_OVERLAPPING and page_boxes:
@@ -242,11 +248,12 @@ def _save_pipeline_outputs(
 # ---------------------------------------------------------------------------
 
 
-def ingest_pdf(pdf_path: str | os.PathLike[str]) -> Document:
+def ingest_pdf(pdf_path: str | os.PathLike[str], text_extractor: str) -> Document:
     """Process a PDF file with optimized settings for clinical documents.
     
     Args:
         pdf_path: Path to PDF file
+        text_extractor: Text extraction method ('pymupdf')
         
     Returns:
         Document object with detected layout elements, extracted text, and visualizations
@@ -301,7 +308,7 @@ def ingest_pdf(pdf_path: str | os.PathLike[str]) -> Document:
     )
     
     # Extract text and figure content
-    document = extract_document_content(document, pdf_path, DETECTION_DPI)
+    document = extract_document_content(document, pdf_path, DETECTION_DPI, text_extractor)
     
     # Save the final extracted document with content
     extracted_dir = stage_dir("extracted", pdf_path)

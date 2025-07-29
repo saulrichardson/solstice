@@ -9,6 +9,7 @@ from ..agents import (
     SupportingEvidenceExtractor,
     RegexVerifier, 
     EvidenceCritic,
+    CompletenessChecker,
     EvidenceJudge
 )
 
@@ -47,7 +48,14 @@ class ClaimOrchestrator:
         self.agent_config["claim"] = claim_text
         
         # Allow customizing which agents to run
-        self.agents_to_run = self.config.get("agents", ["supporting_evidence", "regex_verifier", "evidence_critic", "evidence_judge"])
+        self.agents_to_run = self.config.get("agents", [
+            "supporting_evidence", 
+            "regex_verifier", 
+            "evidence_critic", 
+            "completeness_checker",
+            "regex_verifier_final",
+            "evidence_judge"
+        ])
     
     async def process(self) -> Dict[str, Any]:
         """
@@ -97,6 +105,8 @@ class ClaimOrchestrator:
             (SupportingEvidenceExtractor, "supporting_evidence"),
             (RegexVerifier, "regex_verifier"),
             (EvidenceCritic, "evidence_critic"),
+            (CompletenessChecker, "completeness_checker"),
+            (RegexVerifier, "regex_verifier_final"),
             (EvidenceJudge, "evidence_judge")
         ]
         
@@ -108,12 +118,18 @@ class ClaimOrchestrator:
             logger.info(f"    Running {agent_name}...")
             
             try:
+                # Special configuration for second regex verifier pass
+                agent_config = self.agent_config.copy()
+                if agent_name == "regex_verifier_final":
+                    agent_config["upstream_agent"] = "completeness_checker"
+                    agent_config["input_field"] = "all_snippets"
+                
                 # Create agent instance
                 agent = agent_class(
                     pdf_name=document,
                     claim_id=self.claim_id,
                     cache_dir=self.cache_dir,
-                    config=self.agent_config
+                    config=agent_config
                 )
                 
                 # Run agent

@@ -8,6 +8,8 @@ import sys
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
+# Import injestion first to ensure proper module setup
+import src.injestion
 from src.fact_check.orchestrators import StudyOrchestrator
 
 

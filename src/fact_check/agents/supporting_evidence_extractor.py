@@ -4,8 +4,8 @@ import logging
 from pathlib import Path
 from typing import Dict, Any, List, Optional
 
-from injestion.models.document import Document
-from injestion.processing.fact_check_interface import FactCheckInterface
+from src.injestion.models.document import Document
+from src.injestion.processing.fact_check_interface import FactCheckInterface
 
 from ..core.responses_client import ResponsesClient
 from ..evidence_extractor import EvidenceExtractor
@@ -79,8 +79,8 @@ class SupportingEvidenceExtractor(BaseAgent):
         # Get normalized text (our single operating model)
         normalized_text = interface.get_full_text(include_figure_descriptions=True, normalize=True)
         
-        # Extract supporting evidence
-        result = await self.evidence_extractor.extract_supporting_evidence(
+        # Extract supporting evidence (synchronous now)
+        result = self.evidence_extractor.extract_supporting_evidence(
             claim=claim,
             document_text=normalized_text
         )
@@ -112,7 +112,6 @@ class SupportingEvidenceExtractor(BaseAgent):
                 "id": snippet.id,
                 "quote": snippet.quote,
                 "relevance_explanation": snippet.relevance_explanation,
-                "context": snippet.context,
                 "location": {
                     "start": snippet.start,
                     "end": snippet.end,

@@ -1,6 +1,7 @@
 """Native PDF text extraction using bounding boxes from layout detection."""
 
 import logging
+import os
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Tuple
 import fitz  # PyMuPDF
@@ -9,8 +10,45 @@ import numpy as np
 
 from ..models.document import Document, Block
 from ..storage.paths import stage_dir
+from .text_extractors import TextExtractor, PyMuPDFExtractor
+from ...core.config import settings
 
 logger = logging.getLogger(__name__)
+
+# Cache extractors by type to avoid repeated initialization
+_extractor_cache: Dict[str, TextExtractor] = {}
+
+
+def get_text_extractor(extractor_type: Optional[str] = None) -> TextExtractor:
+    """Get the configured text extractor instance.
+    
+    Args:
+        extractor_type: Text extractor type ('pymupdf'). 
+                       If None, uses settings.text_extractor
+    
+    Returns:
+        TextExtractor instance (cached per type)
+    """
+    # Use provided type or fall back to settings
+    if extractor_type is None:
+        extractor_type = settings.text_extractor
+        logger.debug(f"No extractor type provided, using settings: {extractor_type}")
+    else:
+        logger.debug(f"Using provided extractor type: {extractor_type}")
+    
+    extractor_type = extractor_type.lower()
+    
+    # Return cached instance if available
+    if extractor_type in _extractor_cache:
+        logger.debug(f"Using cached {extractor_type} text extractor")
+        return _extractor_cache[extractor_type]
+    
+    # Create new instance and cache it
+    # Default to PyMuPDF extractor
+    logger.info("Initializing PyMuPDF text extractor")
+    extractor = PyMuPDFExtractor()
+    _extractor_cache['pymupdf'] = extractor
+    return extractor
 
 
 def extract_text_from_bbox(
@@ -30,34 +68,9 @@ def extract_text_from_bbox(
     Returns:
         Extracted text string
     """
-    doc = fitz.open(pdf_path)
-    page = doc[page_num]
-    
-    # Convert image coordinates to PDF coordinates
-    # Image coordinates: origin at top-left, y increases downward
-    # PDF coordinates: origin at bottom-left, y increases upward
-    pdf_height = page.rect.height
-    scale_factor = pdf_height / page_height
-    
-    # Convert and scale coordinates
-    x1 = bbox[0] * scale_factor
-    x2 = bbox[2] * scale_factor
-    
-    # Flip Y coordinates and scale
-    y1 = pdf_height - (bbox[3] * scale_factor)  # bbox[3] is bottom in image coords
-    y2 = pdf_height - (bbox[1] * scale_factor)  # bbox[1] is top in image coords
-    
-    # Create rect in PDF coordinate system
-    rect = fitz.Rect(x1, y1, x2, y2)
-    
-    # Extract text from the rectangle
-    text = page.get_text("text", clip=rect)
-    
-    doc.close()
-    
-    # Clean up extracted text
-    text = text.strip()
-    return text
+    extractor = get_text_extractor()
+    result = extractor.extract_text_from_bbox(pdf_path, page_num, bbox, page_height)
+    return result.text
 
 
 def extract_figure_image(
@@ -77,31 +90,15 @@ def extract_figure_image(
     Returns:
         PIL Image of the cropped region
     """
-    doc = fitz.open(pdf_path)
-    page = doc[page_num]
-    
-    # Render page at specified DPI
-    mat = fitz.Matrix(dpi/72.0, dpi/72.0)
-    pix = page.get_pixmap(matrix=mat)
-    
-    # Convert to PIL Image
-    img_data = pix.tobytes("png")
-    doc.close()
-    
-    # Open as PIL Image and crop
-    from io import BytesIO
-    full_page = Image.open(BytesIO(img_data))
-    
-    # Crop to bbox (already in image coordinates)
-    cropped = full_page.crop((int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3])))
-    
-    return cropped
+    extractor = get_text_extractor()
+    return extractor.extract_figure_image(pdf_path, page_num, bbox, dpi)
 
 
 def extract_document_content(
     document: Document,
     pdf_path: Path,
-    dpi: int = 300
+    dpi: int,
+    text_extractor: str
 ) -> Document:
     """Extract text and figure content for all blocks in document.
     
@@ -109,11 +106,12 @@ def extract_document_content(
         document: Document with layout detection results
         pdf_path: Path to source PDF
         dpi: DPI used during layout detection
+        text_extractor: Text extraction method ('pymupdf')
         
     Returns:
         Document with content populated
     """
-    logger.info(f"Extracting content from {pdf_path}")
+    logger.info(f"Extracting content from {pdf_path} using {text_extractor} extractor")
     
     # Get page dimensions for coordinate conversion
     doc = fitz.open(pdf_path)
@@ -139,17 +137,19 @@ def extract_document_content(
         if block.role in ['Text', 'Title', 'List']:
             # Extract text content
             try:
-                text = extract_text_from_bbox(
+                result = get_text_extractor(text_extractor).extract_text_from_bbox(
                     pdf_path,
                     page_idx,
                     block.bbox,
                     page_heights[page_idx]
                 )
                 
-                if text:
-                    block.text = text
+                if result.text:
+                    block.text = result.text
                     text_blocks += 1
-                    logger.debug(f"Extracted text from {block.role} block {block.id}: {len(text)} chars")
+                    logger.debug(f"Extracted text from {block.role} block {block.id}: {len(result.text)} chars")
+                    if result.confidence is not None:
+                        block.metadata['extraction_confidence'] = result.confidence
                 else:
                     logger.warning(f"No text found in {block.role} block {block.id}")
                     

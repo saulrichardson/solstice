@@ -14,6 +14,38 @@ from enum import Enum
 from ..models.box import Box
 
 
+def expand_boxes(boxes: List[Box], padding: float = 10.0) -> List[Box]:
+    """Expand all boxes by a fixed padding to prevent text cutoffs.
+    
+    Args:
+        boxes: List of Box objects to expand
+        padding: Number of pixels to expand in each direction (default: 10)
+        
+    Returns:
+        List of expanded Box objects
+    """
+    expanded_boxes = []
+    for box in boxes:
+        x1, y1, x2, y2 = box.bbox
+        
+        # Expand the box by padding in all directions
+        # Note: In a real implementation, you might want to clamp to page boundaries
+        expanded_box = Box(
+            id=box.id,
+            bbox=(
+                x1 - padding,
+                y1 - padding,
+                x2 + padding,
+                y2 + padding
+            ),
+            label=box.label,
+            score=box.score
+        )
+        expanded_boxes.append(expanded_box)
+    
+    return expanded_boxes
+
+
 def calculate_iou(box1: Tuple[float, float, float, float], 
                   box2: Tuple[float, float, float, float]) -> float:
     """Calculate Intersection over Union between two boxes."""

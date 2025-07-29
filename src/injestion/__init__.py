@@ -37,51 +37,30 @@ document_module = _ensure_submodule("injestion.models.document")
 fact_check_module = _ensure_submodule("injestion.processing.fact_check_interface")
 
 
-# ---------------------------------------------------------------------------
-# Minimal `Document` class – enough for fact-checking pipeline.
-# ---------------------------------------------------------------------------
+# Import the actual Document and Block models
+from .models.document import Document, Block
+# Import the actual FactCheckInterface
+from .processing.fact_check_interface import FactCheckInterface
 
-
-class Document:  # pylint: disable=too-few-public-methods
-    """Extremely thin placeholder for the original PDF Document model."""
-
-    def __init__(self, **data):
-        self.__dict__.update(data)
-
-        # Provide defaults for attributes referenced downstream
-        self.source_pdf = getattr(self, "source_pdf", "unknown.pdf")
-        self.reading_order = getattr(self, "reading_order", [])
-        self.blocks = getattr(self, "blocks", [])
-
-
+# Set them in the submodules
 models_pkg.Document = Document  # type: ignore[attr-defined]
+models_pkg.Block = Block  # type: ignore[attr-defined]
 document_module.Document = Document  # type: ignore[attr-defined]
+document_module.Block = Block  # type: ignore[attr-defined]
 
 
-# ---------------------------------------------------------------------------
-# Minimal `FactCheckInterface` – only the methods used by the pipeline.
-# ---------------------------------------------------------------------------
-
-
-class FactCheckInterface:  # pylint: disable=too-few-public-methods
-    """Stub with API compatible surface for fact-checking helpers."""
-
-    def __init__(self, document: Document):
-        self.document = document
-
-    # Downstream code calls these two methods.  We return basic values to
-    # avoid breaking while still signalling that real extraction is absent.
-    def get_full_text(self, *, include_figure_descriptions: bool = True, normalize: bool = True) -> str:  # noqa: D401,E501
-        return ""
-
-    def get_text_with_locations(self, *, normalize: bool = True):  # noqa: D401
-        return []
+# The FactCheckInterface is now imported from processing.fact_check_interface above
 
 
 processing_pkg.FactCheckInterface = FactCheckInterface  # type: ignore[attr-defined]
 fact_check_module.FactCheckInterface = FactCheckInterface  # type: ignore[attr-defined]
 
 
+# Import the main pipeline function
+from .pipeline import ingest_pdf
+
 # Clean-up helpers from namespace
 del module_from_spec, spec_from_loader, ModuleType, _ensure_submodule
+
+__all__ = ["Document", "FactCheckInterface", "ingest_pdf"]
 

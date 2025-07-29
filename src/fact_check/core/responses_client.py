@@ -8,7 +8,7 @@ OpenAI, but *clients are no longer required* to supply such a key.  An
 """
 import json
 import logging
-from collections.abc import Iterator
+import asyncio
 
 import httpx
 
@@ -226,44 +226,6 @@ class ResponsesClient:
             
         return content["text"]
 
-    def stream_response(
-        self,
-        input: str | list[dict] | None = None,
-        model: str = "gpt-4.1-mini",
-        **kwargs,
-    ) -> Iterator[dict]:
-        """
-        Stream a response for real-time output.
-
-        Yields:
-            Response chunks as they arrive
-        """
-        request_data = {"model": model, "stream": True}
-
-        if input is not None:
-            request_data["input"] = input
-
-        request_data.update(kwargs)
-
-        with httpx.Client() as client:
-            with client.stream(
-                "POST",
-                f"{self.base_url}/v1/responses",
-                json=request_data,
-                headers=self.headers,
-                timeout=120.0,
-            ) as response:
-                response.raise_for_status()
-                for line in response.iter_lines():
-                    if line.startswith("data: "):
-                        data = line[6:]
-                        if data == "[DONE]":
-                            break
-                        try:
-                            yield json.loads(data)
-                        except json.JSONDecodeError:
-                            continue
-
     def retrieve_response(self, response_id: str) -> dict:
         """
         Retrieve a stored response.
@@ -431,6 +393,7 @@ class ResponsesClient:
             store=True,
             **kwargs,
         )
+    
 
 
 # ---------------------------------------------------------------------------

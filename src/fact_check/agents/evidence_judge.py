@@ -55,11 +55,14 @@ class EvidenceJudge(BaseAgent):
         critic_path = self.pdf_dir / "agents" / "claims" / self.claim_id / "evidence_critic" / "output.json"
         critic_data = self.load_json(critic_path)
         
-        # TODO: Implement actual judgment using LLM
-        # For now, make simple judgment based on evidence count and quality
+        # Extract evidence statistics from critic data
+        critic_stats = critic_data.get("critic_stats", {})
+        validated_snippets = critic_data.get("validated_snippets", [])
         
-        high_quality_count = critic_data["critique_summary"]["high_quality"]
-        total_snippets = critic_data["critique_summary"]["total_snippets"]
+        # Count high quality evidence (score >= 8.0)
+        high_quality_count = sum(1 for s in validated_snippets 
+                                if s.get("critic_evaluation", {}).get("overall_score", 0) >= 8.0)
+        total_snippets = len(validated_snippets)
         
         # Simple rule-based judgment for stub
         if high_quality_count >= 3:
@@ -87,8 +90,8 @@ class EvidenceJudge(BaseAgent):
                     "high_quality_evidence": high_quality_count,
                     "key_supporting_quotes": [
                         s["quote"][:100] + "..." 
-                        for s in critic_data["critiqued_snippets"][:3]
-                    ] if critic_data["critiqued_snippets"] else []
+                        for s in validated_snippets[:3]
+                    ] if validated_snippets else []
                 }
             },
             "document": {
