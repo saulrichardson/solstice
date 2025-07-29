@@ -112,6 +112,8 @@ class EvidenceVerifierV2(BaseAgent):
                     "quote": quote,  # Use original quote
                     "supports_claim": True,
                     "explanation": verification["explanation"],
+                    "presence_explanation": verification.get("presence_explanation", ""),
+                    "support_explanation": verification.get("support_explanation", ""),
                     "original_relevance": relevance_explanation
                 })
             else:
@@ -165,26 +167,35 @@ QUOTE TO VERIFY: "{quote}"
 
 ORIGINAL RELEVANCE EXPLANATION: {relevance_explanation}
 
-First, check if this quote (or a very similar version) exists in the document below.
-Then, determine if it genuinely supports the claim.
+Your task:
+1. Find this quote (or a very similar version) in the document below
+2. Determine if it genuinely supports the claim
 
-Accept quotes that:
-1. Exist in the document (exact or with minor formatting differences), AND
-2. Directly state what the claim asserts, OR provide specific facts/numbers that substantiate the claim
+IMPORTANT: Be flexible when matching quotes:
+- Minor wording differences are acceptable (e.g., "30 percent" vs "30%")
+- Different punctuation or capitalization is fine
+- Small grammatical variations are okay
+- Missing or added articles (a, an, the) are acceptable
+- The quote might be split across lines or have different spacing
+- If you find the core content even with variations, consider it found
+
+For supporting the claim, accept quotes that:
+- Directly state what the claim asserts, OR
+- Provide specific facts/numbers that substantiate the claim
 
 Reject quotes that:
-- Cannot be found in the document
 - Only tangentially relate to the topic
-- Require significant inference or assumptions  
+- Require significant inference or assumptions
 - Are about something else but happen to mention similar words
 - Actually contradict the claim
 
-Be strict - we want evidence that would convince a skeptical reader.
-
-Provide your verdict in this format:
-VERDICT: KEEP or REJECT
-EXPLANATION: [Why this does/doesn't support the claim - 1-2 sentences]
-REASON_IF_REJECTED: [Only if REJECT - specific issue like "not found", "too tangential", "requires inference", etc.]
+Return your response as a JSON object:
+{
+    "quote_found": true/false,
+    "found_explanation": "explanation of whether/where the quote appears (be specific about any differences found)",
+    "supports_claim": true/false,
+    "support_explanation": "explanation of why it does/doesn't support the claim"
+}
 
 FULL DOCUMENT:
 {full_document}"""
@@ -211,39 +222,54 @@ FULL DOCUMENT:
             }
     
     def _parse_verification_response(self, response: str) -> Dict[str, Any]:
-        """Parse the verification response."""
-        result = {
-            "keep": False,
-            "explanation": "",
-            "reason": ""
-        }
+        """Parse the JSON verification response."""
+        import json
         
         try:
-            lines = response.strip().split('\n')
+            # Handle markdown-wrapped JSON
+            content = response.strip()
+            if content.startswith('```json') and content.endswith('```'):
+                content = content[7:-3].strip()
+            elif content.startswith('```') and content.endswith('```'):
+                content = content[3:-3].strip()
             
-            for line in lines:
-                line = line.strip()
-                if not line:
-                    continue
-                    
-                if line.startswith("VERDICT:"):
-                    verdict = line.split(":", 1)[1].strip().upper()
-                    result["keep"] = verdict == "KEEP"
-                elif line.startswith("EXPLANATION:"):
-                    result["explanation"] = line.split(":", 1)[1].strip()
-                elif line.startswith("REASON_IF_REJECTED:"):
-                    result["reason"] = line.split(":", 1)[1].strip()
+            # Parse JSON
+            data = json.loads(content)
             
-            # Use explanation as reason if rejected but no specific reason
-            if not result["keep"] and not result["reason"] and result["explanation"]:
-                result["reason"] = result["explanation"]
+            # Extract core fields
+            quote_found = data.get("quote_found", False)
+            supports_claim = data.get("supports_claim", False)
+            found_explanation = data.get("found_explanation", "")
+            support_explanation = data.get("support_explanation", "")
+            
+            # Derive verdict and reason
+            keep = quote_found and supports_claim
+            
+            if not quote_found:
+                reason = "not found"
+            elif not supports_claim:
+                reason = "does not support claim"
+            else:
+                reason = ""
+            
+            # Convert to expected format
+            result = {
+                "keep": keep,
+                "presence_explanation": found_explanation,
+                "support_explanation": support_explanation,
+                "explanation": f"{found_explanation}. {support_explanation}".strip(),
+                "reason": reason
+            }
             
             return result
             
-        except Exception as e:
+        except (json.JSONDecodeError, KeyError) as e:
             logger.error(f"Error parsing verification response: {e}")
+            logger.debug(f"Response was: {response[:500]}...")
             return {
                 "keep": False,
                 "reason": "Failed to parse verification response",
-                "explanation": ""
+                "explanation": "",
+                "presence_explanation": "",
+                "support_explanation": ""
             }

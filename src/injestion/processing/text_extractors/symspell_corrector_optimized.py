@@ -9,13 +9,7 @@ from pathlib import Path
 from typing import List, Set, Optional, Dict
 import os
 
-try:
-    from symspellpy import SymSpell, Verbosity
-    SYMSPELL_AVAILABLE = True
-except ImportError:
-    SYMSPELL_AVAILABLE = False
-    SymSpell = None
-    Verbosity = None
+from symspellpy import SymSpell, Verbosity
 
 logger = logging.getLogger(__name__)
 
@@ -38,8 +32,6 @@ class OptimizedSymSpellCorrector:
             prefix_length: Prefix length for internal data structure
             use_segmentation: Whether to use word segmentation
         """
-        if not SYMSPELL_AVAILABLE:
-            raise ImportError("SymSpellPy is required. Install with: pip install symspellpy")
         
         self.max_edit_distance = max_edit_distance
         self.use_segmentation = use_segmentation
@@ -61,41 +53,19 @@ class OptimizedSymSpellCorrector:
         
     def _initialize_dictionary(self):
         """Initialize dictionary only once."""
-        # Load the built-in English dictionary
-        dict_path = None
+        # Find and load the built-in English dictionary
+        import symspellpy
+        package_dir = Path(symspellpy.__file__).parent
+        dict_file = package_dir / "frequency_dictionary_en_82_765.txt"
         
-        # Try to find the dictionary file
-        try:
-            import symspellpy
-            package_dir = Path(symspellpy.__file__).parent
-            dict_file = package_dir / "frequency_dictionary_en_82_765.txt"
-            if dict_file.exists():
-                dict_path = str(dict_file)
-        except:
-            pass
-        
-        if dict_path and os.path.exists(dict_path):
-            self.sym_spell.load_dictionary(dict_path, 0, 1)
-            logger.info(f"Loaded dictionary from {dict_path}")
-        else:
-            # Create minimal dictionary for testing
-            self._create_minimal_dictionary()
+        if not dict_file.exists():
+            raise FileNotFoundError(f"SymSpell dictionary not found at {dict_file}")
+            
+        self.sym_spell.load_dictionary(str(dict_file), 0, 1)
+        logger.info(f"Loaded dictionary from {dict_file}")
         
         # Add medical terms with high frequency
         self._add_medical_terms_optimized()
-    
-    def _create_minimal_dictionary(self):
-        """Create a minimal dictionary for basic functionality."""
-        # Most common English words
-        common_words = [
-            ("the", 1000000), ("of", 900000), ("and", 800000), ("to", 700000),
-            ("in", 600000), ("a", 500000), ("is", 400000), ("for", 300000),
-            ("that", 250000), ("it", 240000), ("with", 230000), ("as", 220000),
-            ("was", 210000), ("be", 200000), ("are", 190000), ("been", 180000)
-        ]
-        
-        for word, freq in common_words:
-            self.sym_spell.create_dictionary_entry(word, freq)
     
     def _add_medical_terms_optimized(self):
         """Add only essential medical terms for performance."""
@@ -272,17 +242,9 @@ def correct_medical_text_optimized(text: str) -> str:
     Returns:
         Corrected text
     """
-    if not SYMSPELL_AVAILABLE:
-        logger.warning("SymSpellPy not available")
-        return text
-    
     global _global_corrector
     
-    try:
-        if _global_corrector is None:
-            _global_corrector = OptimizedSymSpellCorrector()
-        
-        return _global_corrector.correct_text(text)
-    except Exception as e:
-        logger.error(f"Error in optimized SymSpell correction: {e}")
-        return text
+    if _global_corrector is None:
+        _global_corrector = OptimizedSymSpellCorrector()
+    
+    return _global_corrector.correct_text(text)

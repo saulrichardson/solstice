@@ -263,9 +263,5 @@ def fix_pdf_text_spacing(text: str) -> str:
         >>> fix_pdf_text_spacing("Thesehighlightsdonot includeall")
         "These highlights do not include all"
     """
-    if not WORDNINJA_AVAILABLE:
-        print("WordNinja not available. Install with: pip install wordninja")
-        return text
-    
     fixer = FinalSpacingFixer()
     return fixer.fix_spacing(text)

@@ -198,7 +198,7 @@ class TextProcessingService:
                     text = processed
             except Exception as e:
                 logger.error(f"Error in {name} processor: {e}", exc_info=True)
-                # Continue with other processors
+                raise
 
         # ------------------------------------------------------------------
         # Ensure test isolation / global state hygiene (thread-safe)

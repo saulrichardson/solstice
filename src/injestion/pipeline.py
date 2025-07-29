@@ -251,12 +251,11 @@ def _save_pipeline_outputs(
 # ---------------------------------------------------------------------------
 
 
-def ingest_pdf(pdf_path: str | os.PathLike[str], text_extractor: str) -> Document:
+def ingest_pdf(pdf_path: str | os.PathLike[str]) -> Document:
     """Process a PDF file with optimized settings for clinical documents.
     
     Args:
         pdf_path: Path to PDF file
-        text_extractor: Text extraction method ('pymupdf')
         
     Returns:
         Document object with detected layout elements, extracted text, and visualizations
@@ -309,7 +308,7 @@ def ingest_pdf(pdf_path: str | os.PathLike[str], text_extractor: str) -> Documen
     )
     
     # Extract text and figure content
-    document = extract_document_content(document, pdf_path, DETECTION_DPI, text_extractor)
+    document = extract_document_content(document, pdf_path, DETECTION_DPI)
     
     # Save the final extracted document with content
     extracted_dir = stage_dir("extracted", pdf_path)

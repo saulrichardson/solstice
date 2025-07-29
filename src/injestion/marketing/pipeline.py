@@ -107,8 +107,7 @@ class MarketingPipeline:
         document = extract_document_content(
             document, 
             pdf_path, 
-            self.detection_dpi,
-            text_extractor="pymupdf"
+            self.detection_dpi
         )
         
         # Save outputs

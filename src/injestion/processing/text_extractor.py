@@ -11,43 +11,19 @@ import numpy as np
 from src.interfaces import Document, Block
 from ..storage.paths import stage_dir
 from .text_extractors import TextExtractor, PyMuPDFExtractor
-from src.core.config import settings
 
 logger = logging.getLogger(__name__)
 
-def get_text_extractor(extractor_type: Optional[str] = None) -> TextExtractor:
-    """Get the configured text extractor instance.
-    
-    Args:
-        extractor_type: Text extractor type ('pymupdf'). 
-                       If None, uses settings.text_extractor
+def get_text_extractor() -> TextExtractor:
+    """Get the PyMuPDF text extractor instance.
     
     Returns:
-        TextExtractor instance (cached per type)
+        PyMuPDFExtractor instance
     """
-    # Use provided type or fall back to settings
-    if extractor_type is None:
-        extractor_type = settings.text_extractor
-        logger.debug(f"No extractor type provided, using settings: {extractor_type}")
-    else:
-        logger.debug(f"Using provided extractor type: {extractor_type}")
-    
-    extractor_type = extractor_type.lower()
-    
     # Always create a fresh instance to avoid state pollution
     # PyMuPDF extractor is lightweight and stateless
-    logger.debug(f"Creating new {extractor_type} text extractor")
-    
-    if extractor_type == 'pymupdf':
-        return PyMuPDFExtractor()
-    elif extractor_type == 'hybrid':
-        from .text_extractors.hybrid_extractor import HybridTextExtractor
-        logger.info("Using hybrid text extractor for better spacing")
-        return HybridTextExtractor()
-    else:
-        # Default to PyMuPDF for any unknown type
-        logger.warning(f"Unknown extractor type '{extractor_type}', using PyMuPDF")
-        return PyMuPDFExtractor()
+    logger.debug("Creating new PyMuPDF text extractor")
+    return PyMuPDFExtractor()
 
 
 def extract_text_from_bbox(
@@ -96,8 +72,7 @@ def extract_figure_image(
 def extract_document_content(
     document: Document,
     pdf_path: Path,
-    dpi: int,
-    text_extractor: str
+    dpi: int
 ) -> Document:
     """Extract text and figure content for all blocks in document.
     
@@ -105,19 +80,14 @@ def extract_document_content(
         document: Document with layout detection results
         pdf_path: Path to source PDF
         dpi: DPI used during layout detection
-        text_extractor: Text extraction method ('pymupdf')
         
     Returns:
         Document with content populated
     """
-    logger.info(f"Extracting content from {pdf_path} using {text_extractor} extractor")
+    logger.info(f"Extracting content from {pdf_path} using PyMuPDF extractor")
     
-    # Validate PDF can be opened
-    try:
-        doc = fitz.open(pdf_path)
-    except Exception as e:
-        logger.error(f"Failed to open PDF {pdf_path}: {e}")
-        raise ValueError(f"Cannot open PDF file: {e}")
+    # Open PDF - will raise if file cannot be opened
+    doc = fitz.open(pdf_path)
     
     # Get page dimensions for coordinate conversion
     page_heights = []
@@ -152,99 +122,60 @@ def extract_document_content(
         
         if block.role in ['Text', 'Title', 'List']:
             # Extract text content
-            try:
-                result = get_text_extractor(text_extractor).extract_text_from_bbox(
-                    pdf_path,
-                    page_idx,
-                    block.bbox,
-                    page_heights[page_idx]
-                )
-                
-                if result.text:
-                    block.text = result.text
-                    text_blocks += 1
-                    logger.debug(f"Extracted text from {block.role} block {block.id}: {len(result.text)} chars")
-                    if result.confidence is not None:
-                        block.metadata['extraction_confidence'] = result.confidence
-                    # Store extraction metadata if available
-                    if result.metadata:
-                        block.metadata['extraction'] = result.metadata
-                else:
-                    logger.warning(f"No text found in {block.role} block {block.id}")
-                    # Fallback: mark block as empty but valid
-                    block.text = ""
-                    block.metadata['extraction_status'] = 'empty'
-                    
-            except Exception as e:
-                logger.error(f"Failed to extract text from block {block.id}: {e}")
-                # Record the error but don't try risky fallbacks
-                block.metadata['extraction_error'] = str(e)
-                block.metadata['extraction_status'] = 'failed'
-                
-                # Provide a clear marker that extraction failed
-                # This is better than wrong text from full page
-                block.text = f"[TEXT EXTRACTION FAILED - {block.role}]"
-                
-                # Log details for debugging
-                logger.error(
-                    f"Text extraction failed for block {block.id} "
-                    f"(page={page_idx}, bbox={block.bbox}): {e}"
-                )
+            result = get_text_extractor().extract_text_from_bbox(
+                pdf_path,
+                page_idx,
+                block.bbox,
+                page_heights[page_idx]
+            )
+            
+            if result.text:
+                block.text = result.text
+                text_blocks += 1
+                logger.debug(f"Extracted text from {block.role} block {block.id}: {len(result.text)} chars")
+                if result.confidence is not None:
+                    block.metadata['extraction_confidence'] = result.confidence
+                # Store extraction metadata if available
+                if result.metadata:
+                    block.metadata['extraction'] = result.metadata
+            else:
+                # No text found - this is not an error, just empty
+                block.text = ""
+                block.metadata['extraction_status'] = 'empty'
+                logger.debug(f"No text found in {block.role} block {block.id}")
                 
         elif block.role in ['Figure', 'Table']:
             # Extract as image
-            try:
-                img = extract_figure_image(
-                    pdf_path,
-                    page_idx,
-                    block.bbox,
-                    dpi
-                )
-                
-                # Save image
-                img_filename = f"{block.role.lower()}_p{page_idx + 1}_{block.id}.png"
-                img_path = figures_dir / img_filename
-                img.save(img_path, "PNG")
-                
-                # Store relative path
-                block.image_path = f"figures/{img_filename}"
-                
-                # Generate placeholder text
-                position = None
-                if hasattr(document, 'reading_order') and page_idx < len(document.reading_order):
-                    order = document.reading_order[page_idx]
-                    if block.id in order:
-                        position = order.index(block.id) + 1
-                
-                placeholder = f"[{block.role.upper()}"
-                if position:
-                    placeholder += f" {position}"
-                placeholder += f" - See {img_filename}]"
-                
-                block.text = placeholder
-                figure_blocks += 1
-                logger.debug(f"Extracted {block.role} block {block.id} as image: {img_path}")
-                
-            except Exception as e:
-                logger.error(f"Failed to extract figure from block {block.id}: {e}")
-                # Fallback: create placeholder without image
-                block.metadata['extraction_error'] = str(e)
-                block.metadata['extraction_status'] = 'failed'
-                
-                # Still create a text placeholder
-                position = None
-                if hasattr(document, 'reading_order') and page_idx < len(document.reading_order):
-                    order = document.reading_order[page_idx]
-                    if block.id in order:
-                        position = order.index(block.id) + 1
-                
-                placeholder = f"[{block.role.upper()}"
-                if position:
-                    placeholder += f" {position}"
-                placeholder += f" - EXTRACTION FAILED]"
-                
-                block.text = placeholder
-                logger.warning(f"Created placeholder for failed {block.role} extraction: {block.id}")
+            img = extract_figure_image(
+                pdf_path,
+                page_idx,
+                block.bbox,
+                dpi
+            )
+            
+            # Save image
+            img_filename = f"{block.role.lower()}_p{page_idx + 1}_{block.id}.png"
+            img_path = figures_dir / img_filename
+            img.save(img_path, "PNG")
+            
+            # Store relative path
+            block.image_path = f"figures/{img_filename}"
+            
+            # Generate placeholder text
+            position = None
+            if hasattr(document, 'reading_order') and page_idx < len(document.reading_order):
+                order = document.reading_order[page_idx]
+                if block.id in order:
+                    position = order.index(block.id) + 1
+            
+            placeholder = f"[{block.role.upper()}"
+            if position:
+                placeholder += f" {position}"
+            placeholder += f" - See {img_filename}]"
+            
+            block.text = placeholder
+            figure_blocks += 1
+            logger.debug(f"Extracted {block.role} block {block.id} as image: {img_path}")
     
     logger.info(f"Extraction complete: {text_blocks} text blocks, {figure_blocks} figure blocks")
     
