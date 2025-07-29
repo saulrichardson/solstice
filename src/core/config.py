@@ -48,11 +48,6 @@ class Settings(BaseSettings):
         description="Base directory for filesystem cache"
     )
     
-    # Text Extraction Configuration
-    text_extractor: str = Field(
-        "pymupdf",
-        description="Text extraction method: 'pymupdf' (default)"
-    )
     
     @computed_field
     @property

@@ -26,12 +26,6 @@ def main():
         "--output-dir",
         help="Custom output directory"
     )
-    ingest_parser.add_argument(
-        "--text-extractor",
-        choices=["pymupdf"],
-        default="pymupdf",
-        help="Text extraction method to use"
-    )
     
     # Run study command
     study_parser = subparsers.add_parser(
@@ -50,8 +44,6 @@ def main():
         sys.argv = ["ingest"]
         if args.output_dir:
             sys.argv.extend(["--output-dir", args.output_dir])
-        if hasattr(args, 'text_extractor') and args.text_extractor:
-            sys.argv.extend(["--text-extractor", args.text_extractor])
         ingest_main()
     elif args.command == "run-study":
         from .run_study import main as study_main

@@ -139,18 +139,16 @@ class CompletenessChecker(BaseAgent):
 
         try:
             # Simply ask: is there any other evidence that supports this claim?
-            prompt = f"""You already found some evidence for a claim. Check if there's any additional supporting evidence.
+            prompt = f"""{claim}
 
-CLAIM: {claim}
+Note: You already found some evidence for this claim. Look for ANY ADDITIONAL quotes that support it.
 
 EVIDENCE ALREADY FOUND:
 {existing_evidence_text}
 
-Look through the document and find ANY OTHER quotes that support this claim that weren't already found.
+Find ANY OTHER quotes that support this claim that weren't already found.
 Don't force it - if there's no additional evidence, that's fine.
-
-Return ONLY genuinely supporting evidence that's different from what was already found.
-"""
+Return ONLY genuinely supporting evidence that's different from what was already found."""
             
             result = await self.evidence_extractor.extract_supporting_evidence(
                 claim=prompt,  # Pass the full context as the "claim"

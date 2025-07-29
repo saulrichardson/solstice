@@ -15,9 +15,14 @@ from ..processing.reading_order import determine_reading_order_simple
 from ..processing.text_extractor import extract_document_content
 from ..storage.paths import stage_dir, save_json, pages_dir
 from ..visualization.layout_visualizer import visualize_document
+from ..config import get_config, IngestionConfig
+from ..base_pipeline import BasePDFPipeline
+from src.interfaces import Block, Document
+import layoutparser as lp
+import uuid
 
 
-class MarketingPipeline:
+class MarketingPipeline(BasePDFPipeline):
     """Complete pipeline for marketing document processing.
     
     This pipeline:
@@ -26,54 +31,34 @@ class MarketingPipeline:
     3. Integrates with existing document processing infrastructure
     """
     
-    def __init__(
-        self,
-        score_threshold: float = 0.15,
-        nms_threshold: float = 0.4,
-        detection_dpi: int = 400,
-        apply_overlap_resolution: bool = True,
-        expand_boxes: bool = True,
-        box_padding: float = 20.0,
-        merge_threshold: float = 0.2,
-    ):
+    def __init__(self, config: Optional[IngestionConfig] = None):
         """Initialize marketing pipeline.
         
         Parameters
         ----------
-        score_threshold
-            Detection confidence threshold
-        nms_threshold
-            Non-maximum suppression threshold
-        detection_dpi
-            DPI for PDF rasterization
-        apply_overlap_resolution
-            Whether to apply overlap resolution
-        expand_boxes
-            Whether to expand boxes to prevent text cutoffs
-        box_padding
-            Pixels to expand boxes in each direction
-        merge_threshold
-            IoU threshold for merging same-type boxes (0.2 = 20% overlap)
+        config
+            Optional IngestionConfig instance. If not provided, uses marketing preset.
         """
-        self.detection_dpi = detection_dpi
-        self.apply_overlap_resolution = apply_overlap_resolution
-        self.expand_boxes = expand_boxes
-        self.box_padding = box_padding
-        self.merge_threshold = merge_threshold
-        
-        # Initialize components
-        self.detector = MarketingLayoutDetector(
-            score_threshold=score_threshold,
-            nms_threshold=nms_threshold
-        )
-        
-        # Initialize box consolidator
-        self.consolidator = BoxConsolidator(
-            merge_threshold=merge_threshold,
-            expand_padding=box_padding if expand_boxes else 0.0
+        # Use marketing preset if no config provided
+        if config is None:
+            config = get_config('marketing')
+        super().__init__(config)
+    
+    def _create_detector(self):
+        """Create PrimaLayout-based detector for marketing documents."""
+        return MarketingLayoutDetector(
+            score_threshold=self.config.score_threshold,
+            nms_threshold=self.config.nms_threshold
         )
     
-    def process_pdf(self, pdf_path: str | os.PathLike[str]) -> Document:
+    def _create_consolidator(self):
+        """Create box consolidator for marketing layouts."""
+        return BoxConsolidator(
+            merge_threshold=self.config.merge_threshold,
+            expand_padding=self.config.box_padding if self.config.expand_boxes else 0.0
+        )
+    
+    def process_pdf_legacy(self, pdf_path: str | os.PathLike[str]) -> Document:
         """Process a marketing PDF document."""
         pdf_path = Path(pdf_path)
         
@@ -149,7 +134,7 @@ class MarketingPipeline:
                 boxes.append(box)
             
             # Apply consolidation if enabled
-            if self.apply_overlap_resolution and boxes:
+            if self.config.merge_overlapping and boxes:
                 image_width = images[page_idx].width if images and page_idx < len(images) else None
                 image_height = images[page_idx].height if images and page_idx < len(images) else None
                 
@@ -175,7 +160,7 @@ class MarketingPipeline:
         
         return consolidated_layouts
     
-    def _layouts_to_document(self, layouts: List, pdf_path: Path, images: List) -> Document:
+    def _create_document(self, layouts: List, pdf_path: Path, images: List) -> Document:
         """Convert layout detection results to Document format."""
         all_blocks = []
         reading_order_by_page = []
@@ -206,7 +191,7 @@ class MarketingPipeline:
             for box_idx, box in enumerate(page_boxes):
                 metadata = {
                     "score": box.score,
-                    "detection_dpi": self.detection_dpi,
+                    "detection_dpi": self.config.detection_dpi,
                     "detector": "PrimaLayout"
                 }
                 
@@ -220,16 +205,21 @@ class MarketingPipeline:
                 all_blocks.append(block)
         
         # Create document
-        return Document(
+        document = Document(
             source_pdf=str(pdf_path),
             blocks=all_blocks,
             metadata={
                 "pipeline": "marketing",
-                "detection_dpi": self.detection_dpi,
+                "detection_dpi": self.config.detection_dpi,
                 "total_pages": len(layouts)
             },
             reading_order=reading_order_by_page
         )
+        
+        # Extract text content
+        document = extract_document_content(document, pdf_path, self.config.detection_dpi)
+        
+        return document
     
     def _map_role(self, prima_label: str) -> str:
         """Map PrimaLayout labels to document roles."""
@@ -248,22 +238,29 @@ class MarketingPipeline:
         output_dir = stage_dir("marketing", pdf_path)
         
         # Save document
-        doc_path = output_dir / "document.json"
+        doc_path = output_dir / "content.json"
         document.save(doc_path)
         
-        # Save summary
-        summary = {
-            "source": str(pdf_path),
-            "pages": document.metadata.get("total_pages", 0),
-            "blocks": len(document.blocks),
-            "blocks_by_type": {}
-        }
+        # Generate readable formats
+        from ..processing.document_formatter import (
+            generate_readable_document,
+            generate_text_only_document,
+            generate_html_document
+        )
         
-        for block in document.blocks:
-            role = block.role
-            summary["blocks_by_type"][role] = summary["blocks_by_type"].get(role, 0) + 1
+        generate_readable_document(document, output_dir / "document.md", include_images=True)
+        generate_text_only_document(document, output_dir / "document.txt", include_placeholders=True)
+        generate_html_document(document, output_dir / "document.html", include_images=True)
         
-        save_json(summary, output_dir / "summary.json")
+        # Create visualizations if configured
+        if self.config.create_visualizations:
+            visualize_document(
+                document,
+                pdf_path,
+                show_labels=True,
+                show_reading_order=True
+            )
+        
         print(f"\nOutputs saved to: {output_dir}")
     
     def _save_raw_layouts(self, layouts: List, pdf_path: Path, images: List):

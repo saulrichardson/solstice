@@ -19,16 +19,12 @@ DEFAULT_INPUT_DIR = Path("data/clinical_files")
 DEFAULT_OUTPUT_DIR = Path("data/cache")
 
 
-def process_all_pdfs(output_dir: Optional[Path] = None, text_extractor: str = None) -> None:
+def process_all_pdfs(output_dir: Optional[Path] = None) -> None:
     """Process all PDFs in the default clinical files directory.
     
     Args:
         output_dir: Optional custom output directory. If None, uses default.
-        text_extractor: Text extraction method ('pymupdf'). Required.
     """
-    # Validate required parameters
-    if text_extractor is None:
-        raise ValueError("text_extractor parameter is required")
         
     # Use default output directory if not specified
     if output_dir is None:
@@ -65,17 +61,15 @@ def process_all_pdfs(output_dir: Optional[Path] = None, text_extractor: str = No
         print(f"\n{'='*60}")
         print(f"Processing [{i}/{len(pdf_files)}]: {pdf_path.name}")
         print(f"{'='*60}")
-        print(f"[DEBUG] Using text extractor: {text_extractor}")
-        
         try:
             # Run ingestion pipeline with optimized settings
-            document = ingest_pdf(pdf_path, text_extractor)
+            document = ingest_pdf(pdf_path)
             
             print(f"✓ Successfully processed {pdf_path.name}")
             total_pages = document.metadata.get("total_pages", "?")
             print(f"  - Total pages: {total_pages}")
             print(f"  - Total blocks detected: {len(document.blocks)}")
-            print(f"  - Text extractor: {text_extractor}")
+            print(f"  - Text extractor: PyMuPDF")
             
             successful += 1
             
@@ -115,19 +109,10 @@ Example:
         help=f"Custom output directory (default: {DEFAULT_OUTPUT_DIR})"
     )
     
-    parser.add_argument(
-        "--text-extractor",
-        choices=["pymupdf"],
-        default="pymupdf",
-        help="Text extraction method to use (default: pymupdf)"
-    )
-    
     args = parser.parse_args()
     
-    print(f"[DEBUG] Parsed arguments: text_extractor={args.text_extractor}")
-    
-    # Run the batch processing with explicit text extractor
-    process_all_pdfs(output_dir=args.output_dir, text_extractor=args.text_extractor)
+    # Run the batch processing
+    process_all_pdfs(output_dir=args.output_dir)
 
 
 if __name__ == "__main__":

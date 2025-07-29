@@ -6,6 +6,8 @@ from typing import Dict, Any, List, Optional
 
 from ..core.responses_client import ResponsesClient
 from ..utils import document_utils
+from ..models.llm_outputs import VerifierOutput
+from ..utils.llm_parser import LLMResponseParser
 from .base import BaseAgent, AgentError
 
 logger = logging.getLogger(__name__)
@@ -201,75 +203,42 @@ FULL DOCUMENT:
 {full_document}"""
 
         try:
-            response = await self.llm_client.create_response(
-                input=prompt,
-                model=self.llm_client.model,
+            # Use the robust parser with retry
+            result = await LLMResponseParser.parse_with_retry(
+                llm_client=self.llm_client,
+                prompt=prompt,
+                output_model=VerifierOutput,
+                max_retries=2,
                 temperature=0.0,
-                max_output_tokens=500,
-                disable_cache=self.config.get("disable_cache", True)
+                max_output_tokens=500
             )
             
-            content = ResponsesClient.extract_text(response)
-            return self._parse_verification_response(content)
+            # Convert to expected format
+            keep = result.quote_found and result.supports_claim
             
-        except Exception as e:
-            logger.error(f"Error verifying quote: {e}")
-            # Default to rejecting on error
-            return {
-                "keep": False,
-                "reason": f"Verification error: {str(e)}",
-                "explanation": ""
-            }
-    
-    def _parse_verification_response(self, response: str) -> Dict[str, Any]:
-        """Parse the JSON verification response."""
-        import json
-        
-        try:
-            # Handle markdown-wrapped JSON
-            content = response.strip()
-            if content.startswith('```json') and content.endswith('```'):
-                content = content[7:-3].strip()
-            elif content.startswith('```') and content.endswith('```'):
-                content = content[3:-3].strip()
-            
-            # Parse JSON
-            data = json.loads(content)
-            
-            # Extract core fields
-            quote_found = data.get("quote_found", False)
-            supports_claim = data.get("supports_claim", False)
-            found_explanation = data.get("found_explanation", "")
-            support_explanation = data.get("support_explanation", "")
-            
-            # Derive verdict and reason
-            keep = quote_found and supports_claim
-            
-            if not quote_found:
+            if not result.quote_found:
                 reason = "not found"
-            elif not supports_claim:
+            elif not result.supports_claim:
                 reason = "does not support claim"
             else:
                 reason = ""
             
-            # Convert to expected format
-            result = {
+            return {
                 "keep": keep,
-                "presence_explanation": found_explanation,
-                "support_explanation": support_explanation,
-                "explanation": f"{found_explanation}. {support_explanation}".strip(),
+                "presence_explanation": result.found_explanation,
+                "support_explanation": result.support_explanation,
+                "explanation": f"{result.found_explanation}. {result.support_explanation}".strip(),
                 "reason": reason
             }
             
-            return result
-            
-        except (json.JSONDecodeError, KeyError) as e:
-            logger.error(f"Error parsing verification response: {e}")
-            logger.debug(f"Response was: {response[:500]}...")
+        except ValueError as e:
+            logger.error(f"Failed to verify quote after retries: {e}")
+            # Default to rejecting on error
             return {
                 "keep": False,
-                "reason": "Failed to parse verification response",
-                "explanation": "",
+                "reason": "Verification failed",
+                "explanation": str(e),
                 "presence_explanation": "",
                 "support_explanation": ""
             }
+    
