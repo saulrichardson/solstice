@@ -2,6 +2,8 @@
 
 import logging
 import time
+import threading
+from contextlib import contextmanager
 from typing import Optional, List, Tuple, Callable, Dict, Any
 from dataclasses import dataclass
 
@@ -40,20 +42,35 @@ class TextProcessingService:
     
     _instance: Optional['TextProcessingService'] = None
     
-    def __new__(cls):
-        """Singleton pattern for single instance."""
+    def __new__(cls, processors=None):
+        """Singleton pattern for single instance when no processors are provided."""
+        # If processors are provided, create a new instance (for testing)
+        if processors is not None:
+            return super().__new__(cls)
+        # Otherwise, use singleton pattern
         if cls._instance is None:
             cls._instance = super().__new__(cls)
         return cls._instance
     
-    def __init__(self):
-        """Initialize the service with all available processors."""
-        if hasattr(self, '_initialized'):
+    def __init__(self, processors=None):
+        """Initialize the service with all available processors.
+        
+        Args:
+            processors: Optional list of (name, processor_func) tuples for testing
+        """
+        if hasattr(self, '_initialized') and processors is None:
             return
             
         self._initialized = True
-        self._processors: List[Tuple[str, Callable]] = []
-        self._initialize_processors()
+        self._lock = threading.RLock()  # Use RLock to allow nested locking
+        
+        if processors is not None:
+            # Use provided processors (for testing)
+            self._processors = list(processors)
+        else:
+            # Initialize default processors
+            self._processors: List[Tuple[str, Callable]] = []
+            self._initialize_processors()
 
         # Keep an immutable copy of the *default* processor pipeline so that
         # we can restore it after ad-hoc mutations performed in test cases or
@@ -65,6 +82,31 @@ class TextProcessingService:
         # behaviour.
         self._default_processors: Tuple[Tuple[str, Callable], ...] = tuple(self._processors)
         logger.info(f"TextProcessingService initialized with {len(self._processors)} processors")
+    
+    @contextmanager
+    def temporary_processors(self, processors: List[Tuple[str, Callable]]):
+        """Context manager for temporarily replacing processors.
+        
+        This provides a thread-safe way to temporarily modify the processor
+        pipeline, ensuring automatic restoration even if an exception occurs.
+        
+        Args:
+            processors: List of (name, processor_func) tuples to use temporarily
+            
+        Yields:
+            None
+            
+        Example:
+            with service.temporary_processors([('custom', my_processor)]):
+                result = service.process("test text")
+        """
+        with self._lock:
+            original_processors = self._processors
+            try:
+                self._processors = list(processors)
+                yield
+            finally:
+                self._processors = original_processors
     
     def _initialize_processors(self):
         """Initialize all text processors in order."""
@@ -127,8 +169,11 @@ class TextProcessingService:
                 metadata=metadata
             )
         
-        # Run through each processor
-        for name, processor in self._processors:
+        # Run through each processor with thread safety
+        with self._lock:
+            current_processors = list(self._processors)
+        
+        for name, processor in current_processors:
             try:
                 processed = processor(text)
                 
@@ -151,7 +196,7 @@ class TextProcessingService:
                 # Continue with other processors
 
         # ------------------------------------------------------------------
-        # Ensure test isolation / global state hygiene
+        # Ensure test isolation / global state hygiene (thread-safe)
         # ------------------------------------------------------------------
         # Some unit-tests purposefully replace `service._processors` with a
         # custom list to validate the modification-tracking logic.  Because
@@ -161,8 +206,9 @@ class TextProcessingService:
         # cross-test contamination we restore the processor pipeline to the
         # default configuration captured at initialization once the current
         # processing call has finished.
-        if tuple(self._processors) != self._default_processors:
-            self._processors = list(self._default_processors)
+        with self._lock:
+            if tuple(self._processors) != self._default_processors:
+                self._processors = list(self._default_processors)
         processing_time = time.time() - start_time
         
         # Log slow processing

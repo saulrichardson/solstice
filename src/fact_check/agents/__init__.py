@@ -1,18 +1,16 @@
-"""Fact-checking agents package"""
+"""Fact-checking agents package - Streamlined Architecture"""
 
 from .base import BaseAgent, AgentError
-from .supporting_evidence_extractor import SupportingEvidenceExtractor
-from .quote_verifier import QuoteVerifier
-from .evidence_critic import EvidenceCritic
+from .evidence_extractor import EvidenceExtractor
+from .evidence_verifier_v2 import EvidenceVerifierV2
 from .completeness_checker import CompletenessChecker
-from .evidence_judge import EvidenceJudge
+from .evidence_presenter import EvidencePresenter
 
 __all__ = [
     "BaseAgent", 
-    "AgentError", 
-    "SupportingEvidenceExtractor",
-    "QuoteVerifier",
-    "EvidenceCritic",
+    "AgentError",
+    "EvidenceExtractor",
+    "EvidenceVerifierV2",
     "CompletenessChecker",
-    "EvidenceJudge"
+    "EvidencePresenter"
 ]

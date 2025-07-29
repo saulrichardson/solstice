@@ -1,4 +1,4 @@
-"""Orchestrator for processing all claims across all documents."""
+"""Streamlined study orchestrator for running fact-checking across multiple claims."""
 
 import json
 import logging
@@ -12,97 +12,77 @@ logger = logging.getLogger(__name__)
 
 
 class StudyOrchestrator:
-    """Process all claims across all documents."""
+    """Run streamlined fact-checking pipeline across multiple claims and documents."""
     
     def __init__(
         self,
-        claims_file: str,
+        claims_file: Path,
         documents: List[str],
         cache_dir: Path = Path("data/cache"),
+        output_dir: Path = Path("data/studies"),
         config: Optional[Dict[str, Any]] = None
     ):
         """
-        Initialize study orchestrator.
+        Initialize streamlined study orchestrator.
         
         Args:
             claims_file: Path to JSON file containing claims
-            documents: List of document names to process
+            documents: List of document names to check
             cache_dir: Base cache directory
-            config: Configuration options
+            output_dir: Directory for study results
+            config: Configuration for agents and orchestration
         """
         self.claims_file = Path(claims_file)
         self.documents = documents
         self.cache_dir = Path(cache_dir)
+        self.output_dir = Path(output_dir)
         self.config = config or {}
         
         # Load claims
         self.claims = self._load_claims()
         
-        # Results storage
-        self.results = {
+        # Ensure output directory exists
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+    
+    def _load_claims(self) -> List[Dict[str, str]]:
+        """Load claims from JSON file."""
+        with open(self.claims_file, 'r') as f:
+            data = json.load(f)
+        
+        claims = data.get("claims", [])
+        
+        # Add IDs if not present
+        for i, claim in enumerate(claims):
+            if "id" not in claim:
+                claim["id"] = f"claim_{i:03d}"
+        
+        return claims
+    
+    async def process(self) -> Dict[str, Any]:
+        """
+        Process all claims across all documents.
+        
+        Returns:
+            Study results dictionary
+        """
+        logger.info(f"Starting streamlined study: {len(self.claims)} claims × {len(self.documents)} documents")
+        
+        study_results = {
             "metadata": {
                 "claims_file": str(self.claims_file),
                 "documents": self.documents,
                 "total_claims": len(self.claims),
-                "started_at": None,
-                "completed_at": None
+                "started_at": datetime.now().isoformat()
             },
             "claims": {}
         }
-    
-    def _load_claims(self) -> List[Dict[str, str]]:
-        """Load claims from JSON file."""
-        if not self.claims_file.exists():
-            # Try in data/claims directory
-            alt_path = Path("data/claims") / self.claims_file.name
-            if alt_path.exists():
-                self.claims_file = alt_path
-            else:
-                raise FileNotFoundError(f"Claims file not found: {self.claims_file}")
         
-        with open(self.claims_file, 'r') as f:
-            data = json.load(f)
-        
-        # Handle different formats
-        if isinstance(data, dict) and "claims" in data:
-            claims = data["claims"]
-        elif isinstance(data, list):
-            claims = data
-        else:
-            raise ValueError(f"Invalid claims file format: {self.claims_file}")
-        
-        # Normalize to list of dicts
-        normalized = []
-        for claim in claims:
-            if isinstance(claim, str):
-                normalized.append({"claim": claim})
-            elif isinstance(claim, dict) and "claim" in claim:
-                normalized.append(claim)
-            else:
-                logger.warning(f"Skipping invalid claim: {claim}")
-        
-        return normalized
-    
-    async def run(self) -> Dict[str, Any]:
-        """
-        Run study processing all claims.
-        
-        Returns:
-            Dictionary containing all results
-        """
-        self.results["metadata"]["started_at"] = datetime.now().isoformat()
-        
-        print(f"\n{'='*60}")
-        print(f"Starting Study: {len(self.claims)} claims × {len(self.documents)} documents")
-        print(f"{'='*60}\n")
-        
-        # Process each claim (outer loop)
-        for idx, claim_data in enumerate(self.claims):
-            claim_id = f"claim_{idx:03d}"
+        # Process each claim
+        for i, claim_data in enumerate(self.claims):
+            claim_id = claim_data["id"]
             claim_text = claim_data["claim"]
             
-            print(f"\nClaim {idx+1}/{len(self.claims)}: {claim_text[:80]}...")
-            print(f"{'-'*60}")
+            logger.info(f"\nClaim {i+1}/{len(self.claims)}: {claim_text[:50]}...")
             
             # Create claim orchestrator
             claim_orchestrator = ClaimOrchestrator(
@@ -113,87 +93,96 @@ class StudyOrchestrator:
                 config=self.config
             )
             
-            # Process claim across all documents
-            claim_results = await claim_orchestrator.process()
-            self.results["claims"][claim_id] = claim_results
-            
-            # Print summary for this claim
-            self._print_claim_summary(claim_results)
+            # Process claim
+            try:
+                claim_results = await claim_orchestrator.process()
+                study_results["claims"][claim_id] = claim_results
+                
+                # Print progress
+                self._print_claim_summary(claim_id, claim_text, claim_results)
+                
+            except Exception as e:
+                logger.error(f"Failed to process claim {claim_id}: {e}")
+                study_results["claims"][claim_id] = {
+                    "claim_id": claim_id,
+                    "claim": claim_text,
+                    "error": str(e),
+                    "documents": {}
+                }
         
-        self.results["metadata"]["completed_at"] = datetime.now().isoformat()
+        study_results["metadata"]["completed_at"] = datetime.now().isoformat()
         
-        # Generate and print overall summary
-        self._generate_summary()
-        self._print_study_summary()
+        # Generate summary
+        study_results["summary"] = self._generate_summary(study_results)
         
-        return self.results
+        # Save results
+        self.save_results(study_results)
+        
+        return study_results
     
-    def _print_claim_summary(self, claim_results: Dict[str, Any]):
-        """Print summary for a single claim."""
-        successful_docs = 0
-        strong_support = 0
+    def _print_claim_summary(self, claim_id: str, claim_text: str, results: Dict[str, Any]):
+        """Print summary of claim processing."""
+        print("-" * 60)
+        print(f"Claim: {claim_text[:70]}...")
         
-        for doc_name, doc_result in claim_results["documents"].items():
-            if doc_result.get("success"):
-                successful_docs += 1
-                judgment = doc_result.get("final_judgment")
-                if judgment and judgment.get("verdict") in ["strongly_supported", "supported"]:
-                    strong_support += 1
+        total_evidence = 0
+        for doc_name, doc_result in results.get("documents", {}).items():
+            evidence_count = len(doc_result.get("supporting_evidence", []))
+            total_evidence += evidence_count
+            loops = doc_result.get("loops_performed", 0)
+            print(f"  {doc_name}: {evidence_count} evidence pieces (loops: {loops})")
         
-        print(f"\n  Processed: {successful_docs}/{len(self.documents)} documents")
-        print(f"  Strong support in: {strong_support} documents")
+        print(f"  Total evidence: {total_evidence}")
     
-    def _generate_summary(self):
+    def _generate_summary(self, study_results: Dict[str, Any]) -> Dict[str, Any]:
         """Generate summary statistics."""
-        total_claim_doc_pairs = len(self.claims) * len(self.documents)
+        total_pairs = 0
         successful_pairs = 0
+        evidence_counts = []
+        coverage_dist = {"complete": 0, "partial": 0, "none": 0}
         
-        judgment_counts = {
-            "strongly_supported": 0,
-            "supported": 0,
-            "weakly_supported": 0,
-            "unsupported": 0
-        }
-        
-        for claim_id, claim_data in self.results["claims"].items():
-            for doc_name, doc_result in claim_data["documents"].items():
-                if doc_result.get("success"):
+        for claim_id, claim_result in study_results["claims"].items():
+            for doc_name, doc_result in claim_result.get("documents", {}).items():
+                total_pairs += 1
+                if doc_result.get("success", False):
                     successful_pairs += 1
-                    judgment = doc_result.get("final_judgment")
-                    verdict = judgment.get("verdict") if judgment else None
-                    if verdict and verdict in judgment_counts:
-                        judgment_counts[verdict] += 1
+                    
+                    # Count evidence
+                    evidence_count = len(doc_result.get("supporting_evidence", []))
+                    evidence_counts.append(evidence_count)
+                    
+                    # Track coverage
+                    coverage = doc_result.get("evidence_summary", {}).get("coverage", "none")
+                    if coverage in coverage_dist:
+                        coverage_dist[coverage] += 1
         
-        self.results["summary"] = {
-            "total_claim_document_pairs": total_claim_doc_pairs,
+        return {
+            "total_claim_document_pairs": total_pairs,
             "successfully_processed": successful_pairs,
-            "processing_rate": successful_pairs / total_claim_doc_pairs if total_claim_doc_pairs > 0 else 0,
-            "judgment_distribution": judgment_counts
+            "processing_rate": successful_pairs / total_pairs if total_pairs > 0 else 0,
+            "average_evidence_per_claim": sum(evidence_counts) / len(evidence_counts) if evidence_counts else 0,
+            "coverage_distribution": coverage_dist
         }
     
-    def _print_study_summary(self):
-        """Print final study summary."""
-        summary = self.results["summary"]
+    def save_results(self, results: Dict[str, Any]):
+        """Save study results to file."""
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_file = self.output_dir / f"study_results_{timestamp}.json"
         
-        print(f"\n{'='*60}")
+        with open(output_file, 'w') as f:
+            json.dump(results, f, indent=2)
+        
+        logger.info(f"\nResults saved to: {output_file}")
+        
+        # Print final summary
+        summary = results["summary"]
+        print("\n" + "=" * 60)
         print("Study Complete")
-        print(f"{'='*60}")
+        print("=" * 60)
         print(f"Total claims: {len(self.claims)}")
         print(f"Total documents: {len(self.documents)}")
         print(f"Claim-document pairs processed: {summary['successfully_processed']}/{summary['total_claim_document_pairs']}")
-        print(f"\nJudgment distribution:")
-        for verdict, count in summary["judgment_distribution"].items():
-            print(f"  {verdict}: {count}")
-    
-    def save_results(self):
-        """Save study results to timestamped file."""
-        output_dir = Path("data/studies")
-        output_dir.mkdir(parents=True, exist_ok=True)
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_path = output_dir / f"study_results_{timestamp}.json"
-        
-        with open(output_path, 'w') as f:
-            json.dump(self.results, f, indent=2)
-        
-        print(f"\nResults saved to: {output_path}")
-        return output_path
+        print(f"\nCoverage distribution:")
+        for coverage, count in summary['coverage_distribution'].items():
+            print(f"  {coverage}: {count}")
+        print(f"\nAverage evidence per claim: {summary['average_evidence_per_claim']:.1f}")

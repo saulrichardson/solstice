@@ -284,9 +284,7 @@ def ingest_pdf(pdf_path: str | os.PathLike[str], text_extractor: str) -> Documen
     for page_idx, page_boxes in enumerate(all_page_boxes):
         page_width = images[page_idx].width if page_idx < len(images) else 1600
         
-        page_reading_order = determine_reading_order_simple(
-            page_boxes, page_width
-        )
+        page_reading_order = determine_reading_order_simple(page_boxes, page_width)
         
         reading_order_by_page.append(page_reading_order)
 

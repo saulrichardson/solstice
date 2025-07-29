@@ -45,7 +45,7 @@ class ResponsesClient:
         if self.api_key:
             self.headers["Authorization"] = f"Bearer {self.api_key}"
 
-    def create_response(
+    async def create_response(
         self,
         input: str | list[dict] | None = None,
         model: str = "gpt-4.1-mini",
@@ -54,12 +54,12 @@ class ResponsesClient:
         tools: list[dict] | None = None,
         tool_choice: str | dict | None = "auto",
         parallel_tool_calls: bool = True,
-        store: bool = True,
+        store: bool = False,
         reasoning: dict | None = None,
         temperature: float | None = None,
         max_output_tokens: int | None = None,
         *,
-        disable_cache: bool = False,
+        disable_request_deduplication: bool = True,
         **kwargs,
     ) -> dict:
         """
@@ -73,13 +73,24 @@ class ResponsesClient:
             tools: Tool definitions (web_search_preview, code_interpreter, etc.)
             tool_choice: Tool selection strategy
             parallel_tool_calls: Allow parallel tool execution
-            store: Store the response for retrieval
+            store: Whether to persist response on server for later retrieval (default: False)
             reasoning: Reasoning configuration for o4-mini
             temperature: Sampling temperature
             max_output_tokens: Maximum output tokens
+            disable_request_deduplication: If True (default), adds a nonce to ensure fresh 
+                responses for identical requests. If False, allows OpenAI to return cached
+                responses for identical requests, improving speed and reducing costs.
 
         Returns:
             Response object with output, tool calls, and usage info
+            
+        Note on Caching:
+            - Request deduplication (controlled by disable_request_deduplication) determines
+              whether identical API requests return identical cached responses
+            - Response storage (controlled by store) determines whether responses are 
+              persisted on the server for later retrieval via response_id
+            - These are independent: you can have fresh responses that aren't stored,
+              or deduplicated responses that are stored
         """
         request_data = {
             "model": model,
@@ -98,8 +109,9 @@ class ResponsesClient:
             request_data["tool_choice"] = tool_choice
         if parallel_tool_calls is not None:
             request_data["parallel_tool_calls"] = parallel_tool_calls
-        if store is not None:
-            request_data["store"] = store
+        # By default we do *not* store responses on the server.  The caller
+        # must explicitly request persistence by passing store=True.
+        request_data["store"] = store
         if reasoning:
             request_data["reasoning"] = reasoning
         if temperature is not None:
@@ -108,14 +120,14 @@ class ResponsesClient:
             request_data["max_output_tokens"] = max_output_tokens
 
         # ------------------------------------------------------------------
-        # Cache-busting: when disable_cache=True we attach a nonce to metadata
-        # and make sure the request itself is *not* stored on the OpenAI side
-        # so that subsequent identical calls still go through the model.
+        # Request deduplication prevention: when disable_request_deduplication=True
+        # we attach a nonce to metadata to ensure that subsequent identical calls
+        # still go through the model rather than returning a cached response.
         # The nonce lives in `metadata` which is excluded from the prompt and
         # therefore does not influence the model or incur token costs.
         # ------------------------------------------------------------------
 
-        if disable_cache:
+        if disable_request_deduplication:
             from src.util.nonce import new_nonce  # local import to avoid cycles
 
             nonce = new_nonce()
@@ -127,11 +139,18 @@ class ResponsesClient:
             metadata.setdefault("nonce", nonce)
             request_data["metadata"] = metadata
 
-            # Ensure the response itself is not persisted server-side unless
-            # the caller explicitly overrode `store` to True in their kwargs.
-            request_data["store"] = False
+        # Handle backward compatibility for old parameter name
+        if "disable_cache" in kwargs:
+            import warnings
+            warnings.warn(
+                "Parameter 'disable_cache' is deprecated. Use 'disable_request_deduplication' instead.",
+                DeprecationWarning,
+                stacklevel=2
+            )
+            disable_request_deduplication = kwargs.pop("disable_cache")
 
-        # Add any extra kwargs (after nonce injection so explicit kwargs win)
+        # Add any extra kwargs (after nonce injection so that explicit kwargs
+        # always win over internal defaults).
         request_data.update(kwargs)
         
         # Debug logging for LLM calls
@@ -140,12 +159,14 @@ class ResponsesClient:
             logger.debug(f"🤖 LLM CALL - Model: {model}")
             logger.debug(f"🌡️  Temperature: {temperature if temperature is not None else 'default'}")
             logger.debug(f"📊 Max tokens: {max_output_tokens if max_output_tokens is not None else 'default'}")
+            logger.debug(f"🔄 Request deduplication: {'DISABLED' if disable_request_deduplication else 'ENABLED'}")
+            logger.debug(f"💾 Response storage: {'ENABLED' if store else 'DISABLED'}")
             prompt = input if isinstance(input, str) else str(input)[:500]
             logger.debug(f"📝 Prompt preview: {prompt[:200]}..." if len(prompt) > 200 else f"📝 Prompt: {prompt}")
             logger.debug(f"{'='*60}\n")
 
-        with httpx.Client() as client:
-            response = client.post(
+        async with httpx.AsyncClient() as client:
+            response = await client.post(
                 f"{self.base_url}/v1/responses",
                 json=request_data,
                 headers=self.headers,
@@ -260,7 +281,7 @@ class ResponsesClient:
             response.raise_for_status()
             return response.json()
 
-    def complete(self, prompt: str, model: str = "gpt-4.1-mini", **kwargs) -> str:
+    async def complete(self, prompt: str, model: str = "gpt-4.1-mini", **kwargs) -> str:
         """
         Simple completion wrapper for basic use cases.
 
@@ -272,10 +293,41 @@ class ResponsesClient:
         Returns:
             The assistant's response as a string
         """
-        response = self.create_response(input=prompt, model=model, **kwargs)
+        response = await self.create_response(input=prompt, model=model, **kwargs)
         return response.get("output_text", "")
+    
+    async def create_response_with_deduplication(self, **kwargs) -> dict:
+        """
+        Create a response that allows request deduplication for efficiency.
+        
+        Identical requests will return the same cached response from OpenAI,
+        improving speed and reducing costs. Use this for deterministic queries
+        where you want consistent results.
+        
+        Args:
+            **kwargs: Same arguments as create_response()
+            
+        Returns:
+            Response object
+        """
+        return await self.create_response(disable_request_deduplication=False, **kwargs)
+    
+    async def create_fresh_response(self, **kwargs) -> dict:
+        """
+        Create a response that always goes through the model.
+        
+        Ensures a fresh response even for identical requests by disabling
+        request deduplication. This is the default behavior of create_response().
+        
+        Args:
+            **kwargs: Same arguments as create_response()
+            
+        Returns:
+            Response object
+        """
+        return await self.create_response(disable_request_deduplication=True, **kwargs)
 
-    def complete_with_tools(
+    async def complete_with_tools(
         self, prompt: str, tools: list[dict], model: str = "gpt-4.1-mini", **kwargs
     ) -> dict:
         """
@@ -315,9 +367,9 @@ class ResponsesClient:
                 }]
             )
         """
-        return self.create_response(input=prompt, model=model, tools=tools, **kwargs)
+        return await self.create_response(input=prompt, model=model, tools=tools, **kwargs)
 
-    def complete_with_reasoning(
+    async def complete_with_reasoning(
         self,
         prompt: str,
         model: str = "o4-mini",
@@ -337,12 +389,12 @@ class ResponsesClient:
         """
         reasoning_config = {"level": reasoning_level}
 
-        response = self.create_response(
+        response = await self.create_response(
             input=prompt, model=model, reasoning=reasoning_config, **kwargs
         )
         return response.get("output_text", "")
 
-    def create_stateful_conversation(
+    async def create_stateful_conversation(
         self,
         initial_message: str,
         model: str = "gpt-4.1-mini",
@@ -360,7 +412,7 @@ class ResponsesClient:
         Returns:
             Response with ID for continuation
         """
-        return self.create_response(
+        return await self.create_response(
             input=initial_message,
             model=model,
             instructions=instructions,
@@ -368,7 +420,7 @@ class ResponsesClient:
             **kwargs,
         )
 
-    def continue_conversation(
+    async def continue_conversation(
         self,
         message: str,
         previous_response_id: str,
@@ -386,7 +438,7 @@ class ResponsesClient:
         Returns:
             Response with new ID for further continuation
         """
-        return self.create_response(
+        return await self.create_response(
             input=message,
             model=model,
             previous_response_id=previous_response_id,

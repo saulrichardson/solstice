@@ -5,7 +5,7 @@
     "pdf_name": "FlublokPI",
     "source_pdf": "data/clinical_files/FlublokPI.pdf",
     "total_pages": 5,
-    "total_blocks": 73
+    "total_blocks": 72
   },
   "extraction_result": {
     "success": true,
@@ -15,18 +15,18 @@
   "supporting_snippets": [
     {
       "id": 1,
-      "quote": "For the 2024-2025 in\ufb02uenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 in\ufb02uenza virus strains...",
-      "relevance_explanation": "This quote specifies the total hemagglutinin (HA) antigen content in Flublok (135 mcg per dose, 45 mcg per strain), which is three times the standard 15 mcg per strain in standard-dose flu vaccines."
+      "quote": "Each 0.5 mL dose of Flublok contains 45 mcg HA of each of the following 3 influenza virus strains",
+      "relevance_explanation": "This quote specifies the hemagglutinin (HA) antigen content per strain in Flublok, which is 45 mcg per strain."
     },
     {
       "id": 2,
-      "quote": "Flublok contains recombinant HA proteins of the three strains of in\ufb02uenza virus speci\ufb01ed by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response measured by hemagglutination inhibition (HI) antibodies to each virus strain.",
-      "relevance_explanation": "This quote explains that the HA proteins in Flublok are the immunogenic components responsible for inducing an immune response, directly relating HA content to immunogenicity."
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements for the 2024-2025 influenza season and contains 135 mcg of recombinant hemagglutinin (HA) per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains",
+      "relevance_explanation": "This quote confirms the total HA content in Flublok (135 mcg per dose, 45 mcg per strain), which is three times the standard 15 mcg per strain in standard-dose flu vaccines."
     },
     {
       "id": 3,
-      "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recombinant in\ufb02uenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
-      "relevance_explanation": "This reference is cited in the context of clinical studies and supports the claim that Flublok (with higher HA content) has been shown to have greater immunogenicity compared to standard-dose flu vaccines."
+      "quote": "Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
+      "relevance_explanation": "This reference to a clinical study directly compares the immunogenicity of Flublok (which contains 3x the HA content) to standard-dose inactivated vaccines, supporting the claim that higher HA content is linked to greater immunogenicity."
     }
   ],
   "model_used": "gpt-4.1"

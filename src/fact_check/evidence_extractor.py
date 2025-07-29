@@ -44,7 +44,7 @@ class EvidenceExtractor:
         self.llm_client = llm_client
         self.config = config or {}
         
-    def extract_supporting_evidence(self, claim: str, document_text: str) -> EvidenceExtractionResult:
+    async def extract_supporting_evidence(self, claim: str, document_text: str) -> EvidenceExtractionResult:
         """
         Extract all text snippets that support the given claim.
         
@@ -57,7 +57,7 @@ class EvidenceExtractor:
         """
         try:
             # Step 1: Use LLM to find supporting snippets
-            extraction_output = self._extract_snippets(claim, document_text)
+            extraction_output = await self._extract_snippets(claim, document_text)
             
             # Step 2: Return extracted snippets directly (no verification needed)
             verified_snippets = extraction_output.snippets
@@ -78,7 +78,7 @@ class EvidenceExtractor:
                 error=str(e)
             )
     
-    def _extract_snippets(self, claim: str, document_text: str) -> EvidenceExtractionOutput:
+    async def _extract_snippets(self, claim: str, document_text: str) -> EvidenceExtractionOutput:
         """
         Use LLM to extract supporting snippets.
         
@@ -111,15 +111,11 @@ Return your response as a JSON object with this structure:
 
 Document text to search:'''
         
-        # Handle long documents by warning and using what we can
-        if len(document_text) > 50000:
-            logger.warning(
-                f"Document is {len(document_text)} characters, truncating to 50k for LLM context window. "
-                f"Evidence beyond character 50,000 may be missed."
-            )
-            prompt += f"\n{document_text[:50000]}\n\n[Document truncated - showing first 50,000 of {len(document_text)} characters]"
-        else:
-            prompt += f"\n{document_text}"
+        # Always pass complete document - no truncation
+        prompt += f"\n{document_text}"
+        
+        if len(document_text) > 100000:
+            logger.info(f"Processing large document ({len(document_text):,} characters)")
 
         try:
             # We explicitly set store=False so that OpenAI *does not* cache the
@@ -127,7 +123,7 @@ Document text to search:'''
             # internal copy and will serve identical requests instantly on
             # subsequent calls, which can hide legitimate issues during
             # development and debugging.
-            response = self.llm_client.create_response(
+            response = await self.llm_client.create_response(
                 input=prompt,
                 model=self.llm_client.model if hasattr(self.llm_client, 'model') else "gpt-4.1",
                 temperature=0.0,

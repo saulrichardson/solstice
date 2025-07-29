@@ -1,11 +1,11 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
   "document": {
     "pdf_name": "FlublokPI",
     "source_pdf": "data/clinical_files/FlublokPI.pdf",
     "total_pages": 5,
-    "total_blocks": 73
+    "total_blocks": 81
   },
   "extraction_result": {
     "success": true,
@@ -15,18 +15,18 @@
   "supporting_snippets": [
     {
       "id": 1,
-      "quote": "Flublok contains recombinant HA proteins of the three strains of in\ufb02uenza virus speci\ufb01ed by health authorities for inclusion in the annual seasonal vaccine.",
-      "relevance_explanation": "This quote supports the claim because it states that Flublok contains hemagglutinin (HA) proteins from the exact strains specified by health authorities (such as WHO and FDA) for the annual flu vaccine, ensuring an identical antigenic match."
+      "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
+      "relevance_explanation": "This quote directly states that Flublok contains 45 mcg of hemagglutinin (HA) per strain, supporting the first part of the claim."
     },
     {
       "id": 2,
-      "quote": "For the 2024-2025 in\ufb02uenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 in\ufb02uenza virus strains: A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
-      "relevance_explanation": "This quote provides the exact strains included in Flublok for the 2024-2025 season, which are the strains selected by WHO and FDA, directly supporting the claim of an identical antigenic match."
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements.",
+      "relevance_explanation": "This quote, while not giving a specific number, supports that Flublok's HA content is set according to official standards, which are referenced in the claim."
     },
     {
       "id": 3,
-      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements.",
-      "relevance_explanation": "This quote affirms that Flublok is produced to meet the official standards set by U.S. health authorities, which include using the exact strains selected for the season, supporting the claim of identical antigenic match."
+      "quote": "Data from a randomized, controlled trial demonstrated that children 6 months to less than 3 years of age had diminished hemagglutinin inhibition (HI) responses to Flublok compared to a U.S.-licensed influenza vaccine approved for use in this population, strongly suggesting that Flublok would not be effective in children younger than 3 years of age (6).",
+      "relevance_explanation": "This quote references a comparison to a standard U.S.-licensed influenza vaccine, which typically contains 15 mcg HA per strain, indirectly supporting the claim by establishing the comparator."
     }
   ],
   "model_used": "gpt-4.1"

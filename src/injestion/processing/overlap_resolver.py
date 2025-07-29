@@ -26,33 +26,69 @@ def expand_boxes(boxes: List[Box], padding: float = 10.0, page_width: float = No
     Returns:
         List of expanded Box objects
     """
-    expanded_boxes = []
+    expanded: list[Box] = []
+
     for box in boxes:
         x1, y1, x2, y2 = box.bbox
-        
-        # Expand the box by padding in all directions
-        new_x1 = x1 - padding
-        new_y1 = y1 - padding
-        new_x2 = x2 + padding
-        new_y2 = y2 + padding
-        
-        # Clamp to page boundaries if provided
+
+        orig_w = x2 - x1
+        orig_h = y2 - y1
+
+        nx1, ny1 = x1 - padding, y1 - padding
+        nx2, ny2 = x2 + padding, y2 + padding
+
         if page_width is not None:
-            new_x1 = max(0, new_x1)
-            new_x2 = min(page_width, new_x2)
+            nx1 = max(0.0, nx1)
+            nx2 = min(page_width, nx2)
         if page_height is not None:
-            new_y1 = max(0, new_y1)
-            new_y2 = min(page_height, new_y2)
-        
-        expanded_box = Box(
-            id=box.id,
-            bbox=(new_x1, new_y1, new_x2, new_y2),
-            label=box.label,
-            score=box.score
-        )
-        expanded_boxes.append(expanded_box)
-    
-    return expanded_boxes
+            ny1 = max(0.0, ny1)
+            ny2 = min(page_height, ny2)
+
+        # Prevent excessive shrinkage due to clamping: keep at least 50 % of
+        # the original width/height when possible.
+        min_w = max(orig_w * 0.5, 1.0)
+        min_h = max(orig_h * 0.5, 1.0)
+
+        # Handle width constraints with proper boundary checks
+        current_w = nx2 - nx1
+        if current_w < min_w:
+            if page_width is not None:
+                # If we're too close to the right edge, shift left
+                if nx1 + min_w > page_width:
+                    nx2 = page_width
+                    nx1 = max(0.0, page_width - min_w)
+                else:
+                    nx2 = nx1 + min_w
+            else:
+                nx2 = nx1 + min_w
+
+        # Handle height constraints with proper boundary checks
+        current_h = ny2 - ny1
+        if current_h < min_h:
+            if page_height is not None:
+                # If we're too close to the bottom edge, shift up
+                if ny1 + min_h > page_height:
+                    ny2 = page_height
+                    ny1 = max(0.0, page_height - min_h)
+                else:
+                    ny2 = ny1 + min_h
+            else:
+                ny2 = ny1 + min_h
+
+        # Final guard: strictly positive dimensions
+        # This handles edge cases where page is smaller than min dimensions
+        if nx2 - nx1 < 1.0:
+            if page_width is not None and nx1 >= page_width - 1.0:
+                nx1 = max(0.0, page_width - 1.0)
+            nx2 = nx1 + 1.0
+        if ny2 - ny1 < 1.0:
+            if page_height is not None and ny1 >= page_height - 1.0:
+                ny1 = max(0.0, page_height - 1.0)
+            ny2 = ny1 + 1.0
+
+        expanded.append(box.model_copy(update={"bbox": (nx1, ny1, nx2, ny2)}))
+
+    return expanded
 
 
 def calculate_iou(box1: Tuple[float, float, float, float], 
@@ -92,28 +128,37 @@ def get_overlap_area(bbox1: Tuple[float, float, float, float],
     return (x2 - x1) * (y2 - y1)
 
 
-def calculate_box_weight(box: Box, 
-                        confidence_weight: float = 0.7,
-                        area_weight: float = 0.3,
-                        type_bonus: Dict[str, float] = None) -> float:
-    """Calculate a weight score for a box based on multiple factors."""
-    # Normalize weights
+def calculate_box_weight(
+    box: Box,
+    *,
+    page_width: float,
+    page_height: float,
+    confidence_weight: float = 0.7,
+    area_weight: float = 0.3,
+    type_bonus: Dict[str, float] | None = None,
+) -> float:
+    """Return a composite weight normalised to the *actual* page size.
+
+    This removes the previous 2000×2000 magic constant and yields
+    consistent scores regardless of PDF resolution.
+    """
+
     total_weight = confidence_weight + area_weight
+    if total_weight <= 0:
+        raise ValueError("confidence_weight + area_weight must be positive")
+
     conf_w = confidence_weight / total_weight
     area_w = area_weight / total_weight
-    
-    # Get box area and normalize it (assuming page is ~2000x2000)
-    area = get_box_area(box.bbox)
-    normalized_area = min(area / (2000 * 2000), 1.0)
-    
-    # Base score from confidence and area
-    base_score = (box.score * conf_w) + (normalized_area * area_w)
-    
-    # Apply type bonus if specified
+
+    area_ratio = get_box_area(box.bbox) / (page_width * page_height)
+    area_ratio = max(0.0, min(area_ratio, 1.0))
+
+    score = (box.score * conf_w) + (area_ratio * area_w)
+
     if type_bonus and box.label in type_bonus:
-        base_score *= (1.0 + type_bonus[box.label])
-    
-    return base_score
+        score *= (1.0 + type_bonus[box.label])
+
+    return score
 
 
 def merge_overlapping_boxes(boxes: List[Box], iou_threshold: float = 0.5) -> List[Box]:
@@ -150,17 +195,20 @@ def merge_overlapping_boxes(boxes: List[Box], iou_threshold: float = 0.5) -> Lis
                     
                 # For text blocks, use stricter criteria
                 if box_type in ["Text", "Paragraph", "text"]:
-                    # Check direct overlap with the original box only
-                    # Also check intersection ratio instead of just IoU
-                    overlap_area = get_overlap_area(type_boxes[i].bbox, type_boxes[j].bbox)
-                    area_i = get_box_area(type_boxes[i].bbox)
-                    area_j = get_box_area(type_boxes[j].bbox)
-                    
-                    # Calculate intersection over smaller box
-                    intersection_ratio = overlap_area / min(area_i, area_j) if min(area_i, area_j) > 0 else 0
-                    
-                    # Only merge if significant overlap (80% of smaller box)
-                    if intersection_ratio > 0.8:
+                    # For textual content we still require a substantial
+                    # overlap (≥ 80 % of the smaller box) *but* we now consider
+                    # the entire merge_group rather than only the seed box.
+
+                    def large_overlap(a: Box, b: Box) -> bool:
+                        area_a = get_box_area(a.bbox)
+                        area_b = get_box_area(b.bbox)
+                        inter = get_overlap_area(a.bbox, b.bbox)
+                        if inter == 0:
+                            return False
+                        ratio = inter / min(area_a, area_b)
+                        return ratio > 0.8
+
+                    if any(large_overlap(gb, type_boxes[j]) for gb in merge_group):
                         merge_group.append(type_boxes[j])
                         merged[j] = True
                 else:
@@ -232,13 +280,20 @@ def get_overlap_info(box1: Box, box2: Box) -> Dict:
     # Check if one box is nested inside another
     is_nested = overlap_ratio1 > 0.95 or overlap_ratio2 > 0.95
     
+    # Intersection-over-Union and over-smaller (IoS) help to judge mixed-type
+    # overlaps later on.
+    iou = calculate_iou(box1.bbox, box2.bbox)
+    intersection_over_smaller = max(overlap_ratio1, overlap_ratio2)
+
     return {
         "has_overlap": True,
         "overlap_area": overlap_area,
         "overlap_ratio_box1": overlap_ratio1,
         "overlap_ratio_box2": overlap_ratio2,
         "is_nested": is_nested,
-        "is_partial": not is_nested
+        "is_partial": not is_nested,
+        "iou": iou,
+        "ios": intersection_over_smaller,
     }
 
 
@@ -284,6 +339,22 @@ def determine_overlap_strategy(box1: Box, box2: Box, overlap_info: Dict) -> Over
     # Small overlap - try to shrink boxes
     if overlap_info["overlap_ratio_box1"] < 0.2 and overlap_info["overlap_ratio_box2"] < 0.2:
         return OverlapStrategy.SHRINK_TO_NON_OVERLAP
+
+    # ------------------------------------------------------------------
+    # Mixed-type overlaps: collapse into the higher-weighted box only when
+    # the intersection is truly substantial.  We combine IoU (absolute) and
+    # IoS (relative to smaller box) to avoid removing captions that merely
+    # touch a figure.
+    # ------------------------------------------------------------------
+
+    # Different labels → decide based on significance metrics.
+    if box1.label != box2.label:
+        significant = overlap_info["iou"] >= 0.15 and overlap_info["ios"] >= 0.6
+
+        if significant:
+            return OverlapStrategy.KEEP_HIGHER_WEIGHT
+        else:
+            return OverlapStrategy.SHRINK_TO_NON_OVERLAP
     
     # Otherwise, keep the higher weight box
     return OverlapStrategy.KEEP_HIGHER_WEIGHT
@@ -388,6 +459,22 @@ def shrink_boxes_to_remove_overlap(box1: Box, box2: Box) -> Tuple[Box, Box]:
                 score=box2.score
             )
     
+    # ------------------------------------------------------------------
+    # Ensure the resulting boxes remain valid (strictly positive width and
+    # height).  If a box would collapse entirely we keep the *original* box
+    # instead – this guarantees callers always receive two usable Box
+    # instances without having to implement additional checks.
+    # ------------------------------------------------------------------
+
+    def _is_valid(b: Box) -> bool:
+        x1, y1, x2, y2 = b.bbox
+        return (x2 - x1) > 0 and (y2 - y1) > 0
+
+    if not _is_valid(new_box1):
+        new_box1 = box1
+    if not _is_valid(new_box2):
+        new_box2 = box2
+
     return new_box1, new_box2
 
 
@@ -425,9 +512,24 @@ def resolve_all_overlaps(boxes: List[Box],
         resolved_boxes = []
         processed = set()
         
+        # Estimate page dimensions once per iteration.  Assumes a shared
+        # coordinate system.
+        page_width = max(b.bbox[2] for b in working_boxes)
+        page_height = max(b.bbox[3] for b in working_boxes)
+
         # Sort by weight for consistent processing
         box_weights = [
-            (i, box, calculate_box_weight(box, confidence_weight, area_weight))
+            (
+                i,
+                box,
+                calculate_box_weight(
+                    box,
+                    page_width=page_width,
+                    page_height=page_height,
+                    confidence_weight=confidence_weight,
+                    area_weight=area_weight,
+                ),
+            )
             for i, box in enumerate(working_boxes)
         ]
         box_weights.sort(key=lambda x: x[2], reverse=True)

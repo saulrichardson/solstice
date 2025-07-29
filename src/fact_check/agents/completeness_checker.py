@@ -31,7 +31,7 @@ class CompletenessChecker(BaseAgent):
     def required_inputs(self) -> List[str]:
         return [
             "extracted/content.json",
-            f"agents/claims/{self.claim_id}/evidence_critic/output.json"
+            f"agents/claims/{self.claim_id}/evidence_verifier_v2/output.json"
         ]
     
     def __init__(
@@ -63,9 +63,9 @@ class CompletenessChecker(BaseAgent):
         """
         logger.info(f"Checking evidence completeness for {self.claim_id}")
         
-        # Get validated evidence from critic
-        critic_path = self.pdf_dir / "agents" / "claims" / self.claim_id / "evidence_critic" / "output.json"
-        critic_data = self.load_json(critic_path)
+        # Get verified evidence
+        verifier_path = self.pdf_dir / "agents" / "claims" / self.claim_id / "evidence_verifier_v2" / "output.json"
+        verifier_data = self.load_json(verifier_path)
         
         # Load document
         content_path = self.pdf_dir / "extracted" / "content.json"
@@ -82,8 +82,8 @@ class CompletenessChecker(BaseAgent):
             raise AgentError("No claim provided in config")
         
         # Get existing evidence
-        existing_snippets = critic_data.get("validated_snippets", [])
-        existing_quotes = [s.get("verified_quote", s.get("quote", "")) for s in existing_snippets]
+        existing_snippets = verifier_data.get("verified_evidence", [])
+        existing_quotes = [s.get("quote", "") for s in existing_snippets]
         
         # Analyze completeness
         completeness_analysis = await self._analyze_completeness(
@@ -102,28 +102,32 @@ class CompletenessChecker(BaseAgent):
                 missing_aspects=completeness_analysis["missing_aspects"]
             )
         
-        # Combine all evidence (existing validated + new)
+        # Combine all evidence (existing verified + new)
         all_snippets = existing_snippets + additional_snippets
         
         output = {
             "claim_id": self.claim_id,
             "claim": claim,
             "document": self.pdf_name,
-            "completeness_analysis": completeness_analysis,
-            "completeness_stats": {
-                "existing_snippets": len(existing_snippets),
-                "new_snippets_found": len(additional_snippets),
-                "total_snippets": len(all_snippets),
-                "completeness_score": completeness_analysis["completeness_score"]
+            "completeness_assessment": {
+                "missing_aspects": completeness_analysis.get("missing_aspects", []),
+                "additional_evidence_found": additional_snippets,
+                "completeness_score": completeness_analysis["completeness_score"],
+                "analysis": completeness_analysis.get("analysis", "")
             },
-            "validated_snippets": existing_snippets,  # Already validated evidence
-            "new_snippets": additional_snippets,      # New evidence to be verified
-            "all_snippets": all_snippets             # Combined for next stage
+            "completeness_stats": {
+                "existing_evidence": len(existing_snippets),
+                "new_evidence_found": len(additional_snippets),
+                "total_evidence": len(all_snippets)
+            },
+            "verified_evidence": existing_snippets,    # Already verified evidence
+            "new_evidence": additional_snippets,       # New evidence to be verified
+            "model_used": self.llm_client.model
         }
         
         logger.info(
-            f"Found {output['completeness_stats']['new_snippets_found']} additional snippets, "
-            f"total: {output['completeness_stats']['total_snippets']} "
+            f"Found {output['completeness_stats']['new_evidence_found']} additional snippets, "
+            f"total: {output['completeness_stats']['total_evidence']} "
             f"(completeness: {completeness_analysis['completeness_score']:.0%})"
         )
         
@@ -143,8 +147,8 @@ class CompletenessChecker(BaseAgent):
         """
         # Format existing evidence for analysis
         evidence_summary = "\n".join([
-            f"- {e.get('verified_quote', e.get('quote', ''))[:200]}... "
-            f"(Score: {e.get('critic_evaluation', {}).get('overall_score', 'N/A')})"
+            f"- {e.get('quote', '')[:200]}... "
+            f"({e.get('explanation', 'N/A')})"
             for e in existing_evidence[:10]  # Limit to top 10
         ])
         
@@ -172,8 +176,8 @@ ANALYSIS: [Brief explanation of completeness assessment]
 """
 
         try:
-            # Call create_response synchronously (it's not async)
-            response_dict = self.llm_client.create_response(
+            # Call the async LLM client
+            response_dict = await self.llm_client.create_response(
                 input=prompt,
                 model=self.llm_client.model,
                 temperature=0.0,
@@ -221,7 +225,7 @@ ANALYSIS: [Brief explanation of completeness assessment]
             if missing_aspects:
                 focused_claim = f"{claim} (specifically regarding: {', '.join(missing_aspects)})"
             
-            result = self.evidence_extractor.extract_supporting_evidence(
+            result = await self.evidence_extractor.extract_supporting_evidence(
                 claim=focused_claim,
                 document_text=document_text
             )
@@ -233,10 +237,6 @@ ANALYSIS: [Brief explanation of completeness assessment]
                     "id": f"comp_{snippet.id}",
                     "quote": snippet.quote,
                     "relevance_explanation": snippet.relevance_explanation,
-                    "location": {
-                        "start": snippet.start,
-                        "end": snippet.end
-                    },
                     "source": "completeness_check",
                     "metadata": {
                         "extraction_round": 2,
@@ -320,3 +320,4 @@ ANALYSIS: [Brief explanation of completeness assessment]
             logger.error(f"Error parsing completeness response: {e}")
             logger.debug(f"Response was: {response[:500]}...")
             return result
+    
