@@ -4,27 +4,7 @@ A clinical document processing pipeline with advanced layout detection and fact-
 
 ## Getting Started
 
-### Quick Setup (Recommended)
-
-```bash
-git clone <repository-url>
-cd solstice
-./setup.sh
-```
-
-This script will:
-- Check Python version (3.11 or 3.12 required)
-- Create a virtual environment
-- Install all dependencies
-- Optionally install Detectron2 for layout detection
-- Verify the installation
-
-### Manual Setup
-
-<details>
-<summary>Click for detailed manual installation steps</summary>
-
-#### Prerequisites
+### Prerequisites
 
 - **Python 3.11 or 3.12** (required for Detectron2 compatibility)
   - Python 3.13+ is not yet supported by Detectron2
@@ -49,7 +29,7 @@ This script will:
   - Ubuntu/Debian: `sudo apt-get install poppler-utils`
   - Windows: Download from [poppler releases](https://github.com/oschwartz10612/poppler-windows/releases)
 
-#### Installation Steps
+### Installation
 
 1. **Clone the repository**
    ```bash
@@ -80,8 +60,6 @@ This script will:
    - LayoutParser for document structure detection
 
    **Note:** This step can take 5-10 minutes as it builds Detectron2 from source.
-
-</details>
 
 
 ### Quick Start
