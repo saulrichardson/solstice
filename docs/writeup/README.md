@@ -8,14 +8,10 @@ This directory contains LaTeX documentation for the Solstice medical fact-checki
 writeup/
 ├── src/              # LaTeX source files
 │   ├── solstice.tex    # Main 2-page technical document
-│   ├── solstice_v2.tex # Extended version
-│   └── stats.tex       # Performance statistics
+│   └── solstice_v2.tex # Extended version
 ├── assets/           # Images and figures
 │   ├── marketing_layout_example.png
 │   └── scientific_layout_example.png
-├── scripts/          # Analysis scripts
-│   ├── analyze_cache.py
-│   └── cache_stats.json
 ├── output/           # Generated PDFs
 │   └── solstice.pdf
 ├── build/            # Build artifacts (gitignored)
@@ -28,8 +24,6 @@ writeup/
 # Build the main writeup
 make writeup
 
-# Build statistics document
-make stats
 
 # View the PDF (macOS)
 make view
@@ -69,9 +63,6 @@ The ClaimOrchestrator coordinates these agents across multiple documents, mainta
 
 ### Extended Version (`solstice_v2.tex`)
 Expanded technical documentation with additional implementation details.
-
-### Statistics (`stats.tex`)
-Performance analysis and benchmarking results.
 
 ## Notes
 

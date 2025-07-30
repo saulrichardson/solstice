@@ -35,14 +35,6 @@ distclean: clean
 	@rm -rf $(OUTPUT_DIR)/*.pdf
 	@echo "All artifacts and output removed"
 
-# Build stats document
-.PHONY: stats
-stats:
-	@mkdir -p $(BUILD_DIR) $(OUTPUT_DIR)
-	@echo "Building stats document..."
-	@cd $(BUILD_DIR) && pdflatex -interaction=nonstopmode ../$(SRC_DIR)/stats.tex
-	@cp $(BUILD_DIR)/stats.pdf $(OUTPUT_DIR)/
-	@echo "Stats PDF available at: $(OUTPUT_DIR)/stats.pdf"
 
 # View the PDF (macOS)
 .PHONY: view
