@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "A portion of full prescribing information for Flublok (recombinant influenza vaccine), including a table of contents listing sections (Indications and Usage; Dosage and Administration; Contraindications; Warnings and Precautions; Adverse Reactions; Clinical Pharmacology; Clinical Studies; etc.) and text summarizing adverse reaction rates by age group (percentages of pain, headache, fatigue, muscle pain in adults 18\u201349, 50\u201364, and \u226565 years). does not support the claim because the image only presents adverse reaction frequencies and section headings, with no data comparing antibody responses between higher-dose recombinant and egg-based standard-dose vaccines Note: Image shows prescribing information and adverse event data only; immunogenicity or comparative efficacy data are not included",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A portion of full prescribing information for Flublok (recombinant influenza vaccine), including a table of contents listing sections (Indications and Usage; Dosage and Administration; Contraindications; Warnings and Precautions; Adverse Reactions; Clinical Pharmacology; Clinical Studies; etc.) and text summarizing adverse reaction rates by age group (percentages of pain, headache, fatigue, muscle pain in adults 18\u201349, 50\u201364, and \u226565 years).",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image only presents adverse reaction frequencies and section headings, with no data comparing antibody responses between higher-dose recombinant and egg-based standard-dose vaccines",
+    "confidence_notes": "Image shows prescribing information and adverse event data only; immunogenicity or comparative efficacy data are not included"
+  }
+}

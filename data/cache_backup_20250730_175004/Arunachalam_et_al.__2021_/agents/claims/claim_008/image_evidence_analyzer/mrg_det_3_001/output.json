@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A two-panel schematic comparing the structural features of native influenza hemagglutinin (HA) expressed on virus (panel a) and recombinant HA (rHA) produced in insect cells via baculovirus expression (panel b). The diagrams show HA1/HA2 versus HA0 polypeptides, positions of fusion peptide (cleaved versus uncleaved), inter-disulfide bonds, and types of N-linked glycans (complex sialylated versus paucimannose). The figure depicts molecular structures and glycosylation differences of HA proteins and does not address antigen dose per strain; therefore it does not support the claim. Note: No dosage or concentration information is shown in the image; structural focus only.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-panel schematic comparing the structural features of native influenza hemagglutinin (HA) expressed on virus (panel a) and recombinant HA (rHA) produced in insect cells via baculovirus expression (panel b). The diagrams show HA1/HA2 versus HA0 polypeptides, positions of fusion peptide (cleaved versus uncleaved), inter-disulfide bonds, and types of N-linked glycans (complex sialylated versus paucimannose).",
+    "evidence_found": null,
+    "reasoning": "The figure depicts molecular structures and glycosylation differences of HA proteins and does not address antigen dose per strain; therefore it does not support the claim.",
+    "confidence_notes": "No dosage or concentration information is shown in the image; structural focus only."
+  }
+}

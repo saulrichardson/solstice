@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": {
+    "pdf_name": "Arunachalam_et_al.__2021_",
+    "source_pdf": "data/clinical_files/Arunachalam et al. (2021).pdf",
+    "total_pages": 8,
+    "total_blocks": 72,
+    "total_characters": 46522
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains. The production of RIV4 is based on a novel production platform in which recombinant HA (rHA) is expressed in insect cells using a baculovirus expression vector system (BEVS)22. In brief, expresSF+ insect cells are infected with recombinant baculovirus carrying the relevant influenza HA genes, which are expressed under the control of a baculovirus polyhedrin promoter.",
+      "relevance_explanation": "This quote explicitly states that Flublok (RIV4) is produced using a novel platform where recombinant HA is expressed in insect cells using a baculovirus expression vector system, directly supporting the claim."
+    },
+    {
+      "id": 2,
+      "quote": "This review focuses on the structural features of BEVS derived rHA that make RIV4 unique from conventional vaccines, and how these features help to maximise vaccine performance.",
+      "relevance_explanation": "This quote confirms that RIV4 (Flublok) uses recombinant HA derived from a baculovirus expression vector system (BEVS), supporting the claim about its novel production platform."
+    },
+    {
+      "id": 3,
+      "quote": "Fig. 2 Structural features of native HA expressed on influenza virus and rHA produced in insect cells using the baculovirus expression vector system. a HA protein (shown as monomer) extracted from influenza virus is a heterodimer comprising HA1 (turquoise) and HA2 (orange) linked though an inter disulfide (S-S) bond and contains complex type sialylated N-linked glycans. Cleaved fusion peptides (green) and complex glycans74 eliminate and mask unique epitopes on HA respectively. b Recombinant HA protein (shown as monomer) expressed in",
+      "relevance_explanation": "This figure caption and description directly state that recombinant HA for RIV4 is produced in insect cells using the baculovirus expression vector system, providing clear evidence for the claim."
+    },
+    {
+      "id": 4,
+      "quote": "Insect cell derived rHA (RIV4) has been studied extensively by various groups in both pre clinical models and humans. The rHA contained in RIV4 differs from that expressed in other systems in terms of specific structural features, the nature of the source material and the manufacturing process, which have an impact on certain aspects of vaccine safety and efficacy (Fig. 2).",
+      "relevance_explanation": "This quote affirms that RIV4 (Flublok) uses recombinant HA derived from insect cells, highlighting the unique manufacturing process relevant to the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

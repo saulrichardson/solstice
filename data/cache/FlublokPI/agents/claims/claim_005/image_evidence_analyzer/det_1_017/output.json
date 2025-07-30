@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_017.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_017",
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "supports_claim": false,
+  "explanation": "Partial table showing percentages of severe responses (<1% to 6%) and footnotes describing randomized subjects in studies, with a note that U.S.-licensed IIV3 vaccines in Studies 3 and 4 were Fluarix and Fluzone, respectively. Definitions of severity and fever grading are included. does not support the claim because the visible table and footnotes refer only to trivalent (IIV3) comparators Fluarix and Fluzone and contain no mention of Flublok quadrivalent or a quadrivalent Fluarix comparison. Note: Image is partial and headers are not visible; no mention of quadrivalent vaccines in the visible portion.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Partial table showing percentages of severe responses (<1% to 6%) and footnotes describing randomized subjects in studies, with a note that U.S.-licensed IIV3 vaccines in Studies 3 and 4 were Fluarix and Fluzone, respectively. Definitions of severity and fever grading are included.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the visible table and footnotes refer only to trivalent (IIV3) comparators Fluarix and Fluzone and contain no mention of Flublok quadrivalent or a quadrivalent Fluarix comparison.",
+    "confidence_notes": "Image is partial and headers are not visible; no mention of quadrivalent vaccines in the visible portion."
+  }
+}

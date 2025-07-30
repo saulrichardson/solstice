@@ -1,0 +1,24 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": {
+    "pdf_name": "Arunachalam_et_al.__2021_",
+    "source_pdf": "data/clinical_files/Arunachalam et al. (2021).pdf",
+    "total_pages": 8,
+    "total_blocks": 72,
+    "total_characters": 46522
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 1,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "A plant derived recombinant quadrivalent VLP (QVLP) at 30 \u00b5g dose per strain was found to be non inferior in terms of vaccine efficacy against respiratory illness and influenza like illness to a quadrivalent inactivated influenza vaccine (QIV; Fluarix Quadrivalent, GlaxoSmithKline) given at 15 \u00b5g dose strain in adults aged 18 to 64 years 37.",
+      "relevance_explanation": "This quote explicitly states that a quadrivalent recombinant influenza vaccine was compared in a clinical trial to Fluarix Quadrivalent, a standard-dose quadrivalent inactivated influenza vaccine, supporting the claim that Flublok (quadrivalent) was evaluated in a pivotal trial against Fluarix (quadrivalent standard-dose vaccine)."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

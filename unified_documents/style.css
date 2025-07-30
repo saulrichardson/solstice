@@ -1,0 +1,270 @@
+
+        /* Global Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+        
+        /* Navigation */
+        .navbar {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        
+        .navbar .stats {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 0.5rem;
+        }
+        
+        /* Main Layout */
+        .main-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        /* Table of Contents */
+        .toc {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .toc h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .toc-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .toc-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .toc-list a {
+            color: #3498db;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .toc-list a:hover {
+            color: #2980b9;
+        }
+        
+        .doc-meta {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        /* Document Sections */
+        .document-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .document-header {
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .document-header h2 {
+            margin: 0 0 0.5rem 0;
+            color: #2c3e50;
+        }
+        
+        .document-stats {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* Page Sections */
+        .page-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .page-section:last-child {
+            border-bottom: none;
+        }
+        
+        .page-header {
+            background: #ecf0f1;
+            padding: 0.5rem 1rem;
+            margin: -1rem -1rem 1rem -1rem;
+            font-weight: 600;
+            color: #34495e;
+        }
+        
+        /* Content Blocks */
+        .content-block {
+            margin: 1rem 0;
+        }
+        
+        .block-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.5rem 0;
+            color: #2c3e50;
+        }
+        
+        .block-text {
+            line-height: 1.6;
+            margin: 0.5rem 0;
+        }
+        
+        .block-list {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        /* Figures and Tables */
+        .figure-block, .table-block {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .figure-block img, .table-block img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .figure-caption, .table-caption {
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Search */
+        .search-box {
+            margin: 2rem 0;
+            position: relative;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+            max-height: 400px;
+            overflow-y: auto;
+            display: none;
+            z-index: 100;
+        }
+        
+        .search-result {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+        }
+        
+        .search-result:hover {
+            background: #f8f9fa;
+        }
+        
+        .search-result-doc {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.85rem;
+        }
+        
+        .search-result-preview {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.25rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #34495e;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .footer a {
+            color: #3498db;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 0 1rem;
+            }
+            
+            .document-section {
+                padding: 1rem;
+            }
+            
+            .document-stats {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .navbar, .toc, .search-box, .footer {
+                display: none;
+            }
+            
+            .document-section {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            .page-section {
+                page-break-inside: avoid;
+            }
+        }
+        

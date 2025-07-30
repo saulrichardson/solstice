@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p7_det_6_000.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_000",
+  "claim_id": "claim_000",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table detailing contraindications and precautions for various influenza vaccines (egg-based IIV and LAIV, cell culture\u2013based inactivated influenza vaccine [ccIIV], recombinant influenza vaccine [RIV]), with footnotes and abbreviations explaining vaccine types and sources (e.g., ACIP, FDA). The table presents safety information (contraindications and precautions) for different flu vaccines but contains no data on hemagglutinin antigen content or immunogenicity. Therefore, it does not support the claim. Note: Limited to visible portion of table; no antigen content data is shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table detailing contraindications and precautions for various influenza vaccines (egg-based IIV and LAIV, cell culture\u2013based inactivated influenza vaccine [ccIIV], recombinant influenza vaccine [RIV]), with footnotes and abbreviations explaining vaccine types and sources (e.g., ACIP, FDA).",
+    "evidence_found": null,
+    "reasoning": "The table presents safety information (contraindications and precautions) for different flu vaccines but contains no data on hemagglutinin antigen content or immunogenicity. Therefore, it does not support the claim.",
+    "confidence_notes": "Limited to visible portion of table; no antigen content data is shown."
+  }
+}

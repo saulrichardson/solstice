@@ -1,0 +1,33 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": {
+    "pdf_name": "Arunachalam_et_al.__2021_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 2
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.",
+      "relevance_explanation": "This quote explicitly states that Flublok (RIV4) contains 45 \u00b5g of HA per strain, which is three times the standard 15 \u00b5g HA per strain in standard-dose flu vaccines, directly supporting the claim about antigen content.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "A plant derived recombinant quadrivalent VLP (QVLP) at 30 \u00b5g dose per strain was found to be non inferior in terms of vaccine efficacy against respiratory illness and influenza like illness to a quadrivalent inactivated influenza vaccine (QIV; Fluarix Quadrivalent, GlaxoSmithKline) given at 15 \u00b5g dose strain in adults aged 18 to 64 years 37.",
+      "relevance_explanation": "This quote provides context for standard-dose flu vaccines containing 15 \u00b5g HA per strain, which helps establish the comparison that Flublok's 45 \u00b5g HA per strain is three times higher.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

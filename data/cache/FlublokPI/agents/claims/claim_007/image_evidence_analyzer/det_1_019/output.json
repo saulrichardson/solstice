@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_019.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_019.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_019",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A table displaying percentages of subjects reporting solicited adverse events categorized by severity (Any, Moderate, Severe) for various symptoms in different studies, with footnotes referencing study populations and clinical trial registrations. The table reports reactogenicity and adverse event rates rather than immunogenicity or antibody response data; it does not support the claim that recombinant HA antigens produced using BEVS induce higher cross-reactive antibodies compared with egg-derived vaccines. Note: The table appears focused on safety data; immunogenicity results are not included.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table displaying percentages of subjects reporting solicited adverse events categorized by severity (Any, Moderate, Severe) for various symptoms in different studies, with footnotes referencing study populations and clinical trial registrations.",
+    "evidence_found": null,
+    "reasoning": "The table reports reactogenicity and adverse event rates rather than immunogenicity or antibody response data; it does not support the claim that recombinant HA antigens produced using BEVS induce higher cross-reactive antibodies compared with egg-derived vaccines.",
+    "confidence_notes": "The table appears focused on safety data; immunogenicity results are not included."
+  }
+}

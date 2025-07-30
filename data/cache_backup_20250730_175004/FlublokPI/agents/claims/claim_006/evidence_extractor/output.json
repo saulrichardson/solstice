@@ -1,0 +1,24 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": {
+    "pdf_name": "FlublokPI",
+    "source_pdf": "data/clinical_files/FlublokPI.pdf",
+    "total_pages": 5,
+    "total_blocks": 54,
+    "total_characters": 25335
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 1,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Flublok [Influenza Vaccine] is a sterile, clear, colorless injection containing recombinant hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. It contains purified HA proteins produced in a continuous insect cell line (expresSF+\u00ae) that is derived from Sf9 cells of the fall armyworm, Spodoptera frugiperda (which is related to moths, caterpillars and butterflies), and grown in serum free medium composed of chemically defined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is expressed in this cell line using a baculovirus vector (Autographa californica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further purified by column chromatography.",
+      "relevance_explanation": "This quote explicitly states that Flublok is produced using recombinant HA expressed in insect cells (derived from Sf9 cells) and that a baculovirus vector is used for expression, directly supporting the claim about the novel production platform."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

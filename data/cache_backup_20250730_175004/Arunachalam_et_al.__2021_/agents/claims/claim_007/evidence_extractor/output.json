@@ -1,0 +1,34 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": {
+    "pdf_name": "Arunachalam_et_al.__2021_",
+    "source_pdf": "data/clinical_files/Arunachalam et al. (2021).pdf",
+    "total_pages": 8,
+    "total_blocks": 72,
+    "total_characters": 46522
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Portnoff et al.64 demonstrated that recombinant HA antigens (specifically for the H3 strain) produced using BEVS (as used for RIV4), induced significantly higher levels of broadly cross reactive antibodies against highly conserved regions of the HA head and stem in both mice and humans compared to egg derived split vaccines 64.",
+      "relevance_explanation": "This quote directly states that recombinant HA antigens produced using BEVS induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared to egg-derived vaccines, explicitly supporting the claim."
+    },
+    {
+      "id": 2,
+      "quote": "Recently Richards et al.65 examined CD4 T-cell and antibody responses in healthy adults who received egg derived split vaccine, cell derived split vaccine or RIV4 for three successive influenza seasons (2015-2016, 2016-2017, and 2017-2018 65. RIV4 elicited the most robust responses, with significantly higher T-cell and antibody levels than the other two vaccines. Authors postulated that simpler glycosylation of rHA and absence of other influenza viral proteins in RIV4 contributed to the observed robust immune response for RIV4 and emphasised the relevance of these features in determining vaccine efficacy and long term immunity 65.",
+      "relevance_explanation": "This quote provides evidence from a comparative study showing that RIV4 (a BEVS-produced recombinant HA vaccine) induces significantly higher antibody responses than egg-derived vaccines, supporting the claim of superior induction of broadly cross-reactive antibodies."
+    },
+    {
+      "id": 3,
+      "quote": "In a study by Nachbagauer et al.78, RIV4 induced HA stem specific neutralising antibodies directed against influenza subtypes H1, H3 and B haemagglutinin in an age dependent manner in humans, with the highest titres observed in the elderly 78. RIV4 also induces antibodies, in both humans and mice, that are specific to epitopes in the HA head region, at greater proportions than a traditional mammalian cell derived subunit vaccine (Flucelvax [Trivalent] 77. Higher magnitudes of haemagglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flucelvax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60.",
+      "relevance_explanation": "This quote details that RIV4, a BEVS-produced recombinant HA vaccine, induces higher levels of antibodies specific to conserved regions of HA compared to egg-derived vaccines, directly supporting the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

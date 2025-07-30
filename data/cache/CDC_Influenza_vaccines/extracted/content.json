@@ -2,53 +2,67 @@
   "source_pdf": "data/clinical_files/CDC Influenza vaccines.pdf",
   "blocks": [
     {
-      "id": "det_0_003",
+      "id": "block_0_000",
       "page_index": 0,
-      "role": "Figure",
+      "role": "Text",
       "bbox": [
-        280.859375,
-        2072.94775390625,
-        4373.1953125,
-        6200.54833984375
+        284.01922607421875,
+        6247.7587890625,
+        2484.1103515625,
+        6344.39404296875
       ],
-      "text": "[FIGURE 2 - See figure_p1_det_0_003.png]",
-      "image_path": "figures/figure_p1_det_0_003.png",
+      "text": "",
       "metadata": {
-        "score": 0.8491250276565552,
+        "score": 0.6419360637664795,
         "detection_dpi": 400,
-        "detector": "PubLayNet"
+        "detector": "PubLayNet",
+        "extraction_status": "empty",
+        "original_id": "det_0_006",
+        "normalized": true
       }
     },
     {
-      "id": "det_0_001",
+      "id": "block_0_001",
       "page_index": 0,
       "role": "Title",
       "bbox": [
-        219.5309295654297,
-        1604.3260498046875,
-        4410.78759765625,
-        2020.2667236328125
+        283.76654052734375,
+        5993.5244140625,
+        734.728759765625,
+        6076.16357421875
       ],
-      "text": "Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS†† ≥6 mos†† 15 µg/0.5 mL IM 0.5-mL SDV†† ≥6 mos†† 15 µg/0.5 mL IM 5 0-mL MDV†† ≥6 mos†† 7 5 µg/0 25 mL IM 25 ¶ ¶ ¶",
+      "text": "",
       "metadata": {
-        "score": 0.941857099533081,
+        "score": 0.7433842420578003,
         "detection_dpi": 400,
         "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0008940696716308594,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
+        "extraction_status": "empty",
+        "original_id": "det_0_005",
+        "normalized": true
       }
     },
     {
-      "id": "det_0_000",
+      "id": "block_0_002",
+      "page_index": 0,
+      "role": "Title",
+      "bbox": [
+        300.2196960449219,
+        5705.322265625,
+        1720.5389404296875,
+        5809.95654296875
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.6120504140853882,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty",
+        "original_id": "det_0_007",
+        "normalized": true
+      }
+    },
+    {
+      "id": "block_0_003",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -68,11 +82,13 @@
           "scale_factor": 0.18,
           "text_modified": false,
           "processing_time": 0.0002498626708984375
-        }
+        },
+        "original_id": "det_0_000",
+        "normalized": true
       }
     },
     {
-      "id": "det_0_002",
+      "id": "block_0_004",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -81,7 +97,7 @@
         1750.978515625,
         3270.009033203125
       ],
-      "text": "Afluria Quad rival ent 0.5-mL PFS§",
+      "text": "Afluria Quad rival ent 0.5-mL PFS\u00a7",
       "metadata": {
         "score": 0.8800951242446899,
         "detection_dpi": 400,
@@ -96,111 +112,13 @@
             "post_extraction_clean",
             "spacing_fix"
           ]
-        }
+        },
+        "original_id": "det_0_002",
+        "normalized": true
       }
     },
     {
-      "id": "det_0_004",
-      "page_index": 0,
-      "role": "Title",
-      "bbox": [
-        226.7707061767578,
-        2205.0244140625,
-        3497.107666015625,
-        2331.294189453125
-      ],
-      "text": "( ) FluLaval Quad rival ent 0 5 mL PFS ≥6 mos 15 µg/0 5 mL",
-      "metadata": {
-        "score": 0.7810380458831787,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0003368854522705078,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_0_005",
-      "page_index": 0,
-      "role": "Title",
-      "bbox": [
-        283.76654052734375,
-        5993.5244140625,
-        734.728759765625,
-        6076.16357421875
-      ],
-      "text": "",
-      "metadata": {
-        "score": 0.7433842420578003,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_status": "empty"
-      }
-    },
-    {
-      "id": "det_0_006",
-      "page_index": 0,
-      "role": "Text",
-      "bbox": [
-        284.01922607421875,
-        6247.7587890625,
-        2484.1103515625,
-        6344.39404296875
-      ],
-      "text": "",
-      "metadata": {
-        "score": 0.6419360637664795,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_status": "empty"
-      }
-    },
-    {
-      "id": "det_0_007",
-      "page_index": 0,
-      "role": "Title",
-      "bbox": [
-        300.2196960449219,
-        5705.322265625,
-        1720.5389404296875,
-        5809.95654296875
-      ],
-      "text": "",
-      "metadata": {
-        "score": 0.6120504140853882,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_status": "empty"
-      }
-    },
-    {
-      "id": "det_0_011",
-      "page_index": 0,
-      "role": "Figure",
-      "bbox": [
-        3912.48291015625,
-        775.6432495117188,
-        4434.34130859375,
-        1330.582275390625
-      ],
-      "text": "[FIGURE 10 - See figure_p1_det_0_011.png]",
-      "image_path": "figures/figure_p1_det_0_011.png",
-      "metadata": {
-        "score": 0.4548403024673462,
-        "detection_dpi": 400,
-        "detector": "PubLayNet"
-      }
-    },
-    {
-      "id": "det_0_014",
+      "id": "block_0_005",
       "page_index": 0,
       "role": "Title",
       "bbox": [
@@ -220,29 +138,162 @@
           "scale_factor": 0.18,
           "text_modified": false,
           "processing_time": 0.0002009868621826172
-        }
+        },
+        "original_id": "det_0_014",
+        "normalized": true
       }
     },
     {
-      "id": "det_1_000",
-      "page_index": 1,
+      "id": "block_0_006",
+      "page_index": 0,
+      "role": "Title",
+      "bbox": [
+        226.7707061767578,
+        2205.0244140625,
+        3497.107666015625,
+        2331.294189453125
+      ],
+      "text": "( ) FluLaval Quad rival ent 0 5 mL PFS \u22656 mos 15 \u00b5g/0 5 mL",
+      "metadata": {
+        "score": 0.7810380458831787,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0003368854522705078,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        },
+        "original_id": "det_0_004",
+        "normalized": true
+      }
+    },
+    {
+      "id": "block_0_007",
+      "page_index": 0,
       "role": "Figure",
       "bbox": [
-        217.45143127441406,
-        211.53350830078125,
-        4427.47509765625,
-        2071.683837890625
+        280.859375,
+        2072.94775390625,
+        4373.1953125,
+        6200.54833984375
       ],
-      "text": "[FIGURE 1 - See figure_p2_det_1_000.png]",
-      "image_path": "figures/figure_p2_det_1_000.png",
+      "text": "[FIGURE 2 - See figure_p1_det_0_003.png]",
+      "image_path": "figures/figure_p1_det_0_003.png",
       "metadata": {
-        "score": 0.9963143467903137,
+        "score": 0.8491250276565552,
         "detection_dpi": 400,
-        "detector": "PubLayNet"
+        "detector": "PubLayNet",
+        "original_id": "det_0_003",
+        "normalized": true
       }
     },
     {
-      "id": "det_1_002",
+      "id": "block_0_008",
+      "page_index": 0,
+      "role": "Title",
+      "bbox": [
+        219.5309295654297,
+        1604.3260498046875,
+        4410.78759765625,
+        2020.2667236328125
+      ],
+      "text": "Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM 0.5-mL SDV\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM 5 0-mL MDV\u2020\u2020 \u22656 mos\u2020\u2020 7 5 \u00b5g/0 25 mL IM 25 \u00b6 \u00b6 \u00b6",
+      "metadata": {
+        "score": 0.941857099533081,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0008940696716308594,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        },
+        "original_id": "det_0_001",
+        "normalized": true
+      }
+    },
+    {
+      "id": "block_0_009",
+      "page_index": 0,
+      "role": "Figure",
+      "bbox": [
+        3912.48291015625,
+        775.6432495117188,
+        4434.34130859375,
+        1330.582275390625
+      ],
+      "text": "[FIGURE 10 - See figure_p1_det_0_011.png]",
+      "image_path": "figures/figure_p1_det_0_011.png",
+      "metadata": {
+        "score": 0.4548403024673462,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "original_id": "det_0_011",
+        "normalized": true
+      }
+    },
+    {
+      "id": "block_1_000",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        272.6905212402344,
+        5650.357421875,
+        1110.7625732421875,
+        5663.92578125
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.5483705997467041,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty",
+        "original_id": "det_1_015",
+        "normalized": true
+      }
+    },
+    {
+      "id": "block_1_001",
+      "page_index": 1,
+      "role": "Title",
+      "bbox": [
+        273.9170837402344,
+        5246.033203125,
+        4346.814453125,
+        5586.537109375
+      ],
+      "text": "Q (Seqirus) y \u00b5g RIV4 (recombinant HA vaccine)",
+      "metadata": {
+        "score": 0.7467930912971497,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0003361701965332031,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        },
+        "original_id": "det_1_008",
+        "normalized": true
+      }
+    },
+    {
+      "id": "block_1_002",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -251,7 +302,7 @@
         4402.92822265625,
         5172.65380859375
       ],
-      "text": "Flublok Quad rival ent (San of i Pasteur) 0.5 mL PFS ≥18 yrs 45 µg/0.5 mL IM LAIV4 (egg based vaccine ) Flu mist Quad rival ent (Astr a zen eca) 0.2-mL pre filled single use intr a nasal sprayer 2 through 49 yrs 10 fluorescent focus units 0 2 mL NAS Abbreviations: ACIP = Advisory Committee on Immunization Practices; HA = hemagglutinin; IIV4 = in activated influenza vaccine, quad rival ent; IM = intramuscular; LAIV4 = live attenuated influenza vaccine, quad rival ent; MDV = multi dose vial; PFS = pre filled syringe; RIV4 = recombinant influenza vaccine, quad rival ent; SDV = single dose vial. * Manufacturer package inserts and updated CDC and ACIP guidance should be consulted for additional information concerning, but not limited to, indications, contra indications, warnings, and precautions. Package inserts for U.S.-licensed vaccines are available at https://www.fda.gov/vaccines-blood-biologics/vaccines/vaccines-licensed-use-united-states . † 6 5 7 5 ",
+      "text": "Flublok Quad rival ent (San of i Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM LAIV4 (egg based vaccine ) Flu mist Quad rival ent (Astr a zen eca) 0.2-mL pre filled single use intr a nasal sprayer 2 through 49 yrs 10 fluorescent focus units 0 2 mL NAS Abbreviations: ACIP = Advisory Committee on Immunization Practices; HA = hemagglutinin; IIV4 = in activated influenza vaccine, quad rival ent; IM = intramuscular; LAIV4 = live attenuated influenza vaccine, quad rival ent; MDV = multi dose vial; PFS = pre filled syringe; RIV4 = recombinant influenza vaccine, quad rival ent; SDV = single dose vial. * Manufacturer package inserts and updated CDC and ACIP guidance should be consulted for additional information concerning, but not limited to, indications, contra indications, warnings, and precautions. Package inserts for U.S.-licensed vaccines are available at https://www.fda.gov/vaccines-blood-biologics/vaccines/vaccines-licensed-use-united-states . \u2020 6 5 7 5 \uf209",
       "metadata": {
         "score": 0.9395411014556885,
         "detection_dpi": 400,
@@ -267,39 +318,13 @@
             "symspell",
             "spacing_fix"
           ]
-        }
+        },
+        "original_id": "det_1_002",
+        "normalized": true
       }
     },
     {
-      "id": "det_1_003",
-      "page_index": 1,
-      "role": "Text",
-      "bbox": [
-        228.3459014892578,
-        2137.263427734375,
-        4327.97119140625,
-        2473.105224609375
-      ],
-      "text": "IM-administered influenza vaccines should be administered by needle and syringe only, with the exception of the MDV presentation of Afluria Quad rival ent, which may alternatively be given by the PharmaJet Strat is jet injector for persons age ¶",
-      "metadata": {
-        "score": 0.9368327260017395,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0008289813995361328,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_1_004",
+      "id": "block_1_003",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -308,7 +333,7 @@
         4450.03125,
         3408.71142578125
       ],
-      "text": "Although a history of severe allergic reaction (e.g., anaphylaxis) to egg is a labeled contra indication to the use of egg based †",
+      "text": "Although a history of severe allergic reaction (e.g., anaphylaxis) to egg is a labeled contra indication to the use of egg based \u2020",
       "metadata": {
         "score": 0.8815173506736755,
         "detection_dpi": 400,
@@ -324,39 +349,13 @@
             "symspell",
             "spacing_fix"
           ]
-        }
+        },
+        "original_id": "det_1_004",
+        "normalized": true
       }
     },
     {
-      "id": "det_1_005",
-      "page_index": 1,
-      "role": "Text",
-      "bbox": [
-        205.15220642089844,
-        2590.11181640625,
-        4275.189453125,
-        2784.7099609375
-      ],
-      "text": "The approved dose volume for Afluria Quad rival ent is 0.25 mL for children aged 6 through 35 months and 0.5 mL for persons aged ≥3 years. However, 0.25-mL pre filled syringes are no longer available. For children aged 6 through 35 §",
-      "metadata": {
-        "score": 0.8451182842254639,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0009741783142089844,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_1_007",
+      "id": "block_1_004",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -380,22 +379,24 @@
             "post_extraction_clean",
             "spacing_fix"
           ]
-        }
+        },
+        "original_id": "det_1_007",
+        "normalized": true
       }
     },
     {
-      "id": "det_1_008",
+      "id": "block_1_005",
       "page_index": 1,
-      "role": "Title",
+      "role": "Text",
       "bbox": [
-        273.9170837402344,
-        5246.033203125,
-        4346.814453125,
-        5586.537109375
+        205.15220642089844,
+        2590.11181640625,
+        4275.189453125,
+        2784.7099609375
       ],
-      "text": "Q (Seqirus) y µg RIV4 (recombinant HA vaccine)",
+      "text": "The approved dose volume for Afluria Quad rival ent is 0.25 mL for children aged 6 through 35 months and 0.5 mL for persons aged \u22653 years. However, 0.25-mL pre filled syringes are no longer available. For children aged 6 through 35 \u00a7",
       "metadata": {
-        "score": 0.7467930912971497,
+        "score": 0.8451182842254639,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -403,15 +404,48 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003361701965332031,
+          "processing_time": 0.0009741783142089844,
           "processors_applied": [
-            "post_extraction_clean"
+            "post_extraction_clean",
+            "spacing_fix"
           ]
-        }
+        },
+        "original_id": "det_1_005",
+        "normalized": true
       }
     },
     {
-      "id": "det_1_009",
+      "id": "block_1_006",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        228.3459014892578,
+        2137.263427734375,
+        4327.97119140625,
+        2473.105224609375
+      ],
+      "text": "IM-administered influenza vaccines should be administered by needle and syringe only, with the exception of the MDV presentation of Afluria Quad rival ent, which may alternatively be given by the PharmaJet Strat is jet injector for persons age \u00b6",
+      "metadata": {
+        "score": 0.9368327260017395,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0008289813995361328,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        },
+        "original_id": "det_1_003",
+        "normalized": true
+      }
+    },
+    {
+      "id": "block_1_007",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -431,11 +465,13 @@
           "scale_factor": 0.18,
           "text_modified": false,
           "processing_time": 0.000225067138671875
-        }
+        },
+        "original_id": "det_1_009",
+        "normalized": true
       }
     },
     {
-      "id": "det_1_016",
+      "id": "block_1_008",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -459,52 +495,56 @@
             "post_extraction_clean",
             "spacing_fix"
           ]
-        }
+        },
+        "original_id": "det_1_016",
+        "normalized": true
       }
     },
     {
-      "id": "det_1_015",
+      "id": "block_1_009",
       "page_index": 1,
-      "role": "Text",
+      "role": "Figure",
       "bbox": [
-        272.6905212402344,
-        5650.357421875,
-        1110.7625732421875,
-        5663.92578125
+        217.45143127441406,
+        211.53350830078125,
+        4427.47509765625,
+        2071.683837890625
       ],
-      "text": "",
+      "text": "[FIGURE 1 - See figure_p2_det_1_000.png]",
+      "image_path": "figures/figure_p2_det_1_000.png",
       "metadata": {
-        "score": 0.5483705997467041,
+        "score": 0.9963143467903137,
         "detection_dpi": 400,
         "detector": "PubLayNet",
-        "extraction_status": "empty"
+        "original_id": "det_1_000",
+        "normalized": true
       }
     }
   ],
   "reading_order": [
     [
-      "det_0_001",
-      "det_0_003",
-      "det_0_004",
-      "det_0_014",
-      "det_0_002",
-      "det_0_000",
-      "det_0_007",
-      "det_0_005",
-      "det_0_006",
-      "det_0_011"
+      "block_0_008",
+      "block_0_007",
+      "block_0_006",
+      "block_0_005",
+      "block_0_004",
+      "block_0_003",
+      "block_0_002",
+      "block_0_001",
+      "block_0_000",
+      "block_0_009"
     ],
     [
-      "det_1_000",
-      "det_1_016",
-      "det_1_009",
-      "det_1_003",
-      "det_1_005",
-      "det_1_007",
-      "det_1_004",
-      "det_1_002",
-      "det_1_015",
-      "det_1_008"
+      "block_1_009",
+      "block_1_008",
+      "block_1_007",
+      "block_1_006",
+      "block_1_005",
+      "block_1_004",
+      "block_1_003",
+      "block_1_002",
+      "block_1_000",
+      "block_1_001"
     ]
   ],
   "metadata": {
@@ -515,7 +555,10 @@
       "text_blocks": 13,
       "figure_blocks": 3,
       "figures_dir": "data/cache/CDC_Influenza_vaccines/extracted/figures"
-    }
+    },
+    "ids_normalized": true,
+    "normalization_date": "2025-07-30T17:53:01.400296",
+    "id_mapping_count": 20
   },
   "pipeline_metadata": {
     "raw_detection_count": 40,

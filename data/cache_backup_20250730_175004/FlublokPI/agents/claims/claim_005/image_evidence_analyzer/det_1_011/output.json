@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_011.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_011",
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "supports_claim": false,
+  "explanation": "A table detailing solicited local and systemic adverse event rates (percentages) following vaccination in clinical studies, listing symptoms (pain, redness, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) and their occurrence rates in Flublok and comparator groups, with footnotes describing Study 1 (Flublok vs placebo, NCT00539981) and pooled Studies 2\u20134 (Flublok vs a U.S.-licensed trivalent inactivated influenza vaccine comparator, Fluzone, NCT00395174, etc.). The table presents comparisons of Flublok against placebo and against a U.S.-licensed trivalent inactivated influenza vaccine (Fluzone) but makes no mention of Fluarix quadrivalent standard-dose vaccine, and therefore does not support the claim. Note: Footnotes are partially cut off and focus on trivalent vaccine comparators, but no mention of Fluarix quadrivalent is visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table detailing solicited local and systemic adverse event rates (percentages) following vaccination in clinical studies, listing symptoms (pain, redness, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) and their occurrence rates in Flublok and comparator groups, with footnotes describing Study 1 (Flublok vs placebo, NCT00539981) and pooled Studies 2\u20134 (Flublok vs a U.S.-licensed trivalent inactivated influenza vaccine comparator, Fluzone, NCT00395174, etc.).",
+    "evidence_found": null,
+    "reasoning": "The table presents comparisons of Flublok against placebo and against a U.S.-licensed trivalent inactivated influenza vaccine (Fluzone) but makes no mention of Fluarix quadrivalent standard-dose vaccine, and therefore does not support the claim.",
+    "confidence_notes": "Footnotes are partially cut off and focus on trivalent vaccine comparators, but no mention of Fluarix quadrivalent is visible."
+  }
+}

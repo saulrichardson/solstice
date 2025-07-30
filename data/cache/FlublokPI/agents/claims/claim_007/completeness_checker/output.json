@@ -1,0 +1,26 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": "FlublokPI",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": false,
+    "additional_count": 0
+  },
+  "completeness_stats": {
+    "existing_evidence": 1,
+    "new_evidence_found": 0,
+    "total_evidence": 1
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
+      "relevance_explanation": "This reference is cited in the document as a comparative study of the immunogenicity of recombinant HA (produced using BEVS) versus egg-derived vaccines in older adults, directly supporting the claim that BEVS-produced recombinant HA induces higher levels of cross-reactive antibodies."
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

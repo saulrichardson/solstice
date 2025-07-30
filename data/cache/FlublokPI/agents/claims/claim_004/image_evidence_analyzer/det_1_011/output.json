@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_011.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_011",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "Tables of solicited local and systemic adverse events reported in clinical trials of Flublok (recombinant influenza vaccine) vs placebo and pooled data from comparator vaccines, showing percentages of subjects experiencing fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever, and local reactions (pain, redness, swelling). The image only presents safety/reactogenicity data (adverse event rates) and does not include any immunogenicity measures such as antibody titers or seroconversion rates, and therefore does not support the claim. Note: No immunogenicity or antibody response data are shown in the table.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Tables of solicited local and systemic adverse events reported in clinical trials of Flublok (recombinant influenza vaccine) vs placebo and pooled data from comparator vaccines, showing percentages of subjects experiencing fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever, and local reactions (pain, redness, swelling).",
+    "evidence_found": null,
+    "reasoning": "The image only presents safety/reactogenicity data (adverse event rates) and does not include any immunogenicity measures such as antibody titers or seroconversion rates, and therefore does not support the claim.",
+    "confidence_notes": "No immunogenicity or antibody response data are shown in the table."
+  }
+}

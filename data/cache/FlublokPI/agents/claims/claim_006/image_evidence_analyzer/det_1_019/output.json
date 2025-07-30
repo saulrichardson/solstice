@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_019.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_019.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_019",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A multi-row, multi-column table showing percentages of subjects reporting solicited adverse events (any, moderate, severe) after vaccination across various studies, with footnotes describing study details and reporting conventions. The table presents safety and reactogenicity data, without any information on vaccine production methods or the use of a baculovirus expression vector system in insect cells, and therefore does not support the claim Note: The image is clear but only contains clinical safety data, not manufacturing or production platform details.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multi-row, multi-column table showing percentages of subjects reporting solicited adverse events (any, moderate, severe) after vaccination across various studies, with footnotes describing study details and reporting conventions.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety and reactogenicity data, without any information on vaccine production methods or the use of a baculovirus expression vector system in insect cells, and therefore does not support the claim",
+    "confidence_notes": "The image is clear but only contains clinical safety data, not manufacturing or production platform details."
+  }
+}

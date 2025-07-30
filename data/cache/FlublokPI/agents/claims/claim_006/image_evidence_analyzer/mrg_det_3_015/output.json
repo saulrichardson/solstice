@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table titled \u201cTable 2: Select AE\u2019s of interest\u201d presenting rates of adverse events (e.g., myalgia, arthralgia, injection site pain, headache, fatigue, chills, nausea) for vaccine and placebo groups across two vaccine cohorts. The table presents adverse event frequencies and does not address the production platform, so it does not support the claim. Note: No information on manufacturing methods, cell substrates, or expression systems is provided in the image.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table titled \u201cTable 2: Select AE\u2019s of interest\u201d presenting rates of adverse events (e.g., myalgia, arthralgia, injection site pain, headache, fatigue, chills, nausea) for vaccine and placebo groups across two vaccine cohorts.",
+    "evidence_found": null,
+    "reasoning": "The table presents adverse event frequencies and does not address the production platform, so it does not support the claim.",
+    "confidence_notes": "No information on manufacturing methods, cell substrates, or expression systems is provided in the image."
+  }
+}

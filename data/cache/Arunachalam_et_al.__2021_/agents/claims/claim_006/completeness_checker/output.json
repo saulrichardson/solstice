@@ -1,0 +1,71 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": "Arunachalam_et_al.__2021_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 3
+  },
+  "completeness_stats": {
+    "existing_evidence": 4,
+    "new_evidence_found": 3,
+    "total_evidence": 7
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains. The production of RIV4 is based on a novel production platform in which recombinant HA (rHA) is expressed in insect cells using a baculovirus expression vector system (BEVS)22. In brief, expresSF+ insect cells are infected with recombinant baculovirus carrying the relevant influenza HA genes, which are expressed under the control of a baculovirus polyhedrin promoter.",
+      "relevance_explanation": "This quote explicitly states that Flublok (RIV4) is produced using a novel platform where recombinant HA is expressed in insect cells using a baculovirus expression vector system, directly supporting the claim."
+    },
+    {
+      "id": 2,
+      "quote": "This review focuses on the structural features of BEVS derived rHA that make RIV4 unique from conventional vaccines, and how these features help to maximise vaccine performance.",
+      "relevance_explanation": "This quote confirms that RIV4 (Flublok) uses recombinant HA derived from a baculovirus expression vector system (BEVS), supporting the claim about its novel production platform."
+    },
+    {
+      "id": 3,
+      "quote": "Fig. 2 Structural features of native HA expressed on influenza virus and rHA produced in insect cells using the baculovirus expression vector system. a HA protein (shown as monomer) extracted from influenza virus is a heterodimer comprising HA1 (turquoise) and HA2 (orange) linked though an inter disulfide (S-S) bond and contains complex type sialylated N-linked glycans. Cleaved fusion peptides (green) and complex glycans74 eliminate and mask unique epitopes on HA respectively. b Recombinant HA protein (shown as monomer) expressed in",
+      "relevance_explanation": "This figure caption and description directly state that recombinant HA for RIV4 is produced in insect cells using the baculovirus expression vector system, providing clear evidence for the claim."
+    },
+    {
+      "id": 4,
+      "quote": "Insect cell derived rHA (RIV4) has been studied extensively by various groups in both pre clinical models and humans. The rHA contained in RIV4 differs from that expressed in other systems in terms of specific structural features, the nature of the source material and the manufacturing process, which have an impact on certain aspects of vaccine safety and efficacy (Fig. 2).",
+      "relevance_explanation": "This quote affirms that RIV4 (Flublok) uses recombinant HA derived from insect cells, highlighting the unique manufacturing process relevant to the claim."
+    },
+    {
+      "id": "comp_1",
+      "quote": "RECOMBINANT HA EXPRESSION SYSTEMS Both prokaryotic and eukaryotic expression systems have been used for the manufacture of rHA vaccine antigens. ... Several groups have explored the use of adeno virus (AdV), primarily as a replication defective vector, for gene delivery and trans gene expression of rHA in the host cells. ... by integrating HA, cap sid protein (M1) and neuraminidase (NA) expressed in insect cells 44 46. Although presenting proteins in VLP structures enhanced their immunogen i city, it compromised the purity of the vaccines considerably, as VLP structures also integrated both baculo virus and Sf9 cell proteins. ... Insect cell derived rHA (RIV4) has been studied extensively by various groups in both pre clinical models and humans.",
+      "relevance_explanation": "This quote discusses the use of insect cells and baculovirus for expressing recombinant HA, specifically referencing RIV4 (Flublok), and distinguishes this method from other recombinant expression systems, directly supporting the claim about the novel production platform.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "illness and influenza like illness to a quad rival ent in activated BV expression vector HA gene TFF=Tangential Flow Filtration Fig. 1 Generation of rHA using the baculo virus insect cell express from Cox, M. M. & Hashimoto, Y (2011). A fast track influenza virus va Else vier Inc, with permission from Else vier 23.",
+      "relevance_explanation": "This quote references the generation of recombinant HA (rHA) using a baculovirus insect cell expression system, directly supporting the claim that Flublok is produced using this novel platform.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Full length cDNA Polyhedrin promoter Transfer plasmid Processing Signals PCR-direct cloning Full length cDNA Linear i zed BV DNA X X Recombination 1. Cell seeding 2 Expa in bio ... Capture Purify DNA removal TFF/Formulation Purification system for the manufacture of RIV4. BV baculo virus. Figure adapted eproduced in insect cells. J Invertebr Pathol 107 Suppl, S31-41 \u00a9 2011",
+      "relevance_explanation": "This quote outlines the steps in the manufacture of RIV4, including the use of baculovirus (BV) and insect cells, which directly supports the claim about the production platform for Flublok.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

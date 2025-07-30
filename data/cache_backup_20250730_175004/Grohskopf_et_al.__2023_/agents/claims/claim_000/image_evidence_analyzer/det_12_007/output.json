@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p13_det_12_007.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p13_det_12_007.png",
+  "image_type": "Table",
+  "page_number": 13,
+  "block_id": "det_12_007",
+  "claim_id": "claim_000",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table listing various influenza quadrivalent vaccines (brand names and manufacturers) alongside their dose volumes and HA antigen content per strain (e.g., 0.5 mL (15 \u00b5g)). does not support the claim because the table lists only standard-dose vaccines with 15 \u00b5g HA per strain and does not mention Flublok or any 3\u00d7 (45 \u00b5g) antigen content. Note: Image is a partial table and does not include Flublok data; limited context.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing various influenza quadrivalent vaccines (brand names and manufacturers) alongside their dose volumes and HA antigen content per strain (e.g., 0.5 mL (15 \u00b5g)).",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table lists only standard-dose vaccines with 15 \u00b5g HA per strain and does not mention Flublok or any 3\u00d7 (45 \u00b5g) antigen content.",
+    "confidence_notes": "Image is a partial table and does not include Flublok data; limited context."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": {
+    "pdf_name": "CDC_Influenza_vaccines",
+    "source_pdf": "data/clinical_files/CDC Influenza vaccines.pdf",
+    "total_pages": 2,
+    "total_blocks": 20,
+    "total_characters": 2329
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 2,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Flublok Quadrivalent (Sanofi Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM",
+      "relevance_explanation": "This quote identifies Flublok Quadrivalent as a vaccine product, specifying its manufacturer, dosage, and age indication, which is necessary context for understanding its evaluation in clinical trials."
+    },
+    {
+      "id": 2,
+      "quote": "Fluarix Quadrivalent (standard-dose vaccine)",
+      "relevance_explanation": "This quote identifies Fluarix Quadrivalent as a standard-dose comparator vaccine, which is relevant to the claim that Flublok Quadrivalent was evaluated against it in a pivotal trial."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

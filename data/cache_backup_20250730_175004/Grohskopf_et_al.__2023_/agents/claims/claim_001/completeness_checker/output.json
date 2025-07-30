@@ -1,0 +1,97 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Grohskopf_et_al.__2023_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 5
+  },
+  "completeness_stats": {
+    "existing_evidence": 3,
+    "new_evidence_found": 5,
+    "total_evidence": 8
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "Higher dose vaccines include HD-IIV4 and RIV4, both of which contain a higher dose of HA antigen per virus than standard dose vaccines (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines).",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 9 of the document: 'Higher dose vaccines include HD-IIV4 and RIV4, both of which contain a higher dose of HA antigen per virus than standard dose vaccines (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines).' The factual content, numbers, and technical details are preserved and match the quote to verify.. The quote directly supports the claim that Flublok (RIV4) contains 3 times the hemagglutinin (HA) antigen content of standard-dose flu vaccines (45 \u00b5g vs 15 \u00b5g per virus). This is explicitly stated in the quote. While the quote does not itself state that this higher antigen content is 'linked to greater immunogenicity,' the document elsewhere (page 14) discusses that HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, particularly in prevention of influenza-associated hospitalizations, and that these are higher dose vaccines. Thus, the quote, in the context of the document, supports the claim as it provides the factual basis for the antigen content difference, and the document links higher antigen content to greater immunogenicity and effectiveness.",
+      "presence_explanation": "The quote appears on page 9 of the document: 'Higher dose vaccines include HD-IIV4 and RIV4, both of which contain a higher dose of HA antigen per virus than standard dose vaccines (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines).' The factual content, numbers, and technical details are preserved and match the quote to verify.",
+      "support_explanation": "The quote directly supports the claim that Flublok (RIV4) contains 3 times the hemagglutinin (HA) antigen content of standard-dose flu vaccines (45 \u00b5g vs 15 \u00b5g per virus). This is explicitly stated in the quote. While the quote does not itself state that this higher antigen content is 'linked to greater immunogenicity,' the document elsewhere (page 14) discusses that HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, particularly in prevention of influenza-associated hospitalizations, and that these are higher dose vaccines. Thus, the quote, in the context of the document, supports the claim as it provides the factual basis for the antigen content difference, and the document links higher antigen content to greater immunogenicity and effectiveness.",
+      "original_relevance": "This quote explicitly states that Flublok (RIV4) contains 45 \u00b5g of HA per virus, which is 3 times the 15 \u00b5g found in standard-dose flu vaccines, directly supporting the first part of the claim."
+    },
+    {
+      "id": 2,
+      "quote": "Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with nonadjuvanted SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines). The adjuvanted vaccine contains 15 \u00b5g of HA per virus, similarly to nonadjuvanted SD-IIVs, but contains the adjuvant MF59. HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3.",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 14 of the document, with only minor wording differences but identical factual content. The document states: 'Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with nonadjuvanted SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines). The adjuvanted vaccine contains 15 \u00b5g of HA per virus, similarly to nonadjuvanted SD-IIVs, but contains the adjuvant MF59. HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3.' This matches the quote to be verified in all key facts and numbers.. The quote directly supports the claim. It confirms that Flublok (RIV4) contains 45 \u00b5g of HA per virus, which is 3 times the 15 \u00b5g in standard-dose inactivated vaccines. It also states that HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, which addresses the claim that the higher HA content has been linked to greater immunogenicity versus standard-dose flu vaccines.",
+      "presence_explanation": "The quote appears on page 14 of the document, with only minor wording differences but identical factual content. The document states: 'Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with nonadjuvanted SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines). The adjuvanted vaccine contains 15 \u00b5g of HA per virus, similarly to nonadjuvanted SD-IIVs, but contains the adjuvant MF59. HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3.' This matches the quote to be verified in all key facts and numbers.",
+      "support_explanation": "The quote directly supports the claim. It confirms that Flublok (RIV4) contains 45 \u00b5g of HA per virus, which is 3 times the 15 \u00b5g in standard-dose inactivated vaccines. It also states that HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, which addresses the claim that the higher HA content has been linked to greater immunogenicity versus standard-dose flu vaccines.",
+      "original_relevance": "This quote confirms the 3x HA content in Flublok (RIV4) compared to standard-dose vaccines and states that higher dose vaccines, including RIV (Flublok), have shown relative benefit (greater immunogenicity) compared with standard-dose vaccines in certain studies."
+    },
+    {
+      "id": 5,
+      "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022\u201323 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell-derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 21 of the document: 'One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022\u201323 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).' The content, numbers, and technical details match the quote to be verified.. The quote directly supports the first part of the claim by stating that Flublok (RIV4) contains 45 \u00b5g of HA per virus per 0.5 mL dose, which is three times the standard 15 \u00b5g per virus in standard-dose flu vaccines (as shown elsewhere in the document, e.g., Table 1 and related text). This establishes the '3x the hemagglutinin (HA) antigen content' portion of the claim. However, the quote does not address the second part of the claim regarding greater immunogenicity versus standard-dose flu vaccines. Therefore, the quote fully supports the first part of the claim and provides the necessary factual basis for the HA content comparison.",
+      "presence_explanation": "The quote appears on page 21 of the document: 'One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022\u201323 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).' The content, numbers, and technical details match the quote to be verified.",
+      "support_explanation": "The quote directly supports the first part of the claim by stating that Flublok (RIV4) contains 45 \u00b5g of HA per virus per 0.5 mL dose, which is three times the standard 15 \u00b5g per virus in standard-dose flu vaccines (as shown elsewhere in the document, e.g., Table 1 and related text). This establishes the '3x the hemagglutinin (HA) antigen content' portion of the claim. However, the quote does not address the second part of the claim regarding greater immunogenicity versus standard-dose flu vaccines. Therefore, the quote fully supports the first part of the claim and provides the necessary factual basis for the HA content comparison.",
+      "original_relevance": "This quote confirms the HA content per dose in Flublok (RIV4) is 45 \u00b5g per virus, which is three times the standard 15 \u00b5g, directly supporting the first part of the claim."
+    }
+  ],
+  "new_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Flublok Quad rival ent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
+      "relevance_explanation": "This quote explicitly states that Flublok Quadrivalent (RIV4) contains 45 \u00b5g of HA per virus, which is three times the 15 \u00b5g per virus found in standard-dose flu vaccines, directly supporting the claim about antigen content.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "Standard dose, nonadjuvanted IIV4 s contain 15 \u00b5g of HA per vaccine virus in a 0.5-mL dose (7.5 \u00b5g of HA per vaccine virus in a 0.25-mL dose). For 2022-23, this category is expected to include five different vaccines (Table 1).",
+      "relevance_explanation": "This quote provides the HA content for standard-dose flu vaccines (15 \u00b5g per virus), which is necessary for comparison to Flublok's 45 \u00b5g per virus, supporting the '3x' claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with nonadjuvanted SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines). The adjuvanted vaccine contains 15 \u00b5g of HA per virus, similarly to nonadjuvanted SD-IIVs, but contains the adjuvant MF59. HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3.",
+      "relevance_explanation": "This quote confirms both the 3x HA content of Flublok (RIV4) compared to standard-dose vaccines and that higher dose vaccines, including RIV, have shown greater immunogenicity or benefit in studies, directly supporting the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_4",
+      "quote": "Randomized studies comparing HD-IIV, RIV, and aIIV with non adjuvant ed SD-IIVs against laboratory confirmed influenza illness are few in number and were conducted over few influenza seasons. HD-IIV3 was more effective than SD-IIV3 in prevention of polymerase chain reaction (PCR)- or culture confirmed influenza like illness (ILI) in a two season randomized study conducted among 32 000 persons aged \u226565 years (relative efficacy: 24%; 95% CI: 10 36; certainty level: 1, high) (66). Two single season randomized trials of RIV versus non adjuvant ed SD-IIV, one a comparison of RIV3 versus non adjuvant ed SD-IIV3 that assessed culture confirmed ILI (67) and the other a comparison of RIV4 versus non adjuvant ed SD-IIV4 that examined PCR-confirmed ILI (68), did not demonstrate relative benefit of RIV among those aged \u226565 years (pooled relative efficacy: 18%; 95% CI: \u221217% to 43%; certainty level: 2, moderate). The larger of these two studies noted a relative benefit of RIV4 over non adjuvant ed SD-IIV4 in prevention of PCR-confirmed influenza among the full study population of persons aged \u226550 years (relative efficacy: 30%; 95% CI: 10 47 as well i lfi d ILI h d 65",
+      "relevance_explanation": "This quote provides evidence that RIV4 (Flublok), which contains 3x the HA antigen, showed greater immunogenicity (relative efficacy) compared to standard-dose vaccines in certain populations, supporting the second part of the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_5",
+      "quote": "A retrospective analysis of relative effectiveness of RIV4 versus SD-IIV4 against influenza coded hospitalizations among Medicare beneficiaries during the 2019-20 season noted a relative effectiveness of 17% (95% CI: 9 24; certainty level: 3, low) (72).",
+      "relevance_explanation": "This quote provides data showing that RIV4 (Flublok) was more effective than standard-dose IIV4 in preventing influenza-coded hospitalizations, supporting the link between higher HA content and greater immunogenicity.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

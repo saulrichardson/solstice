@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A partial page from the prescribing information for Flublok vaccine showing table of contents sections (indications and usage, dosage and administration, contraindications, warnings, adverse reactions, clinical pharmacology, clinical studies, etc.) and some detailed text on adverse reactions and dosage forms. The image does not support the claim because it contains prescribing information and section headings without any data comparing antibody responses of BEVS-produced recombinant HA antigens versus egg-derived vaccines; it doesn't support the claim. Note: The image quality is sufficient to determine that no comparative immunogenicity data are presented.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A partial page from the prescribing information for Flublok vaccine showing table of contents sections (indications and usage, dosage and administration, contraindications, warnings, adverse reactions, clinical pharmacology, clinical studies, etc.) and some detailed text on adverse reactions and dosage forms.",
+    "evidence_found": null,
+    "reasoning": "The image does not support the claim because it contains prescribing information and section headings without any data comparing antibody responses of BEVS-produced recombinant HA antigens versus egg-derived vaccines; it doesn't support the claim.",
+    "confidence_notes": "The image quality is sufficient to determine that no comparative immunogenicity data are presented."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_011.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_011",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Two tables presenting solicited reactogenicity (local and systemic adverse events) for Flublok (recombinant HA) versus placebo or trivalent inactivated influenza vaccine in adults, with percentages of subjects reporting fatigue, headache, muscle pain, joint pain, chills, nausea, fever, injection-site pain, redness, and swelling, along with footnotes defining cohorts, severity grading, and trial registry information. does not support the claim because the image only shows safety and reactogenicity data, with no immunogenicity or antibody cross-reactivity results. Note: Limited to safety data; no antibody or immunogenicity measures are presented.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Two tables presenting solicited reactogenicity (local and systemic adverse events) for Flublok (recombinant HA) versus placebo or trivalent inactivated influenza vaccine in adults, with percentages of subjects reporting fatigue, headache, muscle pain, joint pain, chills, nausea, fever, injection-site pain, redness, and swelling, along with footnotes defining cohorts, severity grading, and trial registry information.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image only shows safety and reactogenicity data, with no immunogenicity or antibody cross-reactivity results.",
+    "confidence_notes": "Limited to safety data; no antibody or immunogenicity measures are presented."
+  }
+}

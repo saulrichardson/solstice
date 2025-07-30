@@ -1,0 +1,18 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": {
+    "pdf_name": "Treanor_et_al.__2011_",
+    "source_pdf": "data/clinical_files/Treanor et al. (2011).pdf",
+    "total_pages": 7,
+    "total_blocks": 93,
+    "total_characters": 29386
+  },
+  "extraction_result": {
+    "success": false,
+    "total_snippets_found": 0,
+    "error": "Failed to get valid response after 3 attempts. Last error: Unexpected error: All connection attempts failed"
+  },
+  "extracted_evidence": [],
+  "model_used": "gpt-4.1"
+}

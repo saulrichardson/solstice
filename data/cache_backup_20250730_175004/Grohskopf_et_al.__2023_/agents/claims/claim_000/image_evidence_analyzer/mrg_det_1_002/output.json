@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_mrg_det_1_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/figure_p2_mrg_det_1_002.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "mrg_det_1_002",
+  "claim_id": "claim_000",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A page from the MMWR report showing a table of contents on the left and text on the right describing the Advisory Committee on Immunization Practices (ACIP) recommendations process, harmonization with professional organizations, publication details, and MMWR editorial and production staff listings. does not support the claim because the image contains only administrative and editorial information about ACIP recommendations and publication details, with no data or statements about Flublok HA content or comparative immunogenicity.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A page from the MMWR report showing a table of contents on the left and text on the right describing the Advisory Committee on Immunization Practices (ACIP) recommendations process, harmonization with professional organizations, publication details, and MMWR editorial and production staff listings.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image contains only administrative and editorial information about ACIP recommendations and publication details, with no data or statements about Flublok HA content or comparative immunogenicity.",
+    "confidence_notes": null
+  }
+}

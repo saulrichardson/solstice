@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "supports_claim": true,
+  "explanation": "A table from a clinical document listing pivotal immunogenicity studies of Flublok quadrivalent, including study design details, vaccine formulations, and comparator vaccines. Evidence: The table lists Flublok (quadrivalent) and shows that the comparator vaccine in the pivotal trial was Fluarix (quadrivalent standard-dose vaccine). The table directly shows Flublok (quadrivalent) being evaluated against Fluarix (quadrivalent standard-dose vaccine), which supports the claim Note: Image text is small and somewhat blurred, but the comparator Fluarix QIV is legible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "A table from a clinical document listing pivotal immunogenicity studies of Flublok quadrivalent, including study design details, vaccine formulations, and comparator vaccines.",
+    "evidence_found": "The table lists Flublok (quadrivalent) and shows that the comparator vaccine in the pivotal trial was Fluarix (quadrivalent standard-dose vaccine).",
+    "reasoning": "The table directly shows Flublok (quadrivalent) being evaluated against Fluarix (quadrivalent standard-dose vaccine), which supports the claim",
+    "confidence_notes": "Image text is small and somewhat blurred, but the comparator Fluarix QIV is legible."
+  }
+}

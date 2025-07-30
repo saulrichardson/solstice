@@ -1,0 +1,44 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": {
+    "pdf_name": "Hsiao_et_al.__2023_",
+    "source_pdf": "data/clinical_files/Hsiao et al. (2023).pdf",
+    "total_pages": 11,
+    "total_blocks": 132,
+    "total_characters": 24157
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 5,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "relevance_explanation": "This quote directly states that quadrivalent recombinant influenza vaccines (such as Flublok) contain three times the amount of hemagglutinin protein compared to standard dose vaccines, supporting the first part of the claim regarding antigen content."
+    },
+    {
+      "id": 2,
+      "quote": "Several studies have shown benefit for the recombinant vaccine and other high dose influenza vaccines as compared with standard dose vaccines in adults who are 65 years of age or older, findings that have been attributed to an improved immune response.",
+      "relevance_explanation": "This quote links the higher dose (including recombinant vaccines like Flublok) to improved immune response, supporting the claim that increased HA antigen content is associated with greater immunogenicity."
+    },
+    {
+      "id": 3,
+      "quote": "In the current study, we compared the effectiveness of the high dose recombinant vaccine with that of standard dose vaccines in patients between the ages of 18 and 64 years.",
+      "relevance_explanation": "This quote establishes that the study directly compared high dose recombinant (Flublok) and standard dose vaccines, which is necessary context for interpreting the immunogenicity and effectiveness results."
+    },
+    {
+      "id": 4,
+      "quote": "During our study period, the observed benefit of the recombinant vaccine as compared with a standard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3N2 than to higher effectiveness against influenza A overall, in accord with its higher dose of hemagglutinin antigen.",
+      "relevance_explanation": "This quote explicitly attributes the greater effectiveness of the recombinant vaccine to its higher dose of hemagglutinin antigen, directly supporting the claim that increased HA content is linked to greater immunogenicity."
+    },
+    {
+      "id": 5,
+      "quote": "For the primary objective, the relative vaccine effectiveness of the recombinant vaccine as compared with standard dose vaccines against all PCR-confirmed influenza was 15.3% (95% CI, 5.9 to 23.8; P = 0.002).",
+      "relevance_explanation": "This quote provides data showing that the recombinant vaccine (with higher HA content) was more effective than standard dose vaccines, supporting the claim that higher HA content is linked to greater immunogenicity and effectiveness."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

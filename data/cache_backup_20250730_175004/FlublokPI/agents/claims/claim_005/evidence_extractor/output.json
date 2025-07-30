@@ -1,0 +1,34 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": {
+    "pdf_name": "FlublokPI",
+    "source_pdf": "data/clinical_files/FlublokPI.pdf",
+    "total_pages": 5,
+    "total_blocks": 54,
+    "total_characters": 25335
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Flublok Quadrivalent has been administered to and safety data collected from 4328 adults 50 years of age and older (Study 6) and 998 adults 18-49 years of age (Study 7). SAEs were collected for 6 months post vaccination via clinic visit or remote contact. Study 6 (NCT02285998) enrolled subjects 50 years of age and older, randomized to receive Flublok Quadrivalent or Comparator (Fluarix Quadrivalent, manufactured by GlaxoSmithKline) as an active control [see Clinical Studies (14.1)]. The safety analysis population included 4328 Flublok Quadrivalent recipients and 4344 Comparator vaccine recipients.",
+      "relevance_explanation": "This quote explicitly states that Flublok Quadrivalent was evaluated in a clinical trial (Study 6) against Fluarix Quadrivalent, confirming that the pivotal trial compared these two vaccines."
+    },
+    {
+      "id": 2,
+      "quote": "Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quadrivalent or a Comparator inactivated influenza vaccine (Fluarix Quadrivalent, manufactured by GlaxoSmithKline). The safety analysis population included 998 recipients of Flublok Quadrivalent and 332 Comparator vaccine recipients.",
+      "relevance_explanation": "This quote further supports the claim by showing that in another age group (18-49 years), Flublok Quadrivalent was directly compared to Fluarix Quadrivalent in a randomized trial."
+    },
+    {
+      "id": 3,
+      "quote": "Abbreviations: rtPCR=reverse transcriptase polymerase chain reaction; Comparator=U.S.-licensed quadrivalent inactivated influenza vaccine, Fluarix Quadrivalent, manufactured by GlaxoSmithKline; n=number of influenza cases; N=number of subjects in treatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) \u00d7 100]. *Study 6 is registered as NCT02285998.",
+      "relevance_explanation": "This quote clarifies that the comparator in Study 6 was specifically Fluarix Quadrivalent, directly supporting the claim that Flublok Quadrivalent was evaluated against this standard-dose vaccine in the pivotal trial."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

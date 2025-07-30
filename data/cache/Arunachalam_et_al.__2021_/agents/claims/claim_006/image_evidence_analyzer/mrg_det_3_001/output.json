@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": true,
+  "explanation": "A two\u2010panel schematic comparing (a) native hemagglutinin (HA) extracted from influenza virus (HA1/HA2 heterodimer with complex\u2010type sialylated N\u2010linked glycans and cleaved fusion peptide) and (b) recombinant HA (rHA) expressed in insect cells as a single HA0 precursor bearing paucimannose glycans and an uncleaved fusion peptide. The figure labels indicate expression in insect cells using a baculovirus expression vector system. Evidence: Figure legend states: \u201crecombinant HA produced in insect cells using the baculovirus expression vector system.\u201d The figure explicitly shows that recombinant HA is produced in insect cells using BEVS, which supports the claim about Flublok\u2019s novel production platform. Note: The figure describes rHA production via BEVS but does not mention the brand name Flublok explicitly.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "A two\u2010panel schematic comparing (a) native hemagglutinin (HA) extracted from influenza virus (HA1/HA2 heterodimer with complex\u2010type sialylated N\u2010linked glycans and cleaved fusion peptide) and (b) recombinant HA (rHA) expressed in insect cells as a single HA0 precursor bearing paucimannose glycans and an uncleaved fusion peptide. The figure labels indicate expression in insect cells using a baculovirus expression vector system.",
+    "evidence_found": "Figure legend states: \u201crecombinant HA produced in insect cells using the baculovirus expression vector system.\u201d",
+    "reasoning": "The figure explicitly shows that recombinant HA is produced in insect cells using BEVS, which supports the claim about Flublok\u2019s novel production platform.",
+    "confidence_notes": "The figure describes rHA production via BEVS but does not mention the brand name Flublok explicitly."
+  }
+}

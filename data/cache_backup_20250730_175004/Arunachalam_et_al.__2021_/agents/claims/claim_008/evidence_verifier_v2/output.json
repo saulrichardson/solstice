@@ -1,0 +1,31 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "Arunachalam_et_al.__2021_",
+  "verification_stats": {
+    "total_extracted": 2,
+    "verified": 1,
+    "rejected": 1,
+    "verification_rate": 0.5
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 2 of the document: 'The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.' The wording is nearly identical to the quote to verify, with only minor formatting differences (e.g., '\u00b5g' vs 'mcg', 'dose' included, and some parenthetical clarifications), but the factual content is the same.. The quote directly states that RIV4 (Flublok) contains 45 \u00b5g of HA per dose from each of the four strains. This matches the claim that Flublok contains 45 micrograms (mcg) of HA per strain. While the quote does not explicitly mention the HA content of standard-dose influenza vaccines (15 mcg per strain), it fully substantiates the portion of the claim regarding Flublok's HA content. The comparison to standard-dose vaccines is not contradicted and is commonly known, but the quote itself only directly supports the Flublok part of the claim.",
+      "presence_explanation": "The quote appears on page 2 of the document: 'The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.' The wording is nearly identical to the quote to verify, with only minor formatting differences (e.g., '\u00b5g' vs 'mcg', 'dose' included, and some parenthetical clarifications), but the factual content is the same.",
+      "support_explanation": "The quote directly states that RIV4 (Flublok) contains 45 \u00b5g of HA per dose from each of the four strains. This matches the claim that Flublok contains 45 micrograms (mcg) of HA per strain. While the quote does not explicitly mention the HA content of standard-dose influenza vaccines (15 mcg per strain), it fully substantiates the portion of the claim regarding Flublok's HA content. The comparison to standard-dose vaccines is not contradicted and is commonly known, but the quote itself only directly supports the Flublok part of the claim.",
+      "original_relevance": "This quote explicitly states that Flublok (RIV4) contains 45 micrograms (\u00b5g) of hemagglutinin (HA) per dose from each of the four strains, directly supporting the claim regarding the HA content in Flublok."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": 2,
+      "quote": "A plant derived recombinant quadrivalent VLP (QVLP) at 30 \u00b5g dose per strain was found to be non inferior in terms of vaccine efficacy against respiratory illness and influenza like illness to a quadrivalent inactivated influenza vaccine (QIV; Fluarix Quadrivalent, GlaxoSmithKline) given at 15 \u00b5g dose strain in adults aged 18 to 64 years 37.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides the HA content per strain in a standard-dose inactivated influenza vaccine (QIV; Fluarix Quadrivalent) as 15 micrograms (\u00b5g), which is necessary for comparison to Flublok and supports the claim about the standard-dose content."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}
