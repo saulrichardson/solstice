@@ -34,6 +34,9 @@ class IngestionConfig:
     # Text Processing
     apply_text_processing: bool = True  # Whether to apply text cleaning/correction
     
+    # Debug and Tracking
+    save_intermediate_states: bool = False  # Save raw and merged layouts for debugging
+    
     # Marketing Document Presets (can be activated via CLI)
     marketing_defaults: Dict[str, float] = None
     

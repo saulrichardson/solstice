@@ -1,0 +1,24 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": {
+    "pdf_name": "CDC_Influenza_vaccines",
+    "source_pdf": "data/clinical_files/CDC Influenza vaccines.pdf",
+    "total_pages": 2,
+    "total_blocks": 12,
+    "total_characters": 2088
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 1,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "RIV4 (recombinant HA vaccine) \u00b6",
+      "relevance_explanation": "This quote identifies RIV4 as a recombinant HA vaccine, which is relevant because recombinant technology is the subject of the claim. However, this alone does not provide evidence for broader immune response or cross-protection."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

@@ -1,0 +1,53 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": {
+    "pdf_name": "Liu_et_al.__2024_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "In this randomized trial (Clinical trials gov: NCT03722589), sera pre- and post vaccination with quad rival ent in activated egg based (IIV4), cell culture based (ccIIV4), and recombinant (RIV4) influenza vaccines were collected from healthcare personnel (18-64 years) in 2018 19 (N = 723) and 2019 20 (N = 684) influenza seasons.",
+      "relevance_explanation": "This quote describes the randomized trial design, explicitly stating that quadrivalent recombinant (RIV4, i.e., Flublok) and quadrivalent egg-based (IIV4, which includes Fluarix) vaccines were evaluated, supporting the claim that Flublok was evaluated against a standard-dose quadrivalent vaccine.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "Enrolled and Randomized n=723 accine Allocation Flu zone IIV4 n=122 18-44 years: n=57 45-64 years: n=65 Completed day 0 (n=110) 1 month (n=110) and 6 months (n=101) visit Fluarix IIV4 n=120 18-44 years: n=55 45-64 years: n=65 Completed day 0 (n=120) 1 month (n=118) and 6 months (n=107) visit e-enrolled in Year 2 and new enroll ees randomized n=684 (139*) ccIIV4 in Year 1 n=214 RIV4 in Year 1 n=152",
+      "relevance_explanation": "This quote lists the vaccine allocation, showing that Fluarix (a standard-dose quadrivalent vaccine) and RIV4 (Flublok) were both used in the pivotal trial, directly supporting the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "ccIIV4: Cell culture based IIV4 (Flu cel vax Quad rival ent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quad rival ent by SanofiPasteur, RIV4).",
+      "relevance_explanation": "This quote clarifies that RIV4 refers to Flublok Quadrivalent, confirming that Flublok was one of the vaccines evaluated in the trial.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_4",
+      "quote": "During Year 1, HCP were stratified by two age groups (18\u221244 years and 45\u221264 years) and randomized at 4 4 2 2",
+      "relevance_explanation": "This quote indicates that participants were randomized to different vaccine groups, supporting that a head-to-head comparison was performed in the pivotal trial.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

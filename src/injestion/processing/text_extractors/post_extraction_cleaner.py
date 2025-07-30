@@ -55,6 +55,53 @@ class PostExtractionCleaner:
         # Extreme concatenation patterns
         self.extreme_concat_pattern = re.compile(r'[a-zA-Z]{30,}')
         
+    def _remove_control_characters(self, text: str) -> str:
+        """Remove control characters and clean special characters.
+        
+        Removes:
+        - ASCII control characters (0x00-0x1F) except tab and newline
+        - Carriage returns (\r)
+        - Zero-width spaces and other invisible Unicode
+        - Non-breaking spaces (convert to regular spaces)
+        """
+        # Remove ASCII control characters except tab (0x09) and newline (0x0A)
+        # This includes SOH (0x01), STX (0x02), etc.
+        cleaned = re.sub(r'[\x00-\x08\x0B-\x0C\x0E-\x1F\x7F]', '', text)
+        
+        # Remove carriage returns (normalize line endings)
+        cleaned = cleaned.replace('\r\n', '\n').replace('\r', '\n')
+        
+        # Replace non-breaking spaces with regular spaces
+        cleaned = cleaned.replace('\u00A0', ' ')
+        cleaned = cleaned.replace('\u202F', ' ')  # Narrow no-break space
+        cleaned = cleaned.replace('\u2060', '')   # Word joiner (zero-width)
+        
+        # Remove zero-width characters
+        cleaned = cleaned.replace('\u200B', '')  # Zero-width space
+        cleaned = cleaned.replace('\u200C', '')  # Zero-width non-joiner
+        cleaned = cleaned.replace('\u200D', '')  # Zero-width joiner
+        cleaned = cleaned.replace('\uFEFF', '')  # Zero-width no-break space (BOM)
+        
+        # Replace other special spaces with regular space
+        cleaned = re.sub(r'[\u2000-\u200A]', ' ', cleaned)  # Various Unicode spaces
+        
+        # Replace soft hyphens with nothing (they're invisible)
+        cleaned = cleaned.replace('\u00AD', '')
+        
+        # Replace special quotes and apostrophes with standard ones
+        # (This duplicates some work in _fix_medical_terms but it's good to do early)
+        cleaned = cleaned.replace('"', '"').replace('"', '"')
+        cleaned = cleaned.replace(''', "'").replace(''', "'")
+        cleaned = cleaned.replace('`', "'")
+        
+        # Replace special dashes with standard hyphen
+        cleaned = cleaned.replace('–', '-')  # En dash
+        cleaned = cleaned.replace('—', '-')  # Em dash
+        cleaned = cleaned.replace('‐', '-')  # Hyphen (U+2010)
+        cleaned = cleaned.replace('‑', '-')  # Non-breaking hyphen
+        
+        return cleaned
+        
     def clean(self, text: str) -> str:
         """Clean extracted text."""
         if not text:
@@ -62,26 +109,32 @@ class PostExtractionCleaner:
             
         original = text
         
-        # Step 0: Fix broken words across lines (do this first!)
+        # Step 0: Remove control characters first
+        text = self._remove_control_characters(text)
+        
+        # Step 1: Fix broken words across lines
         text = self._fix_broken_words(text)
         
-        # Step 1: Fix truncated words
+        # Step 2: Fix truncated words
         text = self._fix_truncated_words(text)
         
-        # Step 2: Fix missing spaces
+        # Step 3: Fix missing spaces
         text = self._fix_missing_spaces(text)
         
-        # Step 3: Remove gibberish
+        # Step 4: Remove gibberish
         text = self._remove_gibberish(text)
         
-        # Step 4: Fix extreme concatenation
+        # Step 5: Fix extreme concatenation
         text = self._fix_extreme_concatenation(text)
         
-        # Step 5: Fix specific medical/pharma terms
+        # Step 6: Fix specific medical/pharma terms
         text = self._fix_medical_terms(text)
         
-        # Step 6: Clean up extra spaces
+        # Step 7: Clean up extra spaces
         text = self._normalize_whitespace(text)
+        
+        # Step 8: Remove paragraph formatting for LLM processing
+        text = self._remove_paragraph_formatting(text)
         
         if text != original:
             logger.debug(f"Post-extraction cleaning modified text (len: {len(original)} -> {len(text)})")
@@ -293,6 +346,41 @@ class PostExtractionCleaner:
         
         # Remove multiple blank lines
         text = re.sub(r'\n{3,}', '\n\n', text)
+        
+        return text.strip()
+    
+    def _remove_paragraph_formatting(self, text: str) -> str:
+        """Remove paragraph formatting for LLM processing.
+        
+        Converts multi-line text to continuous text suitable for LLM processing.
+        Preserves sentence boundaries but removes visual formatting.
+        """
+        # Replace multiple newlines with a space (paragraph breaks)
+        text = re.sub(r'\n\n+', ' ', text)
+        
+        # Replace single newlines with spaces, but be smart about it
+        # Don't add space if the line ends with a hyphen (word continuation)
+        lines = text.split('\n')
+        merged_lines = []
+        
+        for i, line in enumerate(lines):
+            line = line.strip()
+            if not line:
+                continue
+                
+            if merged_lines and merged_lines[-1].endswith('-'):
+                # Remove hyphen and concatenate
+                merged_lines[-1] = merged_lines[-1][:-1] + line
+            elif merged_lines and merged_lines[-1] and not merged_lines[-1][-1] in '.!?:;':
+                # Previous line doesn't end with sentence terminator, add space
+                merged_lines[-1] += ' ' + line
+            else:
+                merged_lines.append(line)
+        
+        text = ' '.join(merged_lines)
+        
+        # Clean up any double spaces created
+        text = re.sub(r' +', ' ', text)
         
         return text.strip()
 

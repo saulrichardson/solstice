@@ -1,0 +1,22 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "CDC_Influenza_vaccines",
+  "supporting_evidence": [
+    {
+      "quote": "Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM",
+      "explanation": "The quote 'Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM' appears almost exactly as written at the very beginning of the document. The only differences are minor spacing and formatting issues, but the core content and numbers are identical.. This quote provides the specific HA antigen content (15 \u00b5g per 0.5 mL dose) for a standard-dose flu vaccine (Fluzone Quadrivalent). This establishes the baseline needed to compare with Flublok, which is known to contain 45 \u00b5g HA per strain per 0.5 mL dose (3x the amount). While the quote does not mention Flublok or immunogenicity, it does directly support the part of the claim regarding the HA content of standard-dose vaccines, which is necessary for substantiating the '3x' comparison."
+    }
+  ],
+  "evidence_summary": {
+    "total_evidence_found": 1,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 1
+    },
+    "rejected_count": 0
+  }
+}

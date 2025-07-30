@@ -1,0 +1,22 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Treanor_et_al.__2011_",
+  "supporting_evidence": [
+    {
+      "quote": "The trivalent vaccine contained 45 mcg smeasured by the single radial immuno diffusion as say of ch purified rHA0 derived from the A/Solomon Islands 3 2006",
+      "explanation": "A very similar version of the quote appears on page 2: 'The trivalent vaccine contained 45 mcg smeasured by the single radial immuno diffusion as say of ch purified rHA0 derived from the A/Solomon Islands 3 2006'. The wording and content match the quote to verify, with only minor differences in spacing and punctuation.. The quote directly states that each component of the trivalent Flublok vaccine contains 45 mcg of hemagglutinin (HA) antigen. Standard-dose flu vaccines typically contain 15 mcg of HA per component, so this is three times the standard amount. This fact substantiates the first part of the claim. The document also discusses immunogenicity and compares antibody responses, supporting the link between higher HA content and greater immunogenicity, thus supporting the claim as a whole."
+    }
+  ],
+  "evidence_summary": {
+    "total_evidence_found": 1,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 1
+    },
+    "rejected_count": 0
+  }
+}

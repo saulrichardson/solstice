@@ -1,0 +1,19 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": "Liu_et_al.__2024_",
+  "verified_evidence": [
+    {
+      "id": 3,
+      "quote": "For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody ... it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).",
+      "supports_claim": true,
+      "explanation": "A very similar quote appears on page 9: 'For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody ... it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).' The wording is nearly identical to the quote provided, with only minor differences in punctuation and phrasing.. The quote directly states that RIV4 (a recombinant HA antigen produced using BEVS) vaccination significantly increased both the quality and quantity of antibodies binding to the cell-derived (i.e., non-egg-adapted, more conserved) HA of A (H3N2) compared to other vaccines. This supports the claim that recombinant HA antigens produced using BEVS induce higher levels of broadly cross-reactive antibodies against conserved HA regions than egg-derived vaccines. The reference to 'cell HA head binding antibodies' specifically addresses antibody responses to more conserved, non-egg-adapted antigens, which is central to the claim.",
+      "presence_explanation": "A very similar quote appears on page 9: 'For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody ... it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).' The wording is nearly identical to the quote provided, with only minor differences in punctuation and phrasing.",
+      "support_explanation": "The quote directly states that RIV4 (a recombinant HA antigen produced using BEVS) vaccination significantly increased both the quality and quantity of antibodies binding to the cell-derived (i.e., non-egg-adapted, more conserved) HA of A (H3N2) compared to other vaccines. This supports the claim that recombinant HA antigens produced using BEVS induce higher levels of broadly cross-reactive antibodies against conserved HA regions than egg-derived vaccines. The reference to 'cell HA head binding antibodies' specifically addresses antibody responses to more conserved, non-egg-adapted antigens, which is central to the claim.",
+      "original_relevance": "This quote supports the claim by stating that RIV4 (recombinant, BEVS) vaccination increased both the quality and quantity of antibodies binding to the cell-derived (non-egg-adapted, more conserved) HA, indicating a broader and more cross-reactive response than egg-derived vaccines."
+    }
+  ],
+  "verification_stats": {
+    "total_verified": 1
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": {
+    "pdf_name": "Arunachalam_et_al.__2021_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "In a study by Nach bag auer et al.78, RIV4 induced HA stem- specific neutral ising antibodies directed against influenza subtypes H1, H3 and B haem agglutinin in an age dependent manner in humans, with the highest titres observed in the elderly 78. RIV4 also induces antibodies, in both humans and mice, that are specific to epi topes in the HA head region, at greater proportions than a traditional mammalian cell derived subunit vaccine (Flu cel vax [Trivalent 77. Higher magnitudes of haem agglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flu cel vax Tetra, Seq i rus, and Flu zone quad rival ent SD, San of i Pasteur 60.",
+      "relevance_explanation": "This quote provides direct evidence that RIV4 (a BEVS-produced recombinant HA vaccine) induces higher levels of antibodies against both the HA stem and head regions, and that these responses are greater than those induced by egg-derived or mammalian cell-derived vaccines.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "The higher quantity and greater accessibility of the genetically conserved stem region of rHA produced in insect cells (resulting in smaller N-linked glycans) may contribute to cross protection against mismatched influenza strains 12 75.",
+      "relevance_explanation": "This statement supports the claim by explaining that BEVS-produced recombinant HA antigens have structural features (greater accessibility of conserved regions) that contribute to broader cross-protective antibody responses compared to traditional vaccines.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Subsequent studies showed that HA with simpler gly cans induce more broadly protective antibodies with superior cross clade protection compared to HA with more complex glycans76\u201379.",
+      "relevance_explanation": "This quote supports the claim by indicating that the simpler glycan structures found in BEVS-produced recombinant HA antigens lead to the induction of more broadly cross-reactive antibodies than those with more complex glycans, as found in egg-derived vaccines.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_4",
+      "quote": "Thus, elimination of parts of gly cans that are not essential for HA structure may improve vaccine induced protection.",
+      "relevance_explanation": "This statement supports the claim by suggesting that the structural differences in BEVS-produced HA (such as reduced glycan complexity) enhance the ability of the vaccine to induce broadly cross-reactive antibodies.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

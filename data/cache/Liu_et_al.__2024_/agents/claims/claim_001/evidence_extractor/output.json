@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": {
+    "pdf_name": "Liu_et_al.__2024_",
+    "source_pdf": "data/clinical_files/Liu et al. (2024).pdf",
+    "total_pages": 13,
+    "total_blocks": 124,
+    "total_characters": 39807
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 2,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "RIV4 contains 3 times the i d 45 HA/d / ...d",
+      "relevance_explanation": "This quote directly states that RIV4 (Flublok Quadrivalent) contains 3 times the HA (hemagglutinin) antigen content compared to other vaccines, supporting the first part of the claim."
+    },
+    {
+      "id": 2,
+      "quote": "For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody ... it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).",
+      "relevance_explanation": "This quote provides evidence that RIV4 (Flublok) leads to a greater immunogenic response, specifically higher levels of functional and total HA antibodies, supporting the second part of the claim regarding greater immunogenicity versus standard-dose flu vaccines."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

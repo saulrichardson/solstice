@@ -1,0 +1,33 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": {
+    "pdf_name": "FlublokPI"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 2
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains...",
+      "relevance_explanation": "This quote confirms the total HA content per dose (135 mcg), which is three times the standard 15 mcg per strain in standard-dose flu vaccines, directly supporting the claim about antigen content.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "Flublok contains recombinant Ha proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hem agglutination inhibition (HI) anti bod...",
+      "relevance_explanation": "This quote explains that Flublok's HA proteins are the antigens responsible for inducing an immune response, supporting the link between HA content and immunogenicity.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

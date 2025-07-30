@@ -1,0 +1,31 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": "Grohskopf_et_al.__2023_",
+  "verification_stats": {
+    "total_extracted": 2,
+    "verified": 1,
+    "rejected": 1,
+    "verification_rate": 0.5
+  },
+  "verified_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "One recombinant influenza vaccine, Flublok Quad rival ent (RIV4), is expected to be available during the 2022 23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 21 of the document: 'One recombinant influenza vaccine, Flublok Quad rival ent (RIV4), is expected to be available during the 2022 23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).' The wording is nearly identical to the quote to verify, with only minor formatting differences (e.g., 'Quad rival ent' instead of 'Quadrivalent').. The quote directly states that Flublok (RIV4) contains recombinant HA produced in an insect cell line, using genetic sequences from cell-derived influenza viruses, and is manufactured without the use of influenza viruses or eggs. This supports the claim that Flublok is produced using a novel production platform involving recombinant HA expression in insect cells. While the quote does not explicitly mention the baculovirus expression vector system (BEVS) by name, the description of recombinant HA production in insect cells is a defining feature of the BEVS platform. Therefore, the quote genuinely supports the claim.",
+      "presence_explanation": "The quote appears on page 21 of the document: 'One recombinant influenza vaccine, Flublok Quad rival ent (RIV4), is expected to be available during the 2022 23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).' The wording is nearly identical to the quote to verify, with only minor formatting differences (e.g., 'Quad rival ent' instead of 'Quadrivalent').",
+      "support_explanation": "The quote directly states that Flublok (RIV4) contains recombinant HA produced in an insect cell line, using genetic sequences from cell-derived influenza viruses, and is manufactured without the use of influenza viruses or eggs. This supports the claim that Flublok is produced using a novel production platform involving recombinant HA expression in insect cells. While the quote does not explicitly mention the baculovirus expression vector system (BEVS) by name, the description of recombinant HA production in insect cells is a defining feature of the BEVS platform. Therefore, the quote genuinely supports the claim.",
+      "original_relevance": "This quote directly states that Flublok contains recombinant HA produced in an insect cell line, which is a key feature of the baculovirus expression vector system (BEVS) platform, and that it is manufactured without the use of influenza viruses or eggs, supporting the claim of a novel production platform."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": "comp_2",
+      "quote": "RIV = recombinant influenza vaccine",
+      "reason": "does not support claim",
+      "original_explanation": "This abbreviation, while brief, clarifies that RIV (the category for Flublok) stands for recombinant influenza vaccine, supporting the claim that Flublok is produced using recombinant technology."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

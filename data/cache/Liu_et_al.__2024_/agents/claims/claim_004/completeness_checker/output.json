@@ -1,0 +1,67 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "Liu_et_al.__2024_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 2
+  },
+  "completeness_stats": {
+    "existing_evidence": 3,
+    "new_evidence_found": 2,
+    "total_evidence": 5
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "RIV4 contains 3 times the i d 45 HA/d / ...d",
+      "supports_claim": true,
+      "explanation": "A very similar version of the quote appears on page 2: 'RIV4 contains 3 times the i d 45 HA/d / ...d'. While the text is garbled, the key information is present: RIV4 (the recombinant influenza vaccine) contains 3 times the HA (hemagglutinin antigen) per dose compared to standard-dose vaccines. This matches the intent and content of the quote to be verified.. The quote directly supports the claim by establishing that RIV4 is a higher-dose vaccine (containing 3 times the HA per dose) compared to standard egg-based vaccines. This is necessary context for the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response than standard-dose egg-based vaccines. The document also provides data comparing antibody responses between RIV4 and standard-dose vaccines, but the quote itself specifically substantiates the 'higher-dose' aspect of the claim.",
+      "presence_explanation": "A very similar version of the quote appears on page 2: 'RIV4 contains 3 times the i d 45 HA/d / ...d'. While the text is garbled, the key information is present: RIV4 (the recombinant influenza vaccine) contains 3 times the HA (hemagglutinin antigen) per dose compared to standard-dose vaccines. This matches the intent and content of the quote to be verified.",
+      "support_explanation": "The quote directly supports the claim by establishing that RIV4 is a higher-dose vaccine (containing 3 times the HA per dose) compared to standard egg-based vaccines. This is necessary context for the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response than standard-dose egg-based vaccines. The document also provides data comparing antibody responses between RIV4 and standard-dose vaccines, but the quote itself specifically substantiates the 'higher-dose' aspect of the claim.",
+      "original_relevance": "This quote establishes that the recombinant influenza vaccine (RIV4) is a higher-dose vaccine compared to standard-dose egg-based vaccines, which is necessary context for the claim."
+    },
+    {
+      "id": 2,
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.",
+      "supports_claim": true,
+      "explanation": "A very close version of the quote appears on page 1: 'In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.' The wording is nearly identical to the quote to verify, with only minor differences in punctuation and spacing.. The quote directly supports the claim. It states that RIV4 (the higher-dose recombinant flu vaccine) induced higher neutralizing and total HA head binding antibodies to cell-based A (H3N2) virus than both ccIIV4 (cell-based inactivated vaccine) and IIV4 (egg-based standard-dose vaccine). Since IIV4 is the standard-dose egg-based vaccine, this demonstrates that the higher-dose recombinant vaccine (RIV4) induces a more robust antibody response than the standard-dose egg-based vaccine, specifically for the A (H3N2) virus. This is a direct and specific support for the claim.",
+      "presence_explanation": "A very close version of the quote appears on page 1: 'In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.' The wording is nearly identical to the quote to verify, with only minor differences in punctuation and spacing.",
+      "support_explanation": "The quote directly supports the claim. It states that RIV4 (the higher-dose recombinant flu vaccine) induced higher neutralizing and total HA head binding antibodies to cell-based A (H3N2) virus than both ccIIV4 (cell-based inactivated vaccine) and IIV4 (egg-based standard-dose vaccine). Since IIV4 is the standard-dose egg-based vaccine, this demonstrates that the higher-dose recombinant vaccine (RIV4) induces a more robust antibody response than the standard-dose egg-based vaccine, specifically for the A (H3N2) virus. This is a direct and specific support for the claim.",
+      "original_relevance": "This directly supports the claim by stating that the higher-dose recombinant flu vaccine (RIV4) induced higher antibody responses than the standard-dose egg-based vaccines (IIV4) for A (H3N2) virus."
+    },
+    {
+      "id": 3,
+      "quote": "For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody ... it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).",
+      "supports_claim": true,
+      "explanation": "A very close version of the quote appears on page 9: 'For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody ... it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).' The wording is nearly identical to the quote provided, with only minor differences in punctuation and formatting.. The quote directly states that RIV4 (the higher-dose recombinant flu vaccine) significantly increased both the quality and quantity of antibody responses to A (H3N2) compared to other vaccines. This supports the claim that vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines, specifically for A (H3N2).",
+      "presence_explanation": "A very close version of the quote appears on page 9: 'For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody ... it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).' The wording is nearly identical to the quote provided, with only minor differences in punctuation and formatting.",
+      "support_explanation": "The quote directly states that RIV4 (the higher-dose recombinant flu vaccine) significantly increased both the quality and quantity of antibody responses to A (H3N2) compared to other vaccines. This supports the claim that vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines, specifically for A (H3N2).",
+      "original_relevance": "This quote provides evidence that RIV4 (the higher-dose recombinant vaccine) led to a more robust antibody response than standard-dose egg-based vaccines, specifically for A (H3N2)."
+    }
+  ],
+  "new_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "The RIV4 group had the highest A (H1 N1) pdm09 HA stalk and A (H3 N2) HA stalk antibodies at 1 month post vaccination, however the fold rises of HA stalk antibodies were low (<1.8) and similar among all 4 vaccine groups (Fig. 4 D).",
+      "relevance_explanation": "This quote shows that the RIV4 (recombinant vaccine) group achieved the highest levels of certain antibody types (HA stalk antibodies) at 1 month post-vaccination, supporting the claim that higher-dose recombinant vaccines may induce a more robust antibody response than standard egg-based vaccines.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "Comparing pre- and 1 month post vaccination, A (H3 N2) HA stalk binding antibodies were significantly boosted in ccIIV4-RIV4, RIV4-RIV4, IIV4-ccIIV4, and IIV4-RIV4 arms, while A (H1 N1) pdm09 HA stalk binding antibodies were also significantly boosted in ccIIV4-ccIIV4 and RIV4-ccIIV4 arms (Fig. 8 C).",
+      "relevance_explanation": "This quote indicates that regimens including RIV4 (recombinant vaccine) led to significant boosts in antibody responses, supporting the claim that higher-dose recombinant vaccines can induce a more robust antibody response.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

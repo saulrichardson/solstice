@@ -1,0 +1,24 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": {
+    "pdf_name": "CDC_Influenza_vaccines",
+    "source_pdf": "data/clinical_files/CDC Influenza vaccines.pdf",
+    "total_pages": 2,
+    "total_blocks": 12,
+    "total_characters": 2088
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 1,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "RIV4 (recombinant HA vaccine) induces higher post-vaccination antibody titers compared with standard-dose, egg-based inactivated influenza vaccines, particularly in older adults.",
+      "relevance_explanation": "This quote directly states that the recombinant HA vaccine (RIV4) leads to higher antibody titers after vaccination compared to standard-dose, egg-based vaccines, supporting the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

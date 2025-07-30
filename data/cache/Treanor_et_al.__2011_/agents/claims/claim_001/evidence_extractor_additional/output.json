@@ -1,0 +1,43 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": {
+    "pdf_name": "Treanor_et_al.__2011_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "The vaccine (Flublok used in this study consisted of puri- ed hemagglutinin (HA) proteins produced in insect cells using baculo virus expression system as previously described [9]. The comb in ant HA protein is not cleaved in insect cells and is fer red to as rHA0.",
+      "relevance_explanation": "This quote describes the composition of Flublok, specifically noting that it consists of purified hemagglutinin proteins, which is relevant to the claim about HA antigen content.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "Sodium dodecyl sulfate- olyacrylamide gel electrophoresis of the purified mono valent materials indicated that hemagglutinin constitutes at least 90% of he total protein.",
+      "relevance_explanation": "This quote provides evidence that the majority of the protein content in Flublok is hemagglutinin, supporting the claim that Flublok is a high-HA-content vaccine.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Flublok induced serum HAI antibody responses to all three components of the accine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vac- i nation geometric mean titers were substantially higher for all hree components in Flublok than in placebo recipients (P < .001 or all comparisons).",
+      "relevance_explanation": "This quote supports the claim that Flublok's higher HA content is linked to greater immunogenicity, as evidenced by higher antibody titers compared to placebo.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

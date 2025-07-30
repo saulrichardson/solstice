@@ -38,7 +38,6 @@ class Block(BaseModel):
 
 class Document(BaseModel):
     """A processed document with structured content."""
-    # Source information - maintaining backward compatibility
     source_pdf: str = Field(..., description="Original PDF path or URI")
     cache_dir: Optional[str] = None  # Base directory for relative paths
     
@@ -51,6 +50,12 @@ class Document(BaseModel):
     
     # Metadata
     metadata: Dict[str, Any] = Field(default_factory=dict)
+    
+    # Pipeline tracking metadata
+    pipeline_metadata: Dict[str, Any] = Field(
+        default_factory=dict,
+        description="Tracking information about pipeline transformations"
+    )
     
     @property
     def source(self) -> str:
@@ -70,22 +75,10 @@ class Document(BaseModel):
     
     def save(self, path: str | Path) -> None:
         """Save document to JSON file."""
-        # Handle both Pydantic v1 and v2
-        try:
-            # Pydantic v2
-            json_str = self.model_dump_json(indent=2, exclude_none=True)
-        except AttributeError:
-            # Pydantic v1
-            json_str = self.json(indent=2, ensure_ascii=False, exclude_none=True)
+        json_str = self.model_dump_json(indent=2, exclude_none=True)
         Path(path).write_text(json_str)
     
     @classmethod
     def load(cls, path: str | Path) -> Document:
         """Load document from JSON file."""
-        # Handle both Pydantic v1 and v2
-        try:
-            # Pydantic v2
-            return cls.model_validate_json(Path(path).read_text())
-        except AttributeError:
-            # Pydantic v1
-            return cls.parse_raw(Path(path).read_text())
+        return cls.model_validate_json(Path(path).read_text())

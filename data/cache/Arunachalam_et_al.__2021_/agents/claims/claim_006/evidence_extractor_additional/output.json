@@ -1,0 +1,53 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": {
+    "pdf_name": "Arunachalam_et_al.__2021_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "The recombinant quad rival ent influenza vaccine (RIV4, Flublok\u00ae, Sup emtek\u00ae [EU, Canada], San of i pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for in activated split virion and subunit vaccines).",
+      "relevance_explanation": "This quote supports the claim by stating that Flublok (RIV4) is produced using recombinant viral proteins, which is a novel approach compared to traditional vaccines that use antigens from live virus.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "RECOMBINANT HA EXPRESSION SYSTEMS Both prokaryotic and eukaryotic expression systems have been used for the manufacture of rHA vaccine antigens.",
+      "relevance_explanation": "This quote introduces the concept that recombinant HA (hemagglutinin) can be produced using various expression systems, setting the context for the use of insect cells and BEVS in Flublok production.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Insect cell derived rHA (RIV4) has been studied extensively by various groups in both pre clinical models and humans.",
+      "relevance_explanation": "This quote directly states that RIV4 (Flublok) contains recombinant HA derived from insect cells, supporting the claim about the production platform.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_4",
+      "quote": "Capture Purify DNA removal TFF/Formulation Purification system for the manufacture of RIV4. BV baculo virus. Figure adapted eproduced in insect cells.",
+      "relevance_explanation": "This quote, though from a figure caption, explicitly links the manufacture of RIV4 to the use of baculovirus (BV) and insect cells, supporting the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

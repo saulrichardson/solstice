@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": {
+    "pdf_name": "Arunachalam_et_al.__2021_",
+    "source_pdf": "data/clinical_files/Arunachalam et al. (2021).pdf",
+    "total_pages": 8,
+    "total_blocks": 72,
+    "total_characters": 46858
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.",
+      "relevance_explanation": "This quote specifies the HA antigen content per strain in Flublok (RIV4), which is 45 \u00b5g, three times the standard 15 \u00b5g per strain in standard-dose flu vaccines."
+    },
+    {
+      "id": 2,
+      "quote": "illness and influenza like illness to a quadrivalent inactivated influenza vaccine (QIV; Fluarix Quadrivalent, GlaxoSmithKline) given at 15 \u00b5g dose strain in adults aged 18 to 64 years 37.",
+      "relevance_explanation": "This quote establishes that standard-dose flu vaccines (such as QIV) contain 15 \u00b5g of HA per strain, supporting the comparison to Flublok's 45 \u00b5g per strain."
+    },
+    {
+      "id": 3,
+      "quote": "RIV4 elicited the most robust responses, with significantly higher T-cell and antibody levels than the other two vaccines. Authors postulated that simpler glycosylation of rHA and absence of other influenza viral proteins in RIV4 contributed to the observed robust immune response for RIV4 and emphasised the relevance of these features in determining vaccine efficacy and long term immunity 65.",
+      "relevance_explanation": "This quote provides evidence that RIV4 (Flublok) induces greater immunogenicity compared to standard-dose flu vaccines, supporting the claim that higher HA content is linked to greater immunogenicity."
+    },
+    {
+      "id": 4,
+      "quote": "Higher magnitudes of haemagglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flucelvax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60.",
+      "relevance_explanation": "This quote directly states that RIV4 (Flublok) produces higher antibody responses than standard-dose flu vaccines, supporting the link between higher HA content and greater immunogenicity."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

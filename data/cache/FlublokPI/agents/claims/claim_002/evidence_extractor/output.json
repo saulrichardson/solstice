@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "document": {
+    "pdf_name": "FlublokPI",
+    "source_pdf": "data/clinical_files/FlublokPI.pdf",
+    "total_pages": 5,
+    "total_blocks": 94,
+    "total_characters": 25545
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 2,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Frequent development of antigenic variants through antigenic drift is the viro logic basis for seasonal epidemics and the reason for the usual replacement of one or more influenza virus strains in each year\u2019s influenza vaccine.",
+      "relevance_explanation": "This quote explains that antigenic variants (mutations) frequently develop, which is a key reason for updating flu vaccines annually. This supports the claim that mutations can occur during vaccine production, potentially affecting effectiveness."
+    },
+    {
+      "id": 2,
+      "quote": "Vaccine efficacy against antigenic ally matched culture confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenic ally matched to the strains represented in the vaccine.",
+      "relevance_explanation": "This quote shows that the majority of influenza viruses isolated from subjects did not match the vaccine strains, suggesting that mutations or antigenic changes can occur, which may reduce vaccine effectiveness."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

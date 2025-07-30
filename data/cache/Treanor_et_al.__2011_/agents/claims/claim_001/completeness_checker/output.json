@@ -1,0 +1,59 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Treanor_et_al.__2011_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 3
+  },
+  "completeness_stats": {
+    "existing_evidence": 1,
+    "new_evidence_found": 3,
+    "total_evidence": 4
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "The trivalent vaccine contained 45 mcg smeasured by the single radial immuno diffusion as say of ch purified rHA0 derived from the A/Solomon Islands 3 2006",
+      "supports_claim": true,
+      "explanation": "A very similar version of the quote appears on page 2: 'The trivalent vaccine contained 45 mcg smeasured by the single radial immuno diffusion as say of ch purified rHA0 derived from the A/Solomon Islands 3 2006'. The wording and content match the quote to verify, with only minor differences in spacing and punctuation.. The quote directly states that each component of the trivalent Flublok vaccine contains 45 mcg of hemagglutinin (HA) antigen. Standard-dose flu vaccines typically contain 15 mcg of HA per component, so this is three times the standard amount. This fact substantiates the first part of the claim. The document also discusses immunogenicity and compares antibody responses, supporting the link between higher HA content and greater immunogenicity, thus supporting the claim as a whole.",
+      "presence_explanation": "A very similar version of the quote appears on page 2: 'The trivalent vaccine contained 45 mcg smeasured by the single radial immuno diffusion as say of ch purified rHA0 derived from the A/Solomon Islands 3 2006'. The wording and content match the quote to verify, with only minor differences in spacing and punctuation.",
+      "support_explanation": "The quote directly states that each component of the trivalent Flublok vaccine contains 45 mcg of hemagglutinin (HA) antigen. Standard-dose flu vaccines typically contain 15 mcg of HA per component, so this is three times the standard amount. This fact substantiates the first part of the claim. The document also discusses immunogenicity and compares antibody responses, supporting the link between higher HA content and greater immunogenicity, thus supporting the claim as a whole.",
+      "original_relevance": "This quote specifies that each component of Flublok contains 45 mcg of hemagglutinin (HA) antigen, which is three times the standard 15 mcg per component in standard-dose flu vaccines."
+    }
+  ],
+  "new_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "The vaccine (Flublok used in this study consisted of puri- ed hemagglutinin (HA) proteins produced in insect cells using baculo virus expression system as previously described [9]. The comb in ant HA protein is not cleaved in insect cells and is fer red to as rHA0.",
+      "relevance_explanation": "This quote describes the composition of Flublok, specifically noting that it consists of purified hemagglutinin proteins, which is relevant to the claim about HA antigen content.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "Sodium dodecyl sulfate- olyacrylamide gel electrophoresis of the purified mono valent materials indicated that hemagglutinin constitutes at least 90% of he total protein.",
+      "relevance_explanation": "This quote provides evidence that the majority of the protein content in Flublok is hemagglutinin, supporting the claim that Flublok is a high-HA-content vaccine.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Flublok induced serum HAI antibody responses to all three components of the accine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vac- i nation geometric mean titers were substantially higher for all hree components in Flublok than in placebo recipients (P < .001 or all comparisons).",
+      "relevance_explanation": "This quote supports the claim that Flublok's higher HA content is linked to greater immunogenicity, as evidenced by higher antibody titers compared to placebo.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

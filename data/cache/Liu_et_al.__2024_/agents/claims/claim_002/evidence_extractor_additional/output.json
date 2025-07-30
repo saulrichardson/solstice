@@ -1,0 +1,53 @@
+{
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "document": {
+    "pdf_name": "Liu_et_al.__2024_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Egg grown A (H3 N2) viruses were propagated in 10 day old embryonated chicken eggs, cell grown A (H3 N2) viruses were propagated in stably trans fec ted MDCK cells with c",
+      "relevance_explanation": "This quote describes the use of eggs and cell cultures for propagating influenza viruses, which is the context in which adaptive mutations can occur during vaccine production, supporting the claim about the potential for mutations.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "the antibody \u201cGMT egg cell titer ratio\u201d as a proxy to quantify the extent of difference in antibody responses to egg- versus year 1, a total of 26 breakthrough infection cases were identified with",
+      "relevance_explanation": "The use of the 'GMT egg cell titer ratio' as a measure indicates that there are antigenic differences between egg- and cell-derived viruses, which can arise from mutations during production, thus supporting the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "participants had GMT egg cell ratio \u22654 to A (H3 N2) and B/Victoria viruses, suggesting ahigh prevalence of pre existing neutralizing antibodies targeting HA egg adapted epi to pes in this highly vaccinated HCP population. After vaccination, in both age groups, the two egg- based vaccines generally reinforced the neutralizing antibody responses to egg adapted epi to pes as evidenced by an increased trend in the proportion of participants with GMT egg cell titer ratio \u22654.",
+      "relevance_explanation": "This quote shows that egg-based vaccines can reinforce immune responses to egg-adapted epitopes, which are the result of mutations that occur during egg-based production, supporting the claim that such mutations can affect vaccine effectiveness.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_4",
+      "quote": "epi to pes could be preferentially boosted from repeat vaccination with egg based vaccines 3 The potential of non egg based vaccines to miti",
+      "relevance_explanation": "This statement suggests that repeated use of egg-based vaccines can preferentially boost responses to egg-adapted epitopes, which are created by mutations during production, thus supporting the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": "Treanor_et_al.__2011_",
+  "verification_stats": {
+    "total_extracted": 3,
+    "verified": 1,
+    "rejected": 2,
+    "verification_rate": 0.3333333333333333
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "The majority of influenza A viruses detected in this study were H3N2 viruses that represented a substantial antigenic mismatch with the vaccine. However, even under these circumstances, Flublok had significant protective efficacy against culture confirmed influenza illness, including those meeting the CDC-ILI case definition.",
+      "supports_claim": true,
+      "explanation": "A very close version of the quote appears on page 5: 'Consistent with the results of national surveillance in the US during the 2007-2008 season [17], the majority of influenza A viruses detected in this study were H3N2 viruses that represented a substantial antigenic mismatch with the vaccine. However, even under these circumstances, Flublok had significant protective efficacy against culture confirmed influenza illness, including those meeting the CDC-ILI case definition.' The wording is nearly identical to the quote to verify, with only minor differences in punctuation and phrasing.. The quote directly supports the claim. It states that despite a substantial antigenic mismatch (i.e., the vaccine did not match the circulating strains well), the recombinant vaccine Flublok still provided significant protective efficacy against confirmed influenza illness. This demonstrates cross-protection and suggests a broader immune response, as the vaccine was effective even in a mismatch season.",
+      "presence_explanation": "A very close version of the quote appears on page 5: 'Consistent with the results of national surveillance in the US during the 2007-2008 season [17], the majority of influenza A viruses detected in this study were H3N2 viruses that represented a substantial antigenic mismatch with the vaccine. However, even under these circumstances, Flublok had significant protective efficacy against culture confirmed influenza illness, including those meeting the CDC-ILI case definition.' The wording is nearly identical to the quote to verify, with only minor differences in punctuation and phrasing.",
+      "support_explanation": "The quote directly supports the claim. It states that despite a substantial antigenic mismatch (i.e., the vaccine did not match the circulating strains well), the recombinant vaccine Flublok still provided significant protective efficacy against confirmed influenza illness. This demonstrates cross-protection and suggests a broader immune response, as the vaccine was effective even in a mismatch season.",
+      "original_relevance": "This quote directly supports the claim by stating that the recombinant vaccine (Flublok) provided significant protection even when there was a mismatch between the vaccine and circulating strains, indicating cross-protection and a broader immune response."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": 2,
+      "quote": "Flublok induced serum HAI antibody responses to all three components of the vaccine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vaccination geometric mean titers were substantially higher for all three components in Flublok than in placebo recipients (P < .001 for all comparisons).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote shows that recombinant technology (Flublok) induces strong immune responses to multiple influenza strains, supporting the idea of a broader immune response."
+    },
+    {
+      "id": 3,
+      "quote": "The results of the current study support the utility of insect cells for the production of well tolerated and effective vaccines for seasonal influenza.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote affirms the effectiveness of recombinant technology (using insect cells), which is foundational to the claim that such technology can provide broader and potentially cross-protective immune responses."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

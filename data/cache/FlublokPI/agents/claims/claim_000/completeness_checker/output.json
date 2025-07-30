@@ -1,51 +1,33 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok Quadrivalent is approved for adults 18 years and older.",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "document": "FlublokPI",
   "additional_evidence_check": {
     "checked_for_more": true,
     "found_additional": true,
-    "additional_count": 3
+    "additional_count": 2
   },
   "completeness_stats": {
-    "existing_evidence": 3,
-    "new_evidence_found": 3,
-    "total_evidence": 6
+    "existing_evidence": 1,
+    "new_evidence_found": 2,
+    "total_evidence": 3
   },
   "verified_evidence": [
     {
-      "id": 1,
-      "quote": "Flublok is approved for use in persons 18 years of age and older. (1)",
-      "supports_claim": true,
-      "explanation": "The quote 'Flublok is approved for use in persons 18 years of age and older. (1)' appears almost verbatim in the document on page 1 under the section DOSAGE FORMS AND ADMINISTRATION.. The quote explicitly states that Flublok is approved for use in persons 18 years of age and older, which directly supports the claim that Flublok Quadrivalent is approved for adults 18 years and older.",
-      "presence_explanation": "The quote 'Flublok is approved for use in persons 18 years of age and older. (1)' appears almost verbatim in the document on page 1 under the section DOSAGE FORMS AND ADMINISTRATION.",
-      "support_explanation": "The quote explicitly states that Flublok is approved for use in persons 18 years of age and older, which directly supports the claim that Flublok Quadrivalent is approved for adults 18 years and older.",
-      "original_relevance": "This quote explicitly states that Flublok is approved for use in persons 18 years of age and older, directly supporting the claim."
-    },
-    {
       "id": 2,
-      "quote": "Flublok quad rival ent has been administered to and safety data collected from 4328 adults 0 years of age and older (Study 61) and 998 adults 18-49 years of age (Study 72).",
+      "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
       "supports_claim": true,
-      "explanation": "The quote is found on page 4 of the document, stating: 'Flublok quad rival ent has been administered to and safety data collected from 4328 adults 0 years of age and older (Study 61) and 998 adults 18-49 years of age (Study 72).' The wording is slightly spaced and hyphenation is inconsistent ('quad rival ent' instead of 'quadrivalent'), but the core content and numbers match exactly.. The quote explicitly states that Flublok Quadrivalent has been administered to adults 18 years and older (including a specific study with 998 adults aged 18-49 and another with 4328 adults 0 years and older), which directly supports the claim that Flublok Quadrivalent is approved for adults 18 years and older.",
-      "presence_explanation": "The quote is found on page 4 of the document, stating: 'Flublok quad rival ent has been administered to and safety data collected from 4328 adults 0 years of age and older (Study 61) and 998 adults 18-49 years of age (Study 72).' The wording is slightly spaced and hyphenation is inconsistent ('quad rival ent' instead of 'quadrivalent'), but the core content and numbers match exactly.",
-      "support_explanation": "The quote explicitly states that Flublok Quadrivalent has been administered to adults 18 years and older (including a specific study with 998 adults aged 18-49 and another with 4328 adults 0 years and older), which directly supports the claim that Flublok Quadrivalent is approved for adults 18 years and older.",
-      "original_relevance": "This quote indicates that Flublok Quadrivalent has been administered to adults 18 years and older, supporting its approval for this age group."
-    },
-    {
-      "id": 3,
-      "quote": "Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quad rival ent or a Comparator in activated influenza vaccine (Fluarix\u00ae Quad rival ent, manufactured by Glaxo smith kline). The safety analysis population included 998 recipients of Flublok Quad rival ent and 332 Comparator vaccine recipients.",
-      "supports_claim": true,
-      "explanation": "The quote is found on page 3 of the document: 'Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quad rival ent or a Comparator in activated influenza vaccine (Fluarix\u00ae Quad rival ent, manufactured by Glaxo smith kline). The safety analysis population included 998 recipients of Flublok Quad rival ent and 332 Comparator vaccine recipients.' The wording is slightly spaced and hyphenation is inconsistent (e.g., 'Quad rival ent' instead of 'Quadrivalent'), but the core content matches exactly.. The quote explicitly states that Study 7 enrolled adults aged 18 through 49 years who received Flublok Quadrivalent, demonstrating clinical use in adults 18 years and older. This supports the claim that Flublok Quadrivalent is approved for adults 18 years and older by showing clinical trial enrollment in this age group, which is a basis for approval.",
-      "presence_explanation": "The quote is found on page 3 of the document: 'Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quad rival ent or a Comparator in activated influenza vaccine (Fluarix\u00ae Quad rival ent, manufactured by Glaxo smith kline). The safety analysis population included 998 recipients of Flublok Quad rival ent and 332 Comparator vaccine recipients.' The wording is slightly spaced and hyphenation is inconsistent (e.g., 'Quad rival ent' instead of 'Quadrivalent'), but the core content matches exactly.",
-      "support_explanation": "The quote explicitly states that Study 7 enrolled adults aged 18 through 49 years who received Flublok Quadrivalent, demonstrating clinical use in adults 18 years and older. This supports the claim that Flublok Quadrivalent is approved for adults 18 years and older by showing clinical trial enrollment in this age group, which is a basis for approval.",
-      "original_relevance": "This quote shows clinical study enrollment of adults 18 through 49 years receiving Flublok Quadrivalent, supporting its use and approval in adults 18 years and older."
+      "explanation": "A nearly identical quote appears in the document: 'For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' The wording and content match the quote to verify, with only minor formatting differences.. The quote directly lists the specific influenza virus strains included in Flublok for the 2024-2025 season, which are the strains selected by health authorities (WHO and FDA) for that season. This demonstrates that Flublok is formulated to match the selected strains, supporting the claim that it ensures an identical antigenic match with WHO- and FDA-selected flu strains.",
+      "presence_explanation": "A nearly identical quote appears in the document: 'For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' The wording and content match the quote to verify, with only minor formatting differences.",
+      "support_explanation": "The quote directly lists the specific influenza virus strains included in Flublok for the 2024-2025 season, which are the strains selected by health authorities (WHO and FDA) for that season. This demonstrates that Flublok is formulated to match the selected strains, supporting the claim that it ensures an identical antigenic match with WHO- and FDA-selected flu strains.",
+      "original_relevance": "This quote specifies that Flublok is formulated to contain hemagglutinin from the exact strains selected for the 2024-2025 season, demonstrating that it matches the strains chosen by health authorities."
     }
   ],
   "new_evidence": [
     {
       "id": "comp_1",
-      "quote": "Flublok is approved for use in persons 18 years of age and older. (1)",
-      "relevance_explanation": "This quote explicitly states the approval age for Flublok, confirming it is for persons 18 years and older.",
+      "quote": "Flublok contains recombinant Ha proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine.",
+      "relevance_explanation": "This quote directly states that Flublok contains the hemagglutinin proteins from the three strains specified by health authorities (such as WHO and FDA), supporting the claim that it ensures an identical antigenic match with the selected flu strains.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -54,18 +36,8 @@
     },
     {
       "id": "comp_2",
-      "quote": "Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quad rival ent or a Comparator in activated influenza vaccine (Fluarix\u00ae Quad rival ent, manufactured by Glaxo smith kline). The safety analysis population included 998 recipients of Flublok Quad rival ent and 332 Comparator vaccine recipients.",
-      "relevance_explanation": "This quote shows that Flublok Quadrivalent was studied and administered to adults aged 18 through 49, supporting its approval for adults 18 years and older.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    },
-    {
-      "id": "comp_3",
-      "quote": "Flublok quad rival ent has been administered to and safety data collected from 4328 adults 0 years of age and older (Study 61) and 998 adults 18-49 years of age (Study 72).",
-      "relevance_explanation": "This quote provides data on the administration of Flublok Quadrivalent to adults 18 years and older, supporting its approved use in this age group.",
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements.",
+      "relevance_explanation": "This quote indicates that Flublok is manufactured to meet the official standards set by the USPHS, which are based on the strains selected by WHO and FDA, supporting the claim of an identical antigenic match.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -73,5 +45,5 @@
       }
     }
   ],
-  "model_used": "gpt-4.1-mini"
+  "model_used": "gpt-4.1"
 }

@@ -1,0 +1,33 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": {
+    "pdf_name": "Hsiao_et_al.__2023_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 2
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Quad rival ent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "relevance_explanation": "This quote supports the claim by explaining that recombinant vaccines are not susceptible to antigenic drift during manufacturing, which is a key mechanism by which vaccine mismatch occurs. This property could lead to broader immune responses and potential cross-protection in mismatch seasons.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "the recombinant hemagglutinin protein that is genetically ident i cal to that in the selected strain 5 The vaccine also contains three times the amount of he mag glut in in protein as standard dose vaccines, an increased level that has been correlated with",
+      "relevance_explanation": "This quote highlights that the recombinant vaccine uses a hemagglutinin protein genetically identical to the selected strain and at a higher dose, which is associated with improved immune responses, supporting the idea of broader and potentially cross-protective immunity.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

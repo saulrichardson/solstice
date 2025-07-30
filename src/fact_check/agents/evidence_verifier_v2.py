@@ -58,7 +58,10 @@ class EvidenceVerifierV2(BaseAgent):
         Returns:
             Dictionary containing verified and rejected evidence
         """
-        logger.info(f"Verifying evidence for {self.claim_id}")
+        logger.info(f"\n{'='*60}")
+        logger.info(f"EVIDENCE VERIFIER V2: Starting for claim {self.claim_id}")
+        logger.info(f"Document: {self.pdf_name}")
+        logger.info(f"{'='*60}")
         
         # Find the appropriate extractor output
         extractor_path = None
@@ -67,10 +70,13 @@ class EvidenceVerifierV2(BaseAgent):
         # Check if we're running as additional verifier
         if "additional" in str(self.agent_dir):
             extractor_path = base_claim_dir / "evidence_extractor_additional" / "output.json"
-            logger.info("  Using additional evidence from completeness checker")
+            logger.info("\nRunning as ADDITIONAL verifier")
+            logger.info(f"Using additional evidence from: {extractor_path}")
         else:
             # Standard verification - use main extractor output
             extractor_path = base_claim_dir / "evidence_extractor" / "output.json"
+            logger.info("\nRunning as MAIN verifier")
+            logger.info(f"Using extracted evidence from: {extractor_path}")
         
         extractor_data = self.load_json(extractor_path)
         
@@ -85,16 +91,23 @@ class EvidenceVerifierV2(BaseAgent):
         if not claim:
             raise AgentError("No claim provided in config")
         
+        logger.info(f"\nClaim being verified: '{claim}'")
+        
         # Process each extracted quote
         verified_evidence = []
         rejected_evidence = []
         
         extracted_quotes = extractor_data.get("extracted_evidence", [])
-        logger.info(f"Verifying {len(extracted_quotes)} extracted quotes")
+        logger.info(f"\nFound {len(extracted_quotes)} quotes to verify")
+        logger.info(f"Using model: {self.llm_client.model}")
         
-        for quote_data in extracted_quotes:
+        for i, quote_data in enumerate(extracted_quotes, 1):
             quote = quote_data.get("quote", "")
             relevance_explanation = quote_data.get("relevance_explanation", "")
+            
+            logger.info(f"\nVerifying quote {i}/{len(extracted_quotes)}:")
+            logger.info(f"  Quote: '{quote[:100]}...'")
+            logger.info(f"  Original relevance: {relevance_explanation[:100]}...")
             
             # Verify both existence and applicability
             verification = await self._verify_evidence(
@@ -105,6 +118,8 @@ class EvidenceVerifierV2(BaseAgent):
             )
             
             if verification["keep"]:
+                logger.info(f"  ✓ VERIFIED: Quote supports claim")
+                logger.info(f"    Explanation: {verification['explanation'][:100]}...")
                 verified_evidence.append({
                     "id": quote_data.get("id"),
                     "quote": quote,  # Use original quote
@@ -115,6 +130,7 @@ class EvidenceVerifierV2(BaseAgent):
                     "original_relevance": relevance_explanation
                 })
             else:
+                logger.info(f"  ✗ REJECTED: {verification['reason']}")
                 rejected_evidence.append({
                     "id": quote_data.get("id"),
                     "quote": quote,
@@ -137,10 +153,24 @@ class EvidenceVerifierV2(BaseAgent):
             "model_used": self.llm_client.model
         }
         
-        logger.info(
-            f"Verified {len(verified_evidence)} of {len(extracted_quotes)} quotes "
-            f"({output['verification_stats']['verification_rate']:.1%})"
-        )
+        logger.info(f"\nVerification Results:")
+        logger.info(f"  - Total quotes processed: {len(extracted_quotes)}")
+        logger.info(f"  - Verified (supports claim): {len(verified_evidence)}")
+        logger.info(f"  - Rejected: {len(rejected_evidence)}")
+        logger.info(f"  - Verification rate: {output['verification_stats']['verification_rate']:.1%}")
+        
+        if rejected_evidence:
+            logger.info("\nRejection reasons:")
+            reason_counts = {}
+            for rej in rejected_evidence:
+                reason = rej['reason']
+                reason_counts[reason] = reason_counts.get(reason, 0) + 1
+            for reason, count in reason_counts.items():
+                logger.info(f"  - {reason}: {count}")
+        
+        logger.info(f"\n{'='*60}")
+        logger.info(f"EVIDENCE VERIFIER V2: Completed for claim {self.claim_id}")
+        logger.info(f"{'='*60}\n")
         
         return output
     
@@ -166,16 +196,19 @@ QUOTE TO VERIFY: "{quote}"
 ORIGINAL RELEVANCE EXPLANATION: {relevance_explanation}
 
 Your task:
-1. Find this quote (or a very similar version) in the document below
+1. Find this quote in the document below
 2. Determine if it genuinely supports the claim
 
-IMPORTANT: Be flexible when matching quotes:
-- Minor wording differences are acceptable (e.g., "30 percent" vs "30%")
-- Different punctuation or capitalization is fine
-- Small grammatical variations are okay
-- Missing or added articles (a, an, the) are acceptable
-- The quote might be split across lines or have different spacing
-- If you find the core content even with variations, consider it found
+IMPORTANT context about quote matching:
+- The quote may have been cleaned of OCR artifacts by the extractor
+- Look for the same factual content, not character-perfect matches
+- The extractor corrects mechanical errors like:
+  * Split words ("immunogen i city" → "immunogenicity") 
+  * Broken spacing ("fromFlublok" → "from Flublok")
+  * OCR character errors ("0" vs "O", "l" vs "I")
+- Focus on semantic equivalence - does it convey the same information?
+- The quote should contain all the same facts, numbers, and technical content
+- Consider it found if the meaning and data are preserved
 
 For supporting the claim, accept quotes that:
 - Directly state what the claim asserts, OR
@@ -192,12 +225,16 @@ Return your response as a JSON object:
     "quote_found": true/false,
     "found_explanation": "explanation of whether/where the quote appears (be specific about any differences found)",
     "supports_claim": true/false,
-    "support_explanation": "explanation of why it does/doesn't support the claim"
+    "support_explanation": "explanation of why it does/doesn't support the claim (if quote not found, state this clearly)"
 }}
+
+IMPORTANT: If quote_found is false, your support_explanation MUST mention that the quote was not found in the document.
 
 FULL DOCUMENT:
 {full_document}"""
 
+        logger.debug(f"\nCalling LLM to verify quote...")
+        
         try:
             # Use the robust parser with retry
             result = await LLMResponseParser.parse_with_retry(
@@ -229,6 +266,7 @@ FULL DOCUMENT:
             
         except ValueError as e:
             logger.error(f"Failed to verify quote after retries: {e}")
+            logger.error(f"Exception type: {type(e).__name__}")
             # Default to rejecting on error
             return {
                 "keep": False,

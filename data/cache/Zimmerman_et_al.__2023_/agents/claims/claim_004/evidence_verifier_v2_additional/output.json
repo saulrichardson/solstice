@@ -1,0 +1,33 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "Zimmerman_et_al.__2023_",
+  "verification_stats": {
+    "total_extracted": 3,
+    "verified": 0,
+    "rejected": 3,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Conclusions: Over all adults, both RIV4 and SD-IIV4 were effective against influenza hospitalization, RIV4 providing better protection compared with SD-IIV4 overall, for females, younger adults, and twith no high risk conditions.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote directly states that RIV4 (the higher-dose recombinant flu vaccine) provided better protection compared with SD-IIV4 (the standard-dose egg-based vaccine), supporting the claim that RIV4 induces a more robust antibody response."
+    },
+    {
+      "id": "comp_2",
+      "quote": "Adjusted VEs for RIV4 for younger adults were significant across all subgroups, whereas, VE for SD-IIV4 was significant for males only.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote shows that the recombinant vaccine (RIV4) was effective in more subgroups than the standard-dose egg-based vaccine, suggesting a more robust immune response."
+    },
+    {
+      "id": "comp_3",
+      "quote": "all adults, and supports its superior effectiveness over SD IIV4 for adults 18\u201364 years of age.",
+      "reason": "does not support claim",
+      "original_explanation": "This statement explicitly claims superior effectiveness of the recombinant vaccine over the standard-dose egg-based vaccine in adults 18\u201364, which supports the claim of a more robust antibody response."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

@@ -1,0 +1,26 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": "FlublokPI",
+  "supporting_evidence": [
+    {
+      "quote": "An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC- ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0).",
+      "explanation": "The quote appears on page 4: 'An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC- ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0).' The wording is nearly identical to the quote to verify, with only minor formatting differences.. The quote directly supports the claim. It states that Flublok (a recombinant vaccine) showed 44.8% efficacy against all influenza strains, regardless of whether the strains matched the vaccine antigens. This demonstrates cross-protection, which is the ability to protect even when there is a mismatch between the vaccine and circulating strains. This supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season."
+    },
+    {
+      "quote": "CDC surveillance data indicated that the majority of influenza A/H3 N2 wild type viruses were antigenic ally distinct whereas influenzaA/H1 N1 and type B viruses were antigenic ally similar to vaccine antigens during the 2014-2015 season. Study 6 met the pre specified success criterion for the primary endpoint (lower limit of the 2 sided 95% CI of vaccine efficacy for Flublok Quad rival ent relative to Comparator should be not less than 20%)",
+      "explanation": "A very similar version of the quote appears on page 4: 'CDC surveillance data indicated that the majority of influenza A/H3 N2 wild type viruses were antigenic ally distinct whereas influenzaA/H1 N1 and type B viruses were antigenic ally similar to vaccine antigens during the 2014-2015 season. Study 6 met the pre specified success criterion for the primary endpoint (lower limit of the 2 sided 95% CI of vaccine efficacy for Flublok Quad rival ent relative to Comparator should be not less than 20%)'. The wording and content match the quote to verify, with only minor formatting and spacing differences.. The quote directly states that during a season when the predominant circulating H3N2 viruses were antigenically distinct (i.e., a mismatch with the vaccine), Flublok Quadrivalent still met its pre-specified efficacy criterion. This supports the claim that recombinant technology (as used in Flublok) can lead to a broader immune response that may provide cross-protection, even in a mismatch season."
+    }
+  ],
+  "evidence_summary": {
+    "total_evidence_found": 2,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 2
+    },
+    "rejected_count": 0
+  }
+}

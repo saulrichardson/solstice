@@ -58,7 +58,7 @@ class TextProcessingService:
         Args:
             processors: Optional list of (name, processor_func) tuples for testing
         """
-        if hasattr(self, '_initialized') and processors is None:
+        if getattr(self, '_initialized', False) and processors is None:
             return
             
         self._initialized = True

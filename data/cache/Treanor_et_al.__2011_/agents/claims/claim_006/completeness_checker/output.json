@@ -1,0 +1,57 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": "Treanor_et_al.__2011_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 1
+  },
+  "completeness_stats": {
+    "existing_evidence": 3,
+    "new_evidence_found": 1,
+    "total_evidence": 4
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "The vaccine (Flublok used in this study consisted of puri- ed hemagglutinin (HA) proteins produced in insect cells using baculo virus expression system as previously described [9].",
+      "supports_claim": true,
+      "explanation": "A very similar version of the quote appears on page 2: 'The vaccine (Flublok used in this study consisted of puri- ed hemagglutinin (HA) proteins produced in insect cells using baculo virus expression system as previously described [9].' The only differences are minor typographical errors (e.g., 'puri- ed' instead of 'purified', 'baculo virus' instead of 'baculovirus'), but the core content is identical.. The quote directly states that Flublok is produced by expressing hemagglutinin (HA) proteins in insect cells using a baculovirus expression system. This matches the claim that Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS). The quote provides explicit evidence for the method of production, supporting the claim without requiring inference.",
+      "presence_explanation": "A very similar version of the quote appears on page 2: 'The vaccine (Flublok used in this study consisted of puri- ed hemagglutinin (HA) proteins produced in insect cells using baculo virus expression system as previously described [9].' The only differences are minor typographical errors (e.g., 'puri- ed' instead of 'purified', 'baculo virus' instead of 'baculovirus'), but the core content is identical.",
+      "support_explanation": "The quote directly states that Flublok is produced by expressing hemagglutinin (HA) proteins in insect cells using a baculovirus expression system. This matches the claim that Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS). The quote provides explicit evidence for the method of production, supporting the claim without requiring inference.",
+      "original_relevance": "This quote directly states that Flublok is produced by expressing hemagglutinin (HA) proteins in insect cells using a baculovirus expression system, which matches the claim about the novel production platform."
+    },
+    {
+      "id": 2,
+      "quote": "Genes were cloned into baculo virus using RT-PCR from the same CDC- eri ved vaccine seed viruses used for the production of licensed nactivated influenza vaccine for that year.",
+      "supports_claim": true,
+      "explanation": "A very similar version of the quote appears on page 2: 'Genes were cloned into baculo virus using RT-PCR from the same CDC- eri ved vaccine seed viruses used for the production of licensed nactivated influenza vaccine for that year.' The wording is nearly identical to the quote to verify, with only minor typographical differences (e.g., 'eri ved' instead of 'derived', 'nactivated' instead of 'inactivated').. The quote directly states that genes were cloned into baculovirus, which is a key step in the baculovirus expression vector system (BEVS) described in the claim. This supports the claim that Flublok is produced using a novel platform where recombinant HA is expressed in insect cells using BEVS, as the process of cloning genes into baculovirus is central to this technology.",
+      "presence_explanation": "A very similar version of the quote appears on page 2: 'Genes were cloned into baculo virus using RT-PCR from the same CDC- eri ved vaccine seed viruses used for the production of licensed nactivated influenza vaccine for that year.' The wording is nearly identical to the quote to verify, with only minor typographical differences (e.g., 'eri ved' instead of 'derived', 'nactivated' instead of 'inactivated').",
+      "support_explanation": "The quote directly states that genes were cloned into baculovirus, which is a key step in the baculovirus expression vector system (BEVS) described in the claim. This supports the claim that Flublok is produced using a novel platform where recombinant HA is expressed in insect cells using BEVS, as the process of cloning genes into baculovirus is central to this technology.",
+      "original_relevance": "This quote provides evidence that the production process involves cloning genes into baculovirus, which is a key step in the baculovirus expression vector system (BEVS) described in the claim."
+    },
+    {
+      "id": 3,
+      "quote": "Expression of proteins in insect cells using recombinant baculo virus expression system has been shown to be a promising alternative to egg-based vaccine production.",
+      "supports_claim": true,
+      "explanation": "A very similar version of the quote appears on page 1: 'Expression of proteins in insect cells using recombinant baculo...' (the line is broken, but the context is clear). The full intended sentence is reconstructed from the text: 'Expression of proteins in insect cells using recombinant baculovirus expression system has been shown to be a promising alternative to egg-based vaccine production.' The wording and meaning are essentially identical to the quote to verify.. The quote directly supports the claim by stating that proteins (such as hemagglutinin, HA) are expressed in insect cells using a recombinant baculovirus expression system, which is the core of the BEVS platform. This matches the claim that Flublok is produced using a novel platform where recombinant HA is expressed in insect cells using BEVS. The quote also frames this as an alternative to egg-based production, reinforcing the novelty and difference of the platform.",
+      "presence_explanation": "A very similar version of the quote appears on page 1: 'Expression of proteins in insect cells using recombinant baculo...' (the line is broken, but the context is clear). The full intended sentence is reconstructed from the text: 'Expression of proteins in insect cells using recombinant baculovirus expression system has been shown to be a promising alternative to egg-based vaccine production.' The wording and meaning are essentially identical to the quote to verify.",
+      "support_explanation": "The quote directly supports the claim by stating that proteins (such as hemagglutinin, HA) are expressed in insect cells using a recombinant baculovirus expression system, which is the core of the BEVS platform. This matches the claim that Flublok is produced using a novel platform where recombinant HA is expressed in insect cells using BEVS. The quote also frames this as an alternative to egg-based production, reinforcing the novelty and difference of the platform.",
+      "original_relevance": "This quote affirms that the production platform for Flublok involves expressing proteins in insect cells using a recombinant baculovirus system, supporting the claim of a novel BEVS-based platform."
+    }
+  ],
+  "new_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Among the available expression technologies, recombinant baculo virus is especially well suited for production of influenza vaccine because the rapidity with which genes can be cloned and inserted into this vector facilitates updating the vaccine at regular intervals. Expression of the HA protein in insect cells using recombinant baculo virus also avoids the need to work with potentially pathogenic, live influenza viruses, and the attendant bio containment issues that would be a particular concern for production of pandemic vaccines [7].",
+      "relevance_explanation": "This quote directly describes the use of recombinant baculovirus to express hemagglutinin (HA) in insect cells for influenza vaccine production, supporting the claim about Flublok's novel production platform.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

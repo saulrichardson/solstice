@@ -1,0 +1,44 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": {
+    "pdf_name": "Liu_et_al.__2024_",
+    "source_pdf": "data/clinical_files/Liu et al. (2024).pdf",
+    "total_pages": 13,
+    "total_blocks": 124,
+    "total_characters": 39807
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 5,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.",
+      "relevance_explanation": "This shows that the recombinant vaccine (RIV4) generated a stronger immune response to a cell-based (i.e., more wild-type-like) H3N2 virus, supporting the idea that recombinant technology can broaden the immune response beyond egg-adapted strains."
+    },
+    {
+      "id": 2,
+      "quote": "Repeat vaccination with egg based influenza vaccines could preferentially boost antibodies targeting the egg adapted epi topes and reduce immuno- gen i city to circulating viruses.",
+      "relevance_explanation": "This statement contrasts egg-based vaccines with non-egg-based (including recombinant) vaccines, suggesting that recombinant technology avoids the narrowing of immune response seen with egg-based vaccines, thus supporting broader immunity."
+    },
+    {
+      "id": 3,
+      "quote": "In contrast, among RIV4 and ccIIV4 recipients, the proportion of participants with GMT egg cell titer ratio \u22654 did not increase after vaccination, suggesting that non-egg based vaccines do not preferentially boost antibodies to egg-adapted epitopes.",
+      "relevance_explanation": "This indicates that recombinant (and cell-based) vaccines do not focus the immune response on egg-adapted epitopes, implying a broader response that could provide cross-protection."
+    },
+    {
+      "id": 4,
+      "quote": "Comparing pre- and 1 month post vaccination, A (H3 N2) HA stalk binding antibodies were significantly boosted in ccIIV4-RIV4, RIV4-RIV4, IIV4-ccIIV4, and IIV4-RIV4 arms, while A (H1 N1) pdm09 HA stalk binding antibodies were also significantly boosted in ccIIV4-ccIIV4 and RIV4-ccIIV4 arms.",
+      "relevance_explanation": "Boosting of HA stalk antibodies, which are more conserved and cross-reactive, by recombinant vaccination regimens supports the claim that recombinant technology leads to a broader immune response."
+    },
+    {
+      "id": 5,
+      "quote": "RIV4 vaccination not only improved the quality of the functional neutralizing antibody response to A (H3 N2) virus, it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies.",
+      "relevance_explanation": "This demonstrates that recombinant vaccine (RIV4) enhances both the quality and quantity of antibodies to cell-based (wild-type-like) antigens, supporting broader and potentially cross-protective immunity."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

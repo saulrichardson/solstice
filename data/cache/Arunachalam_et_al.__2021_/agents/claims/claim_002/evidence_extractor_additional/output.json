@@ -1,0 +1,33 @@
+{
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "document": {
+    "pdf_name": "Arunachalam_et_al.__2021_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 2
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Differences in HA glycosylation between the vaccine strains and circulating strains are thought to have contributed to this reduced vaccine effectiveness 26.",
+      "relevance_explanation": "This quote supports the claim by indicating that differences (which can arise during production in eggs or cells) in the glycosylation of hemagglutinin (HA) between vaccine strains and circulating strains can reduce vaccine effectiveness, implying that mutations or changes during production can be detrimental.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "the circulating A/H3 N2 viruses were antigenic ally similar to the cell grown vaccine reference virus, egg propagation of the vaccine strains had led to loss of aglycosylation site and impaired antibody response to circulating viruses, consistent with previous reports 26.",
+      "relevance_explanation": "This quote directly links egg propagation (a production method) to the loss of a glycosylation site and impaired antibody response, supporting the claim that mutations or changes during production can reduce vaccine effectiveness.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

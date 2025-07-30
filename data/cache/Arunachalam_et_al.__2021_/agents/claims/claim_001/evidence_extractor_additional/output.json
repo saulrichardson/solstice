@@ -1,0 +1,53 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": {
+    "pdf_name": "Arunachalam_et_al.__2021_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Insect cell derived rHA (RIV4) has been studied extensively by various groups in both pre clinical models and humans. The rHA contained in RIV4 differs from that expressed in other systems in terms of specific structural features, the nature of the source material and the manufacturing process, which have an impact on certain aspects of vaccine safety and efficacy (Fig. 2).",
+      "relevance_explanation": "This quote highlights that RIV4 (Flublok) is distinct from other vaccines in its composition and manufacturing, which is relevant to the claim that it contains a higher HA antigen content and has different immunogenic properties.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "RIV4 elicited the most robust responses, with significantly higher T-cell and antibody levels than the other two vaccines. Authors postulated that simpler glycosylation of rHA and absence of other influenza viral proteins in RIV4 contributed to the observed robust immune response for RIV4 and emphasised the relevance of these features in determining vaccine efficacy and long term immunity 65.",
+      "relevance_explanation": "This quote directly supports the claim that RIV4 (Flublok) is linked to greater immunogenicity compared to standard-dose flu vaccines, referencing higher immune responses.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Portnoff et al.64 demonstrated that recombinant HA antigens (specifically for the H3 strain) produced using BEVS (as used for RIV4), induced significantly higher levels of broadly cross reactive antibodies against highly conserved regions of the HA head and stem than egg derived split vaccines 64.",
+      "relevance_explanation": "This quote provides evidence that the recombinant HA in RIV4 induces higher antibody responses than standard egg-derived vaccines, supporting the claim of greater immunogenicity.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_4",
+      "quote": "The post vaccination geometric mean fold rise against the two circulating viruses was twice as high for RIV4 as for HD-IIV3 or aIIV3.",
+      "relevance_explanation": "This quote provides direct comparative data showing that RIV4 (Flublok) produces a higher immune response than other flu vaccines, supporting the claim of greater immunogenicity.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

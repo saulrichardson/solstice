@@ -1,8 +1,6 @@
 """Box data model for layout detection."""
 
-from typing import Tuple
-
-# Pydantic v2
+from typing import Tuple, List, Optional
 from pydantic import BaseModel, Field, field_validator
 
 
@@ -29,6 +27,16 @@ class Box(BaseModel):
     page_index: int | None = Field(
         default=None,
         description="Zero-based index of the page the box belongs to (optional)",
+    )
+    
+    # Lineage tracking fields
+    source_ids: List[str] = Field(
+        default_factory=list,
+        description="IDs of boxes that were merged to create this box"
+    )
+    merge_reason: Optional[str] = Field(
+        default=None,
+        description="Reason for merging (e.g., 'overlap_2_boxes', 'expand_merge')"
     )
 
     # ------------------------------------------------------------------

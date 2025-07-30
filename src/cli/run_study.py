@@ -12,11 +12,15 @@ from src.fact_check.orchestrators import StudyOrchestrator
 
 
 def get_default_documents():
-    """Get list of PDF names from clinical_files directory (without .pdf extension)."""
-    clinical_dir = Path("data/clinical_files")
-    if clinical_dir.exists():
-        return [f.stem for f in clinical_dir.glob("*.pdf")]
-    return []
+    """Get list of document names from cache that have extracted content."""
+    cache_dir = Path("data/cache")
+    documents = []
+    if cache_dir.exists():
+        # Only include documents that have extracted content
+        for doc_dir in cache_dir.iterdir():
+            if doc_dir.is_dir() and (doc_dir / "extracted" / "content.json").exists():
+                documents.append(doc_dir.name)
+    return sorted(documents)
 
 
 def main():
@@ -28,15 +32,15 @@ def main():
     parser.add_argument(
         "--claims",
         dest="claims_file",
-        required=True,
-        help="Path to JSON file containing claims"
+        default="data/claims/Flublok_Claims.json",
+        help="Path to JSON file containing claims (default: data/claims/Flublok_Claims.json)"
     )
     
     parser.add_argument(
         "--documents",
         nargs="+",
         default=get_default_documents(),
-        help="List of PDF names to search (default: all documents in data/clinical_files)"
+        help="List of document names to search (default: all documents in cache with extracted content)"
     )
     
     parser.add_argument(

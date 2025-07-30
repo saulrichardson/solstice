@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": "Grohskopf_et_al.__2023_",
+  "verification_stats": {
+    "total_extracted": 4,
+    "verified": 0,
+    "rejected": 4,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": 1,
+      "quote": "This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote describes the production method of recombinant HA antigens using BEVS (Baculovirus Expression Vector System) in insect cells, which is necessary context for the claim."
+    },
+    {
+      "id": 2,
+      "quote": "Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with non adjuvant ed SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose in activated vaccines).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote establishes that recombinant HA vaccines (RIV) contain a higher dose of HA antigen, which is relevant to their immunogenicity and potential to induce higher levels of antibodies."
+    },
+    {
+      "id": 3,
+      "quote": "HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote supports the claim by stating that RIV (recombinant HA vaccine) has shown relative benefit compared to standard-dose egg-derived vaccines in some studies."
+    },
+    {
+      "id": 4,
+      "quote": "A retrospective analysis of relative effectiveness of RIV4 versus SD-IIV4 against influenza coded hospitalizations among Medicare beneficiaries during the 2019 20 season noted a relative effectiveness of 17% (95% CI: 9 24; certainty level: 3, low) (72).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides evidence that RIV4 (recombinant HA vaccine) was more effective than standard-dose egg-derived vaccines in a real-world setting, supporting the claim of superior immunogenicity."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

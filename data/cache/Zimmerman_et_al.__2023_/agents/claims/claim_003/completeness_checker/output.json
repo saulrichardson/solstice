@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": "Zimmerman_et_al.__2023_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 1
+  },
+  "completeness_stats": {
+    "existing_evidence": 0,
+    "new_evidence_found": 1,
+    "total_evidence": 1
+  },
+  "verified_evidence": [],
+  "new_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "because it is not subject to mutations to the A (H3 N2) glycosylation binding site that reduce the effectiveness of egg based vaccines.",
+      "relevance_explanation": "This quote supports the claim by explaining that recombinant technology avoids certain mutations that can limit the effectiveness of traditional (egg-based) vaccines, implying a broader and potentially more cross-protective immune response.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

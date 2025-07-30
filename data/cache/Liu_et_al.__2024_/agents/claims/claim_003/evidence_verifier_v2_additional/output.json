@@ -1,0 +1,40 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": "Liu_et_al.__2024_",
+  "verification_stats": {
+    "total_extracted": 3,
+    "verified": 2,
+    "rejected": 1,
+    "verification_rate": 0.6666666666666666
+  },
+  "verified_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4- ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating .../ ll l h d",
+      "supports_claim": true,
+      "explanation": "A very close version of the quote appears on page 1: 'In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4- ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating ...' The quote is truncated in the document, but the key content and structure match the quote to verify.. The quote directly states that repeat vaccination with recombinant (RIV4) or cell-based (ccIIV4) vaccines 'further improved antibody responses to circulating' viruses. This supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season, because it shows that these vaccine technologies enhance antibody responses to the actual circulating (not just vaccine-matched) viruses. The improvement in antibody responses implies a broader and potentially more cross-protective immune response.",
+      "presence_explanation": "A very close version of the quote appears on page 1: 'In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4- ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating ...' The quote is truncated in the document, but the key content and structure match the quote to verify.",
+      "support_explanation": "The quote directly states that repeat vaccination with recombinant (RIV4) or cell-based (ccIIV4) vaccines 'further improved antibody responses to circulating' viruses. This supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season, because it shows that these vaccine technologies enhance antibody responses to the actual circulating (not just vaccine-matched) viruses. The improvement in antibody responses implies a broader and potentially more cross-protective immune response.",
+      "original_relevance": "This quote shows that repeat vaccination with recombinant (RIV4) or cell-based (ccIIV4) vaccines improved antibody responses to circulating viruses, supporting the idea that recombinant technology can broaden immune responses and potentially provide cross-protection."
+    },
+    {
+      "id": "comp_2",
+      "quote": "Multiple seasons of non-eg based vaccination may be needed to redirect antibody responses from immune memory to egg adapted epi to pes and re-focus the immune response towards epi to pes on the circulating viruses to improve vaccine effective nes",
+      "supports_claim": true,
+      "explanation": "The quote appears almost verbatim on the first page of the document: 'Multiple seasons of non-eg based vaccination may be needed to redirect antibody responses from immune memory to egg adapted epi to pes and re-focus the immune response towards epi to pes on the circulating viruses to improve vaccine effective nes'. The only differences are minor typographical errors and spacing, but the core content is identical.. The quote directly supports the claim. It states that multiple seasons of non-egg-based (e.g., recombinant) vaccination may be needed to redirect antibody responses from egg-adapted epitopes (which are not always present on circulating viruses) to epitopes on the circulating viruses. This implies that non-egg-based vaccines can help refocus the immune response toward a broader set of viral epitopes, which is consistent with a broader and potentially more cross-protective immune response, especially in seasons where the vaccine and circulating strains are mismatched.",
+      "presence_explanation": "The quote appears almost verbatim on the first page of the document: 'Multiple seasons of non-eg based vaccination may be needed to redirect antibody responses from immune memory to egg adapted epi to pes and re-focus the immune response towards epi to pes on the circulating viruses to improve vaccine effective nes'. The only differences are minor typographical errors and spacing, but the core content is identical.",
+      "support_explanation": "The quote directly supports the claim. It states that multiple seasons of non-egg-based (e.g., recombinant) vaccination may be needed to redirect antibody responses from egg-adapted epitopes (which are not always present on circulating viruses) to epitopes on the circulating viruses. This implies that non-egg-based vaccines can help refocus the immune response toward a broader set of viral epitopes, which is consistent with a broader and potentially more cross-protective immune response, especially in seasons where the vaccine and circulating strains are mismatched.",
+      "original_relevance": "This statement suggests that non-egg-based vaccines, such as recombinant vaccines, can help refocus the immune response toward epitopes present on circulating viruses, which is consistent with a broader and more cross-protective immune response."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": "comp_3",
+      "quote": "The potential of non egg based vaccines to miti",
+      "reason": "does not support claim",
+      "original_explanation": "Although the sentence is cut off, it indicates that non-egg-based vaccines (including recombinant vaccines) have the potential to mitigate issues associated with egg adaptation, implying a broader and more relevant immune response."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

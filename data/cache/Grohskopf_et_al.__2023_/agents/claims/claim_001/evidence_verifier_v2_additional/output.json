@@ -1,0 +1,33 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Grohskopf_et_al.__2023_",
+  "verification_stats": {
+    "total_extracted": 2,
+    "verified": 2,
+    "rejected": 0,
+    "verification_rate": 1.0
+  },
+  "verified_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
+      "supports_claim": true,
+      "explanation": "A very close version of the quote appears on page 21: 'A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).' This is an exact match to the quote provided, with only minor formatting differences (spacing, line breaks).. The quote directly states that Flublok (RIV4) contains 45 \u00b5g of hemagglutinin (HA) per virus in a 0.5-mL dose. Standard-dose flu vaccines, as shown elsewhere in the document (e.g., page 19: 'Standard dose, nonadjuvanted IIV4 s contain 15 \u00b5g of HA per vaccine virus in a 0.5-mL dose'), contain 15 \u00b5g per virus. Therefore, Flublok contains 3 times the HA antigen content per strain compared to standard-dose vaccines, directly supporting the first part of the claim. The document also discusses that higher antigen content (as in RIV4 and HD-IIV4) has been linked to greater immunogenicity compared to standard-dose vaccines (see page 14: 'HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies...'). Thus, the quote, in context, supports the claim.",
+      "presence_explanation": "A very close version of the quote appears on page 21: 'A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).' This is an exact match to the quote provided, with only minor formatting differences (spacing, line breaks).",
+      "support_explanation": "The quote directly states that Flublok (RIV4) contains 45 \u00b5g of hemagglutinin (HA) per virus in a 0.5-mL dose. Standard-dose flu vaccines, as shown elsewhere in the document (e.g., page 19: 'Standard dose, nonadjuvanted IIV4 s contain 15 \u00b5g of HA per vaccine virus in a 0.5-mL dose'), contain 15 \u00b5g per virus. Therefore, Flublok contains 3 times the HA antigen content per strain compared to standard-dose vaccines, directly supporting the first part of the claim. The document also discusses that higher antigen content (as in RIV4 and HD-IIV4) has been linked to greater immunogenicity compared to standard-dose vaccines (see page 14: 'HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies...'). Thus, the quote, in context, supports the claim.",
+      "original_relevance": "This quote specifies that Flublok (RIV4) contains 45 \u00b5g of hemagglutinin (HA) per virus, which is three times the 15 \u00b5g per virus found in standard-dose flu vaccines, directly supporting the claim about antigen content."
+    },
+    {
+      "id": "comp_2",
+      "quote": "Standard dose, nonadjuvanted IIV4 s contain 15 \u00b5g of HA per vaccine virus in a 0.5-mL dose (7.5 \u00b5g of HA per vaccine virus in a 0.25-mL dose).",
+      "supports_claim": true,
+      "explanation": "The quote (or a very close version) appears on page 19: 'Standard dose, nonadjuvanted IIV4 s contain 15 \u00b5g of HA per vaccine virus in a 0.5-mL dose (7.5 \u00b5g of HA per vaccine virus in a 0.25-mL dose).' This matches the quote to verify, with only minor differences in spacing and punctuation.. The quote provides the HA content for standard-dose flu vaccines (15 \u00b5g per virus per 0.5 mL dose). The claim is that Flublok contains 3x the HA antigen of standard-dose flu vaccines. Elsewhere in the document (page 21), it is stated that Flublok (RIV4) contains 45 \u00b5g of HA per virus per 0.5 mL dose, which is 3 times the amount in standard-dose IIV4. Thus, this quote directly supports the first part of the claim by establishing the standard-dose baseline for comparison. The document also discusses that higher HA content is linked to greater immunogenicity, supporting the second part of the claim.",
+      "presence_explanation": "The quote (or a very close version) appears on page 19: 'Standard dose, nonadjuvanted IIV4 s contain 15 \u00b5g of HA per vaccine virus in a 0.5-mL dose (7.5 \u00b5g of HA per vaccine virus in a 0.25-mL dose).' This matches the quote to verify, with only minor differences in spacing and punctuation.",
+      "support_explanation": "The quote provides the HA content for standard-dose flu vaccines (15 \u00b5g per virus per 0.5 mL dose). The claim is that Flublok contains 3x the HA antigen of standard-dose flu vaccines. Elsewhere in the document (page 21), it is stated that Flublok (RIV4) contains 45 \u00b5g of HA per virus per 0.5 mL dose, which is 3 times the amount in standard-dose IIV4. Thus, this quote directly supports the first part of the claim by establishing the standard-dose baseline for comparison. The document also discusses that higher HA content is linked to greater immunogenicity, supporting the second part of the claim.",
+      "original_relevance": "This quote establishes the HA content of standard-dose flu vaccines, providing a direct comparison to the higher HA content in Flublok, supporting the claim of a 3x difference."
+    }
+  ],
+  "rejected_evidence": [],
+  "model_used": "gpt-4.1"
+}

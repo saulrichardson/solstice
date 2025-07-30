@@ -1,0 +1,46 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": "Arunachalam_et_al.__2021_",
+  "verification_stats": {
+    "total_extracted": 4,
+    "verified": 2,
+    "rejected": 2,
+    "verification_rate": 0.5
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "Portnoff et al.64 demonstrated that recombinant HA antigens (specifically for the H3 strain) produced using BEVS (as used for RIV4), induced significantly higher levels of broadly cross reactive antibodies against highly conserved regions of the HA head and stem compared to egg derived split vaccines 64.",
+      "supports_claim": true,
+      "explanation": "A very similar version of the quote appears on page 5: 'Portnoff et al.64 demonstrated that recombinant HA antigens (specifically for the H3 strain) produced using BEVS (as used for RIV4), induced significantly higher levels of broadly cross reactive antibodies against highly conserved regions of the HA head and stem compared to egg derived split vaccines 64.' The wording is nearly identical to the quote to verify, with only minor differences in punctuation and phrasing.. The quote directly supports the claim. It states that recombinant HA antigens produced using BEVS (the same system used for RIV4) induced significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of the HA head and stem compared to egg-derived split vaccines. This matches the claim's assertion about the superiority of BEVS-produced recombinant HA antigens in inducing broadly cross-reactive antibodies targeting conserved HA regions, compared to egg-derived vaccines.",
+      "presence_explanation": "A very similar version of the quote appears on page 5: 'Portnoff et al.64 demonstrated that recombinant HA antigens (specifically for the H3 strain) produced using BEVS (as used for RIV4), induced significantly higher levels of broadly cross reactive antibodies against highly conserved regions of the HA head and stem compared to egg derived split vaccines 64.' The wording is nearly identical to the quote to verify, with only minor differences in punctuation and phrasing.",
+      "support_explanation": "The quote directly supports the claim. It states that recombinant HA antigens produced using BEVS (the same system used for RIV4) induced significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of the HA head and stem compared to egg-derived split vaccines. This matches the claim's assertion about the superiority of BEVS-produced recombinant HA antigens in inducing broadly cross-reactive antibodies targeting conserved HA regions, compared to egg-derived vaccines.",
+      "original_relevance": "This quote directly states that recombinant HA antigens produced using BEVS induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared to egg-derived vaccines, which is the claim in question."
+    },
+    {
+      "id": 2,
+      "quote": "RIV4 has a unique ability to induce broadly cross reactive antibody responses to antigenic ally drifted A/H3 N2 viruses in humans.",
+      "supports_claim": true,
+      "explanation": "A very similar quote appears on page 5: 'RIV4 has a unique ability to induce broadly cross reactive antibody responses to antigenic ally drifted A/H3 N2 viruses in humans.' The wording is nearly identical to the quote to verify, with only minor differences in spacing and punctuation.. The quote directly states that RIV4 (a BEVS-produced recombinant HA vaccine) induces broadly cross-reactive antibody responses to antigenically drifted A/H3N2 viruses in humans. This supports the claim that BEVS-produced recombinant HA antigens induce higher levels of broadly cross-reactive antibodies compared to egg-derived vaccines, especially since the context in the document compares RIV4 to conventional (egg-derived) vaccines and highlights its superior cross-reactivity. While the quote does not explicitly mention 'compared with egg-derived vaccines,' the surrounding text and referenced studies (e.g., Belongia et al.) make this comparison, supporting the claim.",
+      "presence_explanation": "A very similar quote appears on page 5: 'RIV4 has a unique ability to induce broadly cross reactive antibody responses to antigenic ally drifted A/H3 N2 viruses in humans.' The wording is nearly identical to the quote to verify, with only minor differences in spacing and punctuation.",
+      "support_explanation": "The quote directly states that RIV4 (a BEVS-produced recombinant HA vaccine) induces broadly cross-reactive antibody responses to antigenically drifted A/H3N2 viruses in humans. This supports the claim that BEVS-produced recombinant HA antigens induce higher levels of broadly cross-reactive antibodies compared to egg-derived vaccines, especially since the context in the document compares RIV4 to conventional (egg-derived) vaccines and highlights its superior cross-reactivity. While the quote does not explicitly mention 'compared with egg-derived vaccines,' the surrounding text and referenced studies (e.g., Belongia et al.) make this comparison, supporting the claim.",
+      "original_relevance": "This quote supports the claim by stating that the BEVS-produced recombinant vaccine (RIV4) can induce broadly cross-reactive antibody responses, which is a key part of the claim."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": 3,
+      "quote": "In a study by Nach bag auer et al.78, RIV4 induced HA stem- specific neutral ising antibodies directed against influenza subtypes H1, H3 and B haem agglutinin in an age dependent manner in humans, with the highest titres observed in the elderly 78.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides evidence that RIV4 (a BEVS-produced recombinant HA vaccine) induces neutralizing antibodies specific to conserved regions (the HA stem) across multiple influenza subtypes, supporting the claim of broad cross-reactivity."
+    },
+    {
+      "id": 4,
+      "quote": "RIV4 also induces antibodies, in both humans and mice, that are specific to epi topes in the HA head region, at greater proportions than a traditional mammalian cell derived subunit vaccine (Flu cel vax [Trivalent 77.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote shows that RIV4 induces more antibodies to conserved regions of HA than a conventional vaccine, supporting the claim of higher levels of broadly cross-reactive antibodies."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

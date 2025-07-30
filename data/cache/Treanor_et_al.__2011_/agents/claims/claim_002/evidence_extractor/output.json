@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "document": {
+    "pdf_name": "Treanor_et_al.__2011_",
+    "source_pdf": "data/clinical_files/Treanor et al. (2011).pdf",
+    "total_pages": 7,
+    "total_blocks": 97,
+    "total_characters": 28697
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 2,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg pro- growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2].",
+      "relevance_explanation": "This quote directly states that growth in eggs can select for receptor variants, meaning mutations can occur during production that may not match circulating strains, thus potentially reducing vaccine effectiveness."
+    },
+    {
+      "id": 2,
+      "quote": "Wood JM, Oxford JS, Dun lea vy U, Newman RW, Major D, Robertson JS. Influenza A (H1 N1) vaccine efficacy in animal models is influenced by two amino acid substitutions in the hemagglutinin molecule. Virology 1989 171 214 21.",
+      "relevance_explanation": "This reference is cited in the context of egg-based vaccine production and explicitly states that amino acid substitutions (mutations) in the hemagglutinin molecule can influence vaccine efficacy, supporting the claim that mutations during production can reduce effectiveness."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

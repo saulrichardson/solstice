@@ -1,0 +1,63 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": {
+    "pdf_name": "Arunachalam_et_al.__2021_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 5
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "This review focuses on the structural features of BEVS derived rHA that make RIV4 unique from conventional vaccines, and how these features help to maximise vaccine performance. Notably, the benefits of this manufacturing process can be extended to other viral targets, such as COVID-19, where the preservation of conserved epi to pes is critical for imparting cross protection against a constantly evolving and mutating virus.",
+      "relevance_explanation": "This quote directly links the unique features of recombinant technology (BEVS-derived rHA) to maximizing vaccine performance and specifically highlights the preservation of conserved epitopes as critical for cross-protection, supporting the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "The use of recombinant protein technology eliminates the risk of antigenic mismatch due to potential changes in primary HA structure through egg- or cell adaptation. We also describe features of the rHA tertiary structure that are likely to be responsible for the generation of broad cross reactive and protective antibodies, together with the direct or indirect evidence supporting this.",
+      "relevance_explanation": "This quote explains that recombinant technology avoids antigenic mismatch and describes how its structural features are likely responsible for generating broad, cross-reactive antibodies, supporting the claim of broader immune response and cross-protection.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Thus, the risk of antigenic mismatch of RIV4, or other rHA vaccines in development, with the wild type vaccine strains and circulating strains are thought to have contributed to this reduced vaccine effectiveness 26. During the 2014-2015 influenza season, a clade 3 C.2 a H3 N2 strain possessing anew predicted HA glycosylation site emerged 26. For the 2016-2017 season the influenza vaccine was updated to include a clade 3 C.2 a H3 N2 strain (A/Colorado/15/2014) containing the new glycosylation site 26. However, this particular glycosylation site was absent in the egg adapted virus. Consequently, anti- bodies induced in humans, and in ferrets, poorly neutralised the glycosylated clade 3 C.2 a H3 N2 strain 26. Contrary to the egg- derived vaccines and as expected, rHA containing the new glycosylation site induced optimal levels of antibodies that efficiently recognised the glycosylated clade 3 C.2 a H3 N2 virus 26.",
+      "relevance_explanation": "This quote provides evidence that recombinant HA (rHA) vaccines can induce antibodies that recognize drifted strains better than conventional vaccines, supporting the claim of broader immune response and cross-protection in mismatch seasons.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_4",
+      "quote": "The presence of simpler gly cans appears to be equally efficient to that of chicken or mammalian cell derived gly cosy lati on in ensuring the proper folding of HA, and exposes conserved regions of the molecule for the induction of immunity with broader protection 12 71 76 80.",
+      "relevance_explanation": "This quote supports the claim by stating that the glycosylation pattern in recombinant vaccines exposes conserved regions, leading to broader protection.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_5",
+      "quote": "Subsequent studies showed that HA with simpler gly cans induce more broadly protective antibodies with superior cross clade protection compared to HA with more complex glycans76\u201379.",
+      "relevance_explanation": "This quote directly states that recombinant HA with simpler glycans induces more broadly protective antibodies and superior cross-clade protection, supporting the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

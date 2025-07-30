@@ -1,0 +1,23 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": {
+    "pdf_name": "Treanor_et_al.__2011_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 1
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Among the available expression technologies, recombinant baculo virus is especially well suited for production of influenza vaccine because the rapidity with which genes can be cloned and inserted into this vector facilitates updating the vaccine at regular intervals. Expression of the HA protein in insect cells using recombinant baculo virus also avoids the need to work with potentially pathogenic, live influenza viruses, and the attendant bio containment issues that would be a particular concern for production of pandemic vaccines [7].",
+      "relevance_explanation": "This quote directly describes the use of recombinant baculovirus to express hemagglutinin (HA) in insect cells for influenza vaccine production, supporting the claim about Flublok's novel production platform.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

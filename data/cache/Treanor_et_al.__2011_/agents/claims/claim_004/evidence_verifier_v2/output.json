@@ -1,0 +1,45 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "Treanor_et_al.__2011_",
+  "verification_stats": {
+    "total_extracted": 5,
+    "verified": 0,
+    "rejected": 5,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": 1,
+      "quote": "Flublok induced serum antibody responses to all three components of the vaccine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vaccination geometric mean titers were substantially higher for all three components in Flublok than in placebo recipients (P < .001 for all comparisons).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote directly states that the recombinant (Flublok) vaccine induced higher post-vaccination antibody titers compared to placebo, supporting the claim that it induces a robust antibody response."
+    },
+    {
+      "id": 2,
+      "quote": "More recent studies have evaluated rHA0 vaccine formulations in healthy adults, subjects aged 50\u201364 years of age [6] and subjects 65 and older [7,8]. These studies have consistently shown excellent tolerability and antibody responses similar to those seen with egg derived influenza vaccines.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote indicates that recombinant vaccines can induce antibody responses at least as strong as those from egg-based vaccines, supporting the claim of a robust response."
+    },
+    {
+      "id": 3,
+      "quote": "In addition, subjects from five sites (total, N = 870) participated in a serological sub study. At these sites, subjects had serum obtained prior to vaccination, and returned approximately 28 days after vaccination for assessment of serum antibody to influenza... The primary immunogenicity endpoint was the proportion of subjects with a four fold increase in HAI antibody with a post vaccination titer of 1:40 or greater.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote describes the study's method for measuring antibody response, which is relevant to evaluating the robustness of the immune response induced by the vaccine."
+    },
+    {
+      "id": 4,
+      "quote": "The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands/3/2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote specifies that the recombinant vaccine used a higher dose (45 mcg per component), which is relevant to the claim about higher-dose recombinant vaccines."
+    },
+    {
+      "id": 5,
+      "quote": "Although we did not attempt to verify vaccine histories by review of medical records, significant differences in both the frequency and the magnitude of the HAI response were shown when comparing the immune response between subjects with self-reported previous vaccination.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote notes that the magnitude of the antibody response (HAI response) was significantly different, supporting the idea that the recombinant vaccine can induce a robust response."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

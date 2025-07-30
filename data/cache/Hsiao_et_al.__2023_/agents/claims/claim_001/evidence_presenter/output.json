@@ -1,0 +1,26 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Hsiao_et_al.__2023_",
+  "supporting_evidence": [
+    {
+      "quote": "Quad rival ent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "explanation": "A very similar version of the quote appears in the document's BACKGROUND section: 'Quad rival ent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.' The wording is nearly identical to the quote to verify, with only minor differences in spacing and punctuation.. The quote directly states that quadrivalent recombinant influenza vaccines (such as Flublok) contain three times the amount of hemagglutinin protein as standard dose egg-based vaccines, which supports the first part of the claim. Additionally, elsewhere in the document, it is mentioned that this increased level of hemagglutinin has been correlated with greater immunogenicity, supporting the second part of the claim. Therefore, the quote genuinely supports the claim."
+    },
+    {
+      "quote": "The vaccine also contains three times the amount of he mag glut in in protein as standard dose vaccines, an increased level that has been correlated with greater immunogenicity.",
+      "explanation": "A very similar quote appears on page 2 of the document: 'The vaccine also contains three times the amount of he mag glut in in protein as standard dose vaccines, an increased level that has been correlated with greater immunogenicity.' The wording is nearly identical to the quote to verify, with only minor spacing differences in 'hemagglutinin' due to line breaks or OCR artifacts. The core content is present and matches the quote to verify.. The quote directly states that the vaccine (Flublok) contains three times the amount of hemagglutinin protein as standard dose vaccines, and that this increased level has been correlated with greater immunogenicity. This supports both parts of the claim: the higher HA antigen content and its link to greater immunogenicity compared to standard-dose flu vaccines."
+    }
+  ],
+  "evidence_summary": {
+    "total_evidence_found": 2,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 2
+    },
+    "rejected_count": 0
+  }
+}

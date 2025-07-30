@@ -10,7 +10,7 @@ from .detector import MarketingLayoutDetector
 from .consolidation import BoxConsolidator
 from ..processing.box import Box
 # already correct; ensure not using models.document; no change
-from ..processing.reading_order import determine_reading_order_simple
+from .reading_order import determine_marketing_reading_order
 from ..processing.text_extractor import extract_document_content
 from ..storage.paths import stage_dir, save_json, pages_dir
 from ..visualization.layout_visualizer import visualize_document
@@ -57,7 +57,6 @@ class MarketingPipeline(BasePDFPipeline):
             expand_padding=self.config.box_padding if self.config.expand_boxes else 0.0
         )
     
-    # Legacy method removed - base class process_pdf handles this now
     
     def _apply_consolidation(self, layouts: List, images: List) -> List[List[Box]]:
         """Apply consolidation to layouts using the BoxConsolidator.
@@ -120,9 +119,10 @@ class MarketingPipeline(BasePDFPipeline):
         for page_idx, (page_boxes, image) in enumerate(zip(layouts, images)):
             # page_boxes is already a list of Box objects
             
-            # Determine reading order
+            # Determine reading order using marketing-specific algorithm
             page_width = image.width
-            reading_order = determine_reading_order_simple(page_boxes, page_width)
+            page_height = image.height
+            reading_order = determine_marketing_reading_order(page_boxes, page_width, page_height)
             reading_order_by_page.append(reading_order)
             
             # Convert to Block objects
@@ -173,7 +173,7 @@ class MarketingPipeline(BasePDFPipeline):
     
     def _save_outputs(self, document: Document, pdf_path: Path):
         """Save processing outputs."""
-        output_dir = stage_dir("marketing", pdf_path)
+        output_dir = stage_dir("extracted", pdf_path)
         
         # Save document
         doc_path = output_dir / "content.json"

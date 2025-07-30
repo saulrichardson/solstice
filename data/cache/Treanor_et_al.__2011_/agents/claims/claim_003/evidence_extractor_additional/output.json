@@ -1,0 +1,43 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": {
+    "pdf_name": "Treanor_et_al.__2011_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Flublok induced serum HAI antibody responses to all three components of the vaccine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vaccination geometric mean titers were substantially higher for all three components in Flublok than in placebo recipients (P < .001 for all comparisons).",
+      "relevance_explanation": "This quote demonstrates that recombinant technology (Flublok) induces strong immune responses to multiple influenza strains, supporting the claim that it leads to a broader immune response.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "The results of the current study support the utility of insect cells for the production of well tolerated and effective vaccines for seasonal influenza.",
+      "relevance_explanation": "This statement affirms that recombinant technology (using insect cells) is effective for influenza vaccination, implying its potential for broad and cross-protective immune responses.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "The efficacy results also demonstrate that in adults, the minor differences in HA glycosylation seen in insect cells compared to mammalian cells and the synthesis of the HA as an uncleaved precursor do not preclude the generation of an effective immune response in adults.",
+      "relevance_explanation": "This quote supports the claim by indicating that recombinant HA produced in insect cells still generates an effective immune response, which is necessary for broad and cross-protective immunity.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

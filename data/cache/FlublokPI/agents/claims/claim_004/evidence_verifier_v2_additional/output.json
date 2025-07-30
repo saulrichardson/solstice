@@ -1,0 +1,27 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "FlublokPI",
+  "verification_stats": {
+    "total_extracted": 2,
+    "verified": 0,
+    "rejected": 2,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Flublok contains recombinant Ha proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hem agglutination inhibition (HI) anti bod",
+      "reason": "does not support claim",
+      "original_explanation": "This quote explains that Flublok (a recombinant flu vaccine) is designed to induce a humoral immune response, which is measured by antibody production, supporting the claim that it can induce a robust antibody response."
+    },
+    {
+      "id": "comp_2",
+      "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains...",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides evidence that Flublok is a higher-dose vaccine (135 mcg total HA), which is relevant to the claim that a higher-dose recombinant vaccine may induce a more robust antibody response compared to standard-dose vaccines."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

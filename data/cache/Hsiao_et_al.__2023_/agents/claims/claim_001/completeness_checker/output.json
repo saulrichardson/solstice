@@ -1,0 +1,58 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Hsiao_et_al.__2023_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 2
+  },
+  "completeness_stats": {
+    "existing_evidence": 2,
+    "new_evidence_found": 2,
+    "total_evidence": 4
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "Quad rival ent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "supports_claim": true,
+      "explanation": "A very similar version of the quote appears in the document's BACKGROUND section: 'Quad rival ent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.' The wording is nearly identical to the quote to verify, with only minor differences in spacing and punctuation.. The quote directly states that quadrivalent recombinant influenza vaccines (such as Flublok) contain three times the amount of hemagglutinin protein as standard dose egg-based vaccines, which supports the first part of the claim. Additionally, elsewhere in the document, it is mentioned that this increased level of hemagglutinin has been correlated with greater immunogenicity, supporting the second part of the claim. Therefore, the quote genuinely supports the claim.",
+      "presence_explanation": "A very similar version of the quote appears in the document's BACKGROUND section: 'Quad rival ent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.' The wording is nearly identical to the quote to verify, with only minor differences in spacing and punctuation.",
+      "support_explanation": "The quote directly states that quadrivalent recombinant influenza vaccines (such as Flublok) contain three times the amount of hemagglutinin protein as standard dose egg-based vaccines, which supports the first part of the claim. Additionally, elsewhere in the document, it is mentioned that this increased level of hemagglutinin has been correlated with greater immunogenicity, supporting the second part of the claim. Therefore, the quote genuinely supports the claim.",
+      "original_relevance": "This quote directly states that quadrivalent recombinant influenza vaccines (such as Flublok) contain three times the amount of hemagglutinin protein compared to standard dose vaccines, supporting the first part of the claim."
+    },
+    {
+      "id": 2,
+      "quote": "The vaccine also contains three times the amount of he mag glut in in protein as standard dose vaccines, an increased level that has been correlated with greater immunogenicity.",
+      "supports_claim": true,
+      "explanation": "A very similar quote appears on page 2 of the document: 'The vaccine also contains three times the amount of he mag glut in in protein as standard dose vaccines, an increased level that has been correlated with greater immunogenicity.' The wording is nearly identical to the quote to verify, with only minor spacing differences in 'hemagglutinin' due to line breaks or OCR artifacts. The core content is present and matches the quote to verify.. The quote directly states that the vaccine (Flublok) contains three times the amount of hemagglutinin protein as standard dose vaccines, and that this increased level has been correlated with greater immunogenicity. This supports both parts of the claim: the higher HA antigen content and its link to greater immunogenicity compared to standard-dose flu vaccines.",
+      "presence_explanation": "A very similar quote appears on page 2 of the document: 'The vaccine also contains three times the amount of he mag glut in in protein as standard dose vaccines, an increased level that has been correlated with greater immunogenicity.' The wording is nearly identical to the quote to verify, with only minor spacing differences in 'hemagglutinin' due to line breaks or OCR artifacts. The core content is present and matches the quote to verify.",
+      "support_explanation": "The quote directly states that the vaccine (Flublok) contains three times the amount of hemagglutinin protein as standard dose vaccines, and that this increased level has been correlated with greater immunogenicity. This supports both parts of the claim: the higher HA antigen content and its link to greater immunogenicity compared to standard-dose flu vaccines.",
+      "original_relevance": "This quote confirms that Flublok contains three times the hemagglutinin protein of standard dose vaccines and explicitly links this higher antigen content to greater immunogenicity, supporting both parts of the claim."
+    }
+  ],
+  "new_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain.",
+      "relevance_explanation": "This quote supports the claim by specifying that Flublok contains recombinant hemagglutinin protein, which is relevant to the claim about HA antigen content, though it does not directly mention the 3x amount or immunogenicity.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "Several studies have shown benefit for the recombinant vaccine and other high dose influenza vaccines as compared with standard dose vaccines in adults who are 65 years of age or older, findings that have been attributed to an improved immune response.",
+      "relevance_explanation": "This quote supports the claim by linking the higher dose (which includes higher HA content) of recombinant vaccines to improved immune response (greater immunogenicity) compared to standard dose vaccines.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

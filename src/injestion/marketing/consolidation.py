@@ -33,9 +33,10 @@ class BoxConsolidator:
         """Apply full consolidation pipeline to boxes.
         
         Steps:
-        1. Remove overlapping boxes of different types
-        2. Merge overlapping boxes of same type
-        3. Safely expand boxes if configured
+        1. Filter out suspiciously narrow text boxes
+        2. Remove overlapping boxes of different types
+        3. Merge overlapping boxes of same type
+        4. Safely expand boxes if configured
         
         Parameters
         ----------
@@ -54,6 +55,9 @@ class BoxConsolidator:
         if not boxes:
             return boxes
             
+        # Filter out narrow text boxes that are likely detection errors
+        boxes = self._filter_narrow_text_boxes(boxes)
+        
         # Remove overlapping boxes of different types
         boxes = self._remove_overlapping_different_types(boxes)
         
@@ -65,6 +69,35 @@ class BoxConsolidator:
             boxes = self._expand_boxes_safely(boxes, image_width, image_height)
             
         return boxes
+    
+    def _filter_narrow_text_boxes(self, boxes: List[Box]) -> List[Box]:
+        """Filter out suspiciously narrow text boxes that likely contain garbled text.
+        
+        Text boxes narrower than 400px are often detection errors that capture
+        only vertical slices of text, resulting in garbled output.
+        """
+        filtered = []
+        removed_count = 0
+        
+        for box in boxes:
+            width = box.bbox[2] - box.bbox[0]
+            
+            # Keep non-text boxes regardless of width
+            if box.label != 'TextRegion':
+                filtered.append(box)
+                continue
+                
+            # Filter out narrow text boxes
+            if width < 400:
+                removed_count += 1
+                print(f"  Filtering out narrow TextRegion (width={width:.0f}px, score={box.score:.2f})")
+            else:
+                filtered.append(box)
+        
+        if removed_count > 0:
+            print(f"  Removed {removed_count} narrow text boxes")
+            
+        return filtered
     
     def _remove_overlapping_different_types(self, boxes: List[Box]) -> List[Box]:
         """Remove overlapping boxes of different types, keeping higher confidence."""

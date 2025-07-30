@@ -50,6 +50,24 @@ class LLMResponseParser:
             
             if end > start:
                 content = content[start:end]
+        
+        # Escape control characters in JSON strings
+        # This handles newlines, tabs, etc. that break JSON parsing
+        def escape_json_string(match):
+            s = match.group(1)
+            # Replace common control characters
+            s = s.replace('\n', '\\n')
+            s = s.replace('\r', '\\r')
+            s = s.replace('\t', '\\t')
+            s = s.replace('\b', '\\b')
+            s = s.replace('\f', '\\f')
+            # Replace any other control characters
+            s = re.sub(r'[\x00-\x1f]', lambda m: f'\\u{ord(m.group(0)):04x}', s)
+            return f'"{s}"'
+        
+        # Find strings and escape control characters inside them
+        # This regex matches strings while handling escaped quotes
+        content = re.sub(r'"((?:[^"\\]|\\.)*)\"', escape_json_string, content)
                 
         return content
     
@@ -117,7 +135,7 @@ class LLMResponseParser:
                     model=getattr(llm_client, 'model', 'gpt-4.1'),
                     temperature=temperature,
                     max_output_tokens=max_output_tokens,
-                    disable_cache=True
+                    disable_request_deduplication=True
                 )
                 
                 # Extract text content

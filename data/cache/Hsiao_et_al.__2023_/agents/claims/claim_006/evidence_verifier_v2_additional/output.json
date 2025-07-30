@@ -1,0 +1,21 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": "Hsiao_et_al.__2023_",
+  "verification_stats": {
+    "total_extracted": 1,
+    "verified": 0,
+    "rejected": 1,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote supports the claim by stating that Flublok is produced using recombinant technology to express hemagglutinin, and that it is not made using eggs, which is a key feature of the baculovirus expression vector system (BEVS) in insect cells."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

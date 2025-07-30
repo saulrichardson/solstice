@@ -1,0 +1,34 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": {
+    "pdf_name": "Treanor_et_al.__2011_",
+    "source_pdf": "data/clinical_files/Treanor et al. (2011).pdf",
+    "total_pages": 7,
+    "total_blocks": 97,
+    "total_characters": 28697
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "The majority of influenza A viruses detected in this study were H3N2 viruses that represented a substantial antigenic mismatch with the vaccine. However, even under these circumstances, Flublok had significant protective efficacy against culture confirmed influenza illness, including those meeting the CDC-ILI case definition.",
+      "relevance_explanation": "This quote directly supports the claim by stating that the recombinant vaccine (Flublok) provided significant protection even when there was a mismatch between the vaccine and circulating strains, indicating cross-protection and a broader immune response."
+    },
+    {
+      "id": 2,
+      "quote": "Flublok induced serum HAI antibody responses to all three components of the vaccine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vaccination geometric mean titers were substantially higher for all three components in Flublok than in placebo recipients (P < .001 for all comparisons).",
+      "relevance_explanation": "This quote shows that recombinant technology (Flublok) induces strong immune responses to multiple influenza strains, supporting the idea of a broader immune response."
+    },
+    {
+      "id": 3,
+      "quote": "The results of the current study support the utility of insect cells for the production of well tolerated and effective vaccines for seasonal influenza.",
+      "relevance_explanation": "This quote affirms the effectiveness of recombinant technology (using insect cells), which is foundational to the claim that such technology can provide broader and potentially cross-protective immune responses."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

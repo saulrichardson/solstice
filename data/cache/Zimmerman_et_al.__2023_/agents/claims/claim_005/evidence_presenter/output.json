@@ -1,0 +1,38 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": "Zimmerman_et_al.__2023_",
+  "supporting_evidence": [
+    {
+      "quote": "The hospital system electronic medical record EMR) and the state immunization registry were used to confirm influenza vaccination. Propensity scores with inverse probability weighting were used to adjust for potential con founders and determine rVE. Results: Of the 14 590 individuals included in the primary analysis, 3,338 were vaccinated with RIV4 and 976 were vaccinated with SD-IIV4 with the balance of 10 276 being un vaccinated Most participants",
+      "explanation": "A very similar quote appears in the document in the Results section: 'Of the 14 590 individuals included in the primary analysis, 3,338 were vaccinated with RIV4 and 976 were vaccinated with SD-IIV4 with the balance of 10 276 being un vaccinated.' The preceding sentence in the Methods section also matches: 'The hospital system electronic medical record EMR) and the state immunization registry were used to confirm influenza vaccination. Propensity scores with inverse probability weighting were used to adjust for potential con founders and determine rVE.' The wording and order are nearly identical, with only minor differences in spacing and punctuation.. The quote directly supports the claim. It shows that the study compared individuals vaccinated with RIV4 (Flublok) and those vaccinated with SD-IIV4 (which, as defined in the document, includes Fluarix among other standard-dose quadrivalent vaccines). The document explicitly lists Fluarix as one of the SD-IIV4 vaccines. Therefore, the quote confirms that Flublok (quadrivalent) was evaluated in a pivotal trial against Fluarix (quadrivalent standard-dose vaccine), supporting the claim."
+    },
+    {
+      "quote": "a SD-IIV4: Afluria, Fluarix, FluLaval, SD Flu zone and FlucelVax. b For difference between those receiving RIV4 and those receiving SD-IIV4.",
+      "explanation": "A very similar quote appears in the document in TABLE 4 on page 5: 'a SD-IIV4: Afluria, Fluarix, FluLaval, SD Flu zone and FlucelVax. b For difference between those receiving RIV4 and those receiving SD-IIV4.' The wording and content match the quote to verify, with only minor formatting differences (e.g., 'SD Flu zone' instead of 'Standard Dose Flu zone').. The quote explicitly lists Fluarix as one of the SD-IIV4 (standard-dose quadrivalent inactivated influenza vaccine) comparators and states that differences are measured between those receiving RIV4 (Flublok) and those receiving SD-IIV4. This directly supports the claim that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine), as it confirms both the inclusion of Fluarix in the comparator group and the direct comparison between RIV4 and SD-IIV4."
+    },
+    {
+      "quote": "SD-IIV4 included Afluria, Fluarix, FluLaval, Standard Dose Flu zone and FlucelVax HD-IIV4 was High Dose Flu- zone, RIV4 was Flublok and Adj-IV was FluAd.",
+      "explanation": "A very similar quote appears in the document: 'Influenza vaccines were ident i fied through the EMR; SD-IIV4 included Afluria, Fluarix, FluLaval, Standard Dose Flu zone and FlucelVax HD-IIV4 was High Dose Flu zone, RIV4 was Flublok and Adj-IV was FluAd.' The wording is nearly identical to the quote to verify, with only minor differences in punctuation and spacing.. The quote directly identifies Flublok as RIV4 and Fluarix as one of the SD-IIV4 (standard-dose quadrivalent) vaccines. Since the study compares RIV4 (Flublok) to SD-IIV4 (which includes Fluarix), this confirms that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine), thus supporting the claim."
+    },
+    {
+      "quote": "The primary exposure of interest was vaccine type (recom- bin ant, SD-IIV4 s and in some analyses, enhanced vaccines such as HD-IIV4 and adjuvanted influenza vaccine (Adj-IV)).",
+      "explanation": "The quote appears on page 2: 'The primary exposure of interest was vaccine type (recom- bin ant, SD-IIV4 s and in some analyses, enhanced vaccines such as HD-IIV4 and adjuvanted influenza vaccine (Adj-IV)).' The wording is nearly identical to the quote to verify, with only minor formatting differences (e.g., line breaks, hyphenation).. The quote directly states that the primary exposure of interest in the study was vaccine type, specifically listing recombinant (RIV4/Flublok) and SD-IIV4 (standard-dose quadrivalent vaccines, which includes Fluarix). The document further clarifies that SD-IIV4 included Fluarix among other vaccines. This supports the claim that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine), as both vaccines were included in the main comparison groups of the study."
+    },
+    {
+      "quote": "Of these, 3,338 were vaccinated with RIV4 and 976 were vacci- nated with SD-IIV4, with the balance of 10 276 being un vaccinated.",
+      "explanation": "The quote appears almost verbatim on page 3: 'Of these, 3,338 were vaccinated with RIV4 and 976 were vacci- nated with SD-IIV4, with the balance of 10 276 being un vaccinated.' The only differences are minor formatting and line breaks, but the numbers and wording are the same.. The quote provides the exact numbers of participants who received RIV4 (Flublok) and SD-IIV4 (which includes Fluarix, as confirmed elsewhere in the document), directly showing that these two groups were compared in the pivotal trial. This directly supports the claim that Flublok (quadrivalent) was evaluated against Fluarix (quadrivalent standard-dose vaccine) in the pivotal trial."
+    }
+  ],
+  "evidence_summary": {
+    "total_evidence_found": 5,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 5
+    },
+    "rejected_count": 0
+  }
+}

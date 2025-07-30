@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": "Grohskopf_et_al.__2023_",
+  "verification_stats": {
+    "total_extracted": 4,
+    "verified": 0,
+    "rejected": 4,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": 1,
+      "quote": "This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+      "reason": "does not support claim",
+      "original_explanation": "This describes the recombinant technology used in RIV4, which is the basis for the claim about recombinant vaccines."
+    },
+    {
+      "id": 2,
+      "quote": "HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3. Randomized efficacy studies comparing these vaccines with non adjuvant ed SD-IIVs against laboratory- confirmed influenza outcomes are few in number (66 68 and cover few influenza seasons. Observational studies, predominantly retrospective cohort studies using diagnostic code defined (rather than laboratory confirmed outcomes, are more numerous and include more influenza seasons (69 79. Certain observational studies have reported relative benefit for HD-IIV, RIV, and aIIV in comparison with non adjuvant ed SD-IIVs, particularly in prevention of influenza associated hospitalizations.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides evidence that recombinant vaccines (RIV) have shown relative benefit compared to standard-dose inactivated vaccines, supporting the idea of a broader or more effective immune response."
+    },
+    {
+      "id": 3,
+      "quote": "The larger of these two studies noted a relative benefit of RIV4 over non adjuvant ed SD-IIV4 in prevention of PCR-confirmed influenza among the full study population of persons aged \u226550 years (relative efficacy: 30%; 95% CI: 10 47 as well i lfi d ILI h d 65",
+      "reason": "does not support claim",
+      "original_explanation": "This quote shows that RIV4 (recombinant vaccine) provided better protection than standard inactivated vaccines, which supports the claim that recombinant technology can lead to broader or more cross-protective immunity."
+    },
+    {
+      "id": 4,
+      "quote": "A retrospective analysis of relative effectiveness of RIV4 versus SD-IIV4 against influenza coded hospitalizations among Medicare beneficiaries during the 2019 20 season noted a relative effectiveness of 17% (95% CI: 9 24; certainty level: 3, low) (72).",
+      "reason": "does not support claim",
+      "original_explanation": "This provides data that recombinant vaccines (RIV4) were more effective than standard inactivated vaccines in a real-world setting, supporting the claim of broader or cross-protective immune response."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

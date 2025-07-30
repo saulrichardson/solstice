@@ -74,14 +74,28 @@ class EvidenceExtractor(BaseAgent):
         normalized_text = document_utils.get_text(document_data, include_figures=True)
         
         # Build extraction prompt
-        prompt = f'''Extract VERBATIM quotes from the document that support this claim.
+        prompt = f'''Extract quotes from the document that support this claim.
 
 Rules:
-- Quotes must be exact text from the document (no modifications)
-- No ellipsis (...) - extract complete segments
+- Preserve the exact meaning and all factual content from the document
+- Correct obvious OCR artifacts that break readability:
+  * Fix split words and broken spacing (e.g., "immunogen i city" → "immunogenicity")
+  * Repair character substitutions from poor OCR (e.g., "0" instead of "O")
+  * Restore proper word boundaries and punctuation
+- Do NOT change any substantive content, numbers, or technical terms
+- Do NOT fix grammatical issues or writing style from the original
+- Extract complete segments without using ellipsis (...)
 - A quote supports the claim if it provides evidence, data, or statements that directly relate to and affirm the claim
 
-Standard for "supports the claim":
+Quality standards:
+- Context: Include enough surrounding text so the quote can be understood independently
+- Attribution: When statements reference sources or studies, include those references in the quote
+- Precision: Preserve all numbers, statistics, and measurements exactly as intended (including decimal places, confidence intervals, and units)
+
+Correction standard:
+"Restore what the original document clearly intended to say, fixing only mechanical extraction errors"
+
+Relevance standard:
 "Would this quote help convince a skeptical reader that the claim is true?"
 
 CLAIM: {claim}
@@ -90,7 +104,7 @@ Return your response as a JSON object:
 {{
     "snippets": [
         {{
-            "quote": "exact quote from document",
+            "quote": "quote with OCR artifacts corrected",
             "relevance_explanation": "1-2 sentences explaining how this supports the claim"
         }}
     ]
@@ -145,7 +159,7 @@ DOCUMENT:
         except Exception as e:
             logger.error(f"Failed to extract evidence: {e}")
             # Return error structure
-            return {
+            error_output = {
                 "claim_id": self.claim_id,
                 "claim": claim,
                 "document": {
@@ -163,4 +177,10 @@ DOCUMENT:
                 "extracted_evidence": [],
                 "model_used": self.llm_client.model
             }
+            
+            logger.info(f"\n{'='*60}")
+            logger.info(f"EVIDENCE EXTRACTOR: Failed for claim {self.claim_id}")
+            logger.info(f"{'='*60}\n")
+            
+            return error_output
     

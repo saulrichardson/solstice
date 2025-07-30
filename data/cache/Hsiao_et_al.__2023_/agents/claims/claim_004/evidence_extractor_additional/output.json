@@ -1,0 +1,53 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": {
+    "pdf_name": "Hsiao_et_al.__2023_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with gall associated with its higher dose of hemagglutinin antigen.",
+      "relevance_explanation": "This quote directly states that the recombinant vaccine contains a higher dose of hemagglutinin protein, and that this increased level has been correlated with a stronger immune response, supporting the claim that higher-dose recombinant vaccines may induce a more robust antibody response.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "In patients between the ages of 50 and 64 years, 559 (2.00 cases per 1000) tested positive for influenza in the recombinant vaccine group as compared with 925 (2.34 per 1000) in the standard dose group (Table 2). For the primary objective, the relative vaccine effectiveness of the recombinant vaccine as compared with standard-dose vaccines against all PCR-confirmed influenza was 15.3% (95% CI, 5.9 to 23.8; P = 0 002.",
+      "relevance_explanation": "This quote provides data showing that the recombinant vaccine group had fewer cases of influenza than the standard dose group, with a statistically significant higher effectiveness, supporting the claim of a more robust response.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "For secondary objectives in participants between the ages of 50 and 64 years, we adjusted for multiplicity by Holm\u2019s method.10 Subgroup analyses involving participants with preexisting conditions were not adjusted for multiplicity. We conducted sensitivity analyses in which we used propensity scores in alternative ways, used a robust variance estimator, stratified risk sets according to facility and vaccination week, and specified age as a spline (see the Supplementary Methods section). To assess possible residual confounding, we examined PCR-confirmed RSV infection as a negative control outcome because we would not expect influenza vaccination to be associated with a reduction in this infection. A nontrivial association between receipt of the recombinant vaccine and RSV infection would suggest bias in our estimate of the relative vaccine effectiveness against influenza. Conversely, a finding of no association between receipt of the recombinant vaccine and RSV infection would be reassuring that our estimates of relative vaccine effectiveness were not biased by unmeasured factors that might affect the risk of both laboratory confirmed RSV infection and influenza.",
+      "relevance_explanation": "This quote describes the rigorous methods used to ensure the observed higher effectiveness of the recombinant vaccine is not due to confounding, strengthening the evidence that the higher-dose vaccine induces a more robust response.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_4",
+      "quote": "For both the PCR-confirmed influenza and hospitalization outcomes, the results of sensitivity analyses were consistent with findings in the primary analyses (Tables S12 and S13). The estimates of relative vaccine effectiveness from the RSV test also did not differ.",
+      "relevance_explanation": "This quote shows that the higher effectiveness of the recombinant vaccine was consistent across multiple analyses, supporting the robustness of the finding that it induces a stronger response.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

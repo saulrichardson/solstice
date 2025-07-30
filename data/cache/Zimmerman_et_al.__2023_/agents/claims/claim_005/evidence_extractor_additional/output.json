@@ -1,0 +1,43 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": {
+    "pdf_name": "Zimmerman_et_al.__2023_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "SD-IIV4 included Afluria, Fluarix, FluLaval, Standard Dose Flu zone and FlucelVax HD-IIV4 was High Dose Flu- zone, RIV4 was Flublok and Adj-IV was FluAd.",
+      "relevance_explanation": "This quote explicitly identifies Flublok as RIV4 and Fluarix as one of the SD-IIV4 (standard-dose quadrivalent) vaccines, confirming that these specific vaccines were included in the comparative evaluation.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "The primary exposure of interest was vaccine type (recom- bin ant, SD-IIV4 s and in some analyses, enhanced vaccines such as HD-IIV4 and adjuvanted influenza vaccine (Adj-IV)).",
+      "relevance_explanation": "This quote shows that the study's main comparison was between recombinant (RIV4/Flublok) and standard-dose quadrivalent influenza vaccines (SD-IIV4, which includes Fluarix), supporting the claim that these two vaccines were evaluated against each other.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Of these, 3,338 were vaccinated with RIV4 and 976 were vacci- nated with SD-IIV4, with the balance of 10 276 being un vaccinated.",
+      "relevance_explanation": "This quote provides data on the number of participants who received RIV4 (Flublok) and SD-IIV4 (which includes Fluarix), directly supporting that these groups were compared in the pivotal trial.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

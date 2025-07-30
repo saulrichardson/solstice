@@ -1,0 +1,21 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Zimmerman_et_al.__2023_",
+  "verification_stats": {
+    "total_extracted": 1,
+    "verified": 0,
+    "rejected": 1,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "RIV4 was Flublok",
+      "reason": "does not support claim",
+      "original_explanation": "This quote identifies RIV4 as Flublok, which is necessary to link the product to the claim about its antigen content and immunogenicity."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

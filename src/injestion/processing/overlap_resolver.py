@@ -6,7 +6,6 @@ by using various strategies to handle different overlap scenarios.
 
 from __future__ import annotations
 
-import uuid
 from typing import List, Tuple, Optional, Dict
 from dataclasses import dataclass
 from enum import Enum
@@ -86,7 +85,12 @@ def expand_boxes(boxes: List[Box], padding: float = 10.0, page_width: float = No
                 ny1 = max(0.0, page_height - 1.0)
             ny2 = ny1 + 1.0
 
-        expanded.append(box.model_copy(update={"bbox": (nx1, ny1, nx2, ny2)}))
+        # Preserve ID and lineage when expanding
+        expanded_box = box.model_copy(update={
+            "bbox": (nx1, ny1, nx2, ny2),
+            "merge_reason": "expanded" if box.merge_reason is None else f"{box.merge_reason},expanded"
+        })
+        expanded.append(expanded_box)
 
     return expanded
 
@@ -237,12 +241,16 @@ def merge_overlapping_boxes(boxes: List[Box], iou_threshold: float = 0.5) -> Lis
                 # Use the highest score
                 best_score = max(b.score for b in merge_group)
                 
-                # Create new merged box
+                # Create new merged box with lineage tracking
+                # Use the first source box ID as base for the merged ID
+                merged_id = f"mrg_{merge_group[0].id}"
                 merged_box = Box(
-                    id=str(uuid.uuid4())[:8],
+                    id=merged_id,
                     bbox=(x1, y1, x2, y2),
                     label=box_type,
-                    score=best_score
+                    score=best_score,
+                    source_ids=[box.id for box in merge_group],
+                    merge_reason=f"same_type_overlap_{len(merge_group)}_boxes"
                 )
                 merged_boxes.append(merged_box)
     

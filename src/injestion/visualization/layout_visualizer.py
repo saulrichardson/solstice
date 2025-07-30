@@ -10,6 +10,7 @@ from typing import List, Dict, Optional, Tuple
 from PIL import Image
 
 from src.interfaces import Document, Block
+from ..processing.box import Box
 from ..storage.paths import pages_dir, stage_dir, extracted_content_path
 
 
@@ -26,7 +27,7 @@ COLOR_MAP = {
 
 def visualize_page_layout(
     page_image: Image.Image,
-    blocks: List[Block],
+    boxes: List['Box'],
     reading_order: Optional[List[str]] = None,
     title: str = "Layout Detection Results",
     save_path: Optional[Path] = None,
@@ -38,7 +39,7 @@ def visualize_page_layout(
     
     Args:
         page_image: PIL Image of the page
-        blocks: List of Block objects to visualize
+        boxes: List of Box objects to visualize
         reading_order: Optional list of block IDs in reading order
         title: Title for the plot
         save_path: Optional path to save the visualization
@@ -59,13 +60,13 @@ def visualize_page_layout(
         reading_order_map = {block_id: idx + 1 for idx, block_id in enumerate(reading_order)}
     
     # Draw bounding boxes
-    for block in blocks:
-        x1, y1, x2, y2 = block.bbox
+    for box in boxes:
+        x1, y1, x2, y2 = box.bbox
         width = x2 - x1
         height = y2 - y1
         
         # Get color based on element type
-        color = COLOR_MAP.get(block.role, 'gray')
+        color = COLOR_MAP.get(box.label, 'gray')
         
         # Draw rectangle
         rect = Rectangle(
@@ -79,9 +80,9 @@ def visualize_page_layout(
         
         # Add label if requested
         if show_labels:
-            label_text = block.role
-            if block.id in reading_order_map and show_reading_order:
-                label_text = f"{reading_order_map[block.id]}. {label_text}"
+            label_text = box.label
+            if box.id in reading_order_map and show_reading_order:
+                label_text = f"{reading_order_map[box.id]}. {label_text}"
             
             # Add label with background
             ax.text(
@@ -93,7 +94,7 @@ def visualize_page_layout(
             )
     
     # Add statistics
-    stats_text = f"Total elements: {len(blocks)}"
+    stats_text = f"Total elements: {len(boxes)}"
     if reading_order:
         stats_text += f"\nReading order: {len(reading_order)} elements"
     
@@ -163,8 +164,20 @@ def visualize_document(
         # Load page image
         page_image = Image.open(page_images[page_idx])
         
-        # Get blocks for this page
+        # Get blocks for this page and convert to Box objects
         page_blocks = [b for b in document.blocks if b.page_index == page_idx]
+        
+        # Convert Block objects to Box objects for visualization
+        page_boxes = []
+        for block in page_blocks:
+            box = Box(
+                id=block.id,
+                bbox=block.bbox,
+                label=block.role,  # Block uses 'role', Box uses 'label'
+                score=block.metadata.get('score', 1.0),
+                page_index=block.page_index
+            )
+            page_boxes.append(box)
         
         # Get reading order for this page
         page_reading_order = None
@@ -175,7 +188,7 @@ def visualize_document(
         save_path = output_dir / f"page_{page_idx + 1:03d}_layout.png"
         visualize_page_layout(
             page_image,
-            page_blocks,
+            page_boxes,
             page_reading_order,
             title=f"Page {page_idx + 1} - Layout Detection",
             save_path=save_path,

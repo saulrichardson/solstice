@@ -6,18 +6,6 @@ import os
 from src.interfaces import Document
 from .config import DEFAULT_CONFIG as CONFIG
 
-# ---------------------------------------------------------------------------
-# Helper functions
-# ---------------------------------------------------------------------------
-
-# Helper functions removed - functionality moved to StandardPipeline class
-
-
-# ---------------------------------------------------------------------------
-# Public orchestrator
-# ---------------------------------------------------------------------------
-
-
 def ingest_pdf(pdf_path: str | os.PathLike[str]) -> Document:
     """Process a PDF file with optimized settings for clinical documents.
     
@@ -27,10 +15,6 @@ def ingest_pdf(pdf_path: str | os.PathLike[str]) -> Document:
     Returns:
         Document object with detected layout elements, extracted text, and visualizations
     """
-    # Use the new class-based pipeline for consistency
     from .standard_pipeline import StandardPipeline
     pipeline = StandardPipeline(config=CONFIG)
     return pipeline.process_pdf(pdf_path)
-
-
-# Legacy implementation removed - use StandardPipeline instead

@@ -66,9 +66,17 @@ class BasePDFPipeline(ABC):
         print("Running layout detection...")
         layouts = self.detector.detect_images(images)
         
+        # Save raw layouts if configured
+        if self.config.save_intermediate_states:
+            self._save_raw_layouts(layouts, pdf_path, images)
+        
         # Common step 3: Apply consolidation
         print("Applying box consolidation...")
         consolidated_layouts = self._apply_consolidation(layouts, images)
+        
+        # Save merged layouts if configured
+        if self.config.save_intermediate_states:
+            self._save_merged_layouts(consolidated_layouts, pdf_path)
         
         # Common step 4: Create document and extract content
         print("Creating document structure...")
@@ -110,3 +118,35 @@ class BasePDFPipeline(ABC):
     def _save_outputs(self, document: Document, pdf_path: Path):
         """Save processing outputs."""
         pass
+    
+    def _save_raw_layouts(self, layouts: List, pdf_path: Path, images: List):
+        """Save raw layout detection results. Override in subclasses if needed."""
+        pass
+    
+    def _save_merged_layouts(self, consolidated_layouts: List[List[Box]], pdf_path: Path):
+        """Save merged/consolidated layouts. Override in subclasses if needed."""
+        from .storage.paths import stage_dir, save_json
+        
+        merged_dir = stage_dir("merged", pdf_path)
+        merged_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Convert Box objects to JSON-serializable format
+        merged_data = []
+        for page_boxes in consolidated_layouts:
+            page_data = []
+            for box in page_boxes:
+                box_data = {
+                    "id": box.id,
+                    "bbox": list(box.bbox),
+                    "label": box.label,
+                    "score": box.score,
+                }
+                # Include lineage information if present
+                if box.source_ids:
+                    box_data["source_ids"] = box.source_ids
+                if box.merge_reason:
+                    box_data["merge_reason"] = box.merge_reason
+                page_data.append(box_data)
+            merged_data.append(page_data)
+        
+        save_json(merged_data, merged_dir / "merged_boxes.json")

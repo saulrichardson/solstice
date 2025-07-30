@@ -1,0 +1,26 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": "Treanor_et_al.__2011_",
+  "supporting_evidence": [
+    {
+      "quote": "Genes were cloned into baculo virus using RT-PCR from the same CDC- derived vaccine seed viruses used for the production of licensed inactivated influenza vaccine for that year.",
+      "explanation": "The quote appears on page 2 of the document, with only minor differences in formatting and punctuation: 'Genes were cloned into baculo virus using RT-PCR from the same CDC- eri ved vaccine seed viruses used for the production of licensed nactivated influenza vaccine for that year.' The core content and meaning are identical to the quote provided.. The quote directly states that the genes used for Flublok were cloned from the same CDC-derived vaccine seed viruses as those used for licensed inactivated influenza vaccines for that year. This means that the antigenic composition of Flublok matches the strains selected by public health authorities (WHO and FDA), thus supporting the claim that Flublok ensures an identical antigenic match with the selected flu strains."
+    },
+    {
+      "quote": "The antigens used in the as says were baculo virus eri ved rHAs representing the A/Solomon Islands 03 2006 (H1 N1), /Wisconsin 67 2005 (H3 N2), and B/Malaysia/2506/2004 viruses, rovided by Protein Sciences Corporation.",
+      "explanation": "A very similar quote appears on page 2: 'The antigens used in the as says were baculo virus eri ved rHAs representing the A/Solomon Islands 03 2006 (H1 N1), /Wisconsin 67 2005 (H3 N2), and B/Malaysia/2506/2004 viruses, rovided by Protein Sciences Corporation.' The wording and content match the quote to verify, with only minor typographical differences.. The quote states that the antigens used in the assays (and, by context, in the Flublok vaccine) were recombinant hemagglutinins (rHAs) derived from the specific strains A/Solomon Islands/03/2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004. These strains are the WHO- and FDA-selected strains for that influenza season. The quote also notes that the genes were cloned from the same CDC-derived vaccine seed viruses used for licensed inactivated influenza vaccines. This directly supports the claim that Flublok ensures an identical antigenic match with the WHO- and FDA-selected flu strains, as it uses the same genetic material to produce the antigens."
+    }
+  ],
+  "evidence_summary": {
+    "total_evidence_found": 2,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 2
+    },
+    "rejected_count": 0
+  }
+}

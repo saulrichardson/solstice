@@ -10,7 +10,4 @@ This package provides the core functionality for:
 # Import the main pipeline function
 from .pipeline import ingest_pdf
 
-# Re-export models from interfaces for backward compatibility
-# Public re-exports
-# No legacy re-exports – users should import these from ``src.interfaces``.
 __all__ = ["ingest_pdf"]

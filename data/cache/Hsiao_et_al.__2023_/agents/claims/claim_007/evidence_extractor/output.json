@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": {
+    "pdf_name": "Hsiao_et_al.__2023_",
+    "source_pdf": "data/clinical_files/Hsiao et al. (2023).pdf",
+    "total_pages": 11,
+    "total_blocks": 137,
+    "total_characters": 24365
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 2,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Quad rival ent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "relevance_explanation": "This quote establishes that recombinant HA antigens (produced using BEVS) differ from egg-derived vaccines in both quantity and susceptibility to antigenic drift, which is relevant background for understanding differences in immune response."
+    },
+    {
+      "id": 2,
+      "quote": "The Flublok Quad rival ent in flu enza vaccine (RIV4, San of i is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically ident i cal to that in the selected strain 5 The vaccine also contains three times the amount of he mag glut in in protein as standard dose vaccines, an increased level that has been correlated with",
+      "relevance_explanation": "This quote directly states that the recombinant vaccine contains a higher amount of HA antigen and that this increased level has been correlated with improved outcomes, supporting the claim that BEVS-produced HA antigens induce a different (potentially stronger) immune response."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": {
+    "pdf_name": "Arunachalam_et_al.__2021_"
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 2
+  },
+  "extracted_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "As such, the primary amino acid sequence of the rHA produced using baculo virus or other recombinant expression system is identical to the HA from the wild type virus isolate selected for seasonal influenza vaccine production.",
+      "relevance_explanation": "This quote directly states that the recombinant HA (as used in Flublok) is identical in sequence to the HA from the wild type virus selected for the vaccine, supporting the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "Instead, DNA coding for HA is cloned from a reference virus published in the Global Initiative on Sharing All Influenza Data (GISAID) database and is confirmed for fidelity at the working virus bank level 28.",
+      "relevance_explanation": "This quote explains that the HA gene used in Flublok is cloned directly from the reference virus selected by global surveillance and is confirmed for accuracy, supporting the claim of an identical antigenic match.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ]
+}

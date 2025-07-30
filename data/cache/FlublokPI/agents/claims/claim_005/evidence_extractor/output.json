@@ -1,0 +1,34 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": {
+    "pdf_name": "FlublokPI",
+    "source_pdf": "data/clinical_files/FlublokPI.pdf",
+    "total_pages": 5,
+    "total_blocks": 94,
+    "total_characters": 25545
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quadrivalent or a Comparator inactivated influenza vaccine (Fluarix\u00ae Quadrivalent, manufactured by GlaxoSmithKline). The safety analysis population included 998 recipients of Flublok Quadrivalent and 332 Comparator vaccine recipients.",
+      "relevance_explanation": "This quote directly states that Flublok Quadrivalent was evaluated in a trial (Study 7) against Fluarix Quadrivalent, a standard-dose quadrivalent influenza vaccine, supporting the claim."
+    },
+    {
+      "id": 2,
+      "quote": "Study 6 (NCT02285998) enrolled subjects 50 years of age and older, randomized to receive Flublok Quadrivalent or Comparator (Fluarix Quadrivalent, manufactured by GlaxoSmithKline) as an active control [see Clinical Studies (14)].",
+      "relevance_explanation": "This quote confirms that in Study 6, Flublok Quadrivalent was compared directly to Fluarix Quadrivalent, providing evidence that the pivotal trial used Fluarix as the comparator."
+    },
+    {
+      "id": 3,
+      "quote": "Abbreviations: rtPCR=reversetranscriptasepolymerasechainreaction; Comparator=U.S.- licensed quadrivalent inactivated influenza vaccine, Fluarix quadrivalent, manufactured by GlaxoSmithKline; n=number of influenza cases; N=number of subjects in treatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) \u00d7 100]. *Study 6 is registered as NCT02285998.",
+      "relevance_explanation": "This quote clarifies that the comparator in the efficacy analysis was Fluarix Quadrivalent, a standard-dose quadrivalent influenza vaccine, directly supporting the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

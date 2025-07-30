@@ -1,0 +1,27 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": "Zimmerman_et_al.__2023_",
+  "verification_stats": {
+    "total_extracted": 2,
+    "verified": 0,
+    "rejected": 2,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": 1,
+      "quote": "RIV4 was Flublok",
+      "reason": "does not support claim",
+      "original_explanation": "This identifies Flublok as the recombinant influenza vaccine (RIV4) being studied, which is relevant because the claim is about Flublok's antigenic match."
+    },
+    {
+      "id": 2,
+      "quote": "because it is not subject to mutations to the A (H3 N2) glycosylation binding site that reduce the effectiveness of egg based vaccines.",
+      "reason": "does not support claim",
+      "original_explanation": "This statement supports the claim by indicating that Flublok (RIV4) is not subject to egg-adapted mutations, which can cause antigenic mismatch in egg-based vaccines, thus implying that Flublok maintains an identical antigenic match to the selected strains."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

@@ -1,0 +1,44 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": {
+    "pdf_name": "Arunachalam_et_al.__2021_",
+    "source_pdf": "data/clinical_files/Arunachalam et al. (2021).pdf",
+    "total_pages": 8,
+    "total_blocks": 72,
+    "total_characters": 46858
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 5,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "RIV4 elicited the most robust responses, with significantly higher T-cell and antibody levels than the other two vaccines. Authors postulated that simpler glycosyla- tion of rHA and absence of other influenza viral proteins in RIV4 contributed to the observed robust immune response for RIV4 and emphasised the relevance of these features in determining vaccine efficacy and long term immunity 65.",
+      "relevance_explanation": "This quote shows that recombinant technology (RIV4) leads to a more robust immune response, which is a prerequisite for broader and potentially cross-protective immunity."
+    },
+    {
+      "id": 2,
+      "quote": "Portnoff et al.64 demonstrated that recombinant HA antigens (specifically for the H3 strain) produced using BEVS (as used for RIV4), induced significantly higher levels of broadly cross reactive antibodies against highly conserved regions of the HA head and stem in both mice and humans compared to egg derived split vaccines 64.",
+      "relevance_explanation": "This quote directly supports the claim by stating that recombinant technology induces broadly cross-reactive antibodies, which are key to cross-protection, especially in mismatch seasons."
+    },
+    {
+      "id": 3,
+      "quote": "RIV4 has a unique ability to induce broadly cross reactive antibody responses to antigenic ally drifted A/H3 N2 viruses in humans.",
+      "relevance_explanation": "This quote explicitly states that recombinant technology (RIV4) can induce broad cross-reactive antibodies, supporting the idea of cross-protection even when there is a mismatch."
+    },
+    {
+      "id": 4,
+      "quote": "The higher quantity and greater accessibility of the genetically conserved stem region of rHA produced in insect cells (resulting in smaller N-linked glycans) may contribute to cross protection against mismatched influenza strains 12 75.",
+      "relevance_explanation": "This quote links a feature of recombinant technology (greater accessibility of conserved regions) to cross-protection against mismatched strains."
+    },
+    {
+      "id": 5,
+      "quote": "Therefore, vaccine constructs that preserve the highly conserved HA stem can protect against drifted viruses and thus may confer a greater breadth of protection against influenza.",
+      "relevance_explanation": "This quote supports the claim by explaining that recombinant vaccines, which preserve conserved regions, can provide broader protection, including against drifted (mismatched) viruses."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

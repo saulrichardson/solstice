@@ -15,7 +15,6 @@ from .processing.text_extractor import extract_document_content
 from .processing.reading_order import determine_reading_order_simple
 from .storage.paths import stage_dir, save_json
 from .config import IngestionConfig
-import uuid
 
 
 class StandardPipeline(BasePDFPipeline):
@@ -37,13 +36,19 @@ class StandardPipeline(BasePDFPipeline):
     
     def _apply_consolidation(self, layouts: List, images: List) -> List:
         """Apply functional box consolidation."""
+        # Store raw layouts for tracking
+        self._last_raw_layouts = layouts
+        
         consolidated_layouts = []
         
         for page_idx, page_layout in enumerate(layouts):
-            # Convert to Box objects
-            page_boxes = [
-                Box(
-                    id=str(uuid.uuid4())[:8],
+            # Convert to Box objects with deterministic IDs
+            page_boxes = []
+            for det_idx, layout in enumerate(page_layout):
+                # Create deterministic ID based on page and detection index
+                det_id = f"det_{page_idx}_{det_idx:03d}"
+                box = Box(
+                    id=det_id,
                     bbox=(
                         layout.block.x_1,
                         layout.block.y_1,
@@ -52,9 +57,9 @@ class StandardPipeline(BasePDFPipeline):
                     ),
                     label=str(layout.type) if layout.type else "Unknown",
                     score=float(layout.score or 0.0),
+                    page_index=page_idx,
                 )
-                for layout in page_layout
-            ]
+                page_boxes.append(box)
             
             # Expand boxes if configured
             if self.config.expand_boxes and page_boxes:
@@ -101,7 +106,7 @@ class StandardPipeline(BasePDFPipeline):
                 )
                 all_blocks.append(block)
         
-        # Create document
+        # Create document with pipeline metadata
         document = Document(
             source_pdf=str(pdf_path),
             blocks=all_blocks,
@@ -110,7 +115,14 @@ class StandardPipeline(BasePDFPipeline):
                 "detection_dpi": self.config.detection_dpi,
                 "total_pages": len(layouts)
             },
-            reading_order=reading_order_by_page
+            reading_order=reading_order_by_page,
+            pipeline_metadata={
+                "raw_detection_count": sum(len(page) for page in self._last_raw_layouts),
+                "after_consolidation_count": sum(len(page) for page in layouts),
+                "final_block_count": len(all_blocks),
+                "box_tracking_enabled": True,
+                "id_format": "det_<page>_<index> for detections, mrg_<source_id> for merges"
+            }
         )
         
         # Extract text content
@@ -148,3 +160,63 @@ class StandardPipeline(BasePDFPipeline):
             )
         
         print(f"\nOutputs saved to: {output_dir}")
+    
+    def _save_raw_layouts(self, layouts: List, pdf_path: Path, images: List):
+        """Save raw layout detection results before any processing."""
+        raw_dir = stage_dir("raw_layouts", pdf_path)
+        raw_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Save raw layout data with deterministic IDs
+        raw_data = []
+        for page_idx, page_layout in enumerate(layouts):
+            page_data = []
+            for det_idx, layout in enumerate(page_layout):
+                det_id = f"det_{page_idx}_{det_idx:03d}"
+                page_data.append({
+                    "id": det_id,
+                    "bbox": [
+                        layout.block.x_1,
+                        layout.block.y_1,
+                        layout.block.x_2,
+                        layout.block.y_2,
+                    ],
+                    "label": str(layout.type) if layout.type else "Unknown",
+                    "score": float(layout.score or 0.0),
+                })
+            raw_data.append(page_data)
+        
+        save_json(raw_data, raw_dir / "raw_layout_boxes.json")
+        
+        # Create visualization of raw layouts if configured
+        if self.config.create_visualizations:
+            from .visualization.layout_visualizer import visualize_page_layout
+            viz_dir = raw_dir / "visualizations"
+            viz_dir.mkdir(exist_ok=True)
+            
+            for page_idx, (page_layout, image) in enumerate(zip(layouts, images)):
+                # Convert layouts to Box objects for visualization
+                boxes = []
+                for det_idx, layout in enumerate(page_layout):
+                    det_id = f"det_{page_idx}_{det_idx:03d}"
+                    box = Box(
+                        id=det_id,
+                        bbox=(
+                            layout.block.x_1,
+                            layout.block.y_1,
+                            layout.block.x_2,
+                            layout.block.y_2,
+                        ),
+                        label=str(layout.type) if layout.type else "Unknown",
+                        score=float(layout.score or 0.0),
+                    )
+                    boxes.append(box)
+                
+                output_path = viz_dir / f"page_{page_idx + 1:03d}_raw_layout.png"
+                visualize_page_layout(
+                    image,
+                    boxes,
+                    title=f"Page {page_idx + 1} - Raw Detection ({len(boxes)} boxes)",
+                    save_path=output_path,
+                    show_labels=True,
+                    show_reading_order=False,
+                )

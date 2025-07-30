@@ -1,0 +1,19 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": "Liu_et_al.__2024_",
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45.",
+      "supports_claim": true,
+      "explanation": "A very similar quote appears on page 11: 'The purified and trim eric recombinant HA proteins were expressed from the baculo virus system using the established procedures 45.' The only differences are minor (spacing, line breaks, and 'trim eric' instead of 'trimeric', 'baculo virus' instead of 'baculovirus'), but the core content is identical.. The quote directly states that recombinant HA proteins (the antigen in Flublok) were expressed using a baculovirus system. This is the core of the baculovirus expression vector system (BEVS) platform, which is the 'novel production platform' referenced in the claim. Therefore, the quote genuinely supports the claim that Flublok is produced using a platform in which recombinant HA is expressed in insect cells using BEVS.",
+      "presence_explanation": "A very similar quote appears on page 11: 'The purified and trim eric recombinant HA proteins were expressed from the baculo virus system using the established procedures 45.' The only differences are minor (spacing, line breaks, and 'trim eric' instead of 'trimeric', 'baculo virus' instead of 'baculovirus'), but the core content is identical.",
+      "support_explanation": "The quote directly states that recombinant HA proteins (the antigen in Flublok) were expressed using a baculovirus system. This is the core of the baculovirus expression vector system (BEVS) platform, which is the 'novel production platform' referenced in the claim. Therefore, the quote genuinely supports the claim that Flublok is produced using a platform in which recombinant HA is expressed in insect cells using BEVS.",
+      "original_relevance": "This quote directly states that recombinant HA proteins (the antigen in Flublok) are produced using a baculovirus system, which is the core of the BEVS platform."
+    }
+  ],
+  "verification_stats": {
+    "total_verified": 1
+  }
+}

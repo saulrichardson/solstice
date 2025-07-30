@@ -1,0 +1,27 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": "Liu_et_al.__2024_",
+  "verification_stats": {
+    "total_extracted": 2,
+    "verified": 0,
+    "rejected": 2,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "a recombinant influenza vaccine (Flublok Quad rival ent by SanofiPasteur, RIV4). RIV4 contains 3 times the i d 45 HA/d / ...d",
+      "reason": "does not support claim",
+      "original_explanation": "This quote identifies Flublok (RIV4) as a recombinant influenza vaccine, which is relevant because recombinant vaccines are produced using the exact HA sequence recommended by WHO and FDA, ensuring an identical antigenic match to selected strains."
+    },
+    {
+      "id": "comp_2",
+      "quote": "The purified and trim eric recombinant HA proteins were expressed from the baculo virus system using the established procedures 45.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote describes the production method for the recombinant HA proteins used in Flublok, which is based on the baculovirus system. This method allows for the production of HA proteins that are an exact match to the WHO- and FDA-selected strains, supporting the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

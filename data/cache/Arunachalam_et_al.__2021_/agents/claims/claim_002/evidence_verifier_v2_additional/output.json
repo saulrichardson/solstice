@@ -1,0 +1,33 @@
+{
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "document": "Arunachalam_et_al.__2021_",
+  "verification_stats": {
+    "total_extracted": 2,
+    "verified": 2,
+    "rejected": 0,
+    "verification_rate": 1.0
+  },
+  "verified_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Differences in HA glycosylation between the vaccine strains and circulating strains are thought to have contributed to this reduced vaccine effectiveness 26.",
+      "supports_claim": true,
+      "explanation": "The quote 'Differences in HA glycosylation between the vaccine strains and circulating strains are thought to have contributed to this reduced vaccine effectiveness 26.' appears almost verbatim in the document. It is found in the section discussing the impact of egg- or cell-based vaccine production on antigenic match and effectiveness, specifically after a discussion of adaptive mutations and glycosylation differences (page 2-3).. The quote directly supports the claim. The surrounding context discusses how adaptive mutations and differences in HA glycosylation can arise during the production of flu vaccines in eggs or cells, and how these changes can reduce vaccine effectiveness. The quote specifically links differences in HA glycosylation (which can result from production-related mutations or adaptations) to reduced vaccine effectiveness, thus substantiating the claim that cell- and egg-based flu vaccines have the potential to develop mutations during production that may reduce their effectiveness.",
+      "presence_explanation": "The quote 'Differences in HA glycosylation between the vaccine strains and circulating strains are thought to have contributed to this reduced vaccine effectiveness 26.' appears almost verbatim in the document. It is found in the section discussing the impact of egg- or cell-based vaccine production on antigenic match and effectiveness, specifically after a discussion of adaptive mutations and glycosylation differences (page 2-3).",
+      "support_explanation": "The quote directly supports the claim. The surrounding context discusses how adaptive mutations and differences in HA glycosylation can arise during the production of flu vaccines in eggs or cells, and how these changes can reduce vaccine effectiveness. The quote specifically links differences in HA glycosylation (which can result from production-related mutations or adaptations) to reduced vaccine effectiveness, thus substantiating the claim that cell- and egg-based flu vaccines have the potential to develop mutations during production that may reduce their effectiveness.",
+      "original_relevance": "This quote supports the claim by indicating that differences (which can arise during production in eggs or cells) in the glycosylation of hemagglutinin (HA) between vaccine strains and circulating strains can reduce vaccine effectiveness, implying that mutations or changes during production can be detrimental."
+    },
+    {
+      "id": "comp_2",
+      "quote": "the circulating A/H3 N2 viruses were antigenic ally similar to the cell grown vaccine reference virus, egg propagation of the vaccine strains had led to loss of aglycosylation site and impaired antibody response to circulating viruses, consistent with previous reports 26.",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 5, though it is split across two lines: 'the circulating A/H3 N2 viruses were antigenic ally similar to the cell grown vaccine reference virus, egg propagation of the vaccine strains had led to loss of aglycosylation site and impaired antibody response to circulating viruses, consistent with previous reports 26.' The wording is nearly identical to the quote provided, with only minor formatting and line breaks.. The quote directly supports the claim. It states that egg propagation (a production method for flu vaccines) led to the loss of a glycosylation site and impaired antibody response to circulating viruses. This is a specific example of a mutation (loss of glycosylation site) arising during vaccine production that reduces vaccine effectiveness (impaired antibody response), which is exactly what the claim asserts.",
+      "presence_explanation": "The quote appears on page 5, though it is split across two lines: 'the circulating A/H3 N2 viruses were antigenic ally similar to the cell grown vaccine reference virus, egg propagation of the vaccine strains had led to loss of aglycosylation site and impaired antibody response to circulating viruses, consistent with previous reports 26.' The wording is nearly identical to the quote provided, with only minor formatting and line breaks.",
+      "support_explanation": "The quote directly supports the claim. It states that egg propagation (a production method for flu vaccines) led to the loss of a glycosylation site and impaired antibody response to circulating viruses. This is a specific example of a mutation (loss of glycosylation site) arising during vaccine production that reduces vaccine effectiveness (impaired antibody response), which is exactly what the claim asserts.",
+      "original_relevance": "This quote directly links egg propagation (a production method) to the loss of a glycosylation site and impaired antibody response, supporting the claim that mutations or changes during production can reduce vaccine effectiveness."
+    }
+  ],
+  "rejected_evidence": [],
+  "model_used": "gpt-4.1"
+}
