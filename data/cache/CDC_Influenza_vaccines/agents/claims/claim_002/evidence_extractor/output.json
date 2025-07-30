@@ -1,6 +1,6 @@
 {
   "claim_id": "claim_002",
-  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "document": {
     "pdf_name": "CDC_Influenza_vaccines",
     "source_pdf": "data/clinical_files/CDC Influenza vaccines.pdf",
@@ -9,16 +9,10 @@
     "total_characters": 2329
   },
   "extraction_result": {
-    "success": true,
-    "total_snippets_found": 1,
-    "error": null
+    "success": false,
+    "total_snippets_found": 0,
+    "error": "Failed to get valid response after 3 attempts. Last error: Unexpected error: All connection attempts failed"
   },
-  "extracted_evidence": [
-    {
-      "id": 1,
-      "quote": "that any influenza vaccine (egg based or non egg based) that is otherwise appropriate for the recipient's age and health status can be used (see Persons with a History of Egg Allergy).",
-      "relevance_explanation": "This quote distinguishes between egg-based and non-egg-based (cell-based or recombinant) influenza vaccines, which is relevant context for discussing differences in production methods and potential for mutations. However, it does not directly address mutations or effectiveness."
-    }
-  ],
+  "extracted_evidence": [],
   "model_used": "gpt-4.1"
 }

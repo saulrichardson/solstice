@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Snippet of the title, authors, and beginning of the abstract of an original article comparing recombinant and standard-dose influenza vaccines. The visible text of the background states that trivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard-dose egg-based vaccines. Evidence: \u201ctrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard-dose egg-based vaccines\u201d This statement confirms the 3\u00d7 hemagglutinin content of the recombinant vaccine but does not mention or provide evidence about greater immunogenicity, so it does not support the claim in full.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Snippet of the title, authors, and beginning of the abstract of an original article comparing recombinant and standard-dose influenza vaccines. The visible text of the background states that trivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard-dose egg-based vaccines.",
-    "evidence_found": "\u201ctrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard-dose egg-based vaccines\u201d",
-    "reasoning": "This statement confirms the 3\u00d7 hemagglutinin content of the recombinant vaccine but does not mention or provide evidence about greater immunogenicity, so it does not support the claim in full.",
-    "confidence_notes": null
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
+    "evidence_found": null,
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

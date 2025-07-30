@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "The figure shows the cluster randomization design for Kaiser Permanente Northern California facilities, grouping facilities by size into Block A and Block B and alternating weekly administration of SD-IIV4 (standard-dose inactivated quadrivalent influenza vaccine) and RIV4 (quadrivalent recombinant influenza vaccine) across nine facilities for four illustrative weeks. The image only depicts the randomization schedule of SD-IIV4 versus RIV4 by facility and week; it contains no information on antigen (HA) content or comparative immunogenicity and therefore does not support the claim.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "The figure shows the cluster randomization design for Kaiser Permanente Northern California facilities, grouping facilities by size into Block A and Block B and alternating weekly administration of SD-IIV4 (standard-dose inactivated quadrivalent influenza vaccine) and RIV4 (quadrivalent recombinant influenza vaccine) across nine facilities for four illustrative weeks.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The image only depicts the randomization schedule of SD-IIV4 versus RIV4 by facility and week; it contains no information on antigen (HA) content or comparative immunogenicity and therefore does not support the claim.",
-    "confidence_notes": null
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

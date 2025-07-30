@@ -1,29 +1,18 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "document": "Hsiao_et_al.__2023_",
   "additional_evidence_check": {
     "checked_for_more": true,
-    "found_additional": true,
-    "additional_count": 1
+    "found_additional": false,
+    "additional_count": 0
   },
   "completeness_stats": {
     "existing_evidence": 0,
-    "new_evidence_found": 1,
-    "total_evidence": 1
+    "new_evidence_found": 0,
+    "total_evidence": 0
   },
   "verified_evidence": [],
-  "new_evidence": [
-    {
-      "id": "comp_1",
-      "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
-      "relevance_explanation": "This quote supports the claim by stating that the recombinant formulation (Flublok) is not susceptible to antigenic drift during manufacturing, which is a key reason it can ensure an identical antigenic match with the WHO- and FDA-selected flu strains.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    }
-  ],
+  "new_evidence": [],
   "model_used": "gpt-4.1"
 }

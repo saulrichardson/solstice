@@ -11,8 +11,8 @@
   "extracted_evidence": [
     {
       "id": "comp_1",
-      "quote": "The production of RIV4 is based on a novel production platform in which recombinant HA (rHA) is expressed in insect cells using a baculovirus expression vector system (BEVS)22. In brief, expresSF+ insect cells are infected with recombinant baculovirus carrying the relevant influenza HA genes, which are expressed under the control of a baculovirus polyhedrin promoter. rHA molecules from the infected cells are extracted using detergent and purified from the clarified cell extract using column chromatographies followed by Q membrane filtration. Purified rHA is suspended in relevant buffer using tangential flow filtration and passed through sterile filtration for storage and formulation 22.",
-      "relevance_explanation": "This quote describes the manufacturing process of Flublok (RIV4), emphasizing that the HA genes used are directly from the selected influenza strains, supporting the claim that the antigenic match is ensured with the WHO- and FDA-selected strains.",
+      "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.",
+      "relevance_explanation": "This quote explicitly states that Flublok (RIV4) contains 45 \u00b5g of HA per strain, which is three times the standard 15 \u00b5g HA per strain in standard-dose flu vaccines, directly supporting the claim about antigen content.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -21,8 +21,8 @@
     },
     {
       "id": "comp_2",
-      "quote": "Contrary to the egg derived vaccines and as expected, rHA containing the new glycosylation site induced optimal levels of antibodies that efficiently recognised the glycosylated clade 3 C.2 a H3 N2 virus 26.",
-      "relevance_explanation": "This quote provides evidence that recombinant HA (as used in Flublok) preserves antigenic sites present in the selected wild-type strains, supporting the claim that Flublok ensures an identical antigenic match with the strains chosen by health authorities.",
+      "quote": "A plant derived recombinant quadrivalent VLP (QVLP) at 30 \u00b5g dose per strain was found to be non inferior in terms of vaccine efficacy against respiratory illness and influenza like illness to a quadrivalent inactivated influenza vaccine (QIV; Fluarix Quadrivalent, GlaxoSmithKline) given at 15 \u00b5g dose strain in adults aged 18 to 64 years 37.",
+      "relevance_explanation": "This quote provides context for standard-dose flu vaccines containing 15 \u00b5g HA per strain, which helps establish the comparison that Flublok's 45 \u00b5g HA per strain is three times higher.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

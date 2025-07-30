@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Top portion of the first page of a journal article from Vaccine (Elsevier), showing the journal header, URL, and the beginning of the article title about the protective efficacy of a trivalent recombinant hemagglutinin protein vaccine in healthy adults. The image does not provide any information about the amount of HA antigen in Flublok versus standard-dose flu vaccines and therefore does not support the claim. Note: Only the header and title of the article are visible; no quantitative antigen content or immunogenicity data are shown.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Top portion of the first page of a journal article from Vaccine (Elsevier), showing the journal header, URL, and the beginning of the article title about the protective efficacy of a trivalent recombinant hemagglutinin protein vaccine in healthy adults.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The image does not provide any information about the amount of HA antigen in Flublok versus standard-dose flu vaccines and therefore does not support the claim.",
-    "confidence_notes": "Only the header and title of the article are visible; no quantitative antigen content or immunogenicity data are shown."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

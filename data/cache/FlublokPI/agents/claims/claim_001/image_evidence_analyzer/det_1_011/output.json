@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table displaying solicited local and systemic reactogenicity (adverse event) rates for a pooled cohort of adults receiving an influenza vaccine (presumably Flublok) and comparators, showing percentages for pain, redness, firmness/swelling (local) and fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, and fever (systemic). The table provides safety/reactogenicity data and does not include information on hemagglutinin antigen content or immunogenicity outcomes, and therefore does not support the claim. Note: Table context is partially cut off and focuses solely on adverse event rates, with no antigen dose or immunogenicity data.",
+  "explanation": "Two tables summarizing solicited local and systemic adverse events in adult subjects vaccinated in clinical trials. The left table lists percentages of solicited symptoms (e.g., fatigue, headache, muscle pain, nausea, joint pain, chills, fever) by severity for Flublok versus placebo cohorts. The right table lists pooled percentages of local (pain, redness, swelling) and systemic (fatigue, headache, muscle pain, joint pain, chills, nausea, fever) reactogenicity for Flublok and a comparator vaccine, with footnotes describing trial registration, cohort definitions, and symptom grading. The image only presents safety/reactogenicity data and does not include information on hemagglutinin antigen content or immunogenicity, so it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table displaying solicited local and systemic reactogenicity (adverse event) rates for a pooled cohort of adults receiving an influenza vaccine (presumably Flublok) and comparators, showing percentages for pain, redness, firmness/swelling (local) and fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, and fever (systemic).",
+    "image_description": "Two tables summarizing solicited local and systemic adverse events in adult subjects vaccinated in clinical trials. The left table lists percentages of solicited symptoms (e.g., fatigue, headache, muscle pain, nausea, joint pain, chills, fever) by severity for Flublok versus placebo cohorts. The right table lists pooled percentages of local (pain, redness, swelling) and systemic (fatigue, headache, muscle pain, joint pain, chills, nausea, fever) reactogenicity for Flublok and a comparator vaccine, with footnotes describing trial registration, cohort definitions, and symptom grading.",
     "evidence_found": null,
-    "reasoning": "The table provides safety/reactogenicity data and does not include information on hemagglutinin antigen content or immunogenicity outcomes, and therefore does not support the claim.",
-    "confidence_notes": "Table context is partially cut off and focuses solely on adverse event rates, with no antigen dose or immunogenicity data."
+    "reasoning": "The image only presents safety/reactogenicity data and does not include information on hemagglutinin antigen content or immunogenicity, so it does not support the claim.",
+    "confidence_notes": null
   }
 }

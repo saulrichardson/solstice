@@ -9,31 +9,10 @@
     "total_characters": 22898
   },
   "extraction_result": {
-    "success": true,
-    "total_snippets_found": 4,
-    "error": null
+    "success": false,
+    "total_snippets_found": 0,
+    "error": "Failed to get valid response after 3 attempts. Last error: Unexpected error: All connection attempts failed"
   },
-  "extracted_evidence": [
-    {
-      "id": 1,
-      "quote": "Standard Dose Flu zone and FlucelVax. HD-IIV4 was High Dose Flu zone, RIV4 was Flublok and Adj-IV was FluAd.",
-      "relevance_explanation": "This quote explicitly identifies RIV4 as Flublok, establishing which product is being discussed in the context of vaccine comparisons."
-    },
-    {
-      "id": 2,
-      "quote": "Two large studies have explored rVE of recombinant quadrivalent influenza vaccine (RIV4). The Medicare beneficiaries study [10] using retrospective data as described above, reported significant rVE of RIV4 vs. SD-IIV4) against influenza related hospital encounters. Secondly, a randomized controlled trial (RCT) found significant rVE of RIV4 compared with SD-IIV4 among adults 50 years old, but not for adults 65 years old [11].",
-      "relevance_explanation": "This quote provides direct evidence that RIV4 (Flublok) has greater effectiveness (relative vaccine effectiveness, rVE) compared to standard-dose influenza vaccines (SD-IIV4), supporting the claim that higher antigen content is linked to greater immunogenicity."
-    },
-    {
-      "id": 3,
-      "quote": "Conclusions: Overall adults, both RIV4 and SD-IIV4 were effective against influenza hospitalization, RIV4 providing better protection compared with SD-IIV4 overall, for females, younger adults, and those with no high risk conditions.",
-      "relevance_explanation": "This statement from the conclusions section directly affirms that RIV4 (Flublok) provided better protection than standard-dose vaccines, supporting the link between its higher antigen content and greater immunogenicity."
-    },
-    {
-      "id": 4,
-      "quote": "RIV4: Flublok. c SD-IIV4: Afluria, Fluarix, FluLaval, Standard Dose Flu zone and FlucelVax.",
-      "relevance_explanation": "This quote clarifies the vaccine brands included in each group, confirming that Flublok is the RIV4 (recombinant quadrivalent influenza vaccine) being compared to standard-dose vaccines."
-    }
-  ],
+  "extracted_evidence": [],
   "model_used": "gpt-4.1"
 }

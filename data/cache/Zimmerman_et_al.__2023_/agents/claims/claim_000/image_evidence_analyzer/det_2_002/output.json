@@ -5,15 +5,15 @@
   "page_number": 3,
   "block_id": "det_2_002",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A flowchart showing the numbers of participants in primary analyses: boxes labeled RIV4 n=3,047; SD-IIV4 n=862; Unvaccinated n=8,878, and a subcohort with RIV4 n=291; SD-IIV4 n=114; Unvaccinated n=1,398. The image only presents participant group sizes and study flow; it does not provide any information about antigenic match with WHO- or FDA-selected flu strains, and thus does not support the claim. Note: Image appears complete for the flowchart; no relevant antigenic or strain-selection data are present.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A flowchart showing the numbers of participants in primary analyses: boxes labeled RIV4 n=3,047; SD-IIV4 n=862; Unvaccinated n=8,878, and a subcohort with RIV4 n=291; SD-IIV4 n=114; Unvaccinated n=1,398.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The image only presents participant group sizes and study flow; it does not provide any information about antigenic match with WHO- or FDA-selected flu strains, and thus does not support the claim.",
-    "confidence_notes": "Image appears complete for the flowchart; no relevant antigenic or strain-selection data are present."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

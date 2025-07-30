@@ -5,15 +5,15 @@
   "page_number": 2,
   "block_id": "det_1_019",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A tabular summary of solicited adverse events reported by study subjects, showing percentages of mild, moderate, and severe local and systemic reactions across different study groups, with footnotes explaining reporting thresholds and study registrations. does not support the claim since the table provides safety and adverse event data, not information on antigenic matching with WHO- or FDA-selected strains. Note: The image is focused on adverse event percentages; there is no visible data regarding antigenic match or strain selection.",
+  "explanation": "A table summarizing percentages of subjects reporting solicited adverse reactions (injection site and systemic) by severity (any, moderate, severe) across multiple studies, with footnotes describing study populations and definitions. does not support the claim because the table presents safety and adverse event data, not hemagglutinin antigen content or immunogenicity comparisons. Note: Table appears to focus on adverse events; no antigen dose or immunogenicity data are shown.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A tabular summary of solicited adverse events reported by study subjects, showing percentages of mild, moderate, and severe local and systemic reactions across different study groups, with footnotes explaining reporting thresholds and study registrations.",
+    "image_description": "A table summarizing percentages of subjects reporting solicited adverse reactions (injection site and systemic) by severity (any, moderate, severe) across multiple studies, with footnotes describing study populations and definitions.",
     "evidence_found": null,
-    "reasoning": "does not support the claim since the table provides safety and adverse event data, not information on antigenic matching with WHO- or FDA-selected strains.",
-    "confidence_notes": "The image is focused on adverse event percentages; there is no visible data regarding antigenic match or strain selection."
+    "reasoning": "does not support the claim because the table presents safety and adverse event data, not hemagglutinin antigen content or immunogenicity comparisons.",
+    "confidence_notes": "Table appears to focus on adverse events; no antigen dose or immunogenicity data are shown."
   }
 }

@@ -1,49 +1,18 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "document": "Liu_et_al.__2024_",
   "additional_evidence_check": {
     "checked_for_more": true,
-    "found_additional": true,
-    "additional_count": 3
+    "found_additional": false,
+    "additional_count": 0
   },
   "completeness_stats": {
     "existing_evidence": 0,
-    "new_evidence_found": 3,
-    "total_evidence": 3
+    "new_evidence_found": 0,
+    "total_evidence": 0
   },
   "verified_evidence": [],
-  "new_evidence": [
-    {
-      "id": "comp_1",
-      "quote": "a recombinant influenza vaccine (Flublok Quad rival ent by SanofiPasteur, RIV4). RIV4 contains 3 times the i d 45 HA/d / ...d",
-      "relevance_explanation": "This quote identifies Flublok (RIV4) as a recombinant influenza vaccine, which is relevant because recombinant vaccines are produced using the exact HA sequence recommended by WHO and FDA, ensuring an identical antigenic match to the selected strains.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    },
-    {
-      "id": "comp_2",
-      "quote": "All the testing viruses used in this study were sequenced. Sequences were analyzed against the sequences of candidate vaccine viruses (CVV) of the study vaccines as deposited in Global Initiative on Sharing Avian Influenza Data (GISAID) database by BioEdit version 7 0 9 0 (Table 1).",
-      "relevance_explanation": "This quote shows that the antigens used in the vaccines, including Flublok, were sequence-verified against the WHO- and FDA-selected candidate vaccine viruses, supporting the claim that Flublok ensures an identical antigenic match.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    },
-    {
-      "id": "comp_3",
-      "quote": "These serum samples were tested by ELISA to evaluate the total binding antibodies against 8 recombinant HA proteins (rHA from both egg and cell propagated viruses of each of the 4 vaccine antigens), and 2 rHA stalk proteins (A (H1 N1) pdm09 HA stalk, and A (H3 N2) HA stalk). The purified and trim eric recombinant HA proteins were expressed from the baculo virus system using the established procedures 45.",
-      "relevance_explanation": "This quote describes the use of recombinant HA proteins, produced in a baculovirus system (the method used for Flublok), which are based on the exact sequence of the selected vaccine strains, supporting the claim of identical antigenic match.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    }
-  ],
+  "new_evidence": [],
   "model_used": "gpt-4.1"
 }

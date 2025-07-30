@@ -5,15 +5,15 @@
   "page_number": 2,
   "block_id": "det_1_011",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table of solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) reported in Flublok and comparator groups, with percentages and footnotes defining severity grades, cohort sizes, and study registry information. The table presents safety and reactogenicity data and does not include any information about antigenic match or strain selection, so it does not support the claim. Note: Limited to safety/reactogenicity data; no antigenic or immunogenicity information present.",
+  "explanation": "A table showing solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) with percentage incidences for Flublok versus comparator/placebo cohorts along with explanatory footnotes on grading and study denominators. The table only presents reactogenicity data (incidence of adverse events) and does not include any information on hemagglutinin antigen content or immunogenicity; it therefore does not support the claim. Note: Image is clear for adverse event data but does not include antigen content or immunogenicity measures.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table of solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) reported in Flublok and comparator groups, with percentages and footnotes defining severity grades, cohort sizes, and study registry information.",
+    "image_description": "A table showing solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) with percentage incidences for Flublok versus comparator/placebo cohorts along with explanatory footnotes on grading and study denominators.",
     "evidence_found": null,
-    "reasoning": "The table presents safety and reactogenicity data and does not include any information about antigenic match or strain selection, so it does not support the claim.",
-    "confidence_notes": "Limited to safety/reactogenicity data; no antigenic or immunogenicity information present."
+    "reasoning": "The table only presents reactogenicity data (incidence of adverse events) and does not include any information on hemagglutinin antigen content or immunogenicity; it therefore does not support the claim.",
+    "confidence_notes": "Image is clear for adverse event data but does not include antigen content or immunogenicity measures."
   }
 }

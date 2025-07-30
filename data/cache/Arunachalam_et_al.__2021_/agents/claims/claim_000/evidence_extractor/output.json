@@ -21,13 +21,13 @@
     },
     {
       "id": 2,
-      "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi Pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains. The production of RIV4 is based on a novel production platform in which recombinant HA (rHA) is expressed in insect cells using a baculovirus expression vector system (BEVS)22.",
-      "relevance_explanation": "This quote describes the manufacturing process of Flublok, emphasizing that the HA antigens are produced recombinantly and are not subject to the adaptive mutations that can occur in egg- or cell-based production, supporting the claim of an identical antigenic match."
+      "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi Pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains. The production of RIV4 is based on a novel production platform in which recombinant HA (rHA) is expressed in insect cells using a baculovirus expression vector system (BEVS)22. In brief, expresSF+ insect cells are infected with recombinant baculovirus carrying the relevant influenza HA genes, which are expressed under the control of a baculovirus polyhedrin promoter.",
+      "relevance_explanation": "This quote describes the manufacturing process of Flublok, emphasizing that the HA genes used are those relevant to the selected influenza strains, supporting the claim that the antigenic match is ensured with the strains chosen by regulatory authorities."
     },
     {
       "id": 3,
       "quote": "The use of recombinant protein technology eliminates the risk of antigenic mismatch due to potential changes in primary HA structure through egg- or cell adaptation.",
-      "relevance_explanation": "This statement explicitly affirms that recombinant technology, as used in Flublok, prevents antigenic mismatch that can arise from traditional vaccine production methods, supporting the claim that Flublok ensures an identical antigenic match with selected strains."
+      "relevance_explanation": "This statement explicitly affirms that recombinant technology, as used in Flublok, prevents antigenic mismatch that can occur in traditional manufacturing, supporting the claim of an identical antigenic match with selected strains."
     }
   ],
   "model_used": "gpt-4.1"

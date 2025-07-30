@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table listing percentages of solicited local and systemic adverse reactions by severity (any, moderate, severe) for different study vaccines across multiple studies. does not support the claim because the table only presents safety/adverse event data and provides no information on immune response breadth or cross-protection in a mismatch season Note: Analysis limited to visible portion of the table which appears to focus on adverse events; no immunogenicity or efficacy data are shown",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing percentages of solicited local and systemic adverse reactions by severity (any, moderate, severe) for different study vaccines across multiple studies.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table only presents safety/adverse event data and provides no information on immune response breadth or cross-protection in a mismatch season",
-    "confidence_notes": "Analysis limited to visible portion of the table which appears to focus on adverse events; no immunogenicity or efficacy data are shown"
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

@@ -1,6 +1,6 @@
 {
   "claim_id": "claim_002",
-  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "document": {
     "pdf_name": "FlublokPI",
     "source_pdf": "data/clinical_files/FlublokPI.pdf",
@@ -9,21 +9,10 @@
     "total_characters": 25335
   },
   "extraction_result": {
-    "success": true,
-    "total_snippets_found": 2,
-    "error": null
+    "success": false,
+    "total_snippets_found": 0,
+    "error": "Failed to get valid response after 3 attempts. Last error: Unexpected error: All connection attempts failed"
   },
-  "extracted_evidence": [
-    {
-      "id": 1,
-      "quote": "Frequent development of antigenic variants through antigenic drift is the virologic basis for seasonal epidemics and the reason for the usual replacement of one or more influenza virus strains in each year's influenza vaccine.",
-      "relevance_explanation": "This quote explains that antigenic drift leads to the frequent development of new variants, which is a key mechanism by which mutations can arise during the production of flu vaccines, potentially reducing their effectiveness if the vaccine strains do not match circulating viruses."
-    },
-    {
-      "id": 2,
-      "quote": "Vaccine efficacy against antigenically matched culture confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenically matched to the strains represented in the vaccine.",
-      "relevance_explanation": "This quote provides evidence that the vaccine strains can differ from circulating strains due to mutations or antigenic drift, which can reduce the effectiveness of the vaccine."
-    }
-  ],
+  "extracted_evidence": [],
   "model_used": "gpt-4.1"
 }

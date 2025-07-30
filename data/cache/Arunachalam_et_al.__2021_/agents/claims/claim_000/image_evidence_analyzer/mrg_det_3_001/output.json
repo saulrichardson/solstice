@@ -5,15 +5,15 @@
   "page_number": 4,
   "block_id": "mrg_det_3_001",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Schematic diagrams (panels a and b) of hemagglutinin (HA) protein: panel a shows native HA extracted from influenza virus as HA1 and HA2 heterodimer with complex-type sialylated N-linked glycans and cleaved fusion peptide; panel b shows recombinant HA0 produced in insect cells as a single precursor polypeptide with amino acid sequence identical to wild-type HA and bearing paucimannose N-linked glycans and an uncleaved fusion-peptide loop. This figure does not support the claim because it only presents the structural and sequence features of HA and differences in glycosylation between native and insect-cell\u2013expressed proteins, without any data or statements demonstrating that Flublok antigens are an identical antigenic match to WHO- or FDA-selected flu strains. Note: The figure focuses on molecular structure and glycosylation; it does not reference specific flu strains or regulatory matching criteria.",
+  "explanation": "Two schematic diagrams labeled a and b depicting structural features of native influenza HA (heterodimer of HA1 and HA2 with complex-type glycans and cleaved fusion peptide) versus recombinant HA (HA0 monomer with paucimannose glycans and uncleaved fusion peptide) produced in insect cells using baculovirus expression. The figure illustrates structural and glycosylation differences between native HA and recombinant HA produced in insect cells but does not provide any information on HA antigen content or dosage comparisons, so it does not support the claim. Note: The image is clear but focuses solely on protein structure and glycan composition, not antigen amounts or immunogenicity.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Schematic diagrams (panels a and b) of hemagglutinin (HA) protein: panel a shows native HA extracted from influenza virus as HA1 and HA2 heterodimer with complex-type sialylated N-linked glycans and cleaved fusion peptide; panel b shows recombinant HA0 produced in insect cells as a single precursor polypeptide with amino acid sequence identical to wild-type HA and bearing paucimannose N-linked glycans and an uncleaved fusion-peptide loop.",
+    "image_description": "Two schematic diagrams labeled a and b depicting structural features of native influenza HA (heterodimer of HA1 and HA2 with complex-type glycans and cleaved fusion peptide) versus recombinant HA (HA0 monomer with paucimannose glycans and uncleaved fusion peptide) produced in insect cells using baculovirus expression.",
     "evidence_found": null,
-    "reasoning": "This figure does not support the claim because it only presents the structural and sequence features of HA and differences in glycosylation between native and insect-cell\u2013expressed proteins, without any data or statements demonstrating that Flublok antigens are an identical antigenic match to WHO- or FDA-selected flu strains.",
-    "confidence_notes": "The figure focuses on molecular structure and glycosylation; it does not reference specific flu strains or regulatory matching criteria."
+    "reasoning": "The figure illustrates structural and glycosylation differences between native HA and recombinant HA produced in insect cells but does not provide any information on HA antigen content or dosage comparisons, so it does not support the claim.",
+    "confidence_notes": "The image is clear but focuses solely on protein structure and glycan composition, not antigen amounts or immunogenicity."
   }
 }

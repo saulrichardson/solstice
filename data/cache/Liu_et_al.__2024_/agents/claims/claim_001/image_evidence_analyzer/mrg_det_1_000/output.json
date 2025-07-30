@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A CONSORT flow diagram illustrating participant screening, exclusions, and randomization in Year 1 and Year 2 among three vaccine groups: IIV4 (inactivated influenza vaccine), ccIIV4 (cell-culture based IIV4), and RIV4 (Flublok\u00ae Quadrivalent). It shows numbers enrolled, re-randomized, and excluded per protocol. The figure is a participant flow diagram and does not provide any data on hemagglutinin antigen content or immunogenicity, so it does not support the claim. Note: The image is clear, but it only covers enrollment and randomization and lacks any vaccine composition or immunogenicity information.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A CONSORT flow diagram illustrating participant screening, exclusions, and randomization in Year 1 and Year 2 among three vaccine groups: IIV4 (inactivated influenza vaccine), ccIIV4 (cell-culture based IIV4), and RIV4 (Flublok\u00ae Quadrivalent). It shows numbers enrolled, re-randomized, and excluded per protocol.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The figure is a participant flow diagram and does not provide any data on hemagglutinin antigen content or immunogenicity, so it does not support the claim.",
-    "confidence_notes": "The image is clear, but it only covers enrollment and randomization and lacks any vaccine composition or immunogenicity information."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

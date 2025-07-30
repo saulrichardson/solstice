@@ -5,15 +5,15 @@
   "page_number": 3,
   "block_id": "det_2_003",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Table listing amino acid substitutions and glycosylation motif changes in HA proteins of cell-based versus egg-based candidate vaccine viruses for various influenza strains (H1N1, H3N2, B/Victoria, B/Yamagata lineages), comparing WHO- and FDA-selected reference strains to vaccine viruses (egg- and cell-derived). The table documents antigenic differences in egg-based versus cell-based vaccine viruses but does not include any data on Flublok or demonstrate that Flublok ensures identical antigenic match with WHO- and FDA-selected strains and therefore does not support the claim. Note: Table does not mention Flublok; image is partially visible but key headings and entries are legible.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Table listing amino acid substitutions and glycosylation motif changes in HA proteins of cell-based versus egg-based candidate vaccine viruses for various influenza strains (H1N1, H3N2, B/Victoria, B/Yamagata lineages), comparing WHO- and FDA-selected reference strains to vaccine viruses (egg- and cell-derived).",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The table documents antigenic differences in egg-based versus cell-based vaccine viruses but does not include any data on Flublok or demonstrate that Flublok ensures identical antigenic match with WHO- and FDA-selected strains and therefore does not support the claim.",
-    "confidence_notes": "Table does not mention Flublok; image is partially visible but key headings and entries are legible."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

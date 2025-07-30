@@ -5,15 +5,15 @@
   "page_number": 2,
   "block_id": "det_1_011",
   "claim_id": "claim_002",
-  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table of solicited local and systemic reactogenicity percentages from influenza vaccine clinical trials, listing adverse events (pain, redness, firmness/swelling, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) with corresponding percentages for different vaccine groups, plus footnotes on cohort definitions, study identifiers, and severity grading. The table presents reactogenicity and adverse event data for vaccine recipients and placebo or comparator groups, with no information on vaccine production methods or mutations. Therefore, it does not support the claim. Note: Image is clear enough to see the scope is safety/reactogenicity data; production mutation details are not addressed.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table of solicited local and systemic reactogenicity percentages from influenza vaccine clinical trials, listing adverse events (pain, redness, firmness/swelling, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) with corresponding percentages for different vaccine groups, plus footnotes on cohort definitions, study identifiers, and severity grading.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The table presents reactogenicity and adverse event data for vaccine recipients and placebo or comparator groups, with no information on vaccine production methods or mutations. Therefore, it does not support the claim.",
-    "confidence_notes": "Image is clear enough to see the scope is safety/reactogenicity data; production mutation details are not addressed."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

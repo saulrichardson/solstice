@@ -5,15 +5,15 @@
   "page_number": 2,
   "block_id": "det_1_000",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Table listing trade names (manufacturers), presentations, age indications, HA content per dose, route of administration, and mercury content for quadrivalent influenza vaccines, including Flublok Quadrivalent (Sanofi Pasteur). does not support the claim: the table provides formulation and dosing information but offers no data or statements regarding antigenic matching with WHO- or FDA-selected flu strains.",
+  "explanation": "A table listing various influenza vaccines, including trade name, presentations, age indication, HA antigen content per dose, route, and mercury content. Under RIV4 (recombinant HA vaccine), Flublok Quadrivalent is shown as 45 \u00b5g HA per 0.5 mL dose, while standard IIV4 vaccines (e.g., Fluad Quadrivalent) are listed as 15 \u00b5g HA per 0.5 mL dose. Evidence: Flublok Quadrivalent contains 45 \u00b5g HA per dose versus 15 \u00b5g HA per dose in standard-dose IIV4 vaccines. The table shows Flublok contains 3\u00d7 the HA antigen content of standard-dose vaccines but provides no data on immunogenicity, so it does not support the claim that higher HA content has been linked to greater immunogenicity.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Table listing trade names (manufacturers), presentations, age indications, HA content per dose, route of administration, and mercury content for quadrivalent influenza vaccines, including Flublok Quadrivalent (Sanofi Pasteur).",
-    "evidence_found": null,
-    "reasoning": "does not support the claim: the table provides formulation and dosing information but offers no data or statements regarding antigenic matching with WHO- or FDA-selected flu strains.",
+    "image_description": "A table listing various influenza vaccines, including trade name, presentations, age indication, HA antigen content per dose, route, and mercury content. Under RIV4 (recombinant HA vaccine), Flublok Quadrivalent is shown as 45 \u00b5g HA per 0.5 mL dose, while standard IIV4 vaccines (e.g., Fluad Quadrivalent) are listed as 15 \u00b5g HA per 0.5 mL dose.",
+    "evidence_found": "Flublok Quadrivalent contains 45 \u00b5g HA per dose versus 15 \u00b5g HA per dose in standard-dose IIV4 vaccines.",
+    "reasoning": "The table shows Flublok contains 3\u00d7 the HA antigen content of standard-dose vaccines but provides no data on immunogenicity, so it does not support the claim that higher HA content has been linked to greater immunogenicity.",
     "confidence_notes": null
   }
 }

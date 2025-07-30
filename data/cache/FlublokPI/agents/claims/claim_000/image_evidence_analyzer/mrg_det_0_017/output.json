@@ -5,15 +5,15 @@
   "page_number": 1,
   "block_id": "mrg_det_0_017",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Black-and-white reproduction of the first page of Flublok full prescribing information, including a condensed header with DOSAGE AND ADMINISTRATION, DOSAGE FORMS AND STRENGTHS, CONTRAINDICATIONS, WARNINGS AND PRECAUTIONS, ADVERSE REACTIONS, a table of contents listing sections 1 through 17, and the beginning of section 1 (Indications and Usage) and section 2 (Dosage and Administration). does not support the claim because the image only shows heading and table of contents information without any data or statements regarding antigenic match to WHO- or FDA-selected strains. Note: Text is clear but limited to administrative headings and does not include clinical or regulatory statements about antigenic matching.",
+  "explanation": "A screenshot of the first page of Flublok prescribing information showing a table of contents listing sections such as Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, and Patient Counseling Information. Below it is partial text of the Indications and Usage and Dosage and Administration sections, noting that Flublok is given as a single 0.5 mL dose. The visible table only lists section headings and general dosing volume; it does not provide any data on hemagglutinin antigen content or comparisons to standard-dose vaccines and therefore does not support the claim. Note: The image does not include any composition or strength details in micrograms; only dose volume is shown, so it is possible relevant information appears elsewhere in the full document.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Black-and-white reproduction of the first page of Flublok full prescribing information, including a condensed header with DOSAGE AND ADMINISTRATION, DOSAGE FORMS AND STRENGTHS, CONTRAINDICATIONS, WARNINGS AND PRECAUTIONS, ADVERSE REACTIONS, a table of contents listing sections 1 through 17, and the beginning of section 1 (Indications and Usage) and section 2 (Dosage and Administration).",
+    "image_description": "A screenshot of the first page of Flublok prescribing information showing a table of contents listing sections such as Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, and Patient Counseling Information. Below it is partial text of the Indications and Usage and Dosage and Administration sections, noting that Flublok is given as a single 0.5 mL dose.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image only shows heading and table of contents information without any data or statements regarding antigenic match to WHO- or FDA-selected strains.",
-    "confidence_notes": "Text is clear but limited to administrative headings and does not include clinical or regulatory statements about antigenic matching."
+    "reasoning": "The visible table only lists section headings and general dosing volume; it does not provide any data on hemagglutinin antigen content or comparisons to standard-dose vaccines and therefore does not support the claim.",
+    "confidence_notes": "The image does not include any composition or strength details in micrograms; only dose volume is shown, so it is possible relevant information appears elsewhere in the full document."
   }
 }

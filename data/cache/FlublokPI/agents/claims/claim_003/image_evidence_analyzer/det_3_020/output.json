@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table presenting vaccine efficacy data from a Flublok Quadrivalent trial, including number of culture-confirmed influenza-like illness cases, attack rates, relative risks, vaccine efficacy percentages and 95% confidence intervals for strains matched to the vaccine and for all strains regardless of match, with subtype A and B breakdowns. The figure provides efficacy statistics for matched and overall strains but does not present data on immune response breadth, recombinant technology, or cross-protection in a mismatch season, and therefore does not support the claim. Note: The table is clear and detailed but lacks any mention of recombinant production methods or immunologic cross-reactivity in mismatch seasons.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table presenting vaccine efficacy data from a Flublok Quadrivalent trial, including number of culture-confirmed influenza-like illness cases, attack rates, relative risks, vaccine efficacy percentages and 95% confidence intervals for strains matched to the vaccine and for all strains regardless of match, with subtype A and B breakdowns.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The figure provides efficacy statistics for matched and overall strains but does not present data on immune response breadth, recombinant technology, or cross-protection in a mismatch season, and therefore does not support the claim.",
-    "confidence_notes": "The table is clear and detailed but lacks any mention of recombinant production methods or immunologic cross-reactivity in mismatch seasons."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

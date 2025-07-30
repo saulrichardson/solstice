@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A four-panel figure (A\u2013D) comparing geometric mean fold rise of antibody titers at 1 month post-vaccination (panels A, B) and fold reduction at 6 months post-vaccination (panels C, D) against various influenza strains (H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/VIC egg, B/VIC cell, B/YAM egg, B/YAM cell) in two age groups (18\u201344 years, 45\u201364 years) for four vaccine types: Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4 (Flublok). Error bars indicate 95% CI and p-values denote statistical comparisons. Evidence: Panels A and B show RIV4 (Flublok) yielded statistically significantly higher geometric mean fold-rise in antibody titers for H3N2 and H1N1 strains compared to Fluzone IIV4 and Fluarix IIV4 does not support the claim because, although the figure demonstrates greater immunogenicity of RIV4 versus standard-dose vaccines for certain strains, it provides no information on hemagglutinin antigen content or the purported 3\u00d7 dosing of Flublok Note: The figure is clear and shows immunogenicity data, but antigen content/dosing details are not included",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A four-panel figure (A\u2013D) comparing geometric mean fold rise of antibody titers at 1 month post-vaccination (panels A, B) and fold reduction at 6 months post-vaccination (panels C, D) against various influenza strains (H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/VIC egg, B/VIC cell, B/YAM egg, B/YAM cell) in two age groups (18\u201344 years, 45\u201364 years) for four vaccine types: Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4 (Flublok). Error bars indicate 95% CI and p-values denote statistical comparisons.",
-    "evidence_found": "Panels A and B show RIV4 (Flublok) yielded statistically significantly higher geometric mean fold-rise in antibody titers for H3N2 and H1N1 strains compared to Fluzone IIV4 and Fluarix IIV4",
-    "reasoning": "does not support the claim because, although the figure demonstrates greater immunogenicity of RIV4 versus standard-dose vaccines for certain strains, it provides no information on hemagglutinin antigen content or the purported 3\u00d7 dosing of Flublok",
-    "confidence_notes": "The figure is clear and shows immunogenicity data, but antigen content/dosing details are not included"
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
+    "evidence_found": null,
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

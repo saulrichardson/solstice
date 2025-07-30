@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A flowchart depicting a study cohort of adults aged \u226518 years (N=18,467), exclusions (influenza \u226414 days since vaccination, missing vaccination status, immunocompromised), resulting in an analyzable cohort (N=15,203). It then splits into controls (N=13,385) and influenza cases (N=1,868), further subdividing participants by vaccine type: recombinant quadrivalent influenza vaccine (RIV4), standard-dose quadrivalent influenza vaccine (SD-IIV4), high-dose quadrivalent influenza vaccine plus adjuvanted influenza vaccine (HD-IIV4 + Adj-IV), and unvaccinated, with corresponding group sizes. The flowchart only shows participant numbers by vaccine type and does not provide any information on hemagglutinin antigen content or immunogenicity, and therefore does not support the claim. Note: None",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A flowchart depicting a study cohort of adults aged \u226518 years (N=18,467), exclusions (influenza \u226414 days since vaccination, missing vaccination status, immunocompromised), resulting in an analyzable cohort (N=15,203). It then splits into controls (N=13,385) and influenza cases (N=1,868), further subdividing participants by vaccine type: recombinant quadrivalent influenza vaccine (RIV4), standard-dose quadrivalent influenza vaccine (SD-IIV4), high-dose quadrivalent influenza vaccine plus adjuvanted influenza vaccine (HD-IIV4 + Adj-IV), and unvaccinated, with corresponding group sizes.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The flowchart only shows participant numbers by vaccine type and does not provide any information on hemagglutinin antigen content or immunogenicity, and therefore does not support the claim.",
-    "confidence_notes": "None"
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

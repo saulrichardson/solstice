@@ -5,15 +5,15 @@
   "page_number": 10,
   "block_id": "det_9_000",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A flowchart outlining influenza vaccine dosing recommendations for children aged 6 months through 8 years based on prior vaccination history, indicating whether one or two doses of the 2022\u201323 influenza vaccine are needed. The figure relates to vaccine dosing schedules and does not address antigenic match or Flublok\u2019s alignment with WHO- or FDA-selected strains, so it does not support the claim. Note: Image clearly shows dosing recommendations and lacks any reference to Flublok or antigenic match.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A flowchart outlining influenza vaccine dosing recommendations for children aged 6 months through 8 years based on prior vaccination history, indicating whether one or two doses of the 2022\u201323 influenza vaccine are needed.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The figure relates to vaccine dosing schedules and does not address antigenic match or Flublok\u2019s alignment with WHO- or FDA-selected strains, so it does not support the claim.",
-    "confidence_notes": "Image clearly shows dosing recommendations and lacks any reference to Flublok or antigenic match."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

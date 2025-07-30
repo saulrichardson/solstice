@@ -5,15 +5,15 @@
   "page_number": 13,
   "block_id": "det_12_007",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Partial table listing various influenza quadrivalent vaccines (e.g., Seqirus, GlaxoSmithKline, Sanofi Pasteur) alongside their dose volumes (0.25 mL, 0.5 mL) and antigen microgram content per strain. does not support the claim because the table only shows vaccine brand names and dosages, and contains no information on Flublok or its antigenic match with WHO- or FDA-selected flu strains. Note: Image is a partial extract and does not include any reference to Flublok or antigenic matching information.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Partial table listing various influenza quadrivalent vaccines (e.g., Seqirus, GlaxoSmithKline, Sanofi Pasteur) alongside their dose volumes (0.25 mL, 0.5 mL) and antigen microgram content per strain.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table only shows vaccine brand names and dosages, and contains no information on Flublok or its antigenic match with WHO- or FDA-selected flu strains.",
-    "confidence_notes": "Image is a partial extract and does not include any reference to Flublok or antigenic matching information."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table listing trade names of quadrivalent influenza vaccines (inactivated, recombinant, and live attenuated), their presentations (dose volume, prefilled syringe/vial), age indications, antigen content per dose (\u00b5g HA or virus count), administration route, and mercury content if present. The table only provides formulations, antigen quantities, age indications, and administration routes for various influenza vaccines; it does not present any data on immune response breadth or cross-protection in mismatch seasons, and therefore does not support the claim. Note: No immunogenicity or efficacy data are shown; table content is limited to vaccine characteristics.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing trade names of quadrivalent influenza vaccines (inactivated, recombinant, and live attenuated), their presentations (dose volume, prefilled syringe/vial), age indications, antigen content per dose (\u00b5g HA or virus count), administration route, and mercury content if present.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The table only provides formulations, antigen quantities, age indications, and administration routes for various influenza vaccines; it does not present any data on immune response breadth or cross-protection in mismatch seasons, and therefore does not support the claim.",
-    "confidence_notes": "No immunogenicity or efficacy data are shown; table content is limited to vaccine characteristics."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

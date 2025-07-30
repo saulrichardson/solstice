@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "Partial table showing percentages (<1, 1, 6, 5, 3, 2, 0) of severe responses reported by subjects across studies, with footnotes defining severity grades (temperature ranges) and referencing Studies 3 and 4 of a U.S.-licensed IIV3 in clinical trials. The content is safety/reactogenicity data, not immunogenicity or cross-protection. does not support the claim because the table presents adverse event rates and severity definitions, not data on immune response breadth or cross-protection in mismatch seasons. Note: Table is limited to safety/reactogenicity; no immunogenicity or cross-protection data are visible.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Partial table showing percentages (<1, 1, 6, 5, 3, 2, 0) of severe responses reported by subjects across studies, with footnotes defining severity grades (temperature ranges) and referencing Studies 3 and 4 of a U.S.-licensed IIV3 in clinical trials. The content is safety/reactogenicity data, not immunogenicity or cross-protection.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table presents adverse event rates and severity definitions, not data on immune response breadth or cross-protection in mismatch seasons.",
-    "confidence_notes": "Table is limited to safety/reactogenicity; no immunogenicity or cross-protection data are visible."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

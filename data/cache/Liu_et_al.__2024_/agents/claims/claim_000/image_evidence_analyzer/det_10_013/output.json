@@ -5,15 +5,15 @@
   "page_number": 11,
   "block_id": "det_10_013",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table showing demographic characteristics of study participants across four groups (n=122, n=120, n=283, n=198), including mean age, age group distribution, sex, race/ethnicity, study sites, and influenza vaccination history. The table only presents baseline participant demographics and vaccination history and does not address antigenic matching with WHO- and FDA-selected flu strains, so it does not support the claim. Note: Only demographic data are visible; no information on antigenic match or vaccine strain selection is provided.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table showing demographic characteristics of study participants across four groups (n=122, n=120, n=283, n=198), including mean age, age group distribution, sex, race/ethnicity, study sites, and influenza vaccination history.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The table only presents baseline participant demographics and vaccination history and does not address antigenic matching with WHO- and FDA-selected flu strains, so it does not support the claim.",
-    "confidence_notes": "Only demographic data are visible; no information on antigenic match or vaccine strain selection is provided."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

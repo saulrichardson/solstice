@@ -2,39 +2,9 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "document": "Treanor_et_al.__2011_",
-  "verified_evidence": [
-    {
-      "id": 1,
-      "quote": "Genes were cloned into baculovirus using RT-PCR from the same CDC derived vaccine seed viruses used for the production of licensed inactivated influenza vaccine for that year.",
-      "supports_claim": true,
-      "explanation": "The quote appears on page 2 of the document, with only minor formatting and OCR differences: 'Genes were cloned into baculo virus using RT-PCR from the same Cd ce rived vaccine seed viruses used for the production of licensed nactivated influenza vaccine for that year.' This is semantically equivalent to the provided quote, with 'Cd ce rived' being a split OCR version of 'CDC derived', and 'baculo virus' for 'baculovirus'. The factual content is preserved.. The quote directly states that the genes used for Flublok were cloned from the same CDC-derived vaccine seed viruses as those used for the production of licensed inactivated influenza vaccines for that year. Since the CDC selects seed viruses based on WHO and FDA recommendations, this supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains. The quote provides explicit evidence that the antigenic source material is the same, thus substantiating the claim.",
-      "presence_explanation": "The quote appears on page 2 of the document, with only minor formatting and OCR differences: 'Genes were cloned into baculo virus using RT-PCR from the same Cd ce rived vaccine seed viruses used for the production of licensed nactivated influenza vaccine for that year.' This is semantically equivalent to the provided quote, with 'Cd ce rived' being a split OCR version of 'CDC derived', and 'baculo virus' for 'baculovirus'. The factual content is preserved.",
-      "support_explanation": "The quote directly states that the genes used for Flublok were cloned from the same CDC-derived vaccine seed viruses as those used for the production of licensed inactivated influenza vaccines for that year. Since the CDC selects seed viruses based on WHO and FDA recommendations, this supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains. The quote provides explicit evidence that the antigenic source material is the same, thus substantiating the claim.",
-      "original_relevance": "This quote demonstrates that Flublok uses the same seed viruses as those selected by regulatory authorities (WHO and FDA) for the production of licensed influenza vaccines, ensuring an identical antigenic match to the recommended strains."
-    }
-  ],
+  "verified_evidence": [],
   "verification_stats": {
-    "total_verified": 1
+    "total_verified": 0
   },
-  "image_evidence": [
-    {
-      "image_filename": "table_p5_det_4_014.png",
-      "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p5_det_4_014.png",
-      "image_type": "Table",
-      "page_number": 5,
-      "block_id": "det_4_014",
-      "claim_id": "claim_000",
-      "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
-      "supports_claim": true,
-      "explanation": "A table titled \u201cRecombinant HA Influenza Vaccines\u201d listing different products including Flublok, with columns for manufacturer, expression system, regulatory status, HA dose, and strain composition for each influenza season using standard WHO/FDA nomenclature (e.g., A/Brisbane/02/2018-like H1N1, A/Kansas/14/2017-like H3N2, etc.). Evidence: Flublok\u2019s strain composition column shows HA antigens exactly matching WHO- and FDA-selected strains for each season. The table demonstrates that Flublok includes HA proteins derived from the same WHO- and FDA-recommended influenza strains for each season, which supports the claim.",
-      "model_used": "o4-mini",
-      "detailed_analysis": {
-        "supports_claim": true,
-        "image_description": "A table titled \u201cRecombinant HA Influenza Vaccines\u201d listing different products including Flublok, with columns for manufacturer, expression system, regulatory status, HA dose, and strain composition for each influenza season using standard WHO/FDA nomenclature (e.g., A/Brisbane/02/2018-like H1N1, A/Kansas/14/2017-like H3N2, etc.).",
-        "evidence_found": "Flublok\u2019s strain composition column shows HA antigens exactly matching WHO- and FDA-selected strains for each season.",
-        "reasoning": "The table demonstrates that Flublok includes HA proteins derived from the same WHO- and FDA-recommended influenza strains for each season, which supports the claim.",
-        "confidence_notes": null
-      }
-    }
-  ]
+  "image_evidence": []
 }

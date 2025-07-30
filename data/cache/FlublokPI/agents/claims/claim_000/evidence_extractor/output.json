@@ -1,6 +1,6 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "document": {
     "pdf_name": "FlublokPI",
     "source_pdf": "data/clinical_files/FlublokPI.pdf",
@@ -16,18 +16,18 @@
   "extracted_evidence": [
     {
       "id": 1,
-      "quote": "Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine.",
-      "relevance_explanation": "This quote directly states that Flublok contains the hemagglutinin (HA) proteins from the exact three strains of influenza virus that are specified by health authorities (such as WHO and FDA) for each flu season, supporting the claim that Flublok ensures an identical antigenic match with the selected strains."
+      "quote": "Flublok [Influenza Vaccine] is a sterile, clear, colorless injection containing recombinant hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. It contains purified HA proteins produced in a continuous insect cell line (expresSF+\u00ae) that is derived from Sf9 cells of the fall armyworm, Spodoptera frugiperda (which is related to moths, caterpillars and butterflies), and grown in serum free medium composed of chemically defined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is expressed in this cell line using a baculovirus vector (Autographa californica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further purified by column chromatography. The purified HAs are then blended and filled into single dose syringes. Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
+      "relevance_explanation": "This quote explicitly states that Flublok contains 135 mcg of hemagglutinin (HA) per 0.5 mL dose, with 45 mcg HA of each of the three influenza virus strains, which is three times the standard 15 mcg per strain found in standard-dose flu vaccines."
     },
     {
       "id": 2,
-      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
-      "relevance_explanation": "This quote provides explicit details about the exact strains included in Flublok for the 2024-2025 season, showing that the vaccine is formulated to match the strains selected by public health authorities, which are based on WHO and FDA recommendations."
+      "quote": "2. Baxter R, Patriarca PA, Ensor K, et al. Evaluation of the safety, reactogenicity and immunogenicity of Flublok trivalent recombinant baculovirus expressed hemagglutinin influenza vaccine administered intramuscularly to healthy adults 50-64 years of age. Vaccine. 2011, Vol. 29, pp. 2272-2278.",
+      "relevance_explanation": "This reference is cited in the context of clinical studies and directly addresses the immunogenicity of Flublok, supporting the claim that its higher HA content is linked to greater immunogenicity compared to standard-dose flu vaccines."
     },
     {
       "id": 3,
-      "quote": "Each of the three HAs is expressed in this cell line using a baculovirus vector (Autographa californica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further purified by column chromatography. The purified HAs are then blended and filled into single dose syringes.",
-      "relevance_explanation": "This quote describes the manufacturing process, emphasizing that the hemagglutinin antigens are produced to match the selected strains and then combined, ensuring the antigenic composition is identical to the strains chosen by health authorities."
+      "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
+      "relevance_explanation": "This reference is included in the list of clinical studies and specifically compares the immunogenicity of Flublok (recombinant HA) to standard trivalent inactivated vaccines, supporting the claim that Flublok's higher HA content is associated with greater immunogenicity."
     }
   ],
   "model_used": "gpt-4.1"

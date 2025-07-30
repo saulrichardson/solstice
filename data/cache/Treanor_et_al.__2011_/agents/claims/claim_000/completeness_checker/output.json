@@ -1,39 +1,18 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "document": "Treanor_et_al.__2011_",
   "additional_evidence_check": {
     "checked_for_more": true,
-    "found_additional": true,
-    "additional_count": 1
+    "found_additional": false,
+    "additional_count": 0
   },
   "completeness_stats": {
-    "existing_evidence": 1,
-    "new_evidence_found": 1,
-    "total_evidence": 2
+    "existing_evidence": 0,
+    "new_evidence_found": 0,
+    "total_evidence": 0
   },
-  "verified_evidence": [
-    {
-      "id": 1,
-      "quote": "Genes were cloned into baculovirus using RT-PCR from the same CDC derived vaccine seed viruses used for the production of licensed inactivated influenza vaccine for that year.",
-      "supports_claim": true,
-      "explanation": "The quote appears on page 2 of the document, with only minor formatting and OCR differences: 'Genes were cloned into baculo virus using RT-PCR from the same Cd ce rived vaccine seed viruses used for the production of licensed nactivated influenza vaccine for that year.' This is semantically equivalent to the provided quote, with 'Cd ce rived' being a split OCR version of 'CDC derived', and 'baculo virus' for 'baculovirus'. The factual content is preserved.. The quote directly states that the genes used for Flublok were cloned from the same CDC-derived vaccine seed viruses as those used for the production of licensed inactivated influenza vaccines for that year. Since the CDC selects seed viruses based on WHO and FDA recommendations, this supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains. The quote provides explicit evidence that the antigenic source material is the same, thus substantiating the claim.",
-      "presence_explanation": "The quote appears on page 2 of the document, with only minor formatting and OCR differences: 'Genes were cloned into baculo virus using RT-PCR from the same Cd ce rived vaccine seed viruses used for the production of licensed nactivated influenza vaccine for that year.' This is semantically equivalent to the provided quote, with 'Cd ce rived' being a split OCR version of 'CDC derived', and 'baculo virus' for 'baculovirus'. The factual content is preserved.",
-      "support_explanation": "The quote directly states that the genes used for Flublok were cloned from the same CDC-derived vaccine seed viruses as those used for the production of licensed inactivated influenza vaccines for that year. Since the CDC selects seed viruses based on WHO and FDA recommendations, this supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains. The quote provides explicit evidence that the antigenic source material is the same, thus substantiating the claim.",
-      "original_relevance": "This quote demonstrates that Flublok uses the same seed viruses as those selected by regulatory authorities (WHO and FDA) for the production of licensed influenza vaccines, ensuring an identical antigenic match to the recommended strains."
-    }
-  ],
-  "new_evidence": [
-    {
-      "id": "comp_1",
-      "quote": "The antigens used in the assays were baculovirus derived rHAs representing the A/Solomon Islands/03/2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses, provided by Protein Sciences Corporation.",
-      "relevance_explanation": "This quote specifies that the recombinant hemagglutinin antigens in Flublok are derived from the same strains as those selected for the seasonal vaccine, which are the WHO- and FDA-recommended strains for that year, supporting the claim of identical antigenic match.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    }
-  ],
+  "verified_evidence": [],
+  "new_evidence": [],
   "model_used": "gpt-4.1"
 }

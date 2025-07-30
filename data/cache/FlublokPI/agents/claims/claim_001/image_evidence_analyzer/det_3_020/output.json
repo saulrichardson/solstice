@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A clinical trial efficacy table showing RT-PCR\u2013confirmed influenza outcomes for Flublok Quadrivalent versus placebo, listing number of cases, attack rates, vaccine efficacy percentages with confidence intervals, and accompanying footnotes and references. The figure presents vaccine efficacy data and relative risk outcomes, not any information on hemagglutinin antigen content or its comparison to standard-dose vaccines, and thus does not support the claim. Note: Small text and partial cropping limit detailed reading of footnotes, but no antigen content data is visible.",
+  "explanation": "A table of vaccine efficacy data from Flublok Quadrivalent vs licensed inactivated quadrivalent influenza vaccine showing endpoints such as CDC-defined influenza-like illness, culture-confirmed cases by strain, numbers of cases, event rates per person\u2010years, vaccine efficacy percentages and 95% confidence intervals, along with footnotes and references. does not support the claim because the table presents efficacy outcomes and attack rates but contains no information on hemagglutinin antigen content or comparative antigen dosing. Note: No information on antigen content is visible in this figure; image is a clear efficacy data table without HA content details.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A clinical trial efficacy table showing RT-PCR\u2013confirmed influenza outcomes for Flublok Quadrivalent versus placebo, listing number of cases, attack rates, vaccine efficacy percentages with confidence intervals, and accompanying footnotes and references.",
+    "image_description": "A table of vaccine efficacy data from Flublok Quadrivalent vs licensed inactivated quadrivalent influenza vaccine showing endpoints such as CDC-defined influenza-like illness, culture-confirmed cases by strain, numbers of cases, event rates per person\u2010years, vaccine efficacy percentages and 95% confidence intervals, along with footnotes and references.",
     "evidence_found": null,
-    "reasoning": "The figure presents vaccine efficacy data and relative risk outcomes, not any information on hemagglutinin antigen content or its comparison to standard-dose vaccines, and thus does not support the claim.",
-    "confidence_notes": "Small text and partial cropping limit detailed reading of footnotes, but no antigen content data is visible."
+    "reasoning": "does not support the claim because the table presents efficacy outcomes and attack rates but contains no information on hemagglutinin antigen content or comparative antigen dosing.",
+    "confidence_notes": "No information on antigen content is visible in this figure; image is a clear efficacy data table without HA content details."
   }
 }

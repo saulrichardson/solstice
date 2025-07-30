@@ -1,6 +1,6 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "document": {
     "pdf_name": "Treanor_et_al.__2011_",
     "source_pdf": "data/clinical_files/Treanor et al. (2011).pdf",
@@ -9,26 +9,10 @@
     "total_characters": 29386
   },
   "extraction_result": {
-    "success": true,
-    "total_snippets_found": 3,
-    "error": null
+    "success": false,
+    "total_snippets_found": 0,
+    "error": "Failed to get valid response after 3 attempts. Last error: Unexpected error: All connection attempts failed"
   },
-  "extracted_evidence": [
-    {
-      "id": 1,
-      "quote": "Genes were cloned into baculovirus using RT-PCR from the same CDC derived vaccine seed viruses used for the production of licensed inactivated influenza vaccine for that year.",
-      "relevance_explanation": "This quote demonstrates that Flublok uses the same seed viruses as those selected by regulatory authorities (WHO and FDA) for the production of licensed influenza vaccines, ensuring an identical antigenic match to the recommended strains."
-    },
-    {
-      "id": 2,
-      "quote": "The antigens used in the assays were baculovirus derived rHAs representing the A/Solomon Islands/3/2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses, provided by Protein Sciences Corporation.",
-      "relevance_explanation": "This quote specifies that the antigens in Flublok correspond exactly to the WHO- and FDA-selected strains for that influenza season, supporting the claim of identical antigenic match."
-    },
-    {
-      "id": 3,
-      "quote": "The vaccine (Flublok used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The recombinant HA protein is not cleaved in insect cells and is referred to as rHA0. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands/3/2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses.",
-      "relevance_explanation": "This quote details that Flublok contains hemagglutinin proteins derived from the exact strains recommended for the season, confirming the vaccine's antigenic match with WHO- and FDA-selected strains."
-    }
-  ],
+  "extracted_evidence": [],
   "model_used": "gpt-4.1"
 }

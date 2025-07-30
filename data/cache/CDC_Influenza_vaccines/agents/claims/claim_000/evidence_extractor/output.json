@@ -1,6 +1,6 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "document": {
     "pdf_name": "CDC_Influenza_vaccines",
     "source_pdf": "data/clinical_files/CDC Influenza vaccines.pdf",
@@ -10,14 +10,19 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 1,
+    "total_snippets_found": 2,
     "error": null
   },
   "extracted_evidence": [
     {
       "id": 1,
-      "quote": "Flublok Quadrivalent (Sanofi Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM RIV4 (recombinant HA vaccine)",
-      "relevance_explanation": "This quote identifies Flublok as a recombinant HA vaccine, which means it is produced using recombinant technology that allows for the precise matching of hemagglutinin antigens to those selected by the WHO and FDA for each flu season. This supports the claim that Flublok ensures an identical antigenic match with the selected strains."
+      "quote": "Flublok Quadrivalent (Sanofi Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM",
+      "relevance_explanation": "This quote shows that Flublok contains 45 \u00b5g of hemagglutinin (HA) antigen per 0.5 mL dose, which is three times the 15 \u00b5g/0.5 mL dose found in standard-dose flu vaccines, directly supporting the first part of the claim."
+    },
+    {
+      "id": 2,
+      "quote": "Fluzone Quadrivalent (Sanofi Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM",
+      "relevance_explanation": "This quote provides the HA antigen content for a standard-dose flu vaccine (15 \u00b5g/0.5 mL), which can be directly compared to Flublok's 45 \u00b5g/0.5 mL, supporting the claim that Flublok contains 3x the HA antigen content."
     }
   ],
   "model_used": "gpt-4.1"

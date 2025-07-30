@@ -5,15 +5,15 @@
   "page_number": 8,
   "block_id": "det_7_002",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A clinical table comparing two vaccine groups (N=279,400 vs. N=395,852) on primary and secondary outcomes, including PCR-confirmed influenza (overall, type A, type B) and various hospitalization endpoints, with rate ratios, hazard ratios, vaccine effectiveness percentages, confidence intervals, and P values. The table presents vaccine efficacy and hospitalization outcomes but does not provide any information about antigenic matching to WHO- or FDA-selected flu strains, and therefore does not support the claim. Note: None",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A clinical table comparing two vaccine groups (N=279,400 vs. N=395,852) on primary and secondary outcomes, including PCR-confirmed influenza (overall, type A, type B) and various hospitalization endpoints, with rate ratios, hazard ratios, vaccine effectiveness percentages, confidence intervals, and P values.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The table presents vaccine efficacy and hospitalization outcomes but does not provide any information about antigenic matching to WHO- or FDA-selected flu strains, and therefore does not support the claim.",
-    "confidence_notes": "None"
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

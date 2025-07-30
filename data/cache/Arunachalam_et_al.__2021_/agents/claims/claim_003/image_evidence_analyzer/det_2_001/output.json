@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A schematic process flow diagram showing the baculovirus-insect cell expression system for manufacturing a recombinant influenza vaccine (RIV4). It depicts cloning of the HA gene into a baculovirus vector, infection of insect cells, expansion in a bioreactor, harvest, extraction, clarification, capture, purification, DNA removal, and formulation steps. The figure only illustrates the manufacturing process of a recombinant HA vaccine and contains no data or statements about immune response breadth or cross-protection in mismatch seasons; it does not support the claim. Note: The image is a process diagram without immunogenicity or efficacy data; limited to production steps.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A schematic process flow diagram showing the baculovirus-insect cell expression system for manufacturing a recombinant influenza vaccine (RIV4). It depicts cloning of the HA gene into a baculovirus vector, infection of insect cells, expansion in a bioreactor, harvest, extraction, clarification, capture, purification, DNA removal, and formulation steps.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The figure only illustrates the manufacturing process of a recombinant HA vaccine and contains no data or statements about immune response breadth or cross-protection in mismatch seasons; it does not support the claim.",
-    "confidence_notes": "The image is a process diagram without immunogenicity or efficacy data; limited to production steps."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

@@ -4,26 +4,15 @@
   "document": "Zimmerman_et_al.__2023_",
   "additional_evidence_check": {
     "checked_for_more": true,
-    "found_additional": true,
-    "additional_count": 1
+    "found_additional": false,
+    "additional_count": 0
   },
   "completeness_stats": {
     "existing_evidence": 0,
-    "new_evidence_found": 1,
-    "total_evidence": 1
+    "new_evidence_found": 0,
+    "total_evidence": 0
   },
   "verified_evidence": [],
-  "new_evidence": [
-    {
-      "id": "comp_1",
-      "quote": "RIV4 was Flublok and Adj-IV was FluAd. Other independent variables were age, influenza season (2018-2019 and 2019-2020), sex, race and presence of one or more high risk conditions.",
-      "relevance_explanation": "This quote explicitly identifies RIV4 as Flublok, which is necessary to link the product name to the vaccine type being discussed in the study. This supports the claim by clarifying that the immunogenicity and antigen content findings for RIV4 apply to Flublok.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    }
-  ],
+  "new_evidence": [],
   "model_used": "gpt-4.1"
 }

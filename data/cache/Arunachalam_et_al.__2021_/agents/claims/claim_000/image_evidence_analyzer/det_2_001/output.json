@@ -5,15 +5,15 @@
   "page_number": 3,
   "block_id": "det_2_001",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A flowchart diagram illustrating the baculovirus\u2013insect cell expression system for manufacturing recombinant hemagglutinin (HA) vaccine (RIV4), showing steps such as direct cloning of HA gene into baculovirus vector, recombination, insect cell seeding, bioreactor expansion, harvest by disc-stack centrifugation, extraction, clarification, capture, purification, DNA removal, and tangential flow filtration/formulation. The figure only depicts the manufacturing process of recombinant HA in insect cells and does not present any data or statements regarding antigenic matching to WHO- or FDA-selected influenza strains, and therefore does not support the claim.",
+  "explanation": "A schematic flow diagram depicting the baculovirus\u2013insect cell expression system used to manufacture RIV4 (Flublok), showing steps: cloning of full-length HA cDNA into a baculovirus vector, viral infection of insect cells in a bioreactor, harvest via disc-stack centrifugation, extraction, depth filtration clarification, chromatographic capture and purification (including DNA removal), and tangential flow filtration (TFF)/formulation. does not support the claim: the figure only outlines the production process of Flublok and provides no information on HA antigen content or comparative dosage versus standard-dose flu vaccines.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A flowchart diagram illustrating the baculovirus\u2013insect cell expression system for manufacturing recombinant hemagglutinin (HA) vaccine (RIV4), showing steps such as direct cloning of HA gene into baculovirus vector, recombination, insect cell seeding, bioreactor expansion, harvest by disc-stack centrifugation, extraction, clarification, capture, purification, DNA removal, and tangential flow filtration/formulation.",
+    "image_description": "A schematic flow diagram depicting the baculovirus\u2013insect cell expression system used to manufacture RIV4 (Flublok), showing steps: cloning of full-length HA cDNA into a baculovirus vector, viral infection of insect cells in a bioreactor, harvest via disc-stack centrifugation, extraction, depth filtration clarification, chromatographic capture and purification (including DNA removal), and tangential flow filtration (TFF)/formulation.",
     "evidence_found": null,
-    "reasoning": "The figure only depicts the manufacturing process of recombinant HA in insect cells and does not present any data or statements regarding antigenic matching to WHO- or FDA-selected influenza strains, and therefore does not support the claim.",
+    "reasoning": "does not support the claim: the figure only outlines the production process of Flublok and provides no information on HA antigen content or comparative dosage versus standard-dose flu vaccines.",
     "confidence_notes": null
   }
 }

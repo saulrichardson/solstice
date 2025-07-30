@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table summarizing the number and percentage of subjects reporting solicited adverse events (e.g., fever, fatigue, chills, muscle pain, headache, nausea) by severity grade for Flublok versus placebo, with footnotes on severity grading and statistical significance. does not support the claim because the table only presents safety/adverse event data and contains no information on hemagglutinin antigen content or comparative immunogenicity of Flublok versus standard-dose flu vaccines. Note: Table is partially visible and focuses on adverse events; no antigen content or immunogenicity data presented.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table summarizing the number and percentage of subjects reporting solicited adverse events (e.g., fever, fatigue, chills, muscle pain, headache, nausea) by severity grade for Flublok versus placebo, with footnotes on severity grading and statistical significance.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table only presents safety/adverse event data and contains no information on hemagglutinin antigen content or comparative immunogenicity of Flublok versus standard-dose flu vaccines.",
-    "confidence_notes": "Table is partially visible and focuses on adverse events; no antigen content or immunogenicity data presented."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

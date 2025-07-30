@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Partial table showing percentages of subjects reporting adverse events (e.g., <1%, 1%, 6%) across studies, followed by footnotes describing study populations, definition of severity grades, and study registration details. does not support the claim because the table and accompanying text present safety and adverse event data without any information on hemagglutinin antigen content or comparisons of antigen dosage in Flublok versus standard-dose flu vaccines. Note: Limited to data visible; image does not include any antigen content information.",
+  "explanation": "A tabular excerpt showing percentages of subjects reporting fever grades (e.g., <1%, 1%, 2%, 3%, etc.) with footnotes defining severity and study populations, likely from a clinical study\u2019s reactogenicity data. The table includes notes on results rounding (<1%), definitions of mild and moderate fever, study identifiers, and participant counts. does not support the claim because the table presents reactogenicity (fever) incidence data and contains no information on hemagglutinin antigen content or comparative immunogenicity of Flublok versus standard-dose vaccines. Note: The image appears cropped and focused on adverse event rates; no antigen content or immunogenicity measures are visible.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Partial table showing percentages of subjects reporting adverse events (e.g., <1%, 1%, 6%) across studies, followed by footnotes describing study populations, definition of severity grades, and study registration details.",
+    "image_description": "A tabular excerpt showing percentages of subjects reporting fever grades (e.g., <1%, 1%, 2%, 3%, etc.) with footnotes defining severity and study populations, likely from a clinical study\u2019s reactogenicity data. The table includes notes on results rounding (<1%), definitions of mild and moderate fever, study identifiers, and participant counts.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table and accompanying text present safety and adverse event data without any information on hemagglutinin antigen content or comparisons of antigen dosage in Flublok versus standard-dose flu vaccines.",
-    "confidence_notes": "Limited to data visible; image does not include any antigen content information."
+    "reasoning": "does not support the claim because the table presents reactogenicity (fever) incidence data and contains no information on hemagglutinin antigen content or comparative immunogenicity of Flublok versus standard-dose vaccines.",
+    "confidence_notes": "The image appears cropped and focused on adverse event rates; no antigen content or immunogenicity measures are visible."
   }
 }

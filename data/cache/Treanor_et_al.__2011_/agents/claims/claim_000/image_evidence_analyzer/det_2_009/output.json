@@ -5,15 +5,15 @@
   "page_number": 3,
   "block_id": "det_2_009",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table showing solicited adverse events (e.g., fever, fatigue, chills, muscle pain, headache, nausea) with counts and percentages by severity grade across treatment groups, followed by text describing study sample size assumptions, randomization, demographics, and age range. does not support the claim because the image only presents safety and reactogenicity data, with no information on antigenic match or strain selection by WHO or FDA. Note: The table focuses on adverse event frequencies and study demographics; no antigenic match or strain selection data are present.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table showing solicited adverse events (e.g., fever, fatigue, chills, muscle pain, headache, nausea) with counts and percentages by severity grade across treatment groups, followed by text describing study sample size assumptions, randomization, demographics, and age range.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image only presents safety and reactogenicity data, with no information on antigenic match or strain selection by WHO or FDA.",
-    "confidence_notes": "The table focuses on adverse event frequencies and study demographics; no antigenic match or strain selection data are present."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

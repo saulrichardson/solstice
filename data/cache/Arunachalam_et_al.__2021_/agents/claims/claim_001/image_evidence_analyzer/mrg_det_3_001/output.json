@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A composite figure showing schematic structural features of native influenza hemagglutinin (HA) expressed on virus (HA1 and HA2 heterodimer, with complex sialylated N-linked glycans and cleaved fusion peptide) versus recombinant HA (HA0 precursor monomer produced in insect cells with simpler paucimannose glycans and an uncleaved fusion peptide loop). The figure only depicts molecular structural differences (glycosylation patterns and cleavage status) between native and recombinant HA and provides no information on antigen dosage or immunogenicity. It does not support the claim.",
+  "explanation": "A two-panel schematic comparing the structural features of native influenza hemagglutinin (HA) extracted from virus (panel a: HA1/HA2 heterodimer with complex-type sialylated N-linked glycans and cleaved fusion peptide) versus recombinant HA produced in insect cells (panel b: single HA0 precursor with paucimannose glycans and uncleaved fusion peptide). The figure is focused on molecular structure and glycosylation of native versus recombinant HA and does not provide any information on HA antigen content or comparative dosages; it does not support the claim. Note: The image quality is sufficient to see that only structural and glycosylation details are presented; no quantitative antigen content or immunogenicity data are shown.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A composite figure showing schematic structural features of native influenza hemagglutinin (HA) expressed on virus (HA1 and HA2 heterodimer, with complex sialylated N-linked glycans and cleaved fusion peptide) versus recombinant HA (HA0 precursor monomer produced in insect cells with simpler paucimannose glycans and an uncleaved fusion peptide loop).",
+    "image_description": "A two-panel schematic comparing the structural features of native influenza hemagglutinin (HA) extracted from virus (panel a: HA1/HA2 heterodimer with complex-type sialylated N-linked glycans and cleaved fusion peptide) versus recombinant HA produced in insect cells (panel b: single HA0 precursor with paucimannose glycans and uncleaved fusion peptide).",
     "evidence_found": null,
-    "reasoning": "The figure only depicts molecular structural differences (glycosylation patterns and cleavage status) between native and recombinant HA and provides no information on antigen dosage or immunogenicity. It does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "The figure is focused on molecular structure and glycosylation of native versus recombinant HA and does not provide any information on HA antigen content or comparative dosages; it does not support the claim.",
+    "confidence_notes": "The image quality is sufficient to see that only structural and glycosylation details are presented; no quantitative antigen content or immunogenicity data are shown."
   }
 }

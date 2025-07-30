@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Excerpt of a clinical document showing text and footnotes defining vaccine abbreviations (e.g., RIV4: Flublok; SD-IIV4: standard-dose influenza vaccines) and reporting vaccine effectiveness (VE) data for different age and risk groups The image only defines vaccine abbreviations and presents VE results; it contains no information about HA antigen content or immunogenicity, so it does not support the claim",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Excerpt of a clinical document showing text and footnotes defining vaccine abbreviations (e.g., RIV4: Flublok; SD-IIV4: standard-dose influenza vaccines) and reporting vaccine effectiveness (VE) data for different age and risk groups",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The image only defines vaccine abbreviations and presents VE results; it contains no information about HA antigen content or immunogenicity, so it does not support the claim",
-    "confidence_notes": null
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

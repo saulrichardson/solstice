@@ -1,6 +1,6 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "document": {
     "pdf_name": "Zimmerman_et_al.__2023_",
     "source_pdf": "data/clinical_files/Zimmerman et al. (2023).pdf",
@@ -9,21 +9,10 @@
     "total_characters": 22898
   },
   "extraction_result": {
-    "success": true,
-    "total_snippets_found": 2,
-    "error": null
+    "success": false,
+    "total_snippets_found": 0,
+    "error": "Failed to get valid response after 3 attempts. Last error: Unexpected error: All connection attempts failed"
   },
-  "extracted_evidence": [
-    {
-      "id": 1,
-      "quote": "RIV4 was Flublok.",
-      "relevance_explanation": "This quote explicitly identifies Flublok as the recombinant quadrivalent influenza vaccine (RIV4) evaluated in the study, establishing the product under discussion."
-    },
-    {
-      "id": 2,
-      "quote": "because it is not subject to mutations to the A (H3N2) glycosylation binding site that reduce the effectiveness of egg based vaccines.",
-      "relevance_explanation": "This statement directly supports the claim by indicating that Flublok (RIV4), unlike egg-based vaccines, is not affected by mutations that can occur during egg-based manufacturing, which can alter the antigenic match to WHO- and FDA-selected flu strains."
-    }
-  ],
+  "extracted_evidence": [],
   "model_used": "gpt-4.1"
 }

@@ -5,15 +5,15 @@
   "page_number": 5,
   "block_id": "det_4_014",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
-  "supports_claim": true,
-  "explanation": "A table titled \u201cRecombinant HA Influenza Vaccines\u201d listing different products including Flublok, with columns for manufacturer, expression system, regulatory status, HA dose, and strain composition for each influenza season using standard WHO/FDA nomenclature (e.g., A/Brisbane/02/2018-like H1N1, A/Kansas/14/2017-like H3N2, etc.). Evidence: Flublok\u2019s strain composition column shows HA antigens exactly matching WHO- and FDA-selected strains for each season. The table demonstrates that Flublok includes HA proteins derived from the same WHO- and FDA-recommended influenza strains for each season, which supports the claim.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
-    "supports_claim": true,
-    "image_description": "A table titled \u201cRecombinant HA Influenza Vaccines\u201d listing different products including Flublok, with columns for manufacturer, expression system, regulatory status, HA dose, and strain composition for each influenza season using standard WHO/FDA nomenclature (e.g., A/Brisbane/02/2018-like H1N1, A/Kansas/14/2017-like H3N2, etc.).",
-    "evidence_found": "Flublok\u2019s strain composition column shows HA antigens exactly matching WHO- and FDA-selected strains for each season.",
-    "reasoning": "The table demonstrates that Flublok includes HA proteins derived from the same WHO- and FDA-recommended influenza strains for each season, which supports the claim.",
-    "confidence_notes": null
+    "supports_claim": false,
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
+    "evidence_found": null,
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

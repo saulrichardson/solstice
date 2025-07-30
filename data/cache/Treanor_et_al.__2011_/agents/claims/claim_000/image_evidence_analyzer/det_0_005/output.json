@@ -5,15 +5,15 @@
   "page_number": 1,
   "block_id": "det_0_005",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Top of first page of a Vaccine journal article showing the Elsevier logo, journal homepage URL, and a partially visible article title ('...ective efficacy of a trivalent recombinant hemagglutinin protein vaccine') The image only shows the journal header and partial title with no data or statements about antigenic matching; it does not support the claim. Note: The image is limited to the article header and title; no figures or detailed content are visible.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Top of first page of a Vaccine journal article showing the Elsevier logo, journal homepage URL, and a partially visible article title ('...ective efficacy of a trivalent recombinant hemagglutinin protein vaccine')",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The image only shows the journal header and partial title with no data or statements about antigenic matching; it does not support the claim.",
-    "confidence_notes": "The image is limited to the article header and title; no figures or detailed content are visible."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

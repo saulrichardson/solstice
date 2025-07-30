@@ -5,15 +5,15 @@
   "page_number": 5,
   "block_id": "det_4_002",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table listing licensed seasonal influenza vaccines for the 2022\u201323 season, including vaccine names/manufacturers, presentations (e.g., 0.5-mL prefilled syringe), age indications, hemagglutinin content per dose (\u00b5g/0.5 mL), route of administration, and footnotes. Flublok Quadrivalent (recombinant HA vaccine) is listed with 45 \u00b5g HA per 0.5 mL dose for ages \u226518 years given intramuscularly. The table provides formulation and dosing details for Flublok but contains no information on antigenic matching to WHO- or FDA-selected flu strains, so it does not support the claim.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing licensed seasonal influenza vaccines for the 2022\u201323 season, including vaccine names/manufacturers, presentations (e.g., 0.5-mL prefilled syringe), age indications, hemagglutinin content per dose (\u00b5g/0.5 mL), route of administration, and footnotes. Flublok Quadrivalent (recombinant HA vaccine) is listed with 45 \u00b5g HA per 0.5 mL dose for ages \u226518 years given intramuscularly.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The table provides formulation and dosing details for Flublok but contains no information on antigenic matching to WHO- or FDA-selected flu strains, so it does not support the claim.",
-    "confidence_notes": null
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

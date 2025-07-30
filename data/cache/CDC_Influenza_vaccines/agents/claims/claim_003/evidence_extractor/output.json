@@ -9,16 +9,10 @@
     "total_characters": 2329
   },
   "extraction_result": {
-    "success": true,
-    "total_snippets_found": 1,
-    "error": null
+    "success": false,
+    "total_snippets_found": 0,
+    "error": "Failed to get valid response after 3 attempts. Last error: Unexpected error: All connection attempts failed"
   },
-  "extracted_evidence": [
-    {
-      "id": 1,
-      "quote": "Flublok Quadrivalent (Sanofi Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM ... RIV4 (recombinant HA vaccine)",
-      "relevance_explanation": "This quote identifies Flublok Quadrivalent as a recombinant HA vaccine, which is relevant because recombinant technology is the focus of the claim. It establishes the presence of a recombinant vaccine in the document, which is necessary context for discussing its immune response characteristics."
-    }
-  ],
+  "extracted_evidence": [],
   "model_used": "gpt-4.1"
 }

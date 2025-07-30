@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table listing percentages of solicited local and systemic adverse reactions (Any, Moderate, Severe) reported by subjects in two clinical studies, comparing Flublok with U.S.-licensed standard-dose trivalent inactivated influenza vaccines (IIV3). The table shows rows for different symptoms and columns for overall, moderate, and severe events. The table presents safety data (adverse reaction rates) rather than information on hemagglutinin antigen content or immunogenicity. Therefore, it does not support the claim about Flublok containing 3x the HA antigen content or greater immunogenicity, and does not support the claim. Note: The image is clear enough to identify content; however, it does not include any antigen content or immunogenicity data.",
+  "explanation": "A table of percentages reporting adverse events (Any, Moderate, Severe) across vaccine study groups, with footnotes describing study numbers, reporting thresholds, and trial registration details. does not support the claim because the table only shows safety/adverse event percentages and contains no information on HA antigen content or immunogenicity. Note: The image is clear but only presents safety data, with no antigen content or immunogenicity measurements visible.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing percentages of solicited local and systemic adverse reactions (Any, Moderate, Severe) reported by subjects in two clinical studies, comparing Flublok with U.S.-licensed standard-dose trivalent inactivated influenza vaccines (IIV3). The table shows rows for different symptoms and columns for overall, moderate, and severe events.",
+    "image_description": "A table of percentages reporting adverse events (Any, Moderate, Severe) across vaccine study groups, with footnotes describing study numbers, reporting thresholds, and trial registration details.",
     "evidence_found": null,
-    "reasoning": "The table presents safety data (adverse reaction rates) rather than information on hemagglutinin antigen content or immunogenicity. Therefore, it does not support the claim about Flublok containing 3x the HA antigen content or greater immunogenicity, and does not support the claim.",
-    "confidence_notes": "The image is clear enough to identify content; however, it does not include any antigen content or immunogenicity data."
+    "reasoning": "does not support the claim because the table only shows safety/adverse event percentages and contains no information on HA antigen content or immunogenicity.",
+    "confidence_notes": "The image is clear but only presents safety data, with no antigen content or immunogenicity measurements visible."
   }
 }

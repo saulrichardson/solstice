@@ -9,21 +9,10 @@
     "total_characters": 40485
   },
   "extraction_result": {
-    "success": true,
-    "total_snippets_found": 2,
-    "error": null
+    "success": false,
+    "total_snippets_found": 0,
+    "error": "Failed to get valid response after 3 attempts. Last error: Unexpected error: All connection attempts failed"
   },
-  "extracted_evidence": [
-    {
-      "id": 1,
-      "quote": "RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody response, it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).",
-      "relevance_explanation": "This quote explicitly states that RIV4 (Flublok) contains 3 times the hemagglutinin (HA) antigen content per strain compared to standard-dose flu vaccines (IIV4 and ccIIV4), and that this higher antigen content is associated with improved immunogenicity, as evidenced by increased neutralizing and binding antibody responses."
-    },
-    {
-      "id": 2,
-      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.",
-      "relevance_explanation": "This quote provides direct evidence that Flublok (RIV4), which contains 3x the HA antigen, resulted in greater immunogenicity compared to standard-dose vaccines, as measured by higher neutralizing and binding antibody responses."
-    }
-  ],
+  "extracted_evidence": [],
   "model_used": "gpt-4.1"
 }

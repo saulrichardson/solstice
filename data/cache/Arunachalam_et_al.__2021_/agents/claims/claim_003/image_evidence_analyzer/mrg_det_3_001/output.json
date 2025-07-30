@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A two-panel schematic comparing the structural features of native influenza virus hemagglutinin (HA) heterodimer (HA1 in turquoise and HA2 in orange, linked by an inter-disulfide bond, cleaved fusion peptide in green, complex-type sialylated N-linked glycans) versus recombinant HA (rHA) produced in insect cells (single HA0 precursor combining HA1/HA2, uncleaved fusion-peptide loop in green, simpler paucimannosidic N-linked glycans). Evidence: Labels indicating that rHA has simpler glycans and an uncleaved fusion-peptide loop that expose unique epitopes. The figure illustrates structural differences that suggest rHA may expose more epitopes, but it provides no data on immune responses or cross-protection outcomes and therefore does not support the claim. Note: Structural schematic only; no immunogenicity or cross-protection data shown.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A two-panel schematic comparing the structural features of native influenza virus hemagglutinin (HA) heterodimer (HA1 in turquoise and HA2 in orange, linked by an inter-disulfide bond, cleaved fusion peptide in green, complex-type sialylated N-linked glycans) versus recombinant HA (rHA) produced in insect cells (single HA0 precursor combining HA1/HA2, uncleaved fusion-peptide loop in green, simpler paucimannosidic N-linked glycans).",
-    "evidence_found": "Labels indicating that rHA has simpler glycans and an uncleaved fusion-peptide loop that expose unique epitopes.",
-    "reasoning": "The figure illustrates structural differences that suggest rHA may expose more epitopes, but it provides no data on immune responses or cross-protection outcomes and therefore does not support the claim.",
-    "confidence_notes": "Structural schematic only; no immunogenicity or cross-protection data shown."
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
+    "evidence_found": null,
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

@@ -4,23 +4,27 @@
   "document": "Arunachalam_et_al.__2021_",
   "verification_stats": {
     "total_extracted": 2,
-    "verified": 0,
-    "rejected": 2,
-    "verification_rate": 0.0
+    "verified": 1,
+    "rejected": 1,
+    "verification_rate": 0.5
   },
-  "verified_evidence": [],
+  "verified_evidence": [
+    {
+      "id": "comp_2",
+      "quote": "Higher magnitudes of haemagglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flucelvax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60. These data warrant additional studies to verify whether rHA elicits a broader antibody repertoire than conventional vaccines and whether this underlies the cross protection against antigenic drift variants previously observed in clinical trials 12 81.",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 5 of the document: 'Higher magnitudes of haemagglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flucelvax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60. These data warrant additional studies to verify whether rHA elicits a broader antibody repertoire than conventional vaccines and whether this underlies the cross protection against antigenic drift variants previously observed in clinical trials 12 81.' The factual content, technical terms, and meaning are preserved, with only minor formatting differences.. The quote directly states that RIV4 (Flublok) elicits higher magnitudes of haemagglutination inhibitory antibody responses against HA1 compared to standard-dose split vaccines derived from eggs or mammalian cells. This supports the claim that Flublok's higher HA content is linked to greater immunogenicity versus standard-dose flu vaccines. The quote also references the need for further studies to determine if this broader antibody response underlies observed cross-protection, which aligns with the claim's focus on immunogenicity.",
+      "presence_explanation": "The quote appears on page 5 of the document: 'Higher magnitudes of haemagglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flucelvax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60. These data warrant additional studies to verify whether rHA elicits a broader antibody repertoire than conventional vaccines and whether this underlies the cross protection against antigenic drift variants previously observed in clinical trials 12 81.' The factual content, technical terms, and meaning are preserved, with only minor formatting differences.",
+      "support_explanation": "The quote directly states that RIV4 (Flublok) elicits higher magnitudes of haemagglutination inhibitory antibody responses against HA1 compared to standard-dose split vaccines derived from eggs or mammalian cells. This supports the claim that Flublok's higher HA content is linked to greater immunogenicity versus standard-dose flu vaccines. The quote also references the need for further studies to determine if this broader antibody response underlies observed cross-protection, which aligns with the claim's focus on immunogenicity.",
+      "original_relevance": "This quote directly states that RIV4 (Flublok) elicits higher antibody responses than standard-dose split vaccines, supporting the claim that its higher HA content is linked to greater immunogenicity."
+    }
+  ],
   "rejected_evidence": [
     {
       "id": "comp_1",
       "quote": "A plant derived recombinant quadrivalent VLP (QVLP) at 30 \u00b5g dose per strain was found to be non inferior in terms of vaccine efficacy against respiratory illness and influenza like illness to a quadrivalent inactivated influenza vaccine (QIV; Fluarix Quadrivalent, GlaxoSmithKline) given at 15 \u00b5g dose strain in adults aged 18 to 64 years 37.",
       "reason": "does not support claim",
-      "original_explanation": "This quote provides a direct comparison of antigen content per strain (30 \u00b5g vs 15 \u00b5g) and shows that higher HA content is associated with at least non-inferior efficacy, supporting the link between increased HA dose and immunogenicity. While not about Flublok specifically, it supports the general principle that higher HA content (as in Flublok) is linked to greater immunogenicity."
-    },
-    {
-      "id": "comp_2",
-      "quote": "The resulting processed proteins are less immunogenic than egg derived antigens, with around a 10 fold greater quantity needed to generate protective immunity in animal models 31. These inherent complications have prevented large scale manufacturing and eventual commercialisation of E. coli expressed influenza vaccines.",
-      "reason": "does not support claim",
-      "original_explanation": "This quote supports the claim by highlighting that the amount of HA antigen is directly related to immunogenicity, as a higher quantity is needed to achieve protection when immunogenicity is lower. This underlines the importance of HA content in vaccine efficacy."
+      "original_explanation": "This quote provides a direct comparison of antigen content per strain between a non-standard (plant-derived) recombinant vaccine at 30 \u00b5g and a standard-dose inactivated vaccine at 15 \u00b5g, supporting the context that standard-dose flu vaccines typically contain 15 \u00b5g HA per strain, which is 3x less than Flublok's 45 \u00b5g per strain."
     }
   ],
   "model_used": "gpt-4.1"

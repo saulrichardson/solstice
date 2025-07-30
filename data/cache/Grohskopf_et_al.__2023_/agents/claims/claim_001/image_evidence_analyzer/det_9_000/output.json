@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A flowchart outlining influenza vaccination dosing recommendations for children aged 6 months through 8 years, indicating whether they\u2019ve previously received \u22652 doses of trivalent or quadrivalent influenza vaccine and specifying administration of 1 or 2 doses of the 2022\u201323 influenza vaccine. The image provides pediatric dosing guidance and makes no reference to Flublok or hemagglutinin antigen content; it does not support the claim. Note: Image appears to be a dosing algorithm with no relevant antigen content data.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A flowchart outlining influenza vaccination dosing recommendations for children aged 6 months through 8 years, indicating whether they\u2019ve previously received \u22652 doses of trivalent or quadrivalent influenza vaccine and specifying administration of 1 or 2 doses of the 2022\u201323 influenza vaccine.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The image provides pediatric dosing guidance and makes no reference to Flublok or hemagglutinin antigen content; it does not support the claim.",
-    "confidence_notes": "Image appears to be a dosing algorithm with no relevant antigen content data."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

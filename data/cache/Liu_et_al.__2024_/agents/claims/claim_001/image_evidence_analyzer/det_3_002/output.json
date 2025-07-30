@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Multipanel plots showing geometric mean microneutralization (MN) and hemagglutination inhibition (HI) antibody titers (log\u2082 scale) at Day 0, 1 month, and 6 months post-vaccination for four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, and RIV4) across influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Individual titers are shown as gray dots, with GMTs and 95% CIs indicated by horizontal bars and p-values denoting statistical comparisons between groups. Evidence: RIV4 (Flublok) consistently demonstrates significantly higher GMT titers at 1 month compared to standard-dose IIV4 vaccines for multiple strains. does not support the claim because although the figure shows greater immunogenicity for Flublok (RIV4), it provides no information on the HA antigen content (3\u00d7) of Flublok versus standard-dose vaccines and thus does not substantiate the antigen-content aspect of the claim.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Multipanel plots showing geometric mean microneutralization (MN) and hemagglutination inhibition (HI) antibody titers (log\u2082 scale) at Day 0, 1 month, and 6 months post-vaccination for four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, and RIV4) across influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Individual titers are shown as gray dots, with GMTs and 95% CIs indicated by horizontal bars and p-values denoting statistical comparisons between groups.",
-    "evidence_found": "RIV4 (Flublok) consistently demonstrates significantly higher GMT titers at 1 month compared to standard-dose IIV4 vaccines for multiple strains.",
-    "reasoning": "does not support the claim because although the figure shows greater immunogenicity for Flublok (RIV4), it provides no information on the HA antigen content (3\u00d7) of Flublok versus standard-dose vaccines and thus does not substantiate the antigen-content aspect of the claim.",
-    "confidence_notes": null
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
+    "evidence_found": null,
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

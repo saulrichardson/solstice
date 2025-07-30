@@ -5,15 +5,15 @@
   "page_number": 7,
   "block_id": "det_6_004",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table listing demographic (age, sex, race/ethnicity) and clinical characteristics (asthma, diabetes, COPD, coronary heart disease, prior influenza vaccination) of study participants in recombinant versus standard-dose influenza vaccine groups. does not support the claim because the table provides only participant demographic and clinical data and contains no information on antigenic matching or WHO/FDA-selected flu strains. Note: No antigenic match or strain selection data are present in the image.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing demographic (age, sex, race/ethnicity) and clinical characteristics (asthma, diabetes, COPD, coronary heart disease, prior influenza vaccination) of study participants in recombinant versus standard-dose influenza vaccine groups.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table provides only participant demographic and clinical data and contains no information on antigenic matching or WHO/FDA-selected flu strains.",
-    "confidence_notes": "No antigenic match or strain selection data are present in the image."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

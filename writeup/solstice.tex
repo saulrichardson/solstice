@@ -19,46 +19,17 @@
 
 Solstice is an automated system for fact-checking medical claims against scientific literature. It processes PDFs through a pipeline that combines layout detection, content extraction, and multi-agent verification to produce comprehensive evidence reports.
 
-\section{System Overview}
+\section{System Architecture}
 
-\begin{figure}[htbp]
-\centering
-\begin{tikzpicture}[
-    node distance=2cm,
-    block/.style={rectangle, draw, fill=blue!20, text width=6cm, text centered, rounded corners, minimum height=1cm},
-    decision/.style={diamond, draw, fill=orange!20, text width=4cm, text centered},
-    data/.style={cylinder, draw, fill=gray!20, shape border rotate=90, aspect=0.25, minimum height=1cm, minimum width=2cm},
-    arrow/.style={->,thick}
-]
+The Solstice pipeline consists of five main stages:
 
-% Top level flow
-\node[block, align=center] (pdf) {Medical PDFs\\(Clinical trials, Package inserts, Marketing materials)};
-\node[block, below=1.5cm of pdf, align=center] (layout) {Layout Understanding\\Identifies text, tables, figures, headers};
-\node[block, below=1.5cm of layout, align=center] (extract) {Content Extraction\\Structured document with searchable elements};
-\node[block, below=1.5cm of extract, align=center] (agents) {Multi-Agent Analysis\\Evidence extraction and verification};
-\node[block, below=1.5cm of agents, align=center] (report) {Verification Report\\Claims with supporting/conflicting evidence};
-
-% Data stores
-\node[data, right=2cm of extract, align=center] (cache) {Document\\Cache};
-\node[data, right=2cm of agents, align=center] (evidence) {Evidence\\Store};
-
-% Connections
-\draw[arrow] (pdf) -- (layout);
-\draw[arrow] (layout) -- (extract);
-\draw[arrow] (extract) -- (agents);
-\draw[arrow] (agents) -- (report);
-\draw[arrow] (extract) -- (cache);
-\draw[arrow] (cache) -- (agents);
-\draw[arrow] (agents) -- (evidence);
-\draw[arrow] (evidence) -- (report);
-
-% Annotations
-\node[text width=3cm, right=0.2cm of layout, font=\small\itshape] {Computer Vision};
-\node[text width=3cm, right=0.2cm of agents, font=\small\itshape] {Large Language Models};
-
-\end{tikzpicture}
-\caption{High-level architecture of the Solstice system}
-\end{figure}
+\begin{enumerate}
+\item \textbf{PDF Input}: Medical documents including clinical trials, package inserts, and marketing materials
+\item \textbf{Layout Detection}: Computer vision models identify document structure (text blocks, tables, figures)
+\item \textbf{Content Extraction}: Structured extraction of text and visual elements
+\item \textbf{Multi-Agent Analysis}: LLM-based agents extract and verify evidence
+\item \textbf{Report Generation}: Consolidated evidence reports with confidence assessments
+\end{enumerate}
 
 \section{How It Works}
 
@@ -80,73 +51,20 @@ This visual understanding is crucial because:
 \item Marketing materials use visual hierarchy to emphasize claims
 \end{itemize}
 
-\subsection{Step 2: Intelligent Agent Orchestration}
+\subsection{Step 2: Multi-Agent Verification}
 
-Once the document structure is understood, specialized agents work together to verify claims:
+Once documents are structured, four specialized agents collaborate to verify claims:
 
-\begin{figure}[htbp]
-\centering
-\begin{tikzpicture}[
-    agent/.style={ellipse, draw, fill=green!20, minimum width=3cm, minimum height=1.5cm, text centered},
-    claim/.style={rectangle, draw, fill=yellow!20, text width=4cm, text centered, rounded corners},
-    doc/.style={rectangle, draw, fill=blue!10, text width=3cm, text centered},
-    arrow/.style={->,thick},
-    dasharrow/.style={->,thick,dashed}
-]
+The agent pipeline processes claims through multiple stages:
 
-% Center claim
-\node[claim, align=center] (claim) {Medical Claim:\\"95\% efficacy in elderly patients"};
-
-% Agents around the claim
-\node[agent, above right=1.5cm and 2cm of claim, align=center] (extractor) {Evidence\\Extractor};
-\node[agent, right=4cm of claim, align=center] (verifier) {Evidence\\Verifier};
-\node[agent, below right=1.5cm and 2cm of claim, align=center] (checker) {Completeness\\Checker};
-\node[agent, below=3cm of claim, align=center] (analyzer) {Visual\\Analyzer};
-
-% Document source
-\node[doc, left=3cm of claim, align=center] (doc) {Clinical\\Documents};
-
-% Result
-\node[claim, right=3cm of verifier, align=center] (result) {Verified Evidence\\with confidence};
-
-% Connections
-\draw[arrow] (doc) -- (claim);
-\draw[arrow] (claim) -- (extractor);
-\draw[arrow] (extractor) -- node[above] {quotes} (verifier);
-\draw[arrow] (verifier) -- (result);
-\draw[arrow] (verifier) -- (checker);
-\draw[dasharrow] (checker) -- node[right] {gaps} (extractor);
-\draw[arrow] (doc) -- (analyzer);
-\draw[arrow] (analyzer) -- (verifier);
-
-% Labels
-\node[below=0.2cm of extractor, font=\small\itshape] {Finds relevant text};
-\node[below=0.2cm of verifier, font=\small\itshape] {Validates accuracy};
-\node[above=0.2cm of checker, font=\small\itshape] {Ensures completeness};
-\node[above=0.2cm of analyzer, font=\small\itshape] {Examines tables/figures};
-
-\end{tikzpicture}
-\caption{Agents collaborate to thoroughly verify each claim, with feedback loops ensuring comprehensive coverage}
-\end{figure}
-
-Each agent has a specific role:
-\begin{itemize}
+\begin{enumerate}
 \item \textbf{Evidence Extractor}: Searches documents for passages related to the claim
-\item \textbf{Evidence Verifier}: Confirms quotes are accurate and truly support the claim
+\item \textbf{Evidence Verifier}: Confirms quotes are accurate and truly support the claim  
 \item \textbf{Completeness Checker}: Identifies missing evidence and triggers additional searches
 \item \textbf{Visual Analyzer}: Examines tables and figures for data supporting or contradicting claims
-\end{itemize}
+\end{enumerate}
 
-\subsection{Step 3: Comprehensive Reporting}
-
-The system produces detailed reports showing:
-\begin{itemize}
-\item Exact quotes supporting each claim
-\item Visual evidence from tables and figures
-\item Conflicting information if found
-\item Confidence assessment based on evidence strength
-\item Missing evidence that couldn't be located
-\end{itemize}
+Agents communicate through structured JSON outputs, with feedback loops allowing the Completeness Checker to request additional extraction when gaps are identified.
 
 \section{Real-World Applications}
 

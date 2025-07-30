@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "The figure contains four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, and RIV4) comparing geometric mean ratios of egg versus cell-grown virus titers at 1 month post-vaccination (panels A and B) and the proportion of subjects with \u22654-fold reduced titers to egg-adapted epitopes (panels C and D) across two age cohorts (18\u201344 years and 45\u201364 years). Error bars, 95% confidence intervals, and p-values are displayed for some comparisons. The figure depicts antibody response ratios and reductions against egg-adapted epitopes for four vaccine types, but it does not provide any data on HA antigen content or explicitly link a 3\u00d7 HA dose to greater immunogenicity. Therefore, it does not support the claim. Note: The image is focused on serological response differences and does not address antigen dosage or content; resolution is sufficient to conclude absence of HA content information.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "The figure contains four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, and RIV4) comparing geometric mean ratios of egg versus cell-grown virus titers at 1 month post-vaccination (panels A and B) and the proportion of subjects with \u22654-fold reduced titers to egg-adapted epitopes (panels C and D) across two age cohorts (18\u201344 years and 45\u201364 years). Error bars, 95% confidence intervals, and p-values are displayed for some comparisons.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The figure depicts antibody response ratios and reductions against egg-adapted epitopes for four vaccine types, but it does not provide any data on HA antigen content or explicitly link a 3\u00d7 HA dose to greater immunogenicity. Therefore, it does not support the claim.",
-    "confidence_notes": "The image is focused on serological response differences and does not address antigen dosage or content; resolution is sufficient to conclude absence of HA content information."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

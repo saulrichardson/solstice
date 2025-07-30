@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Two Kaplan\u2013Meier plots showing cumulative incidence of culture-positive CDC-defined influenza-like illness for influenza A (top) and influenza B (bottom) in placebo (solid line) versus FluBlok (dashed line) recipients during the surveillance period, with accompanying text reporting numbers of cases, overall CDC-ILI rates, and calculated vaccine efficacy (with 95% CI) against CDC-ILI regardless of culture results. The figure presents efficacy data (incidence curves and vaccine efficacy percentages versus placebo) but does not provide any information on hemagglutinin antigen content or direct immunogenicity comparisons to standard-dose vaccines, so it does not support the claim. Note: Figure focuses on efficacy outcomes against placebo; no data on antigen dosage or comparative immunogenicity to standard-dose vaccines are shown.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Two Kaplan\u2013Meier plots showing cumulative incidence of culture-positive CDC-defined influenza-like illness for influenza A (top) and influenza B (bottom) in placebo (solid line) versus FluBlok (dashed line) recipients during the surveillance period, with accompanying text reporting numbers of cases, overall CDC-ILI rates, and calculated vaccine efficacy (with 95% CI) against CDC-ILI regardless of culture results.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The figure presents efficacy data (incidence curves and vaccine efficacy percentages versus placebo) but does not provide any information on hemagglutinin antigen content or direct immunogenicity comparisons to standard-dose vaccines, so it does not support the claim.",
-    "confidence_notes": "Figure focuses on efficacy outcomes against placebo; no data on antigen dosage or comparative immunogenicity to standard-dose vaccines are shown."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

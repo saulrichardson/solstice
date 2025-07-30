@@ -5,15 +5,15 @@
   "page_number": 1,
   "block_id": "det_0_027",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A partial view of the introduction section of a clinical document, discussing egg-based influenza vaccine manufacturing drawbacks, with no data or figures shown related to antigenic matching of Flublok to WHO- and FDA-selected strains. The image contains only introductory text about vaccine manufacturing methods and does not support the claim of identical antigenic match with WHO- and FDA-selected strains; it does not support the claim. Note: The figure itself is not visible; only text is shown, so no matching data can be assessed.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A partial view of the introduction section of a clinical document, discussing egg-based influenza vaccine manufacturing drawbacks, with no data or figures shown related to antigenic matching of Flublok to WHO- and FDA-selected strains.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The image contains only introductory text about vaccine manufacturing methods and does not support the claim of identical antigenic match with WHO- and FDA-selected strains; it does not support the claim.",
-    "confidence_notes": "The figure itself is not visible; only text is shown, so no matching data can be assessed."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

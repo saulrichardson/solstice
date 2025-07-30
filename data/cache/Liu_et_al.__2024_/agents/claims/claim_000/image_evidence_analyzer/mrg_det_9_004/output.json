@@ -5,15 +5,15 @@
   "page_number": 10,
   "block_id": "mrg_det_9_004",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Multiple box\u2010and\u2010whisker plots showing geometric mean ELISA titers (log2 scale) for HA head and stalk domains of H3N2, H1pdm09, B/VIC, and B/YAM at Day 0 and 1 month post-vaccination across seven repeat vaccination arms (cell\u2010based, recombinant [Flublok/RIV4], egg\u2010based combinations). Statistical comparisons of titers and fold rises are indicated. The figure presents immunogenicity data (antibody titers) following different vaccine sequences but contains no information on antigenic matching of Flublok to WHO- or FDA-selected strains, and therefore does not support the claim. Note: Limited to what is shown: data quality is adequate but no antigenic match information is provided.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Multiple box\u2010and\u2010whisker plots showing geometric mean ELISA titers (log2 scale) for HA head and stalk domains of H3N2, H1pdm09, B/VIC, and B/YAM at Day 0 and 1 month post-vaccination across seven repeat vaccination arms (cell\u2010based, recombinant [Flublok/RIV4], egg\u2010based combinations). Statistical comparisons of titers and fold rises are indicated.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The figure presents immunogenicity data (antibody titers) following different vaccine sequences but contains no information on antigenic matching of Flublok to WHO- or FDA-selected strains, and therefore does not support the claim.",
-    "confidence_notes": "Limited to what is shown: data quality is adequate but no antigenic match information is provided."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

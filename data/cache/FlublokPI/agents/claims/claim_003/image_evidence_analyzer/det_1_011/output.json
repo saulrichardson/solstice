@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "Two side-by-side tables summarizing solicited local and systemic adverse events in clinical trials comparing Flublok (a recombinant influenza vaccine) with placebo or a licensed trivalent inactivated influenza vaccine. Local events include injection site pain, redness, swelling; systemic events include fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, and fever. Footnotes describe severity grading, denominators, and trial registry numbers. The image presents safety/reactogenicity data and contains no information on immune response breadth or cross-protection; therefore, it does not support the claim Note: Table only shows adverse event rates; no immunogenicity or cross-protection data are provided",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Two side-by-side tables summarizing solicited local and systemic adverse events in clinical trials comparing Flublok (a recombinant influenza vaccine) with placebo or a licensed trivalent inactivated influenza vaccine. Local events include injection site pain, redness, swelling; systemic events include fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, and fever. Footnotes describe severity grading, denominators, and trial registry numbers.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The image presents safety/reactogenicity data and contains no information on immune response breadth or cross-protection; therefore, it does not support the claim",
-    "confidence_notes": "Table only shows adverse event rates; no immunogenicity or cross-protection data are provided"
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A printed excerpt showing the full prescribing information table of contents for Flublok vaccine, including section headings like Indications and Usage, Dosage and Administration, Warnings and Precautions, Adverse Reactions, Clinical Pharmacology, Clinical Studies, etc. The image only shows a table of contents for prescribing information and contains no data or statements regarding recombinant technology, immune response breadth, or cross-protection in mismatch seasons, and therefore does not support the claim Note: Limited by the image showing only section headings without any clinical data or outcomes",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A printed excerpt showing the full prescribing information table of contents for Flublok vaccine, including section headings like Indications and Usage, Dosage and Administration, Warnings and Precautions, Adverse Reactions, Clinical Pharmacology, Clinical Studies, etc.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The image only shows a table of contents for prescribing information and contains no data or statements regarding recombinant technology, immune response breadth, or cross-protection in mismatch seasons, and therefore does not support the claim",
-    "confidence_notes": "Limited by the image showing only section headings without any clinical data or outcomes"
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

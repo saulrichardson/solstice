@@ -1,6 +1,6 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "document": {
     "pdf_name": "Liu_et_al.__2024_",
     "source_pdf": "data/clinical_files/Liu et al. (2024).pdf",
@@ -9,31 +9,10 @@
     "total_characters": 40485
   },
   "extraction_result": {
-    "success": true,
-    "total_snippets_found": 4,
-    "error": null
+    "success": false,
+    "total_snippets_found": 0,
+    "error": "Failed to get valid response after 3 attempts. Last error: Unexpected error: All connection attempts failed"
   },
-  "extracted_evidence": [
-    {
-      "id": 1,
-      "quote": "a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain as compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain).",
-      "relevance_explanation": "This quote identifies Flublok (RIV4) as a recombinant influenza vaccine and specifies that it contains a defined amount of hemagglutinin (HA) per strain, which is relevant because recombinant technology allows for precise matching to selected strains without egg-adapted mutations."
-    },
-    {
-      "id": 2,
-      "quote": "The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45. For ELISA, rHA antigens were coated at 100 ng/well. Serum samples were tested at an initial dilution of 1:400 followed by 2 fold serial dilution. Antibodies were detected by horseradish peroxidase (HRP) conjugated goat anti human pan immunoglobulin conjugate to detect total binding antibodies.",
-      "relevance_explanation": "This quote describes the use of recombinant HA proteins (as in Flublok) produced in a baculovirus system, which ensures the antigens are identical to the WHO- and FDA-selected reference strains, supporting the claim of an identical antigenic match."
-    },
-    {
-      "id": 3,
-      "quote": "Sequence analyses All the testing viruses used in this study were sequenced. Sequences were analyzed against the sequences of candidate vaccine viruses (CVV) of the study vaccines as deposited in Global Initiative on Sharing Avian Influenza Data (GISAID) database by BioEdit version 7.0.9.0 (Table 1).",
-      "relevance_explanation": "This quote shows that the antigens used in the study (including those in Flublok) were sequence-verified to match the candidate vaccine viruses selected by WHO and FDA, directly supporting the claim of identical antigenic match."
-    },
-    {
-      "id": 4,
-      "quote": "The potential of non egg based vaccines to mitigate the impact of prior egg based vaccination remains unclear. In this randomized trial (Clinical trials gov: NCT03722589), sera pre- and post vaccination with quadrivalent inactivated egg based (IIV4), cell culture based (ccIIV4), and recombinant (RIV4) influenza vaccines were collected from healthcare personnel (18-64 years) in 2018-19 (N = 723) and 2019-20 (N = 684) influenza seasons.",
-      "relevance_explanation": "This quote establishes that Flublok (RIV4) is a recombinant, non-egg-based vaccine, which is important because non-egg-based production avoids egg-adapted mutations, ensuring the antigenic match to the selected strains."
-    }
-  ],
+  "extracted_evidence": [],
   "model_used": "gpt-4.1"
 }

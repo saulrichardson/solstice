@@ -5,15 +5,15 @@
   "page_number": 1,
   "block_id": "det_0_004",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Header of a journal article from Elsevier\u2019s Vaccine journal showing the journal name, homepage URL, and the beginning of the article title regarding vaccine effectiveness of recombinant and standard dose influenza vaccines. The image does not support the claim because it only shows the article header and title without any data or statements about Flublok\u2019s antigenic match with WHO\u2010 or FDA\u2010selected strains, so it does not support the claim. Note: Image is limited to the journal header and title; no substantive content on Flublok or antigenic matching is visible.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Header of a journal article from Elsevier\u2019s Vaccine journal showing the journal name, homepage URL, and the beginning of the article title regarding vaccine effectiveness of recombinant and standard dose influenza vaccines.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "The image does not support the claim because it only shows the article header and title without any data or statements about Flublok\u2019s antigenic match with WHO\u2010 or FDA\u2010selected strains, so it does not support the claim.",
-    "confidence_notes": "Image is limited to the journal header and title; no substantive content on Flublok or antigenic matching is visible."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }

@@ -5,15 +5,15 @@
   "page_number": 1,
   "block_id": "det_0_017",
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "The image shows the top of page 1 of a clinical article titled \u201cRecombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age,\u201d listing authors and the beginning of the abstract, with introductory text about trivalent recombinant vaccines. does not support the claim Note: The visible content is limited to the article title, authors, and partial abstract; there is no mention of antigenic matching or WHO/FDA strain selection.",
+  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "The image shows the top of page 1 of a clinical article titled \u201cRecombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age,\u201d listing authors and the beginning of the abstract, with introductory text about trivalent recombinant vaccines.",
+    "image_description": "Failed to analyze image",
+    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
     "evidence_found": null,
-    "reasoning": "does not support the claim",
-    "confidence_notes": "The visible content is limited to the article title, authors, and partial abstract; there is no mention of antigenic matching or WHO/FDA strain selection."
+    "confidence_notes": "Analysis failed due to errors"
   }
 }
