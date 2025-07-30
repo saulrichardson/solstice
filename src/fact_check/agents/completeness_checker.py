@@ -32,7 +32,7 @@ class CompletenessChecker(BaseAgent):
     def required_inputs(self) -> List[str]:
         return [
             "extracted/content.json",
-            f"agents/claims/{self.claim_id}/evidence_verifier_v2/output.json"
+            f"agents/claims/{self.claim_id}/evidence_extractor/output.json",
         ]
     
     def __init__(
@@ -67,11 +67,14 @@ class CompletenessChecker(BaseAgent):
         logger.info(f"Document: {self.pdf_name}")
         logger.info(f"{'='*60}")
         
-        # Get verified evidence
-        verifier_path = self.pdf_dir / "agents" / "claims" / self.claim_id / "evidence_verifier_v2" / "output.json"
-        logger.info(f"Loading verified evidence from: {verifier_path}")
-        verifier_data = self.load_json(verifier_path)
-        
+        # Load previously extracted (unverified) evidence
+        extractor_path = (
+            self.pdf_dir / "agents" / "claims" / self.claim_id /
+            "evidence_extractor" / "output.json"
+        )
+        logger.info(f"Loading extracted evidence from: {extractor_path}")
+        extractor_data = self.load_json(extractor_path)
+
         # Load document
         content_path = self.pdf_dir / "extracted" / "content.json"
         document_data = self.load_json(content_path)
@@ -89,7 +92,7 @@ class CompletenessChecker(BaseAgent):
         logger.info(f"\nClaim being analyzed: '{claim}'")
         
         # Get existing evidence
-        existing_snippets = verifier_data.get("verified_evidence", [])
+        existing_snippets = extractor_data.get("extracted_evidence", [])
         existing_quotes = [s.get("quote", "") for s in existing_snippets]
         
         logger.info(f"\nExisting verified evidence count: {len(existing_snippets)}")
@@ -106,8 +109,14 @@ class CompletenessChecker(BaseAgent):
             existing_quotes=existing_quotes
         )
         
-        # Combine all evidence (existing verified + new)
-        all_snippets = existing_snippets + additional_snippets
+# Combine all evidence (existing + new) – duplicates are removed by text
+        seen_quotes = set()
+        combined_snippets = []
+        for snip in existing_snippets + additional_snippets:
+            quote = snip.get("quote", "")
+            if quote not in seen_quotes:
+                seen_quotes.add(quote)
+                combined_snippets.append(snip)
         
         output = {
             "claim_id": self.claim_id,
@@ -121,10 +130,13 @@ class CompletenessChecker(BaseAgent):
             "completeness_stats": {
                 "existing_evidence": len(existing_snippets),
                 "new_evidence_found": len(additional_snippets),
-                "total_evidence": len(all_snippets)
+                "total_evidence": len(combined_snippets)
             },
-            "verified_evidence": existing_snippets,    # Already verified evidence
-            "new_evidence": additional_snippets,       # New evidence to be verified
+            "combined_evidence": combined_snippets,
+            # Keep legacy key so downstream presenter doesn't break
+            "completeness_assessment": {
+                "missing_aspects": []
+            },
             "model_used": self.llm_client.model
         }
         

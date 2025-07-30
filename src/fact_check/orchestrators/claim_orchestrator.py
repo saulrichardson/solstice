@@ -53,10 +53,11 @@ class ClaimOrchestrator:
         # executed exactly once *after* all evidence has been collected and
         # verified (see `_run_presenter`).  Keeping it out of the main loop
         # prevents duplicate execution and simplifies control-flow.
+        # New simplified linear pipeline
         self.pipeline = [
             (EvidenceExtractor, "evidence_extractor"),
-            (EvidenceVerifierV2, "evidence_verifier_v2"),
             (CompletenessChecker, "completeness_checker"),
+            (EvidenceVerifierV2, "evidence_verifier_v2"),
         ]
     
     async def process(self) -> Dict[str, Any]:
@@ -103,13 +104,9 @@ class ClaimOrchestrator:
             "supporting_evidence": []
         }
         
-        # Track all evidence
+        # Track all verified evidence
         all_verified_evidence = []
-        
         logger.info(f"  Starting pipeline")
-        
-        # Run initial extraction and verification
-        additional_evidence_found = False
         
         for agent_class, agent_name in self.pipeline:
             logger.info(f"    Running {agent_name}...")
@@ -142,14 +139,8 @@ class ClaimOrchestrator:
                     all_verified_evidence.extend(verified)
                     logger.info(f"      Verified {len(verified)} evidence pieces")
                 
-                # Check if completeness checker found additional evidence
-                if agent_name == "completeness_checker":
-                    new_evidence = result.get("new_evidence", [])
-                    if new_evidence:
-                        logger.info(f"      Found {len(new_evidence)} additional evidence pieces")
-                        additional_evidence_found = True
-                        # Prepare additional evidence for verification
-                        await self._prepare_additional_evidence(document, new_evidence)
+                # After completeness checker, no immediate side-effects; merged
+                # evidence will be verified in the next pipeline step.
                     
             except Exception as e:
                 logger.error(f"      Agent {agent_name} failed: {e}")
@@ -164,11 +155,7 @@ class ClaimOrchestrator:
                 if not self.config.get("continue_on_error", False):
                     break
         
-        # If additional evidence was found, verify it
-        if additional_evidence_found:
-            await self._verify_additional_evidence(document, doc_result, all_verified_evidence)
-        
-        # NEW: Run image analysis after text pipeline completes
+        # Run image analysis after text pipeline completes
         logger.info(f"  Running image analysis...")
         image_evidence = await self._run_image_analysis(document, doc_result)
         doc_result["image_evidence"] = image_evidence

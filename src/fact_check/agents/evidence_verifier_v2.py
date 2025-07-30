@@ -30,7 +30,7 @@ class EvidenceVerifierV2(BaseAgent):
     def required_inputs(self) -> List[str]:
         return [
             "extracted/content.json",
-            f"agents/claims/{self.claim_id}/evidence_extractor/output.json"
+            f"agents/claims/{self.claim_id}/completeness_checker/output.json",
         ]
     
     def __init__(
@@ -65,21 +65,14 @@ class EvidenceVerifierV2(BaseAgent):
         logger.info(f"Document: {self.pdf_name}")
         logger.info(f"{'='*60}")
         
-        # Find the appropriate extractor output
-        extractor_path = None
-        base_claim_dir = self.pdf_dir / "agents" / "claims" / self.claim_id
-        
-        # Check configuration for verification type
-        if self.config.get("is_additional_verification", False):
-            extractor_path = base_claim_dir / "evidence_extractor_additional" / "output.json"
-            logger.info("\nRunning as ADDITIONAL verifier")
-            logger.info(f"Using additional evidence from: {extractor_path}")
-        else:
-            # Standard verification - use main extractor output
-            extractor_path = base_claim_dir / "evidence_extractor" / "output.json"
-            logger.info("\nRunning as MAIN verifier")
-            logger.info(f"Using extracted evidence from: {extractor_path}")
-        
+        # Load combined snippets produced by completeness checker
+        extractor_path = (
+            self.pdf_dir / "agents" / "claims" / self.claim_id /
+            "completeness_checker" / "output.json"
+        )
+        logger.info("\nRunning single verifier pass")
+        logger.info(f"Using combined evidence from: {extractor_path}")
+
         extractor_data = self.load_json(extractor_path)
         
         # Load document
@@ -99,7 +92,7 @@ class EvidenceVerifierV2(BaseAgent):
         verified_evidence = []
         rejected_evidence = []
         
-        extracted_quotes = extractor_data.get("extracted_evidence", [])
+        extracted_quotes = extractor_data.get("combined_evidence", [])
         logger.info(f"\nFound {len(extracted_quotes)} quotes to verify")
         logger.info(f"Using model: {self.llm_client.model}")
         
