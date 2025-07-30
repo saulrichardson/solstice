@@ -22,24 +22,5 @@ src/
 └── util/           # Misc helper scripts and one-off tools
 ```
 
-Key design notes
-----------------
-1. **BaseAgent.run() is the only way to execute a fact-checking agent.**
-   This ensures consistent input validation, metadata logging, and output
-   persistence across the pipeline.
 
-2. **Ingestion and fact-checking are decoupled.**  The ingestion pipelines
-   output normalised JSON files to `data/cache/…`.  The fact-checking
-   orchestrators read those files asynchronously, enabling you to re-run
-   claim verification without regenerating layouts.
-
-3. **All external interactions flow through the `gateway` service.**  This
-   keeps API-key handling, retries and caching in one place so the rest of
-   the codebase can assume a stable OpenAI-compatible endpoint.
-
-4. **Tests live next to the code they cover** (e.g. `tests/` packages inside
-   `fact_check`).  Run `pytest` from the repo root.
-
-For a deeper dive, see the architecture docs in the project-root `docs/`
-folder.
 
