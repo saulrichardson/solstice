@@ -27,10 +27,19 @@ class LLMResponseParser:
         content = re.sub(r',\s*}', '}', content)
         content = re.sub(r',\s*]', ']', content)
         
-        # Fix common quote issues
-        # Convert smart quotes to regular quotes
-        content = content.replace('"', '"').replace('"', '"')
-        content = content.replace(''', "'").replace(''', "'")
+        # Normalise smart / curly quotes to plain ASCII quotes so that JSON
+        # parsing does not choke on them.  This handles the common characters
+        # emitted by some LLMs when they format strings.
+        content = (
+            content.replace("“", '"')
+                   .replace("”", '"')
+                   .replace("„", '"')
+                   .replace("‟", '"')
+                   .replace("‘", "'")
+                   .replace("’", "'")
+                   .replace("‚", "'")
+                   .replace("‛", "'")
+        )
         
         # Extract just the JSON if there's extra text
         # Find first { and last matching }
@@ -65,9 +74,11 @@ class LLMResponseParser:
             s = re.sub(r'[\x00-\x1f]', lambda m: f'\\u{ord(m.group(0)):04x}', s)
             return f'"{s}"'
         
-        # Find strings and escape control characters inside them
-        # This regex matches strings while handling escaped quotes
-        content = re.sub(r'"((?:[^"\\]|\\.)*)\"', escape_json_string, content)
+        # Find strings and escape control characters inside them.  The pattern
+        # matches a JSON string (double-quoted) while accounting for escaped
+        # quotes inside the string body.
+        string_re = re.compile(r'"((?:[^"\\]|\\.)*)"')
+        content = string_re.sub(escape_json_string, content)
                 
         return content
     

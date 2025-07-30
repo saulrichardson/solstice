@@ -1,15 +1,13 @@
 # Ingestion Module
 
-Advanced PDF processing with two specialized pipelines optimized for different document types.
+PDF processing with layout detection and text extraction.
 
 ## Overview
 
-The ingestion module provides intelligent document processing with automatic text correction, layout detection, and structure preservation. It features two distinct pipelines:
+The ingestion module provides PDF processing with layout detection and text extraction. Two pipelines:
 
-1. **Scientific Pipeline** (`scientific/`): Optimized for academic papers, clinical trials, and research documents
-2. **Marketing Pipeline** (`marketing/`): Specialized for marketing materials with complex layouts
-
-Both pipelines leverage shared utilities for text processing, storage management, and visualization.
+1. **Scientific Pipeline** (`scientific/`): For academic papers and research documents
+2. **Marketing Pipeline** (`marketing/`): For marketing materials with complex layouts
 
 ## Module Structure
 
@@ -39,12 +37,11 @@ injestion/
 
 | Feature | Scientific Pipeline | Marketing Pipeline |
 |---------|-------------------|-------------------|
-| **Model** | PubLayNet (trained on papers) | PrimaLayout (diverse documents) |
+| **Model** | PubLayNet | PrimaLayout |
 | **Label IDs** | Start at 0 | Start at 1 |
 | **Labels** | Text, Title, List, Table, Figure | TextRegion, ImageRegion, TableRegion, etc. |
-| **Box Consolidation** | Functional (via overlap resolver) | Object-oriented (BoxConsolidator) |
-| **Reading Order** | Hybrid algorithm with column detection | Marketing-specific with feature clustering |
-| **Default Threshold** | 0.2 (more detections) | 0.1 (catch subtle elements) |
+| **Reading Order** | Hybrid algorithm | Marketing-specific |
+| **Default Threshold** | 0.2 | 0.1 |
 
 ## Scientific Pipeline
 
@@ -58,11 +55,11 @@ PDF Document
     │        └─► Layout Detection (PubLayNet/Detectron2)
     │                 │
     │                 ├─► Box Detection with Labels:
-    │                 │   - 0: "Text"
-    │                 │   - 1: "Title"
-    │                 │   - 2: "List"
-    │                 │   - 3: "Table"
-    │                 │   - 4: "Figure"
+    │                 │   - 0: Text
+    │                 │   - 1: Title
+    │                 │   - 2: List
+    │                 │   - 3: Table
+    │                 │   - 4: Figure
     │                 │
     │                 └─► Overlap Resolution & Box Expansion
     │
@@ -121,12 +118,12 @@ Marketing PDF
     │        └─► Layout Detection (PrimaLayout/Detectron2)
     │                 │
     │                 ├─► Box Detection with Labels:
-    │                 │   - 1: "TextRegion"
-    │                 │   - 2: "ImageRegion"
-    │                 │   - 3: "TableRegion"
-    │                 │   - 4: "MathsRegion"
-    │                 │   - 5: "SeparatorRegion"
-    │                 │   - 6: "OtherRegion"
+    │                 │   - 1: TextRegion
+    │                 │   - 2: ImageRegion
+    │                 │   - 3: TableRegion
+    │                 │   - 4: MathsRegion
+    │                 │   - 5: SeparatorRegion
+    │                 │   - 6: OtherRegion
     │                 │
     │                 └─► Advanced Box Consolidation
     │
@@ -152,9 +149,9 @@ python -m src.injestion.marketing.cli brochure.pdf \
 
 ### Presets
 
-- **aggressive**: Maximum consolidation for complex layouts
-- **conservative**: Minimal merging to preserve structure
-- **balanced**: Default settings for most documents
+- **aggressive**: Maximum consolidation (merge_threshold=0.05)
+- **conservative**: Minimal merging (merge_threshold=0.5, expand_boxes=False)
+- **marketing**: Optimized for marketing docs (score_threshold=0.15)
 
 ## Shared Components
 
@@ -232,11 +229,11 @@ data/cache/<PDF_NAME>/
 
 ### Resource Requirements
 
-| Document Size | RAM Usage | Processing Time | Recommended Settings |
-|--------------|-----------|-----------------|---------------------|
-| 1-10 pages | ~2GB | 30-60s | Default (400 DPI) |
-| 10-50 pages | ~4GB | 2-5min | Batch by 10 pages |
-| 50+ pages | ~8GB | 5-15min | Lower DPI (300), batch processing |
+| Document Size | RAM Usage | Processing Time |
+|--------------|-----------|----------------|
+| 1-10 pages | ~2GB | 30-60s |
+| 10-50 pages | ~4GB | 2-5min |
+| 50+ pages | ~8GB+ | 5-15min |
 
 ### Optimization Strategies
 
@@ -244,8 +241,7 @@ data/cache/<PDF_NAME>/
    ```python
    config = IngestionConfig(
        detection_dpi=300,          # Lower resolution
-       skip_visualization=True,    # No debug images
-       parallel_pages=True         # Process pages in parallel
+       create_visualizations=False # No debug images
    )
    ```
 
@@ -257,13 +253,6 @@ data/cache/<PDF_NAME>/
        expand_boxes=True,          # Prevent cutoffs
        box_padding=30             # Extra padding
    )
-   ```
-
-3. **For Memory**:
-   ```python
-   # Process in chunks
-   for chunk in pdf_chunks(document, size=10):
-       process_chunk(chunk)
    ```
 
 ## Troubleshooting
@@ -288,7 +277,7 @@ make install-detectron2
 ### Layout Detection Issues
 
 1. **Missing regions**: Lower `score_threshold`
-2. **Too many boxes**: Increase `nms_threshold`
+2. **Too many boxes**: Increase `nms_threshold` (non-maximum suppression)
 3. **Overlapping boxes**: Verify overlap resolver is enabled
 4. **Wrong labels**: Ensure correct model (PubLayNet vs PrimaLayout)
 
@@ -323,9 +312,9 @@ make install-detectron2
    ```python
    try:
        document = ingest_pdf(pdf_path)
-   except LayoutDetectionError:
-       # Fall back to text-only extraction
-       document = extract_text_only(pdf_path)
+   except Exception as e:
+       # Log error and handle appropriately
+       logger.error(f"Failed to process PDF: {e}")
    ```
 
 ## Future Enhancements
@@ -333,5 +322,4 @@ make install-detectron2
 - **OCR Support**: Add text extraction for scanned documents
 - **Table Structure**: Extract table cells and relationships
 - **Multi-Language**: Support for non-English documents
-- **Streaming API**: Process large PDFs without loading entire file
 - **Custom Models**: Train on domain-specific layouts

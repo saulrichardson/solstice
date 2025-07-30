@@ -48,14 +48,14 @@ class ClaimOrchestrator:
         self.agent_config = self.config.get("agent_config", {})
         self.agent_config["claim"] = claim_text
         
-        # Fixed pipeline for streamlined architecture
-        # Note: Pipeline order matters for proper data flow
+        # Fixed pipeline for streamlined architecture.  The presenter is
+        # executed exactly once *after* all evidence has been collected and
+        # verified (see `_run_presenter`).  Keeping it out of the main loop
+        # prevents duplicate execution and simplifies control-flow.
         self.pipeline = [
             (EvidenceExtractor, "evidence_extractor"),
             (EvidenceVerifierV2, "evidence_verifier_v2"),
             (CompletenessChecker, "completeness_checker"),
-            # Additional verifier run will happen if completeness checker finds new evidence
-            (EvidencePresenter, "evidence_presenter")
         ]
     
     async def process(self) -> Dict[str, Any]:
@@ -108,14 +108,9 @@ class ClaimOrchestrator:
         logger.info(f"  Starting pipeline")
         
         # Run initial extraction and verification
-        initial_evidence_verified = False
         additional_evidence_found = False
         
         for agent_class, agent_name in self.pipeline:
-            # Skip presenter until we've processed all evidence
-            if agent_name == "evidence_presenter" and additional_evidence_found:
-                continue
-                
             logger.info(f"    Running {agent_name}...")
             
             try:
@@ -183,7 +178,11 @@ class ClaimOrchestrator:
         # Now run the presenter with all verified evidence (text + images)
         await self._run_presenter(document, doc_result, all_verified_evidence)
         
-        doc_result["success"] = all(a["success"] for a in doc_result["agents_run"])
+        # A document is considered successful only when at least one agent ran
+        # and **all** executed agents reported success.
+        doc_result["success"] = bool(doc_result["agents_run"]) and all(
+            a["success"] for a in doc_result["agents_run"]
+        )
         return doc_result
     
     async def _prepare_additional_evidence(self, document: str, new_evidence: List[Dict]):

@@ -129,8 +129,7 @@ class StudyOrchestrator:
         for doc_name, doc_result in results.get("documents", {}).items():
             evidence_count = len(doc_result.get("supporting_evidence", []))
             total_evidence += evidence_count
-            loops = doc_result.get("loops_performed", 0)
-            print(f"  {doc_name}: {evidence_count} evidence pieces (loops: {loops})")
+            print(f"  {doc_name}: {evidence_count} evidence pieces")
         
         print(f"  Total evidence: {total_evidence}")
     
