@@ -17,7 +17,7 @@
 
 \section{Executive Summary}
 
-Solstice verifies medical claims against source documents using computer vision and orchestrated LLM processing. The system extracts structured content from PDFs through Detectron2, then runs claims through a four-stage LLM pipeline for evidence extraction and verification.
+Solstice verifies medical claims against source documents using computer vision and orchestrated LLM processing. The system extracts structured content from PDFs through Detectron2, then runs claims through a multi-stage LLM pipeline that includes evidence extraction, verification, visual analysis, and completeness checking with automatic re-verification when new evidence is found.
 
 \section{Core Architecture}
 
@@ -31,7 +31,7 @@ Three decoupled layers handle document processing:
 +-------------+          +---------------+          +-------------+
 \end{verbatim}
 
-The Gateway accepts document uploads and claim submissions from users, returning job IDs for async processing. When a document arrives, the Ingestion layer runs first to process the PDF and extract structured JSON. Once ingestion completes, the Fact Checker can then verify claims against the cached document data using the LLM pipeline. Users poll the Gateway for results, which retrieves the evidence report once processing completes.
+The Gateway accepts document uploads and claim submissions from users, returning job IDs for async processing. When a document arrives, the Ingestion layer runs first to process the PDF and extract structured JSON. Once ingestion completes, the Fact Checker orchestrates a multi-stage verification pipeline: Evidence Extractor finds relevant quotes, Evidence Verifier validates accuracy, Visual Analyzer processes figures/tables, and Completeness Checker ensures nothing is missed. If new evidence surfaces, a second verification pass runs. Users poll the Gateway for results, which retrieves the consolidated evidence report.
 
 \subsection{Document Processing Pipeline}
 
@@ -53,29 +53,34 @@ The Gateway accepts document uploads and claim submissions from users, returning
 
 \subsection{Multi-Stage LLM Processing}
 
-Claims pass through four specialized LLM components:
+Claims pass through five specialized LLM components in sequence:
 
 \newpage
 \begin{verbatim}
+                        Text Pipeline
 +-----------------+     +------------------+     +-------------------+
 |                 |     |                  |     |                   |
-| Claim + Document|---->| Evidence        |---->| Evidence          |
-|                 |     | Extractor (LLM) |     | Verifier (LLM)    |
-+-----------------+     +------------------+     +---------+---------+
-                                                           |
-                                                           v
+| Claim + Document|---->| Evidence        |---->| Completeness      |
+|                 |     | Extractor (LLM) |     | Checker (LLM)     |
 +-----------------+     +------------------+     +-------------------+
-|                 |     |                  |     |                   |
-| Images + Claim  |---->| Visual Analyzer  |     | Completeness      |
-|                 |     | (Multimodal LLM) |     | Checker (LLM)     |
-+-----------------+     +------------------+     +---------+---------+
-                                                           |
-                                                 If new evidence found
                                                            |
                                                            v
                                                  +-------------------+
+                                                 |                   |
                                                  | Evidence Verifier |
-                                                 | (LLM) - 2nd pass  |
+                                                 | V2 (LLM)          |
+                                                 +-------------------+
+                                                           |
+                        Image Pipeline                     |
++-----------------+     +------------------+               |
+|                 |     |                  |               |
+| Images + Claim  |---->| Visual Analyzer  |---------------+
+|                 |     | (Multimodal LLM) |               |
++-----------------+     +------------------+               v
+                                                 +-------------------+
+                                                 |                   |
+                                                 | Evidence Presenter|
+                                                 | (LLM)             |
                                                  +-------------------+
 \end{verbatim}
 
@@ -95,14 +100,20 @@ Claims pass through four specialized LLM components:
 
 \textbf{Completeness Checker}
 \begin{itemize}
-\item Searches for additional supporting evidence
-\item Triggers second verification pass if needed
+\item Runs after initial extraction to find additional evidence
+\item Ensures all relevant quotes are captured before verification
 \end{itemize}
 
 \textbf{Visual Analyzer}
 \begin{itemize}
 \item Processes tables/figures using multimodal LLM
-\item Extracts data supporting or refuting claims
+\item Runs in parallel after text pipeline completes
+\end{itemize}
+
+\textbf{Evidence Presenter}
+\begin{itemize}
+\item Consolidates all verified evidence from text and images
+\item Generates final evidence report for users
 \end{itemize}
 
 \section{Implementation Patterns}

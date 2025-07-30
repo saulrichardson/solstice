@@ -243,39 +243,6 @@ class ResponsesClient:
         # Use model-specific extraction
         return extract_text_from_response(response, model)
 
-    def retrieve_response(self, response_id: str) -> dict:
-        """
-        Retrieve a stored response.
-
-        Args:
-            response_id: The ID of the response to retrieve
-
-        Returns:
-            The stored response object
-        """
-        with httpx.Client() as client:
-            response = client.get(
-                f"{self.base_url}/v1/responses/{response_id}", headers=self.headers
-            )
-            response.raise_for_status()
-            return response.json()
-
-    def delete_response(self, response_id: str) -> dict:
-        """
-        Delete a stored response.
-
-        Args:
-            response_id: The ID of the response to delete
-
-        Returns:
-            Deletion confirmation
-        """
-        with httpx.Client() as client:
-            response = client.delete(
-                f"{self.base_url}/v1/responses/{response_id}", headers=self.headers
-            )
-            response.raise_for_status()
-            return response.json()
 
     async def complete(self, prompt: str, model: str = "gpt-4.1-mini", **kwargs) -> str:
         """
@@ -292,36 +259,6 @@ class ResponsesClient:
         response = await self.create_response(input=prompt, model=model, **kwargs)
         return response.get("output_text", "")
     
-    async def create_response_with_deduplication(self, **kwargs) -> dict:
-        """
-        Create a response that allows request deduplication for efficiency.
-        
-        Identical requests will return the same cached response from OpenAI,
-        improving speed and reducing costs. Use this for deterministic queries
-        where you want consistent results.
-        
-        Args:
-            **kwargs: Same arguments as create_response()
-            
-        Returns:
-            Response object
-        """
-        return await self.create_response(disable_request_deduplication=False, **kwargs)
-    
-    async def create_fresh_response(self, **kwargs) -> dict:
-        """
-        Create a response that always goes through the model.
-        
-        Ensures a fresh response even for identical requests by disabling
-        request deduplication. This is the default behavior of create_response().
-        
-        Args:
-            **kwargs: Same arguments as create_response()
-            
-        Returns:
-            Response object
-        """
-        return await self.create_response(disable_request_deduplication=True, **kwargs)
 
     async def complete_with_tools(
         self, prompt: str, tools: list[dict], model: str = "gpt-4.1-mini", **kwargs
