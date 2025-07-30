@@ -1,0 +1,77 @@
+Logical issues identified in `src/injestion/` (July 2025)
+========================================================
+
+The following points highlight *algorithmic / design* problems that do **not**
+cause Python errors, yet can silently degrade the correctness of the produced
+documents.  They were discovered during a quick review and therefore focus on
+high-impact, easy-to-miss mistakes rather than exhaustively covering the code
+base.
+
+
+1.  reading_order_hybrid.py
+--------------------------
+
+1-a  Mis-named & mis-implemented overlap helper
+     • `_vertical_overlap(a, b)` is documented and *used* to check whether two
+       boxes overlap **horizontally** (the algorithm wants to know if a block
+       above another shares some horizontal span).  
+     • The implementation instead compares *y-coordinates*:
+
+           return not (a.bbox[3] <= b.bbox[1] or b.bbox[3] <= a.bbox[1])
+
+       This detects **vertical** overlap (one spans the same vertical band),
+       the opposite of what the algorithm expects.  As a consequence, the
+       DAG that encodes reading dependencies will often miss edges between
+       blocks that sit in different columns yet overlap horizontally, leading
+       to an incorrect reading order.
+
+1-b  Out-of-sync clusters in `_kmeans_1d()`
+     The function recomputes `clusters` inside its iteration loop and *breaks*
+     when centroids stabilise **before writing the final clusters back**.
+     Therefore the list of members can correspond to the *previous* set of
+     centroids, producing wrong labels for some points and degrading the “one
+     vs. two column” decision.
+
+1-c  Silhouette proxy scaling
+     `_silhouette_1d()` divides intra-cluster distances by *n²* but
+     inter-cluster distance by *n·m*.  The two quantities no longer share the
+     same scale, inflating silhouette values and making the cluster-quality
+     test overly optimistic.
+
+
+2.  overlap_resolver.py
+----------------------
+
+The constant `same_type_merge_threshold` is hard-coded (0.8) even though the
+docstring says it *“should be configurable”*.  Pipelines that want to fine-
+tune merging behaviour therefore cannot – the value is baked into the helper.
+
+
+3.  marketing/detector.py
+------------------------
+
+The PrimaLayout label map starts at **1** instead of **0**.  Detectron2 models
+typically output class-ids beginning at 0; if that holds for the PrimaLayout
+checkpoint as well, every prediction will be shifted (e.g. class 0 →
+"ImageRegion" instead of "TextRegion").  This silently corrupts all labels.
+
+
+4.  marketing/pipeline.py
+------------------------
+
+`_apply_consolidation()` performs `import uuid` inside the function even though
+`uuid` is already imported at the top of the file.  This is harmless but
+unnecessary noise and may trigger duplicate-import warnings in static
+analysis.
+
+
+Impact summary
+--------------
+
+• Wrong reading order for many two-column pages (users will notice text jumps).
+• Potentially incorrect block labels in marketing documents (down-stream
+  NLP fails or must rely on heuristics).
+• Overlap-merging strategy cannot be tuned via config as advertised.
+
+All issues are logical – the code **runs** but the output is less reliable.
+

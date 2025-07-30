@@ -172,6 +172,7 @@ class CompletenessChecker(BaseAgent):
             full_prompt = f'''Extract quotes from the document that support this claim.
 
 Rules:
+- Base your extraction solely on what is explicitly stated in the document - do not infer or assume information not present
 - Preserve the exact meaning and all factual content from the document
 - Correct obvious OCR artifacts that break readability:
   * Fix split words and broken spacing

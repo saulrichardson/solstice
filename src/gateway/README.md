@@ -65,33 +65,24 @@ POST /v1/responses
 }
 ```
 
-### Retrieve Response
-```bash
-GET /v1/responses/{response_id}
-```
-
-### Delete Response
-```bash
-DELETE /v1/responses/{response_id}
-```
-
-### List Available Models
-```bash
-GET /models
-```
 
 ## Running the Service
 
 ### Docker (Recommended)
+
+The gateway is managed through the root Makefile:
+
 ```bash
-# Start the service
-docker compose up -d
+# From the repository root:
 
-# View logs
-docker compose logs -f gateway
+# Start all services (including gateway)
+make up
 
-# Stop the service
-docker compose down
+# View gateway logs
+make logs
+
+# Stop all services
+make down
 ```
 
 ### Local Development
@@ -138,9 +129,9 @@ data/cache/gateway/
 ## Error Handling
 
 ### Automatic Retry
-- **Attempts**: 3 (configurable)
-- **Backoff**: 0.5s, 1s, 2s (exponential)
-- **Retryable errors**: Network failures, 5xx errors, timeouts
+- **Attempts**: 3 (default)
+- **Backoff**: 0.5s, 1s, 2s (exponential with base 0.5s)
+- **Retryable errors**: All exceptions (network failures, API errors, timeouts)
 
 ### Error Response Format
 ```json

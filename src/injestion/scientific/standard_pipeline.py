@@ -142,7 +142,7 @@ class StandardPipeline(BasePDFPipeline):
         document.save(doc_path)
         
         # Generate readable formats
-        from .processing.document_formatter import (
+        from ..shared.processing.document_formatter import (
             generate_readable_document,
             generate_text_only_document,
             generate_html_document
@@ -154,7 +154,7 @@ class StandardPipeline(BasePDFPipeline):
         
         # Create visualizations if configured
         if self.config.create_visualizations:
-            from .visualization.layout_visualizer import visualize_document
+            from ..shared.visualization.layout_visualizer import visualize_document
             visualize_document(
                 document,
                 pdf_path,
@@ -192,7 +192,7 @@ class StandardPipeline(BasePDFPipeline):
         
         # Create visualization of raw layouts if configured
         if self.config.create_visualizations:
-            from .visualization.layout_visualizer import visualize_page_layout
+            from ..shared.visualization.layout_visualizer import visualize_page_layout
             viz_dir = raw_dir / "visualizations"
             viz_dir.mkdir(exist_ok=True)
             

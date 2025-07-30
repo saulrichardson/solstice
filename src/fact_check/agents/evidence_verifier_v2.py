@@ -201,6 +201,8 @@ Your task:
 1. Find this quote in the document below
 2. Determine if it genuinely supports the claim
 
+CRITICAL: Base your verification solely on what is explicitly stated in the document. Do not infer or assume information not present in the text.
+
 IMPORTANT context about quote matching:
 - The quote may have been cleaned of OCR artifacts by the extractor
 - Look for the same factual content, not character-perfect matches
