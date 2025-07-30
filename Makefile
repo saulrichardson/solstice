@@ -1,4 +1,4 @@
-.PHONY: help check up down logs lint format clean shell restart docker-status
+.PHONY: help check up down logs lint format shell restart docker-status
 
 help:
 	@echo "Available commands:"
@@ -12,7 +12,7 @@ help:
 	@echo "  make verify             Verify installation and dependencies"
 	@echo "  make lint               Run linting"
 	@echo "  make format             Format code"
-	@echo "  make clean              Clean up cache files"
+	@echo "  (no clean target anymore)"
 
 check:
 	@command -v docker >/dev/null 2>&1 || { echo "Error: Docker is required but not installed."; echo "Install from: https://docs.docker.com/get-docker/"; exit 1; }
@@ -57,10 +57,7 @@ format:
 	black .
 	ruff check --fix .
 
-clean:
-	find . -type d -name __pycache__ -exec rm -rf {} +
-	find . -type f -name "*.pyc" -delete
-	rm -rf .mypy_cache .ruff_cache
+
 
 shell:
 	docker compose exec gateway /bin/bash
@@ -132,4 +129,3 @@ verify:
 	@echo ""
 	@echo "Python: $$(python --version)"
 	@echo "Pip:    $$(pip --version)"
-
