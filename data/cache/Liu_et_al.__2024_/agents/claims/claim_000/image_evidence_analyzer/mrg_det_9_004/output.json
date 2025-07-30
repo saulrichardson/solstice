@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_mrg_det_9_004.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p10_mrg_det_9_004.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "mrg_det_9_004",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "Multi-panel figure showing ELISA-measured antibody titers in serum samples from seven repeat vaccination arms (cclIV4-cclIV4, cclIV4-RIV4, RIV4-cclIV4, RIV4-RIV4, IIV4-cclIV4, IIV4-RIV4, IIV4-IIV4). Panels A and B display head-binding antibody titers to H3N2, H1pdm09, B/Victoria, and B/Yamagata antigens at Day 0 and 1 month post-vaccination. Panel C shows stalk-binding titers for H3 and H1 stalk regions. Panel D shows fold-rise of stalk ELISA titers. Error bars indicate 95% confidence intervals and statistical significance annotations are present. The figure shows immunogenicity (ELISA antibody titers) following different vaccine regimens but does not present any data on antigenic match of Flublok to WHO- or FDA-selected strains, so it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Multi-panel figure showing ELISA-measured antibody titers in serum samples from seven repeat vaccination arms (cclIV4-cclIV4, cclIV4-RIV4, RIV4-cclIV4, RIV4-RIV4, IIV4-cclIV4, IIV4-RIV4, IIV4-IIV4). Panels A and B display head-binding antibody titers to H3N2, H1pdm09, B/Victoria, and B/Yamagata antigens at Day 0 and 1 month post-vaccination. Panel C shows stalk-binding titers for H3 and H1 stalk regions. Panel D shows fold-rise of stalk ELISA titers. Error bars indicate 95% confidence intervals and statistical significance annotations are present.",
+    "evidence_found": null,
+    "reasoning": "The figure shows immunogenicity (ELISA antibody titers) following different vaccine regimens but does not present any data on antigenic match of Flublok to WHO- or FDA-selected strains, so it does not support the claim.",
+    "confidence_notes": null
+  }
+}

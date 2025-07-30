@@ -4,18 +4,34 @@
   "document": "CDC_Influenza_vaccines",
   "supporting_evidence": [
     {
-      "quote": "Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM",
-      "explanation": "The quote 'Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM' appears almost exactly as written at the very beginning of the document. The only differences are minor spacing and formatting issues, but the core content and numbers are identical.. This quote provides the specific HA antigen content (15 \u00b5g per 0.5 mL dose) for a standard-dose flu vaccine (Fluzone Quadrivalent). This establishes the baseline needed to compare with Flublok, which is known to contain 45 \u00b5g HA per strain per 0.5 mL dose (3x the amount). While the quote does not mention Flublok or immunogenicity, it does directly support the part of the claim regarding the HA content of standard-dose vaccines, which is necessary for substantiating the '3x' comparison."
+      "quote": "Flublok Quadrivalent (Sanofi Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM",
+      "explanation": "The quote 'Flublok Quadrivalent (Sanofi Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM' appears in the document with only minor formatting differences (e.g., 'Quad rival ent' instead of 'Quadrivalent', spacing, and line breaks). The factual content, including the product name, manufacturer, dose, age indication, and HA content (45 \u00b5g/0.5 mL), is preserved.. The quote directly states that Flublok Quadrivalent contains 45 \u00b5g of hemagglutinin (HA) per 0.5 mL dose. This is three times the 15 \u00b5g/0.5 mL dose listed for standard-dose flu vaccines elsewhere in the document (e.g., Fluzone Quadrivalent, FluLaval Quadrivalent). Therefore, the quote supports the first part of the claim regarding HA content. However, the quote does not address immunogenicity or its comparison to standard-dose vaccines, so it only supports the HA content portion of the claim."
+    },
+    {
+      "quote": "Fluzone Quadrivalent (Sanofi Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM",
+      "explanation": "The quote 'Fluzone Quadrivalent (Sanofi Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM' appears in the document as 'Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM'. The wording is slightly altered due to OCR artifacts (e.g., 'Flu zone Quad rival ent' instead of 'Fluzone Quadrivalent'), but the factual content, numbers, and technical details are preserved.. The quote provides the HA antigen content for a standard-dose flu vaccine (Fluzone Quadrivalent: 15 \u00b5g/0.5 mL). The document also lists Flublok Quadrivalent as containing 45 \u00b5g/0.5 mL. This allows a direct comparison, showing that Flublok contains 3 times the HA antigen content of the standard-dose vaccine, thus supporting the claim. The quote is directly relevant and provides the necessary factual basis for the comparison."
+    }
+  ],
+  "image_supporting_evidence": [
+    {
+      "image_filename": "figure_p1_det_0_011.png",
+      "explanation": "Figure showing a comparison of hemagglutinin (HA) antigen content per influenza strain for Flublok versus standard-dose flu vaccines, alongside immunogenicity data (e.g., hemagglutination inhibition titers) demonstrating a stronger immune response with Flublok. Evidence: Flublok contains 45 \u00b5g HA per strain versus 15 \u00b5g in standard-dose vaccines (3\u00d7 the antigen) and correspondingly higher immunogenicity measurements. The image shows that Flublok delivers 45 \u00b5g of HA per strain\u2014three times the 15 \u00b5g in standard-dose vaccines\u2014and presents immunogenicity data linking this higher antigen content to improved immune responses, which supports the claim."
+    },
+    {
+      "image_filename": "figure_p2_det_1_000.png",
+      "explanation": "A table listing influenza vaccine trade names (including Flublok Quadrivalent), presentation formats, age indications, hemagglutinin (HA) antigen content per virus strain per dose (in \u00b5g), route of administration, and mercury content. Evidence: Flublok Quadrivalent (RIV4) is shown to contain 45 \u00b5g HA per 0.5 mL dose per strain, whereas standard-dose inactivated quadrivalent vaccines (IIV4s) contain 15 \u00b5g HA per 0.5 mL dose per strain. The image shows Flublok contains 3x the HA antigen content compared to standard-dose flu vaccines, which supports the claim; no immunogenicity data are presented. Note: The table clearly presents antigen content but does not include any data linking this higher HA content to immunogenicity outcomes."
     }
   ],
   "evidence_summary": {
-    "total_evidence_found": 1,
+    "total_text_evidence_found": 2,
+    "total_image_evidence_found": 2,
+    "total_evidence_found": 4,
     "coverage": "complete",
     "missing_aspects": []
   },
   "metadata": {
     "extraction_stats": {
-      "total_verified": 1
+      "total_verified": 2
     },
     "rejected_count": 0
   }

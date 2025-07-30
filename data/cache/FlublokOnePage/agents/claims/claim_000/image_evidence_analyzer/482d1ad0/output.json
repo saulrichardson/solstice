@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_482d1ad0.png",
+  "image_path": "FlublokOnePage/extracted/figures/figure_p1_482d1ad0.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "482d1ad0",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "Partial figure with stylized molecular icons and cut-off text mentioning ensuring something related to WHO- and FDA-selected flu strains; no charts or data are visible, only a truncated marketing statement does not support the claim because the image only shows a partial, non-data statement without any empirical evidence of antigenic matching Note: Image is cut off and low resolution, limiting the ability to see any supportive data",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Partial figure with stylized molecular icons and cut-off text mentioning ensuring something related to WHO- and FDA-selected flu strains; no charts or data are visible, only a truncated marketing statement",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image only shows a partial, non-data statement without any empirical evidence of antigenic matching",
+    "confidence_notes": "Image is cut off and low resolution, limiting the ability to see any supportive data"
+  }
+}

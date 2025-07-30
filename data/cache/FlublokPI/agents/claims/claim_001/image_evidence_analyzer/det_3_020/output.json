@@ -1,19 +1,9 @@
 {
   "image_filename": "figure_p4_det_3_020.png",
-  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_020.png",
-  "image_type": "Figure",
-  "page_number": 4,
-  "block_id": "det_3_020",
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A multi-row, multi-column table reporting influenza vaccine efficacy endpoints (e.g., CDC-defined influenza-like illness and culture-confirmed cases regardless of strain match), with counts, attack rates per group, calculated vaccine efficacy percentages (with 95% CIs), and footnotes describing study populations and endpoints. The table presents efficacy outcomes (number of cases, attack rates, and vaccine efficacy estimates) for Flublok (quadrivalent) versus comparator vaccines but does not provide any information about the hemagglutinin antigen content of Flublok or of standard-dose flu vaccines. There is no mention of HA microgram amounts or a '3\u00d7' comparison in antigen content. Therefore, it does not support the claim about Flublok containing three times the HA antigen. Note: The image quality is sufficient to read the table and footnotes; however, no antigen content data are provided or implied in this figure.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A multi-row, multi-column table reporting influenza vaccine efficacy endpoints (e.g., CDC-defined influenza-like illness and culture-confirmed cases regardless of strain match), with counts, attack rates per group, calculated vaccine efficacy percentages (with 95% CIs), and footnotes describing study populations and endpoints.",
-    "evidence_found": null,
-    "reasoning": "The table presents efficacy outcomes (number of cases, attack rates, and vaccine efficacy estimates) for Flublok (quadrivalent) versus comparator vaccines but does not provide any information about the hemagglutinin antigen content of Flublok or of standard-dose flu vaccines. There is no mention of HA microgram amounts or a '3\u00d7' comparison in antigen content. Therefore, it does not support the claim about Flublok containing three times the HA antigen.",
-    "confidence_notes": "The image quality is sufficient to read the table and footnotes; however, no antigen content data are provided or implied in this figure."
-  }
+  "explanation": "Error analyzing image: Server error '500 Internal Server Error' for url 'http://localhost:8080/v1/responses'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
+  "error": true,
+  "model_used": "o4-mini"
 }

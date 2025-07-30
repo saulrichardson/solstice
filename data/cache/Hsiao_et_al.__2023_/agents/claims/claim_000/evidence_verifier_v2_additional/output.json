@@ -4,21 +4,18 @@
   "document": "Hsiao_et_al.__2023_",
   "verification_stats": {
     "total_extracted": 1,
-    "verified": 1,
-    "rejected": 0,
-    "verification_rate": 1.0
+    "verified": 0,
+    "rejected": 1,
+    "verification_rate": 0.0
   },
-  "verified_evidence": [
+  "verified_evidence": [],
+  "rejected_evidence": [
     {
       "id": "comp_1",
-      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain.",
-      "supports_claim": true,
-      "explanation": "A very close version of the quote appears in the document: 'The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain.' The wording is nearly identical to the quote to verify, with only minor differences in punctuation and spacing.. The quote directly states that the hemagglutinin protein in Flublok is 'genetically identical to that in the selected strain.' Since the selected strain refers to the WHO- and FDA-selected flu strains for the season, this supports the claim that Flublok ensures an identical antigenic match with those strains. The quote is explicit and does not require significant inference.",
-      "presence_explanation": "A very close version of the quote appears in the document: 'The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain.' The wording is nearly identical to the quote to verify, with only minor differences in punctuation and spacing.",
-      "support_explanation": "The quote directly states that the hemagglutinin protein in Flublok is 'genetically identical to that in the selected strain.' Since the selected strain refers to the WHO- and FDA-selected flu strains for the season, this supports the claim that Flublok ensures an identical antigenic match with those strains. The quote is explicit and does not require significant inference.",
-      "original_relevance": "This quote explicitly states that the hemagglutinin protein in Flublok is genetically identical to that in the selected strain, which supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains."
+      "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote supports the claim by stating that the recombinant formulation (Flublok) is not susceptible to antigenic drift during manufacturing, which is a key reason it can ensure an identical antigenic match with the WHO- and FDA-selected flu strains."
     }
   ],
-  "rejected_evidence": [],
   "model_used": "gpt-4.1"
 }

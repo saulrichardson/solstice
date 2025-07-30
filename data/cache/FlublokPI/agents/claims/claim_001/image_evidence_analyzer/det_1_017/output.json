@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p2_det_1_017.png",
-  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_017.png",
-  "image_type": "Table",
-  "page_number": 2,
-  "block_id": "det_1_017",
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A portion of a clinical study table reporting percentages of adverse events (e.g., solicited reactions graded mild, moderate, severe) in subjects receiving study vaccines, along with footnotes about study design and definitions of severity. The visible content of the table relates only to safety data (incidence of adverse reactions) and study footnotes. There is no information on hemagglutinin (HA) antigen content of Flublok or comparative antigen doses versus standard-dose influenza vaccines, nor any immunogenicity results. Therefore, this image does not provide evidence supporting the claim about 3\u00d7 HA content or related immunogenicity. Note: The image is cropped and does not show any antigen content or immunogenicity metrics. If other parts of the document contain those data, they are not visible here.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A portion of a clinical study table reporting percentages of adverse events (e.g., solicited reactions graded mild, moderate, severe) in subjects receiving study vaccines, along with footnotes about study design and definitions of severity.",
-    "evidence_found": null,
-    "reasoning": "The visible content of the table relates only to safety data (incidence of adverse reactions) and study footnotes. There is no information on hemagglutinin (HA) antigen content of Flublok or comparative antigen doses versus standard-dose influenza vaccines, nor any immunogenicity results. Therefore, this image does not provide evidence supporting the claim about 3\u00d7 HA content or related immunogenicity.",
-    "confidence_notes": "The image is cropped and does not show any antigen content or immunogenicity metrics. If other parts of the document contain those data, they are not visible here."
-  }
+  "explanation": "Error analyzing image: Server error '500 Internal Server Error' for url 'http://localhost:8080/v1/responses'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
+  "error": true,
+  "model_used": "o4-mini"
 }

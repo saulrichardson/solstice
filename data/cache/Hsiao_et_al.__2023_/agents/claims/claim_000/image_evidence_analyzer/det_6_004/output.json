@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_004.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/table_p7_det_6_004.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_004",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A table presenting demographic and clinical characteristics of participants in two vaccine groups (recombinant vaccine vs. standard-dose vaccine) and overall (N=675,252), including counts and percentages by sex, race/ethnic group, comorbid conditions, and prior-year influenza vaccination. The table presents only participant demographics and clinical characteristics; it contains no data or statements about antigenic matching to WHO- or FDA-selected flu strains and therefore does not support the claim. Note: Confidence limited to visible content; details on antigenic match are not addressed in this table.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table presenting demographic and clinical characteristics of participants in two vaccine groups (recombinant vaccine vs. standard-dose vaccine) and overall (N=675,252), including counts and percentages by sex, race/ethnic group, comorbid conditions, and prior-year influenza vaccination.",
+    "evidence_found": null,
+    "reasoning": "The table presents only participant demographics and clinical characteristics; it contains no data or statements about antigenic matching to WHO- or FDA-selected flu strains and therefore does not support the claim.",
+    "confidence_notes": "Confidence limited to visible content; details on antigenic match are not addressed in this table."
+  }
+}

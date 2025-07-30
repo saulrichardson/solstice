@@ -5,8 +5,8 @@
     "pdf_name": "Liu_et_al.__2024_",
     "source_pdf": "data/clinical_files/Liu et al. (2024).pdf",
     "total_pages": 13,
-    "total_blocks": 124,
-    "total_characters": 39807
+    "total_blocks": 128,
+    "total_characters": 40485
   },
   "extraction_result": {
     "success": true,
@@ -16,13 +16,13 @@
   "extracted_evidence": [
     {
       "id": 1,
-      "quote": "RIV4 contains 3 times the i d 45 HA/d / ...d",
-      "relevance_explanation": "This quote directly states that RIV4 (Flublok Quadrivalent) contains 3 times the HA (hemagglutinin) antigen content compared to other vaccines, supporting the first part of the claim."
+      "quote": "a cell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain).",
+      "relevance_explanation": "This quote explicitly states that Flublok (RIV4) contains 3 times the hemagglutinin (HA) antigen content per strain compared to standard-dose flu vaccines (IIV4 and ccIIV4), directly supporting the first part of the claim."
     },
     {
       "id": 2,
-      "quote": "For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody ... it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).",
-      "relevance_explanation": "This quote provides evidence that RIV4 (Flublok) leads to a greater immunogenic response, specifically higher levels of functional and total HA antibodies, supporting the second part of the claim regarding greater immunogenicity versus standard-dose flu vaccines."
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3N2) virus than ccIIV4 and IIV4.",
+      "relevance_explanation": "This quote provides direct evidence that the higher HA content in Flublok (RIV4) is linked to greater immunogenicity, as measured by higher neutralizing and HA head binding antibody responses compared to standard-dose vaccines."
     }
   ],
   "model_used": "gpt-4.1"

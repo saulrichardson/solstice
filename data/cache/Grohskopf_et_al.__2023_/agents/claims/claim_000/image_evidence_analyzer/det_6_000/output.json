@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p7_det_6_000.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_000",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "Excerpt of a table from a clinical guideline listing contraindications and precautions for different influenza vaccine platforms (egg-based IIV/LAIV4, cell culture\u2013based IIV/ccIIV4, and recombinant influenza vaccine RIV/RIV4), followed by definitions of abbreviations. The table details safety considerations (contraindications and precautions) for various vaccine types; it does not provide any information about antigenic matching or strain selection, and therefore does not support the claim. Note: The image is a partial table focused on safety warnings and contains no data on antigenic match or WHO/FDA strain selection.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Excerpt of a table from a clinical guideline listing contraindications and precautions for different influenza vaccine platforms (egg-based IIV/LAIV4, cell culture\u2013based IIV/ccIIV4, and recombinant influenza vaccine RIV/RIV4), followed by definitions of abbreviations.",
+    "evidence_found": null,
+    "reasoning": "The table details safety considerations (contraindications and precautions) for various vaccine types; it does not provide any information about antigenic matching or strain selection, and therefore does not support the claim.",
+    "confidence_notes": "The image is a partial table focused on safety warnings and contains no data on antigenic match or WHO/FDA strain selection."
+  }
+}

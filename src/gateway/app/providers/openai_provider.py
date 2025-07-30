@@ -94,13 +94,13 @@ class OpenAIProvider(Provider):
             return {"effort": reasoning}
         return reasoning
 
+
     def _build_api_request(self, request: ResponseRequest) -> dict[str, Any]:
         """Transform a `ResponseRequest` into kwargs for the SDK call."""
         payload: dict[str, Any] = {"model": request.model}
 
         # Use model_dump to preserve all values including falsy ones (0, False, etc.)
         simple_fields = (
-            "input",
             "previous_response_id",
             "instructions",
             "tool_choice",
@@ -124,6 +124,10 @@ class OpenAIProvider(Provider):
         for field in simple_fields:
             if field in request_dict:
                 payload[field] = request_dict[field]
+
+        # Pass input through directly - the Responses API should handle the format
+        if "input" in request_dict:
+            payload["input"] = request_dict["input"]
 
         if request.tools:
             payload["tools"] = self._normalize_tools(request.tools)

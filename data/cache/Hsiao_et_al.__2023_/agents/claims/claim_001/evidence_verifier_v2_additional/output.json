@@ -12,15 +12,15 @@
   "rejected_evidence": [
     {
       "id": "comp_1",
-      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain.",
+      "quote": "In traditional quadrivalent standard dose inactivated influenza vaccines (SD-IIV4), chicken eggs are used to manufacture the vaccine strain. The Flublok Quadrivalent influenza vaccine (RIV4) is manufactured using recombinant hemagglutinin.",
       "reason": "does not support claim",
-      "original_explanation": "This quote supports the claim by specifying that Flublok contains recombinant hemagglutinin protein, which is relevant to the claim about HA antigen content, though it does not directly mention the 3x amount or immunogenicity."
+      "original_explanation": "This quote distinguishes Flublok (recombinant vaccine) from standard-dose vaccines by specifying that Flublok is manufactured using recombinant hemagglutinin, which is relevant to the claim about its higher HA antigen content and its link to immunogenicity."
     },
     {
       "id": "comp_2",
       "quote": "Several studies have shown benefit for the recombinant vaccine and other high dose influenza vaccines as compared with standard dose vaccines in adults who are 65 years of age or older, findings that have been attributed to an improved immune response.",
       "reason": "does not support claim",
-      "original_explanation": "This quote supports the claim by linking the higher dose (which includes higher HA content) of recombinant vaccines to improved immune response (greater immunogenicity) compared to standard dose vaccines."
+      "original_explanation": "This quote directly links the improved immune response (greater immunogenicity) to the use of recombinant and high dose vaccines compared to standard dose vaccines, supporting the claim that higher HA content is associated with greater immunogenicity."
     }
   ],
   "model_used": "gpt-4.1"

@@ -12,15 +12,15 @@
   "rejected_evidence": [
     {
       "id": 1,
-      "quote": "RIV4 was Flublok",
+      "quote": "because it is not subject to mutations to the A (H3 N2) glycosylation binding site that reduce the effectiveness of egg based vaccines.",
       "reason": "does not support claim",
-      "original_explanation": "This identifies Flublok as the recombinant influenza vaccine (RIV4) being studied, which is relevant because the claim is about Flublok's antigenic match."
+      "original_explanation": "This quote directly supports the claim by stating that Flublok (RIV4) is not subject to mutations that occur in egg-based vaccines, which can alter the antigenic match to WHO- and FDA-selected flu strains. This implies that Flublok maintains the intended antigenic match."
     },
     {
       "id": 2,
-      "quote": "because it is not subject to mutations to the A (H3 N2) glycosylation binding site that reduce the effectiveness of egg based vaccines.",
+      "quote": "Standard Dose Flu zone and FlucelVax. HD-IIV4 was High Dose Flu zone, RIV4 was Flublok and Adj-IV was FluAd.",
       "reason": "does not support claim",
-      "original_explanation": "This statement supports the claim by indicating that Flublok (RIV4) is not subject to egg-adapted mutations, which can cause antigenic mismatch in egg-based vaccines, thus implying that Flublok maintains an identical antigenic match to the selected strains."
+      "original_explanation": "This quote clarifies that RIV4 refers to Flublok, establishing the identity of the vaccine being discussed in the context of antigenic match and manufacturing method."
     }
   ],
   "model_used": "gpt-4.1"

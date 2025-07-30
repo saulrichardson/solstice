@@ -29,13 +29,17 @@ def expand_boxes(boxes: List[Box], padding: float = 10.0, page_width: float = No
         List of expanded Box objects
     """
     expanded: list[Box] = []
+    
+    # Create spatial index for efficient neighbor detection
+    box_centers = [(b, (b.bbox[0] + b.bbox[2])/2, (b.bbox[1] + b.bbox[3])/2) for b in boxes]
 
-    for box in boxes:
+    for i, box in enumerate(boxes):
         x1, y1, x2, y2 = box.bbox
 
         orig_w = x2 - x1
         orig_h = y2 - y1
 
+        # Use uniform padding for all boxes - simple and predictable
         nx1, ny1 = x1 - padding, y1 - padding
         nx2, ny2 = x2 + padding, y2 + padding
 
@@ -168,7 +172,7 @@ def calculate_box_weight(
     return score
 
 
-def merge_overlapping_boxes(boxes: List[Box], iou_threshold: float = 0.5) -> List[Box]:
+def merge_overlapping_boxes(boxes: List[Box], iou_threshold: float = 0.8) -> List[Box]:
     """Merge overlapping boxes of the same type."""
     if not boxes:
         return []
@@ -200,24 +204,20 @@ def merge_overlapping_boxes(boxes: List[Box], iou_threshold: float = 0.5) -> Lis
                 if merged[j]:
                     continue
                     
-                # For text blocks, use stricter criteria
+                # For text blocks, only merge if nearly identical (90%+ overlap)
                 if box_type in ["Text", "Paragraph", "text"]:
-                    # For textual content we still require a substantial
-                    # overlap (≥ 80 % of the smaller box) *but* we now consider
-                    # the entire merge_group rather than only the seed box.
-
-                    def large_overlap(a: Box, b: Box) -> bool:
-                        area_a = get_box_area(a.bbox)
-                        area_b = get_box_area(b.bbox)
-                        inter = get_overlap_area(a.bbox, b.bbox)
-                        if inter == 0:
-                            return False
-                        ratio = inter / min(area_a, area_b)
-                        return ratio > 0.8
-
-                    if any(large_overlap(gb, type_boxes[j]) for gb in merge_group):
-                        merge_group.append(type_boxes[j])
-                        merged[j] = True
+                    # Check direct overlap with the original box only (not transitive)
+                    area_i = get_box_area(type_boxes[i].bbox)
+                    area_j = get_box_area(type_boxes[j].bbox)
+                    inter = get_overlap_area(type_boxes[i].bbox, type_boxes[j].bbox)
+                    
+                    if inter > 0:
+                        # Both boxes must have 85%+ of their area in the overlap
+                        ratio_i = inter / area_i
+                        ratio_j = inter / area_j
+                        if ratio_i > 0.85 and ratio_j > 0.85:
+                            merge_group.append(type_boxes[j])
+                            merged[j] = True
                 else:
                     # For non-text, keep the transitive merging
                     should_merge = False
@@ -313,8 +313,8 @@ def determine_overlap_strategy(
     box1: Box, 
     box2: Box, 
     overlap_info: Dict, 
-    minor_overlap_threshold: float = 0.05,
-    same_type_merge_threshold: float = 0.8
+    minor_overlap_threshold: float = 0.10,  # Balanced: not too strict, not too permissive
+    same_type_merge_threshold: float = 0.85   # Match the text merging threshold
 ) -> OverlapStrategy:
     """Determine the best strategy for handling overlap between two boxes.
     
@@ -323,9 +323,44 @@ def determine_overlap_strategy(
         box2: Second box
         overlap_info: Dictionary with overlap metrics
         minor_overlap_threshold: Overlaps below this ratio are considered minor and ignored
-        same_type_merge_threshold: Minimum overlap ratio to merge same-type boxes (default: 0.8)
+        same_type_merge_threshold: Minimum overlap ratio to merge same-type boxes (default: 0.9)
     """
     
+    # ------------------------------------------------------------------
+    # Special-case highly redundant *List* detection.  The layout model often
+    # predicts both a generic ``Text`` block **and** a ``List`` block that
+    # covers (almost) exactly the same region.  Down-stream components only
+    # need one of them.  If we detect such a scenario – i.e. Tex­t ↔ List with
+    # considerable nested overlap – we always keep the non-"List" element and
+    # drop the redundant List box.
+    # ------------------------------------------------------------------
+    list_like = {"List", "ListItem", "list", "listitem"}
+    text_like = {"Text", "Paragraph", "text", "paragraph"}
+
+    if (box1.label in list_like and box2.label in text_like) or (
+        box2.label in list_like and box1.label in text_like
+    ):
+        # If one box almost completely contains the other (>90 % intersection
+        # over the smaller area) we consider it a duplicate.
+        # Treat as near-duplicate – collapse both into a single **Text** box
+        # by requesting the generic *MERGE* strategy.  Even when the list box
+        # is selected as the primary source, `merge_boxes()` will keep the
+        # higher-scoring element, which (thanks to the larger area term in
+        # `calculate_box_weight`) tends to be the text block.  This reliably
+        # eliminates the visually overlapping duplicate without losing
+        # information.
+
+        if overlap_info["ios"] > 0.9:
+            return OverlapStrategy.MERGE
+
+            # NOTE: We purposefully *do not* attempt to merge because both
+            # boxes encompass effectively the same region.  Rely on the
+            # existing weight calculation (which favours the larger – usually
+            # non-List – box) to discard the redundant detection.  However,
+            # to make the behaviour deterministic we slightly bias the score
+            # in favour of the non-List element using the type-bonus below.
+
+    # ------------------------------------------------------------------
     # Special handling for Figure overlaps
     if box1.label == "Figure" or box2.label == "Figure":
         figure_box = box1 if box1.label == "Figure" else box2
@@ -339,11 +374,11 @@ def determine_overlap_strategy(
                (figure_box == box2 and overlap_info["overlap_ratio_box1"] > 0.8):
                 # Small text element inside figure - keep both
                 return OverlapStrategy.KEEP_BOTH
-            # If text is only partially overlapping with figure, try to shrink
-            elif overlap_info["overlap_ratio_box1"] < 0.5 and overlap_info["overlap_ratio_box2"] < 0.5:
-                return OverlapStrategy.SHRINK_TO_NON_OVERLAP
+            # For partial overlaps with figures, keep both to preserve content
+            else:
+                return OverlapStrategy.KEEP_BOTH
     
-    # Check if this is a minor overlap that we should ignore
+    # Be more tolerant of small overlaps - increased threshold
     if (overlap_info["overlap_ratio_box1"] < minor_overlap_threshold and 
         overlap_info["overlap_ratio_box2"] < minor_overlap_threshold):
         # Minor overlap - keep both boxes as-is
@@ -386,9 +421,9 @@ def determine_overlap_strategy(
             # information from the lower-weighted box.
             return OverlapStrategy.SHRINK_TO_NON_OVERLAP
     
-    # Small overlap - try to shrink boxes
-    if overlap_info["overlap_ratio_box1"] < 0.2 and overlap_info["overlap_ratio_box2"] < 0.2:
-        return OverlapStrategy.SHRINK_TO_NON_OVERLAP
+    # For small overlaps between different types, keep both to preserve content
+    if overlap_info["overlap_ratio_box1"] < 0.3 and overlap_info["overlap_ratio_box2"] < 0.3:
+        return OverlapStrategy.KEEP_BOTH
 
     # ------------------------------------------------------------------
     # Mixed-type overlaps: collapse into the higher-weighted box only when
@@ -528,12 +563,74 @@ def shrink_boxes_to_remove_overlap(box1: Box, box2: Box) -> Tuple[Box, Box]:
     return new_box1, new_box2
 
 
+def _handle_list_text_duplicates_with_nested(boxes: List[Box]) -> List[Box]:
+    """
+    Handle the specific case where List and Text boxes nearly overlap
+    and contain nested smaller elements.
+    
+    This prevents the nested elements from being lost when List/Text merge.
+    """
+    if len(boxes) < 3:
+        return boxes
+    
+    # Find List/Text pairs with >90% overlap
+    list_text_pairs = []
+    for i, box1 in enumerate(boxes):
+        for j, box2 in enumerate(boxes[i+1:], i+1):
+            if ((box1.label in ["List", "ListItem"] and box2.label in ["Text", "Paragraph"]) or
+                (box2.label in ["List", "ListItem"] and box1.label in ["Text", "Paragraph"])):
+                
+                overlap_info = get_overlap_info(box1, box2)
+                if overlap_info["ios"] > 0.9:  # Nearly identical overlap
+                    list_text_pairs.append((i, j, box1, box2))
+    
+    if not list_text_pairs:
+        return boxes
+    
+    # For each List/Text pair, find nested elements
+    boxes_to_preserve = set()
+    boxes_to_remove = set()
+    
+    for i, j, list_text_1, list_text_2 in list_text_pairs:
+        # Find boxes that are nested within BOTH the List and Text
+        nested_in_both = []
+        for k, other_box in enumerate(boxes):
+            if k == i or k == j:
+                continue
+                
+            # Check if nested in both
+            overlap_with_1 = get_overlap_info(list_text_1, other_box)
+            overlap_with_2 = get_overlap_info(list_text_2, other_box)
+            
+            # If >80% of the small box is inside both List and Text
+            if (overlap_with_1["overlap_ratio_box2"] > 0.8 and 
+                overlap_with_2["overlap_ratio_box2"] > 0.8):
+                nested_in_both.append(k)
+                boxes_to_preserve.add(k)
+        
+        # Keep the Text box (usually better than List) and remove the List
+        if list_text_1.label in ["List", "ListItem"]:
+            boxes_to_remove.add(i)
+        else:
+            boxes_to_remove.add(j)
+        
+        logger.info(f"Found List/Text duplicate with {len(nested_in_both)} nested elements")
+    
+    # Filter out the duplicate List/Text boxes but keep everything else
+    result = []
+    for idx, box in enumerate(boxes):
+        if idx not in boxes_to_remove:
+            result.append(box)
+    
+    return result
+
+
 def resolve_all_overlaps(boxes: List[Box], 
                         confidence_weight: float = 0.7,
                         area_weight: float = 0.3,
                         min_box_area: float = 100,
-                        minor_overlap_threshold: float = 0.05,
-                        same_type_merge_threshold: float = 0.8) -> List[Box]:
+                        minor_overlap_threshold: float = 0.10,
+                        same_type_merge_threshold: float = 0.85) -> List[Box]:
     """Resolve all overlaps to guarantee no overlapping boxes in output.
     
     Args:
@@ -555,6 +652,9 @@ def resolve_all_overlaps(boxes: List[Box],
         Box(id=b.id, bbox=b.bbox, label=b.label, score=b.score)
         for b in boxes
     ]
+    
+    # Pre-process: Handle List/Text duplicates with nested elements
+    working_boxes = _handle_list_text_duplicates_with_nested(working_boxes)
     
     # Keep resolving until no overlaps remain
     max_iterations = len(boxes) * 2  # Prevent infinite loops
@@ -699,8 +799,8 @@ def no_overlap_pipeline(boxes: List[Box],
                         merge_threshold: float = 0.5,
                         confidence_weight: float = 0.7,
                         area_weight: float = 0.3,
-                        minor_overlap_threshold: float = 0.05,
-                        same_type_merge_threshold: float = 0.8) -> List[Box]:
+                        minor_overlap_threshold: float = 0.10,
+                        same_type_merge_threshold: float = 0.85) -> List[Box]:
     """Complete pipeline that guarantees no overlapping boxes.
     
     Args:

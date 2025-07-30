@@ -2,18 +2,18 @@
   "source_pdf": "data/clinical_files/Zimmerman et al. (2023).pdf",
   "blocks": [
     {
-      "id": "mrg_det_0_005",
+      "id": "det_0_007",
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        1137.62744140625,
-        1922.3895263671875,
-        3106.271484375,
-        2871.483154296875
+        1003.6384887695312,
+        1873.423828125,
+        3108.0869140625,
+        2874.70654296875
       ],
-      "text": "uite 600 Sc henley Place, 4420 Bayard St., Pittsburgh, PA 15260, USA nof Infectious Diseases/Pharmacy Department - AMP 5 TH Floor Falk Medical Building, 3601 Fifth Ave, Pittsburgh, PA ... Background: Relative effectiveness of various vaccine formulations provide important input for vaccine policy decisions and provider purchasing decisions. We used electronic databases to conduct a test negative case control study to determine relative vaccine effectiveness (rVE) of recombinant influenza vaccine (RIV4) compared with standard dose vaccines (SD-IIV4) against influenza hospitalization. Methods: Adults 18-64 and 65 years of age hospitalized in a large U.S. health system (19 hospitals) in 2018-2019 and 2019-2020 who were clinically tested for influenza using reverse transcription polymerase chain reaction (RT-PCR) as says were included. The hospital system electronic medical record EMR) and the state immunization registry were used to confirm influenza vaccination. Propensity scores with inverse probability weighting were used to adjust for potential con founders and determine rVE. Results: Of the 14 590 individuals included in the primary analysis, 3,338 were vaccinated with RIV4 and 976 were vaccinated with SD-IIV4 with the balance of 10 276 being un vaccinated Most participants",
+      "text": "i ology, Suite 600 Sc henley Place, 4420 Bayard St., Pittsburgh, PA 15260, USA Division of Infectious Diseases/Pharmacy Department - AMP 5 TH Floor Falk Medical Building, 3601 Fifth Ave, Pittsburgh, PA ... Background: Relative effectiveness of various vaccine formulations provide important input for vaccine policy decisions and provider purchasing decisions. We used electronic databases to conduct a test negative case control study to determine relative vaccine effectiveness (rVE) of recombinant influenza vaccine (RIV4) compared with standard dose vaccines (SD-IIV4) against influenza hospitalization. Methods: Adults 18-64 and 65 years of age hospitalized in a large U.S. health system (19 hospitals) in 2018-2019 and 2019-2020 who were clinically tested for influenza using reverse transcription polymerase chain reaction (RT-PCR) as says were included. The hospital system electronic medical record (EMR) and the state immunization registry were used to confirm influenza vaccination. Propensity scores with inverse probability weighting were used to adjust for potential con founders and determine rVE. Results: Of the 14 590 individuals included in the primary analysis, 3,338 were vaccinated with RIV4 and 976 were vaccinated with SD-IIV4, with the balance of 10 276 being un vaccinated. Most participants were white (80%) most (70%) had a high risk condition just over half were female (54%) and age",
       "metadata": {
-        "score": 0.9629931449890137,
+        "score": 0.9570889472961426,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -21,7 +21,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.008800983428955078,
+          "processing_time": 0.009462833404541016,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -50,7 +50,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.000782012939453125,
+          "processing_time": 0.0008182525634765625,
           "processors_applied": [
             "post_extraction_clean",
             "symspell"
@@ -78,7 +78,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0009238719940185547,
+          "processing_time": 0.0009720325469970703,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -106,7 +106,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0007271766662597656,
+          "processing_time": 0.0008482933044433594,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -133,14 +133,14 @@
       }
     },
     {
-      "id": "mrg_det_0_001",
+      "id": "det_0_001",
       "page_index": 0,
       "role": "Text",
       "bbox": [
         212.20448303222656,
         3515.2255859375,
         1607.1533203125,
-        3950.67626953125
+        3897.84765625
       ],
       "text": "Va journal homepage: www",
       "metadata": {
@@ -152,7 +152,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00021696090698242188,
+          "processing_time": 0.00022363662719726562,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -179,7 +179,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0002570152282714844,
+          "processing_time": 0.0002582073211669922,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -206,7 +206,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0001220703125,
+          "processing_time": 0.00013113021850585938,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -233,7 +233,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00009775161743164062
+          "processing_time": 0.00010609626770019531
         }
       }
     },
@@ -257,7 +257,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005218982696533203,
+          "processing_time": 0.0005519390106201172,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -266,7 +266,7 @@
       }
     },
     {
-      "id": "mrg_det_0_012",
+      "id": "det_0_012",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -289,7 +289,7 @@
       "role": "Text",
       "bbox": [
         2333.2822265625,
-        2874.70654296875,
+        2923.759033203125,
         3101.5986328125,
         2935.267822265625
       ],
@@ -338,6 +338,24 @@
       }
     },
     {
+      "id": "det_0_021",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        252.71908569335938,
+        3943.13671875,
+        658.638427734375,
+        3950.67626953125
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.5249590873718262,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
       "id": "det_1_000",
       "page_index": 1,
       "role": "Text",
@@ -357,7 +375,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.002930879592895508,
+          "processing_time": 0.0030341148376464844,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -373,7 +391,7 @@
         210.23043823242188,
         329.81512451171875,
         1607.786865234375,
-        1341.697998046875
+        1364.2188720703125
       ],
       "text": "2.1. Patients Patients were individuals 18 years and older as of August 1 each season who were hospitalized in one of nineteen UPMC hospitals in central and southwestern Pennsylvania and had atest for influenza at any time between 11 01 2018 and 04 30 2020. A Thera doc database (an infection control software) was used to identify those tested for influenza using reverse transcription polymerase chain reaction (RT-PCR) as says performed in a centralized clinical lab for some hospitals and individual hospital labs for others. Influenza cases were those who tested positive for influenza and controls were those who tested negative for influenza, regardless of any other identified viral infection. Both the EMR and Pennsylvania Statewide Immunization Information System (PA-SIIS) were queried for influenza vaccines given between August 1 and the date of illness/PCR testing. Exclusion criteria were testing within 2 weeks of vaccination, having 2 different types of",
       "metadata": {
@@ -385,7 +403,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0023620128631591797,
+          "processing_time": 0.002499103546142578,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -413,7 +431,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0027132034301757812,
+          "processing_time": 0.002894163131713867,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -441,7 +459,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.005953788757324219,
+          "processing_time": 0.00615692138671875,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -470,7 +488,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.002079010009765625,
+          "processing_time": 0.0021979808807373047,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -498,7 +516,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0013849735260009766,
+          "processing_time": 0.0015697479248046875,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -526,7 +544,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0012900829315185547,
+          "processing_time": 0.001483917236328125,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -540,7 +558,7 @@
       "role": "Text",
       "bbox": [
         201.11691284179688,
-        1364.2188720703125,
+        1341.697998046875,
         1611.7529296875,
         1758.7620849609375
       ],
@@ -554,7 +572,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.000982046127319336,
+          "processing_time": 0.001043081283569336,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -582,7 +600,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0024051666259765625,
+          "processing_time": 0.002586841583251953,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -611,7 +629,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0009629726409912109,
+          "processing_time": 0.0011701583862304688,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -639,7 +657,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00011491775512695312,
+          "processing_time": 0.00013327598571777344,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -666,7 +684,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00014781951904296875,
+          "processing_time": 0.000186920166015625,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -693,7 +711,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00017380714416503906,
+          "processing_time": 0.00021123886108398438,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -720,7 +738,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00018906593322753906,
+          "processing_time": 0.00022292137145996094,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -766,7 +784,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0016350746154785156,
+          "processing_time": 0.0017669200897216797,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -782,7 +800,7 @@
         201.02984619140625,
         1718.516357421875,
         1604.8021240234375,
-        2625.15869140625
+        2640.0302734375
       ],
       "text": "The total number of influenza test results among in patients was 18 467 of which 530 were excluded because of missing vaccination information or vaccination < 14 days before illness, and 3,264 were excluded from the primary analyses because patients were immunocompromised or received enhanced vaccines other than RIV4 (n = 613), leaving 14 590 for the primary analysis (Fig. 1). Of these, 3,338 were vaccinated with RIV4 and 976 were vaccinated with SD-IIV4, with the balance of 10 276 being un vaccinated. For the secondary analyses, the anal yz able cohort included the 613 HD-IIV4 and Adj-IV recipients bringing the total anal yz able sample to 15 203 (Fig. 2). The influenza positivity rate was 12.4% (1 803 14 590 overall, 14.4% among younger adults 18-64 years and 11.1% (922 8306 among those 65 years, with the addition of 613 patients who received enhanced vaccines that were not included in the primary analysis. Demographic characteristics of the population for the primary l h i T bl 1 tti i thit",
       "metadata": {
@@ -794,7 +812,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.005429983139038086,
+          "processing_time": 0.005651950836181641,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -829,7 +847,7 @@
         202.36695861816406,
         826.6270141601562,
         1614.53125,
-        1470.896728515625
+        1474.494140625
       ],
       "text": "",
       "metadata": {
@@ -859,7 +877,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0013878345489501953,
+          "processing_time": 0.0014960765838623047,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -923,7 +941,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0002739429473876953,
+          "processing_time": 0.00034999847412109375,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -951,7 +969,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00012922286987304688,
+          "processing_time": 0.00015306472778320312,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -964,7 +982,7 @@
       "role": "Text",
       "bbox": [
         202.77650451660156,
-        2640.0302734375,
+        2625.15869140625,
         1599.172119140625,
         2800.849853515625
       ],
@@ -978,7 +996,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0002231597900390625,
+          "processing_time": 0.00026488304138183594,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -1005,7 +1023,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00013685226440429688
+          "processing_time": 0.00014328956604003906
         }
       }
     },
@@ -1047,7 +1065,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00015997886657714844
+          "processing_time": 0.0001838207244873047
         }
       }
     },
@@ -1077,7 +1095,7 @@
         221.453857421875,
         1931.362548828125,
         3110.081787109375,
-        2614.368896484375
+        2628.2861328125
       ],
       "text": "[TABLE 5 - See table_p4_det_3_003.png]",
       "image_path": "figures/table_p4_det_3_003.png",
@@ -1111,7 +1129,7 @@
       "role": "Text",
       "bbox": [
         194.09657287597656,
-        3053.043212890625,
+        3036.13427734375,
         1610.44580078125,
         3586.42333984375
       ],
@@ -1143,7 +1161,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003819465637207031,
+          "processing_time": 0.00040912628173828125,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1171,7 +1189,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00021982192993164062,
+          "processing_time": 0.00024080276489257812,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1198,16 +1216,16 @@
       }
     },
     {
-      "id": "mrg_det_3_007",
+      "id": "det_3_007",
       "page_index": 3,
       "role": "Text",
       "bbox": [
-        183.0096893310547,
-        2628.2861328125,
+        234.7384033203125,
+        2614.368896484375,
         2190.40185546875,
-        2773.141845703125
+        2771.874267578125
       ],
-      "text": "quad rival ent influenza vaccine (SD-IIV4), high dose quad rival ent influenza vaccine (HD-IIV4), adjuvanted influenza votherwise excluded.",
+      "text": "uadrivalent influenza vaccine (SD-IIV4), high dose quad rival ent influenza vaccine (HD-IIV4), adjuvanted influenza vtherwise excluded.",
       "metadata": {
         "score": 0.968919575214386,
         "detection_dpi": 400,
@@ -1217,7 +1235,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005431175231933594,
+          "processing_time": 0.0005712509155273438,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1251,7 +1269,7 @@
         207.65476989746094,
         2871.473388671875,
         1605.9613037109375,
-        3036.13427734375
+        3053.043212890625
       ],
       "text": "",
       "metadata": {
@@ -1269,7 +1287,7 @@
         203.1260528564453,
         1820.6695556640625,
         335.1861572265625,
-        1863.0654296875
+        1873.8951416015625
       ],
       "text": "High",
       "metadata": {
@@ -1281,7 +1299,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00006985664367675781
+          "processing_time": 0.00007581710815429688
         }
       }
     },
@@ -1291,7 +1309,7 @@
       "role": "Text",
       "bbox": [
         76.3418197631836,
-        1873.8951416015625,
+        1863.0654296875,
         3056.46826171875,
         1927.0751953125
       ],
@@ -1305,7 +1323,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0002999305725097656,
+          "processing_time": 0.0003418922424316406,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1341,7 +1359,7 @@
         3130.147705078125,
         3521.56298828125
       ],
-      "text": "[TABLE 12 - See table_p5_det_4_005.png]",
+      "text": "[TABLE 13 - See table_p5_det_4_005.png]",
       "image_path": "figures/table_p5_det_4_005.png",
       "metadata": {
         "score": 0.9906009435653687,
@@ -1357,7 +1375,7 @@
         242.73974609375,
         1931.3177490234375,
         3133.505859375,
-        2450.631591796875
+        2468.091064453125
       ],
       "text": "[TABLE 8 - See table_p5_det_4_007.png]",
       "image_path": "figures/table_p5_det_4_007.png",
@@ -1387,7 +1405,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0010209083557128906,
+          "processing_time": 0.0010607242584228516,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1403,9 +1421,9 @@
         1698.6690673828125,
         3601.2451171875,
         3105.97509765625,
-        3941.833984375
+        3960.14111328125
       ],
-      "text": "lat ive vaccine effectiveness of RIV4 mpa red to SD-IIV4, % (95% CI) justed using a priori riablesc Adjusted using propensity scored Adjusted using IPW",
+      "text": "and ard dose quad rival ent influenza vaccine (SD IIV4) and relative VE of RIV4 using lat ive vaccine effectiveness of RIV4 mpa red to SD-IIV4, % (95% CI) justed using a priori riablesc Adjusted using propensity scored Adjusted using IPW",
       "metadata": {
         "score": 0.9925833940505981,
         "detection_dpi": 400,
@@ -1415,7 +1433,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004849433898925781,
+          "processing_time": 0.0007650852203369141,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1429,7 +1447,7 @@
       "role": "Text",
       "bbox": [
         1698.273681640625,
-        3960.14111328125,
+        3941.833984375,
         3104.78125,
         4206.75537109375
       ],
@@ -1443,7 +1461,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003688335418701172,
+          "processing_time": 0.00042438507080078125,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1457,11 +1475,11 @@
       "role": "Text",
       "bbox": [
         223.49447631835938,
-        1837.204833984375,
+        1826.116943359375,
         3098.4375,
         1931.757080078125
       ],
-      "text": "a SD-IIV4: Afluria, Fluarix, FluLaval, SD Flu zone and FlucelVax. b For difference between those receiving RIV4 and those receiving SD-IIV4. c 4 lbl k 4 i h d l Adj l Ad",
+      "text": "a SD-IIV4: Afluria, Fluarix, FluLaval, SD Flu zone and FlucelVax. b For difference between those receiving RIV4 and those receiving SD-IIV4. c RIV4: Flublok; HD IIV4: High dose Flu zone; Adj IV: FluAd",
       "metadata": {
         "score": 0.9918883442878723,
         "detection_dpi": 400,
@@ -1471,7 +1489,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00048804283142089844,
+          "processing_time": 0.0005640983581542969,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1485,7 +1503,7 @@
       "role": "Text",
       "bbox": [
         220.5356903076172,
-        2847.08544921875,
+        2835.765869140625,
         3086.7861328125,
         2947.1787109375
       ],
@@ -1499,7 +1517,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0009868144989013672,
+          "processing_time": 0.0011060237884521484,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1508,16 +1526,16 @@
       }
     },
     {
-      "id": "mrg_det_4_008",
+      "id": "det_4_008",
       "page_index": 4,
       "role": "Text",
       "bbox": [
         43.621585845947266,
-        419.47412109375,
+        411.1799621582031,
         3120.353515625,
         519.2344970703125
       ],
-      "text": "was not significant for those 65 years for either RT PCR con firmed ILI nor culture positive ILI. For those 50-64 years, rVE was significant against RT PCR ILI (42%; 95% CI = 15 61) and against limited by the fact that the primary outcome was based on ICD 10 codes and not specifically on laboratory confirmed influenza. In a 2019 editorial Flannery and Fry stated ‘‘Evidence to in form",
+      "text": "was not significant for those 65 years for either RT PCR con firmed ILI nor culture positive ILI. For those 50-64 years, rVE was significant against RT-PCR ILI (42%; 95% CI = 15 61) and against limited by the fact that the primary outcome was based on ICD 10 codes and not specifically on laboratory confirmed influenza. In a 2019 editorial Flannery and Fry stated ‘‘Evidence to in form",
       "metadata": {
         "score": 0.9821889996528625,
         "detection_dpi": 400,
@@ -1527,7 +1545,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.000926971435546875,
+          "processing_time": 0.0010218620300292969,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1536,16 +1554,16 @@
       }
     },
     {
-      "id": "mrg_det_4_010",
+      "id": "det_4_010",
       "page_index": 4,
       "role": "Text",
       "bbox": [
         242.77627563476562,
-        2468.091064453125,
-        1789.1875,
-        2667.3994140625
+        2450.631591796875,
+        1676.9296875,
+        2605.746337890625
       ],
-      "text": "able 3 har act eris tics of participants by age group and vaccine received including recombinant quad riva V4), high dose quad rival ent influenza vaccine (HD-IIV4) and adjuvanted influenza vaccine (Ad",
+      "text": "able 3 har act eris tics of participants by age group and vaccine received including recombinant qu V4), high dose quad rival ent influenza vaccine (HD-IIV4) and adjuvanted influenza vacci",
       "metadata": {
         "score": 0.9789759516716003,
         "detection_dpi": 400,
@@ -1555,7 +1573,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0006253719329833984,
+          "processing_time": 0.0006492137908935547,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1571,7 +1589,7 @@
         206.49972534179688,
         364.7388000488281,
         342.0355224609375,
-        411.1799621582031
+        419.47412109375
       ],
       "text": "signific culture",
       "metadata": {
@@ -1583,7 +1601,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00014019012451171875,
+          "processing_time": 0.0001518726348876953,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -1598,9 +1616,9 @@
         202.04713439941406,
         1783.1995849609375,
         338.62969970703125,
-        1826.116943359375
+        1837.204833984375
       ],
-      "text": "RIV4 d F",
+      "text": "c RIV4 d F",
       "metadata": {
         "score": 0.9771528244018555,
         "detection_dpi": 400,
@@ -1610,7 +1628,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00007796287536621094,
+          "processing_time": 0.00009202957153320312,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -1625,9 +1643,9 @@
         204.87356567382812,
         2793.058349609375,
         340.8298034667969,
-        2835.765869140625
+        2847.08544921875
       ],
-      "text": "Groups)",
+      "text": "p Groups)",
       "metadata": {
         "score": 0.9766383171081543,
         "detection_dpi": 400,
@@ -1636,13 +1654,16 @@
         "extraction": {
           "method": "pymupdf",
           "scale_factor": 0.18,
-          "text_modified": false,
-          "processing_time": 0.00008797645568847656
+          "text_modified": true,
+          "processing_time": 0.00010275840759277344,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
         }
       }
     },
     {
-      "id": "mrg_det_4_013",
+      "id": "det_4_013",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -1661,7 +1682,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0009059906005859375,
+          "processing_time": 0.0009849071502685547,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1689,7 +1710,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00026607513427734375,
+          "processing_time": 0.00029087066650390625,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1698,21 +1719,21 @@
       }
     },
     {
-      "id": "det_5_003",
-      "page_index": 5,
-      "role": "Table",
+      "id": "det_4_020",
+      "page_index": 4,
+      "role": "Text",
       "bbox": [
-        529.5254516601562,
-        376.433837890625,
-        1509.6693115234375,
-        4235.431640625
+        281.8763732910156,
+        2664.64111328125,
+        1789.1875,
+        2667.3994140625
       ],
-      "text": "[TABLE 2 - See table_p6_det_5_003.png]",
-      "image_path": "figures/table_p6_det_5_003.png",
+      "text": "",
       "metadata": {
-        "score": 0.9726458191871643,
+        "score": 0.26194047927856445,
         "detection_dpi": 400,
-        "detector": "PubLayNet"
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
       }
     },
     {
@@ -1720,10 +1741,10 @@
       "page_index": 5,
       "role": "Text",
       "bbox": [
-        1699.9571533203125,
+        1674.8992919921875,
         760.2674560546875,
         3096.456298828125,
-        3122.677490234375
+        3113.6943359375
       ],
       "text": "ond, as an integrated healthcare system, its EMR is robust, with regular uploads of vaccination data from the state immunization registry. In addition, we verified vaccination status through the state registry with a specific data request. In previous research, we have demonstrated that registry data are a reasonable source for influenza vaccination data [18]. As a result, we have confidence that influenza vaccinations are captured accurately in the EMR. If vaccinations were not captured in the EMR or state registry, they were classified as un vaccinated. While this classification would likely introduce bias into VE estimates [16], it would likely not bias rVE estimates, as there is no reason to believe that any vaccine is preferentially included or excluded from reporting to the state registry. This study excluded subjects with immuno suppress ive conditions or those receiving immuno suppress ive therapy whose response to vaccines is limited. Because data focused on hospitalized patients, there may have been milder cases that did not require medical care and were not captured in the EMR, thus did not contribute to these estimates. Adding measures of severity of illness into the model would improve the accuracy of the VE estimates, however, these measures were not available. The differences in severity are likely narrower given that all were sufficiently ill to require hospitalization, thus mitigating the need for such an adjustment. It is possible that there may have been selection bias among those who received influenza virus testing, for example, clinicians may preferentially test those who are un vaccinated against influenza thus increasing the proportion of un vaccinated cases. Based on a previous study among patients in this health system that found no increase in testing based on vaccination status [19], we feel confident that this is not a concern. While a relatively large cohort of adults is included in this study, the sample size of SD-IIV4 recipients may have been inadequate to detect meaningful rVE estimates for specific subgroups. These data should be viewed in the context of the seasons for which data were collected. These seasons were ‘‘typical” in that influenza began to increase in November, peaking in January and February both seasons, and numbers of influenza related deaths were 28 000 in 2018-2019 and 25 000 in 2019-2020. These seasons were atypical in that virtually no influenza B circulated in 2018-2019 but there were both A (H1 N1) and A (H3 N2) peaks and in 2019-2020, influenza B circulated early followed by A (H1 N1) in contrast to typical seasons in which the influenza A",
       "metadata": {
@@ -1735,7 +1756,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.01395726203918457,
+          "processing_time": 0.014835119247436523,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1750,11 +1771,11 @@
       "role": "Text",
       "bbox": [
         1698.11865234375,
-        3113.6943359375,
+        3511.445556640625,
         3090.42919921875,
         3885.26708984375
       ],
-      "text": "all adults, and supports its superior effectiveness over SD IIV4 for adults 18-64 years of age. 4.1. Strengths and limitations This study has several strengths and limitations. Firstly, the demographics of the study population were similar to those of the Allegheny County general population of adults in which 79% are white and 51% are female [17], thus contributing to genera liz ability. Moreover, the health system includes urban tertiary and quaternary care hospitals as well as suburban and rural community hospitals. It has a 60% market share of all hospital beds in the county and accepts patients with all insurance products. Second as an integrated healthcare system its EMR is robust with",
+      "text": "all adults, and supports its superior effectiveness over SD IIV4 for adults 18-64 years of age. 4.1. Strengths and limitations This study has several strengths and limitations. Firstly, the demographics of the study population were similar to those of",
       "metadata": {
         "score": 0.9940353631973267,
         "detection_dpi": 400,
@@ -1764,10 +1785,9 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0035190582275390625,
+          "processing_time": 0.0006918907165527344,
           "processors_applied": [
-            "post_extraction_clean",
-            "symspell"
+            "post_extraction_clean"
           ]
         }
       }
@@ -1792,7 +1812,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00012612342834472656,
+          "processing_time": 0.00013899803161621094,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -1819,12 +1839,30 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00019502639770507812,
+          "processing_time": 0.0002110004425048828,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
           ]
         }
+      }
+    },
+    {
+      "id": "det_5_003",
+      "page_index": 5,
+      "role": "Table",
+      "bbox": [
+        360.6662292480469,
+        376.433837890625,
+        404.08074951171875,
+        4235.431640625
+      ],
+      "text": "[TABLE 2 - See table_p6_det_5_003.png]",
+      "image_path": "figures/table_p6_det_5_003.png",
+      "metadata": {
+        "score": 0.9726458191871643,
+        "detection_dpi": 400,
+        "detector": "PubLayNet"
       }
     },
     {
@@ -1847,7 +1885,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004889965057373047,
+          "processing_time": 0.0006799697875976562,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1875,7 +1913,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0001232624053955078,
+          "processing_time": 0.0001499652862548828,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -1883,16 +1921,16 @@
       }
     },
     {
-      "id": "mrg_det_5_007",
+      "id": "det_5_007",
       "page_index": 5,
       "role": "Text",
       "bbox": [
-        348.55731201171875,
+        400.3309326171875,
         240.4457244873047,
-        360.6662292480469,
+        490.1842346191406,
         4303.8603515625
       ],
-      "text": "m",
+      "text": "Relative vaccine effectiveness (rVE) of recombinant quad rival ent influenza vaccine (RIV4) aand RIV4 + high dose quad rival ent influenza vaccine (HD-IIV4) b + adjuvanted influenza vaccine (Adj-IV) cvs. standard dose quad rival ent nfluenza vaccine (SD-IIV4) dby age group, % (95% CI). rman,",
       "metadata": {
         "score": 0.7535797357559204,
         "detection_dpi": 400,
@@ -1901,8 +1939,12 @@
         "extraction": {
           "method": "pymupdf",
           "scale_factor": 0.18,
-          "text_modified": false,
-          "processing_time": 0.0
+          "text_modified": true,
+          "processing_time": 0.0009131431579589844,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
         }
       }
     },
@@ -1926,9 +1968,37 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00013327598571777344,
+          "processing_time": 0.0001480579376220703,
           "processors_applied": [
             "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_5_011",
+      "page_index": 5,
+      "role": "Text",
+      "bbox": [
+        1309.2730712890625,
+        1034.3385009765625,
+        1406.4031982421875,
+        4150.72314453125
+      ],
+      "text": "ne, and cell cultured Flu cel vax. usted for age, race, sex, season, and high risk conditions, except that the stratified variable is not included as an adjustment in its own analysis. ession Method was used to calculate the propensity score using TWANG (Toolkit for Weighting and Analysis of Non equivalent Groups).",
+      "metadata": {
+        "score": 0.33107736706733704,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0009937286376953125,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
           ]
         }
       }
@@ -1953,7 +2023,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.014916181564331055,
+          "processing_time": 0.016199827194213867,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1982,7 +2052,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0011301040649414062,
+          "processing_time": 0.0012962818145751953,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2010,7 +2080,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003838539123535156,
+          "processing_time": 0.0004451274871826172,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2038,7 +2108,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00015807151794433594,
+          "processing_time": 0.0001761913299560547,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -2065,7 +2135,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00007796287536621094,
+          "processing_time": 0.00008797645568847656,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -2146,7 +2216,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00013303756713867188,
+          "processing_time": 0.00013875961303710938,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -2173,7 +2243,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0002300739288330078,
+          "processing_time": 0.00027489662170410156,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -2200,7 +2270,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0016529560089111328,
+          "processing_time": 0.0017538070678710938,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -2229,7 +2299,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00037598609924316406,
+          "processing_time": 0.0004048347473144531,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -2256,7 +2326,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0000782012939453125,
+          "processing_time": 0.00008606910705566406,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -2323,13 +2393,14 @@
       "det_0_004",
       "det_0_010",
       "det_0_002",
-      "mrg_det_0_012",
+      "det_0_012",
       "det_0_000",
       "det_0_009",
-      "mrg_det_0_005",
+      "det_0_007",
       "det_0_008",
       "det_0_006",
-      "mrg_det_0_001",
+      "det_0_001",
+      "det_0_021",
       "det_0_019",
       "det_0_018",
       "det_0_014",
@@ -2373,7 +2444,7 @@
       "det_3_009",
       "det_3_011",
       "det_3_003",
-      "mrg_det_3_007",
+      "det_3_007",
       "det_3_010",
       "det_3_002",
       "det_3_001",
@@ -2384,13 +2455,14 @@
     [
       "det_4_017",
       "det_4_009",
-      "mrg_det_4_008",
+      "det_4_008",
       "det_4_004",
-      "mrg_det_4_013",
+      "det_4_013",
       "det_4_011",
       "det_4_002",
       "det_4_007",
-      "mrg_det_4_010",
+      "det_4_010",
+      "det_4_020",
       "det_4_012",
       "det_4_006",
       "det_4_005",
@@ -2399,8 +2471,9 @@
       "det_4_003"
     ],
     [
-      "mrg_det_5_007",
+      "det_5_007",
       "det_5_003",
+      "det_5_011",
       "det_5_010",
       "det_5_005",
       "det_5_002",
@@ -2433,15 +2506,15 @@
     "detection_dpi": 400,
     "total_pages": 7,
     "extraction": {
-      "text_blocks": 66,
+      "text_blocks": 67,
       "figure_blocks": 8,
       "figures_dir": "data/cache/Zimmerman_et_al.__2023_/extracted/figures"
     }
   },
   "pipeline_metadata": {
     "raw_detection_count": 137,
-    "after_consolidation_count": 94,
-    "final_block_count": 94,
+    "after_consolidation_count": 97,
+    "final_block_count": 97,
     "box_tracking_enabled": true,
     "id_format": "det_<page>_<index> for detections, mrg_<source_id> for merges"
   }

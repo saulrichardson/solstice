@@ -6,13 +6,23 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 1
+    "total_snippets_found": 2
   },
   "extracted_evidence": [
     {
       "id": "comp_1",
-      "quote": "The antigens used in the as says were baculo virus eri ved rHAs representing the A/Solomon Islands 03 2006 (H1 N1), /Wisconsin 67 2005 (H3 N2), and B/Malaysia/2506/2004 viruses, rovided by Protein Sciences Corporation.",
-      "relevance_explanation": "This quote shows that the antigens in Flublok were derived from the same specific strains selected for the vaccine, which are the WHO- and FDA-selected strains for that season, supporting the claim of identical antigenic match.",
+      "quote": "The antigens used in the assays were baculovirus derived rHAs representing the A/Solomon Islands 03 2006 (H1N1), A/Wisconsin 67 2005 (H3N2), and B/Malaysia/2506/2004 viruses, provided by Protein Sciences Corporation.",
+      "relevance_explanation": "This quote specifies that the antigens in Flublok are derived from the same specific strains selected for that influenza season, which are the WHO- and FDA-recommended strains, supporting the claim of identical antigenic match.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "The vaccine (Flublok used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The combinant HA protein is not cleaved in insect cells and is referred to as rHA0. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses.",
+      "relevance_explanation": "This quote details that Flublok contains hemagglutinin proteins specifically derived from the WHO- and FDA-selected strains for that year, confirming the antigenic match.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

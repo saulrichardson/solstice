@@ -4,30 +4,28 @@
   "document": "Arunachalam_et_al.__2021_",
   "verification_stats": {
     "total_extracted": 2,
-    "verified": 2,
-    "rejected": 0,
-    "verification_rate": 1.0
+    "verified": 1,
+    "rejected": 1,
+    "verification_rate": 0.5
   },
   "verified_evidence": [
     {
       "id": "comp_1",
-      "quote": "As such, the primary amino acid sequence of the rHA produced using baculo virus or other recombinant expression system is identical to the HA from the wild type virus isolate selected for seasonal influenza vaccine production.",
+      "quote": "The use of recombinant protein technology eliminates the risk of antigenic mismatch due to potential changes in primary HA structure through egg- or cell adaptation.",
       "supports_claim": true,
-      "explanation": "The quote appears almost verbatim on page 2: 'As such, the primary amino acid sequence of the rHA produced using baculo virus or other recombinant expression system is identical to the HA from the wild type virus isolate selected for seasonal influenza vaccine production.' The wording is nearly identical to the quote to verify, with only minor differences in spacing and punctuation.. The quote directly states that the recombinant HA (rHA) produced for vaccines like Flublok (which uses a baculovirus expression system) is identical in its primary amino acid sequence to the HA from the wild type virus isolate selected for vaccine production. Since the WHO and FDA select the wild type strains for seasonal influenza vaccines, this means Flublok's antigenic component is an identical match to those strains, supporting the claim that Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
-      "presence_explanation": "The quote appears almost verbatim on page 2: 'As such, the primary amino acid sequence of the rHA produced using baculo virus or other recombinant expression system is identical to the HA from the wild type virus isolate selected for seasonal influenza vaccine production.' The wording is nearly identical to the quote to verify, with only minor differences in spacing and punctuation.",
-      "support_explanation": "The quote directly states that the recombinant HA (rHA) produced for vaccines like Flublok (which uses a baculovirus expression system) is identical in its primary amino acid sequence to the HA from the wild type virus isolate selected for vaccine production. Since the WHO and FDA select the wild type strains for seasonal influenza vaccines, this means Flublok's antigenic component is an identical match to those strains, supporting the claim that Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
-      "original_relevance": "This quote directly states that the recombinant HA (as used in Flublok) is identical in sequence to the HA from the wild type virus selected for the vaccine, supporting the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains."
-    },
-    {
-      "id": "comp_2",
-      "quote": "Instead, DNA coding for HA is cloned from a reference virus published in the Global Initiative on Sharing All Influenza Data (GISAID) database and is confirmed for fidelity at the working virus bank level 28.",
-      "supports_claim": true,
-      "explanation": "The quote appears on page 2 of the document, with only minor wording differences: 'Instead, DNA coding for HA is cloned from a reference virus published in the Global Initiative on Sharing All Influenza Data (GISAID) database and is confirmed for fidelity at the working virus bank level 28.' This matches the quote to verify almost exactly, with only trivial differences in punctuation and formatting.. The quote directly supports the claim. It states that the HA gene used in Flublok (RIV4) is cloned from a reference virus published in the GISAID database (which is the source for WHO- and FDA-selected strains) and that the fidelity of this sequence is confirmed at the working virus bank level. This means the antigen produced is genetically identical to the selected reference strain, ensuring an identical antigenic match with the strains chosen by WHO and FDA. The context further clarifies that this process avoids adaptive mutations that can occur in egg- or cell-based production, reinforcing the claim.",
-      "presence_explanation": "The quote appears on page 2 of the document, with only minor wording differences: 'Instead, DNA coding for HA is cloned from a reference virus published in the Global Initiative on Sharing All Influenza Data (GISAID) database and is confirmed for fidelity at the working virus bank level 28.' This matches the quote to verify almost exactly, with only trivial differences in punctuation and formatting.",
-      "support_explanation": "The quote directly supports the claim. It states that the HA gene used in Flublok (RIV4) is cloned from a reference virus published in the GISAID database (which is the source for WHO- and FDA-selected strains) and that the fidelity of this sequence is confirmed at the working virus bank level. This means the antigen produced is genetically identical to the selected reference strain, ensuring an identical antigenic match with the strains chosen by WHO and FDA. The context further clarifies that this process avoids adaptive mutations that can occur in egg- or cell-based production, reinforcing the claim.",
-      "original_relevance": "This quote explains that the HA gene used in Flublok is cloned directly from the reference virus selected by global surveillance and is confirmed for accuracy, supporting the claim of an identical antigenic match."
+      "explanation": "The quote 'The use of recombinant protein technology eliminates the risk of antigenic mismatch due to potential changes in primary HA structure through egg- or cell adaptation.' appears in the document, near the end of page 6. The wording is an exact match, and the context is about the advantages of recombinant protein technology (as used in Flublok/RIV4) over traditional egg- or cell-based vaccine production.. The quote directly supports the claim. It explicitly states that recombinant protein technology (used in Flublok) eliminates the risk of antigenic mismatch caused by changes in the HA structure during egg or cell adaptation. This means the antigen produced matches the WHO- and FDA-selected flu strains, as there is no opportunity for adaptation-induced changes. The document further explains that the primary amino acid sequence of the recombinant HA is identical to the wild type virus isolate selected for vaccine production, reinforcing the claim.",
+      "presence_explanation": "The quote 'The use of recombinant protein technology eliminates the risk of antigenic mismatch due to potential changes in primary HA structure through egg- or cell adaptation.' appears in the document, near the end of page 6. The wording is an exact match, and the context is about the advantages of recombinant protein technology (as used in Flublok/RIV4) over traditional egg- or cell-based vaccine production.",
+      "support_explanation": "The quote directly supports the claim. It explicitly states that recombinant protein technology (used in Flublok) eliminates the risk of antigenic mismatch caused by changes in the HA structure during egg or cell adaptation. This means the antigen produced matches the WHO- and FDA-selected flu strains, as there is no opportunity for adaptation-induced changes. The document further explains that the primary amino acid sequence of the recombinant HA is identical to the wild type virus isolate selected for vaccine production, reinforcing the claim.",
+      "original_relevance": "This quote directly supports the claim by stating that recombinant technology, as used in Flublok, eliminates the risk of antigenic mismatch that can occur with traditional egg- or cell-based vaccine production."
     }
   ],
-  "rejected_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": "comp_2",
+      "quote": "Contrary to the egg derived vaccines and as expected, rHA containing the new glycosylation site induced optimal levels of antibodies that efficiently recognised the glycosylated clade 3 C.2 a H3 N2 virus 26.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides evidence that recombinant HA (as in Flublok) preserves the antigenic features of the selected strain, ensuring an identical match to the WHO- and FDA-selected strains, unlike egg-derived vaccines which may lose such features."
+    }
+  ],
   "model_used": "gpt-4.1"
 }

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_det_1_000.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p2_det_1_000.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "det_1_000",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A table listing quadrivalent influenza vaccines by trade name (e.g., Fluzone, Fluad, Flublok Quadrivalent, FluMist Quadrivalent), manufacturer, presentation (e.g., 0.5 mL prefilled syringe), age indication, hemagglutinin content per dose, route of administration, and mercury content. The image does not present any information about antigenic matching to WHO- or FDA-selected flu strains and only shows dosage and formulation details, so it does not support the claim. Note: The snippet is clear but may not include other parts of the document; based on visible content there is no evidence of antigenic match information.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing quadrivalent influenza vaccines by trade name (e.g., Fluzone, Fluad, Flublok Quadrivalent, FluMist Quadrivalent), manufacturer, presentation (e.g., 0.5 mL prefilled syringe), age indication, hemagglutinin content per dose, route of administration, and mercury content.",
+    "evidence_found": null,
+    "reasoning": "The image does not present any information about antigenic matching to WHO- or FDA-selected flu strains and only shows dosage and formulation details, so it does not support the claim.",
+    "confidence_notes": "The snippet is clear but may not include other parts of the document; based on visible content there is no evidence of antigenic match information."
+  }
+}

@@ -3,18 +3,28 @@
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "document": "FlublokPI",
   "verification_stats": {
-    "total_extracted": 1,
-    "verified": 0,
+    "total_extracted": 2,
+    "verified": 1,
     "rejected": 1,
-    "verification_rate": 0.0
+    "verification_rate": 0.5
   },
-  "verified_evidence": [],
+  "verified_evidence": [
+    {
+      "id": "comp_2",
+      "quote": "Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine.",
+      "supports_claim": true,
+      "explanation": "The quote 'Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine.' appears in the document in section 12.1 Mechanism of Action. The wording is a direct match, with only minor formatting differences (e.g., line breaks, punctuation) that do not alter the meaning.. The quote explicitly states that Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. This directly supports the claim that Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains, as it confirms that the antigens used are those specified by the relevant health authorities for each season.",
+      "presence_explanation": "The quote 'Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine.' appears in the document in section 12.1 Mechanism of Action. The wording is a direct match, with only minor formatting differences (e.g., line breaks, punctuation) that do not alter the meaning.",
+      "support_explanation": "The quote explicitly states that Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. This directly supports the claim that Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains, as it confirms that the antigens used are those specified by the relevant health authorities for each season.",
+      "original_relevance": "This statement directly affirms that Flublok uses the exact strains specified by health authorities (WHO and FDA) for the annual flu vaccine, supporting the claim of identical antigenic match."
+    }
+  ],
   "rejected_evidence": [
     {
       "id": "comp_1",
-      "quote": "Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination inhibition (HI) antibodies to each virus strain represented. Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
       "reason": "does not support claim",
-      "original_explanation": "This quote explicitly states that Flublok contains recombinant hemagglutinin proteins from the three influenza virus strains specified by health authorities for the annual vaccine, and that it is standardized according to USPHS requirements. This supports the claim that Flublok ensures an identical antigenic match with the WHO- and FDA-selected flu strains."
+      "original_explanation": "This quote specifies that Flublok is formulated to contain hemagglutinin (HA) from the exact strains selected for the 2024-2025 influenza season, which are determined by WHO and FDA recommendations, supporting the claim of an identical antigenic match."
     }
   ],
   "model_used": "gpt-4.1"

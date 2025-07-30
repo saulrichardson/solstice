@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import os
 from typing import List, Optional
 from pathlib import Path
 
@@ -25,6 +26,38 @@ class StandardPipeline(BasePDFPipeline):
     
     Uses PubLayNet-based detection and functional box consolidation.
     """
+    
+    def process_pdf(self, pdf_path: str | os.PathLike[str]) -> Document:
+        """Process a PDF file through the pipeline, always saving raw layouts."""
+        pdf_path = Path(pdf_path)
+        
+        # Convert PDF to images
+        logger.info(f"Converting {pdf_path.name} to images...")
+        images = self._convert_to_images(pdf_path)
+        
+        # Run layout detection
+        logger.info("Running layout detection...")
+        layouts = self.detector.detect_images(images)
+        
+        # Always save raw layouts for the standard pipeline
+        self._save_raw_layouts(layouts, pdf_path, images)
+        
+        # Apply consolidation
+        logger.info("Applying box consolidation...")
+        consolidated_layouts = self._apply_consolidation(layouts, images)
+        
+        # Save merged layouts if configured
+        if self.config.save_intermediate_states:
+            self._save_merged_layouts(consolidated_layouts, pdf_path)
+        
+        # Create document and extract content
+        logger.info("Creating document structure...")
+        document = self._create_document(consolidated_layouts, pdf_path, images)
+        
+        # Save outputs and visualize
+        self._save_outputs(document, pdf_path)
+        
+        return document
     
     def _create_detector(self):
         """Create PubLayNet-based detector."""
@@ -76,7 +109,8 @@ class StandardPipeline(BasePDFPipeline):
                     merge_threshold=self.config.merge_threshold,
                     confidence_weight=self.config.confidence_weight,
                     area_weight=self.config.area_weight,
-                    minor_overlap_threshold=self.config.minor_overlap_threshold
+                    minor_overlap_threshold=self.config.minor_overlap_threshold,
+                    same_type_merge_threshold=0.85  # Balanced threshold for text merging
                 )
             
             consolidated_layouts.append(page_boxes)

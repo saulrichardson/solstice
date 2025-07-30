@@ -69,8 +69,8 @@ class EvidenceVerifierV2(BaseAgent):
         extractor_path = None
         base_claim_dir = self.pdf_dir / "agents" / "claims" / self.claim_id
         
-        # Check if we're running as additional verifier
-        if "additional" in str(self.agent_dir):
+        # Check configuration for verification type
+        if self.config.get("is_additional_verification", False):
             extractor_path = base_claim_dir / "evidence_extractor_additional" / "output.json"
             logger.info("\nRunning as ADDITIONAL verifier")
             logger.info(f"Using additional evidence from: {extractor_path}")

@@ -4,73 +4,15 @@
   "document": "Arunachalam_et_al.__2021_",
   "additional_evidence_check": {
     "checked_for_more": true,
-    "found_additional": true,
-    "additional_count": 2
+    "found_additional": false,
+    "additional_count": 0
   },
   "completeness_stats": {
-    "existing_evidence": 4,
-    "new_evidence_found": 2,
-    "total_evidence": 6
+    "existing_evidence": 0,
+    "new_evidence_found": 0,
+    "total_evidence": 0
   },
-  "verified_evidence": [
-    {
-      "id": 1,
-      "quote": "A known risk of traditional split or subunit vaccines is the potential for the candidate vaccine virus or working virus seeds to acquire adaptive mutations as they grow in embryonated chicken egg or mammalian host cells during vaccine manufacture. Such adaptive mutations in HA peptides may reduce the effectiveness of the resultant vaccine 24 26.",
-      "supports_claim": true,
-      "explanation": "The quote appears on page 2 of the document, with only minor differences in formatting and punctuation: 'A known risk of traditional split or subunit vaccines is the potential for the candidate vaccine virus or working virus seeds to acquire adaptive mutations as they grow in embryonated chicken egg or mammalian host cells during vaccine manufacture. Such adaptive mutations in HA peptides may reduce the effectiveness of the resultant vaccine 24 26.' This matches the quote to verify, with only trivial differences (e.g., citation formatting, spacing).. The quote directly states that traditional split or subunit vaccines (which are cell- and egg-based) have the potential to acquire adaptive mutations during growth in eggs or mammalian cells during manufacture, and that these mutations in HA peptides may reduce the effectiveness of the vaccine. This directly and explicitly supports the claim that cell- and egg-based flu vaccines can develop mutations during production that may reduce their effectiveness.",
-      "presence_explanation": "The quote appears on page 2 of the document, with only minor differences in formatting and punctuation: 'A known risk of traditional split or subunit vaccines is the potential for the candidate vaccine virus or working virus seeds to acquire adaptive mutations as they grow in embryonated chicken egg or mammalian host cells during vaccine manufacture. Such adaptive mutations in HA peptides may reduce the effectiveness of the resultant vaccine 24 26.' This matches the quote to verify, with only trivial differences (e.g., citation formatting, spacing).",
-      "support_explanation": "The quote directly states that traditional split or subunit vaccines (which are cell- and egg-based) have the potential to acquire adaptive mutations during growth in eggs or mammalian cells during manufacture, and that these mutations in HA peptides may reduce the effectiveness of the vaccine. This directly and explicitly supports the claim that cell- and egg-based flu vaccines can develop mutations during production that may reduce their effectiveness.",
-      "original_relevance": "This quote directly states that cell- and egg-based flu vaccines can develop adaptive mutations during production, and that these mutations may reduce vaccine effectiveness, which supports the claim."
-    },
-    {
-      "id": 2,
-      "quote": "Raymond et al.24 showed that an egg- adapted A/California/07/2009 (H1 N1) vaccine strain acquired a mutation resulting in the substitution of glut amine with arginine at position 226 which in turn induced antibodies specific to receptor binding site that bound to vaccine derived HA preferen- tially over the circulating wild type virus 24.",
-      "supports_claim": true,
-      "explanation": "The quote appears on page 2 of the document, with only minor differences in formatting and word breaks: 'Raymond et al.24 showed that an egg- adapted A/California/07/2009 (H1 N1) vaccine strain acquired a mutation resulting in the substitution of glut amine with arginine at position 226 which in turn induced antibodies specific to receptor binding site that bound to vaccine derived HA preferen- tially over the circulating wild type virus 24.' This matches the quote to verify, with only trivial differences (e.g., line breaks, 'glut amine' instead of 'glutamine').. The quote provides a specific example of a mutation (glutamine to arginine at position 226) that arose during egg-based vaccine production, which led to antibodies that preferentially recognized the vaccine strain rather than the circulating wild type virus. This directly supports the claim that cell- and egg-based flu vaccines can develop mutations during production that may reduce their effectiveness, as the induced immune response was less effective against the circulating virus.",
-      "presence_explanation": "The quote appears on page 2 of the document, with only minor differences in formatting and word breaks: 'Raymond et al.24 showed that an egg- adapted A/California/07/2009 (H1 N1) vaccine strain acquired a mutation resulting in the substitution of glut amine with arginine at position 226 which in turn induced antibodies specific to receptor binding site that bound to vaccine derived HA preferen- tially over the circulating wild type virus 24.' This matches the quote to verify, with only trivial differences (e.g., line breaks, 'glut amine' instead of 'glutamine').",
-      "support_explanation": "The quote provides a specific example of a mutation (glutamine to arginine at position 226) that arose during egg-based vaccine production, which led to antibodies that preferentially recognized the vaccine strain rather than the circulating wild type virus. This directly supports the claim that cell- and egg-based flu vaccines can develop mutations during production that may reduce their effectiveness, as the induced immune response was less effective against the circulating virus.",
-      "original_relevance": "This quote provides a specific example of a mutation arising during egg-based vaccine production that altered the immune response, supporting the claim that such mutations can occur and affect effectiveness."
-    },
-    {
-      "id": 3,
-      "quote": "During the 2012-2013 northern hemisphere influenza vaccination campaign, HA from an egg adapted A/Victoria/361/2011 (H3 N2) virus used for vaccine manufacturing differed from the WHO-recommended prototype and several other wild type influenza viruses in three positions, H156 Q, G186 V, and S219 Y25. The low vaccine effectiveness (41%) observed for H3 N2 in the 2012-2013 season was attributed to these three mutations during vaccine production 25.",
-      "supports_claim": true,
-      "explanation": "The quote appears almost verbatim in the document on page 2: 'During the 2012-2013 northern hemisphere influenza vaccination campaign, HA from an egg adapted A/Victoria/361/2011 (H3 N2) virus used for vaccine manufacturing differed from the WHO-recommended prototype and several other wild type influenza viruses in three positions, H156 Q, G186 V, and S219 Y25. The low vaccine effectiveness (41%) observed for H3 N2 in the 2012-2013 season was attributed to these three mutations during vaccine production 25.' The wording and content match the quote to verify, with only minor formatting differences.. The quote directly supports the claim by providing a specific example where mutations (H156Q, G186V, S219Y) developed during egg-based vaccine production, and these mutations were attributed to a measurable reduction in vaccine effectiveness (41%) for H3N2 in the 2012-2013 season. This demonstrates that cell- and egg-based flu vaccines can develop mutations during production that may reduce their effectiveness, thus substantiating the claim.",
-      "presence_explanation": "The quote appears almost verbatim in the document on page 2: 'During the 2012-2013 northern hemisphere influenza vaccination campaign, HA from an egg adapted A/Victoria/361/2011 (H3 N2) virus used for vaccine manufacturing differed from the WHO-recommended prototype and several other wild type influenza viruses in three positions, H156 Q, G186 V, and S219 Y25. The low vaccine effectiveness (41%) observed for H3 N2 in the 2012-2013 season was attributed to these three mutations during vaccine production 25.' The wording and content match the quote to verify, with only minor formatting differences.",
-      "support_explanation": "The quote directly supports the claim by providing a specific example where mutations (H156Q, G186V, S219Y) developed during egg-based vaccine production, and these mutations were attributed to a measurable reduction in vaccine effectiveness (41%) for H3N2 in the 2012-2013 season. This demonstrates that cell- and egg-based flu vaccines can develop mutations during production that may reduce their effectiveness, thus substantiating the claim.",
-      "original_relevance": "This quote links specific mutations that occurred during egg-based vaccine production to a measurable reduction in vaccine effectiveness, directly supporting the claim."
-    },
-    {
-      "id": 4,
-      "quote": "Other antigenic mutations introduced by egg adaptation of the vaccine strain during vaccine manufacturing are thought to have contributed to low vaccine effectiveness estimates for H3 N2 in other influenza seasons 26 27.",
-      "supports_claim": true,
-      "explanation": "The quote appears on page 2 of the document, in the section titled 'POTENTIAL ANTIGENIC MISMATCH OF INFLUENZA VACCINE VIRUS GROWN IN EGG OR CELLS DUE TO ADAPTIVE MUTATIONS IN THE HA PRIMARY STRUCTURE.' The text states: 'Other antigenic mutations introduced by egg adaptation of the vaccine strain during vaccine manufacturing are thought to have contributed to low vaccine effectiveness estimates for H3 N2 in other influenza seasons 26 27.' This matches the quote to be verified, with only minor differences in formatting and citation style.. The quote directly supports the claim. It explicitly states that antigenic mutations introduced by egg adaptation during vaccine manufacturing have contributed to reduced vaccine effectiveness for H3N2 in multiple influenza seasons. This affirms the claim that cell- and egg-based flu vaccines can develop mutations during production that may reduce their effectiveness.",
-      "presence_explanation": "The quote appears on page 2 of the document, in the section titled 'POTENTIAL ANTIGENIC MISMATCH OF INFLUENZA VACCINE VIRUS GROWN IN EGG OR CELLS DUE TO ADAPTIVE MUTATIONS IN THE HA PRIMARY STRUCTURE.' The text states: 'Other antigenic mutations introduced by egg adaptation of the vaccine strain during vaccine manufacturing are thought to have contributed to low vaccine effectiveness estimates for H3 N2 in other influenza seasons 26 27.' This matches the quote to be verified, with only minor differences in formatting and citation style.",
-      "support_explanation": "The quote directly supports the claim. It explicitly states that antigenic mutations introduced by egg adaptation during vaccine manufacturing have contributed to reduced vaccine effectiveness for H3N2 in multiple influenza seasons. This affirms the claim that cell- and egg-based flu vaccines can develop mutations during production that may reduce their effectiveness.",
-      "original_relevance": "This quote generalizes the phenomenon, stating that mutations from egg adaptation during manufacturing have repeatedly contributed to reduced vaccine effectiveness, affirming the claim."
-    }
-  ],
-  "new_evidence": [
-    {
-      "id": "comp_1",
-      "quote": "Differences in HA glycosylation between the vaccine strains and circulating strains are thought to have contributed to this reduced vaccine effectiveness 26.",
-      "relevance_explanation": "This quote supports the claim by indicating that differences (which can arise during production in eggs or cells) in the glycosylation of hemagglutinin (HA) between vaccine strains and circulating strains can reduce vaccine effectiveness, implying that mutations or changes during production can be detrimental.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    },
-    {
-      "id": "comp_2",
-      "quote": "the circulating A/H3 N2 viruses were antigenic ally similar to the cell grown vaccine reference virus, egg propagation of the vaccine strains had led to loss of aglycosylation site and impaired antibody response to circulating viruses, consistent with previous reports 26.",
-      "relevance_explanation": "This quote directly links egg propagation (a production method) to the loss of a glycosylation site and impaired antibody response, supporting the claim that mutations or changes during production can reduce vaccine effectiveness.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    }
-  ],
+  "verified_evidence": [],
+  "new_evidence": [],
   "model_used": "gpt-4.1"
 }

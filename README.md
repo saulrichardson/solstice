@@ -190,11 +190,11 @@ source .venv/bin/activate
 # 4. Verify Python version in venv
 python --version  # Must show Python 3.11.x
 
-# 5. Upgrade pip
-pip install --upgrade pip
+# 5. Upgrade pip (CRITICAL - prevents build errors)
+pip install --upgrade pip wheel setuptools
 
 # 6. Install base package
-make install
+make install  # This also upgrades pip/wheel/setuptools automatically
 
 # 7. Install detectron2 (for advanced PDF processing)
 make install-detectron2

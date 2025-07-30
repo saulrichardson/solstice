@@ -6,13 +6,13 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 2
+    "total_snippets_found": 3
   },
   "extracted_evidence": [
     {
       "id": "comp_1",
-      "quote": "Flublok contains recombinant Ha proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hem agglutination inhibition (HI) anti bod ies to each virus strain. HI antibody titers induced by Flublok were generally higher than those induced by a U.S.-licensed trivalent inactivated influenza vaccine (IIV3) comparator in adults 50 years of age and older.",
-      "relevance_explanation": "This quote directly states that Flublok induces higher hemagglutination inhibition (HI) antibody titers compared to standard-dose IIV3, supporting the claim that its higher HA content is linked to greater immunogenicity.",
+      "quote": "Data from a randomized, controlled trial demonstrated that children 6 months to less than 3 years of age had diminished hemagglutinin inhibition (HI) responses to Flublok compared to a U.S.-licensed influenza vaccine approved for use in this population, strongly suggesting that Flublok would not be effective in children younger than 3 years of age (6).",
+      "relevance_explanation": "This quote references the hemagglutinin (HA) content and immunogenicity of Flublok, specifically noting the immune response (HI responses) in a population, which is directly related to the claim about HA content and immunogenicity. It supports the claim by discussing immunogenicity outcomes in a comparative context.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -21,8 +21,18 @@
     },
     {
       "id": "comp_2",
-      "quote": "5. Treanor JJ, Schiff GM, Hayden FG, et al. Safety and immunogenicity of a baculovirus-expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582.",
-      "relevance_explanation": "This reference is cited in the context of immunogenicity data for Flublok, supporting the claim that its formulation (with higher HA content) is associated with greater immunogenicity compared to standard-dose vaccines.",
+      "quote": "Data for Flublok Quad rival ent are relevant to Flublok because both vaccines are manufactured using the same process and have overlapping compositions.",
+      "relevance_explanation": "This quote establishes that findings about Flublok Quadrivalent, which also contains 3x the HA antigen content of standard-dose vaccines, are applicable to Flublok, supporting the claim about antigen content and its effects.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
+      "relevance_explanation": "This reference is cited in the context of clinical studies comparing the immunogenicity of Flublok (recombinant HA) to standard trivalent inactivated vaccines, directly supporting the claim that higher HA content is linked to greater immunogenicity.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

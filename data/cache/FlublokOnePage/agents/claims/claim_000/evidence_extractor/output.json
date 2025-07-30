@@ -1,0 +1,24 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": {
+    "pdf_name": "FlublokOnePage",
+    "source_pdf": "data/marketing_slide/FlublokOnePage.pdf",
+    "total_pages": 1,
+    "total_blocks": 19,
+    "total_characters": 1730
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 1,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "AN EXACT STRAIN MATCH 4 5 The only recombinant flu vaccine that has known and exact antigen content, Flublok ensures identical antigenic match with WHO",
+      "relevance_explanation": "This quote explicitly states that Flublok ensures an identical antigenic match with WHO, directly supporting the claim about its precise strain matching."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

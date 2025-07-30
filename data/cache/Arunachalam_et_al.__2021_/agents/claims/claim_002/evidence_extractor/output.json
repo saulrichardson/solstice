@@ -6,34 +6,13 @@
     "source_pdf": "data/clinical_files/Arunachalam et al. (2021).pdf",
     "total_pages": 8,
     "total_blocks": 72,
-    "total_characters": 46858
+    "total_characters": 46522
   },
   "extraction_result": {
-    "success": true,
-    "total_snippets_found": 4,
-    "error": null
+    "success": false,
+    "total_snippets_found": 0,
+    "error": "Failed to get valid response after 3 attempts. Last error: Invalid JSON: Expecting value: line 1 column 1 (char 0)"
   },
-  "extracted_evidence": [
-    {
-      "id": 1,
-      "quote": "A known risk of traditional split or subunit vaccines is the potential for the candidate vaccine virus or working virus seeds to acquire adaptive mutations as they grow in embryonated chicken egg or mammalian host cells during vaccine manufacture. Such adaptive mutations in HA peptides may reduce the effectiveness of the resultant vaccine 24 26.",
-      "relevance_explanation": "This quote directly states that cell- and egg-based flu vaccines can develop adaptive mutations during production, and that these mutations may reduce vaccine effectiveness, which supports the claim."
-    },
-    {
-      "id": 2,
-      "quote": "Raymond et al.24 showed that an egg- adapted A/California/07/2009 (H1 N1) vaccine strain acquired a mutation resulting in the substitution of glut amine with arginine at position 226 which in turn induced antibodies specific to receptor binding site that bound to vaccine derived HA preferen- tially over the circulating wild type virus 24.",
-      "relevance_explanation": "This quote provides a specific example of a mutation arising during egg-based vaccine production that altered the immune response, supporting the claim that such mutations can occur and affect effectiveness."
-    },
-    {
-      "id": 3,
-      "quote": "During the 2012-2013 northern hemisphere influenza vaccination campaign, HA from an egg adapted A/Victoria/361/2011 (H3 N2) virus used for vaccine manufacturing differed from the WHO-recommended prototype and several other wild type influenza viruses in three positions, H156 Q, G186 V, and S219 Y25. The low vaccine effectiveness (41%) observed for H3 N2 in the 2012-2013 season was attributed to these three mutations during vaccine production 25.",
-      "relevance_explanation": "This quote links specific mutations that occurred during egg-based vaccine production to a measurable reduction in vaccine effectiveness, directly supporting the claim."
-    },
-    {
-      "id": 4,
-      "quote": "Other antigenic mutations introduced by egg adaptation of the vaccine strain during vaccine manufacturing are thought to have contributed to low vaccine effectiveness estimates for H3 N2 in other influenza seasons 26 27.",
-      "relevance_explanation": "This quote generalizes the phenomenon, stating that mutations from egg adaptation during manufacturing have repeatedly contributed to reduced vaccine effectiveness, affirming the claim."
-    }
-  ],
+  "extracted_evidence": [],
   "model_used": "gpt-4.1"
 }

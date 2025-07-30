@@ -5,13 +5,13 @@
     "pdf_name": "Zimmerman_et_al.__2023_",
     "source_pdf": "data/clinical_files/Zimmerman et al. (2023).pdf",
     "total_pages": 7,
-    "total_blocks": 93,
-    "total_characters": 22477
+    "total_blocks": 97,
+    "total_characters": 22898
   },
   "extraction_result": {
     "success": false,
     "total_snippets_found": 0,
-    "error": "Failed to get valid response after 3 attempts. Last error: Invalid JSON: Invalid control character at: line 8 column 407 (char 762)"
+    "error": "Failed to get valid response after 3 attempts. Last error: Invalid JSON: Expecting value: line 1 column 1 (char 0)"
   },
   "extracted_evidence": [],
   "model_used": "gpt-4.1"

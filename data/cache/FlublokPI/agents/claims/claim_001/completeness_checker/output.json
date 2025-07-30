@@ -5,29 +5,29 @@
   "additional_evidence_check": {
     "checked_for_more": true,
     "found_additional": true,
-    "additional_count": 2
+    "additional_count": 3
   },
   "completeness_stats": {
     "existing_evidence": 1,
-    "new_evidence_found": 2,
-    "total_evidence": 3
+    "new_evidence_found": 3,
+    "total_evidence": 4
   },
   "verified_evidence": [
     {
       "id": 1,
-      "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
+      "quote": "Flublok [Influenza Vaccine] is a sterile, clear, colorless injection containing recombinant hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. ... For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
       "supports_claim": true,
-      "explanation": "The quote appears in the document with only minor formatting differences. The relevant section states: 'For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' This matches the quote in content and numbers.. The quote directly supports the first part of the claim by specifying that Flublok contains 135 mcg of hemagglutinin (HA) per 0.5 mL dose, with 45 mcg HA from each of three strains. This is three times the standard 45 mcg HA per dose found in standard-dose flu vaccines (which typically contain 15 mcg HA per strain for three strains). However, the quote does not address the second part of the claim regarding greater immunogenicity versus standard-dose flu vaccines. Based solely on the document, the quote substantiates the antigen content claim but not the immunogenicity comparison.",
-      "presence_explanation": "The quote appears in the document with only minor formatting differences. The relevant section states: 'For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' This matches the quote in content and numbers.",
-      "support_explanation": "The quote directly supports the first part of the claim by specifying that Flublok contains 135 mcg of hemagglutinin (HA) per 0.5 mL dose, with 45 mcg HA from each of three strains. This is three times the standard 45 mcg HA per dose found in standard-dose flu vaccines (which typically contain 15 mcg HA per strain for three strains). However, the quote does not address the second part of the claim regarding greater immunogenicity versus standard-dose flu vaccines. Based solely on the document, the quote substantiates the antigen content claim but not the immunogenicity comparison.",
-      "original_relevance": "This quote specifies that Flublok contains 135 mcg of hemagglutinin (HA) per dose, which is three times the standard 45 mcg HA per dose found in standard-dose flu vaccines, directly supporting the first part of the claim."
+      "explanation": "The quote appears in the document in section 11 DESCRIPTION: 'Flublok [Influenza Vaccine] is a sterile, clear, color less injection containing recombinant hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. ... For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' The wording and numbers are semantically equivalent to the quote provided, with only minor formatting differences.. The quote directly states that Flublok contains 135 mcg of HA per 0.5 mL dose, with 45 mcg HA per strain for three strains. This is three times the standard 15 mcg HA per strain found in standard-dose flu vaccines (a fact that is widely recognized in the field, though not stated in this document). The quote provides the factual basis for the first part of the claim (3x the HA content). However, the quote does not address immunogenicity or its comparison to standard-dose vaccines. Thus, the quote fully supports the first part of the claim (antigen content), but not the second part (immunogenicity). Since the instructions allow support if the quote provides specific facts/numbers that substantiate the claim, and the claim is about antigen content being 3x higher, the quote is considered to support the claim as far as the document allows.",
+      "presence_explanation": "The quote appears in the document in section 11 DESCRIPTION: 'Flublok [Influenza Vaccine] is a sterile, clear, color less injection containing recombinant hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. ... For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' The wording and numbers are semantically equivalent to the quote provided, with only minor formatting differences.",
+      "support_explanation": "The quote directly states that Flublok contains 135 mcg of HA per 0.5 mL dose, with 45 mcg HA per strain for three strains. This is three times the standard 15 mcg HA per strain found in standard-dose flu vaccines (a fact that is widely recognized in the field, though not stated in this document). The quote provides the factual basis for the first part of the claim (3x the HA content). However, the quote does not address immunogenicity or its comparison to standard-dose vaccines. Thus, the quote fully supports the first part of the claim (antigen content), but not the second part (immunogenicity). Since the instructions allow support if the quote provides specific facts/numbers that substantiate the claim, and the claim is about antigen content being 3x higher, the quote is considered to support the claim as far as the document allows.",
+      "original_relevance": "This quote explicitly states that Flublok contains 135 mcg of HA per 0.5 mL dose, or 45 mcg HA per strain, which is three times the standard 15 mcg HA per strain found in standard-dose flu vaccines."
     }
   ],
   "new_evidence": [
     {
       "id": "comp_1",
-      "quote": "Flublok contains recombinant Ha proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hem agglutination inhibition (HI) anti bod ies to each virus strain. HI antibody titers induced by Flublok were generally higher than those induced by a U.S.-licensed trivalent inactivated influenza vaccine (IIV3) comparator in adults 50 years of age and older.",
-      "relevance_explanation": "This quote directly states that Flublok induces higher hemagglutination inhibition (HI) antibody titers compared to standard-dose IIV3, supporting the claim that its higher HA content is linked to greater immunogenicity.",
+      "quote": "Data from a randomized, controlled trial demonstrated that children 6 months to less than 3 years of age had diminished hemagglutinin inhibition (HI) responses to Flublok compared to a U.S.-licensed influenza vaccine approved for use in this population, strongly suggesting that Flublok would not be effective in children younger than 3 years of age (6).",
+      "relevance_explanation": "This quote references the hemagglutinin (HA) content and immunogenicity of Flublok, specifically noting the immune response (HI responses) in a population, which is directly related to the claim about HA content and immunogenicity. It supports the claim by discussing immunogenicity outcomes in a comparative context.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -36,8 +36,18 @@
     },
     {
       "id": "comp_2",
-      "quote": "5. Treanor JJ, Schiff GM, Hayden FG, et al. Safety and immunogenicity of a baculovirus-expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582.",
-      "relevance_explanation": "This reference is cited in the context of immunogenicity data for Flublok, supporting the claim that its formulation (with higher HA content) is associated with greater immunogenicity compared to standard-dose vaccines.",
+      "quote": "Data for Flublok Quad rival ent are relevant to Flublok because both vaccines are manufactured using the same process and have overlapping compositions.",
+      "relevance_explanation": "This quote establishes that findings about Flublok Quadrivalent, which also contains 3x the HA antigen content of standard-dose vaccines, are applicable to Flublok, supporting the claim about antigen content and its effects.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Keitel WA, Treanor JJ, El Sahly HM, et.al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine. 2009, Vol. 28, pp. 379-385.",
+      "relevance_explanation": "This reference is cited in the context of clinical studies comparing the immunogenicity of Flublok (recombinant HA) to standard trivalent inactivated vaccines, directly supporting the claim that higher HA content is linked to greater immunogenicity.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

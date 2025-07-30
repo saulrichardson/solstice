@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": "FlublokOnePage",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 1
+  },
+  "completeness_stats": {
+    "existing_evidence": 1,
+    "new_evidence_found": 1,
+    "total_evidence": 2
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "AN EXACT STRAIN MATCH 4 5 The only recombinant flu vaccine that has known and exact antigen content, Flublok ensures identical antigenic match with WHO",
+      "supports_claim": true,
+      "explanation": "The quote appears in the document as: 'AN EXACT STRAIN MATCH 4 5 The only recombinant flu vaccine that has known and exact antigen content, Flublok ensures identical antigenic match with WHO'. The wording and factual content are preserved, with only minor formatting differences (e.g., line breaks, possible OCR artifacts).. The quote directly states that Flublok ensures an identical antigenic match with WHO, which explicitly supports the claim that Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains. The quote also emphasizes the 'known and exact antigen content' of Flublok, reinforcing the claim about precise strain matching.",
+      "presence_explanation": "The quote appears in the document as: 'AN EXACT STRAIN MATCH 4 5 The only recombinant flu vaccine that has known and exact antigen content, Flublok ensures identical antigenic match with WHO'. The wording and factual content are preserved, with only minor formatting differences (e.g., line breaks, possible OCR artifacts).",
+      "support_explanation": "The quote directly states that Flublok ensures an identical antigenic match with WHO, which explicitly supports the claim that Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains. The quote also emphasizes the 'known and exact antigen content' of Flublok, reinforcing the claim about precise strain matching.",
+      "original_relevance": "This quote explicitly states that Flublok ensures an identical antigenic match with WHO, directly supporting the claim about its precise strain matching."
+    }
+  ],
+  "new_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Cell and egg based flu vaccines have the potential to develop mutations AVOIDS MUTATIONS4 Cell- and egg based flu vaccines hav",
+      "relevance_explanation": "This quote highlights that cell- and egg-based flu vaccines can develop mutations, implying that Flublok, by avoiding these mutations, maintains an identical antigenic match with the selected flu strains, supporting the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

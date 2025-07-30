@@ -1,0 +1,31 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "FlublokOnePage",
+  "verification_stats": {
+    "total_extracted": 2,
+    "verified": 1,
+    "rejected": 1,
+    "verification_rate": 0.5
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "AN EXACT STRAIN MATCH 4 5 The only recombinant flu vaccine that has known and exact antigen content, Flublok ensures identical antigenic match with WHO 3 x THE ANTIGEN1-3 Flublok also contains 3 x the hemagglutinin (HA) antigen content of standard dose flu vaccines, which has been linked to greater immunogenicity 3 x",
+      "supports_claim": true,
+      "explanation": "The quote appears in the document in the following passage: 'AN EXACT STRAIN MATCH 4 5 The only recombinant flu vaccine that has known and exact antigen content, Flublok ensures identical antigenic match with WHO3 x THE ANTIGEN1-3 Flublok also contains 3 x the hemagglutinin (HA) antigen content of standard dose flu vaccines, which has been linked to greater immunogen i city 3 x'. The wording and factual content are semantically equivalent to the quote provided, with only minor formatting and spacing differences due to OCR artifacts.. The quote directly states that Flublok contains 3 times the hemagglutinin (HA) antigen content of standard-dose flu vaccines and explicitly links this higher antigen content to greater immunogenicity. This matches both parts of the claim, providing clear and direct support.",
+      "presence_explanation": "The quote appears in the document in the following passage: 'AN EXACT STRAIN MATCH 4 5 The only recombinant flu vaccine that has known and exact antigen content, Flublok ensures identical antigenic match with WHO3 x THE ANTIGEN1-3 Flublok also contains 3 x the hemagglutinin (HA) antigen content of standard dose flu vaccines, which has been linked to greater immunogen i city 3 x'. The wording and factual content are semantically equivalent to the quote provided, with only minor formatting and spacing differences due to OCR artifacts.",
+      "support_explanation": "The quote directly states that Flublok contains 3 times the hemagglutinin (HA) antigen content of standard-dose flu vaccines and explicitly links this higher antigen content to greater immunogenicity. This matches both parts of the claim, providing clear and direct support.",
+      "original_relevance": "This quote explicitly states that Flublok contains 3 times the hemagglutinin (HA) antigen content of standard-dose flu vaccines and directly links this higher antigen content to greater immunogenicity, supporting both parts of the claim."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": 2,
+      "quote": "in January 2024, vaccination with a higher dose recombinant flu vaccine may induce a more robust antibody response than egg based standard dose vaccines.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote supports the claim by stating that higher dose recombinant flu vaccines, such as Flublok, may induce a more robust antibody response compared to standard-dose (egg-based) vaccines, which relates to greater immunogenicity."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

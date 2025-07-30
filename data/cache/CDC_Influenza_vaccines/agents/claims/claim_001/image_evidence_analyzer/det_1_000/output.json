@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_det_1_000.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p2_det_1_000.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "det_1_000",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": true,
+  "explanation": "A table listing influenza vaccine trade names (including Flublok Quadrivalent), presentation formats, age indications, hemagglutinin (HA) antigen content per virus strain per dose (in \u00b5g), route of administration, and mercury content. Evidence: Flublok Quadrivalent (RIV4) is shown to contain 45 \u00b5g HA per 0.5 mL dose per strain, whereas standard-dose inactivated quadrivalent vaccines (IIV4s) contain 15 \u00b5g HA per 0.5 mL dose per strain. The image shows Flublok contains 3x the HA antigen content compared to standard-dose flu vaccines, which supports the claim; no immunogenicity data are presented. Note: The table clearly presents antigen content but does not include any data linking this higher HA content to immunogenicity outcomes.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "A table listing influenza vaccine trade names (including Flublok Quadrivalent), presentation formats, age indications, hemagglutinin (HA) antigen content per virus strain per dose (in \u00b5g), route of administration, and mercury content.",
+    "evidence_found": "Flublok Quadrivalent (RIV4) is shown to contain 45 \u00b5g HA per 0.5 mL dose per strain, whereas standard-dose inactivated quadrivalent vaccines (IIV4s) contain 15 \u00b5g HA per 0.5 mL dose per strain.",
+    "reasoning": "The image shows Flublok contains 3x the HA antigen content compared to standard-dose flu vaccines, which supports the claim; no immunogenicity data are presented.",
+    "confidence_notes": "The table clearly presents antigen content but does not include any data linking this higher HA content to immunogenicity outcomes."
+  }
+}

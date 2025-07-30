@@ -4,28 +4,30 @@
   "document": "CDC_Influenza_vaccines",
   "verification_stats": {
     "total_extracted": 2,
-    "verified": 1,
-    "rejected": 1,
-    "verification_rate": 0.5
+    "verified": 2,
+    "rejected": 0,
+    "verification_rate": 1.0
   },
   "verified_evidence": [
     {
-      "id": 2,
-      "quote": "Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM",
-      "supports_claim": true,
-      "explanation": "The quote 'Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM' appears almost exactly as written at the very beginning of the document. The only differences are minor spacing and formatting issues, but the core content and numbers are identical.. This quote provides the specific HA antigen content (15 \u00b5g per 0.5 mL dose) for a standard-dose flu vaccine (Fluzone Quadrivalent). This establishes the baseline needed to compare with Flublok, which is known to contain 45 \u00b5g HA per strain per 0.5 mL dose (3x the amount). While the quote does not mention Flublok or immunogenicity, it does directly support the part of the claim regarding the HA content of standard-dose vaccines, which is necessary for substantiating the '3x' comparison.",
-      "presence_explanation": "The quote 'Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM' appears almost exactly as written at the very beginning of the document. The only differences are minor spacing and formatting issues, but the core content and numbers are identical.",
-      "support_explanation": "This quote provides the specific HA antigen content (15 \u00b5g per 0.5 mL dose) for a standard-dose flu vaccine (Fluzone Quadrivalent). This establishes the baseline needed to compare with Flublok, which is known to contain 45 \u00b5g HA per strain per 0.5 mL dose (3x the amount). While the quote does not mention Flublok or immunogenicity, it does directly support the part of the claim regarding the HA content of standard-dose vaccines, which is necessary for substantiating the '3x' comparison.",
-      "original_relevance": "This shows that standard-dose flu vaccines (such as Fluzone Quadrivalent) contain 15 \u00b5g of hemagglutinin (HA) per 0.5 mL dose, establishing the baseline for comparison."
-    }
-  ],
-  "rejected_evidence": [
-    {
       "id": 1,
-      "quote": "RIV4 (recombinant HA vaccine) \u00b6",
-      "reason": "does not support claim",
-      "original_explanation": "This identifies RIV4 as the recombinant HA vaccine, which is the category Flublok falls under, setting up context for antigen content comparison."
+      "quote": "Flublok Quadrivalent (Sanofi Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM",
+      "supports_claim": true,
+      "explanation": "The quote 'Flublok Quadrivalent (Sanofi Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM' appears in the document with only minor formatting differences (e.g., 'Quad rival ent' instead of 'Quadrivalent', spacing, and line breaks). The factual content, including the product name, manufacturer, dose, age indication, and HA content (45 \u00b5g/0.5 mL), is preserved.. The quote directly states that Flublok Quadrivalent contains 45 \u00b5g of hemagglutinin (HA) per 0.5 mL dose. This is three times the 15 \u00b5g/0.5 mL dose listed for standard-dose flu vaccines elsewhere in the document (e.g., Fluzone Quadrivalent, FluLaval Quadrivalent). Therefore, the quote supports the first part of the claim regarding HA content. However, the quote does not address immunogenicity or its comparison to standard-dose vaccines, so it only supports the HA content portion of the claim.",
+      "presence_explanation": "The quote 'Flublok Quadrivalent (Sanofi Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM' appears in the document with only minor formatting differences (e.g., 'Quad rival ent' instead of 'Quadrivalent', spacing, and line breaks). The factual content, including the product name, manufacturer, dose, age indication, and HA content (45 \u00b5g/0.5 mL), is preserved.",
+      "support_explanation": "The quote directly states that Flublok Quadrivalent contains 45 \u00b5g of hemagglutinin (HA) per 0.5 mL dose. This is three times the 15 \u00b5g/0.5 mL dose listed for standard-dose flu vaccines elsewhere in the document (e.g., Fluzone Quadrivalent, FluLaval Quadrivalent). Therefore, the quote supports the first part of the claim regarding HA content. However, the quote does not address immunogenicity or its comparison to standard-dose vaccines, so it only supports the HA content portion of the claim.",
+      "original_relevance": "This quote shows that Flublok contains 45 \u00b5g of hemagglutinin (HA) antigen per 0.5 mL dose, which is three times the 15 \u00b5g/0.5 mL dose found in standard-dose flu vaccines, directly supporting the first part of the claim."
+    },
+    {
+      "id": 2,
+      "quote": "Fluzone Quadrivalent (Sanofi Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM",
+      "supports_claim": true,
+      "explanation": "The quote 'Fluzone Quadrivalent (Sanofi Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM' appears in the document as 'Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM'. The wording is slightly altered due to OCR artifacts (e.g., 'Flu zone Quad rival ent' instead of 'Fluzone Quadrivalent'), but the factual content, numbers, and technical details are preserved.. The quote provides the HA antigen content for a standard-dose flu vaccine (Fluzone Quadrivalent: 15 \u00b5g/0.5 mL). The document also lists Flublok Quadrivalent as containing 45 \u00b5g/0.5 mL. This allows a direct comparison, showing that Flublok contains 3 times the HA antigen content of the standard-dose vaccine, thus supporting the claim. The quote is directly relevant and provides the necessary factual basis for the comparison.",
+      "presence_explanation": "The quote 'Fluzone Quadrivalent (Sanofi Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM' appears in the document as 'Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM'. The wording is slightly altered due to OCR artifacts (e.g., 'Flu zone Quad rival ent' instead of 'Fluzone Quadrivalent'), but the factual content, numbers, and technical details are preserved.",
+      "support_explanation": "The quote provides the HA antigen content for a standard-dose flu vaccine (Fluzone Quadrivalent: 15 \u00b5g/0.5 mL). The document also lists Flublok Quadrivalent as containing 45 \u00b5g/0.5 mL. This allows a direct comparison, showing that Flublok contains 3 times the HA antigen content of the standard-dose vaccine, thus supporting the claim. The quote is directly relevant and provides the necessary factual basis for the comparison.",
+      "original_relevance": "This quote provides the HA antigen content for a standard-dose flu vaccine (15 \u00b5g/0.5 mL), which can be directly compared to Flublok's 45 \u00b5g/0.5 mL, supporting the claim that Flublok contains 3x the HA antigen content."
     }
   ],
+  "rejected_evidence": [],
   "model_used": "gpt-4.1"
 }

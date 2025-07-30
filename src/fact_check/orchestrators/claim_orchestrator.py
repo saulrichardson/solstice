@@ -177,11 +177,29 @@ class ClaimOrchestrator:
         # Now run the presenter with all verified evidence (text + images)
         await self._run_presenter(document, doc_result, all_verified_evidence)
         
-        # A document is considered successful only when at least one agent ran
-        # and **all** executed agents reported success.
-        doc_result["success"] = bool(doc_result["agents_run"]) and all(
-            a["success"] for a in doc_result["agents_run"]
+        # A document is considered successful if core agents succeed
+        # Image analysis is optional and doesn't affect overall success
+        core_agents = ["evidence_extractor", "evidence_verifier_v2", "completeness_checker", "evidence_presenter"]
+        optional_agents = ["image_evidence_analyzer", "evidence_verifier_v2_additional"]
+        
+        core_agent_results = [
+            a for a in doc_result["agents_run"] 
+            if any(core in a["agent"] for core in core_agents)
+        ]
+        
+        # Success requires at least one core agent ran and all core agents succeeded
+        doc_result["success"] = bool(core_agent_results) and all(
+            a["success"] for a in core_agent_results
         )
+        
+        # Track optional agent failures separately
+        optional_failures = [
+            a for a in doc_result["agents_run"]
+            if any(opt in a["agent"] for opt in optional_agents) and not a["success"]
+        ]
+        if optional_failures:
+            doc_result["optional_failures"] = len(optional_failures)
+            logger.info(f"  Note: {len(optional_failures)} optional agents failed but document still marked as successful")
         return doc_result
     
     async def _prepare_additional_evidence(self, document: str, new_evidence: List[Dict]):
@@ -217,9 +235,18 @@ class ClaimOrchestrator:
         """Verify additional evidence found by completeness checker."""
         logger.info("    Running evidence_verifier_v2 for additional evidence...")
         
+        # Ensure the additional evidence output exists
+        additional_evidence_path = self.cache_dir / document / "agents" / "claims" / self.claim_id / "evidence_extractor_additional" / "output.json"
+        if not additional_evidence_path.exists():
+            logger.warning("    No additional evidence file found to verify")
+            return
+        
         try:
             # Create verifier for additional evidence
             agent_config = self.agent_config.copy()
+            # Add flag to indicate this is for additional evidence
+            agent_config["is_additional_verification"] = True
+            
             verifier = EvidenceVerifierV2(
                 pdf_name=document,
                 claim_id=self.claim_id,
@@ -227,8 +254,8 @@ class ClaimOrchestrator:
                 config=agent_config
             )
             
-            # Point to additional evidence directory
-            verifier.agent_dir = verifier.agent_dir.parent / "evidence_verifier_v2_additional"
+            # Use a dedicated directory for additional verification
+            verifier.agent_dir = self.cache_dir / document / "agents" / "claims" / self.claim_id / "evidence_verifier_v2_additional"
             verifier.agent_dir.mkdir(parents=True, exist_ok=True)
             
             # Run verification
@@ -355,31 +382,55 @@ class ClaimOrchestrator:
             logger.info("    No images found in document")
             return []
         
-        logger.info(f"    Found {len(images)} images to analyze")
+        # Validate that all images have required fields
+        valid_images = []
+        for img in images:
+            if not img.get('image_path'):
+                logger.warning(f"    Skipping image {img.get('block_id', 'unknown')} - missing image_path")
+                continue
+            valid_images.append(img)
         
-        # Analyze each image in parallel using asyncio.gather
+        if not valid_images:
+            logger.info("    No valid images found in document")
+            return []
+        
+        logger.info(f"    Found {len(valid_images)} valid images to analyze (skipped {len(images) - len(valid_images)} invalid)")
+        
+        # Analyze each image with controlled parallelism
         import asyncio
         
-        tasks = []
-        for image_metadata in images:
-            analyzer = ImageEvidenceAnalyzer(
-                pdf_name=document,
-                claim_id=self.claim_id,
-                image_metadata=image_metadata,
-                cache_dir=self.cache_dir,
-                config=self.agent_config
-            )
-            tasks.append(analyzer.process())
+        # Limit concurrent image analyses to prevent memory issues
+        max_concurrent = self.config.get("max_concurrent_images", 5)
+        semaphore = asyncio.Semaphore(max_concurrent)
         
-        # Run all image analyses in parallel
+        async def analyze_image_with_limit(image_metadata):
+            async with semaphore:
+                analyzer = ImageEvidenceAnalyzer(
+                    pdf_name=document,
+                    claim_id=self.claim_id,
+                    image_metadata=image_metadata,
+                    cache_dir=self.cache_dir,
+                    config=self.agent_config
+                )
+                return await analyzer.process()
+        
+        # Create tasks with semaphore limiting (use valid_images)
+        tasks = [analyze_image_with_limit(img) for img in valid_images]
+        
+        # Run all image analyses with controlled parallelism
+        logger.info(f"    Analyzing images with max {max_concurrent} concurrent processes...")
         results = await asyncio.gather(*tasks, return_exceptions=True)
         
         # Process results
         supporting_images = []
         for i, result in enumerate(results):
+            # Get consistent image identifier
+            image_metadata = valid_images[i]
+            image_filename = image_metadata.get('image_filename', '')
+            image_id = image_metadata.get('block_id', image_filename.replace('.png', '').replace('.jpg', '') or f"image_{i}")
+            
             if isinstance(result, Exception):
-                image_id = images[i].get('block_id', f"image_{i}")
-                logger.error(f"      Image analysis failed for {image_id}: {result}")
+                logger.error(f"      Image analysis failed for {image_filename}: {result}")
                 doc_result["agents_run"].append({
                     "agent": f"image_evidence_analyzer_{image_id}",
                     "success": False,
@@ -388,12 +439,11 @@ class ClaimOrchestrator:
                 })
             else:
                 # Save the output to image-specific directory
-                image_id = result.get('block_id', result.get('image_filename', '').replace('.png', '').replace('.jpg', ''))
                 self._save_agent_output(document, f"image_evidence_analyzer/{image_id}", result)
                 
-                # Track in agents_run
+                # Track in agents_run with consistent naming
                 doc_result["agents_run"].append({
-                    "agent": f"image_evidence_analyzer_{result.get('image_filename', '')}",
+                    "agent": f"image_evidence_analyzer_{image_id}",
                     "success": True,
                     "timestamp": datetime.now().isoformat()
                 })
@@ -401,11 +451,11 @@ class ClaimOrchestrator:
                 # Only include images that support the claim
                 if result.get("supports_claim"):
                     supporting_images.append(result)
-                    logger.info(f"      ✓ {result.get('image_filename')} supports claim")
+                    logger.info(f"      ✓ {image_filename} supports claim")
                 else:
-                    logger.info(f"      ✗ {result.get('image_filename')} does not support claim")
+                    logger.info(f"      ✗ {image_filename} does not support claim")
         
-        logger.info(f"    Found {len(supporting_images)} supporting images out of {len(images)} analyzed")
+        logger.info(f"    Found {len(supporting_images)} supporting images out of {len(valid_images)} analyzed")
         return supporting_images
     
     def _save_agent_output(self, document: str, agent_name: str, output: Dict[str, Any]):

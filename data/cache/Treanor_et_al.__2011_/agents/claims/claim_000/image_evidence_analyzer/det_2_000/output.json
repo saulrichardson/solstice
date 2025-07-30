@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_000.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p3_det_2_000.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_000",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A flow chart depicting subject participation in a study, showing numbers of subjects screened, randomized, assigned to groups, and included in safety populations (e.g., n=2344, n=2304). The image displays the study flow of subject enrollment and disposition; it does not present any data on antigenic match or comparisons to WHO- or FDA-selected flu strains, and therefore does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flow chart depicting subject participation in a study, showing numbers of subjects screened, randomized, assigned to groups, and included in safety populations (e.g., n=2344, n=2304).",
+    "evidence_found": null,
+    "reasoning": "The image displays the study flow of subject enrollment and disposition; it does not present any data on antigenic match or comparisons to WHO- or FDA-selected flu strains, and therefore does not support the claim.",
+    "confidence_notes": null
+  }
+}

@@ -16,6 +16,7 @@ class ResponseRequest(BaseModel):
     store: bool | None = True
     background: bool | None = False
     reasoning: dict | None = None
+    stream: bool = False
     include: list[str] | None = None
     temperature: float | None = None
     top_p: float | None = None

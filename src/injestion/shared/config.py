@@ -19,14 +19,14 @@ class IngestionConfig:
     
     # Box Processing
     expand_boxes: bool = True  # Whether to expand boxes to prevent text cutoff
-    box_padding: float = 5.0  # Pixels to expand in each direction (reduced from 20.0)
+    box_padding: float = 5.0  # Pixels to expand in each direction (balanced approach)
     
     # Overlap Resolution
     merge_overlapping: bool = True  # Whether to merge overlapping boxes
     merge_threshold: float = 0.1  # IoU threshold for merging same-type boxes (reduced from 0.3)
     confidence_weight: float = 0.7  # Weight for confidence in conflict resolution
     area_weight: float = 0.3  # Weight for box area in conflict resolution
-    minor_overlap_threshold: float = 0.05  # Overlaps below this ratio are considered minor and kept
+    minor_overlap_threshold: float = 0.10  # Overlaps below this ratio are considered minor and kept
     
     # Visualization
     create_visualizations: bool = True  # Whether to create layout visualizations

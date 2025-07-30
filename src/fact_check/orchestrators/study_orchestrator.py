@@ -137,10 +137,12 @@ class StudyOrchestrator:
         """Generate summary statistics."""
         total_pairs = 0
         successful_pairs = 0
-        evidence_counts = []
+        evidence_by_claim = {}  # Track evidence per claim across all documents
         coverage_dist = {"complete": 0, "partial": 0, "none": 0}
         
         for claim_id, claim_result in study_results["claims"].items():
+            claim_evidence_count = 0
+            
             for doc_name, doc_result in claim_result.get("documents", {}).items():
                 total_pairs += 1
                 if doc_result.get("success", False):
@@ -148,19 +150,29 @@ class StudyOrchestrator:
                     
                     # Count evidence
                     evidence_count = len(doc_result.get("supporting_evidence", []))
-                    evidence_counts.append(evidence_count)
+                    claim_evidence_count += evidence_count
                     
                     # Track coverage
                     coverage = doc_result.get("evidence_summary", {}).get("coverage", "none")
                     if coverage in coverage_dist:
                         coverage_dist[coverage] += 1
+            
+            # Store total evidence for this claim across all documents
+            evidence_by_claim[claim_id] = claim_evidence_count
+        
+        # Calculate average evidence per claim (not per pair)
+        all_evidence_counts = list(evidence_by_claim.values())
+        avg_evidence_per_claim = sum(all_evidence_counts) / len(all_evidence_counts) if all_evidence_counts else 0
         
         return {
             "total_claim_document_pairs": total_pairs,
             "successfully_processed": successful_pairs,
             "processing_rate": successful_pairs / total_pairs if total_pairs > 0 else 0,
-            "average_evidence_per_claim": sum(evidence_counts) / len(evidence_counts) if evidence_counts else 0,
-            "coverage_distribution": coverage_dist
+            "average_evidence_per_claim": avg_evidence_per_claim,
+            "average_evidence_per_successful_pair": sum(all_evidence_counts) / successful_pairs if successful_pairs > 0 else 0,
+            "coverage_distribution": coverage_dist,
+            "claims_with_no_evidence": sum(1 for count in all_evidence_counts if count == 0),
+            "claims_with_evidence": sum(1 for count in all_evidence_counts if count > 0)
         }
     
     def save_results(self, results: Dict[str, Any]):

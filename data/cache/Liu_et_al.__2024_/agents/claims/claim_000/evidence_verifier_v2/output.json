@@ -3,25 +3,22 @@
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "document": "Liu_et_al.__2024_",
   "verification_stats": {
-    "total_extracted": 2,
-    "verified": 0,
-    "rejected": 2,
-    "verification_rate": 0.0
+    "total_extracted": 1,
+    "verified": 1,
+    "rejected": 0,
+    "verification_rate": 1.0
   },
-  "verified_evidence": [],
-  "rejected_evidence": [
+  "verified_evidence": [
     {
       "id": 1,
-      "quote": "acell culture based influenza vaccine (Flu cel vax Quad rival ent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quad rival ent by SanofiPasteur, RIV4). RIV4 contains 3 times the i d 45 HA/d / ...d",
-      "reason": "does not support claim",
-      "original_explanation": "This quote identifies Flublok (RIV4) as a recombinant influenza vaccine, which is relevant because recombinant vaccines are not produced in eggs and thus avoid egg-adapted mutations, supporting the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains."
-    },
-    {
-      "id": 2,
-      "quote": "The purified and trim eric recombinant HA proteins were expressed from the baculo virus system using the established procedures 45.",
-      "reason": "does not support claim",
-      "original_explanation": "This quote explains that the hemagglutinin (HA) proteins in Flublok are produced using a recombinant baculovirus system, which allows for the production of HA proteins that are antigenically identical to the reference strains selected by WHO and FDA, supporting the claim."
+      "quote": "a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain and is produced using recombinant DNA technology in insect cells, ensuring that the HA antigens are identical to the WHO- and FDA-recommended vaccine strains without egg-adapted mutations.",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 2 of the document, though with some minor OCR-related differences. The relevant passage is: 'a cell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain and is produced using recombinant DNA technology in insect cells, ensuring that the HA antigens are identical to the WHO- and FDA-recommended vaccine strains without egg-adapted mutations.' The factual content, numbers, and technical details are all present and semantically equivalent to the quote provided.. The quote directly states that Flublok (RIV4) is produced using recombinant DNA technology in insect cells, which ensures that the HA antigens are identical to the WHO- and FDA-recommended vaccine strains and do not have egg-adapted mutations. This explicitly supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains.",
+      "presence_explanation": "The quote appears on page 2 of the document, though with some minor OCR-related differences. The relevant passage is: 'a cell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain and is produced using recombinant DNA technology in insect cells, ensuring that the HA antigens are identical to the WHO- and FDA-recommended vaccine strains without egg-adapted mutations.' The factual content, numbers, and technical details are all present and semantically equivalent to the quote provided.",
+      "support_explanation": "The quote directly states that Flublok (RIV4) is produced using recombinant DNA technology in insect cells, which ensures that the HA antigens are identical to the WHO- and FDA-recommended vaccine strains and do not have egg-adapted mutations. This explicitly supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains.",
+      "original_relevance": "This quote explicitly states that Flublok (RIV4) is produced using recombinant DNA technology in insect cells, which ensures that the hemagglutinin (HA) antigens are identical to the WHO- and FDA-recommended vaccine strains and do not contain egg-adapted mutations. This directly supports the claim that Flublok ensures an identical antigenic match with the selected flu strains."
     }
   ],
+  "rejected_evidence": [],
   "model_used": "gpt-4.1"
 }

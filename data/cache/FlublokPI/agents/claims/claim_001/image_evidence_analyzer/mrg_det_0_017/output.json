@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p1_mrg_det_0_017.png",
-  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
-  "image_type": "Table",
-  "page_number": 1,
-  "block_id": "mrg_det_0_017",
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A portion of the Full Prescribing Information for Flublok showing the Table of Contents (sections 1\u201317) and excerpts from sections on Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Warnings and Precautions, and Adverse Reactions. The visible content lists section headings and some details on dosing (0.5 mL intramuscular injection) and safety information, but does not disclose the amount of hemagglutinin (HA) antigen per dose or compare antigen content to standard-dose influenza vaccines. There is no mention of \u201c3x HA\u201d or any comparative immunogenicity data in the shown text. Note: The image only shows parts of the prescribing information (Table of Contents and safety/dosing excerpts). If other pages contain antigen-content details, they are not visible here.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A portion of the Full Prescribing Information for Flublok showing the Table of Contents (sections 1\u201317) and excerpts from sections on Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Warnings and Precautions, and Adverse Reactions.",
-    "evidence_found": null,
-    "reasoning": "The visible content lists section headings and some details on dosing (0.5 mL intramuscular injection) and safety information, but does not disclose the amount of hemagglutinin (HA) antigen per dose or compare antigen content to standard-dose influenza vaccines. There is no mention of \u201c3x HA\u201d or any comparative immunogenicity data in the shown text.",
-    "confidence_notes": "The image only shows parts of the prescribing information (Table of Contents and safety/dosing excerpts). If other pages contain antigen-content details, they are not visible here."
-  }
+  "explanation": "Error analyzing image: Server error '500 Internal Server Error' for url 'http://localhost:8080/v1/responses'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
+  "error": true,
+  "model_used": "o4-mini"
 }

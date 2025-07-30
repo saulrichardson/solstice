@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p11_det_10_013.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/table_p11_det_10_013.png",
+  "image_type": "Table",
+  "page_number": 11,
+  "block_id": "det_10_013",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A table presenting demographic characteristics of study participants across four groups (n=122, 120, 283, 198), including mean age, age groups, sex, race/ethnicity, study sites, and prior influenza vaccination history. The table contains only participant demographics and vaccination history and provides no data on antigenic match with WHO- or FDA-selected flu strains, and thus does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table presenting demographic characteristics of study participants across four groups (n=122, 120, 283, 198), including mean age, age groups, sex, race/ethnicity, study sites, and prior influenza vaccination history.",
+    "evidence_found": null,
+    "reasoning": "The table contains only participant demographics and vaccination history and provides no data on antigenic match with WHO- or FDA-selected flu strains, and thus does not support the claim.",
+    "confidence_notes": null
+  }
+}

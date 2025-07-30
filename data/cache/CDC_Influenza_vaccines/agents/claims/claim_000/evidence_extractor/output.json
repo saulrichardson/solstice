@@ -5,14 +5,20 @@
     "pdf_name": "CDC_Influenza_vaccines",
     "source_pdf": "data/clinical_files/CDC Influenza vaccines.pdf",
     "total_pages": 2,
-    "total_blocks": 12,
-    "total_characters": 2088
+    "total_blocks": 20,
+    "total_characters": 2329
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 0,
+    "total_snippets_found": 1,
     "error": null
   },
-  "extracted_evidence": [],
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Flublok Quadrivalent (Sanofi Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM RIV4 (recombinant HA vaccine)",
+      "relevance_explanation": "This quote identifies Flublok as a recombinant HA vaccine, which means it is produced using recombinant technology that allows for the precise matching of hemagglutinin antigens to those selected by the WHO and FDA for each flu season. This supports the claim that Flublok ensures an identical antigenic match with the selected strains."
+    }
+  ],
   "model_used": "gpt-4.1"
 }

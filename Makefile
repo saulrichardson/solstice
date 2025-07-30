@@ -109,6 +109,8 @@ install:
 		echo "   Recommended: python3 -m venv venv && source venv/bin/activate"; \
 		echo ""; \
 	fi
+	@echo "Updating pip and build tools..."
+	@pip install --upgrade pip wheel setuptools
 	pip install -c requirements-constraints.txt -e .
 	@echo "✓ Package installed successfully"
 

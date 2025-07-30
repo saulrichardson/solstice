@@ -3,12 +3,19 @@
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "document": "CDC_Influenza_vaccines",
   "verification_stats": {
-    "total_extracted": 0,
+    "total_extracted": 1,
     "verified": 0,
-    "rejected": 0,
-    "verification_rate": 0
+    "rejected": 1,
+    "verification_rate": 0.0
   },
   "verified_evidence": [],
-  "rejected_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": 1,
+      "quote": "Flublok Quadrivalent (Sanofi Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM RIV4 (recombinant HA vaccine)",
+      "reason": "does not support claim",
+      "original_explanation": "This quote identifies Flublok as a recombinant HA vaccine, which means it is produced using recombinant technology that allows for the precise matching of hemagglutinin antigens to those selected by the WHO and FDA for each flu season. This supports the claim that Flublok ensures an identical antigenic match with the selected strains."
+    }
+  ],
   "model_used": "gpt-4.1"
 }

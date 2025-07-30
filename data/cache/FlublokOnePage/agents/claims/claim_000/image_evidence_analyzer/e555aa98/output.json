@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_e555aa98.png",
+  "image_path": "FlublokOnePage/extracted/figures/figure_p1_e555aa98.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "e555aa98",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "Partial text excerpt describing evaluation of a trivalent vaccine produced using a novel BEV process, noting a 45 microgram dose and referencing the Disease Control Center, with a heading for Safety following. The image does not support the claim because it contains only manufacturing and dosage information without any mention of antigenic match or alignment with WHO- or FDA-selected strains, and thus does not support the claim. Note: The image is a partial capture and does not present any data on antigenic matching; visibility is limited to manufacturing details.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Partial text excerpt describing evaluation of a trivalent vaccine produced using a novel BEV process, noting a 45 microgram dose and referencing the Disease Control Center, with a heading for Safety following.",
+    "evidence_found": null,
+    "reasoning": "The image does not support the claim because it contains only manufacturing and dosage information without any mention of antigenic match or alignment with WHO- or FDA-selected strains, and thus does not support the claim.",
+    "confidence_notes": "The image is a partial capture and does not present any data on antigenic matching; visibility is limited to manufacturing details."
+  }
+}

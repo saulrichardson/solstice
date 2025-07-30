@@ -6,7 +6,7 @@
       "page_index": 0,
       "role": "List",
       "bbox": [
-        1728.136962890625,
+        1719.1783447265625,
         2684.1328125,
         3206.24658203125,
         4201.60546875
@@ -21,10 +21,38 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.003282785415649414,
+          "processing_time": 0.0033190250396728516,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_000",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        186.88858032226562,
+        2789.214599609375,
+        1667.2275390625,
+        3778.55908203125
+      ],
+      "text": "Flublok is a vaccine indicated for active immunization for the prevention of disease caused by influenza A virus subtypes and influenza type B virus contained in the vaccine. Flublok is approved for use in persons 18 years of age and older. (1) ---------DOSAGE AND ADMINISTRATION ---------For intramuscular use (0.5 mL). (2) --------DOSAGE FORMS AND STRENGTHS --------Flublok is an injection, a single dose is 0.5 mL. (3) -----------CONTRAINDICATIONS -----------• Do not administer Flublok to anyone with a history of severe allergic reactions (e.g., anaphylaxis) to any component of the vaccine. (4, 6.2, 11) ---------WARNINGS AND PRECAUTIONS ---------• Appropriate medical treatment must be immediately available to manage potential a nap hy lactic reactions following administration of Flublok. (5.1) FULL PRESCRIBING INFORMATION: CONTENTS* 1 INDICATIONS AND USAGE",
+      "metadata": {
+        "score": 0.9764606952667236,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.005540132522583008,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell"
           ]
         }
       }
@@ -35,7 +63,7 @@
       "role": "Table",
       "bbox": [
         173.95822143554688,
-        511.8548889160156,
+        545.4482421875,
         3246.028564453125,
         2624.71533203125
       ],
@@ -53,11 +81,11 @@
       "role": "Text",
       "bbox": [
         216.8677520751953,
-        3915.20703125,
+        4123.97900390625,
         1646.9385986328125,
         4188.34130859375
       ],
-      "text": "HIGHLIGHTS OF PRESCRIBING INFORMATION These highlights do not include all the information needed to use Flublok® safely and effectively. See full prescribing information for Flublok. Flublok (Influenza Vaccine) njection for Intramuscular Use 2024-2025 Formula",
+      "text": "HIGHLIGHTS OF PRESCRIBING INFORMATION",
       "metadata": {
         "score": 0.9709327816963196,
         "detection_dpi": 400,
@@ -66,38 +94,8 @@
         "extraction": {
           "method": "pymupdf",
           "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0008230209350585938,
-          "processors_applied": [
-            "post_extraction_clean"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_0_000",
-      "page_index": 0,
-      "role": "Text",
-      "bbox": [
-        192.39044189453125,
-        3540.83544921875,
-        1657.3184814453125,
-        3670.6484375
-      ],
-      "text": "vaccine. Flublok is approved for use in persons 18 years of age and older. (1) ---------DOSAGE AND ADMINISTRATION ---------For intramuscular use (0.5 mL). (2)",
-      "metadata": {
-        "score": 0.9764606952667236,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0003292560577392578,
-          "processors_applied": [
-            "post_extraction_clean"
-          ]
+          "text_modified": false,
+          "processing_time": 0.00018715858459472656
         }
       }
     },
@@ -109,9 +107,9 @@
         1849.202880859375,
         222.31640625,
         3216.706787109375,
-        334.1509094238281
+        370.5500793457031
       ],
-      "text": "a placebo controlled trial in adults 18 through 49 years of age (Study 1) are nted, followed by data pooled according to age group from Studies 2 and 4 (adults ough 64 years of age) and Studies 3 and 4 (adults aged 65 years and older).",
+      "text": "data for Flublok are presented from four clinical trials (Studies 1, 2, 3, and 4). Data a placebo controlled trial in adults 18 through 49 years of age (Study 1) are nted, followed by data pooled according to age group from Studies 2 and 4 (adults ough 64 years of age) and Studies 3 and 4 (adults aged 65 years and older).",
       "metadata": {
         "score": 0.9474968314170837,
         "detection_dpi": 400,
@@ -121,7 +119,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0013337135314941406,
+          "processing_time": 0.0017769336700439453,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -135,81 +133,16 @@
       "role": "Text",
       "bbox": [
         180.6055908203125,
-        3778.55908203125,
+        3900.962646484375,
         1638.1356201171875,
-        3900.962646484375
+        3915.20703125
       ],
-      "text": "Initial U.S. Approval: 2013 ----------INDICATIONS AND USAGE -----------",
+      "text": "",
       "metadata": {
         "score": 0.9259336590766907,
         "detection_dpi": 400,
         "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00021386146545410156,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_0_010",
-      "page_index": 0,
-      "role": "Text",
-      "bbox": [
-        207.63404846191406,
-        2789.214599609375,
-        1658.518798828125,
-        3028.86279296875
-      ],
-      "text": "FULL PRESCRIBING INFORMATION: CONTENTS* 1 INDICATIONS AND USAGE",
-      "metadata": {
-        "score": 0.9127504229545593,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00018215179443359375,
-          "processors_applied": [
-            "post_extraction_clean"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_0_015",
-      "page_index": 0,
-      "role": "Text",
-      "bbox": [
-        207.66310119628906,
-        3154.75732421875,
-        1671.3052978515625,
-        3364.128173828125
-      ],
-      "text": "-----------CONTRAINDICATIONS -----------• Do not administer Flublok to anyone with a history of severe allergic reactions (e.g., anaphylaxis) to any component of the vaccine. (4, 6.2, 11) ---------WARNINGS AND PRECAUTIONS ---------A idi l b idi lil bl i l",
-      "metadata": {
-        "score": 0.8680483102798462,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0015149116516113281,
-          "processors_applied": [
-            "post_extraction_clean",
-            "symspell"
-          ]
-        }
+        "extraction_status": "empty"
       }
     },
     {
@@ -220,9 +153,9 @@
         205.70233154296875,
         2676.830322265625,
         828.8826293945312,
-        2774.52734375
+        2691.977783203125
       ],
-      "text": "2 DOSAGE AND ADMINISTRAT 2.1 Dosage",
+      "text": "2.1 Dosage",
       "metadata": {
         "score": 0.7290406227111816,
         "detection_dpi": 400,
@@ -232,37 +165,9 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0001399517059326172,
+          "processing_time": 0.00014519691467285156,
           "processors_applied": [
             "post_extraction_clean"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_0_020",
-      "page_index": 0,
-      "role": "Text",
-      "bbox": [
-        228.30503845214844,
-        3417.646728515625,
-        993.909423828125,
-        3546.2333984375
-      ],
-      "text": "or intramuscular use (0.5 mL). (2) --------DOSAGE FORMS AND lublok is an injection a single dose is 0 5 mL",
-      "metadata": {
-        "score": 0.7238773107528687,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0003008842468261719,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
           ]
         }
       }
@@ -272,12 +177,12 @@
       "page_index": 0,
       "role": "Text",
       "bbox": [
-        197.96615600585938,
-        259.34637451171875,
+        186.0790557861328,
+        238.54934692382812,
         1583.935302734375,
-        370.5500793457031
+        334.1509094238281
       ],
-      "text": "The 1976 swine influenza vaccine was associated with an increased frequency Guillain-Barré Syndrome (GBS). Evidence for a causal relation of GBS with other in flue vaccines is inconclusive; if an excess risk exists, it is probably slightly more than",
+      "text": "Guillain-Barré Syndrome (GBS). Evidence for a causal relation of GBS with other in flue vaccines is inconclusive; if an excess risk exists, it is probably slightly more than additional case per 1 million persons vaccinated",
       "metadata": {
         "score": 0.6386746764183044,
         "detection_dpi": 400,
@@ -287,7 +192,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0006999969482421875,
+          "processing_time": 0.0007889270782470703,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -296,94 +201,16 @@
       }
     },
     {
-      "id": "det_0_031",
-      "page_index": 0,
-      "role": "Title",
-      "bbox": [
-        253.41622924804688,
-        3670.342041015625,
-        866.6686401367188,
-        3702.47802734375
-      ],
-      "text": "used by influenza A virus subtypes accine Flublok is approved for use in p",
-      "metadata": {
-        "score": 0.4900380074977875,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00024390220642089844,
-          "processors_applied": [
-            "post_extraction_clean"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_0_032",
-      "page_index": 0,
-      "role": "Text",
-      "bbox": [
-        211.8530731201172,
-        3069.859130859375,
-        941.2068481445312,
-        3146.906005859375
-      ],
-      "text": "• Appropriate medical treatment must be immediate anaphylactic reactions following administration",
-      "metadata": {
-        "score": 0.3806406855583191,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0003981590270996094,
-          "processors_applied": [
-            "post_extraction_clean"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_0_042",
-      "page_index": 0,
-      "role": "Text",
-      "bbox": [
-        261.17205810546875,
-        3740.431884765625,
-        840.6776733398438,
-        3762.89990234375
-      ],
-      "text": "blok is a vaccine indicated for activ",
-      "metadata": {
-        "score": 0.22634585201740265,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": false,
-          "processing_time": 0.00013399124145507812
-        }
-      }
-    },
-    {
       "id": "det_1_004",
       "page_index": 1,
       "role": "List",
       "bbox": [
-        190.29986572265625,
-        242.847900390625,
-        1667.626708984375,
+        185.8434600830078,
+        219.960205078125,
+        1673.721435546875,
         1680.388427734375
       ],
-      "text": "Nausea 6 1 <1 5 1 <1 Joint pain 4 <1 <1 4 <1 <1 Chills 3 <1 <1 3 <1 <1 Fever¶ <1 <1 <1 <1 <1 <1 NOTE: Data based on the most severe response reported by subjects. Results ≥1% reported to nearest whole percent; results >0 but <1% reported as <1%. *Total Vaccinated Cohort is defined as all randomized subjects who received study vaccine according to the treatment actually received and who provided data. †Study 1 is registered as NCT00539981 under the National Clinical Trials registry. ‡Denominators for Study 1: The total number of enrolled, randomized, and vaccinated subjects was 2344 in the Flublok group and 2304 in the placebo group. For all categories except fever, the number of subjects with missing values was 72 in the Flublok group and 73 in the Placebo group so that these denominators are 2272 and 2231 respectively. For fever, 89 Flublok recipients and 104 Placebo recipients were missing data, making these denominators 2255 and 2200 respectively. §Moderate = had it, and it was bad enough to prevent a significant part of usual activities; Severe = had it, and it prevented most or all of normal activities, or had to see a doctor for prescription medicine. ¶Fever defined as ≥100.4°F (38°C). Mild (≥100 4 to <101.1°F); Moderate (≥101.2°F to <102.2°F); Severe (≥102.2°F) Across three clinical trials (Studies 2 - 4, Tables 2 and 3) a total of 2050 adults age 50 years and older received Flublok and 2048 received a U.S.-licensed trivalent in activated influenza vaccine (IIV3) comparator. The mean age of Flublok study participants was 65 years; 56% were female and 80% were Caucasian. The incidence of solicited reactogenicity differed between adults 50 through 64 years of age and adults aged 65 years and older. Therefore, data from Studies 2, 3, and 4 were pooled according to age group and are presented separately (Tables 2 and 3). Most adverse reactions in both age groups were mild in severity",
+      "text": "Nausea 6 1 <1 5 1 <1 Joint pain 4 <1 <1 4 <1 <1 Chills 3 <1 <1 3 <1 <1 Fever¶ <1 <1 <1 <1 <1 <1 NOTE: Data based on the most severe response reported by subjects. Results ≥1% reported to nearest whole percent; results >0 but <1% reported as <1%. *Total Vaccinated Cohort is defined as all randomized subjects who received study vaccine according to the treatment actually received and who provided data. †Study 1 is registered as NCT00539981 under the National Clinical Trials registry. ‡Denominators for Study 1: The total number of enrolled, randomized, and vaccinated subjects was 2344 in the Flublok group and 2304 in the placebo group. For all categories except fever, the number of subjects with missing values was 72 in the Flublok group and 73 in the Placebo group so that these denominators are 2272 and 2231 respectively. For fever, 89 Flublok recipients and 104 Placebo recipients were missing data, making these denominators 2255 and 2200 respectively. §Moderate = had it, and it was bad enough to prevent a significant part of usual activities; Severe = had it, and it prevented most or all of normal activities, or had to see a doctor for prescription medicine. ¶Fever defined as ≥100.4°F (38°C). Mild (≥100 4 to <101.1°F); Moderate (≥101.2°F to <102.2°F); Severe (≥102.2°F) Across three clinical trials (Studies 2 - 4, Tables 2 and 3) a total of 2050 adults age 50 years and older received Flublok and 2048 received a U.S.-licensed trivalent in activated influenza vaccine (IIV3) comparator. The mean age of Flublok study participants was 65 years; 56% were female and 80% were Caucasian. The incidence of solicited reactogenicity differed between adults 50 through 64 years of age and adults aged 65 years and older. Therefore, data from Studies 2, 3, and 4 were pooled according to age group and are presented separately (Tables 2 and 3). Most adverse reactions in both age groups were mild in severity.",
       "metadata": {
         "score": 0.9599705934524536,
         "detection_dpi": 400,
@@ -393,7 +220,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.004537820816040039,
+          "processing_time": 0.005146026611328125,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -402,16 +229,16 @@
       }
     },
     {
-      "id": "mrg_det_1_002",
+      "id": "det_1_002",
       "page_index": 1,
       "role": "Text",
       "bbox": [
         203.1534423828125,
         3007.401123046875,
-        1662.384765625,
+        1637.268798828125,
         3667.483642578125
       ],
-      "text": "edpo t Study 1 (NCT00539981) included 4648 subjects 18 through 49 years of age for safety analysis, randomized to receive Flublok (n=2344) or placebo (n=2304) (1) (see Clinical Studies [14 1. Study 2 (NCT00539864) included 602 subjects 50 through 64 years of age for safety analysis, randomized to receive Flublok (n=300) or another U.S.-licensed trivalent influenza vaccine (Flu zone, manufactured by SanofiPasteur, Inc.) as an active control (n=302) (2). Study 3 (NCT00395174) included 869 subjects aged 65 years and older for safety analysis, randomized to receive Flublok (n=436) or another U.S.-licensed trivalent influenza vaccine (Flu zone as an active control (n=433) (3). Study 4 (NCT01825200) included 2627 subjects aged 50 years and older for safety analysis, randomized to receive Flublok (n=1314) or another U.S.-licensed trivalent influenza vaccine (Afluria, manufactured by bioCSL Pty Ltd.) as an active control (n=1313). Among subjects 50 through 64 years of age 672 received Flublok and 665 received",
+      "text": "edpo t Study 1 (NCT00539981) included 4648 subjects 18 through 49 years of age for safety analysis, randomized to receive Flublok (n=2344) or placebo (n=2304) (1) (see Clinic a Studies [14 1. Study 2 (NCT00539864) included 602 subjects 50 through 64 years of age for safety analysis, randomized to receive Flublok (n=300) or another U.S.-licensed tri valen influenza vaccine (Flu zone, manufactured by SanofiPasteur, Inc.) as an active con tro (n=302) (2). Study 3 (NCT00395174) included 869 subjects aged 65 years and older for safety analysis, randomized to receive Flublok (n=436) or another U.S.-licensed tri valen influenza vaccine (Flu zone as an active control (n=433) (3). Study 4 (NCT01825200) included 2627 subjects aged 50 years and older for safety analysis, randomized to receive Flublok (n=1314) or another U.S.-licensed tri valen influenza vaccine (Afluria, manufactured by bioCSL Pty Ltd.) as an active control (n=1313) Among subjects 50 through 64 years of age 672 received Flublok and 665 received",
       "metadata": {
         "score": 0.9795379042625427,
         "detection_dpi": 400,
@@ -421,7 +248,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0028700828552246094,
+          "processing_time": 0.003352642059326172,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -449,7 +276,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0001780986785888672,
+          "processing_time": 0.0002129077911376953,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -464,7 +291,7 @@
         1799.1204833984375,
         2245.630859375,
         3148.461181640625,
-        2411.102783203125
+        2411.837646484375
       ],
       "text": "or prescription medicine. ever defined as ≥100.4°F (38°C). Mild (≥100 4 to <101.1°F); Moderate (≥101.2°F 102.2°F); Severe (≥102.2°F) For fever, 12 Flublok recipients and 5 IIV3 recipients we is sing data, making these denominators 964 and 962, respectively.",
       "metadata": {
@@ -476,7 +303,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0007970333099365234,
+          "processing_time": 0.0008862018585205078,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -492,7 +319,7 @@
         1798.889404296875,
         217.8026580810547,
         3136.3623046875,
-        378.5378112792969
+        381.50732421875
       ],
       "text": "or prescription medicine. ever defined as ≥100.4°F (38°C). Mild (≥100 4 to <101.1°F); Moderate (≥101.2°F 102.2°F); Severe (≥102.2°F)",
       "metadata": {
@@ -504,7 +331,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004990100860595703,
+          "processing_time": 0.0005590915679931641,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -513,18 +340,18 @@
       }
     },
     {
-      "id": "mrg_det_1_008",
+      "id": "det_1_007",
       "page_index": 1,
       "role": "Text",
       "bbox": [
-        1738.7999267578125,
-        1498.667236328125,
-        3208.6220703125,
-        2172.498046875
+        1745.5316162109375,
+        3521.843505859375,
+        3212.335205078125,
+        4064.623779296875
       ],
-      "text": "Table 3: Frequency of Solicited Local Injection Site Adverse Reactions and Systemic Adverse Reactions within 7 Days of Administration of Flublok or Comparator in Adults ≥65 Years of Age, Studies 3 and 4, Total Vaccinated Cohort *,† Flublok N=1078 IIV3† N=1081 Any Mod‡ Sev‡ Any Mod‡ Sev‡ Local % Pain 19 <1 <1 20 <1 <1 Redness 7 1 <1 7 1 1 Firmness/Swelling 7 2 <1 7 <1 <1",
+      "text": "Comparator in Adults 50-64 Years of Age, Studies 2 and 4, Total Vaccinated Cohort*,† Flublok N=972 IIV3† N=967 Any Mod‡ Sev‡ Any Mod‡ Sev‡ Local % Pain 32 2 <1 37 <1 0 Firmness/Swelling 7 2 <1 6 1 <1 Redness 6 2 <1 5 1 <1",
       "metadata": {
-        "score": 0.9044879078865051,
+        "score": 0.9077164530754089,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -532,7 +359,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0020530223846435547,
+          "processing_time": 0.0011470317840576172,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -559,37 +386,10 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003650188446044922,
+          "processing_time": 0.0005092620849609375,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_1_007",
-      "page_index": 1,
-      "role": "Text",
-      "bbox": [
-        1753.22900390625,
-        3532.64306640625,
-        3207.03369140625,
-        3903.788330078125
-      ],
-      "text": "N=972 N=967 Any Mod‡ Sev‡ Any Mod‡ Sev‡ Local % Pain 32 2 <1 37 <1 0 Firmness/Swelling 7 2 <1 6 1 <1 Redness 6 2 <1 5 1 <1",
-      "metadata": {
-        "score": 0.9077164530754089,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0003352165222167969,
-          "processors_applied": [
-            "post_extraction_clean"
           ]
         }
       }
@@ -613,6 +413,51 @@
       }
     },
     {
+      "id": "det_1_008",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        1773.2769775390625,
+        2160.22509765625,
+        3195.74658203125,
+        2172.498046875
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.9044879078865051,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
+      "id": "det_1_012",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        1738.7999267578125,
+        1488.614501953125,
+        3208.6220703125,
+        2146.455078125
+      ],
+      "text": "Table 3: Frequency of Solicited Local Injection Site Adverse Reactions and Systemic Adverse Reactions within 7 Days of Administration of Flublok or Comparator in Adults ≥65 Years of Age, Studies 3 and 4, Total Vaccinated Cohort *,† Flublok N=1078 IIV3† N=1081 Any Mod‡ Sev‡ Any Mod‡ Sev‡ Local % Pain 19 <1 <1 20 <1 <1 Redness 7 1 <1 7 1 1 Firmness/Swelling 7 2 <1 7 <1 <1",
+      "metadata": {
+        "score": 0.8633689880371094,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.002231121063232422,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
       "id": "det_1_013",
       "page_index": 1,
       "role": "Text",
@@ -632,7 +477,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0008869171142578125,
+          "processing_time": 0.0009200572967529297,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -650,7 +495,7 @@
         3214.23046875,
         3543.15673828125
       ],
-      "text": "[TABLE 12 - See table_p2_det_1_017.png]",
+      "text": "[TABLE 13 - See table_p2_det_1_017.png]",
       "image_path": "figures/table_p2_det_1_017.png",
       "metadata": {
         "score": 0.7490091323852539,
@@ -678,7 +523,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0010809898376464844,
+          "processing_time": 0.0012259483337402344,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -710,11 +555,11 @@
       "role": "Text",
       "bbox": [
         1825.003173828125,
-        4064.623779296875,
+        4131.09814453125,
         3170.540771484375,
         4141.98583984375
       ],
-      "text": "Table 2: Frequency of Solicited Local Injection Site Adverse Reactions and Systemic Adverse Reactions within 7 Days of Administration of Flublok or omparator in Adults 50-64 Years of Age Studies 2 and 4 Total Vaccinated",
+      "text": "Table 2: Frequency of Solicited Local Injection Site Adverse Reactions and",
       "metadata": {
         "score": 0.5333478450775146,
         "detection_dpi": 400,
@@ -723,67 +568,8 @@
         "extraction": {
           "method": "pymupdf",
           "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0007369518280029297,
-          "processors_applied": [
-            "post_extraction_clean"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_1_035",
-      "page_index": 1,
-      "role": "Text",
-      "bbox": [
-        1754.6141357421875,
-        3964.60791015625,
-        3188.8955078125,
-        4041.05224609375
-      ],
-      "text": "p g Cohort*,† †",
-      "metadata": {
-        "score": 0.25804829597473145,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00011682510375976562,
-          "processors_applied": [
-            "post_extraction_clean"
-          ]
-        }
-      }
-    },
-    {
-      "id": "mrg_det_2_004",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        198.134521484375,
-        2995.55517578125,
-        1677.9398193359375,
-        3356.893310546875
-      ],
-      "text": "occurring in 1%-2% of subjects, were na so pharyngitis, upper respiratory infection, headache, cough, nasal congestion, pharyn go laryngeal pain, and rhin or rhea. Among adults 50-64 years of age (Studies 2 and 4 pooled), the most frequent unsolicited adverse events, occurring in 1% of subjects, were diar rhea and cough. Among adults ≥65 years of age (Studies 3 and 4 pooled), the most frequent unsolicited adverse events, occurring in 1% of subjects, were na so pharyngitis and cough. Among adults 50 years of age and older (Study 4) for whom the incidence of rash, urticaria swelling non- pitting edema or other potential hypersensitivity reactions were",
-      "metadata": {
-        "score": 0.9843689203262329,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0039179325103759766,
-          "processors_applied": [
-            "post_extraction_clean",
-            "symspell",
-            "spacing_fix"
-          ]
+          "text_modified": false,
+          "processing_time": 0.0004978179931640625
         }
       }
     },
@@ -792,12 +578,12 @@
       "page_index": 2,
       "role": "Text",
       "bbox": [
-        1752.90576171875,
-        1473.3829345703125,
-        3203.711669921875,
-        1711.224365234375
+        1727.64501953125,
+        279.2806396484375,
+        3213.369140625,
+        3681.943603515625
       ],
-      "text": "syringes contain no natural rubber latex. 12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hem agglutination",
+      "text": "development or female fertility were observed in the study. 8.2 Lactation Risk Summary It is not known whether Flublok is excreted in human milk. Data are not available to assess the effects of Flublok on the breast fed infant or on milk production excretion. The developmental and health benefits of breastfeeding should be considered along with the mother’sclinical need for Flublok and any potential adverse effects on the breast fed child from Flublok or from the underlying maternal condition. For preventive vaccines, the underlying condition is susceptibility to disease prevented by the vaccine. 8.4 Ped i at ric Use Data from a randomized, controlled trial demonstrated that children 6 months to less than 3 years of age had diminished hemagglutinin inhibition (HI) responses to Flublok compared to a U.S.-licensed influenza vaccine approved for use in this population, strongly suggesting that Flublok would not be effective in children younger than 3 years of age (6). Safety and effectiveness of Flublok have not been established in children 3 years to less tthan 18 years of age. 8.5 Geriatric Use Data from an efficacy study (Study 6), which included 1759 subjects ≥65 years and 525 subjects ≥75 years who received Flublok Quad rival ent, are insufficient to determine whether elderly subjects respond differently from younger subjects (See Clinical Studies [14]). Data for Flublok Quad rival ent are relevant to Flublok because both vaccines are manufactured using the same process and have overlapping compositions. 11 DESCRIPTION Flublok [Influenza Vaccine] is a sterile, clear, color less injection containing recombinant hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. It contains purified HA proteins produced in a continuous insect cell line (expresSF+®) that is derived from Sf9 cells of the fall army worm, Spodoptera frug i per da (which is related to moths, caterpillars and butterflies), and grown in serum free medium composed of chemically defined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is expressed in this cell line using aba culo virus vector (Autograph a cali for nica nuclear poly he dros is virus), extracted from the cells with Triton X-100 and further purified by column chromatography. The purified HAs are then blended and filled into single dose syringes. Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021. A single 0.5 mL dose of Flublok contains sodium chloride (4.4 mg), mono basic sodium phosphate (0.2 mg), dibasic sodium phosphate (0.5 mg), and polys or bate 20 (Tween 20 (27.5 mcg). Each 0.5 mL dose of Flublok may also contain residual amounts of baculo virus and Spodoptera frug i per da cell proteins (≤14.3 mcg), baculo virus and cellular DNA (≤10 ng), and Triton X-100 (≤100 mcg). Flublok contains no egg proteins, antibiotics, or preservatives. The single dose, pre filled syringes contain no natural rubber latex. 12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hem agglutination inhibition (HI) antibody). Antibodies against one influenza virus type or subtype confer limited or no protection against another. Furthermore, antibodies to one antigenic variant of influenza virus might not protect against anew antigenic variant of the same type or subtype. Frequent development of antigenic variants through antigenic drift is the viro logic basis for seasonal epidemics and the reason for the usual replacement of one or more influenza virus strains in each year’sinfluenza vaccine. 13 NONCLINICAL TOXICOLOGY 13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility Flublok has not been evaluated for carcinogenic or mutagenic potential, or for impairment of male fertility in animals. 14 CLINICAL STUDIES 14.1 Efficacy Against Laboratory-Confirmed Influenza The efficacy of Flublok in protecting against culture confirmed influenza illness was evaluated in a randomized, observer blind, placebo controlled multi center trial conducted in the U.S. during the 2007-2008 influenza season in adults 18-49 years of age (Study 1). (1) Study 1 enrolled and vaccinated 4648 healthy adults (mean age 32.5 years) randomized in a 1:1 ratio to receive a single dose of Flublok (n=2344) or saline placebo (n=2304). Among enrolled subjects, 59% were female, 67% were white, 19% African-American, 2% Asian, < 1% other races, and 11% of Latino/Hispanic ethnicity. Culture confirmed influenza was assessed by active and passive surveillance for influenza like illness (ILI) beginning 2 weeks post vaccination until the end of the influenza season, approximately 7 months post- vaccination. ILI was defined as having at least 2 of 3 symptoms (no specified duration) in the following categories: 1) fever ≥100°F; 2) respiratory symptoms (cough, sore throat, or runny nose stuffy nose); or 3) systemic symptoms (myalgias, arthralgias, headache chills sweats or tiredness malaise For subjects with an episode of ILI nasal",
       "metadata": {
         "score": 0.9876570701599121,
         "detection_dpi": 400,
@@ -807,27 +593,28 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0023899078369140625,
+          "processing_time": 0.03761720657348633,
           "processors_applied": [
             "post_extraction_clean",
-            "symspell"
+            "symspell",
+            "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "det_2_002",
+      "id": "det_2_006",
       "page_index": 2,
       "role": "Text",
       "bbox": [
-        1747.22900390625,
-        1145.3892822265625,
-        3203.83203125,
-        1377.1932373046875
+        182.9279327392578,
+        540.4495849609375,
+        1689.283447265625,
+        2797.874267578125
       ],
-      "text": "gyp yp pagainst another. Furthermore, antibodies to one antigenic variant of influenza virus might not protect against anew antigenic variant of the same type or subtype. Frequent development of antigenic variants through antigenic drift is the virologic basis for seasonal epidemics and the reason for the usual replacement of one or more influenza virus strains in each year’sinfluenza vaccine. 13 NONCLINICAL TOXICOLOGY",
+      "text": "7 days following vaccination. Of these solicited events, rash was most frequently reported (Flublok 1.3%, IIV3 0.8%) over the 30 day follow up period. Flublok Quad rival ent Flublok Quad rival ent has been administered to and safety data collected from 4328 adults 50 years of age and older (Study 61) and 998 adults 18-49 years of age (Study 72). SAEs were collected for 6 months post vaccination via clinic visit or remote contact. Study 6 (NCT02285998) enrolled subjects 50 years of age and older, randomized to receive Flublok Quad rival ent or Comparator (Fluarix Quad rival ent, manufactured by Glaxo smith kline) as an active control [see Clinical Studies (14 1. The safety analysis population included 4328 Flublok Quad rival ent recipients and 4344 Comparator vaccine recipients. The mean age of participants was 62.7 years. Overall, 58% of subjects were female, 80% white/Caucasian, 18% black/African American, 0.9% American Indian/ Alaskan Native, 0.4% Asian, 0.2% Native Hawaiian/Pacific Islander, 0.7% other racial groups, and 5% of Hispanic/Latino ethnicity. Among adults 50 years of age and older (Study 6), there were no SAEs considered related to study vaccine. Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quad rival ent or a Comparator in activated influenza vaccine (Fluarix® Quad rival ent, manufactured by Glaxo smith kline). The safety analysis population included 998 recipients of Flublok Quad rival ent and 332 Comparator vaccine recipients. The mean age of participants was 33.5 years. Overall, 65% of subjects were female, 59% white/Caucasian, 37% black/African American, 1.0% Native Hawaiian/Pacific Islander, 0.8% American Indian/Alaskan Native, 0.5% Asian, 1.4% other racial groups, and 16% of Hispanic/Latino ethnicity. Among adults 18-49 years of age (Study 7), through 6 months post vaccination, there were no SAEs considered related to study vaccine. 1 NCT02285998 2 NCT02290509 6.2 Post marketing Experience The following events have been spontaneously reported during post approval use of Flublok or Flublok Quad rival ent. They are described because of the temporal relationship, the bio logic plausibility for a causal relationship to Flublok or Flublok Quad rival ent, and their potential seriousness. Because these events are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to vaccine exposure. Immune system disorders: anaphylaxis, allergic reactions, and other forms of hypersensitivity (including urticaria). Nervous system disorders: facial palsy (Bell’spalsy), Guillain-Barré syndrome, syn cope. 8 USE IN SPECIFIC POPULATIONS 8.1 Pregnancy Pregnancy Exposure There is a pregnancy exposure registry that monitors pregnancy outcomes in women exposed to Flublok. Healthcare providers are encouraged to enroll women who receive Flublok during pregnancy in San of i pasteur Inc.’svaccination pregnancy registry by calling 1-800-8222463. Risk Summary All pregnancies have arisk of birth defect, loss, or other adverse outcomes. In the U.S.",
       "metadata": {
-        "score": 0.9848551154136658,
+        "score": 0.9709523916244507,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -835,26 +622,28 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0010828971862792969,
+          "processing_time": 0.019451141357421875,
           "processors_applied": [
-            "post_extraction_clean"
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "det_2_001",
+      "id": "det_2_004",
       "page_index": 2,
       "role": "Text",
       "bbox": [
-        1766.05126953125,
-        2173.278076171875,
-        3207.707763671875,
-        2371.78369140625
+        189.376220703125,
+        2995.55517578125,
+        1677.9398193359375,
+        4063.09912109375
       ],
-      "text": "expressed in this cell line using abaculo virus vector (Autograph a cali for nica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further purified by column chromatography. The purified HAs are then blended and filled into single dose syringes. Flublok is standardized according to United States Public Health Service (USPHS) i F h 2024-2025 i fl ...135 HA",
+      "text": "placebo recipient. Both deaths occurred more than 28 days following vaccination and neither was considered vaccine related. SAEs were reported by 32 Flublok recipients and 35 placebo recipients. One SAE in a Flublok recipient was assessed as possibly related to the vaccine: pl euro peri card it is with effusions requiring hospitalization and drainage. No specific cause was identified. The patient recovered. Among adults 50-64 years of age (Studies 2 and 4 pooled), through up to 6 months or 30 days, post- vaccination, respectively, there were no deaths; SAEs were reported by 10 subjects, 6 Flublok recipients and 4 IIV3 recipients. One of the SAEs, vas ova gal syn cope following injection of Flublok, was considered related to administration of study vaccine. Among adults 65 years of age and older (Studies 3 and 4 pooled), through up to 6 months or 30 days post vaccination, respectively, there were 4 deaths, 2 in Flublok recipients and 2 in IIV3 recipients. None were considered related to the study vaccines. SAEs were reported from 80 subjects, 37 Flublok recipients, 43 in IIV3 recipients. No SAEs were considered related to the study vaccines. In Study 1 (adults 18-49 years of age), the most frequent unsolicited adverse events, occurring in 1%-2% of subjects, were na so pharyngitis, upper respiratory infection, headache, cough, nasal congestion, pharyn go laryngeal pain, and rhin or rhea. Among adults 50-64 years of age (Studies 2 and 4 pooled), the most frequent unsolicited adverse events, occurring in 1% of subjects, were diar rhea and cough. Among adults ≥65 years of age (Studies 3 and 4 pooled), the most frequent unsolicited adverse events, occurring in 1% of subjects, were na so pharyngitis and cough. Among adults 50 years of age and older (Study 4) for whom the incidence of rash, urticaria swelling non- pitting edema or other potential hypersensitivity reactions were",
       "metadata": {
-        "score": 0.9852125644683838,
+        "score": 0.9843689203262329,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -862,9 +651,10 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0011630058288574219,
+          "processing_time": 0.012705802917480469,
           "processors_applied": [
             "post_extraction_clean",
+            "symspell",
             "spacing_fix"
           ]
         }
@@ -890,7 +680,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0015361309051513672,
+          "processing_time": 0.0018067359924316406,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -918,347 +708,10 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005586147308349609,
+          "processing_time": 0.0007779598236083984,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_007",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        1742.3577880859375,
-        2794.327880859375,
-        3202.551025390625,
-        2970.85107421875
-      ],
-      "text": "8.5 Geriatric Use Data from an efficacy study (Study 6), which included 1759 subjects ≥65 years and 525 subjects ≥75 years who received Flublok Quad rival ent, are insufficient to determine whether elderly subjects respond differently from younger subjects (See Clinical Studies [14]) D f Fl bl k Q d i l l Fl bl k b b h i",
-      "metadata": {
-        "score": 0.9690775871276855,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0008792877197265625,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_006",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        275.59765625,
-        2675.417724609375,
-        1640.6083984375,
-        2769.57373046875
-      ],
-      "text": "blok 1.3%, IIV3 0.8%) over the 30 day follow up period. lok Quad rival ent l k Q ...tll t d f 4328 dlt",
-      "metadata": {
-        "score": 0.9709523916244507,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00033211708068847656,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_010",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        223.58340454101562,
-        2301.74755859375,
-        1659.766357421875,
-        2668.824462890625
-      ],
-      "text": "Flublok Quad rival ent has been administered to and safety data collected from 4328 adults 0 years of age and older (Study 61) and 998 adults 18-49 years of age (Study 72). SAEs were collected for 6 months post vaccination via clinic visit or remote contact. Study 6 (NCT02285998) enrolled subjects 50 years of age and older, randomized to ece ive Flublok Quad rival ent or Comparator (Fluarix Quad rival ent, manufactured by GlaxoSmithKline) as an active control [see Clinical Studies (14 1. The safety analysis opulation included 4328 Flublok Quad rival ent recipients and 4344 Comparator vaccine ecipients. The mean age of participants was 62.7 years. Overall, 58% of subjects were emale 80% white/Caucasian 18% black/African American 0 9% American Indian/",
-      "metadata": {
-        "score": 0.958179235458374,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.002023935317993164,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_008",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        1765.9136962890625,
-        2982.242431640625,
-        3201.196533203125,
-        3225.943359375
-      ],
-      "text": "Data from a randomized, controlled trial demonstrated that children 6 months to less than 3 years of age had diminished hemagglutinin inhibition (HI) responses to Flublok compared to a U.S.-licensed influenza vaccine approved for use in this population, strongly suggesting that Flublok would not be effective in children younger than 3 years of age (6). Safety and effectiveness of Flublok have not been established in children 3 years to less than 18 years of age.",
-      "metadata": {
-        "score": 0.9625499248504639,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0011069774627685547,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_014",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        1747.9776611328125,
-        1721.7962646484375,
-        3196.553955078125,
-        2164.215087890625
-      ],
-      "text": "requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021. A single 0.5 mL dose of Flublok contains sodium chloride (4.4 mg), mono basic sodium phosphate (0.2 mg), dibasic sodium phosphate (0.5 mg), and polysorbate 20 (Tween 20 (27.5 mcg). Each 0.5 mL dose of Flublok may also contain residual amounts of baculo virus and Spodoptera frugiperda cell proteins (≤14.3 mcg), baculo virus and cellular DNA (≤10 ng), and Triton X-100 (≤100 mcg). Flublok contains no egg proteins, antibiotics, or preservatives. The single dose, pre filled syringes contain no natural rubber latex",
-      "metadata": {
-        "score": 0.9511477947235107,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.002255678176879883,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_012",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        1750.70556640625,
-        842.6258544921875,
-        3198.952880859375,
-        1141.07666015625
-      ],
-      "text": "13 NONCLINICAL TOXICOLOGY 13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility Flublok has not been evaluated for carcinogenic or mutagenic potential, or for impairment of male fertility in animals. 14 CLINICAL STUDIES 14.1 Efficacy Against Laboratory-Confirmed Influenza The efficacy of Flublok in protecting against culture confirmed influenza illness was",
-      "metadata": {
-        "score": 0.95708829164505,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.002969980239868164,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_011",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        220.14344787597656,
-        3819.33984375,
-        1647.3656005859375,
-        4034.6533203125
-      ],
-      "text": "neither was considered vaccine related. SAEs were reported by 32 Flublok recipients and 35 placebo recipients. One SAE in a Flublok recipient was assessed as possibly related othe vaccine: pl euro peri card it is with effusions requiring hospitalization and drainage. No specific cause was identified. The patient recovered. Among adults 50 64 years of age (Studies 2 and 4 pooled) through up to 6 months or",
-      "metadata": {
-        "score": 0.9577653408050537,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0027451515197753906,
-          "processors_applied": [
-            "post_extraction_clean",
-            "symspell",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_009",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        1771.558349609375,
-        3528.558837890625,
-        3194.8037109375,
-        3665.192138671875
-      ],
-      "text": "eve lop ment or female fertility were observed in the study. .2 Lactation Risk Summary is not known whether Flublok is excreted in human milk Data are not available to assess",
-      "metadata": {
-        "score": 0.9609692096710205,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00044417381286621094,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_013",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        1752.6212158203125,
-        520.8806762695312,
-        3193.84912109375,
-        766.651611328125
-      ],
-      "text": "in the U.S. during the 2007-2008 influenza season in adults 18 49 years of age (Study 1). (1) Study 1 enrolled and vaccinated 4648 healthy adults (mean age 32.5 years) randomized in a 1:1 ratio to receive a single dose of Flublok (n=2344) or saline placebo (n=2304). Among enrolled subjects, 59% were female, 67% were white, 19% African-American, 2% Asian, < 1% other races, and 11% of Latino/Hispanic ethnicity. Culture confirmed influenza ( )",
-      "metadata": {
-        "score": 0.9540386199951172,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0019729137420654297,
-          "processors_applied": [
-            "post_extraction_clean",
-            "symspell",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_015",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        205.32040405273438,
-        1312.559326171875,
-        1640.44140625,
-        1680.19189453125
-      ],
-      "text": "no SAEs considered related to study vaccine. 1 NCT02285998 2 NCT02290509 6.2 Post marketing Experience The following events have been spontaneously reported during post approval use o Flublok or Flublok Quad rival ent. They are described because of the temporal relationship th bi l i libilit f l lti hi t Fl bl k Fl bl k Q d i l t d",
-      "metadata": {
-        "score": 0.9378187656402588,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0009219646453857422,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_018",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        205.52493286132812,
-        545.2928466796875,
-        1650.71875,
-        958.0234375
-      ],
-      "text": "8.1 Pregnancy Pregnancy Exposure There is a pregnancy exposure registry that monitors pregnancy outcomes in women exposed to Flublok. Healthcare providers are encouraged to enroll women who receive Flublok during pregnancy in SanofiPasteur Inc.’svaccination pregnancy registry by calling 1-800-8222463. Risk Summary All pregnancies have arisk of birth defect loss or other adverse outcomes In the U S",
-      "metadata": {
-        "score": 0.9311996698379517,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0010421276092529297,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_016",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        215.67938232421875,
-        3352.218017578125,
-        1635.0023193359375,
-        3476.565185546875
-      ],
-      "text": "eported from 80 subjects, 37 Flublok recipients, 43 in IIV3 recipients. No SAEs were considered related to the study vaccines. n Study 1 (adults 18-49 years of age), the most frequent unsolicited adverse events i i 1% 2% fbj t hiti i t i fti",
-      "metadata": {
-        "score": 0.9374784827232361,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0005681514739990234,
-          "processors_applied": [
-            "post_extraction_clean"
           ]
         }
       }
@@ -1283,7 +736,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0001277923583984375,
+          "processing_time": 0.00020313262939453125,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -1298,7 +751,7 @@
         202.53814697265625,
         2883.583740234375,
         761.1506958007812,
-        2968.12841796875
+        2946.845703125
       ],
       "text": "actively solicited for 30 days follow i 1.6% of IIV3 recipients reported su",
       "metadata": {
@@ -1310,66 +763,9 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00025391578674316406,
+          "processing_time": 0.0003590583801269531,
           "processors_applied": [
             "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_020",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        1730.9564208984375,
-        278.186767578125,
-        3198.837158203125,
-        498.3288879394531
-      ],
-      "text": "was assessed by active and passive surveillance for influenza like illness (ILI) beginning 2 weeks post vaccination until the end of the influenza season, approximately 7 months post- vaccination. ILI was defined as having at least 2 of 3 symptoms (no specified duration) in the following categories: 1) fever ≥100°F; 2) respiratory symptoms (cough, sore throat, or runny nose stuffy nose); or 3) systemic symptoms (myalgias, arthralgias, headache chills sweats or tiredness malaise For subjects with an episode of ILI nasal",
-      "metadata": {
-        "score": 0.8943033814430237,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.003367900848388672,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_021",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        1760.5736083984375,
-        2396.22802734375,
-        3199.32421875,
-        2617.872314453125
-      ],
-      "text": "hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. It contains purified HA proteins produced in a continuous insect cell line (expresSF+®) that is derived rom Sf9 cells of the fall army worm, Spodoptera frug i per da (which is related to moths, caterpillars and butterflies), and grown in serum free medium composed of chemically defined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is d ihi ll li i b l i (A hlif i l",
-      "metadata": {
-        "score": 0.8727145195007324,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0027358531951904297,
-          "processors_applied": [
-            "post_extraction_clean",
-            "symspell",
             "spacing_fix"
           ]
         }
@@ -1381,11 +777,11 @@
       "role": "Text",
       "bbox": [
         225.41424560546875,
-        4063.09912109375,
+        4111.83056640625,
         1650.186279296875,
         4199.560546875
       ],
-      "text": "Among adults 18-49 years of age (Studies 1 and 5 pooled), through 6 months ost vaccination, two deaths were reported, one in a Flublok recipient and one in alacebo recipient Both deaths occurred more than 28 days following vaccination and",
+      "text": "Among adults 18-49 years of age (Studies 1 and 5 pooled), through 6 months ost vaccination two deaths were reported one in a Flublok recipient and one in a",
       "metadata": {
         "score": 0.8542278409004211,
         "detection_dpi": 400,
@@ -1395,201 +791,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0006039142608642578,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_024",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        1765.897705078125,
-        2639.852294921875,
-        3160.0810546875,
-        2752.1826171875
-      ],
-      "text": "manufactured using the same process and have overlapping compositions. 1 DESCRIPTION Flublok [Influenza Vaccine] is a sterile clear colorless injection containing recombina",
-      "metadata": {
-        "score": 0.7603785395622253,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0005118846893310547,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_026",
-      "page_index": 2,
-      "role": "Title",
-      "bbox": [
-        335.81744384765625,
-        2265.4453125,
-        1645.6722412109375,
-        2275.7294921875
-      ],
-      "text": "N ti 0 4% A i 0 2% N ti H ii /P ifi I l d 0 7% th i l",
-      "metadata": {
-        "score": 0.7415884137153625,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00015306472778320312,
-          "processors_applied": [
-            "post_extraction_clean"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_027",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        231.201904296875,
-        1145.588623046875,
-        1646.3291015625,
-        1320.906005859375
-      ],
-      "text": "he bio logic plausibility for a causal relationship to Flublok or Flublok Quad rival ent, and heir potential seriousness. Because these events are reported voluntarily from aopulation of uncertain size, it is not always possible to reliably estimate their frequency restablish a causal relationship to vaccine exposure.",
-      "metadata": {
-        "score": 0.7273309826850891,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0009410381317138672,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_028",
-      "page_index": 2,
-      "role": "Title",
-      "bbox": [
-        1745.21044921875,
-        3489.568603515625,
-        2718.41650390625,
-        3507.6171875
-      ],
-      "text": "the effects of Flublok on the breast fed infant or on milk pr",
-      "metadata": {
-        "score": 0.7106451392173767,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00020503997802734375,
-          "processors_applied": [
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_029",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        193.80831909179688,
-        3637.53466796875,
-        1651.1424560546875,
-        3750.325927734375
-      ],
-      "text": "y, p , p y, ; p ysubjects, 6 Flublok recipients and 4 IIV3 recipients. One of the SAEs, vas ova gal syn cope following injection of Flublok, was considered related to administration of study vaccine. Among adults 65 years of age and older (Studies 3 and 4 pooled) through up to 6 months",
-      "metadata": {
-        "score": 0.6959642767906189,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0007050037384033203,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_030",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        205.18212890625,
-        1715.7041015625,
-        1658.0069580078125,
-        2209.8037109375
-      ],
-      "text": "groups, and 5% of Hispanic/Latino ethnicity. Among adults 50 years of age and older (Study 6), there were no SAEs considered related to study vaccine. Study 7 (NCT02290509) enrolled subjects 18 through 49 years of age randomized to receive Flublok Quad rival ent or a Comparator in activated influenza vaccine (Fluarix® Quad rival ent, manufactured by GlaxoSmithKline). The safety analysis population included 998 recipients of Flublok Quad rival ent and 332 Comparator vaccine recipients. The mean age of participants was 33.5 years. Overall, 65% of subjects were female, 59% white/Caucasian, 37% black/African American, 1.0% Native Hawaiian/Pacific Islander, 0.8% American Indian/Alaskan Native, 0.5% Asian, 1.4% other racial groups, and 16% of Hispanic/Latino ethnicity. A dlt 18 49 f (St d 7) th h 6 th t iti th",
-      "metadata": {
-        "score": 0.6770521402359009,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0019800662994384766,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_032",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        1718.3701171875,
-        3296.471923828125,
-        3172.885498046875,
-        3457.82568359375
-      ],
-      "text": "The developmental and health benefits of breastfeeding should be considered along wit the mother’sclinical need for Flublok and any potential adverse effects on the breastfe child from Flublok or from the underlying maternal condition. For preventive vaccines, th underlying condition is susceptibility to disease prevented by the vaccine.",
-      "metadata": {
-        "score": 0.5864220261573792,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0009257793426513672,
+          "processing_time": 0.0004830360412597656,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -1616,116 +818,9 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00019788742065429688,
+          "processing_time": 0.00025010108947753906,
           "processors_applied": [
             "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_039",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        203.26776123046875,
-        3513.562744140625,
-        547.42626953125,
-        3542.28271484375
-      ],
-      "text": "2 in IIV3 recipients.",
-      "metadata": {
-        "score": 0.30766212940216064,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": false,
-          "processing_time": 0.00011396408081054688
-        }
-      }
-    },
-    {
-      "id": "det_2_041",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        217.56138610839844,
-        988.259521484375,
-        1641.7591552734375,
-        1080.4742431640625
-      ],
-      "text": "sitivity (including urticaria). Nervous system disorders: facial palsy (Bell’spalsy), Guillain-Barré syndrome, syn cope 8 USE IN SPECIFIC POPULATIONS",
-      "metadata": {
-        "score": 0.2846376299858093,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0004949569702148438,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_046",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        309.49053955078125,
-        3540.33251953125,
-        1651.4205322265625,
-        3601.193359375
-      ],
-      "text": "days post vaccination, respectively, there were 4 deaths, 2 in Flublok recipients and V3 recipients None were considered related to the study vaccines SAEs were",
-      "metadata": {
-        "score": 0.2612243890762329,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.000431060791015625,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_2_045",
-      "page_index": 2,
-      "role": "Text",
-      "bbox": [
-        1775.140380859375,
-        1432.096435546875,
-        2086.08349609375,
-        1451.8125
-      ],
-      "text": "nhibition (HI) anti bod",
-      "metadata": {
-        "score": 0.2630642354488373,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0001621246337890625,
-          "processors_applied": [
             "spacing_fix"
           ]
         }
@@ -1736,12 +831,12 @@
       "page_index": 3,
       "role": "Text",
       "bbox": [
-        215.26661682128906,
+        197.54437255859375,
         3312.235595703125,
-        1645.7451171875,
-        3877.00341796875
+        1647.6920166015625,
+        3874.559814453125
       ],
-      "text": "n 4648). The pre defined success criterion for the primary efficacy analysis was that the lower bound of the 95% confidence interval (CI) of VE should be at least 40%. Vaccine efficacy against antigenic ally matched culture confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenic ally matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC- ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0). See Table 4 for a presentation of VE by case definition and antigenic similarity. Table 4: Vaccine Efficacy Against Culture-Confirmed Influenza in Healthy Adults 18-49 Years of Age, Study 1*",
+      "text": "(n 4648). The pre defined success criterion for the primary efficacy analysis was that the lower bound of the 95% confidence interval (CI) of VE should be at least 40%. Vaccine efficacy against antigenic ally matched culture confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenic ally matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC- ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0). See Table 4 for a presentation of VE by case definition and antigenic similarity. Table 4: Vaccine Efficacy Against Culture-Confirmed Influenza in Healthy Adults 18-49 Years of Age, Study 1*",
       "metadata": {
         "score": 0.9909710884094238,
         "detection_dpi": 400,
@@ -1751,10 +846,38 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.004590034484863281,
+          "processing_time": 0.005302906036376953,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_004",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        194.99383544921875,
+        523.152099609375,
+        1641.5172119140625,
+        932.3976440429688
+      ],
+      "text": "y g ( ) y g p yreaction (rtPCR) -confirmed influenza was assessed by active and passive surveillance for influenza like illness (ILI) beginning 2 weeks post- vaccination until the end of the influenza season, approximately 6 months post- vaccination. ILI was defined as having at least one symptom (no specified duration) in each of two categories of respiratory and systemic symptoms. Respiratory symptoms included sore throat, cough, sputum production wheezing and difficulty breathing. Systemic symptoms included fever > 99°F (>37°C) oral chills, fatigue, headache and myalgia. For subjects with an episode of ILI, an a so pharyngeal swab sample was collected for rtPCR testing and reflex viral culture of rtPCRpositive samples.",
+      "metadata": {
+        "score": 0.9828260540962219,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.002125978469848633,
+          "processors_applied": [
+            "post_extraction_clean",
             "spacing_fix"
           ]
         }
@@ -1768,9 +891,9 @@
         240.8236846923828,
         3060.512939453125,
         1635.4306640625,
-        3293.099609375
+        3110.44580078125
       ],
-      "text": "Case definition Flublok (N=2344) Saline Placebo (N=2304) Flublok Vaccine Efficacy†, % 95% Confidence Interval Cases, n Rate, % Cases, n Rate, %",
+      "text": "Cases, n Rate, % Cases, n Rate, %",
       "metadata": {
         "score": 0.9949145317077637,
         "detection_dpi": 400,
@@ -1780,65 +903,9 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004649162292480469,
+          "processing_time": 0.00013399124145507812,
           "processors_applied": [
             "post_extraction_clean"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_3_004",
-      "page_index": 3,
-      "role": "Text",
-      "bbox": [
-        206.62083435058594,
-        527.7598266601562,
-        1641.5172119140625,
-        916.2854614257812
-      ],
-      "text": "reaction (rtPCR) -confirmed influenza was assessed by active and passive surveillance for influenza like illness (ILI) beginning 2 weeks post- vaccination until the end of the influenza season, approximately 6 months post- vaccination. ILI was defined as having at least one symptom (no specified duration) in each of two categories of respiratory and systemic symptoms. Respiratory symptoms included sore throat, cough, sputum production wheezing and difficulty breathing. Systemic symptoms included fever > 99°F (>37°C) oral chills, fatigue, headache and myalgia. For subjects with an episode of ILI, an a so pharyngeal swab sample was collected for rtPCR testing and reflex viral culture of rtPCRpositive samples.",
-      "metadata": {
-        "score": 0.9828260540962219,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0018320083618164062,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_3_003",
-      "page_index": 3,
-      "role": "Text",
-      "bbox": [
-        196.1509552001953,
-        223.26222229003906,
-        1653.0721435546875,
-        523.152099609375
-      ],
-      "text": "The primary efficacy endpoint of Study 6 was rtPCR-positive, protocol defined ILI due to any strain of influenza. Attack rates and relative vaccine efficacy (rVE), defined as 1 [Attack rate Flublok Quad rival ent Attack Rate Comparator], were calculated for the total efficacy population (n=8604) for the primary efficacy endpoint and for several alternative efficacy endpoints (Table 5). Antigenic and phylogenetic evaluations of the similarity (″matching″) of clinical isolates to vaccine antigens were not performed. CDC epidemiological data for the 2014-2015 influenza season indicated that Influenza A (H3 N2) viruses",
-      "metadata": {
-        "score": 0.9836642146110535,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.001611948013305664,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
           ]
         }
       }
@@ -1863,9 +930,38 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0007500648498535156,
+          "processing_time": 0.0008578300476074219,
           "processors_applied": [
             "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_006",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        1751.130859375,
+        1352.58447265625,
+        3211.95703125,
+        2256.119873046875
+      ],
+      "text": "§Post hoc analyses. All cases of influenza A were A/H3 N2. Cases of influenza B were not distinguished by lineage. ¶Culture of rtPCR-positive samples was performed in MDCK cells. 15 REFERENCES 1. Tre an or JJ, El Sahly HM, King J, et. al. Protective efficacy of a trivalent recombinant hemagglutinin protein vaccine (Flublok against influenza in healthy adults: a randomized, placebo controlled trial. Vaccine. 2011, Vol. 29, pp. 7733-7739. 2. Baxter R, Pat ria rca PA, Ensor K, et al. Evaluation of the safety, reactogenicity and immunogen i city of Flublok trivalent recombinant baculo virus expressed hemagglutinin influenza vaccine administered intramuscularly to healthy adults 50-64 years of age. Vaccine. 2011, Vol. 29, pp. 2272-2278. 3. Keitel WA, Tre an or JJ, El Sahly HM, et.al. Comparative immunogen i city of recombinant influenza hemagglutinin (rHA) and trivalent in activated vaccines (TIVs) among persons ≥65 years old. Vaccine. 2009, Vol. 28, pp. 379-385. 4. Iziks on R, Lef fell DJ, Bock SA, et. al. Randomized comparison of the safety of Flublok® versus licensed in activated influenza vaccine in healthy, medically stable adults ≥50 years of age. Vaccine. 2015, Vol. 33, pp. 6622-6628. 5. Tre an or JJ, Schiff GM, Hayden FG, et.al. Safety and immunogen i city of aba culo virus expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007, Vol. 297, pp. 1577-1582. Ki JC C MMJ R i i K l E ...d",
+      "metadata": {
+        "score": 0.9536417126655579,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.009158134460449219,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
             "spacing_fix"
           ]
         }
@@ -1879,7 +975,7 @@
         1772.2728271484375,
         527.2280883789062,
         3163.498046875,
-        1349.3050537109375
+        1354.822265625
       ],
       "text": "[FIGURE 13 - See figure_p4_det_3_007.png]",
       "image_path": "figures/figure_p4_det_3_007.png",
@@ -1909,7 +1005,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0006029605865478516,
+          "processing_time": 0.0006630420684814453,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -1917,18 +1013,18 @@
       }
     },
     {
-      "id": "det_3_006",
+      "id": "det_3_003",
       "page_index": 3,
       "role": "Text",
       "bbox": [
-        1790.289794921875,
-        1650.7969970703125,
-        3200.773193359375,
-        1710.2491455078125
+        196.1509552001953,
+        223.26222229003906,
+        1653.0721435546875,
+        257.44598388671875
       ],
-      "text": "nant influenza hemagglutinin (rHA) and trivalent in activated vaccines (TIVs) among rsons ≥65 years old Vaccine 2009 Vol 28 pp 379 385",
+      "text": "( g ) g p plogical data for the 2014-2015 influenza season indicated that Influenza A (H3 N2) viruses",
       "metadata": {
-        "score": 0.9536417126655579,
+        "score": 0.9836642146110535,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1936,10 +1032,9 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.000431060791015625,
+          "processing_time": 0.0004227161407470703,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
@@ -1949,12 +1044,12 @@
       "page_index": 3,
       "role": "List",
       "bbox": [
-        1752.5234375,
+        1734.1407470703125,
         2317.556396484375,
-        3211.330810546875,
-        3236.509765625
+        3212.0244140625,
+        3390.74658203125
       ],
-      "text": "p Influenza B§ 23 0.5 24 0.6 0.96 4 (-72, 46) All Culture confirmed Protocol- defined ILI§,¶ 58 1.3 101 2.3 0.57 43 (21, 59) Abbreviations: rtPCR=reverse transcriptase polymerase chain reaction; Comparator=U.S.licensed quad rival ent in activated influenza vaccine, Fluarix Quad rival ent, manufactured by Glaxo smith kline; n=number of influenza cases; N=number of subjects in treatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) × 100]. *Study 6 is registered as NCT02285998. †Efficacy Population included all randomized subjects who received study vaccine and provided any follow up documentation for influenza like illness beginning at least 14 days post vaccination. Excluded subjects with protocol deviations that could adversely affect efficacy. ‡Primary Analysis. All cases of rtPCR-confirmed influenza are included. Antigenic characterization and genetic sequencing to determine similarity of isolates to vaccine antigens were not performed. CDC surveillance data indicated that the majority of influenza A/H3 N2 wild type viruses were antigenic ally distinct whereas influenza A/H1 N1 and type B viruses were antigenic ally similar to vaccine antigens during the 2014-2015 season. Study 6 met the pre specified success criterion for the primary endpoint (lower limit of the 2 sided 95% CI of vaccine efficacy for Flublok Quad rival ent relative to Comparator should be not less than 20%)",
+      "text": "All rtPCR-positive Influenza A§ 73 1.7 114 2.7 0.64 36 (14, 53) All rtPCR-positive Influenza B§ 23 0.5 24 0.6 0.96 4 (-72, 46) All Culture confirmed Protocol- defined ILI§,¶ 58 1.3 101 2.3 0.57 43 (21, 59) Abbreviations: rtPCR=reverse transcriptase polymerase chain reaction; Comparator=U.S.licensed quad rival ent in activated influenza vaccine, Fluarix Quad rival ent, manufactured by Glaxo smith kline; n=number of influenza cases; N=number of subjects in treatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) × 100]. *Study 6 is registered as NCT02285998. †Efficacy Population included all randomized subjects who received study vaccine and provided any follow up documentation for influenza like illness beginning at least 14 days post vaccination. Excluded subjects with protocol deviations that could adversely affect efficacy. ‡Primary Analysis. All cases of rtPCR-confirmed influenza are included. Antigenic characterization and genetic sequencing to determine similarity of isolates to vaccine antigens were not performed. CDC surveillance data indicated that the majority of influenza A/H3 N2 wild type viruses were antigenic ally distinct whereas influenza A/H1 N1 and type B viruses were antigenic ally similar to vaccine antigens during the 2014-2015 season. Study 6 met the pre specified success criterion for the primary endpoint (lower limit of the 2 sided 95% CI of vaccine efficacy for Flublok Quad rival ent relative to Comparator should be not less than 20%)",
       "metadata": {
         "score": 0.8916413187980652,
         "detection_dpi": 400,
@@ -1964,7 +1059,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.008833169937133789,
+          "processing_time": 0.011089086532592773,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1993,7 +1088,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00019478797912597656,
+          "processing_time": 0.0002548694610595703,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -2010,7 +1105,7 @@
         3213.40673828125,
         4089.636962890625
       ],
-      "text": "[TABLE 22 - See table_p4_mrg_det_3_015.png]",
+      "text": "[TABLE 18 - See table_p4_mrg_det_3_015.png]",
       "image_path": "figures/table_p4_mrg_det_3_015.png",
       "metadata": {
         "score": 0.8905076384544373,
@@ -2025,8 +1120,8 @@
       "bbox": [
         189.56103515625,
         2282.572021484375,
-        1661.1737060546875,
-        2825.91015625
+        1674.0181884765625,
+        2851.239013671875
       ],
       "text": "Any ILI, all matched strains¶,# 2 0.1 6 0.3 67.2 (-83.2, 96.8) Positive culture with any strain, regardless of match to the vaccine CDC-ILI, all strains‡,Þ 44 1.9 78 3.4 44.6 (18.8, 62.6) Sub-Type A 26 1.1 56 2.4 54.4 (26.1, 72.5) Type B 18 0.8 23 1.0 23.1 (-49.0, 60.9) Any ILI, all strains¶ 64 2.7 114 4.9 44.8 (24.4, 60.0)",
       "metadata": {
@@ -2038,7 +1133,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0008268356323242188,
+          "processing_time": 0.000946044921875,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -2053,9 +1148,9 @@
         261.4266662597656,
         973.5902709960938,
         1577.822265625,
-        1041.6240234375
+        1075.0316162109375
       ],
-      "text": "ong randomized subjects, 58% were female, 80% white, 18% black/African-Ameri other races, and 5% of Hispanic/Latino ethnicity. A total of 5186 (60%) subjects w",
+      "text": "mpa rat or, Fluarix Quad rival ent, manufactured by Glaxo Smith kline) (n 4489). ong randomized subjects, 58% were female, 80% white, 18% black/African-Ameri other races, and 5% of Hispanic/Latino ethnicity. A total of 5186 (60%) subjects w",
       "metadata": {
         "score": 0.9090842604637146,
         "detection_dpi": 400,
@@ -2065,9 +1160,11 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0010790824890136719,
+          "processing_time": 0.001756906509399414,
           "processors_applied": [
-            "post_extraction_clean"
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
           ]
         }
       }
@@ -2092,7 +1189,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004680156707763672,
+          "processing_time": 0.000492095947265625,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2120,7 +1217,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0001277923583984375,
+          "processing_time": 0.00015211105346679688,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -2147,7 +1244,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00028228759765625,
+          "processing_time": 0.00033092498779296875,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -2174,35 +1271,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00034499168395996094,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "det_3_017",
-      "page_index": 3,
-      "role": "Text",
-      "bbox": [
-        1752.038818359375,
-        1354.822265625,
-        3184.161865234375,
-        1562.5914306640625
-      ],
-      "text": "Flublok® versus licensed in activated influenza vaccine in healthy, medically stable adults ≥50 years of age. Vaccine. 2015, Vol. 33, pp. 6622-6628. 5. Tre an or JJ, Schiff GM, Hayden FG, et.al. Safety and immunogen i city of abaculo virus expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582.",
-      "metadata": {
-        "score": 0.8807097673416138,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0011088848114013672,
+          "processing_time": 0.00038814544677734375,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2216,7 +1285,7 @@
       "role": "Figure",
       "bbox": [
         204.9026336669922,
-        1075.0316162109375,
+        1041.6240234375,
         1660.826416015625,
         2303.145263671875
       ],
@@ -2226,35 +1295,6 @@
         "score": 0.7831475138664246,
         "detection_dpi": 400,
         "detector": "PubLayNet"
-      }
-    },
-    {
-      "id": "mrg_det_3_021",
-      "page_index": 3,
-      "role": "Text",
-      "bbox": [
-        1750.038330078125,
-        1727.0150146484375,
-        3210.7548828125,
-        2199.804931640625
-      ],
-      "text": "g y g ¶Culture of rtPCR-positive samples was performed in MDCK cells. 15 REFERENCES 1. Tre an or JJ, El Sahly HM, King J, et. al. Protective efficacy of a trivalent recombinant hemagglutinin protein vaccine (Flublok against influenza in healthy adults: a randomized, placebo controlled trial. Vaccine. 2011, Vol. 29, pp. 7733-7739. 2. Baxter R, Pat ria rca PA, Ensor K, et al. Evaluation of the safety, reactogenicity and immunogen i city of Flublok trivalent recombinant baculo virus expressed hemagglutinin influenza vaccine administered intramuscularly to healthy adults 50-64 years of age. Vaccine. 2011, Vol. 29, pp. 2272-2278. 3 Keitel WA Tre an or JJ El Sahly HM et al Comparative immunogen i city of recom-",
-      "metadata": {
-        "score": 0.7617253065109253,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.004869937896728516,
-          "processors_applied": [
-            "post_extraction_clean",
-            "symspell",
-            "spacing_fix"
-          ]
-        }
       }
     },
     {
@@ -2277,53 +1317,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00013685226440429688
-        }
-      }
-    },
-    {
-      "id": "det_3_024",
-      "page_index": 3,
-      "role": "Text",
-      "bbox": [
-        1757.75,
-        3390.74658203125,
-        3210.729736328125,
-        3411.958740234375
-      ],
-      "text": "",
-      "metadata": {
-        "score": 0.7110704183578491,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_status": "empty"
-      }
-    },
-    {
-      "id": "det_3_028",
-      "page_index": 3,
-      "role": "Text",
-      "bbox": [
-        1863.900634765625,
-        2226.85107421875,
-        2849.447265625,
-        2254.67919921875
-      ],
-      "text": "hoc analyses. All cases of influenza A were A/H3 N2. Cases of gui shed by lineage",
-      "metadata": {
-        "score": 0.5182716846466064,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0002448558807373047,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
+          "processing_time": 0.00026226043701171875
         }
       }
     },
@@ -2333,31 +1327,13 @@
       "role": "Text",
       "bbox": [
         185.7911834716797,
-        910.260498046875,
-        1595.122802734375,
-        973.5117797851562
+        906.517578125,
+        1634.208251953125,
+        1270.451904296875
       ],
       "text": "",
       "metadata": {
         "score": 0.9658605456352234,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_status": "empty"
-      }
-    },
-    {
-      "id": "det_4_001",
-      "page_index": 4,
-      "role": "Text",
-      "bbox": [
-        194.48146057128906,
-        1111.9986572265625,
-        1304.249755859375,
-        1171.146728515625
-      ],
-      "text": "",
-      "metadata": {
-        "score": 0.950566291809082,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
@@ -2369,9 +1345,9 @@
       "role": "Text",
       "bbox": [
         200.33331298828125,
-        416.56866455078125,
+        399.641357421875,
         1668.1202392578125,
-        711.170654296875
+        905.8969116210938
       ],
       "text": "",
       "metadata": {
@@ -2382,72 +1358,18 @@
       }
     },
     {
-      "id": "det_4_002",
-      "page_index": 4,
-      "role": "Text",
-      "bbox": [
-        217.65321350097656,
-        831.711669921875,
-        1652.1551513671875,
-        869.8682250976562
-      ],
-      "text": "",
-      "metadata": {
-        "score": 0.8898614048957825,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_status": "empty"
-      }
-    },
-    {
       "id": "det_4_004",
       "page_index": 4,
       "role": "Text",
       "bbox": [
-        226.5110626220703,
+        217.51580810546875,
         235.56088256835938,
-        1652.6871337890625,
+        1666.896484375,
         369.3254699707031
       ],
       "text": "",
       "metadata": {
         "score": 0.8236666321754456,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_status": "empty"
-      }
-    },
-    {
-      "id": "det_4_005",
-      "page_index": 4,
-      "role": "Text",
-      "bbox": [
-        196.45176696777344,
-        1208.513916015625,
-        590.59228515625,
-        1271.033935546875
-      ],
-      "text": "",
-      "metadata": {
-        "score": 0.7801063060760498,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_status": "empty"
-      }
-    },
-    {
-      "id": "det_4_006",
-      "page_index": 4,
-      "role": "Text",
-      "bbox": [
-        198.8036346435547,
-        1010.7003173828125,
-        761.5416259765625,
-        1071.624755859375
-      ],
-      "text": "",
-      "metadata": {
-        "score": 0.75217604637146,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
@@ -2459,13 +1381,7 @@
       "det_0_023",
       "mrg_det_0_017",
       "det_0_019",
-      "det_0_010",
-      "det_0_032",
-      "det_0_015",
-      "det_0_020",
       "det_0_000",
-      "det_0_031",
-      "det_0_042",
       "det_0_009",
       "det_0_001",
       "det_0_005",
@@ -2475,54 +1391,28 @@
       "det_1_004",
       "det_1_000",
       "det_1_011",
-      "mrg_det_1_002",
+      "det_1_002",
       "det_1_006",
       "det_1_014",
       "det_1_013",
       "det_1_003",
       "det_1_019",
-      "mrg_det_1_008",
+      "det_1_012",
+      "det_1_008",
       "det_1_001",
       "det_1_017",
       "det_1_007",
-      "det_1_035",
       "det_1_026"
     ],
     [
       "det_2_005",
-      "det_2_018",
-      "det_2_041",
-      "det_2_027",
-      "det_2_015",
-      "det_2_030",
-      "det_2_026",
-      "det_2_010",
       "det_2_006",
       "det_2_017",
       "mrg_det_2_019",
-      "mrg_det_2_004",
-      "det_2_016",
-      "det_2_039",
-      "det_2_046",
-      "det_2_029",
-      "det_2_011",
+      "det_2_004",
       "det_2_022",
       "det_2_034",
-      "det_2_020",
-      "det_2_013",
-      "det_2_012",
-      "det_2_002",
-      "det_2_045",
       "det_2_000",
-      "det_2_014",
-      "det_2_001",
-      "det_2_021",
-      "det_2_024",
-      "det_2_007",
-      "det_2_008",
-      "det_2_032",
-      "det_2_028",
-      "det_2_009",
       "det_2_003"
     ],
     [
@@ -2539,13 +1429,9 @@
       "det_3_011",
       "det_3_005",
       "det_3_007",
-      "det_3_017",
       "det_3_006",
-      "mrg_det_3_021",
-      "det_3_028",
       "det_3_010",
       "det_3_014",
-      "det_3_024",
       "det_3_008",
       "mrg_det_3_015",
       "det_3_013"
@@ -2553,11 +1439,7 @@
     [
       "det_4_004",
       "det_4_003",
-      "det_4_002",
-      "det_4_000",
-      "det_4_006",
-      "det_4_001",
-      "det_4_005"
+      "det_4_000"
     ]
   ],
   "metadata": {
@@ -2565,15 +1447,15 @@
     "detection_dpi": 400,
     "total_pages": 5,
     "extraction": {
-      "text_blocks": 79,
+      "text_blocks": 42,
       "figure_blocks": 7,
       "figures_dir": "data/cache/FlublokPI/extracted/figures"
     }
   },
   "pipeline_metadata": {
     "raw_detection_count": 187,
-    "after_consolidation_count": 94,
-    "final_block_count": 94,
+    "after_consolidation_count": 54,
+    "final_block_count": 54,
     "box_tracking_enabled": true,
     "id_format": "det_<page>_<index> for detections, mrg_<source_id> for merges"
   }

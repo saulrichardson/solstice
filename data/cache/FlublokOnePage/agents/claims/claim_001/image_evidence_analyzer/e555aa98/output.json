@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_e555aa98.png",
+  "image_path": "FlublokOnePage/extracted/figures/figure_p1_e555aa98.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "e555aa98",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A partial text excerpt from a clinical document describing a recombinant influenza vaccine produced using BEVS technology, stating that the approved vaccine \u201ccontains 45 micrograms\u201d of hemagglutinin per strain, with reference to the CDC. Evidence: The image states the vaccine contains 45 micrograms of HA antigen per strain. The excerpt confirms a HA content of 45 micrograms but provides no direct comparison to the 15 microgram standard-dose vaccines or data on immunogenicity, and thus does not support the claim. Note: Text is partially cut off and context is limited, but no direct comparison or immunogenicity data are visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A partial text excerpt from a clinical document describing a recombinant influenza vaccine produced using BEVS technology, stating that the approved vaccine \u201ccontains 45 micrograms\u201d of hemagglutinin per strain, with reference to the CDC.",
+    "evidence_found": "The image states the vaccine contains 45 micrograms of HA antigen per strain.",
+    "reasoning": "The excerpt confirms a HA content of 45 micrograms but provides no direct comparison to the 15 microgram standard-dose vaccines or data on immunogenicity, and thus does not support the claim.",
+    "confidence_notes": "Text is partially cut off and context is limited, but no direct comparison or immunogenicity data are visible."
+  }
+}

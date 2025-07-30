@@ -22,9 +22,24 @@ class EvidencePresenter(BaseAgent):
     
     @property
     def required_inputs(self) -> List[str]:
+        """Files that **must** be present before the agent can run.
+
+        A consolidated verifier output may exist when the orchestrator has
+        already merged main + additional verification results *and* appended
+        image evidence.  Prefer this when available, but accept the original
+        files as a fallback so the agent can still operate in stand-alone
+        scenarios.
+        """
+        base = f"agents/claims/{self.claim_id}"
+        # The presenter now exclusively depends on the orchestrator-produced
+        # consolidated verifier output.  This makes the execution flow
+        # unambiguous and prevents accidental double-merging when legacy
+        # artefacts are still present on disk.
         return [
-            f"agents/claims/{self.claim_id}/evidence_verifier_v2/output.json",
-            f"agents/claims/{self.claim_id}/completeness_checker/output.json"
+            f"{base}/evidence_verifier_v2_consolidated/output.json",
+            # Completeness checker remains optional; when it is missing we
+            # simply treat the coverage as unknown.
+            f"{base}/completeness_checker/output.json",
         ]
     
     def __init__(
@@ -54,37 +69,32 @@ class EvidencePresenter(BaseAgent):
         logger.info(f"Document: {self.pdf_name}")
         logger.info(f"{'='*60}")
         
-        # Load verified evidence from main verifier
-        verifier_path = self.pdf_dir / "agents" / "claims" / self.claim_id / "evidence_verifier_v2" / "output.json"
-        logger.info(f"\nLoading main verified evidence from: {verifier_path}")
-        verifier_data = self.load_json(verifier_path)
+        # ------------------------------------------------------------------
+        # Prefer consolidated verifier output (text + images, already merged)
+        # ------------------------------------------------------------------
+        consolidated_path = (
+            self.pdf_dir
+            / "agents"
+            / "claims"
+            / self.claim_id
+            / "evidence_verifier_v2_consolidated"
+            / "output.json"
+        )
+
+        if not consolidated_path.exists():
+            raise AgentError(
+                "Consolidated verifier output not found. Run the orchestrator "
+                "to generate 'evidence_verifier_v2_consolidated/output.json' "
+                "before executing the presenter."
+            )
+
+        logger.info(
+            f"\nLoading CONSOLIDATED verifier data from: {consolidated_path}"
+        )
+        verifier_data = self.load_json(consolidated_path)
         
-        # Check for additional verified evidence
-        additional_verifier_path = self.pdf_dir / "agents" / "claims" / self.claim_id / "evidence_verifier_v2_additional" / "output.json"
-        if additional_verifier_path.exists():
-            logger.info(f"Found additional verified evidence at: {additional_verifier_path}")
-            additional_data = self.load_json(additional_verifier_path)
-            # Merge additional verified evidence
-            verified_evidence = verifier_data.get("verified_evidence", [])
-            additional_verified = additional_data.get("verified_evidence", [])
-            logger.info(f"  Main evidence count: {len(verified_evidence)}")
-            logger.info(f"  Additional evidence count: {len(additional_verified)}")
-            
-            # Deduplicate by quote text
-            seen_quotes = {e["quote"] for e in verified_evidence}
-            merged_count = 0
-            for evidence in additional_verified:
-                if evidence["quote"] not in seen_quotes:
-                    verified_evidence.append(evidence)
-                    seen_quotes.add(evidence["quote"])
-                    merged_count += 1
-            
-            logger.info(f"  Merged {merged_count} new unique evidence pieces")
-            logger.info(f"  Total after merge: {len(verified_evidence)}")
-            
-            # Update the data with merged evidence
-            verifier_data["verified_evidence"] = verified_evidence
-            verifier_data["verification_stats"]["total_verified"] = len(verified_evidence)
+        # Any additional-verifier results are *already* included in the
+        # consolidated output, therefore we no longer attempt to merge them.
         
         # Load completeness assessment
         completeness_path = self.pdf_dir / "agents" / "claims" / self.claim_id / "completeness_checker" / "output.json"
