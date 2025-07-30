@@ -515,7 +515,8 @@ def resolve_all_overlaps(boxes: List[Box],
                         confidence_weight: float = 0.7,
                         area_weight: float = 0.3,
                         min_box_area: float = 100,
-                        minor_overlap_threshold: float = 0.05) -> List[Box]:
+                        minor_overlap_threshold: float = 0.05,
+                        same_type_merge_threshold: float = 0.8) -> List[Box]:
     """Resolve all overlaps to guarantee no overlapping boxes in output.
     
     Args:
@@ -524,6 +525,7 @@ def resolve_all_overlaps(boxes: List[Box],
         area_weight: Weight for area in scoring  
         min_box_area: Minimum area for a box to be kept (filters out tiny fragments)
         minor_overlap_threshold: Overlaps below this ratio are considered minor and kept
+        same_type_merge_threshold: Minimum overlap ratio to merge same-type boxes
         
     Returns:
         List of boxes with no overlaps
@@ -685,5 +687,6 @@ def no_overlap_pipeline(boxes: List[Box],
         boxes,
         confidence_weight=confidence_weight,
         area_weight=area_weight,
-        minor_overlap_threshold=minor_overlap_threshold
+        minor_overlap_threshold=minor_overlap_threshold,
+        same_type_merge_threshold=same_type_merge_threshold
     )

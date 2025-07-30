@@ -3,47 +3,50 @@ requires = ["setuptools>=64.0", "setuptools-scm>=8.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-# Renamed project
-name = "fact-check"
+name = "solstice"
 version = "0.1.0"
-description = "Citation finder for scientific publications"
+description = "Clinical document analysis and fact-checking system"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<3.13"  # Detectron2 compatibility
 dependencies = [
     "fastapi>=0.109.0",
     "uvicorn[standard]>=0.27.0",
     "pydantic>=2.5.3",
     "pydantic-settings>=2.1.0",
-    "openai==1.97.1",  # Pin specific version for deterministic CI
-    "httpx>=0.26.0",
-    "python-dotenv>=1.0.1",
+    # API and async
+    "openai>=1.0.0,<2.0.0",
+    "httpx>=0.26.0,<1.0.0",
+    "python-dotenv>=1.0.0",
     "python-json-logger>=2.0.7",
     "tenacity>=8.2.3",
-    # Layout detection stack (core only – no OCR)
+    # Layout detection (no OCR)
     "layoutparser[layoutmodels]>=0.3.4",
     "pdf2image>=1.17.0",
     # PDF processing
-    "PyMuPDF>=1.23.0",
+    "PyMuPDF>=1.23.0,<2.0.0",
     # Data processing
-    "pandas>=2.0.0",
-    "tabulate>=0.9.0",  # For DataFrame.to_markdown()
-    "pillow~=9.5.0",
+    "pandas>=2.0.0,<3.0.0",
+    "tabulate>=0.9.0",
+    "pillow>=9.5.0,<10.0.0",
     # Text processing
-    "wordninja>=2.0.0",  # For intelligent text spacing fixes
-    "symspellpy>=6.7.0",  # For spell-checking and compound word splitting
+    "wordninja>=2.0.0",
+    "symspellpy>=6.7.0"
 ]
+
 
 [project.optional-dependencies]
 dev = [
     "black>=23.7.0",
-    "ruff>=0.1.0",
+    "ruff>=0.1.0", 
     "mypy>=1.5.0",
-    "pre-commit>=3.3.3",
+    "pre-commit>=3.3.3"
 ]
+# Detectron2 dependencies are in requirements-detectron2.txt
+# Install with: make install-detectron2
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["fact_check*", "gateway*", "injestion*"]
+include = ["fact_check*", "gateway*", "injestion*", "cli*", "core*", "interfaces*", "util*"]
 
 [tool.black]
 line-length = 88

@@ -4,7 +4,6 @@
 Processes all PDFs in data/clinical_files/ with optimized settings for clinical documents.
 """
 
-import argparse
 import sys
 from pathlib import Path
 from typing import Optional
@@ -80,34 +79,9 @@ def process_all_pdfs(output_dir: Optional[Path] = None) -> None:
     print(f"  - Results saved in: {output_dir}/")
 
 
-def main():
+def main(output_dir=None):
     """Main CLI entrypoint."""
-    parser = argparse.ArgumentParser(
-        description="Process clinical PDFs with optimized layout detection and text extraction",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Default behavior:
-  - Processes all PDFs in: data/clinical_files/
-  - Saves results to: data/cache/
-  - Uses optimized settings for clinical documents (400 DPI, merge overlapping, etc.)
-  
-Example:
-  python -m cli.ingest
-  python -m cli.ingest --output-dir /custom/output/path
-        """
-    )
-    
-    parser.add_argument(
-        "--output-dir",
-        type=Path,
-        help=f"Custom output directory (default: {DEFAULT_OUTPUT_DIR})"
-    )
-    
-    args = parser.parse_args()
-    
     # Run the batch processing
-    process_all_pdfs(output_dir=args.output_dir)
+    process_all_pdfs(output_dir=output_dir)
 
 
-if __name__ == "__main__":
-    main()

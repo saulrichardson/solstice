@@ -142,7 +142,6 @@ class ClaimOrchestrator:
                     verified = result.get("verified_evidence", [])
                     all_verified_evidence.extend(verified)
                     logger.info(f"      Verified {len(verified)} evidence pieces")
-                    initial_evidence_verified = True
                 
                 # Check if completeness checker found additional evidence
                 if agent_name == "completeness_checker":

@@ -110,9 +110,15 @@ make install-detectron2
 
 **What this installs:**
 - PyTorch and torchvision for deep learning
-- Detectron2 for state-of-the-art object detection
+- Detectron2 for state-of-the-art object detection (built from source)
 - LayoutParser for document structure analysis
-- Patched dependencies for compatibility
+- **Patched iopath** to fix model download issues (installed after detectron2)
+
+**Note about the installation:**
+- Detectron2 is built from source since pre-built wheels aren't available for Python 3.11+
+- The installation uses `--no-build-isolation` to ensure torch is available during build
+- A patched version of iopath is installed to fix the `?dl=1` query parameter issue
+- The iopath cache is cleared before installation to avoid conflicts
 
 **Notes:**
 - This takes 5-10 minutes (builds from source)

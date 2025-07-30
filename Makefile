@@ -87,7 +87,7 @@ docker-status:
 	@echo "Docker daemon: $$(docker info >/dev/null 2>&1 && echo 'accessible ✓' || echo 'not accessible ✗')"
 
 install:
-	@echo "Installing fact-check package..."
+	@echo "Installing solstice package..."
 	@echo "Checking Python version..."
 	@PYTHON_VERSION=$$(python --version 2>&1 | awk '{print $$2}'); \
 	MAJOR=$$(echo $$PYTHON_VERSION | cut -d. -f1); \
@@ -115,9 +115,13 @@ install:
 install-detectron2: install
 	@echo "Setting up Detectron2 for layout parser..."
 	@PYTHON_VERSION=$$(python --version 2>&1 | awk '{print $$2}'); \
-	python -c "import sys; v=sys.version_info; exit(0 if 3.11<=v.major+v.minor/10<3.13 else 1)" || \
-		{ echo "Error: Python 3.11 or 3.12 required (found $$PYTHON_VERSION)"; \
-		  echo "Please use pyenv or conda to install Python 3.11"; exit 1; }
+	MAJOR=$$(echo $$PYTHON_VERSION | cut -d. -f1); \
+	MINOR=$$(echo $$PYTHON_VERSION | cut -d. -f2); \
+	if [ "$$MAJOR" -ne 3 ] || [ "$$MINOR" -lt 11 ] || [ "$$MINOR" -gt 12 ]; then \
+		echo "❌ Error: Python 3.11 or 3.12 required (found $$PYTHON_VERSION)"; \
+		echo "Please use pyenv or conda to install Python 3.11"; \
+		exit 1; \
+	fi
 	@command -v pdfinfo >/dev/null 2>&1 || \
 		{ echo "Warning: Poppler not installed. PDF processing will fail."; \
 		  echo "Install with:"; \
@@ -126,14 +130,15 @@ install-detectron2: install
 	@echo "Clearing iopath cache..."
 	@rm -rf ~/.torch/iopath_cache/
 	@echo "Installing Detectron2 and dependencies..."
-	@pip install -c requirements-constraints.txt -r requirements-detectron2.txt
+	@echo "Note: This will build detectron2 from source and install patched iopath"
+	@pip install -c requirements-constraints.txt -r requirements-detectron2.txt --no-build-isolation
 	@echo "Verifying installation..."
 	@python -c "import layoutparser as lp; assert lp.is_detectron2_available(), 'Detectron2 not available'" || \
 		{ echo "Error: Detectron2 installation failed"; exit 1; }
 
 verify:
 	@echo "Verifying installation..."
-	@python -c "import fact_check" 2>/dev/null && echo "✓ fact_check package installed" || echo "✗ fact_check package not found"
+	@python -c "import fact_check" 2>/dev/null && echo "✓ fact_check package installed" || echo "✗ fact_check package not found (run: make install)"
 	@python -c "import gateway" 2>/dev/null && echo "✓ gateway package installed" || echo "✗ gateway package not found"
 	@python -c "import openai" 2>/dev/null && echo "✓ OpenAI library installed" || echo "✗ OpenAI library not found"
 	@python -c "import layoutparser" 2>/dev/null && echo "✓ LayoutParser installed" || echo "✗ LayoutParser not found (run: make install-detectron2)"
