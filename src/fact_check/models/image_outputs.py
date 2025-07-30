@@ -43,8 +43,24 @@ class ImageAnalysisOutput(BaseModel):
     
     @validator('reasoning')
     def validate_reasoning(cls, v, values):
-        """Ensure reasoning explains the decision."""
-        if values.get('supports_claim') and 'support' not in v.lower():
-            # Just a warning, not an error
-            pass
+        """Ensure the reasoning text is consistent with the decision.
+
+        If the image is marked as supporting the claim we expect the word
+        "support" (or a close variant) to appear in the explanation to make it
+        explicit why the claim is supported.  Conversely, when the image does
+        not support the claim we expect a negative phrasing such as "not
+        support", "doesn't support", or "refute".  This lightweight heuristic
+        catches obvious mismatches between the boolean flag and the free-text
+        justification while still allowing flexible language.
+        """
+        supports_claim = values.get('supports_claim')
+        reasoning_lc = v.lower()
+
+        if supports_claim:
+            if "support" not in reasoning_lc:
+                raise ValueError("Reasoning must explicitly mention how the image supports the claim")
+        else:
+            negative_keywords = ["not support", "doesn't support", "does not support", "refute", "refutes"]
+            if not any(kw in reasoning_lc for kw in negative_keywords):
+                raise ValueError("Reasoning must explain why the image does not support the claim")
         return v

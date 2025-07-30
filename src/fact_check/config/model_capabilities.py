@@ -91,11 +91,18 @@ def build_vision_request(
     # Base request
     request = {
         "model": model,
+        # The Responses API follows the same content schema as the OpenAI
+        # Chat Completions API for multimodal inputs where each content item
+        # is either a "text" or an "image_url" payload.  The previous
+        # implementation used the non-standard keys "input_text" and
+        # "input_image" which causes the gateway to reject the request.  We
+        # now use the correct field names so that requests succeed across all
+        # models.
         "input": [{
             "role": "user",
             "content": [
-                {"type": "input_text", "text": text_prompt},
-                {"type": "input_image", "image_url": image_data_uri}
+                {"type": "text", "text": text_prompt},
+                {"type": "image_url", "image_url": {"url": image_data_uri}}
             ]
         }],
         "max_output_tokens": max_output_tokens,

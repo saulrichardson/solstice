@@ -326,6 +326,23 @@ def determine_overlap_strategy(
         same_type_merge_threshold: Minimum overlap ratio to merge same-type boxes (default: 0.8)
     """
     
+    # Special handling for Figure overlaps
+    if box1.label == "Figure" or box2.label == "Figure":
+        figure_box = box1 if box1.label == "Figure" else box2
+        other_box = box2 if box1.label == "Figure" else box1
+        
+        # If a small text/title element is fully contained within a figure, keep both
+        # This preserves figure labels and captions
+        if other_box.label in ["Text", "Title"]:
+            # Check if the text box is mostly inside the figure
+            if (figure_box == box1 and overlap_info["overlap_ratio_box2"] > 0.8) or \
+               (figure_box == box2 and overlap_info["overlap_ratio_box1"] > 0.8):
+                # Small text element inside figure - keep both
+                return OverlapStrategy.KEEP_BOTH
+            # If text is only partially overlapping with figure, try to shrink
+            elif overlap_info["overlap_ratio_box1"] < 0.5 and overlap_info["overlap_ratio_box2"] < 0.5:
+                return OverlapStrategy.SHRINK_TO_NON_OVERLAP
+    
     # Check if this is a minor overlap that we should ignore
     if (overlap_info["overlap_ratio_box1"] < minor_overlap_threshold and 
         overlap_info["overlap_ratio_box2"] < minor_overlap_threshold):
@@ -653,7 +670,26 @@ def resolve_all_overlaps(boxes: List[Box],
         for j, box2 in enumerate(working_boxes[i+1:], i+1):
             overlap_info = get_overlap_info(box1, box2)
             if overlap_info["has_overlap"]:
-                logger.warning(f"Overlap still exists between {box1.label} and {box2.label}")
+                # Skip warning for intentionally preserved overlaps
+                skip_warning = False
+                
+                # Figure containing text/title elements
+                if box1.label == "Figure" or box2.label == "Figure":
+                    figure_box = box1 if box1.label == "Figure" else box2
+                    other_box = box2 if box1.label == "Figure" else box1
+                    if other_box.label in ["Text", "Title"]:
+                        # Check if text is mostly inside figure
+                        if (figure_box == box1 and overlap_info["overlap_ratio_box2"] > 0.8) or \
+                           (figure_box == box2 and overlap_info["overlap_ratio_box1"] > 0.8):
+                            skip_warning = True
+                
+                # Minor overlaps
+                if (overlap_info["overlap_ratio_box1"] < 0.05 and 
+                    overlap_info["overlap_ratio_box2"] < 0.05):
+                    skip_warning = True
+                
+                if not skip_warning:
+                    logger.warning(f"Overlap still exists between {box1.label} and {box2.label}")
     
     return working_boxes
 

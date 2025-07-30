@@ -56,51 +56,75 @@ This guide will walk you through setting up Solstice step by step. The setup has
   - Ubuntu/Debian: `sudo apt-get install poppler-utils`
   - Windows: Download from [poppler releases](https://github.com/oschwartz10612/poppler-windows/releases)
 
-### Step 2: Installation
+### Step 2: Installation - Complete Example
+
+Here's the exact workflow to get everything installed from scratch:
 
 #### 2.1 Clone the repository
-
-First, get the code:
 
 ```bash
 git clone <repository-url>
 cd solstice
 ```
 
-The `.python-version` file will automatically activate Python 3.11.9 if you have pyenv installed.
+#### 2.2 Set up Python 3.11 (CRITICAL - detectron2 requires 3.11 or 3.12)
 
-#### 2.2 Create a virtual environment
-
-Always use a virtual environment to avoid conflicts:
-
+**Option A: If you have pyenv installed:**
 ```bash
-# Create virtual environment
-python3.11 -m venv .venv
-
-# Activate it
-source .venv/bin/activate  # On macOS/Linux
-# OR
-.venv\Scripts\activate     # On Windows
+# The project includes a .python-version file that specifies 3.11.9
+# Pyenv will automatically use it when you enter the directory
+cd solstice
+python --version  # Should show Python 3.11.x
 ```
 
-You should see `(.venv)` in your terminal prompt when activated.
+**Option B: If you DON'T have pyenv:**
+```bash
+# Check your Python version
+python3 --version
 
-#### 2.3 Install the base package
+# If it's not 3.11.x or 3.12.x, you need to install Python 3.11:
+# macOS: brew install python@3.11
+# Ubuntu: sudo apt install python3.11 python3.11-venv
+# Then use python3.11 explicitly in the next steps
+```
 
-Install core dependencies:
+#### 2.3 Create and activate virtual environment
 
 ```bash
+# IMPORTANT: If your default python3 is NOT 3.11, use python3.11 explicitly:
+python3.11 -m venv .venv
+
+# Activate the virtual environment
+source .venv/bin/activate  # On macOS/Linux
+
+# Verify you're using the right Python version
+python --version  # Must show Python 3.11.x or 3.12.x
+```
+
+**Common issue:** If you see Python 3.13.x, you created the venv with the wrong Python version. Delete it and recreate:
+```bash
+deactivate
+rm -rf .venv
+python3.11 -m venv .venv
+source .venv/bin/activate
+```
+
+#### 2.4 Install the base package
+
+```bash
+# Upgrade pip first (important!)
+pip install --upgrade pip
+
+# Install the base package
 make install
 ```
 
-This command:
-- Checks you're using Python 3.11 or 3.12
-- Installs all required packages
-- Sets up the package in development mode
+This will:
+- Verify Python version is 3.11 or 3.12
+- Install all core dependencies
+- Set up the package in development mode
 
-If you see any errors, run `make verify` to diagnose.
-
-#### 2.4 (Optional) Install layout detection
+#### 2.5 (Optional but recommended) Install detectron2 for layout detection
 
 For processing complex PDFs with tables and figures:
 
@@ -127,26 +151,69 @@ make install-detectron2
 - Skip this if you only need basic text extraction
 
 
-### Step 3: Verify Installation
-
-Check that everything is working:
+#### 2.6 Verify everything works
 
 ```bash
 make verify
 ```
 
-You should see:
+Expected output:
 ```
 ✓ fact_check package installed
-✓ gateway package installed
+✓ gateway package installed  
 ✓ OpenAI library installed
-✓ LayoutParser installed (or skip message if not installed)
+✓ LayoutParser installed
 ✓ Poppler installed
+
+Python: Python 3.11.13
+Pip:    pip 25.1.1 from /path/to/.venv/lib/python3.11/site-packages/pip (python 3.11)
 ```
 
-### Step 4: Configuration
+### Complete Installation Example
 
-#### 4.1 Set up environment file
+Here's a real-world example of the entire installation process:
+
+```bash
+# 1. Clone and enter the project
+git clone <repository-url>
+cd solstice
+
+# 2. Check Python version
+python3 --version
+# If not 3.11.x, install it:
+# brew install python@3.11  # macOS
+
+# 3. Create virtual environment with Python 3.11
+python3.11 -m venv .venv
+source .venv/bin/activate
+
+# 4. Verify Python version in venv
+python --version  # Must show Python 3.11.x
+
+# 5. Upgrade pip
+pip install --upgrade pip
+
+# 6. Install base package
+make install
+
+# 7. Install detectron2 (for advanced PDF processing)
+make install-detectron2
+# Note: You'll see a warning about iopath version - this is expected and safe
+
+# 8. Verify installation
+make verify
+
+# 9. Set up environment
+cp .env.example .env
+# Edit .env and add your OpenAI API key
+
+# 10. Test the CLI
+python -m src.cli --help
+```
+
+### Step 3: Configuration
+
+#### 3.1 Set up environment file
 
 Copy the example environment file:
 
@@ -285,6 +352,40 @@ This ensures that downstream components (fact-checking, LLMs) receive properly f
 ## Troubleshooting
 
 ### Common Issues
+
+#### Python Version Issues (Most Common Problem)
+
+**Problem:** `make install` fails with "Python 3.11 or 3.12 required (found 3.13.x)"
+
+**Solution:** Your virtual environment was created with the wrong Python version.
+
+```bash
+# 1. Deactivate and remove the incorrect venv
+deactivate
+rm -rf .venv
+
+# 2. Install Python 3.11 if needed
+# macOS: brew install python@3.11
+# Ubuntu: sudo apt install python3.11 python3.11-venv
+
+# 3. Create venv with correct Python
+python3.11 -m venv .venv
+source .venv/bin/activate
+
+# 4. Verify
+python --version  # Must show 3.11.x or 3.12.x
+
+# 5. Continue installation
+pip install --upgrade pip
+make install
+```
+
+**Problem:** "command not found: python" when creating venv
+
+**Solution:** Use `python3` or `python3.11` explicitly:
+```bash
+python3.11 -m venv .venv
+```
 
 #### Version Conflict Warning
 

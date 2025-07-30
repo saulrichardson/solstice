@@ -114,27 +114,13 @@ install:
 
 install-detectron2: install
 	@echo "Setting up Detectron2 for layout parser..."
-	@PYTHON_VERSION=$$(python --version 2>&1 | awk '{print $$2}'); \
-	MAJOR=$$(echo $$PYTHON_VERSION | cut -d. -f1); \
-	MINOR=$$(echo $$PYTHON_VERSION | cut -d. -f2); \
-	if [ "$$MAJOR" -ne 3 ] || [ "$$MINOR" -lt 11 ] || [ "$$MINOR" -gt 12 ]; then \
-		echo "❌ Error: Python 3.11 or 3.12 required (found $$PYTHON_VERSION)"; \
-		echo "Please use pyenv or conda to install Python 3.11"; \
-		exit 1; \
-	fi
 	@command -v pdfinfo >/dev/null 2>&1 || \
 		{ echo "Warning: Poppler not installed. PDF processing will fail."; \
 		  echo "Install with:"; \
 		  echo "  macOS: brew install poppler"; \
 		  echo "  Linux: sudo apt-get install poppler-utils"; }
-	@echo "Clearing iopath cache..."
-	@rm -rf ~/.torch/iopath_cache/
-	@echo "Installing Detectron2 and dependencies..."
-	@echo "Note: This will build detectron2 from source and install patched iopath"
-	@pip install -c requirements-constraints.txt -r requirements-detectron2.txt --no-build-isolation
-	@echo "Verifying installation..."
-	@python -c "import layoutparser as lp; assert lp.is_detectron2_available(), 'Detectron2 not available'" || \
-		{ echo "Error: Detectron2 installation failed"; exit 1; }
+	@echo "Running robust installation script..."
+	@bash scripts/install-detectron2.sh
 
 verify:
 	@echo "Verifying installation..."

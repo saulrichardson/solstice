@@ -18,6 +18,22 @@
 ![Figure from page 1](figures/figure_p1_det_0_003.png)
 
 
+### ( ) FluLaval Quad rival ent 0 5 mL PFS ≥6 mos 15 µg/0 5 mL
+
+
+### (Seqirus)
+
+Afluria Quad rival ent 0.5-mL PFS§
+
+nfluenza (Flu)
+
+
+### 
+
+
+### 
+
+
 **[FIGURE]**
 
 ![Figure from page 1](figures/figure_p1_det_0_011.png)
@@ -29,6 +45,10 @@
 **[FIGURE]**
 
 ![Figure from page 2](figures/figure_p2_det_1_000.png)
+
+Flu zone Quad rival ent is approved 0 25 L fill d i
+
+Guidelines for Immunization a
 
 IM-administered influenza vaccines should be administered by needle and syringe only, with the exception of the MDV presentation of Afluria Quad rival ent, which may alternatively be given by the PharmaJet Strat is jet injector for persons age ¶
 
@@ -51,6 +71,6 @@ LAIV4 (egg based vaccine ) FluMist Quad rival ent (AstraZeneca) 0.2-mL pre fille
 
 ## Extraction Metadata
 
-- Text blocks: 8
+- Text blocks: 14
 
 - Figures/Tables: 3

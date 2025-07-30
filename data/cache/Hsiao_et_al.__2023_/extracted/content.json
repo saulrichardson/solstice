@@ -2,7 +2,7 @@
   "source_pdf": "data/clinical_files/Hsiao et al. (2023).pdf",
   "blocks": [
     {
-      "id": "2b4e8627",
+      "id": "det_0_005",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -11,7 +11,7 @@
         2215.61767578125,
         3472.534912109375
       ],
-      "text": "BACKGROUND Quad rival ent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing. Data are needed on the relative effectiveness of recombinant vaccines as compared with standard dose vaccines against influenza related outcomes in adults under the age ABSTR ACT g Amber Hsiao, Ph. D., M. P. H., Arnold Yee, M. B. A., Bruce Fireman, M. A., John Hansen, M. P. H., Ned Lewis, M. P. H., and Nicola P. Klein, M. D., Ph. D.​",
+      "text": "BACKGROUND Quad rival ent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing. Data are needed on the relative effectiveness of recombinant vaccines as compared with standard dose vaccines against influenza related outcomes in adults under the age ABSTR ACT g Amber Hsiao, Ph. D., M. P. H., Arnold Yee, M. B. A., Bruce Fireman, M. A., John Hansen, M. P. H., Ned Lewis, M. P. H., and Nicola P. Klein, M. D., Ph. D.",
       "metadata": {
         "score": 0.9878501296043396,
         "detection_dpi": 400,
@@ -21,7 +21,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.002141237258911133,
+          "processing_time": 0.0019719600677490234,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -30,7 +30,7 @@
       }
     },
     {
-      "id": "23ab00d2",
+      "id": "det_0_007",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -39,9 +39,9 @@
         2231.323486328125,
         2555.021240234375
       ],
-      "text": "METHODS In this cluster randomized observational study, Kaiser Permanente Northern Cali- for nia facilities routinely administered either a high dose recombinant influenza vaccine (Flublok Quad rival ent or one of two standard dose influenza vaccines during the 2018-2019 and 2019-2020 influenza seasons to adults 50 to 64 years of age (primary age group) and 18 to 49 years of age. Each facility alternated weekly between the two vaccine formulations. The primary outcome was in flu enza (A or B) confirmed by polymerase chain reaction (PCR) testing. Secondary outcomes included influenza A, influenza B, and influenza related hospitalization outcomes. We used Cox regression analysis to estimate the hazard ratio of the recombinant vaccine as compared with the standard dose vaccines against each outcome We calculated the relative vaccine effectiveness as 1 minus the hazard",
+      "text": "METHODS In this cluster randomized observational study, Kaiser Permanente Northern California facilities routinely administered either a high dose recombinant influenza vaccine (Flublok Quad rival ent or one of two standard dose influenza vaccines during the 2018-2019 and 2019-2020 influenza seasons to adults 50 to 64 years of age (primary age group) and 18 to 49 years of age. Each facility alternated weekly between the two vaccine formulations. The primary outcome was influenza (A or B) confirmed by polymerase chain reaction (PCR) testing. Secondary outcomes included influenza A, influenza B, and influenza related hospitalization outcomes. We used Cox regression analysis to estimate the hazard ratio of the recombinant vaccine as compared with the standard dose vaccines against each outcome We calculated the relative vaccine effectiveness as 1 minus the hazard",
       "metadata": {
-        "score": 0.977593183517456,
+        "score": 0.9775933027267456,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -49,17 +49,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.006318092346191406,
+          "processing_time": 0.006381034851074219,
           "processors_applied": [
             "post_extraction_clean",
-            "symspell",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "dedac911",
+      "id": "det_0_006",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -78,7 +77,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0020301342010498047,
+          "processing_time": 0.0019299983978271484,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -88,7 +87,7 @@
       }
     },
     {
-      "id": "f7f48e88",
+      "id": "det_0_004",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -107,17 +106,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.001171112060546875,
+          "processing_time": 0.0010528564453125,
           "processors_applied": [
             "post_extraction_clean",
-            "symspell",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "b15d517c",
+      "id": "det_0_000",
       "page_index": 0,
       "role": "Title",
       "bbox": [
@@ -128,7 +126,7 @@
       ],
       "text": "Vaccin",
       "metadata": {
-        "score": 0.9976485371589661,
+        "score": 0.9976486563682556,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -136,12 +134,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00015401840209960938
+          "processing_time": 0.00012803077697753906
         }
       }
     },
     {
-      "id": "66fc2820",
+      "id": "det_0_001",
       "page_index": 0,
       "role": "Title",
       "bbox": [
@@ -160,15 +158,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00009202957153320312,
+          "processing_time": 0.00010085105895996094,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "598f75f2",
+      "id": "det_0_002",
       "page_index": 0,
       "role": "Title",
       "bbox": [
@@ -179,7 +177,7 @@
       ],
       "text": "group. Amon (2 00",
       "metadata": {
-        "score": 0.9957148432731628,
+        "score": 0.9957147240638733,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -187,15 +185,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00011110305786132812,
+          "processing_time": 0.00010704994201660156,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "306657d7",
+      "id": "det_0_003",
       "page_index": 0,
       "role": "Title",
       "bbox": [
@@ -206,7 +204,7 @@
       ],
       "text": "standard f 65",
       "metadata": {
-        "score": 0.9944648146629333,
+        "score": 0.9944646954536438,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -214,15 +212,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00014591217041015625,
+          "processing_time": 0.0001499652862548828,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "a15990c8",
+      "id": "det_0_008",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -241,16 +239,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00022983551025390625,
+          "processing_time": 0.00023603439331054688,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "a7765ea0",
+      "id": "det_0_009",
       "page_index": 0,
       "role": "Title",
       "bbox": [
@@ -261,7 +258,7 @@
       ],
       "text": "an were the standard dose vaccines. NCLUSIONS ehigh-dose recombinant vaccine conferred more protection against PCR-co med influenza than an egg based standard dose vaccine among adults be twee",
       "metadata": {
-        "score": 0.9433237314224243,
+        "score": 0.9433237910270691,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -269,7 +266,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0006198883056640625,
+          "processing_time": 0.0005939006805419922,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -278,7 +275,7 @@
       }
     },
     {
-      "id": "f25a6ff7",
+      "id": "det_0_010",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -296,7 +293,7 @@
       }
     },
     {
-      "id": "909dad8c",
+      "id": "det_0_011",
       "page_index": 0,
       "role": "List",
       "bbox": [
@@ -314,7 +311,7 @@
       }
     },
     {
-      "id": "853a5cbd",
+      "id": "det_0_012",
       "page_index": 0,
       "role": "Title",
       "bbox": [
@@ -325,14 +322,14 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.6913378834724426,
+        "score": 0.6913378238677979,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
       }
     },
     {
-      "id": "d47e1aa9",
+      "id": "det_0_014",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -343,7 +340,7 @@
       ],
       "text": "The new engl and jour nal of medicine",
       "metadata": {
-        "score": 0.5894180536270142,
+        "score": 0.5894181132316589,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -351,12 +348,30 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00015687942504882812
+          "processing_time": 0.00015997886657714844
         }
       }
     },
     {
-      "id": "245a9c98",
+      "id": "det_0_017",
+      "page_index": 0,
+      "role": "Figure",
+      "bbox": [
+        361.22222900390625,
+        295.97943115234375,
+        2189.072998046875,
+        1058.85205078125
+      ],
+      "text": "[FIGURE 1 - See figure_p1_det_0_017.png]",
+      "image_path": "figures/figure_p1_det_0_017.png",
+      "metadata": {
+        "score": 0.30223700404167175,
+        "detection_dpi": 400,
+        "detector": "PubLayNet"
+      }
+    },
+    {
+      "id": "det_0_018",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -367,14 +382,14 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.24891352653503418,
+        "score": 0.2489134967327118,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
       }
     },
     {
-      "id": "808751b3",
+      "id": "det_1_001",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -383,7 +398,7 @@
         2800.701904296875,
         1714.929443359375
       ],
-      "text": "q yexcluded from the analyses because there were too few cases of influenza during the pandemic to be informative. During the study period, in flu enza vaccination coverage was similar to national coverage (Table S1). The study excluded unvac- cinated patients. The KPNC system includes seven geographic regions, each containing 8 to 12 medical fac ili ties. In each region, the facilities were assigned to either Block A or Block B to optimize the bal- ance between blocks with respect to facility size (Fi 1) W d l i d Bl k A",
+      "text": "q yexcluded from the analyses because there were too few cases of influenza during the pandemic to be informative. During the study period, influenza vaccination coverage was similar to national coverage (Table S1). The study excluded unvaccinated patients. The KPNC system includes seven geographic regions, each containing 8 to 12 medical facilities. In each region, the facilities were assigned to either Block A or Block B to optimize the balance between blocks with respect to facility size (Fi 1) W d l i d Bl k A",
       "metadata": {
         "score": 0.9898744821548462,
         "detection_dpi": 400,
@@ -393,16 +408,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0014090538024902344,
+          "processing_time": 0.0014557838439941406,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "585dc198",
+      "id": "det_1_004",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -411,9 +425,9 @@
         1681.5899658203125,
         2114.844482421875
       ],
-      "text": "pgg To estimate the relative effectiveness of the recombinant vaccine as compared with standard- dose vaccines against laboratory confirmed in- flue nza and influenza related outcomes, we com- pared the two formulations of vaccines among members of the Kaiser Permanente Northern California (KPNC) health care system who were between 18 and 64 years of age during the two influenza seasons of 2018-2019 and 2019-2020. Methods Study Population and Oversight KPNC is an integrated health care delivery sys- tem with 4.6 million members, nearly 65% of",
+      "text": "pgg To estimate the relative effectiveness of the recombinant vaccine as compared with standard dose vaccines against laboratory confirmed influenza and influenza related outcomes, we compared the two formulations of vaccines among members of the Kaiser Permanente Northern California (KPNC) health care system who were between 18 and 64 years of age during the two influenza seasons of 2018-2019 and 2019-2020. Methods Study Population and Oversight KPNC is an integrated health care delivery system with 4.6 million members, nearly 65% of",
       "metadata": {
-        "score": 0.976668655872345,
+        "score": 0.9766687750816345,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -421,7 +435,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.003609180450439453,
+          "processing_time": 0.0032057762145996094,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -431,7 +445,7 @@
       }
     },
     {
-      "id": "fb675fe5",
+      "id": "det_1_005",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -440,9 +454,9 @@
         2795.37548828125,
         2893.9794921875
       ],
-      "text": "vaccines used during the study seasons were purchased by KPNC. The first author wrote the first draft of the manuscript. The authors vouch for the accuracy and completeness of the data presented and for the fidelity of the study to the protocol (available at NEJM.org). Study Design This was a cluster randomized observational study that was designed to include all KPNC members between the ages of 18 and 64 years who had received a licensed recombinant or standard dose vaccine as part of routine clinical care during the three influenza seasons from 2018 to 2021 9 The 2019-2020 season was trun- cated in March 2020 because of the outbreak of",
+      "text": "vaccines used during the study seasons were purchased by KPNC. The first author wrote the first draft of the manuscript. The authors vouch for the accuracy and completeness of the data presented and for the fidelity of the study to the protocol (available at NEJM.org). Study Design This was a cluster randomized observational study that was designed to include all KPNC members between the ages of 18 and 64 years who had received a licensed recombinant or standard dose vaccine as part of routine clinical care during the three influenza seasons from 2018 to 2021 9 The 2019-2020 season was truncated in March 2020 because of the outbreak of",
       "metadata": {
-        "score": 0.9733456373214722,
+        "score": 0.9733457565307617,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -450,7 +464,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.003526926040649414,
+          "processing_time": 0.0033838748931884766,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -460,7 +474,7 @@
       }
     },
     {
-      "id": "f41f26c6",
+      "id": "det_1_003",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -469,9 +483,9 @@
         1658.952392578125,
         3707.736572265625
       ],
-      "text": "g pmillion).1 Influenza vaccination is the primary method for preventing influenza related illness- es,2 although the vaccine effectiveness ranges from 20% in years in which the vaccine is anti- genic ally mismatched to the circulating viral strain to 40 to 60% in years in which the vaccine is antigenic ally well matched 2 3 This large varia- tion in effectiveness between years suggests that more effective vaccines are needed. In traditional quad rival ent standard dose in- activated influenza vaccines (SD-IIV4), chicken",
+      "text": "g pmillion).1 Influenza vaccination is the primary method for preventing influenza related illnesses 2 although the vaccine effectiveness ranges from 20% in years in which the vaccine is antigenic ally mismatched to the circulating viral strain to 40 to 60% in years in which the vaccine is antigenic ally well matched 2 3 This large variation in effectiveness between years suggests that more effective vaccines are needed. In traditional quad rival ent standard dose in activated influenza vaccines (SD-IIV4), chicken",
       "metadata": {
-        "score": 0.9802082180976868,
+        "score": 0.9802080988883972,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -479,7 +493,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.003125905990600586,
+          "processing_time": 0.0029959678649902344,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -489,7 +503,7 @@
       }
     },
     {
-      "id": "b73de080",
+      "id": "det_1_000",
       "page_index": 1,
       "role": "Title",
       "bbox": [
@@ -500,7 +514,7 @@
       ],
       "text": "the coronavir",
       "metadata": {
-        "score": 0.9964030981063843,
+        "score": 0.9964032173156738,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -508,12 +522,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.0001480579376220703
+          "processing_time": 0.00015497207641601562
         }
       }
     },
     {
-      "id": "b9bd0aa3",
+      "id": "det_1_006",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -522,9 +536,9 @@
         1685.1590576171875,
         2703.69775390625
       ],
-      "text": "vaccine strain 4 The Flublok Quad rival ent in flu enza vaccine (RIV4, San of i is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically ident i cal to that in the selected strain 5 The vaccine also contains three times the amount of he mag glut in in protein as standard dose vaccines, an increased level that has been correlated with",
+      "text": "vaccine strain 4 The Flublok Quad rival ent influenza vaccine (RIV4, San of i is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain 5 The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with",
       "metadata": {
-        "score": 0.9695521593093872,
+        "score": 0.9695522785186768,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -532,7 +546,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0012390613555908203,
+          "processing_time": 0.0011229515075683594,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -541,7 +555,7 @@
       }
     },
     {
-      "id": "e10bc162",
+      "id": "det_1_007",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -550,9 +564,9 @@
         2811.91015625,
         3631.861083984375
       ],
-      "text": "in other U.S. regions (Table S1 in the Supple- ment ary Appendix, available with the full text of this article at NEJM.org).7 Approximately 10% of the members are covered by Medicaid 8 The KPNC institutional review board approved the study with a waiver of informed consent. Representatives of the study sponsor, San of i, did not have arole in the design or conduct of the study or in the analyses of the data. The Flublok Quad rival ent influenza vaccine was donated by San of i, and the two standard dose",
+      "text": "in other U.S. regions (Table S1 in the Supplementary Appendix, available with the full text of this article at NEJM.org).7 Approximately 10% of the members are covered by Medicaid 8 The KPNC institutional review board approved the study with a waiver of informed consent. Representatives of the study sponsor, San of i, did not have arole in the design or conduct of the study or in the analyses of the data. The Flublok Quad rival ent influenza vaccine was donated by San of i, and the two standard dose",
       "metadata": {
-        "score": 0.9607944488525391,
+        "score": 0.9607946872711182,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -560,7 +574,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0013937950134277344,
+          "processing_time": 0.0013422966003417969,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -569,7 +583,7 @@
       }
     },
     {
-      "id": "ab051c73",
+      "id": "det_1_002",
       "page_index": 1,
       "role": "Title",
       "bbox": [
@@ -580,7 +594,7 @@
       ],
       "text": "eggs are used to manufacture th",
       "metadata": {
-        "score": 0.981084942817688,
+        "score": 0.9810848236083984,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -588,12 +602,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00014019012451171875
+          "processing_time": 0.0001430511474609375
         }
       }
     },
     {
-      "id": "488b51ce",
+      "id": "det_1_008",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -602,7 +616,7 @@
         2822.578857421875,
         968.5349731445312
       ],
-      "text": "(Fig. 1). We randomly assigned Block A to start with administration of a standard dose vaccine and Block B to start with administration of the recombinant vaccine. Thereafter, each facility alternated the administration of the two vac- cines weekly. Key features of the study design were that",
+      "text": "(Fig. 1). We randomly assigned Block A to start with administration of a standard dose vaccine and Block B to start with administration of the recombinant vaccine. Thereafter, each facility alternated the administration of the two vaccines weekly. Key features of the study design were that",
       "metadata": {
         "score": 0.9442222118377686,
         "detection_dpi": 400,
@@ -612,7 +626,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0008368492126464844,
+          "processing_time": 0.0007410049438476562,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -621,7 +635,7 @@
       }
     },
     {
-      "id": "5f496b66",
+      "id": "det_1_009",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -630,7 +644,7 @@
         1665.2696533203125,
         1086.6177978515625
       ],
-      "text": "whom are adults between the ages of 18 and 64 years. Members receive nearly all their care at system owned facilities, which includes 259 medical clinics and 21 hospitals. The members’ electronic medical records capture all medical services, including inpatient and outpatient di- agnoses, laboratory tests, and vaccinations. The KPNC members include approximately a third of the population in Northern California and",
+      "text": "whom are adults between the ages of 18 and 64 years. Members receive nearly all their care at system owned facilities, which includes 259 medical clinics and 21 hospitals. The members’ electronic medical records capture all medical services, including inpatient and outpatient diagnoses, laboratory tests, and vaccinations. The KPNC members include approximately a third of the population in Northern California and",
       "metadata": {
         "score": 0.872569739818573,
         "detection_dpi": 400,
@@ -640,7 +654,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0012810230255126953,
+          "processing_time": 0.0012090206146240234,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -649,7 +663,7 @@
       }
     },
     {
-      "id": "3ee9dfdd",
+      "id": "det_1_010",
       "page_index": 1,
       "role": "Title",
       "bbox": [
@@ -667,7 +681,7 @@
       }
     },
     {
-      "id": "b432a9ae",
+      "id": "det_1_011",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -686,12 +700,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.0002028942108154297
+          "processing_time": 0.00020575523376464844
         }
       }
     },
     {
-      "id": "014dc3be",
+      "id": "det_1_014",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -710,12 +724,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00012683868408203125
+          "processing_time": 0.00015783309936523438
         }
       }
     },
     {
-      "id": "5e398f15",
+      "id": "det_1_015",
       "page_index": 1,
       "role": "Title",
       "bbox": [
@@ -733,7 +747,7 @@
       }
     },
     {
-      "id": "cbaab924",
+      "id": "mrg_det_2_000",
       "page_index": 2,
       "role": "Figure",
       "bbox": [
@@ -742,8 +756,8 @@
         2586.77490234375,
         2737.1767578125
       ],
-      "text": "[FIGURE 1 - See figure_p3_cbaab924.png]",
-      "image_path": "figures/figure_p3_cbaab924.png",
+      "text": "[FIGURE 1 - See figure_p3_mrg_det_2_000.png]",
+      "image_path": "figures/figure_p3_mrg_det_2_000.png",
       "metadata": {
         "score": 0.9968942403793335,
         "detection_dpi": 400,
@@ -751,7 +765,7 @@
       }
     },
     {
-      "id": "541d61f1",
+      "id": "det_2_001",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -762,7 +776,7 @@
       ],
       "text": "to Block A or Block B. Facility 1 Facility 8 Similarly sized",
       "metadata": {
-        "score": 0.9936424493789673,
+        "score": 0.9936422109603882,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -770,15 +784,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00026297569274902344,
+          "processing_time": 0.0002770423889160156,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "fc27cb1a",
+      "id": "det_2_002",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -797,15 +811,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00018715858459472656,
+          "processing_time": 0.0001888275146484375,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "a397f9ff",
+      "id": "det_2_003",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -824,15 +838,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00015497207641601562,
+          "processing_time": 0.00015687942504882812,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "17b6410d",
+      "id": "det_2_004",
       "page_index": 2,
       "role": "Title",
       "bbox": [
@@ -850,7 +864,7 @@
       }
     },
     {
-      "id": "c55c8b62",
+      "id": "det_2_005",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -861,14 +875,14 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.7529870271682739,
+        "score": 0.7529870867729187,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
       }
     },
     {
-      "id": "f1a57e4a",
+      "id": "det_2_008",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -879,7 +893,7 @@
       ],
       "text": "Recombinant or Standard-Dose Influenza Vaccine",
       "metadata": {
-        "score": 0.3062762916088104,
+        "score": 0.3062763214111328,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -887,12 +901,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00017571449279785156
+          "processing_time": 0.00018668174743652344
         }
       }
     },
     {
-      "id": "41768ac4",
+      "id": "det_2_009",
       "page_index": 2,
       "role": "Title",
       "bbox": [
@@ -910,7 +924,7 @@
       }
     },
     {
-      "id": "afcb8eb2",
+      "id": "det_3_006",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -919,7 +933,7 @@
         2801.379638671875,
         2830.17333984375
       ],
-      "text": "study with 86% power to detect a relative vaccine effectiveness of 10.0% against PCR-confirmed influenza. On the basis of previous data, we es- timated the occurrence of 2.18 PCR-confirmed influenza cases per 1000 participants in the standard dose group. We used Cox regression analysis to estimate the adjusted hazard ratio and 95% confidence intervals for the recombinant vaccine as com- pared with a standard dose vaccine for each outcome. The model specified a calendar time scale and included adjustments for sex, race or ethnic group, and age and an age squared factor (in case age and risk had either a linear or cur- vilinear association). Risk sets were formed on each date on which at least one outcome event occurred in either study group Each risk set",
+      "text": "study with 86% power to detect a relative vaccine effectiveness of 10.0% against PCR-confirmed influenza. On the basis of previous data, we estimated the occurrence of 2.18 PCR-confirmed influenza cases per 1000 participants in the standard dose group. We used Cox regression analysis to estimate the adjusted hazard ratio and 95% confidence intervals for the recombinant vaccine as compared with a standard dose vaccine for each outcome. The model specified a calendar time scale and included adjustments for sex, race or ethnic group, and age and an age squared factor (in case age and risk had either a linear or curvilinear association). Risk sets were formed on each date on which at least one outcome event occurred in either study group Each risk set",
       "metadata": {
         "score": 0.993472695350647,
         "detection_dpi": 400,
@@ -929,7 +943,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0018358230590820312,
+          "processing_time": 0.0018148422241210938,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -938,7 +952,7 @@
       }
     },
     {
-      "id": "39a1fca2",
+      "id": "det_3_003",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -947,9 +961,9 @@
         2808.759033203125,
         3708.0908203125
       ],
-      "text": "p y g g pestimates of relative vaccine effectiveness were considered to be exploratory. Statistical Analysis We tested the null hypotheses that the recombi- nant vaccine would not be any more or any less effective than a standard dose vaccine against influenza, using a two sided test with a P value of less than 0.05 indicating statistical sign if i cance. We estimated that the administration of 400 000 doses each of the two vaccine formula- tions to patients between the ages of 18 and 64 years each influenza season would provide the",
+      "text": "p y g g pestimates of relative vaccine effectiveness were considered to be exploratory. Statistical Analysis We tested the null hypotheses that the recombinant vaccine would not be any more or any less effective than a standard dose vaccine against influenza, using a two sided test with a P value of less than 0.05 indicating statistical significance. We estimated that the administration of 400 000 doses each of the two vaccine formulations to patients between the ages of 18 and 64 years each influenza season would provide the",
       "metadata": {
-        "score": 0.9958732724189758,
+        "score": 0.9958733916282654,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -957,7 +971,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00133514404296875,
+          "processing_time": 0.0013089179992675781,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -966,7 +980,7 @@
       }
     },
     {
-      "id": "80c42e9f",
+      "id": "det_3_007",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -975,7 +989,7 @@
         2807.198974609375,
         1754.802978515625
       ],
-      "text": "occurred in either study group. Each risk set contained every participant in follow up on that calendar date. Most of the participants had been vaccinated before the beginning of the influenza season and were included in every risk set throughout the season. The Cox model also used stabilized weights that were based on propensity scores. The stat is tical analysis plan pre specified the use of pro- pensity scores if imbalances were found in any study variables. We observed modest imbalances at some facilities in one or both seasons, although not overall (Tables S4 and S5). Thus, we created propensity scores that were specific for each fa- cility and season. The propensity scores were",
+      "text": "occurred in either study group. Each risk set contained every participant in follow up on that calendar date. Most of the participants had been vaccinated before the beginning of the influenza season and were included in every risk set throughout the season. The Cox model also used stabilized weights that were based on propensity scores. The statistical analysis plan pre specified the use of propensity scores if imbalances were found in any study variables. We observed modest imbalances at some facilities in one or both seasons, although not overall (Tables S4 and S5). Thus, we created propensity scores that were specific for each facility and season. The propensity scores were",
       "metadata": {
         "score": 0.9863606691360474,
         "detection_dpi": 400,
@@ -985,7 +999,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0016090869903564453,
+          "processing_time": 0.0015828609466552734,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -994,7 +1008,7 @@
       }
     },
     {
-      "id": "b01c2d3b",
+      "id": "det_3_004",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1003,9 +1017,9 @@
         1663.5703125,
         2834.416015625
       ],
-      "text": "not performed. Secondary outcomes were PCR-confirmed in- flue nza A, PCR-confirmed influenza B, and hos- pita liz at ion for PCR-confirmed influenza, for community acquired pneumonia, and for car dio respiratory events including community acquired pneumonia. We identified community acquired pneumonia and other car dio respiratory events using primary discharge diagnosis codes as listed in the International Classification of Diseases, 10 th Revision (ICD 10 (Table S2).",
+      "text": "not performed. Secondary outcomes were PCR-confirmed influenza A, PCR-confirmed influenza B, and hospitalization for PCR-confirmed influenza, for community acquired pneumonia, and for car dio respiratory events including community acquired pneumonia. We identified community acquired pneumonia and other car dio respiratory events using primary discharge diagnosis codes as listed in the International Classification of Diseases, 10 th Revision (ICD 10 (Table S2).",
       "metadata": {
-        "score": 0.994866132736206,
+        "score": 0.9948662519454956,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1013,7 +1027,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.003504037857055664,
+          "processing_time": 0.0035219192504882812,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1023,7 +1037,7 @@
       }
     },
     {
-      "id": "f47602e3",
+      "id": "det_3_005",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1032,7 +1046,7 @@
         1656.0025634765625,
         3712.453857421875
       ],
-      "text": "..., facilities administered primarily high dose vac- cines to adults who were 65 years of age or older, which made it infeasible to include those members in the study randomization. Outcomes The primary outcome was influenza as con- firmed by polymerase chain reaction (PCR) test- ing (Cepheid Gen expert PCR assay, atest that also identifies respiratory sync yti al virus [RSV]). Physicians at each facility ordered influenza PCR",
+      "text": "..., facilities administered primarily high dose vaccines to adults who were 65 years of age or older, which made it infeasible to include those members in the study randomization. Outcomes The primary outcome was influenza as confirmed by polymerase chain reaction (PCR) testing (Cepheid Gen expert PCR assay, atest that also identifies respiratory sync yti al virus [RSV]). Physicians at each facility ordered influenza PCR",
       "metadata": {
         "score": 0.9943435192108154,
         "detection_dpi": 400,
@@ -1042,7 +1056,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0023398399353027344,
+          "processing_time": 0.0024559497833251953,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1052,7 +1066,7 @@
       }
     },
     {
-      "id": "0cb989eb",
+      "id": "det_3_008",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1061,7 +1075,7 @@
         1655.381103515625,
         2110.168701171875
       ],
-      "text": "( ) ( ) Exploratory outcomes were an influenza diag- nosis (PCR-confirmed or clinically diagnosed influenza on the basis of ICD-10 codes), none lec tive hospitalization for any cause, and death from any cause. For each outcome except death from any cause, we counted only the first event during each season that occurred more than 14 days after vaccination. All deaths after vaccina- tion within the study period were considered to be a safety outcome and were counted even if they h d d ihi 14 d f i i",
+      "text": "( ) ( ) Exploratory outcomes were an influenza diagnosis (PCR-confirmed or clinically diagnosed influenza on the basis of ICD-10 codes), non elective hospitalization for any cause, and death from any cause. For each outcome except death from any cause, we counted only the first event during each season that occurred more than 14 days after vaccination. All deaths after vaccination within the study period were considered to be a safety outcome and were counted even if they h d d ihi 14 d f i i",
       "metadata": {
         "score": 0.9844075441360474,
         "detection_dpi": 400,
@@ -1071,7 +1085,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0010459423065185547,
+          "processing_time": 0.0010499954223632812,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1080,7 +1094,7 @@
       }
     },
     {
-      "id": "f41614bf",
+      "id": "det_3_000",
       "page_index": 3,
       "role": "Title",
       "bbox": [
@@ -1091,7 +1105,7 @@
       ],
       "text": "age group",
       "metadata": {
-        "score": 0.9984303116798401,
+        "score": 0.9984301924705505,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1099,12 +1113,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00007486343383789062
+          "processing_time": 0.00007510185241699219
         }
       }
     },
     {
-      "id": "c4d52813",
+      "id": "det_3_001",
       "page_index": 3,
       "role": "Title",
       "bbox": [
@@ -1115,7 +1129,7 @@
       ],
       "text": "derived by logistic r",
       "metadata": {
-        "score": 0.997194766998291,
+        "score": 0.9971948862075806,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1123,12 +1137,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00013208389282226562
+          "processing_time": 0.0001270771026611328
         }
       }
     },
     {
-      "id": "04fc099f",
+      "id": "det_3_002",
       "page_index": 3,
       "role": "Title",
       "bbox": [
@@ -1139,7 +1153,7 @@
       ],
       "text": "tests at the",
       "metadata": {
-        "score": 0.9965195655822754,
+        "score": 0.9965196847915649,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1147,12 +1161,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00007677078247070312
+          "processing_time": 0.00007724761962890625
         }
       }
     },
     {
-      "id": "e28acaa9",
+      "id": "det_3_009",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1161,9 +1175,9 @@
         1669.74169921875,
         1438.525146484375
       ],
-      "text": "y yhad occurred within 14 days after vaccination. Objectives The primary objective was to estimate the rela- tive vaccine effectiveness of the recombinant vac- cine as compared with a standard dose vaccine against PCR-confirmed influenza in patients be- tween the ages of 50 and 64 years, the primary",
+      "text": "y yhad occurred within 14 days after vaccination. Objectives The primary objective was to estimate the relative vaccine effectiveness of the recombinant vaccine as compared with a standard dose vaccine against PCR-confirmed influenza in patients between the ages of 50 and 64 years, the primary",
       "metadata": {
-        "score": 0.9585139155387878,
+        "score": 0.9585137963294983,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1171,7 +1185,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0007050037384033203,
+          "processing_time": 0.0007321834564208984,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1180,7 +1194,7 @@
       }
     },
     {
-      "id": "43b92126",
+      "id": "det_3_010",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1199,7 +1213,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003170967102050781,
+          "processing_time": 0.0003037452697753906,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1208,7 +1222,7 @@
       }
     },
     {
-      "id": "70709281",
+      "id": "det_3_011",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1217,9 +1231,9 @@
         1674.7086181640625,
         774.4006958007812
       ],
-      "text": "ness of the recombinant vaccine against second- ary outcomes in patients in the primary age group and against secondary outcomes in five pre specified subgroups of patients with preex-",
+      "text": "ness of the recombinant vaccine against secondary outcomes in patients in the primary age group and against secondary outcomes in five pre specified subgroups of patients with preex-",
       "metadata": {
-        "score": 0.901919424533844,
+        "score": 0.9019193053245544,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1227,7 +1241,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005240440368652344,
+          "processing_time": 0.0005218982696533203,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1236,7 +1250,7 @@
       }
     },
     {
-      "id": "20e903b9",
+      "id": "det_3_012",
       "page_index": 3,
       "role": "Title",
       "bbox": [
@@ -1254,7 +1268,7 @@
       }
     },
     {
-      "id": "05a17302",
+      "id": "det_3_013",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1273,12 +1287,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00013184547424316406
+          "processing_time": 0.0001418590545654297
         }
       }
     },
     {
-      "id": "ae2e2678",
+      "id": "det_3_014",
       "page_index": 3,
       "role": "Title",
       "bbox": [
@@ -1289,14 +1303,14 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.34874093532562256,
+        "score": 0.34874096512794495,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
       }
     },
     {
-      "id": "9b66b5d8",
+      "id": "det_4_002",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -1305,9 +1319,9 @@
         1456.4583740234375,
         3017.021484375
       ],
-      "text": "For secondary objectives in participants be- tween the ages of 50 and 64 years, we adjusted for multiplicity by Holm’smethod.10 Subgroup analyses involving participants with preexisting conditions were not adjusted for multiplicity. We conducted sensitivity analyses in which we used propensity scores in alternative ways, used a robust variance estimator, stratified risk sets according to facility and vaccination week, and specified age as a spline (see the Supplementary Methods section). To assess possible residual confounding, we examined PCR-confirmed RSV infection as a negative control outcome because we would not expect influenza vaccination to be associated with a reduction in this infection. A nontrivial asso- cia tion between receipt of the recombinant vac-",
+      "text": "For secondary objectives in participants between the ages of 50 and 64 years, we adjusted for multiplicity by Holm’smethod.10 Subgroup analyses involving participants with preexisting conditions were not adjusted for multiplicity. We conducted sensitivity analyses in which we used propensity scores in alternative ways, used a robust variance estimator, stratified risk sets according to facility and vaccination week, and specified age as a spline (see the Supplementary Methods section). To assess possible residual confounding, we examined PCR-confirmed RSV infection as a negative control outcome because we would not expect influenza vaccination to be associated with a reduction in this infection. A nontrivial association between receipt of the recombinant vac-",
       "metadata": {
-        "score": 0.9949110150337219,
+        "score": 0.994911253452301,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1315,7 +1329,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.002110004425048828,
+          "processing_time": 0.002237081527709961,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1324,7 +1338,7 @@
       }
     },
     {
-      "id": "a8e63cdf",
+      "id": "det_4_001",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -1333,7 +1347,7 @@
         1453.169921875,
         1911.244384765625
       ],
-      "text": "pcine and RSV infection would suggest bias in our estimate of the relative vaccine effectiveness against influenza. Conversely, a finding of no association between receipt of the recombinant vaccine and RSV infection would be reassuring that our estimates of relative vaccine effective- ness were not biased by unmeasured factors that might affect the risk of both laboratory con firmed RSV infection and influenza. All data analyses were performed with the use of SAS software, version 9.4 (SAS Institute).",
+      "text": "pcine and RSV infection would suggest bias in our estimate of the relative vaccine effectiveness against influenza. Conversely, a finding of no association between receipt of the recombinant vaccine and RSV infection would be reassuring that our estimates of relative vaccine effectiveness were not biased by unmeasured factors that might affect the risk of both laboratory confirmed RSV infection and influenza. All data analyses were performed with the use of SAS software, version 9.4 (SAS Institute).",
       "metadata": {
         "score": 0.9954107403755188,
         "detection_dpi": 400,
@@ -1343,35 +1357,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0012121200561523438,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
-        }
-      }
-    },
-    {
-      "id": "28aa1299",
-      "page_index": 4,
-      "role": "Text",
-      "bbox": [
-        1480.95654296875,
-        1218.2664794921875,
-        2608.03857421875,
-        2050.8597412109375
-      ],
-      "text": "tic i pants at baseline were similar in the two vaccine groups and in the two age groups (Table 1 and Table S6). There was some variation in the timing of the administration of the two vaccines according to geographic region, although during the two influenza seasons, most vaccinations in the two groups had occurred by mid to late November (Tables S4 and S5). Primary and Secondary Analyses In patients between the ages of 50 and 64 years, 559 (2.00 cases per 1000) tested positive for in- flue nza in the recombinant vaccine group as d i h 925 (2 34 1000) i h",
-      "metadata": {
-        "score": 0.9892405867576599,
-        "detection_dpi": 400,
-        "detector": "PubLayNet",
-        "extraction_confidence": 1.0,
-        "extraction": {
-          "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.002711057662963867,
+          "processing_time": 0.003047943115234375,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1381,7 +1367,36 @@
       }
     },
     {
-      "id": "1d9ccb6e",
+      "id": "det_4_006",
+      "page_index": 4,
+      "role": "Text",
+      "bbox": [
+        1480.95654296875,
+        1218.2664794921875,
+        2608.03857421875,
+        2050.8597412109375
+      ],
+      "text": "tic i pants at baseline were similar in the two vaccine groups and in the two age groups (Table 1 and Table S6). There was some variation in the timing of the administration of the two vaccines according to geographic region, although during the two influenza seasons, most vaccinations in the two groups had occurred by mid to late November (Tables S4 and S5). Primary and Secondary Analyses In patients between the ages of 50 and 64 years, 559 (2.00 cases per 1000) tested positive for influenza in the recombinant vaccine group as d i h 925 (2 34 1000) i h",
+      "metadata": {
+        "score": 0.9892407059669495,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.002669095993041992,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_4_004",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -1390,7 +1405,7 @@
         2602.38916015625,
         2634.393798828125
       ],
-      "text": "2337 (61 2 in patients between the ages of 18 and 49 years. Among the participants with PCR- confirmed influenza, hospitalization occurred in 248 of 1484 participants (16 7 among those between the ages of 50 and 64 years and in 136 of 2337 (5.8%) of those between the ages of 18 and 49 years. The demographic characteristics of the par- tic i pants at baseline were similar in the two vac-",
+      "text": "2337 (61 2 in patients between the ages of 18 and 49 years. Among the participants with PCRconfirmed influenza, hospitalization occurred in 248 of 1484 participants (16 7 among those between the ages of 50 and 64 years and in 136 of 2337 (5.8%) of those between the ages of 18 and 49 years. The demographic characteristics of the participants at baseline were similar in the two vac-",
       "metadata": {
         "score": 0.9900336861610413,
         "detection_dpi": 400,
@@ -1400,7 +1415,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0009500980377197266,
+          "processing_time": 0.0009000301361083984,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1409,7 +1424,7 @@
       }
     },
     {
-      "id": "59b09749",
+      "id": "det_4_003",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -1418,9 +1433,9 @@
         2597.69091796875,
         1234.27880859375
       ],
-      "text": "compared with 925 (2.34 per 1000) in the stan- dard dose group (Table 2). For the primary ob- jective, the relative vaccine effectiveness of the recombinant vaccine as compared with standard- dose vaccines against all PCR-confirmed in flu enza was 15.3% (95% CI, 5.9 to 23.8; P = 0 002. The estimate of relative vaccine effectiveness for the secondary objective of PCR-confirmed",
+      "text": "compared with 925 (2.34 per 1000) in the standard dose group (Table 2). For the primary objective, the relative vaccine effectiveness of the recombinant vaccine as compared with standard dose vaccines against all PCR-confirmed influenza was 15.3% (95% CI, 5.9 to 23.8; P = 0 002. The estimate of relative vaccine effectiveness for the secondary objective of PCR-confirmed",
       "metadata": {
-        "score": 0.9901442527770996,
+        "score": 0.9901443719863892,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1428,7 +1443,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0009288787841796875,
+          "processing_time": 0.0008990764617919922,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1437,7 +1452,7 @@
       }
     },
     {
-      "id": "2914703a",
+      "id": "det_4_008",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -1446,9 +1461,9 @@
         1473.906005859375,
         1170.8216552734375
       ],
-      "text": "Results Study Participants The study population included 1 630 328 part ici pants during influenza seasons in 2018-2019 and 2019-2020. Of these participants, 632 962 (38 8 received the recombinant vaccine and 997 366 (61 2 received a standard dose vaccine (Fig. 2",
+      "text": "Results Study Participants The study population included 1 630 328 participants during influenza seasons in 2018-2019 and 2019-2020. Of these participants, 632 962 (38 8 received the recombinant vaccine and 997 366 (61 2 received a standard dose vaccine (Fig. 2",
       "metadata": {
-        "score": 0.9843496680259705,
+        "score": 0.98434978723526,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1456,7 +1471,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0010030269622802734,
+          "processing_time": 0.0008246898651123047,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1465,7 +1480,7 @@
       }
     },
     {
-      "id": "95b0502d",
+      "id": "det_4_007",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -1474,7 +1489,7 @@
         1451.165283203125,
         3704.662353515625
       ],
-      "text": "gdata were not imputed. The relative vaccine effectiveness was based on the hazard ratio (1 minus the hazard ratio, expressed as a percentage). This calculation es- tim a ted the percent reduction in the incidence of the outcome in the recombinant vaccine group",
+      "text": "gdata were not imputed. The relative vaccine effectiveness was based on the hazard ratio (1 minus the hazard ratio, expressed as a percentage). This calculation estimated the percent reduction in the incidence of the outcome in the recombinant vaccine group",
       "metadata": {
         "score": 0.9879232048988342,
         "detection_dpi": 400,
@@ -1484,7 +1499,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0015249252319335938,
+          "processing_time": 0.0014693737030029297,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1494,7 +1509,7 @@
       }
     },
     {
-      "id": "5badf007",
+      "id": "det_4_000",
       "page_index": 4,
       "role": "Title",
       "bbox": [
@@ -1513,7 +1528,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00014901161193847656,
+          "processing_time": 0.00014209747314453125,
           "processors_applied": [
             "spacing_fix"
           ]
@@ -1521,7 +1536,7 @@
       }
     },
     {
-      "id": "c01d380c",
+      "id": "det_4_005",
       "page_index": 4,
       "role": "Title",
       "bbox": [
@@ -1540,12 +1555,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00010800361633300781
+          "processing_time": 0.000102996826171875
         }
       }
     },
     {
-      "id": "ac540abc",
+      "id": "det_4_011",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -1554,7 +1569,7 @@
         2608.408447265625,
         704.800048828125
       ],
-      "text": "y jinfluenza A was 15.7% (95% CI, 6.0 to 24.5; P = 0.002; the P value was below Holm’smulti- pli city adjusted threshold of an alpha level of",
+      "text": "y jinfluenza A was 15.7% (95% CI, 6.0 to 24.5; P = 0.002; the P value was below Holm’smultiplicity-adjusted threshold of an alpha level of",
       "metadata": {
         "score": 0.9464594125747681,
         "detection_dpi": 400,
@@ -1564,16 +1579,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004730224609375,
+          "processing_time": 0.0010619163513183594,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "517905d7",
+      "id": "det_4_010",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -1584,7 +1598,7 @@
       ],
       "text": "p yly schedule, so standard dose vaccines were then administered to prevent interruptions in patient care. Among the 675 252 patients between 50 and f i d h",
       "metadata": {
-        "score": 0.9466778635978699,
+        "score": 0.9466777443885803,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1592,7 +1606,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005340576171875,
+          "processing_time": 0.0005049705505371094,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1601,7 +1615,7 @@
       }
     },
     {
-      "id": "d5a2ddbe",
+      "id": "det_4_009",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -1620,12 +1634,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00016188621520996094
+          "processing_time": 0.0001499652862548828
         }
       }
     },
     {
-      "id": "4a6629f9",
+      "id": "det_4_012",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -1634,7 +1648,7 @@
         2616.15478515625,
         3401.225830078125
       ],
-      "text": "64 years of age, 279 400 (41 4 received the recombinant vaccine and 395 852 (58 6 re- ceived a standard dose vaccine (Table 1). Among the 955 076 patients between 18 and 49 years of age, 353 562 (37 0 received the recombinant vaccine and 601 514 (63 0 received a standard dose vaccine (Table S6). Of the 16 340 influenza PCR tests performed in the study population, 3821 (23 4 were in- flu enz a positive. Of the PCR-confirmed in flu",
+      "text": "64 years of age, 279 400 (41 4 received the recombinant vaccine and 395 852 (58 6 received a standard dose vaccine (Table 1). Among the 955 076 patients between 18 and 49 years of age, 353 562 (37 0 received the recombinant vaccine and 601 514 (63 0 received a standard dose vaccine (Table S6). Of the 16 340 influenza PCR tests performed in the study population, 3821 (23 4 were influenza positive. Of the PCR-confirmed in flu",
       "metadata": {
         "score": 0.8483985066413879,
         "detection_dpi": 400,
@@ -1644,7 +1658,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0013079643249511719,
+          "processing_time": 0.0012159347534179688,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1653,7 +1667,7 @@
       }
     },
     {
-      "id": "de1209de",
+      "id": "det_4_013",
       "page_index": 4,
       "role": "Title",
       "bbox": [
@@ -1671,7 +1685,7 @@
       }
     },
     {
-      "id": "5b1c2ffb",
+      "id": "det_4_016",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -1690,12 +1704,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00015020370483398438
+          "processing_time": 0.00014209747314453125
         }
       }
     },
     {
-      "id": "386b34c6",
+      "id": "det_4_018",
       "page_index": 4,
       "role": "Title",
       "bbox": [
@@ -1713,7 +1727,7 @@
       }
     },
     {
-      "id": "af5c6f40",
+      "id": "det_4_019",
       "page_index": 4,
       "role": "Title",
       "bbox": [
@@ -1732,7 +1746,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00017714500427246094,
+          "processing_time": 0.00017309188842773438,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1741,7 +1755,7 @@
       }
     },
     {
-      "id": "a5960b78",
+      "id": "det_5_000",
       "page_index": 5,
       "role": "Figure",
       "bbox": [
@@ -1750,8 +1764,8 @@
         2775.24169921875,
         3082.461669921875
       ],
-      "text": "[FIGURE 1 - See figure_p6_a5960b78.png]",
-      "image_path": "figures/figure_p6_a5960b78.png",
+      "text": "[FIGURE 1 - See figure_p6_det_5_000.png]",
+      "image_path": "figures/figure_p6_det_5_000.png",
       "metadata": {
         "score": 0.9954114556312561,
         "detection_dpi": 400,
@@ -1759,7 +1773,7 @@
       }
     },
     {
-      "id": "0828fd10",
+      "id": "det_5_001",
       "page_index": 5,
       "role": "Text",
       "bbox": [
@@ -1778,7 +1792,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0011110305786132812,
+          "processing_time": 0.0010111331939697266,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1787,7 +1801,7 @@
       }
     },
     {
-      "id": "7e350f44",
+      "id": "det_5_002",
       "page_index": 5,
       "role": "Title",
       "bbox": [
@@ -1805,7 +1819,7 @@
       }
     },
     {
-      "id": "668df4b3",
+      "id": "det_5_003",
       "page_index": 5,
       "role": "Title",
       "bbox": [
@@ -1823,7 +1837,7 @@
       }
     },
     {
-      "id": "3a65591a",
+      "id": "det_5_004",
       "page_index": 5,
       "role": "Title",
       "bbox": [
@@ -1842,15 +1856,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00009083747863769531,
+          "processing_time": 0.00009894371032714844,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "11cdcdb9",
+      "id": "det_5_006",
       "page_index": 5,
       "role": "Text",
       "bbox": [
@@ -1861,7 +1875,7 @@
       ],
       "text": "The new engl and jour nal of medicine",
       "metadata": {
-        "score": 0.3687109053134918,
+        "score": 0.3687109351158142,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1869,12 +1883,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00016498565673828125
+          "processing_time": 0.00015807151794433594
         }
       }
     },
     {
-      "id": "f50fcf90",
+      "id": "det_6_004",
       "page_index": 6,
       "role": "Table",
       "bbox": [
@@ -1883,8 +1897,8 @@
         2589.416015625,
         2445.016357421875
       ],
-      "text": "[TABLE 2 - See table_p7_f50fcf90.png]",
-      "image_path": "figures/table_p7_f50fcf90.png",
+      "text": "[TABLE 2 - See table_p7_det_6_004.png]",
+      "image_path": "figures/table_p7_det_6_004.png",
       "metadata": {
         "score": 0.9578068256378174,
         "detection_dpi": 400,
@@ -1892,7 +1906,7 @@
       }
     },
     {
-      "id": "0189b86a",
+      "id": "det_6_003",
       "page_index": 6,
       "role": "Text",
       "bbox": [
@@ -1901,9 +1915,9 @@
         1448.8359375,
         3431.829833984375
       ],
-      "text": "( ) Male 124,5 Female 154,8 Race or ethnic group — no. (%)† White 142,7 Black 13,6 Asian 58,4 Pacific Islander 1,6 Native American 1,2 M l i i l 7 2",
+      "text": "( ) Male 124,5 Female 154,8 Race or ethnic group - no. (%)† White 142,7 Black 13,6 Asian 58,4 Pacific Islander 1,6 Native American 1,2 M l i i l 7 2",
       "metadata": {
-        "score": 0.9793028235435486,
+        "score": 0.9793029427528381,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -1911,15 +1925,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004658699035644531,
+          "processing_time": 0.00047898292541503906,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "f04831f7",
+      "id": "det_6_001",
       "page_index": 6,
       "role": "Text",
       "bbox": [
@@ -1928,7 +1942,7 @@
         2574.001220703125,
         2647.076416015625
       ],
-      "text": "Hispanic ethnic group — no. (%)† Yes 46 318 (17) 65 868 (17) 112 186 (17)",
+      "text": "Hispanic ethnic group - no. (%)† Yes 46 318 (17) 65 868 (17) 112 186 (17)",
       "metadata": {
         "score": 0.9930890202522278,
         "detection_dpi": 400,
@@ -1938,15 +1952,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003509521484375,
+          "processing_time": 0.0003178119659423828,
           "processors_applied": [
+            "post_extraction_clean",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "7fb5e676",
+      "id": "det_6_000",
       "page_index": 6,
       "role": "Title",
       "bbox": [
@@ -1964,7 +1979,7 @@
       }
     },
     {
-      "id": "ccda65dc",
+      "id": "det_6_002",
       "page_index": 6,
       "role": "Text",
       "bbox": [
@@ -1975,14 +1990,14 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.9854167103767395,
+        "score": 0.98541659116745,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
       }
     },
     {
-      "id": "035714b2",
+      "id": "det_6_005",
       "page_index": 6,
       "role": "Text",
       "bbox": [
@@ -2001,15 +2016,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0009331703186035156,
+          "processing_time": 0.0008471012115478516,
           "processors_applied": [
+            "post_extraction_clean",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "150151c4",
+      "id": "det_6_006",
       "page_index": 6,
       "role": "Title",
       "bbox": [
@@ -2027,7 +2043,7 @@
       }
     },
     {
-      "id": "3879bf30",
+      "id": "mrg_det_6_007",
       "page_index": 6,
       "role": "Title",
       "bbox": [
@@ -2038,7 +2054,7 @@
       ],
       "text": "Characteristic Recombinant Vaccine (N = 279 400 Standard-Dose Vaccine (N = 395 852 All Vaccinees (N = 675 252",
       "metadata": {
-        "score": 0.6897554397583008,
+        "score": 0.6897554993629456,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2046,7 +2062,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005939006805419922,
+          "processing_time": 0.0004718303680419922,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2055,7 +2071,7 @@
       }
     },
     {
-      "id": "dfe76ce0",
+      "id": "det_6_010",
       "page_index": 6,
       "role": "Text",
       "bbox": [
@@ -2074,12 +2090,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00018668174743652344
+          "processing_time": 0.00014209747314453125
         }
       }
     },
     {
-      "id": "083d26a9",
+      "id": "det_6_015",
       "page_index": 6,
       "role": "Title",
       "bbox": [
@@ -2090,14 +2106,14 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.23277688026428223,
+        "score": 0.23277685046195984,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
       }
     },
     {
-      "id": "f9352755",
+      "id": "det_7_002",
       "page_index": 7,
       "role": "Table",
       "bbox": [
@@ -2106,8 +2122,8 @@
         2806.50244140625,
         1523.2174072265625
       ],
-      "text": "[TABLE 2 - See table_p8_f9352755.png]",
-      "image_path": "figures/table_p8_f9352755.png",
+      "text": "[TABLE 2 - See table_p8_det_7_002.png]",
+      "image_path": "figures/table_p8_det_7_002.png",
       "metadata": {
         "score": 0.9802747368812561,
         "detection_dpi": 400,
@@ -2115,7 +2131,7 @@
       }
     },
     {
-      "id": "4359cb4e",
+      "id": "det_7_000",
       "page_index": 7,
       "role": "Text",
       "bbox": [
@@ -2134,7 +2150,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0019600391387939453,
+          "processing_time": 0.0018990039825439453,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -2144,7 +2160,7 @@
       }
     },
     {
-      "id": "4a5c96a6",
+      "id": "det_7_003",
       "page_index": 7,
       "role": "Text",
       "bbox": [
@@ -2153,9 +2169,9 @@
         1669.90673828125,
         3576.977294921875
       ],
-      "text": "no. of cases per 1000 luenza 559 (2.00) 925 (2.34) 0.8 es luenza A 522 (1.87) 862 (2.18) 0.8 luenza B 37 (0.13) 64 (0.16) 0.8 r PCR- uenza 95 (0.34) 153 (0.39) 0.8 rcommunity- monia 106 (0.38) 183 (0.46) 0.8 rca rdi ore spira 631 (2.26) 890 (2.25) 1.00 merase chain reaction. sted for age, age squared, sex, and race or ethnic group after it l d l fth dj t d f tti l l",
+      "text": "no. of cases per 1000 luenza 559 (2.00) 925 (2.34) 0.8 es luenza A 522 (1.87) 862 (2.18) 0.8 luenza B 37 (0.13) 64 (0.16) 0.8 r PCRuenza 95 (0.34) 153 (0.39) 0.8 rcommunitymonia 106 (0.38) 183 (0.46) 0.8 rca rdi ore spira 631 (2.26) 890 (2.25) 1.00 merase chain reaction. sted for age, age squared, sex, and race or ethnic group after it l d l fth dj t d f tti l l",
       "metadata": {
-        "score": 0.9700899124145508,
+        "score": 0.9700900316238403,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2163,7 +2179,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0009851455688476562,
+          "processing_time": 0.001107931137084961,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2172,7 +2188,7 @@
       }
     },
     {
-      "id": "2c51acae",
+      "id": "det_7_005",
       "page_index": 7,
       "role": "Text",
       "bbox": [
@@ -2183,7 +2199,7 @@
       ],
       "text": "sted atio Adjusted Hazard Ratio (95% CI)† Relative Vaccine Effectiveness (95% CI) P Value‡ % 6 0.85 (0.76 to 0.94) 15.3 (5.9 to 23.8) 0.002 6 0.84 (0.76 to 0.94) 15.7 (6.0 to 24.5) 0.002 2 0.90 (0.60 to 1.34) 10.3 (−33.9 to 39.9) 0.59 8 0.84 (0.65 to 1.09) 15.9 (−9.2 to 35.2) 0.19 2 0 83 (0 66 1 06) 16 7 ( 5 6 34 4) 0 13",
       "metadata": {
-        "score": 0.9604436755180359,
+        "score": 0.9604435563087463,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2191,16 +2207,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0009348392486572266,
+          "processing_time": 0.0008697509765625,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "54f1ac9c",
+      "id": "det_7_001",
       "page_index": 7,
       "role": "Text",
       "bbox": [
@@ -2218,7 +2233,7 @@
       }
     },
     {
-      "id": "59ec60d8",
+      "id": "det_7_004",
       "page_index": 7,
       "role": "Text",
       "bbox": [
@@ -2227,7 +2242,7 @@
         2810.361083984375,
         2305.647216796875
       ],
-      "text": "S11). For the outcome of PCR-confirmed in flu enza among patients in the older age group, relative vaccine effectiveness was 14.4% (95% CI, −1.1 to 27.5) during 2018-2019 and 16.1% (95%",
+      "text": "S11). For the outcome of PCR-confirmed influenza among patients in the older age group, relative vaccine effectiveness was 14.4% (95% CI, −1.1 to 27.5) during 2018-2019 and 16.1% (95%",
       "metadata": {
         "score": 0.9698717594146729,
         "detection_dpi": 400,
@@ -2237,16 +2252,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005788803100585938,
+          "processing_time": 0.0005733966827392578,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "65b72a01",
+      "id": "det_7_006",
       "page_index": 7,
       "role": "Text",
       "bbox": [
@@ -2265,7 +2279,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0013909339904785156,
+          "processing_time": 0.0011959075927734375,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2274,7 +2288,7 @@
       }
     },
     {
-      "id": "9f297b82",
+      "id": "mrg_det_7_009",
       "page_index": 7,
       "role": "Text",
       "bbox": [
@@ -2283,7 +2297,7 @@
         2790.423095703125,
         1877.3402099609375
       ],
-      "text": "10.8% (95% CI, 6.6 to 14.7) against diagnosed influenza, and 19.5% (95% CI, 5.4 to 31.5) against influenza A in the subgroup with obe- sity (Tables S7 and S8). In the younger age group, the only exp lor tbj ti fhi hth lti i f For both the PCR-confirmed influenza and hospitalization outcomes, the results of sensitiv- ity analyses were consistent with findings in the primary analyses (Tables S12 and S13). The esti- mates of relative vaccine effectiveness from the RSV ti t l ldid tdiff",
+      "text": "10.8% (95% CI, 6.6 to 14.7) against diagnosed influenza, and 19.5% (95% CI, 5.4 to 31.5) against influenza A in the subgroup with obesity (Tables S7 and S8). In the younger age group, the only explortbj ti fhi hth lti i f For both the PCR-confirmed influenza and hospitalization outcomes, the results of sensitivity analyses were consistent with findings in the primary analyses (Tables S12 and S13). The estimates of relative vaccine effectiveness from the RSV ti t l ldid tdiff",
       "metadata": {
         "score": 0.9031305313110352,
         "detection_dpi": 400,
@@ -2293,16 +2307,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.001232147216796875,
+          "processing_time": 0.0011627674102783203,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "da60a5c8",
+      "id": "det_7_007",
       "page_index": 7,
       "role": "Title",
       "bbox": [
@@ -2313,14 +2326,14 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.922393262386322,
+        "score": 0.9223933815956116,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
       }
     },
     {
-      "id": "fb91ddd5",
+      "id": "det_7_008",
       "page_index": 7,
       "role": "Text",
       "bbox": [
@@ -2339,7 +2352,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003921985626220703,
+          "processing_time": 0.00036597251892089844,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2348,7 +2361,7 @@
       }
     },
     {
-      "id": "009ed46e",
+      "id": "det_7_012",
       "page_index": 7,
       "role": "Text",
       "bbox": [
@@ -2367,12 +2380,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.0001590251922607422
+          "processing_time": 0.00015997886657714844
         }
       }
     },
     {
-      "id": "bc535d6e",
+      "id": "det_7_014",
       "page_index": 7,
       "role": "Title",
       "bbox": [
@@ -2383,14 +2396,14 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.3915795087814331,
+        "score": 0.3915795385837555,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
       }
     },
     {
-      "id": "31576b84",
+      "id": "det_7_015",
       "page_index": 7,
       "role": "Title",
       "bbox": [
@@ -2409,15 +2422,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00012612342834472656,
+          "processing_time": 0.0001361370086669922,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "94a2c64d",
+      "id": "det_8_000",
       "page_index": 8,
       "role": "Figure",
       "bbox": [
@@ -2426,8 +2439,8 @@
         2572.32275390625,
         1753.6468505859375
       ],
-      "text": "[FIGURE 1 - See figure_p9_94a2c64d.png]",
-      "image_path": "figures/figure_p9_94a2c64d.png",
+      "text": "[FIGURE 1 - See figure_p9_det_8_000.png]",
+      "image_path": "figures/figure_p9_det_8_000.png",
       "metadata": {
         "score": 0.9951884746551514,
         "detection_dpi": 400,
@@ -2435,7 +2448,7 @@
       }
     },
     {
-      "id": "2dfd0626",
+      "id": "det_8_001",
       "page_index": 8,
       "role": "Text",
       "bbox": [
@@ -2454,7 +2467,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0028531551361083984,
+          "processing_time": 0.0028641223907470703,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -2464,7 +2477,7 @@
       }
     },
     {
-      "id": "60e8dbf6",
+      "id": "det_8_002",
       "page_index": 8,
       "role": "Text",
       "bbox": [
@@ -2475,7 +2488,7 @@
       ],
       "text": "PCR-confirmed influenza Cardiovascular disease Respiratory disease Car dio respiratory disease Obesity Diabetes",
       "metadata": {
-        "score": 0.9901600480079651,
+        "score": 0.9901601672172546,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2483,7 +2496,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0013060569763183594,
+          "processing_time": 0.000997781753540039,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -2493,7 +2506,7 @@
       }
     },
     {
-      "id": "181568dc",
+      "id": "det_8_005",
       "page_index": 8,
       "role": "Text",
       "bbox": [
@@ -2504,7 +2517,7 @@
       ],
       "text": "ss against Influenza among Participants between 50 −10 0 10 20 −20 15 −15 5 −5 25 25 40 35 45 30 55 50 Percentage",
       "metadata": {
-        "score": 0.9341618418693542,
+        "score": 0.9341617226600647,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2512,16 +2525,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004169940948486328,
+          "processing_time": 0.0004088878631591797,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "c038758e",
+      "id": "det_8_003",
       "page_index": 8,
       "role": "Text",
       "bbox": [
@@ -2532,7 +2544,7 @@
       ],
       "text": "vaccine against influenza as confirmed by polymerase chain reaction (PCR) assay, hospitalization for PCR-confirmed nfluenza, and hospitalization for community acquired pneumonia among study participants in the older age group according to the presence of five pre specified preexisting conditions.",
       "metadata": {
-        "score": 0.9656955599784851,
+        "score": 0.9656956791877747,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2540,17 +2552,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.002496004104614258,
+          "processing_time": 0.0022509098052978516,
           "processors_applied": [
             "post_extraction_clean",
-            "symspell",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "f036723b",
+      "id": "det_8_004",
       "page_index": 8,
       "role": "Text",
       "bbox": [
@@ -2561,7 +2572,7 @@
       ],
       "text": "Figure 3. Subgroup Analysis of Relative Vaccine Effectiveness d 64 Y f A A di t P iti C diti",
       "metadata": {
-        "score": 0.9631755352020264,
+        "score": 0.9631754755973816,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2569,16 +2580,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003440380096435547,
+          "processing_time": 0.00035500526428222656,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "b9758144",
+      "id": "det_8_006",
       "page_index": 8,
       "role": "Title",
       "bbox": [
@@ -2589,14 +2599,14 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.8951937556266785,
+        "score": 0.8951936364173889,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
       }
     },
     {
-      "id": "fb3e9d36",
+      "id": "det_8_007",
       "page_index": 8,
       "role": "Text",
       "bbox": [
@@ -2615,7 +2625,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003070831298828125,
+          "processing_time": 0.00035190582275390625,
           "processors_applied": [
             "spacing_fix"
           ]
@@ -2623,7 +2633,7 @@
       }
     },
     {
-      "id": "c0d7739c",
+      "id": "det_8_008",
       "page_index": 8,
       "role": "Text",
       "bbox": [
@@ -2642,12 +2652,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.0001709461212158203
+          "processing_time": 0.0001819133758544922
         }
       }
     },
     {
-      "id": "807034d0",
+      "id": "det_8_010",
       "page_index": 8,
       "role": "Title",
       "bbox": [
@@ -2665,7 +2675,7 @@
       }
     },
     {
-      "id": "df993b9f",
+      "id": "det_9_005",
       "page_index": 9,
       "role": "Text",
       "bbox": [
@@ -2674,9 +2684,9 @@
         1668.83349609375,
         3117.382568359375
       ],
-      "text": "through influenza by 15% would provide asub stantial public health benefit, especially during more severe influenza seasons. Several studies have shown benefit for the recombinant vaccine and other high dose in flu enza vaccines as compared with standard dose vaccines in adults who are 65 years of age or older, findings that have been attributed to an improved immune response 5 14 17 In the current study, we compared the effectiveness of the high dose recombinant vaccine with that of standard dose vaccines in patients between the ages of 18 and 64 years. The effectiveness of standard dose vaccines — especially against the influenza A H3 N2 subtype — may be attenuated by antigenic drift during egg based manufactur- ing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3 N2 strain circulated only during the second half of the 2018-2019 season 18 and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines 19 20 Dur- ing our study period, the observed benefit of the recombinant vaccine as compared with a stan dard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3 N2 than to higher effectiveness against influenza A over- ll i d i h ihi h d f h l",
+      "text": "through influenza by 15% would provide asub stantial public health benefit, especially during more severe influenza seasons. Several studies have shown benefit for the recombinant vaccine and other high dose influenza vaccines as compared with standard dose vaccines in adults who are 65 years of age or older, findings that have been attributed to an improved immune response 5 14 17 In the current study, we compared the effectiveness of the high dose recombinant vaccine with that of standard dose vaccines in patients between the ages of 18 and 64 years. The effectiveness of standard dose vaccines - especially against the influenza A H3 N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3 N2 strain circulated only during the second half of the 2018-2019 season 18 and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines 19 20 During our study period, the observed benefit of the recombinant vaccine as compared with a standard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3 N2 than to higher effectiveness against influenza A overll i d i h ihi h d f h l",
       "metadata": {
-        "score": 0.944750189781189,
+        "score": 0.9447503089904785,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2684,7 +2694,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0038831233978271484,
+          "processing_time": 0.003428936004638672,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2693,7 +2703,7 @@
       }
     },
     {
-      "id": "b834ac3b",
+      "id": "det_9_000",
       "page_index": 9,
       "role": "Text",
       "bbox": [
@@ -2702,9 +2712,9 @@
         1660.098876953125,
         3717.737548828125
       ],
-      "text": "mortality at KPNC and nationwide in a similar age group 11 12 If standard dose vaccines were already pre- venting most cases of influenza and break- through cases were uncommon, preventing 15% of breakthrough cases would be of modest pub- lic health benefit. However, since standard dose vaccines prevent at most 40 to 60% of influenza cases annually 13 reducing the incidence of break- through influenza by 15% would provide asub-",
+      "text": "mortality at KPNC and nationwide in a similar age group 11 12 If standard dose vaccines were already preventing most cases of influenza and breakthrough cases were uncommon, preventing 15% of breakthrough cases would be of modest public health benefit. However, since standard dose vaccines prevent at most 40 to 60% of influenza cases annually 13 reducing the incidence of breakthrough influenza by 15% would provide asub-",
       "metadata": {
-        "score": 0.9963796734809875,
+        "score": 0.9963794350624084,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2712,7 +2722,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0011599063873291016,
+          "processing_time": 0.0011649131774902344,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2721,7 +2731,7 @@
       }
     },
     {
-      "id": "ae1d4326",
+      "id": "det_9_002",
       "page_index": 9,
       "role": "Text",
       "bbox": [
@@ -2730,7 +2740,7 @@
         1666.515380859375,
         1241.907958984375
       ],
-      "text": "g gall associated with its higher dose of hemagglu- tinin antigen. A strength of our study is that the two study vaccine formulations were alternated in weekly intervals of time at each facility, which allowed us to balance covariates of interest as designed. In every KPNC geographic area, when influenza arrived, there were already participants who had received one of the two formulations of vaccine and who were similar with respect to demo-",
+      "text": "g gall associated with its higher dose of hemagglutinin antigen. A strength of our study is that the two study vaccine formulations were alternated in weekly intervals of time at each facility, which allowed us to balance covariates of interest as designed. In every KPNC geographic area, when influenza arrived, there were already participants who had received one of the two formulations of vaccine and who were similar with respect to demo-",
       "metadata": {
         "score": 0.9861658811569214,
         "detection_dpi": 400,
@@ -2740,16 +2750,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0011410713195800781,
+          "processing_time": 0.001064300537109375,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "8a9c8953",
+      "id": "det_9_001",
       "page_index": 9,
       "role": "Text",
       "bbox": [
@@ -2758,7 +2767,7 @@
         2806.15576171875,
         3715.369140625
       ],
-      "text": "g p y , handling of potential confounding bias has not been formally studied. Our intent was to mini- mize imbalances between the participants who received each vaccine, both within and between facilities. We also included several sensitivity analyses to address potential biases from clus-",
+      "text": "g p y , handling of potential confounding bias has not been formally studied. Our intent was to minimize imbalances between the participants who received each vaccine, both within and between facilities. We also included several sensitivity analyses to address potential biases from clus-",
       "metadata": {
         "score": 0.9953142404556274,
         "detection_dpi": 400,
@@ -2768,16 +2777,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0008130073547363281,
+          "processing_time": 0.0008640289306640625,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "f1dd2ec4",
+      "id": "det_9_004",
       "page_index": 9,
       "role": "Text",
       "bbox": [
@@ -2786,9 +2794,9 @@
         2810.0732421875,
         2760.0234375
       ],
-      "text": "in our real world setting, compliance with the weekly assigned vaccine schedule occasionally varied because of logistic con strains ts, including supply chain issues for the recombinant vaccine, which led to different numbers of participants in the two groups. Second, our data were limited to two influenza seasons; relative vaccine effective- ness may vary across seasons, depending on the vaccine match with circulating strains. Third, our primary outcome did not include infections in persons who did not undergo PCR testing, which limits its genera liz ability. Fourth, the study had limited power to detect a clinically mean- ing ful benefit of the recombinant vaccine as compared with a standard dose vaccine with respect to less frequent outcomes, such as hos- pita liz at ion for PCR-confirmed influenza. Finally, although KPNC has a diverse population, it may not be representative of other populations in the United States. In this study performed during two influenza ...50 d",
+      "text": "in our real world setting, compliance with the weekly assigned vaccine schedule occasionally varied because of logistic con strains ts, including supply chain issues for the recombinant vaccine, which led to different numbers of participants in the two groups. Second, our data were limited to two influenza seasons; relative vaccine effectiveness may vary across seasons, depending on the vaccine match with circulating strains. Third, our primary outcome did not include infections in persons who did not undergo PCR testing, which limits its genera liz ability. Fourth, the study had limited power to detect a clinically meaningful benefit of the recombinant vaccine as compared with a standard dose vaccine with respect to less frequent outcomes, such as hospitalization for PCR-confirmed influenza. Finally, although KPNC has a diverse population, it may not be representative of other populations in the United States. In this study performed during two influenza ...50 d",
       "metadata": {
-        "score": 0.9509744048118591,
+        "score": 0.9509742856025696,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2796,7 +2804,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.006124973297119141,
+          "processing_time": 0.006554126739501953,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -2806,7 +2814,7 @@
       }
     },
     {
-      "id": "f5f602a2",
+      "id": "det_9_003",
       "page_index": 9,
       "role": "Text",
       "bbox": [
@@ -2825,7 +2833,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0006361007690429688,
+          "processing_time": 0.0006437301635742188,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2834,7 +2842,7 @@
       }
     },
     {
-      "id": "4d8ecfc4",
+      "id": "det_9_007",
       "page_index": 9,
       "role": "Text",
       "bbox": [
@@ -2843,7 +2851,7 @@
         2813.48779296875,
         1376.34326171875
       ],
-      "text": "y p g seasons, participants between the ages of 50 and 64 years who received the recombinant vaccine had more protection against confirmed influenza than those who received a standard dose vaccine. Supported by San of i. Disclosure forms provided by the authors are available with the full text of this article at NEJM.org. We thank many groups within Kaiser Permanente Northern California for their dedication and contributions to this study, including the members of the KPNC Seasonal Flu Program, the clinical teams who managed and administered influenza vac- cines, the pharmacy teams, and the KPNC regional laboratory, without whose support this study would not have been possible; and Ruvim Izikson of San of i for scientific discussions and co- ordination.",
+      "text": "y p g seasons, participants between the ages of 50 and 64 years who received the recombinant vaccine had more protection against confirmed influenza than those who received a standard dose vaccine. Supported by San of i. Disclosure forms provided by the authors are available with the full text of this article at NEJM.org. We thank many groups within Kaiser Permanente Northern California for their dedication and contributions to this study, including the members of the KPNC Seasonal Flu Program, the clinical teams who managed and administered influenza vaccines, the pharmacy teams, and the KPNC regional laboratory, without whose support this study would not have been possible; and Ruvim Izikson of San of i for scientific discussions and coordination.",
       "metadata": {
         "score": 0.9171744585037231,
         "detection_dpi": 400,
@@ -2853,7 +2861,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00191497802734375,
+          "processing_time": 0.0019860267639160156,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2862,7 +2870,7 @@
       }
     },
     {
-      "id": "57d8084a",
+      "id": "det_9_006",
       "page_index": 9,
       "role": "Text",
       "bbox": [
@@ -2873,7 +2881,7 @@
       ],
       "text": "pgraphic characteristics, coexisting illnesses,",
       "metadata": {
-        "score": 0.9256114363670349,
+        "score": 0.9256114959716797,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2881,7 +2889,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00029206275939941406,
+          "processing_time": 0.00032901763916015625,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -2889,7 +2897,7 @@
       }
     },
     {
-      "id": "b738a0fc",
+      "id": "det_9_008",
       "page_index": 9,
       "role": "Title",
       "bbox": [
@@ -2907,7 +2915,7 @@
       }
     },
     {
-      "id": "cc5bc7f7",
+      "id": "det_9_009",
       "page_index": 9,
       "role": "Text",
       "bbox": [
@@ -2918,7 +2926,7 @@
       ],
       "text": "tering according to facility. Sensitivity analyses that were stratified either according to facility",
       "metadata": {
-        "score": 0.8762327432632446,
+        "score": 0.8762328028678894,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2926,16 +2934,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004379749298095703,
+          "processing_time": 0.0004138946533203125,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "ab416829",
+      "id": "det_9_010",
       "page_index": 9,
       "role": "Title",
       "bbox": [
@@ -2954,15 +2961,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00015783309936523438,
+          "processing_time": 0.00015807151794433594,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "6e172e9a",
+      "id": "det_9_011",
       "page_index": 9,
       "role": "Text",
       "bbox": [
@@ -2973,7 +2980,7 @@
       ],
       "text": "The new engl and jour nal of medicine",
       "metadata": {
-        "score": 0.5355744957923889,
+        "score": 0.5355744361877441,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -2981,12 +2988,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00014495849609375
+          "processing_time": 0.00013303756713867188
         }
       }
     },
     {
-      "id": "ab263f3e",
+      "id": "det_9_013",
       "page_index": 9,
       "role": "Title",
       "bbox": [
@@ -3004,7 +3011,7 @@
       }
     },
     {
-      "id": "536ed60c",
+      "id": "det_10_000",
       "page_index": 10,
       "role": "Text",
       "bbox": [
@@ -3022,7 +3029,7 @@
       }
     },
     {
-      "id": "273dd644",
+      "id": "det_10_001",
       "page_index": 10,
       "role": "Title",
       "bbox": [
@@ -3040,7 +3047,7 @@
       }
     },
     {
-      "id": "16e34dfe",
+      "id": "det_10_002",
       "page_index": 10,
       "role": "Text",
       "bbox": [
@@ -3051,14 +3058,14 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.9806029200553894,
+        "score": 0.9806028008460999,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
       }
     },
     {
-      "id": "7ce9f08c",
+      "id": "det_10_003",
       "page_index": 10,
       "role": "Text",
       "bbox": [
@@ -3076,7 +3083,7 @@
       }
     },
     {
-      "id": "d342f67d",
+      "id": "mrg_det_10_006",
       "page_index": 10,
       "role": "List",
       "bbox": [
@@ -3087,7 +3094,7 @@
       ],
       "text": "cines worked better than reported & ACIP recommends specific vaccines for seniors. June 23, 2022 (https www cdc gov flu",
       "metadata": {
-        "score": 0.9272728562355042,
+        "score": 0.9272727370262146,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -3095,17 +3102,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0008378028869628906,
+          "processing_time": 0.0008912086486816406,
           "processors_applied": [
             "post_extraction_clean",
-            "symspell",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "4d3e869b",
+      "id": "det_10_004",
       "page_index": 10,
       "role": "Text",
       "bbox": [
@@ -3116,7 +3122,7 @@
       ],
       "text": "Adams JL, McGlynn EA. Comparing Kai-",
       "metadata": {
-        "score": 0.9522284269332886,
+        "score": 0.9522285461425781,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -3124,12 +3130,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00015211105346679688
+          "processing_time": 0.0001571178436279297
         }
       }
     },
     {
-      "id": "fc259e8a",
+      "id": "det_10_005",
       "page_index": 10,
       "role": "Text",
       "bbox": [
@@ -3138,9 +3144,9 @@
         2598.304931640625,
         2118.004638671875
       ],
-      "text": "Dis 2021;​73(11):​e4312-e4320. Copyright © 2023 Massachusetts Medical Society.",
+      "text": "Dis 2021 73 11: e4312-e4320. Copyright © 2023 Massachusetts Medical Society.",
       "metadata": {
-        "score": 0.9277796745300293,
+        "score": 0.9277797937393188,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -3148,15 +3154,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004508495330810547,
+          "processing_time": 0.0004410743713378906,
           "processors_applied": [
+            "post_extraction_clean",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "6706ce63",
+      "id": "det_10_008",
       "page_index": 10,
       "role": "Text",
       "bbox": [
@@ -3174,7 +3181,7 @@
       }
     },
     {
-      "id": "a5950115",
+      "id": "det_10_012",
       "page_index": 10,
       "role": "Title",
       "bbox": [
@@ -3192,7 +3199,7 @@
       }
     },
     {
-      "id": "c101dc90",
+      "id": "det_10_013",
       "page_index": 10,
       "role": "Text",
       "bbox": [
@@ -3203,14 +3210,14 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.8148655295372009,
+        "score": 0.8148654699325562,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
       }
     },
     {
-      "id": "7cb535ca",
+      "id": "det_10_014",
       "page_index": 10,
       "role": "Text",
       "bbox": [
@@ -3229,12 +3236,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.0002899169921875
+          "processing_time": 0.0002601146697998047
         }
       }
     },
     {
-      "id": "fc7cdbb9",
+      "id": "det_10_017",
       "page_index": 10,
       "role": "Text",
       "bbox": [
@@ -3245,14 +3252,14 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.7627488374710083,
+        "score": 0.7627487778663635,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
       }
     },
     {
-      "id": "b8a59cfd",
+      "id": "det_10_019",
       "page_index": 10,
       "role": "List",
       "bbox": [
@@ -3270,7 +3277,7 @@
       }
     },
     {
-      "id": "2c5857a3",
+      "id": "det_10_023",
       "page_index": 10,
       "role": "Text",
       "bbox": [
@@ -3279,7 +3286,7 @@
         1055.604736328125,
         2169.85205078125
       ],
-      "text": "­resources/​­chis).",
+      "text": "resources/chis).",
       "metadata": {
         "score": 0.5421419739723206,
         "detection_dpi": 400,
@@ -3288,13 +3295,16 @@
         "extraction": {
           "method": "pymupdf",
           "scale_factor": 0.18,
-          "text_modified": false,
-          "processing_time": 0.00021600723266601562
+          "text_modified": true,
+          "processing_time": 0.00021696090698242188,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
         }
       }
     },
     {
-      "id": "fc061072",
+      "id": "det_10_028",
       "page_index": 10,
       "role": "Text",
       "bbox": [
@@ -3313,12 +3323,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00016880035400390625
+          "processing_time": 0.00018596649169921875
         }
       }
     },
     {
-      "id": "e275c019",
+      "id": "det_10_030",
       "page_index": 10,
       "role": "Title",
       "bbox": [
@@ -3329,7 +3339,7 @@
       ],
       "text": "",
       "metadata": {
-        "score": 0.2875688076019287,
+        "score": 0.2875688374042511,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_status": "empty"
@@ -3338,163 +3348,164 @@
   ],
   "reading_order": [
     [
-      "a7765ea0",
-      "f7f48e88",
-      "598f75f2",
-      "dedac911",
-      "66fc2820",
-      "23ab00d2",
-      "306657d7",
-      "2b4e8627",
-      "b15d517c",
-      "a15990c8",
-      "853a5cbd",
-      "245a9c98",
-      "d47e1aa9",
-      "f25a6ff7",
-      "909dad8c"
+      "det_0_017",
+      "det_0_009",
+      "det_0_004",
+      "det_0_002",
+      "det_0_006",
+      "det_0_001",
+      "det_0_007",
+      "det_0_003",
+      "det_0_005",
+      "det_0_000",
+      "det_0_008",
+      "det_0_012",
+      "det_0_018",
+      "det_0_014",
+      "det_0_010",
+      "det_0_011"
     ],
     [
-      "5f496b66",
-      "585dc198",
-      "b9bd0aa3",
-      "ab051c73",
-      "f41f26c6",
-      "3ee9dfdd",
-      "5e398f15",
-      "014dc3be",
-      "488b51ce",
-      "808751b3",
-      "b73de080",
-      "fb675fe5",
-      "e10bc162",
-      "b432a9ae"
+      "det_1_009",
+      "det_1_004",
+      "det_1_006",
+      "det_1_002",
+      "det_1_003",
+      "det_1_010",
+      "det_1_015",
+      "det_1_014",
+      "det_1_008",
+      "det_1_001",
+      "det_1_000",
+      "det_1_005",
+      "det_1_007",
+      "det_1_011"
     ],
     [
-      "cbaab924",
-      "c55c8b62",
-      "541d61f1",
-      "fc27cb1a",
-      "a397f9ff",
-      "17b6410d",
-      "41768ac4",
-      "f1a57e4a"
+      "mrg_det_2_000",
+      "det_2_005",
+      "det_2_001",
+      "det_2_002",
+      "det_2_003",
+      "det_2_004",
+      "det_2_009",
+      "det_2_008"
     ],
     [
-      "70709281",
-      "f41614bf",
-      "e28acaa9",
-      "0cb989eb",
-      "b01c2d3b",
-      "04fc099f",
-      "f47602e3",
-      "20e903b9",
-      "ae2e2678",
-      "05a17302",
-      "43b92126",
-      "c4d52813",
-      "80c42e9f",
-      "afcb8eb2",
-      "39a1fca2"
+      "det_3_011",
+      "det_3_000",
+      "det_3_009",
+      "det_3_008",
+      "det_3_004",
+      "det_3_002",
+      "det_3_005",
+      "det_3_012",
+      "det_3_014",
+      "det_3_013",
+      "det_3_010",
+      "det_3_001",
+      "det_3_007",
+      "det_3_006",
+      "det_3_003"
     ],
     [
-      "ac540abc",
-      "d5a2ddbe",
-      "2914703a",
-      "59b09749",
-      "a8e63cdf",
-      "28aa1299",
-      "9b66b5d8",
-      "1d9ccb6e",
-      "5badf007",
-      "4a6629f9",
-      "af5c6f40",
-      "c01d380c",
-      "95b0502d",
-      "517905d7",
-      "de1209de",
-      "386b34c6",
-      "5b1c2ffb"
+      "det_4_011",
+      "det_4_009",
+      "det_4_008",
+      "det_4_003",
+      "det_4_001",
+      "det_4_006",
+      "det_4_002",
+      "det_4_004",
+      "det_4_000",
+      "det_4_012",
+      "det_4_019",
+      "det_4_005",
+      "det_4_007",
+      "det_4_010",
+      "det_4_013",
+      "det_4_018",
+      "det_4_016"
     ],
     [
-      "a5960b78",
-      "668df4b3",
-      "0828fd10",
-      "7e350f44",
-      "3a65591a",
-      "11cdcdb9"
+      "det_5_000",
+      "det_5_003",
+      "det_5_001",
+      "det_5_002",
+      "det_5_004",
+      "det_5_006"
     ],
     [
-      "ccda65dc",
-      "f50fcf90",
-      "f04831f7",
-      "035714b2",
-      "0189b86a",
-      "7fb5e676",
-      "3879bf30",
-      "150151c4",
-      "083d26a9",
-      "dfe76ce0"
+      "det_6_002",
+      "det_6_004",
+      "det_6_001",
+      "det_6_005",
+      "det_6_003",
+      "det_6_000",
+      "mrg_det_6_007",
+      "det_6_006",
+      "det_6_015",
+      "det_6_010"
     ],
     [
-      "54f1ac9c",
-      "f9352755",
-      "9f297b82",
-      "65b72a01",
-      "4a5c96a6",
-      "fb91ddd5",
-      "da60a5c8",
-      "bc535d6e",
-      "009ed46e",
-      "59ec60d8",
-      "4359cb4e",
-      "31576b84",
-      "2c51acae"
+      "det_7_001",
+      "det_7_002",
+      "mrg_det_7_009",
+      "det_7_006",
+      "det_7_003",
+      "det_7_008",
+      "det_7_007",
+      "det_7_014",
+      "det_7_012",
+      "det_7_004",
+      "det_7_000",
+      "det_7_015",
+      "det_7_005"
     ],
     [
-      "94a2c64d",
-      "fb3e9d36",
-      "c038758e",
-      "181568dc",
-      "f036723b",
-      "2dfd0626",
-      "60e8dbf6",
-      "b9758144",
-      "807034d0",
-      "c0d7739c"
+      "det_8_000",
+      "det_8_007",
+      "det_8_003",
+      "det_8_005",
+      "det_8_004",
+      "det_8_001",
+      "det_8_002",
+      "det_8_006",
+      "det_8_010",
+      "det_8_008"
     ],
     [
-      "57d8084a",
-      "ae1d4326",
-      "df993b9f",
-      "b834ac3b",
-      "b738a0fc",
-      "ab263f3e",
-      "6e172e9a",
-      "4d8ecfc4",
-      "f1dd2ec4",
-      "f5f602a2",
-      "ab416829",
-      "cc5bc7f7",
-      "8a9c8953"
+      "det_9_006",
+      "det_9_002",
+      "det_9_005",
+      "det_9_000",
+      "det_9_008",
+      "det_9_013",
+      "det_9_011",
+      "det_9_007",
+      "det_9_004",
+      "det_9_003",
+      "det_9_010",
+      "det_9_009",
+      "det_9_001"
     ],
     [
-      "273dd644",
-      "d342f67d",
-      "b8a59cfd",
-      "6706ce63",
-      "fc7cdbb9",
-      "4d3e869b",
-      "2c5857a3",
-      "a5950115",
-      "e275c019",
-      "fc061072",
-      "c101dc90",
-      "16e34dfe",
-      "536ed60c",
-      "7ce9f08c",
-      "fc259e8a",
-      "7cb535ca"
+      "det_10_001",
+      "mrg_det_10_006",
+      "det_10_019",
+      "det_10_008",
+      "det_10_017",
+      "det_10_004",
+      "det_10_023",
+      "det_10_012",
+      "det_10_030",
+      "det_10_028",
+      "det_10_013",
+      "det_10_002",
+      "det_10_000",
+      "det_10_003",
+      "det_10_005",
+      "det_10_014"
     ]
   ],
   "metadata": {
@@ -3503,8 +3514,15 @@
     "total_pages": 11,
     "extraction": {
       "text_blocks": 96,
-      "figure_blocks": 5,
+      "figure_blocks": 6,
       "figures_dir": "data/cache/Hsiao_et_al.__2023_/extracted/figures"
     }
+  },
+  "pipeline_metadata": {
+    "raw_detection_count": 199,
+    "after_consolidation_count": 138,
+    "final_block_count": 138,
+    "box_tracking_enabled": true,
+    "id_format": "det_<page>_<index> for detections, mrg_<source_id> for merges"
   }
 }

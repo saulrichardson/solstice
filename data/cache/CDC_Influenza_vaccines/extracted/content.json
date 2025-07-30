@@ -39,12 +39,110 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0009729862213134766,
+          "processing_time": 0.0008072853088378906,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
           ]
         }
+      }
+    },
+    {
+      "id": "det_0_000",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        288.9803466796875,
+        5230.14892578125,
+        2015.6790771484375,
+        5326.0732421875
+      ],
+      "text": "nfluenza (Flu)",
+      "metadata": {
+        "score": 0.9558989405632019,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.00014901161193847656
+        }
+      }
+    },
+    {
+      "id": "det_0_002",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        284.70379638671875,
+        3172.889892578125,
+        1750.978515625,
+        3270.009033203125
+      ],
+      "text": "Afluria Quad rival ent 0.5-mL PFS§",
+      "metadata": {
+        "score": 0.8800951242446899,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00023031234741210938,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_004",
+      "page_index": 0,
+      "role": "Title",
+      "bbox": [
+        226.7707061767578,
+        2205.0244140625,
+        3497.107666015625,
+        2331.294189453125
+      ],
+      "text": "( ) FluLaval Quad rival ent 0 5 mL PFS ≥6 mos 15 µg/0 5 mL",
+      "metadata": {
+        "score": 0.7810380458831787,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0002713203430175781,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_005",
+      "page_index": 0,
+      "role": "Title",
+      "bbox": [
+        283.76654052734375,
+        5993.5244140625,
+        734.728759765625,
+        6076.16357421875
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.7433842420578003,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
       }
     },
     {
@@ -66,6 +164,24 @@
       }
     },
     {
+      "id": "det_0_007",
+      "page_index": 0,
+      "role": "Title",
+      "bbox": [
+        300.2196960449219,
+        5705.322265625,
+        1720.5389404296875,
+        5809.95654296875
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.6120504140853882,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
       "id": "det_0_011",
       "page_index": 0,
       "role": "Figure",
@@ -75,12 +191,36 @@
         4434.34130859375,
         1330.582275390625
       ],
-      "text": "[FIGURE 4 - See figure_p1_det_0_011.png]",
+      "text": "[FIGURE 10 - See figure_p1_det_0_011.png]",
       "image_path": "figures/figure_p1_det_0_011.png",
       "metadata": {
         "score": 0.4548403024673462,
         "detection_dpi": 400,
         "detector": "PubLayNet"
+      }
+    },
+    {
+      "id": "det_0_014",
+      "page_index": 0,
+      "role": "Title",
+      "bbox": [
+        288.4900817871094,
+        3023.95849609375,
+        833.3507690429688,
+        3116.03564453125
+      ],
+      "text": "(Seqirus)",
+      "metadata": {
+        "score": 0.2711571753025055,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.00019502639770507812
+        }
       }
     },
     {
@@ -121,7 +261,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0018460750579833984,
+          "processing_time": 0.0015749931335449219,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -149,7 +289,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00016689300537109375,
+          "processing_time": 0.00019931793212890625,
           "processors_applied": [
             "spacing_fix"
           ]
@@ -176,7 +316,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0008442401885986328,
+          "processing_time": 0.0008258819580078125,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -204,7 +344,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0030829906463623047,
+          "processing_time": 0.002657175064086914,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -233,7 +373,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0012738704681396484,
+          "processing_time": 0.0013210773468017578,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -261,7 +401,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0027000904083251953,
+          "processing_time": 0.0022449493408203125,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -289,7 +429,59 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004780292510986328,
+          "processing_time": 0.0004448890686035156,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_009",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        283.0350646972656,
+        1663.0079345703125,
+        1239.4798583984375,
+        1759.3905029296875
+      ],
+      "text": "Guidelines for Immunization a",
+      "metadata": {
+        "score": 0.7108626961708069,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.0001761913299560547
+        }
+      }
+    },
+    {
+      "id": "det_1_016",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        285.8521728515625,
+        1225.826416015625,
+        1401.857177734375,
+        1325.2069091796875
+      ],
+      "text": "Flu zone Quad rival ent is approved 0 25 L fill d i",
+      "metadata": {
+        "score": 0.547509491443634,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00027489662170410156,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -302,11 +494,19 @@
     [
       "det_0_001",
       "det_0_003",
+      "det_0_004",
+      "det_0_014",
+      "det_0_002",
+      "det_0_000",
+      "det_0_007",
+      "det_0_005",
       "det_0_006",
       "det_0_011"
     ],
     [
       "det_1_000",
+      "det_1_016",
+      "det_1_009",
       "det_1_003",
       "mrg_det_1_005",
       "det_1_004",
@@ -321,15 +521,15 @@
     "detection_dpi": 400,
     "total_pages": 2,
     "extraction": {
-      "text_blocks": 8,
+      "text_blocks": 14,
       "figure_blocks": 3,
       "figures_dir": "data/cache/CDC_Influenza_vaccines/extracted/figures"
     }
   },
   "pipeline_metadata": {
     "raw_detection_count": 40,
-    "after_consolidation_count": 12,
-    "final_block_count": 12,
+    "after_consolidation_count": 20,
+    "final_block_count": 20,
     "box_tracking_enabled": true,
     "id_format": "det_<page>_<index> for detections, mrg_<source_id> for merges"
   }
