@@ -1,125 +1,147 @@
 # Solstice
 
-Solstice is a comprehensive clinical document processing system that transforms unstructured medical PDFs into actionable insights through state-of-the-art layout detection and AI-powered fact-checking.
+**Transform clinical PDFs into verified, structured data** - Solstice automatically extracts information from medical documents and fact-checks claims against evidence.
 
-## 🎯 What is Solstice?
+## What Does Solstice Do?
 
-Solstice addresses a critical challenge in healthcare and life sciences: extracting reliable, structured information from complex clinical documents (clinical trials, FDA submissions, research papers) and verifying claims against evidence. Built for production use, it combines advanced document processing with transparent, multi-agent fact-checking to ensure accuracy and traceability.
+Solstice solves a critical problem: clinical documents (PDFs of trials, FDA submissions, research papers) contain valuable information locked in unstructured formats. Solstice extracts this data and verifies medical claims against the source documents.
 
-## ✨ Key Features
+### 🔄 How It Works
 
-* **📄 Advanced PDF Processing**
-  - State-of-the-art layout detection powered by Detectron2
-  - Accurate extraction of text, tables, figures, and metadata
-  - Intelligent text correction that preserves medical terminology
-  - Handles complex multi-column layouts and scientific notation
+```
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│   Your PDFs     │ ──► │    Ingestion     │ ──► │ Structured JSON │
+│                 │     │                  │     │                 │
+│ • Clinical Docs │     │ • Text Extract   │     │ • Clean Text    │
+│ • FDA Filings   │     │ • Table Detect   │     │ • Tables        │
+│ • Research      │     │ • Layout Parse   │     │ • Figures       │
+└─────────────────┘     └──────────────────┘     └─────────────────┘
+                                                            │
+                                                            ▼
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│ Verified Claims │ ◄── │   Fact Check     │ ◄── │     Claims      │
+│                 │     │                  │     │                 │
+│ • Evidence      │     │ • Find Evidence  │     │ "Drug X reduces │
+│ • Page Refs     │     │ • Verify Claims  │     │  symptoms by    │
+│ • Confidence    │     │ • Check Images   │     │  40%"           │
+└─────────────────┘     └──────────────────┘     └─────────────────┘
+```
 
-* **🔍 Evidence-Based Fact Checking**
-  - Multi-agent system with specialized roles (evidence extraction, validation, completeness checking)
-  - Every claim traced to exact quotes with page references
-  - Transparent verification process with detailed audit trails
-  - Support for analyzing charts and visual evidence
+## 📁 What Goes Where
 
-* **🚀 Production Ready**
-  - Docker-based deployment with automatic scaling
-  - API gateway for centralized LLM management
-  - Built-in caching and error handling
-  - Comprehensive logging and monitoring
+```
+solstice/
+│
+├── data/                    ← Your workspace
+│   ├── clinical_files/      ← Drop PDFs here
+│   ├── cache/               ← Extracted content (JSON)
+│   ├── claims/              ← Claims to verify
+│   └── studies/             ← Verification results
+│
+├── src/                     ← The engine
+│   ├── injestion/           ← PDF → JSON converter
+│   ├── fact_check/          ← Claim verification
+│   └── gateway/             ← API management
+│
+└── docs/                    ← Guides & details
+```
 
-* **🏥 Domain Optimized**
-  - Specialized pipelines for clinical vs. marketing documents
-  - Preserves critical medical information (drug names, dosages, procedures)
-  - Handles FDA documents, clinical trial protocols, and research papers
+## 🚀 Quick Start
 
-## 🚦 Quick Start
-
+### 1. Install (5 minutes)
 ```bash
-# Clone and setup
 git clone <repo-url> && cd solstice
-make install              # Install core dependencies (Python 3.11/3.12 required)
-
-# Process clinical PDFs
-cp your-documents.pdf data/clinical_files/
-make ingest              # Extract structured content from PDFs
-
-# Run fact-checking on claims
-make run-study           # Verify claims against extracted evidence
-
-# View results
-ls data/cache/           # Extracted document content
-ls data/studies/         # Fact-checking results
+make install      # Requires Python 3.11 or 3.12
 ```
 
-## 📚 Documentation
-
-* **[Installation Guide](docs/01_installation.md)** - Detailed setup instructions with troubleshooting
-* **[Project Overview](docs/00_project_overview.md)** - Architecture, components, and technical details
-
-## 🏗️ Architecture Overview
-
-```
-PDF Documents → Ingestion Pipeline → Structured JSON → Fact-Checking System → Evidence Results
-      ↓                                     ↓                    ↓
-Layout Detection                    Tables & Figures      Multi-Agent Verification
-Text Correction                     Metadata Extraction   Transparent Evidence Trails
+### 2. Add Your PDFs
+```bash
+cp your-document.pdf data/clinical_files/
 ```
 
-### Core Components
+### 3. Extract Content
+```bash
+make ingest
+# Creates: data/cache/your-document/extracted_content.json
+```
 
-1. **Document Ingestion** (`src/injestion/`)
-   - Converts PDFs to searchable, structured JSON
-   - Separate pipelines for clinical and marketing materials
-   - Preserves document structure and relationships
+### 4. Verify Claims
+```bash
+make run-study
+# Creates: data/studies/latest/evidence_report.json
+```
 
-2. **Fact-Checking Engine** (`src/fact_check/`)
-   - Orchestrates multiple AI agents for comprehensive verification
-   - Ensures evidence traceability and prevents hallucination
-   - Generates detailed verification reports
+## 🎯 Key Components
 
-3. **API Gateway** (`src/gateway/`)
-   - Manages all LLM interactions with caching and retries
-   - Provides usage analytics and cost control
-   - OpenAI-compatible endpoints
+### Ingestion Pipeline
+Converts PDFs into searchable, structured data:
+- **Extracts**: Text, tables, figures, metadata
+- **Fixes**: Common PDF text errors (spacing, encoding)
+- **Preserves**: Medical terms, drug names, dosages
+- **Output**: Clean JSON with page references
 
-## 🔧 Common Use Cases
+### Fact-Checking System
+Verifies claims using multiple AI agents:
+- **Evidence Agent**: Finds relevant passages
+- **Verification Agent**: Confirms evidence supports claims
+- **Completeness Agent**: Checks nothing is missing
+- **Image Agent**: Analyzes charts and figures
+- **Output**: Evidence report with exact quotes and page numbers
 
-- **Clinical Trial Analysis**: Extract protocols, results, and adverse events from trial documents
-- **Regulatory Compliance**: Verify claims in FDA submissions and marketing materials
-- **Literature Review**: Process and fact-check scientific papers at scale
-- **Data Extraction**: Build structured datasets from unstructured medical documents
-- **Evidence Synthesis**: Find and validate supporting evidence across document collections
+### Gateway Service
+Manages AI/LLM interactions:
+- **Purpose**: Central API proxy for all AI calls
+- **Features**: Caching, retries, cost tracking
+- **Usage**: `make up` to start, `make down` to stop
 
-## 🛠️ Development
+## 📊 Example Output
+
+**Input PDF**: Clinical trial results  
+**Claim**: "Treatment reduced symptoms by 40%"
+
+**Output**:
+```json
+{
+  "claim": "Treatment reduced symptoms by 40%",
+  "verdict": "SUPPORTED",
+  "evidence": [
+    {
+      "text": "The primary endpoint showed a 40.2% reduction in symptom severity (p<0.001)",
+      "page": 12,
+      "confidence": 0.95
+    }
+  ]
+}
+```
+
+## 📚 Learn More
+
+- **[Installation Guide](docs/01_installation.md)** - Step-by-step setup
+
+## 🔧 Common Commands
 
 ```bash
-make help         # Show all available commands
-make verify       # Check installation status
-make format       # Auto-format code
-make lint         # Check code quality
-make test         # Run test suite
+make help         # Show all commands
+make verify       # Check installation
+make ingest       # Process PDFs
+make run-study    # Run fact-checking
+make up           # Start gateway
+make logs         # View logs
+make down         # Stop services
 ```
 
-## 📋 Requirements
+## 💡 Use Cases
 
-- Python 3.11 or 3.12 (required for Detectron2 compatibility)
-- Poppler for PDF processing
-- OpenAI API key for fact-checking features
-- 8GB+ RAM recommended for layout detection
-- Docker for production deployment
+- **Pharma Companies**: Verify claims in clinical trial reports
+- **Regulatory Teams**: Check FDA submission accuracy
+- **Research Groups**: Extract data from literature at scale
+- **Medical Writers**: Fact-check publications against sources
 
 ## 🤝 Contributing
 
-We welcome contributions! Please:
-1. Check existing issues or create a new one
-2. Fork the repository and create a feature branch
-3. Ensure tests pass and code is formatted
-4. Submit a pull request with clear description
+Contributions welcome! See open issues or submit a pull request.
 
 ## 📄 License
 
 See LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-Solstice builds on excellent open-source projects including Detectron2, LayoutParser, PyMuPDF, and the broader Python scientific computing ecosystem.
 

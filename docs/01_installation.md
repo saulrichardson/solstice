@@ -111,23 +111,26 @@ For processing complex PDFs with tables and figures:
 make install-detectron2
 ```
 
-**What this installs:**
-- PyTorch and torchvision for deep learning
-- Detectron2 for state-of-the-art object detection (built from source)
-- LayoutParser for document structure analysis
-- **Patched iopath** to fix model download issues (installed after detectron2)
+**What this does:**
+- Installs PyTorch and detectron2 for layout detection
+- Builds detectron2 from source (required for Python 3.11+)
+- Installs a patched version of iopath to fix model download issues
+- Takes 5-10 minutes and requires ~2GB disk space
 
-**Note about the installation:**
-- Detectron2 is built from source since pre-built wheels aren't available for Python 3.11+
-- The installation uses `--no-build-isolation` to ensure torch is available during build
-- A patched version of iopath is installed to fix the `?dl=1` query parameter issue
-- The iopath cache is cleared before installation to avoid conflicts
+If the make command fails, you can install manually:
 
-**Installation details:**
-- Takes 5-10 minutes (builds from source)
-- Requires ~2GB of disk space
-- Downloads AI models on first use
-- Skip this if you only need basic text extraction
+```bash
+# Clear iopath cache
+rm -rf ~/.torch/iopath_cache/
+
+# Install dependencies
+pip install torch torchvision
+pip install 'git+https://github.com/facebookresearch/detectron2.git' --no-build-isolation
+pip install 'git+https://github.com/facebookresearch/iopath@e348b6797c40c9eb4c96bf75e9aaf1b248297548' --force-reinstall
+pip install layoutparser[layoutmodels]
+```
+
+**Note:** You'll see a version warning about iopath - this is expected and safe to ignore.
 
 ### Step 6: Verify Installation
 
@@ -298,19 +301,19 @@ detectron2 0.6 requires iopath<0.1.10,>=0.1.7, but you have iopath 0.1.11
 
 **This is expected and safe to ignore.** We intentionally use a patched iopath that fixes model download issues while remaining API-compatible.
 
-### Layout Detection Issues
+### Detectron2 Issues
 
-If you encounter errors like "Config file does not exist" or issues with model downloads:
+If you encounter errors like "Config file does not exist" or model download failures:
 
-1. Clear the iopath cache:
-   ```bash
-   rm -rf ~/.torch/iopath_cache/
-   ```
+1. Clear the iopath cache: `rm -rf ~/.torch/iopath_cache/`
+2. Ensure the patched iopath is installed
+3. Check your internet connection
 
-2. Reinstall detectron2:
-   ```bash
-   make install-detectron2
-   ```
+The version warning about iopath is expected:
+```
+detectron2 0.6 requires iopath<0.1.10,>=0.1.7, but you have iopath 0.1.11
+```
+This is safe to ignore - the patched version is API-compatible.
 
 ### Memory Issues
 
@@ -382,6 +385,7 @@ mkdir -p data/clinical_files data/cache
 
 echo "Installation complete! Place PDFs in data/clinical_files/ and run 'make ingest'"
 ```
+
 
 ## Next Steps
 
