@@ -120,27 +120,19 @@ Quality standards:
 - Be specific about the logical relationship
 - Include specific data points, numbers, or text visible in the image"""
 
-            # Create multimodal message
-            messages = [{
-                "role": "user",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": prompt
-                    },
-                    {
-                        "type": "image_url",
-                        "image_url": {
-                            "url": f"data:{mime_type};base64,{image_base64}"
-                        }
-                    }
-                ]
-            }]
+            # Create data URI for image
+            data_uri = f"data:{mime_type};base64,{image_base64}"
             
-            # Call multimodal LLM
+            # Use Responses API format with typed content
             response = await self.llm_client.create_response(
-                input=messages,
                 model=self.llm_client.model,
+                input=[{
+                    "role": "user",
+                    "content": [
+                        {"type": "input_text", "text": prompt},
+                        {"type": "input_image", "image_url": data_uri}
+                    ]
+                }],
                 temperature=0.0,
                 max_output_tokens=1000
             )

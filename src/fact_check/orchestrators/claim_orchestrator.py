@@ -379,8 +379,9 @@ class ClaimOrchestrator:
                     "timestamp": datetime.now().isoformat()
                 })
             else:
-                # Save the output
-                self._save_agent_output(document, f"image_evidence_analyzer", result)
+                # Save the output to image-specific directory
+                image_id = result.get('image_filename', '').replace('.png', '').replace('.jpg', '')
+                self._save_agent_output(document, f"image_evidence_analyzer/{image_id}", result)
                 
                 # Track in agents_run
                 doc_result["agents_run"].append({
