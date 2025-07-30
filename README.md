@@ -140,7 +140,7 @@ You should see:
 
 ### Step 4: Configuration
 
-#### 4.1 API Keys
+#### 4.1 Set up environment file
 
 Copy the example environment file:
 
@@ -150,8 +150,10 @@ cp .env.example .env
 
 Edit `.env` and add your OpenAI API key:
 ```
-OPENAI_API_KEY=sk-...
+OPENAI_API_KEY=sk-your-api-key-here
 ```
+
+Note: The gateway service requires this for API calls. Leave other settings at defaults.
 
 #### 4.2 Data Directories
 
@@ -190,17 +192,20 @@ This will:
 After ingesting documents, extract evidence for claims:
 
 ```bash
-# Run all fact-checking agents
+# Run fact-checking pipeline
 python -m src.cli run-study
-
-# Run specific agents only
-python -m src.cli run-study --agents supporting_evidence regex_verifier
 ```
 
-Available agents:
-- `supporting_evidence` - Finds evidence supporting claims
-- `regex_verifier` - Pattern-based verification
-- `clinical_trial_extractor` - Extracts trial data
+This runs the complete fact-checking pipeline that:
+- Searches for evidence supporting each claim
+- Verifies and validates found evidence
+- Checks completeness of evidence
+- Analyzes images for supporting evidence
+- Presents results in structured format
+
+By default, it uses claims from `data/claims/Flublok_Claims.json` and searches all processed documents.
+
+**Note**: The marketing folder contains a specialized parser specifically designed for Flublok marketing PDFs, using PrimaLayout for better detection of marketing material layouts.
 
 #### Using the Gateway Service
 
@@ -241,13 +246,25 @@ docker compose up -d --scale gateway=3
 
 ## Architecture
 
-- **Ingestion Pipeline**: Processes PDFs using layout detection to extract structured content
-  - Uses native PDF text extraction (PyMuPDF) with automatic text processing
-  - Applies intelligent spacing fixes using WordNinja
-  - Automatically handles tables and figures as images
-  - Modular text processing service for consistent text quality
-- **Fact Checking**: Agent-based system that extracts supporting evidence for claims from clinical documents
-- **Gateway Service**: Proxy service for LLM API calls (OpenAI, Anthropic, etc.)
+### Core Components
+
+- **Ingestion Pipeline** (`src/injestion/`): Processes PDFs to extract structured content
+  - Native PDF text extraction using PyMuPDF
+  - Intelligent text correction with WordNinja
+  - Optional layout detection for tables/figures (requires Detectron2)
+  - Special marketing module for Flublok marketing materials (uses PrimaLayout)
+  - Saves extracted content as JSON in `data/cache/`
+
+- **Fact Checking System** (`src/fact_check/`): Multi-agent pipeline for evidence extraction
+  - Orchestrator coordinates multiple specialized agents
+  - Each agent handles specific verification tasks
+  - Results saved with full evidence trails
+
+- **Gateway Service** (`src/gateway/`): API proxy for LLM interactions
+  - OpenAI-compatible endpoints
+  - Request/response caching
+  - Automatic retries and error handling
+  - Runs on port 8000 by default
 
 ### Text Processing
 
@@ -261,14 +278,16 @@ This ensures that downstream components (fact-checking, LLMs) receive properly f
 
 ## Troubleshooting
 
-### Version Conflict Warning
+### Common Issues
+
+#### Version Conflict Warning
 
 You may see this warning:
 ```
 detectron2 0.6 requires iopath<0.1.10,>=0.1.7, but you have iopath 0.1.11
 ```
 
-**This is expected and safe to ignore.** We intentionally use iopath 0.1.11 because it includes a critical fix for model downloads. The versions are API-compatible.
+**This is expected and safe to ignore.** We intentionally use a patched iopath that fixes model download issues while remaining API-compatible.
 
 ### Layout Detection Issues
 
@@ -334,10 +353,14 @@ solstice/
 │   ├── cli/             # Command-line interface
 │   ├── fact_check/      # Fact-checking agents
 │   ├── gateway/         # API proxy service  
-│   └── injestion/       # PDF processing pipeline
-│       ├── processing/  # Text cleaning & correction
-│       ├── storage/     # Data persistence
-│       └── marketing/   # Document analysis
+│   ├── injestion/       # PDF processing pipeline
+│   │   ├── processing/  # Text cleaning & correction
+│   │   ├── storage/     # Data persistence
+│   │   ├── marketing/   # Marketing page parser (Flublok-specific)
+│   │   └── visualization/ # Visual output generation
+│   ├── core/            # Core utilities
+│   ├── interfaces/      # Shared interfaces
+│   └── util/            # Helper utilities
 ├── docker-compose.yml   # Container orchestration
 ├── Makefile            # Common commands
 ├── pyproject.toml      # Package & dependencies

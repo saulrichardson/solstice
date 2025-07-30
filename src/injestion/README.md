@@ -1,16 +1,37 @@
 # Ingestion Module
 
-Advanced PDF processing pipeline with layout detection, text extraction, and document structuring.
+Advanced PDF processing with two specialized pipelines for different document types.
 
 ## Overview
 
-The ingestion module processes PDF documents into structured data suitable for downstream analysis. It combines:
-- **Layout Detection**: Deep learning-based document layout analysis
-- **Text Extraction**: Multi-strategy text extraction with quality enhancement
-- **Structure Preservation**: Reading order detection and content organization
-- **Visualization**: Visual debugging and quality assurance tools
+The ingestion module provides two distinct processing pipelines:
 
-## Architecture
+1. **Default Pipeline** (Scientific/Clinical PDFs): Standard processing with layout detection
+2. **Marketing Pipeline** (Marketing Materials): Specialized processing in the `marketing/` subfolder
+
+Both pipelines share common utilities in `processing/`, `storage/`, and `visualization/`.
+
+## Folder Structure
+
+```
+injestion/
+├── marketing/          # Complete pipeline for Flublok marketing PDFs
+│   ├── detector.py    # PrimaLayout-based detection
+│   ├── pipeline.py    # Marketing-specific orchestration
+│   └── ...           # Other marketing-specific components
+│
+├── processing/        # Shared processing utilities
+│   ├── text_processing_service.py
+│   ├── layout_detector.py
+│   └── ...
+│
+├── storage/          # Shared storage utilities
+└── visualization/    # Shared visualization tools
+```
+
+## Default Pipeline (Scientific/Clinical Documents)
+
+Used by `python -m src.cli ingest` for processing scientific PDFs:
 
 ```
 PDF Input
@@ -112,7 +133,7 @@ Quality assurance and debugging tools:
 
 ## Usage
 
-### Basic Usage
+### Default Pipeline (Scientific PDFs)
 
 ```python
 # Using the CLI
@@ -131,6 +152,18 @@ for block in document.blocks:
     elif block.role == "Figure":
         print(f"Figure at: {block.image_path}")
 ```
+
+### Marketing Pipeline (Flublok Marketing Materials)
+
+```bash
+# For marketing PDFs, use the specialized pipeline
+python -m src.injestion.marketing.cli path/to/marketing.pdf
+
+# With options
+python -m src.injestion.marketing.cli marketing.pdf --preset aggressive
+```
+
+The marketing pipeline uses PrimaLayout (better for marketing layouts) instead of PubLayNet.
 
 ### Advanced Configuration
 

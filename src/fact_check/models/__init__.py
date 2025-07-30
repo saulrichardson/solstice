@@ -5,9 +5,11 @@ from .llm_outputs import (
     ExtractorOutput,
     VerifierOutput
 )
+from .image_outputs import ImageAnalysisOutput
 
 __all__ = [
     "ExtractorSnippet",
     "ExtractorOutput", 
-    "VerifierOutput"
+    "VerifierOutput",
+    "ImageAnalysisOutput"
 ]

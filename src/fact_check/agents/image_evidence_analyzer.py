@@ -9,6 +9,8 @@ from .base import BaseAgent, AgentError
 from ..core.responses_client import ResponsesClient
 from ..config.agent_models import get_model_for_agent
 from ..config.model_capabilities import build_vision_request, extract_text_from_response
+from ..models.image_outputs import ImageAnalysisOutput
+from ..utils.llm_parser import LLMResponseParser
 
 logger = logging.getLogger(__name__)
 
@@ -104,60 +106,113 @@ class ImageEvidenceAnalyzer(BaseAgent):
             # Determine image mime type
             mime_type = "image/png" if image_path.suffix == ".png" else "image/jpeg"
             
-            # Build multimodal prompt
-            prompt = f"""Analyze if this image contains evidence supporting the claim.
+            # Build comprehensive multimodal prompt
+            prompt = f"""You are analyzing an image to determine if it contains evidence supporting a specific claim.
 
-CLAIM: {claim}
+CLAIM TO EVALUATE: {claim}
 
-Return your analysis:
+ANALYSIS INSTRUCTIONS:
+1. First, carefully examine the entire image
+2. Identify the type of content (table, graph, text excerpt, diagram, etc.)
+3. Note any relevant data, numbers, text, or visual elements
+4. Determine if this information provides evidence for or against the claim
+5. Consider both direct and indirect evidence
+
+IMPORTANT CONSIDERATIONS:
+- Clinical trial data alone does not prove regulatory approval
+- Look for explicit statements, not implications
+- A study showing something was tested in a group doesn't mean it's approved for that group
+- Partial information that doesn't fully address the claim should not be considered supporting evidence
+- If text is cut off or unclear, note this limitation
+
+Return your analysis as a JSON object with these fields:
 {{
   "supports_claim": true/false,
-  "explanation": "Describe what you see in the image, then explain how and why it does (or doesn't) support the claim."
+  "image_description": "Objective description of what the image contains",
+  "evidence_found": "Specific evidence in the image related to the claim (null if none)",
+  "reasoning": "Detailed explanation of why this does or doesn't support the claim",
+  "confidence_notes": "Any limitations, caveats, or confidence issues (null if none)"
 }}
 
-Quality standards:
-- First describe the image content objectively
-- Then connect (or explain lack of connection) to the claim
-- Be specific about the logical relationship
-- Include specific data points, numbers, or text visible in the image"""
+EXAMPLE REASONING PATTERNS:
+- "While the table shows clinical data for adults 18+, it does not indicate regulatory approval status"
+- "The document explicitly states 'approved for use in persons 18 years and older' which directly supports the claim"
+- "The graph shows efficacy data but contains no information about the claimed dosage amount"""
 
             # Create data URI for image
             data_uri = f"data:{mime_type};base64,{image_base64}"
             
-            # Use model capabilities to build appropriate request
-            request = build_vision_request(
-                model=self.llm_client.model,
-                text_prompt=prompt,
-                image_data_uri=data_uri,
-                max_output_tokens=1000,
-                temperature=0.0
-            )
-            
-            response = await self.llm_client.create_response(**request)
-            
-            # Extract response text using model-specific handler
-            response_text = extract_text_from_response(response, self.llm_client.model)
-            
-            # Parse JSON response
-            import json
+            # Parse with retry using Pydantic model
             try:
-                result = json.loads(response_text)
-            except json.JSONDecodeError:
-                # Fallback parsing if response isn't valid JSON
-                logger.warning(f"Failed to parse JSON response, using fallback")
-                result = {
-                    "supports_claim": False,
-                    "explanation": response_text
-                }
+                # Build request without prompt (will be added by parser)
+                base_request = build_vision_request(
+                    model=self.llm_client.model,
+                    text_prompt="",  # Parser will add the prompt
+                    image_data_uri=data_uri,
+                    max_output_tokens=1500,
+                    temperature=0.0
+                )
+                
+                # Use the robust parser with retry logic
+                parsed_output = await LLMResponseParser.parse_with_retry(
+                    llm_client=self.llm_client,
+                    prompt=prompt,
+                    output_model=ImageAnalysisOutput,
+                    max_retries=2,
+                    temperature=0.0,
+                    max_output_tokens=1500,
+                    # Pass the image data through kwargs
+                    model=self.llm_client.model,
+                    input=[{
+                        "role": "user",
+                        "content": [
+                            {"type": "input_text", "text": prompt},
+                            {"type": "input_image", "image_url": data_uri}
+                        ]
+                    }],
+                    tools=base_request.get("tools")  # Include tools if needed for o4-mini
+                )
+                
+                # Convert Pydantic model to dict
+                result = parsed_output.dict()
+                
+            except Exception as e:
+                logger.error(f"Failed to parse image analysis: {e}")
+                # Fallback to direct parsing
+                request = build_vision_request(
+                    model=self.llm_client.model,
+                    text_prompt=prompt,
+                    image_data_uri=data_uri,
+                    max_output_tokens=1500,
+                    temperature=0.0
+                )
+                response = await self.llm_client.create_response(**request)
+                response_text = extract_text_from_response(response, self.llm_client.model)
+                
+                # Try to parse as JSON one more time
+                import json
+                try:
+                    result = json.loads(response_text)
+                except:
+                    result = {
+                        "supports_claim": False,
+                        "image_description": "Failed to parse response",
+                        "reasoning": response_text[:500],
+                        "evidence_found": None,
+                        "confidence_notes": "Parsing error occurred"
+                    }
             
-            # Add metadata
+            # Add metadata and create final output
             output = {
                 "image_filename": self.image_filename,
                 "image_path": str(image_path.relative_to(self.cache_dir)),
                 "claim_id": self.claim_id,
                 "claim": claim,
-                **result,
-                "model_used": self.llm_client.model
+                "supports_claim": result.get("supports_claim", False),
+                "explanation": self._format_explanation(result),
+                "model_used": self.llm_client.model,
+                # Store detailed analysis separately
+                "detailed_analysis": result
             }
             
             logger.info(f"  Result: {'Supports' if result.get('supports_claim') else 'Does not support'} claim")
@@ -175,3 +230,25 @@ Quality standards:
                 "error": True,
                 "model_used": self.llm_client.model
             }
+    
+    def _format_explanation(self, result: Dict[str, Any]) -> str:
+        """Format the detailed analysis into a concise explanation."""
+        parts = []
+        
+        # Add description
+        if result.get("image_description"):
+            parts.append(result["image_description"])
+        
+        # Add evidence if found
+        if result.get("evidence_found"):
+            parts.append(f"Evidence: {result['evidence_found']}")
+        
+        # Add reasoning
+        if result.get("reasoning"):
+            parts.append(result["reasoning"])
+        
+        # Add confidence notes if any
+        if result.get("confidence_notes"):
+            parts.append(f"Note: {result['confidence_notes']}")
+        
+        return " ".join(parts) if parts else "No explanation available"
