@@ -2,7 +2,7 @@
 
 import logging
 from typing import List, Tuple, Optional
-from ..processing.box import Box
+from ..shared.processing.box import Box
 
 logger = logging.getLogger(__name__)
 

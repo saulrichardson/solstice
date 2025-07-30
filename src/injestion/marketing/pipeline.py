@@ -11,14 +11,14 @@ logger = logging.getLogger(__name__)
 
 from .detector import MarketingLayoutDetector
 from .consolidation import BoxConsolidator
-from ..processing.box import Box
+from ..shared.processing.box import Box
 # already correct; ensure not using models.document; no change
 from .reading_order import determine_marketing_reading_order
-from ..processing.text_extractor import extract_document_content
-from ..storage.paths import stage_dir, save_json, pages_dir
-from ..visualization.layout_visualizer import visualize_document
-from ..config import get_config, IngestionConfig
-from ..base_pipeline import BasePDFPipeline
+from ..shared.processing.text_extractor import extract_document_content
+from ..shared.storage.paths import stage_dir, save_json, pages_dir
+from ..shared.visualization.layout_visualizer import visualize_document
+from ..shared.config import get_config, IngestionConfig
+from ..shared.base_pipeline import BasePDFPipeline
 from src.interfaces import Block, Document
 import layoutparser as lp
 import uuid
@@ -183,7 +183,7 @@ class MarketingPipeline(BasePDFPipeline):
         document.save(doc_path)
         
         # Generate readable formats
-        from ..processing.document_formatter import (
+        from ..shared.processing.document_formatter import (
             generate_readable_document,
             generate_text_only_document,
             generate_html_document

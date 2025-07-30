@@ -9,8 +9,8 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-from ..injestion.pipeline import ingest_pdf
-from ..injestion.storage.paths import set_cache_root
+from ..injestion.scientific.pipeline import ingest_pdf
+from ..injestion.shared.storage.paths import set_cache_root
 from ..core.config import settings
 
 

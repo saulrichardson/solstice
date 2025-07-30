@@ -116,7 +116,6 @@ async def create_response(request: Request, body: dict):
             "temperature": response_request.temperature,
         }
         # Note: Cache is write-only for audit/debugging purposes
-        # get_response() always returns None by design
         cache_key = cache_data
 
     # Handle streaming

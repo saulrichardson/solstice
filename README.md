@@ -353,11 +353,13 @@ solstice/
 │   ├── cli/             # Command-line interface
 │   ├── fact_check/      # Fact-checking agents
 │   ├── gateway/         # API proxy service  
-│   ├── injestion/       # PDF processing pipeline
-│   │   ├── processing/  # Text cleaning & correction
-│   │   ├── storage/     # Data persistence
-│   │   ├── marketing/   # Marketing page parser (Flublok-specific)
-│   │   └── visualization/ # Visual output generation
+│   ├── injestion/       # PDF processing pipelines
+│   │   ├── scientific/  # Main pipeline for scientific/clinical PDFs
+│   │   ├── marketing/   # Specialized pipeline for Flublok marketing PDFs
+│   │   └── shared/      # Common utilities
+│   │       ├── processing/  # Text cleaning & correction
+│   │       ├── storage/     # Data persistence
+│   │       └── visualization/ # Visual output generation
 │   ├── core/            # Core utilities
 │   ├── interfaces/      # Shared interfaces
 │   └── util/            # Helper utilities

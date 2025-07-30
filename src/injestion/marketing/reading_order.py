@@ -2,7 +2,7 @@
 
 from typing import List, Tuple, Dict
 import numpy as np
-from ..processing.box import Box
+from ..shared.processing.box import Box
 
 
 def determine_marketing_reading_order(boxes: List[Box], page_width: float = 1600, page_height: float = 3000) -> List[str]:

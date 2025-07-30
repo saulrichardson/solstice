@@ -6,16 +6,16 @@ import logging
 from typing import List, Optional
 from pathlib import Path
 
-from .base_pipeline import BasePDFPipeline
-from .processing.layout_detector import LayoutDetectionPipeline
-from .processing.overlap_resolver import no_overlap_pipeline, expand_boxes
-from .processing.box import Box
-from .processing.noop_consolidator import NoOpConsolidator
+from ..shared.base_pipeline import BasePDFPipeline
+from ..shared.processing.layout_detector import LayoutDetectionPipeline
+from ..shared.processing.overlap_resolver import no_overlap_pipeline, expand_boxes
+from ..shared.processing.box import Box
+from ..shared.processing.noop_consolidator import NoOpConsolidator
 from src.interfaces import Block, Document
-from .processing.text_extractor import extract_document_content
-from .processing.reading_order import determine_reading_order_simple
-from .storage.paths import stage_dir, save_json
-from .config import IngestionConfig
+from ..shared.processing.text_extractor import extract_document_content
+from ..shared.processing.reading_order import determine_reading_order_simple
+from ..shared.storage.paths import stage_dir, save_json
+from ..shared.config import IngestionConfig
 
 logger = logging.getLogger(__name__)
 

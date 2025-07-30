@@ -46,15 +46,8 @@ class Cache:
         return self.root / f"{key_hash}.json"
 
     # ------------------------------------------------------------------
-    # Public API (async for parity with previous Redis version)
+    # Public API
     # ------------------------------------------------------------------
-
-    async def get_response(self, cache_data: dict) -> Optional[dict]:
-        """Write-only mode – always return None so the caller performs a
-        live request.  The method still exists to keep call sites intact
-        while enforcing the new single operating model."""
-
-        return None
     
     def is_operational(self) -> bool:
         """Check if cache is operational."""
@@ -116,11 +109,6 @@ class Cache:
             # Directory not empty or cannot be removed – that's fine.
             pass
 
-    # Backwards compatibility alias (older tests / codebase may still import
-    # `clear_cache`).  Delegate to the new implementation.
-
-    async def clear_cache(self) -> None:  # pragma: no cover
-        await self.clear()
 
 
 # Global cache instance

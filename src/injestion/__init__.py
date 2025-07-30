@@ -7,7 +7,7 @@ This package provides the core functionality for:
 - Marketing-specific document processing
 """
 
-# Import the main pipeline function
-from .pipeline import ingest_pdf
+# Import the main pipeline function from the scientific module
+from .scientific import ingest_pdf, PDFIngestionPipeline
 
-__all__ = ["ingest_pdf"]
+__all__ = ["ingest_pdf", "PDFIngestionPipeline"]

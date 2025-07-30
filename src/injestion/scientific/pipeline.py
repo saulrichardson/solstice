@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import os
 from src.interfaces import Document
-from .config import DEFAULT_CONFIG as CONFIG
+from ..shared.config import DEFAULT_CONFIG as CONFIG
 
 def ingest_pdf(pdf_path: str | os.PathLike[str]) -> Document:
     """Process a PDF file with optimized settings for clinical documents.
@@ -18,3 +18,7 @@ def ingest_pdf(pdf_path: str | os.PathLike[str]) -> Document:
     from .standard_pipeline import StandardPipeline
     pipeline = StandardPipeline(config=CONFIG)
     return pipeline.process_pdf(pdf_path)
+
+
+# Alias for backward compatibility
+PDFIngestionPipeline = None  # Will be imported from standard_pipeline in __init__.py

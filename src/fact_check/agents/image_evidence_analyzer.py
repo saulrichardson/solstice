@@ -107,23 +107,25 @@ class ImageEvidenceAnalyzer(BaseAgent):
             mime_type = "image/png" if image_path.suffix == ".png" else "image/jpeg"
             
             # Build comprehensive multimodal prompt
-            prompt = f"""You are analyzing an image to determine if it contains evidence supporting a specific claim.
+            prompt = f"""You are analyzing an image from a medical/clinical document to determine if it contains evidence supporting a specific claim.
 
 CLAIM TO EVALUATE: {claim}
 
-ANALYSIS INSTRUCTIONS:
-1. First, carefully examine the entire image
-2. Identify the type of content (table, graph, text excerpt, diagram, etc.)
-3. Note any relevant data, numbers, text, or visual elements
-4. Determine if this information provides evidence for or against the claim
-5. Consider both direct and indirect evidence
+ANALYSIS APPROACH:
+1. Carefully examine the entire image and identify what type of content it contains
+2. Understand what information is presented and how it relates to the claim
+3. Consider the context and source of the information shown
+4. Evaluate whether the evidence directly addresses the claim or only partially relates to it
+5. Think critically about what the evidence actually demonstrates versus what it might imply
 
-IMPORTANT CONSIDERATIONS:
-- Clinical trial data alone does not prove regulatory approval
-- Look for explicit statements, not implications
-- A study showing something was tested in a group doesn't mean it's approved for that group
-- Partial information that doesn't fully address the claim should not be considered supporting evidence
-- If text is cut off or unclear, note this limitation
+KEY PRINCIPLES:
+- Base your analysis solely on what is visible in the image - do not infer or assume information not present
+- Distinguish between different types of evidence (e.g., study data, regulatory statements, clinical findings)
+- Consider the completeness and directness of the evidence
+- Note any limitations in what can be determined from the image
+- Be precise about what the evidence shows versus what it doesn't show
+- Consider the medical/clinical context when interpreting data
+- Account for image quality issues - note if text is blurry, cut off, or difficult to read
 
 Return your analysis as a JSON object with these fields:
 {{
@@ -134,10 +136,7 @@ Return your analysis as a JSON object with these fields:
   "confidence_notes": "Any limitations, caveats, or confidence issues (null if none)"
 }}
 
-EXAMPLE REASONING PATTERNS:
-- "While the table shows clinical data for adults 18+, it does not indicate regulatory approval status"
-- "The document explicitly states 'approved for use in persons 18 years and older' which directly supports the claim"
-- "The graph shows efficacy data but contains no information about the claimed dosage amount"""
+Focus on clear, evidence-based reasoning that explains your determination."""
 
             # Create data URI for image
             data_uri = f"data:{mime_type};base64,{image_base64}"

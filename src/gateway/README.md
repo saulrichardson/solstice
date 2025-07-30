@@ -1,15 +1,14 @@
-# Gateway Service
+# Solstice Gateway
 
-A unified proxy service for LLM API calls with caching, retry logic, and provider abstraction.
+A lightweight proxy service for OpenAI's Responses API with audit logging and retry capabilities.
 
 ## Overview
 
-The Gateway service acts as an intermediary between Solstice components and external LLM providers (OpenAI, Anthropic, etc.). It provides:
-- **Provider Abstraction**: Unified interface for multiple LLM providers
-- **Request Snapshots**: Filesystem-based write-only cache for audit/debugging
-- **Retry Logic**: Automatic retry with exponential backoff
-- **Request Logging**: Detailed logging for debugging and monitoring
-- **Streaming Support**: Efficient handling of streaming responses
+The Gateway provides a unified interface to OpenAI's Responses API with:
+- **Write-only audit logging** - All responses saved to disk for debugging/analysis
+- **Automatic retry logic** - Handles transient failures with exponential backoff
+- **Request/response logging** - Structured logs for monitoring
+- **Streaming support** - Efficient handling of streaming responses
 
 ## Architecture
 
@@ -25,42 +24,74 @@ The Gateway service acts as an intermediary between Solstice components and exte
                          │   (FastAPI)    │
                          └───────┬────────┘
                                  │
-                ┌────────────────┼────────────────┐
-                │                │                │
-        ┌───────▼────────┐ ┌────▼─────┐ ┌───────▼────────┐
-        │     OpenAI     │ │Filesystem│ │   Anthropic    │
-        │   Provider     │ │Snapshots │ │   Provider     │
-        └────────────────┘ └──────────┘ └────────────────┘
+                      ┌──────────┴──────────┐
+                      │                     │
+              ┌───────▼────────┐    ┌──────▼──────┐
+              │ OpenAI Responses│    │ Filesystem  │
+              │      API        │    │ Audit Logs  │
+              └────────────────┘    └─────────────┘
 ```
 
-## Components
+### Key Components
 
-### App Structure
-- **main.py**: FastAPI application and lifecycle management
-- **config.py**: Environment-based configuration
-- **cache.py**: Filesystem-based snapshot implementation (write-only)
-- **openai_client.py**: OpenAI API client wrapper
+- **`main.py`** - FastAPI application with lifecycle management
+- **`providers/`** - Provider abstraction layer
+  - `base.py` - Abstract provider interface using Responses API format
+  - `openai_provider.py` - OpenAI Responses API implementation
+- **`middleware/`** - Cross-cutting concerns
+  - `retry.py` - Automatic retry with exponential backoff
+  - `logging.py` - Structured request/response logging
+- **`cache.py`** - Write-only filesystem audit log
+- **`config.py`** - Environment-based configuration
 
-### Middleware
-- **logging.py**: Request/response logging middleware
-- **retry.py**: Automatic retry with exponential backoff
+## API Endpoints
 
-### Providers
-- **base.py**: Abstract base provider interface
-- **openai_provider.py**: OpenAI implementation
+### Health Check
+```bash
+GET /health
+```
+Returns provider status and configuration.
+
+### Create Response (OpenAI Responses API)
+```bash
+POST /v1/responses
+
+{
+  "model": "gpt-4.1",
+  "input": "What is the capital of France?",
+  "instructions": "Answer concisely",
+  "temperature": 0.7,
+  "stream": false
+}
+```
+
+### Retrieve Response
+```bash
+GET /v1/responses/{response_id}
+```
+
+### Delete Response
+```bash
+DELETE /v1/responses/{response_id}
+```
+
+### List Available Models
+```bash
+GET /models
+```
 
 ## Running the Service
 
 ### Docker (Recommended)
 ```bash
 # Start the service
-make up
+docker compose up -d
 
 # View logs
-make logs
+docker compose logs -f gateway
 
 # Stop the service
-make down
+docker compose down
 ```
 
 ### Local Development
@@ -73,136 +104,138 @@ export OPENAI_API_KEY=sk-...
 export FILESYSTEM_CACHE_DIR=data/cache/gateway
 
 # Run the service
-uvicorn src.gateway.app.main:app --reload
-```
-
-## API Endpoints
-
-### Health Check
-```bash
-GET /
-```
-
-### Create Completion
-```bash
-POST /v1/completions
-
-{
-  "model": "gpt-4",
-  "messages": [
-    {"role": "user", "content": "Hello"}
-  ],
-  "temperature": 0.7,
-  "stream": false
-}
-```
-
-### Streaming Example
-```python
-import requests
-
-response = requests.post(
-    "http://localhost:8000/v1/completions",
-    json={
-        "model": "gpt-4",
-        "messages": [{"role": "user", "content": "Tell me a story"}],
-        "stream": True
-    },
-    stream=True
-)
-
-for line in response.iter_lines():
-    if line:
-        print(line.decode())
+uvicorn src.gateway.app.main:app --reload --port 8000
 ```
 
 ## Configuration
 
-### Environment Variables
-- `OPENAI_API_KEY`: OpenAI API key (required)
-- `FILESYSTEM_CACHE_DIR`: Directory for response snapshots (default: data/cache)
-- `LOG_LEVEL`: Logging level (default: INFO)
+### Required Environment Variables
+- `OPENAI_API_KEY` - Your OpenAI API key
 
-### Provider Configuration
-Providers are automatically initialized based on available API keys:
-```python
-# In main.py
-if validate_api_key():
-    providers["openai"] = RetryableProvider(OpenAIProvider())
+### Optional Environment Variables
+- `FILESYSTEM_CACHE_DIR` - Directory for audit logs (default: `data/cache/gateway`)
+- `SOLSTICE_LOG_LEVEL` - Logging level: DEBUG, INFO, WARNING, ERROR (default: `INFO`)
+- `SOLSTICE_GATEWAY_HOST` - Bind host (default: `0.0.0.0`)
+- `SOLSTICE_GATEWAY_PORT` - Bind port (default: `8000`)
+
+## Audit Logging
+
+The gateway maintains a write-only audit log of all responses:
+
+1. **Purpose**: Debugging, analysis, and compliance
+2. **Format**: JSON files named by SHA-256 hash of request parameters
+3. **Location**: `FILESYSTEM_CACHE_DIR` directory
+4. **Behavior**: Responses are NEVER read from cache - all requests go to OpenAI
+
+Example audit log structure:
 ```
-
-## Snapshot Strategy
-
-The gateway uses filesystem-based snapshots for audit and debugging:
-1. **Snapshot Key**: SHA-256 hash of request parameters (model, messages, temperature, etc.)
-2. **Write-Only**: Snapshots are never read during normal operation (always makes live requests)
-3. **Purpose**: Audit trail and debugging of LLM interactions
-4. **Location**: Stored in `FILESYSTEM_CACHE_DIR` as JSON files
+data/cache/gateway/
+├── a1b2c3d4...json  # Response for request hash a1b2c3d4
+├── e5f6g7h8...json  # Response for request hash e5f6g7h8
+└── ...
+```
 
 ## Error Handling
 
-### Retry Logic
-- Automatic retry for transient errors (network, rate limits)
-- Exponential backoff: 1s, 2s, 4s
-- Maximum 3 attempts by default
+### Automatic Retry
+- **Attempts**: 3 (configurable)
+- **Backoff**: 0.5s, 1s, 2s (exponential)
+- **Retryable errors**: Network failures, 5xx errors, timeouts
 
-### Error Responses
+### Error Response Format
 ```json
 {
-  "detail": "Error message",
-  "provider": "openai",
-  "status_code": 429
+  "detail": "Provider error: Connection timeout"
 }
+```
+
+## Streaming Support
+
+For streaming responses, use `stream: true`:
+
+```python
+import httpx
+import json
+
+async with httpx.AsyncClient() as client:
+    async with client.stream(
+        'POST',
+        'http://localhost:8000/v1/responses',
+        json={
+            "model": "gpt-4.1",
+            "input": "Write a story",
+            "stream": True
+        }
+    ) as response:
+        async for line in response.aiter_lines():
+            if line.startswith('data: '):
+                data = line[6:]  # Remove 'data: ' prefix
+                if data != '[DONE]':
+                    chunk = json.loads(data)
+                    print(chunk)
 ```
 
 ## Monitoring
 
 ### Logs
-The gateway logs all requests and responses:
+Structured logs include:
+- Request ID for correlation
+- Model and provider information
+- Response times
+- Token usage
+
+Example:
 ```
-[gateway] Request: model=gpt-4, messages=1, temperature=0.7
-[gateway] Response: model=gpt-4, usage={"prompt_tokens": 10, "completion_tokens": 20}
+[gateway] Request: model=gpt-4.1, provider=openai
+[gateway] Response: model=gpt-4.1, duration=1.2s, tokens={"input": 10, "output": 50}
 ```
 
 ### Health Monitoring
-- Health endpoint at `/`
-- Startup validation ensures at least one provider is configured
-- Graceful shutdown on SIGTERM
+The `/health` endpoint provides:
+- Service status
+- Available providers
+- Cache status
+- API version
 
-## Adding New Providers
+## Security
 
-1. Create a new provider in `providers/`:
+- API keys are never logged
+- Request/response payloads logged only at DEBUG level
+- Audit logs use hashed filenames (no PII in paths)
+- All provider communication uses HTTPS
+
+## Extending the Gateway
+
+### Adding a New Provider
+
+1. Implement the provider interface:
 ```python
-from .base import BaseProvider
+from providers.base import Provider, ResponseRequest, ResponseObject
 
-class AnthropicProvider(BaseProvider):
-    async def create_completion(self, request: ResponseRequest):
+class NewProvider(Provider):
+    async def create_response(self, request: ResponseRequest) -> ResponseObject:
         # Implementation
         pass
 ```
 
-2. Register in `main.py`:
+2. Register in `main.py` during startup:
 ```python
-if settings.anthropic_api_key:
-    providers["anthropic"] = RetryableProvider(AnthropicProvider())
+providers["new_provider"] = RetryableProvider(NewProvider())
 ```
 
-3. Add configuration in `config.py`:
-```python
-anthropic_api_key: str | None = Field(None)
-```
+## Troubleshooting
 
-## Security Considerations
+### Gateway won't start
+- Check `OPENAI_API_KEY` is set
+- Verify network connectivity to OpenAI
+- Check logs for specific errors
 
-- API keys are never logged
-- Request/response bodies are logged at DEBUG level only
-- Snapshot filenames are SHA-256 hashes (no sensitive data in filenames)
-- All external API calls use HTTPS
+### Responses not being cached
+- Verify `FILESYSTEM_CACHE_DIR` exists and is writable
+- Check disk space
+- Look for cache write errors in logs
 
-## Future Enhancements
-
-- **Multi-Provider Routing**: Route requests to different providers based on model
-- **Cost Tracking**: Track and report API usage costs
-- **Rate Limiting**: Per-client rate limiting
-- **Metrics Export**: Prometheus/OpenTelemetry integration
-- **Request Queuing**: Queue management for high load
+### High latency
+- Check retry logs - frequent retries indicate API issues
+- Monitor OpenAI API status
+- Consider adjusting timeout settings
