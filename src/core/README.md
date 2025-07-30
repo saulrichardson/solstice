@@ -4,10 +4,14 @@ Centralized configuration and shared utilities for the Solstice project.
 
 ## Overview
 
-The core module provides foundational components used across all Solstice packages:
-- **Configuration Management**: Environment-based settings using pydantic-settings
-- **Shared Constants**: Common values and defaults
-- **Base Classes**: Abstract interfaces (future)
+The core module serves as the foundation for the entire Solstice system, providing essential infrastructure components that ensure consistency and maintainability across all packages. It implements configuration management following 12-factor app principles.
+
+### Key Responsibilities
+
+- **Configuration Management**: Type-safe, environment-based settings using pydantic-settings
+- **Settings Validation**: Automatic validation and type conversion of configuration values
+- **Singleton Pattern**: Ensures consistent configuration access across the application
+- **Computed Properties**: Dynamic URL construction and other derived values
 
 ## Components
 
@@ -73,17 +77,53 @@ def connect_to_gateway():
         print(f"Connecting to gateway at {url}")
 ```
 
+## Architecture Details
+
+### Settings Class
+
+The `Settings` class (defined in `config.py`) is the central configuration object:
+
+- **Inheritance**: Extends `pydantic_settings.BaseSettings`
+- **Validation**: Automatic type checking and conversion
+- **Loading Order**: Environment variables → `.env` file → defaults
+- **Computed Fields**: `gateway_url` property dynamically constructed from components
+
+### Singleton Implementation
+
+The `get_settings()` function implements a thread-safe singleton pattern:
+```python
+_settings_instance = None
+
+def get_settings() -> Settings:
+    global _settings_instance
+    if _settings_instance is None:
+        _settings_instance = Settings()
+    return _settings_instance
+```
+
+This ensures all parts of the application share the same configuration instance.
+
 ## Design Principles
 
-1. **Single Source of Truth**: All configuration in one place
-2. **Type Safety**: Pydantic validates all settings
-3. **Environment-First**: Follows 12-factor app principles
-4. **Minimal Dependencies**: Only requires pydantic-settings
-5. **Clear Defaults**: Sensible defaults for local development
+1. **Single Source of Truth**: All configuration centralized in one module
+2. **Type Safety**: Pydantic provides runtime type validation
+3. **Environment-First**: Follows 12-factor app principles for cloud-native deployment
+4. **Minimal Dependencies**: Only requires pydantic-settings, no heavy frameworks
+5. **Clear Defaults**: Sensible defaults enable zero-config local development
+6. **Fail-Fast**: Invalid configuration causes immediate startup failure
+
+## Integration with Other Modules
+
+- **CLI**: Commands use `get_settings()` for configuration access
+- **Gateway**: Reads API keys and connection settings
+- **Ingestion**: Uses cache directory and processing settings
+- **Fact Check**: Accesses model configurations and API endpoints
 
 ## Future Enhancements
 
-- **Base Classes**: Abstract interfaces for agents and processors
-- **Shared Utilities**: Common helper functions
-- **Error Types**: Standardized exception hierarchy
-- **Metrics Collection**: Centralized instrumentation
+- **Base Classes**: Abstract interfaces for agents, processors, and pipelines
+- **Shared Utilities**: Common helper functions for logging, metrics, etc.
+- **Error Types**: Standardized exception hierarchy for better error handling
+- **Metrics Collection**: Centralized telemetry and instrumentation
+- **Feature Flags**: Dynamic feature toggling without code changes
+- **Secrets Management**: Integration with external secret stores

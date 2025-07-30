@@ -1,14 +1,19 @@
 # Marketing Document Processing Module
 
-A specialized module for processing marketing materials using PrimaLayout with advanced box consolidation.
+A specialized ingestion pipeline for processing marketing materials using PrimaLayout with advanced box consolidation.
 
-## Features
+## Architecture Overview
 
-- **PrimaLayout Detection**: Better suited for marketing documents than PubLayNet
-- **Smart Box Consolidation**: Merges fragmented text while preserving layout
-- **Text Cutoff Prevention**: Automatically extends boxes to capture complete text
-- **Logo Detection**: Identifies and reclassifies logo regions
-- **Configurable Processing**: Easy-to-tune settings via CLI or API parameters
+The marketing pipeline extends the base ingestion architecture with specialized components optimized for complex marketing layouts, multi-column designs, and mixed text/image content. It inherits from `BasePDFPipeline` while providing marketing-specific implementations.
+
+## Key Features
+
+- **PrimaLayout Detection**: Uses a model specifically trained for diverse document layouts (better than PubLayNet for marketing)
+- **Smart Box Consolidation**: Advanced algorithms to merge fragmented text regions while preserving visual hierarchy
+- **Text Cutoff Prevention**: Intelligent box expansion to capture complete text without creating overlaps
+- **Logo Detection**: Heuristic-based identification and reclassification of logo regions
+- **Multi-Column Support**: Specialized reading order detection for marketing layouts
+- **Configurable Processing**: Preset configurations for different marketing document types
 
 ## Usage
 
@@ -50,28 +55,55 @@ pipeline = MarketingPipeline(
 document = pipeline.process_pdf("marketing.pdf")
 ```
 
-## Components
+## Component Architecture
 
-1. **pipeline.py**: Main processing pipeline
-   - Coordinates detection, consolidation, and text extraction
-   - Integrates with existing document processing infrastructure
-   - Creates visualizations and saves outputs
+### 1. **MarketingPipeline** (`pipeline.py`)
+- **Inheritance**: Extends `BasePDFPipeline` from shared components
+- **Responsibilities**:
+  - Orchestrates the complete marketing document processing flow
+  - Manages PrimaLayout detector initialization
+  - Coordinates consolidation, reading order, and text extraction
+  - Integrates with shared visualization and storage components
+- **Key Methods**:
+  - `_create_detector()`: Returns marketing-specific detector
+  - `_post_process_boxes()`: Applies consolidation logic
+  - `process_pdf()`: Main entry point for processing
 
-2. **config.py**: Configuration management
-   - `MarketingConfig`: Dataclass with all tunable parameters
-   - `MarketingPresets`: Pre-configured settings for common scenarios
-   - Easy experimentation with different settings
+### 2. **MarketingLayoutDetector** (`detector.py`)
+- **Model**: PrimaLayout (lp://PrimaLayout/mask_rcnn_R_50_FPN_3x/config)
+- **Label Mapping**:
+  ```python
+  1: "TextRegion"
+  2: "ImageRegion"
+  3: "TableRegion"
+  4: "MathsRegion"
+  5: "SeparatorRegion"
+  6: "OtherRegion"
+  ```
+- **Optimizations**: Lower score threshold (0.15) for marketing materials
 
-3. **consolidation.py**: Box consolidation operations
-   - Logo detection heuristics (bottom-right position check)
-   - Overlap resolution (removes different-type overlaps, merges same-type)
-   - Safe box expansion (prevents creating new overlaps)
-   - Targeted adjustments for specific text cutoff issues
+### 3. **BoxConsolidator** (`consolidation.py`)
+- **Core Operations**:
+  - **Logo Detection**: Identifies logos based on position and type
+  - **Overlap Resolution**: Removes overlaps between different types
+  - **Same-Type Merging**: Consolidates fragmented text regions
+  - **Safe Expansion**: Extends boxes without creating new overlaps
+- **Algorithms**:
+  - IoU-based overlap detection
+  - Position-based logo heuristics
+  - Iterative expansion with collision detection
 
-4. **detector.py**: PrimaLayout-based layout detection
-   - Optimized for marketing materials
-   - Configurable score and NMS thresholds
-   - Detects: TextRegion, ImageRegion, TableRegion, etc.
+### 4. **Marketing Reading Order** (`reading_order.py`)
+- **Algorithm**: Feature-based scoring system
+- **Factors Considered**:
+  - Vertical position (top content first)
+  - Horizontal position (left-to-right)
+  - Box type priorities (titles before body text)
+  - Column detection for multi-column layouts
+
+### 5. **Marketing Pipeline Wrapper** (`marketing_pipeline_wrapper.py`)
+- **Purpose**: Adapter for unified interface compatibility
+- **Usage**: Allows marketing pipeline to be used interchangeably with scientific pipeline
 
 ## Results
 
@@ -95,8 +127,36 @@ For the Flublok marketing PDF:
 
 ## Architecture Benefits
 
-1. **Modular Design**: Each component has a single responsibility
-2. **Configuration-Driven**: Easy to tune without code changes
-3. **Backward Compatible**: Existing code continues to work
-4. **No Dead Code**: Removed unused features (claim grouping)
-5. **Clear Separation**: Box operations isolated in consolidation module
+1. **Modular Design**: Each component has a single, well-defined responsibility
+2. **Inheritance-Based**: Reuses shared infrastructure while specializing for marketing
+3. **Configuration-Driven**: Presets and parameters enable tuning without code changes
+4. **Type Safety**: Uses dataclasses and type hints throughout
+5. **Clear Separation**: Box operations, detection, and reading order are independent
+6. **Extensibility**: Easy to add new consolidation strategies or detection models
+
+## Integration with Core System
+
+### Shared Components Used
+- `BasePDFPipeline`: Provides PDF processing framework
+- `IngestionConfig`: Configuration management
+- `Document`/`Block`: Standard output format
+- `TextExtractor`: PyMuPDF-based text extraction
+- `LayoutVisualizer`: Debug visualization generation
+- Storage paths and cache management
+
+### Output Compatibility
+The marketing pipeline produces the same `Document` objects as the scientific pipeline, ensuring seamless integration with downstream fact-checking components.
+
+## Performance Considerations
+
+- **Model Loading**: PrimaLayout model cached after first use
+- **Processing Time**: ~30-60s for typical marketing PDFs
+- **Memory Usage**: ~2-4GB depending on document complexity
+- **Parallel Processing**: Detection runs on GPU if available
+
+## Future Enhancements
+
+1. **ML-Based Logo Detection**: Replace heuristics with trained model
+2. **Table Structure Extraction**: Parse marketing comparison tables
+3. **Visual Element Analysis**: Extract and analyze charts/infographics
+4. **Brand Consistency Checking**: Verify brand guidelines compliance

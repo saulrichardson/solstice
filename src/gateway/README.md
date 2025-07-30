@@ -4,10 +4,13 @@ A lightweight proxy service for OpenAI's Responses API with audit logging and re
 
 ## Overview
 
-The Gateway provides a unified interface to OpenAI's Responses API with:
+The Gateway serves as a centralized access point for all LLM interactions in the Solstice system. It provides a unified interface to OpenAI's Responses API with enterprise-grade features:
+
 - **Write-only audit logging** - All responses saved to disk for debugging/analysis
 - **Automatic retry logic** - Handles transient failures with exponential backoff
-- **Request/response logging** - Structured logs for monitoring
+- **Request/response logging** - Structured logs for monitoring and debugging
+- **Provider abstraction** - Extensible architecture for multiple LLM providers
+- **Fail-fast startup** - Validates configuration before accepting requests
 
 ## Architecture
 
@@ -33,15 +36,16 @@ The Gateway provides a unified interface to OpenAI's Responses API with:
 
 ### Key Components
 
-- **`main.py`** - FastAPI application with lifecycle management
-- **`providers/`** - Provider abstraction layer
-  - `base.py` - Abstract provider interface using Responses API format
-  - `openai_provider.py` - OpenAI Responses API implementation
-- **`middleware/`** - Cross-cutting concerns
-  - `retry.py` - Automatic retry with exponential backoff
-  - `logging.py` - Structured request/response logging
-- **`cache.py`** - Write-only filesystem audit log
-- **`config.py`** - Environment-based configuration
+- **`main.py`** - FastAPI application with lifecycle management and provider initialization
+- **`providers/`** - Provider abstraction layer for LLM services
+  - `base.py` - Abstract provider interface defining the Responses API contract
+  - `openai_provider.py` - OpenAI Responses API implementation with proper error handling
+- **`middleware/`** - Cross-cutting concerns and request processing
+  - `retry.py` - Automatic retry with exponential backoff for transient failures
+  - `logging.py` - Structured request/response logging with correlation IDs
+- **`cache.py`** - Write-only filesystem audit log for compliance and debugging
+- **`config.py`** - Environment-based configuration using pydantic
+- **`openai_client.py`** - OpenAI client wrapper with validation and error handling
 
 ## API Endpoints
 
@@ -171,20 +175,37 @@ The `/health` endpoint provides:
 
 ### Adding a New Provider
 
-1. Implement the provider interface:
+1. Create a new provider class in `providers/`:
 ```python
-from providers.base import Provider, ResponseRequest, ResponseObject
+from .base import Provider, ResponseRequest, ResponseObject
 
 class NewProvider(Provider):
     async def create_response(self, request: ResponseRequest) -> ResponseObject:
-        # Implementation
+        # Implement the Responses API contract
+        # Handle authentication, API calls, and error mapping
         pass
+    
+    def validate_config(self) -> bool:
+        # Validate provider-specific configuration
+        return True
 ```
 
-2. Register in `main.py` during startup:
+2. Register in `main.py` during the lifespan startup:
 ```python
-providers["new_provider"] = RetryableProvider(NewProvider())
+# In lifespan() function
+if new_provider_configured():
+    providers["new_provider"] = RetryableProvider(NewProvider())
 ```
+
+3. Add provider-specific configuration to `config.py` if needed
+
+### Architecture Principles
+
+1. **Provider Independence**: All providers implement the same interface
+2. **Retry Wrapper**: Providers are wrapped with retry logic automatically
+3. **Audit Everything**: All responses are logged, never read from cache
+4. **Fail Fast**: Invalid configuration prevents startup
+5. **Structured Logging**: All logs include correlation IDs and metadata
 
 ## Troubleshooting
 

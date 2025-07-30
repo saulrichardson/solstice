@@ -1,37 +1,66 @@
 # Ingestion Module
 
-PDF processing with layout detection and text extraction.
+High-performance PDF processing system with ML-powered layout detection and intelligent text extraction.
 
 ## Overview
 
-The ingestion module provides PDF processing with layout detection and text extraction. Two pipelines:
+The ingestion module is the document processing engine of Solstice, converting PDFs into structured, searchable documents for fact-checking and analysis. It employs state-of-the-art computer vision models (Detectron2) and advanced text processing algorithms to handle diverse document types.
 
-1. **Scientific Pipeline** (`scientific/`): For academic papers and research documents
-2. **Marketing Pipeline** (`marketing/`): For marketing materials with complex layouts
+### Core Capabilities
 
-## Module Structure
+- **ML-Based Layout Detection**: Uses pre-trained Detectron2 models for accurate region identification
+- **Intelligent Text Extraction**: Context-aware text processing with medical term preservation
+- **Multi-Pipeline Architecture**: Specialized pipelines for different document types
+- **Reading Order Detection**: Advanced algorithms for multi-column and complex layouts
+- **Quality Assurance**: Built-in visualization and validation tools
+
+### Available Pipelines
+
+1. **Scientific Pipeline** (`scientific/`): Optimized for academic papers, clinical studies, and research documents
+2. **Marketing Pipeline** (`marketing/`): Specialized for marketing materials with complex visual layouts
+
+## Architecture
+
+### Module Structure
 
 ```
 injestion/
 ├── scientific/              # Main pipeline for academic/clinical documents
 │   ├── __init__.py         # Exports: ingest_pdf, PDFIngestionPipeline
-│   ├── pipeline.py         # High-level orchestration
-│   └── standard_pipeline.py # StandardPipeline implementation
+│   ├── pipeline.py         # High-level orchestration and public API
+│   └── standard_pipeline.py # StandardPipeline implementation with PubLayNet
 │
 ├── marketing/              # Specialized pipeline for marketing materials
-│   ├── cli.py             # Command-line interface
-│   ├── detector.py        # PrimaLayout-based detection
+│   ├── cli.py             # Standalone CLI for marketing processing
+│   ├── detector.py        # PrimaLayout-based detection with custom logic
 │   ├── pipeline.py        # MarketingPipeline implementation
 │   ├── consolidation.py   # Advanced box merging for marketing layouts
-│   └── reading_order.py   # Marketing-specific reading order
+│   ├── reading_order.py   # Marketing-specific reading order algorithms
+│   └── marketing_pipeline_wrapper.py # Adapter for unified interface
 │
 └── shared/                 # Common utilities used by both pipelines
-    ├── base_pipeline.py   # Abstract base class for all pipelines
-    ├── config.py          # Shared configuration settings
-    ├── processing/        # Document processing components
-    ├── storage/           # File I/O and path management
+    ├── base_pipeline.py   # Abstract base class defining pipeline contract
+    ├── config.py          # IngestionConfig with validation and defaults
+    ├── processing/        # Core document processing components
+    │   ├── layout_detector.py       # Detectron2 wrapper and model management
+    │   ├── text_extractor.py        # PyMuPDF-based text extraction
+    │   ├── text_processing_service.py # Advanced text cleaning and correction
+    │   ├── overlap_resolver.py      # Box overlap detection and resolution
+    │   ├── reading_order_hybrid.py  # K-means based column detection
+    │   └── box.py                   # Core data structures (Box, LabeledBox)
+    ├── storage/           # File I/O and cache management
+    │   └── paths.py       # Centralized path management and cache structure
     └── visualization/     # Debug and quality assurance tools
+        └── layout_visualizer.py     # Generate visual layout representations
 ```
+
+### Design Patterns
+
+1. **Abstract Base Pipeline**: All pipelines inherit from `BasePipeline` for consistency
+2. **Strategy Pattern**: Different text extractors and processors can be swapped
+3. **Builder Pattern**: Pipelines assemble documents through sequential processing steps
+4. **Singleton Models**: Detectron2 models are loaded once and reused
+5. **Immutable Configuration**: `IngestionConfig` validates settings at creation
 
 ## Pipeline Comparison
 
@@ -298,28 +327,120 @@ make install-detectron2
 
 ## Best Practices
 
-1. **Choose the Right Pipeline**:
-   - Scientific papers → Scientific pipeline
-   - Marketing materials → Marketing pipeline
-   - Mixed documents → Process sections separately
+### 1. Pipeline Selection
 
-2. **Validate Outputs**:
-   - Check visualizations for detection quality
-   - Verify reading order in `.txt` output
-   - Inspect JSON for structure preservation
+```python
+# For research papers, clinical studies, academic documents
+from src.injestion.scientific import ingest_pdf
+document = ingest_pdf("clinical_study.pdf")
 
-3. **Handle Errors Gracefully**:
-   ```python
-   try:
-       document = ingest_pdf(pdf_path)
-   except Exception as e:
-       # Log error and handle appropriately
-       logger.error(f"Failed to process PDF: {e}")
-   ```
+# For marketing materials, brochures, flyers
+from src.injestion.marketing.pipeline import MarketingPipeline
+pipeline = MarketingPipeline(config)
+document = pipeline.process("marketing_brochure.pdf")
+```
+
+### 2. Configuration Tuning
+
+```python
+# High accuracy configuration
+config = IngestionConfig(
+    detection_dpi=600,              # Higher resolution for better detection
+    score_threshold=0.1,            # Lower threshold to catch more regions
+    expand_boxes=True,              # Prevent text cutoffs
+    box_padding=30,                 # Extra padding for safety
+    create_visualizations=True      # Enable debugging visualizations
+)
+
+# Fast processing configuration
+config = IngestionConfig(
+    detection_dpi=300,              # Lower resolution for speed
+    score_threshold=0.3,            # Higher threshold for confident detections
+    create_visualizations=False,    # Skip visualization generation
+    merge_threshold=0.7             # Aggressive merging for speed
+)
+```
+
+### 3. Error Handling and Recovery
+
+```python
+import logging
+from pathlib import Path
+
+logger = logging.getLogger(__name__)
+
+def process_pdf_safely(pdf_path: Path) -> Optional[Document]:
+    try:
+        document = ingest_pdf(pdf_path)
+        logger.info(f"Successfully processed {pdf_path.name}")
+        return document
+    except FileNotFoundError:
+        logger.error(f"PDF not found: {pdf_path}")
+    except PermissionError:
+        logger.error(f"Permission denied accessing: {pdf_path}")
+    except Exception as e:
+        logger.exception(f"Unexpected error processing {pdf_path}: {e}")
+        # Optionally, try with conservative settings
+        try:
+            config = IngestionConfig(score_threshold=0.5, expand_boxes=False)
+            pipeline = PDFIngestionPipeline(config)
+            return pipeline.process(pdf_path)
+        except:
+            return None
+```
+
+### 4. Output Validation
+
+```python
+def validate_document(document: Document) -> bool:
+    """Validate extracted document quality."""
+    if not document.blocks:
+        logger.warning("No content blocks extracted")
+        return False
+    
+    # Check for reasonable text extraction
+    total_text = sum(len(block.content) for block in document.blocks)
+    if total_text < 100:
+        logger.warning(f"Minimal text extracted: {total_text} characters")
+        return False
+    
+    # Verify reading order
+    page_numbers = [block.page_number for block in document.blocks]
+    if page_numbers != sorted(page_numbers):
+        logger.warning("Blocks not in page order")
+    
+    return True
+```
+
+## Integration Points
+
+### With CLI Module
+```python
+# src/cli/ingest.py uses the scientific pipeline
+from ..injestion.scientific.pipeline import ingest_pdf
+```
+
+### With Fact Check Module
+```python
+# Fact checkers consume Document objects produced by ingestion
+from src.interfaces.document import Document
+document = ingest_pdf("study.pdf")
+# Pass to fact checking orchestrator
+```
+
+### With Storage Module
+```python
+# All pipelines use centralized cache management
+from src.injestion.shared.storage.paths import set_cache_root
+set_cache_root(Path("/custom/cache"))
+```
 
 ## Future Enhancements
 
-- **OCR Support**: Add text extraction for scanned documents
-- **Table Structure**: Extract table cells and relationships
-- **Multi-Language**: Support for non-English documents
-- **Custom Models**: Train on domain-specific layouts
+- **OCR Support**: Add Tesseract integration for scanned documents
+- **Table Structure**: Extract table cells, headers, and relationships
+- **Multi-Language**: Support for non-English documents with language detection
+- **Custom Models**: Fine-tune Detectron2 on domain-specific layouts
+- **Streaming Processing**: Handle very large PDFs with streaming architecture
+- **Format Support**: Add support for DOCX, HTML, and other formats
+- **Semantic Chunking**: Smart document splitting for LLM processing

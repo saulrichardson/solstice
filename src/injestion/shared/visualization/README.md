@@ -2,13 +2,18 @@
 
 Debug and quality assurance tools for visual inspection of document processing results.
 
-## Overview
+## Architecture Overview
 
-The visualization module creates annotated images showing:
-- **Layout Detection**: Bounding boxes with type labels
-- **Reading Order**: Flow arrows between content blocks
-- **Overlap Analysis**: Conflicting region detection
-- **Processing Pipeline**: Before/after comparisons
+The visualization module provides comprehensive visual debugging and quality assurance capabilities for the ingestion pipeline. It generates annotated images that help developers and users understand how documents are being processed, identify issues, and validate results.
+
+### Key Responsibilities
+
+- **Layout Visualization**: Render bounding boxes with type-specific colors and labels
+- **Reading Order Display**: Show document flow with numbered sequences and arrows
+- **Quality Assurance**: Generate summary grids for quick document overview
+- **Debug Output**: Create stage-by-stage visualizations for troubleshooting
+- **Overlap Analysis**: Highlight conflicting regions for resolution tuning
+- **Export Flexibility**: Support multiple output formats (PNG, PDF, SVG)
 
 ## Components
 
@@ -332,11 +337,82 @@ with plt.ioff():  # Turn off interactive mode
    plt.rcParams['font.family'] = 'DejaVu Sans'
    ```
 
+## Architecture Integration
+
+### With Processing Pipeline
+The visualization module is called at key stages:
+1. After raw layout detection (raw_layouts/visualizations/)
+2. After box consolidation (visualizations/)
+3. For final quality reports (all_pages_summary.png)
+
+### With Storage Module
+Uses standardized paths:
+```python
+from ..storage.paths import stage_dir, pages_dir
+viz_dir = stage_dir("visualizations", doc_id)
+```
+
+### With Document Model
+Visualizes structured document objects:
+```python
+from src.interfaces import Document, Block
+visualize_document(document, output_dir)
+```
+
+## Design Patterns
+
+### Factory Pattern
+Color mapping and style configuration:
+```python
+COLOR_MAP = {
+    'Text': 'blue',
+    'Title': 'red',
+    'List': 'green',
+    'Table': 'purple',
+    'Figure': 'orange'
+}
+```
+
+### Builder Pattern
+Incremental figure construction:
+```python
+fig, ax = plt.subplots()
+for box in boxes:
+    add_box_to_axes(ax, box)
+if show_arrows:
+    add_reading_order_arrows(ax, boxes)
+```
+
+## Performance Optimization
+
+### Memory Management
+```python
+# Close figures after saving
+plt.close(fig)
+
+# Use context manager
+with plt.ioff():
+    for page in pages:
+        visualize_page_layout(...)
+```
+
+### Batch Processing
+```python
+# Process multiple pages efficiently
+def visualize_document_batch(doc_id: str, batch_size: int = 10):
+    pages = list(pages_dir(doc_id).glob("*.png"))
+    for i in range(0, len(pages), batch_size):
+        batch = pages[i:i+batch_size]
+        create_batch_visualization(batch)
+```
+
 ## Future Enhancements
 
-- **Interactive Visualizations**: HTML/JS output
-- **3D Layout**: Layer visualization for overlaps
-- **Animation**: Processing pipeline as video
-- **Heatmaps**: Confidence score visualization
-- **Diff View**: Side-by-side comparisons
-- **Export Templates**: Customizable report formats
+1. **Interactive Visualizations**: Plotly/Bokeh for web-based exploration
+2. **3D Layout**: Layer visualization for overlap analysis
+3. **Animation**: Processing pipeline as animated GIF/video
+4. **Heatmaps**: Confidence score and text density visualization
+5. **Diff View**: Side-by-side before/after comparisons
+6. **Export Templates**: LaTeX/HTML report generation
+7. **Real-time Preview**: Live visualization during processing
+8. **Accessibility**: High-contrast modes and colorblind-friendly palettes

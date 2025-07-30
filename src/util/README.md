@@ -2,10 +2,17 @@
 
 Common utility functions and helpers used across the Solstice project.
 
-## Overview
+## Architecture Overview
 
-The util module provides lightweight, reusable utilities that don't fit into other domain-specific modules. Currently focused on:
-- **Nonce Generation**: Unique identifiers for cache-busting and request tracking
+The util module serves as a collection of lightweight, general-purpose utilities that are used throughout the Solstice system. It follows the principle of high cohesion within each utility and loose coupling between utilities, ensuring that each function can be used independently without complex dependencies.
+
+### Design Philosophy
+
+- **Zero Dependencies**: Uses only Python standard library
+- **Pure Functions**: No side effects or state management
+- **Single Purpose**: Each utility does one thing well
+- **Cross-Module Usage**: Designed to be imported anywhere in the codebase
+- **Performance First**: Optimized for use in hot paths
 
 ## Components
 
@@ -114,25 +121,122 @@ def my_utility(param: str, optional: Optional[int] = None) -> str:
     pass
 ```
 
-## Future Utilities
+## Architecture Integration
 
-Potential additions based on common patterns:
+### Current Usage
 
-- **retry**: Decorator for retrying operations
-- **timer**: Context manager for timing operations
-- **hash**: Consistent hashing utilities
-- **sanitize**: String sanitization helpers
-- **batch**: Batch processing utilities
-- **async_utils**: Async/await helpers
+1. **Gateway Module**: Uses nonce for cache-busting API requests
+2. **Fact Check Module**: Request correlation and tracking
+3. **Testing**: Unique identifiers for test isolation
 
-## Integration
-
-The util module is designed to be imported anywhere:
-
+### Import Pattern
 ```python
-# In any module
+# Clean, direct imports from any module
 from src.util.nonce import new_nonce
-from src.util.future_utility import helper_function
+
+# No initialization or configuration needed
+nonce = new_nonce()
 ```
 
-No circular dependencies or complex initialization required.
+## Performance Characteristics
+
+### Nonce Generation
+- **Speed**: ~2-3 microseconds per generation
+- **Memory**: Minimal allocation (32-byte string)
+- **Thread Safety**: UUID4 is thread-safe by design
+- **Entropy**: 122 bits of randomness (cryptographically secure)
+
+## Security Considerations
+
+1. **Randomness**: Uses `uuid.uuid4()` which uses OS random source
+2. **Uniqueness**: Collision probability negligible (2^122 space)
+3. **No Secrets**: Nonces are not meant for authentication
+4. **URL Safety**: Hex format avoids injection issues
+
+## Testing Strategy
+
+```python
+import pytest
+from src.util.nonce import new_nonce
+
+def test_nonce_format():
+    nonce = new_nonce()
+    assert len(nonce) == 32
+    assert all(c in '0123456789abcdef' for c in nonce)
+
+def test_nonce_uniqueness():
+    nonces = {new_nonce() for _ in range(10000)}
+    assert len(nonces) == 10000  # All unique
+```
+
+## Future Utilities
+
+Potential additions based on observed patterns:
+
+### 1. Retry Decorator
+```python
+@retry(attempts=3, backoff=exponential)
+def flaky_operation():
+    # Automatic retry with backoff
+    pass
+```
+
+### 2. Timer Context Manager
+```python
+with timer("database_query"):
+    result = db.execute(query)
+# Logs: "database_query took 0.123s"
+```
+
+### 3. Hash Utilities
+```python
+# Consistent hashing for cache keys
+cache_key = stable_hash({"user": 123, "doc": "abc"})
+```
+
+### 4. Batch Processing
+```python
+# Process items in efficient batches
+for batch in batched(items, size=100):
+    process_batch(batch)
+```
+
+### 5. Path Sanitization
+```python
+# Safe filename generation
+safe_name = sanitize_filename("../../etc/passwd")
+# Returns: "etc_passwd"
+```
+
+## Best Practices
+
+### When to Add to Util
+
+✅ **Good Candidates**:
+- General-purpose functions used by 2+ modules
+- Pure functions with no side effects
+- Standard library only implementations
+- Performance-critical helpers
+
+❌ **Poor Candidates**:
+- Domain-specific logic (belongs in respective module)
+- Functions requiring external dependencies
+- Stateful utilities or singletons
+- Configuration-dependent code
+
+### Code Quality Standards
+
+1. **Type Hints**: Full typing for all parameters and returns
+2. **Docstrings**: Clear examples in docstring
+3. **Tests**: 100% coverage with edge cases
+4. **Performance**: Profile if used in hot paths
+5. **Naming**: Descriptive but concise function names
+
+## Module Evolution
+
+The util module is intentionally kept minimal. As it grows:
+
+1. **Subcategorization**: Group related utilities (e.g., `util.strings`, `util.async`)
+2. **Extraction**: Move domain-specific utils to their modules
+3. **Documentation**: Keep README updated with all utilities
+4. **Deprecation**: Clear migration path for replaced utilities

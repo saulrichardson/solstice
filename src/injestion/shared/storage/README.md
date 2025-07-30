@@ -2,13 +2,18 @@
 
 Standardized file organization and path management for the ingestion pipeline.
 
-## Overview
+## Architecture Overview
 
-The storage module provides a consistent interface for managing all files generated during PDF processing. It ensures:
-- **Organized Structure**: Predictable file locations
-- **Safe Naming**: Filesystem-compatible document IDs
-- **Easy Access**: Helper functions for common operations
-- **Configurable Paths**: Runtime path customization
+The storage module serves as the data persistence layer for the ingestion system, providing a consistent interface for managing all files generated during PDF processing. It implements a hierarchical storage structure that mirrors the processing pipeline stages.
+
+### Key Responsibilities
+
+- **Path Management**: Centralized control over file locations and naming
+- **Safe Naming**: Filesystem-compatible document ID generation
+- **Stage Organization**: Structured directories for each processing stage
+- **JSON Persistence**: Standardized serialization for metadata
+- **Runtime Configuration**: Dynamic path customization for different environments
+- **Cache Management**: Efficient storage and retrieval of processed documents
 
 ## Directory Structure
 
@@ -70,22 +75,41 @@ content = load_json(stage_dir("extracted", doc_id) / "content.json")
 set_cache_root("/custom/output/path")
 ```
 
-## Key Functions
+## Implementation Details
 
 ### Document ID Generation
 ```python
 def doc_id(pdf_filename: str | os.PathLike) -> str:
     """Generate filesystem-safe document ID.
     
-    Rules:
-    1. Remove .pdf extension
-    2. Replace special chars with underscore
-    3. Fallback to hash if empty/invalid
+    Algorithm:
+    1. Extract basename from path
+    2. Remove .pdf extension (case-insensitive)
+    3. Replace special chars with underscore
+    4. Validate result is non-empty
+    5. Fallback to SHA-256 hash (first 8 chars) if invalid
     
     Examples:
         "report.pdf" → "report"
         "Study (2024).pdf" → "Study__2024_"
         "../../etc/passwd" → "8d969eef" (hash)
+        "..pdf" → "b6c340a2" (hash - invalid name)
+    """
+```
+
+### Cache Root Management
+```python
+# Global state for cache directory
+_CACHE_DIR = Path(settings.filesystem_cache_dir)
+
+def set_cache_root(cache_root: os.PathLike | str) -> None:
+    """Override the cache directory at runtime.
+    
+    This allows:
+    - CLI --output-dir flag support
+    - Testing with temporary directories
+    - Multi-tenant deployments
+    - Custom storage backends
     """
 ```
 
@@ -164,13 +188,36 @@ set_cache_root("/my/custom/path")
 pages = pages_dir(doc_id)  # /my/custom/path/<doc_id>/pages/
 ```
 
-## Design Principles
+## Architecture Principles
 
-1. **Predictable Structure**: Same layout for all documents
-2. **Safe Naming**: Handle any input filename safely
-3. **Lazy Creation**: Directories created only when needed
-4. **JSON Standard**: All metadata in JSON format
-5. **Configurable Root**: Easy to redirect output
+1. **Predictable Structure**: Consistent directory layout across all documents
+2. **Safe Naming**: Robust handling of any input filename, including edge cases
+3. **Lazy Creation**: Directories created on-demand to avoid empty structures
+4. **JSON Standard**: All metadata serialized as pretty-printed JSON for debugging
+5. **Configurable Root**: Runtime path override without code changes
+6. **Stage Isolation**: Each processing stage has its own directory
+7. **Immutable Outputs**: Write-once semantics for reproducibility
+
+## Integration with Processing Pipeline
+
+### Stage Correspondence
+```
+Processing Stage          Storage Directory
+----------------          -----------------
+PDF Rasterization    →    pages/
+Layout Detection     →    raw_layouts/
+Box Consolidation    →    merged/
+Reading Order        →    reading_order/
+Text Extraction      →    extracted/
+Visualization        →    visualizations/
+```
+
+### Data Flow
+1. **Input**: PDF file with arbitrary name
+2. **Doc ID**: Generated for filesystem safety
+3. **Staging**: Each processor writes to its stage directory
+4. **Output**: Final document in extracted/content.json
+5. **Cleanup**: Optional removal of intermediate stages
 
 ## Best Practices
 
@@ -223,10 +270,33 @@ from src.core.config import settings
 set_cache_root(settings.filesystem_cache_dir)
 ```
 
+## Performance Considerations
+
+### Filesystem Optimization
+- Use SSD storage for cache directory
+- Consider separate volumes for different stages
+- Enable filesystem compression if available
+- Monitor inode usage for large document sets
+
+### Caching Strategy
+- Intermediate results enable incremental processing
+- Stage directories can be selectively cleared
+- JSON files are human-readable but larger than binary
+- Consider compression for long-term storage
+
+## Security Considerations
+
+1. **Path Traversal**: Document IDs sanitized to prevent directory escape
+2. **Name Collisions**: Hash fallback ensures unique IDs
+3. **Permissions**: Cache directory should be writable only by service
+4. **Sensitive Data**: No encryption by default - add if needed
+
 ## Future Enhancements
 
-- **S3 Backend**: Cloud storage support
-- **Compression**: Automatic gzip for JSON files
-- **Versioning**: Multiple versions of same document
-- **Metadata DB**: SQLite index for fast queries
-- **Garbage Collection**: Auto-cleanup of old files
+1. **Cloud Storage**: S3/GCS backend implementation
+2. **Compression**: Automatic gzip for JSON and images
+3. **Versioning**: Support multiple versions of same document
+4. **Metadata DB**: SQLite index for fast queries and search
+5. **Garbage Collection**: TTL-based cleanup policies
+6. **Streaming**: Direct-to-storage without intermediate files
+7. **Deduplication**: Content-based addressing for efficiency

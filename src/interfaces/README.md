@@ -2,12 +2,18 @@
 
 Shared data models and type definitions for document processing in Solstice.
 
-## Overview
+## Architecture Overview
 
-The interfaces module defines the core data structures used throughout the Solstice pipeline. It provides:
-- **Document Models**: Structured representation of processed documents
-- **Content Types**: Enumerations for content classification
-- **Reader Interfaces**: Standard interfaces for document readers
+The interfaces module serves as the contract layer for the entire Solstice system, defining the data structures that flow between components. It ensures type safety, data consistency, and clear boundaries between modules through well-defined interfaces.
+
+### Key Responsibilities
+
+- **Document Models**: Pydantic-based models for structured document representation
+- **Content Types**: Type-safe enumerations for content classification
+- **Data Validation**: Automatic validation of data structures
+- **Serialization**: JSON-compatible models for persistence and API communication
+- **Reader Interfaces**: Abstract base classes for extensible document readers
+- **Type Safety**: Strong typing throughout the system
 
 ## Core Components
 
@@ -151,12 +157,55 @@ loaded_doc = Document.load("output.json")
 - **Content**: `html` field with table markup (legacy) or `image_path`
 - **Usage**: Structured tabular data
 
-## Design Principles
+## Architecture Principles
 
-1. **Immutability**: Use Pydantic models for validation and immutability
-2. **Type Safety**: Strong typing with enums and type hints
-3. **Extensibility**: Metadata fields for custom attributes
-4. **Simplicity**: Clear, focused interfaces
+1. **Immutability**: Pydantic models provide validation and encourage immutable data
+2. **Type Safety**: Comprehensive type hints and enums prevent runtime errors
+3. **Extensibility**: Metadata fields allow custom attributes without schema changes
+4. **Simplicity**: Clear, focused interfaces with single responsibilities
+5. **Validation**: Automatic validation on construction ensures data integrity
+6. **Serialization**: Native JSON support for all models
+
+## Data Flow Architecture
+
+```
+PDF Input
+    │
+    ├─► Ingestion Pipeline
+    │       │
+    │       └─► Creates Document + Blocks
+    │                    │
+    ├─────────────────► Fact Checking
+    │                    │ (consumes Document)
+    │                    │
+    └─────────────────► Gateway API
+                         │ (serializes Document)
+                         │
+                         └─► JSON Response
+```
+
+## Model Relationships
+
+### Document Hierarchy
+```
+Document
+├── blocks: List[Block]
+│   ├── Block (Text)
+│   ├── Block (Title)
+│   ├── Block (Figure)
+│   └── Block (Table)
+├── reading_order: List[List[str]]
+│   └── Per-page block ID sequences
+└── metadata: Dict[str, Any]
+    └── Custom attributes
+```
+
+### Block Properties
+- **Identity**: Unique ID and page location
+- **Spatial**: Bounding box coordinates
+- **Content**: Text, HTML, or image path
+- **Classification**: Role-based typing
+- **Metadata**: Extensible attributes
 
 ## Integration Points
 
@@ -178,10 +227,54 @@ evidence = fact_checker.find_evidence(document, claim)
 response = document.model_dump()
 ```
 
+## Performance Considerations
+
+### Memory Efficiency
+- Blocks store only relevant content (text OR image_path)
+- Metadata lazy-loaded when needed
+- Efficient serialization with Pydantic
+
+### Validation Performance
+- Validation occurs once at construction
+- Type checking at development time (mypy)
+- No runtime overhead after creation
+
+## Best Practices
+
+### Creating Documents
+```python
+# Good: Use builder pattern for complex documents
+doc_builder = DocumentBuilder()
+for page in pages:
+    for region in page.regions:
+        block = create_block(region)
+        doc_builder.add_block(block)
+document = doc_builder.build()
+
+# Bad: Manual construction without validation
+document = {"blocks": [...]}  # No type safety!
+```
+
+### Working with Blocks
+```python
+# Good: Use properties for type checking
+if block.is_text:
+    process_text(block.text)
+elif block.is_visual:
+    process_image(block.image_path)
+
+# Good: Use metadata for extensions
+block.metadata["confidence"] = 0.95
+block.metadata["language"] = "en"
+```
+
 ## Future Enhancements
 
-- **Block Relationships**: Parent-child hierarchies for nested content
-- **Confidence Scores**: Detection confidence per block
-- **Language Detection**: Per-block language identification
-- **Layout Preservation**: Column and section information
-- **Semantic Roles**: More granular content classification
+1. **Block Relationships**: Parent-child hierarchies for nested content
+2. **Confidence Scores**: Detection confidence as first-class property
+3. **Language Detection**: Per-block language identification
+4. **Layout Preservation**: Column, section, and page layout info
+5. **Semantic Roles**: More granular content classification (e.g., "caption", "footnote")
+6. **Version Control**: Document versioning and diff support
+7. **Streaming Support**: Lazy loading for large documents
+8. **Graph Representation**: Blocks as nodes with relationships

@@ -1,0 +1,26 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.nav
+*.snm
+*.vrb
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated files (except the final PDF)
+cache_stats.json
+stats.tex
+
+# Keep the PDF and example images
+!solstice.pdf
+!scientific_layout_example.png
+!marketing_layout_example.png

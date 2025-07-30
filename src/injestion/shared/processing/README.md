@@ -187,6 +187,36 @@ Final pass for spacing issues:
 - Paragraph separation
 - List formatting
 
+### noop_consolidator.py
+No-operation consolidator for pipelines that don't need box merging:
+
+```python
+from src.injestion.shared.processing.noop_consolidator import NoOpConsolidator
+
+# Used by scientific pipeline for functional consolidation
+consolidator = NoOpConsolidator()
+boxes = consolidator.consolidate(raw_boxes)  # Returns unchanged
+```
+
+**Purpose**: Provides a null object pattern implementation for pipelines (like scientific) that use functional consolidation instead of complex merging.
+
+### box_debugger.py
+Debugging utilities for box operations:
+
+```python
+from src.injestion.shared.processing.box_debugger import BoxDebugger
+
+debugger = BoxDebugger()
+debugger.visualize_overlaps(boxes, "overlap_analysis.png")
+debugger.print_box_statistics(boxes)
+```
+
+**Features**:
+- Visualize box overlaps and conflicts
+- Print detailed statistics
+- Export debug information
+- Useful for tuning overlap resolution parameters
+
 ## Usage Patterns
 
 ### Complete Pipeline
