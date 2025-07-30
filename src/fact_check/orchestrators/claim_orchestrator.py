@@ -9,7 +9,8 @@ from ..agents import (
     EvidenceExtractor,
     EvidenceVerifierV2,
     CompletenessChecker,
-    EvidencePresenter
+    EvidencePresenter,
+    ImageEvidenceAnalyzer
 )
 
 logger = logging.getLogger(__name__)
@@ -166,14 +167,19 @@ class ClaimOrchestrator:
                 })
                 
                 # Decide whether to continue
-                if not self.config.get("continue_on_error", True):
+                if not self.config.get("continue_on_error", False):
                     break
         
         # If additional evidence was found, verify it
         if additional_evidence_found:
             await self._verify_additional_evidence(document, doc_result, all_verified_evidence)
         
-        # Now run the presenter with all verified evidence
+        # NEW: Run image analysis after text pipeline completes
+        logger.info(f"  Running image analysis...")
+        image_evidence = await self._run_image_analysis(document, doc_result)
+        doc_result["image_evidence"] = image_evidence
+        
+        # Now run the presenter with all verified evidence (text + images)
         await self._run_presenter(document, doc_result, all_verified_evidence)
         
         doc_result["success"] = all(a["success"] for a in doc_result["agents_run"])
@@ -259,7 +265,11 @@ class ClaimOrchestrator:
         all_verified_evidence: List[Dict]
     ):
         """Run presenter with all verified evidence."""
-        logger.info(f"    Running evidence_presenter with {len(all_verified_evidence)} total verified pieces...")
+        logger.info(f"    Running evidence_presenter with {len(all_verified_evidence)} text evidence pieces...")
+        
+        # Get image evidence from doc_result
+        image_evidence = doc_result.get("image_evidence", [])
+        logger.info(f"    And {len(image_evidence)} supporting images...")
         
         # Create consolidated verifier output for presenter
         consolidated_verifier = {
@@ -269,7 +279,9 @@ class ClaimOrchestrator:
             "verified_evidence": all_verified_evidence,
             "verification_stats": {
                 "total_verified": len(all_verified_evidence)
-            }
+            },
+            # NEW: Add image evidence
+            "image_evidence": image_evidence
         }
         
         # Save consolidated output
@@ -314,6 +326,78 @@ class ClaimOrchestrator:
                 "error": str(e),
                 "timestamp": datetime.now().isoformat()
             })
+    
+    async def _run_image_analysis(self, document: str, doc_result: Dict[str, Any]) -> List[Dict]:
+        """
+        Analyze all images in the document for supporting evidence.
+        
+        Returns:
+            List of image analysis results (only those that support the claim)
+        """
+        figures_dir = self.cache_dir / document / "extracted" / "figures"
+        
+        # Check if figures directory exists
+        if not figures_dir.exists():
+            logger.info("    No figures directory found, skipping image analysis")
+            return []
+        
+        # Get all image files
+        image_files = list(figures_dir.glob("*.png")) + list(figures_dir.glob("*.jpg"))
+        
+        if not image_files:
+            logger.info("    No image files found")
+            return []
+        
+        logger.info(f"    Found {len(image_files)} images to analyze")
+        
+        # Analyze each image in parallel using asyncio.gather
+        import asyncio
+        
+        tasks = []
+        for image_file in image_files:
+            analyzer = ImageEvidenceAnalyzer(
+                pdf_name=document,
+                claim_id=self.claim_id,
+                image_filename=image_file.name,
+                cache_dir=self.cache_dir,
+                config=self.agent_config
+            )
+            tasks.append(analyzer.process())
+        
+        # Run all image analyses in parallel
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+        
+        # Process results
+        supporting_images = []
+        for i, result in enumerate(results):
+            if isinstance(result, Exception):
+                logger.error(f"      Image analysis failed for {image_files[i].name}: {result}")
+                doc_result["agents_run"].append({
+                    "agent": f"image_evidence_analyzer_{image_files[i].name}",
+                    "success": False,
+                    "error": str(result),
+                    "timestamp": datetime.now().isoformat()
+                })
+            else:
+                # Save the output
+                self._save_agent_output(document, f"image_evidence_analyzer", result)
+                
+                # Track in agents_run
+                doc_result["agents_run"].append({
+                    "agent": f"image_evidence_analyzer_{result.get('image_filename', '')}",
+                    "success": True,
+                    "timestamp": datetime.now().isoformat()
+                })
+                
+                # Only include images that support the claim
+                if result.get("supports_claim"):
+                    supporting_images.append(result)
+                    logger.info(f"      ✓ {result.get('image_filename')} supports claim")
+                else:
+                    logger.info(f"      ✗ {result.get('image_filename')} does not support claim")
+        
+        logger.info(f"    Found {len(supporting_images)} supporting images out of {len(image_files)} analyzed")
+        return supporting_images
     
     def _save_agent_output(self, document: str, agent_name: str, output: Dict[str, Any]):
         """Save agent output to disk."""

@@ -57,9 +57,24 @@ class MarketingLayoutDetector:
         Returns
         -------
         List of Layout objects for each page
+        
+        Raises
+        ------
+        RuntimeError
+            If model initialization fails
+        ValueError
+            If images are invalid
         """
-        model = self._ensure_model()
-        return [model.detect(image) for image in images]
+        try:
+            model = self._ensure_model()
+            results = []
+            for i, image in enumerate(images):
+                if image is None:
+                    raise ValueError(f"Image at index {i} is None")
+                results.append(model.detect(image))
+            return results
+        except Exception as e:
+            raise RuntimeError(f"Layout detection failed: {e}") from e
     
     def _ensure_model(self) -> lp.LayoutModel:
         """Lazy load the PrimaLayout model with marketing-optimized config."""

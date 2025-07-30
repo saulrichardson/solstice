@@ -43,11 +43,6 @@ def main():
         help="List of document names to search (default: all documents in cache with extracted content)"
     )
     
-    parser.add_argument(
-        "--model",
-        default="gpt-4.1",
-        help="LLM model to use (default: gpt-4.1)"
-    )
     
     parser.add_argument(
         "--cache-dir",
@@ -72,7 +67,6 @@ def main():
     # Configuration
     config = {
         "agent_config": {
-            "model": args.model,
             "disable_cache": True
         }
     }
@@ -82,7 +76,6 @@ def main():
     print("=" * 30)
     print(f"Claims file: {args.claims_file}")
     print(f"Documents: {', '.join(args.documents)}")
-    print(f"Model: {args.model}")
     print()
     
     # Create and run orchestrator

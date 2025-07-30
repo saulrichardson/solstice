@@ -7,14 +7,13 @@ from ..processing.box import Box
 
 def determine_marketing_reading_order(boxes: List[Box], page_width: float = 1600, page_height: float = 3000) -> List[str]:
     """
-    Marketing-specific reading order using advanced clustering for feature boxes.
+    Marketing-specific reading order using feature-aware clustering.
     
-    This algorithm:
-    1. Identifies the title/header (topmost wide box)
-    2. Uses spatial clustering to group related content into feature boxes
-    3. Orders clusters in a grid pattern (left-to-right, top-to-bottom)
-    4. Reads all content within each cluster before moving to next
-    5. Handles footer/disclaimer text at bottom
+    This algorithm is specifically designed for marketing slides with:
+    - A title header at the top
+    - Feature boxes arranged in columns
+    - Icons/figures associated with text blocks
+    - Footer information at the bottom
     
     Args:
         boxes: All boxes on the page
@@ -27,206 +26,131 @@ def determine_marketing_reading_order(boxes: List[Box], page_width: float = 1600
     if not boxes:
         return []
     
-    # Estimate page height from boxes if needed
+    # Estimate page dimensions from boxes if needed
     if page_height == 3000 and boxes:
         page_height = max(box.bbox[3] for box in boxes)
+    if page_width == 1600 and boxes:
+        page_width = max(box.bbox[2] for box in boxes)
     
-    # Step 1: Identify header (title) - usually the widest box at the top
-    header_boxes = []
-    main_boxes = []
-    footer_boxes = []
+    # Initialize categories
+    title_blocks = []
+    left_feature_blocks = []
+    right_feature_blocks = []
+    footer_blocks = []
+    figure_blocks = []
     
-    # Find the widest box in the top 20% of the page - likely the title
-    top_threshold = page_height * 0.20
-    bottom_threshold = page_height * 0.80
+    # Define layout zones
+    title_threshold = page_height * 0.15
+    footer_threshold = page_height * 0.70
+    mid_x = page_width * 0.5
     
+    # Categorize blocks
     for box in boxes:
-        box_center_y = (box.bbox[1] + box.bbox[3]) / 2
-        box_width = box.bbox[2] - box.bbox[0]
+        x1, y1, x2, y2 = box.bbox
+        center_x = (x1 + x2) / 2
+        width = x2 - x1
         
-        # Wide boxes at the top are likely headers/titles
-        if box_center_y < top_threshold and box_width > page_width * 0.6:
-            header_boxes.append(box)
-        elif box_center_y > bottom_threshold:
-            footer_boxes.append(box)
+        # Separators stay with title
+        if box.label == 'Separator':
+            title_blocks.append(box)
+        # Figures handled separately
+        elif box.label in ['Figure', 'ImageRegion']:
+            figure_blocks.append(box)
+        # Wide text at top is title
+        elif y1 < title_threshold and width > page_width * 0.6:
+            title_blocks.append(box)
+        # Footer text
+        elif y1 > footer_threshold:
+            footer_blocks.append(box)
+        # Main content - split by column
         else:
-            main_boxes.append(box)
-    
-    # If no wide header found, check for any text in top area
-    if not header_boxes:
-        for box in boxes:
-            if box.bbox[1] < top_threshold:
-                header_boxes.append(box)
-            elif box.bbox[1] < bottom_threshold:
-                main_boxes.append(box)
+            if center_x < mid_x:
+                left_feature_blocks.append(box)
             else:
-                footer_boxes.append(box)
+                right_feature_blocks.append(box)
     
-    # Remove header boxes from main boxes
-    header_ids = set(box.id for box in header_boxes)
-    main_boxes = [box for box in main_boxes if box.id not in header_ids]
+    # Group feature blocks into clusters
+    def cluster_by_proximity(blocks, gap_threshold=150):
+        """Group blocks that are vertically close."""
+        if not blocks:
+            return []
+        
+        # Sort by Y position
+        blocks = sorted(blocks, key=lambda b: b.bbox[1])
+        
+        clusters = []
+        current_cluster = [blocks[0]]
+        
+        for i in range(1, len(blocks)):
+            prev_bottom = blocks[i-1].bbox[3]
+            curr_top = blocks[i].bbox[1]
+            
+            if curr_top - prev_bottom < gap_threshold:
+                current_cluster.append(blocks[i])
+            else:
+                clusters.append(current_cluster)
+                current_cluster = [blocks[i]]
+        
+        if current_cluster:
+            clusters.append(current_cluster)
+        
+        return clusters
     
-    # Step 2: Cluster main content boxes
-    clusters = _cluster_marketing_boxes(main_boxes)
+    # Create feature clusters
+    left_clusters = cluster_by_proximity(left_feature_blocks)
+    right_clusters = cluster_by_proximity(right_feature_blocks)
     
-    # Debug: Print cluster information
-    print(f"\nClustering result: Found {len(clusters)} clusters from {len(main_boxes)} main boxes")
-    for i, cluster in enumerate(clusters):
-        # Get cluster bounds
-        if cluster:
-            min_x = min(b.bbox[0] for b in cluster)
-            max_x = max(b.bbox[2] for b in cluster)
-            min_y = min(b.bbox[1] for b in cluster)
-            max_y = max(b.bbox[3] for b in cluster)
-            print(f"  Cluster {i+1}: {len(cluster)} boxes, bounds: ({min_x:.0f},{min_y:.0f}) to ({max_x:.0f},{max_y:.0f})")
-            for j, box in enumerate(cluster[:3]):  # Show first 3 boxes
-                text_preview = box.text[:30] + '...' if hasattr(box, 'text') and box.text else 'NO TEXT'
-                print(f"    Box {j+1} - {box.label}: {text_preview}")
+    # Assign figures to nearest cluster
+    for fig in figure_blocks:
+        fig_center_x = (fig.bbox[0] + fig.bbox[2]) / 2
+        fig_center_y = (fig.bbox[1] + fig.bbox[3]) / 2
+        
+        # Determine column
+        target_clusters = left_clusters if fig_center_x < mid_x else right_clusters
+        
+        # Find nearest cluster by Y position
+        if target_clusters:
+            min_dist = float('inf')
+            best_cluster_idx = 0
+            
+            for idx, cluster in enumerate(target_clusters):
+                cluster_top = min(b.bbox[1] for b in cluster)
+                cluster_bottom = max(b.bbox[3] for b in cluster)
+                cluster_center_y = (cluster_top + cluster_bottom) / 2
+                
+                dist = abs(fig_center_y - cluster_center_y)
+                if dist < min_dist:
+                    min_dist = dist
+                    best_cluster_idx = idx
+            
+            # Add figure to beginning of cluster (icons usually come first)
+            target_clusters[best_cluster_idx].insert(0, fig)
     
-    # Step 3: Order clusters in grid pattern
-    ordered_clusters = _order_clusters_grid_pattern(clusters)
-    
-    # Step 4: Build final reading order
+    # Build final reading order
     reading_order = []
     
-    # Add header boxes first (sorted by width desc, then position)
-    if header_boxes:
-        header_boxes.sort(key=lambda b: (-(b.bbox[2] - b.bbox[0]), b.bbox[1], b.bbox[0]))
-        reading_order.extend([box.id for box in header_boxes])
+    # 1. Title and header
+    title_blocks.sort(key=lambda b: (b.bbox[1], -(b.bbox[2] - b.bbox[0])))
+    reading_order.extend([box.id for box in title_blocks])
     
-    # Add clustered main content
-    for cluster in ordered_clusters:
-        # Within each cluster, read top-to-bottom, left-to-right
-        cluster.sort(key=lambda b: (b.bbox[1], b.bbox[0]))
-        reading_order.extend([box.id for box in cluster])
+    # 2. Process feature boxes in pairs (left column, then right column)
+    max_rows = max(len(left_clusters), len(right_clusters)) if (left_clusters or right_clusters) else 0
     
-    # Add footer boxes last
-    if footer_boxes:
-        footer_boxes.sort(key=lambda b: (b.bbox[1], b.bbox[0]))
-        reading_order.extend([box.id for box in footer_boxes])
+    for row in range(max_rows):
+        # Left column feature
+        if row < len(left_clusters):
+            cluster = sorted(left_clusters[row], key=lambda b: b.bbox[1])
+            reading_order.extend([box.id for box in cluster])
+        
+        # Right column feature
+        if row < len(right_clusters):
+            cluster = sorted(right_clusters[row], key=lambda b: b.bbox[1])
+            reading_order.extend([box.id for box in cluster])
+    
+    # 3. Footer content
+    footer_blocks.sort(key=lambda b: (b.bbox[1], b.bbox[0]))
+    reading_order.extend([box.id for box in footer_blocks])
     
     return reading_order
 
 
-def _cluster_marketing_boxes(boxes: List[Box]) -> List[List[Box]]:
-    """Cluster boxes that belong to the same feature/content group.
-    
-    Uses spatial proximity to group related boxes together.
-    Marketing slides typically have distinct feature boxes that should be read as units.
-    """
-    if not boxes:
-        return []
-    
-    # Debug: show all boxes
-    print("\nDEBUG: Main content boxes before clustering:")
-    for box in boxes[:10]:  # Show first 10
-        text_preview = box.text[:30] + '...' if hasattr(box, 'text') and box.text else 'NO TEXT'
-        print(f"  {box.label} @ ({box.bbox[0]:.0f},{box.bbox[1]:.0f}): {text_preview}")
-    
-    # Use more aggressive clustering for marketing documents
-    # Group boxes that are part of the same visual feature box
-    clusters = []
-    unassigned = list(boxes)
-    
-    while unassigned:
-        # Start new cluster with an unassigned box
-        seed = unassigned.pop(0)
-        cluster = [seed]
-        
-        # Keep expanding cluster until no more boxes can be added
-        changed = True
-        while changed:
-            changed = False
-            i = 0
-            while i < len(unassigned):
-                box = unassigned[i]
-                
-                # Check if this box should join the cluster
-                should_join = False
-                
-                for cluster_box in cluster:
-                    # Calculate spatial relationship
-                    # Get bounding box of cluster so far
-                    cluster_min_x = min(b.bbox[0] for b in cluster)
-                    cluster_max_x = max(b.bbox[2] for b in cluster)
-                    cluster_min_y = min(b.bbox[1] for b in cluster)
-                    cluster_max_y = max(b.bbox[3] for b in cluster)
-                    
-                    # Check if box is within or near the cluster bounds
-                    x_near = (box.bbox[0] >= cluster_min_x - 50 and box.bbox[2] <= cluster_max_x + 50)
-                    y_near = (box.bbox[1] >= cluster_min_y - 50 and box.bbox[3] <= cluster_max_y + 100)
-                    
-                    # Also check direct proximity to any box in cluster
-                    x_overlap = min(cluster_box.bbox[2], box.bbox[2]) - max(cluster_box.bbox[0], box.bbox[0])
-                    y_gap = max(0, box.bbox[1] - cluster_box.bbox[3])  # Gap between bottom of cluster box and top of new box
-                    
-                    # Join if:
-                    # 1. Box is within cluster bounds
-                    # 2. OR box has significant x-overlap and small y-gap with a cluster member
-                    if (x_near and y_near) or (x_overlap > 100 and y_gap < 80):
-                        should_join = True
-                        break
-                
-                if should_join:
-                    cluster.append(box)
-                    unassigned.pop(i)
-                    changed = True
-                else:
-                    i += 1
-        
-        clusters.append(cluster)
-    
-    return clusters
-
-
-def _order_clusters_grid_pattern(clusters: List[List[Box]]) -> List[List[Box]]:
-    """Order clusters in a grid pattern (left-to-right, top-to-bottom).
-    
-    For marketing slides, feature boxes are typically arranged in a grid.
-    This function orders the clusters to follow a natural reading pattern.
-    """
-    if not clusters:
-        return []
-    
-    # Calculate center point of each cluster
-    cluster_centers = []
-    for cluster in clusters:
-        min_x = min(box.bbox[0] for box in cluster)
-        max_x = max(box.bbox[2] for box in cluster)
-        min_y = min(box.bbox[1] for box in cluster)
-        max_y = max(box.bbox[3] for box in cluster)
-        center_x = (min_x + max_x) / 2
-        center_y = (min_y + max_y) / 2
-        cluster_centers.append((center_x, center_y, cluster))
-    
-    # Group clusters into rows based on Y position
-    cluster_centers.sort(key=lambda x: x[1])  # Sort by Y
-    
-    rows = []
-    current_row = [cluster_centers[0]]
-    row_y = cluster_centers[0][1]
-    
-    for i in range(1, len(cluster_centers)):
-        center_x, center_y, cluster = cluster_centers[i]
-        
-        # If Y position is close to current row, add to same row
-        if abs(center_y - row_y) < 100:  # Within 100px vertically
-            current_row.append(cluster_centers[i])
-            # Update row Y to be average
-            row_y = sum(c[1] for c in current_row) / len(current_row)
-        else:
-            # Start new row
-            rows.append(current_row)
-            current_row = [cluster_centers[i]]
-            row_y = center_y
-    
-    if current_row:
-        rows.append(current_row)
-    
-    # Within each row, sort by X position (left to right)
-    ordered_clusters = []
-    for row in rows:
-        row.sort(key=lambda x: x[0])  # Sort by X
-        ordered_clusters.extend([item[2] for item in row])
-    
-    return ordered_clusters

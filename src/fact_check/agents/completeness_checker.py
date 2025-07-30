@@ -9,6 +9,7 @@ from .base import BaseAgent, AgentError
 from ..core.responses_client import ResponsesClient
 from ..models.llm_outputs import ExtractorOutput
 from ..utils.llm_parser import LLMResponseParser
+from ..config.agent_models import get_model_for_agent
 
 logger = logging.getLogger(__name__)
 
@@ -52,7 +53,8 @@ class CompletenessChecker(BaseAgent):
         
         # Set up LLM client
         self.llm_client = ResponsesClient()
-        self.llm_client.model = self.config.get("model", "gpt-4.1")
+        # Use centrally configured model for this agent
+        self.llm_client.model = get_model_for_agent(self.agent_name)
     
     async def process(self) -> Dict[str, Any]:
         """

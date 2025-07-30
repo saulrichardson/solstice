@@ -1,7 +1,10 @@
 """Fixed box consolidation operations for marketing documents."""
 
+import logging
 from typing import List, Tuple, Optional
 from ..processing.box import Box
+
+logger = logging.getLogger(__name__)
 
 
 class BoxConsolidator:
@@ -90,12 +93,12 @@ class BoxConsolidator:
             # Filter out narrow text boxes
             if width < 400:
                 removed_count += 1
-                print(f"  Filtering out narrow TextRegion (width={width:.0f}px, score={box.score:.2f})")
+                logger.debug(f"Filtering out narrow TextRegion (width={width:.0f}px, score={box.score:.2f})")
             else:
                 filtered.append(box)
         
         if removed_count > 0:
-            print(f"  Removed {removed_count} narrow text boxes")
+            logger.info(f"Removed {removed_count} narrow text boxes")
             
         return filtered
     
@@ -116,7 +119,7 @@ class BoxConsolidator:
                 # If different type and significant overlap, skip this box
                 if (kept_box.label != box.label and 
                     self._boxes_overlap(box.bbox, kept_box.bbox, threshold=0.5)):
-                    print(f"  Removing {box.label} (score={box.score:.2f}) overlapping with {kept_box.label} (score={kept_box.score:.2f})")
+                    logger.debug(f"Removing {box.label} (score={box.score:.2f}) overlapping with {kept_box.label} (score={kept_box.score:.2f})")
                     should_keep = False
                     break
             
@@ -171,7 +174,7 @@ class BoxConsolidator:
                     score=best_box.score
                 )
                 merged.append(merged_box)
-                print(f"  Merged {len(boxes_to_merge)} {best_box.label} boxes")
+                logger.info(f"Merged {len(boxes_to_merge)} {best_box.label} boxes")
             else:
                 merged.append(current)
             
@@ -182,6 +185,10 @@ class BoxConsolidator:
     def _expand_boxes_safely(self, boxes: List[Box], page_width: float, page_height: float) -> List[Box]:
         """Expand boxes while preventing worsening of overlaps."""
         if not boxes:
+            return boxes
+        
+        if page_width <= 0 or page_height <= 0:
+            logger.warning(f"Invalid page dimensions: {page_width}x{page_height}, skipping expansion")
             return boxes
         
         # First, calculate which boxes overlap with which
@@ -255,25 +262,59 @@ class BoxConsolidator:
             )
             expanded_boxes.append(expanded_box)
         
-        print(f"  Safely expanded {len(expanded_boxes)} boxes by up to {self.expand_padding}px")
+        logger.info(f"Safely expanded {len(expanded_boxes)} boxes by up to {self.expand_padding}px")
         return expanded_boxes
     
     def _boxes_overlap(self, bbox1: Tuple[float, float, float, float], 
                        bbox2: Tuple[float, float, float, float], 
                        threshold: float = 0.1) -> bool:
-        """Check if two boxes overlap by at least threshold amount."""
-        x1 = max(bbox1[0], bbox2[0])
-        y1 = max(bbox1[1], bbox2[1])
-        x2 = min(bbox1[2], bbox2[2])
-        y2 = min(bbox1[3], bbox2[3])
+        """Check if two boxes overlap by at least threshold amount.
         
-        if x2 < x1 or y2 < y1:
-            return False
+        Parameters
+        ----------
+        bbox1, bbox2 : Tuple[float, float, float, float]
+            Bounding boxes as (x1, y1, x2, y2)
+        threshold : float
+            Minimum overlap ratio (0.0 to 1.0)
             
-        intersection_area = (x2 - x1) * (y2 - y1)
-        area1 = (bbox1[2] - bbox1[0]) * (bbox1[3] - bbox1[1])
-        area2 = (bbox2[2] - bbox2[0]) * (bbox2[3] - bbox2[1])
-        
-        # Check if intersection is at least threshold of smaller box
-        min_area = min(area1, area2)
-        return intersection_area >= (min_area * threshold)
+        Returns
+        -------
+        bool
+            True if boxes overlap by at least threshold amount
+        """
+        try:
+            # Validate bounding boxes
+            if len(bbox1) != 4 or len(bbox2) != 4:
+                logger.warning(f"Invalid bbox format: {bbox1}, {bbox2}")
+                return False
+                
+            # Ensure x2 > x1 and y2 > y1
+            if bbox1[2] <= bbox1[0] or bbox1[3] <= bbox1[1]:
+                logger.warning(f"Invalid bbox1 dimensions: {bbox1}")
+                return False
+            if bbox2[2] <= bbox2[0] or bbox2[3] <= bbox2[1]:
+                logger.warning(f"Invalid bbox2 dimensions: {bbox2}")
+                return False
+            
+            x1 = max(bbox1[0], bbox2[0])
+            y1 = max(bbox1[1], bbox2[1])
+            x2 = min(bbox1[2], bbox2[2])
+            y2 = min(bbox1[3], bbox2[3])
+            
+            if x2 < x1 or y2 < y1:
+                return False
+                
+            intersection_area = (x2 - x1) * (y2 - y1)
+            area1 = (bbox1[2] - bbox1[0]) * (bbox1[3] - bbox1[1])
+            area2 = (bbox2[2] - bbox2[0]) * (bbox2[3] - bbox2[1])
+            
+            # Check if intersection is at least threshold of smaller box
+            min_area = min(area1, area2)
+            if min_area <= 0:
+                return False
+                
+            return intersection_area >= (min_area * threshold)
+            
+        except Exception as e:
+            logger.error(f"Error calculating box overlap: {e}")
+            return False

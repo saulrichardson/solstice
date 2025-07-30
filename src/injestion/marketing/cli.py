@@ -2,13 +2,16 @@
 """Command-line interface for marketing document processing."""
 
 import argparse
+import logging
 import sys
 from pathlib import Path
 
 from .pipeline import MarketingPipeline
 
+logger = logging.getLogger(__name__)
 
-def main():
+
+def main() -> int:
     """Main CLI entry point."""
     parser = argparse.ArgumentParser(
         description="Process marketing documents using PrimaLayout detection with advanced consolidation.",
@@ -61,12 +64,16 @@ def main():
         print(f"\n  Outputs saved to: {output_dir}")
         
         viz_dir = Path("data/cache") / args.pdf_path.stem / "visualizations"
-        print(f"  Visualizations saved to: {viz_dir}")
+        if viz_dir.exists():
+            print(f"  Visualizations saved to: {viz_dir}")
+        
+        return 0
         
     except Exception as e:
+        logger.error(f"Error processing PDF: {e}", exc_info=True)
         print(f"\n✗ Error processing PDF: {e}", file=sys.stderr)
-        sys.exit(1)
+        return 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -102,6 +102,10 @@ class EvidencePresenter(BaseAgent):
         verified_evidence = verifier_data.get("verified_evidence", [])
         logger.info(f"\nTotal verified evidence pieces: {len(verified_evidence)}")
         
+        # Get image evidence if available
+        image_evidence = verifier_data.get("image_evidence", [])
+        logger.info(f"Total image evidence pieces: {len(image_evidence)}")
+        
         # Get completeness info
         completeness_assessment = completeness_data.get("completeness_assessment", {})
         missing_aspects = completeness_assessment.get("missing_aspects", [])
@@ -130,8 +134,17 @@ class EvidencePresenter(BaseAgent):
                 }
                 for evidence in verified_evidence
             ],
+            "image_supporting_evidence": [
+                {
+                    "image_filename": img["image_filename"],
+                    "explanation": img["explanation"]
+                }
+                for img in image_evidence
+            ],
             "evidence_summary": {
-                "total_evidence_found": len(verified_evidence),
+                "total_text_evidence_found": len(verified_evidence),
+                "total_image_evidence_found": len(image_evidence),
+                "total_evidence_found": len(verified_evidence) + len(image_evidence),
                 "coverage": coverage,
                 "missing_aspects": missing_aspects
             },
@@ -142,15 +155,23 @@ class EvidencePresenter(BaseAgent):
         }
         
         logger.info(f"\nFormatted Evidence Summary:")
-        logger.info(f"  - Total evidence pieces: {len(verified_evidence)}")
+        logger.info(f"  - Text evidence pieces: {len(verified_evidence)}")
+        logger.info(f"  - Image evidence pieces: {len(image_evidence)}")
+        logger.info(f"  - Total evidence: {len(verified_evidence) + len(image_evidence)}")
         logger.info(f"  - Coverage: {coverage}")
         logger.info(f"  - Rejected count: {output['metadata']['rejected_count']}")
         
         if verified_evidence:
-            logger.info("\nEvidence pieces:")
+            logger.info("\nText evidence pieces:")
             for i, evidence in enumerate(output['supporting_evidence'], 1):
                 logger.info(f"  {i}. '{evidence['quote'][:80]}...'")
                 logger.info(f"     Explanation: {evidence['explanation'][:100]}...")
+        
+        if image_evidence:
+            logger.info("\nImage evidence pieces:")
+            for i, img in enumerate(output['image_supporting_evidence'], 1):
+                logger.info(f"  {i}. Image: {img['image_filename']}")
+                logger.info(f"     Explanation: {img['explanation'][:100]}...")
         
         logger.info(f"\n{'='*60}")
         logger.info(f"EVIDENCE PRESENTER: Completed for claim {self.claim_id}")

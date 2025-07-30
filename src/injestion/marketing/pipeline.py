@@ -2,9 +2,12 @@
 
 from __future__ import annotations
 
+import logging
 import os
 from pathlib import Path
 from typing import List, Optional
+
+logger = logging.getLogger(__name__)
 
 from .detector import MarketingLayoutDetector
 from .consolidation import BoxConsolidator
@@ -43,14 +46,14 @@ class MarketingPipeline(BasePDFPipeline):
             config = get_config('marketing')
         super().__init__(config)
     
-    def _create_detector(self):
+    def _create_detector(self) -> MarketingLayoutDetector:
         """Create PrimaLayout-based detector for marketing documents."""
         return MarketingLayoutDetector(
             score_threshold=self.config.score_threshold,
             nms_threshold=self.config.nms_threshold
         )
     
-    def _create_consolidator(self):
+    def _create_consolidator(self) -> BoxConsolidator:
         """Create box consolidator for marketing layouts."""
         return BoxConsolidator(
             merge_threshold=self.config.merge_threshold,
@@ -199,7 +202,7 @@ class MarketingPipeline(BasePDFPipeline):
                 show_reading_order=True
             )
         
-        print(f"\nOutputs saved to: {output_dir}")
+        logger.info(f"Outputs saved to: {output_dir}")
     
     def _save_raw_layouts(self, layouts: List, pdf_path: Path, images: List):
         """Save raw layout detection results before any processing."""
@@ -271,4 +274,4 @@ class MarketingPipeline(BasePDFPipeline):
             plt.savefig(output_path, dpi=150, bbox_inches='tight')
             plt.close()
         
-        print(f"  Raw layout visualizations saved to: {viz_dir}")
+        logger.info(f"Raw layout visualizations saved to: {viz_dir}")
