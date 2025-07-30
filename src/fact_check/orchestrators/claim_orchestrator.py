@@ -1,5 +1,6 @@
 """Streamlined orchestrator for processing claims with supporting evidence pipeline."""
 
+import copy
 import json
 import logging
 from datetime import datetime
@@ -45,8 +46,9 @@ class ClaimOrchestrator:
         self.config = config or {}
         
         # Agent configuration with claim
-        # Create a copy to avoid shared state between concurrent orchestrators
-        self.agent_config = self.config.get("agent_config", {}).copy()
+        # Use deep copy to avoid shared state between concurrent orchestrators
+        # This ensures nested dictionaries/lists are also copied, not just referenced
+        self.agent_config = copy.deepcopy(self.config.get("agent_config", {}))
         self.agent_config["claim"] = claim_text
         
         # Fixed pipeline for streamlined architecture.  The presenter is
@@ -108,12 +110,15 @@ class ClaimOrchestrator:
         all_verified_evidence = []
         logger.info(f"  Starting pipeline")
         
+        # Track if pipeline was stopped early
+        pipeline_stopped_early = False
+        
         for agent_class, agent_name in self.pipeline:
             logger.info(f"    Running {agent_name}...")
             
             try:
-                # Use standard agent config
-                agent_config = self.agent_config.copy()
+                # Use deep copy for agent config to ensure isolation
+                agent_config = copy.deepcopy(self.agent_config)
 
                 # Create agent instance
                 agent = agent_class(
@@ -153,15 +158,31 @@ class ClaimOrchestrator:
                 
                 # Decide whether to continue
                 if not self.config.get("continue_on_error", False):
+                    pipeline_stopped_early = True
+                    logger.info(f"    Stopping pipeline early due to error (continue_on_error=False)")
                     break
         
-        # Run image analysis after text pipeline completes
-        logger.info(f"  Running image analysis...")
-        image_evidence = await self._run_image_analysis(document, doc_result)
-        doc_result["image_evidence"] = image_evidence
-        
-        # Now run the presenter with all verified evidence (text + images)
-        await self._run_presenter(document, doc_result, all_verified_evidence)
+        # Only run subsequent steps if pipeline completed or continue_on_error is True
+        if not pipeline_stopped_early:
+            # Run image analysis after text pipeline completes
+            logger.info(f"  Running image analysis...")
+            image_evidence = await self._run_image_analysis(document, doc_result)
+            doc_result["image_evidence"] = image_evidence
+            
+            # Now run the presenter with all verified evidence (text + images)
+            await self._run_presenter(document, doc_result, all_verified_evidence)
+        else:
+            # Pipeline stopped early - set empty results
+            logger.info(f"  Skipping image analysis and presenter due to pipeline error")
+            doc_result["image_evidence"] = []
+            doc_result["supporting_evidence"] = []
+            doc_result["evidence_summary"] = {
+                "total_text_evidence_found": 0,
+                "total_image_evidence_found": 0,
+                "total_evidence_found": 0,
+                "coverage": "none",
+                "missing_aspects": ["Pipeline stopped early due to error"]
+            }
         
         # ------------------------------------------------------------------
         # Determine overall success
@@ -211,8 +232,8 @@ class ClaimOrchestrator:
             json.dump(consolidated_verifier, f, indent=2)
         
         try:
-            # Create presenter
-            agent_config = self.agent_config.copy()
+            # Create presenter with deep copied config
+            agent_config = copy.deepcopy(self.agent_config)
             presenter = EvidencePresenter(
                 pdf_name=document,
                 claim_id=self.claim_id,
@@ -294,12 +315,13 @@ class ClaimOrchestrator:
         
         async def analyze_image_with_limit(image_metadata):
             async with semaphore:
+                # Deep copy config for each image analyzer to ensure isolation
                 analyzer = ImageEvidenceAnalyzer(
                     pdf_name=document,
                     claim_id=self.claim_id,
                     image_metadata=image_metadata,
                     cache_dir=self.cache_dir,
-                    config=self.agent_config
+                    config=copy.deepcopy(self.agent_config)
                 )
                 return await analyzer.run()
         
