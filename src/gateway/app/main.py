@@ -1,4 +1,5 @@
 import json
+import logging
 import sys
 import time
 from contextlib import asynccontextmanager
@@ -15,6 +16,9 @@ from .providers import OpenAIProvider, ResponseRequest
 # Provider instances
 providers = {}
 
+# Set up logger
+logger = logging.getLogger(__name__)
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -25,21 +29,19 @@ async def lifespan(app: FastAPI):
     # Initialize providers with retry wrapper
     try:
         if validate_api_key():
-            print("[DEBUG] Creating OpenAI provider", flush=True)
+            logger.debug("Creating OpenAI provider")
             providers["openai"] = RetryableProvider(OpenAIProvider())
-            print(f"[DEBUG] Provider created: {providers}", flush=True)
+            logger.debug(f"Provider created: {providers}")
     except OpenAIClientError as e:
-        print(f"[gateway] Warning: {e}", file=sys.stderr, flush=True)
+        logger.warning(f"OpenAI client error: {e}")
 
     # Fail-fast: if no provider could be configured the gateway is unusable.
     if not providers:
         # Log a clear error message and abort startup so orchestration platforms
         # mark the container as failed rather than letting it run half-alive.
-        print(
-            "[gateway] Fatal: no LLM provider configured. Set OPENAI_API_KEY or "
-            "check provider settings.",
-            file=sys.stderr,
-            flush=True,
+        logger.error(
+            "Fatal: no LLM provider configured. Set OPENAI_API_KEY or "
+            "check provider settings."
         )
         # Exit during lifespan startup phase.
         raise RuntimeError("No provider configured for Solstice Gateway")
@@ -129,15 +131,15 @@ async def create_response(request: Request, body: dict):
     start_time = time.time()
 
     try:
-        print(f"[MAIN] Calling provider.create_response", flush=True)
+        logger.debug("Calling provider.create_response")
         response = await provider.create_response(response_request)
-        print(f"[MAIN] Got response back from provider", flush=True)
+        logger.debug("Got response back from provider")
         duration = time.time() - start_time
 
-        # Debug: Log raw response
+        # Log raw response for debugging
         response_dict = response.model_dump()
-        print(f"[DEBUG] Response dict keys: {list(response_dict.keys())}")
-        print(f"[DEBUG] Usage data: {response_dict.get('usage', 'NO USAGE KEY')}")
+        logger.debug(f"Response dict keys: {list(response_dict.keys())}")
+        logger.debug(f"Usage data: {response_dict.get('usage', 'NO USAGE KEY')}")
 
         # Log response
         log_llm_response(

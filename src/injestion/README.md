@@ -46,7 +46,7 @@ injestion/
     │   ├── text_extractor.py        # PyMuPDF-based text extraction
     │   ├── text_processing_service.py # Advanced text cleaning and correction
     │   ├── overlap_resolver.py      # Box overlap detection and resolution
-    │   ├── reading_order_hybrid.py  # K-means based column detection
+    │   ├── reading_order.py          # Simple reading order detection
     │   └── box.py                   # Core data structures (Box, LabeledBox)
     ├── storage/           # File I/O and cache management
     │   └── paths.py       # Centralized path management and cache structure
@@ -220,17 +220,10 @@ boxes = no_overlap_pipeline(
 
 ### Reading Order Detection
 
-Two algorithms are available:
-
-1. **Hybrid Algorithm** (`reading_order_hybrid.py`):
-   - Uses k-means clustering for column detection
-   - Builds DAG of reading dependencies
-   - Handles spanning blocks (figures, tables)
-   - Fixed: Now correctly checks horizontal overlap
-
-2. **Simple Algorithm** (`reading_order.py`):
+The reading order detection uses a simple algorithm (`reading_order.py`):
    - Top-to-bottom, left-to-right ordering
-   - Fallback for single-column documents
+   - Suitable for most document layouts
+   - Handles basic column detection
 
 ## Output Structure
 

@@ -65,8 +65,6 @@ clean:
 shell:
 	docker compose exec gateway /bin/bash
 
-# Development shortcuts
-dev: dev-install up logs
 
 restart:
 	docker compose restart gateway

@@ -116,7 +116,7 @@ clean_boxes = no_overlap_pipeline(
 - Expand boxes to prevent text cutoffs
 - Preserve visual element integrity
 
-### reading_order.py & reading_order_hybrid.py
+### reading_order.py
 Determines logical document flow:
 
 ```python
@@ -126,8 +126,10 @@ ordered_boxes = determine_reading_order_simple(boxes)
 # Returns boxes sorted by reading order
 ```
 
-**Algorithms:**
-- **Simple**: Top-to-bottom, left-to-right
+**Algorithm:**
+- Top-to-bottom, left-to-right ordering
+- Handles basic column layouts
+- Suitable for most document types
 - **Hybrid**: Column-aware with section detection
 - **Graph-based**: Future enhancement
 
@@ -199,23 +201,6 @@ boxes = consolidator.consolidate(raw_boxes)  # Returns unchanged
 ```
 
 **Purpose**: Provides a null object pattern implementation for pipelines (like scientific) that use functional consolidation instead of complex merging.
-
-### box_debugger.py
-Debugging utilities for box operations:
-
-```python
-from src.injestion.shared.processing.box_debugger import BoxDebugger
-
-debugger = BoxDebugger()
-debugger.visualize_overlaps(boxes, "overlap_analysis.png")
-debugger.print_box_statistics(boxes)
-```
-
-**Features**:
-- Visualize box overlaps and conflicts
-- Print detailed statistics
-- Export debug information
-- Useful for tuning overlap resolution parameters
 
 ## Usage Patterns
 

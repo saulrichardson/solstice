@@ -1,6 +1,10 @@
 \documentclass[11pt]{article}
 \usepackage[margin=0.75in]{geometry}
 \usepackage{graphicx}
+% Force precise figure placement when using the [H] specifier
+\usepackage{float}
+% Prevent floats from crossing section boundaries when desired
+\usepackage[section]{placeins}
 \usepackage{amsmath}
 \usepackage{hyperref}
 \usepackage{enumitem}
@@ -43,7 +47,9 @@ The Gateway accepts document uploads and claim submissions from users, returning
 \item Outputs structured JSON with spatial coordinates
 \end{itemize}
 
-\begin{figure}[htbp]
+% The [H] option (from the `float` package) ensures the figure appears exactly
+% here instead of floating to the next page or the end of the document.
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.85\textwidth]{scientific_layout_example.png}
 \caption{Detectron2 identifies text blocks, tables, and figures in medical documents.}
@@ -162,7 +168,7 @@ Marketing materials use adjusted parameters:
 \item Same LLM prompts maintain consistency
 \end{itemize}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.85\textwidth]{marketing_layout_example.png}
 \caption{Marketing documents require lower confidence thresholds for design-heavy layouts.}

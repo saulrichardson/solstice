@@ -34,25 +34,25 @@ class OpenAIProvider(Provider):
     # ------------------------------------------------------------------
 
     async def create_response(self, request: ResponseRequest) -> ResponseObject:
-        print("[OPENAI] create_response called", flush=True)
+        logger.debug("create_response called")
         payload = self._build_api_request(request)
-        print(f"[OPENAI] Payload: {payload}", flush=True)
+        logger.debug(f"Payload: {payload}")
         try:
             rsp = await self.client.responses.create(**payload)
         except Exception as exc:  # – re‑raised after mapping
             self._handle_openai_error(exc, request.model)
         
-        # Debug: Log the raw response
+        # Log the raw response for debugging
         response_data = rsp.model_dump()
-        print(f"[OPENAI] Got response with keys: {list(response_data.keys())}", flush=True)
+        logger.debug(f"Got response with keys: {list(response_data.keys())}")
         if "usage" in response_data:
-            print(f"[OPENAI] Raw usage data: {response_data['usage']}", flush=True)
+            logger.debug(f"Raw usage data: {response_data['usage']}")
         
         result = self._to_response_object(response_data)
-        print(f"[OPENAI] Returning ResponseObject with usage: {result.usage}", flush=True)
-        # Also check the kwargs
+        logger.debug(f"Returning ResponseObject with usage: {result.usage}")
+        # Check for extra fields
         if hasattr(result, '__pydantic_extra__'):
-            print(f"[OPENAI] Extra fields: {result.__pydantic_extra__}", flush=True)
+            logger.debug(f"Extra fields: {result.__pydantic_extra__}")
         return result
 
 
@@ -149,8 +149,8 @@ class OpenAIProvider(Provider):
         
         # Extract usage for convenience fields (but preserve the full object)
         usage = data.get("usage", {})
-        print(f"[OPENAI DEBUG] Raw usage from OpenAI: {usage}", flush=True)
-        print(f"[OPENAI DEBUG] Full data keys: {list(data.keys())}", flush=True)
+        logger.debug(f"Raw usage from OpenAI: {usage}")
+        logger.debug(f"Full data keys: {list(data.keys())}")
         
         # Build the base response object
         response_obj = ResponseObject(
