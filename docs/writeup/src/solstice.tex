@@ -5,6 +5,13 @@
 \usepackage{float}
 % Prevent floats from crossing section boundaries when desired
 \usepackage[section]{placeins}
+% Gracefully handle missing images so `pdflatex` exits cleanly even when the
+% referenced assets are not present in the repository. `\IfFileExists` is
+% provided by the LaTeX kernel, so no extra package is required.
+\newcommand{\includefig}[2][]{%
+  \IfFileExists{#2}{\includegraphics[#1]{#2}}{% Fallback placeholder
+    \fbox{\parbox[c][3cm][c]{0.8\linewidth}{\centering Image not found: #2}}}%
+}
 \usepackage{amsmath}
 \usepackage{hyperref}
 \usepackage{enumitem}
@@ -51,7 +58,7 @@ The Gateway accepts document uploads and claim submissions from users, returning
 % here instead of floating to the next page or the end of the document.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{scientific_layout_example.png}
+\includefig[width=0.85\textwidth]{scientific_layout_example.png}
 \caption{Detectron2 identifies text blocks, tables, and figures in medical documents.}
 \end{figure}
 
@@ -100,7 +107,7 @@ Claims pass through five specialized LLM components in sequence:
 
 \textbf{Evidence Verifier}
 \begin{itemize}
-\item Validates quote accuracy against source
+\item Validates quote presence against source
 \item Checks for cherry-picking and missing context
 \end{itemize}
 
@@ -170,7 +177,7 @@ Marketing materials use adjusted parameters:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{marketing_layout_example.png}
+\includefig[width=0.85\textwidth]{marketing_layout_example.png}
 \caption{Marketing documents require lower confidence thresholds for design-heavy layouts.}
 \end{figure}
 

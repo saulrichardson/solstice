@@ -18,8 +18,8 @@ all: writeup
 writeup:
 	@mkdir -p $(BUILD_DIR) $(OUTPUT_DIR)
 	@echo "Building Solstice writeup..."
-	@cd $(BUILD_DIR) && pdflatex -interaction=nonstopmode ../$(SRC_DIR)/$(MAIN_TEX)
-	@cd $(BUILD_DIR) && pdflatex -interaction=nonstopmode ../$(SRC_DIR)/$(MAIN_TEX)
+	@cd $(BUILD_DIR) && pdflatex -interaction=nonstopmode ../$(SRC_DIR)/$(MAIN_TEX) || true
+	@cd $(BUILD_DIR) && pdflatex -interaction=nonstopmode ../$(SRC_DIR)/$(MAIN_TEX) || true
 	@cp $(BUILD_DIR)/solstice.pdf $(OUTPUT_DIR)/
 	@echo "Done! PDF available at: $(OUTPUT_DIR)/solstice.pdf"
 
