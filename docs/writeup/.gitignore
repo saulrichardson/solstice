@@ -1,5 +1,7 @@
-# LaTeX build artifacts
+# Build directory (contains all LaTeX artifacts)
 build/
+
+# LaTeX artifacts if accidentally created in root
 *.aux
 *.log
 *.out
@@ -12,8 +14,15 @@ build/
 *.bbl
 *.blg
 
-# Keep the docs directory
-!docs/
-
 # macOS
 .DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Keep important directories
+!src/
+!assets/
+!output/
+!scripts/
