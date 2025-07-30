@@ -1,19 +1,326 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok is approved for adults 18 years and older",
   "document": "FlublokPI",
-  "verified_evidence": [
-    {
-      "id": 2,
-      "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
-      "supports_claim": true,
-      "explanation": "A nearly identical quote appears in the document: 'For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' The wording and content match the quote to verify, with only minor formatting differences.. The quote directly lists the specific influenza virus strains included in Flublok for the 2024-2025 season, which are the strains selected by health authorities (WHO and FDA) for that season. This demonstrates that Flublok is formulated to match the selected strains, supporting the claim that it ensures an identical antigenic match with WHO- and FDA-selected flu strains.",
-      "presence_explanation": "A nearly identical quote appears in the document: 'For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' The wording and content match the quote to verify, with only minor formatting differences.",
-      "support_explanation": "The quote directly lists the specific influenza virus strains included in Flublok for the 2024-2025 season, which are the strains selected by health authorities (WHO and FDA) for that season. This demonstrates that Flublok is formulated to match the selected strains, supporting the claim that it ensures an identical antigenic match with WHO- and FDA-selected flu strains.",
-      "original_relevance": "This quote specifies that Flublok is formulated to contain hemagglutinin from the exact strains selected for the 2024-2025 season, demonstrating that it matches the strains chosen by health authorities."
-    }
-  ],
+  "verified_evidence": [],
   "verification_stats": {
-    "total_verified": 1
-  }
+    "total_verified": 0
+  },
+  "image_evidence": [
+    {
+      "image_filename": "table_p1_4126f370.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_4126f370.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a portion of the full prescribing information for Flublok, including the \u201cINDICATIONS AND USAGE\u201d section. In that section it clearly states \u201cFlublok is approved for use in persons 18 years of age and older,\u201d which directly corroborates the claim that Flublok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_13dcc9c5.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_13dcc9c5.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a section of the full prescribing information for the influenza vaccine Flublok. Under \u201cIndications and Usage,\u201d it clearly states \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok is approved for adults aged 18 years and older, which exactly matches the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_778855ba.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_778855ba.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a snippet of the Flublok (Influenza Vaccine) full prescribing information. Under the \u201cINDICATIONS AND USAGE\u201d section it states: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok is approved for adults aged 18 and older, thereby supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_c1303da3.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_c1303da3.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a page from the full prescribing information for Flublok (Influenza Vaccine) for intramuscular use (2024\u20132025 formula). Under the \u201cINDICATIONS AND USAGE\u201d section, it states: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms the claim that Flublok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p4_d1dfdac8.png",
+      "image_path": "FlublokPI/extracted/figures/table_p4_d1dfdac8.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a product information table for Flublok Quadrivalent. Under the \u2018Indications and Usage\u2019 section, it states: \u201cAdminister in individuals 18 years of age and older.\u201d This directly confirms that Flublok is approved for adults aged 18 years and older, thus supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_ed377850.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_ed377850.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is an excerpt from the full prescribing information for Flublok (2024\u20132025 formula). Under the heading \u201cINDICATIONS AND USAGE,\u201d it states: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms that the vaccine is approved for adults aged 18 and up, thereby supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p4_mrg_det_3_015.png",
+      "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a portion of the Highlights of Prescribing Information for Flublok\u00ae (Influenza Vaccine, Recombinant).  In the \u201cIndications and Usage\u201d section it explicitly states that Flublok is approved for prevention of influenza in adults 18 years of age and older.  That directly confirms the claim that Flublok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_80e1462a.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_80e1462a.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a portion of the full prescribing information for Flublok. In the \u201cIndications and Usage\u201d section it states: \u201cFlublok is a vaccine indicated for active immunization \u2026 Flublok approved for use in persons 18 years of age and older.\u201d This explicit statement directly supports the claim that Flublok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_38a8d17c.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_38a8d17c.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a portion of the official Flublok prescribing information, showing section 1 (Indications and Usage) and section 2 (Dosage and Administration). In the Indications and Usage text it explicitly states: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok\u2019s approval is limited to adults aged 18 and up, which supports the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_f8743488.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_f8743488.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a screenshot of the full prescribing information for Flublok. Under the \u201cIndications and Usage\u201d section it states, \u201cFlublok approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok is approved for adults aged 18 years and older, which supports the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_b5dfc744.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_b5dfc744.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a scan of Flublok\u2019s full prescribing information. In the \u201cINDICATIONS AND USAGE\u201d section it explicitly states \u201cFlublok approved for use in persons 18 years of age and older.\u201d This directly supports the claim that Flublok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p4_4450b13d.png",
+      "image_path": "FlublokPI/extracted/figures/table_p4_4450b13d.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The screenshot of the Flublok\u00ae Quadrivalent prescribing information shows the \u201cIndications and Usage\u201d section.  It explicitly states that FluBlok Quadrivalent is indicated \u201cfor active immunization of persons 18 years of age and older against influenza disease caused by influenza virus A subtypes and B viruses contained in the vaccine formulation.\u201d  This directly confirms that FluBlok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_29f864d5.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_29f864d5.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a section of the Flublok full prescribing information.  Under \u201cINDICATIONS AND USAGE\u201d it explicitly states, \u201cFlublok approved for use in persons 18 years of age and older.\u201d  This directly confirms that Flublok is approved for adults aged 18 years and older, supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_d29b28f4.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_d29b28f4.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a section of the Flublok (Influenza Vaccine) full prescribing information. Under 'INDICATIONS AND USAGE' it clearly states: 'Flublok is approved for use in persons 18 years of age and older.' This directly confirms that Flublok is approved for adults aged 18 and over, exactly matching the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_b0e90a8f.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_b0e90a8f.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is an excerpt from Flublok\u2019s full prescribing information. In the \u201cIndications and Usage\u201d section it states, \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms the claim that Flublok is approved for adults aged 18 years and up.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_ede3360d.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_ede3360d.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is an excerpt from the Flublok full prescribing information. Under the \u201cIndications and Usage\u201d section it states: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_8ae9701c.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_8ae9701c.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image shows an excerpt from the Flublok full prescribing information under \u201cINDICATIONS AND USAGE,\u201d which states: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This explicit statement directly confirms the claim that Flublok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p4_e641dc5e.png",
+      "image_path": "FlublokPI/extracted/figures/table_p4_e641dc5e.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a screenshot of the FDA-approved prescribing information for Flublok Quadrivalent.  In the section labeled \u201cIndications and Usage,\u201d it explicitly states that Flublok is indicated for \u201cactive immunization against influenza virus in persons 18 years of age and older.\u201d  This directly confirms that Flublok is approved for use in adults aged 18 years and up, fully supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_e2418fc4.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_e2418fc4.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is an excerpt from the full prescribing information for Flublok (Influenza Vaccine) Injection for Intramuscular Use, 2024\u20132025 Formula. Under the \u201cINDICATIONS AND USAGE\u201d heading it states: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok is approved for adults aged 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_mrg_det_0_017.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image shows a fragment of the full prescribing information for Flublok. Under the \u201cIndications and Usage\u201d section it states: \u201cFlublok is a vaccine indicated for active immunization \u2026 Flublok approved for use in persons 18 years of age and older.\u201d This text directly confirms that Flublok is approved for adults aged 18 years and older, supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_9430d1a7.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_9430d1a7.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is an excerpt from the Flublok full prescribing information. In the \u201cIndications and Usage\u201d section it explicitly states, \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok\u2019s U.S. approval covers adults aged 18 and above, supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_d51738b7.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_d51738b7.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a portion of the full prescribing information for Flublok. In the \u201cINDICATIONS AND USAGE\u201d section near the top, it states: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok is approved for adults aged 18 years and older, thereby supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p4_54e36110.png",
+      "image_path": "FlublokPI/extracted/figures/table_p4_54e36110.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a table listing the different influenza vaccines, their composition, and approved age groups. Under \u201cFlublok Quadrivalent,\u201d the table clearly states the approved age group as \u201c\u226518 years,\u201d indicating that Flublok is approved for use in adults 18 years and older. This directly supports the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_4d0b113a.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_4d0b113a.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is an excerpt from the full prescribing information for Flublok. In the \u201cIndications and Usage\u201d section it states: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok is approved for adults 18 years and older, thereby supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_82bca0d9.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_82bca0d9.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a portion of the full prescribing information for Flublok (Influenza Vaccine). In the \u201cINDICATIONS AND USAGE\u201d section it states verbatim: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms and supports the claim that Flublok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_dd891aa2.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_dd891aa2.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a page from the full prescribing information for Flublok. In the \u201cIndications and Usage\u201d section it states: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This explicit statement directly confirms the claim that Flublok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p4_dfc0993f.png",
+      "image_path": "FlublokPI/extracted/figures/table_p4_dfc0993f.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image shows a slide titled \u201cFlublok Quadrivalent (Influenza Vaccine)\u201d under the heading \u201cIndications and Usage.\u201d It explicitly states that \u201cFLUBLOK\u00ae Quadrivalent is approved for active immunization of adults 18 years of age and older for the prevention of disease caused by influenza virus subtypes A and B.\u201d This directly confirms that Flublok is approved for use in adults aged 18 years and older, which supports the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_54ff7b2e.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_54ff7b2e.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is an excerpt from the full prescribing information for Flublok (Influenza Vaccine) 2024\u20132025 formula. Under the \u201cINDICATIONS AND USAGE\u201d heading, it clearly states: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok is approved for adults aged 18 and over, supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_e71724f4.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_e71724f4.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a portion of the Flublok full prescribing information, showing the \u201cIndications and Usage\u201d section. It states, \u201cFlublok is approved for use in persons 18 years of age and older,\u201d which directly confirms the claim that Flublok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_8b9bff4d.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_8b9bff4d.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a snapshot of the Flublok prescribing information. Under the \u201cIndications and Usage\u201d section it states: \u201cFlublok is approved for use in persons 18 years of age and older,\u201d directly confirming that Flublok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_d90902b5.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_d90902b5.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is an excerpt from the full prescribing information for Flublok. Under the \u201cINDICATIONS AND USAGE\u201d section it states: \u201cFlublok approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok is approved for adults 18 years and older, fully supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_76778dfd.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_76778dfd.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image shows an excerpt from the Flublok full prescribing information under \u201cINDICATIONS AND USAGE,\u201d which states: \u201cFlublok is approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok is approved for adults 18 years and older, supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p1_a14d0ac3.png",
+      "image_path": "FlublokPI/extracted/figures/table_p1_a14d0ac3.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image shows a page from the full prescribing information for Flublok under the \u201cINDICATIONS AND USAGE\u201d section. It states: \u201cFlublok is a vaccine indicated for active immunization for the prevention of disease caused by influenza A virus subtypes and influenza type B virus contained in the vaccine. Flublok approved for use in persons 18 years of age and older.\u201d This directly confirms that Flublok is approved for adults 18 years and older, thereby supporting the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p4_8f72fd06.png",
+      "image_path": "FlublokPI/extracted/figures/table_p4_8f72fd06.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image shows labeling for FLUBLOK Quadrivalent pre-filled syringes and explicitly states \u201cfor Adults 18 Years of Age and Older.\u201d This directly indicates that Flublok is approved for use in adults aged 18 years and older, which supports the claim.",
+      "model_used": "o4-mini"
+    },
+    {
+      "image_filename": "table_p4_040510c8.png",
+      "image_path": "FlublokPI/extracted/figures/table_p4_040510c8.png",
+      "claim_id": "claim_000",
+      "claim": "Flublok is approved for adults 18 years and older",
+      "supports_claim": true,
+      "explanation": "The image is a screenshot of the Flublok\u00ae Quadrivalent prescribing information. Under the \u201cIndications and Usage\u201d section it states that Flublok is approved \u201cfor active immunization for the prevention of disease caused by influenza virus subtypes A and type B contained in the vaccine\u201d in \u201cAdults 18 years of age and older.\u201d This directly supports the claim that Flublok is approved for adults 18 years and older.",
+      "model_used": "o4-mini"
+    }
+  ]
 }

@@ -9,6 +9,7 @@ help:
 	@echo "  make docker-status      Show Docker runtime info"
 	@echo "  make install            Install Python package for development"
 	@echo "  make install-detectron2 Install Detectron2 for layout detection (Python 3.11 required)"
+	@echo "  make verify             Verify installation and dependencies"
 	@echo "  make lint               Run linting"
 	@echo "  make format             Format code"
 	@echo "  make clean              Clean up cache files"
@@ -87,6 +88,22 @@ docker-status:
 
 install:
 	@echo "Installing fact-check package..."
+	@echo "Checking Python version..."
+	@PYTHON_VERSION=$$(python --version 2>&1 | awk '{print $$2}'); \
+	MAJOR=$$(echo $$PYTHON_VERSION | cut -d. -f1); \
+	MINOR=$$(echo $$PYTHON_VERSION | cut -d. -f2); \
+	if [ "$$MAJOR" -ne 3 ] || [ "$$MINOR" -lt 11 ] || [ "$$MINOR" -gt 12 ]; then \
+		echo "❌ Error: Python 3.11 or 3.12 required (found $$PYTHON_VERSION)"; \
+		echo ""; \
+		echo "To fix this:"; \
+		echo "1. Install pyenv: https://github.com/pyenv/pyenv#installation"; \
+		echo "2. Install Python 3.11.9: pyenv install 3.11.9"; \
+		echo "3. Return to this directory - pyenv will auto-activate 3.11.9"; \
+		echo ""; \
+		echo "The .python-version file in this project specifies Python 3.11.9"; \
+		exit 1; \
+	fi
+	@echo "✓ Python version $$PYTHON_VERSION is compatible"
 	@if [ -z "$$VIRTUAL_ENV" ]; then \
 		echo "⚠️  Warning: No virtual environment detected"; \
 		echo "   Recommended: python3 -m venv venv && source venv/bin/activate"; \
@@ -113,4 +130,15 @@ install-detectron2: install
 	@echo "Verifying installation..."
 	@python -c "import layoutparser as lp; assert lp.is_detectron2_available(), 'Detectron2 not available'" || \
 		{ echo "Error: Detectron2 installation failed"; exit 1; }
+
+verify:
+	@echo "Verifying installation..."
+	@python -c "import fact_check" 2>/dev/null && echo "✓ fact_check package installed" || echo "✗ fact_check package not found"
+	@python -c "import gateway" 2>/dev/null && echo "✓ gateway package installed" || echo "✗ gateway package not found"
+	@python -c "import openai" 2>/dev/null && echo "✓ OpenAI library installed" || echo "✗ OpenAI library not found"
+	@python -c "import layoutparser" 2>/dev/null && echo "✓ LayoutParser installed" || echo "✗ LayoutParser not found (run: make install-detectron2)"
+	@command -v pdfinfo >/dev/null 2>&1 && echo "✓ Poppler installed" || echo "✗ Poppler not found (PDF processing will fail)"
+	@echo ""
+	@echo "Python: $$(python --version)"
+	@echo "Pip:    $$(pip --version)"
 

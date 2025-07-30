@@ -5,8 +5,8 @@ AGENT_MODELS = {
     # Evidence extraction - uses general purpose model
     "evidence_extractor": "gpt-4.1",
     
-    # Evidence verification - uses specialized o4-mini model
-    "evidence_verifier_v2": "o4-mini",
+    # Evidence verification - uses general purpose model
+    "evidence_verifier_v2": "gpt-4.1",
     
     # Completeness checking - uses general purpose model
     "completeness_checker": "gpt-4.1",

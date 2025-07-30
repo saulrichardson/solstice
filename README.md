@@ -4,17 +4,52 @@ A clinical document processing pipeline with advanced layout detection and fact-
 
 ## Getting Started
 
-### Prerequisites
+### Quick Setup (Recommended)
+
+```bash
+git clone <repository-url>
+cd solstice
+./setup.sh
+```
+
+This script will:
+- Check Python version (3.11 or 3.12 required)
+- Create a virtual environment
+- Install all dependencies
+- Optionally install Detectron2 for layout detection
+- Verify the installation
+
+### Manual Setup
+
+<details>
+<summary>Click for detailed manual installation steps</summary>
+
+#### Prerequisites
 
 - **Python 3.11 or 3.12** (required for Detectron2 compatibility)
   - Python 3.13+ is not yet supported by Detectron2
   - We recommend using [pyenv](https://github.com/pyenv/pyenv) or [conda](https://docs.conda.io/) to manage Python versions
+  
+  **Automatic version management with pyenv:**
+  ```bash
+  # Install pyenv (if not already installed)
+  # macOS: brew install pyenv
+  # Linux: curl https://pyenv.run | bash
+  
+  # Install Python 3.11.9 (exact version used by this project)
+  pyenv install 3.11.9
+  
+  # The project includes a .python-version file that will automatically
+  # activate Python 3.11.9 when you enter the directory
+  cd solstice
+  python --version  # Should show Python 3.11.9
+  ```
 - **Poppler** (for PDF processing)
   - macOS: `brew install poppler`
   - Ubuntu/Debian: `sudo apt-get install poppler-utils`
   - Windows: Download from [poppler releases](https://github.com/oschwartz10612/poppler-windows/releases)
 
-### Installation
+#### Installation Steps
 
 1. **Clone the repository**
    ```bash
@@ -45,6 +80,8 @@ A clinical document processing pipeline with advanced layout detection and fact-
    - LayoutParser for document structure detection
 
    **Note:** This step can take 5-10 minutes as it builds Detectron2 from source.
+
+</details>
 
 
 ### Quick Start

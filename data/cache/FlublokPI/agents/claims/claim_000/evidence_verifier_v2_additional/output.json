@@ -3,9 +3,9 @@
   "claim": "Flublok is approved for adults 18 years and older",
   "document": "FlublokPI",
   "verification_stats": {
-    "total_extracted": 3,
+    "total_extracted": 2,
     "verified": 0,
-    "rejected": 3,
+    "rejected": 2,
     "verification_rate": 0.0
   },
   "verified_evidence": [],
@@ -14,19 +14,13 @@
       "id": "comp_1",
       "quote": "Safety and effectiveness of Flublok have not been established in children 3 years to less than 18 years of age.",
       "reason": "Verification failed",
-      "original_explanation": "This quote supports the claim by indicating that Flublok is not approved for use in individuals under 18 years old, implying that its approved use begins at age 18."
+      "original_explanation": "This quote supports the claim by indicating that Flublok is not approved for use in individuals under 18 years old, thereby implying its approval is for adults 18 years and older."
     },
     {
       "id": "comp_2",
-      "quote": "Reactogenicity data from a small Phase 2 trial (Study 5) in adults 18 through 49 years of age, 153 of whom received Flublok 135 mcg, are not presented. However, subjects from Study 5 are included in the description of deaths and serious adverse events (SAEs).",
+      "quote": "Data from a randomized, controlled trial demonstrated that children 6 months to less than 3 years of age had diminished hemagglutinin inhibition (HI) responses to Flublok compared to au. S.-licensed influenza vaccine approved for use in this population, strongly suggesting that Flublok would not be effective in children younger than 3 years of age (6).",
       "reason": "Verification failed",
-      "original_explanation": "This quote demonstrates that clinical studies and safety data for Flublok specifically include adults starting at age 18, supporting its approval for this age group."
-    },
-    {
-      "id": "comp_3",
-      "quote": "In the U.S. during the 2007-2008 influenza season in adults 18 49 years of age (Study 1). (1) Study 1 enrolled and vaccinated 4648 healthy adults (mean age 32.5 years) randomized in a 1:1 ratio to receive a single dose of Flublok (n=2344) or saline placebo (n=2304).",
-      "reason": "Verification failed",
-      "original_explanation": "This quote provides evidence that Flublok was studied and administered to adults 18 years and older, supporting its approval for this age group."
+      "original_explanation": "This quote provides evidence that Flublok is not intended for children under 3 years, supporting the claim that its approved use is for adults 18 years and older."
     }
   ],
   "model_used": "o4-mini"

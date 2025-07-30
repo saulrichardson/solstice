@@ -1,33 +1,23 @@
 {
   "claim_id": "claim_001",
-  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "claim": "Flublok contains 45 mcg of hemagglutinin per strain",
   "document": {
     "pdf_name": "FlublokPI",
     "source_pdf": "data/clinical_files/FlublokPI.pdf",
     "total_pages": 5,
     "total_blocks": 94,
-    "total_characters": 25545
+    "total_characters": 25529
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 3,
+    "total_snippets_found": 1,
     "error": null
   },
   "extracted_evidence": [
     {
       "id": 1,
       "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
-      "relevance_explanation": "This quote specifies that Flublok contains 135 mcg of hemagglutinin (HA) per dose, which is three times the standard 45 mcg HA content found in standard-dose flu vaccines, directly supporting the first part of the claim."
-    },
-    {
-      "id": 2,
-      "quote": "5. TreanorJJ, Schiff GM, Hayden fg, et.al. Safety and immunogen i city of aba culo virus expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582.",
-      "relevance_explanation": "This reference is cited in the context of clinical studies comparing the immunogenicity of Flublok (which contains 3x HA) to standard-dose vaccines, supporting the claim that higher HA content is linked to greater immunogenicity."
-    },
-    {
-      "id": 3,
-      "quote": "3 Keitel WA Tre an or JJ El Sahly HM et al Comparative immunogen i city of recom- nant influenza hemagglutinin (rHA) and trivalent in activated vaccines (TIVs) among rsons \u226565 years old Vaccine 2009 Vol 28 pp 379 385",
-      "relevance_explanation": "This reference is cited as a comparative immunogenicity study between Flublok (with higher HA content) and standard trivalent inactivated vaccines, supporting the claim that increased HA content is associated with greater immunogenicity."
+      "relevance_explanation": "This quote explicitly states that Flublok is formulated to contain 45 mcg of hemagglutinin (HA) per strain for each of the three influenza virus strains included in the vaccine, directly supporting the claim."
     }
   ],
   "model_used": "gpt-4.1"
