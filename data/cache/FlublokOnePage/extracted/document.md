@@ -14,7 +14,7 @@ Appropriate medical treatment must be immediately available to manage potential 
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_cda653eb.png)
+![Figure from page 1](figures/figure_p1_482d1ad0.png)
 
 s, which may potentially protect against grams (mcg) of HA per strain vs 15 mcg o
 
@@ -23,7 +23,7 @@ as evaluated in the pivotal trial against Fluarix (quad rival ent sare manufactu
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_146e1330.png)
+![Figure from page 1](figures/figure_p1_1ac082de.png)
 
 accine.1-3
 
@@ -38,7 +38,7 @@ g y p yin January 2024, vaccination with a higher dose recombinant flu vaccine m
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_b1adfa3c.png)
+![Figure from page 1](figures/figure_p1_e555aa98.png)
 
 Cell and egg based flu vaccines have the potential to develop mutations
 

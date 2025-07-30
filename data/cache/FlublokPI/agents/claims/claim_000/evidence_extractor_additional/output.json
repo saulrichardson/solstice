@@ -1,18 +1,18 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "claim": "Flublok is approved for adults 18 years and older",
   "document": {
     "pdf_name": "FlublokPI"
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 2
+    "total_snippets_found": 3
   },
   "extracted_evidence": [
     {
       "id": "comp_1",
-      "quote": "Flublok contains recombinant Ha proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine.",
-      "relevance_explanation": "This quote directly states that Flublok contains the hemagglutinin proteins from the three strains specified by health authorities (such as WHO and FDA), supporting the claim that it ensures an identical antigenic match with the selected flu strains.",
+      "quote": "Safety and effectiveness of Flublok have not been established in children 3 years to less than 18 years of age.",
+      "relevance_explanation": "This quote supports the claim by indicating that Flublok is not approved for use in individuals under 18 years old, implying that its approved use begins at age 18.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -21,8 +21,18 @@
     },
     {
       "id": "comp_2",
-      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements.",
-      "relevance_explanation": "This quote indicates that Flublok is manufactured to meet the official standards set by the USPHS, which are based on the strains selected by WHO and FDA, supporting the claim of an identical antigenic match.",
+      "quote": "Reactogenicity data from a small Phase 2 trial (Study 5) in adults 18 through 49 years of age, 153 of whom received Flublok 135 mcg, are not presented. However, subjects from Study 5 are included in the description of deaths and serious adverse events (SAEs).",
+      "relevance_explanation": "This quote demonstrates that clinical studies and safety data for Flublok specifically include adults starting at age 18, supporting its approval for this age group.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "In the U.S. during the 2007-2008 influenza season in adults 18 49 years of age (Study 1). (1) Study 1 enrolled and vaccinated 4648 healthy adults (mean age 32.5 years) randomized in a 1:1 ratio to receive a single dose of Flublok (n=2344) or saline placebo (n=2304).",
+      "relevance_explanation": "This quote provides evidence that Flublok was studied and administered to adults 18 years and older, supporting its approval for this age group.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

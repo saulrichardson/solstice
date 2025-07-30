@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import logging
 from typing import List, Optional
 from pathlib import Path
 
@@ -15,6 +16,8 @@ from .processing.text_extractor import extract_document_content
 from .processing.reading_order import determine_reading_order_simple
 from .storage.paths import stage_dir, save_json
 from .config import IngestionConfig
+
+logger = logging.getLogger(__name__)
 
 
 class StandardPipeline(BasePDFPipeline):
@@ -159,7 +162,7 @@ class StandardPipeline(BasePDFPipeline):
                 show_reading_order=True
             )
         
-        print(f"\nOutputs saved to: {output_dir}")
+        logger.info(f"Outputs saved to: {output_dir}")
     
     def _save_raw_layouts(self, layouts: List, pdf_path: Path, images: List):
         """Save raw layout detection results before any processing."""

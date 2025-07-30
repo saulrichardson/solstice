@@ -2,7 +2,7 @@
   "source_pdf": "data/clinical_files/FlublokPI.pdf",
   "blocks": [
     {
-      "id": "74cc4f52",
+      "id": "mrg_det_0_003",
       "page_index": 0,
       "role": "List",
       "bbox": [
@@ -11,7 +11,7 @@
         3206.24658203125,
         4201.60546875
       ],
-      "text": "• If Guillain-Barré syndrome has occurred within 6 weeks of receipt of a prior influenza vaccine, the decision to give Flublok should be based on careful consideration of potential benefits and risks. (5.2) ———————————— ADVERSE REACTIONS ———————————— • In adults 18 through 49 years of age, the most common (≥10%) injection site adverse reaction was pain (37%); the most common (≥10%) solicited systemic adverse reactions were headache (15%), fatigue (15%) and muscle pain (11%). (6.1) • In adults 50 through 64 years of age, the most common (≥10%) injection site adverse reaction was pain (32%); the most common (≥10%) solicited systemic adverse reactions were headache (17%), fatigue (13%), and muscle pain (11%). (6.1) • In adults 65 years of age and older, the most common (≥10%) injection site adverse reaction was pain (19%); the most common (≥10%) solicited systemic adverse reactions were fatigue (13%) and headache (10%). (6.1) To report SUSPECTED ADVERSE REACTIONS, contact SanofiPasteur Inc., at (1-800-822-2463 (1-800-Vaccine) or VAERS at 1-800-822-7967 or www.vaers.hhs.gov. See 17 for PATIENT COUNSELING INFORMATION Revised: 07 2024 8 USE IN SPECIFIC POPULATIONS 8.1 Pregnancy 8.2 Lactation 8.4 Pediatric Use 85 G i t i U",
+      "text": "• If Guillain-Barré syndrome has occurred within 6 weeks of receipt of a prior influenza vaccine, the decision to give Flublok should be based on careful consideration of potential benefits and risks. (5.2) -----------ADVERSE REACTIONS -----------• In adults 18 through 49 years of age, the most common (≥10%) injection site adverse reaction was pain (37%); the most common (≥10%) solicited systemic adverse reactions were headache (15%), fatigue (15%) and muscle pain (11%). (6.1) • In adults 50 through 64 years of age, the most common (≥10%) injection site adverse reaction was pain (32%); the most common (≥10%) solicited systemic adverse reactions were headache (17%), fatigue (13%), and muscle pain (11%). (6.1) • In adults 65 years of age and older, the most common (≥10%) injection site adverse reaction was pain (19%); the most common (≥10%) solicited systemic adverse reactions were fatigue (13%) and headache (10%). (6.1) To report SUSPECTED ADVERSE REACTIONS, contact SanofiPasteur Inc., at (1-800-822-2463 (1-800-Vaccine) or VAERS at 1-800-822-7967 or www.vaers.hhs.gov. See 17 for PATIENT COUNSELING INFORMATION Revised: 07 2024 8 USE IN SPECIFIC POPULATIONS 8.1 Pregnancy 8.2 Lactation 8.4 Pediatric Use 85 G i t i U",
       "metadata": {
         "score": 0.9620653986930847,
         "detection_dpi": 400,
@@ -21,7 +21,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.003078937530517578,
+          "processing_time": 1.6608378887176514,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -30,7 +30,7 @@
       }
     },
     {
-      "id": "f8743488",
+      "id": "mrg_det_0_017",
       "page_index": 0,
       "role": "Table",
       "bbox": [
@@ -39,8 +39,8 @@
         3246.028564453125,
         2624.71533203125
       ],
-      "text": "[TABLE 2 - See table_p1_f8743488.png]",
-      "image_path": "figures/table_p1_f8743488.png",
+      "text": "[TABLE 2 - See table_p1_mrg_det_0_017.png]",
+      "image_path": "figures/table_p1_mrg_det_0_017.png",
       "metadata": {
         "score": 0.7849844694137573,
         "detection_dpi": 400,
@@ -48,7 +48,7 @@
       }
     },
     {
-      "id": "9bf56aea",
+      "id": "det_0_001",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -67,7 +67,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.003910064697265625,
+          "processing_time": 0.0037381649017333984,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -77,7 +77,7 @@
       }
     },
     {
-      "id": "c2e61160",
+      "id": "det_0_000",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -86,7 +86,7 @@
         1657.3184814453125,
         3670.6484375
       ],
-      "text": "vaccine. Flublok is approved for use in persons 18 years of age and older. (1) —————————— DOSAGE AND ADMINISTRATION —————————— For intramuscular use (0.5 mL). (2)",
+      "text": "vaccine. Flublok is approved for use in persons 18 years of age and older. (1) ---------DOSAGE AND ADMINISTRATION ---------For intramuscular use (0.5 mL). (2)",
       "metadata": {
         "score": 0.9764606952667236,
         "detection_dpi": 400,
@@ -96,15 +96,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004818439483642578,
+          "processing_time": 0.0004589557647705078,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "2246ad79",
+      "id": "det_0_005",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -123,7 +123,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.001708984375,
+          "processing_time": 0.0012390613555908203,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -133,7 +133,7 @@
       }
     },
     {
-      "id": "e23c652c",
+      "id": "det_0_009",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -142,7 +142,7 @@
         1638.1356201171875,
         3900.962646484375
       ],
-      "text": "Initial U.S. Approval: 2013 ——————————— INDICATIONS AND USAGE ———————————",
+      "text": "Initial U.S. Approval: 2013 ----------INDICATIONS AND USAGE -----------",
       "metadata": {
         "score": 0.9259337782859802,
         "detection_dpi": 400,
@@ -152,7 +152,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00026297569274902344,
+          "processing_time": 0.00024819374084472656,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -161,7 +161,7 @@
       }
     },
     {
-      "id": "e31f78a3",
+      "id": "det_0_010",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -180,15 +180,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00019884109497070312,
+          "processing_time": 0.00018095970153808594,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "8e4b4a1b",
+      "id": "det_0_015",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -197,7 +197,7 @@
         1671.3052978515625,
         3364.128173828125
       ],
-      "text": "———————————— CONTRAINDICATIONS ———————————— • Do not administer Flublok to anyone with a history of severe allergic reactions (e.g., anaphylaxis) to any component of the vaccine. (4, 6.2, 11) —————————— WARNINGS AND PRECAUTIONS —————————— A idi l b idi lil bl i l",
+      "text": "-----------CONTRAINDICATIONS -----------• Do not administer Flublok to anyone with a history of severe allergic reactions (e.g., anaphylaxis) to any component of the vaccine. (4, 6.2, 11) ---------WARNINGS AND PRECAUTIONS ---------A idi l b idi lil bl i l",
       "metadata": {
         "score": 0.8680484294891357,
         "detection_dpi": 400,
@@ -207,7 +207,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00164794921875,
+          "processing_time": 0.0015499591827392578,
           "processors_applied": [
             "post_extraction_clean",
             "symspell"
@@ -216,7 +216,7 @@
       }
     },
     {
-      "id": "18a672f4",
+      "id": "det_0_019",
       "page_index": 0,
       "role": "Title",
       "bbox": [
@@ -235,15 +235,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0001537799835205078,
+          "processing_time": 0.0001747608184814453,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "a1365d88",
+      "id": "det_0_020",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -252,7 +252,7 @@
         993.909423828125,
         3546.2333984375
       ],
-      "text": "or intramuscular use (0.5 mL). (2) ————————— DOSAGE FORMS AND lublok is an injection a single dose is 05 mL",
+      "text": "or intramuscular use (0.5 mL). (2) --------DOSAGE FORMS AND lublok is an injection a single dose is 05 mL",
       "metadata": {
         "score": 0.7238772511482239,
         "detection_dpi": 400,
@@ -262,7 +262,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003635883331298828,
+          "processing_time": 0.00032711029052734375,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -271,7 +271,7 @@
       }
     },
     {
-      "id": "23acfe3c",
+      "id": "det_0_023",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -290,7 +290,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0028281211853027344,
+          "processing_time": 0.0028259754180908203,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -300,7 +300,7 @@
       }
     },
     {
-      "id": "d76fe3e5",
+      "id": "det_0_031",
       "page_index": 0,
       "role": "Title",
       "bbox": [
@@ -319,7 +319,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00023293495178222656,
+          "processing_time": 0.00023698806762695312,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -327,7 +327,7 @@
       }
     },
     {
-      "id": "5a9b5d3b",
+      "id": "det_0_032",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -346,7 +346,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00042819976806640625,
+          "processing_time": 0.0004241466522216797,
           "processors_applied": [
             "post_extraction_clean"
           ]
@@ -354,7 +354,7 @@
       }
     },
     {
-      "id": "44cb7679",
+      "id": "det_0_042",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -373,12 +373,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00014901161193847656
+          "processing_time": 0.0001480579376220703
         }
       }
     },
     {
-      "id": "44dbd2ef",
+      "id": "det_1_004",
       "page_index": 1,
       "role": "List",
       "bbox": [
@@ -387,7 +387,7 @@
         1667.626708984375,
         1680.388427734375
       ],
-      "text": "Nausea 6 1 <1 5 1 <1 Joint pain 4 <1 <1 4 <1 <1 Chills 3 <1 <1 3 <1 <1 Fever¶ <1 <1 <1 <1 <1 <1 NOTE: Data based on the most severe response reported by subjects. Results ≥1% reported to nearest whole percent; results >0 but <1% reported as <1%. *Total Vaccinated cohort is defined as all randomized subjects who received study vaccine according to the treatment actually received and who provided data. †Study 1 is registered as NCT00539981 under the National Clinical Trials registry. ‡Denominators for Study 1: The total number of enrolled, randomized, and vaccinated subjects was 2344 in the Flublok group and 2304 in the placebo group. For all categories except fever, the number of subjects with missing values was 72 in the Flublok group and73 in the placebo group so that these denominators are 2272 and 2231 respectively. For fever, 89 Flublok recipients and 104 Placebo recipients were missing data, making these denominators 2255 and 2200 respectively. §Moderate had it, andit was bad enough to prevent a significant part of usual activities; Severe = had it, and it prevented most or all of normal activities, or had to see a doctor for prescription medicine. ¶Fever defined as ≥100.4°F (38°C). Mild (≥100 4 to <101.1°F); Moderate (≥101.2°F to <102.2°F); Severe (≥102.2°F) Across three clinical trials (Studies 2 – 4, Tables 2 and 3) a total of 2050 adults age 50 years and older received Flublok and 2048 received a U.S.-licensed trivalent in activated influenza vaccine (IIV3) comparator. The mean age of Flublok study participants was 65 years; 56% were female and 80% were Caucasian. The incidence of solicited reactogenicity differed between adults 50 through 64 years of age and adults aged 65 years and older. Therefore, data from Studies 2, 3, and 4 were pooled according to age group and are presented separately (Tables 2 and 3). Most adverse reactions in both age groups were mild in severity",
+      "text": "Nausea 6 1 <1 5 1 <1 Joint pain 4 <1 <1 4 <1 <1 Chills 3 <1 <1 3 <1 <1 Fever¶ <1 <1 <1 <1 <1 <1 NOTE: Data based on the most severe response reported by subjects. Results ≥1% reported to nearest whole percent; results >0 but <1% reported as <1%. *Total Vaccinated cohort is defined as all randomized subjects who received study vaccine according to the treatment actually received and who provided data. †Study 1 is registered as NCT00539981 under the National Clinical Trials registry. ‡Denominators for Study 1: The total number of enrolled, randomized, and vaccinated subjects was 2344 in the Flublok group and 2304 in the placebo group. For all categories except fever, the number of subjects with missing values was 72 in the Flublok group and73 in the placebo group so that these denominators are 2272 and 2231 respectively. For fever, 89 Flublok recipients and 104 Placebo recipients were missing data, making these denominators 2255 and 2200 respectively. §Moderate had it, andit was bad enough to prevent a significant part of usual activities; Severe = had it, and it prevented most or all of normal activities, or had to see a doctor for prescription medicine. ¶Fever defined as ≥100.4°F (38°C). Mild (≥100 4 to <101.1°F); Moderate (≥101.2°F to <102.2°F); Severe (≥102.2°F) Across three clinical trials (Studies 2 - 4, Tables 2 and 3) a total of 2050 adults age 50 years and older received Flublok and 2048 received a U.S.-licensed trivalent in activated influenza vaccine (IIV3) comparator. The mean age of Flublok study participants was 65 years; 56% were female and 80% were Caucasian. The incidence of solicited reactogenicity differed between adults 50 through 64 years of age and adults aged 65 years and older. Therefore, data from Studies 2, 3, and 4 were pooled according to age group and are presented separately (Tables 2 and 3). Most adverse reactions in both age groups were mild in severity",
       "metadata": {
         "score": 0.9599708318710327,
         "detection_dpi": 400,
@@ -397,7 +397,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.012678146362304688,
+          "processing_time": 0.013051986694335938,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -407,7 +407,7 @@
       }
     },
     {
-      "id": "17f79676",
+      "id": "mrg_det_1_002",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -426,7 +426,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.006557941436767578,
+          "processing_time": 0.0065729618072509766,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -436,7 +436,7 @@
       }
     },
     {
-      "id": "80d9d0cf",
+      "id": "det_1_000",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -455,15 +455,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0001881122589111328,
+          "processing_time": 0.00023698806762695312,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "7290c859",
+      "id": "det_1_001",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -482,7 +482,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0010411739349365234,
+          "processing_time": 0.001196146011352539,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -491,7 +491,7 @@
       }
     },
     {
-      "id": "3ba67c9a",
+      "id": "det_1_003",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -510,7 +510,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005338191986083984,
+          "processing_time": 0.0008571147918701172,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -519,7 +519,7 @@
       }
     },
     {
-      "id": "bde7cd96",
+      "id": "mrg_det_1_008",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -538,15 +538,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0021791458129882812,
+          "processing_time": 0.0026350021362304688,
           "processors_applied": [
-            "symspell"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "1d3de0ce",
+      "id": "det_1_006",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -565,7 +565,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003871917724609375,
+          "processing_time": 0.00046515464782714844,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -574,7 +574,7 @@
       }
     },
     {
-      "id": "94e11c4a",
+      "id": "det_1_007",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -593,15 +593,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00033593177795410156,
+          "processing_time": 0.00041604042053222656,
           "processors_applied": [
-            "symspell"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "47610ed2",
+      "id": "det_1_011",
       "page_index": 1,
       "role": "Table",
       "bbox": [
@@ -610,8 +610,8 @@
         1655.41748046875,
         3032.46044921875
       ],
-      "text": "[TABLE 3 - See table_p2_47610ed2.png]",
-      "image_path": "figures/table_p2_47610ed2.png",
+      "text": "[TABLE 3 - See table_p2_det_1_011.png]",
+      "image_path": "figures/table_p2_det_1_011.png",
       "metadata": {
         "score": 0.8668229579925537,
         "detection_dpi": 400,
@@ -619,7 +619,7 @@
       }
     },
     {
-      "id": "a4aa08d9",
+      "id": "det_1_013",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -638,16 +638,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0008940696716308594,
+          "processing_time": 0.0009250640869140625,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "c729aefc",
+      "id": "det_1_017",
       "page_index": 1,
       "role": "Table",
       "bbox": [
@@ -656,8 +655,8 @@
         3214.23046875,
         3543.15673828125
       ],
-      "text": "[TABLE 12 - See table_p2_c729aefc.png]",
-      "image_path": "figures/table_p2_c729aefc.png",
+      "text": "[TABLE 12 - See table_p2_det_1_017.png]",
+      "image_path": "figures/table_p2_det_1_017.png",
       "metadata": {
         "score": 0.7490091323852539,
         "detection_dpi": 400,
@@ -665,7 +664,7 @@
       }
     },
     {
-      "id": "68117647",
+      "id": "det_1_014",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -684,7 +683,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0010898113250732422,
+          "processing_time": 0.0010671615600585938,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -693,7 +692,7 @@
       }
     },
     {
-      "id": "443dc0f9",
+      "id": "det_1_019",
       "page_index": 1,
       "role": "Table",
       "bbox": [
@@ -702,8 +701,8 @@
         3202.75244140625,
         1513.3216552734375
       ],
-      "text": "[TABLE 9 - See table_p2_443dc0f9.png]",
-      "image_path": "figures/table_p2_443dc0f9.png",
+      "text": "[TABLE 9 - See table_p2_det_1_019.png]",
+      "image_path": "figures/table_p2_det_1_019.png",
       "metadata": {
         "score": 0.7238216996192932,
         "detection_dpi": 400,
@@ -711,7 +710,7 @@
       }
     },
     {
-      "id": "3bfad9e0",
+      "id": "det_1_026",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -730,15 +729,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0007288455963134766,
+          "processing_time": 0.0007469654083251953,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "8db86c6e",
+      "id": "det_1_035",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -757,15 +756,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00011920928955078125,
+          "processing_time": 0.00012183189392089844,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "6404d1ec",
+      "id": "mrg_det_2_004",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -784,7 +783,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0045011043548583984,
+          "processing_time": 0.0046689510345458984,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -794,7 +793,7 @@
       }
     },
     {
-      "id": "78d69370",
+      "id": "det_2_000",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -813,7 +812,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0025620460510253906,
+          "processing_time": 0.0026350021362304688,
           "processors_applied": [
             "post_extraction_clean",
             "symspell"
@@ -822,7 +821,7 @@
       }
     },
     {
-      "id": "5fb8aaf9",
+      "id": "det_2_002",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -841,7 +840,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.004225969314575195,
+          "processing_time": 0.00422215461730957,
           "processors_applied": [
             "post_extraction_clean",
             "symspell"
@@ -850,7 +849,7 @@
       }
     },
     {
-      "id": "4de8560d",
+      "id": "det_2_001",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -869,7 +868,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0012297630310058594,
+          "processing_time": 0.0012178421020507812,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -878,7 +877,7 @@
       }
     },
     {
-      "id": "aa37ef0e",
+      "id": "det_2_003",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -897,7 +896,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0026869773864746094,
+          "processing_time": 0.0026938915252685547,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -907,7 +906,7 @@
       }
     },
     {
-      "id": "16d6cd69",
+      "id": "det_2_005",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -926,7 +925,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0007441043853759766,
+          "processing_time": 0.0006058216094970703,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -935,7 +934,7 @@
       }
     },
     {
-      "id": "4848a094",
+      "id": "det_2_007",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -954,15 +953,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0010616779327392578,
+          "processing_time": 0.0009109973907470703,
           "processors_applied": [
+            "post_extraction_clean",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "9eef35ed",
+      "id": "det_2_006",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -981,7 +981,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003948211669921875,
+          "processing_time": 0.00035691261291503906,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -990,7 +990,7 @@
       }
     },
     {
-      "id": "2d43bc2e",
+      "id": "det_2_010",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1009,7 +1009,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00577092170715332,
+          "processing_time": 0.005795955657958984,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1019,7 +1019,7 @@
       }
     },
     {
-      "id": "85cddc83",
+      "id": "det_2_008",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1038,7 +1038,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.004051923751831055,
+          "processing_time": 0.0039081573486328125,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1048,7 +1048,7 @@
       }
     },
     {
-      "id": "3498e1e7",
+      "id": "det_2_014",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1067,7 +1067,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0057830810546875,
+          "processing_time": 0.005887269973754883,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1077,7 +1077,7 @@
       }
     },
     {
-      "id": "09ca1d23",
+      "id": "det_2_012",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1096,17 +1096,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.003216981887817383,
+          "processing_time": 0.0031769275665283203,
           "processors_applied": [
             "post_extraction_clean",
-            "symspell",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "83ed949b",
+      "id": "det_2_011",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1125,7 +1124,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0030851364135742188,
+          "processing_time": 0.003063201904296875,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1135,7 +1134,7 @@
       }
     },
     {
-      "id": "4efcc7e6",
+      "id": "det_2_009",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1154,8 +1153,9 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.002151966094970703,
+          "processing_time": 0.002063274383544922,
           "processors_applied": [
+            "post_extraction_clean",
             "symspell",
             "spacing_fix"
           ]
@@ -1163,7 +1163,7 @@
       }
     },
     {
-      "id": "4cbe127f",
+      "id": "det_2_013",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1182,7 +1182,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.002782106399536133,
+          "processing_time": 0.0029277801513671875,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1192,7 +1192,7 @@
       }
     },
     {
-      "id": "5bea1530",
+      "id": "det_2_015",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1211,7 +1211,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0022001266479492188,
+          "processing_time": 0.0025072097778320312,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1221,7 +1221,7 @@
       }
     },
     {
-      "id": "0bdc3ed5",
+      "id": "det_2_018",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1230,7 +1230,7 @@
         1650.71875,
         958.0234375
       ],
-      "text": "8.1 Pregnancy Pregnancy Exposure There is a pregnancy exposure registry that monitors pregnancy outcomes in women exposed to Flublok. Healthcare providers are encouraged to enroll women who receive Flublok during pregnancy in SanofiPasteur Inc.’svaccination pregnancy registry by calling 1-800-822- 2463. Risk Summary All pregnancies have arisk of birth defect loss or other adverse outcomes In the US",
+      "text": "8.1 Pregnancy Pregnancy Exposure There is a pregnancy exposure registry that monitors pregnancy outcomes in women exposed to Flublok. Healthcare providers are encouraged to enroll women who receive Flublok during pregnancy in SanofiPasteur Inc.’svaccination pregnancy registry by calling 1-800-8222463. Risk Summary All pregnancies have arisk of birth defect loss or other adverse outcomes In the US",
       "metadata": {
         "score": 0.9311997890472412,
         "detection_dpi": 400,
@@ -1240,7 +1240,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00109100341796875,
+          "processing_time": 0.0013267993927001953,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1249,7 +1249,7 @@
       }
     },
     {
-      "id": "70bfd29f",
+      "id": "det_2_016",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1268,16 +1268,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005931854248046875,
+          "processing_time": 0.0007710456848144531,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "4658c2b2",
+      "id": "det_2_017",
       "page_index": 2,
       "role": "Title",
       "bbox": [
@@ -1296,7 +1295,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00015473365783691406,
+          "processing_time": 0.00017213821411132812,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1305,7 +1304,7 @@
       }
     },
     {
-      "id": "67206da4",
+      "id": "mrg_det_2_019",
       "page_index": 2,
       "role": "Title",
       "bbox": [
@@ -1324,7 +1323,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0008540153503417969,
+          "processing_time": 0.0010020732879638672,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1334,7 +1333,7 @@
       }
     },
     {
-      "id": "5bd45c24",
+      "id": "det_2_020",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1353,17 +1352,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.003531932830810547,
+          "processing_time": 0.003620147705078125,
           "processors_applied": [
             "post_extraction_clean",
-            "symspell",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "69fab9ec",
+      "id": "det_2_021",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1372,7 +1370,7 @@
         3199.32421875,
         2617.872314453125
       ],
-      "text": "hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. It contains purified ha proteins produced in a continuous insect cell line (expresSF+®) that is derived rom Sf9 cells of the fall army worm, Spodoptera frug i per da (which is related to moths, caterpillars and butterflies), and grown in serum free medium composed of chemically- defined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is d ihi ll li i b l i (A hlif i l",
+      "text": "hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. It contains purified ha proteins produced in a continuous insect cell line (expresSF+®) that is derived rom Sf9 cells of the fall army worm, Spodoptera frug i per da (which is related to moths, caterpillars and butterflies), and grown in serum free medium composed of chemically defined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is d ihi ll li i b l i (A hlif i l",
       "metadata": {
         "score": 0.8727145195007324,
         "detection_dpi": 400,
@@ -1382,7 +1380,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.003537893295288086,
+          "processing_time": 0.003782033920288086,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1392,7 +1390,7 @@
       }
     },
     {
-      "id": "4be0693c",
+      "id": "det_2_022",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1411,7 +1409,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0006608963012695312,
+          "processing_time": 0.0006678104400634766,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1420,7 +1418,7 @@
       }
     },
     {
-      "id": "21732d0e",
+      "id": "det_2_024",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1439,7 +1437,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005559921264648438,
+          "processing_time": 0.0006361007690429688,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1448,7 +1446,7 @@
       }
     },
     {
-      "id": "b68580b7",
+      "id": "det_2_026",
       "page_index": 2,
       "role": "Title",
       "bbox": [
@@ -1467,16 +1465,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0001480579376220703,
+          "processing_time": 0.00015687942504882812,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "3e479123",
+      "id": "det_2_027",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1495,7 +1492,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0010218620300292969,
+          "processing_time": 0.001071929931640625,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1504,7 +1501,7 @@
       }
     },
     {
-      "id": "b0d9d6bc",
+      "id": "det_2_028",
       "page_index": 2,
       "role": "Title",
       "bbox": [
@@ -1523,7 +1520,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00022101402282714844,
+          "processing_time": 0.00021886825561523438,
           "processors_applied": [
             "spacing_fix"
           ]
@@ -1531,7 +1528,7 @@
       }
     },
     {
-      "id": "d9b5982b",
+      "id": "det_2_029",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1550,7 +1547,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0010638236999511719,
+          "processing_time": 0.001024007797241211,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1559,7 +1556,7 @@
       }
     },
     {
-      "id": "18e93a11",
+      "id": "det_2_030",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1578,7 +1575,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.006227016448974609,
+          "processing_time": 0.006623029708862305,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1588,7 +1585,7 @@
       }
     },
     {
-      "id": "5c895fd9",
+      "id": "det_2_032",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1607,17 +1604,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0010159015655517578,
+          "processing_time": 0.0010352134704589844,
           "processors_applied": [
             "post_extraction_clean",
-            "symspell",
-            "spacing_fix"
+            "symspell"
           ]
         }
       }
     },
     {
-      "id": "1978831b",
+      "id": "det_2_034",
       "page_index": 2,
       "role": "Title",
       "bbox": [
@@ -1636,15 +1632,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00022411346435546875,
+          "processing_time": 0.0002338886260986328,
           "processors_applied": [
+            "post_extraction_clean",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "4c62f41d",
+      "id": "det_2_039",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1663,12 +1660,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.00013780593872070312
+          "processing_time": 0.00015282630920410156
         }
       }
     },
     {
-      "id": "114adb42",
+      "id": "det_2_041",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1687,7 +1684,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005700588226318359,
+          "processing_time": 0.0005860328674316406,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1696,7 +1693,7 @@
       }
     },
     {
-      "id": "6acca272",
+      "id": "det_2_046",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1715,7 +1712,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005221366882324219,
+          "processing_time": 0.0006101131439208984,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1724,7 +1721,7 @@
       }
     },
     {
-      "id": "1eba0879",
+      "id": "det_2_045",
       "page_index": 2,
       "role": "Text",
       "bbox": [
@@ -1743,7 +1740,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.000186920166015625,
+          "processing_time": 0.00021195411682128906,
           "processors_applied": [
             "spacing_fix"
           ]
@@ -1751,7 +1748,7 @@
       }
     },
     {
-      "id": "ffa74c0a",
+      "id": "det_3_001",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1770,7 +1767,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.005018949508666992,
+          "processing_time": 0.00548100471496582,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1780,7 +1777,7 @@
       }
     },
     {
-      "id": "16bb009a",
+      "id": "det_3_000",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1799,16 +1796,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004439353942871094,
+          "processing_time": 0.0004878044128417969,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "50e7b249",
+      "id": "det_3_004",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1817,7 +1813,7 @@
         1641.5172119140625,
         916.2854614257812
       ],
-      "text": "reaction (rtPCR) -confirmed influenza was assessed by active and passive surveillance for influenza like illness (ILI) beginning 2 weeks post vaccination until the end of the influenza season, approximately 6 months post- vaccination. ILI was defined as having at least one symptom (no specified duration) in each of two categories of respiratory and systemic symptoms. Respiratory symptoms included sore throat, cough, sputum production wheezing and difficulty breathing. Systemic symptoms included fever > 99°F (>37°C) oral chills, fatigue, headache and myalgia. For subjects with an episode of ILI, an a soph a- rynge al swab sample was collected for rtPCR testing and reflex viral culture of rtPCR- positive samples.",
+      "text": "reaction (rtPCR) -confirmed influenza was assessed by active and passive surveillance for influenza like illness (ILI) beginning 2 weeks post vaccination until the end of the influenza season, approximately 6 months post- vaccination. ILI was defined as having at least one symptom (no specified duration) in each of two categories of respiratory and systemic symptoms. Respiratory symptoms included sore throat, cough, sputum production wheezing and difficulty breathing. Systemic symptoms included fever > 99°F (>37°C) oral chills, fatigue, headache and myalgia. For subjects with an episode of ILI, an a so pharyngeal swab sample was collected for rtPCR testing and reflex viral culture of rtpcr positive samples.",
       "metadata": {
         "score": 0.9828259348869324,
         "detection_dpi": 400,
@@ -1827,7 +1823,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.007902860641479492,
+          "processing_time": 0.008808135986328125,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1837,7 +1833,7 @@
       }
     },
     {
-      "id": "def12d27",
+      "id": "det_3_003",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1846,7 +1842,7 @@
         1653.0721435546875,
         523.152099609375
       ],
-      "text": "The primary efficacy endpoint of Study 6 was rtPCR-positive, protocol defined ILI due to any strain of influenza. Attack rates and relative vaccine efficacy (rVE), defined as 1 – [Attack rate Flublok Quad rival ent Attack Rate Comparator], were calculated for the total efficacy population (n=8604) for the primary efficacy endpoint and for several alternative efficacy endpoints (Table 5). Antigenic and phylogenetic evaluations of the similarity (″matching″) of clinical isolates to vaccine antigens were not performed. CDC epidemio- logical data for the 2014-2015 influenza season indicated that Influenza a (H3 N2) viruses",
+      "text": "The primary efficacy endpoint of Study 6 was rtPCR-positive, protocol defined ILI due to any strain of influenza. Attack rates and relative vaccine efficacy (rVE), defined as 1 [Attack rate Flublok Quad rival ent Attack Rate Comparator], were calculated for the total efficacy population (n=8604) for the primary efficacy endpoint and for several alternative efficacy endpoints (Table 5). Antigenic and phylogenetic evaluations of the similarity (″matching″) of clinical isolates to vaccine antigens were not performed. CDC epidemiological data for the 2014-2015 influenza season indicated that Influenza a (H3 N2) viruses",
       "metadata": {
         "score": 0.9836641550064087,
         "detection_dpi": 400,
@@ -1856,7 +1852,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.001682281494140625,
+          "processing_time": 0.0020401477813720703,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1865,7 +1861,7 @@
       }
     },
     {
-      "id": "4ccd6247",
+      "id": "det_3_002",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1884,7 +1880,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0007648468017578125,
+          "processing_time": 0.0009889602661132812,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1893,7 +1889,7 @@
       }
     },
     {
-      "id": "157f699e",
+      "id": "det_3_007",
       "page_index": 3,
       "role": "Figure",
       "bbox": [
@@ -1902,8 +1898,8 @@
         3163.498046875,
         1354.822265625
       ],
-      "text": "[FIGURE 13 - See figure_p4_157f699e.png]",
-      "image_path": "figures/figure_p4_157f699e.png",
+      "text": "[FIGURE 13 - See figure_p4_det_3_007.png]",
+      "image_path": "figures/figure_p4_det_3_007.png",
       "metadata": {
         "score": 0.9512621164321899,
         "detection_dpi": 400,
@@ -1911,7 +1907,7 @@
       }
     },
     {
-      "id": "4ebef6cc",
+      "id": "det_3_005",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1930,15 +1926,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0006272792816162109,
+          "processing_time": 0.0006020069122314453,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "6cb7028a",
+      "id": "det_3_006",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -1957,7 +1953,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0004570484161376953,
+          "processing_time": 0.0004279613494873047,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -1966,7 +1962,7 @@
       }
     },
     {
-      "id": "34e33652",
+      "id": "det_3_014",
       "page_index": 3,
       "role": "List",
       "bbox": [
@@ -1975,7 +1971,7 @@
         3211.330810546875,
         3236.509765625
       ],
-      "text": "p Influenza B§ 23 0.5 24 0.6 0.96 4 (-72, 46) All Culture confirmed Protocol- defined ILI§,¶ 58 1.3 101 2.3 0.57 43 (21, 59) Abbreviations: rtPCR=reversetranscriptasepolymerasechainreaction; Comparator=U.S.- licensed quad rival ent in activated influenza vaccine, Fluarix quad rival ent, manufactured by Glaxo smith kline; n=number of influenza cases; N=number of subjects in treatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) × 100]. *Study 6 is registered as NCT02285998. †Efficacy Population included all randomized subjects who received study vaccine and provided any follow up documentation for influenza like illness beginning at least 14 days post vaccination. Excluded subjects with protocol deviations that could adversely affect efficacy. ‡Primary Analysis. All cases of rtPCR-confirmed influenza are included. Antigenic char- acterizationandgeneticsequencingtodeterminesimilarityof isolates to vaccine antigens were not performed. CDC surveillance data indicated that the majority of influenza A/H3 N2 wild type viruses were antigenic ally distinct whereas influenzaA/H1 N1 and type B viruses were antigenic ally similar to vaccine antigens during the 2014-2015 season. Study 6 met the pre specified success criterion for the primary endpoint (lower limit of the 2 sided 95% CI of vaccine efficacy for Flublok Quad rival ent relative to Comparator should be not less than 20%)",
+      "text": "p Influenza B§ 23 0.5 24 0.6 0.96 4 (-72, 46) All Culture confirmed Protocol- defined ILI§,¶ 58 1.3 101 2.3 0.57 43 (21, 59) Abbreviations: rtPCR=reversetranscriptasepolymerasechainreaction; Comparator=U.S.licensedquadrivalent in activated influenza vaccine, Fluarix quad rival ent, manufactured by Glaxo smith kline; n=number of influenza cases; N=number of subjects in treatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) × 100]. *Study 6 is registered as NCT02285998. †Efficacy Population included all randomized subjects who received study vaccine and provided any follow up documentation for influenza like illness beginning at least 14 days post vaccination. Excluded subjects with protocol deviations that could adversely affect efficacy. ‡Primary Analysis. All cases of rtPCR-confirmed influenza are included. Antigenic characterization and genetic sequencing to determine similarity of isolates to vaccine antigens were not performed. CDC surveillance data indicated that the majority of influenza A/H3 N2 wild type viruses were antigenic ally distinct whereas influenzaA/H1 N1 and type B viruses were antigenic ally similar to vaccine antigens during the 2014-2015 season. Study 6 met the pre specified success criterion for the primary endpoint (lower limit of the 2 sided 95% CI of vaccine efficacy for Flublok Quad rival ent relative to Comparator should be not less than 20%)",
       "metadata": {
         "score": 0.8916413187980652,
         "detection_dpi": 400,
@@ -1985,7 +1981,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.015320062637329102,
+          "processing_time": 0.014639139175415039,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -1995,7 +1991,7 @@
       }
     },
     {
-      "id": "4dddbb6c",
+      "id": "det_3_008",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -2014,16 +2010,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0002181529998779297,
+          "processing_time": 0.00020694732666015625,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "7c88c7be",
+      "id": "mrg_det_3_015",
       "page_index": 3,
       "role": "Table",
       "bbox": [
@@ -2032,8 +2027,8 @@
         3213.40673828125,
         4089.636962890625
       ],
-      "text": "[TABLE 22 - See table_p4_7c88c7be.png]",
-      "image_path": "figures/table_p4_7c88c7be.png",
+      "text": "[TABLE 22 - See table_p4_mrg_det_3_015.png]",
+      "image_path": "figures/table_p4_mrg_det_3_015.png",
       "metadata": {
         "score": 0.8905076384544373,
         "detection_dpi": 400,
@@ -2041,7 +2036,7 @@
       }
     },
     {
-      "id": "e276acb9",
+      "id": "mrg_det_3_016",
       "page_index": 3,
       "role": "List",
       "bbox": [
@@ -2060,15 +2055,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0008158683776855469,
+          "processing_time": 0.0008280277252197266,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "f848c368",
+      "id": "det_3_009",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -2087,15 +2082,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005500316619873047,
+          "processing_time": 0.0005550384521484375,
           "processors_applied": [
+            "post_extraction_clean",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "f9adaa5f",
+      "id": "det_3_011",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -2114,7 +2110,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0005211830139160156,
+          "processing_time": 0.0004589557647705078,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2123,7 +2119,7 @@
       }
     },
     {
-      "id": "a200d4ed",
+      "id": "det_3_010",
       "page_index": 3,
       "role": "Title",
       "bbox": [
@@ -2142,15 +2138,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00013780593872070312,
+          "processing_time": 0.0001289844512939453,
           "processors_applied": [
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "369ace61",
+      "id": "det_3_012",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -2169,16 +2165,15 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003440380096435547,
+          "processing_time": 0.00029015541076660156,
           "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
+            "post_extraction_clean"
           ]
         }
       }
     },
     {
-      "id": "118a2731",
+      "id": "det_3_013",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -2197,7 +2192,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003600120544433594,
+          "processing_time": 0.0004241466522216797,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2206,7 +2201,7 @@
       }
     },
     {
-      "id": "710852a0",
+      "id": "det_3_017",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -2225,7 +2220,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0028519630432128906,
+          "processing_time": 0.0029430389404296875,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -2235,7 +2230,7 @@
       }
     },
     {
-      "id": "75f26dec",
+      "id": "det_3_020",
       "page_index": 3,
       "role": "Figure",
       "bbox": [
@@ -2244,8 +2239,8 @@
         1660.826416015625,
         2303.145263671875
       ],
-      "text": "[FIGURE 4 - See figure_p4_75f26dec.png]",
-      "image_path": "figures/figure_p4_75f26dec.png",
+      "text": "[FIGURE 4 - See figure_p4_det_3_020.png]",
+      "image_path": "figures/figure_p4_det_3_020.png",
       "metadata": {
         "score": 0.7831475138664246,
         "detection_dpi": 400,
@@ -2253,7 +2248,7 @@
       }
     },
     {
-      "id": "eec0489a",
+      "id": "mrg_det_3_021",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -2272,7 +2267,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.005457162857055664,
+          "processing_time": 0.005462646484375,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -2282,7 +2277,7 @@
       }
     },
     {
-      "id": "640ee2dc",
+      "id": "det_3_023",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -2301,12 +2296,12 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": false,
-          "processing_time": 0.000186920166015625
+          "processing_time": 0.0001342296600341797
         }
       }
     },
     {
-      "id": "7f6cb93d",
+      "id": "det_3_024",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -2324,7 +2319,7 @@
       }
     },
     {
-      "id": "c5a7411c",
+      "id": "det_3_028",
       "page_index": 3,
       "role": "Text",
       "bbox": [
@@ -2343,7 +2338,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003020763397216797,
+          "processing_time": 0.00024080276489257812,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -2352,7 +2347,7 @@
       }
     },
     {
-      "id": "f28b51fe",
+      "id": "det_4_000",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -2370,7 +2365,7 @@
       }
     },
     {
-      "id": "aad95f30",
+      "id": "det_4_001",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -2388,7 +2383,7 @@
       }
     },
     {
-      "id": "137c29e3",
+      "id": "det_4_003",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -2406,7 +2401,7 @@
       }
     },
     {
-      "id": "e74e7bf5",
+      "id": "det_4_002",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -2424,7 +2419,7 @@
       }
     },
     {
-      "id": "b1c8858e",
+      "id": "det_4_004",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -2442,7 +2437,7 @@
       }
     },
     {
-      "id": "0b283563",
+      "id": "det_4_005",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -2460,7 +2455,7 @@
       }
     },
     {
-      "id": "82ff971e",
+      "id": "det_4_006",
       "page_index": 4,
       "role": "Text",
       "bbox": [
@@ -2480,108 +2475,108 @@
   ],
   "reading_order": [
     [
-      "23acfe3c",
-      "f8743488",
-      "18a672f4",
-      "e31f78a3",
-      "5a9b5d3b",
-      "8e4b4a1b",
-      "a1365d88",
-      "c2e61160",
-      "d76fe3e5",
-      "44cb7679",
-      "e23c652c",
-      "9bf56aea",
-      "2246ad79",
-      "74cc4f52"
+      "det_0_023",
+      "mrg_det_0_017",
+      "det_0_019",
+      "det_0_010",
+      "det_0_032",
+      "det_0_015",
+      "det_0_020",
+      "det_0_000",
+      "det_0_031",
+      "det_0_042",
+      "det_0_009",
+      "det_0_001",
+      "det_0_005",
+      "mrg_det_0_003"
     ],
     [
-      "44dbd2ef",
-      "80d9d0cf",
-      "47610ed2",
-      "17f79676",
-      "1d3de0ce",
-      "68117647",
-      "a4aa08d9",
-      "3ba67c9a",
-      "443dc0f9",
-      "bde7cd96",
-      "7290c859",
-      "c729aefc",
-      "94e11c4a",
-      "8db86c6e",
-      "3bfad9e0"
+      "det_1_004",
+      "det_1_000",
+      "det_1_011",
+      "mrg_det_1_002",
+      "det_1_006",
+      "det_1_014",
+      "det_1_013",
+      "det_1_003",
+      "det_1_019",
+      "mrg_det_1_008",
+      "det_1_001",
+      "det_1_017",
+      "det_1_007",
+      "det_1_035",
+      "det_1_026"
     ],
     [
-      "16d6cd69",
-      "0bdc3ed5",
-      "114adb42",
-      "3e479123",
-      "5bea1530",
-      "18e93a11",
-      "b68580b7",
-      "2d43bc2e",
-      "9eef35ed",
-      "4658c2b2",
-      "67206da4",
-      "6404d1ec",
-      "70bfd29f",
-      "4c62f41d",
-      "6acca272",
-      "d9b5982b",
-      "83ed949b",
-      "4be0693c",
-      "1978831b",
-      "5bd45c24",
-      "4cbe127f",
-      "09ca1d23",
-      "5fb8aaf9",
-      "1eba0879",
-      "78d69370",
-      "3498e1e7",
-      "4de8560d",
-      "69fab9ec",
-      "21732d0e",
-      "4848a094",
-      "85cddc83",
-      "5c895fd9",
-      "b0d9d6bc",
-      "4efcc7e6",
-      "aa37ef0e"
+      "det_2_005",
+      "det_2_018",
+      "det_2_041",
+      "det_2_027",
+      "det_2_015",
+      "det_2_030",
+      "det_2_026",
+      "det_2_010",
+      "det_2_006",
+      "det_2_017",
+      "mrg_det_2_019",
+      "mrg_det_2_004",
+      "det_2_016",
+      "det_2_039",
+      "det_2_046",
+      "det_2_029",
+      "det_2_011",
+      "det_2_022",
+      "det_2_034",
+      "det_2_020",
+      "det_2_013",
+      "det_2_012",
+      "det_2_002",
+      "det_2_045",
+      "det_2_000",
+      "det_2_014",
+      "det_2_001",
+      "det_2_021",
+      "det_2_024",
+      "det_2_007",
+      "det_2_008",
+      "det_2_032",
+      "det_2_028",
+      "det_2_009",
+      "det_2_003"
     ],
     [
-      "def12d27",
-      "50e7b249",
-      "f848c368",
-      "75f26dec",
-      "e276acb9",
-      "640ee2dc",
-      "369ace61",
-      "16bb009a",
-      "ffa74c0a",
-      "4ccd6247",
-      "f9adaa5f",
-      "4ebef6cc",
-      "157f699e",
-      "710852a0",
-      "6cb7028a",
-      "eec0489a",
-      "c5a7411c",
-      "a200d4ed",
-      "34e33652",
-      "7f6cb93d",
-      "4dddbb6c",
-      "7c88c7be",
-      "118a2731"
+      "det_3_003",
+      "det_3_004",
+      "det_3_009",
+      "det_3_020",
+      "mrg_det_3_016",
+      "det_3_023",
+      "det_3_012",
+      "det_3_000",
+      "det_3_001",
+      "det_3_002",
+      "det_3_011",
+      "det_3_005",
+      "det_3_007",
+      "det_3_017",
+      "det_3_006",
+      "mrg_det_3_021",
+      "det_3_028",
+      "det_3_010",
+      "det_3_014",
+      "det_3_024",
+      "det_3_008",
+      "mrg_det_3_015",
+      "det_3_013"
     ],
     [
-      "b1c8858e",
-      "137c29e3",
-      "e74e7bf5",
-      "f28b51fe",
-      "82ff971e",
-      "aad95f30",
-      "0b283563"
+      "det_4_004",
+      "det_4_003",
+      "det_4_002",
+      "det_4_000",
+      "det_4_006",
+      "det_4_001",
+      "det_4_005"
     ]
   ],
   "metadata": {
@@ -2593,5 +2588,12 @@
       "figure_blocks": 7,
       "figures_dir": "data/cache/FlublokPI/extracted/figures"
     }
+  },
+  "pipeline_metadata": {
+    "raw_detection_count": 187,
+    "after_consolidation_count": 94,
+    "final_block_count": 94,
+    "box_tracking_enabled": true,
+    "id_format": "det_<page>_<index> for detections, mrg_<source_id> for merges"
   }
 }

@@ -6,11 +6,14 @@ by using various strategies to handle different overlap scenarios.
 
 from __future__ import annotations
 
+import logging
 from typing import List, Tuple, Optional, Dict
 from dataclasses import dataclass
 from enum import Enum
 
 from .box import Box
+
+logger = logging.getLogger(__name__)
 
 
 def expand_boxes(boxes: List[Box], padding: float = 10.0, page_width: float = None, page_height: float = None) -> List[Box]:
@@ -642,7 +645,7 @@ def resolve_all_overlaps(boxes: List[Box],
         for j, box2 in enumerate(working_boxes[i+1:], i+1):
             overlap_info = get_overlap_info(box1, box2)
             if overlap_info["has_overlap"]:
-                print(f"WARNING: Overlap still exists between {box1.label} and {box2.label}")
+                logger.warning(f"Overlap still exists between {box1.label} and {box2.label}")
     
     return working_boxes
 

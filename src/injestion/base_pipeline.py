@@ -7,11 +7,14 @@ from pathlib import Path
 from typing import List, Optional, Type, Union
 from abc import ABC, abstractmethod
 
+import logging
 from pdf2image import convert_from_path
 from src.interfaces import Document
 from .storage.paths import pages_dir, stage_dir
 from .config import IngestionConfig, DEFAULT_CONFIG
 from .processing.box import Box
+
+logger = logging.getLogger(__name__)
 
 
 class BasePDFPipeline(ABC):
@@ -59,11 +62,11 @@ class BasePDFPipeline(ABC):
         pdf_path = Path(pdf_path)
         
         # Common step 1: Convert PDF to images
-        print(f"Converting {pdf_path.name} to images...")
+        logger.info(f"Converting {pdf_path.name} to images...")
         images = self._convert_to_images(pdf_path)
         
         # Common step 2: Run layout detection
-        print("Running layout detection...")
+        logger.info("Running layout detection...")
         layouts = self.detector.detect_images(images)
         
         # Save raw layouts if configured
@@ -71,7 +74,7 @@ class BasePDFPipeline(ABC):
             self._save_raw_layouts(layouts, pdf_path, images)
         
         # Common step 3: Apply consolidation
-        print("Applying box consolidation...")
+        logger.info("Applying box consolidation...")
         consolidated_layouts = self._apply_consolidation(layouts, images)
         
         # Save merged layouts if configured
@@ -79,7 +82,7 @@ class BasePDFPipeline(ABC):
             self._save_merged_layouts(consolidated_layouts, pdf_path)
         
         # Common step 4: Create document and extract content
-        print("Creating document structure...")
+        logger.info("Creating document structure...")
         document = self._create_document(consolidated_layouts, pdf_path, images)
         
         # Common step 5: Save outputs and visualize
@@ -89,14 +92,31 @@ class BasePDFPipeline(ABC):
     
     def _convert_to_images(self, pdf_path: Path) -> List:
         """Convert PDF to images and save them."""
+        # Validate PDF exists
+        if not pdf_path.exists():
+            raise FileNotFoundError(f"PDF file not found: {pdf_path}")
+        
+        # Validate it's a file
+        if not pdf_path.is_file():
+            raise ValueError(f"Path is not a file: {pdf_path}")
+            
         page_dir = pages_dir(pdf_path)
         page_dir.mkdir(parents=True, exist_ok=True)
         
-        images = convert_from_path(str(pdf_path), dpi=self.config.detection_dpi)
-        for idx, img in enumerate(images):
-            img.save(page_dir / f"page-{idx:03}.png")
-        
-        return images
+        try:
+            images = convert_from_path(str(pdf_path), dpi=self.config.detection_dpi)
+            if not images:
+                raise ValueError(f"No images extracted from PDF: {pdf_path}")
+                
+            for idx, img in enumerate(images):
+                img.save(page_dir / f"page-{idx:03}.png")
+                
+            logger.info(f"Converted {len(images)} pages from {pdf_path.name}")
+            return images
+            
+        except Exception as e:
+            logger.error(f"Failed to convert PDF to images: {e}")
+            raise
     
     @abstractmethod
     def _apply_consolidation(self, layouts: List, images: List) -> List[List[Box]]:

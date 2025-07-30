@@ -13,6 +13,11 @@ import asyncio
 import httpx
 
 from src.core.config import settings
+try:
+    from ..config.model_capabilities import extract_text_from_response
+except ImportError:
+    # Handle import when module is used outside fact_check context
+    from src.fact_check.config.model_capabilities import extract_text_from_response
 
 logger = logging.getLogger(__name__)
 
@@ -219,13 +224,13 @@ class ResponsesClient:
                         ) from e
                 raise
     
-    @staticmethod
-    def extract_text(response: dict) -> str:
+    def extract_text(self, response: dict, model: str = None) -> str:
         """
         Extract text content from Responses API response.
         
         Args:
             response: Response dict from create_response()
+            model: Model name (if None, tries to extract from response)
             
         Returns:
             str: Extracted text content
@@ -233,19 +238,12 @@ class ResponsesClient:
         Raises:
             ValueError: If response doesn't match expected format
         """
-        # Standard Responses API format: response.output[0].content[0].text
-        if not isinstance(response.get("output"), list) or not response["output"]:
-            raise ValueError(f"Invalid response format: 'output' must be a non-empty list")
-            
-        output = response["output"][0]
-        if not isinstance(output.get("content"), list) or not output["content"]:
-            raise ValueError(f"Invalid response format: 'output[0].content' must be a non-empty list")
-            
-        content = output["content"][0]
-        if "text" not in content:
-            raise ValueError(f"Invalid response format: 'output[0].content[0].text' not found")
-            
-        return content["text"]
+        # Try to get model from response if not provided
+        if model is None:
+            model = response.get("model", "gpt-4.1")
+        
+        # Use model-specific extraction
+        return extract_text_from_response(response, model)
 
     def retrieve_response(self, response_id: str) -> dict:
         """

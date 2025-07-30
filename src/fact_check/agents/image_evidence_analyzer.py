@@ -8,6 +8,7 @@ import base64
 from .base import BaseAgent, AgentError
 from ..core.responses_client import ResponsesClient
 from ..config.agent_models import get_model_for_agent
+from ..config.model_capabilities import build_vision_request, extract_text_from_response
 
 logger = logging.getLogger(__name__)
 
@@ -123,22 +124,19 @@ Quality standards:
             # Create data URI for image
             data_uri = f"data:{mime_type};base64,{image_base64}"
             
-            # Use Responses API format with typed content
-            response = await self.llm_client.create_response(
+            # Use model capabilities to build appropriate request
+            request = build_vision_request(
                 model=self.llm_client.model,
-                input=[{
-                    "role": "user",
-                    "content": [
-                        {"type": "input_text", "text": prompt},
-                        {"type": "input_image", "image_url": data_uri}
-                    ]
-                }],
-                temperature=0.0,
-                max_output_tokens=1000
+                text_prompt=prompt,
+                image_data_uri=data_uri,
+                max_output_tokens=1000,
+                temperature=0.0
             )
             
-            # Extract response text
-            response_text = self.llm_client.extract_text(response)
+            response = await self.llm_client.create_response(**request)
+            
+            # Extract response text using model-specific handler
+            response_text = extract_text_from_response(response, self.llm_client.model)
             
             # Parse JSON response
             import json

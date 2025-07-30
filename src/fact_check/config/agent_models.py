@@ -12,7 +12,7 @@ AGENT_MODELS = {
     "completeness_checker": "gpt-4.1",
     
     # Image analysis - uses vision-capable model
-    "image_evidence_analyzer": "gpt-4.1",  # gpt-4.1 proven to work with vision
+    "image_evidence_analyzer": "o4-mini",  # o4-mini with modular capabilities support
     
     # Default fallback for any agent not explicitly configured
     "default": "gpt-4.1"
