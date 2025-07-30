@@ -58,7 +58,7 @@ The Gateway accepts document uploads and claim submissions from users, returning
 % here instead of floating to the next page or the end of the document.
 \begin{figure}[H]
 \centering
-\includefig[width=0.85\textwidth]{scientific_layout_example.png}
+\includefig[width=0.85\textwidth]{../assets/scientific_layout_example.png}
 \caption{Detectron2 identifies text blocks, tables, and figures in medical documents.}
 \end{figure}
 
@@ -158,14 +158,6 @@ data/cache/{document_name}/
                 image_evidence_analyzer/{figure_id}/output.json
 \end{verbatim}
 
-\section{Scaling Considerations}
-
-\textbf{Ingestion}: CPU-bound on Detectron2, benefits from GPU acceleration
-
-\textbf{Fact Checking}: I/O bound on LLM APIs, scales with concurrent claims
-
-\textbf{Gateway}: Stateless handlers scale horizontally
-
 \section{Marketing Document Adaptation}
 
 Marketing materials use adjusted parameters:
@@ -177,7 +169,7 @@ Marketing materials use adjusted parameters:
 
 \begin{figure}[H]
 \centering
-\includefig[width=0.85\textwidth]{marketing_layout_example.png}
+\includefig[width=0.85\textwidth]{../assets/marketing_layout_example.png}
 \caption{Marketing documents require lower confidence thresholds for design-heavy layouts.}
 \end{figure}
 
