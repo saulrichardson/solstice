@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table of solicited local and systemic adverse reactions (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) reporting percentages in Flublok and comparator/placebo groups, with footnotes describing study design, cohort sizes, severity grading, and clinical trial registry numbers. does not support the claim because the table presents safety and reactogenicity data, not information on antigenic match to WHO- or FDA-selected influenza strains Note: The image is clear and legible, but contains no data related to antigenic matching or strain selection.",
+  "explanation": "A table of solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) reported in Flublok and comparator groups, with percentages and footnotes defining severity grades, cohort sizes, and study registry information. The table presents safety and reactogenicity data and does not include any information about antigenic match or strain selection, so it does not support the claim. Note: Limited to safety/reactogenicity data; no antigenic or immunogenicity information present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table of solicited local and systemic adverse reactions (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) reporting percentages in Flublok and comparator/placebo groups, with footnotes describing study design, cohort sizes, severity grading, and clinical trial registry numbers.",
+    "image_description": "A table of solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) reported in Flublok and comparator groups, with percentages and footnotes defining severity grades, cohort sizes, and study registry information.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table presents safety and reactogenicity data, not information on antigenic match to WHO- or FDA-selected influenza strains",
-    "confidence_notes": "The image is clear and legible, but contains no data related to antigenic matching or strain selection."
+    "reasoning": "The table presents safety and reactogenicity data and does not include any information about antigenic match or strain selection, so it does not support the claim.",
+    "confidence_notes": "Limited to safety/reactogenicity data; no antigenic or immunogenicity information present."
   }
 }

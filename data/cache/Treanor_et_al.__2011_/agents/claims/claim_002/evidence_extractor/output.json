@@ -5,24 +5,34 @@
     "pdf_name": "Treanor_et_al.__2011_",
     "source_pdf": "data/clinical_files/Treanor et al. (2011).pdf",
     "total_pages": 7,
-    "total_blocks": 97,
-    "total_characters": 28697
+    "total_blocks": 93,
+    "total_characters": 29386
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 2,
+    "total_snippets_found": 4,
     "error": null
   },
   "extracted_evidence": [
     {
       "id": 1,
-      "quote": "Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg pro- growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2].",
-      "relevance_explanation": "This quote directly states that growth in eggs can select for receptor variants, meaning mutations can occur during production that may not match circulating strains, thus potentially reducing vaccine effectiveness."
+      "quote": "Although embryonated hen's eggs have been used to generate effective influenza vaccines for many years, this system does have several important drawbacks. Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg production, growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2].",
+      "relevance_explanation": "This quote explicitly states that egg-based vaccine production can select for receptor variants that may not match circulating strains, supporting the claim that mutations can develop during production and reduce effectiveness."
     },
     {
       "id": 2,
-      "quote": "Wood JM, Oxford JS, Dun lea vy U, Newman RW, Major D, Robertson JS. Influenza A (H1 N1) vaccine efficacy in animal models is influenced by two amino acid substitutions in the hemagglutinin molecule. Virology 1989 171 214 21.",
-      "relevance_explanation": "This reference is cited in the context of egg-based vaccine production and explicitly states that amino acid substitutions (mutations) in the hemagglutinin molecule can influence vaccine efficacy, supporting the claim that mutations during production can reduce effectiveness."
+      "quote": "Two recently published studies have evaluated egg grown inactivated vaccines in healthy adults using a placebo controlled design during the 2007-2008 influenza season. In one study, conducted primarily in Europe, the overall efficacy of egg grown inactivated vaccine against culture confirmed illness was 63%, and the lower 95% CI was 46.7% [18]. The predominant influenza A isolates in that study were H1N1 viruses, which were mostly vaccine like.",
+      "relevance_explanation": "This quote references studies evaluating the effectiveness of egg-based vaccines and notes that even when the viruses were 'mostly vaccine like,' the efficacy was not complete, implying that changes during production (such as mutations) can impact effectiveness."
+    },
+    {
+      "id": 3,
+      "quote": "Expression of proteins in insect cells using recombinant baculovirus expression system as previously described [9]... The combinant HA protein is not cleaved in insect cells and is referred to as rHA0.",
+      "relevance_explanation": "This quote describes the use of insect cells (cell-based production) and notes differences in protein processing, which is relevant to the claim that cell-based systems can introduce changes (mutations or modifications) that may affect vaccine effectiveness."
+    },
+    {
+      "id": 4,
+      "quote": "Wood JM, Oxford JS, Dunleavy U, Newman RW, Major D, Robertson JS. Influenza A (H1N1) vaccine efficacy in animal models is influenced by two amino acid substitutions in the hemagglutinin molecule. Virology 1989 171 214 21.",
+      "relevance_explanation": "This reference is cited in the context of discussing how mutations (amino acid substitutions) in the hemagglutinin protein can influence vaccine efficacy, directly supporting the claim that mutations during production can reduce effectiveness."
     }
   ],
   "model_used": "gpt-4.1"

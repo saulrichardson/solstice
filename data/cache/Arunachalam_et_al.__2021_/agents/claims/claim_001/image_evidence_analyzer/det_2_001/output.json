@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A schematic flowchart illustrating the manufacture of HA using the baculovirus\u2013insect cell expression system for RIV4. It shows steps including full\u2010length cDNA cloning, recombination into a baculovirus vector, insect cell seeding and bioreactor expansion, disc\u2010stack centrifugation harvest, extraction, depth filtration clarification, capture, purification with DNA removal, and final TFF/formulation. The figure only outlines the production process for recombinant HA and provides no data on HA antigen amounts or comparisons to standard\u2010dose vaccines; it does not support the claim. Note: Limited to a process schematic; no quantitative or immunogenicity information is presented.",
+  "explanation": "A schematic diagram illustrating the baculovirus\u2013insect cell expression system used to produce hemagglutinin (HA) for the RIV4 vaccine, including cloning of the HA gene into baculovirus DNA, infection and expansion in bioreactors, harvest, extraction, filtration, capture, purification, DNA removal, and formulation steps. does not support the claim because the figure only depicts the manufacturing process of HA in insect cells and contains no data or statements regarding HA antigen content or comparative dosing versus standard-dose flu vaccines Note: Image quality is sufficient to discern content; no relevant quantitative information on HA antigen levels is present",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A schematic flowchart illustrating the manufacture of HA using the baculovirus\u2013insect cell expression system for RIV4. It shows steps including full\u2010length cDNA cloning, recombination into a baculovirus vector, insect cell seeding and bioreactor expansion, disc\u2010stack centrifugation harvest, extraction, depth filtration clarification, capture, purification with DNA removal, and final TFF/formulation.",
+    "image_description": "A schematic diagram illustrating the baculovirus\u2013insect cell expression system used to produce hemagglutinin (HA) for the RIV4 vaccine, including cloning of the HA gene into baculovirus DNA, infection and expansion in bioreactors, harvest, extraction, filtration, capture, purification, DNA removal, and formulation steps.",
     "evidence_found": null,
-    "reasoning": "The figure only outlines the production process for recombinant HA and provides no data on HA antigen amounts or comparisons to standard\u2010dose vaccines; it does not support the claim.",
-    "confidence_notes": "Limited to a process schematic; no quantitative or immunogenicity information is presented."
+    "reasoning": "does not support the claim because the figure only depicts the manufacturing process of HA in insect cells and contains no data or statements regarding HA antigen content or comparative dosing versus standard-dose flu vaccines",
+    "confidence_notes": "Image quality is sufficient to discern content; no relevant quantitative information on HA antigen levels is present"
   }
 }

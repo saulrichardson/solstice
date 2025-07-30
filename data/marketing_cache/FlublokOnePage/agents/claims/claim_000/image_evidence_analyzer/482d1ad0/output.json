@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_482d1ad0.png",
+  "image_path": "FlublokOnePage/extracted/figures/figure_p1_482d1ad0.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "482d1ad0",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A partial page from a clinical document showing stylized graphics and fragments of text (e.g., \u2018known\u2026 ensure\u2026 and FD\u2026\u2019), with most of the content cut off and illegible. does not support the claim because the visible portion of the image does not provide any statement or data regarding Flublok ensuring identical antigenic match with WHO- and FDA-selected flu strains Note: Text is cut off and incomplete, making it impossible to verify the full context; low confidence due to limited visible information",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A partial page from a clinical document showing stylized graphics and fragments of text (e.g., \u2018known\u2026 ensure\u2026 and FD\u2026\u2019), with most of the content cut off and illegible.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the visible portion of the image does not provide any statement or data regarding Flublok ensuring identical antigenic match with WHO- and FDA-selected flu strains",
+    "confidence_notes": "Text is cut off and incomplete, making it impossible to verify the full context; low confidence due to limited visible information"
+  }
+}

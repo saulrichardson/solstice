@@ -2,9 +2,19 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "document": "Treanor_et_al.__2011_",
-  "verified_evidence": [],
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "The vaccine (Flublok used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006, A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses. These studies have consistently shown excellent tolerability and antibody responses similar to those seen with egg derived influenza vaccines.",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 2 of the document, with only minor differences in wording and formatting due to OCR cleanup. The key facts are present: Flublok is described as consisting of purified hemagglutinin (HA) proteins produced in insect cells using a baculovirus expression system, and the trivalent vaccine contained 45 mcg of each purified rHA0 component. The quote also references studies showing excellent tolerability and antibody responses similar to those seen with egg-derived influenza vaccines. The numbers, technical content, and meaning are preserved.. The quote directly supports the claim that Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines (which contain 15 mcg per strain), as it states that Flublok contains 45 mcg per strain. It also references studies showing strong antibody responses, which is evidence of greater immunogenicity. Therefore, the quote genuinely supports both parts of the claim.",
+      "presence_explanation": "The quote appears on page 2 of the document, with only minor differences in wording and formatting due to OCR cleanup. The key facts are present: Flublok is described as consisting of purified hemagglutinin (HA) proteins produced in insect cells using a baculovirus expression system, and the trivalent vaccine contained 45 mcg of each purified rHA0 component. The quote also references studies showing excellent tolerability and antibody responses similar to those seen with egg-derived influenza vaccines. The numbers, technical content, and meaning are preserved.",
+      "support_explanation": "The quote directly supports the claim that Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines (which contain 15 mcg per strain), as it states that Flublok contains 45 mcg per strain. It also references studies showing strong antibody responses, which is evidence of greater immunogenicity. Therefore, the quote genuinely supports both parts of the claim.",
+      "original_relevance": "This quote explicitly states that Flublok contains 45 mcg of each hemagglutinin component, which is three times the standard 15 mcg per strain in standard-dose flu vaccines, and references studies showing strong antibody responses, supporting the claim of higher antigen content and greater immunogenicity."
+    }
+  ],
   "verification_stats": {
-    "total_verified": 0
+    "total_verified": 1
   },
   "image_evidence": []
 }

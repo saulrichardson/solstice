@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_e555aa98.png",
+  "image_path": "FlublokOnePage/extracted/figures/figure_p1_e555aa98.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "e555aa98",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "Partial page text describing a trivalent Flublok vaccine evaluation, noting that vaccines are produced using a baculovirus expression vector system (BEVS) in insect cells, with each dose containing 45 micrograms of antigen per strain as per CDC guidelines. The image does not support the claim because it only outlines manufacturing method and antigen content, without any information on matching Flublok antigens to WHO- or FDA-selected strains, and thus doesn\u2019t support the claim. Note: Text is truncated and no details on WHO/FDA strain matching are visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Partial page text describing a trivalent Flublok vaccine evaluation, noting that vaccines are produced using a baculovirus expression vector system (BEVS) in insect cells, with each dose containing 45 micrograms of antigen per strain as per CDC guidelines.",
+    "evidence_found": null,
+    "reasoning": "The image does not support the claim because it only outlines manufacturing method and antigen content, without any information on matching Flublok antigens to WHO- or FDA-selected strains, and thus doesn\u2019t support the claim.",
+    "confidence_notes": "Text is truncated and no details on WHO/FDA strain matching are visible."
+  }
+}

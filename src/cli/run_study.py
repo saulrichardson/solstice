@@ -1,10 +1,17 @@
 """CLI command for running streamlined fact-checking studies."""
 
 import asyncio
+import logging
 from pathlib import Path
 import sys
 
 from ..fact_check.orchestrators import StudyOrchestrator
+
+# Configure logging to show all agent logs
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(message)s'  # Simple format for CLI output
+)
 
 
 def get_default_documents():
@@ -15,7 +22,9 @@ def get_default_documents():
         # Only include documents that have extracted content
         for doc_dir in cache_dir.iterdir():
             if doc_dir.is_dir() and (doc_dir / "extracted" / "content.json").exists():
-                documents.append(doc_dir.name)
+                # Skip marketing materials that shouldn't be in cache
+                if doc_dir.name != "FlublokOnePage":
+                    documents.append(doc_dir.name)
     return sorted(documents)
 
 

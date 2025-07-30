@@ -123,8 +123,8 @@ DOCUMENT:
                 prompt=prompt,
                 output_model=ExtractorOutput,
                 max_retries=2,
-                temperature=0.0,
-                max_output_tokens=4000
+                temperature=0.0
+                # Removed max_output_tokens - let model use what it needs
             )
             
             # Structure output

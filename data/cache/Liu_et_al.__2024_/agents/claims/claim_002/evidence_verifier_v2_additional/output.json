@@ -4,45 +4,35 @@
   "document": "Liu_et_al.__2024_",
   "verification_stats": {
     "total_extracted": 4,
-    "verified": 3,
-    "rejected": 1,
-    "verification_rate": 0.75
+    "verified": 0,
+    "rejected": 4,
+    "verification_rate": 0.0
   },
-  "verified_evidence": [
-    {
-      "id": "comp_2",
-      "quote": "the antibody \u201cGMT egg cell titer ratio\u201d as a proxy to quantify the extent of difference in antibody responses to egg- versus year 1, a total of 26 breakthrough infection cases were identified with",
-      "supports_claim": true,
-      "explanation": "The quote appears on page 5: 'Antibody responses to egg adapted epi to pes measured by antibody GMT egg cell titer ratio in year 1 To assess the levels of antibody responses targeting the egg adapted epi to pes, we used the antibody \u201cGMT egg cell titer ratio\u201d as a proxy to quantify the extent of difference in antibody responses to egg- versus year 1, a total of 26 breakthrough infection cases were identified with'. The wording is nearly identical, with only minor differences in punctuation and line breaks.. The quote describes the use of the 'GMT egg cell titer ratio' as a proxy to quantify differences in antibody responses to egg- versus cell-derived viruses. This difference arises because egg-based production can introduce mutations (egg-adapted changes) in the virus, leading to antigenic differences. The need to measure and compare these responses directly supports the claim that cell- and egg-based flu vaccines can develop mutations during production, which may reduce their effectiveness by altering immune responses.",
-      "presence_explanation": "The quote appears on page 5: 'Antibody responses to egg adapted epi to pes measured by antibody GMT egg cell titer ratio in year 1 To assess the levels of antibody responses targeting the egg adapted epi to pes, we used the antibody \u201cGMT egg cell titer ratio\u201d as a proxy to quantify the extent of difference in antibody responses to egg- versus year 1, a total of 26 breakthrough infection cases were identified with'. The wording is nearly identical, with only minor differences in punctuation and line breaks.",
-      "support_explanation": "The quote describes the use of the 'GMT egg cell titer ratio' as a proxy to quantify differences in antibody responses to egg- versus cell-derived viruses. This difference arises because egg-based production can introduce mutations (egg-adapted changes) in the virus, leading to antigenic differences. The need to measure and compare these responses directly supports the claim that cell- and egg-based flu vaccines can develop mutations during production, which may reduce their effectiveness by altering immune responses.",
-      "original_relevance": "The use of the 'GMT egg cell titer ratio' as a measure indicates that there are antigenic differences between egg- and cell-derived viruses, which can arise from mutations during production, thus supporting the claim."
-    },
-    {
-      "id": "comp_3",
-      "quote": "participants had GMT egg cell ratio \u22654 to A (H3 N2) and B/Victoria viruses, suggesting ahigh prevalence of pre existing neutralizing antibodies targeting HA egg adapted epi to pes in this highly vaccinated HCP population. After vaccination, in both age groups, the two egg- based vaccines generally reinforced the neutralizing antibody responses to egg adapted epi to pes as evidenced by an increased trend in the proportion of participants with GMT egg cell titer ratio \u22654.",
-      "supports_claim": true,
-      "explanation": "The quote appears on page 5 of the document, with only minor differences in wording and punctuation: 'participants had GMT egg cell ratio \u22654 to A (H3 N2) and B/Victoria viruses, suggesting ahigh prevalence of pre existing neutralizing antibodies targeting HA egg adapted epi to pes in this highly vaccinated HCP population. After vaccination, in both age groups, the two egg- based vaccines generally reinforced the neutralizing antibody responses to egg adapted epi to pes as evidenced by an increased trend in the proportion of participants with GMT egg cell titer ratio \u22654.' This matches the quote to verify, with only trivial differences (e.g., spacing, punctuation, and line breaks).. The quote directly supports the claim. It shows that egg-based vaccines reinforce immune responses to 'egg adapted epitopes,' which are the result of mutations that occur during egg-based production. The use of the 'GMT egg cell ratio \u22654' as a marker for antibodies targeting these egg-adapted epitopes demonstrates that such mutations are present and immunologically relevant. The fact that vaccination with egg-based vaccines increases the proportion of participants with this response suggests that the immune system is being directed toward these egg-adapted (i.e., mutated) forms, which may differ from the circulating strains, thus potentially reducing vaccine effectiveness. This is direct evidence that cell- and egg-based flu vaccines can develop mutations during production that may impact their effectiveness.",
-      "presence_explanation": "The quote appears on page 5 of the document, with only minor differences in wording and punctuation: 'participants had GMT egg cell ratio \u22654 to A (H3 N2) and B/Victoria viruses, suggesting ahigh prevalence of pre existing neutralizing antibodies targeting HA egg adapted epi to pes in this highly vaccinated HCP population. After vaccination, in both age groups, the two egg- based vaccines generally reinforced the neutralizing antibody responses to egg adapted epi to pes as evidenced by an increased trend in the proportion of participants with GMT egg cell titer ratio \u22654.' This matches the quote to verify, with only trivial differences (e.g., spacing, punctuation, and line breaks).",
-      "support_explanation": "The quote directly supports the claim. It shows that egg-based vaccines reinforce immune responses to 'egg adapted epitopes,' which are the result of mutations that occur during egg-based production. The use of the 'GMT egg cell ratio \u22654' as a marker for antibodies targeting these egg-adapted epitopes demonstrates that such mutations are present and immunologically relevant. The fact that vaccination with egg-based vaccines increases the proportion of participants with this response suggests that the immune system is being directed toward these egg-adapted (i.e., mutated) forms, which may differ from the circulating strains, thus potentially reducing vaccine effectiveness. This is direct evidence that cell- and egg-based flu vaccines can develop mutations during production that may impact their effectiveness.",
-      "original_relevance": "This quote shows that egg-based vaccines can reinforce immune responses to egg-adapted epitopes, which are the result of mutations that occur during egg-based production, supporting the claim that such mutations can affect vaccine effectiveness."
-    },
-    {
-      "id": "comp_4",
-      "quote": "epi to pes could be preferentially boosted from repeat vaccination with egg based vaccines 3 The potential of non egg based vaccines to miti",
-      "supports_claim": true,
-      "explanation": "A very similar version of the quote appears on page 2: 'Repeat vaccination with egg based influenza vaccines could preferentially boost antibodies targeting the egg adapted epi topes and reduce immuno- gen i city to circulating viruses.' The phrase 'epi to pes could be preferentially boosted from repeat vaccination with egg based vaccines' also appears, though the sentence is cut off. The core content is present, with only minor wording and formatting differences.. The quote directly supports the claim. It states that repeat vaccination with egg-based vaccines can preferentially boost antibodies to egg-adapted epitopes, which are created by mutations during egg-based production. It also notes that this can reduce immunogenicity to circulating viruses, implying reduced effectiveness. This directly links the production-induced mutations in egg-based (and by extension, cell-based) vaccines to potential reductions in vaccine effectiveness.",
-      "presence_explanation": "A very similar version of the quote appears on page 2: 'Repeat vaccination with egg based influenza vaccines could preferentially boost antibodies targeting the egg adapted epi topes and reduce immuno- gen i city to circulating viruses.' The phrase 'epi to pes could be preferentially boosted from repeat vaccination with egg based vaccines' also appears, though the sentence is cut off. The core content is present, with only minor wording and formatting differences.",
-      "support_explanation": "The quote directly supports the claim. It states that repeat vaccination with egg-based vaccines can preferentially boost antibodies to egg-adapted epitopes, which are created by mutations during egg-based production. It also notes that this can reduce immunogenicity to circulating viruses, implying reduced effectiveness. This directly links the production-induced mutations in egg-based (and by extension, cell-based) vaccines to potential reductions in vaccine effectiveness.",
-      "original_relevance": "This statement suggests that repeated use of egg-based vaccines can preferentially boost responses to egg-adapted epitopes, which are created by mutations during production, thus supporting the claim."
-    }
-  ],
+  "verified_evidence": [],
   "rejected_evidence": [
     {
       "id": "comp_1",
-      "quote": "Egg grown A (H3 N2) viruses were propagated in 10 day old embryonated chicken eggs, cell grown A (H3 N2) viruses were propagated in stably trans fec ted MDCK cells with c",
+      "quote": "Sequence analyses All the testing viruses used in this study were sequenced. Sequences were analyzed against the sequences of candidate vaccine viruses (CVV) of the study vaccines as deposited in Global Initiative on Sharing Avian Influenza Data (GISAID) database by BioEdit version 7.0.9.0 (Table 1).",
       "reason": "does not support claim",
-      "original_explanation": "This quote describes the use of eggs and cell cultures for propagating influenza viruses, which is the context in which adaptive mutations can occur during vaccine production, supporting the claim about the potential for mutations."
+      "original_explanation": "This quote shows that sequence analysis was performed to compare the viruses used in vaccines to reference strains, which is necessary to detect mutations that may arise during production, such as those that could occur in egg- or cell-based vaccine manufacturing."
+    },
+    {
+      "id": "comp_2",
+      "quote": "Egg grown A (H3 N2) viruses were propagated in 10 day old embryonated chicken eggs, cell grown A (H3 N2) viruses were propagated in stably transfected MDCK cells with c... A (H1 N1) pdm09 and influenza B viruses were propagated in Madin-Darby canine kidney (MDCK) cells. ... Egg- and cell (MDCK)-propagated A/Michigan/45/2015 (H1 N1) pdm09, B/Colorado/06/2017 (B/Victoria), and B/Phuket/3073/2013 (B/Yamagata) viruses were tested in year 1, Egg propagated A/Brisbane/02/2018 (H1 N1) pdm09, cell propagated A/Idaho/7/2018 (H1 N1) pdm09, egg- and cell propagated B/Colorado/06/2017 (B/Victoria) and B/Phuket/3073/2013 (B/Yamagata) viruses ...",
+      "reason": "does not support claim",
+      "original_explanation": "This quote details the propagation of vaccine viruses in eggs and cell cultures, which is the process during which adaptive mutations can occur, supporting the claim that such mutations may develop during production."
+    },
+    {
+      "id": "comp_3",
+      "quote": "For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody ... However, for A (H1 N1) pdm09 and B viruses, the difference in HI antibody versus the total HA head binding antibody levels among 4 vaccine groups was less consistent suggesting that the magnitude of improvement differ",
+      "reason": "does not support claim",
+      "original_explanation": "This quote suggests that differences in immune response quality between vaccine types may be due to changes in the HA protein, which can result from mutations acquired during production in eggs or cells, thus potentially affecting effectiveness."
+    },
+    {
+      "id": "comp_4",
+      "quote": "Comparing pre- and 1 month post vaccination, A (H3 N2) HA stalk binding antibodies were significantly boosted in ccIIV4-RIV4, RIV4-RIV4, IIV4-ccIIV4, and IIV4-RIV4 arms, while A (H1 N1) pdm09 HA stalk binding antibodies were also significantly boosted in ccIIV4-ccIIV4 and RIV4-ccIIV4 arms (Fig. 8 C). However, fold rise in both A (H1 N1) pdm09 HA stalk and A (H3 N2) HA stalk antibodies were low (GM fold rise <1.78) with no significant difference (p > 0.05) among all 7 repeat vaccination arms (Fig 8 D) tion (C, D).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote indicates that despite vaccination, the immune response to certain viral components was limited, which may be due to mutations in the HA protein that arise during egg or cell-based vaccine production, thus reducing effectiveness."
     }
   ],
   "model_used": "gpt-4.1"

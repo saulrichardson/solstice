@@ -5,29 +5,34 @@
     "pdf_name": "Liu_et_al.__2024_",
     "source_pdf": "data/clinical_files/Liu et al. (2024).pdf",
     "total_pages": 13,
-    "total_blocks": 124,
-    "total_characters": 39807
+    "total_blocks": 128,
+    "total_characters": 40485
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 3,
+    "total_snippets_found": 4,
     "error": null
   },
   "extracted_evidence": [
     {
       "id": 1,
-      "quote": "the manufacturing process can lead to egg adapted mutations in the magglutinin (HA) protein in IIV, that could result in altered an ...iff i (VE) i h i l i",
-      "relevance_explanation": "This quote directly states that the manufacturing process for egg-based vaccines can lead to egg-adapted mutations in the hemagglutinin (HA) protein, which could result in altered vaccine effectiveness (VE), supporting the claim that mutations during production may reduce effectiveness."
+      "quote": "The manufacturing process can lead to egg adapted mutations in the hemagglutinin (HA) protein in IIV, that could result in altered antigenicity and differences in vaccine effectiveness (VE) in the population.",
+      "relevance_explanation": "This quote directly states that the manufacturing process for egg-based vaccines can cause mutations in the HA protein, which may change the antigenic properties of the vaccine and impact its effectiveness, supporting the claim about mutation development and reduced effectiveness."
     },
     {
       "id": 2,
-      "quote": "Repeat vaccination with egg based influenza vaccines could preferentially boost antibodies targeting the egg adapted epi topes and reduce immuno- gen i city to circulating viruses.",
-      "relevance_explanation": "This quote explains that egg-based vaccines can boost immune responses to egg-adapted epitopes (mutations from production) rather than to the circulating viruses, which can reduce the vaccine's effectiveness."
+      "quote": "Repeat vaccination with egg based influenza vaccines could preferentially boost antibodies targeting the egg adapted epitopes and reduce immunogenicity to circulating viruses.",
+      "relevance_explanation": "This statement explains that repeated use of egg-based vaccines can enhance immune responses to egg-adapted (mutated) epitopes rather than those on circulating viruses, implying that such mutations can reduce the vaccine's effectiveness against actual circulating strains."
     },
     {
       "id": 3,
-      "quote": "have reported that Q223 R egg adapted change at the HA head domain of A (H1 N1) pdm09 virus can promote virus replication in eggs, alter antigen i city and influence immune response 37 42.",
-      "relevance_explanation": "This quote provides a specific example of an egg-adapted mutation (Q223R) that occurs during production, which can alter the antigenicity of the virus and influence the immune response, thus potentially reducing vaccine effectiveness."
+      "quote": "Vaccine egg adapted changes had the most impact on A (H3 N2) immunogenicity.",
+      "relevance_explanation": "This quote provides evidence that mutations arising from egg adaptation during vaccine production can significantly affect the immune response to certain influenza strains, supporting the claim that such mutations may reduce vaccine effectiveness."
+    },
+    {
+      "id": 4,
+      "quote": "Comparative immunogenicity studies and provide additional information to identify optimal vaccination strategies to prevent influenza. ... have reported that Q223R egg adapted change at the HA head domain of A (H1 N1) pdm09 virus can promote virus replication in eggs, alter antigenicity and influence immune response.",
+      "relevance_explanation": "This quote references studies showing that specific egg-adapted mutations (like Q223R) can arise during production, altering the virus's antigenicity and the resulting immune response, which supports the claim about mutation development and its impact on effectiveness."
     }
   ],
   "model_used": "gpt-4.1"

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p5_det_4_000.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p5_det_4_000.png",
+  "image_type": "Figure",
+  "page_number": 5,
+  "block_id": "det_4_000",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": true,
+  "explanation": "Four-panel figure showing geometric mean fold-rise of MN or HI antibody titers at 1 month post-vaccination (panels A, B) and fold-reduction of titers at 6 months (panels C, D) in two age cohorts (18\u201344 years and 45\u201364 years). Data are shown for four vaccines: FluZone IIV4 (egg-based), FluArix IIV4 (egg-based), ccIIV4 (cell-based), and RIV4 (recombinant). For each vaccine, titers are measured against egg-propagated and cell-propagated H3N2, H1N1, B/Victoria lineage, and B/Yamagata lineage viruses, with p-values comparing RIV4 to other vaccines. Evidence: In both age groups, RIV4 (recombinant) induced significantly higher fold-rise in antibody titers against cell-propagated H3N2 (p<0.0001) and H1N1 egg or cell antigens compared to egg-based vaccines, indicating enhanced immunogenicity to wild-type (cell-propagated) strains. The figure shows that the recombinant vaccine (RIV4) elicits higher antibody responses against cell-propagated (i.e., wild-type) influenza strains compared to egg-based vaccines, demonstrating a broader immune response that supports the claim. Note: Immunogenicity data are presented; clinical protection in mismatch seasons is inferred but not directly measured in this figure.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Four-panel figure showing geometric mean fold-rise of MN or HI antibody titers at 1 month post-vaccination (panels A, B) and fold-reduction of titers at 6 months (panels C, D) in two age cohorts (18\u201344 years and 45\u201364 years). Data are shown for four vaccines: FluZone IIV4 (egg-based), FluArix IIV4 (egg-based), ccIIV4 (cell-based), and RIV4 (recombinant). For each vaccine, titers are measured against egg-propagated and cell-propagated H3N2, H1N1, B/Victoria lineage, and B/Yamagata lineage viruses, with p-values comparing RIV4 to other vaccines.",
+    "evidence_found": "In both age groups, RIV4 (recombinant) induced significantly higher fold-rise in antibody titers against cell-propagated H3N2 (p<0.0001) and H1N1 egg or cell antigens compared to egg-based vaccines, indicating enhanced immunogenicity to wild-type (cell-propagated) strains.",
+    "reasoning": "The figure shows that the recombinant vaccine (RIV4) elicits higher antibody responses against cell-propagated (i.e., wild-type) influenza strains compared to egg-based vaccines, demonstrating a broader immune response that supports the claim.",
+    "confidence_notes": "Immunogenicity data are presented; clinical protection in mismatch seasons is inferred but not directly measured in this figure."
+  }
+}

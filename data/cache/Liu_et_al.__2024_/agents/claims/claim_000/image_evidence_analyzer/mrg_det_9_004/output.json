@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Multi-panel figure showing ELISA-measured antibody titers in serum samples from seven repeat vaccination arms (cclIV4-cclIV4, cclIV4-RIV4, RIV4-cclIV4, RIV4-RIV4, IIV4-cclIV4, IIV4-RIV4, IIV4-IIV4). Panels A and B display head-binding antibody titers to H3N2, H1pdm09, B/Victoria, and B/Yamagata antigens at Day 0 and 1 month post-vaccination. Panel C shows stalk-binding titers for H3 and H1 stalk regions. Panel D shows fold-rise of stalk ELISA titers. Error bars indicate 95% confidence intervals and statistical significance annotations are present. The figure shows immunogenicity (ELISA antibody titers) following different vaccine regimens but does not present any data on antigenic match of Flublok to WHO- or FDA-selected strains, so it does not support the claim.",
+  "explanation": "Multiple box\u2010and\u2010whisker plots showing geometric mean ELISA titers (log2 scale) for HA head and stalk domains of H3N2, H1pdm09, B/VIC, and B/YAM at Day 0 and 1 month post-vaccination across seven repeat vaccination arms (cell\u2010based, recombinant [Flublok/RIV4], egg\u2010based combinations). Statistical comparisons of titers and fold rises are indicated. The figure presents immunogenicity data (antibody titers) following different vaccine sequences but contains no information on antigenic matching of Flublok to WHO- or FDA-selected strains, and therefore does not support the claim. Note: Limited to what is shown: data quality is adequate but no antigenic match information is provided.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Multi-panel figure showing ELISA-measured antibody titers in serum samples from seven repeat vaccination arms (cclIV4-cclIV4, cclIV4-RIV4, RIV4-cclIV4, RIV4-RIV4, IIV4-cclIV4, IIV4-RIV4, IIV4-IIV4). Panels A and B display head-binding antibody titers to H3N2, H1pdm09, B/Victoria, and B/Yamagata antigens at Day 0 and 1 month post-vaccination. Panel C shows stalk-binding titers for H3 and H1 stalk regions. Panel D shows fold-rise of stalk ELISA titers. Error bars indicate 95% confidence intervals and statistical significance annotations are present.",
+    "image_description": "Multiple box\u2010and\u2010whisker plots showing geometric mean ELISA titers (log2 scale) for HA head and stalk domains of H3N2, H1pdm09, B/VIC, and B/YAM at Day 0 and 1 month post-vaccination across seven repeat vaccination arms (cell\u2010based, recombinant [Flublok/RIV4], egg\u2010based combinations). Statistical comparisons of titers and fold rises are indicated.",
     "evidence_found": null,
-    "reasoning": "The figure shows immunogenicity (ELISA antibody titers) following different vaccine regimens but does not present any data on antigenic match of Flublok to WHO- or FDA-selected strains, so it does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "The figure presents immunogenicity data (antibody titers) following different vaccine sequences but contains no information on antigenic matching of Flublok to WHO- or FDA-selected strains, and therefore does not support the claim.",
+    "confidence_notes": "Limited to what is shown: data quality is adequate but no antigenic match information is provided."
   }
 }

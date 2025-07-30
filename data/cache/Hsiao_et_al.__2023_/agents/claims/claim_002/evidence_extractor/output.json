@@ -5,8 +5,8 @@
     "pdf_name": "Hsiao_et_al.__2023_",
     "source_pdf": "data/clinical_files/Hsiao et al. (2023).pdf",
     "total_pages": 11,
-    "total_blocks": 137,
-    "total_characters": 24365
+    "total_blocks": 132,
+    "total_characters": 24157
   },
   "extraction_result": {
     "success": true,
@@ -16,13 +16,13 @@
   "extracted_evidence": [
     {
       "id": 1,
-      "quote": "In traditional quadrivalent standard dose inactivated influenza vaccines (SD-IIV4), chicken eggs are used to manufacture the vaccine strain.",
-      "relevance_explanation": "This quote establishes that standard dose flu vaccines are produced using chicken eggs, which is relevant because egg-based production is known to allow for the possibility of mutations (antigenic drift) during manufacturing."
+      "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "relevance_explanation": "This quote explicitly states that recombinant vaccines are not susceptible to antigenic drift during manufacturing, implying that egg-based vaccines are susceptible to such drift (mutations), which can reduce effectiveness. It directly supports the claim that cell- and egg-based vaccines can develop mutations during production that may impact their effectiveness."
     },
     {
       "id": 2,
-      "quote": "The effectiveness of standard dose vaccines \u2014 especially against the influenza A H3N2 subtype \u2014 may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift.",
-      "relevance_explanation": "This quote directly supports the claim by stating that egg-based manufacturing can lead to antigenic drift (mutations), which can reduce vaccine effectiveness."
+      "quote": "The effectiveness of standard dose vaccines - especially against the influenza A H3N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift.",
+      "relevance_explanation": "This quote directly states that antigenic drift (mutations) during egg-based manufacturing can reduce the effectiveness of standard dose vaccines, supporting the claim that mutations arising during production may lower vaccine effectiveness."
     }
   ],
   "model_used": "gpt-4.1"

@@ -246,8 +246,8 @@ FULL DOCUMENT:
                 prompt=prompt,
                 output_model=VerifierOutput,
                 max_retries=2,
-                temperature=0.0,
-                max_output_tokens=500
+                temperature=0.0
+                # Removed max_output_tokens - let model use what it needs
             )
             
             # Convert to expected format

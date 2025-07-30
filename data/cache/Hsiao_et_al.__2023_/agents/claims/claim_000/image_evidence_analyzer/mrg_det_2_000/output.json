@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A schematic diagram showing the Kaiser Permanente Northern California (KPNC) service area\u2019s facilities of various sizes grouped into two randomized blocks (Block A and Block B), and a table listing how each facility alternates weekly between SD-IIV4 (standard-dose inactivated influenza vaccine) and RIV4 (quadrivalent recombinant influenza vaccine) over four weeks. does not support the claim because the figure only shows cluster randomization of SD-IIV4 versus RIV4 administrations and contains no information about Flublok or antigenic matching with WHO- or FDA-selected flu strains. Note: The image is clear but limited to the design of vaccine randomization in facilities; it does not address antigen composition or regulatory matching.",
+  "explanation": "Figure shows a schematic of Kaiser Permanente Northern California (KPNC) health care facilities of various sizes, allocation of similarly sized facilities into two blocks (A and B), and a table displaying weekly alternation of two vaccine formulations (SD-IIV4 and RIV4) across facilities for four weeks. does not support the claim because the figure describes randomization of facilities and weekly alternation between standard-dose inactivated vaccine (SD-IIV4) and recombinant quadrivalent influenza vaccine (RIV4), and contains no data on Flublok or antigenic match with WHO/FDA-selected strains.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A schematic diagram showing the Kaiser Permanente Northern California (KPNC) service area\u2019s facilities of various sizes grouped into two randomized blocks (Block A and Block B), and a table listing how each facility alternates weekly between SD-IIV4 (standard-dose inactivated influenza vaccine) and RIV4 (quadrivalent recombinant influenza vaccine) over four weeks.",
+    "image_description": "Figure shows a schematic of Kaiser Permanente Northern California (KPNC) health care facilities of various sizes, allocation of similarly sized facilities into two blocks (A and B), and a table displaying weekly alternation of two vaccine formulations (SD-IIV4 and RIV4) across facilities for four weeks.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the figure only shows cluster randomization of SD-IIV4 versus RIV4 administrations and contains no information about Flublok or antigenic matching with WHO- or FDA-selected flu strains.",
-    "confidence_notes": "The image is clear but limited to the design of vaccine randomization in facilities; it does not address antigen composition or regulatory matching."
+    "reasoning": "does not support the claim because the figure describes randomization of facilities and weekly alternation between standard-dose inactivated vaccine (SD-IIV4) and recombinant quadrivalent influenza vaccine (RIV4), and contains no data on Flublok or antigenic match with WHO/FDA-selected strains.",
+    "confidence_notes": null
   }
 }

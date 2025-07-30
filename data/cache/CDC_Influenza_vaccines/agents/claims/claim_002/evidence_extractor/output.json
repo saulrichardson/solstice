@@ -5,14 +5,20 @@
     "pdf_name": "CDC_Influenza_vaccines",
     "source_pdf": "data/clinical_files/CDC Influenza vaccines.pdf",
     "total_pages": 2,
-    "total_blocks": 12,
-    "total_characters": 2088
+    "total_blocks": 20,
+    "total_characters": 2329
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 0,
+    "total_snippets_found": 1,
     "error": null
   },
-  "extracted_evidence": [],
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "that any influenza vaccine (egg based or non egg based) that is otherwise appropriate for the recipient's age and health status can be used (see Persons with a History of Egg Allergy).",
+      "relevance_explanation": "This quote distinguishes between egg-based and non-egg-based (cell-based or recombinant) influenza vaccines, which is relevant context for discussing differences in production methods and potential for mutations. However, it does not directly address mutations or effectiveness."
+    }
+  ],
   "model_used": "gpt-4.1"
 }

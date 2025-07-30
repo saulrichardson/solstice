@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "The image shows only the title header of a Morbidity and Mortality Weekly Report (MMWR), including volume, number, and date (August 26, 2022). No data or figures are visible beyond the report header. The image contains only the report header and does not support the claim because it provides no information on Flublok\u2019s antigenic match with WHO- or FDA-selected strains. Note: Analysis is limited by the absence of any data or figure content beyond the document header.",
+  "explanation": "Header of an MMWR (Morbidity and Mortality Weekly Report) Recommendations and Reports document, Vol. 71, No. 1, dated August 26, 2022 with no specific content about Flublok or antigenic match. does not support the claim",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "The image shows only the title header of a Morbidity and Mortality Weekly Report (MMWR), including volume, number, and date (August 26, 2022). No data or figures are visible beyond the report header.",
+    "image_description": "Header of an MMWR (Morbidity and Mortality Weekly Report) Recommendations and Reports document, Vol. 71, No. 1, dated August 26, 2022 with no specific content about Flublok or antigenic match.",
     "evidence_found": null,
-    "reasoning": "The image contains only the report header and does not support the claim because it provides no information on Flublok\u2019s antigenic match with WHO- or FDA-selected strains.",
-    "confidence_notes": "Analysis is limited by the absence of any data or figure content beyond the document header."
+    "reasoning": "does not support the claim",
+    "confidence_notes": null
   }
 }

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_e555aa98.png",
+  "image_path": "FlublokOnePage/extracted/figures/figure_p1_e555aa98.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "e555aa98",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Partial text excerpt indicating the vaccine is produced using BEV technology and contains 45 micrograms of hemagglutinin antigen Evidence: Specifies the vaccine contains 45 micrograms of HA antigen The image does not support the claim because it only states the vaccine contains 45 micrograms of HA antigen but does not compare this to standard-dose vaccines nor link it to immunogenicity, and therefore does not support the claim Note: Image is a partial excerpt; full context, including any direct comparisons or immunogenicity data, is not visible",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Partial text excerpt indicating the vaccine is produced using BEV technology and contains 45 micrograms of hemagglutinin antigen",
+    "evidence_found": "Specifies the vaccine contains 45 micrograms of HA antigen",
+    "reasoning": "The image does not support the claim because it only states the vaccine contains 45 micrograms of HA antigen but does not compare this to standard-dose vaccines nor link it to immunogenicity, and therefore does not support the claim",
+    "confidence_notes": "Image is a partial excerpt; full context, including any direct comparisons or immunogenicity data, is not visible"
+  }
+}

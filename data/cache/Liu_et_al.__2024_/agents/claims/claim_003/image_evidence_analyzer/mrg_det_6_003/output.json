@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p7_mrg_det_6_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p7_mrg_det_6_003.png",
+  "image_type": "Figure",
+  "page_number": 7,
+  "block_id": "mrg_det_6_003",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": true,
+  "explanation": "Four\u2010panel figure showing serologic comparisons among four influenza vaccines (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) in two age groups (18\u201344 years in panels A and C, 45\u201364 years in panels B and D). Panels A and B plot the geometric mean ratio of egg\u2010grown to cell\u2010grown virus titers one month post\u2010vaccination with 95% confidence intervals, with horizontal bars indicating statistically significant differences. Panels C and D show the proportion of participants with a \u22654\u2010fold reduction in titer to cell\u2010grown virus from pre\u2010 to one month post\u2010vaccination, with p\u2010values for changes in each vaccine group. RIV4 consistently has the lowest egg/cell ratio and shows a significant drop in the proportion with reduced cell\u2010virus titers. Evidence: RIV4 group exhibits significantly lower geometric mean egg/cell titer ratios for A(H3N2) compared to egg\u2010based vaccines and a significant reduction in the proportion of participants with \u22654\u2010fold reduced titer to cell vaccine virus (e.g., 58% pre vs. 26% post in 18\u201344 years, p=0.0001). The data show that the recombinant vaccine (RIV4) elicits antibodies with less bias toward egg-grown epitopes and greater reactivity to cell-grown virus, consistent with broader immune responses; this supports the claim Note: These are serologic surrogate endpoints rather than direct measures of clinical cross-protection in a mismatch season; interpretation is limited to immune\u2010response markers",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Four\u2010panel figure showing serologic comparisons among four influenza vaccines (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) in two age groups (18\u201344 years in panels A and C, 45\u201364 years in panels B and D). Panels A and B plot the geometric mean ratio of egg\u2010grown to cell\u2010grown virus titers one month post\u2010vaccination with 95% confidence intervals, with horizontal bars indicating statistically significant differences. Panels C and D show the proportion of participants with a \u22654\u2010fold reduction in titer to cell\u2010grown virus from pre\u2010 to one month post\u2010vaccination, with p\u2010values for changes in each vaccine group. RIV4 consistently has the lowest egg/cell ratio and shows a significant drop in the proportion with reduced cell\u2010virus titers.",
+    "evidence_found": "RIV4 group exhibits significantly lower geometric mean egg/cell titer ratios for A(H3N2) compared to egg\u2010based vaccines and a significant reduction in the proportion of participants with \u22654\u2010fold reduced titer to cell vaccine virus (e.g., 58% pre vs. 26% post in 18\u201344 years, p=0.0001).",
+    "reasoning": "The data show that the recombinant vaccine (RIV4) elicits antibodies with less bias toward egg-grown epitopes and greater reactivity to cell-grown virus, consistent with broader immune responses; this supports the claim",
+    "confidence_notes": "These are serologic surrogate endpoints rather than direct measures of clinical cross-protection in a mismatch season; interpretation is limited to immune\u2010response markers"
+  }
+}

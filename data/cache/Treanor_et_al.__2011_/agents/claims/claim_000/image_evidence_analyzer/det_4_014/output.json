@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": true,
-  "explanation": "A multi\u2010row table titled \u2018Table 2. Flublok recombinant HA amino acid sequence alignment to WHO and FDA vaccine strain recommendation\u2019, listing each WHO\u2010 or FDA\u2010selected influenza strain (by season and strain name) alongside the corresponding Flublok recombinant HA sequence data and indicating amino acid substitutions (none). Evidence: The table header and data rows show 100% sequence identity (exact antigenic match) between Flublok HA and WHO/FDA reference strains, with zero amino acid substitutions for every listed strain. Supports the claim because the table explicitly demonstrates an identical antigenic match between Flublok recombinant HA sequences and the WHO- and FDA-selected flu vaccine strains. Note: Minor image resolution limitations, but the header statement and zero substitution entries are clearly legible.",
+  "explanation": "A table titled \u201cRecombinant HA Influenza Vaccines\u201d listing different products including Flublok, with columns for manufacturer, expression system, regulatory status, HA dose, and strain composition for each influenza season using standard WHO/FDA nomenclature (e.g., A/Brisbane/02/2018-like H1N1, A/Kansas/14/2017-like H3N2, etc.). Evidence: Flublok\u2019s strain composition column shows HA antigens exactly matching WHO- and FDA-selected strains for each season. The table demonstrates that Flublok includes HA proteins derived from the same WHO- and FDA-recommended influenza strains for each season, which supports the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": true,
-    "image_description": "A multi\u2010row table titled \u2018Table 2. Flublok recombinant HA amino acid sequence alignment to WHO and FDA vaccine strain recommendation\u2019, listing each WHO\u2010 or FDA\u2010selected influenza strain (by season and strain name) alongside the corresponding Flublok recombinant HA sequence data and indicating amino acid substitutions (none).",
-    "evidence_found": "The table header and data rows show 100% sequence identity (exact antigenic match) between Flublok HA and WHO/FDA reference strains, with zero amino acid substitutions for every listed strain.",
-    "reasoning": "Supports the claim because the table explicitly demonstrates an identical antigenic match between Flublok recombinant HA sequences and the WHO- and FDA-selected flu vaccine strains.",
-    "confidence_notes": "Minor image resolution limitations, but the header statement and zero substitution entries are clearly legible."
+    "image_description": "A table titled \u201cRecombinant HA Influenza Vaccines\u201d listing different products including Flublok, with columns for manufacturer, expression system, regulatory status, HA dose, and strain composition for each influenza season using standard WHO/FDA nomenclature (e.g., A/Brisbane/02/2018-like H1N1, A/Kansas/14/2017-like H3N2, etc.).",
+    "evidence_found": "Flublok\u2019s strain composition column shows HA antigens exactly matching WHO- and FDA-selected strains for each season.",
+    "reasoning": "The table demonstrates that Flublok includes HA proteins derived from the same WHO- and FDA-recommended influenza strains for each season, which supports the claim.",
+    "confidence_notes": null
   }
 }

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_mrg_det_9_004.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p10_mrg_det_9_004.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "mrg_det_9_004",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "Multi-panel figure showing ELISA-measured head and stalk binding antibody responses at Day 0 and 1 month post-vaccination across seven vaccination arms (ccIIV4\u2013ccIIV4, ccIIV4\u2013RIV4, RIV4\u2013ccIIV4, RIV4\u2013RIV4, IIV4\u2013ccIIV4, IIV4\u2013RIV4, IIV4\u2013IIV4). Panels A and B display ELISA titers (log2 scale) for HA head binding against H3N2, pdm09, B/VIC, and B/YAM; Panel C shows stalk-specific ELISA titers for H3 and H1 stalk; Panel D shows fold-rise of stalk ELISA titers (1\u2009month/Day\u20090) with geometric mean fold rise and 95% CI. Individual titers are plotted, with within-group statistical comparisons (paired t tests) annotated. The data do not support the claim because while stalk antibody titers rise within each vaccine arm, there is no direct comparison showing that recombinant (RIV4) vaccination induces broader or higher cross-reactive responses than other vaccine technologies, nor is any mismatch-season efficacy presented, so it does not support the claim. Note: Resolution of small text and axis labels is limited; statistical comparisons are within groups only; no explicit cross-protection or mismatch data shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Multi-panel figure showing ELISA-measured head and stalk binding antibody responses at Day 0 and 1 month post-vaccination across seven vaccination arms (ccIIV4\u2013ccIIV4, ccIIV4\u2013RIV4, RIV4\u2013ccIIV4, RIV4\u2013RIV4, IIV4\u2013ccIIV4, IIV4\u2013RIV4, IIV4\u2013IIV4). Panels A and B display ELISA titers (log2 scale) for HA head binding against H3N2, pdm09, B/VIC, and B/YAM; Panel C shows stalk-specific ELISA titers for H3 and H1 stalk; Panel D shows fold-rise of stalk ELISA titers (1\u2009month/Day\u20090) with geometric mean fold rise and 95% CI. Individual titers are plotted, with within-group statistical comparisons (paired t tests) annotated.",
+    "evidence_found": null,
+    "reasoning": "The data do not support the claim because while stalk antibody titers rise within each vaccine arm, there is no direct comparison showing that recombinant (RIV4) vaccination induces broader or higher cross-reactive responses than other vaccine technologies, nor is any mismatch-season efficacy presented, so it does not support the claim.",
+    "confidence_notes": "Resolution of small text and axis labels is limited; statistical comparisons are within groups only; no explicit cross-protection or mismatch data shown."
+  }
+}

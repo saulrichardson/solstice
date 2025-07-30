@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "Two adjacent tables summarizing solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, chills, nausea, fever) in adult subjects who received Flublok versus comparator vaccines, with percentages for each event, plus footer notes on study design, definitions, and subject demographics. The tables present safety/reactogenicity data (frequency of solicited adverse events) for Flublok and comparator vaccines. There is no data on immune response breadth, cross\u2010reactivity, or efficacy in mismatch seasons. Thus, the image does not address whether recombinant technology elicits a broader immune response or cross-protection. Note: The image is clear but limited to adverse event rates; no immunogenicity or efficacy outcomes are shown.",
+  "explanation": "Two side-by-side tables summarizing solicited local and systemic adverse events in clinical trials comparing Flublok (a recombinant influenza vaccine) with placebo or a licensed trivalent inactivated influenza vaccine. Local events include injection site pain, redness, swelling; systemic events include fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, and fever. Footnotes describe severity grading, denominators, and trial registry numbers. The image presents safety/reactogenicity data and contains no information on immune response breadth or cross-protection; therefore, it does not support the claim Note: Table only shows adverse event rates; no immunogenicity or cross-protection data are provided",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Two adjacent tables summarizing solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, chills, nausea, fever) in adult subjects who received Flublok versus comparator vaccines, with percentages for each event, plus footer notes on study design, definitions, and subject demographics.",
+    "image_description": "Two side-by-side tables summarizing solicited local and systemic adverse events in clinical trials comparing Flublok (a recombinant influenza vaccine) with placebo or a licensed trivalent inactivated influenza vaccine. Local events include injection site pain, redness, swelling; systemic events include fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, and fever. Footnotes describe severity grading, denominators, and trial registry numbers.",
     "evidence_found": null,
-    "reasoning": "The tables present safety/reactogenicity data (frequency of solicited adverse events) for Flublok and comparator vaccines. There is no data on immune response breadth, cross\u2010reactivity, or efficacy in mismatch seasons. Thus, the image does not address whether recombinant technology elicits a broader immune response or cross-protection.",
-    "confidence_notes": "The image is clear but limited to adverse event rates; no immunogenicity or efficacy outcomes are shown."
+    "reasoning": "The image presents safety/reactogenicity data and contains no information on immune response breadth or cross-protection; therefore, it does not support the claim",
+    "confidence_notes": "Table only shows adverse event rates; no immunogenicity or cross-protection data are provided"
   }
 }

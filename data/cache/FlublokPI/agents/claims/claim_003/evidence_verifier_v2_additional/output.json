@@ -12,9 +12,9 @@
   "rejected_evidence": [
     {
       "id": "comp_1",
-      "quote": "The primary efficacy endpoint of Study 6 was rtPCR-positive, protocol defined ILI due to any strain of influenza. Attack rates and relative vaccine efficacy (rVE), defined as 1 [Attack rate Flublok Quadrivalent Attack Rate Comparator], were calculated for the total efficacy population (n=8604) for the primary efficacy endpoint and for several alternative efficacy endpoints (Table 5). Antigenic and phylogenetic evaluations of the similarity (\"matching\") of clinical isolates to vaccine antigens were not performed. CDC epidemiological data for the 2014-2015 influenza season indicated that Influenza A (H3N2) viruses predominated and that most influenza A/H3N2 viruses were antigenically dissimilar while influenza A/H1N1 and type B viruses were antigenically similar to vaccine antigens during the 2014-2015 season. Study 6 met the pre specified success criterion for the primary endpoint (lower limit of the 2 sided 95% CI of vaccine efficacy for Flublok Quadrivalent relative to Comparator should be not less than 20%)",
+      "quote": "CDC surveillance data indicated that the majority of influenza A/H3N2 wild type viruses were antigenically distinct whereas influenza A/H1N1 and type B viruses were antigenically similar to vaccine antigens during the 2014-2015 season. Study 6 met the pre specified success criterion for the primary endpoint (lower limit of the 2 sided 95% CI of vaccine efficacy for Flublok Quadrivalent relative to Comparator should be not less than 20%)",
       "reason": "does not support claim",
-      "original_explanation": "This quote describes a large clinical trial in which Flublok Quadrivalent demonstrated efficacy against influenza illness caused by any strain, regardless of antigenic match, during a season when the predominant circulating strain was antigenically dissimilar to the vaccine. This supports the claim that recombinant technology can provide cross-protection in a mismatch season."
+      "original_explanation": "This quote shows that Flublok Quadrivalent demonstrated efficacy in a season when the predominant circulating strain (A/H3N2) was antigenically distinct from the vaccine strain, supporting the claim that recombinant technology can provide cross-protection in a mismatch season."
     }
   ],
   "model_used": "gpt-4.1"

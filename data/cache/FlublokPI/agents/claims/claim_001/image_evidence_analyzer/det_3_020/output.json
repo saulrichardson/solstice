@@ -1,9 +1,19 @@
 {
   "image_filename": "figure_p4_det_3_020.png",
+  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_020.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_020",
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Error analyzing image: Server error '500 Internal Server Error' for url 'http://localhost:8080/v1/responses'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
-  "error": true,
-  "model_used": "o4-mini"
+  "explanation": "A clinical trial efficacy table showing RT-PCR\u2013confirmed influenza outcomes for Flublok Quadrivalent versus placebo, listing number of cases, attack rates, vaccine efficacy percentages with confidence intervals, and accompanying footnotes and references. The figure presents vaccine efficacy data and relative risk outcomes, not any information on hemagglutinin antigen content or its comparison to standard-dose vaccines, and thus does not support the claim. Note: Small text and partial cropping limit detailed reading of footnotes, but no antigen content data is visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A clinical trial efficacy table showing RT-PCR\u2013confirmed influenza outcomes for Flublok Quadrivalent versus placebo, listing number of cases, attack rates, vaccine efficacy percentages with confidence intervals, and accompanying footnotes and references.",
+    "evidence_found": null,
+    "reasoning": "The figure presents vaccine efficacy data and relative risk outcomes, not any information on hemagglutinin antigen content or its comparison to standard-dose vaccines, and thus does not support the claim.",
+    "confidence_notes": "Small text and partial cropping limit detailed reading of footnotes, but no antigen content data is visible."
+  }
 }

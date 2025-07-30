@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/table_p3_det_2_003.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_003",
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "supports_claim": true,
+  "explanation": "A multi\u2010row table comparing hemagglutinin amino acid sequences of influenza vaccine candidate viruses grown in cell culture versus in eggs for multiple strains (A(H1N1), A(H3N2), B/Victoria, B/Yamagata). Mutations in egg\u2010based candidate vaccine viruses are highlighted in bold and italics, with notes on loss of glycosylation motifs (e.g., CHO-). Footnotes explain which viruses were used in egg\u2010 and cell\u2010based vaccines. Evidence: Egg\u2010based CVVs display specific amino acid substitutions (italic and bold) and loss of glycosylation motifs not present in the corresponding cell\u2010based CVVs (e.g., N197D, K\u2192R changes). supports the claim because the table documents egg\u2010adapted mutations arising during egg\u2010based vaccine production, demonstrating the potential for production\u2010induced mutations that can alter antigenic sites Note: The table illustrates egg\u2010adapted mutations but does not explicitly show mutations arising during cell\u2010based production nor provide direct clinical effectiveness data.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "A multi\u2010row table comparing hemagglutinin amino acid sequences of influenza vaccine candidate viruses grown in cell culture versus in eggs for multiple strains (A(H1N1), A(H3N2), B/Victoria, B/Yamagata). Mutations in egg\u2010based candidate vaccine viruses are highlighted in bold and italics, with notes on loss of glycosylation motifs (e.g., CHO-). Footnotes explain which viruses were used in egg\u2010 and cell\u2010based vaccines.",
+    "evidence_found": "Egg\u2010based CVVs display specific amino acid substitutions (italic and bold) and loss of glycosylation motifs not present in the corresponding cell\u2010based CVVs (e.g., N197D, K\u2192R changes).",
+    "reasoning": "supports the claim because the table documents egg\u2010adapted mutations arising during egg\u2010based vaccine production, demonstrating the potential for production\u2010induced mutations that can alter antigenic sites",
+    "confidence_notes": "The table illustrates egg\u2010adapted mutations but does not explicitly show mutations arising during cell\u2010based production nor provide direct clinical effectiveness data."
+  }
+}

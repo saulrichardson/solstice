@@ -3,24 +3,30 @@
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "document": "FlublokPI",
   "verification_stats": {
-    "total_extracted": 2,
+    "total_extracted": 3,
     "verified": 0,
-    "rejected": 2,
+    "rejected": 3,
     "verification_rate": 0.0
   },
   "verified_evidence": [],
   "rejected_evidence": [
     {
       "id": 1,
-      "quote": "Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination inhibition (HI) antibody).",
+      "quote": "Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine.",
       "reason": "does not support claim",
-      "original_explanation": "This quote explicitly states that Flublok contains recombinant hemagglutinin (HA) proteins from the three influenza virus strains specified by health authorities, which include the WHO and FDA. This supports the claim that Flublok ensures an identical antigenic match with the strains selected by these organizations."
+      "original_explanation": "This quote directly states that Flublok contains the hemagglutinin (HA) proteins from the exact three strains of influenza virus that are specified by health authorities (such as WHO and FDA) for each flu season, supporting the claim that Flublok ensures an identical antigenic match with the selected strains."
     },
     {
       "id": 2,
-      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
       "reason": "does not support claim",
-      "original_explanation": "This quote provides the exact strains included in Flublok for the 2024-2025 season, demonstrating that the vaccine is formulated to match the specific strains selected by public health authorities, which are based on WHO and FDA recommendations."
+      "original_explanation": "This quote provides explicit details about the exact strains included in Flublok for the 2024-2025 season, showing that the vaccine is formulated to match the strains selected by public health authorities, which are based on WHO and FDA recommendations."
+    },
+    {
+      "id": 3,
+      "quote": "Each of the three HAs is expressed in this cell line using a baculovirus vector (Autographa californica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further purified by column chromatography. The purified HAs are then blended and filled into single dose syringes.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote describes the manufacturing process, emphasizing that the hemagglutinin antigens are produced to match the selected strains and then combined, ensuring the antigenic composition is identical to the strains chosen by health authorities."
     }
   ],
   "model_used": "gpt-4.1"

@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Flowchart showing the primary analysis cohorts with participant numbers for recombinant quadrivalent influenza vaccine (RIV4, n=3,047), standard dose influenza vaccine (SD-IIV4, n=862), and unvaccinated groups (n=8,878 for one cohort and n=1,398 for another), along with a note that 5,136 participants were included. does not support the claim because the image only presents participant group sizes and study cohort flow; it does not provide any information on antigenic matching with WHO- or FDA-selected strains. Note: The image is clear but contains only cohort allocation data, with no details on antigenic match or strain selection.",
+  "explanation": "A flowchart showing the numbers of participants in primary analyses: boxes labeled RIV4 n=3,047; SD-IIV4 n=862; Unvaccinated n=8,878, and a subcohort with RIV4 n=291; SD-IIV4 n=114; Unvaccinated n=1,398. The image only presents participant group sizes and study flow; it does not provide any information about antigenic match with WHO- or FDA-selected flu strains, and thus does not support the claim. Note: Image appears complete for the flowchart; no relevant antigenic or strain-selection data are present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Flowchart showing the primary analysis cohorts with participant numbers for recombinant quadrivalent influenza vaccine (RIV4, n=3,047), standard dose influenza vaccine (SD-IIV4, n=862), and unvaccinated groups (n=8,878 for one cohort and n=1,398 for another), along with a note that 5,136 participants were included.",
+    "image_description": "A flowchart showing the numbers of participants in primary analyses: boxes labeled RIV4 n=3,047; SD-IIV4 n=862; Unvaccinated n=8,878, and a subcohort with RIV4 n=291; SD-IIV4 n=114; Unvaccinated n=1,398.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image only presents participant group sizes and study cohort flow; it does not provide any information on antigenic matching with WHO- or FDA-selected strains.",
-    "confidence_notes": "The image is clear but contains only cohort allocation data, with no details on antigenic match or strain selection."
+    "reasoning": "The image only presents participant group sizes and study flow; it does not provide any information about antigenic match with WHO- or FDA-selected flu strains, and thus does not support the claim.",
+    "confidence_notes": "Image appears complete for the flowchart; no relevant antigenic or strain-selection data are present."
   }
 }

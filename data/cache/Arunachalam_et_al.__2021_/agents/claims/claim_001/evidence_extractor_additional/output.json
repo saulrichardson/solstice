@@ -6,13 +6,13 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 3
+    "total_snippets_found": 2
   },
   "extracted_evidence": [
     {
       "id": "comp_1",
       "quote": "A plant derived recombinant quadrivalent VLP (QVLP) at 30 \u00b5g dose per strain was found to be non inferior in terms of vaccine efficacy against respiratory illness and influenza like illness to a quadrivalent inactivated influenza vaccine (QIV; Fluarix Quadrivalent, GlaxoSmithKline) given at 15 \u00b5g dose strain in adults aged 18 to 64 years 37.",
-      "relevance_explanation": "This quote provides a direct comparison of antigen content per strain (30 \u00b5g vs 15 \u00b5g) and shows that higher HA content is associated with at least non-inferior efficacy, supporting the link between increased HA dose and immunogenicity. It also contextualizes the standard-dose (15 \u00b5g) used in conventional vaccines.",
+      "relevance_explanation": "This quote provides a direct comparison of antigen content per strain (30 \u00b5g vs 15 \u00b5g) and shows that higher HA content is associated with at least non-inferior efficacy, supporting the link between increased HA dose and immunogenicity. While not about Flublok specifically, it supports the general principle that higher HA content (as in Flublok) is linked to greater immunogenicity.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -21,18 +21,8 @@
     },
     {
       "id": "comp_2",
-      "quote": "Insect cell derived rHA (RIV4) has been studied extensively by various groups in both pre clinical models and humans. The rHA contained in RIV4 differs from that expressed in other systems in terms of specific structural features, the nature of the source material and the manufacturing process, which have an impact on certain aspects of vaccine safety and efficacy (Fig. 2). Based on these unique features RIV4 received 'product exclusivity' protection.",
-      "relevance_explanation": "This quote highlights that RIV4 (Flublok) is distinct in its composition and manufacturing, which impacts efficacy, supporting the claim that its higher HA content and unique features are linked to improved immunogenicity.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    },
-    {
-      "id": "comp_3",
-      "quote": "Higher magnitudes of haemagglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flucelvax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60).",
-      "relevance_explanation": "This quote directly states that RIV4 (Flublok) elicits higher antibody responses than standard-dose vaccines, supporting the link between its higher HA content and greater immunogenicity.",
+      "quote": "The resulting processed proteins are less immunogenic than egg derived antigens, with around a 10 fold greater quantity needed to generate protective immunity in animal models 31. These inherent complications have prevented large scale manufacturing and eventual commercialisation of E. coli expressed influenza vaccines.",
+      "relevance_explanation": "This quote supports the claim by highlighting that the amount of HA antigen is directly related to immunogenicity, as a higher quantity is needed to achieve protection when immunogenicity is lower. This underlines the importance of HA content in vaccine efficacy.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "An excerpt from the full prescribing information for Flublok, showing a table of contents with headings such as Indications and Usage, Dosage and Administration, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, and Patient Counseling Information. The image contains only the table of contents and some standard adverse reaction and administration information for Flublok. There is no data or discussion of recombinant technology, breadth of immune response, cross-protection, or performance in a mismatch season. Therefore it does not address the claim.",
+  "explanation": "A printed excerpt showing the full prescribing information table of contents for Flublok vaccine, including section headings like Indications and Usage, Dosage and Administration, Warnings and Precautions, Adverse Reactions, Clinical Pharmacology, Clinical Studies, etc. The image only shows a table of contents for prescribing information and contains no data or statements regarding recombinant technology, immune response breadth, or cross-protection in mismatch seasons, and therefore does not support the claim Note: Limited by the image showing only section headings without any clinical data or outcomes",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "An excerpt from the full prescribing information for Flublok, showing a table of contents with headings such as Indications and Usage, Dosage and Administration, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, and Patient Counseling Information.",
+    "image_description": "A printed excerpt showing the full prescribing information table of contents for Flublok vaccine, including section headings like Indications and Usage, Dosage and Administration, Warnings and Precautions, Adverse Reactions, Clinical Pharmacology, Clinical Studies, etc.",
     "evidence_found": null,
-    "reasoning": "The image contains only the table of contents and some standard adverse reaction and administration information for Flublok. There is no data or discussion of recombinant technology, breadth of immune response, cross-protection, or performance in a mismatch season. Therefore it does not address the claim.",
-    "confidence_notes": null
+    "reasoning": "The image only shows a table of contents for prescribing information and contains no data or statements regarding recombinant technology, immune response breadth, or cross-protection in mismatch seasons, and therefore does not support the claim",
+    "confidence_notes": "Limited by the image showing only section headings without any clinical data or outcomes"
   }
 }

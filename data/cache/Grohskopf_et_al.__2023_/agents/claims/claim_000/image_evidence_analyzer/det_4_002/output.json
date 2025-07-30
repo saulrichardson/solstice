@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table listing U.S.-licensed influenza vaccines for the 2022\u201323 season, including vaccine names (standard-dose egg-based, cell culture\u2013based, high-dose egg-based, egg-based with MF59 adjuvant, recombinant HA vaccine, live attenuated intranasal), presentations (e.g., 0.5-mL prefilled syringe, multidose vial), age indications, antigen content per dose (\u00b5g HA per strain), route of administration, and adjuvant information. The table provides formulations, dosages, and administrative details for various influenza vaccines, including Flublok Quadrivalent, but it does not mention antigenic matching with WHO- or FDA-selected strains and therefore does not support the claim. Note: The table is clear and legible; however, it only covers vaccine formulations and dosing, not regulatory match assurances.",
+  "explanation": "A table listing licensed seasonal influenza vaccines for the 2022\u201323 season, including vaccine names/manufacturers, presentations (e.g., 0.5-mL prefilled syringe), age indications, hemagglutinin content per dose (\u00b5g/0.5 mL), route of administration, and footnotes. Flublok Quadrivalent (recombinant HA vaccine) is listed with 45 \u00b5g HA per 0.5 mL dose for ages \u226518 years given intramuscularly. The table provides formulation and dosing details for Flublok but contains no information on antigenic matching to WHO- or FDA-selected flu strains, so it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing U.S.-licensed influenza vaccines for the 2022\u201323 season, including vaccine names (standard-dose egg-based, cell culture\u2013based, high-dose egg-based, egg-based with MF59 adjuvant, recombinant HA vaccine, live attenuated intranasal), presentations (e.g., 0.5-mL prefilled syringe, multidose vial), age indications, antigen content per dose (\u00b5g HA per strain), route of administration, and adjuvant information.",
+    "image_description": "A table listing licensed seasonal influenza vaccines for the 2022\u201323 season, including vaccine names/manufacturers, presentations (e.g., 0.5-mL prefilled syringe), age indications, hemagglutinin content per dose (\u00b5g/0.5 mL), route of administration, and footnotes. Flublok Quadrivalent (recombinant HA vaccine) is listed with 45 \u00b5g HA per 0.5 mL dose for ages \u226518 years given intramuscularly.",
     "evidence_found": null,
-    "reasoning": "The table provides formulations, dosages, and administrative details for various influenza vaccines, including Flublok Quadrivalent, but it does not mention antigenic matching with WHO- or FDA-selected strains and therefore does not support the claim.",
-    "confidence_notes": "The table is clear and legible; however, it only covers vaccine formulations and dosing, not regulatory match assurances."
+    "reasoning": "The table provides formulation and dosing details for Flublok but contains no information on antigenic matching to WHO- or FDA-selected flu strains, so it does not support the claim.",
+    "confidence_notes": null
   }
 }

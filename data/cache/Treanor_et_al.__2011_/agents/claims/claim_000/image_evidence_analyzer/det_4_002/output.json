@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Two Kaplan\u2013Meier plots showing cumulative incidence of culture-positive CDC-defined influenza-like illness for influenza A (top) and influenza B (bottom) during the surveillance period in placebo (solid line) and FluBlok (dotted line) recipients, with associated vaccine efficacy data in text below. The figure presents incidence curves and efficacy percentages; it does not provide any information on antigenic matching to WHO- or FDA-selected strains and therefore does not support the claim.",
+  "explanation": "Two Kaplan\u2013Meier plots of cumulative incidence of culture-positive CDC-ILI influenza A (top) and influenza B (bottom) cases over the 2007\u20132008 surveillance period. Solid lines represent placebo recipients and dashed lines represent FluBlok recipients, with dates on the x-axis and cumulative case incidence on the y-axis. Accompanying text reports numbers of cases, overall CDC-ILI rates, and calculated vaccine efficacy with 95% confidence intervals. does not support the claim because the figure and accompanying text present clinical incidence and efficacy data without any information on antigenic match to WHO- or FDA-selected strains. Note: Figure is limited to clinical efficacy curves; no antigenic characterization data are visible.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Two Kaplan\u2013Meier plots showing cumulative incidence of culture-positive CDC-defined influenza-like illness for influenza A (top) and influenza B (bottom) during the surveillance period in placebo (solid line) and FluBlok (dotted line) recipients, with associated vaccine efficacy data in text below.",
+    "image_description": "Two Kaplan\u2013Meier plots of cumulative incidence of culture-positive CDC-ILI influenza A (top) and influenza B (bottom) cases over the 2007\u20132008 surveillance period. Solid lines represent placebo recipients and dashed lines represent FluBlok recipients, with dates on the x-axis and cumulative case incidence on the y-axis. Accompanying text reports numbers of cases, overall CDC-ILI rates, and calculated vaccine efficacy with 95% confidence intervals.",
     "evidence_found": null,
-    "reasoning": "The figure presents incidence curves and efficacy percentages; it does not provide any information on antigenic matching to WHO- or FDA-selected strains and therefore does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "does not support the claim because the figure and accompanying text present clinical incidence and efficacy data without any information on antigenic match to WHO- or FDA-selected strains.",
+    "confidence_notes": "Figure is limited to clinical efficacy curves; no antigenic characterization data are visible."
   }
 }

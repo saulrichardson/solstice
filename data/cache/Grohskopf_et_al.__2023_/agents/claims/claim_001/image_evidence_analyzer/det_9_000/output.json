@@ -1,9 +1,19 @@
 {
   "image_filename": "figure_p10_det_9_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/figure_p10_det_9_000.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "det_9_000",
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Error analyzing image: Server error '500 Internal Server Error' for url 'http://localhost:8080/v1/responses'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
-  "error": true,
-  "model_used": "o4-mini"
+  "explanation": "A flowchart outlining influenza vaccination dosing recommendations for children aged 6 months through 8 years, indicating whether they\u2019ve previously received \u22652 doses of trivalent or quadrivalent influenza vaccine and specifying administration of 1 or 2 doses of the 2022\u201323 influenza vaccine. The image provides pediatric dosing guidance and makes no reference to Flublok or hemagglutinin antigen content; it does not support the claim. Note: Image appears to be a dosing algorithm with no relevant antigen content data.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart outlining influenza vaccination dosing recommendations for children aged 6 months through 8 years, indicating whether they\u2019ve previously received \u22652 doses of trivalent or quadrivalent influenza vaccine and specifying administration of 1 or 2 doses of the 2022\u201323 influenza vaccine.",
+    "evidence_found": null,
+    "reasoning": "The image provides pediatric dosing guidance and makes no reference to Flublok or hemagglutinin antigen content; it does not support the claim.",
+    "confidence_notes": "Image appears to be a dosing algorithm with no relevant antigen content data."
+  }
 }

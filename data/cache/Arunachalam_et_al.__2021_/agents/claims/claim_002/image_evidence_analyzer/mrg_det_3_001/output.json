@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "supports_claim": false,
+  "explanation": "Two schematic panels comparing structural features of influenza haemagglutinin (HA) protein: panel a shows native HA1/HA2 heterodimer from virus with cleaved fusion peptide and complex sialylated N-linked glycans, panel b shows recombinant HA0 precursor expressed in insect cells with uncleaved fusion-peptide loop and simpler paucimannose glycans. The figure describes glycosylation and cleavage differences of HA produced in insect cells versus virus-derived HA but does not mention cell- or egg-based vaccine production mutations or their effect on vaccine effectiveness, so it does not support the claim. Note: Figure focuses on insect cell\u2013produced HA; egg-based production and mutation data are not presented.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Two schematic panels comparing structural features of influenza haemagglutinin (HA) protein: panel a shows native HA1/HA2 heterodimer from virus with cleaved fusion peptide and complex sialylated N-linked glycans, panel b shows recombinant HA0 precursor expressed in insect cells with uncleaved fusion-peptide loop and simpler paucimannose glycans.",
+    "evidence_found": null,
+    "reasoning": "The figure describes glycosylation and cleavage differences of HA produced in insect cells versus virus-derived HA but does not mention cell- or egg-based vaccine production mutations or their effect on vaccine effectiveness, so it does not support the claim.",
+    "confidence_notes": "Figure focuses on insect cell\u2013produced HA; egg-based production and mutation data are not presented."
+  }
+}

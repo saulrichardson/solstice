@@ -11,8 +11,8 @@
   "extracted_evidence": [
     {
       "id": "comp_1",
-      "quote": "The vaccine (Flublok used in this study consisted of puri- ed hemagglutinin (HA) proteins produced in insect cells using baculo virus expression system as previously described [9]. The comb in ant HA protein is not cleaved in insect cells and is fer red to as rHA0.",
-      "relevance_explanation": "This quote describes the composition of Flublok, specifically noting that it consists of purified hemagglutinin proteins, which is relevant to the claim about HA antigen content.",
+      "quote": "Sodium dodecyl sulfate polyacrylamide gel electrophoresis of the purified monovalent materials indicated that hemagglutinin constitutes at least 90% of the total protein.",
+      "relevance_explanation": "This quote provides evidence that the Flublok vaccine is highly enriched for hemagglutinin, supporting the claim that it contains a high HA antigen content compared to standard-dose vaccines.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -21,8 +21,8 @@
     },
     {
       "id": "comp_2",
-      "quote": "Sodium dodecyl sulfate- olyacrylamide gel electrophoresis of the purified mono valent materials indicated that hemagglutinin constitutes at least 90% of he total protein.",
-      "relevance_explanation": "This quote provides evidence that the majority of the protein content in Flublok is hemagglutinin, supporting the claim that Flublok is a high-HA-content vaccine.",
+      "quote": "Flublok induced serum antibody responses to all three components of the vaccine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vaccination geometric mean titers were substantially higher for all three components in Flublok than in placebo recipients (P < .001 for all comparisons).",
+      "relevance_explanation": "This quote directly supports the claim that Flublok is associated with greater immunogenicity, as it documents that antibody titers were substantially higher in Flublok recipients.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -31,8 +31,8 @@
     },
     {
       "id": "comp_3",
-      "quote": "Flublok induced serum HAI antibody responses to all three components of the accine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vac- i nation geometric mean titers were substantially higher for all hree components in Flublok than in placebo recipients (P < .001 or all comparisons).",
-      "relevance_explanation": "This quote supports the claim that Flublok's higher HA content is linked to greater immunogenicity, as evidenced by higher antibody titers compared to placebo.",
+      "quote": "Flublok induced serum HAI antibody responses to all three vaccine components in the majority of recipients, and the lower limit of the 95% confidence interval for response rate exceeded the US FDA criteria for licensure for all three components (lower limit of the 95% confidence interval for response rate >40% and lower limit of the 95% confidence interval for HAI titer of 1:40 or greater >70%) [2].",
+      "relevance_explanation": "This quote demonstrates that Flublok's immunogenicity meets or exceeds regulatory standards, supporting the claim that its higher HA content is linked to greater immunogenicity.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Graphs of microneutralization (MN) or hemagglutination inhibition (HI) titers (log2 scale) against egg- and cell-propagated influenza A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata viruses at Day 0, 1 month, and 6 months post-vaccination. Four vaccine groups (egg-based IIV4s Fluzone and Fluarix, cell-culture IIV4, and recombinant HA RIV4/Flublok) are compared with geometric mean titers and p-values for intergroup differences. The figure shows immune responses to different virus preparations by vaccine type but contains no data on antigenic sequence matching or demonstration that Flublok antigens are identical to WHO- or FDA-selected strains; it does not support the claim. Note: Interpretation limited to immunogenicity data; no antigenic or sequence comparison presented.",
+  "explanation": "A multi\u2010panel figure showing microneutralization (MN) and hemagglutination inhibition (HI) antibody titers (log2 scale) at Day 0, 1 month, and 6 months post\u2010vaccination for four influenza vaccines (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) against A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata strains, with GMTs, 95% CIs, individual data points, and p values for between\u2010group comparisons. The figure reports immunogenicity (antibody titers) for different vaccines over time but does not present data on antigenic matching of Flublok (RIV4) to WHO\u2010 or FDA\u2010selected strains, and therefore does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Graphs of microneutralization (MN) or hemagglutination inhibition (HI) titers (log2 scale) against egg- and cell-propagated influenza A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata viruses at Day 0, 1 month, and 6 months post-vaccination. Four vaccine groups (egg-based IIV4s Fluzone and Fluarix, cell-culture IIV4, and recombinant HA RIV4/Flublok) are compared with geometric mean titers and p-values for intergroup differences.",
+    "image_description": "A multi\u2010panel figure showing microneutralization (MN) and hemagglutination inhibition (HI) antibody titers (log2 scale) at Day 0, 1 month, and 6 months post\u2010vaccination for four influenza vaccines (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) against A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata strains, with GMTs, 95% CIs, individual data points, and p values for between\u2010group comparisons.",
     "evidence_found": null,
-    "reasoning": "The figure shows immune responses to different virus preparations by vaccine type but contains no data on antigenic sequence matching or demonstration that Flublok antigens are identical to WHO- or FDA-selected strains; it does not support the claim.",
-    "confidence_notes": "Interpretation limited to immunogenicity data; no antigenic or sequence comparison presented."
+    "reasoning": "The figure reports immunogenicity (antibody titers) for different vaccines over time but does not present data on antigenic matching of Flublok (RIV4) to WHO\u2010 or FDA\u2010selected strains, and therefore does not support the claim.",
+    "confidence_notes": null
   }
 }

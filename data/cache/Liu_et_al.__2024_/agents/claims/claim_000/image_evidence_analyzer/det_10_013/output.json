@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table presenting demographic characteristics of study participants across four groups (n=122, 120, 283, 198), including mean age, age groups, sex, race/ethnicity, study sites, and prior influenza vaccination history. The table contains only participant demographics and vaccination history and provides no data on antigenic match with WHO- or FDA-selected flu strains, and thus does not support the claim.",
+  "explanation": "A table showing demographic characteristics of study participants across four groups (n=122, n=120, n=283, n=198), including mean age, age group distribution, sex, race/ethnicity, study sites, and influenza vaccination history. The table only presents baseline participant demographics and vaccination history and does not address antigenic matching with WHO- and FDA-selected flu strains, so it does not support the claim. Note: Only demographic data are visible; no information on antigenic match or vaccine strain selection is provided.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table presenting demographic characteristics of study participants across four groups (n=122, 120, 283, 198), including mean age, age groups, sex, race/ethnicity, study sites, and prior influenza vaccination history.",
+    "image_description": "A table showing demographic characteristics of study participants across four groups (n=122, n=120, n=283, n=198), including mean age, age group distribution, sex, race/ethnicity, study sites, and influenza vaccination history.",
     "evidence_found": null,
-    "reasoning": "The table contains only participant demographics and vaccination history and provides no data on antigenic match with WHO- or FDA-selected flu strains, and thus does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "The table only presents baseline participant demographics and vaccination history and does not address antigenic matching with WHO- and FDA-selected flu strains, so it does not support the claim.",
+    "confidence_notes": "Only demographic data are visible; no information on antigenic match or vaccine strain selection is provided."
   }
 }

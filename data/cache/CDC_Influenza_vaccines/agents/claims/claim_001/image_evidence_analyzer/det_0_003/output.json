@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A tabular listing of influenza vaccines (standard-dose egg-based, standard-dose cell culture-based, and high-dose egg-based) showing vaccine names, presentations, age indications, HA antigen content per dose (e.g., 15 \u00b5g/0.5 mL for standard-dose, 60 \u00b5g/0.7 mL for high-dose), route of administration, and thimerosal content. The table does not include Flublok or its HA content, and therefore does not support the claim regarding Flublok containing 3\u00d7 the HA antigen of standard-dose vaccines; it doesn\u2019t support the claim. Note: Image shows only part of a multi-page table; Flublok may appear elsewhere but is not visible here.",
+  "explanation": "A table listing various influenza vaccines (standard-dose egg-based IIV4, cell culture\u2013based IIV4, high-dose egg-based IIV4, etc.), their presentations (e.g., 0.5 mL prefilled syringe, 5 mL multidose vial), age indications, hemagglutinin (HA) antigen content per dose for each vaccine virus (e.g., 15 \u00b5g/0.5 mL for standard-dose, 60 \u00b5g/0.7 mL for high-dose), administration route, and thimerosal content. The image does not include any information about Flublok or its antigen content and therefore does not support the claim Note: Table appears to show only standard egg-based, cell-based, high-dose, and adjuvanted vaccines; Flublok (recombinant HA vaccine) is not listed in the visible portion",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A tabular listing of influenza vaccines (standard-dose egg-based, standard-dose cell culture-based, and high-dose egg-based) showing vaccine names, presentations, age indications, HA antigen content per dose (e.g., 15 \u00b5g/0.5 mL for standard-dose, 60 \u00b5g/0.7 mL for high-dose), route of administration, and thimerosal content.",
+    "image_description": "A table listing various influenza vaccines (standard-dose egg-based IIV4, cell culture\u2013based IIV4, high-dose egg-based IIV4, etc.), their presentations (e.g., 0.5 mL prefilled syringe, 5 mL multidose vial), age indications, hemagglutinin (HA) antigen content per dose for each vaccine virus (e.g., 15 \u00b5g/0.5 mL for standard-dose, 60 \u00b5g/0.7 mL for high-dose), administration route, and thimerosal content.",
     "evidence_found": null,
-    "reasoning": "The table does not include Flublok or its HA content, and therefore does not support the claim regarding Flublok containing 3\u00d7 the HA antigen of standard-dose vaccines; it doesn\u2019t support the claim.",
-    "confidence_notes": "Image shows only part of a multi-page table; Flublok may appear elsewhere but is not visible here."
+    "reasoning": "The image does not include any information about Flublok or its antigen content and therefore does not support the claim",
+    "confidence_notes": "Table appears to show only standard egg-based, cell-based, high-dose, and adjuvanted vaccines; Flublok (recombinant HA vaccine) is not listed in the visible portion"
   }
 }

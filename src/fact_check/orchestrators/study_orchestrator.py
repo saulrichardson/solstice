@@ -77,38 +77,62 @@ class StudyOrchestrator:
             "claims": {}
         }
         
-        # Process each claim
-        for i, claim_data in enumerate(self.claims):
-            claim_id = claim_data["id"]
-            claim_text = claim_data["claim"]
-            
-            logger.info(f"\nClaim {i+1}/{len(self.claims)}: {claim_text[:50]}...")
-            
-            # Create claim orchestrator
-            claim_orchestrator = ClaimOrchestrator(
-                claim_id=claim_id,
-                claim_text=claim_text,
-                documents=self.documents,
-                cache_dir=self.cache_dir,
-                config=self.config
-            )
-            
-            # Process claim
-            try:
-                claim_results = await claim_orchestrator.process()
-                study_results["claims"][claim_id] = claim_results
+        # Process claims with limited parallelism
+        import asyncio
+        
+        # Simple parallelism - process 2-3 claims at once
+        max_concurrent_claims = self.config.get("max_concurrent_claims", 2)
+        logger.info(f"Processing claims with max {max_concurrent_claims} concurrent")
+        
+        semaphore = asyncio.Semaphore(max_concurrent_claims)
+        
+        async def process_single_claim(i, claim_data):
+            async with semaphore:
+                claim_id = claim_data["id"]
+                claim_text = claim_data["claim"]
                 
-                # Print progress
-                self._print_claim_summary(claim_id, claim_text, claim_results)
+                logger.info(f"\n[Claim {i+1}/{len(self.claims)}] Starting: {claim_text[:50]}...")
                 
-            except Exception as e:
-                logger.error(f"Failed to process claim {claim_id}: {e}")
-                study_results["claims"][claim_id] = {
-                    "claim_id": claim_id,
-                    "claim": claim_text,
-                    "error": str(e),
-                    "documents": {}
-                }
+                # Create claim orchestrator
+                claim_orchestrator = ClaimOrchestrator(
+                    claim_id=claim_id,
+                    claim_text=claim_text,
+                    documents=self.documents,
+                    cache_dir=self.cache_dir,
+                    config=self.config
+                )
+                
+                # Process claim
+                try:
+                    claim_results = await claim_orchestrator.process()
+                    
+                    # Print progress
+                    logger.info(f"[Claim {i+1}/{len(self.claims)}] Completed: {claim_text[:50]}...")
+                    self._print_claim_summary(claim_id, claim_text, claim_results)
+                    
+                    return claim_id, claim_results
+                    
+                except Exception as e:
+                    logger.error(f"[Claim {i+1}/{len(self.claims)}] Failed: {claim_id}: {e}")
+                    return claim_id, {
+                        "claim_id": claim_id,
+                        "claim": claim_text,
+                        "error": str(e),
+                        "documents": {}
+                    }
+        
+        # Create all tasks
+        tasks = [
+            process_single_claim(i, claim_data) 
+            for i, claim_data in enumerate(self.claims)
+        ]
+        
+        # Run with controlled parallelism
+        results = await asyncio.gather(*tasks)
+        
+        # Store results
+        for claim_id, claim_result in results:
+            study_results["claims"][claim_id] = claim_result
         
         study_results["metadata"]["completed_at"] = datetime.now().isoformat()
         

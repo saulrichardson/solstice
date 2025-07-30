@@ -12,9 +12,9 @@
   "rejected_evidence": [
     {
       "id": "comp_1",
-      "quote": "RIV4 was Flublok",
+      "quote": "RIV4 was Flublok and Adj-IV was FluAd. Other independent variables were age, influenza season (2018-2019 and 2019-2020), sex, race and presence of one or more high risk conditions.",
       "reason": "does not support claim",
-      "original_explanation": "This quote identifies RIV4 as Flublok, which is necessary to link the product to the claim about its antigen content and immunogenicity."
+      "original_explanation": "This quote explicitly identifies RIV4 as Flublok, which is necessary to link the product name to the vaccine type being discussed in the study. This supports the claim by clarifying that the immunogenicity and antigen content findings for RIV4 apply to Flublok."
     }
   ],
   "model_used": "gpt-4.1"

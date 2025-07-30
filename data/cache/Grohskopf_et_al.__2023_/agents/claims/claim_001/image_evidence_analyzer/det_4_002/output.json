@@ -1,9 +1,19 @@
 {
   "image_filename": "table_p5_det_4_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p5_det_4_002.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_002",
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Error analyzing image: Server error '500 Internal Server Error' for url 'http://localhost:8080/v1/responses'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
-  "error": true,
-  "model_used": "o4-mini"
+  "explanation": "Table listing various FDA-approved influenza vaccines by type (standard-dose egg-based, cell culture\u2013based, high-dose egg-based, adjuvanted, recombinant HA vaccine Flublok, and live attenuated), showing for each the presentation, age indication, HA antigen content per vaccine virus per dose, route, and egg protein content. Evidence: Flublok Quadrivalent (recombinant HA vaccine) is listed with 45 \u00b5g/0.5 mL HA antigen per virus versus 15 \u00b5g/0.5 mL for standard-dose vaccines. The table shows that Flublok contains 3x the HA antigen content of standard-dose flu vaccines but does not provide any data on immunogenicity, so it does not support the claim in full.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table listing various FDA-approved influenza vaccines by type (standard-dose egg-based, cell culture\u2013based, high-dose egg-based, adjuvanted, recombinant HA vaccine Flublok, and live attenuated), showing for each the presentation, age indication, HA antigen content per vaccine virus per dose, route, and egg protein content.",
+    "evidence_found": "Flublok Quadrivalent (recombinant HA vaccine) is listed with 45 \u00b5g/0.5 mL HA antigen per virus versus 15 \u00b5g/0.5 mL for standard-dose vaccines.",
+    "reasoning": "The table shows that Flublok contains 3x the HA antigen content of standard-dose flu vaccines but does not provide any data on immunogenicity, so it does not support the claim in full.",
+    "confidence_notes": null
+  }
 }

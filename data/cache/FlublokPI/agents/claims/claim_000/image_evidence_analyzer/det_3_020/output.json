@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table summarizing clinical trial efficacy of Flublok versus placebo for prevention of PCR- or culture-confirmed influenza-like illness, showing numbers of cases, attack rates, vaccine efficacy percentages (with 95% CIs), broken down by matched strains, any strain, subtypes A and B. The image presents efficacy data against influenza-like illness and matched versus any strains but contains no information regarding antigenic matching processes or confirmation of identical antigenic match with WHO- or FDA-selected strains, and thus does not support the claim.",
+  "explanation": "A tabular summary of influenza vaccine efficacy data for Flublok, showing culture-confirmed flu cases stratified by whether the infecting strain matched the vaccine strain (all matched strains, sub-types A and B) versus any strain, with corresponding attack rates, relative risk reductions, and 95% confidence intervals. Footnotes describe study design, case definitions, and note that some analyses are post hoc and that genetic sequencing was not performed on all samples. does not support the claim because the table reports efficacy against matched versus any strains but does not mention WHO- or FDA-selected strain matching or provide data on antigenic identity with those selected strains Note: No mention of WHO or FDA selection criteria in the figure; footnotes are partially truncated but do not reference regulatory strain selection",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table summarizing clinical trial efficacy of Flublok versus placebo for prevention of PCR- or culture-confirmed influenza-like illness, showing numbers of cases, attack rates, vaccine efficacy percentages (with 95% CIs), broken down by matched strains, any strain, subtypes A and B.",
+    "image_description": "A tabular summary of influenza vaccine efficacy data for Flublok, showing culture-confirmed flu cases stratified by whether the infecting strain matched the vaccine strain (all matched strains, sub-types A and B) versus any strain, with corresponding attack rates, relative risk reductions, and 95% confidence intervals. Footnotes describe study design, case definitions, and note that some analyses are post hoc and that genetic sequencing was not performed on all samples.",
     "evidence_found": null,
-    "reasoning": "The image presents efficacy data against influenza-like illness and matched versus any strains but contains no information regarding antigenic matching processes or confirmation of identical antigenic match with WHO- or FDA-selected strains, and thus does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "does not support the claim because the table reports efficacy against matched versus any strains but does not mention WHO- or FDA-selected strain matching or provide data on antigenic identity with those selected strains",
+    "confidence_notes": "No mention of WHO or FDA selection criteria in the figure; footnotes are partially truncated but do not reference regulatory strain selection"
   }
 }

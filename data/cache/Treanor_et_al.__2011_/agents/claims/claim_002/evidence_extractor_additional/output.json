@@ -6,13 +6,33 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 1
+    "total_snippets_found": 3
   },
   "extracted_evidence": [
     {
       "id": "comp_1",
-      "quote": "Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg pro- growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2].",
-      "relevance_explanation": "This quote directly states that the process of growing influenza viruses in eggs can select for receptor variants, meaning mutations may occur that make the vaccine strain less representative of the circulating strains, thus potentially reducing effectiveness.",
+      "quote": "Estimates of overall inactivated vaccine protective efficacy are clearly impacted by antigenic differences between vaccine and circulating viruses, with highest levels of effectiveness reported for H1 viruses [25] and lowest levels for influenza B.",
+      "relevance_explanation": "This quote supports the claim by explicitly stating that antigenic differences (which can arise from mutations during production) between the vaccine and circulating viruses impact the effectiveness of inactivated (egg- or cell-based) influenza vaccines.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "Effectiveness of inactivated influenza vaccines varied substantially with antigenic match from the 2004-2005 season to the 2006-2007 season. J Infect Dis 2009 199.",
+      "relevance_explanation": "This quote provides evidence that the effectiveness of inactivated (egg- or cell-based) influenza vaccines is affected by how well the vaccine antigens match circulating strains, which can be reduced by mutations acquired during production.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "Clinical efficacy of cell culture derived and egg derived inactivated subunit influenza vaccines in healthy adults. Clin Infect Dis 2010 51 997 1004.",
+      "relevance_explanation": "This reference to a study comparing cell culture and egg-derived vaccines is relevant because such studies often discuss the impact of production-related mutations on vaccine efficacy, supporting the claim that these vaccines can develop mutations that reduce effectiveness.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

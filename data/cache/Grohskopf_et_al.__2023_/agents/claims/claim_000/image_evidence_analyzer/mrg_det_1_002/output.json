@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A page showing table of contents for the MMWR report and CDC editorial/production staff listings, with recommendations text but no data or figures relating to Flublok or antigenic matching. does not support the claim because the image contains only administrative content and a table of contents without any information on Flublok antigenic match to WHO- or FDA-selected strains Note: None",
+  "explanation": "Page showing table of contents (Introduction, Methods, Summary Changes and Updates, Recommendations for the Use of Influenza Vaccines, Influenza Vaccine Composition and Available Vaccines, Vaccine Storage and Handling, Additional Sources of Information, References) alongside CDC editorial and production staff listings and the ACIP recommendations preamble text. The image does not support the claim because it contains no data or statements about Flublok antigenic match with WHO- or FDA-selected flu strains and instead shows only a table of contents and staff/recommendation text, so it does not support the claim. Note: Image resolution is sufficient to see content; no relevant information appears.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A page showing table of contents for the MMWR report and CDC editorial/production staff listings, with recommendations text but no data or figures relating to Flublok or antigenic matching.",
+    "image_description": "Page showing table of contents (Introduction, Methods, Summary Changes and Updates, Recommendations for the Use of Influenza Vaccines, Influenza Vaccine Composition and Available Vaccines, Vaccine Storage and Handling, Additional Sources of Information, References) alongside CDC editorial and production staff listings and the ACIP recommendations preamble text.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image contains only administrative content and a table of contents without any information on Flublok antigenic match to WHO- or FDA-selected strains",
-    "confidence_notes": "None"
+    "reasoning": "The image does not support the claim because it contains no data or statements about Flublok antigenic match with WHO- or FDA-selected flu strains and instead shows only a table of contents and staff/recommendation text, so it does not support the claim.",
+    "confidence_notes": "Image resolution is sufficient to see content; no relevant information appears."
   }
 }

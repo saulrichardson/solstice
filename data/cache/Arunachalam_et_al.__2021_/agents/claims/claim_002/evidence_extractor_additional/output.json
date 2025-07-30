@@ -11,8 +11,8 @@
   "extracted_evidence": [
     {
       "id": "comp_1",
-      "quote": "Differences in HA glycosylation between the vaccine strains and circulating strains are thought to have contributed to this reduced vaccine effectiveness 26.",
-      "relevance_explanation": "This quote supports the claim by indicating that differences (which can arise during production in eggs or cells) in the glycosylation of hemagglutinin (HA) between vaccine strains and circulating strains can reduce vaccine effectiveness, implying that mutations or changes during production can be detrimental.",
+      "quote": "The chances of introducing deleterious mutations through the adaptation of seed virus during vaccine manufacturing today are low due to the stringent quality control of the working seed virus. Indeed, as per current regulatory requirements, seed viruses must be confirmed for both genetic and antigenic match with their originating wild type virus before they can be used for vaccine production. Nonetheless, the time it takes to generate appropriate seeds could hinder the timely availability of the vaccines. Recombinant DNA technology avoids the risk of the virus acquiring egg- or cell adapted mutations during the manufacturing process as it does not use 'live' influenza virus.",
+      "relevance_explanation": "This quote explicitly states that egg- or cell-based vaccine production carries a risk of adaptive mutations, which recombinant technology avoids, directly supporting the claim that such mutations can occur during production and may impact effectiveness.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -21,8 +21,8 @@
     },
     {
       "id": "comp_2",
-      "quote": "the circulating A/H3 N2 viruses were antigenic ally similar to the cell grown vaccine reference virus, egg propagation of the vaccine strains had led to loss of aglycosylation site and impaired antibody response to circulating viruses, consistent with previous reports 26.",
-      "relevance_explanation": "This quote directly links egg propagation (a production method) to the loss of a glycosylation site and impaired antibody response, supporting the claim that mutations or changes during production can reduce vaccine effectiveness.",
+      "quote": "For the 2016-2017 season, the influenza vaccine was updated to include a clade 3 C.2 a H3 N2 strain (A/Colorado/15/2014) containing the new glycosylation site 26. However, this particular glycosylation site was absent in the egg adapted virus. Consequently, antibodies induced in humans, and in ferrets, poorly neutralised the glycosylated clade 3 C.2 a H3 N2 strain 26.",
+      "relevance_explanation": "This quote provides a concrete example where an egg-adapted mutation (loss of a glycosylation site) led to reduced neutralization by vaccine-induced antibodies, directly supporting the claim that mutations during egg-based production can reduce vaccine effectiveness.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

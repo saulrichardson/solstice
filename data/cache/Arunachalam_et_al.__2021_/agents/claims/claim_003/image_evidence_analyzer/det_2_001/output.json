@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p3_det_2_001.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_001",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A schematic process flow diagram showing the baculovirus-insect cell expression system for manufacturing a recombinant influenza vaccine (RIV4). It depicts cloning of the HA gene into a baculovirus vector, infection of insect cells, expansion in a bioreactor, harvest, extraction, clarification, capture, purification, DNA removal, and formulation steps. The figure only illustrates the manufacturing process of a recombinant HA vaccine and contains no data or statements about immune response breadth or cross-protection in mismatch seasons; it does not support the claim. Note: The image is a process diagram without immunogenicity or efficacy data; limited to production steps.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A schematic process flow diagram showing the baculovirus-insect cell expression system for manufacturing a recombinant influenza vaccine (RIV4). It depicts cloning of the HA gene into a baculovirus vector, infection of insect cells, expansion in a bioreactor, harvest, extraction, clarification, capture, purification, DNA removal, and formulation steps.",
+    "evidence_found": null,
+    "reasoning": "The figure only illustrates the manufacturing process of a recombinant HA vaccine and contains no data or statements about immune response breadth or cross-protection in mismatch seasons; it does not support the claim.",
+    "confidence_notes": "The image is a process diagram without immunogenicity or efficacy data; limited to production steps."
+  }
+}

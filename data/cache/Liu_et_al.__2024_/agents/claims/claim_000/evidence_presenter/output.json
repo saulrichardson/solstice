@@ -2,23 +2,18 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "document": "Liu_et_al.__2024_",
-  "supporting_evidence": [
-    {
-      "quote": "a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain and is produced using recombinant DNA technology in insect cells, ensuring that the HA antigens are identical to the WHO- and FDA-recommended vaccine strains without egg-adapted mutations.",
-      "explanation": "The quote appears on page 2 of the document, though with some minor OCR-related differences. The relevant passage is: 'a cell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain and is produced using recombinant DNA technology in insect cells, ensuring that the HA antigens are identical to the WHO- and FDA-recommended vaccine strains without egg-adapted mutations.' The factual content, numbers, and technical details are all present and semantically equivalent to the quote provided.. The quote directly states that Flublok (RIV4) is produced using recombinant DNA technology in insect cells, which ensures that the HA antigens are identical to the WHO- and FDA-recommended vaccine strains and do not have egg-adapted mutations. This explicitly supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains."
-    }
-  ],
+  "supporting_evidence": [],
   "image_supporting_evidence": [],
   "evidence_summary": {
-    "total_text_evidence_found": 1,
+    "total_text_evidence_found": 0,
     "total_image_evidence_found": 0,
-    "total_evidence_found": 1,
+    "total_evidence_found": 0,
     "coverage": "complete",
     "missing_aspects": []
   },
   "metadata": {
     "extraction_stats": {
-      "total_verified": 1
+      "total_verified": 0
     },
     "rejected_count": 0
   }

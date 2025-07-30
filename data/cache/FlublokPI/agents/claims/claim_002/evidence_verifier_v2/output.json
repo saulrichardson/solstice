@@ -3,30 +3,24 @@
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "document": "FlublokPI",
   "verification_stats": {
-    "total_extracted": 3,
+    "total_extracted": 2,
     "verified": 0,
-    "rejected": 3,
+    "rejected": 2,
     "verification_rate": 0.0
   },
   "verified_evidence": [],
   "rejected_evidence": [
     {
       "id": 1,
-      "quote": "Frequent development of antigenic variants through antigenic drift is the virologic basis for seasonal epidemics and the reason for the usual replacement of one or more influenza virus strains in each year\u2019s influenza vaccine.",
+      "quote": "Frequent development of antigenic variants through antigenic drift is the virologic basis for seasonal epidemics and the reason for the usual replacement of one or more influenza virus strains in each year's influenza vaccine.",
       "reason": "does not support claim",
-      "original_explanation": "This quote explains that antigenic drift leads to frequent development of new variants, which is a key mechanism by which mutations can arise during vaccine production, potentially reducing vaccine effectiveness."
+      "original_explanation": "This quote explains that antigenic drift leads to the frequent development of new variants, which is a key mechanism by which mutations can arise during the production of flu vaccines, potentially reducing their effectiveness if the vaccine strains do not match circulating viruses."
     },
     {
       "id": 2,
       "quote": "Vaccine efficacy against antigenically matched culture confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenically matched to the strains represented in the vaccine.",
       "reason": "does not support claim",
-      "original_explanation": "This quote demonstrates that the majority of circulating influenza viruses were not antigenically matched to the vaccine strains, which can result from mutations during production, thereby reducing vaccine effectiveness."
-    },
-    {
-      "id": 3,
-      "quote": "CDC surveillance data indicated that the majority of influenza A/H3N2 wild type viruses were antigenically distinct whereas influenza A/H1N1 and type B viruses were antigenically similar to vaccine antigens during the 2014-2015 season.",
-      "reason": "does not support claim",
-      "original_explanation": "This quote provides evidence that mutations or antigenic changes can occur, leading to a mismatch between vaccine strains and circulating viruses, which can reduce the effectiveness of the vaccine."
+      "original_explanation": "This quote provides evidence that the vaccine strains can differ from circulating strains due to mutations or antigenic drift, which can reduce the effectiveness of the vaccine."
     }
   ],
   "model_used": "gpt-4.1"

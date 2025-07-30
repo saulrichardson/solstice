@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Flow diagram showing the derivation of the analyzable cohort from an initial study population, exclusions criteria (recent influenza, missing vaccination status, immunocompromised), and subsequent breakdown of controls and influenza cases by vaccine type (RIV4, SD-IIV4, HD-IIV4 + Adj-IIV, unvaccinated). The figure only presents participant numbers and cohort flow by vaccine type; it provides no data or statements about antigenic matching to WHO- or FDA-selected strains and therefore does not support the claim. Note: Limited to cohort flow information; no antigenic or regulatory matching data are visible.",
+  "explanation": "A flowchart depicting the study cohort of adults \u226518 years (N=18,467), exclusions (n=3,264 for recent influenza, unknown vaccination status, immunocompromised), resulting in an analyzable cohort (N=15,203), divided into controls (N=13,385) and influenza cases (N=1,868). Both groups are further categorized by vaccine type: recombinant quadrivalent influenza vaccine (RIV4), standard-dose quadrivalent influenza vaccine (SD-IIV4), high-dose/adjuvanted IIV4, and unvaccinated, with corresponding sample sizes. The image provides only cohort selection and vaccine group counts; it does not support the claim about identical antigenic match with WHO- and FDA-selected flu strains. Note: No data in the figure regarding antigenic match or strain selection; text is clear and fully visible.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Flow diagram showing the derivation of the analyzable cohort from an initial study population, exclusions criteria (recent influenza, missing vaccination status, immunocompromised), and subsequent breakdown of controls and influenza cases by vaccine type (RIV4, SD-IIV4, HD-IIV4 + Adj-IIV, unvaccinated).",
+    "image_description": "A flowchart depicting the study cohort of adults \u226518 years (N=18,467), exclusions (n=3,264 for recent influenza, unknown vaccination status, immunocompromised), resulting in an analyzable cohort (N=15,203), divided into controls (N=13,385) and influenza cases (N=1,868). Both groups are further categorized by vaccine type: recombinant quadrivalent influenza vaccine (RIV4), standard-dose quadrivalent influenza vaccine (SD-IIV4), high-dose/adjuvanted IIV4, and unvaccinated, with corresponding sample sizes.",
     "evidence_found": null,
-    "reasoning": "The figure only presents participant numbers and cohort flow by vaccine type; it provides no data or statements about antigenic matching to WHO- or FDA-selected strains and therefore does not support the claim.",
-    "confidence_notes": "Limited to cohort flow information; no antigenic or regulatory matching data are visible."
+    "reasoning": "The image provides only cohort selection and vaccine group counts; it does not support the claim about identical antigenic match with WHO- and FDA-selected flu strains.",
+    "confidence_notes": "No data in the figure regarding antigenic match or strain selection; text is clear and fully visible."
   }
 }

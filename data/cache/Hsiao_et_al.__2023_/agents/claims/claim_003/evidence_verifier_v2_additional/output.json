@@ -4,27 +4,23 @@
   "document": "Hsiao_et_al.__2023_",
   "verification_stats": {
     "total_extracted": 2,
-    "verified": 1,
-    "rejected": 1,
-    "verification_rate": 0.5
+    "verified": 0,
+    "rejected": 2,
+    "verification_rate": 0.0
   },
-  "verified_evidence": [
-    {
-      "id": "comp_1",
-      "quote": "Quad rival ent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
-      "supports_claim": true,
-      "explanation": "A nearly identical quote appears in the BACKGROUND section: 'Quad rival ent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.' The wording matches the quote to verify, with only minor differences in spacing and line breaks.. The quote directly states that recombinant influenza vaccines are not susceptible to antigenic drift during manufacturing, which is a key mechanism by which vaccine mismatch occurs. This property supports the claim that recombinant technology can lead to a broader immune response and potential cross-protection in mismatch seasons, as the vaccine antigens remain a better match to circulating strains. The mention of three times the amount of hemagglutinin protein also supports the idea of a broader or stronger immune response.",
-      "presence_explanation": "A nearly identical quote appears in the BACKGROUND section: 'Quad rival ent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.' The wording matches the quote to verify, with only minor differences in spacing and line breaks.",
-      "support_explanation": "The quote directly states that recombinant influenza vaccines are not susceptible to antigenic drift during manufacturing, which is a key mechanism by which vaccine mismatch occurs. This property supports the claim that recombinant technology can lead to a broader immune response and potential cross-protection in mismatch seasons, as the vaccine antigens remain a better match to circulating strains. The mention of three times the amount of hemagglutinin protein also supports the idea of a broader or stronger immune response.",
-      "original_relevance": "This quote supports the claim by explaining that recombinant vaccines are not susceptible to antigenic drift during manufacturing, which is a key mechanism by which vaccine mismatch occurs. This property could lead to broader immune responses and potential cross-protection in mismatch seasons."
-    }
-  ],
+  "verified_evidence": [],
   "rejected_evidence": [
     {
-      "id": "comp_2",
-      "quote": "the recombinant hemagglutinin protein that is genetically ident i cal to that in the selected strain 5 The vaccine also contains three times the amount of he mag glut in in protein as standard dose vaccines, an increased level that has been correlated with",
+      "id": "comp_1",
+      "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
       "reason": "does not support claim",
-      "original_explanation": "This quote highlights that the recombinant vaccine uses a hemagglutinin protein genetically identical to the selected strain and at a higher dose, which is associated with improved immune responses, supporting the idea of broader and potentially cross-protective immunity."
+      "original_explanation": "This quote explains that recombinant vaccines are not susceptible to antigenic drift during manufacturing, which is a key mechanism by which vaccine mismatch occurs. This supports the claim that recombinant technology may provide broader immune responses and cross-protection in mismatch seasons."
+    },
+    {
+      "id": "comp_2",
+      "quote": "The effectiveness of standard dose vaccines - especially against the influenza A H3N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3N2 strain circulated only during the second half of the 2018-2019 season and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines. During our study period, the observed benefit of the recombinant vaccine as compared with a standard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3N2 than to higher effectiveness against influenza A overall, in periods with either matched or mismatched strains.",
+      "reason": "does not support claim",
+      "original_explanation": "This passage directly addresses the issue of vaccine mismatch and notes that the recombinant vaccine provided higher effectiveness against influenza A even when the circulating strain was poorly matched, supporting the idea of broader immune response and cross-protection."
     }
   ],
   "model_used": "gpt-4.1"

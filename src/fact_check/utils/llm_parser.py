@@ -109,7 +109,7 @@ class LLMResponseParser:
         max_retries: int = 2,
         include_format_hint: bool = True,
         temperature: float = 0.0,
-        max_output_tokens: int = 2000
+        max_output_tokens: Optional[int] = None
     ) -> T:
         """
         Parse LLM response with automatic retry on validation errors.
@@ -121,7 +121,7 @@ class LLMResponseParser:
             max_retries: Maximum number of retry attempts
             include_format_hint: Whether to add JSON format hint to prompt
             temperature: LLM temperature setting
-            max_output_tokens: Maximum tokens for response
+            max_output_tokens: Maximum tokens for response (None for unlimited)
             
         Returns:
             Validated Pydantic model instance
@@ -141,13 +141,17 @@ class LLMResponseParser:
         for attempt in range(max_retries + 1):
             try:
                 # Get LLM response
-                response = await llm_client.create_response(
-                    input=prompt,
-                    model=getattr(llm_client, 'model', 'gpt-4.1'),
-                    temperature=temperature,
-                    max_output_tokens=max_output_tokens,
-                    disable_request_deduplication=True
-                )
+                request_params = {
+                    "input": prompt,
+                    "model": getattr(llm_client, 'model', 'gpt-4.1'),
+                    "temperature": temperature,
+                    "disable_request_deduplication": True
+                }
+                # Only add max_output_tokens if provided
+                if max_output_tokens is not None:
+                    request_params["max_output_tokens"] = max_output_tokens
+                    
+                response = await llm_client.create_response(**request_params)
                 
                 # Extract text content
                 if hasattr(llm_client, 'extract_text'):

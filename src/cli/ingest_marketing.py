@@ -22,17 +22,20 @@ def main(pdf_path, output_dir=None):
         sys.exit(1)
     
     # Set custom output directory if provided
+    # Default to marketing_cache for marketing materials
     if output_dir is not None:
         set_cache_root(output_dir)
         cache_dir = Path(output_dir)
     else:
-        cache_dir = Path("data/cache")
+        cache_dir = Path("data/marketing_cache")
+        set_cache_root(str(cache_dir))
     
     # Create pipeline with marketing preset
     pipeline = MarketingPipeline()
     
     print(f"Processing: {pdf_path.name}")
     print(f"Using marketing-optimized settings")
+    print(f"Cache directory: {cache_dir}")
     print()
     
     # Process

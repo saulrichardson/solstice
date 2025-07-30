@@ -175,7 +175,7 @@ class ResponsesClient:
                 f"{self.base_url}/v1/responses",
                 json=request_data,
                 headers=self.headers,
-                timeout=120.0,
+                timeout=600.0,  # 10 minutes for complex medical documents
             )
             try:
                 response.raise_for_status()

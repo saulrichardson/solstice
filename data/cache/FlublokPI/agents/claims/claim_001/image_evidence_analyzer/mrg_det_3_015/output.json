@@ -1,9 +1,19 @@
 {
   "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Error analyzing image: Server error '500 Internal Server Error' for url 'http://localhost:8080/v1/responses'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
-  "error": true,
-  "model_used": "o4-mini"
+  "explanation": "Table listing seasonal influenza vaccines, their strains, hemagglutinin (HA) antigen content per strain, total HA per dose, adjuvant/formulation, approved age, route, and dose volume. Evidence: Flublok Quadrivalent contains 45 \u00b5g HA per strain, total 180 \u00b5g per dose, compared to standard-dose IIV4 vaccines containing 15 \u00b5g HA per strain, total 60 \u00b5g per dose. The table shows that Flublok contains 3\u00d7 the HA antigen content of standard-dose flu vaccines but does not present any data on immunogenicity, and thus does not support the claim that this higher content is linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table listing seasonal influenza vaccines, their strains, hemagglutinin (HA) antigen content per strain, total HA per dose, adjuvant/formulation, approved age, route, and dose volume.",
+    "evidence_found": "Flublok Quadrivalent contains 45 \u00b5g HA per strain, total 180 \u00b5g per dose, compared to standard-dose IIV4 vaccines containing 15 \u00b5g HA per strain, total 60 \u00b5g per dose.",
+    "reasoning": "The table shows that Flublok contains 3\u00d7 the HA antigen content of standard-dose flu vaccines but does not present any data on immunogenicity, and thus does not support the claim that this higher content is linked to greater immunogenicity vs standard-dose flu vaccines.",
+    "confidence_notes": null
+  }
 }

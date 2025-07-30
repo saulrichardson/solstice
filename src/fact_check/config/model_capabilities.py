@@ -69,7 +69,7 @@ def build_vision_request(
     model: str,
     text_prompt: str,
     image_data_uri: str,
-    max_output_tokens: int = 1000,
+    max_output_tokens: Optional[int] = None,
     temperature: Optional[float] = None,
     **kwargs
 ) -> Dict[str, Any]:
@@ -79,7 +79,7 @@ def build_vision_request(
         model: Model name
         text_prompt: Text prompt for the image
         image_data_uri: Base64 encoded image data URI
-        max_output_tokens: Maximum output tokens
+        max_output_tokens: Maximum output tokens (None for unlimited)
         temperature: Temperature (if None, uses model default)
         **kwargs: Additional parameters
         
@@ -100,9 +100,12 @@ def build_vision_request(
                 {"type": "input_image", "image_url": image_data_uri}  # Direct URL, not object
             ]
         }],
-        "max_output_tokens": max_output_tokens,
         **kwargs
     }
+    
+    # Only add max_output_tokens if provided
+    if max_output_tokens is not None:
+        request["max_output_tokens"] = max_output_tokens
     
     # Add tools if required for vision
     if capabilities.vision_requires_tools and capabilities.vision_tool_config:

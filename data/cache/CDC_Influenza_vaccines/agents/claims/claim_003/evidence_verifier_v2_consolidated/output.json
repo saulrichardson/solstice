@@ -5,5 +5,26 @@
   "verified_evidence": [],
   "verification_stats": {
     "total_verified": 0
-  }
+  },
+  "image_evidence": [
+    {
+      "image_filename": "figure_p1_det_0_011.png",
+      "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p1_det_0_011.png",
+      "image_type": "Figure",
+      "page_number": 1,
+      "block_id": "det_0_011",
+      "claim_id": "claim_003",
+      "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+      "supports_claim": true,
+      "explanation": "Figure showing structural mapping of hemagglutinin epitopes on drifted H3 strains and two panels: (A) immunogenicity data with epitope drift index (EDI) and comparison of immune responses to HA for recombinant HA vaccine versus traditional inactivated vaccine, and (B) cross-protection data in the 2014\u201315 mismatched A/H3N2 season comparing vaccine effectiveness of recombinant HA (blue curve) versus inactivated influenza vaccine (grey curve). Evidence: Panel B shows that recombinant HA vaccine achieved substantially higher effectiveness against mismatched A/H3N2 (approximately 60%) compared with inactivated vaccine (~10%), and Panel A shows broader epitope coverage (higher EDI) with recombinant HA. The immunogenicity and cross-protection data presented support the claim that recombinant technology leads to a broader immune response that may provide cross-protection in a mismatch season, so this evidence supports the claim. Note: Some text and labels in the figure are small and partially obscured, but key data on epitope coverage and mismatched season effectiveness are legible.",
+      "model_used": "o4-mini",
+      "detailed_analysis": {
+        "supports_claim": true,
+        "image_description": "Figure showing structural mapping of hemagglutinin epitopes on drifted H3 strains and two panels: (A) immunogenicity data with epitope drift index (EDI) and comparison of immune responses to HA for recombinant HA vaccine versus traditional inactivated vaccine, and (B) cross-protection data in the 2014\u201315 mismatched A/H3N2 season comparing vaccine effectiveness of recombinant HA (blue curve) versus inactivated influenza vaccine (grey curve).",
+        "evidence_found": "Panel B shows that recombinant HA vaccine achieved substantially higher effectiveness against mismatched A/H3N2 (approximately 60%) compared with inactivated vaccine (~10%), and Panel A shows broader epitope coverage (higher EDI) with recombinant HA.",
+        "reasoning": "The immunogenicity and cross-protection data presented support the claim that recombinant technology leads to a broader immune response that may provide cross-protection in a mismatch season, so this evidence supports the claim.",
+        "confidence_notes": "Some text and labels in the figure are small and partially obscured, but key data on epitope coverage and mismatched season effectiveness are legible."
+      }
+    }
+  ]
 }

@@ -11,8 +11,8 @@
   "extracted_evidence": [
     {
       "id": "comp_1",
-      "quote": "In traditional quadrivalent standard dose inactivated influenza vaccines (SD-IIV4), chicken eggs are used to manufacture the vaccine strain.",
-      "relevance_explanation": "This quote establishes that standard dose flu vaccines are produced using chicken eggs, which is relevant because the process of growing viruses in eggs is known to potentially introduce mutations, supporting the claim about mutation risk during production.",
+      "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "relevance_explanation": "This quote explicitly states that egg-based vaccines are susceptible to antigenic drift during manufacturing, which is a form of mutation that can reduce vaccine effectiveness. It directly supports the claim that mutations can develop during production in egg-based vaccines.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -21,8 +21,8 @@
     },
     {
       "id": "comp_2",
-      "quote": "The recombinant formulation is not susceptible to antigenic drift during manufacturing.",
-      "relevance_explanation": "This statement directly contrasts recombinant vaccines with egg-based vaccines, implying that egg-based vaccines are susceptible to antigenic drift (mutations) during manufacturing, which can reduce effectiveness.",
+      "quote": "In traditional quadrivalent standard dose inactivated influenza vaccines (SD-IIV4), chicken eggs are used to manufacture the vaccine strain.",
+      "relevance_explanation": "This quote establishes that standard dose influenza vaccines are produced using chicken eggs, which is relevant because the process of growing viruses in eggs is known to introduce mutations, supporting the claim about the potential for mutations during production.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

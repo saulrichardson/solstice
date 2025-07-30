@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Flowchart illustrating the production of influenza hemagglutinin (HA) using the baculovirus-insect cell expression system for the manufacture of RIV4. It shows steps including cloning the HA gene into a baculovirus vector under a polyhedrin promoter, infecting insect cells, expansion in a bioreactor, harvest by disc-stack centrifugation, extraction, depth filtration for clarification, chromatographic capture and purification, DNA removal, and final tangential flow filtration/formulation. The figure only outlines the recombinant HA manufacturing workflow and does not present any data or statements regarding antigenic match to WHO- or FDA-selected strains; therefore it does not support the claim.",
+  "explanation": "A flowchart diagram illustrating the baculovirus\u2013insect cell expression system for manufacturing recombinant hemagglutinin (HA) vaccine (RIV4), showing steps such as direct cloning of HA gene into baculovirus vector, recombination, insect cell seeding, bioreactor expansion, harvest by disc-stack centrifugation, extraction, clarification, capture, purification, DNA removal, and tangential flow filtration/formulation. The figure only depicts the manufacturing process of recombinant HA in insect cells and does not present any data or statements regarding antigenic matching to WHO- or FDA-selected influenza strains, and therefore does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Flowchart illustrating the production of influenza hemagglutinin (HA) using the baculovirus-insect cell expression system for the manufacture of RIV4. It shows steps including cloning the HA gene into a baculovirus vector under a polyhedrin promoter, infecting insect cells, expansion in a bioreactor, harvest by disc-stack centrifugation, extraction, depth filtration for clarification, chromatographic capture and purification, DNA removal, and final tangential flow filtration/formulation.",
+    "image_description": "A flowchart diagram illustrating the baculovirus\u2013insect cell expression system for manufacturing recombinant hemagglutinin (HA) vaccine (RIV4), showing steps such as direct cloning of HA gene into baculovirus vector, recombination, insect cell seeding, bioreactor expansion, harvest by disc-stack centrifugation, extraction, clarification, capture, purification, DNA removal, and tangential flow filtration/formulation.",
     "evidence_found": null,
-    "reasoning": "The figure only outlines the recombinant HA manufacturing workflow and does not present any data or statements regarding antigenic match to WHO- or FDA-selected strains; therefore it does not support the claim.",
+    "reasoning": "The figure only depicts the manufacturing process of recombinant HA in insect cells and does not present any data or statements regarding antigenic matching to WHO- or FDA-selected influenza strains, and therefore does not support the claim.",
     "confidence_notes": null
   }
 }

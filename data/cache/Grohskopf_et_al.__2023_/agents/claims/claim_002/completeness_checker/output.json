@@ -5,29 +5,19 @@
   "additional_evidence_check": {
     "checked_for_more": true,
     "found_additional": true,
-    "additional_count": 2
+    "additional_count": 1
   },
   "completeness_stats": {
     "existing_evidence": 0,
-    "new_evidence_found": 2,
-    "total_evidence": 2
+    "new_evidence_found": 1,
+    "total_evidence": 1
   },
   "verified_evidence": [],
   "new_evidence": [
     {
       "id": "comp_1",
-      "quote": "Egg- based and cell culture based vaccines differ in the substrate in which reference vaccine viruses supplied to the manufacturer are propagated in quantities sufficient to produce the needed number of doses of vaccine.",
-      "relevance_explanation": "This quote highlights that both egg-based and cell-based vaccines require propagation of viruses in biological substrates, a process during which mutations can occur, supporting the claim that mutations may develop during production.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    },
-    {
-      "id": "comp_2",
-      "quote": "For Flu cel vax Quad rival ent, reference vaccine viruses are propagated in Madin-Darby canine kidney cells instead of eggs (125).",
-      "relevance_explanation": "This quote specifies that cell-based vaccines use cell cultures for virus propagation, a process known to potentially introduce mutations, thus supporting the claim.",
+      "quote": "Egg based and cell culture based vaccines differ in the substrate in which reference vaccine viruses supplied to the manufacturer are propagated in quantities sufficient to produce the needed number of doses of vaccine. For the IIV4 s Afluria Quad rival ent (43) Fluarix Quad rival ent (123) FluLaval Quad rival ent (124) and Flu zone Quad rival ent (44), reference vaccine viruses are propagated in eggs. For Flu cel vax Quad rival ent, reference vaccine viruses are propagated in Madin-Darby canine kidney cells instead of eggs (125).",
+      "relevance_explanation": "This quote explicitly describes that egg-based and cell-based flu vaccines use different propagation substrates, which is the biological context in which mutations can arise during production, supporting the claim that these vaccine types have the potential to develop mutations.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

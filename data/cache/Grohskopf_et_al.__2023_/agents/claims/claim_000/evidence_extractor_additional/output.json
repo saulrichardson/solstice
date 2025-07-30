@@ -11,8 +11,8 @@
   "extracted_evidence": [
     {
       "id": "comp_1",
-      "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u03bcg of HA derived from each vaccine virus (180 \u03bcg total).",
-      "relevance_explanation": "This quote specifies that Flublok (RIV4) contains hemagglutinin (HA) derived from cell-derived influenza viruses, which are selected to match the WHO- and FDA-recommended strains, and that the vaccine is manufactured without eggs, ensuring the antigenic match is not altered by egg adaptation.",
+      "quote": "Quad rival ent Recombinant Influenza Vaccine (RIV4) Available Vaccine. One recombinant influenza vaccine, Flublok Quad rival ent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
+      "relevance_explanation": "This quote specifies that Flublok (RIV4) contains hemagglutinin (HA) derived from each vaccine virus, using genetic sequences from cell-derived influenza viruses, which ensures the antigenic match to the selected strains. It also clarifies that the manufacturing process does not use eggs or live influenza viruses, supporting the claim of precise antigenic matching to WHO- and FDA-selected strains.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -21,8 +21,8 @@
     },
     {
       "id": "comp_2",
-      "quote": "For the 2022-23 season, U.S. cell culture based inactivated (ccIIV4) and recombinant (RIV4) influenza vaccines will contain HA derived from \u2022 an influenza A/Wisconsin/588/2019 (H1N1) pdm09 like virus, \u2022 an influenza A/Darwin/6/2021 (H3N2)-like virus, \u2022 an influenza B/Austria/1359417/2021 (Victoria lineage) like virus, and \u2022 an influenza B/Phuket/3073/2013 (Yamagata lineage like virus.",
-      "relevance_explanation": "This quote directly lists the specific strains from which the HA in Flublok (RIV4) is derived, showing that it matches the WHO- and FDA-selected strains for the 2022-23 season.",
+      "quote": "For the 2022-23 season, U.S.-licensed influenza vaccines will contain hemagglutinin (HA) derived from an influenza A/Victoria/2570/2019 (H1 N1) pdm 09 like virus (for egg based vaccines) or an influenza A/Wisconsin/588/2019 (H1 N1) pdm 09 like virus (for cell culture based and recombinant vaccines); an influenza A/Darwin/9/2021 (H3 N2)-like virus (for egg based vaccines) or an influenza A/Darwin/6/2021 (H3 N2)-like virus (for cell culture based or recombinant vaccines); an influenza B/Austria/1359417/2021 (Victoria lineage like virus; and an influenza B/Phuket/3073/2013 (Yamagata lineage like virus.",
+      "relevance_explanation": "This quote details that recombinant vaccines (such as Flublok) use HA derived from the exact strains selected for the season, matching the WHO and FDA recommendations, thus supporting the claim of identical antigenic match.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -31,8 +31,8 @@
     },
     {
       "id": "comp_3",
-      "quote": "Influenza Vaccine Composition for the 2022-23 Season All influenza vaccines licensed in the United States will contain components derived from influenza viruses antigenically similar to those recommended by FDA (https www fda gov advisory committees advisory committee calendar vaccines advisory-committees/advisory-committee-calendar/vaccinesand-related-biological-products-advisory-committee-march-32022 meeting announcement) All influenza vaccines expected will contain HA derived from \u2022 an influenza A/Victoria/2570/2019 (H1N1) pdm 09 like virus, \u2022 an influenza A/Darwin/9/2021 (H3N2)-like virus, \u2022 an influenza B/Austria/1359417/2021 (Victoria lineage) like virus, and \u2022 an influenza B/Phuket/3073/2013 (Yamagata lineage like virus. For the 2022-23 season, U.S. cell culture based inactivated (ccIIV4) and recombinant (RIV4) influenza vaccines will contain HA derived from \u2022 an influenza A/Wisconsin/588/2019 (H1N1) pdm 09 like virus, \u2022 an influenza A/Darwin/6/2021 (H3N2)-like virus, \u2022 an influenza B/Austria/1359417/2021 (Victoria lineage) like virus, and \u2022 an influenza B/Phuket/3073/2013 (Yamagata lineage like virus.",
-      "relevance_explanation": "This quote confirms that all U.S.-licensed influenza vaccines, including Flublok, are required to contain antigens that are antigenically similar to those recommended by the FDA, which are based on WHO recommendations, ensuring an identical antigenic match.",
+      "quote": "All seasonal influenza vaccines expected to be available in the United States for the 2022-23 season are quad rival ent, containing hemagglutinin (HA) derived from one influenza A (H1 N1) pdm09 virus, one influenza A (H3 N2) virus, one influenza B/Victoria lineage virus, and one influenza B/Yamagata lineage virus.",
+      "relevance_explanation": "This quote confirms that all vaccines, including Flublok, are formulated to contain HA from the specific strains selected for the season, ensuring an identical antigenic match with the WHO- and FDA-selected strains.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

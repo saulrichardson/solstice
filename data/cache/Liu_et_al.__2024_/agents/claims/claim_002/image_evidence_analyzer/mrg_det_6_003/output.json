@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p7_mrg_det_6_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p7_mrg_det_6_003.png",
+  "image_type": "Figure",
+  "page_number": 7,
+  "block_id": "mrg_det_6_003",
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "supports_claim": false,
+  "explanation": "Panels A and B display geometric mean ratios of egg-grown versus cell-grown virus titers for four vaccine types (egg-based Fluzone IIV4 and Fluarix IIV4; cell-based ccIIV4; recombinant RIV4) in adults aged 18\u201344 years (A) and 45\u201364 years (B), with 95% confidence intervals and p-values for group comparisons. Panels C and D show the proportions of participants with \u22654-fold reduced neutralizing titers to cell-grown virus pre- and 1-month post-vaccination across the same vaccine groups for both age cohorts. Evidence: Egg-based vaccines (Fluzone IIV4 and Fluarix IIV4) exhibit significantly elevated egg/cell titer ratios for A(H3N2) (e.g., p=0.0014 and p=0.0021 in 18\u201344 year-olds) and reduced proportions of robust responses to cell-grown virus, indicating egg-adapted antigenic changes. The figure demonstrates that egg-based vaccines acquire egg-adapted mutations that reduce antibody responses to cell-grown virus, but it does not provide any data on mutations arising during cell-based vaccine production, so it does not support the claim with respect to cell-based vaccines. Note: No direct sequencing or mutation analysis is shown; the data are limited to functional titer comparisons and do not address cell-production mutation potential.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Panels A and B display geometric mean ratios of egg-grown versus cell-grown virus titers for four vaccine types (egg-based Fluzone IIV4 and Fluarix IIV4; cell-based ccIIV4; recombinant RIV4) in adults aged 18\u201344 years (A) and 45\u201364 years (B), with 95% confidence intervals and p-values for group comparisons. Panels C and D show the proportions of participants with \u22654-fold reduced neutralizing titers to cell-grown virus pre- and 1-month post-vaccination across the same vaccine groups for both age cohorts.",
+    "evidence_found": "Egg-based vaccines (Fluzone IIV4 and Fluarix IIV4) exhibit significantly elevated egg/cell titer ratios for A(H3N2) (e.g., p=0.0014 and p=0.0021 in 18\u201344 year-olds) and reduced proportions of robust responses to cell-grown virus, indicating egg-adapted antigenic changes.",
+    "reasoning": "The figure demonstrates that egg-based vaccines acquire egg-adapted mutations that reduce antibody responses to cell-grown virus, but it does not provide any data on mutations arising during cell-based vaccine production, so it does not support the claim with respect to cell-based vaccines.",
+    "confidence_notes": "No direct sequencing or mutation analysis is shown; the data are limited to functional titer comparisons and do not address cell-production mutation potential."
+  }
+}

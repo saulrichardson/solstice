@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "The image shows the table of contents and partial content from the Flublok full prescribing information, including sections such as Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Clinical Pharmacology, Clinical Studies, and related headings. does not support the claim because there is no information in the table of contents or visible sections addressing antigenic match with WHO- or FDA-selected influenza strains Note: Image quality is sufficient to see headings; no relevant data appear in the visible content",
+  "explanation": "Black-and-white reproduction of the first page of Flublok full prescribing information, including a condensed header with DOSAGE AND ADMINISTRATION, DOSAGE FORMS AND STRENGTHS, CONTRAINDICATIONS, WARNINGS AND PRECAUTIONS, ADVERSE REACTIONS, a table of contents listing sections 1 through 17, and the beginning of section 1 (Indications and Usage) and section 2 (Dosage and Administration). does not support the claim because the image only shows heading and table of contents information without any data or statements regarding antigenic match to WHO- or FDA-selected strains. Note: Text is clear but limited to administrative headings and does not include clinical or regulatory statements about antigenic matching.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "The image shows the table of contents and partial content from the Flublok full prescribing information, including sections such as Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Clinical Pharmacology, Clinical Studies, and related headings.",
+    "image_description": "Black-and-white reproduction of the first page of Flublok full prescribing information, including a condensed header with DOSAGE AND ADMINISTRATION, DOSAGE FORMS AND STRENGTHS, CONTRAINDICATIONS, WARNINGS AND PRECAUTIONS, ADVERSE REACTIONS, a table of contents listing sections 1 through 17, and the beginning of section 1 (Indications and Usage) and section 2 (Dosage and Administration).",
     "evidence_found": null,
-    "reasoning": "does not support the claim because there is no information in the table of contents or visible sections addressing antigenic match with WHO- or FDA-selected influenza strains",
-    "confidence_notes": "Image quality is sufficient to see headings; no relevant data appear in the visible content"
+    "reasoning": "does not support the claim because the image only shows heading and table of contents information without any data or statements regarding antigenic match to WHO- or FDA-selected strains.",
+    "confidence_notes": "Text is clear but limited to administrative headings and does not include clinical or regulatory statements about antigenic matching."
   }
 }

@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Excerpt of a table listing various licensed quadrivalent influenza vaccines (e.g., Seqirus Quadrivalent, GlaxoSmithKline Quadrivalent, Sanofi Pasteur Quadrivalent) alongside their dose volumes (0.25 mL or 0.5 mL) and antigen content per strain (7.5 \u00b5g or 15 \u00b5g). does not support the claim because the table only provides dose volumes and antigen quantities for different influenza vaccines and contains no information about Flublok or its antigenic match with WHO- or FDA-selected flu strains. Note: The image is a partial table view and does not mention Flublok or antigenic matching; confidence in this assessment is high based on visible content.",
+  "explanation": "Partial table listing various influenza quadrivalent vaccines (e.g., Seqirus, GlaxoSmithKline, Sanofi Pasteur) alongside their dose volumes (0.25 mL, 0.5 mL) and antigen microgram content per strain. does not support the claim because the table only shows vaccine brand names and dosages, and contains no information on Flublok or its antigenic match with WHO- or FDA-selected flu strains. Note: Image is a partial extract and does not include any reference to Flublok or antigenic matching information.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Excerpt of a table listing various licensed quadrivalent influenza vaccines (e.g., Seqirus Quadrivalent, GlaxoSmithKline Quadrivalent, Sanofi Pasteur Quadrivalent) alongside their dose volumes (0.25 mL or 0.5 mL) and antigen content per strain (7.5 \u00b5g or 15 \u00b5g).",
+    "image_description": "Partial table listing various influenza quadrivalent vaccines (e.g., Seqirus, GlaxoSmithKline, Sanofi Pasteur) alongside their dose volumes (0.25 mL, 0.5 mL) and antigen microgram content per strain.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table only provides dose volumes and antigen quantities for different influenza vaccines and contains no information about Flublok or its antigenic match with WHO- or FDA-selected flu strains.",
-    "confidence_notes": "The image is a partial table view and does not mention Flublok or antigenic matching; confidence in this assessment is high based on visible content."
+    "reasoning": "does not support the claim because the table only shows vaccine brand names and dosages, and contains no information on Flublok or its antigenic match with WHO- or FDA-selected flu strains.",
+    "confidence_notes": "Image is a partial extract and does not include any reference to Flublok or antigenic matching information."
   }
 }

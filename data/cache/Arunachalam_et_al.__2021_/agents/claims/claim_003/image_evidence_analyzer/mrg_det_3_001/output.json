@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A two-panel schematic comparing the structural features of native influenza virus hemagglutinin (HA) heterodimer (HA1 in turquoise and HA2 in orange, linked by an inter-disulfide bond, cleaved fusion peptide in green, complex-type sialylated N-linked glycans) versus recombinant HA (rHA) produced in insect cells (single HA0 precursor combining HA1/HA2, uncleaved fusion-peptide loop in green, simpler paucimannosidic N-linked glycans). Evidence: Labels indicating that rHA has simpler glycans and an uncleaved fusion-peptide loop that expose unique epitopes. The figure illustrates structural differences that suggest rHA may expose more epitopes, but it provides no data on immune responses or cross-protection outcomes and therefore does not support the claim. Note: Structural schematic only; no immunogenicity or cross-protection data shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-panel schematic comparing the structural features of native influenza virus hemagglutinin (HA) heterodimer (HA1 in turquoise and HA2 in orange, linked by an inter-disulfide bond, cleaved fusion peptide in green, complex-type sialylated N-linked glycans) versus recombinant HA (rHA) produced in insect cells (single HA0 precursor combining HA1/HA2, uncleaved fusion-peptide loop in green, simpler paucimannosidic N-linked glycans).",
+    "evidence_found": "Labels indicating that rHA has simpler glycans and an uncleaved fusion-peptide loop that expose unique epitopes.",
+    "reasoning": "The figure illustrates structural differences that suggest rHA may expose more epitopes, but it provides no data on immune responses or cross-protection outcomes and therefore does not support the claim.",
+    "confidence_notes": "Structural schematic only; no immunogenicity or cross-protection data shown."
+  }
+}

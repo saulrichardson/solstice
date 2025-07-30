@@ -1,9 +1,19 @@
 {
   "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Error analyzing image: Server error '500 Internal Server Error' for url 'http://localhost:8080/v1/responses'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
-  "error": true,
-  "model_used": "o4-mini"
+  "explanation": "A partial prescribing information document for Flublok, showing section headings (indications, dosage and administration, dosage forms and strengths, contraindications, warnings and precautions, adverse reactions, clinical studies, etc.) and some adverse reaction data for different age groups. does not support the claim because the image contains only a table of contents and adverse reaction information without any data on hemagglutinin antigen content or comparisons to standard-dose flu vaccines. Note: Only the table of contents and adverse reactions sections are visible; no information on HA antigen content is present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A partial prescribing information document for Flublok, showing section headings (indications, dosage and administration, dosage forms and strengths, contraindications, warnings and precautions, adverse reactions, clinical studies, etc.) and some adverse reaction data for different age groups.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image contains only a table of contents and adverse reaction information without any data on hemagglutinin antigen content or comparisons to standard-dose flu vaccines.",
+    "confidence_notes": "Only the table of contents and adverse reactions sections are visible; no information on HA antigen content is present."
+  }
 }

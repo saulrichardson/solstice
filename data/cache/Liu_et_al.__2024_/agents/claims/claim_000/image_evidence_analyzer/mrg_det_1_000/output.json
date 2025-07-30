@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A CONSORT flow diagram showing participant enrollment, re-enrollment, exclusions, and randomization into different influenza vaccine arms (IIV4, ccIIV4, RIV4) across two study years, with numbers of participants in each re-randomized subgroup. The figure only depicts participant flow and randomization among vaccine groups and provides no information on antigenic composition or match with WHO- or FDA-selected strains, and therefore does not support the claim.",
+  "explanation": "CONSORT flow diagram showing screening and enrollment of participants in Year 1 and Year 2 of an influenza vaccine study, with arms IIV4, ccIIV4, and RIV4 (Flublok Quadrivalent) and counts of participants re-randomized or excluded. The figure is a participant enrollment flowchart and does not present any information on antigenic matching of Flublok to WHO- or FDA-selected strains, therefore it does not support the claim Note: Image clarity is sufficient to confirm absence of antigenic match data",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A CONSORT flow diagram showing participant enrollment, re-enrollment, exclusions, and randomization into different influenza vaccine arms (IIV4, ccIIV4, RIV4) across two study years, with numbers of participants in each re-randomized subgroup.",
+    "image_description": "CONSORT flow diagram showing screening and enrollment of participants in Year 1 and Year 2 of an influenza vaccine study, with arms IIV4, ccIIV4, and RIV4 (Flublok Quadrivalent) and counts of participants re-randomized or excluded.",
     "evidence_found": null,
-    "reasoning": "The figure only depicts participant flow and randomization among vaccine groups and provides no information on antigenic composition or match with WHO- or FDA-selected strains, and therefore does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "The figure is a participant enrollment flowchart and does not present any information on antigenic matching of Flublok to WHO- or FDA-selected strains, therefore it does not support the claim",
+    "confidence_notes": "Image clarity is sufficient to confirm absence of antigenic match data"
   }
 }

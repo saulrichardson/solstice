@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table listing pre- and post-vaccination geometric mean antibody titers (with 95% confidence intervals) and percent response for placebo, Flublok, Flublok previously vaccinated (PV), and Flublok not previously vaccinated (NPV) groups across different influenza strains. does not support the claim because the table only presents immunogenicity data (antibody titers and response rates) and contains no information on antigenic matching to WHO- or FDA-selected strains. Note: Portion of table is visible and shows only immunogenicity metrics; no mention of strain selection or match was found.",
+  "explanation": "A table showing pre- and post-vaccination geometric mean hemagglutination inhibition titers (with 95% CIs) and percentage of responders for placebo, Flublok, and Flublok subgroups (previously vaccinated and not previously vaccinated). The table presents immunogenicity data (HI titers and response rates) and does not address or demonstrate antigenic match between Flublok and WHO- or FDA-selected flu strains, and thus does not support the claim. Note: Only immunogenicity endpoints are shown; no direct information on antigenic composition or match is provided.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing pre- and post-vaccination geometric mean antibody titers (with 95% confidence intervals) and percent response for placebo, Flublok, Flublok previously vaccinated (PV), and Flublok not previously vaccinated (NPV) groups across different influenza strains.",
+    "image_description": "A table showing pre- and post-vaccination geometric mean hemagglutination inhibition titers (with 95% CIs) and percentage of responders for placebo, Flublok, and Flublok subgroups (previously vaccinated and not previously vaccinated).",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table only presents immunogenicity data (antibody titers and response rates) and contains no information on antigenic matching to WHO- or FDA-selected strains.",
-    "confidence_notes": "Portion of table is visible and shows only immunogenicity metrics; no mention of strain selection or match was found."
+    "reasoning": "The table presents immunogenicity data (HI titers and response rates) and does not address or demonstrate antigenic match between Flublok and WHO- or FDA-selected flu strains, and thus does not support the claim.",
+    "confidence_notes": "Only immunogenicity endpoints are shown; no direct information on antigenic composition or match is provided."
   }
 }

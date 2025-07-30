@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Screenshot of the top portion of the first page of a Vaccine journal article, showing the Elsevier journal name, homepage URL, and partial article title mentioning a trivalent recombinant hemagglutinin protein vaccine (Flublok) does not support the claim because the image only displays the journal header and part of the article title without any data or statements about antigenic matching to WHO- or FDA-selected flu strains Note: No figure or data related to antigenic match is visible; content may be incomplete or cut off",
+  "explanation": "Top of first page of a Vaccine journal article showing the Elsevier logo, journal homepage URL, and a partially visible article title ('...ective efficacy of a trivalent recombinant hemagglutinin protein vaccine') The image only shows the journal header and partial title with no data or statements about antigenic matching; it does not support the claim. Note: The image is limited to the article header and title; no figures or detailed content are visible.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Screenshot of the top portion of the first page of a Vaccine journal article, showing the Elsevier journal name, homepage URL, and partial article title mentioning a trivalent recombinant hemagglutinin protein vaccine (Flublok)",
+    "image_description": "Top of first page of a Vaccine journal article showing the Elsevier logo, journal homepage URL, and a partially visible article title ('...ective efficacy of a trivalent recombinant hemagglutinin protein vaccine')",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image only displays the journal header and part of the article title without any data or statements about antigenic matching to WHO- or FDA-selected flu strains",
-    "confidence_notes": "No figure or data related to antigenic match is visible; content may be incomplete or cut off"
+    "reasoning": "The image only shows the journal header and partial title with no data or statements about antigenic matching; it does not support the claim.",
+    "confidence_notes": "The image is limited to the article header and title; no figures or detailed content are visible."
   }
 }

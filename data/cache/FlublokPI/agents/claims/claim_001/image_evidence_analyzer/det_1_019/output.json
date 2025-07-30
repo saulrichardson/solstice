@@ -1,9 +1,19 @@
 {
   "image_filename": "table_p2_det_1_019.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_019.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_019",
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Error analyzing image: Server error '500 Internal Server Error' for url 'http://localhost:8080/v1/responses'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
-  "error": true,
-  "model_used": "o4-mini"
+  "explanation": "A table listing percentages of solicited local and systemic adverse reactions (Any, Moderate, Severe) reported by subjects in two clinical studies, comparing Flublok with U.S.-licensed standard-dose trivalent inactivated influenza vaccines (IIV3). The table shows rows for different symptoms and columns for overall, moderate, and severe events. The table presents safety data (adverse reaction rates) rather than information on hemagglutinin antigen content or immunogenicity. Therefore, it does not support the claim about Flublok containing 3x the HA antigen content or greater immunogenicity, and does not support the claim. Note: The image is clear enough to identify content; however, it does not include any antigen content or immunogenicity data.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing percentages of solicited local and systemic adverse reactions (Any, Moderate, Severe) reported by subjects in two clinical studies, comparing Flublok with U.S.-licensed standard-dose trivalent inactivated influenza vaccines (IIV3). The table shows rows for different symptoms and columns for overall, moderate, and severe events.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety data (adverse reaction rates) rather than information on hemagglutinin antigen content or immunogenicity. Therefore, it does not support the claim about Flublok containing 3x the HA antigen content or greater immunogenicity, and does not support the claim.",
+    "confidence_notes": "The image is clear enough to identify content; however, it does not include any antigen content or immunogenicity data."
+  }
 }

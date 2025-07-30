@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p5_det_4_002.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_002",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table listing U.S.-licensed influenza vaccines for the 2022\u201323 season, organized by vaccine type (standard-dose egg-based, cell culture\u2013based, high-dose egg-based, adjuvanted egg-based, recombinant HA, live attenuated), with columns for manufacturer, presentations (e.g., prefilled syringe, multidose vial), age indications, antigen content per dose (\u00b5g), route of administration, and notes. The table contains only formulations, doses, and age indications for various influenza vaccines, including the recombinant HA vaccine, but provides no data on immune response breadth or cross-protection in mismatch seasons, and therefore does not support the claim. Note: No immunogenicity or effectiveness data are presented; only vaccine characteristics are listed.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing U.S.-licensed influenza vaccines for the 2022\u201323 season, organized by vaccine type (standard-dose egg-based, cell culture\u2013based, high-dose egg-based, adjuvanted egg-based, recombinant HA, live attenuated), with columns for manufacturer, presentations (e.g., prefilled syringe, multidose vial), age indications, antigen content per dose (\u00b5g), route of administration, and notes.",
+    "evidence_found": null,
+    "reasoning": "The table contains only formulations, doses, and age indications for various influenza vaccines, including the recombinant HA vaccine, but provides no data on immune response breadth or cross-protection in mismatch seasons, and therefore does not support the claim.",
+    "confidence_notes": "No immunogenicity or effectiveness data are presented; only vaccine characteristics are listed."
+  }
+}

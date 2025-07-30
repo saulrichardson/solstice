@@ -11,8 +11,8 @@
   "extracted_evidence": [
     {
       "id": "comp_1",
-      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
-      "relevance_explanation": "This quote specifies that Flublok is formulated to contain hemagglutinin (HA) from the exact strains selected for the 2024-2025 influenza season, which are determined by WHO and FDA recommendations, supporting the claim of an identical antigenic match.",
+      "quote": "Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hem agglutination inhibition (HI) antibody).",
+      "relevance_explanation": "This quote directly states that Flublok contains recombinant hemagglutinin proteins from the three strains specified by health authorities (i.e., WHO and FDA), supporting the claim that Flublok ensures an identical antigenic match with the selected flu strains.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -21,8 +21,8 @@
     },
     {
       "id": "comp_2",
-      "quote": "Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine.",
-      "relevance_explanation": "This statement directly affirms that Flublok uses the exact strains specified by health authorities (WHO and FDA) for the annual flu vaccine, supporting the claim of identical antigenic match.",
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
+      "relevance_explanation": "This quote specifies that Flublok is formulated to contain hemagglutinin from the exact strains selected for the 2024-2025 season, demonstrating that it matches the strains chosen by public health authorities.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
