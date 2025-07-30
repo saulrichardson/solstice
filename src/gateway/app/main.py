@@ -1,3 +1,4 @@
+import json
 import sys
 import time
 from contextlib import asynccontextmanager
@@ -122,9 +123,14 @@ async def create_response(request: Request, body: dict):
     if response_request.stream:
 
         async def stream_generator():
-            async for chunk in provider.stream_response(response_request):
-                yield f"data: {chunk}\n\n"
-            yield "data: [DONE]\n\n"
+            try:
+                async for chunk in provider.stream_response(response_request):
+                    yield f"data: {chunk}\n\n"
+                yield "data: [DONE]\n\n"
+            except Exception as e:
+                # Send error as SSE event to maintain protocol
+                error_chunk = json.dumps({"error": str(e), "type": "error"})
+                yield f"data: {error_chunk}\n\n"
 
         return StreamingResponse(stream_generator(), media_type="text/event-stream")
 

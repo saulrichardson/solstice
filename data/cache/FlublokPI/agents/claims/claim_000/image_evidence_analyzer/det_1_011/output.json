@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_011.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_011",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A two-column table of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) reactogenicity rates reported in clinical trial subjects receiving Flublok or comparator vaccines. Footnotes describe cohort definitions, fever grading, trial identifiers, and subject demographics. The displayed table reports safety and reactogenicity data (percentages of adverse events) for Flublok versus placebo or licensed influenza vaccines. There is no information about antigen composition, antigenic assays, or matching to WHO- or FDA-selected influenza strains. Thus, it does not provide any evidence regarding antigenic match. Note: Assessment limited to the visible table, which appears to focus solely on safety/reactogenicity endpoints rather than antigenic characterization.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-column table of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) reactogenicity rates reported in clinical trial subjects receiving Flublok or comparator vaccines. Footnotes describe cohort definitions, fever grading, trial identifiers, and subject demographics.",
+    "evidence_found": null,
+    "reasoning": "The displayed table reports safety and reactogenicity data (percentages of adverse events) for Flublok versus placebo or licensed influenza vaccines. There is no information about antigen composition, antigenic assays, or matching to WHO- or FDA-selected influenza strains. Thus, it does not provide any evidence regarding antigenic match.",
+    "confidence_notes": "Assessment limited to the visible table, which appears to focus solely on safety/reactogenicity endpoints rather than antigenic characterization."
+  }
+}

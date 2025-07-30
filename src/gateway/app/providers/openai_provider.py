@@ -83,7 +83,8 @@ class OpenAIProvider(Provider):
         normalized: list[dict] = []
         for tool in tools:
             if isinstance(tool, str):
-                normalized.append({"type": tool.replace("_", "-")})
+                # Keep original tool names without modification
+                normalized.append({"type": tool})
             else:
                 # Ensure custom functions include the wrapper type
                 if "function" in tool and tool.get("type") != "function":
@@ -110,7 +111,7 @@ class OpenAIProvider(Provider):
         if stream:
             payload["stream"] = True
 
-        # Copy all simple scalar/list fields when set
+        # Use model_dump to preserve all values including falsy ones (0, False, etc.)
         simple_fields = (
             "input",
             "previous_response_id",
@@ -131,9 +132,11 @@ class OpenAIProvider(Provider):
             "frequency_penalty",
             "timeout",
         )
+        # Get all request fields, excluding None values
+        request_dict = request.model_dump(exclude_none=True)
         for field in simple_fields:
-            if (value := getattr(request, field, None)) is not None:
-                payload[field] = value
+            if field in request_dict:
+                payload[field] = request_dict[field]
 
         if request.tools:
             payload["tools"] = self._normalize_tools(request.tools)
@@ -158,17 +161,11 @@ class OpenAIProvider(Provider):
         print(f"[OPENAI DEBUG] Raw usage from OpenAI: {usage}", flush=True)
         print(f"[OPENAI DEBUG] Full data keys: {list(data.keys())}", flush=True)
         
-        # Note: Responses API uses input_tokens/output_tokens instead of prompt_tokens/completion_tokens
-        total_tokens = sum(
-            usage.get(k, 0)
-            for k in ("input_tokens", "output_tokens", "reasoning_tokens")
-        )
-        
         # Build the base response object
         response_obj = ResponseObject(
             id=data.get("id", ""),
             object=data.get("object", "response"),
-            created=data.get("created_at", 0),  # Responses API uses created_at
+            created=data.get("created", 0),
             model=data.get("model", ""),
             output=data.get("output"),
             input_tokens=usage.get("input_tokens", 0),

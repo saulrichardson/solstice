@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_017.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_017",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "Bottom portion of a clinical study table showing percentages of subjects reporting severe responses, with footnotes defining severity thresholds, study inclusion criteria, trial registrations, and temperature-based grading of fever. The visible content pertains solely to safety and reactogenicity outcomes (percentages of subjects reporting severe responses, definitions of mild/moderate fever, and footnotes about study populations and trial registration). There is no information about antigenic matching, vaccine composition, or strain selection that would address whether Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains. Note: The image shows only the lower half of a table focusing on safety data; no information on antigenic match or strain selection is visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Bottom portion of a clinical study table showing percentages of subjects reporting severe responses, with footnotes defining severity thresholds, study inclusion criteria, trial registrations, and temperature-based grading of fever.",
+    "evidence_found": null,
+    "reasoning": "The visible content pertains solely to safety and reactogenicity outcomes (percentages of subjects reporting severe responses, definitions of mild/moderate fever, and footnotes about study populations and trial registration). There is no information about antigenic matching, vaccine composition, or strain selection that would address whether Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains.",
+    "confidence_notes": "The image shows only the lower half of a table focusing on safety data; no information on antigenic match or strain selection is visible."
+  }
+}

@@ -60,6 +60,13 @@ def _kmeans_1d(points: list[float], max_iter: int = 10) -> list[int]:
             break
         centroids = new_centroids
 
+    # Final assignment with converged centroids
+    # Recompute clusters to ensure they match the final centroids
+    clusters = ([], [])  # type: ignore[var-annotated]
+    for idx, p in enumerate(points):
+        ci = 0 if abs(p - centroids[0]) < abs(p - centroids[1]) else 1
+        clusters[ci].append(idx)
+
     labels = [0] * len(points)
     for ci, members in enumerate(clusters):
         for i in members:
@@ -80,17 +87,27 @@ def _silhouette_1d(points: list[float], labels: list[int]) -> float:
     if not cluster0 or not cluster1:
         return 0.0
 
-    a = (sum(abs(x - y) for x in cluster0 for y in cluster0) / (len(cluster0) ** 2)) + (
-        sum(abs(x - y) for x in cluster1 for y in cluster1) / (len(cluster1) ** 2)
-    )
+    # Compute average intra-cluster distances with consistent scaling
+    # Use n*(n-1) for intra-cluster to exclude self-distances
+    n0, n1 = len(cluster0), len(cluster1)
+    a0 = sum(abs(x - y) for x in cluster0 for y in cluster0) / max(1, n0 * (n0 - 1))
+    a1 = sum(abs(x - y) for x in cluster1 for y in cluster1) / max(1, n1 * (n1 - 1))
+    a = (a0 + a1) / 2
+    
+    # Inter-cluster distance uses n*m as before
     b = sum(abs(x - y) for x in cluster0 for y in cluster1) / (len(cluster0) * len(cluster1))
     if b == 0:
         return 0.0
     return (b - a) / max(a, b)
 
 
-def _vertical_overlap(a: Box, b: Box) -> bool:
-    return not (a.bbox[3] <= b.bbox[1] or b.bbox[3] <= a.bbox[1])
+def _horizontal_overlap(a: Box, b: Box) -> bool:
+    """Check if two boxes overlap in the horizontal dimension (X-axis).
+    
+    Returns True if the X ranges of the two boxes overlap.
+    bbox format: (x1, y1, x2, y2)
+    """
+    return not (a.bbox[2] <= b.bbox[0] or b.bbox[2] <= a.bbox[0])
 
 
 # ---------------------------------------------------------------------------
@@ -129,12 +146,12 @@ def determine_reading_order(boxes: List[Box]) -> List[str]:
                 continue
 
             # bi above bj & overlaps horizontally → edge i -> j
-            if bi.bbox[3] <= bj.bbox[1] and _vertical_overlap(bi, bj):
+            if bi.bbox[3] <= bj.bbox[1] and _horizontal_overlap(bi, bj):
                 edges[i].add(j)
                 continue
 
             # Same vertical band, different columns
-            if labels[i] < labels[j] and _vertical_overlap(bi, bj):
+            if labels[i] < labels[j] and _horizontal_overlap(bi, bj):
                 edges[i].add(j)
 
             # Spanning blocks serve as bridges

@@ -1,5 +1,6 @@
 """Streamlined orchestrator for processing claims with supporting evidence pipeline."""
 
+import json
 import logging
 from datetime import datetime
 from pathlib import Path
@@ -334,31 +335,39 @@ class ClaimOrchestrator:
         Returns:
             List of image analysis results (only those that support the claim)
         """
-        figures_dir = self.cache_dir / document / "extracted" / "figures"
+        # Load document content to get image metadata
+        from ..utils import document_utils
         
-        # Check if figures directory exists
-        if not figures_dir.exists():
-            logger.info("    No figures directory found, skipping image analysis")
+        content_path = self.cache_dir / document / "extracted" / "content.json"
+        if not content_path.exists():
+            logger.info("    No content.json found, skipping image analysis")
             return []
         
-        # Get all image files
-        image_files = list(figures_dir.glob("*.png")) + list(figures_dir.glob("*.jpg"))
-        
-        if not image_files:
-            logger.info("    No image files found")
+        try:
+            with open(content_path, 'r') as f:
+                content_json = json.load(f)
+        except Exception as e:
+            logger.error(f"    Failed to load content.json: {e}")
             return []
         
-        logger.info(f"    Found {len(image_files)} images to analyze")
+        # Get all images with metadata
+        images = document_utils.get_images(content_json)
+        
+        if not images:
+            logger.info("    No images found in document")
+            return []
+        
+        logger.info(f"    Found {len(images)} images to analyze")
         
         # Analyze each image in parallel using asyncio.gather
         import asyncio
         
         tasks = []
-        for image_file in image_files:
+        for image_metadata in images:
             analyzer = ImageEvidenceAnalyzer(
                 pdf_name=document,
                 claim_id=self.claim_id,
-                image_filename=image_file.name,
+                image_metadata=image_metadata,
                 cache_dir=self.cache_dir,
                 config=self.agent_config
             )
@@ -371,16 +380,17 @@ class ClaimOrchestrator:
         supporting_images = []
         for i, result in enumerate(results):
             if isinstance(result, Exception):
-                logger.error(f"      Image analysis failed for {image_files[i].name}: {result}")
+                image_id = images[i].get('block_id', f"image_{i}")
+                logger.error(f"      Image analysis failed for {image_id}: {result}")
                 doc_result["agents_run"].append({
-                    "agent": f"image_evidence_analyzer_{image_files[i].name}",
+                    "agent": f"image_evidence_analyzer_{image_id}",
                     "success": False,
                     "error": str(result),
                     "timestamp": datetime.now().isoformat()
                 })
             else:
                 # Save the output to image-specific directory
-                image_id = result.get('image_filename', '').replace('.png', '').replace('.jpg', '')
+                image_id = result.get('block_id', result.get('image_filename', '').replace('.png', '').replace('.jpg', ''))
                 self._save_agent_output(document, f"image_evidence_analyzer/{image_id}", result)
                 
                 # Track in agents_run
@@ -397,7 +407,7 @@ class ClaimOrchestrator:
                 else:
                     logger.info(f"      ✗ {result.get('image_filename')} does not support claim")
         
-        logger.info(f"    Found {len(supporting_images)} supporting images out of {len(image_files)} analyzed")
+        logger.info(f"    Found {len(supporting_images)} supporting images out of {len(images)} analyzed")
         return supporting_images
     
     def _save_agent_output(self, document: str, agent_name: str, output: Dict[str, Any]):

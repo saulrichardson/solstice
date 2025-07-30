@@ -4,15 +4,26 @@
   "document": "FlublokPI",
   "additional_evidence_check": {
     "checked_for_more": true,
-    "found_additional": false,
-    "additional_count": 0
+    "found_additional": true,
+    "additional_count": 1
   },
   "completeness_stats": {
     "existing_evidence": 0,
-    "new_evidence_found": 0,
-    "total_evidence": 0
+    "new_evidence_found": 1,
+    "total_evidence": 1
   },
   "verified_evidence": [],
-  "new_evidence": [],
+  "new_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Frequent development of antigenic variants through antigenic drift is the virologic basis for seasonal epidemics and the reason for the usual replacement of one or more influenza virus strains in each year\u2019s influenza vaccine.",
+      "relevance_explanation": "This quote directly addresses the tendency of influenza viruses to develop antigenic variants (mutations) during production, which is the underlying reason why vaccine strains must be updated regularly. This supports the claim that mutations can occur during vaccine production, potentially reducing effectiveness.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
   "model_used": "gpt-4.1"
 }

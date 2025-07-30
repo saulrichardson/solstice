@@ -13,7 +13,7 @@ class ResponseRequest(BaseModel):
     instructions: str | None = None
     tools: list[dict] | None = None
     tool_choice: str | dict | None = "auto"
-    parallel_tool_calls: bool | None = True
+    parallel_tool_calls: bool | None = None
     store: bool | None = True
     background: bool | None = False
     reasoning: dict | None = None

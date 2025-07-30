@@ -39,7 +39,18 @@ class Cache:
 
     def _generate_key(self, cache_data: dict) -> str:
         """Generate deterministic filename from request parameters."""
-        key_str = json.dumps(cache_data, sort_keys=True)
+        # Deep sort all nested structures to ensure deterministic keys
+        def sort_deep(obj):
+            if isinstance(obj, dict):
+                return {k: sort_deep(v) for k, v in sorted(obj.items())}
+            elif isinstance(obj, list):
+                # Sort list items by their JSON representation for determinism
+                return sorted([sort_deep(i) for i in obj], 
+                            key=lambda x: json.dumps(x, sort_keys=True))
+            return obj
+        
+        sorted_data = sort_deep(cache_data)
+        key_str = json.dumps(sorted_data, sort_keys=True)
         return hashlib.sha256(key_str.encode()).hexdigest()
 
     def _path_for_key(self, key_hash: str) -> Path:

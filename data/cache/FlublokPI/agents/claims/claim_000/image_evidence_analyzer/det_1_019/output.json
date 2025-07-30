@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_019.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_019.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_019",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A multi\u2010row table summarizing the percentage of subjects reporting solicited adverse events (any, moderate, severe) across different studies of a vaccine, with footnotes describing the criteria for severity and study design. The table presents safety and tolerability data (percentages of adverse events by severity) from clinical studies of the vaccine. There is no information on antigenic composition, strain matching, or immunogenicity relative to WHO\u2010 or FDA\u2010selected influenza strains. Therefore, it does not provide evidence that Flublok ensures identical antigenic match with approved flu strains. Note: The table is somewhat cut off on the left, but the visible columns and footnotes clearly pertain to adverse event reporting rather than antigenic match.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multi\u2010row table summarizing the percentage of subjects reporting solicited adverse events (any, moderate, severe) across different studies of a vaccine, with footnotes describing the criteria for severity and study design.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety and tolerability data (percentages of adverse events by severity) from clinical studies of the vaccine. There is no information on antigenic composition, strain matching, or immunogenicity relative to WHO\u2010 or FDA\u2010selected influenza strains. Therefore, it does not provide evidence that Flublok ensures identical antigenic match with approved flu strains.",
+    "confidence_notes": "The table is somewhat cut off on the left, but the visible columns and footnotes clearly pertain to adverse event reporting rather than antigenic match."
+  }
+}

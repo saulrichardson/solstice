@@ -66,7 +66,6 @@ class MarketingPipeline(BasePDFPipeline):
         
         Returns List[List[Box]] for consistency with StandardPipeline.
         """
-        import uuid
         
         consolidated_layouts = []
         

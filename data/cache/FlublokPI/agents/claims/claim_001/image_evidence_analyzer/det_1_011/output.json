@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_011.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_011",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Pooled safety/reactogenicity table from three clinical trials (Studies 2\u20134) in adults aged \u226550 years, showing incidence (%) of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse events following Flublok versus a U.S.-licensed trivalent inactivated influenza vaccine comparator. The table presents the frequency of local and systemic adverse events reported after vaccination; it does not include any information on hemagglutinin (HA) antigen content or immunogenicity outcomes. There is no mention of HA dosing (e.g., 45 \u00b5g versus 135 \u00b5g per strain) or comparative antibody responses, so it does not address the claim that Flublok contains 3\u00d7 the HA antigen content or that this is linked to greater immunogenicity. Note: The image is of sufficient quality to confirm it covers only reactogenicity data; no antigen content or immunogenicity data are present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Pooled safety/reactogenicity table from three clinical trials (Studies 2\u20134) in adults aged \u226550 years, showing incidence (%) of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse events following Flublok versus a U.S.-licensed trivalent inactivated influenza vaccine comparator.",
+    "evidence_found": null,
+    "reasoning": "The table presents the frequency of local and systemic adverse events reported after vaccination; it does not include any information on hemagglutinin (HA) antigen content or immunogenicity outcomes. There is no mention of HA dosing (e.g., 45 \u00b5g versus 135 \u00b5g per strain) or comparative antibody responses, so it does not address the claim that Flublok contains 3\u00d7 the HA antigen content or that this is linked to greater immunogenicity.",
+    "confidence_notes": "The image is of sufficient quality to confirm it covers only reactogenicity data; no antigen content or immunogenicity data are present."
+  }
+}

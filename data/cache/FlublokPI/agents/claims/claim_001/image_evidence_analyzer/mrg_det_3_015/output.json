@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": true,
+  "explanation": "A table titled \u201cImmunogenicity Results (hH3N2)\u201d comparing Flublok (45 \u00b5g HA per strain) to two licensed egg-based influenza vaccines (15 \u00b5g HA per strain) in adults. The leftmost column lists Hemagglutinin (HA) content per strain. The remaining columns show geometric mean hemagglutination inhibition titers (HI GMT) and seroconversion rates for H3N2 following vaccination with each product. Evidence: Flublok is listed with 45 \u00b5g HA per strain versus 15 \u00b5g HA per strain for the comparator vaccines (3\u00d7 HA content). The immunogenicity columns show higher HI GMTs and similar or higher seroconversion rates. The table explicitly reports that Flublok contains 45 \u00b5g of HA antigen per strain compared to 15 \u00b5g in standard\u2010dose vaccines (3\u00d7 more), and pairs this with immunogenicity data (HI GMT and seroconversion rates) demonstrating that the higher antigen dose yields equal or superior immune responses. Thus it directly supports the claim that Flublok has three times the HA content, which is correlated here with greater immunogenicity.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "A table titled \u201cImmunogenicity Results (hH3N2)\u201d comparing Flublok (45 \u00b5g HA per strain) to two licensed egg-based influenza vaccines (15 \u00b5g HA per strain) in adults. The leftmost column lists Hemagglutinin (HA) content per strain. The remaining columns show geometric mean hemagglutination inhibition titers (HI GMT) and seroconversion rates for H3N2 following vaccination with each product.",
+    "evidence_found": "Flublok is listed with 45 \u00b5g HA per strain versus 15 \u00b5g HA per strain for the comparator vaccines (3\u00d7 HA content). The immunogenicity columns show higher HI GMTs and similar or higher seroconversion rates.",
+    "reasoning": "The table explicitly reports that Flublok contains 45 \u00b5g of HA antigen per strain compared to 15 \u00b5g in standard\u2010dose vaccines (3\u00d7 more), and pairs this with immunogenicity data (HI GMT and seroconversion rates) demonstrating that the higher antigen dose yields equal or superior immune responses. Thus it directly supports the claim that Flublok has three times the HA content, which is correlated here with greater immunogenicity.",
+    "confidence_notes": null
+  }
+}

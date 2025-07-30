@@ -4,6 +4,9 @@ The goal is not to implement a fully-featured resilience layer but to ensure
 that transient network failures (e.g. 5xx, time-outs) don't immediately bubble
 up to the API consumer during tests.  The logic is deliberately kept minimal
 and synchronous ‑ we rely on ``asyncio.sleep`` for the back-off.
+
+Note: For streaming responses, only the initial connection is retried.
+Mid-stream failures are not retried to avoid partial message duplication.
 """
 
 from __future__ import annotations

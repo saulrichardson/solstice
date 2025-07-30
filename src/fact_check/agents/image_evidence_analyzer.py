@@ -39,7 +39,7 @@ class ImageEvidenceAnalyzer(BaseAgent):
         self, 
         pdf_name: str,
         claim_id: str,
-        image_filename: str,
+        image_metadata: Dict[str, Any],
         cache_dir: Path = Path("data/cache"),
         config: Optional[Dict[str, Any]] = None
     ):
@@ -49,16 +49,24 @@ class ImageEvidenceAnalyzer(BaseAgent):
         Args:
             pdf_name: Name of the PDF document
             claim_id: ID of the claim being processed
-            image_filename: Name of the image file to analyze
+            image_metadata: Image metadata from document_utils.get_images() containing:
+                - image_path: Path to image file relative to extracted dir
+                - page_number: Page number (1-based)
+                - role: Figure or Table
+                - block_id: Block identifier
             cache_dir: Base cache directory
             config: Agent configuration
         """
         super().__init__(pdf_name, cache_dir, config)
         self.claim_id = claim_id
-        self.image_filename = image_filename
+        self.image_metadata = image_metadata
         
-        # Store results per image
-        image_id = image_filename.replace('.png', '').replace('.jpg', '')
+        # Extract filename from path for backward compatibility
+        image_path = Path(image_metadata['image_path'])
+        self.image_filename = image_path.name
+        
+        # Store results per image using block_id for uniqueness
+        image_id = image_metadata.get('block_id', self.image_filename.replace('.png', '').replace('.jpg', ''))
         self.agent_dir = (
             self.pdf_dir / "agents" / "claims" / claim_id / 
             self.agent_name / image_id
@@ -83,8 +91,9 @@ class ImageEvidenceAnalyzer(BaseAgent):
         
         logger.info(f"Analyzing image {self.image_filename} for claim {self.claim_id}")
         
-        # Build image path
-        image_path = self.pdf_dir / "extracted" / "figures" / self.image_filename
+        # Build image path from metadata
+        # image_path in metadata is relative to extracted directory
+        image_path = self.pdf_dir / "extracted" / self.image_metadata['image_path']
         
         if not image_path.exists():
             logger.warning(f"Image file not found: {image_path}")
@@ -106,8 +115,11 @@ class ImageEvidenceAnalyzer(BaseAgent):
             # Determine image mime type
             mime_type = "image/png" if image_path.suffix == ".png" else "image/jpeg"
             
-            # Build comprehensive multimodal prompt
-            prompt = f"""You are analyzing an image from a medical/clinical document to determine if it contains evidence supporting a specific claim.
+            # Build comprehensive multimodal prompt with metadata context
+            image_type = self.image_metadata.get('role', 'Figure')
+            page_num = self.image_metadata.get('page_number', 'unknown')
+            
+            prompt = f"""You are analyzing a {image_type} from page {page_num} of a medical/clinical document to determine if it contains evidence supporting a specific claim.
 
 CLAIM TO EVALUATE: {claim}
 
@@ -205,6 +217,9 @@ Focus on clear, evidence-based reasoning that explains your determination."""
             output = {
                 "image_filename": self.image_filename,
                 "image_path": str(image_path.relative_to(self.cache_dir)),
+                "image_type": self.image_metadata.get('role', 'Figure'),
+                "page_number": self.image_metadata.get('page_number'),
+                "block_id": self.image_metadata.get('block_id'),
                 "claim_id": self.claim_id,
                 "claim": claim,
                 "supports_claim": result.get("supports_claim", False),

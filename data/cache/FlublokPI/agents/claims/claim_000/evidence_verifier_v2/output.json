@@ -1,6 +1,6 @@
 {
   "claim_id": "claim_000",
-  "claim": "Flublok is approved for adults 18 years and older",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "document": "FlublokPI",
   "verification_stats": {
     "total_extracted": 3,
@@ -12,22 +12,22 @@
   "rejected_evidence": [
     {
       "id": 1,
-      "quote": "Flublok is approved for use in persons 18 years of age and older. (1)",
-      "reason": "Verification failed",
-      "original_explanation": "This quote directly states that Flublok is approved for use in individuals who are 18 years of age and older, which supports the claim regarding its approved age range."
+      "quote": "Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination inhibition (HI) antibodies to each of the included strains.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote explicitly states that Flublok contains recombinant hemagglutinin proteins from the three influenza virus strains specified by health authorities, which include the WHO and FDA. This supports the claim that Flublok ensures an identical antigenic match with the strains selected by these organizations."
     },
     {
       "id": 2,
-      "quote": "HIGHLIGHTS OF PRESCRIBING INFORMATION These highlights do not include all the information needed to use Flublok\u00ae safely and effectively. See full prescribing information for Flublok. Flublok (Influenza Vaccine) Injection for Intramuscular Use 2024-2025 Formula ... vaccine. Flublok is approved for use in persons 18 years of age and older. (1)",
-      "reason": "Verification failed",
-      "original_explanation": "This section from the official prescribing information highlights that Flublok is approved for use in adults 18 years and older, providing regulatory context for the claim."
+      "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides the exact composition of Flublok for the 2024-2025 season, listing the specific strains included. These strains are those selected by the WHO and FDA for that season, directly supporting the claim of an identical antigenic match."
     },
     {
       "id": 3,
-      "quote": "Safety and effectiveness of Flublok have not been established in children 3 years to less than 18 years of age.",
-      "reason": "Verification failed",
-      "original_explanation": "By stating that safety and effectiveness have not been established in those under 18, this quote reinforces that Flublok is only approved for adults 18 years and older."
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote confirms that Flublok is standardized according to USPHS requirements, which are based on the WHO- and FDA-selected strains, further supporting the claim of an identical antigenic match."
     }
   ],
-  "model_used": "o4-mini"
+  "model_used": "gpt-4.1"
 }

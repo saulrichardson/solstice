@@ -309,7 +309,13 @@ def get_overlap_info(box1: Box, box2: Box) -> Dict:
     }
 
 
-def determine_overlap_strategy(box1: Box, box2: Box, overlap_info: Dict, minor_overlap_threshold: float = 0.05) -> OverlapStrategy:
+def determine_overlap_strategy(
+    box1: Box, 
+    box2: Box, 
+    overlap_info: Dict, 
+    minor_overlap_threshold: float = 0.05,
+    same_type_merge_threshold: float = 0.8
+) -> OverlapStrategy:
     """Determine the best strategy for handling overlap between two boxes.
     
     Args:
@@ -317,6 +323,7 @@ def determine_overlap_strategy(box1: Box, box2: Box, overlap_info: Dict, minor_o
         box2: Second box
         overlap_info: Dictionary with overlap metrics
         minor_overlap_threshold: Overlaps below this ratio are considered minor and ignored
+        same_type_merge_threshold: Minimum overlap ratio to merge same-type boxes (default: 0.8)
     """
     
     # Check if this is a minor overlap that we should ignore
@@ -351,10 +358,9 @@ def determine_overlap_strategy(box1: Box, box2: Box, overlap_info: Dict, minor_o
             overlap_info["overlap_ratio_box1"], overlap_info["overlap_ratio_box2"]
         )
 
-        # Merge only if the vast majority (≥ 80 %) of the smaller box is
+        # Merge only if the vast majority of the smaller box is
         # covered by the overlap; otherwise try to keep the boxes separate.
         # For single-column documents, consider using a lower threshold.
-        same_type_merge_threshold = 0.8  # TODO: Make this configurable
         if intersection_ratio >= same_type_merge_threshold:
             return OverlapStrategy.MERGE
         else:
@@ -578,7 +584,7 @@ def resolve_all_overlaps(boxes: List[Box],
                     continue
                 
                 # Determine strategy
-                strategy = determine_overlap_strategy(box1, box2, overlap_info, minor_overlap_threshold)
+                strategy = determine_overlap_strategy(box1, box2, overlap_info, minor_overlap_threshold, same_type_merge_threshold)
                 
                 # Only count as "overlap found" if we actually need to resolve it
                 if strategy != OverlapStrategy.KEEP_BOTH:
@@ -655,7 +661,8 @@ def no_overlap_pipeline(boxes: List[Box],
                         merge_threshold: float = 0.5,
                         confidence_weight: float = 0.7,
                         area_weight: float = 0.3,
-                        minor_overlap_threshold: float = 0.05) -> List[Box]:
+                        minor_overlap_threshold: float = 0.05,
+                        same_type_merge_threshold: float = 0.8) -> List[Box]:
     """Complete pipeline that guarantees no overlapping boxes.
     
     Args:

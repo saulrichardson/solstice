@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_007.png",
+  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_007.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_007",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "Failed to parse response ```json\n{\n  \"supports_claim\": false,\n  \"image_description\": \"A tabular summary of PCR\u2010confirmed influenza attack rates (n/N and %), relative risks (RR), and relative vaccine efficacy (rVE with 95% CI) for different influenza strains, comparing the investigational vaccine to a comparator (Fluarix\u00ae Quadrivalent). Footnotes describe case definitions, comparator vaccine details, and efficacy calculation.\",\n  \"evidence_found\": null,\n  \"reasoning\": \"The table presents clinical efficacy data\u2014attack rat Note: Parsing error occurred",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Failed to parse response",
+    "reasoning": "```json\n{\n  \"supports_claim\": false,\n  \"image_description\": \"A tabular summary of PCR\u2010confirmed influenza attack rates (n/N and %), relative risks (RR), and relative vaccine efficacy (rVE with 95% CI) for different influenza strains, comparing the investigational vaccine to a comparator (Fluarix\u00ae Quadrivalent). Footnotes describe case definitions, comparator vaccine details, and efficacy calculation.\",\n  \"evidence_found\": null,\n  \"reasoning\": \"The table presents clinical efficacy data\u2014attack rat",
+    "evidence_found": null,
+    "confidence_notes": "Parsing error occurred"
+  }
+}
