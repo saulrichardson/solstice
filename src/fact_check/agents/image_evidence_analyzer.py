@@ -1,9 +1,10 @@
 """Agent for analyzing images to find evidence supporting claims."""
 
+import base64
+import json
 import logging
 from pathlib import Path
 from typing import Dict, Any, List, Optional
-import base64
 
 from .base import BaseAgent, AgentError
 from ..core.responses_client import ResponsesClient
@@ -155,41 +156,33 @@ Focus on clear, evidence-based reasoning that explains your determination."""
             
             # Parse with retry using Pydantic model
             try:
-                # Build request without prompt (will be added by parser)
-                base_request = build_vision_request(
+                # For vision models, we need to use the direct API approach
+                # since parse_with_retry doesn't support multimodal inputs
+                
+                # Add JSON format instruction to prompt
+                json_prompt = prompt + "\n\nReturn ONLY valid JSON, nothing else."
+                
+                # Build and send request
+                request = build_vision_request(
                     model=self.llm_client.model,
-                    text_prompt="",  # Parser will add the prompt
+                    text_prompt=json_prompt,
                     image_data_uri=data_uri,
                     max_output_tokens=1500,
                     temperature=0.0
                 )
+                response = await self.llm_client.create_response(**request)
+                response_text = extract_text_from_response(response, self.llm_client.model)
                 
-                # Use the robust parser with retry logic
-                parsed_output = await LLMResponseParser.parse_with_retry(
-                    llm_client=self.llm_client,
-                    prompt=prompt,
-                    output_model=ImageAnalysisOutput,
-                    max_retries=2,
-                    temperature=0.0,
-                    max_output_tokens=1500,
-                    # Pass the image data through kwargs
-                    model=self.llm_client.model,
-                    input=[{
-                        "role": "user",
-                        "content": [
-                            {"type": "input_text", "text": prompt},
-                            {"type": "input_image", "image_url": data_uri}
-                        ]
-                    }],
-                    tools=base_request.get("tools")  # Include tools if needed for o4-mini
-                )
+                # Parse JSON response with Pydantic
+                raw_json = json.loads(response_text)
+                parsed_output = ImageAnalysisOutput(**raw_json)
                 
                 # Convert Pydantic model to dict
                 result = parsed_output.dict()
                 
             except Exception as e:
                 logger.error(f"Failed to parse image analysis: {e}")
-                # Fallback to direct parsing
+                # Fallback without Pydantic validation
                 request = build_vision_request(
                     model=self.llm_client.model,
                     text_prompt=prompt,
@@ -201,7 +194,6 @@ Focus on clear, evidence-based reasoning that explains your determination."""
                 response_text = extract_text_from_response(response, self.llm_client.model)
                 
                 # Try to parse as JSON one more time
-                import json
                 try:
                     result = json.loads(response_text)
                 except:

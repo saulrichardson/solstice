@@ -6,83 +6,34 @@ problems that can lead to unexpected behaviour while leaving the service
 running.  They mirror the style used in *INJESTION_LOGICAL_ISSUES.txt*.
 
 
-1.  `providers/openai_provider.py`
----------------------------------
-
-1-a  **Falsy values silently dropped**
-     The helper `_build_api_request()` copies scalar fields with
-
-```python
-if (value := getattr(request, field, None)) is not None:
-    payload[field] = value
-```
-
-     This excludes *valid* falsy values such as `temperature=0`, `top_p=0`,
-     `store=False`, `background=False`, etc.  Users therefore cannot disable
-     or zero-out parameters – the SDK call will see the provider defaults
-     instead.
-
-1-b  **Timestamp lost**
-     `_to_response_object()` maps the OpenAI field `created_at` onto the
-     `ResponseObject.created` attribute, but the Responses API (like the
-     regular Chat endpoint) actually returns `created`.  The gateway will set
-     `created=0` for every response so clients relying on the value will see
-     an epoch timestamp.
-
-1-c  **Undocumented tool name mutation**
-     `_normalize_tools()` converts string tools by replacing underscores with
-     dashes (e.g. `code_interpreter` ➔ `code-interpreter`).  The official API
-     keeps underscores; this transformation may break built-in tool names and
-     cause 400-errors from OpenAI.
-
-1-d  **Unused variable**
-     The variable `total_tokens` is computed but never used; harmless but
-     indicates dead code.
-
-
-2.  `middleware/retry.py`
+1.  `middleware/retry.py`
 ------------------------
 
-2-a  **Streaming retries are incomplete**
+1-a  **Streaming retries are incomplete**
      Only the *initial* call to open the stream is retried.  If the provider
      drops the connection mid-stream the error bubbles up to the client.  Not
      strictly a bug but the docstring promises resilience against “transient
      network failures”, which is only partly fulfilled.
-
-
-3.  `main.py`
+2.  `main.py`
 -------------
 
-3-a  **Cache key may be non-deterministic**
+2-a  **Cache key may be non-deterministic**
      The write-only cache serialises a Python dict with `json.dumps(sort_keys=True)`
      but still contains lists (e.g. `tools`) whose *order* could vary between
      otherwise identical requests, creating multiple files for equivalent
      inputs.  This **inflates storage** and defeats deduplication.
 
-3-b  **Streaming error surfacing**
+2-b  **Streaming error surfacing**
      Exceptions raised *before* an SSE stream is yielded propagate to the
      `StreamingResponse` without conversion to an HTTPException, resulting in
      a broken connection instead of a proper 5xx JSON error.  Clients receive
      an abrupt socket close rather than a well-formed error chunk.
-
-
-4.  `providers/base.py`
-----------------------
-
-4-a  **Boolean defaults mismatch**
-     Pydantic model `ResponseRequest` sets `parallel_tool_calls: bool | None = True`
-     (default **True**), but the OpenAI API default is *False*.  Gateway calls
-     without the field therefore change semantics compared to raw OpenAI.
-
-
 Impact summary
 --------------
 
-• Users cannot specify zero / false parameter values (temperature=0, etc.).
-• All response timestamps are overwritten with `0`.
-• Some built-in tools may be rejected by OpenAI.
-• Cache deduplication can explode disk usage.
+Remaining issues are silent but affect reliability and resource usage:
 
-These problems are silent; the HTTP API still responds but produces subtly
-incorrect or inefficient behaviour.
+• Incomplete retries can drop client connections during long streams.
+• Order-sensitive cache keys create duplicate snapshot files.
+• Early-stream errors surface as abrupt socket closes instead of JSON 5xx responses.
 

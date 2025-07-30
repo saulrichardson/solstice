@@ -1,7 +1,6 @@
 """Agent for checking completeness of evidence extraction and finding missing evidence."""
 
 import logging
-import json
 from pathlib import Path
 from typing import Dict, Any, List, Optional
 

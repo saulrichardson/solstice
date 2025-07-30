@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Failed to parse response ```json\n{\n  \"supports_claim\": false,\n  \"image_description\": \"A tabular summary of PCR\u2010confirmed influenza attack rates (n/N and %), relative risks (RR), and relative vaccine efficacy (rVE with 95% CI) for different influenza strains, comparing the investigational vaccine to a comparator (Fluarix\u00ae Quadrivalent). Footnotes describe case definitions, comparator vaccine details, and efficacy calculation.\",\n  \"evidence_found\": null,\n  \"reasoning\": \"The table presents clinical efficacy data\u2014attack rat Note: Parsing error occurred",
+  "explanation": "A table presenting RT-PCR\u2013confirmed influenza attack rates (n/N and %), relative risk (RR), and relative vaccine efficacy (VE% with 95% CI) for Flublok versus a comparator quadrivalent influenza vaccine across different influenza strains. The figure provides clinical efficacy data (attack rates, RR, and VE) comparing Flublok to a licensed quadrivalent vaccine, but contains no information on antigenic composition or match to WHO- or FDA-selected strains. There is no data or statement regarding sequence identity or antigenic alignment in this table.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Failed to parse response",
-    "reasoning": "```json\n{\n  \"supports_claim\": false,\n  \"image_description\": \"A tabular summary of PCR\u2010confirmed influenza attack rates (n/N and %), relative risks (RR), and relative vaccine efficacy (rVE with 95% CI) for different influenza strains, comparing the investigational vaccine to a comparator (Fluarix\u00ae Quadrivalent). Footnotes describe case definitions, comparator vaccine details, and efficacy calculation.\",\n  \"evidence_found\": null,\n  \"reasoning\": \"The table presents clinical efficacy data\u2014attack rat",
+    "image_description": "A table presenting RT-PCR\u2013confirmed influenza attack rates (n/N and %), relative risk (RR), and relative vaccine efficacy (VE% with 95% CI) for Flublok versus a comparator quadrivalent influenza vaccine across different influenza strains.",
     "evidence_found": null,
-    "confidence_notes": "Parsing error occurred"
+    "reasoning": "The figure provides clinical efficacy data (attack rates, RR, and VE) comparing Flublok to a licensed quadrivalent vaccine, but contains no information on antigenic composition or match to WHO- or FDA-selected strains. There is no data or statement regarding sequence identity or antigenic alignment in this table.",
+    "confidence_notes": null
   }
 }

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_019.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_019.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_019",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table summarizing the percentage of subjects reporting solicited injection-site and systemic adverse events (any, moderate, severe) across multiple clinical studies, with footnotes explaining how percentages were recorded and defining study populations. The table presents safety data (rates and severity of adverse reactions) and does not include any immunogenicity or efficacy outcomes. There is no information on immune response breadth, cross-reactivity, or protection in mismatch seasons, so it does not address the claim about recombinant technology providing broader or cross-protective immune responses. Note: Table is partially visible but clearly focused on adverse events; no immunologic data are presented.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table summarizing the percentage of subjects reporting solicited injection-site and systemic adverse events (any, moderate, severe) across multiple clinical studies, with footnotes explaining how percentages were recorded and defining study populations.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety data (rates and severity of adverse reactions) and does not include any immunogenicity or efficacy outcomes. There is no information on immune response breadth, cross-reactivity, or protection in mismatch seasons, so it does not address the claim about recombinant technology providing broader or cross-protective immune responses.",
+    "confidence_notes": "Table is partially visible but clearly focused on adverse events; no immunologic data are presented."
+  }
+}

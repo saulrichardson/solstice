@@ -4,7 +4,6 @@ import time
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import StreamingResponse
 
 from .cache import cache
 from .config import settings
@@ -119,20 +118,12 @@ async def create_response(request: Request, body: dict):
         # Note: Cache is write-only for audit/debugging purposes
         cache_key = cache_data
 
-    # Handle streaming
+    # Check if streaming was requested and reject it
     if response_request.stream:
-
-        async def stream_generator():
-            try:
-                async for chunk in provider.stream_response(response_request):
-                    yield f"data: {chunk}\n\n"
-                yield "data: [DONE]\n\n"
-            except Exception as e:
-                # Send error as SSE event to maintain protocol
-                error_chunk = json.dumps({"error": str(e), "type": "error"})
-                yield f"data: {error_chunk}\n\n"
-
-        return StreamingResponse(stream_generator(), media_type="text/event-stream")
+        raise HTTPException(
+            status_code=400, 
+            detail="Streaming is not supported by this gateway"
+        )
 
     # Non-streaming response
     start_time = time.time()

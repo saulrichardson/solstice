@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-from collections.abc import AsyncIterator
 
 from pydantic import BaseModel
 
@@ -23,7 +22,6 @@ class ResponseRequest(BaseModel):
     max_output_tokens: int | None = None
     truncation: dict | None = None
     metadata: dict | None = None
-    stream: bool | None = False
     response_format: dict | None = None
     n: int | None = None
     presence_penalty: float | None = None
@@ -71,10 +69,6 @@ class Provider(ABC):
         """Create a response using the Responses API"""
         pass
 
-    @abstractmethod
-    async def stream_response(self, request: ResponseRequest) -> AsyncIterator[str]:
-        """Stream a response"""
-        pass
 
     @abstractmethod
     async def retrieve_response(self, response_id: str) -> ResponseObject:

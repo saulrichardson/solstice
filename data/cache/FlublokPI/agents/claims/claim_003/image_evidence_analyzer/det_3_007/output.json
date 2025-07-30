@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_007.png",
+  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_007.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_007",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "Failed to parse response ```json\n{\n  \"supports_claim\": false,\n  \"image_description\": \"A table summarizing, for several influenza virus types/subtypes, the attack rates (n/N and %), relative risk (RR) of influenza infection in subjects receiving a recombinant quadrivalent influenza vaccine (rIV4) versus a comparator standard vaccine, and the calculated relative vaccine efficacy (rVE = (1\u2013RR)\u00d7100) with 95% confidence intervals.\",\n  \"evidence_found\": null,\n  \"reasoning\": \"The figure presents clinical efficacy data (attack  Note: Parsing error occurred",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Failed to parse response",
+    "reasoning": "```json\n{\n  \"supports_claim\": false,\n  \"image_description\": \"A table summarizing, for several influenza virus types/subtypes, the attack rates (n/N and %), relative risk (RR) of influenza infection in subjects receiving a recombinant quadrivalent influenza vaccine (rIV4) versus a comparator standard vaccine, and the calculated relative vaccine efficacy (rVE = (1\u2013RR)\u00d7100) with 95% confidence intervals.\",\n  \"evidence_found\": null,\n  \"reasoning\": \"The figure presents clinical efficacy data (attack ",
+    "evidence_found": null,
+    "confidence_notes": "Parsing error occurred"
+  }
+}

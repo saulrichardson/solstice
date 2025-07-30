@@ -1,271 +1,337 @@
 # Ingestion Module
 
-Advanced PDF processing with two specialized pipelines for different document types.
+Advanced PDF processing with two specialized pipelines optimized for different document types.
 
 ## Overview
 
-The ingestion module provides two distinct processing pipelines:
+The ingestion module provides intelligent document processing with automatic text correction, layout detection, and structure preservation. It features two distinct pipelines:
 
-1. **Default Pipeline** (Scientific/Clinical PDFs): Standard processing with layout detection
-2. **Marketing Pipeline** (Marketing Materials): Specialized processing in the `marketing/` subfolder
+1. **Scientific Pipeline** (`scientific/`): Optimized for academic papers, clinical trials, and research documents
+2. **Marketing Pipeline** (`marketing/`): Specialized for marketing materials with complex layouts
 
-Both pipelines share common utilities in `processing/`, `storage/`, and `visualization/`.
+Both pipelines leverage shared utilities for text processing, storage management, and visualization.
 
-## Folder Structure
+## Module Structure
 
 ```
 injestion/
-├── marketing/          # Complete pipeline for Flublok marketing PDFs
-│   ├── detector.py    # PrimaLayout-based detection
-│   ├── pipeline.py    # Marketing-specific orchestration
-│   └── ...           # Other marketing-specific components
+├── scientific/              # Main pipeline for academic/clinical documents
+│   ├── __init__.py         # Exports: ingest_pdf, PDFIngestionPipeline
+│   ├── pipeline.py         # High-level orchestration
+│   └── standard_pipeline.py # StandardPipeline implementation
 │
-├── processing/        # Shared processing utilities
-│   ├── text_processing_service.py
-│   ├── layout_detector.py
-│   └── ...
+├── marketing/              # Specialized pipeline for marketing materials
+│   ├── cli.py             # Command-line interface
+│   ├── detector.py        # PrimaLayout-based detection
+│   ├── pipeline.py        # MarketingPipeline implementation
+│   ├── consolidation.py   # Advanced box merging for marketing layouts
+│   └── reading_order.py   # Marketing-specific reading order
 │
-├── storage/          # Shared storage utilities
-└── visualization/    # Shared visualization tools
+└── shared/                 # Common utilities used by both pipelines
+    ├── base_pipeline.py   # Abstract base class for all pipelines
+    ├── config.py          # Shared configuration settings
+    ├── processing/        # Document processing components
+    ├── storage/           # File I/O and path management
+    └── visualization/     # Debug and quality assurance tools
 ```
 
-## Default Pipeline (Scientific/Clinical Documents)
+## Pipeline Comparison
 
-Used by `python -m src.cli ingest` for processing scientific PDFs:
+| Feature | Scientific Pipeline | Marketing Pipeline |
+|---------|-------------------|-------------------|
+| **Model** | PubLayNet (trained on papers) | PrimaLayout (diverse documents) |
+| **Label IDs** | Start at 0 | Start at 1 |
+| **Labels** | Text, Title, List, Table, Figure | TextRegion, ImageRegion, TableRegion, etc. |
+| **Box Consolidation** | Functional (via overlap resolver) | Object-oriented (BoxConsolidator) |
+| **Reading Order** | Hybrid algorithm with column detection | Marketing-specific with feature clustering |
+| **Default Threshold** | 0.2 (more detections) | 0.1 (catch subtle elements) |
+
+## Scientific Pipeline
+
+### Architecture
 
 ```
-PDF Input
+PDF Document
     │
     ├─► Page Rasterization (400 DPI)
     │        │
-    │        └─► Layout Detection (Detectron2/LayoutParser)
+    │        └─► Layout Detection (PubLayNet/Detectron2)
     │                 │
-    │                 ├─► Box Detection (Text, Figure, Table, etc.)
+    │                 ├─► Box Detection with Labels:
+    │                 │   - 0: "Text"
+    │                 │   - 1: "Title"
+    │                 │   - 2: "List"
+    │                 │   - 3: "Table"
+    │                 │   - 4: "Figure"
     │                 │
     │                 └─► Overlap Resolution & Box Expansion
     │
     └─► Text Extraction (PyMuPDF)
              │
              ├─► Text Processing Service
-             │    ├─► Post-extraction Cleaning (PDF artifacts)
-             │    ├─► WordNinja Spacing Fixes
-             │    └─► SymSpell Correction (optional)
+             │    ├─► PDF Artifact Removal
+             │    ├─► WordNinja Spacing Correction
+             │    └─► Medical Term Preservation
              │
-             └─► Content Assembly
+             └─► Document Assembly
                       │
-                      └─► Structured Document Output
+                      └─► Structured Output (JSON/MD/HTML)
 ```
 
-## Core Components
-
-### Main Pipeline (`pipeline.py`)
-
-The orchestration layer that coordinates all processing steps:
+### Usage
 
 ```python
-from src.injestion.pipeline import PDFIngestionPipeline
-
-# Process a PDF
-pipeline = PDFIngestionPipeline()
-document = pipeline.process_pdf(
-    pdf_path="clinical_study.pdf",
-    output_dir="data/cache"
-)
-```
-
-**Key Features:**
-- High-resolution processing (400 DPI)
-- Automatic overlap resolution
-- Text cutoff prevention
-- Reading order detection
-
-### Processing Submodules
-
-#### `processing/layout_detector.py`
-- Detectron2-based layout analysis
-- PubLayNet model for academic documents
-- Configurable confidence thresholds
-
-#### `processing/text_extractor.py`
-- PyMuPDF-based text extraction
-- Falls back to OCR when needed
-- Preserves formatting and structure
-
-#### `processing/text_processing_service.py`
-- Intelligent text cleaning and enhancement
-- WordNinja for spacing correction
-- Medical terminology preservation
-- Configurable processing levels
-
-#### `processing/overlap_resolver.py`
-- Resolves overlapping layout boxes
-- Merges fragmented text regions
-- Preserves visual elements
-
-#### `processing/reading_order.py`
-- Determines logical reading flow
-- Column detection
-- Header/footer identification
-
-### Storage (`storage/`)
-
-Standardized file organization:
-```
-data/cache/<PDF_NAME>/
-├── pages/                  # Rasterized page images
-├── raw_layouts/           # Initial detection results
-├── merged/                # Post-processing layouts
-├── reading_order/         # Reading flow analysis
-├── extracted/             # Final extracted content
-│   ├── content.json      # Structured document
-│   ├── document.txt      # Plain text
-│   ├── document.md       # Markdown format
-│   └── figures/          # Extracted images
-└── visualizations/        # Debug visualizations
-```
-
-### Visualization (`visualization/`)
-
-Quality assurance and debugging tools:
-- Page layout visualizations
-- Box overlap debugging
-- Reading order flow diagrams
-
-## Usage
-
-### Default Pipeline (Scientific PDFs)
-
-```python
-# Using the CLI
+# CLI usage
 python -m src.cli ingest
 
-# Or programmatically
-from src.injestion.pipeline import PDFIngestionPipeline
+# Programmatic usage
+from src.injestion.scientific import ingest_pdf
 
-pipeline = PDFIngestionPipeline()
-document = pipeline.process_pdf("document.pdf")
-
-# Access structured content
-for block in document.blocks:
-    if block.is_text:
-        print(f"Text: {block.text}")
-    elif block.role == "Figure":
-        print(f"Figure at: {block.image_path}")
+document = ingest_pdf("research_paper.pdf")
+print(f"Extracted {len(document.blocks)} blocks")
 ```
 
-### Marketing Pipeline (Flublok Marketing Materials)
+### Configuration
+
+```python
+from src.injestion.scientific import PDFIngestionPipeline
+from src.injestion.shared.config import IngestionConfig
+
+config = IngestionConfig(
+    detection_dpi=600,              # Higher quality scanning
+    score_threshold=0.3,            # Stricter confidence requirement
+    merge_threshold=0.5,            # IOU threshold for same-type merging
+    same_type_merge_threshold=0.8,  # Configurable overlap threshold
+    expand_boxes=True,              # Prevent text cutoffs
+    box_padding=20                  # Pixels to expand boxes
+)
+
+pipeline = PDFIngestionPipeline(config=config)
+```
+
+## Marketing Pipeline
+
+### Architecture
+
+```
+Marketing PDF
+    │
+    ├─► Page Rasterization (configurable DPI)
+    │        │
+    │        └─► Layout Detection (PrimaLayout/Detectron2)
+    │                 │
+    │                 ├─► Box Detection with Labels:
+    │                 │   - 1: "TextRegion"
+    │                 │   - 2: "ImageRegion"
+    │                 │   - 3: "TableRegion"
+    │                 │   - 4: "MathsRegion"
+    │                 │   - 5: "SeparatorRegion"
+    │                 │   - 6: "OtherRegion"
+    │                 │
+    │                 └─► Advanced Box Consolidation
+    │
+    └─► Marketing-Optimized Processing
+             │
+             ├─► Logo Detection & Reclassification
+             ├─► Multi-Column Handling
+             └─► Feature-Based Reading Order
+```
+
+### Usage
 
 ```bash
-# For marketing PDFs, use the specialized pipeline
-python -m src.injestion.marketing.cli path/to/marketing.pdf
+# Process marketing PDF
+python -m src.injestion.marketing.cli marketing_flyer.pdf
 
-# With options
-python -m src.injestion.marketing.cli marketing.pdf --preset aggressive
+# With custom settings
+python -m src.injestion.marketing.cli brochure.pdf \
+    --merge-threshold 0.1 \
+    --box-padding 15.0 \
+    --preset aggressive
 ```
 
-The marketing pipeline uses PrimaLayout (better for marketing layouts) instead of PubLayNet.
+### Presets
 
-### Advanced Configuration
+- **aggressive**: Maximum consolidation for complex layouts
+- **conservative**: Minimal merging to preserve structure
+- **balanced**: Default settings for most documents
 
-```python
-# Custom settings
-pipeline = PDFIngestionPipeline(
-    detection_dpi=600,           # Higher quality
-    merge_threshold=0.2,         # More aggressive merging
-    confidence_threshold=0.8,    # Higher confidence required
-    expand_boxes=True,           # Fix text cutoffs
-    box_padding=30              # More padding
-)
-```
+## Shared Components
 
-### Text Processing Options
+### Text Processing Service
+
+The `TextProcessingService` provides intelligent text correction:
 
 ```python
-from src.injestion.processing.text_processing_service import TextProcessingService
+from src.injestion.shared.processing.text_processing_service import TextProcessingService
 
-# Configure text processing
 service = TextProcessingService(
-    fix_spacing=True,           # Apply WordNinja
-    normalize_punctuation=True,  # Smart quotes, etc.
-    preserve_medical_terms=True  # Keep medical terminology
+    fix_spacing=True,               # "patientdata" → "patient data"
+    normalize_punctuation=True,     # Smart quotes, proper dashes
+    preserve_medical_terms=True,    # Keep "Flublok®", "COVID-19"
+    min_word_length=3              # Minimum length for spacing fixes
 )
 
-# Process text
-cleaned = service.process_text("Thisisatest.")
-# Output: "This is a test."
+cleaned = service.process_text("Thisisatest ofFlublok®vaccine.")
+# Output: "This is a test of Flublok® vaccine."
 ```
 
-## Key Features
+### Overlap Resolution
 
-### 1. Layout Detection
-- Uses pre-trained Detectron2 models
-- Detects: Text, Title, List, Figure, Table
-- Confidence scoring for each detection
-- Non-maximum suppression for clean results
+The overlap resolver ensures no overlapping boxes in the final output:
 
-### 2. Text Quality Enhancement
-- **Spacing Fixes**: "patientdata" → "patient data"
-- **Punctuation**: Smart quotes, proper dashes
-- **Preservation**: Keeps "Flublok®", "COVID-19"
-- **Context Aware**: Medical terms remain intact
+```python
+from src.injestion.shared.processing.overlap_resolver import no_overlap_pipeline
 
-### 3. Overlap Resolution
-- Removes conflicting detections
-- Merges fragmented text blocks
-- Preserves highest-confidence regions
-- Expands boxes to capture full content
+boxes = no_overlap_pipeline(
+    detected_boxes,
+    merge_same_type_first=True,
+    merge_threshold=0.5,
+    same_type_merge_threshold=0.8,  # Now configurable!
+    minor_overlap_threshold=0.05
+)
+```
 
-### 4. Output Formats
-- **JSON**: Structured document model
-- **Text**: Plain text with reading order
-- **Markdown**: Formatted with headers
-- **HTML**: Tables and structure preserved
+### Reading Order Detection
 
-## Performance Considerations
+Two algorithms are available:
 
-### Memory Usage
-- 400 DPI processing requires ~2GB per 10 pages
-- Layout detection peaks at ~4GB for large PDFs
-- Consider batch processing for documents >50 pages
+1. **Hybrid Algorithm** (`reading_order_hybrid.py`):
+   - Uses k-means clustering for column detection
+   - Builds DAG of reading dependencies
+   - Handles spanning blocks (figures, tables)
+   - Fixed: Now correctly checks horizontal overlap
 
-### Processing Time
-- ~5-10 seconds per page (layout detection)
-- ~1-2 seconds per page (text extraction)
-- Parallel processing available for multi-page docs
+2. **Simple Algorithm** (`reading_order.py`):
+   - Top-to-bottom, left-to-right ordering
+   - Fallback for single-column documents
 
-### Optimization Tips
-1. Lower DPI for draft processing (200-300)
-2. Disable visualizations in production
-3. Use SSD storage for temp files
-4. Process PDFs in batches of 10-20 pages
+## Output Structure
+
+```
+data/cache/<PDF_NAME>/
+├── pages/                  # Rasterized page images (PNG)
+├── raw_layouts/           # Initial detection results
+│   └── raw_layout_boxes.json
+├── merged/                # Post-consolidation layouts
+│   └── merged_boxes.json
+├── reading_order/         # Reading flow analysis
+│   └── reading_order.json
+├── extracted/             # Final outputs
+│   ├── content.json      # Structured document (Document object)
+│   ├── document.txt      # Plain text with reading order
+│   ├── document.md       # Markdown with formatting
+│   ├── document.html     # HTML with tables
+│   └── figures/          # Extracted images (PNG)
+└── visualizations/        # Debug visualizations
+    ├── page_*_layout.png # Per-page layout boxes
+    └── all_pages_summary.png
+```
+
+## Performance & Optimization
+
+### Resource Requirements
+
+| Document Size | RAM Usage | Processing Time | Recommended Settings |
+|--------------|-----------|-----------------|---------------------|
+| 1-10 pages | ~2GB | 30-60s | Default (400 DPI) |
+| 10-50 pages | ~4GB | 2-5min | Batch by 10 pages |
+| 50+ pages | ~8GB | 5-15min | Lower DPI (300), batch processing |
+
+### Optimization Strategies
+
+1. **For Speed**:
+   ```python
+   config = IngestionConfig(
+       detection_dpi=300,          # Lower resolution
+       skip_visualization=True,    # No debug images
+       parallel_pages=True         # Process pages in parallel
+   )
+   ```
+
+2. **For Accuracy**:
+   ```python
+   config = IngestionConfig(
+       detection_dpi=600,          # Higher resolution
+       score_threshold=0.1,        # Catch more regions
+       expand_boxes=True,          # Prevent cutoffs
+       box_padding=30             # Extra padding
+   )
+   ```
+
+3. **For Memory**:
+   ```python
+   # Process in chunks
+   for chunk in pdf_chunks(document, size=10):
+       process_chunk(chunk)
+   ```
 
 ## Troubleshooting
 
-### Common Issues
+### Model Download Issues
 
-1. **"Config file does not exist"**
-   - Clear cache: `rm -rf ~/.torch/iopath_cache/`
-   - Reinstall: `make install-detectron2`
+```bash
+# Clear corrupted cache
+rm -rf ~/.torch/iopath_cache/
 
-2. **Text cutoffs**
-   - Increase `box_padding` (default: 20)
-   - Enable `expand_boxes` (default: True)
+# Reinstall with proper models
+make install-detectron2
+```
 
-3. **Poor text quality**
-   - Check PDF has embedded text (not scanned)
-   - Increase detection DPI
-   - Verify text processing is enabled
+### Text Quality Problems
 
-4. **Memory errors**
-   - Process in smaller batches
-   - Reduce detection DPI
-   - Increase system swap space
+1. **Missing spaces**: Enable WordNinja processing
+2. **Garbled text**: Check if PDF has embedded text (scanned PDFs not supported)
+3. **Cut-off text**: Increase `box_padding` parameter
+4. **Wrong reading order**: Check column detection threshold
+
+### Layout Detection Issues
+
+1. **Missing regions**: Lower `score_threshold`
+2. **Too many boxes**: Increase `nms_threshold`
+3. **Overlapping boxes**: Verify overlap resolver is enabled
+4. **Wrong labels**: Ensure correct model (PubLayNet vs PrimaLayout)
+
+## Recent Improvements
+
+### Fixed Issues (July 2025)
+
+1. **Reading Order**: Fixed horizontal overlap detection in hybrid algorithm
+2. **K-means Clustering**: Fixed cluster assignment synchronization
+3. **Silhouette Score**: Corrected scaling for consistent distance metrics
+4. **Configurable Thresholds**: Made same-type merge threshold configurable
+5. **Code Cleanup**: Removed duplicate imports
+
+### API Changes
+
+- `no_overlap_pipeline` now accepts `same_type_merge_threshold` parameter
+- `_vertical_overlap` renamed to `_horizontal_overlap` (internal)
+
+## Best Practices
+
+1. **Choose the Right Pipeline**:
+   - Scientific papers → Scientific pipeline
+   - Marketing materials → Marketing pipeline
+   - Mixed documents → Process sections separately
+
+2. **Validate Outputs**:
+   - Check visualizations for detection quality
+   - Verify reading order in `.txt` output
+   - Inspect JSON for structure preservation
+
+3. **Handle Errors Gracefully**:
+   ```python
+   try:
+       document = ingest_pdf(pdf_path)
+   except LayoutDetectionError:
+       # Fall back to text-only extraction
+       document = extract_text_only(pdf_path)
+   ```
 
 ## Future Enhancements
 
-- **OCR Integration**: For scanned documents
-- **Table Extraction**: Structured table data
-- **Multi-Column**: Better column detection
-- **Language Support**: Non-English documents
-- **Streaming**: Process without full PDF load
-- **GPU Acceleration**: Faster layout detection
+- **OCR Support**: Add text extraction for scanned documents
+- **Table Structure**: Extract table cells and relationships
+- **Multi-Language**: Support for non-English documents
+- **Streaming API**: Process large PDFs without loading entire file
+- **Custom Models**: Train on domain-specific layouts

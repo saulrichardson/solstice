@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_011.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_011",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "Two adjacent tables summarizing solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, chills, nausea, fever) in adult subjects who received Flublok versus comparator vaccines, with percentages for each event, plus footer notes on study design, definitions, and subject demographics. The tables present safety/reactogenicity data (frequency of solicited adverse events) for Flublok and comparator vaccines. There is no data on immune response breadth, cross\u2010reactivity, or efficacy in mismatch seasons. Thus, the image does not address whether recombinant technology elicits a broader immune response or cross-protection. Note: The image is clear but limited to adverse event rates; no immunogenicity or efficacy outcomes are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Two adjacent tables summarizing solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, chills, nausea, fever) in adult subjects who received Flublok versus comparator vaccines, with percentages for each event, plus footer notes on study design, definitions, and subject demographics.",
+    "evidence_found": null,
+    "reasoning": "The tables present safety/reactogenicity data (frequency of solicited adverse events) for Flublok and comparator vaccines. There is no data on immune response breadth, cross\u2010reactivity, or efficacy in mismatch seasons. Thus, the image does not address whether recombinant technology elicits a broader immune response or cross-protection.",
+    "confidence_notes": "The image is clear but limited to adverse event rates; no immunogenicity or efficacy outcomes are shown."
+  }
+}

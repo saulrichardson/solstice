@@ -4,16 +4,13 @@ The goal is not to implement a fully-featured resilience layer but to ensure
 that transient network failures (e.g. 5xx, time-outs) don't immediately bubble
 up to the API consumer during tests.  The logic is deliberately kept minimal
 and synchronous ‑ we rely on ``asyncio.sleep`` for the back-off.
-
-Note: For streaming responses, only the initial connection is retried.
-Mid-stream failures are not retried to avoid partial message duplication.
 """
 
 from __future__ import annotations
 
 import asyncio
 import logging
-from collections.abc import AsyncIterator, Awaitable, Callable
+from collections.abc import Awaitable, Callable
 from typing import TypeVar, Any
 
 from ..providers.base import Provider, ResponseObject, ResponseRequest
@@ -70,17 +67,6 @@ class RetryableProvider(Provider):
     async def create_response(self, request: ResponseRequest) -> ResponseObject:  # noqa: D401
         return await self._with_retry(lambda: self._provider.create_response(request))
 
-    async def stream_response(self, request: ResponseRequest) -> AsyncIterator[str]:  # noqa: D401
-        # Streaming is delegated without retries because re-establishing a
-        # failed stream mid-way is complex.  If the initial call fails we do
-        # retry, though.
-
-        async def _open_stream():
-            return self._provider.stream_response(request)
-
-        stream = await self._with_retry(_open_stream)
-        async for chunk in stream:
-            yield chunk
 
     async def retrieve_response(self, response_id: str) -> ResponseObject:  # noqa: D401
         return await self._with_retry(lambda: self._provider.retrieve_response(response_id))

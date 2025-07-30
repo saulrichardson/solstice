@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A multi\u2010row table summarizing the percentage of subjects reporting solicited adverse events (any, moderate, severe) across different studies of a vaccine, with footnotes describing the criteria for severity and study design. The table presents safety and tolerability data (percentages of adverse events by severity) from clinical studies of the vaccine. There is no information on antigenic composition, strain matching, or immunogenicity relative to WHO\u2010 or FDA\u2010selected influenza strains. Therefore, it does not provide evidence that Flublok ensures identical antigenic match with approved flu strains. Note: The table is somewhat cut off on the left, but the visible columns and footnotes clearly pertain to adverse event reporting rather than antigenic match.",
+  "explanation": "A multi-row table summarizing solicited local and systemic adverse events reported by subjects in randomized vaccine studies, showing percentages of participants experiencing any, moderate, or severe events (e.g., pain, erythema, swelling, fever) with footnotes defining the study populations and comparator vaccines. The table presents safety data (incidence and severity of adverse events) and contains no information on antigenic composition or strain matching. There is no mention of WHO- or FDA-selected flu strains or any antigenic match data. Note: The visible portion of the table appears complete for safety outcomes but does not address antigenicity; image is clear for its content.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A multi\u2010row table summarizing the percentage of subjects reporting solicited adverse events (any, moderate, severe) across different studies of a vaccine, with footnotes describing the criteria for severity and study design.",
+    "image_description": "A multi-row table summarizing solicited local and systemic adverse events reported by subjects in randomized vaccine studies, showing percentages of participants experiencing any, moderate, or severe events (e.g., pain, erythema, swelling, fever) with footnotes defining the study populations and comparator vaccines.",
     "evidence_found": null,
-    "reasoning": "The table presents safety and tolerability data (percentages of adverse events by severity) from clinical studies of the vaccine. There is no information on antigenic composition, strain matching, or immunogenicity relative to WHO\u2010 or FDA\u2010selected influenza strains. Therefore, it does not provide evidence that Flublok ensures identical antigenic match with approved flu strains.",
-    "confidence_notes": "The table is somewhat cut off on the left, but the visible columns and footnotes clearly pertain to adverse event reporting rather than antigenic match."
+    "reasoning": "The table presents safety data (incidence and severity of adverse events) and contains no information on antigenic composition or strain matching. There is no mention of WHO- or FDA-selected flu strains or any antigenic match data.",
+    "confidence_notes": "The visible portion of the table appears complete for safety outcomes but does not address antigenicity; image is clear for its content."
   }
 }

@@ -172,20 +172,3 @@ class BaseAgent(ABC):
         metadata_file = self.agent_dir / "metadata.json"
         with open(metadata_file, 'w') as f:
             json.dump(self.metadata, f, indent=2)
-    
-    def get_upstream_output(self, agent_name: str, filename: str = "output.json") -> Dict[str, Any]:
-        """
-        Get output from an upstream agent.
-        
-        Args:
-            agent_name: Name of the upstream agent
-            filename: Output filename to load
-            
-        Returns:
-            Loaded output data
-        """
-        upstream_file = self.agents_dir / agent_name / filename
-        if not upstream_file.exists():
-            raise AgentError(f"Upstream output not found: {upstream_file}")
-        
-        return self.load_json(upstream_file)

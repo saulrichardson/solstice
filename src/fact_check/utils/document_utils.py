@@ -42,42 +42,6 @@ def get_text(content_json: Dict[str, Any], include_figures: bool = True) -> str:
     return "\n\n".join(texts)
 
 
-def get_text_with_locations(content_json: Dict[str, Any]) -> List[Tuple[str, Dict[str, Any]]]:
-    """
-    Get text chunks with their page and block metadata.
-    
-    Args:
-        content_json: Document content JSON
-        
-    Returns:
-        List of (text, metadata) tuples where metadata contains:
-        - page_index: Page number (0-based)
-        - block_id: Block identifier
-        - bbox: Bounding box coordinates
-        - role: Block role (Text, Title, etc.)
-    """
-    blocks_by_id = {block['id']: block for block in content_json['blocks']}
-    reading_order = content_json.get('reading_order', [])
-    
-    results = []
-    
-    for page_idx, page_blocks in enumerate(reading_order):
-        for block_id in page_blocks:
-            block = blocks_by_id.get(block_id)
-            if not block or not block.get('text'):
-                continue
-            
-            metadata = {
-                'page_index': page_idx,
-                'block_id': block_id,
-                'bbox': block.get('bbox', []),
-                'role': block.get('role', 'Text')
-            }
-            
-            results.append((block['text'], metadata))
-    
-    return results
-
 
 
 

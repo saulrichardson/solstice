@@ -39,19 +39,25 @@ class Cache:
 
     def _generate_key(self, cache_data: dict) -> str:
         """Generate deterministic filename from request parameters."""
-        # Deep sort all nested structures to ensure deterministic keys
-        def sort_deep(obj):
+        # Create a canonical representation that's order-independent
+        def canonicalize(obj):
             if isinstance(obj, dict):
-                return {k: sort_deep(v) for k, v in sorted(obj.items())}
+                # Sort dict items and recurse
+                items = []
+                for k, v in sorted(obj.items()):
+                    items.append(f"{json.dumps(k)}:{canonicalize(v)}")
+                return "{" + ",".join(items) + "}"
             elif isinstance(obj, list):
-                # Sort list items by their JSON representation for determinism
-                return sorted([sort_deep(i) for i in obj], 
-                            key=lambda x: json.dumps(x, sort_keys=True))
-            return obj
+                # For lists, we need to preserve order as it may be semantically important
+                # (e.g., message history order matters), but we still canonicalize contents
+                items = [canonicalize(item) for item in obj]
+                return "[" + ",".join(items) + "]"
+            else:
+                # For primitives, use JSON representation
+                return json.dumps(obj, sort_keys=True)
         
-        sorted_data = sort_deep(cache_data)
-        key_str = json.dumps(sorted_data, sort_keys=True)
-        return hashlib.sha256(key_str.encode()).hexdigest()
+        canonical_str = canonicalize(cache_data)
+        return hashlib.sha256(canonical_str.encode()).hexdigest()
 
     def _path_for_key(self, key_hash: str) -> Path:
         return self.root / f"{key_hash}.json"

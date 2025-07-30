@@ -44,7 +44,7 @@ def test_vision_request_builder():
     test_image = "data:image/png;base64,iVBORw0KGgo..."
     
     # Test each model
-    test_models = ["gpt-4.1", "o4-mini", "gpt-4o-mini"]
+    test_models = ["gpt-4.1", "o4-mini"]
     
     for model in test_models:
         print(f"\n{model} request:")

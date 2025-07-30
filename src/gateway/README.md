@@ -8,7 +8,6 @@ The Gateway provides a unified interface to OpenAI's Responses API with:
 - **Write-only audit logging** - All responses saved to disk for debugging/analysis
 - **Automatic retry logic** - Handles transient failures with exponential backoff
 - **Request/response logging** - Structured logs for monitoring
-- **Streaming support** - Efficient handling of streaming responses
 
 ## Architecture
 
@@ -60,8 +59,7 @@ POST /v1/responses
   "model": "gpt-4.1",
   "input": "What is the capital of France?",
   "instructions": "Answer concisely",
-  "temperature": 0.7,
-  "stream": false
+  "temperature": 0.7
 }
 ```
 
@@ -138,32 +136,6 @@ data/cache/gateway/
 {
   "detail": "Provider error: Connection timeout"
 }
-```
-
-## Streaming Support
-
-For streaming responses, use `stream: true`:
-
-```python
-import httpx
-import json
-
-async with httpx.AsyncClient() as client:
-    async with client.stream(
-        'POST',
-        'http://localhost:8000/v1/responses',
-        json={
-            "model": "gpt-4.1",
-            "input": "Write a story",
-            "stream": True
-        }
-    ) as response:
-        async for line in response.aiter_lines():
-            if line.startswith('data: '):
-                data = line[6:]  # Remove 'data: ' prefix
-                if data != '[DONE]':
-                    chunk = json.loads(data)
-                    print(chunk)
 ```
 
 ## Monitoring

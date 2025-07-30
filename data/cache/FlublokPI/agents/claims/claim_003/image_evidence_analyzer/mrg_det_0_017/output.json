@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "An excerpt from the full prescribing information for Flublok, showing a table of contents with headings such as Indications and Usage, Dosage and Administration, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, and Patient Counseling Information. The image contains only the table of contents and some standard adverse reaction and administration information for Flublok. There is no data or discussion of recombinant technology, breadth of immune response, cross-protection, or performance in a mismatch season. Therefore it does not address the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "An excerpt from the full prescribing information for Flublok, showing a table of contents with headings such as Indications and Usage, Dosage and Administration, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, and Patient Counseling Information.",
+    "evidence_found": null,
+    "reasoning": "The image contains only the table of contents and some standard adverse reaction and administration information for Flublok. There is no data or discussion of recombinant technology, breadth of immune response, cross-protection, or performance in a mismatch season. Therefore it does not address the claim.",
+    "confidence_notes": null
+  }
+}

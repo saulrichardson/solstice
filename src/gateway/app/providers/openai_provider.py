@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import json
 import logging
-from collections.abc import AsyncIterator
 from typing import Any, Union
 
 import openai
@@ -56,14 +55,6 @@ class OpenAIProvider(Provider):
             print(f"[OPENAI] Extra fields: {result.__pydantic_extra__}", flush=True)
         return result
 
-    async def stream_response(self, request: ResponseRequest) -> AsyncIterator[str]:
-        payload = self._build_api_request(request, stream=True)
-        try:
-            stream = await self.client.responses.create(**payload)
-        except Exception as exc:
-            self._handle_openai_error(exc, request.model)
-        async for chunk in stream:
-            yield json.dumps(chunk.model_dump())
 
     async def retrieve_response(self, response_id: str) -> ResponseObject:
         rsp = await self.client.responses.retrieve(response_id)
@@ -103,13 +94,9 @@ class OpenAIProvider(Provider):
             return {"effort": reasoning}
         return reasoning
 
-    def _build_api_request(
-        self, request: ResponseRequest, *, stream: bool = False
-    ) -> dict[str, Any]:
+    def _build_api_request(self, request: ResponseRequest) -> dict[str, Any]:
         """Transform a `ResponseRequest` into kwargs for the SDK call."""
         payload: dict[str, Any] = {"model": request.model}
-        if stream:
-            payload["stream"] = True
 
         # Use model_dump to preserve all values including falsy ones (0, False, etc.)
         simple_fields = (

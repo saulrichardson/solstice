@@ -24,10 +24,6 @@ class ModelCapabilities:
     # Response format
     response_format: str = "standard"  # "standard" or "o4-mini"
     
-    # Other capabilities
-    supports_reasoning: bool = False
-    max_context_length: Optional[int] = None
-    
     # Default parameters
     default_temperature: float = 0.0
     default_max_tokens: int = 4096
@@ -42,12 +38,6 @@ MODEL_CAPABILITIES: Dict[str, ModelCapabilities] = {
         response_format="standard",
     ),
     
-    "gpt-4.1-mini": ModelCapabilities(
-        supports_vision=False,
-        supports_temperature=True,
-        response_format="standard",
-    ),
-    
     "o4-mini": ModelCapabilities(
         supports_vision=True,
         vision_requires_tools=True,
@@ -58,21 +48,6 @@ MODEL_CAPABILITIES: Dict[str, ModelCapabilities] = {
         supports_temperature=True,
         supports_temperature_with_vision=False,  # Key limitation!
         response_format="o4-mini",
-        supports_reasoning=True,
-    ),
-    
-    "gpt-4o": ModelCapabilities(
-        supports_vision=True,
-        supports_temperature=True,
-        supports_temperature_with_vision=True,
-        response_format="standard",
-    ),
-    
-    "gpt-4o-mini": ModelCapabilities(
-        supports_vision=True,
-        supports_temperature=True,
-        supports_temperature_with_vision=True,
-        response_format="standard",
     ),
 }
 
