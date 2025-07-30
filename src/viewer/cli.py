@@ -34,9 +34,9 @@ def main():
     
     parser.add_argument(
         '--format',
-        choices=['site', 'single-html', 'spatial', 'json'],
+        choices=['site', 'single-html', 'json'],
         default='site',
-        help='Output format: site (multi-page HTML), single-html (one file), spatial (preserves layout), or json'
+        help='Output format: site (multi-page HTML), single-html (one file), or json'
     )
     
     parser.add_argument(
@@ -89,18 +89,7 @@ def main():
         return
     
     # Generate output based on format
-    if args.format == 'spatial':
-        from .spatial_html_generator import SpatialHTMLGenerator
-        generator = SpatialHTMLGenerator(aggregator)
-        
-        output_path = args.output
-        if output_path.is_dir():
-            output_path = output_path / 'spatial_documents.html'
-        
-        logger.info(f"Generating spatial HTML at {output_path}")
-        generator.generate_spatial_html(output_path)
-    else:
-        generator = UnifiedHTMLGenerator(aggregator)
+    generator = UnifiedHTMLGenerator(aggregator)
     
     if args.format == 'site':
         logger.info(f"Generating multi-page HTML site at {args.output}")

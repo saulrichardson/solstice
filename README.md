@@ -1,16 +1,16 @@
-# Solstice – Automated Clinical Document Fact-Checking System
+# Solstice – Clinical Document Fact-Checking Pipeline
 
 ## Overview
 
-Solstice is an advanced multi-agent AI system designed to automatically verify medical and pharmaceutical claims against clinical documents. It combines state-of-the-art computer vision, natural language processing, and multi-modal AI to extract evidence from complex PDFs and assess claim accuracy.
+Solstice is an LLM-powered pipeline for verifying medical and pharmaceutical claims against clinical documents. It processes PDFs using computer vision for layout detection, extracts structured text and images, then uses a series of LLM calls to find and verify evidence.
 
 ### Key Features
 
-- **Multi-Agent Architecture**: Specialized AI agents for evidence extraction, verification, and presentation
-- **Computer Vision Pipeline**: ML-powered layout detection using Detectron2 for accurate PDF parsing
-- **Multi-Modal Analysis**: Extracts evidence from both text and visual elements (tables, figures, charts)
-- **Intelligent Text Processing**: Medical term preservation, OCR correction, and context-aware extraction
-- **Comprehensive Reporting**: Generates detailed evidence reports with source tracking and confidence scores
+- **Sequential LLM Pipeline**: Multiple specialized prompts for evidence extraction, verification, and presentation
+- **Computer Vision Layout Detection**: Detectron2-based PDF parsing for accurate text extraction
+- **Multi-Modal Evidence**: Processes both text passages and visual elements (tables, figures, charts)
+- **Medical Text Processing**: Preserves drug names, dosages, and clinical terminology during extraction
+- **Structured Evidence Output**: JSON reports with source tracking and verification status
 
 ## System Architecture
 
@@ -21,11 +21,11 @@ Solstice is an advanced multi-agent AI system designed to automatically verify m
 │                                                                 │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    │
 │  │   Ingestion  │    │   Gateway    │    │ Fact-Check   │    │
-│  │   Pipeline   │    │   Service    │    │   Engine     │    │
+│  │   Pipeline   │    │   Service    │    │   Pipeline   │    │
 │  │              │    │              │    │              │    │
-│  │ • PDF → Doc  │    │ • LLM Proxy  │    │ • Multi-Agent│    │
-│  │ • Layout Det │    │ • Audit Log  │    │ • Evidence   │    │
-│  │ • Text Ext   │    │ • Retry      │    │ • Verify     │    │
+│  │ • PDF → Doc  │    │ • LLM Proxy  │    │ • Extract    │    │
+│  │ • Layout Det │    │ • Audit Log  │    │ • Verify     │    │
+│  │ • Text Ext   │    │ • Retry      │    │ • Present    │    │
 │  └──────┬───────┘    └──────┬───────┘    └──────┬───────┘    │
 │         │                    │                    │            │
 │         └────────────────────┴────────────────────┘            │
@@ -155,30 +155,30 @@ A lightweight proxy service for OpenAI's API with enterprise features.
 
 #### Architecture
 ```
-Fact-Check Agents → Gateway → OpenAI API
-                      ↓
-                 Audit Logs
+Fact-Check Pipeline → Gateway → OpenAI API
+                         ↓
+                    Audit Logs
 ```
 
 ### 3. Fact-Check Module (`src/fact_check/`)
 
-The core fact-checking engine using a multi-agent pipeline.
+The core fact-checking pipeline using sequential LLM calls.
 
-#### Agent Pipeline
+#### Pipeline Steps
 
-1. **EvidenceExtractor** → Finds relevant passages in documents
-2. **EvidenceVerifierV2** → Verifies exact quotes and context
-3. **CompletenessChecker** → Identifies missing evidence
-4. **ImageEvidenceAnalyzer** → Analyzes tables, figures, charts
-5. **EvidencePresenter** → Consolidates final evidence report
+1. **EvidenceExtractor** → LLM prompt to find relevant passages in documents
+2. **EvidenceVerifierV2** → LLM verification of exact quotes and context
+3. **CompletenessChecker** → LLM check for missing evidence types
+4. **ImageEvidenceAnalyzer** → Vision LLM analysis of tables, figures, charts
+5. **EvidencePresenter** → Final LLM consolidation of evidence
 
 #### Configuration
 ```python
-# Customize agent models in src/fact_check/config/agent_models.py
+# Model selection in src/fact_check/config/agent_models.py
 AGENT_MODELS = {
     "evidence_extractor": "gpt-4.1",
     "image_evidence_analyzer": "o4-mini",  # Vision-capable
-    # ... other agents
+    # ... other steps
 }
 ```
 
@@ -218,8 +218,8 @@ solstice/
 │   ├── gateway/          # LLM proxy service
 │   │   ├── app/         # FastAPI application
 │   │   └── providers/   # LLM provider implementations
-│   ├── fact_check/       # Multi-agent fact-checking
-│   │   ├── agents/      # Individual AI agents
+│   ├── fact_check/       # LLM-based fact-checking
+│   │   ├── agents/      # Pipeline step implementations
 │   │   ├── orchestrators/ # Pipeline coordination
 │   │   └── config/      # Model configuration
 │   └── interfaces/       # Shared data models
