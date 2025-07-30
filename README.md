@@ -4,19 +4,73 @@ A clinical document processing pipeline with advanced layout detection and fact-
 
 ## Overview
 
-Solstice is a comprehensive system for processing clinical documents (PDFs, clinical trial data, FDA documents) with three main components:
+Solstice is a comprehensive system for processing clinical documents (PDFs, clinical trial data, FDA documents) that combines state-of-the-art document analysis with AI-powered fact-checking. The system is designed to handle complex medical and scientific documentation, extracting structured information and verifying claims against evidence.
 
-1. **Document Ingestion** - Extracts text, tables, and figures from PDFs using state-of-the-art layout detection
-2. **Fact Checking** - AI-powered agents that verify claims and extract supporting evidence from documents
-3. **Gateway Service** - API proxy for LLM interactions with monitoring and caching
+### Repository Structure
+
+```
+solstice/
+├── src/                    # Main source code
+│   ├── cli/               # Command-line interface for all operations
+│   ├── fact_check/        # Multi-agent fact-checking system
+│   │   ├── agents/        # Individual evidence extraction agents
+│   │   ├── orchestrators/ # Coordination of agent pipelines
+│   │   └── utils/         # Fact-checking utilities
+│   ├── gateway/           # API proxy service for LLM interactions
+│   ├── injestion/         # Document processing pipelines
+│   │   ├── scientific/    # Main pipeline for clinical/scientific PDFs
+│   │   ├── marketing/     # Specialized pipeline for marketing materials
+│   │   └── shared/        # Common processing utilities
+│   │       ├── processing/    # Text correction and cleaning
+│   │       ├── storage/       # Data persistence layer
+│   │       └── visualization/ # Visual output generation
+│   ├── core/              # Core utilities and logging
+│   ├── interfaces/        # Shared data models and interfaces
+│   └── util/              # Helper utilities
+├── data/                  # Data directory (see data/README.md)
+│   ├── cache/            # Processed document outputs
+│   ├── claims/           # Claim definition files
+│   ├── clinical_files/   # Input PDFs (clinical/scientific)
+│   ├── marketing_slide/  # Input PDFs (marketing)
+│   └── studies/          # Fact-checking study results
+├── docker-compose.yml     # Container orchestration
+├── Makefile              # Build and operation commands
+└── pyproject.toml        # Package configuration
+```
+
+### Core Components
+
+1. **Document Ingestion Pipeline** (`src/injestion/`)
+   - Converts PDFs into structured, searchable JSON
+   - Extracts text, tables, figures, and metadata
+   - Corrects common PDF text extraction errors
+   - Maintains document structure and relationships
+   - Handles both scientific papers and marketing materials
+
+2. **Fact-Checking System** (`src/fact_check/`)
+   - Verifies claims against extracted document content
+   - Multi-agent system where each agent has a specific role:
+     - Finding relevant evidence passages
+     - Validating that evidence supports claims
+     - Identifying missing evidence
+     - Analyzing charts and figures
+   - Creates detailed evidence trails for transparency
+   - Outputs structured verification reports
+
+3. **Gateway Service** (`src/gateway/`)
+   - Manages all LLM API interactions
+   - Provides centralized request handling
+   - Implements caching to reduce API costs
+   - Handles errors and retries gracefully
+   - Tracks usage and performance metrics
 
 ### Key Features
 
-- **Advanced PDF Processing**: Uses Detectron2-based layout detection to accurately extract complex document structures
-- **Intelligent Text Correction**: Automatically fixes common PDF text extraction issues (spacing, punctuation)
-- **Multi-Agent System**: Modular fact-checking agents for different verification tasks
-- **Production Ready**: Docker-based deployment with health checks and monitoring
-- **Extensible**: Easy to add new document types, agents, or processing steps
+- **Accurate PDF Processing**: Extracts text, tables, and figures from complex medical documents
+- **Intelligent Text Correction**: Automatically fixes PDF extraction errors while preserving medical terminology
+- **Evidence-Based Verification**: Fact-checks claims by finding and validating supporting evidence in documents
+- **Transparent Results**: Every claim verification includes exact quotes and page references
+- **Production Ready**: Scalable deployment with monitoring and error handling
 
 ### Use Cases
 
@@ -24,8 +78,101 @@ Solstice is a comprehensive system for processing clinical documents (PDFs, clin
 - Extracting data from FDA submissions and approvals
 - Verifying claims in medical literature
 - Building structured datasets from unstructured clinical documents
+- Analyzing marketing materials for regulatory compliance
 
-## Getting Started
+### How It Works
+
+1. **Place PDFs** in `data/clinical_files/` or `data/marketing_slide/`
+2. **Run ingestion** to extract structured content: `python -m src.cli ingest`
+3. **Run fact-checking** to verify claims: `python -m src.cli run-study`
+4. **View results** in `data/cache/` (extracted content) and `data/studies/` (fact-check results)
+
+The system processes documents through a pipeline:
+- PDF → Layout Detection → Text Extraction → Structured JSON
+- Claims + Documents → Evidence Extraction → Verification → Study Results
+
+## Architecture Details
+
+### Document Processing Flow
+
+```
+Input PDFs → Ingestion Pipeline → Structured JSON → Fact-Checking → Evidence Results
+                     ↓                                      ↓
+              Layout Detection                       Multi-Agent System
+              Text Correction                        Evidence Extraction
+              Table/Figure Extraction                Verification
+                                                    Image Analysis
+```
+
+### Module Responsibilities
+
+**CLI Module** (`src/cli/`): Command-line interface
+- `ingest`: Convert PDFs to structured JSON
+- `run-study`: Run fact-checking on claims
+- `gateway`: Start/stop API service
+
+**Ingestion Module** (`src/injestion/`): Document processing
+- **Scientific Pipeline**: For clinical trials, FDA documents, research papers
+  - Handles dense text, complex tables, scientific figures
+  - Preserves citations and cross-references
+- **Marketing Pipeline**: For presentations and marketing materials  
+  - Better handling of visual layouts and branding
+  - Extracts marketing claims and visual evidence
+- **Text Processing**: Corrects extraction errors, preserves medical terms
+
+**Fact-Check Module** (`src/fact_check/`): Claim verification
+- **Evidence Pipeline**:
+  1. Extract relevant passages from documents
+  2. Verify passages actually support claims
+  3. Check for missing evidence
+  4. Analyze supporting images/charts
+  5. Generate final evidence report
+- **Orchestration**: Manages parallel processing of multiple claims
+
+**Gateway Module** (`src/gateway/`): API management
+- Proxies requests to OpenAI/other LLMs
+- Implements rate limiting and retries
+- Caches responses to reduce costs
+- Provides usage analytics
+
+### Data Flow
+
+1. **Input**: PDFs placed in `data/clinical_files/` or `data/marketing_slide/`
+2. **Processing**: Ingestion extracts content to `data/cache/{document_name}/`
+3. **Fact-Checking**: Agents process claims and save to `data/cache/{document_name}/agents/`
+4. **Results**: Final study results saved to `data/studies/`
+
+### Text Extraction and Correction
+
+The system employs a multi-stage approach to extract and correct text from PDFs:
+
+1. **Raw Text Extraction**
+   - Uses PyMuPDF (fitz) to extract text while preserving document structure
+   - Maintains paragraph boundaries and text flow
+   - Extracts tables as structured data when possible
+
+2. **Intelligent Text Correction**
+   - **Spacing Correction**: Fixes concatenated words common in PDFs
+     - "theinformationneeded" → "the information needed"
+     - Uses WordNinja with Google n-gram frequencies
+   - **Medical Term Preservation**: Maintains specialized terminology
+     - Preserves drug names, medical procedures, dosages
+     - Protects registered trademarks (e.g., "Flublok®")
+   - **Context-Aware Processing**: Different rules for different content
+     - Scientific text: preserves chemical formulas, units
+     - Marketing text: maintains brand styling
+
+3. **LLM-Assisted Enhancement** (Fact-Checking Phase)
+   - LLMs analyze extracted text for evidence relevance
+   - **Guardrails prevent hallucination**:
+     - LLMs can only reference text explicitly present in documents
+     - All evidence must include exact quotes with page numbers
+     - Verification agents double-check all extracted evidence
+   - **No content generation**: LLMs extract and verify, never create
+
+This multi-layered approach ensures high-quality text extraction while preventing AI-generated content from contaminating the evidence base.
+
+## Installation
 
 This guide will walk you through setting up Solstice step by step. The setup has two parts:
 1. **Basic setup** (required) - Core functionality for text extraction and fact-checking
@@ -169,9 +316,8 @@ Python: Python 3.11.13
 Pip:    pip 25.1.1 from /path/to/.venv/lib/python3.11/site-packages/pip (python 3.11)
 ```
 
-### Complete Installation Example
-
-Here's a real-world example of the entire installation process:
+<details>
+<summary><strong>Complete Installation Example (click to expand)</strong></summary>
 
 ```bash
 # 1. Clone and enter the project
@@ -180,36 +326,35 @@ cd solstice
 
 # 2. Check Python version
 python3 --version
-# If not 3.11.x, install it:
-# brew install python@3.11  # macOS
+# If not 3.11.x, install it (e.g. on macOS: brew install python@3.11)
 
 # 3. Create virtual environment with Python 3.11
 python3.11 -m venv .venv
 source .venv/bin/activate
 
-# 4. Verify Python version in venv
+# 4. Verify the version inside the venv
 python --version  # Must show Python 3.11.x
 
-# 5. Upgrade pip (CRITICAL - prevents build errors)
+# 5. Upgrade build tools (mitigates most build errors)
 pip install --upgrade pip wheel setuptools
 
-# 6. Install base package
-make install  # This also upgrades pip/wheel/setuptools automatically
+# 6. Install core dependencies
+make install
 
-# 7. Install detectron2 (for advanced PDF processing)
+# 7. (Optional) Install Detectron2 for layout detection
 make install-detectron2
-# Note: You'll see a warning about iopath version - this is expected and safe
 
-# 8. Verify installation
+# 8. Verify everything is in place
 make verify
 
-# 9. Set up environment
-cp .env.example .env
-# Edit .env and add your OpenAI API key
+# 9. Provide your OpenAI key
+cp .env.example .env && echo "OPENAI_API_KEY=sk-…" >> .env
 
 # 10. Test the CLI
 python -m src.cli --help
 ```
+
+</details>
 
 ### Step 3: Configuration
 
@@ -317,37 +462,6 @@ docker compose up -d --scale gateway=3
 
 **Colima users**: The Makefile automatically restarts Colima if Docker is unresponsive.
 
-## Architecture
-
-### Core Components
-
-- **Ingestion Pipeline** (`src/injestion/`): Processes PDFs to extract structured content
-  - Native PDF text extraction using PyMuPDF
-  - Intelligent text correction with WordNinja
-  - Optional layout detection for tables/figures (requires Detectron2)
-  - Special marketing module for Flublok marketing materials (uses PrimaLayout)
-  - Saves extracted content as JSON in `data/cache/`
-
-- **Fact Checking System** (`src/fact_check/`): Multi-agent pipeline for evidence extraction
-  - Orchestrator coordinates multiple specialized agents
-  - Each agent handles specific verification tasks
-  - Results saved with full evidence trails
-
-- **Gateway Service** (`src/gateway/`): API proxy for LLM interactions
-  - OpenAI-compatible endpoints
-  - Request/response caching
-  - Automatic retries and error handling
-  - Runs on port 8000 by default
-
-### Text Processing
-
-The ingestion pipeline includes an automatic text processing service that:
-- Fixes spacing issues common in PDFs (e.g., "theinformationneeded" → "the information needed")
-- Preserves medical terms and trademarks (e.g., "Flublok®")
-- Handles punctuation and unit normalization
-- Uses WordNinja for intelligent word segmentation based on Google n-grams
-
-This ensures that downstream components (fact-checking, LLMs) receive properly formatted text.
 
 ## Troubleshooting
 
@@ -410,22 +524,7 @@ If you encounter errors like "Config file does not exist" or issues with model d
    make install-detectron2
    ```
 
-### Python Version Errors
 
-If you see "Python 3.11 or 3.12 required":
-
-1. Check your Python version:
-   ```bash
-   python --version
-   ```
-
-2. Install Python 3.11 using pyenv:
-   ```bash
-   pyenv install 3.11.9
-   pyenv local 3.11.9
-   ```
-
-3. Recreate your virtual environment with Python 3.11
 
 ### Memory Issues
 

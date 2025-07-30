@@ -4,8 +4,8 @@ This module defines the capabilities and requirements for different LLM models,
 allowing the system to automatically adapt requests based on the model being used.
 """
 
-from typing import Dict, Any, Optional, List
-from dataclasses import dataclass, field
+from typing import Dict, Any, Optional
+from dataclasses import dataclass
 
 
 @dataclass

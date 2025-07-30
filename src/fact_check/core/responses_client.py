@@ -6,9 +6,7 @@ This client talks to the Solstice Gateway that implements the OpenAI
 OpenAI, but *clients are no longer required* to supply such a key.  An
 `Authorization` header is only sent when an explicit key is provided.
 """
-import json
 import logging
-import asyncio
 
 import httpx
 

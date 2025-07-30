@@ -1,7 +1,7 @@
 """Pydantic models for LLM outputs in fact-checking system."""
 
 from pydantic import BaseModel, Field, validator
-from typing import List, Optional
+from typing import List
 import logging
 
 logger = logging.getLogger(__name__)

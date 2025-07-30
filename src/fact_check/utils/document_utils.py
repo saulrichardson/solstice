@@ -1,6 +1,6 @@
 """Simple text extraction utilities for fact-checking agents."""
 
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List
 
 
 def get_text(content_json: Dict[str, Any], include_figures: bool = True) -> str:

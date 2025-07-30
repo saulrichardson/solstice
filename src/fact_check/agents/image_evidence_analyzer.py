@@ -11,7 +11,6 @@ from ..core.responses_client import ResponsesClient
 from ..config.agent_models import get_model_for_agent
 from ..config.model_capabilities import build_vision_request, extract_text_from_response
 from ..models.image_outputs import ImageAnalysisOutput
-from ..utils.llm_parser import LLMResponseParser
 from ..utils.json_parser import parse_json_response, parse_json_with_pydantic
 
 logger = logging.getLogger(__name__)

@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
+  "explanation": "A table listing various licensed influenza vaccines (standard-dose egg-based, cell culture\u2013based, high-dose, adjuvanted, recombinant HA, and live attenuated), their presentations, age indications, HA antigen content per dose, route of administration, and \u00b5g per mL. Evidence: Flublok Quadrivalent (recombinant HA vaccine) is listed with 45 \u00b5g HA per 0.5 mL dose, while standard-dose egg-based quadrivalent vaccines are listed with 15 \u00b5g HA per 0.5 mL dose. The table clearly shows Flublok contains three times the HA antigen content of standard-dose vaccines but provides no data or reference linking this higher content to greater immunogenicity, and therefore does not support the claim about immunogenicity. Note: The table does not include any immunogenicity or efficacy outcomes, only antigen content per dose.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Failed to analyze image",
-    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
-    "evidence_found": null,
-    "confidence_notes": "Analysis failed due to errors"
+    "image_description": "A table listing various licensed influenza vaccines (standard-dose egg-based, cell culture\u2013based, high-dose, adjuvanted, recombinant HA, and live attenuated), their presentations, age indications, HA antigen content per dose, route of administration, and \u00b5g per mL.",
+    "evidence_found": "Flublok Quadrivalent (recombinant HA vaccine) is listed with 45 \u00b5g HA per 0.5 mL dose, while standard-dose egg-based quadrivalent vaccines are listed with 15 \u00b5g HA per 0.5 mL dose.",
+    "reasoning": "The table clearly shows Flublok contains three times the HA antigen content of standard-dose vaccines but provides no data or reference linking this higher content to greater immunogenicity, and therefore does not support the claim about immunogenicity.",
+    "confidence_notes": "The table does not include any immunogenicity or efficacy outcomes, only antigen content per dose."
   }
 }

@@ -1,33 +1,20 @@
-# Makefile for building LaTeX documents
+# Solstice Technical Documentation Build
 
-TEX = pdflatex
-PYTHON = python3
+BUILD_DIR = build
+DOCS_DIR = docs
 
-# Document versions
-MAIN = solstice
+# Build the writeup
+.PHONY: writeup
+writeup:
+	@mkdir -p $(BUILD_DIR) $(DOCS_DIR)
+	@echo "Building Solstice writeup..."
+	@pdflatex -interaction=nonstopmode -output-directory=$(BUILD_DIR) solstice.tex
+	@pdflatex -interaction=nonstopmode -output-directory=$(BUILD_DIR) solstice.tex
+	@mv $(BUILD_DIR)/solstice.pdf $(DOCS_DIR)/
+	@echo "Done! PDF available at: $(DOCS_DIR)/solstice.pdf"
 
-.PHONY: all clean view
-
-# Build main document
-all: $(MAIN).pdf
-
-# Build rules
-$(MAIN).pdf: $(MAIN).tex
-	$(TEX) $(MAIN)
-	$(TEX) $(MAIN)  # Run twice for references
-
-# Clean auxiliary files (but keep PDFs)
-clean:
-	rm -f *.aux *.log *.out *.toc *.bbl *.blg
-
-# Clean everything including PDFs
-cleanall: clean
-	rm -f *.pdf
-
-# View document
-view: $(MAIN).pdf
-	open $(MAIN).pdf  # macOS
-
-# Quick build
-quick: $(MAIN).tex
-	$(TEX) $(MAIN)
+# Clean writeup build artifacts
+.PHONY: clean-writeup
+clean-writeup:
+	@rm -rf $(BUILD_DIR) $(DOCS_DIR)
+	@echo "Writeup artifacts and PDF removed"

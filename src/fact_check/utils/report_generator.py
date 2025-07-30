@@ -2,7 +2,7 @@
 
 import json
 from pathlib import Path
-from typing import Dict, List, Any
+from typing import Optional
 
 
 def generate_evidence_report(

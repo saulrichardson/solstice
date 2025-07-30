@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
+  "explanation": "A flowchart outlining the selection of adult study participants (ages 18\u201364) vaccinated over three influenza seasons (2018\u20132021), showing numbers receiving recombinant vaccine versus standard-dose vaccine, exclusions for nonmembership, inpatient vaccination, date range, missing facility identifiers, inability to assign propensity scores, and final cohort sizes by age group. does not support the claim because the figure solely presents participant flow and cohort selection without any information on hemagglutinin antigen content or comparative immunogenicity of Flublok versus standard-dose vaccines.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Failed to analyze image",
-    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
+    "image_description": "A flowchart outlining the selection of adult study participants (ages 18\u201364) vaccinated over three influenza seasons (2018\u20132021), showing numbers receiving recombinant vaccine versus standard-dose vaccine, exclusions for nonmembership, inpatient vaccination, date range, missing facility identifiers, inability to assign propensity scores, and final cohort sizes by age group.",
     "evidence_found": null,
-    "confidence_notes": "Analysis failed due to errors"
+    "reasoning": "does not support the claim because the figure solely presents participant flow and cohort selection without any information on hemagglutinin antigen content or comparative immunogenicity of Flublok versus standard-dose vaccines.",
+    "confidence_notes": null
   }
 }

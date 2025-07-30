@@ -8,118 +8,153 @@
 \usepackage{xcolor}
 \usetikzlibrary{shapes,arrows,positioning,fit,backgrounds}
 
-\title{\textbf{Solstice: Automated Fact-Checking for Medical Documentation}}
-\author{A Multi-Agent System for Evidence Extraction and Verification}
+\title{\textbf{Solstice: Technical Architecture}}
+\author{Computer Vision + Multi-LLM Pipeline for Medical Document Verification}
 \date{}
 
 \begin{document}
 \maketitle
 
-\section{Overview}
+\section{Executive Summary}
 
-Solstice is an automated system for fact-checking medical claims against scientific literature. It processes PDFs through a pipeline that combines layout detection, content extraction, and multi-agent verification to produce comprehensive evidence reports.
+Solstice verifies medical claims against source documents using computer vision and orchestrated LLM processing. The system extracts structured content from PDFs through Detectron2, then runs claims through a four-stage LLM pipeline for evidence extraction and verification.
 
-\section{System Architecture}
+\section{Core Architecture}
 
-The Solstice pipeline consists of five main stages:
+\subsection{System Design}
 
-\begin{enumerate}
-\item \textbf{PDF Input}: Medical documents including clinical trials, package inserts, and marketing materials
-\item \textbf{Layout Detection}: Computer vision models identify document structure (text blocks, tables, figures)
-\item \textbf{Content Extraction}: Structured extraction of text and visual elements
-\item \textbf{Multi-Agent Analysis}: LLM-based agents extract and verify evidence
-\item \textbf{Report Generation}: Consolidated evidence reports with confidence assessments
-\end{enumerate}
+Three decoupled layers handle document processing:
 
-\section{How It Works}
+\begin{verbatim}
++-------------+          +---------------+          +-------------+
+|   Gateway   |  <---->  | Fact Checker  |  <---->  |  Ingestion  |
++-------------+          +---------------+          +-------------+
+\end{verbatim}
 
-\subsection{Step 1: Understanding Document Structure}
+The Gateway accepts document uploads and claim submissions from users, returning job IDs for async processing. When a document arrives, the Ingestion layer runs first to process the PDF and extract structured JSON. Once ingestion completes, the Fact Checker can then verify claims against the cached document data using the LLM pipeline. Users poll the Gateway for results, which retrieves the evidence report once processing completes.
 
-Medical documents are complex—they mix narrative text with data tables, clinical figures, and regulatory disclaimers. Solstice first "sees" the document using computer vision to identify each element:
+\subsection{Document Processing Pipeline}
+
+\textbf{Layout Detection:}
+\begin{itemize}
+\item Detectron2 with ResNet-50 identifies document regions
+\item 400 DPI rendering for accurate text extraction
+\item Bounding box post-processing resolves overlaps
+\item Outputs structured JSON with spatial coordinates
+\end{itemize}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.85\textwidth]{scientific_layout_example.png}
-\caption{Layout detection on a clinical trial paper identifies distinct regions: title, abstract, body text, tables, and figures. Each element is extracted separately for targeted analysis.}
+\caption{Detectron2 identifies text blocks, tables, and figures in medical documents.}
 \end{figure}
 
-This visual understanding is crucial because:
+\section{Claim Verification Pipeline}
+
+\subsection{Multi-Stage LLM Processing}
+
+Claims pass through four specialized LLM components:
+
+\newpage
+\begin{verbatim}
++-----------------+     +------------------+     +-------------------+
+|                 |     |                  |     |                   |
+| Claim + Document|---->| Evidence        |---->| Evidence          |
+|                 |     | Extractor (LLM) |     | Verifier (LLM)    |
++-----------------+     +------------------+     +---------+---------+
+                                                           |
+                                                           v
++-----------------+     +------------------+     +-------------------+
+|                 |     |                  |     |                   |
+| Images + Claim  |---->| Visual Analyzer  |     | Completeness      |
+|                 |     | (Multimodal LLM) |     | Checker (LLM)     |
++-----------------+     +------------------+     +---------+---------+
+                                                           |
+                                                 If new evidence found
+                                                           |
+                                                           v
+                                                 +-------------------+
+                                                 | Evidence Verifier |
+                                                 | (LLM) - 2nd pass  |
+                                                 +-------------------+
+\end{verbatim}
+
+\subsection{LLM Components}
+
+\textbf{Evidence Extractor}
 \begin{itemize}
-\item Key efficacy data often appears in tables
-\item Safety information may be in figure captions
-\item Important disclaimers hide in footnotes
-\item Marketing materials use visual hierarchy to emphasize claims
+\item Finds quotes supporting the claim
+\item Returns JSON with evidence and relevance scores
 \end{itemize}
 
-\subsection{Step 2: Multi-Agent Verification}
+\textbf{Evidence Verifier}
+\begin{itemize}
+\item Validates quote accuracy against source
+\item Checks for cherry-picking and missing context
+\end{itemize}
 
-Once documents are structured, four specialized agents collaborate to verify claims:
+\textbf{Completeness Checker}
+\begin{itemize}
+\item Searches for additional supporting evidence
+\item Triggers second verification pass if needed
+\end{itemize}
 
-The agent pipeline processes claims through multiple stages:
+\textbf{Visual Analyzer}
+\begin{itemize}
+\item Processes tables/figures using multimodal LLM
+\item Extracts data supporting or refuting claims
+\end{itemize}
 
-\begin{enumerate}
-\item \textbf{Evidence Extractor}: Searches documents for passages related to the claim
-\item \textbf{Evidence Verifier}: Confirms quotes are accurate and truly support the claim  
-\item \textbf{Completeness Checker}: Identifies missing evidence and triggers additional searches
-\item \textbf{Visual Analyzer}: Examines tables and figures for data supporting or contradicting claims
-\end{enumerate}
+\section{Implementation Patterns}
 
-Agents communicate through structured JSON outputs, with feedback loops allowing the Completeness Checker to request additional extraction when gaps are identified.
+\subsection{Orchestration}
 
-\section{Real-World Applications}
+ClaimOrchestrator manages the verification workflow:
+\begin{itemize}
+\item Async LLM calls with configurable timeouts
+\item Exponential backoff for rate limit handling
+\item State transitions through extraction, verification, and completion
+\end{itemize}
 
-\subsection{Clinical Trial Verification}
-When pharmaceutical companies publish trial results, Solstice can verify that marketing claims accurately reflect the scientific data. The system catches discrepancies like selective reporting or overgeneralization of results.
+\subsection{Caching Strategy}
 
-\subsection{Regulatory Compliance}
-Medical device manufacturers must ensure their promotional materials align with FDA-approved indications. Solstice automatically cross-references marketing claims against regulatory documents.
+Filesystem cache enables debugging and reprocessing:
 
-\subsection{Marketing Material Review}
+\begin{verbatim}
+data/cache/{document_name}/
+    extracted/
+        content.json      # Structured document content
+        figures/          # Extracted images
+    agents/               # LLM outputs
+        claims/
+            claim_{id}/
+                evidence_extractor/output.json
+                evidence_verifier/output.json
+                completeness_checker/output.json
+                image_evidence_analyzer/{figure_id}/output.json
+\end{verbatim}
 
-Marketing materials require special attention due to their persuasive nature:
+\section{Scaling Considerations}
+
+\textbf{Ingestion}: CPU-bound on Detectron2, benefits from GPU acceleration
+
+\textbf{Fact Checking}: I/O bound on LLM APIs, scales with concurrent claims
+
+\textbf{Gateway}: Stateless handlers scale horizontally
+
+\section{Marketing Document Adaptation}
+
+Marketing materials use adjusted parameters:
+\begin{itemize}
+\item Lower confidence threshold (0.1 vs 0.2)
+\item Enhanced overlap resolution for creative layouts
+\item Same LLM prompts maintain consistency
+\end{itemize}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.85\textwidth]{marketing_layout_example.png}
-\caption{Marketing materials use visual design to emphasize benefits. Solstice identifies promotional claims and verifies them against clinical evidence.}
+\caption{Marketing documents require lower confidence thresholds for design-heavy layouts.}
 \end{figure}
-
-\section{Key Innovations}
-
-\subsection{Multimodal Understanding}
-Unlike text-only systems, Solstice analyzes tables, graphs, and figures—critical for medical evidence where key data often appears visually.
-
-\subsection{Intelligent Orchestration}
-Agents work together with feedback loops, ensuring thorough verification. If gaps are found, the system automatically searches for additional evidence.
-
-\subsection{Traceable Verification}
-Every claim links back to its source evidence, maintaining transparency and allowing human review of the automated findings.
-
-\subsection{Scalable Architecture}
-The system processes multiple claims in parallel while managing computational resources efficiently.
-
-\section{Impact and Benefits}
-
-\begin{itemize}
-\item \textbf{Speed}: Reduces verification time from days to minutes
-\item \textbf{Accuracy}: Systematic analysis eliminates human oversight errors
-\item \textbf{Completeness}: Examines entire documents, not just keyword matches
-\item \textbf{Transparency}: Provides traceable evidence for every verification
-\item \textbf{Scalability}: Handles large document sets that would overwhelm human reviewers
-\end{itemize}
-
-\section{Future Directions}
-
-Solstice continues to evolve with planned enhancements:
-\begin{itemize}
-\item Cross-document reasoning to synthesize evidence from multiple sources
-\item Temporal analysis to track how claims change over time
-\item Contradiction detection between related documents
-\item Integration with regulatory databases for real-time compliance checking
-\end{itemize}
-
-\section{Conclusion}
-
-Solstice represents a paradigm shift in medical document verification. By combining visual document understanding with intelligent agent orchestration, it transforms a manual, error-prone process into an automated, reliable system. This enables faster drug development, more accurate marketing, and ultimately, better-informed healthcare decisions.
 
 \end{document}

@@ -54,7 +54,8 @@ def main(claims_file=None, documents=None):
     config = {
         "agent_config": {
             "disable_cache": True
-        }
+        },
+        "max_concurrent_claims": 6  # Optimal for 32GB RAM, 10 CPU cores
     }
     
     # Print study info

@@ -35,11 +35,12 @@ class EvidencePresenter(BaseAgent):
         # consolidated verifier output.  This makes the execution flow
         # unambiguous and prevents accidental double-merging when legacy
         # artefacts are still present on disk.
+        # Only the consolidated verifier output is strictly required; the
+        # completeness checker is optional and therefore *not* part of the
+        # validation list (its absence should not prevent the presenter from
+        # running under the unified BaseAgent.run() execution model).
         return [
             f"{base}/evidence_verifier_v2_consolidated/output.json",
-            # Completeness checker remains optional; when it is missing we
-            # simply treat the coverage as unknown.
-            f"{base}/completeness_checker/output.json",
         ]
     
     def __init__(

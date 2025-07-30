@@ -45,7 +45,8 @@ class ClaimOrchestrator:
         self.config = config or {}
         
         # Agent configuration with claim
-        self.agent_config = self.config.get("agent_config", {})
+        # Create a copy to avoid shared state between concurrent orchestrators
+        self.agent_config = self.config.get("agent_config", {}).copy()
         self.agent_config["claim"] = claim_text
         
         # Fixed pipeline for streamlined architecture.  The presenter is
@@ -116,20 +117,18 @@ class ClaimOrchestrator:
             try:
                 # Use standard agent config
                 agent_config = self.agent_config.copy()
-                
+
                 # Create agent instance
                 agent = agent_class(
                     pdf_name=document,
                     claim_id=self.claim_id,
                     cache_dir=self.cache_dir,
-                    config=agent_config
+                    config=agent_config,
                 )
-                
-                # Run agent
-                result = await agent.process()
-                
-                # Save agent output
-                self._save_agent_output(document, agent_name, result)
+
+                # Execute via BaseAgent.run() which handles validation,
+                # metadata, and output persistence.
+                result = await agent.run()
                 
                 doc_result["agents_run"].append({
                     "agent": agent_name,
@@ -177,29 +176,15 @@ class ClaimOrchestrator:
         # Now run the presenter with all verified evidence (text + images)
         await self._run_presenter(document, doc_result, all_verified_evidence)
         
-        # A document is considered successful if core agents succeed
-        # Image analysis is optional and doesn't affect overall success
-        core_agents = ["evidence_extractor", "evidence_verifier_v2", "completeness_checker", "evidence_presenter"]
-        optional_agents = ["image_evidence_analyzer", "evidence_verifier_v2_additional"]
-        
-        core_agent_results = [
-            a for a in doc_result["agents_run"] 
-            if any(core in a["agent"] for core in core_agents)
-        ]
-        
-        # Success requires at least one core agent ran and all core agents succeeded
-        doc_result["success"] = bool(core_agent_results) and all(
-            a["success"] for a in core_agent_results
-        )
-        
-        # Track optional agent failures separately
-        optional_failures = [
-            a for a in doc_result["agents_run"]
-            if any(opt in a["agent"] for opt in optional_agents) and not a["success"]
-        ]
-        if optional_failures:
-            doc_result["optional_failures"] = len(optional_failures)
-            logger.info(f"  Note: {len(optional_failures)} optional agents failed but document still marked as successful")
+        # ------------------------------------------------------------------
+        # Determine overall success
+        # ------------------------------------------------------------------
+        # Simplified rule: a document is successful when *all* executed
+        # agents completed without error.  This avoids the previous split
+        # between “core” and “optional” and produces a single, consistent
+        # interpretation for downstream analytics.
+
+        doc_result["success"] = all(a["success"] for a in doc_result["agents_run"])
         return doc_result
     
     async def _prepare_additional_evidence(self, document: str, new_evidence: List[Dict]):
@@ -235,11 +220,43 @@ class ClaimOrchestrator:
         """Verify additional evidence found by completeness checker."""
         logger.info("    Running evidence_verifier_v2 for additional evidence...")
         
-        # Ensure the additional evidence output exists
-        additional_evidence_path = self.cache_dir / document / "agents" / "claims" / self.claim_id / "evidence_extractor_additional" / "output.json"
+        # Ensure the additional evidence output exists.  When the completeness
+        # checker reported *new* evidence we expect the extractor file to be
+        # present.  Its absence indicates a pipeline failure that must not be
+        # silently ignored; otherwise the study would incorrectly be marked as
+        # successful while missing evidence.
+
+        additional_evidence_path = (
+            self.cache_dir
+            / document
+            / "agents"
+            / "claims"
+            / self.claim_id
+            / "evidence_extractor_additional"
+            / "output.json"
+        )
+
         if not additional_evidence_path.exists():
-            logger.warning("    No additional evidence file found to verify")
-            return
+            msg = (
+                "Expected additional evidence extractor output not found at "
+                f"{additional_evidence_path}. The completeness checker "
+                "reported new evidence but none was written – aborting "
+                "additional verification."
+            )
+            logger.error(f"    {msg}")
+
+            # Record failure in the document result so downstream aggregation
+            # knows this verification step was missing.
+            doc_result["agents_run"].append({
+                "agent": "evidence_verifier_v2_additional",
+                "success": False,
+                "error": "missing_extractor_output",
+                "timestamp": datetime.now().isoformat()
+            })
+
+            # Escalate the problem – by raising we let the outer orchestrator
+            # catch the exception and mark the whole document as failed.
+            raise FileNotFoundError(msg)
         
         try:
             # Create verifier for additional evidence
@@ -258,11 +275,8 @@ class ClaimOrchestrator:
             verifier.agent_dir = self.cache_dir / document / "agents" / "claims" / self.claim_id / "evidence_verifier_v2_additional"
             verifier.agent_dir.mkdir(parents=True, exist_ok=True)
             
-            # Run verification
-            result = await verifier.process()
-            
-            # Save output
-            self._save_agent_output(document, "evidence_verifier_v2_additional", result)
+            # Run verification with full agent lifecycle handling
+            result = await verifier.run()
             
             # Collect additional verified evidence
             additional_verified = result.get("verified_evidence", [])
@@ -328,11 +342,8 @@ class ClaimOrchestrator:
                 config=agent_config
             )
             
-            # Run presenter
-            result = await presenter.process()
-            
-            # Save output
-            self._save_agent_output(document, "evidence_presenter", result)
+            # Run presenter via BaseAgent.run()
+            result = await presenter.run()
             
             # Update doc_result with presenter output
             doc_result["supporting_evidence"] = result.get("supporting_evidence", [])
@@ -412,7 +423,7 @@ class ClaimOrchestrator:
                     cache_dir=self.cache_dir,
                     config=self.agent_config
                 )
-                return await analyzer.process()
+                return await analyzer.run()
         
         # Create tasks with semaphore limiting (use valid_images)
         tasks = [analyze_image_with_limit(img) for img in valid_images]
@@ -429,25 +440,22 @@ class ClaimOrchestrator:
             image_filename = image_metadata.get('image_filename', '')
             image_id = image_metadata.get('block_id', image_filename.replace('.png', '').replace('.jpg', '') or f"image_{i}")
             
-            if isinstance(result, Exception):
+            if isinstance(result, Exception) or result.get("error"):
                 logger.error(f"      Image analysis failed for {image_filename}: {result}")
                 doc_result["agents_run"].append({
                     "agent": f"image_evidence_analyzer_{image_id}",
                     "success": False,
                     "error": str(result),
-                    "timestamp": datetime.now().isoformat()
+                    "timestamp": datetime.now().isoformat(),
                 })
             else:
-                # Save the output to image-specific directory
-                self._save_agent_output(document, f"image_evidence_analyzer/{image_id}", result)
-                
                 # Track in agents_run with consistent naming
                 doc_result["agents_run"].append({
                     "agent": f"image_evidence_analyzer_{image_id}",
                     "success": True,
-                    "timestamp": datetime.now().isoformat()
+                    "timestamp": datetime.now().isoformat(),
                 })
-                
+
                 # Only include images that support the claim
                 if result.get("supports_claim"):
                     supporting_images.append(result)

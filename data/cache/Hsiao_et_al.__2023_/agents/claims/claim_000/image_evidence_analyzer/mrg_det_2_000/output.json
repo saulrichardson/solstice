@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Failed to analyze image The image does not support the claim. Error: All connection attempts failed Note: Analysis failed due to errors",
+  "explanation": "A schematic figure illustrating cluster randomization of Kaiser Permanente Northern California facilities by service area and facility size into Block A and Block B, and a table showing weekly alternation of vaccine formulations (SD-IIV4 and RIV4) across 9 facilities over 4 weeks. The image only describes study cluster randomization and weekly assignment of standard-dose inactivated influenza vaccine (SD-IIV4) versus recombinant influenza vaccine (RIV4). It does not present or quantify hemagglutinin antigen content, so it does not support the claim. Note: Figure is clear but only covers randomization and vaccine assignment; no antigen content or immunogenicity data are shown.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Failed to analyze image",
-    "reasoning": "The image does not support the claim. Error: All connection attempts failed",
+    "image_description": "A schematic figure illustrating cluster randomization of Kaiser Permanente Northern California facilities by service area and facility size into Block A and Block B, and a table showing weekly alternation of vaccine formulations (SD-IIV4 and RIV4) across 9 facilities over 4 weeks.",
     "evidence_found": null,
-    "confidence_notes": "Analysis failed due to errors"
+    "reasoning": "The image only describes study cluster randomization and weekly assignment of standard-dose inactivated influenza vaccine (SD-IIV4) versus recombinant influenza vaccine (RIV4). It does not present or quantify hemagglutinin antigen content, so it does not support the claim.",
+    "confidence_notes": "Figure is clear but only covers randomization and vaccine assignment; no antigen content or immunogenicity data are shown."
   }
 }
