@@ -2,7 +2,7 @@
   "source_pdf": "data/clinical_files/CDC Influenza vaccines.pdf",
   "blocks": [
     {
-      "id": "15809c2f",
+      "id": "det_0_003",
       "page_index": 0,
       "role": "Figure",
       "bbox": [
@@ -11,8 +11,8 @@
         4373.1953125,
         6200.54833984375
       ],
-      "text": "[FIGURE 2 - See figure_p1_15809c2f.png]",
-      "image_path": "figures/figure_p1_15809c2f.png",
+      "text": "[FIGURE 2 - See figure_p1_det_0_003.png]",
+      "image_path": "figures/figure_p1_det_0_003.png",
       "metadata": {
         "score": 0.8491250276565552,
         "detection_dpi": 400,
@@ -20,7 +20,7 @@
       }
     },
     {
-      "id": "9faad589",
+      "id": "det_0_001",
       "page_index": 0,
       "role": "Title",
       "bbox": [
@@ -29,7 +29,7 @@
         4410.78759765625,
         2020.2667236328125
       ],
-      "text": "Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS†† ≥6 mos†† 15 µg/0.5 mL IM — 0.5-mL SDV†† ≥6 mos†† 15 µg/0.5 mL IM — 5 0-mL MDV†† ≥6 mos†† 7 5 µg/0 25 mL IM 25 ¶ ¶ ¶",
+      "text": "Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS†† ≥6 mos†† 15 µg/0.5 mL IM 0.5-mL SDV†† ≥6 mos†† 15 µg/0.5 mL IM 5 0-mL MDV†† ≥6 mos†† 7 5 µg/0 25 mL IM 25 ¶ ¶ ¶",
       "metadata": {
         "score": 0.941857099533081,
         "detection_dpi": 400,
@@ -39,15 +39,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0009179115295410156,
+          "processing_time": 0.0009729862213134766,
           "processors_applied": [
+            "post_extraction_clean",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "4e2e6d18",
+      "id": "det_0_006",
       "page_index": 0,
       "role": "Text",
       "bbox": [
@@ -65,7 +66,7 @@
       }
     },
     {
-      "id": "72669e78",
+      "id": "det_0_011",
       "page_index": 0,
       "role": "Figure",
       "bbox": [
@@ -74,8 +75,8 @@
         4434.34130859375,
         1330.582275390625
       ],
-      "text": "[FIGURE 4 - See figure_p1_72669e78.png]",
-      "image_path": "figures/figure_p1_72669e78.png",
+      "text": "[FIGURE 4 - See figure_p1_det_0_011.png]",
+      "image_path": "figures/figure_p1_det_0_011.png",
       "metadata": {
         "score": 0.4548403024673462,
         "detection_dpi": 400,
@@ -83,7 +84,7 @@
       }
     },
     {
-      "id": "e2fd4804",
+      "id": "det_1_000",
       "page_index": 1,
       "role": "Figure",
       "bbox": [
@@ -92,8 +93,8 @@
         4427.47509765625,
         2071.683837890625
       ],
-      "text": "[FIGURE 1 - See figure_p2_e2fd4804.png]",
-      "image_path": "figures/figure_p2_e2fd4804.png",
+      "text": "[FIGURE 1 - See figure_p2_det_1_000.png]",
+      "image_path": "figures/figure_p2_det_1_000.png",
       "metadata": {
         "score": 0.9963143467903137,
         "detection_dpi": 400,
@@ -101,7 +102,7 @@
       }
     },
     {
-      "id": "f873ede9",
+      "id": "mrg_det_1_002",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -110,7 +111,7 @@
         4344.50537109375,
         4908.162109375
       ],
-      "text": "LAIV4 (egg based vaccine ) FluMist Quad rival ent (AstraZeneca) 0.2-mL pre filled single- use intra nasal sprayer 2 through 49 yrs 10 fluorescent focus units 0 2 mL NAS — Abbreviations: ACIP = Advisory Committee on Immunization Practices; HA = hemagglutinin; IIV4 = in activated influenza vaccine, quad rival ent; IM = intramuscular; LAIV4 = live attenuated influenza vaccine, quad rival ent; MDV = multi dose vial; PFS fill d RIV4 bfl d l SDV l d l 6 5 7 5",
+      "text": "LAIV4 (egg based vaccine ) FluMist Quad rival ent (AstraZeneca) 0.2-mL pre filled single use intra nasal sprayer 2 through 49 yrs 10 fluorescent focus units 0 2 mL NAS Abbreviations: ACIP = Advisory Committee on Immunization Practices; HA = hemagglutinin; IIV4 = in activated influenza vaccine, quad rival ent; IM = intramuscular; LAIV4 = live attenuated influenza vaccine, quad rival ent; MDV = multi dose vial; PFS fill d RIV4 bfl d l SDV l d l 6 5 7 5",
       "metadata": {
         "score": 0.9395411014556885,
         "detection_dpi": 400,
@@ -120,7 +121,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0016150474548339844,
+          "processing_time": 0.0018460750579833984,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -129,7 +130,7 @@
       }
     },
     {
-      "id": "33d1e860",
+      "id": "det_1_001",
       "page_index": 1,
       "role": "Title",
       "bbox": [
@@ -148,7 +149,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.00015306472778320312,
+          "processing_time": 0.00016689300537109375,
           "processors_applied": [
             "spacing_fix"
           ]
@@ -156,7 +157,7 @@
       }
     },
     {
-      "id": "e033edf0",
+      "id": "det_1_003",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -167,7 +168,7 @@
       ],
       "text": "IM-administered influenza vaccines should be administered by needle and syringe only, with the exception of the MDV presentation of Afluria Quad rival ent, which may alternatively be given by the PharmaJet Strat is jet injector for persons age ¶",
       "metadata": {
-        "score": 0.9368327856063843,
+        "score": 0.9368327260017395,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -175,15 +176,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0007948875427246094,
+          "processing_time": 0.0008442401885986328,
           "processors_applied": [
+            "post_extraction_clean",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "40150f7d",
+      "id": "det_1_004",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -194,7 +196,7 @@
       ],
       "text": "Availability and characteristics of specific products and presentations might change or differ from what is described in this table and in the text of this report. Although a history of severe allergic reaction (e.g., anaphylaxis) to egg is a labeled contra indication to the use of egg based †",
       "metadata": {
-        "score": 0.8815174102783203,
+        "score": 0.8815173506736755,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -202,7 +204,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0024290084838867188,
+          "processing_time": 0.0030829906463623047,
           "processors_applied": [
             "post_extraction_clean",
             "symspell",
@@ -212,7 +214,7 @@
       }
     },
     {
-      "id": "e186525d",
+      "id": "mrg_det_1_005",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -231,7 +233,7 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0011420249938964844,
+          "processing_time": 0.0012738704681396484,
           "processors_applied": [
             "post_extraction_clean",
             "spacing_fix"
@@ -240,7 +242,7 @@
       }
     },
     {
-      "id": "e8b9c17e",
+      "id": "det_1_006",
       "page_index": 1,
       "role": "Text",
       "bbox": [
@@ -251,7 +253,7 @@
       ],
       "text": "* Manufacturer package inserts and updated CDC and ACIP guidance should be consulted for additional information concerning, but not limited to, indications, contra indications, warnings, and precautions. Package inserts for U.S.-licensed",
       "metadata": {
-        "score": 0.7995550632476807,
+        "score": 0.7995550036430359,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -259,17 +261,16 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.002087831497192383,
+          "processing_time": 0.0027000904083251953,
           "processors_applied": [
             "post_extraction_clean",
-            "symspell",
             "spacing_fix"
           ]
         }
       }
     },
     {
-      "id": "159ee1a3",
+      "id": "det_1_008",
       "page_index": 1,
       "role": "Title",
       "bbox": [
@@ -278,9 +279,9 @@
         4346.814453125,
         5650.357421875
       ],
-      "text": "Fluad Quad rival ent (Seqirus) 0.5-mL PFS ≥65 yrs 15 µg/0.5 mL IM — RIV4 (recombinant HA vaccine) ¶",
+      "text": "Fluad Quad rival ent (Seqirus) 0.5-mL PFS ≥65 yrs 15 µg/0.5 mL IM RIV4 (recombinant HA vaccine) ¶",
       "metadata": {
-        "score": 0.7467931509017944,
+        "score": 0.7467930912971497,
         "detection_dpi": 400,
         "detector": "PubLayNet",
         "extraction_confidence": 1.0,
@@ -288,8 +289,9 @@
           "method": "pymupdf",
           "scale_factor": 0.18,
           "text_modified": true,
-          "processing_time": 0.0003960132598876953,
+          "processing_time": 0.0004780292510986328,
           "processors_applied": [
+            "post_extraction_clean",
             "spacing_fix"
           ]
         }
@@ -298,20 +300,20 @@
   ],
   "reading_order": [
     [
-      "9faad589",
-      "15809c2f",
-      "4e2e6d18",
-      "72669e78"
+      "det_0_001",
+      "det_0_003",
+      "det_0_006",
+      "det_0_011"
     ],
     [
-      "e2fd4804",
-      "e033edf0",
-      "e186525d",
-      "40150f7d",
-      "e8b9c17e",
-      "f873ede9",
-      "33d1e860",
-      "159ee1a3"
+      "det_1_000",
+      "det_1_003",
+      "mrg_det_1_005",
+      "det_1_004",
+      "det_1_006",
+      "mrg_det_1_002",
+      "det_1_001",
+      "det_1_008"
     ]
   ],
   "metadata": {
@@ -323,5 +325,12 @@
       "figure_blocks": 3,
       "figures_dir": "data/cache/CDC_Influenza_vaccines/extracted/figures"
     }
+  },
+  "pipeline_metadata": {
+    "raw_detection_count": 40,
+    "after_consolidation_count": 12,
+    "final_block_count": 12,
+    "box_tracking_enabled": true,
+    "id_format": "det_<page>_<index> for detections, mrg_<source_id> for merges"
   }
 }
