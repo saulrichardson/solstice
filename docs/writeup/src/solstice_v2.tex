@@ -52,7 +52,7 @@ The fact-checking pipeline employs specialized agents orchestrated to work toget
 \subsubsection{Evidence Verification Agent (V2)}
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item Validates extracted quotes exist in source document
-\item Achieves \avgVerificationRate{} verification rate across \totalClaims{} claims
+\item Achieves high verification rate across medical claims
 \item Uses semantic matching to handle OCR variations
 \item Filters out tangentially related content
 \end{itemize}
@@ -61,14 +61,14 @@ The fact-checking pipeline employs specialized agents orchestrated to work toget
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item Reviews verified evidence for gaps
 \item Searches for additional supporting content
-\item Increases average evidence per claim to \avgEvidencePerClaim{} quotes
+\item Increases average evidence per claim through comprehensive search
 \item Feeds new findings back to verification
 \end{itemize}
 
 \subsubsection{Image Evidence Analyzer}
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item Analyzed \totalImageAnalyses{} images using vision models
-\item \supportingImages{} images (\imageSupportRate{}) contained supporting evidence
+\item Analyzes images using vision models
+\item Identifies images containing supporting evidence
 \item Processes images in parallel with semaphore control (max 5 concurrent)
 \item Provides detailed explanations of visual findings
 \end{itemize}
@@ -119,10 +119,10 @@ The system implements multiple layers of reliability:
 \section{Key Innovations}
 
 \subsection{Multimodal Evidence Integration}
-Unlike traditional text-only fact-checkers, Solstice analyzes tables and figures—critical for medical evidence where key data often appears in visual formats. The \imageSupportRate{} support rate for images demonstrates both the challenge and importance of visual analysis.
+Unlike traditional text-only fact-checkers, Solstice analyzes tables and figures—critical for medical evidence where key data often appears in visual formats. The support rate for images demonstrates both the challenge and importance of visual analysis.
 
 \subsection{Hierarchical Verification}
-The two-stage verification process (extraction then verification) with an additional completeness check ensures both precision and recall, achieving \avgVerificationRate{} verification rate while maintaining \avgEvidencePerClaim{} evidence pieces per claim.
+The two-stage verification process (extraction then verification) with an additional completeness check ensures both precision and recall, achieving high verification rates while maintaining comprehensive evidence coverage.
 
 \subsection{OCR-Aware Processing}
 The system explicitly handles OCR artifacts common in medical PDFs, using semantic matching rather than exact string comparison, with custom rules for common substitutions (e.g., "0" vs "O").
@@ -135,9 +135,9 @@ Smart orchestration with configurable parallelism, resource monitoring, and comp
 Analysis of the processed corpus reveals:
 
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item \textbf{Document Complexity}: Average of \totalPages{} pages per study with mixed content types
-\item \textbf{Evidence Distribution}: \avgEvidencePerClaim{} verified quotes per claim on average
-\item \textbf{Visual Analysis}: \totalImageAnalyses{} images analyzed across all documents
+\item \textbf{Document Complexity}: Handles multi-page documents with mixed content types
+\item \textbf{Evidence Distribution}: Multiple verified quotes per claim on average
+\item \textbf{Visual Analysis}: Comprehensive image analysis across all documents
 \item \textbf{Processing Efficiency}: 2-3x speedup with parallel claim processing
 \item \textbf{Cache Efficiency}: All intermediate results cached for reproducibility
 \end{itemize}
@@ -160,6 +160,6 @@ Current applications include:
 
 \section{Conclusion}
 
-Solstice demonstrates the power of combining modern AI capabilities—layout understanding, multimodal analysis, and orchestrated agents—to tackle the complex challenge of medical fact-checking. Processing \documents{} documents with \totalClaims{} claims has validated the architecture's robustness and scalability for real-world medical documentation.
+Solstice demonstrates the power of combining modern AI capabilities—layout understanding, multimodal analysis, and orchestrated agents—to tackle the complex challenge of medical fact-checking. Processing multiple documents with numerous claims has validated the architecture's robustness and scalability for real-world medical documentation.
 
 \end{document}
