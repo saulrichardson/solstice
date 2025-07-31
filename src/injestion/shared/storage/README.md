@@ -13,13 +13,13 @@ The storage module serves as the data persistence layer for the ingestion system
 - **Stage Organization**: Structured directories for each processing stage
 - **JSON Persistence**: Standardized serialization for metadata
 - **Runtime Configuration**: Dynamic path customization for different environments
-- **Cache Management**: Efficient storage and retrieval of processed documents
+- **Scientific_cache Management**: Efficient storage and retrieval of processed documents
 
 ## Directory Structure
 
 ```
 data/
-├── cache/                          # All processed outputs
+├── scientific_cache/               # All processed outputs
 │   └── <document_id>/             # Per-document folder
 │       ├── pages/                 # Rasterized pages
 │       │   ├── page-000.png
@@ -56,7 +56,7 @@ Primary interface for path management:
 ```python
 from src.injestion.storage.paths import (
     doc_id, pages_dir, stage_dir, 
-    save_json, load_json, set_cache_root
+    save_json, load_json, set_scientific_cache_root
 )
 
 # Get safe document ID from filename
@@ -64,15 +64,15 @@ doc_id = doc_id("Clinical Study (2024).pdf")
 # Returns: "Clinical_Study__2024_"
 
 # Get standard directories
-pages = pages_dir(doc_id)           # data/cache/<doc_id>/pages/
-layouts = stage_dir("raw_layouts", doc_id)  # data/cache/<doc_id>/raw_layouts/
+pages = pages_dir(doc_id)           # data/scientific_cache/<doc_id>/pages/
+layouts = stage_dir("raw_layouts", doc_id)  # data/scientific_cache/<doc_id>/raw_layouts/
 
 # Save/load JSON data
 save_json(data, stage_dir("extracted", doc_id) / "content.json")
 content = load_json(stage_dir("extracted", doc_id) / "content.json")
 
 # Change output location
-set_cache_root("/custom/output/path")
+set_scientific_cache_root("/custom/output/path")
 ```
 
 ## Implementation Details
@@ -97,13 +97,13 @@ def doc_id(pdf_filename: str | os.PathLike) -> str:
     """
 ```
 
-### Cache Root Management
+### Scientific_cache Root Management
 ```python
-# Global state for cache directory
-_CACHE_DIR = Path(settings.filesystem_cache_dir)
+# Global state for scientific_cache directory
+_SCIENTIFIC_CACHE_DIR = Path(settings.filesystem_cache_dir)
 
-def set_cache_root(cache_root: os.PathLike | str) -> None:
-    """Override the cache directory at runtime.
+def set_scientific_cache_root(cache_root: os.PathLike | str) -> None:
+    """Override the scientific_cache directory at runtime.
     
     This allows:
     - CLI --output-dir flag support
@@ -181,8 +181,8 @@ for fig_path in figures_dir.glob("*.png"):
 # python -m src.cli ingest --output-dir /my/custom/path
 
 # Or programmatically
-from src.injestion.storage.paths import set_cache_root
-set_cache_root("/my/custom/path")
+from src.injestion.storage.paths import set_scientific_cache_root
+set_scientific_cache_root("/my/custom/path")
 
 # All subsequent operations use new root
 pages = pages_dir(doc_id)  # /my/custom/path/<doc_id>/pages/
@@ -227,7 +227,7 @@ Visualization        →    visualizations/
 path = stage_dir("extracted", doc_id) / "content.json"
 
 # Bad: Manual path construction
-path = Path("data/cache") / doc_id / "extracted/content.json"
+path = Path("data/scientific_cache") / doc_id / "extracted/content.json"
 ```
 
 ### Error Handling
@@ -244,36 +244,36 @@ else:
 import shutil
 
 # Remove all data for a document
-doc_cache = Path(settings.filesystem_cache_dir) / doc_id
-if doc_cache.exists():
-    shutil.rmtree(doc_cache)
+doc_scientific_cache = Path(settings.filesystem_cache_dir) / doc_id
+if doc_scientific_cache.exists():
+    shutil.rmtree(doc_scientific_cache)
 ```
 
 ## Configuration
 
 ### Environment Variables
 ```bash
-# Set cache directory
-export FILESYSTEM_CACHE_DIR=/path/to/cache
+# Set scientific_cache directory
+export FILESYSTEM_CACHE_DIR=/path/to/scientific_cache
 
 # Or in .env file
-FILESYSTEM_CACHE_DIR=data/cache
+FILESYSTEM_CACHE_DIR=data/scientific_cache
 ```
 
 ### Runtime Override
 ```python
 # For testing or custom workflows
-set_cache_root("/tmp/test_cache")
+set_scientific_cache_root("/tmp/test_scientific_cache")
 
 # Reset to default
 from src.core.config import settings
-set_cache_root(settings.filesystem_cache_dir)
+set_scientific_cache_root(settings.filesystem_cache_dir)
 ```
 
 ## Performance Considerations
 
 ### Filesystem Optimization
-- Use SSD storage for cache directory
+- Use SSD storage for scientific_cache directory
 - Consider separate volumes for different stages
 - Enable filesystem compression if available
 - Monitor inode usage for large document sets
@@ -288,7 +288,7 @@ set_cache_root(settings.filesystem_cache_dir)
 
 1. **Path Traversal**: Document IDs sanitized to prevent directory escape
 2. **Name Collisions**: Hash fallback ensures unique IDs
-3. **Permissions**: Cache directory should be writable only by service
+3. **Permissions**: Scientific_cache directory should be writable only by service
 4. **Sensitive Data**: No encryption by default - add if needed
 
 ## Future Enhancements

@@ -141,7 +141,7 @@ The scientific pipeline uses these optimized defaults:
 The pipeline generates comprehensive outputs in the cache directory:
 
 ```
-data/cache/<PDF_NAME>/
+data/scientific_cache/<PDF_NAME>/
 ├── pages/                    # Rasterized pages at detection DPI
 ├── raw_layouts/             # Unprocessed detection results
 │   └── raw_layout_boxes.json

@@ -18,7 +18,7 @@ class StudyOrchestrator:
         self,
         claims_file: Path,
         documents: List[str],
-        cache_dir: Path = Path("data/cache"),
+        cache_dir: Path = Path("data/scientific_cache"),
         output_dir: Path = Path("data/studies"),
         config: Optional[Dict[str, Any]] = None
     ):

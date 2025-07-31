@@ -226,7 +226,7 @@ def main():
     parser.add_argument(
         '--cache-dir',
         type=Path,
-        default=Path('data/cache'),
+        default=Path('data/scientific_cache'),
         help='Path to cache directory'
     )
     parser.add_argument(

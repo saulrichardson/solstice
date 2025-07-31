@@ -10,7 +10,7 @@ The `data/` directory contains all input documents, processed outputs, and inter
 
 ```
 data/
-├── cache/                    # Main processing output directory
+├── scientific_cache/         # Main processing output directory
 ├── claims/                   # Claim definition files
 ├── clinical_files/          # Input PDFs (clinical/scientific)
 ├── marketing_slide/         # Input PDFs (marketing materials)
@@ -67,11 +67,11 @@ claims/
 
 ### 3. Processed Document Cache
 
-#### `cache/<document_name>/`
+#### `scientific_cache/<document_name>/`
 Each processed document gets its own directory with standardized structure:
 
 ```
-cache/FlublokPI/
+scientific_cache/FlublokPI/
 ├── pages/                    # Rasterized page images
 │   ├── page-000.png
 │   ├── page-001.png
@@ -153,7 +153,7 @@ Primary structured representation of processed document:
 ```json
 {
   "source_pdf": "FlublokPI.pdf",
-  "cache_dir": "data/cache",
+  "cache_dir": "data/scientific_cache",
   "blocks": [
     {
       "id": "block_001",
@@ -221,25 +221,25 @@ ML model detection output before processing:
 ### To Find Processed Text
 ```bash
 # All extracted text for a document
-cat data/cache/FlublokPI/extracted/document.txt
+cat data/scientific_cache/FlublokPI/extracted/document.txt
 
 # Structured content with metadata
-cat data/cache/FlublokPI/extracted/content.json
+cat data/scientific_cache/FlublokPI/extracted/content.json
 ```
 
 ### To Find Images/Tables
 ```bash
 # All extracted figures
-ls data/cache/FlublokPI/extracted/figures/
+ls data/scientific_cache/FlublokPI/extracted/figures/
 
 # Visualizations showing what was detected
-ls data/cache/FlublokPI/visualizations/
+ls data/scientific_cache/FlublokPI/visualizations/
 ```
 
 ### To Find Fact-Checking Results
 ```bash
 # Specific claim analysis
-cat data/cache/FlublokPI/agents/claims/claim_000/evidence_presenter/output.json
+cat data/scientific_cache/FlublokPI/agents/claims/claim_000/evidence_presenter/output.json
 
 # All study results
 cat data/studies/study_results_*.json
@@ -248,10 +248,10 @@ cat data/studies/study_results_*.json
 ### To Find Processing Metadata
 ```bash
 # Layout detection results
-cat data/cache/FlublokPI/raw_layouts/raw_layout_boxes.json
+cat data/scientific_cache/FlublokPI/raw_layouts/raw_layout_boxes.json
 
 # Reading order
-cat data/cache/FlublokPI/reading_order/reading_order.json
+cat data/scientific_cache/FlublokPI/reading_order/reading_order.json
 ```
 
 ## Common Tasks
@@ -259,28 +259,28 @@ cat data/cache/FlublokPI/reading_order/reading_order.json
 ### 1. Check if Document is Processed
 ```bash
 # Look for extracted content
-ls data/cache/YourDocument/extracted/content.json
+ls data/scientific_cache/YourDocument/extracted/content.json
 ```
 
 ### 2. View Document Processing Quality
 ```bash
 # Open summary visualization
-open data/cache/YourDocument/visualizations/all_pages_summary.png
+open data/scientific_cache/YourDocument/visualizations/all_pages_summary.png
 ```
 
 ### 3. Find Evidence for Specific Claim
 ```bash
 # Check claim results
-cat data/cache/*/agents/claims/claim_XXX/evidence_presenter/output.json
+cat data/scientific_cache/*/agents/claims/claim_XXX/evidence_presenter/output.json
 ```
 
 ### 4. Debug Processing Issues
 ```bash
 # Check raw detection
-open data/cache/YourDocument/raw_layouts/visualizations/page_001_raw_layout.png
+open data/scientific_cache/YourDocument/raw_layouts/visualizations/page_001_raw_layout.png
 
 # Compare with final
-open data/cache/YourDocument/visualizations/page_001_layout.png
+open data/scientific_cache/YourDocument/visualizations/page_001_layout.png
 ```
 
 ## Storage Patterns
@@ -318,15 +318,15 @@ open data/cache/YourDocument/visualizations/page_001_layout.png
 
 ```bash
 # Remove intermediate files, keep final outputs
-rm -rf data/cache/*/raw_layouts/
-rm -rf data/cache/*/merged/
-rm -rf data/cache/*/pages/
+rm -rf data/scientific_cache/*/raw_layouts/
+rm -rf data/scientific_cache/*/merged/
+rm -rf data/scientific_cache/*/pages/
 
 # Remove visualizations
-rm -rf data/cache/*/visualizations/
+rm -rf data/scientific_cache/*/visualizations/
 
 # Remove all cache for a document
-rm -rf data/cache/DocumentName/
+rm -rf data/scientific_cache/DocumentName/
 
 # Clear all test data
 rm -rf data/test_cache/
@@ -337,13 +337,13 @@ rm -rf data/test_cache/
 1. **Regular Cleanup**: Remove intermediate files after processing
 2. **Backup Important Results**: Keep `studies/` and `extracted/` directories
 3. **Version Control**: Don't commit large binary files (use .gitignore)
-4. **Monitoring**: Check disk usage regularly with `du -sh data/cache/*`
+4. **Monitoring**: Check disk usage regularly with `du -sh data/scientific_cache/*`
 5. **Organization**: Keep input PDFs in appropriate directories
 
 ## Troubleshooting
 
 ### Missing Files
-- Check document was processed: `ls data/cache/`
+- Check document was processed: `ls data/scientific_cache/`
 - Verify pipeline completed: Look for `extracted/content.json`
 
 ### Large Cache Size

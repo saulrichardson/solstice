@@ -260,13 +260,13 @@ fig = visualize_page_layout(
 The ingestion pipeline creates visualizations automatically:
 
 ```
-data/cache/<doc_id>/visualizations/
+data/scientific_cache/<doc_id>/visualizations/
 ├── all_pages_summary.png    # Grid overview
 ├── page_001_layout.png      # Processed layout
 ├── page_002_layout.png
 └── ...
 
-data/cache/<doc_id>/raw_layouts/visualizations/
+data/scientific_cache/<doc_id>/raw_layouts/visualizations/
 ├── page_001_raw_layout.png  # Raw detection
 ├── page_002_raw_layout.png
 └── ...

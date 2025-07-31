@@ -39,7 +39,7 @@ gateway_url = settings.gateway_url
 - `solstice_gateway_port`: Gateway port (default: 8000)
 - `openai_api_key`: OpenAI API key for LLM calls
 - `solstice_log_level`: Logging level (DEBUG, INFO, WARNING, ERROR)
-- `filesystem_cache_dir`: Base cache directory (default: data/cache)
+- `filesystem_cache_dir`: Base scientific_cache directory (default: data/scientific_cache)
 - `text_extractor`: Text extraction method (default: pymupdf)
 
 ## Usage
@@ -60,7 +60,7 @@ Create a `.env` file in the project root:
 SOLSTICE_GATEWAY_URL=http://localhost:8000
 OPENAI_API_KEY=sk-...
 SOLSTICE_LOG_LEVEL=INFO
-FILESYSTEM_CACHE_DIR=data/cache
+FILESYSTEM_CACHE_DIR=data/scientific_cache
 ```
 
 ### In Code
@@ -116,7 +116,7 @@ This ensures all parts of the application share the same configuration instance.
 
 - **CLI**: Commands use `get_settings()` for configuration access
 - **Gateway**: Reads API keys and connection settings
-- **Ingestion**: Uses cache directory and processing settings
+- **Ingestion**: Uses scientific_cache directory and processing settings
 - **Fact Check**: Accesses model configurations and API endpoints
 
 ## Future Enhancements

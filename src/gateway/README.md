@@ -94,7 +94,7 @@ pip install -r requirements.txt
 
 # Set environment variables
 export OPENAI_API_KEY=sk-...
-export FILESYSTEM_CACHE_DIR=data/cache/gateway
+export FILESYSTEM_CACHE_DIR=data/gateway_cache
 
 # Run the service
 uvicorn src.gateway.app.main:app --reload --port 8000
@@ -106,7 +106,7 @@ uvicorn src.gateway.app.main:app --reload --port 8000
 - `OPENAI_API_KEY` - Your OpenAI API key
 
 ### Optional Environment Variables
-- `FILESYSTEM_CACHE_DIR` - Directory for audit logs (default: `data/cache/gateway`)
+- `FILESYSTEM_CACHE_DIR` - Directory for audit logs (default: `data/gateway_cache`)
 - `SOLSTICE_LOG_LEVEL` - Logging level: DEBUG, INFO, WARNING, ERROR (default: `INFO`)
 - `SOLSTICE_GATEWAY_HOST` - Bind host (default: `0.0.0.0`)
 - `SOLSTICE_GATEWAY_PORT` - Bind port (default: `8000`)
@@ -122,7 +122,7 @@ The gateway maintains a write-only audit log of all responses:
 
 Example audit log structure:
 ```
-data/cache/gateway/
+data/gateway_cache/
 ├── a1b2c3d4...json  # Response for request hash a1b2c3d4
 ├── e5f6g7h8...json  # Response for request hash e5f6g7h8
 └── ...
@@ -168,7 +168,7 @@ The `/health` endpoint provides:
 
 - API keys are never logged
 - Request/response payloads logged only at DEBUG level
-- Audit logs use hashed filenames (no PII in paths)
+- Audit logs stored in gateway_cache with hashed filenames (no PII in paths)
 - All provider communication uses HTTPS
 
 ## Extending the Gateway

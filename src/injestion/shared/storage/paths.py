@@ -5,14 +5,14 @@ using the structure::
 
     data/
       raw/               # (optional) original PDFs copied here
-      cache/
-        pages/<doc>/     page-NNN.png
-        layout/<doc>/    layout.json
-        raw_layouts/<doc>/    raw_layout_boxes.json
+      scientific_cache/
+        <doc>/pages/     page-NNN.png
+        <doc>/layout/    layout.json
+        <doc>/raw_layouts/    raw_layout_boxes.json
                               visualizations/  page_NNN_raw_layout.png
-        merged/<doc>/    merged_boxes.json
-        reading_order/<doc>/  reading_order.json
-        extracted/<doc>/ content.json, figures/
+        <doc>/merged/    merged_boxes.json
+        <doc>/reading_order/  reading_order.json
+        <doc>/extracted/ content.json, figures/
 
 Where ``<doc>`` is the sanitized PDF filename (without extension). Special 
 characters are replaced with underscores to ensure filesystem compatibility.
@@ -48,7 +48,7 @@ def set_cache_root(cache_root: os.PathLike | str) -> None:  # noqa: D401 – sim
 
     The ingest CLI exposes an ``--output-dir`` flag allowing users to route all
     generated artefacts to a custom location.  We keep the default behaviour
-    (``data/cache``) while letting callers switch to an alternative path *before*
+    (``data/scientific_cache``) while letting callers switch to an alternative path *before*
     the first call to :func:`stage_dir` / :func:`pages_dir` / …  However, the
     function is idempotent and can also be called later – all subsequent calls
     to the helpers will respect the new directory.

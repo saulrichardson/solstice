@@ -8,7 +8,7 @@ from typing import Optional
 def generate_evidence_report(
     claim_id: str,
     document: str,
-    cache_dir: Path = Path("data/cache"),
+    cache_dir: Path = Path("data/scientific_cache"),
     output_path: Optional[Path] = None
 ) -> Path:
     """

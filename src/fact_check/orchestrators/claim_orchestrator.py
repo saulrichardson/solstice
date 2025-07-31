@@ -26,7 +26,7 @@ class ClaimOrchestrator:
         claim_id: str,
         claim_text: str,
         documents: List[str],
-        cache_dir: Path = Path("data/cache"),
+        cache_dir: Path = Path("data/scientific_cache"),
         config: Optional[Dict[str, Any]] = None
     ):
         """

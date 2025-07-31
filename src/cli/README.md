@@ -30,7 +30,7 @@ python -m src.cli ingest --output-dir /path/to/output
 
 **Default behavior:**
 - Input: `data/clinical_files/*.pdf`
-- Output: `data/cache/`
+- Output: `data/scientific_cache/`
 - Pipeline: Scientific document pipeline (400 DPI, clinical document optimizations)
 
 ### 2. Marketing PDF Ingestion (`ingest-marketing`)
@@ -75,7 +75,7 @@ python -m src.cli clear-all-cache
 
 - **Ingestion Pipeline**: Commands use `src.injestion` for document processing
 - **Fact Checking**: Integrates with `src.fact_check` for claim verification
-- **Storage**: Uses `src.injestion.shared.storage` for cache management
+- **Storage**: Uses `src.injestion.shared.storage` for scientific_cache management
 - **Configuration**: Leverages `src.core.config` for settings
 
 ## Adding New Commands

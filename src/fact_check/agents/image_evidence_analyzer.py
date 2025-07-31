@@ -41,7 +41,7 @@ class ImageEvidenceAnalyzer(BaseAgent):
         pdf_name: str,
         claim_id: str,
         image_metadata: Dict[str, Any],
-        cache_dir: Path = Path("data/cache"),
+        cache_dir: Path = Path("data/scientific_cache"),
         config: Optional[Dict[str, Any]] = None
     ):
         """

@@ -152,7 +152,7 @@ orchestrator = ClaimOrchestrator(
     claim_id="claim_001",
     claim_text="Flublok is FDA approved for adults 18+",
     documents=["FlublokPI", "FlublokQA"],
-    cache_dir=Path("data/cache")
+    cache_dir=Path("data/scientific_cache")
 )
 
 results = orchestrator.process_claim()
@@ -254,9 +254,9 @@ config = {
 ## Performance Optimization
 
 ### Caching Strategy
-- Agent outputs cached per claim-document pair
+- Agent outputs cached per claim-document pair in scientific_cache
 - Intermediate results saved for debugging
-- Cache invalidation on document updates
+- Scientific_cache invalidation on document updates
 
 ### Parallel Processing
 - Documents processed concurrently
@@ -272,7 +272,7 @@ config = {
 
 ### With Ingestion Module
 - Consumes `Document` objects from ingestion
-- Reads extracted figures from cache
+- Reads extracted figures from scientific_cache
 - Uses document metadata for context
 
 ### With Gateway Module

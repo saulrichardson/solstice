@@ -27,7 +27,7 @@ class Settings(BaseSettings):
     log_level: str = Field("INFO", alias="SOLSTICE_LOG_LEVEL")
 
     # Gateway cache directory – write-only snapshots, never read by runtime
-    filesystem_cache_dir: str = Field("data/cache/gateway", alias="FILESYSTEM_CACHE_DIR")
+    filesystem_cache_dir: str = Field("data/gateway_cache", alias="FILESYSTEM_CACHE_DIR")
 
     model_config = {
         "env_file": ".env",

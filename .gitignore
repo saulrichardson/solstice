@@ -110,7 +110,6 @@ temp/
 tmp/
 
 # Cache directories
-data/cache/
 data/docs/
 visualizations/
 
@@ -132,7 +131,7 @@ visualizations/
 !data/**
 
 # Gateway request/response snapshots — keep them out of git
-data/cache/gateway/
+data/gateway_cache/
 
 # Model outputs
 *.onnx

@@ -173,12 +173,12 @@ The project expects this structure:
 ```
 data/
 ├── clinical_files/   # Put your input PDFs here
-└── cache/           # Processed outputs go here
+└── scientific_cache/ # Processed outputs go here
 ```
 
 Create them if needed:
 ```bash
-mkdir -p data/clinical_files data/cache
+mkdir -p data/clinical_files data/scientific_cache
 ```
 
 ## Quick Start Guide
@@ -197,7 +197,7 @@ This will:
 - Process all PDFs in the input directory
 - Extract text with intelligent spacing correction
 - Detect and extract tables/figures (if Detectron2 installed)
-- Save structured JSON to `data/cache/`
+- Save structured JSON to `data/scientific_cache/`
 
 ### Run Fact Checking
 
@@ -381,7 +381,7 @@ cp .env.example .env && echo "OPENAI_API_KEY=sk-…" >> .env
 python -m src.cli --help
 
 # 11. Create data directories
-mkdir -p data/clinical_files data/cache
+mkdir -p data/clinical_files data/scientific_cache
 
 echo "Installation complete! Place PDFs in data/clinical_files/ and run 'make ingest'"
 ```
@@ -393,7 +393,7 @@ After installation:
 1. Place your PDFs in `data/clinical_files/`
 2. Run `make ingest` to process them
 3. Run `make run-study` to fact-check claims
-4. Check results in `data/cache/` and `data/studies/`
+4. Check results in `data/scientific_cache/` and `data/studies/`
 
 For more details on the system architecture and components, see the [Project Overview](00_project_overview.md).
 

@@ -228,7 +228,7 @@ The reading order detection uses a simple algorithm (`reading_order.py`):
 ## Output Structure
 
 ```
-data/cache/<PDF_NAME>/
+data/scientific_cache/<PDF_NAME>/
 ├── pages/                  # Rasterized page images (PNG)
 ├── raw_layouts/           # Initial detection results
 │   └── raw_layout_boxes.json
