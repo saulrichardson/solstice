@@ -1,4 +1,4 @@
-\documentclass[10pt,twocolumn]{article}
+\documentclass[10pt]{article}
 \usepackage[margin=0.75in]{geometry}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -97,29 +97,69 @@ The system uses asynchronous Python with strategic architectural decisions:
 
 Solstice writes intermediate and final results to disk in human-readable form. This allows users to inspect the system, debug individual stages, or create visualisations without rerunning the full pipeline.
 
-\paragraph{1. Formatted Claims \& Evidence}
-After you run a fact-checking study (\texttt{python -m src.cli run-study}) the full, merged JSON for each claim is
-written to:
+\paragraph{1. Fact-Checking Study Results}
+After you run a fact-checking study (\texttt{python -m src.cli run-study}), the system creates a comprehensive directory structure containing all results:
+
 \begin{verbatim}
 data/studies/<study_name>/
-|-- study_report.json          # roll-up across all claims
-`-- claim_<id>/
-    `-- evidence_report.json   # structured claims + 
-                               # supporting/refuting evidence
+|-- study_report.json              # High-level summary across all claims
+|-- claim_1/
+|   |-- evidence_report.json       # Final formatted evidence report
+|   |-- agent_outputs/
+|   |   |-- evidence_extractor/
+|   |   |   |-- output.json        # Raw extracted quotes
+|   |   |   `-- metadata.json      # Processing metadata
+|   |   |-- completeness_checker/
+|   |   |   |-- output.json        # Additional quotes found
+|   |   |   `-- metadata.json      
+|   |   |-- evidence_verifier_v2/
+|   |   |   |-- output.json        # Verification results
+|   |   |   `-- metadata.json      
+|   |   |-- image_evidence_analyzer/
+|   |   |   |-- output.json        # Visual evidence analysis
+|   |   |   `-- metadata.json      
+|   |   `-- evidence_presenter/
+|   |       |-- output.json        # Final consolidated report
+|   |       `-- metadata.json      
+|   `-- logs/
+|       `-- orchestration.log      # Detailed processing logs
+|-- claim_2/
+|   |-- evidence_report.json
+|   |-- agent_outputs/
+|   |   |-- ...                    # Same structure as claim_1
+|   `-- logs/
+`-- ...                            # Additional claims follow same pattern
 \end{verbatim}
-The \texttt{evidence\_report.json} file can be consumed directly by any UX layer.
 
-If you want the raw, per-step outputs (e.g. to analyse the verifier’s chain-of-thought) look under the same
-\texttt{claim\_<id>/agent\_outputs/} folder where each processing step writes an \texttt{output.json} plus helper metadata.
+The \texttt{evidence\_report.json} file contains the final, formatted evidence ready for consumption by any UI or downstream system. Each agent's raw output is preserved in \texttt{agent\_outputs/} for debugging and analysis.
 
-\paragraph{2. Marketing-Material Cache}
-PDFs passed through the dedicated marketing pipeline end up in:
+\paragraph{2. Marketing Material Analysis}
+Marketing PDFs undergo specialized processing with enhanced visualization extraction. The results are stored in:
+
 \begin{verbatim}
 data/marketing_cache/<pdf_name>/
-|-- extracted/content.json   # text + layout
-`-- figures/                 # high-res figure crops
+|-- extracted/
+|   |-- content.json               # Full document structure and text
+|   |-- metadata.json              # Document metadata and processing info
+|   `-- reading_order.json         # Computed reading sequence
+|-- figures/
+|   |-- figure_1.png               # High-resolution figure at 400 DPI
+|   |-- figure_2.png               
+|   |-- ...
+|   `-- figure_metadata.json       # Bounding boxes and captions
+|-- tables/
+|   |-- table_1.png                # Table images for visual analysis
+|   |-- table_2.png
+|   |-- ...
+|   `-- table_content.json         # Extracted table data
+|-- visualizations/                # ** KEY DIRECTORY FOR MARKETING VISUALS **
+|   |-- layout_annotated.pdf       # PDF with layout boxes overlaid
+|   |-- text_flow_diagram.png      # Reading order visualization
+|   `-- element_hierarchy.json     # Structural hierarchy data
+`-- cache_info.json                # Processing timestamp and version
 \end{verbatim}
-The structure mirrors \texttt{scientific\_cache} so the same downstream tools can ingest either kind of document.
+
+The \textbf{visualizations/} directory is particularly important for marketing materials as it contains annotated versions of the document showing detected layout elements, which helps verify proper extraction of complex marketing layouts.
 
 \paragraph{3. Quick Directory Cheatsheet}
 For newcomers, these are useful places to explore:
