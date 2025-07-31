@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": {
+    "pdf_name": "FlublokPI",
+    "source_pdf": "data/clinical_files/FlublokPI.pdf",
+    "total_pages": 5,
+    "total_blocks": 112,
+    "total_characters": 26849
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 2,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "5. Treanor JJ, Schiff GM, Hayden FG, et al. Safety and immunogenicity of a baculovirus-expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582.",
+      "relevance_explanation": "This reference is cited in the context of Flublok's clinical studies and specifically addresses the immunogenicity of a baculovirus-expressed (BEVS-produced) recombinant HA vaccine, supporting the claim that such vaccines induce strong antibody responses."
+    },
+    {
+      "id": 2,
+      "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine 2009 Vol 28 pp 379-385.",
+      "relevance_explanation": "This reference is included in the list of clinical studies and directly compares the immunogenicity of recombinant HA (produced using BEVS) with egg-derived trivalent inactivated vaccines, which is central to the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

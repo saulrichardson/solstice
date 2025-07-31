@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p6_det_5_003.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p6_det_5_003.png",
+  "image_type": "Table",
+  "page_number": 6,
+  "block_id": "det_5_003",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A narrow vertical slice of a table showing a footnote or header reading 'Amount of HA per strain (\u00b5g)' with values of 45 \u00b5g for each strain. does not support the claim because the image only provides antigen dosage per strain and does not address antigenic match with WHO- or FDA-selected strains Note: Image is a limited, narrow crop with insufficient context to assess the full table or any mention of WHO/FDA strain matching",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A narrow vertical slice of a table showing a footnote or header reading 'Amount of HA per strain (\u00b5g)' with values of 45 \u00b5g for each strain.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image only provides antigen dosage per strain and does not address antigenic match with WHO- or FDA-selected strains",
+    "confidence_notes": "Image is a limited, narrow crop with insufficient context to assess the full table or any mention of WHO/FDA strain matching"
+  }
+}

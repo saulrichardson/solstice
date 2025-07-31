@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p8_mrg_det_7_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p8_mrg_det_7_005.png",
+  "image_type": "Figure",
+  "page_number": 8,
+  "block_id": "mrg_det_7_005",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A multi\u2010panel figure showing hemagglutination inhibition (HI) antibody titers (log2 scale) at Day 0 and 1 month post\u2010vaccination in year 2, stratified by seven repeat vaccination arms (various sequences of egg\u2010based IIV4, cell\u2010based ccIIV4, and recombinant RIV4) against egg\u2010 and cell\u2010propagated vaccine viruses for A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata strains. P values indicate differences in geometric mean titers between specific vaccine sequences. This figure presents antibody titers by vaccine sequence but does not directly compare recombinant versus non-recombinant vaccines for breadth of response or demonstrate cross-protection in a mismatch season; it does not support the claim. Note: The figure shows serologic responses only and lacks any data on clinical cross-protection or antigenic mismatch outcomes.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multi\u2010panel figure showing hemagglutination inhibition (HI) antibody titers (log2 scale) at Day 0 and 1 month post\u2010vaccination in year 2, stratified by seven repeat vaccination arms (various sequences of egg\u2010based IIV4, cell\u2010based ccIIV4, and recombinant RIV4) against egg\u2010 and cell\u2010propagated vaccine viruses for A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata strains. P values indicate differences in geometric mean titers between specific vaccine sequences.",
+    "evidence_found": null,
+    "reasoning": "This figure presents antibody titers by vaccine sequence but does not directly compare recombinant versus non-recombinant vaccines for breadth of response or demonstrate cross-protection in a mismatch season; it does not support the claim.",
+    "confidence_notes": "The figure shows serologic responses only and lacks any data on clinical cross-protection or antigenic mismatch outcomes."
+  }
+}

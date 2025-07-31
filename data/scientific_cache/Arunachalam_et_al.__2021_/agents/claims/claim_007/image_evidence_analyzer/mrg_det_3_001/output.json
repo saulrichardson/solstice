@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A two-part schematic comparing native influenza HA (panel a) and recombinant HA (rHA) produced in insect cells via baculovirus expression (panel b). Panel a shows HA1 and HA2 subunits linked by inter-disulfide bonds, cleaved fusion peptide, and complex sialylated N-linked glycans. Panel b shows a single HA0 precursor with uncleaved fusion-peptide loop and simpler paucimannose N-linked glycans, highlighting structural and glycosylation differences. The figure illustrates structural and glycosylation differences between native and BEVS-produced HA but provides no data on antibody responses or comparisons with egg-derived vaccines; therefore, it does not support the claim. Note: Figure only depicts molecular structure and glycan profiles; no immunogenicity or antibody titer data are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-part schematic comparing native influenza HA (panel a) and recombinant HA (rHA) produced in insect cells via baculovirus expression (panel b). Panel a shows HA1 and HA2 subunits linked by inter-disulfide bonds, cleaved fusion peptide, and complex sialylated N-linked glycans. Panel b shows a single HA0 precursor with uncleaved fusion-peptide loop and simpler paucimannose N-linked glycans, highlighting structural and glycosylation differences.",
+    "evidence_found": null,
+    "reasoning": "The figure illustrates structural and glycosylation differences between native and BEVS-produced HA but provides no data on antibody responses or comparisons with egg-derived vaccines; therefore, it does not support the claim.",
+    "confidence_notes": "Figure only depicts molecular structure and glycan profiles; no immunogenicity or antibody titer data are shown."
+  }
+}

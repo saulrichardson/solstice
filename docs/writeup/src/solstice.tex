@@ -41,44 +41,16 @@ The ingestion pipeline transforms unstructured PDFs into queryable structured do
 
 The fact-checking pipeline employs specialized agents orchestrated to work together:
 
-\subsubsection{Evidence Extraction Agent}
-\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item Searches document text for claim-relevant quotes
-\item Uses GPT-4 with temperature=0 for consistent extraction
-\item Preserves exact quotes while correcting OCR errors
-\item Returns structured evidence with relevance explanations
-\end{itemize}
+\begin{itemize}[leftmargin=*,topsep=0pt]
+\item \textbf{Evidence Extraction Agent}: Searches document text for claim-relevant quotes using GPT-4 with temperature=0. Preserves exact quotes while correcting OCR errors and returns structured evidence with relevance explanations.
 
-\subsubsection{Evidence Verification Agent (V2)}
-\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item Validates extracted quotes exist in source document
-\item Achieves high verification rate across medical claims
-\item Uses semantic matching to handle OCR variations
-\item Filters out tangentially related content
-\end{itemize}
+\item \textbf{Evidence Verification Agent (V2)}: Validates that extracted quotes exist in the source document. Uses semantic matching to handle OCR variations and filters out tangentially related content, achieving high verification rates.
 
-\subsubsection{Completeness Checker}
-\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item Reviews verified evidence for gaps
-\item Searches for additional supporting content
-\item Increases average evidence per claim through comprehensive search
-\item Feeds new findings back to verification
-\end{itemize}
+\item \textbf{Completeness Checker}: Reviews verified evidence for gaps and searches for additional supporting content. Increases evidence coverage by identifying missing perspectives and feeding new findings back to verification.
 
-\subsubsection{Image Evidence Analyzer}
-\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item Analyzes images using vision models
-\item Identifies images containing supporting evidence
-\item Processes images in parallel with semaphore control (max 5 concurrent)
-\item Provides detailed explanations of visual findings
-\end{itemize}
+\item \textbf{Image Evidence Analyzer}: Analyzes figures and tables using vision models to identify supporting visual evidence. Processes images in parallel with semaphore control (max 5 concurrent) and provides detailed explanations.
 
-\subsubsection{Evidence Presenter}
-\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item Consolidates all verified text and image evidence
-\item Generates structured JSON and HTML reports
-\item Assesses overall evidence coverage (complete/partial/none)
-\item Produces human-readable summaries with embedded images
+\item \textbf{Evidence Presenter}: Consolidates all verified text and image evidence into structured JSON and HTML reports. Assesses overall evidence coverage (complete/partial/none) and produces human-readable summaries.
 \end{itemize}
 
 \section{Technical Implementation}

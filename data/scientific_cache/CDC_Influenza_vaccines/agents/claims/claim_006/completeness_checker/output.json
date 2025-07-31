@@ -1,0 +1,26 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": "CDC_Influenza_vaccines",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 1
+  },
+  "completeness_stats": {
+    "existing_evidence": 1,
+    "new_evidence_found": 1,
+    "total_evidence": 1
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "RIV4 (recombinant HA vaccine)",
+      "relevance_explanation": "This quote identifies RIV4 as a recombinant HA vaccine, which is the category that includes Flublok. This supports the claim that Flublok is produced using a recombinant technology platform."
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

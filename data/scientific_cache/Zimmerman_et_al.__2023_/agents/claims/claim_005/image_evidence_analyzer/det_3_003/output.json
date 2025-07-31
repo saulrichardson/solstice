@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_det_3_003.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p4_det_3_003.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "det_3_003",
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "supports_claim": false,
+  "explanation": "Excerpt from a clinical study table showing vaccine group definitions: RIV4 (Flublok) versus SD-IIV4, with a footnote stating SD-IIV4 includes Afluria, Fluarix, FluLaval, standard-dose Fluzone, and FlucelVax. Evidence: Footnote indicates SD-IIV4 is a pooled group of multiple standard-dose vaccines (Afluria, Fluarix, FluLaval, Fluzone, FlucelVax), not Fluarix alone. The table compares Flublok (RIV4) against a composite standard-dose IIV4 group that includes Fluarix among other vaccines, but does not show a direct head-to-head evaluation solely vs. Fluarix, and thus does not support the claim. Note: Image is a partial excerpt showing footnotes and definitions; full context of the trial arms is not visible, but no specific Fluarix-only comparison is indicated.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Excerpt from a clinical study table showing vaccine group definitions: RIV4 (Flublok) versus SD-IIV4, with a footnote stating SD-IIV4 includes Afluria, Fluarix, FluLaval, standard-dose Fluzone, and FlucelVax.",
+    "evidence_found": "Footnote indicates SD-IIV4 is a pooled group of multiple standard-dose vaccines (Afluria, Fluarix, FluLaval, Fluzone, FlucelVax), not Fluarix alone.",
+    "reasoning": "The table compares Flublok (RIV4) against a composite standard-dose IIV4 group that includes Fluarix among other vaccines, but does not show a direct head-to-head evaluation solely vs. Fluarix, and thus does not support the claim.",
+    "confidence_notes": "Image is a partial excerpt showing footnotes and definitions; full context of the trial arms is not visible, but no specific Fluarix-only comparison is indicated."
+  }
+}

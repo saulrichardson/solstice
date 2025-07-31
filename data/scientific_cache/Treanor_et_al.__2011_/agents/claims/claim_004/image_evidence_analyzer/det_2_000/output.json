@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_000.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p3_det_2_000.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_000",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "A flow chart depicting subject participation in the study, showing numbers randomized and included in safety populations (e.g., n=2344 vs. n=2304). The figure is a participant flow chart and contains no immunogenicity or antibody response data, so it does not support the claim. Note: The image is clear but only shows enrollment and safety population counts, with no efficacy or antibody response results.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flow chart depicting subject participation in the study, showing numbers randomized and included in safety populations (e.g., n=2344 vs. n=2304).",
+    "evidence_found": null,
+    "reasoning": "The figure is a participant flow chart and contains no immunogenicity or antibody response data, so it does not support the claim.",
+    "confidence_notes": "The image is clear but only shows enrollment and safety population counts, with no efficacy or antibody response results."
+  }
+}

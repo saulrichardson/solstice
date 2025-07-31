@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p3_det_2_001.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_001",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": true,
+  "explanation": "Schematic workflow showing the production of recombinant hemagglutinin (HA) using a baculovirus\u2013insect cell expression system, including DNA recombination into a baculovirus vector, infection of insect cells in bioreactors, harvest, extraction, clarification, purification, and formulation. Evidence: The figure is titled 'Recombinant HA using the baculovirus\u2013insect cell expression system for the manufacture of RIV4' and depicts insertion of the HA gene into baculovirus DNA, infection of insect cells, and downstream processing steps. The figure supports the claim by directly showing that Flublok (RIV4) is produced via recombinant HA expression in insect cells using a baculovirus expression vector system.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Schematic workflow showing the production of recombinant hemagglutinin (HA) using a baculovirus\u2013insect cell expression system, including DNA recombination into a baculovirus vector, infection of insect cells in bioreactors, harvest, extraction, clarification, purification, and formulation.",
+    "evidence_found": "The figure is titled 'Recombinant HA using the baculovirus\u2013insect cell expression system for the manufacture of RIV4' and depicts insertion of the HA gene into baculovirus DNA, infection of insect cells, and downstream processing steps.",
+    "reasoning": "The figure supports the claim by directly showing that Flublok (RIV4) is produced via recombinant HA expression in insect cells using a baculovirus expression vector system.",
+    "confidence_notes": null
+  }
+}

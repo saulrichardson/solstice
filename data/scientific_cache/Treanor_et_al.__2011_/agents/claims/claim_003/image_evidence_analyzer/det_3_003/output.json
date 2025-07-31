@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_det_3_003.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p4_det_3_003.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "det_3_003",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table showing pre- and post-vaccination geometric mean titers (with 95% CIs) and percentage responders (4-fold increase to \u22651:40) for three influenza strains, comparing placebo (n=127) and Flublok vaccine recipients (overall, previously vaccinated, and not previously vaccinated). The table presents immunogenicity (GMT and % responders) against specified influenza strains for recombinant vaccine versus placebo but contains no data on mismatched strains or cross-protection in a mismatch season, and therefore does not support the claim. Note: Strain labels and mismatch context are not shown; no evidence of cross-strain or mismatch-season protection is present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing pre- and post-vaccination geometric mean titers (with 95% CIs) and percentage responders (4-fold increase to \u22651:40) for three influenza strains, comparing placebo (n=127) and Flublok vaccine recipients (overall, previously vaccinated, and not previously vaccinated).",
+    "evidence_found": null,
+    "reasoning": "The table presents immunogenicity (GMT and % responders) against specified influenza strains for recombinant vaccine versus placebo but contains no data on mismatched strains or cross-protection in a mismatch season, and therefore does not support the claim.",
+    "confidence_notes": "Strain labels and mismatch context are not shown; no evidence of cross-strain or mismatch-season protection is present."
+  }
+}
