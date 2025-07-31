@@ -57,4 +57,12 @@ python -m src.cli ingest-marketing
 
 # Fact-check claims against all cached documents
 python -m src.cli run-study
+
+# Clear the document cache (removes all processed documents)
+python -m src.cli clear-all-cache
 ```
+
+**Cache Management:**
+- Processed documents are stored in `data/scientific_cache/` and `data/marketing_cache/`
+- Use `clear-all-cache` to remove all cached documents and start fresh
+- Clearing the cache does NOT delete original PDFs, only the processed versions
