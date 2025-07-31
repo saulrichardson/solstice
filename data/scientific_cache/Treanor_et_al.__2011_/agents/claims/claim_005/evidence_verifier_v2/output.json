@@ -1,0 +1,27 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": "Treanor_et_al.__2011_",
+  "verification_stats": {
+    "total_extracted": 2,
+    "verified": 0,
+    "rejected": 2,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": 1,
+      "quote": "Two recently published studies have evaluated egg grown inactivated vaccines in healthy adults using a placebo controlled design during the 2007-2008 influenza season. In one study, conducted primarily in Europe, the overall efficacy of egg grown inactivated vaccine against culture confirmed illness was 63%, and the lower 95% CI was 46.7% [18]. The predominant influenza A isolates in that study were H1N1 viruses, which were mostly vaccine like. In another smaller study done on college campuses in Michigan [19], the protective efficacy of TIV against culture confirmed illness was 73% (95% CI, 51%, 85%). In that study, 90% of influenza isolates were influenza A (H3N2), but the antigenic characterization of isolates was not reported.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote discusses comparative studies of egg-grown inactivated vaccines (such as Fluarix) in healthy adults during the 2007-2008 influenza season, which is the same context as the pivotal Flublok trial. It establishes that Flublok was evaluated in a pivotal trial contextually against standard-dose, egg-based vaccines like Fluarix."
+    },
+    {
+      "id": 2,
+      "quote": "Because of the difficulty in conducting placebo controlled studies of influenza vaccine especially as the target groups for vaccination have expanded, several recent assessments of influenza vaccine effectiveness have utilized a test negative, case control design. Estimates of overall inactivated vaccine protective efficacy have been clearly impacted by antigenic differences between vaccine and circulating viruses, with highest levels of effectiveness reported for H1 viruses [25] and lowest levels for influenza B. The current study provides evidence of protective efficacy of baculovirus derived HA vaccine in adults for prevention of seasonal influenza and supports that significant protection in a primed population can be obtained against influenza with a pure hemagglutinin vaccine.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote directly references the current study (the pivotal Flublok trial) and places it in the context of evaluating baculovirus-derived HA vaccine (Flublok) for efficacy in adults, implicitly comparing it to standard inactivated vaccines (such as Fluarix) as the standard of care."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

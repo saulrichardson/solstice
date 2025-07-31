@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p7_det_6_000.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_000",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A table showing contraindications and precautions for recipients with previous severe allergic reactions (e.g., anaphylaxis) to different types of influenza vaccines (egg-based IIV or LAIV, cell culture\u2013based ccIIV4, and recombinant RIV4) for the 2022\u201323 season. The table does not support the claim because it addresses allergy-related contraindications for various flu vaccines and does not mention Flublok or antigenic matching with WHO- or FDA-selected strains, therefore it does not support the claim. Note: Table content is clear; no information on antigenic match is present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing contraindications and precautions for recipients with previous severe allergic reactions (e.g., anaphylaxis) to different types of influenza vaccines (egg-based IIV or LAIV, cell culture\u2013based ccIIV4, and recombinant RIV4) for the 2022\u201323 season.",
+    "evidence_found": null,
+    "reasoning": "The table does not support the claim because it addresses allergy-related contraindications for various flu vaccines and does not mention Flublok or antigenic matching with WHO- or FDA-selected strains, therefore it does not support the claim.",
+    "confidence_notes": "Table content is clear; no information on antigenic match is present."
+  }
+}

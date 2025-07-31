@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_027.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p1_det_0_027.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_027",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A journal article information box showing article history dates (received, revised, accepted, available online) and a list of keywords: Influenza vaccine, Baculovirus expression, Recombinant protein, Clinical trials. does not support the claim because the image only contains publication metadata and keywords without any data or statements about immune response breadth or cross-protection in mismatch seasons. Note: The image quality is clear but only shows article metadata; no experimental or clinical data are present to evaluate the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A journal article information box showing article history dates (received, revised, accepted, available online) and a list of keywords: Influenza vaccine, Baculovirus expression, Recombinant protein, Clinical trials.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image only contains publication metadata and keywords without any data or statements about immune response breadth or cross-protection in mismatch seasons.",
+    "confidence_notes": "The image quality is clear but only shows article metadata; no experimental or clinical data are present to evaluate the claim."
+  }
+}

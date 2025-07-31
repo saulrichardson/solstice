@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p6_det_5_000.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p6_det_5_000.png",
+  "image_type": "Figure",
+  "page_number": 6,
+  "block_id": "det_5_000",
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "supports_claim": false,
+  "explanation": "A flowchart illustrating the selection of 18\u201364-year-old participants vaccinated over the 2018\u20132019, 2019\u20132020, and 2020\u20132021 seasons. It splits 2,776,278 vaccinated individuals into those who received a recombinant vaccine (n=1,018,043) and those who received a standard-dose vaccine (n=1,758,235). Each branch shows successive exclusions (non-members, inpatient vaccinations, out-of-range dates, missing facility identifiers, unassigned propensity scores) leading to final cohorts of 632,962 recombinant vaccine recipients and 997,366 standard-dose vaccine recipients, with age breakdowns. does not support the claim because the figure presents an observational cohort flowchart without naming specific products or describing a pivotal trial comparing Flublok quadrivalent against Fluarix quadrivalent. Note: The figure does not label vaccine products by brand and appears to represent real-world data over multiple seasons rather than a randomized pivotal trial; context may be limited by cropped or omitted text.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart illustrating the selection of 18\u201364-year-old participants vaccinated over the 2018\u20132019, 2019\u20132020, and 2020\u20132021 seasons. It splits 2,776,278 vaccinated individuals into those who received a recombinant vaccine (n=1,018,043) and those who received a standard-dose vaccine (n=1,758,235). Each branch shows successive exclusions (non-members, inpatient vaccinations, out-of-range dates, missing facility identifiers, unassigned propensity scores) leading to final cohorts of 632,962 recombinant vaccine recipients and 997,366 standard-dose vaccine recipients, with age breakdowns.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the figure presents an observational cohort flowchart without naming specific products or describing a pivotal trial comparing Flublok quadrivalent against Fluarix quadrivalent.",
+    "confidence_notes": "The figure does not label vaccine products by brand and appears to represent real-world data over multiple seasons rather than a randomized pivotal trial; context may be limited by cropped or omitted text."
+  }
+}

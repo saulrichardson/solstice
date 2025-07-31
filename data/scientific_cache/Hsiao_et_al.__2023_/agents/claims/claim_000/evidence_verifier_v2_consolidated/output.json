@@ -1,0 +1,20 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": "Hsiao_et_al.__2023_",
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain.",
+      "supports_claim": true,
+      "explanation": "The quote directly states that Flublok's hemagglutinin protein is genetically identical to that in the selected strain. Since the selected strain refers to the WHO- and FDA-selected flu strains for the season, this statement explicitly supports the claim that Flublok ensures identical antigenic match with those strains. No inference is required; the document makes this connection clear.",
+      "presence_explanation": "The quote appears on page 2 of the document: 'The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain.' This matches the provided quote in both factual content and meaning, with only minor formatting differences.",
+      "support_explanation": "The quote directly states that Flublok's hemagglutinin protein is genetically identical to that in the selected strain. Since the selected strain refers to the WHO- and FDA-selected flu strains for the season, this statement explicitly supports the claim that Flublok ensures identical antigenic match with those strains. No inference is required; the document makes this connection clear.",
+      "original_relevance": "This quote directly states that Flublok's hemagglutinin protein is genetically identical to that in the selected strain, supporting the claim that Flublok ensures an identical antigenic match with the WHO- and FDA-selected flu strains."
+    }
+  ],
+  "verification_stats": {
+    "total_verified": 1
+  },
+  "image_evidence": []
+}

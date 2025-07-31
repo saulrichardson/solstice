@@ -1,0 +1,20 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": "Grohskopf_et_al.__2023_",
+  "verified_evidence": [
+    {
+      "id": 3,
+      "quote": "For the 2022-23 season, U.S. cell culture based inactivated (ccIIV4) and recombinant (RIV4) influenza vaccines will contain HA derived from \u2022 an influenza A/Wisconsin/588/2019 (H1N1)pdm09-like virus, \u2022 an influenza A/Darwin/9/2021 (H3N2)-like virus, \u2022 an influenza B/Austria/1359417/2021 (Victoria lineage)-like virus, and \u2022 an influenza B/Phuket/3073/2013 (Yamagata lineage)-like virus.",
+      "supports_claim": true,
+      "explanation": "The quote directly lists the hemagglutinin (HA) antigens included in the 2022-23 Flublok (RIV4) formulation, specifying the exact strains. The document also states that these strains are selected based on recommendations from the WHO and FDA. Therefore, the quote provides explicit evidence that Flublok (RIV4) contains HA antigens that match the WHO- and FDA-selected flu strains for that season, directly supporting the claim that Flublok ensures identical antigenic match with those selected strains.",
+      "presence_explanation": "The quote appears on page 19 of the document, in the section 'Vaccines Available for the 2022-23 Season.' The relevant passage states: 'For the 2022-23 season, U.S. cell culture based inactivated (ccIIV4) and recombinant (RIV4) influenza vaccines will contain HA derived from \u2022 an influenza A/Wisconsin/588/2019 (H1N1)pdm09-like virus, \u2022 an influenza A/Darwin/9/2021 (H3N2)-like virus, \u2022 an influenza B/Austria/1359417/2021 (Victoria lineage)-like virus, and \u2022 an influenza B/Phuket/3073/2013 (Yamagata lineage)-like virus.' This matches the quote to verify, with only minor formatting differences (e.g., bullet points and line breaks), but all factual content is preserved.",
+      "support_explanation": "The quote directly lists the hemagglutinin (HA) antigens included in the 2022-23 Flublok (RIV4) formulation, specifying the exact strains. The document also states that these strains are selected based on recommendations from the WHO and FDA. Therefore, the quote provides explicit evidence that Flublok (RIV4) contains HA antigens that match the WHO- and FDA-selected flu strains for that season, directly supporting the claim that Flublok ensures identical antigenic match with those selected strains.",
+      "original_relevance": "This quote lists the exact strains included in the 2022-23 Flublok (RIV4) formulation, showing that it contains HA antigens matching the WHO- and FDA-selected strains for that season, directly supporting the claim."
+    }
+  ],
+  "verification_stats": {
+    "total_verified": 1
+  },
+  "image_evidence": []
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p6_det_5_006.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p6_det_5_006.png",
+  "image_type": "Table",
+  "page_number": 6,
+  "block_id": "det_5_006",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table listing four influenza vaccine types (Egg-based IIV4s, ccIIV4, RIV4, LAIV4) with corresponding contraindications and precautions in bullet points. No information on antigen content or immunogenicity is provided. The table only details contraindications and precautions for different flu vaccines and contains no data on hemagglutinin antigen content or immunogenicity; it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing four influenza vaccine types (Egg-based IIV4s, ccIIV4, RIV4, LAIV4) with corresponding contraindications and precautions in bullet points. No information on antigen content or immunogenicity is provided.",
+    "evidence_found": null,
+    "reasoning": "The table only details contraindications and precautions for different flu vaccines and contains no data on hemagglutinin antigen content or immunogenicity; it does not support the claim.",
+    "confidence_notes": null
+  }
+}

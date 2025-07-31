@@ -1,0 +1,33 @@
+{
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "document": "Treanor_et_al.__2011_",
+  "verification_stats": {
+    "total_extracted": 2,
+    "verified": 2,
+    "rejected": 0,
+    "verification_rate": 1.0
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "Although embryonated hen's eggs have been used to generate effective influenza vaccines for many years, this system does have several important drawbacks. Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg production for growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2].",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim. It explicitly states that the process of growing influenza vaccines in eggs 'can select receptor variants that may not be optimally representative of circulating influenza strains.' This means that mutations or changes can occur during production, potentially making the vaccine less effective against the actual circulating strains. This is exactly what the claim asserts about the potential for mutations during production reducing effectiveness.",
+      "presence_explanation": "The quote appears on the first page of the document, with only minor differences due to OCR correction and formatting. The key factual content is present: 'Although embryonated hen's eggs have been used to generate effective influenza vaccines for many years, this system does have several important drawbacks. Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg pro growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2].' The meaning and technical content are preserved.",
+      "support_explanation": "The quote directly supports the claim. It explicitly states that the process of growing influenza vaccines in eggs 'can select receptor variants that may not be optimally representative of circulating influenza strains.' This means that mutations or changes can occur during production, potentially making the vaccine less effective against the actual circulating strains. This is exactly what the claim asserts about the potential for mutations during production reducing effectiveness.",
+      "original_relevance": "This quote explicitly states that the process of growing influenza vaccines in eggs can select for receptor variants that may not optimally represent circulating strains, directly supporting the claim that egg-based vaccines can develop mutations during production that may reduce their effectiveness."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg production for growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2].",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim. It explicitly states that the process of growing influenza vaccines in eggs 'can select receptor variants that may not be optimally representative of circulating influenza strains.' This means that mutations or variants can arise during egg-based production, potentially making the vaccine less effective against the actual circulating strains. This is exactly what the claim asserts: that cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+      "presence_explanation": "The quote appears on the first page of the document, with only minor differences in wording due to OCR artifacts. The relevant passage is: 'Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg pro growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2].' This matches the quoted content in meaning and technical detail.",
+      "support_explanation": "The quote directly supports the claim. It explicitly states that the process of growing influenza vaccines in eggs 'can select receptor variants that may not be optimally representative of circulating influenza strains.' This means that mutations or variants can arise during egg-based production, potentially making the vaccine less effective against the actual circulating strains. This is exactly what the claim asserts: that cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+      "original_relevance": "This quote explicitly states that the process of growing influenza vaccines in eggs can select for receptor variants, which may differ from the circulating strains, directly supporting the claim that mutations can develop during production and potentially reduce vaccine effectiveness."
+    }
+  ],
+  "rejected_evidence": [],
+  "model_used": "gpt-4.1"
+}

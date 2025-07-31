@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p8_mrg_det_7_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p8_mrg_det_7_005.png",
+  "image_type": "Figure",
+  "page_number": 8,
+  "block_id": "mrg_det_7_005",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": true,
+  "explanation": "A multi-panel figure showing hemagglutination inhibition (HI) titers on a log2 scale at Day 0 and one month (1 m) after vaccination, stratified by two age groups (18\u201344 years and 45\u201364 years) and assay virus type (egg-grown virus vs cell-grown virus). Rows correspond to four influenza strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata). Colored symbols and box plots represent different vaccine formulations (egg-based IIV4, cell-based ccIIV4, and recombinant RIV4) and comparisons between groups are annotated with p-values. Evidence: In the 18\u201344 years cell-virus panels (all strains) and similarly in the 45\u201364 years cell-virus panels, the recombinant RIV4 group shows significantly higher HI titers at one month compared with both egg-based IIV4 and cell-based ccIIV4 (e.g., p < 0.0001, 0.013, 0.011). The figure demonstrates that RIV4 elicits higher and broader HI responses against cell-grown (mismatched) viruses compared with egg-based and cell-based IIV4, which supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection in a mismatch season. Note: The figure presents immunogenicity data only; it does not directly show clinical efficacy or real-world cross-protection, and p-value annotations are dense and may be subject to interpretation.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "A multi-panel figure showing hemagglutination inhibition (HI) titers on a log2 scale at Day 0 and one month (1 m) after vaccination, stratified by two age groups (18\u201344 years and 45\u201364 years) and assay virus type (egg-grown virus vs cell-grown virus). Rows correspond to four influenza strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata). Colored symbols and box plots represent different vaccine formulations (egg-based IIV4, cell-based ccIIV4, and recombinant RIV4) and comparisons between groups are annotated with p-values.",
+    "evidence_found": "In the 18\u201344 years cell-virus panels (all strains) and similarly in the 45\u201364 years cell-virus panels, the recombinant RIV4 group shows significantly higher HI titers at one month compared with both egg-based IIV4 and cell-based ccIIV4 (e.g., p < 0.0001, 0.013, 0.011).",
+    "reasoning": "The figure demonstrates that RIV4 elicits higher and broader HI responses against cell-grown (mismatched) viruses compared with egg-based and cell-based IIV4, which supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection in a mismatch season.",
+    "confidence_notes": "The figure presents immunogenicity data only; it does not directly show clinical efficacy or real-world cross-protection, and p-value annotations are dense and may be subject to interpretation."
+  }
+}

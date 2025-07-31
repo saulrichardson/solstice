@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p9_det_8_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p9_det_8_005.png",
+  "image_type": "Figure",
+  "page_number": 9,
+  "block_id": "det_8_005",
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "supports_claim": true,
+  "explanation": "Scatter plots comparing pre- and post-vaccination proportions of subjects with \u22654-fold reduced hemagglutination inhibition (HI) titers to cell-propagated influenza vaccine viruses, stratified by viral strain (A(H3N2), A(H1N1)pdm09, B/VIC, B/YAM), age group (18\u201344 and 45\u201364 years), and vaccine type (egg-based IIV4-Fluzone, cell-based ccIIV4, and recombinant RIV4, in various prime/boost combinations). Evidence: Recipients of egg-based IIV4-Fluzone showed a significantly higher proportion of \u22654-fold reduced HI titers against cell-derived A(H1N1)pdm09 (p=0.02) and B/VIC (p=0.03) viruses compared with cell-based vaccines. The figure supports the claim by demonstrating that egg-based vaccine recipients had diminished serologic responses to cell-propagated virus strains, consistent with egg-adapted mutations during production that may reduce vaccine effectiveness. Note: Immunologic titers are surrogates and the figure does not directly display genetic sequence mutations during vaccine production.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Scatter plots comparing pre- and post-vaccination proportions of subjects with \u22654-fold reduced hemagglutination inhibition (HI) titers to cell-propagated influenza vaccine viruses, stratified by viral strain (A(H3N2), A(H1N1)pdm09, B/VIC, B/YAM), age group (18\u201344 and 45\u201364 years), and vaccine type (egg-based IIV4-Fluzone, cell-based ccIIV4, and recombinant RIV4, in various prime/boost combinations).",
+    "evidence_found": "Recipients of egg-based IIV4-Fluzone showed a significantly higher proportion of \u22654-fold reduced HI titers against cell-derived A(H1N1)pdm09 (p=0.02) and B/VIC (p=0.03) viruses compared with cell-based vaccines.",
+    "reasoning": "The figure supports the claim by demonstrating that egg-based vaccine recipients had diminished serologic responses to cell-propagated virus strains, consistent with egg-adapted mutations during production that may reduce vaccine effectiveness.",
+    "confidence_notes": "Immunologic titers are surrogates and the figure does not directly display genetic sequence mutations during vaccine production."
+  }
+}

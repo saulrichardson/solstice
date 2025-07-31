@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p6_det_5_006.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p6_det_5_006.png",
+  "image_type": "Figure",
+  "page_number": 6,
+  "block_id": "det_5_006",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "Multi-panel figure showing ELISA antibody titers and ratios for four influenza vaccines (two egg-based: Fluzone IIV4, Fluarix IIV4; one cell culture-based: ccIIV4; one recombinant HA-based: RIV4). Panel A: Log\u2082 ELISA titers to egg-grown and cell-grown HA of A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata at Day 0, 1 month, and 6 months. Panel B: Geometric mean ratio of egg vs cell HA ELISA titers at 1 month across H3 HA, H1 HA, B/Victoria HA, and B/Yamagata HA. Panel C: Log\u2082 ELISA titers against H3 stalk and H1 stalk at Day 0, 1 month, and 6 months. Panel D: Geometric mean fold-rise in HA stalk ELISA titers (1 month/day 0) for H3 stalk and H1 stalk. Evidence: RIV4 (recombinant HA vaccine) elicited higher stalk-specific antibody titers and greater fold-rise at 1 month compared with egg-based vaccines. The figure shows that the recombinant HA vaccine (RIV4) induces a broader immune response against conserved HA stalk domains, but it does not include any direct data on cross-protection during a mismatch season; therefore, it does not support the claim. Note: No direct challenge or efficacy data in a mismatch season; only immunogenicity measures are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Multi-panel figure showing ELISA antibody titers and ratios for four influenza vaccines (two egg-based: Fluzone IIV4, Fluarix IIV4; one cell culture-based: ccIIV4; one recombinant HA-based: RIV4). Panel A: Log\u2082 ELISA titers to egg-grown and cell-grown HA of A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata at Day 0, 1 month, and 6 months. Panel B: Geometric mean ratio of egg vs cell HA ELISA titers at 1 month across H3 HA, H1 HA, B/Victoria HA, and B/Yamagata HA. Panel C: Log\u2082 ELISA titers against H3 stalk and H1 stalk at Day 0, 1 month, and 6 months. Panel D: Geometric mean fold-rise in HA stalk ELISA titers (1 month/day 0) for H3 stalk and H1 stalk.",
+    "evidence_found": "RIV4 (recombinant HA vaccine) elicited higher stalk-specific antibody titers and greater fold-rise at 1 month compared with egg-based vaccines.",
+    "reasoning": "The figure shows that the recombinant HA vaccine (RIV4) induces a broader immune response against conserved HA stalk domains, but it does not include any direct data on cross-protection during a mismatch season; therefore, it does not support the claim.",
+    "confidence_notes": "No direct challenge or efficacy data in a mismatch season; only immunogenicity measures are shown."
+  }
+}

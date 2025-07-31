@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "Hsiao_et_al.__2023_",
+  "supporting_evidence": [
+    {
+      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.",
+      "explanation": "The quote directly supports the claim. It states that the recombinant vaccine (Flublok Quadrivalent) contains three times the amount of hemagglutinin protein as standard dose vaccines and that this increased level has been correlated with increased protective hemagglutinin antibodies. This explicitly links the higher dose in the recombinant vaccine to a more robust antibody response, which is the essence of the claim. No inference is required; the document makes the connection clear."
+    },
+    {
+      "quote": "The effectiveness of standard dose vaccines - especially against the influenza A H3 N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3 N2 strain circulated only during the second half of the 2018-2019 season and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines. During our study period, the observed benefit of the recombinant vaccine as compared with a standard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3 N2 than to higher effectiveness against influenza A overall, in accordance with its higher dose of hemagglutinin.",
+      "explanation": "The quote directly supports the claim. It states that the observed benefit of the recombinant vaccine over the standard-dose vaccine is likely due to its higher effectiveness against influenza A overall, and specifically attributes this to its higher dose of hemagglutinin. This links the higher-dose recombinant vaccine to a more robust antibody response compared to standard-dose egg-based vaccines, as the claim asserts."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 2,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 2,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 2
+    },
+    "rejected_count": 0
+  }
+}

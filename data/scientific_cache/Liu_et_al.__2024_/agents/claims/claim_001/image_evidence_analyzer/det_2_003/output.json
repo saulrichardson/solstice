@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/table_p3_det_2_003.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_003",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table listing influenza virus strains (A(H1N1)pdm09, A(H3N2), B/Victoria, B/Yamagata) and the amino acid differences at various positions on the HA head domain for cell- and egg-propagated candidate vaccine viruses across two years. does not support the claim because the table only shows amino acid sequence differences of HA among viral strains and contains no data on HA antigen content, vaccine dosage, or immunogenicity. Note: Table is limited to genetic/sequence data; no information on HA dose or comparative immunogenicity is provided.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing influenza virus strains (A(H1N1)pdm09, A(H3N2), B/Victoria, B/Yamagata) and the amino acid differences at various positions on the HA head domain for cell- and egg-propagated candidate vaccine viruses across two years.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table only shows amino acid sequence differences of HA among viral strains and contains no data on HA antigen content, vaccine dosage, or immunogenicity.",
+    "confidence_notes": "Table is limited to genetic/sequence data; no information on HA dose or comparative immunogenicity is provided."
+  }
+}

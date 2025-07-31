@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p7_det_6_000.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_000",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table summarizing contraindications and precautions for influenza vaccines available in 2022\u201323, categorized by vaccine type (egg-based IIVs and LAIV4, ccIIV4, RIV4) in the context of previous severe allergic reactions (e.g., anaphylaxis). does not support the claim \u2013 the table only addresses allergic reaction contraindications and precautions for different vaccine types and does not present any data on hemagglutinin antigen content or immunogenicity. Note: The image is clear but focuses exclusively on safety/contraindication information, with no mention of antigen dose or immunogenicity.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table summarizing contraindications and precautions for influenza vaccines available in 2022\u201323, categorized by vaccine type (egg-based IIVs and LAIV4, ccIIV4, RIV4) in the context of previous severe allergic reactions (e.g., anaphylaxis).",
+    "evidence_found": null,
+    "reasoning": "does not support the claim \u2013 the table only addresses allergic reaction contraindications and precautions for different vaccine types and does not present any data on hemagglutinin antigen content or immunogenicity.",
+    "confidence_notes": "The image is clear but focuses exclusively on safety/contraindication information, with no mention of antigen dose or immunogenicity."
+  }
+}

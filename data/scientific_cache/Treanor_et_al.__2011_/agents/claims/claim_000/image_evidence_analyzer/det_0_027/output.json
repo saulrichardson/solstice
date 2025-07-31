@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_027.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p1_det_0_027.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_027",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A section of the article\u2019s metadata including article history (received, revised, accepted dates, online availability) and keywords (Influenza vaccine; Baculovirus expression; Recombinant protein; Clinical trials). The image contains only publication details and keywords and provides no data on antigenic matching of Flublok to WHO- or FDA-selected flu strains and therefore does not support the claim. Note: The page is article metadata, not a figure or data table, so it offers no relevant evidence regarding antigenic match.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A section of the article\u2019s metadata including article history (received, revised, accepted dates, online availability) and keywords (Influenza vaccine; Baculovirus expression; Recombinant protein; Clinical trials).",
+    "evidence_found": null,
+    "reasoning": "The image contains only publication details and keywords and provides no data on antigenic matching of Flublok to WHO- or FDA-selected flu strains and therefore does not support the claim.",
+    "confidence_notes": "The page is article metadata, not a figure or data table, so it offers no relevant evidence regarding antigenic match."
+  }
+}

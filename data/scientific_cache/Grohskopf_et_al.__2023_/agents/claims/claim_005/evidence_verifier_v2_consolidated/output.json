@@ -1,0 +1,20 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": "Grohskopf_et_al.__2023_",
+  "verified_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Randomized studies comparing HD-IIV, RIV, and aIIV with non adjuvanted SD-IIVs against laboratory confirmed influenza illness are few in number and were conducted over few influenza seasons. HD-IIV3 was more effective than SD-IIV3 in prevention of polymerase chain reaction (PCR)- or culture confirmed influenza like illness (ILI) in a two season randomized study conducted among 32,000 persons aged \u226565 years (relative efficacy: 24%; 95% CI: 10\u201336; certainty level: 1, high) (66). Two single season randomized trials of RIV versus non adjuvanted SD-IIV, one a comparison of RIV3 versus non adjuvanted SD-IIV3 that assessed culture confirmed ILI (67) and the other a comparison of RIV4 versus non adjuvanted SD-IIV4 that examined PCR-confirmed ILI (68), did not demonstrate relative benefit of RIV among those aged \u226565 years (pooled relative efficacy: 18%; 95% CI: \u221217% to 43%; certainty level: 2, moderate). The larger of these two studies noted a relative benefit of RIV4 over non adjuvanted SD-IIV4 in prevention of PCR-confirmed influenza among the full study population of persons aged \u226550 years (relative efficacy: 30%; 95% CI: 10\u201347 as well as in a qualified ILI endpoint among those aged \u226565 years (relative efficacy: 42%; 95% CI: 9%\u201365%) (68).",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim. It explicitly states that a randomized trial compared RIV4 (Flublok Quadrivalent) to a nonadjuvanted SD-IIV4 (standard-dose quadrivalent inactivated influenza vaccine). This matches the claim that Flublok (quadrivalent) was evaluated in a pivotal trial against Fluarix (quadrivalent standard-dose vaccine), as Fluarix is a standard-dose quadrivalent IIV. The quote provides specific details about the study design, population, and results, confirming the claim without requiring inference.",
+      "presence_explanation": "The quote appears on page 14 of the document, in the section discussing randomized studies comparing HD-IIV, RIV, and aIIV with nonadjuvanted SD-IIVs. The text is nearly verbatim, with only minor formatting differences (e.g., 'non adjuvanted' vs 'nonadjuvanted', and some line breaks). The key facts, numbers, and technical content are all preserved, including the description of two single season randomized trials of RIV versus nonadjuvanted SD-IIV, one of which is a comparison of RIV4 (Flublok Quadrivalent) versus nonadjuvanted SD-IIV4 (standard-dose quadrivalent inactivated influenza vaccine), and the outcomes in persons aged \u226565 years and \u226550 years.",
+      "support_explanation": "The quote directly supports the claim. It explicitly states that a randomized trial compared RIV4 (Flublok Quadrivalent) to a nonadjuvanted SD-IIV4 (standard-dose quadrivalent inactivated influenza vaccine). This matches the claim that Flublok (quadrivalent) was evaluated in a pivotal trial against Fluarix (quadrivalent standard-dose vaccine), as Fluarix is a standard-dose quadrivalent IIV. The quote provides specific details about the study design, population, and results, confirming the claim without requiring inference.",
+      "original_relevance": "This quote describes a randomized trial directly comparing RIV4 (Flublok Quadrivalent) to a standard-dose quadrivalent inactivated influenza vaccine (SD-IIV4), providing explicit evidence that Flublok (quadrivalent) was evaluated against a standard-dose quadrivalent vaccine in a pivotal trial."
+    }
+  ],
+  "verification_stats": {
+    "total_verified": 1
+  },
+  "image_evidence": []
+}

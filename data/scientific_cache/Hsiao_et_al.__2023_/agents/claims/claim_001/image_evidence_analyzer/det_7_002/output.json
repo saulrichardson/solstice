@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p8_det_7_002.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/table_p8_det_7_002.png",
+  "image_type": "Table",
+  "page_number": 8,
+  "block_id": "det_7_002",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table comparing outcomes among recipients of a recombinant influenza vaccine (N=279,400) versus a standard-dose influenza vaccine (N=395,852), showing cases per 1000 for primary (PCR-confirmed influenza) and secondary outcomes, unadjusted rate ratios, adjusted hazard ratios, and relative vaccine effectiveness percentages with 95% CIs and P values. The table provides clinical effectiveness data and relative vaccine effectiveness but contains no information on hemagglutinin antigen content or immunogenicity, and thus does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing outcomes among recipients of a recombinant influenza vaccine (N=279,400) versus a standard-dose influenza vaccine (N=395,852), showing cases per 1000 for primary (PCR-confirmed influenza) and secondary outcomes, unadjusted rate ratios, adjusted hazard ratios, and relative vaccine effectiveness percentages with 95% CIs and P values.",
+    "evidence_found": null,
+    "reasoning": "The table provides clinical effectiveness data and relative vaccine effectiveness but contains no information on hemagglutinin antigen content or immunogenicity, and thus does not support the claim.",
+    "confidence_notes": null
+  }
+}

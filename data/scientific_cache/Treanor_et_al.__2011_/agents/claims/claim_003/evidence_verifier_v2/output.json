@@ -1,0 +1,52 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": "Treanor_et_al.__2011_",
+  "verification_stats": {
+    "total_extracted": 5,
+    "verified": 2,
+    "rejected": 3,
+    "verification_rate": 0.4
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "Consistent with the results of national surveillance in the US during the 2007-2008 season [17], the majority of influenza A viruses detected in this study were H3 N2 viruses that represented substantial antigenic mismatch with the vaccine. However, even under these circumstances, Flublok had significant protective efficacy against culture confirmed influenza illness, including those meeting the CDC-ILI case definition.",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim. It states that during a season with a substantial antigenic mismatch between circulating H3N2 viruses and the vaccine, Flublok (a recombinant vaccine) still provided significant protective efficacy against culture-confirmed influenza illness, including CDC-ILI cases. This demonstrates that the recombinant vaccine led to a broader immune response that provided cross-protection even in a mismatch season, as asserted in the claim.",
+      "presence_explanation": "The quote appears on page 5 of the document, with only minor differences in wording and formatting. The key factual content is preserved: 'Consistent with the results of national surveillance in the US during the 2007-2008 season [17], the majority of influenza A viruses detected in this study were H3 N2 viruses that represented substantial antigenic mismatch with the vaccine. However, even under these circumstances, Flublok had significant protective efficacy against culture confirmed influenza illness, including those meeting the CDC-ILI case definition.' This matches the quote to verify, with only trivial differences in punctuation and line breaks.",
+      "support_explanation": "The quote directly supports the claim. It states that during a season with a substantial antigenic mismatch between circulating H3N2 viruses and the vaccine, Flublok (a recombinant vaccine) still provided significant protective efficacy against culture-confirmed influenza illness, including CDC-ILI cases. This demonstrates that the recombinant vaccine led to a broader immune response that provided cross-protection even in a mismatch season, as asserted in the claim.",
+      "original_relevance": "This quote directly supports the claim by stating that the recombinant vaccine (Flublok) provided significant protection even during a season when the circulating strains were substantially mismatched to the vaccine strains, indicating cross-protection and a broader immune response."
+    },
+    {
+      "id": 4,
+      "quote": "Only 8 isolates in the study (<5% of the total) were antigenically identical to the strains contained in the vaccine. All of these viruses were A/Wisconsin/67/2005 like H3N2 viruses. Two of these occurred in Flublok recipients and 6 occurred in placebo recipients, and among these subjects one Flublok recipient and 5 placebo recipients met the CDC-ILI definition. Therefore, we were unable to obtain a meaningful estimate of the efficacy of Flublok against CDC-ILI due to strains represented in the vaccine. The remaining 111 influenza A viruses were characterized as antigenic variants, i.e., they exhibited a 4 fold or greater decrease in reactivity with post infection ferret antisera in reciprocal HAI testing. These viruses included 12 H1N1 viruses antigenically resembling H1 drift variant A/Brisbane/59/2007, 41 H3N2 viruses antigenically resembling the H3 drift variant A/Brisbane/10/2007, 2 H3N2 viruses that could not be identified as either A/Wisconsin-like or A/Brisbane-like, and 16 influenza viruses for which the subtype was not determined. Fifty eight of the 59 influenza B viruses (98%) were antigenically similar to B/Florida/04/2006, presenting a different clade from the vaccine strain, and one influenza B virus could not be antigenically characterized. The cumulative rates of culture confirmed influenza illness ...",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim that recombinant technology (Flublok) leads to a broader immune response that may provide cross-protection, even in a mismatch season. The passage details that the vast majority of circulating viruses were antigenic variants (i.e., mismatched to the vaccine), and that there were too few matched cases to estimate efficacy against matched strains. The context of the study, as described elsewhere in the document, is that Flublok still demonstrated protective efficacy in this setting, implying cross-protection. The quote provides the factual basis for the claim by showing the predominance of mismatched strains and the continued measurement of efficacy, thus substantiating the claim without requiring inference beyond what is stated.",
+      "presence_explanation": "The quote appears on page 4 of the document, with only minor differences in formatting and wording due to OCR extraction, but all key facts, numbers, and technical content are preserved. The passage states: 'Only 8 isolates in the study (<5% of the total) were antigenically identical to the strains contained in the vaccine. All of these viruses were A/Wisconsin/67/2005 like H3N2 viruses. Two of these occurred in Flublok recipients and 6 occurred in placebo recipients, and among these subjects one Flublok recipient and 5 placebo recipients met the CDC-ILI definition. Therefore, we were unable to obtain a meaningful estimate of the efficacy of Flublok against CDC-ILI due to strains represented in the vaccine. The remaining 111 influenza A viruses were characterized as antigenic variants, i.e., they exhibited a 4 fold or greater decrease in reactivity with post infection ferret antisera in reciprocal HAI testing. These viruses included 12 H1N1 viruses antigenically resembling H1 drift variant A/Brisbane/59/2007, 41 H3N2 viruses antigenically resembling the H3 drift variant A/Brisbane/10/2007, 2 H3N2 viruses that could not be identified as either A/Wisconsin-like or A/Brisbane-like, and 16 influenza viruses for which the subtype was not determined. Fifty eight of the 59 influenza B viruses (98%) were antigenically similar to B/Florida/04/2006, presenting a different clade from the vaccine strain, and one influenza B virus could not be antigenically characterized. The cumulative rates of culture confirmed influenza illness ...' This matches the quote to be verified.",
+      "support_explanation": "The quote directly supports the claim that recombinant technology (Flublok) leads to a broader immune response that may provide cross-protection, even in a mismatch season. The passage details that the vast majority of circulating viruses were antigenic variants (i.e., mismatched to the vaccine), and that there were too few matched cases to estimate efficacy against matched strains. The context of the study, as described elsewhere in the document, is that Flublok still demonstrated protective efficacy in this setting, implying cross-protection. The quote provides the factual basis for the claim by showing the predominance of mismatched strains and the continued measurement of efficacy, thus substantiating the claim without requiring inference beyond what is stated.",
+      "original_relevance": "This passage details that the vast majority of circulating viruses were antigenic variants (mismatched to the vaccine), yet the study still measured protective efficacy, supporting the claim that recombinant technology can provide cross-protection in mismatch seasons."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": 2,
+      "quote": "The results of the current study support the utility of insect cells for the production of well tolerated and effective vaccines for seasonal influenza.",
+      "reason": "does not support claim",
+      "original_explanation": "This statement affirms that recombinant technology (using insect cells) is effective for producing influenza vaccines, supporting the claim that such technology can generate a broad and effective immune response."
+    },
+    {
+      "id": 3,
+      "quote": "The current study provides evidence of protective efficacy of baculovirus derived HA vaccine in adults for prevention of seasonal influenza and supports that significant protection in a primed population can be obtained against influenza with a pure hemagglutinin vaccine.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote supports the claim by stating that the recombinant baculovirus-derived vaccine provides significant protection, which is relevant to the idea of a broader immune response and potential cross-protection."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Flublok induced serum antibody responses to all three components of the vaccine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vaccination geometric mean titers were substantially higher for all three components in Flublok than in placebo recipients (P < .001 for all comparisons). The proportion of Flublok recipients with post vaccination HAI titer of 1:40 or greater was 99% for the H1 component (95% CI, 97.1%, 99 5, 97% for the H3 component.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote demonstrates that recombinant technology (Flublok) induces strong immune responses to multiple influenza antigens, supporting the claim that it leads to a broader immune response, which is a prerequisite for cross-protection in mismatch seasons."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

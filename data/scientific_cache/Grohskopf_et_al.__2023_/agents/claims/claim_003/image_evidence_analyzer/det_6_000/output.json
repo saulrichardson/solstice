@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p7_det_6_000.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_000",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table outlining contraindications and precautions for various 2022\u201323 influenza vaccines (egg-based IIV4s and LAIV4, cell culture\u2013based ccIIV4, and recombinant RIV4) in persons with a history of severe allergic reactions to different vaccine types or unknown influenza vaccine history. The table addresses allergic reaction contraindications and precautions for different influenza vaccine platforms; it contains no data on immune response breadth, cross-protection, or mismatch season efficacy, and therefore does not support the claim. Note: None",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table outlining contraindications and precautions for various 2022\u201323 influenza vaccines (egg-based IIV4s and LAIV4, cell culture\u2013based ccIIV4, and recombinant RIV4) in persons with a history of severe allergic reactions to different vaccine types or unknown influenza vaccine history.",
+    "evidence_found": null,
+    "reasoning": "The table addresses allergic reaction contraindications and precautions for different influenza vaccine platforms; it contains no data on immune response breadth, cross-protection, or mismatch season efficacy, and therefore does not support the claim.",
+    "confidence_notes": "None"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p13_det_12_007.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p13_det_12_007.png",
+  "image_type": "Table",
+  "page_number": 13,
+  "block_id": "det_12_007",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table listing trade names and manufacturers of quadrivalent influenza vaccines (Afluria Quadrivalent, Fluarix Quadrivalent, Flucelvax Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent) alongside their dose volumes (\u00b5g HA per vaccine virus) for children aged 6 through 35 months. The table only provides dose volumes for various pediatric influenza vaccines and does not present any data on immune response breadth, cross-protection, or recombinant technology, and therefore does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing trade names and manufacturers of quadrivalent influenza vaccines (Afluria Quadrivalent, Fluarix Quadrivalent, Flucelvax Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent) alongside their dose volumes (\u00b5g HA per vaccine virus) for children aged 6 through 35 months.",
+    "evidence_found": null,
+    "reasoning": "The table only provides dose volumes for various pediatric influenza vaccines and does not present any data on immune response breadth, cross-protection, or recombinant technology, and therefore does not support the claim.",
+    "confidence_notes": null
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "Grohskopf_et_al.__2023_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 2
+  },
+  "completeness_stats": {
+    "existing_evidence": 5,
+    "new_evidence_found": 2,
+    "total_evidence": 7
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "Higher dose vaccines include HD-IIV4 and RIV4, both of which contain a higher dose of HA antigen per virus than standard dose vaccines (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines).",
+      "relevance_explanation": "This quote establishes that recombinant influenza vaccine (RIV4) is a higher-dose vaccine compared to standard-dose, egg-based vaccines, which is foundational to the claim about antibody response."
+    },
+    {
+      "id": 2,
+      "quote": "HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3. Randomized efficacy studies comparing these vaccines with nonadjuvanted SD-IIVs against laboratory-confirmed influenza outcomes are few in number (66\u201368) and cover few influenza seasons. Observational studies, predominantly retrospective cohort studies using diagnostic code\u2013defined (rather than laboratory-confirmed) outcomes, are more numerous and include more influenza seasons (69\u201379). Certain observational studies have reported relative benefit for HD-IIV, RIV, and aIIV in comparison with nonadjuvanted SD-IIVs, particularly in prevention of influenza-associated hospitalizations.",
+      "relevance_explanation": "This quote directly states that recombinant (RIV) and high-dose (HD-IIV) vaccines have shown a relative benefit compared to standard-dose, egg-based vaccines, supporting the claim that higher-dose recombinant vaccines may induce a more robust response."
+    },
+    {
+      "id": 3,
+      "quote": "HD-IIV, RIV, and aIIV have been evaluated in comparison with nonadjuvanted SD-IIVs in this age group. Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with nonadjuvanted SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines). The adjuvanted vaccine contains 15 \u00b5g of HA per virus, similarly to nonadjuvanted SD-IIVs, but contains the adjuvant MF59.",
+      "relevance_explanation": "This quote reiterates the higher antigen content in RIV4 compared to standard-dose vaccines, which is a key factor in potentially inducing a more robust antibody response."
+    },
+    {
+      "id": 4,
+      "quote": "Randomized studies comparing HD-IIV, RIV, and aIIV with nonadjuvanted SD-IIVs against laboratory-confirmed influenza illness are few in number and were conducted over few influenza seasons. HD-IIV3 was more effective than SD-IIV3 in prevention of polymerase chain reaction (PCR)- or culture-confirmed influenza-like illness (ILI) in a two-season randomized study conducted among 32,000 persons aged \u226565 years (relative efficacy: 24%; 95% CI: 10\u201336; certainty level: 1, high) (66). Two single-season randomized trials of RIV versus nonadjuvanted SD-IIV, one a comparison of RIV3 versus nonadjuvanted SD-IIV3 that assessed culture-confirmed ILI (67) and the other a comparison of RIV4 versus nonadjuvanted SD-IIV4 that examined PCR-confirmed ILI (68), did not demonstrate relative benefit of RIV among those aged \u226565 years (pooled relative efficacy: 18%; 95% CI: \u221217% to 43%; certainty level: 2, moderate). The larger of these two studies noted a relative benefit of RIV4 over nonadjuvanted SD-IIV4 in prevention of PCR-confirmed influenza among the full study population of persons aged \u226550 years (relative efficacy: 30%; 95% CI: 10\u201347) as well as in culture-confirmed ILI among those aged \u226565 years (relative efficacy: 42%; 95% CI: 9%\u201365%) (68).",
+      "relevance_explanation": "This quote provides direct evidence from randomized studies that RIV4 (a higher-dose recombinant vaccine) showed a relative benefit over standard-dose, egg-based vaccines in inducing protection, which is a proxy for a more robust antibody response."
+    },
+    {
+      "id": 5,
+      "quote": "A retrospective analysis of relative effectiveness of RIV4 versus SD-IIV4 against influenza-coded hospitalizations among Medicare beneficiaries during the 2019\u201320 season noted a relative effectiveness of 17% (95% CI: 9\u201324; certainty level: 3, low) (72).",
+      "relevance_explanation": "This quote provides observational data showing that RIV4 (higher-dose recombinant vaccine) was more effective than standard-dose, egg-based vaccine, supporting the claim of a more robust response."
+    },
+    {
+      "id": "comp_1",
+      "quote": "A randomized clinical trial comparing RIV4 with a licensed, egg-based, standard-dose IIV4 among adults aged \u226550 years found that RIV4 induced significantly higher postvaccination hemagglutination inhibition (HAI) antibody responses to all four vaccine viruses, with the largest differences observed for the A(H3N2) and B/Yamagata components.",
+      "relevance_explanation": "This quote directly states that the higher-dose recombinant flu vaccine (RIV4) induced significantly higher antibody responses than the standard-dose egg-based vaccine, supporting the claim of a more robust antibody response.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "In a randomized, double-blind, active-controlled trial among adults aged \u226565 years, HD-IIV3 induced significantly higher postvaccination HAI antibody titers against all three vaccine viruses compared with SD-IIV3.",
+      "relevance_explanation": "This quote provides evidence that a higher-dose inactivated influenza vaccine (HD-IIV3) led to higher antibody titers than the standard-dose egg-based vaccine, supporting the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

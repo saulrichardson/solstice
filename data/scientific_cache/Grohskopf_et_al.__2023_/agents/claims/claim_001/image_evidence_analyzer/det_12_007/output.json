@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p13_det_12_007.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p13_det_12_007.png",
+  "image_type": "Table",
+  "page_number": 13,
+  "block_id": "det_12_007",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Table listing trade names of pediatric quadrivalent influenza vaccines (Afluria, Fluarix, Flucelvax, FluLaval, Fluzone) with their dose volumes and HA antigen content (\u00b5g per vaccine virus) for children aged 6\u201335 months. does not support the claim Note: The table does not mention Flublok or compare HA content in adult standard-dose vaccines; it only shows pediatric dosing information.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table listing trade names of pediatric quadrivalent influenza vaccines (Afluria, Fluarix, Flucelvax, FluLaval, Fluzone) with their dose volumes and HA antigen content (\u00b5g per vaccine virus) for children aged 6\u201335 months.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim",
+    "confidence_notes": "The table does not mention Flublok or compare HA content in adult standard-dose vaccines; it only shows pediatric dosing information."
+  }
+}

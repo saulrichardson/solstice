@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table listing the vaccine presentation (single-dose prefilled syringe), the corresponding NDC numbers for carton and components, followed by storage and handling instructions (temperature, freezing, light protection, expiration). The table provides packaging and storage details only and contains no information on hemagglutinin antigen content or comparative immunogenicity, and therefore does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing the vaccine presentation (single-dose prefilled syringe), the corresponding NDC numbers for carton and components, followed by storage and handling instructions (temperature, freezing, light protection, expiration).",
+    "evidence_found": null,
+    "reasoning": "The table provides packaging and storage details only and contains no information on hemagglutinin antigen content or comparative immunogenicity, and therefore does not support the claim.",
+    "confidence_notes": null
+  }
+}

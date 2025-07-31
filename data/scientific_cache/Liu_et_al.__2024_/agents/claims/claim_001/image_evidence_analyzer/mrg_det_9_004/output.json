@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_mrg_det_9_004.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p10_mrg_det_9_004.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "mrg_det_9_004",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Multi-panel figure showing ELISA antibody titers (log\u2082 scale) against egg\u2010grown and cell\u2010grown HA antigens for influenza A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata lineages at Day 0 and one month post\u2010vaccination across seven vaccine groups (including RIV4 [recombinant vaccine], egg- and cell-based inactivated vaccines), plus panels of geometric mean egg/cell HA ELISA titer ratios, stalk-specific ELISA titers for H3 and H1, and HA stalk ELISA titer fold\u2010rise. Evidence: Significantly higher cell-based HA ELISA titers at one month in RIV4 (Flublok) recipients versus standard vaccine groups (p=0.005, p=0.0002). The figure shows greater immunogenicity for RIV4 (Flublok) compared to standard-dose vaccines, but it does not present or quantify antigen content (i.e., the 3\u00d7 HA dose), so it does not support the claim that Flublok contains 3\u00d7 the HA antigen content linked to enhanced immunogenicity. Note: Image quality is sufficient to see titers and p-values, but no data on antigen content are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Multi-panel figure showing ELISA antibody titers (log\u2082 scale) against egg\u2010grown and cell\u2010grown HA antigens for influenza A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata lineages at Day 0 and one month post\u2010vaccination across seven vaccine groups (including RIV4 [recombinant vaccine], egg- and cell-based inactivated vaccines), plus panels of geometric mean egg/cell HA ELISA titer ratios, stalk-specific ELISA titers for H3 and H1, and HA stalk ELISA titer fold\u2010rise.",
+    "evidence_found": "Significantly higher cell-based HA ELISA titers at one month in RIV4 (Flublok) recipients versus standard vaccine groups (p=0.005, p=0.0002).",
+    "reasoning": "The figure shows greater immunogenicity for RIV4 (Flublok) compared to standard-dose vaccines, but it does not present or quantify antigen content (i.e., the 3\u00d7 HA dose), so it does not support the claim that Flublok contains 3\u00d7 the HA antigen content linked to enhanced immunogenicity.",
+    "confidence_notes": "Image quality is sufficient to see titers and p-values, but no data on antigen content are shown."
+  }
+}

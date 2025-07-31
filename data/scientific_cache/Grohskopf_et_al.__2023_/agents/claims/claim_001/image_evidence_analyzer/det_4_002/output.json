@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p5_det_4_002.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_002",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Table listing influenza vaccines by trade name, presentations, age indication, HA content per virus strain (\u00b5g/dose), route, and mercury content. Includes standard-dose egg-based IIV4 vaccines (15 \u00b5g/0.5 mL), high-dose IIV4 (60 \u00b5g/0.7 mL), adjuvanted IIV4 (15 \u00b5g/0.5 mL), and recombinant HA vaccine RIV4 (Flublok Quadrivalent: 45 \u00b5g/0.5 mL). Evidence: Flublok Quadrivalent is listed with 45 \u00b5g of HA per strain per 0.5 mL dose versus 15 \u00b5g/strain for standard-dose IIV4 vaccines The table shows Flublok contains 3\u00d7 the HA antigen content of standard-dose vaccines but does not include any immunogenicity data; therefore it does not support the full claim about greater immunogenicity",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table listing influenza vaccines by trade name, presentations, age indication, HA content per virus strain (\u00b5g/dose), route, and mercury content. Includes standard-dose egg-based IIV4 vaccines (15 \u00b5g/0.5 mL), high-dose IIV4 (60 \u00b5g/0.7 mL), adjuvanted IIV4 (15 \u00b5g/0.5 mL), and recombinant HA vaccine RIV4 (Flublok Quadrivalent: 45 \u00b5g/0.5 mL).",
+    "evidence_found": "Flublok Quadrivalent is listed with 45 \u00b5g of HA per strain per 0.5 mL dose versus 15 \u00b5g/strain for standard-dose IIV4 vaccines",
+    "reasoning": "The table shows Flublok contains 3\u00d7 the HA antigen content of standard-dose vaccines but does not include any immunogenicity data; therefore it does not support the full claim about greater immunogenicity",
+    "confidence_notes": null
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": "Treanor_et_al.__2011_",
+  "verification_stats": {
+    "total_extracted": 4,
+    "verified": 0,
+    "rejected": 4,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": 1,
+      "quote": "Genes were cloned into baculovirus using RT-PCR from the same CDC derived vaccine seed viruses used for the production of licensed inactivated influenza vaccine for that year.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote directly states that the genes used to produce Flublok were cloned from the same CDC-derived vaccine seed viruses as those used for licensed inactivated influenza vaccines, which are selected based on WHO and FDA recommendations. This supports the claim that Flublok ensures an identical antigenic match with the selected flu strains."
+    },
+    {
+      "id": 2,
+      "quote": "The antigens used in the assays were baculovirus derived rHAs representing the A/Solomon Islands/03/2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses, provided by Protein Sciences Corporation.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote specifies that the antigens in Flublok correspond exactly to the WHO- and FDA-selected reference strains for that influenza season, supporting the claim of identical antigenic match."
+    },
+    {
+      "id": 3,
+      "quote": "Expression of proteins in insect cells using recombinant baculovirus avoids the need to work with potentially pathogenic, live influenza viruses, and the attendant biocontainment issues that would be a particular concern for production of pandemic vaccines [7]. The results of the current study support the utility of insect cells for the production of well tolerated and effective vaccines for seasonal influenza.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote explains that the recombinant technology used for Flublok allows for precise expression of the selected antigens, supporting the claim that the vaccine can be matched exactly to the strains chosen by WHO and FDA."
+    },
+    {
+      "id": "comp_1",
+      "quote": "The vaccine (Flublok used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The recombinant HA protein is not cleaved in insect cells and is referred to as rHA0. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands/03/2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote specifies that Flublok contains purified HA proteins derived from the exact WHO- and FDA-selected strains for that season, supporting the claim of identical antigenic match."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

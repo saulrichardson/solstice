@@ -1,0 +1,25 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": "Hsiao_et_al.__2023_",
+  "supporting_evidence": [
+    {
+      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain.",
+      "explanation": "The quote directly states that Flublok's hemagglutinin protein is genetically identical to that in the selected strain. Since the selected strain refers to the WHO- and FDA-selected flu strains for the season, this statement explicitly supports the claim that Flublok ensures identical antigenic match with those strains. No inference is required; the document makes this connection clear."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 1,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 1,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 1
+    },
+    "rejected_count": 0
+  }
+}

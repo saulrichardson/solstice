@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/table_p3_det_2_003.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_003",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "Table listing amino acid differences on the HA head domain for various influenza virus vaccine candidate strains (A(H1N1)pdm09, A(H3N2), B/Victoria lineage, B/Yamagata lineage) produced by different methods (cell culture, egg-based, CVV), showing residue changes at specific HA positions. The table provides sequence differences between vaccine virus strains produced in cell versus egg substrates but contains no data on immune responses, breadth of immunity, cross-protection, mismatch seasons, or recombinant technology; therefore it does not support the claim. Note: Limited to genetic differences data; no immunogenicity or efficacy outcomes are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table listing amino acid differences on the HA head domain for various influenza virus vaccine candidate strains (A(H1N1)pdm09, A(H3N2), B/Victoria lineage, B/Yamagata lineage) produced by different methods (cell culture, egg-based, CVV), showing residue changes at specific HA positions.",
+    "evidence_found": null,
+    "reasoning": "The table provides sequence differences between vaccine virus strains produced in cell versus egg substrates but contains no data on immune responses, breadth of immunity, cross-protection, mismatch seasons, or recombinant technology; therefore it does not support the claim.",
+    "confidence_notes": "Limited to genetic differences data; no immunogenicity or efficacy outcomes are shown."
+  }
+}

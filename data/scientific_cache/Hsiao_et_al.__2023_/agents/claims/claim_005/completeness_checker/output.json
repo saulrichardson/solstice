@@ -1,0 +1,76 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": "Hsiao_et_al.__2023_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 3
+  },
+  "completeness_stats": {
+    "existing_evidence": 5,
+    "new_evidence_found": 3,
+    "total_evidence": 8
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "METHODS In this cluster randomized observational study, Kaiser Permanente Northern California facilities routinely administered either a high dose recombinant influenza vaccine (Flublok Quadrivalent) or one of two standard dose influenza vaccines during the 2018-2019 and 2019-2020 influenza seasons to adults 50 to 64 years of age (primary age group) and 18 to 49 years of age. Each facility alternated weekly between the two vaccine formulations. The primary outcome was influenza (A or B) confirmed by polymerase chain reaction (PCR) testing.",
+      "relevance_explanation": "This quote explicitly states that Flublok Quadrivalent (the recombinant vaccine) was evaluated in a trial against standard dose influenza vaccines, confirming the direct comparison required by the claim."
+    },
+    {
+      "id": 2,
+      "quote": "To estimate the relative effectiveness of the recombinant vaccine as compared with standard dose vaccines against laboratory confirmed influenza and influenza related outcomes, we compared the two formulations of vaccines among members of the Kaiser Permanente Northern California (KPNC) health care system who were between 18 and 64 years of age during the two influenza seasons of 2018-2019 and 2019-2020.",
+      "relevance_explanation": "This quote directly affirms that the study compared Flublok Quadrivalent to standard dose vaccines, supporting the claim that these two types of vaccines were evaluated against each other in the pivotal trial."
+    },
+    {
+      "id": 3,
+      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.",
+      "relevance_explanation": "This quote identifies Flublok Quadrivalent as the recombinant vaccine and distinguishes it from standard dose vaccines, clarifying the products compared in the study."
+    },
+    {
+      "id": 4,
+      "quote": "Study Design This was a cluster randomized observational study that was designed to include all KPNC members between the ages of 18 and 64 years who had received a licensed recombinant or standard dose vaccine as part of routine clinical care during the three influenza seasons from 2018 to 2021.",
+      "relevance_explanation": "This quote confirms the study design involved a direct comparison between recombinant (Flublok Quadrivalent) and standard dose vaccines, as required by the claim."
+    },
+    {
+      "id": 5,
+      "quote": "In the current study, we compared the effectiveness of the high dose recombinant vaccine with that of standard dose vaccines in patients between the ages of 18 and 64 years.",
+      "relevance_explanation": "This quote clearly states that the study compared Flublok Quadrivalent (high dose recombinant) with standard dose vaccines, directly supporting the claim."
+    },
+    {
+      "id": "comp_1",
+      "quote": "In traditional quadrivalent standard dose inactivated influenza vaccines (SD-IIV4), chicken eggs are used to manufacture the vaccine strain. The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.",
+      "relevance_explanation": "This quote explicitly distinguishes Flublok Quadrivalent (recombinant) from standard dose quadrivalent vaccines, confirming that these two types were compared in the study.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "In this study performed during two influenza seasons, participants between the ages of 50 and 64 years who received the recombinant vaccine had more protection against confirmed influenza than those who received a standard dose vaccine.",
+      "relevance_explanation": "This statement directly affirms that the study compared Flublok Quadrivalent (recombinant) to a standard dose vaccine, supporting the claim about the pivotal trial's design.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "A strength of our study is that the two study vaccine formulations were alternated in weekly intervals of time at each facility, which allowed us to balance covariates of interest as designed. In every KPNC geographic area, when influenza arrived, there were already participants who had received one of the two formulations of vaccine and who were similar with respect to demographic characteristics, coexisting illnesses, and mortality at KPNC and nationwide in a similar age group.",
+      "relevance_explanation": "This quote describes the study design, confirming that two vaccine formulations\u2014Flublok Quadrivalent and a standard dose vaccine\u2014were directly compared in a controlled manner.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

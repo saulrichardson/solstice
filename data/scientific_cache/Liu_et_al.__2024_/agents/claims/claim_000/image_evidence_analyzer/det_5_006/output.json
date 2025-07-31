@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p6_det_5_006.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p6_det_5_006.png",
+  "image_type": "Figure",
+  "page_number": 6,
+  "block_id": "det_5_006",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "Multi-panel figure showing ELISA antibody titers (log\u2082 scale) against egg-derived and cell-derived hemagglutinin (HA) antigens for influenza A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata strains at Day 0, 1 month, and 6 months post-vaccination in four vaccine groups (Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, recombinant RIV4). Panel B shows geometric mean ratios of egg versus cell HA ELISA titers at 1 month. Panel C shows stalk-specific HA titers for H3 and H1, and Panel D shows fold-rise in HA stalk ELISA titers (1 month vs Day 0). The figure presents immunogenicity data comparing antibody titers elicited by different vaccine formulations but provides no information on antigenic matching to WHO- or FDA-selected strains, and therefore does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Multi-panel figure showing ELISA antibody titers (log\u2082 scale) against egg-derived and cell-derived hemagglutinin (HA) antigens for influenza A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata strains at Day 0, 1 month, and 6 months post-vaccination in four vaccine groups (Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, recombinant RIV4). Panel B shows geometric mean ratios of egg versus cell HA ELISA titers at 1 month. Panel C shows stalk-specific HA titers for H3 and H1, and Panel D shows fold-rise in HA stalk ELISA titers (1 month vs Day 0).",
+    "evidence_found": null,
+    "reasoning": "The figure presents immunogenicity data comparing antibody titers elicited by different vaccine formulations but provides no information on antigenic matching to WHO- or FDA-selected strains, and therefore does not support the claim.",
+    "confidence_notes": null
+  }
+}

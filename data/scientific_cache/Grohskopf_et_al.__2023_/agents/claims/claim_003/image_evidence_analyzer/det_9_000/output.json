@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_det_9_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/figure_p10_det_9_000.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "det_9_000",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A flowchart depicting influenza vaccination dosing recommendations for children based on whether they received two or more doses of trivalent or quadrivalent influenza vaccine before July 1, 2022. If yes, administer one dose of 2022\u201323 vaccine; if no or unknown, administer two doses of 2022\u201323 vaccine four weeks apart. The figure only outlines pediatric influenza vaccine dosing algorithms and does not present any data on recombinant vaccine technology, immune responses, or cross-protection. Therefore, it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart depicting influenza vaccination dosing recommendations for children based on whether they received two or more doses of trivalent or quadrivalent influenza vaccine before July 1, 2022. If yes, administer one dose of 2022\u201323 vaccine; if no or unknown, administer two doses of 2022\u201323 vaccine four weeks apart.",
+    "evidence_found": null,
+    "reasoning": "The figure only outlines pediatric influenza vaccine dosing algorithms and does not present any data on recombinant vaccine technology, immune responses, or cross-protection. Therefore, it does not support the claim.",
+    "confidence_notes": null
+  }
+}

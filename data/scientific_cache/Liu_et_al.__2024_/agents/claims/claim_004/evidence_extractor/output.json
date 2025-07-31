@@ -1,0 +1,34 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": {
+    "pdf_name": "Liu_et_al.__2024_",
+    "source_pdf": "data/clinical_files/Liu et al. (2024).pdf",
+    "total_pages": 13,
+    "total_blocks": 146,
+    "total_characters": 36717
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.",
+      "relevance_explanation": "This quote directly compares the antibody response induced by the higher-dose recombinant vaccine (RIV4) to that of standard-dose egg-based vaccines (IIV4), showing that RIV4 produced higher neutralizing and binding antibodies against the A (H3 N2) virus, supporting the claim."
+    },
+    {
+      "id": 2,
+      "quote": "RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody response in both age groups, it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).",
+      "relevance_explanation": "This quote specifies that RIV4 is a higher-dose recombinant vaccine and provides evidence that it leads to a greater quantity of antibody response compared to standard-dose vaccines, directly supporting the claim."
+    },
+    {
+      "id": 3,
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.",
+      "relevance_explanation": "This statement provides explicit comparative data showing that the recombinant vaccine (RIV4) elicits a more robust antibody response than the standard egg-based vaccine (IIV4), which is central to the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

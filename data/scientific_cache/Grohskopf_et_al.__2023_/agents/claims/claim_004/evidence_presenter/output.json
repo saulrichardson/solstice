@@ -1,0 +1,25 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "Grohskopf_et_al.__2023_",
+  "supporting_evidence": [
+    {
+      "quote": "A randomized clinical trial comparing RIV4 with a licensed, egg-based, standard-dose IIV4 among adults aged \u226550 years found that RIV4 induced significantly higher postvaccination hemagglutination inhibition (HAI) antibody responses to all four vaccine viruses, with the largest differences observed for the A(H3N2) and B/Yamagata components.",
+      "explanation": "The quote directly supports the claim. It explicitly states that a randomized clinical trial found that the higher-dose recombinant flu vaccine (RIV4) induced significantly higher postvaccination HAI antibody responses compared to a licensed, egg-based, standard-dose IIV4 among adults aged \u226550 years. It also specifies that the largest differences were observed for the A(H3N2) and B/Yamagata components. This is direct evidence that RIV4 may induce a more robust antibody response than standard-dose egg-based vaccines, as claimed."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 1,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 1,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 1
+    },
+    "rejected_count": 0
+  }
+}

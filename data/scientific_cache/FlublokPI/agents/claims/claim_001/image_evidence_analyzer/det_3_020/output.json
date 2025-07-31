@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_020.png",
+  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_020.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_020",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Table summarizing influenza case counts, rates, and calculated vaccine efficacy of Flublok versus saline placebo among adults 18\u201349 years in Study 1, broken down by positive culture with matched strains or any strains and by CDC-defined ILI or any ILI. The table reports clinical efficacy versus saline placebo and does not provide any data on hemagglutinin antigen content or comparisons to standard-dose flu vaccines, so it does not support the claim. Note: The image only shows efficacy outcomes against placebo, with no information on antigen dose or comparisons to standard-dose vaccines.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table summarizing influenza case counts, rates, and calculated vaccine efficacy of Flublok versus saline placebo among adults 18\u201349 years in Study 1, broken down by positive culture with matched strains or any strains and by CDC-defined ILI or any ILI.",
+    "evidence_found": null,
+    "reasoning": "The table reports clinical efficacy versus saline placebo and does not provide any data on hemagglutinin antigen content or comparisons to standard-dose flu vaccines, so it does not support the claim.",
+    "confidence_notes": "The image only shows efficacy outcomes against placebo, with no information on antigen dose or comparisons to standard-dose vaccines."
+  }
+}
