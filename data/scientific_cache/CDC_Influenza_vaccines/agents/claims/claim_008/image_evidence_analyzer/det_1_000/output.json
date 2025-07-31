@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_det_1_000.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p2_det_1_000.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "det_1_000",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": true,
+  "explanation": "A table of influenza vaccines showing trade names, presentations, age indications, HA content per dose, route, and mercury content. It lists Fluad Quadrivalent (an IIV4) with 15 \u00b5g HA per 0.5 mL and Flublok Quadrivalent (a recombinant HA vaccine, RIV4) with 45 \u00b5g HA per 0.5 mL. Evidence: Table shows Flublok Quadrivalent contains 45 \u00b5g HA per 0.5 mL, whereas Fluad Quadrivalent (IIV4) contains 15 \u00b5g HA per 0.5 mL. supports the claim because the table provides data showing Flublok contains 45 \u00b5g HA per strain while standard-dose IIV4 vaccines contain 15 \u00b5g HA per strain.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "A table of influenza vaccines showing trade names, presentations, age indications, HA content per dose, route, and mercury content. It lists Fluad Quadrivalent (an IIV4) with 15 \u00b5g HA per 0.5 mL and Flublok Quadrivalent (a recombinant HA vaccine, RIV4) with 45 \u00b5g HA per 0.5 mL.",
+    "evidence_found": "Table shows Flublok Quadrivalent contains 45 \u00b5g HA per 0.5 mL, whereas Fluad Quadrivalent (IIV4) contains 15 \u00b5g HA per 0.5 mL.",
+    "reasoning": "supports the claim because the table provides data showing Flublok contains 45 \u00b5g HA per strain while standard-dose IIV4 vaccines contain 15 \u00b5g HA per strain.",
+    "confidence_notes": null
+  }
+}

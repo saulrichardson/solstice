@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p3_det_2_001.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_001",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A schematic flowchart depicting the baculovirus expression vector system (BEVS) process for producing HA antigen: starting from full-length HA cDNA cloned into a transfer plasmid with a polyhedrin promoter, recombination with linearized baculovirus DNA to create a BV expression vector, infection and expansion in a bioreactor, followed by harvest (disc-stack centrifugation), extraction, depth filtration (clarification), and downstream purification steps (capture, purification, DNA removal), concluding with tangential flow filtration (TFF)/formulation. does not support the claim because the figure only shows the production and purification process of recombinant HA using BEVS and contains no comparative immunogenicity data or evidence of antibody responses against conserved HA regions versus egg-derived vaccines",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A schematic flowchart depicting the baculovirus expression vector system (BEVS) process for producing HA antigen: starting from full-length HA cDNA cloned into a transfer plasmid with a polyhedrin promoter, recombination with linearized baculovirus DNA to create a BV expression vector, infection and expansion in a bioreactor, followed by harvest (disc-stack centrifugation), extraction, depth filtration (clarification), and downstream purification steps (capture, purification, DNA removal), concluding with tangential flow filtration (TFF)/formulation.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the figure only shows the production and purification process of recombinant HA using BEVS and contains no comparative immunogenicity data or evidence of antibody responses against conserved HA regions versus egg-derived vaccines",
+    "confidence_notes": null
+  }
+}

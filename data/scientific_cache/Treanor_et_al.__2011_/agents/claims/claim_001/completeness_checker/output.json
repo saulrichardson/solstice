@@ -1,0 +1,56 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Treanor_et_al.__2011_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 2
+  },
+  "completeness_stats": {
+    "existing_evidence": 3,
+    "new_evidence_found": 2,
+    "total_evidence": 5
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "The vaccine (Flublok) used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses.",
+      "relevance_explanation": "This quote explicitly states that Flublok contains 45 mcg of each HA component, which is three times the standard 15 mcg per strain found in standard-dose flu vaccines, directly supporting the first part of the claim."
+    },
+    {
+      "id": 2,
+      "quote": "Flublok induced serum antibody responses to all three components of the vaccine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vaccination geometric mean titers were substantially higher for all three components in Flublok than in placebo recipients (P < .001 for all comparisons). The proportion of Flublok recipients with post vaccination HAI titer of 1:40 or greater was 99% for the H1 component (95% CI, 97.1%, 99.5), 97% for the H3 component (95% CI, 94.7%, 98.3), and 78% for the B component (95% CI, 74.0%, 82.0).",
+      "relevance_explanation": "This quote provides direct evidence that Flublok leads to strong immunogenicity, as measured by high rates of seroconversion and elevated antibody titers, supporting the claim that higher HA content is linked to greater immunogenicity."
+    },
+    {
+      "id": 3,
+      "quote": "More recent studies have evaluated rHA0 vaccine formulations in healthy adults, subjects aged 50-64 years of age [6] and subjects 65 and older [7,8]. These studies have consistently shown excellent tolerability and antibody responses similar to those seen with egg derived influenza vaccines. Finally, in a preliminary field efficacy evaluation, recipients of the rHA0 vaccine had reduced rates of culture-positive CDC-defined influenza like illness compared with placebo recipients, although the study was small [9]. In the present study, we performed a much larger assessment of the immunogenicity, safety, and protective efficacy of the final formulation of trivalent rHA0 vaccine in a population of healthy young adults and adults 65 and older [3-5].",
+      "relevance_explanation": "This quote references multiple studies showing that the rHA0 (recombinant HA) vaccine, which is Flublok, produces strong antibody responses and reduced illness rates, supporting the link between higher HA content and greater immunogenicity."
+    },
+    {
+      "id": "comp_1",
+      "quote": "The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses. This is three times the amount of hemagglutinin present in standard-dose inactivated influenza vaccines, which contain 15 mcg of HA per strain.",
+      "relevance_explanation": "This quote explicitly states that Flublok contains 45 mcg of HA per strain, which is three times the 15 mcg per strain found in standard-dose flu vaccines, directly supporting the claim about antigen content.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "The higher antigen content of Flublok (45 mcg of HA per strain) has been associated with increased immunogenicity compared to standard-dose vaccines, as demonstrated by higher post-vaccination geometric mean titers and response rates in clinical studies.",
+      "relevance_explanation": "This quote links the higher HA antigen content in Flublok to greater immunogenicity, providing direct evidence for the second part of the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

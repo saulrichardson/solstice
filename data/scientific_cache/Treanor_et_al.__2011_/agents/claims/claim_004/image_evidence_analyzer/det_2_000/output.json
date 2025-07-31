@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_000.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p3_det_2_000.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_000",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "A CONSORT-style flow diagram showing study enrollment (n=4648), randomization into two arms (FluBlok recombinant vaccine, n=2344; placebo, n=2304), subsequent discontinuations, and resulting safety populations. The image shows only participant disposition data for FluBlok versus placebo and does not include any antibody response or immunogenicity results, so it does not support the claim. Note: Figure only depicts enrollment and dropouts; no immunogenicity or comparative antibody titer data are provided.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A CONSORT-style flow diagram showing study enrollment (n=4648), randomization into two arms (FluBlok recombinant vaccine, n=2344; placebo, n=2304), subsequent discontinuations, and resulting safety populations.",
+    "evidence_found": null,
+    "reasoning": "The image shows only participant disposition data for FluBlok versus placebo and does not include any antibody response or immunogenicity results, so it does not support the claim.",
+    "confidence_notes": "Figure only depicts enrollment and dropouts; no immunogenicity or comparative antibody titer data are provided."
+  }
+}

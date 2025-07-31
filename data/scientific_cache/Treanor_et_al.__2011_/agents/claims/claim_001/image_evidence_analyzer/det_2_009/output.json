@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_009.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p3_det_2_009.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_009",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A two-column table showing numbers and percentages of solicited adverse events (mild, moderate, severe) in participants receiving FluBlok (N=2344) versus placebo (N=2304). Adverse events listed include fever, fatigue, shivering, joint pain, muscle pain, headache, nausea, pain, and bruising. The table presents safety data (adverse event rates) for FluBlok versus placebo and does not include any information on hemagglutinin antigen content or immunogenicity. It does not support the claim. Note: Limited to the visible data on adverse events; no immunogenicity or antigen content information is present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-column table showing numbers and percentages of solicited adverse events (mild, moderate, severe) in participants receiving FluBlok (N=2344) versus placebo (N=2304). Adverse events listed include fever, fatigue, shivering, joint pain, muscle pain, headache, nausea, pain, and bruising.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety data (adverse event rates) for FluBlok versus placebo and does not include any information on hemagglutinin antigen content or immunogenicity. It does not support the claim.",
+    "confidence_notes": "Limited to the visible data on adverse events; no immunogenicity or antigen content information is present."
+  }
+}

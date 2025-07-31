@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_007.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p5_det_4_007.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_007",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table comparing demographic characteristics (race, sex, season, high-risk condition) and influenza case counts among adults 18\u201364 and \u226565 years old who received different influenza vaccines (RIV4, SD-IIV4, RIV4+HD-IIV4+Adj-IIV), with sample sizes, percentages, and P-values. The table presents demographic and influenza case data by vaccine type but includes no information on hemagglutinin antigen content or immunogenicity. Therefore, it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing demographic characteristics (race, sex, season, high-risk condition) and influenza case counts among adults 18\u201364 and \u226565 years old who received different influenza vaccines (RIV4, SD-IIV4, RIV4+HD-IIV4+Adj-IIV), with sample sizes, percentages, and P-values.",
+    "evidence_found": null,
+    "reasoning": "The table presents demographic and influenza case data by vaccine type but includes no information on hemagglutinin antigen content or immunogenicity. Therefore, it does not support the claim.",
+    "confidence_notes": null
+  }
+}

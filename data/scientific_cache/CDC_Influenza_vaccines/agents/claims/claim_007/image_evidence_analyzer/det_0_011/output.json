@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_011.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p1_det_0_011.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_011",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A black-and-white QR code pattern on a white background; no visible text or data about vaccines or immunological results does not support the claim Note: Image appears to be a QR code without any clinical or experimental data; no relevant information visible",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A black-and-white QR code pattern on a white background; no visible text or data about vaccines or immunological results",
+    "evidence_found": null,
+    "reasoning": "does not support the claim",
+    "confidence_notes": "Image appears to be a QR code without any clinical or experimental data; no relevant information visible"
+  }
+}

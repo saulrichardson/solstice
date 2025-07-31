@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_003.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p1_det_0_003.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_003",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Table listing influenza vaccines for the United States 2023\u201324 season, including trade name (manufacturer), presentation, age indication, micrograms of HA per dose, route of administration, and mercury content for various egg-based, cell culture\u2013based, high-dose, adjuvanted, recombinant HA, and live attenuated influenza vaccines. does not support the claim because the table only provides vaccine names, formulations, dosages, and routes without any immunogenicity or antibody cross-reactivity data comparing recombinant BEVS-derived HA antigens to egg-derived vaccines.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table listing influenza vaccines for the United States 2023\u201324 season, including trade name (manufacturer), presentation, age indication, micrograms of HA per dose, route of administration, and mercury content for various egg-based, cell culture\u2013based, high-dose, adjuvanted, recombinant HA, and live attenuated influenza vaccines.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table only provides vaccine names, formulations, dosages, and routes without any immunogenicity or antibody cross-reactivity data comparing recombinant BEVS-derived HA antigens to egg-derived vaccines.",
+    "confidence_notes": null
+  }
+}

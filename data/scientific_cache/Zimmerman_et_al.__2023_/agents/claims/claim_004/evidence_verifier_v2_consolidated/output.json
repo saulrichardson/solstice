@@ -1,0 +1,20 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "Zimmerman_et_al.__2023_",
+  "verified_evidence": [
+    {
+      "id": "comp_2",
+      "quote": "All adults, and supports its superior effectiveness over SD IIV4 for adults 18-64 years of age.",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim that vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines. It explicitly states that the study supports the superior effectiveness of RIV4 over SD-IIV4 for adults 18-64 years of age, which is consistent with the claim of a more robust response. The document's context is about vaccine effectiveness, which is a direct measure of the immune response's robustness in a real-world setting.",
+      "presence_explanation": "The quote 'all adults, and supports its superior effectiveness over SD IIV4 for adults 18-64 years of age.' appears on page 6 of the document. The wording is not a perfect match to the provided quote, but the semantic content is the same: it states that the study supports the superior effectiveness of the recombinant vaccine (RIV4) over the standard-dose egg-based vaccine (SD-IIV4) for adults aged 18-64.",
+      "support_explanation": "The quote directly supports the claim that vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines. It explicitly states that the study supports the superior effectiveness of RIV4 over SD-IIV4 for adults 18-64 years of age, which is consistent with the claim of a more robust response. The document's context is about vaccine effectiveness, which is a direct measure of the immune response's robustness in a real-world setting.",
+      "original_relevance": "This statement directly asserts that the recombinant vaccine (RIV4) is more effective than the standard-dose egg-based vaccine (SD-IIV4) in adults 18-64, supporting the claim of a more robust response."
+    }
+  ],
+  "verification_stats": {
+    "total_verified": 1
+  },
+  "image_evidence": []
+}

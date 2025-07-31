@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A two-panel schematic of influenza hemagglutinin (HA) glycoprotein structures. Panel a shows mature, cleaved HA1 (globular head) and HA2 (fibrous stem) subunits with polysialylated complex N-linked glycans and a cleaved fusion peptide. Panel b shows uncleaved HA0 with paucimannose glycans and an uncleaved fusion peptide, indicating the glycosylation and cleavage differences in recombinant HA produced in insect cells. The figure illustrates structural and glycosylation differences between native HA and insect cell\u2013derived recombinant HA0 but provides no data on antibody responses. Therefore, it does not support the claim regarding induction of broadly cross-reactive antibodies. Note: The image quality is clear, but no immunogenicity or antibody titer data are presented.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-panel schematic of influenza hemagglutinin (HA) glycoprotein structures. Panel a shows mature, cleaved HA1 (globular head) and HA2 (fibrous stem) subunits with polysialylated complex N-linked glycans and a cleaved fusion peptide. Panel b shows uncleaved HA0 with paucimannose glycans and an uncleaved fusion peptide, indicating the glycosylation and cleavage differences in recombinant HA produced in insect cells.",
+    "evidence_found": null,
+    "reasoning": "The figure illustrates structural and glycosylation differences between native HA and insect cell\u2013derived recombinant HA0 but provides no data on antibody responses. Therefore, it does not support the claim regarding induction of broadly cross-reactive antibodies.",
+    "confidence_notes": "The image quality is clear, but no immunogenicity or antibody titer data are presented."
+  }
+}

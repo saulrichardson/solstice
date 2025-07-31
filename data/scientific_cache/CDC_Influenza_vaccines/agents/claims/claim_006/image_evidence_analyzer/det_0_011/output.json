@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_011.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p1_det_0_011.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_011",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "The image is a QR code with no visible text or graphical content related to vaccine production. The image contains only a QR code and does not support the claim as it provides no information about Flublok production or BEVS. Note: The provided image appears to be a QR code rather than the intended figure; no relevant content is visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "The image is a QR code with no visible text or graphical content related to vaccine production.",
+    "evidence_found": null,
+    "reasoning": "The image contains only a QR code and does not support the claim as it provides no information about Flublok production or BEVS.",
+    "confidence_notes": "The provided image appears to be a QR code rather than the intended figure; no relevant content is visible."
+  }
+}

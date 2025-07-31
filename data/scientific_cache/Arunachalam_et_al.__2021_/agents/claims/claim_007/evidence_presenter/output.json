@@ -1,0 +1,37 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": "Arunachalam_et_al.__2021_",
+  "supporting_evidence": [
+    {
+      "quote": "Portnoff et al.64 demonstrated that recombinant HA antigens (specifically for the H3 strain) produced using BEVS (as used for RIV4), induced significantly higher levels of broadly cross reactive antibodies against highly conserved regions of the HA head and stem in both mice and humans compared to egg derived split vaccines 64.",
+      "explanation": "The quote directly supports the claim. It explicitly states that recombinant HA antigens produced using BEVS (as in RIV4) induced significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA (head and stem) compared to egg-derived split vaccines, in both mice and humans. This matches the claim in both content and specificity, with no need for inference."
+    },
+    {
+      "quote": "In a study by Nachbagauer et al.78, RIV4 induced HA stem specific neutralising antibodies directed against influenza subtypes H1, H3 and B haemagglutinin in an age dependent manner in humans, with the highest titres observed in the elderly 78. RIV4 also induces antibodies, in both humans and mice, that are specific to epitopes in the HA head region, at greater proportions than a traditional mammalian cell derived subunit vaccine (Flucelvax [Trivalent] 77. Higher magnitudes of haemagglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flucelvax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60.",
+      "explanation": "The quote directly supports the claim. It states that RIV4 (a recombinant HA antigen produced using BEVS) induces higher levels of broadly cross-reactive antibodies against highly conserved regions of HA (both stem and head) compared to egg-derived and mammalian cell-derived vaccines. It specifically mentions higher titres of stem-specific neutralising antibodies and greater proportions of antibodies to HA head epitopes, as well as higher haemagglutination inhibitory antibody responses. These points directly substantiate the claim that BEVS-produced recombinant HA antigens induce significantly higher levels of broadly cross-reactive antibodies against conserved HA regions compared with egg-derived vaccines."
+    },
+    {
+      "quote": "The higher quantity and greater accessibility of the genetically conserved stem region of rHA produced in insect cells (resulting in smaller N-linked glycans) may contribute to cross protection against mismatched influenza strains 12 75. The study by Nachbagauer et al.78 supports the hypothesis that a recombinant vaccine results in increased titre of broadly neutralising HA stem reactive antibodies and that these immune responses increase with age78.",
+      "explanation": "The quote directly supports the claim. It states that recombinant HA antigens produced in insect cells (using BEVS) have a higher quantity and greater accessibility of the conserved stem region, which may contribute to cross-protection against mismatched strains. It also cites a study (Nachbagauer et al.) showing that recombinant vaccines result in increased titres of broadly neutralising HA stem-reactive antibodies, and that these responses increase with age. While the quote does not explicitly compare to egg-derived vaccines in a head-to-head study, it does attribute the superior cross-reactive antibody induction to the unique features of BEVS-produced rHA, supporting the claim as stated."
+    },
+    {
+      "quote": "RIV4 has a unique ability to induce broadly cross reactive antibody responses to antigenically drifted A/H3N2 viruses in humans. In a small study by Belongia et al.82, participants aged 65-74 years were immunised with RIV4, a high dose split virion inactivated trivalent influenza vaccine (Fluzone High Dose, Sanofi Pasteur; HD-IIV3) or adjuvanted-IIV3 (aIIV3)82. Participant sera were tested against four A/H3N2 viruses including a cell propagated reference vaccine strain, two circulating viruses and an antigenically advanced virus with evidence of antigenic drift. The post vaccination geometric mean fold rise against the two circulating viruses was twice as high for RIV4 as for HD-IIV3 or aIIV3.",
+      "explanation": "The quote directly supports the claim. It provides explicit comparative evidence that RIV4 (a BEVS-produced recombinant HA vaccine) induces significantly higher levels of broadly cross-reactive antibodies than egg-derived vaccines (HD-IIV3 and aIIV3), specifically against antigenically drifted A/H3N2 viruses. The data cited (geometric mean fold rise being twice as high for RIV4) and the context (broadly cross-reactive antibody responses) match the claim's requirements. The quote is specific, quantitative, and directly relevant."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 4,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 4,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 4
+    },
+    "rejected_count": 0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Zimmerman_et_al.__2023_",
+  "verification_stats": {
+    "total_extracted": 7,
+    "verified": 0,
+    "rejected": 7,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": 1,
+      "quote": "Standard Dose Fluzone and FlucelVax. HD-IIV4 was High Dose Fluzone, RIV4 was Flublok and Adj-IV was FluAd.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote explicitly identifies RIV4 as Flublok, which is necessary to connect subsequent statements about RIV4 to the specific product Flublok, supporting the claim about its antigen content and immunogenicity."
+    },
+    {
+      "id": 2,
+      "quote": "Two large studies have explored rVE of recombinant quadrivalent influenza vaccine (RIV4). The Medicare beneficiaries study [10] using retrospective data as described above, reported significant rVE of RIV4 vs. SD-IIV4) against influenza related hospital encounters. Secondly, a randomized controlled trial (RCT) found significant rVE of RIV4 compared with SD-IIV4 among adults 50 years old, but not for adults 65 years old [11].",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides direct evidence that RIV4 (Flublok) has greater effectiveness (relative vaccine effectiveness, rVE) compared to standard-dose influenza vaccines (SD-IIV4), supporting the claim that higher antigen content is linked to greater immunogenicity."
+    },
+    {
+      "id": 3,
+      "quote": "Conclusions: Overall adults, both RIV4 and SD-IIV4 were effective against influenza hospitalization, RIV4 providing better protection compared with SD-IIV4 overall, for females, younger adults, and those with no high risk conditions.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote states that RIV4 (Flublok) provided better protection than SD-IIV4, directly supporting the claim that the higher antigen content in Flublok is associated with greater immunogenicity and effectiveness."
+    },
+    {
+      "id": 4,
+      "quote": "Relative vaccine effectiveness (rVE) of recombinant quadrivalent influenza vaccine (RIV4) and RIV4 + high dose quadrivalent influenza vaccine (HD-IIV4) + adjuvanted influenza vaccine (Adj-IV) vs. standard dose quadrivalent influenza vaccine (SD-IIV4) by age group, % (95% CI).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote introduces data comparing the effectiveness of RIV4 (Flublok) to standard-dose vaccines, which is relevant to the claim about greater immunogenicity due to higher antigen content."
+    },
+    {
+      "id": 5,
+      "quote": "Because it is not subject to mutations to the A (H3N2) glycosylation binding site that reduce the effectiveness of egg based vaccines.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote highlights a mechanistic advantage of RIV4 (Flublok) over standard-dose, egg-based vaccines, supporting the claim that Flublok's formulation (including higher antigen content) is linked to greater immunogenicity."
+    },
+    {
+      "id": "comp_1",
+      "quote": "RIV4: Flublok. c SD-IIV4: Afluria, Fluarix, FluLaval, Standard Dose Fluzone and FlucelVax.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote explicitly identifies RIV4 as Flublok and SD-IIV4 as standard-dose flu vaccines, establishing the products being compared in the context of the claim about antigen content and immunogenicity."
+    },
+    {
+      "id": "comp_2",
+      "quote": "RIV4: Flublok; HD IIV4: High dose Fluzone; Adj IV: FluAd",
+      "reason": "does not support claim",
+      "original_explanation": "This quote clarifies that RIV4 refers to Flublok, which is necessary to connect the discussion of recombinant vaccine effectiveness and antigen content to the specific product named in the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

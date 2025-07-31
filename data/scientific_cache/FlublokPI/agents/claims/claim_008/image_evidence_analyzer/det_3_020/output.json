@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_020.png",
+  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_020.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_020",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table summarizing influenza vaccine efficacy in adults 18\u201349 years of age (Study 1), comparing Flublok versus saline placebo, with case counts, rates, vaccine efficacy percentages, and 95% confidence intervals for various case definitions. does not support the claim because the table presents efficacy data and does not provide any information on hemagglutinin (HA) microgram content per strain for either Flublok or a standard-dose vaccine.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table summarizing influenza vaccine efficacy in adults 18\u201349 years of age (Study 1), comparing Flublok versus saline placebo, with case counts, rates, vaccine efficacy percentages, and 95% confidence intervals for various case definitions.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table presents efficacy data and does not provide any information on hemagglutinin (HA) microgram content per strain for either Flublok or a standard-dose vaccine.",
+    "confidence_notes": null
+  }
+}

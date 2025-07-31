@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_000.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/figure_p4_det_3_000.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_000",
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "supports_claim": false,
+  "explanation": "Flow diagram showing study cohort of adults \u226518 years (N=18,467), exclusions leading to an analyzable cohort (N=15,203), then splitting into controls (N=13,385) and influenza cases (N=1,868), each further subdivided by vaccine group: RIV4, SD-IIV4, HD-IIV4+Adj-IV, and unvaccinated. Evidence: The figure distinguishes RIV4 (recombinant quadrivalent) and SD-IIV4 (standard-dose quadrivalent) groups but does not specify any brand names such as Fluarix. The figure lists SD-IIV4 as the standard-dose quadrivalent vaccine comparator but does not name Fluarix specifically; therefore it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Flow diagram showing study cohort of adults \u226518 years (N=18,467), exclusions leading to an analyzable cohort (N=15,203), then splitting into controls (N=13,385) and influenza cases (N=1,868), each further subdivided by vaccine group: RIV4, SD-IIV4, HD-IIV4+Adj-IV, and unvaccinated.",
+    "evidence_found": "The figure distinguishes RIV4 (recombinant quadrivalent) and SD-IIV4 (standard-dose quadrivalent) groups but does not specify any brand names such as Fluarix.",
+    "reasoning": "The figure lists SD-IIV4 as the standard-dose quadrivalent vaccine comparator but does not name Fluarix specifically; therefore it does not support the claim.",
+    "confidence_notes": null
+  }
+}

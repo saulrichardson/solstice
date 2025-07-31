@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_027.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p1_det_0_027.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_027",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "The image shows the Article Info section of a manuscript, listing article history (dates received, revised, accepted, available online) and keywords (influenza vaccine, baculovirus expression, recombinant protein, clinical trials), with no data or figures present. The image contains only publication metadata and keywords, with no experimental data or comparisons of antibody responses between higher-dose recombinant and standard-dose egg-based vaccines, and therefore does not support the claim Note: Limited information \u2013 only metadata is visible, no results or figures to evaluate",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "The image shows the Article Info section of a manuscript, listing article history (dates received, revised, accepted, available online) and keywords (influenza vaccine, baculovirus expression, recombinant protein, clinical trials), with no data or figures present.",
+    "evidence_found": null,
+    "reasoning": "The image contains only publication metadata and keywords, with no experimental data or comparisons of antibody responses between higher-dose recombinant and standard-dose egg-based vaccines, and therefore does not support the claim",
+    "confidence_notes": "Limited information \u2013 only metadata is visible, no results or figures to evaluate"
+  }
+}

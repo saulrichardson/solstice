@@ -1,0 +1,34 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "CDC_Influenza_vaccines",
+  "supporting_evidence": [
+    {
+      "quote": "RIV4 (recombinant HA vaccine) 45 \u00b5g/0.5 mL",
+      "explanation": "The quote directly states that the recombinant HA vaccine (RIV4, which is Flublok) contains 45 micrograms of HA per 0.5 mL dose. This directly supports the claim that Flublok contains 45 mcg of HA per strain, as compared to the standard-dose influenza vaccine, which is also listed in the document as containing 15 mcg of HA per 0.5 mL. Therefore, the quote genuinely supports the claim."
+    },
+    {
+      "quote": "Flu zone Quad rival ent (Sanofi Pasteur) 0.5-mL PFS \u22656 mos 15 \u00b5g/0.5 mL IM",
+      "explanation": "The quote directly states that the standard-dose influenza vaccine (Fluzone Quadrivalent) contains 15 micrograms of HA per 0.5 mL dose per strain. This supports the claim by providing the specific HA content for the standard-dose vaccine, which is necessary for the comparison to Flublok's 45 mcg per strain. While the quote does not mention Flublok, it provides the standard-dose value required for the claim."
+    }
+  ],
+  "image_supporting_evidence": [
+    {
+      "image_filename": "figure_p2_det_1_000.png",
+      "explanation": "A table of influenza vaccines showing trade names, presentations, age indications, HA content per dose, route, and mercury content. It lists Fluad Quadrivalent (an IIV4) with 15 \u00b5g HA per 0.5 mL and Flublok Quadrivalent (a recombinant HA vaccine, RIV4) with 45 \u00b5g HA per 0.5 mL. Evidence: Table shows Flublok Quadrivalent contains 45 \u00b5g HA per 0.5 mL, whereas Fluad Quadrivalent (IIV4) contains 15 \u00b5g HA per 0.5 mL. supports the claim because the table provides data showing Flublok contains 45 \u00b5g HA per strain while standard-dose IIV4 vaccines contain 15 \u00b5g HA per strain."
+    }
+  ],
+  "evidence_summary": {
+    "total_text_evidence_found": 2,
+    "total_image_evidence_found": 1,
+    "total_evidence_found": 3,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 2
+    },
+    "rejected_count": 0
+  }
+}

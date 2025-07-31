@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p3_det_2_001.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_001",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A schematic flow diagram illustrating the generation of a baculovirus expression vector carrying the HA gene via PCR-direct cloning and recombination, followed by cell seeding, infection, expansion in a bioreactor, harvest by disc-stack centrifugation, extraction, clarification by depth filtration, and downstream purification steps including capture, purification, DNA removal, and tangential flow filtration/formulation. does not support the claim: the figure only depicts the manufacturing process of recombinant HA vaccine production and contains no information on HA microgram amounts per strain for Flublok or standard-dose influenza vaccines. Note: The image does not present any quantitative HA content data; it is purely a process flow diagram.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A schematic flow diagram illustrating the generation of a baculovirus expression vector carrying the HA gene via PCR-direct cloning and recombination, followed by cell seeding, infection, expansion in a bioreactor, harvest by disc-stack centrifugation, extraction, clarification by depth filtration, and downstream purification steps including capture, purification, DNA removal, and tangential flow filtration/formulation.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim: the figure only depicts the manufacturing process of recombinant HA vaccine production and contains no information on HA microgram amounts per strain for Flublok or standard-dose influenza vaccines.",
+    "confidence_notes": "The image does not present any quantitative HA content data; it is purely a process flow diagram."
+  }
+}

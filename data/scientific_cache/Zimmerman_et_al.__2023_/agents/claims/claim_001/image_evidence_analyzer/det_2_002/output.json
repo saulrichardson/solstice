@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_002.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/figure_p3_det_2_002.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_002",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A flowchart showing the derivation of a study cohort of adults (N=18,467) with exclusions leading to an analyzable cohort (N=14,590), then stratified into controls (N=12,837) and influenza cases (N=1,803), each further subdivided into recipients of RIV4, SD-IIV4, or unvaccinated groups with corresponding sample sizes. The figure presents cohort selection and group sizes but does not provide any information on hemagglutinin antigen content or immunogenicity comparisons; it does not support the claim. Note: No data on HA antigen amounts or immunogenicity endpoints are shown; the figure is purely a flowchart of participant numbers.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart showing the derivation of a study cohort of adults (N=18,467) with exclusions leading to an analyzable cohort (N=14,590), then stratified into controls (N=12,837) and influenza cases (N=1,803), each further subdivided into recipients of RIV4, SD-IIV4, or unvaccinated groups with corresponding sample sizes.",
+    "evidence_found": null,
+    "reasoning": "The figure presents cohort selection and group sizes but does not provide any information on hemagglutinin antigen content or immunogenicity comparisons; it does not support the claim.",
+    "confidence_notes": "No data on HA antigen amounts or immunogenicity endpoints are shown; the figure is purely a flowchart of participant numbers."
+  }
+}

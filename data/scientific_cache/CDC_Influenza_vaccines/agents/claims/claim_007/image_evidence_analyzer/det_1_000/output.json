@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_det_1_000.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p2_det_1_000.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "det_1_000",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A table listing influenza vaccine products, including Fluad Quadrivalent (egg-derived inactivated, Seqirus), Flublok Quadrivalent (recombinant HA vaccine, Sanofi Pasteur), and FluMist Quadrivalent (egg-based live attenuated, AstraZeneca), with columns for presentation volume and format, age indication, HA content or virus count per dose, administration route, and mercury content. The table provides only product names, dosages, age indications, and routes of administration without any immunogenicity data or comparative antibody response measurements, and therefore does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing influenza vaccine products, including Fluad Quadrivalent (egg-derived inactivated, Seqirus), Flublok Quadrivalent (recombinant HA vaccine, Sanofi Pasteur), and FluMist Quadrivalent (egg-based live attenuated, AstraZeneca), with columns for presentation volume and format, age indication, HA content or virus count per dose, administration route, and mercury content.",
+    "evidence_found": null,
+    "reasoning": "The table provides only product names, dosages, age indications, and routes of administration without any immunogenicity data or comparative antibody response measurements, and therefore does not support the claim.",
+    "confidence_notes": null
+  }
+}

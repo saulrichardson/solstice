@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_011.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_011",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table summarizing the percentages of solicited local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events in study participants receiving Flublok (N=2272) versus placebo (N=2231). The table presents safety data on adverse events for Flublok versus placebo and does not mention the production platform or recombinant HA expression in insect cells using a baculovirus expression vector system, and therefore does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table summarizing the percentages of solicited local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events in study participants receiving Flublok (N=2272) versus placebo (N=2231).",
+    "evidence_found": null,
+    "reasoning": "The table presents safety data on adverse events for Flublok versus placebo and does not mention the production platform or recombinant HA expression in insect cells using a baculovirus expression vector system, and therefore does not support the claim.",
+    "confidence_notes": null
+  }
+}

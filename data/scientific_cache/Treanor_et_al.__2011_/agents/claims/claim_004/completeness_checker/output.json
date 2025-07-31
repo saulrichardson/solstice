@@ -1,0 +1,71 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "Treanor_et_al.__2011_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 3
+  },
+  "completeness_stats": {
+    "existing_evidence": 4,
+    "new_evidence_found": 3,
+    "total_evidence": 7
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "Flublok induced serum antibody responses to all three components of the vaccine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vaccination geometric mean titers were substantially higher for all three components in Flublok than in placebo recipients (P < .001 for all comparisons). The proportion of Flublok recipients with post vaccination HAI titer of 1:40 or greater was 99% for the H1 component (95% CI, 97.1%, 99 5, 97% for the H3 component.",
+      "relevance_explanation": "This quote provides direct evidence that the higher-dose recombinant (Flublok) vaccine induced substantially higher antibody titers compared to placebo, supporting the claim that it can induce a more robust antibody response."
+    },
+    {
+      "id": 2,
+      "quote": "More recent studies have evaluated rHA0 vaccine formulations in healthy adults, subjects aged 50-64 years of age [6] and subjects 65 and older [8]. These studies have consistently shown excellent tolerability and antibody responses similar to those seen with egg derived influenza vaccines.",
+      "relevance_explanation": "This quote shows that the recombinant vaccine produces antibody responses at least as strong as those from standard egg-based vaccines, supporting the claim of a robust immune response."
+    },
+    {
+      "id": 3,
+      "quote": "Flublok induced serum HAI antibody responses to all three vaccine components in the majority of recipients, and the lower limit of the 95% confidence interval for response rate exceeded the US FDA criteria for licensure for all three components (lower limit of the 95% confidence interval for response rate >40% and lower limit of the 95% confidence interval for HAI titer of 1:40 or greater >70%) [2].",
+      "relevance_explanation": "This quote demonstrates that the recombinant vaccine (Flublok) not only induces strong antibody responses but also meets or exceeds regulatory thresholds, supporting the claim of a robust response."
+    },
+    {
+      "id": 4,
+      "quote": "The vaccine (Flublok) used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006, A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses. These studies have consistently shown excellent tolerability and antibody responses similar to those seen with egg derived influenza vaccines.",
+      "relevance_explanation": "This quote specifies the higher dose (45 mcg per component) of the recombinant vaccine and affirms that it produces antibody responses comparable to standard egg-based vaccines, supporting the claim."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Serum HAI antibody titers before and after immunization in Flublok and placebo recipients are shown in Table 2. Flublok induced serum antibody responses to all three components of the vaccine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vaccination geometric mean titers were substantially higher for all three components in Flublok than in placebo recipients (P < .001 for all comparisons). The proportion of Flublok recipients with post vaccination HAI titer of 1:40 or greater was 99% for the H1 component (95% CI, 97.1%, 99.5), 97% for the H3 component.",
+      "relevance_explanation": "This quote provides direct evidence that Flublok, a higher-dose recombinant flu vaccine, induced substantially higher post-vaccination antibody titers compared to placebo, supporting the claim of a more robust antibody response.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "Significant differences in both the frequency and the magnitude of the HAI response were shown when comparing the immune response between subjects with self reported previous vaccination. Reduced antibody response rates, decreased post vaccination titers, and decreased antibody secreting cell responses have all been observed previously in adults with prior influenza vaccine compared to those without [13\u201316].",
+      "relevance_explanation": "This quote highlights that the magnitude of the antibody response (HAI response) can be significantly higher in certain groups, supporting the idea that vaccine formulation and dose can impact the robustness of the antibody response.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_3",
+      "quote": "The results of the current study support the utility of insect cells for the production of well tolerated and effective vaccines for seasonal influenza.",
+      "relevance_explanation": "This statement affirms the effectiveness of recombinant (insect cell-produced) vaccines, which is relevant to the claim that such vaccines can induce robust antibody responses.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

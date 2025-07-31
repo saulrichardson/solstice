@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_017.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_017",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table comparing the percentages of local and systemic adverse events (pain, redness, fatigue, headache, etc.) reported for Flublok (N=1078) versus a standard trivalent inactivated influenza vaccine (IIV3, N=1081). Columns show rates of any, moderate, and severe events. does not support the claim: the table presents safety and adverse event data and contains no information about hemagglutinin antigen content per strain. Note: The image is clear, but it only includes adverse event rates and no dosage or HA content details.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing the percentages of local and systemic adverse events (pain, redness, fatigue, headache, etc.) reported for Flublok (N=1078) versus a standard trivalent inactivated influenza vaccine (IIV3, N=1081). Columns show rates of any, moderate, and severe events.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim: the table presents safety and adverse event data and contains no information about hemagglutinin antigen content per strain.",
+    "confidence_notes": "The image is clear, but it only includes adverse event rates and no dosage or HA content details."
+  }
+}
