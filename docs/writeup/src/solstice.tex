@@ -154,7 +154,6 @@ Solstice is built on three logical services, with the Gateway service running in
 \draw[arrow] (claims) -- (factcheck);
 \draw[arrow] (ingestion) -- (cache);
 \draw[arrow] (factcheck) -- (results);
-\draw[arrow] (ingestion.east) -- node[label, above] {Layout API} (gateway.west);
 \draw[arrow] (factcheck.west) -- node[label, above] {LLM Calls} (gateway.east);
 \draw[arrow] (gateway) -- (openai);
 \draw[arrow, dashed] (cache.east) -- (factcheck.south west);
