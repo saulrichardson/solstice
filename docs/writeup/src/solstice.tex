@@ -89,10 +89,10 @@ The fact-checking pipeline orchestrates multiple LLM calls in a specific sequenc
 \draw[arrow, dashed] (docs.north) -- ++(0,0.5) -| (image);
 
 % Labels
-\node[right=0.2cm of extract, font=\small] {GPT-4};
-\node[right=0.2cm of complete, font=\small] {GPT-4};
-\node[right=0.2cm of verify, font=\small] {GPT-4};
-\node[below=0.1cm of image, font=\small] {Vision};
+\node[right=0.2cm of extract, font=\small] {gpt-4.1};
+\node[right=0.2cm of complete, font=\small] {gpt-4.1};
+\node[right=0.2cm of verify, font=\small] {gpt-4.1};
+\node[below=0.1cm of image, font=\small] {o4-mini};
 
 \end{tikzpicture}
 \caption{LLM Pipeline: Sequential text evidence processing with parallel image analysis}
