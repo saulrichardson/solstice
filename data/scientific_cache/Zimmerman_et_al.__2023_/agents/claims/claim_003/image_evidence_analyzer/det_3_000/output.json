@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_000.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/figure_p4_det_3_000.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_000",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A flow diagram showing study cohort enrollment (N=18,467), exclusions, an analyzable cohort (N=15,203) split into controls and influenza cases, each further categorized by vaccine type (recombinant quadrivalent influenza vaccine [RIV4], standard-dose IIV4 [SD-IIV4], high-dose IIV4 plus adjuvanted IIV4 [HD-IIV4+Adj-IV], and unvaccinated) with participant counts. A partial table header presents total and subgroup numbers and P-values for demographic differences between RIV4 and SD-IIV4 recipients. The figure only depicts participant flow and subgroup counts without any immunogenicity or cross-protection data, and therefore does not support the claim Note: Figure appears cut off at table; no immunologic or efficacy outcomes shown",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flow diagram showing study cohort enrollment (N=18,467), exclusions, an analyzable cohort (N=15,203) split into controls and influenza cases, each further categorized by vaccine type (recombinant quadrivalent influenza vaccine [RIV4], standard-dose IIV4 [SD-IIV4], high-dose IIV4 plus adjuvanted IIV4 [HD-IIV4+Adj-IV], and unvaccinated) with participant counts. A partial table header presents total and subgroup numbers and P-values for demographic differences between RIV4 and SD-IIV4 recipients.",
+    "evidence_found": null,
+    "reasoning": "The figure only depicts participant flow and subgroup counts without any immunogenicity or cross-protection data, and therefore does not support the claim",
+    "confidence_notes": "Figure appears cut off at table; no immunologic or efficacy outcomes shown"
+  }
+}

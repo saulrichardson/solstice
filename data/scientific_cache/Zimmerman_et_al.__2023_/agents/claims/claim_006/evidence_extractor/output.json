@@ -1,0 +1,34 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": {
+    "pdf_name": "Zimmerman_et_al.__2023_",
+    "source_pdf": "data/clinical_files/Zimmerman et al. (2023).pdf",
+    "total_pages": 7,
+    "total_blocks": 106,
+    "total_characters": 22573
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Standard Dose Fluzone and FlucelVax. HD-IIV4 was High Dose Fluzone, RIV4 was Flublok and Adj-IV was FluAd.",
+      "relevance_explanation": "This quote explicitly identifies RIV4 as Flublok, establishing the vaccine under discussion and connecting it to the recombinant platform referenced in the claim."
+    },
+    {
+      "id": 2,
+      "quote": "c RIV4: Flublok. c SD-IIV4: Afluria, Fluarix, FluLaval, Standard Dose Fluzone and FlucelVax.",
+      "relevance_explanation": "This quote again clarifies that RIV4 refers to Flublok, which is necessary to link subsequent technical descriptions of RIV4 to Flublok specifically."
+    },
+    {
+      "id": 3,
+      "quote": "Two large studies have explored rVE of recombinant quadrivalent influenza vaccine (RIV4). The Medicare beneficiaries study [10] using retrospective data as described above, reported significant rVE of RIV4 vs. SD-IIV4) against influenza related hospital encounters. Secondly, a randomized controlled trial (RCT) found significant rVE of RIV4 compared with SD-IIV4 among adults 50 years old, but not for adults 65 years old [11].",
+      "relevance_explanation": "This quote directly refers to RIV4 as a recombinant quadrivalent influenza vaccine, supporting the claim that Flublok (RIV4) is produced using a recombinant technology platform."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

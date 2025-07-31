@@ -1,0 +1,49 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "Treanor_et_al.__2011_",
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "The vaccine (Flublok used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The recombinant HA protein is not cleaved in insect cells and is referred to as rHA0. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006, A/Wisconsin/67/2005, and B/Malaysia/2506/2004 viruses.",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 2 of the document, in the section describing the vaccine used in the study. The text states: 'The vaccine (Flublok used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The recombinant HA protein is not cleaved in insect cells and is referred to as rHA0. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006, A/Wisconsin/67/2005, and B/Malaysia/2506/2004 viruses.' This matches the quote to verify, with only minor formatting differences.. The quote directly states that the trivalent Flublok vaccine contained 45 mcg of hemagglutinin (HA) per strain. This explicitly supports the part of the claim regarding Flublok's HA content per strain. However, the quote does not mention the HA content of standard-dose influenza vaccines (15 mcg per strain), so it only directly supports the Flublok portion of the claim. Since the claim is a comparison and the quote provides one side of that comparison with explicit numbers, it genuinely supports the claim as far as the document allows.",
+      "presence_explanation": "The quote appears on page 2 of the document, in the section describing the vaccine used in the study. The text states: 'The vaccine (Flublok used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The recombinant HA protein is not cleaved in insect cells and is referred to as rHA0. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006, A/Wisconsin/67/2005, and B/Malaysia/2506/2004 viruses.' This matches the quote to verify, with only minor formatting differences.",
+      "support_explanation": "The quote directly states that the trivalent Flublok vaccine contained 45 mcg of hemagglutinin (HA) per strain. This explicitly supports the part of the claim regarding Flublok's HA content per strain. However, the quote does not mention the HA content of standard-dose influenza vaccines (15 mcg per strain), so it only directly supports the Flublok portion of the claim. Since the claim is a comparison and the quote provides one side of that comparison with explicit numbers, it genuinely supports the claim as far as the document allows.",
+      "original_relevance": "This quote explicitly states that Flublok contains 45 micrograms (mcg) of hemagglutinin (HA) per strain, directly supporting the claim regarding its HA content."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Subjects at 24 centers across the US were randomly assigned to receive a single injection of saline placebo (2304 subjects), or trivalent Flublok containing 45 mcg of each rHA0 component (2344 subjects).",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 1 of the document, though with minor formatting and OCR differences. The relevant passage is: 'Healthy adult subjects at 24 centers across the US were randomly assigned to receive a single injection of saline placebo (2304 subjects), or trivalent Flublok containing 45 mcg of each rHA0 component (2344 subjects).' This matches the factual content of the quote to verify.. The quote directly states that the trivalent Flublok vaccine contains 45 micrograms of each rHA0 (hemagglutinin) component. This explicitly supports the claim that Flublok contains 45 mcg of HA per strain. While the quote does not mention the 15 mcg per strain in standard-dose influenza vaccine, it fully substantiates the part of the claim regarding Flublok's HA content.",
+      "presence_explanation": "The quote appears on page 1 of the document, though with minor formatting and OCR differences. The relevant passage is: 'Healthy adult subjects at 24 centers across the US were randomly assigned to receive a single injection of saline placebo (2304 subjects), or trivalent Flublok containing 45 mcg of each rHA0 component (2344 subjects).' This matches the factual content of the quote to verify.",
+      "support_explanation": "The quote directly states that the trivalent Flublok vaccine contains 45 micrograms of each rHA0 (hemagglutinin) component. This explicitly supports the claim that Flublok contains 45 mcg of HA per strain. While the quote does not mention the 15 mcg per strain in standard-dose influenza vaccine, it fully substantiates the part of the claim regarding Flublok's HA content.",
+      "original_relevance": "This quote explicitly states that the trivalent Flublok vaccine contains 45 micrograms of each rHA0 (hemagglutinin) component, directly supporting the claim about the HA content per strain in Flublok."
+    }
+  ],
+  "verification_stats": {
+    "total_verified": 2
+  },
+  "image_evidence": [
+    {
+      "image_filename": "table_p5_det_4_014.png",
+      "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p5_det_4_014.png",
+      "image_type": "Table",
+      "page_number": 5,
+      "block_id": "det_4_014",
+      "claim_id": "claim_008",
+      "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+      "supports_claim": true,
+      "explanation": "A table listing seasonal influenza vaccines for the 2021\u20132022 season, including product name, vaccine type, route, approved age, and HA per dose for each vaccine. Evidence: Flublok Quadrivalent (RIV4) is shown with 45 mcg HA per strain (180 mcg total), whereas standard-dose egg-based and cell culture\u2013based IIV4 vaccines are listed with 15 mcg HA per strain (60 mcg total). The table explicitly shows that Flublok contains 45 mcg of HA per strain versus 15 mcg per strain in standard-dose influenza vaccines, which supports the claim.",
+      "model_used": "o4-mini",
+      "detailed_analysis": {
+        "supports_claim": true,
+        "image_description": "A table listing seasonal influenza vaccines for the 2021\u20132022 season, including product name, vaccine type, route, approved age, and HA per dose for each vaccine.",
+        "evidence_found": "Flublok Quadrivalent (RIV4) is shown with 45 mcg HA per strain (180 mcg total), whereas standard-dose egg-based and cell culture\u2013based IIV4 vaccines are listed with 15 mcg HA per strain (60 mcg total).",
+        "reasoning": "The table explicitly shows that Flublok contains 45 mcg of HA per strain versus 15 mcg per strain in standard-dose influenza vaccines, which supports the claim.",
+        "confidence_notes": null
+      }
+    }
+  ]
+}

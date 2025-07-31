@@ -1,0 +1,25 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "Arunachalam_et_al.__2021_",
+  "supporting_evidence": [
+    {
+      "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.",
+      "explanation": "The quote appears on page 2 of the document, with only minor formatting differences. The document states: 'The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.' This matches the quoted content in all relevant factual details.. The quote directly states that Flublok (RIV4) contains 45 micrograms (\u00b5g) of HA per dose from each of the four strains. This explicitly supports the part of the claim regarding Flublok's HA content. While the quote does not mention the 15 mcg per strain in standard-dose influenza vaccines, it does provide the specific number for Flublok, which is the main focus of the claim. Therefore, the quote genuinely supports the claim as stated."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 1,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 1,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 1
+    },
+    "rejected_count": 0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p9_det_8_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p9_det_8_005.png",
+  "image_type": "Figure",
+  "page_number": 9,
+  "block_id": "det_8_005",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Scatter and line plots showing the proportion of participants with \u22654-fold reduced hemagglutination inhibition (HI) titer to cell-based vaccine virus (egg/cell titer ratio) before and one month after repeat vaccination in Year 2, across seven different Year 1\u2013Year 2 vaccination arms, stratified by age groups 18\u201344 years (panel A) and 45\u201364 years (panel B) and virus strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. The figure presents immunogenicity data comparing HI titer responses for various vaccine regimens but does not mention Flublok, insect cell expression, or a baculovirus expression vector system, and thus does not support the claim. Note: Figure is focused on serologic outcomes and does not include production method or platform details.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Scatter and line plots showing the proportion of participants with \u22654-fold reduced hemagglutination inhibition (HI) titer to cell-based vaccine virus (egg/cell titer ratio) before and one month after repeat vaccination in Year 2, across seven different Year 1\u2013Year 2 vaccination arms, stratified by age groups 18\u201344 years (panel A) and 45\u201364 years (panel B) and virus strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata.",
+    "evidence_found": null,
+    "reasoning": "The figure presents immunogenicity data comparing HI titer responses for various vaccine regimens but does not mention Flublok, insect cell expression, or a baculovirus expression vector system, and thus does not support the claim.",
+    "confidence_notes": "Figure is focused on serologic outcomes and does not include production method or platform details."
+  }
+}

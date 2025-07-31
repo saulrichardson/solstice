@@ -1,0 +1,40 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "FlublokPI",
+  "verification_stats": {
+    "total_extracted": 3,
+    "verified": 2,
+    "rejected": 1,
+    "verification_rate": 0.6666666666666666
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
+      "supports_claim": true,
+      "explanation": "The quote appears in the document in the following passage: 'For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' The wording and factual content are semantically equivalent to the quote to verify, with only minor formatting differences (e.g., line breaks, punctuation). All numbers and strain names match.. The quote directly states that Flublok contains 45 micrograms (mcg) of hemagglutinin (HA) per strain for each of the three influenza virus strains, for a total of 135 mcg per 0.5 mL dose. This explicitly supports the claim that Flublok contains 45 mcg of HA per strain, which is three times the 15 mcg per strain in a standard-dose influenza vaccine (as referenced in the claim, though the standard-dose value is not stated in this quote, the Flublok value is directly confirmed).",
+      "presence_explanation": "The quote appears in the document in the following passage: 'For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' The wording and factual content are semantically equivalent to the quote to verify, with only minor formatting differences (e.g., line breaks, punctuation). All numbers and strain names match.",
+      "support_explanation": "The quote directly states that Flublok contains 45 micrograms (mcg) of hemagglutinin (HA) per strain for each of the three influenza virus strains, for a total of 135 mcg per 0.5 mL dose. This explicitly supports the claim that Flublok contains 45 mcg of HA per strain, which is three times the 15 mcg per strain in a standard-dose influenza vaccine (as referenced in the claim, though the standard-dose value is not stated in this quote, the Flublok value is directly confirmed).",
+      "original_relevance": "This quote explicitly states that Flublok contains 45 micrograms (mcg) of hemagglutinin (HA) per strain for each of the three influenza virus strains, directly supporting the claim about Flublok's HA content."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/2022 (H3 N2) and B/Austria/1359417/2021.",
+      "supports_claim": true,
+      "explanation": "The quote appears in the document, specifically in the following passage: 'Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' The factual content, numbers, and technical details are preserved and match the quote to be verified.. The quote directly states that Flublok contains 45 mcg of HA per strain for each of the three influenza virus strains, which matches the claim that Flublok contains 45 mcg of HA per strain. While the quote does not mention the standard-dose influenza vaccine's 15 mcg per strain, it provides explicit evidence for the Flublok part of the claim. Therefore, it genuinely supports the claim as far as Flublok's HA content per strain is concerned.",
+      "presence_explanation": "The quote appears in the document, specifically in the following passage: 'Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' The factual content, numbers, and technical details are preserved and match the quote to be verified.",
+      "support_explanation": "The quote directly states that Flublok contains 45 mcg of HA per strain for each of the three influenza virus strains, which matches the claim that Flublok contains 45 mcg of HA per strain. While the quote does not mention the standard-dose influenza vaccine's 15 mcg per strain, it provides explicit evidence for the Flublok part of the claim. Therefore, it genuinely supports the claim as far as Flublok's HA content per strain is concerned.",
+      "original_relevance": "This quote explicitly states that Flublok contains 45 mcg of HA per strain, directly supporting the claim about its HA content per strain."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": 2,
+      "quote": "Across three clinical trials (Studies 2 - 4, Tables 2 and 3) a total of 2050 adults age 50 years and older received Flublok and 2048 received a U.S.-licensed trivalent inactivated influenza vaccine (IIV3) comparator.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote establishes that the comparator for Flublok in the clinical trials was a standard-dose trivalent inactivated influenza vaccine (IIV3), which is known to contain 15 mcg of HA per strain, thus providing context for the comparison in the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

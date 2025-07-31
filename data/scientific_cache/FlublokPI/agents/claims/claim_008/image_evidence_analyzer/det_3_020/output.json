@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_020.png",
+  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_020.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_020",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table summarizing clinical trial efficacy results for Flublok versus comparator groups, showing number of cases, attack rates (per 100), vaccine efficacy percentages, and 95% confidence intervals for various endpoints (e.g., CDC-defined influenza-like illness, culture-confirmed influenza by strain), along with footnotes and references. The image presents efficacy data and attack rates but does not include any information on hemagglutinin content per strain; it does not support the claim about micrograms of HA in Flublok versus standard influenza vaccine. Note: No dosage or formulation details are shown in the table; content is limited to efficacy outcomes.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table summarizing clinical trial efficacy results for Flublok versus comparator groups, showing number of cases, attack rates (per 100), vaccine efficacy percentages, and 95% confidence intervals for various endpoints (e.g., CDC-defined influenza-like illness, culture-confirmed influenza by strain), along with footnotes and references.",
+    "evidence_found": null,
+    "reasoning": "The image presents efficacy data and attack rates but does not include any information on hemagglutinin content per strain; it does not support the claim about micrograms of HA in Flublok versus standard influenza vaccine.",
+    "confidence_notes": "No dosage or formulation details are shown in the table; content is limited to efficacy outcomes."
+  }
+}

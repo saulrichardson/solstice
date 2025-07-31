@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_004.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p5_det_4_004.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_004",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table reporting relative vaccine effectiveness (VE) percentages for Flublok (RIV4) versus standard-dose inactivated influenza vaccines (IIV4) overall and stratified by sex, age groups, high-risk condition status, and influenza season, with 95% confidence intervals. Footnotes define RIV4 as Flublok, list IIV4 vaccine brands, and describe the statistical models and propensity score methods used. The table provides only vaccine effectiveness data and statistical model footnotes; it contains no information on Flublok\u2019s production platform, recombinant HA expression, insect cells, or use of a baculovirus expression vector system, and therefore does not support the claim. Note: Based solely on the visible content, no manufacturing details are presented; table appears truncated below but footnotes make no mention of production methods.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table reporting relative vaccine effectiveness (VE) percentages for Flublok (RIV4) versus standard-dose inactivated influenza vaccines (IIV4) overall and stratified by sex, age groups, high-risk condition status, and influenza season, with 95% confidence intervals. Footnotes define RIV4 as Flublok, list IIV4 vaccine brands, and describe the statistical models and propensity score methods used.",
+    "evidence_found": null,
+    "reasoning": "The table provides only vaccine effectiveness data and statistical model footnotes; it contains no information on Flublok\u2019s production platform, recombinant HA expression, insect cells, or use of a baculovirus expression vector system, and therefore does not support the claim.",
+    "confidence_notes": "Based solely on the visible content, no manufacturing details are presented; table appears truncated below but footnotes make no mention of production methods."
+  }
+}

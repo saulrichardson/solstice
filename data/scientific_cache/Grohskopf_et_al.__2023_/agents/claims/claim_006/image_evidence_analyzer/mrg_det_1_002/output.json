@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_mrg_det_1_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/figure_p2_mrg_det_1_002.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "mrg_det_1_002",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "The image shows the back half of page 2 of an MMWR report, including a table of contents listing sections (e.g., Introduction, Methods, Recommendations) and a block of text describing ACIP recommendations and MMWR publication credits and editorial staff. The image does not support the claim because it contains only a table of contents and publication information from the MMWR report and does not mention Flublok or its production method using a baculovirus expression vector system in insect cells, so it does not support the claim. Note: No mention of vaccine production platforms or Flublok in the visible text; image quality is sufficient to see content but it is unrelated to the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "The image shows the back half of page 2 of an MMWR report, including a table of contents listing sections (e.g., Introduction, Methods, Recommendations) and a block of text describing ACIP recommendations and MMWR publication credits and editorial staff.",
+    "evidence_found": null,
+    "reasoning": "The image does not support the claim because it contains only a table of contents and publication information from the MMWR report and does not mention Flublok or its production method using a baculovirus expression vector system in insect cells, so it does not support the claim.",
+    "confidence_notes": "No mention of vaccine production platforms or Flublok in the visible text; image quality is sufficient to see content but it is unrelated to the claim."
+  }
+}

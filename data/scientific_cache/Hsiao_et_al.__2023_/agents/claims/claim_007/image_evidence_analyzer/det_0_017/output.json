@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_017.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p1_det_0_017.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_017",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Header of a journal article page showing the title \u201cRecombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age,\u201d a list of authors, the \u201cAbstract\u201d heading, and the beginning of the background text stating that trivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard-dose egg-based vaccines. does not support the claim because the image contains only the article title, authors, and introductory text without any data on antibody responses or comparisons of broadly cross-reactive antibody levels between BEVS-derived and egg-derived vaccines. Note: Image is a partial page header and abstract; no figures or immunogenicity results are visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Header of a journal article page showing the title \u201cRecombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age,\u201d a list of authors, the \u201cAbstract\u201d heading, and the beginning of the background text stating that trivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard-dose egg-based vaccines.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image contains only the article title, authors, and introductory text without any data on antibody responses or comparisons of broadly cross-reactive antibody levels between BEVS-derived and egg-derived vaccines.",
+    "confidence_notes": "Image is a partial page header and abstract; no figures or immunogenicity results are visible."
+  }
+}

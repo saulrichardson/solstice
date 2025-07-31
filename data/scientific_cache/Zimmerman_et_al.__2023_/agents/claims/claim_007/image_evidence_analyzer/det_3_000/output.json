@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_000.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/figure_p4_det_3_000.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_000",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Flow diagram of a study cohort (age \u226518 years) showing initial N=18,467, exclusions (n=3,264), analyzable cohort (N=15,203), and breakdown into controls (N=13,385) and influenza cases (N=1,868). Both controls and cases are subdivided by vaccine type: recombinant quadrivalent influenza vaccine (RIV4), standard-dose quadrivalent IIV4 (SD-IIV4), high-dose/adjuvanted IIV4 (HD-IIV4 + Adj-IIV), and unvaccinated. The figure presents participant flow and group sizes by vaccine type but contains no data on antibody levels or cross-reactivity. It does not support the claim regarding broadly cross-reactive antibody induction by BEVS-derived recombinant HA antigens compared with egg-derived vaccines. Note: None",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Flow diagram of a study cohort (age \u226518 years) showing initial N=18,467, exclusions (n=3,264), analyzable cohort (N=15,203), and breakdown into controls (N=13,385) and influenza cases (N=1,868). Both controls and cases are subdivided by vaccine type: recombinant quadrivalent influenza vaccine (RIV4), standard-dose quadrivalent IIV4 (SD-IIV4), high-dose/adjuvanted IIV4 (HD-IIV4 + Adj-IIV), and unvaccinated.",
+    "evidence_found": null,
+    "reasoning": "The figure presents participant flow and group sizes by vaccine type but contains no data on antibody levels or cross-reactivity. It does not support the claim regarding broadly cross-reactive antibody induction by BEVS-derived recombinant HA antigens compared with egg-derived vaccines.",
+    "confidence_notes": "None"
+  }
+}

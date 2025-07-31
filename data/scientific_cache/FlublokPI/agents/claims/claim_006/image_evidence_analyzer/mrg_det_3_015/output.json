@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": true,
+  "explanation": "Table listing influenza strains (H3N2 A/Victoria/361/2011, H1N1 A/California/07/2009, B/Wisconsin/01/2010), their propagation systems (Egg, MDCK cells, H3/H1/B rHA in Insect cells), HA content, and results of hemagglutination inhibition, neuraminidase inhibition, and plaque reduction neutralization assays with concentrations tested. Evidence: Under \u201cPropagation system,\u201d the recombinant HA (rHA) entries for H3, H1, and B strains are labeled as produced in Insect cells. The table shows that the HA antigens (rHA) are produced in insect cells, which supports the claim about Flublok\u2019s novel platform expressing recombinant HA in insect cells. Note: The table does not explicitly name baculovirus expression vector system (BEVS), but the designation of rHA production in insect cells implies BEVS use.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Table listing influenza strains (H3N2 A/Victoria/361/2011, H1N1 A/California/07/2009, B/Wisconsin/01/2010), their propagation systems (Egg, MDCK cells, H3/H1/B rHA in Insect cells), HA content, and results of hemagglutination inhibition, neuraminidase inhibition, and plaque reduction neutralization assays with concentrations tested.",
+    "evidence_found": "Under \u201cPropagation system,\u201d the recombinant HA (rHA) entries for H3, H1, and B strains are labeled as produced in Insect cells.",
+    "reasoning": "The table shows that the HA antigens (rHA) are produced in insect cells, which supports the claim about Flublok\u2019s novel platform expressing recombinant HA in insect cells.",
+    "confidence_notes": "The table does not explicitly name baculovirus expression vector system (BEVS), but the designation of rHA production in insect cells implies BEVS use."
+  }
+}

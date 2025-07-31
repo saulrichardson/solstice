@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_027.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p1_det_0_027.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_027",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A partial page showing text from a clinical vaccine study, including a brief Results summary (mentioning rates of local reactions, vaccine efficacy in FluBlok recipients) and an Introduction section discussing drawbacks of embryonated egg\u2013based influenza vaccine production, as well as trial identifiers and correspondence information. The image contains only general results on local reaction rates and vaccine efficacy, plus background on egg-based vaccine production. It does not present any data on recombinant HA antigens produced via BEVS or comparisons of broadly cross-reactive antibody levels against conserved HA regions between BEVS-derived and egg-derived vaccines, and therefore does not support the claim. Note: Limited page content; no figures or antibody data visible on this page.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A partial page showing text from a clinical vaccine study, including a brief Results summary (mentioning rates of local reactions, vaccine efficacy in FluBlok recipients) and an Introduction section discussing drawbacks of embryonated egg\u2013based influenza vaccine production, as well as trial identifiers and correspondence information.",
+    "evidence_found": null,
+    "reasoning": "The image contains only general results on local reaction rates and vaccine efficacy, plus background on egg-based vaccine production. It does not present any data on recombinant HA antigens produced via BEVS or comparisons of broadly cross-reactive antibody levels against conserved HA regions between BEVS-derived and egg-derived vaccines, and therefore does not support the claim.",
+    "confidence_notes": "Limited page content; no figures or antibody data visible on this page."
+  }
+}

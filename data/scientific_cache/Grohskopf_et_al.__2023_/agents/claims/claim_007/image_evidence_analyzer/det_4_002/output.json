@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p5_det_4_002.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_002",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A table listing U.S.-licensed influenza vaccines for the 2022\u201323 season, including standard-dose egg-based quadrivalent, cell culture\u2013based, high-dose egg-based, MF59-adjuvanted egg-based, recombinant HA (Flublok Quadrivalent), and live attenuated intranasal formulations. For each vaccine it shows presentation format, age indication, antigen amount per dose, administration route, and adjuvant status. The table only provides vaccine product characteristics and does not include any immunogenicity or antibody cross-reactivity data; therefore it does not support the claim Note: No immunogenicity or antibody comparison data are present in the image",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing U.S.-licensed influenza vaccines for the 2022\u201323 season, including standard-dose egg-based quadrivalent, cell culture\u2013based, high-dose egg-based, MF59-adjuvanted egg-based, recombinant HA (Flublok Quadrivalent), and live attenuated intranasal formulations. For each vaccine it shows presentation format, age indication, antigen amount per dose, administration route, and adjuvant status.",
+    "evidence_found": null,
+    "reasoning": "The table only provides vaccine product characteristics and does not include any immunogenicity or antibody cross-reactivity data; therefore it does not support the claim",
+    "confidence_notes": "No immunogenicity or antibody comparison data are present in the image"
+  }
+}

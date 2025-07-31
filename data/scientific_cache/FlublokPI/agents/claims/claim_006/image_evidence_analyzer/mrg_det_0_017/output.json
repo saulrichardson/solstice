@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A portion of the prescribing information for Flublok, including the table of contents listing sections 1\u201317, and visible text from sections on dosage, contraindications, warnings, and adverse reactions. The \u201cDescription\u201d heading (section 11) is listed in the table of contents but its content is not shown. The image does not support the claim because it contains only dosing, safety, and table of contents information and does not mention any novel production platform, insect cells, or a baculovirus expression vector system, so it does not support the claim. Note: The relevant production details would appear in section 11 (Description), which is not visible in this excerpt; image cutoff may limit assessment.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A portion of the prescribing information for Flublok, including the table of contents listing sections 1\u201317, and visible text from sections on dosage, contraindications, warnings, and adverse reactions. The \u201cDescription\u201d heading (section 11) is listed in the table of contents but its content is not shown.",
+    "evidence_found": null,
+    "reasoning": "The image does not support the claim because it contains only dosing, safety, and table of contents information and does not mention any novel production platform, insect cells, or a baculovirus expression vector system, so it does not support the claim.",
+    "confidence_notes": "The relevant production details would appear in section 11 (Description), which is not visible in this excerpt; image cutoff may limit assessment."
+  }
+}

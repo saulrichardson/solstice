@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": {
+    "pdf_name": "Grohskopf_et_al.__2023_",
+    "source_pdf": "data/clinical_files/Grohskopf et al. (2023).pdf",
+    "total_pages": 32,
+    "total_blocks": 295,
+    "total_characters": 110650
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+      "relevance_explanation": "This quote establishes that Flublok Quadrivalent (RIV4) is a recombinant HA antigen produced using the BEVS (baculovirus expression vector system) platform, and that it is distinct from egg-derived vaccines, which is necessary context for comparing immunogenicity."
+    },
+    {
+      "id": 2,
+      "quote": "HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3. Randomized efficacy studies comparing these vaccines with nonadjuvanted SD-IIVs against laboratory-confirmed influenza outcomes are few in number (66\u201368) and cover few influenza seasons. Observational studies, predominantly retrospective cohort studies using diagnostic code\u2013defined (rather than laboratory-confirmed) outcomes, are more numerous and include more influenza seasons (69\u201379). Certain observational studies have reported relative benefit for HD-IIV, RIV, and aIIV in comparison with nonadjuvanted SD-IIVs, particularly in prevention of influenza-associated hospitalizations.",
+      "relevance_explanation": "This quote provides evidence that recombinant influenza vaccines (RIV, which are BEVS-produced) have shown a relative benefit compared to standard-dose, egg-derived inactivated influenza vaccines (SD-IIVs), supporting the claim of improved immunogenicity or effectiveness."
+    },
+    {
+      "id": 3,
+      "quote": "A retrospective analysis of relative effectiveness of RIV4 versus SD-IIV4 against influenza-coded hospitalizations among Medicare beneficiaries during the 2019\u201320 season noted a relative effectiveness of 17% (95% CI: 9\u201324; certainty level: 3, low) (72).",
+      "relevance_explanation": "This quote provides direct comparative data showing that the BEVS-produced recombinant HA vaccine (RIV4) was more effective than the standard-dose, egg-derived vaccine (SD-IIV4), which supports the claim of superior immunogenicity or cross-reactivity."
+    },
+    {
+      "id": 4,
+      "quote": "A retrospective cohort analysis noted relative effectiveness of RIV4 compared with HD-IIV3 (relative effectiveness: 11%; 95% CI: 3\u201318; certainty level: 3, low) and with aIIV3 (relative effectiveness: 11%; 95% CI: 3\u201317; certainty level: 3, low); these data covered only a single influenza season.",
+      "relevance_explanation": "This quote shows that RIV4 (BEVS-produced recombinant HA) had higher relative effectiveness compared to other high-dose or adjuvanted vaccines, further supporting the claim of improved immunogenicity or cross-reactivity."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_det_3_003.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p4_det_3_003.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "det_3_003",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Tabular data showing relative vaccine effectiveness comparisons among different influenza vaccines (RIV4, SD-IIV4, HD-IIV4, Adj-IV), including percentages and confidence intervals, with footnotes defining RIV4 as Flublok and SD-IIV4 as various standard-dose vaccines. The table only lists Flublok as RIV4 but provides no information on its production method or use of insect cells/Baculo virus expression system, so it does not support the claim. Note: The view is partial and focused on effectiveness data; no production details are visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Tabular data showing relative vaccine effectiveness comparisons among different influenza vaccines (RIV4, SD-IIV4, HD-IIV4, Adj-IV), including percentages and confidence intervals, with footnotes defining RIV4 as Flublok and SD-IIV4 as various standard-dose vaccines.",
+    "evidence_found": null,
+    "reasoning": "The table only lists Flublok as RIV4 but provides no information on its production method or use of insect cells/Baculo virus expression system, so it does not support the claim.",
+    "confidence_notes": "The view is partial and focused on effectiveness data; no production details are visible."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_det_3_003.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p4_det_3_003.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "det_3_003",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A table presenting immunogenicity results (hemagglutination inhibition geometric mean titers and percent responders) pre- and post-vaccination for placebo and three Flublok (recombinant HA) cohorts (overall and by prior vaccination status) against three influenza strains, with sample sizes and 95% confidence intervals. does not support the claim: the table only shows strain-specific HI titers and response rates for Flublok compared with placebo and prior vaccination groups, with no data on broadly cross-reactive antibodies against conserved HA regions or comparison to egg-derived vaccines. Note: Table only reports strain-specific HI responses and lacks any measure of cross-reactivity or conserved epitope antibody levels; no direct comparison to egg-derived vaccine is provided.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table presenting immunogenicity results (hemagglutination inhibition geometric mean titers and percent responders) pre- and post-vaccination for placebo and three Flublok (recombinant HA) cohorts (overall and by prior vaccination status) against three influenza strains, with sample sizes and 95% confidence intervals.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim: the table only shows strain-specific HI titers and response rates for Flublok compared with placebo and prior vaccination groups, with no data on broadly cross-reactive antibodies against conserved HA regions or comparison to egg-derived vaccines.",
+    "confidence_notes": "Table only reports strain-specific HI responses and lacks any measure of cross-reactivity or conserved epitope antibody levels; no direct comparison to egg-derived vaccine is provided."
+  }
+}

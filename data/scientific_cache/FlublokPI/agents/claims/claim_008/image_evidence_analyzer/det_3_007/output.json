@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_007.png",
+  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_007.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_007",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table showing attack rates (n/N), number of subjects (n), attack rate percentages, relative risk (RR), and relative vaccine efficacy (rVE) with 95% confidence intervals, comparing Flublok Quadrivalent to a U.S.-licensed standard-dose influenza vaccine (Fluarix Quadrivalent). The image contains clinical outcome data (attack rates, RR, rVE) and does not present any information on hemagglutinin antigen content per strain. Therefore, it does not support the claim. Note: Limited to the visible portion of the figure; no HA dosage information is shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing attack rates (n/N), number of subjects (n), attack rate percentages, relative risk (RR), and relative vaccine efficacy (rVE) with 95% confidence intervals, comparing Flublok Quadrivalent to a U.S.-licensed standard-dose influenza vaccine (Fluarix Quadrivalent).",
+    "evidence_found": null,
+    "reasoning": "The image contains clinical outcome data (attack rates, RR, rVE) and does not present any information on hemagglutinin antigen content per strain. Therefore, it does not support the claim.",
+    "confidence_notes": "Limited to the visible portion of the figure; no HA dosage information is shown."
+  }
+}

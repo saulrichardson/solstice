@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p5_det_4_000.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p5_det_4_000.png",
+  "image_type": "Figure",
+  "page_number": 5,
+  "block_id": "det_4_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Four-panel graph comparing geometric mean fold rise of antibody titers at 1 month post-vaccination (panels A and B) and fold reduction at 6 months post-vaccination (panels C and D) among adults aged 18\u201344 years and 45\u201364 years. The data show results for four vaccines (Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4) against egg- and cell-propagated H3N2, H1N1, B/Victoria, and B/Yamagata strains with p-values for pairwise comparisons. The figure provides immunogenicity data for RIV4 versus egg- and cell-derived vaccines but does not include any information about the production platform, recombinant expression, insect cells, or baculovirus vector system; therefore it doesn't support the claim Note: Text is small but clear enough to see that no production method details are provided",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Four-panel graph comparing geometric mean fold rise of antibody titers at 1 month post-vaccination (panels A and B) and fold reduction at 6 months post-vaccination (panels C and D) among adults aged 18\u201344 years and 45\u201364 years. The data show results for four vaccines (Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4) against egg- and cell-propagated H3N2, H1N1, B/Victoria, and B/Yamagata strains with p-values for pairwise comparisons.",
+    "evidence_found": null,
+    "reasoning": "The figure provides immunogenicity data for RIV4 versus egg- and cell-derived vaccines but does not include any information about the production platform, recombinant expression, insect cells, or baculovirus vector system; therefore it doesn't support the claim",
+    "confidence_notes": "Text is small but clear enough to see that no production method details are provided"
+  }
+}

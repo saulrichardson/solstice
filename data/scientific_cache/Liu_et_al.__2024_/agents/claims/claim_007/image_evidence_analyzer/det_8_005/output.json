@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p9_det_8_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p9_det_8_005.png",
+  "image_type": "Figure",
+  "page_number": 9,
+  "block_id": "det_8_005",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "The figure consists of two panels (A and B) showing the proportion of participants in two age groups (18\u201344 years and 45\u201364 years) who had a \u22654-fold reduced hemagglutination inhibition (HI) titer to cell-grown vaccine virus (egg/cell titer ratio) before (Pre) and one month after (Post) repeat influenza vaccination. Data are shown for four influenza strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata) across seven different vaccination arms (cell-based IIV4, recombinant RIV4, egg-based IIV4, and combinations thereof, including Fluzone IIV4). Trend lines with p values indicate statistically significant changes in proportions between pre- and post-vaccination. The data shown pertain to changes in HI titers against cell- versus egg-propagated vaccine viruses across vaccine platforms and age groups; they do not provide evidence about recombinant HA antigens produced using BEVS or about induction of broadly cross-reactive antibodies to conserved HA regions. Therefore, this figure does not support the claim. Note: Figure is clear but focuses solely on HI titer ratios, not on BEVS-derived antigens or cross-reactive antibody specificity.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "The figure consists of two panels (A and B) showing the proportion of participants in two age groups (18\u201344 years and 45\u201364 years) who had a \u22654-fold reduced hemagglutination inhibition (HI) titer to cell-grown vaccine virus (egg/cell titer ratio) before (Pre) and one month after (Post) repeat influenza vaccination. Data are shown for four influenza strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata) across seven different vaccination arms (cell-based IIV4, recombinant RIV4, egg-based IIV4, and combinations thereof, including Fluzone IIV4). Trend lines with p values indicate statistically significant changes in proportions between pre- and post-vaccination.",
+    "evidence_found": null,
+    "reasoning": "The data shown pertain to changes in HI titers against cell- versus egg-propagated vaccine viruses across vaccine platforms and age groups; they do not provide evidence about recombinant HA antigens produced using BEVS or about induction of broadly cross-reactive antibodies to conserved HA regions. Therefore, this figure does not support the claim.",
+    "confidence_notes": "Figure is clear but focuses solely on HI titer ratios, not on BEVS-derived antigens or cross-reactive antibody specificity."
+  }
+}

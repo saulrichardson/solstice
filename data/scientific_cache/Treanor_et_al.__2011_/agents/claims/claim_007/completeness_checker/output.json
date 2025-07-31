@@ -1,0 +1,36 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": "Treanor_et_al.__2011_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": false,
+    "additional_count": 0
+  },
+  "completeness_stats": {
+    "existing_evidence": 3,
+    "new_evidence_found": 0,
+    "total_evidence": 3
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "In a recent study, recombinant HA antigens produced using the baculovirus expression system (Flublok) induced serum antibody responses to all three components of the vaccine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vaccination geometric mean titers were substantially higher for all three components in Flublok than in placebo recipients (P < .001 for all comparisons).",
+      "relevance_explanation": "This quote provides direct evidence that recombinant HA antigens produced using BEVS (Flublok) induce significantly higher antibody titers compared to placebo, supporting the claim of higher immunogenicity. While it does not compare directly to egg-derived vaccines in this sentence, it establishes the superior response of the BEVS product."
+    },
+    {
+      "id": 2,
+      "quote": "More recent studies have evaluated rHA0 vaccine formulations in healthy adults, subjects aged 50-64 years of age [6] and subjects 65 and older [7,8]. These studies have consistently shown excellent tolerability and antibody responses similar to those seen with egg derived influenza vaccines. Finally, in a preliminary field efficacy evaluation, recipients of the rHA0 vaccine had reduced rates of culture-positive CDC-defined influenza like illness compared with placebo recipients, although the study was small [9].",
+      "relevance_explanation": "This quote references studies showing that recombinant HA vaccines (rHA0) induce antibody responses at least similar to those of egg-derived vaccines, which is relevant to the claim about the effectiveness of BEVS-produced antigens."
+    },
+    {
+      "id": 3,
+      "quote": "The results of the current study support the utility of insect cells for the production of well tolerated and effective vaccines for seasonal influenza.",
+      "relevance_explanation": "This statement affirms the effectiveness of BEVS-produced recombinant HA vaccines, supporting the claim that they are a viable and effective alternative to egg-derived vaccines."
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

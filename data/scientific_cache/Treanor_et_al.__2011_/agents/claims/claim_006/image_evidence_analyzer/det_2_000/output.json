@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_000.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p3_det_2_000.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A flow chart of subject participation in a clinical study showing two safety population groups (n=2344 and n=2304) and an \u201cOthers (n=6)\u201d branch, with the figure caption \u201cFig. 1. Flow chart of subject participation in the study.\u201d The image depicts subject enrollment numbers and study flow and does not present any information about Flublok\u2019s production platform, recombinant HA expression, insect cells, or the use of a baculovirus expression vector system, therefore it does not support the claim. Note: None",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flow chart of subject participation in a clinical study showing two safety population groups (n=2344 and n=2304) and an \u201cOthers (n=6)\u201d branch, with the figure caption \u201cFig. 1. Flow chart of subject participation in the study.\u201d",
+    "evidence_found": null,
+    "reasoning": "The image depicts subject enrollment numbers and study flow and does not present any information about Flublok\u2019s production platform, recombinant HA expression, insect cells, or the use of a baculovirus expression vector system, therefore it does not support the claim.",
+    "confidence_notes": "None"
+  }
+}

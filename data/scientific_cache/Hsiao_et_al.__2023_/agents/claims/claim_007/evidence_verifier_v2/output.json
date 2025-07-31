@@ -1,0 +1,21 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": "Hsiao_et_al.__2023_",
+  "verification_stats": {
+    "total_extracted": 1,
+    "verified": 0,
+    "rejected": 1,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote directly states that the recombinant HA antigen in Flublok is present at a higher dose and is genetically identical to the selected strain, and that this increased level has been correlated with increased protective hemagglutinin antibodies, supporting the claim that BEVS-produced recombinant HA induces higher levels of broadly cross-reactive antibodies."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

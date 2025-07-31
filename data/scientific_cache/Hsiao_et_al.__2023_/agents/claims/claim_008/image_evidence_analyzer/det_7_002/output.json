@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p8_det_7_002.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/table_p8_det_7_002.png",
+  "image_type": "Table",
+  "page_number": 8,
+  "block_id": "det_7_002",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "Table showing primary and secondary clinical outcomes (e.g., PCR-confirmed influenza A and B, hospitalizations for PCR-confirmed influenza, community-acquired pneumonia, cardiorespiratory events) with case rates per 1000, unadjusted rate ratios, hazard ratios with 95% CIs, vaccine effectiveness percentages, and P values for two vaccine groups (Flublok and standard-dose). The table presents clinical outcome data comparing two vaccines but does not provide any information on hemagglutinin (HA) microgram content per strain, and thus does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table showing primary and secondary clinical outcomes (e.g., PCR-confirmed influenza A and B, hospitalizations for PCR-confirmed influenza, community-acquired pneumonia, cardiorespiratory events) with case rates per 1000, unadjusted rate ratios, hazard ratios with 95% CIs, vaccine effectiveness percentages, and P values for two vaccine groups (Flublok and standard-dose).",
+    "evidence_found": null,
+    "reasoning": "The table presents clinical outcome data comparing two vaccines but does not provide any information on hemagglutinin (HA) microgram content per strain, and thus does not support the claim.",
+    "confidence_notes": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p7_mrg_det_6_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p7_mrg_det_6_003.png",
+  "image_type": "Figure",
+  "page_number": 7,
+  "block_id": "mrg_det_6_003",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Multi-panel figure comparing immune responses to egg-adapted versus cell-grown vaccine viruses for four vaccine formulations (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) in two age groups (18\u201344 years: panels A and C; 45\u201364 years: panels B and D). Panels A and B show geometric mean ratios (egg/cell virus titer) at 1 month post-vaccination with 95% CIs for each vaccine component (A(H3N2), A(H1N1)pdm09, B/VIC, B/YAM). Panels C and D show pre- and post-vaccination proportions of subjects with \u22654-fold reduced titer to cell-grown virus. does not support the claim \u2013 the figure only presents comparisons of antibody titers against egg- versus cell-grown vaccine viruses and does not measure or demonstrate broadly cross-reactive antibodies against highly conserved HA regions. Note: No measurements of conserved-region cross-reactivity are provided; data focus solely on egg-adapted versus cell virus titer responses.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Multi-panel figure comparing immune responses to egg-adapted versus cell-grown vaccine viruses for four vaccine formulations (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) in two age groups (18\u201344 years: panels A and C; 45\u201364 years: panels B and D). Panels A and B show geometric mean ratios (egg/cell virus titer) at 1 month post-vaccination with 95% CIs for each vaccine component (A(H3N2), A(H1N1)pdm09, B/VIC, B/YAM). Panels C and D show pre- and post-vaccination proportions of subjects with \u22654-fold reduced titer to cell-grown virus.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim \u2013 the figure only presents comparisons of antibody titers against egg- versus cell-grown vaccine viruses and does not measure or demonstrate broadly cross-reactive antibodies against highly conserved HA regions.",
+    "confidence_notes": "No measurements of conserved-region cross-reactivity are provided; data focus solely on egg-adapted versus cell virus titer responses."
+  }
+}

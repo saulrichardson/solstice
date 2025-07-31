@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A two-panel schematic showing structural features of hemagglutinin (HA) proteins: panel a depicts native HA extracted from influenza virus as a heterodimer (HA1 and HA2 subunits) with complex N-linked glycans and cleaved fusion peptide, and panel b shows recombinant HA (rHA) produced in insect cells as an uncleaved HA0 monomer with simpler paucimannose glycans and an intact fusion-peptide loop. Labels indicate glycosylation types, disulfide bonds, membrane orientation, and peptide segments. The figure illustrates structural and glycosylation differences between native HA and recombinant HA but contains no data on HA microgram dosages per strain for Flublok or standard influenza vaccines and therefore does not support the claim. Note: Image focuses on molecular structure and glycosylation; dose information is absent.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-panel schematic showing structural features of hemagglutinin (HA) proteins: panel a depicts native HA extracted from influenza virus as a heterodimer (HA1 and HA2 subunits) with complex N-linked glycans and cleaved fusion peptide, and panel b shows recombinant HA (rHA) produced in insect cells as an uncleaved HA0 monomer with simpler paucimannose glycans and an intact fusion-peptide loop. Labels indicate glycosylation types, disulfide bonds, membrane orientation, and peptide segments.",
+    "evidence_found": null,
+    "reasoning": "The figure illustrates structural and glycosylation differences between native HA and recombinant HA but contains no data on HA microgram dosages per strain for Flublok or standard influenza vaccines and therefore does not support the claim.",
+    "confidence_notes": "Image focuses on molecular structure and glycosylation; dose information is absent."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_002.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p4_det_3_002.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_002",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A multipanel figure showing microneutralization (MN) or hemagglutination inhibition (HI) antibody titers (log2 scale) for four influenza strains (A(H3N2), H1N1pdm09, B/Victoria, B/Yamagata) at pre-vaccination (Day 0), 1 month, and 6 months post-vaccination across four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4). The figure includes geometric mean titers with 95% confidence intervals, p-values for group comparisons, individual data points, and a legend identifying the vaccine formulations. The figure presents immunogenicity data and sample sizes but does not specify hemagglutinin microgram content per strain, so it does not support the claim. Note: The image only contains antibody titer results and study demographics; dosage information (HA \u00b5g per strain) is not shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multipanel figure showing microneutralization (MN) or hemagglutination inhibition (HI) antibody titers (log2 scale) for four influenza strains (A(H3N2), H1N1pdm09, B/Victoria, B/Yamagata) at pre-vaccination (Day 0), 1 month, and 6 months post-vaccination across four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4). The figure includes geometric mean titers with 95% confidence intervals, p-values for group comparisons, individual data points, and a legend identifying the vaccine formulations.",
+    "evidence_found": null,
+    "reasoning": "The figure presents immunogenicity data and sample sizes but does not specify hemagglutinin microgram content per strain, so it does not support the claim.",
+    "confidence_notes": "The image only contains antibody titer results and study demographics; dosage information (HA \u00b5g per strain) is not shown."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/table_p3_det_2_003.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_003",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table listing egg-adapted amino acid substitutions in influenza vaccine viruses from various sources (egg-based candidate vaccine viruses, cell culture\u2013derived vaccine viruses) across different strains and years. does not support the claim because the table focuses on egg- and cell-based vaccine virus sequence adaptations and makes no reference to Flublok or production in insect cells using a baculovirus expression vector system. Note: No mention of Flublok or BEVS in the visible content; image quality sufficient for reading text.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing egg-adapted amino acid substitutions in influenza vaccine viruses from various sources (egg-based candidate vaccine viruses, cell culture\u2013derived vaccine viruses) across different strains and years.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table focuses on egg- and cell-based vaccine virus sequence adaptations and makes no reference to Flublok or production in insect cells using a baculovirus expression vector system.",
+    "confidence_notes": "No mention of Flublok or BEVS in the visible content; image quality sufficient for reading text."
+  }
+}

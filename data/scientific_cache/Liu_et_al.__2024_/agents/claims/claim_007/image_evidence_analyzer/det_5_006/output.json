@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p6_det_5_006.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p6_det_5_006.png",
+  "image_type": "Figure",
+  "page_number": 6,
+  "block_id": "det_5_006",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": true,
+  "explanation": "Multi-panel figure showing ELISA-measured antibody responses to influenza HA. Panel A: total HA binding titers (log2) for egg-derived and cell-derived HA antigens (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) at Day 0, 1 month, and 6 months post-vaccination for four vaccine groups (Fluzone IIV4, Fluad IIV4, ccIIV4, RIV4). Panel B: geometric mean ratio of egg/cell HA ELISA titers at 1 month. Panel C: H3 stalk and H1 stalk antibody titers (log2) at Day 0, 1 month, 6 months post-vaccination, with pairwise p-values. Panel D: geometric mean fold-rise (1 month/Day 0) of H3 and H1 stalk titers with 95% CI. Evidence: In Panel C, at 1 month post-vaccination RIV4 (recombinant HA) elicits significantly higher H3 stalk and H1 stalk ELISA titers than egg-based Fluzone IIV4 (p<0.0001). supports the claim because the RIV4 group, produced via BEVS, shows significantly greater induction of stalk-directed (highly conserved region) antibodies compared with the egg-derived vaccine group. Note: Some p-value text is small; group labels are inferred from color legend but overall differences are clear.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Multi-panel figure showing ELISA-measured antibody responses to influenza HA. Panel A: total HA binding titers (log2) for egg-derived and cell-derived HA antigens (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) at Day 0, 1 month, and 6 months post-vaccination for four vaccine groups (Fluzone IIV4, Fluad IIV4, ccIIV4, RIV4). Panel B: geometric mean ratio of egg/cell HA ELISA titers at 1 month. Panel C: H3 stalk and H1 stalk antibody titers (log2) at Day 0, 1 month, 6 months post-vaccination, with pairwise p-values. Panel D: geometric mean fold-rise (1 month/Day 0) of H3 and H1 stalk titers with 95% CI.",
+    "evidence_found": "In Panel C, at 1 month post-vaccination RIV4 (recombinant HA) elicits significantly higher H3 stalk and H1 stalk ELISA titers than egg-based Fluzone IIV4 (p<0.0001).",
+    "reasoning": "supports the claim because the RIV4 group, produced via BEVS, shows significantly greater induction of stalk-directed (highly conserved region) antibodies compared with the egg-derived vaccine group.",
+    "confidence_notes": "Some p-value text is small; group labels are inferred from color legend but overall differences are clear."
+  }
+}

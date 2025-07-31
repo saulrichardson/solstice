@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p8_mrg_det_7_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p8_mrg_det_7_005.png",
+  "image_type": "Figure",
+  "page_number": 8,
+  "block_id": "mrg_det_7_005",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Box-and-whisker plots showing hemagglutination inhibition (HI) titers (log2 scale) at Day 0 and 1 month post-vaccination for four influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata). Data are stratified by age group (18\u201344 and 45\u201364 years) and seven repeat vaccination arms comparing cell-based inactivated vaccine (ccIIV4), recombinant vaccine (RIV4), and egg-based inactivated vaccine (IIV4) in various sequences. Gray dots represent individual titers; geometric mean titers with 95% CIs are shown and p-values denote significant differences between arms. The figure presents HI titers for different vaccine regimens but does not measure broadly cross-reactive antibodies targeting highly conserved HA regions nor directly compare BEVS-derived recombinant HA to egg-derived vaccines in that context. Therefore it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Box-and-whisker plots showing hemagglutination inhibition (HI) titers (log2 scale) at Day 0 and 1 month post-vaccination for four influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata). Data are stratified by age group (18\u201344 and 45\u201364 years) and seven repeat vaccination arms comparing cell-based inactivated vaccine (ccIIV4), recombinant vaccine (RIV4), and egg-based inactivated vaccine (IIV4) in various sequences. Gray dots represent individual titers; geometric mean titers with 95% CIs are shown and p-values denote significant differences between arms.",
+    "evidence_found": null,
+    "reasoning": "The figure presents HI titers for different vaccine regimens but does not measure broadly cross-reactive antibodies targeting highly conserved HA regions nor directly compare BEVS-derived recombinant HA to egg-derived vaccines in that context. Therefore it does not support the claim.",
+    "confidence_notes": null
+  }
+}

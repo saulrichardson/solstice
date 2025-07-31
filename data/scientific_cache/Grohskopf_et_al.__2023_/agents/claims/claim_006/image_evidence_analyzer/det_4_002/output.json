@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p5_det_4_002.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_002",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Table listing characteristics of various influenza vaccines for the 2022\u201323 season, including vaccine name/manufacturer, presentations (e.g., 0.5-mL prefilled syringe), age indications, hemagglutinin (HA) content per dose, route of administration, and egg protein content. One row identifies Flublok Quadrivalent as a \u201crecombinant HA vaccine\u201d with 45 \u00b5g/0.5 mL via IM for adults \u226518 years. The table shows that Flublok is a recombinant HA vaccine but does not describe its production method or mention insect cells or a baculovirus expression vector system, and thus does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table listing characteristics of various influenza vaccines for the 2022\u201323 season, including vaccine name/manufacturer, presentations (e.g., 0.5-mL prefilled syringe), age indications, hemagglutinin (HA) content per dose, route of administration, and egg protein content. One row identifies Flublok Quadrivalent as a \u201crecombinant HA vaccine\u201d with 45 \u00b5g/0.5 mL via IM for adults \u226518 years.",
+    "evidence_found": null,
+    "reasoning": "The table shows that Flublok is a recombinant HA vaccine but does not describe its production method or mention insect cells or a baculovirus expression vector system, and thus does not support the claim.",
+    "confidence_notes": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_004.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/figure_p1_det_0_004.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_004",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "The image shows the header section of a journal article from Vaccine (Elsevier), including the journal title, Elsevier logo, journal homepage URL, and a partially visible article title beneath a thick rule line. The image only displays the journal header and article title fragment and does not mention Flublok, recombinant HA expression, insect cells, or BEVS; it does not support the claim. Note: Limited content visible; image appears to be only the page header without details on vaccine production methods.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "The image shows the header section of a journal article from Vaccine (Elsevier), including the journal title, Elsevier logo, journal homepage URL, and a partially visible article title beneath a thick rule line.",
+    "evidence_found": null,
+    "reasoning": "The image only displays the journal header and article title fragment and does not mention Flublok, recombinant HA expression, insect cells, or BEVS; it does not support the claim.",
+    "confidence_notes": "Limited content visible; image appears to be only the page header without details on vaccine production methods."
+  }
+}

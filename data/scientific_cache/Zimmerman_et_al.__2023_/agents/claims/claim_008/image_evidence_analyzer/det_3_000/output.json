@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_000.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/figure_p4_det_3_000.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_000",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "Flowchart showing the selection and breakdown of a study cohort of adults aged \u226518 years (N=18,467) into analyzable cohort (N=15,203), then into controls (N=13,385) and influenza cases (N=1,868), with subsequent classification of participants by vaccine type: recombinant quadrivalent influenza vaccine (RIV4), standard-dose quadrivalent influenza vaccine (SD-IIV4), high-dose quadrivalent influenza vaccine plus adjuvanted influenza vaccine (HD-IIV4 + Adj-IIV), and unvaccinated. The figure does not present any information about hemagglutinin (HA) microgram content per strain for Flublok (RIV4) or standard-dose vaccines, so it does not support the claim. Note: The image is clear and legible, but no dosing information is included; confidence in this determination is high.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Flowchart showing the selection and breakdown of a study cohort of adults aged \u226518 years (N=18,467) into analyzable cohort (N=15,203), then into controls (N=13,385) and influenza cases (N=1,868), with subsequent classification of participants by vaccine type: recombinant quadrivalent influenza vaccine (RIV4), standard-dose quadrivalent influenza vaccine (SD-IIV4), high-dose quadrivalent influenza vaccine plus adjuvanted influenza vaccine (HD-IIV4 + Adj-IIV), and unvaccinated.",
+    "evidence_found": null,
+    "reasoning": "The figure does not present any information about hemagglutinin (HA) microgram content per strain for Flublok (RIV4) or standard-dose vaccines, so it does not support the claim.",
+    "confidence_notes": "The image is clear and legible, but no dosing information is included; confidence in this determination is high."
+  }
+}

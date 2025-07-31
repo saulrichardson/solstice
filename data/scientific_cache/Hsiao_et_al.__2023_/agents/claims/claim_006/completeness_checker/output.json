@@ -1,0 +1,41 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": "Hsiao_et_al.__2023_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 1
+  },
+  "completeness_stats": {
+    "existing_evidence": 2,
+    "new_evidence_found": 1,
+    "total_evidence": 3
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain.",
+      "relevance_explanation": "This quote directly states that Flublok is manufactured without eggs and produces a recombinant hemagglutinin protein, supporting the claim that it uses a novel recombinant production platform."
+    },
+    {
+      "id": 2,
+      "quote": "Quadri valent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "relevance_explanation": "This quote highlights that Flublok is a recombinant vaccine, distinguishing its production method from traditional egg-based vaccines and supporting the claim of a novel platform."
+    },
+    {
+      "id": "comp_1",
+      "quote": "In traditional quadrivalent standard dose inactivated influenza vaccines (SD-IIV4), chicken eggs are used to manufacture the vaccine strain. The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain.",
+      "relevance_explanation": "This quote explicitly contrasts the traditional egg-based production method with the recombinant approach used for Flublok, directly supporting the claim that Flublok is produced using a novel recombinant platform.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

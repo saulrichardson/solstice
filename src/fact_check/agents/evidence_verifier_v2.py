@@ -257,7 +257,7 @@ FULL DOCUMENT:
                 "keep": keep,
                 "presence_explanation": result.found_explanation,
                 "support_explanation": result.support_explanation,
-                "explanation": f"{result.found_explanation}. {result.support_explanation}".strip(),
+                "explanation": result.support_explanation,
                 "reason": reason
             }
             

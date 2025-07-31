@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p7_det_6_000.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table excerpt showing contraindications and precautions for different types of influenza vaccines, including egg-based IIV and LAIV, cell culture\u2013based inactivated influenza vaccine (ccIIV), and recombinant influenza vaccines (RIV and RIV4), followed by a list of abbreviations defining ACIP, ccIIV, FDA, IIV, IIV4, LAIV, LAIV4, RIV, and RIV4. does not support the claim because the table only presents safety and allergy information for recombinant influenza vaccines and their abbreviations, without any details on production platform, insect cells, or baculovirus expression vector system. Note: Image only shows contraindication/precaution data and vaccine type definitions; production methods are not mentioned.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table excerpt showing contraindications and precautions for different types of influenza vaccines, including egg-based IIV and LAIV, cell culture\u2013based inactivated influenza vaccine (ccIIV), and recombinant influenza vaccines (RIV and RIV4), followed by a list of abbreviations defining ACIP, ccIIV, FDA, IIV, IIV4, LAIV, LAIV4, RIV, and RIV4.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table only presents safety and allergy information for recombinant influenza vaccines and their abbreviations, without any details on production platform, insect cells, or baculovirus expression vector system.",
+    "confidence_notes": "Image only shows contraindication/precaution data and vaccine type definitions; production methods are not mentioned."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p9_det_8_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p9_det_8_005.png",
+  "image_type": "Figure",
+  "page_number": 9,
+  "block_id": "det_8_005",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "Two panels of line and scatter plots showing the proportion of participants with \u22654-fold reduced hemagglutination inhibition (HI) titer to cell-grown vaccine virus (egg/cell titer ratio) pre- and 1-month post-vaccination across four influenza strains (A(H3N2), A(H1N1)pdm09, B/VIC, B/YAM) in two age groups (18\u201344 and 45\u201364 years) for seven repeat vaccination arms (various combinations of cell-culture and egg-based quadrivalent influenza vaccines, including IIV4 and RIV4, and Fluzone IIV4) This figure presents immunogenicity data (HI titer ratios) and does not report HA microgram content per strain, so it does not support the claim Note: The figure is clear and legible; it focuses on antibody responses and contains no information on HA dosage",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Two panels of line and scatter plots showing the proportion of participants with \u22654-fold reduced hemagglutination inhibition (HI) titer to cell-grown vaccine virus (egg/cell titer ratio) pre- and 1-month post-vaccination across four influenza strains (A(H3N2), A(H1N1)pdm09, B/VIC, B/YAM) in two age groups (18\u201344 and 45\u201364 years) for seven repeat vaccination arms (various combinations of cell-culture and egg-based quadrivalent influenza vaccines, including IIV4 and RIV4, and Fluzone IIV4)",
+    "evidence_found": null,
+    "reasoning": "This figure presents immunogenicity data (HI titer ratios) and does not report HA microgram content per strain, so it does not support the claim",
+    "confidence_notes": "The figure is clear and legible; it focuses on antibody responses and contains no information on HA dosage"
+  }
+}

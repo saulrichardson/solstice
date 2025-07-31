@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p7_mrg_det_6_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p7_mrg_det_6_003.png",
+  "image_type": "Figure",
+  "page_number": 7,
+  "block_id": "mrg_det_6_003",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Four-panel figure showing geometric mean ratios of egg-to-cell virus titers (panels A and B) and proportions of \u22654-fold reduced titers (panels C and D) pre- and 1-month post-vaccination, grouped by age (18\u201344 and 45\u201364 years) and vaccine type (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4). The figure presents antibody response data by vaccine type but does not describe production methods or mention insect cells, baculovirus, or recombinant HA expression, and therefore does not support the claim. Note: The image quality allows identification of vaccine groups but provides no methodological details on production platforms.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Four-panel figure showing geometric mean ratios of egg-to-cell virus titers (panels A and B) and proportions of \u22654-fold reduced titers (panels C and D) pre- and 1-month post-vaccination, grouped by age (18\u201344 and 45\u201364 years) and vaccine type (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4).",
+    "evidence_found": null,
+    "reasoning": "The figure presents antibody response data by vaccine type but does not describe production methods or mention insect cells, baculovirus, or recombinant HA expression, and therefore does not support the claim.",
+    "confidence_notes": "The image quality allows identification of vaccine groups but provides no methodological details on production platforms."
+  }
+}

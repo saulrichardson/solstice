@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_000.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p3_det_2_000.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_000",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Flow chart of subject participation in the study, showing numbers enrolled, excluded, and included in safety populations (n=2344 vs n=2304) for two study arms. The figure is a subject flow chart detailing enrollment and safety populations; it does not present any data on antibody responses or compare BEVS-derived HA with egg-derived vaccines, and thus does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Flow chart of subject participation in the study, showing numbers enrolled, excluded, and included in safety populations (n=2344 vs n=2304) for two study arms.",
+    "evidence_found": null,
+    "reasoning": "The figure is a subject flow chart detailing enrollment and safety populations; it does not present any data on antibody responses or compare BEVS-derived HA with egg-derived vaccines, and thus does not support the claim.",
+    "confidence_notes": null
+  }
+}

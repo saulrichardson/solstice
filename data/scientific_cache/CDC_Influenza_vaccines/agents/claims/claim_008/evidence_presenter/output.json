@@ -1,0 +1,38 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "CDC_Influenza_vaccines",
+  "supporting_evidence": [
+    {
+      "quote": "RIV4 (recombinant HA vaccine) 0.5-mL SDV \u226518 yrs 45 \u00b5g/0.5 mL IM",
+      "explanation": "The quote 'RIV4 (recombinant HA vaccine) 0.5-mL SDV \u226518 yrs 45 \u00b5g/0.5 mL IM' is present in the document, though it appears with some minor OCR artifacts. The key facts\u2014RIV4 (recombinant HA vaccine), 0.5-mL single-dose vial, for ages \u226518 years, and 45 \u00b5g/0.5 mL administered intramuscularly\u2014are all present and semantically equivalent to the quote provided.. The quote directly states that the recombinant HA vaccine (RIV4, which is Flublok) contains 45 micrograms of HA per 0.5 mL dose. This supports the claim that Flublok contains 45 mcg of HA per strain, as compared to the standard-dose influenza vaccine, which is also shown in the document as containing 15 mcg of HA per strain. The quote provides explicit, numerical support for the claim."
+    },
+    {
+      "quote": "Fluzone Quadrivalent (Sanofi Pasteur) 0.5-mL PFS \u22656 mos 15 \u00b5g/0.5 mL IM",
+      "explanation": "The quote 'Fluzone Quadrivalent (Sanofi Pasteur) 0.5-mL PFS \u22656 mos 15 \u00b5g/0.5 mL IM' is present in the document, though with minor formatting differences due to OCR artifacts. The document states: 'Flu zone Quad rival ent (San of i Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM', which is semantically and factually equivalent.. The quote directly states that the standard-dose influenza vaccine (Fluzone Quadrivalent) contains 15 micrograms of HA per 0.5 mL dose. This fact is necessary to support the claim's comparison between Flublok (45 mcg HA/strain) and standard-dose vaccines (15 mcg HA/strain). While the quote does not mention Flublok, it provides the standard-dose value, which is a required part of the claim."
+    },
+    {
+      "quote": "FluLaval Quad rival ent 0 5 mL PFS \u22656 mos 15 \u00b5g/0 5 mL",
+      "explanation": "The quote 'FluLaval Quad rival ent 0 5 mL PFS \u22656 mos 15 \u00b5g/0 5 mL' appears in the document, with only minor spacing differences due to OCR artifacts. The factual content, including the vaccine name (FluLaval Quadrivalent), dose (0.5 mL), age indication (\u22656 months), and HA content (15 \u00b5g/0.5 mL), is preserved.. The quote provides explicit information that a standard-dose influenza vaccine (FluLaval Quadrivalent) contains 15 micrograms of HA per 0.5 mL dose. This directly supports the claim's comparison of HA content per strain in standard-dose vaccines versus Flublok, by establishing the standard-dose value."
+    }
+  ],
+  "image_supporting_evidence": [
+    {
+      "image_filename": "figure_p2_det_1_000.png",
+      "explanation": "A table listing various influenza vaccines with columns for trade name (manufacturer), presentation, age indication, \u03bcg HA per strain per dose, route, and mercury content. Under 'RIV4 (recombinant HA vaccine)' it lists Flublok Quadrivalent (Sanofi Pasteur) as 0.5-mL PFS, \u226518 yrs, 45 \u03bcg/0.5 mL, IM. Under IIV4 it lists vaccines with 15 \u03bcg/0.5 mL. Evidence: Flublok Quadrivalent (Sanofi Pasteur): 45 \u03bcg/0.5 mL; IIV4 vaccines: 15 \u03bcg/0.5 mL per strain The table directly shows Flublok contains 45 \u03bcg HA per strain per dose versus 15 \u03bcg per strain in standard-dose IIV4 vaccines, which supports the claim"
+    }
+  ],
+  "evidence_summary": {
+    "total_text_evidence_found": 3,
+    "total_image_evidence_found": 1,
+    "total_evidence_found": 4,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 3
+    },
+    "rejected_count": 0
+  }
+}
