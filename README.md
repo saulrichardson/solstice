@@ -41,8 +41,14 @@ make up   # docker-compose up -d
 Done! You can now ingest documents and run a fact-checking study:
 
 ```bash
-# Convert PDFs → structured JSON
+# See all available commands
+python -m src.cli --help
+
+# Convert scientific PDFs → structured JSON
 python -m src.cli ingest
+
+# Process marketing materials (special layout handling)
+python -m src.cli ingest-marketing
 
 # Check all flu-vaccine claims
 python -m src.cli run-study
@@ -86,10 +92,13 @@ If problems persist, open an issue with the full error message and stack trace.
 ## 2. Run commands
 
 ```bash
-# Process PDFs into machine-readable documents
+# See all available commands and options
+python -m src.cli --help
+
+# Process scientific PDFs into machine-readable documents
 python -m src.cli ingest
 
-# Run the marketing document pipeline  
+# Process marketing materials with special layout handling
 python -m src.cli ingest-marketing
 
 # Fact-check claims against all cached documents
