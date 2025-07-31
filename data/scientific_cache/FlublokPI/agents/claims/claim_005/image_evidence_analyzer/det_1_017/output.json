@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_017.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_017",
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "supports_claim": false,
+  "explanation": "Partial view of a clinical trial table showing percentages of reported severe responses (e.g., <1%, 1%, 2%, 3%, 5%, 6%), followed by footnotes describing: results reporting conventions, inclusion of randomized subjects who provided data, and details for Studies 3 and 4 including reference to U.S.-licensed IIV3 and IIV4 vaccines and fever grading definitions. The image does not support the claim because it contains only partial safety data and footnotes for Studies 3 and 4 without naming Flublok (quadrivalent) or Fluarix (quadrivalent) or showing any direct comparison between those vaccines; therefore it does not support the claim. Note: Limited by incomplete view of table; vaccine names and trial details not visible in the provided snippet.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Partial view of a clinical trial table showing percentages of reported severe responses (e.g., <1%, 1%, 2%, 3%, 5%, 6%), followed by footnotes describing: results reporting conventions, inclusion of randomized subjects who provided data, and details for Studies 3 and 4 including reference to U.S.-licensed IIV3 and IIV4 vaccines and fever grading definitions.",
+    "evidence_found": null,
+    "reasoning": "The image does not support the claim because it contains only partial safety data and footnotes for Studies 3 and 4 without naming Flublok (quadrivalent) or Fluarix (quadrivalent) or showing any direct comparison between those vaccines; therefore it does not support the claim.",
+    "confidence_notes": "Limited by incomplete view of table; vaccine names and trial details not visible in the provided snippet."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "Grohskopf_et_al.__2023_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 2
+  },
+  "completeness_stats": {
+    "existing_evidence": 4,
+    "new_evidence_found": 2,
+    "total_evidence": 6
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "Higher dose vaccines include HD-IIV4 and RIV4, both of which contain a higher dose of HA antigen per virus than standard dose vaccines (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines).",
+      "relevance_explanation": "This quote establishes that the recombinant influenza vaccine (RIV4) is a higher-dose vaccine compared to standard-dose egg-based vaccines, which is necessary context for understanding differences in immune response."
+    },
+    {
+      "id": 2,
+      "quote": "HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3. Randomized efficacy studies comparing these vaccines with nonadjuvanted SD-IIVs against laboratory-confirmed influenza outcomes are few in number (66\u201368) and cover few influenza seasons. Observational studies, predominantly retrospective cohort studies using diagnostic code\u2013defined (rather than laboratory-confirmed) outcomes, are more numerous and include more influenza seasons (69\u201379). Certain observational studies have reported relative benefit for HD-IIV, RIV, and aIIV in comparison with nonadjuvanted SD-IIVs, particularly in prevention of influenza-associated hospitalizations.",
+      "relevance_explanation": "This quote directly states that recombinant (RIV) and high-dose (HD-IIV) vaccines have shown a relative benefit compared to standard-dose inactivated influenza vaccines (SD-IIVs), supporting the claim that higher-dose recombinant vaccines may induce a more robust antibody response."
+    },
+    {
+      "id": 3,
+      "quote": "Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with nonadjuvanted SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines). The adjuvanted vaccine contains 15 \u00b5g of HA per virus, similarly to nonadjuvanted SD-IIVs, but contains the adjuvant MF59.",
+      "relevance_explanation": "This quote clarifies that RIV4 is a higher-dose vaccine compared to standard-dose egg-based vaccines, which is a prerequisite for understanding its potential for a more robust antibody response."
+    },
+    {
+      "id": 4,
+      "quote": "Randomized studies comparing HD-IIV, RIV, and aIIV with nonadjuvanted SD-IIVs against laboratory-confirmed influenza illness are few in number and were conducted over few influenza seasons. HD-IIV3 was more effective than SD-IIV3 in prevention of polymerase chain reaction (PCR)- or culture-confirmed influenza-like illness (ILI) in a two-season randomized study conducted among 32,000 persons aged \u226565 years (relative efficacy: 24%; 95% CI: 10\u201336; certainty level: 1, high) (66). Two single-season randomized trials of RIV versus nonadjuvanted SD-IIV, one a comparison of RIV3 versus nonadjuvanted SD-IIV3 that assessed culture-confirmed ILI (67) and the other a comparison of RIV4 versus nonadjuvanted SD-IIV4 that examined PCR-confirmed ILI (68), did not demonstrate relative benefit of RIV among those aged \u226565 years (pooled relative efficacy: 18%; 95% CI: \u221217% to 43%; certainty level: 2, moderate). The larger of these two studies noted a relative benefit of RIV4 over nonadjuvanted SD-IIV4 in prevention of PCR-confirmed influenza among the full study population of persons aged \u226550 years (relative efficacy: 30%; 95% CI: 10\u201347) as well as in culture-confirmed ILI among those aged \u226565 years (relative efficacy: 42%; 95% CI: 9%\u201365%) (68).",
+      "relevance_explanation": "This quote provides direct evidence from randomized trials that higher-dose recombinant influenza vaccine (RIV4) induced a more robust immune response (as measured by efficacy against PCR-confirmed influenza) than standard-dose egg-based vaccines in certain populations, supporting the claim."
+    },
+    {
+      "id": "comp_1",
+      "quote": "A randomized clinical trial during the 2017-18 influenza season suggested that delaying IIV4 administration by 2 weeks in children receiving diphtheria and tetanus toxoids and a cellular pertussis (DTaP) and 13-valent pneumococcal conjugate vaccine (PCV13) did not result in a significant difference in immunogenicity to any of the antigens compared with coadministration. However, among children who received IIV4 and PCV13 concomitantly, the frequency of fever on days 0\u20131 postvaccination was higher than among those who received the vaccines separately (112).",
+      "relevance_explanation": "This quote provides evidence that immunogenicity (antibody response) was not reduced when IIV4 was coadministered with other vaccines, supporting the idea that higher-dose or recombinant vaccines can induce robust antibody responses. While not a direct comparison to standard-dose egg-based vaccines, it affirms the robust immunogenicity of these vaccines.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "A randomized immunogenicity and safety study conducted among 2,402 children aged 6 through 47 months (of whom 894 were aged 6 through 23 months). Children were randomized in a 2:1 ratio to receive either Flu cel vax Quadrivalent (0.5 mL/dose containing 15 \u00b5g HA per virus for all ages) or a licensed comparator egg-based IIV4 (0.25 mL/dose containing 7.5 \u00b5g HA per virus for those aged 6 through 35 months and 0.5 mL/dose containing 15 \u00b5g HA per virus for those aged 36 through 47 months) (130). Flu cel vax Quadrivalent met pre-specified immunogenicity criteria for all four viruses. No new safety signals were noted, and prevalence of solicited injection site and systemic reactions was similar between the two groups.",
+      "relevance_explanation": "This quote describes a randomized study comparing a cell-based vaccine to an egg-based vaccine, showing that the cell-based vaccine met immunogenicity criteria, which supports the idea that alternative (non-egg-based) vaccines can induce robust antibody responses. While not a direct comparison of higher-dose recombinant to standard-dose egg-based vaccines, it is relevant to the claim about robust antibody responses.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

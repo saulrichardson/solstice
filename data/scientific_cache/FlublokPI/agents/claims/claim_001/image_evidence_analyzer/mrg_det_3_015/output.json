@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table comparing seasonal influenza vaccines by type, showing vaccine names, manufacturing processes, and HA antigen content per strain. It lists recombinant HA vaccine (FluBlok) with 45 mcg HA per strain and standard-dose egg-based vaccines with 15 mcg per strain. Evidence: FluBlok contains 45 mcg HA antigen per strain versus 15 mcg per strain in standard-dose vaccines. The table confirms that FluBlok has three times the HA antigen content of standard-dose vaccines but does not present any data linking this increased antigen content to greater immunogenicity, and therefore does not support the claim in full. Note: The antigen content figures are clear, but the table lacks immunogenicity outcomes to substantiate the claimed link.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing seasonal influenza vaccines by type, showing vaccine names, manufacturing processes, and HA antigen content per strain. It lists recombinant HA vaccine (FluBlok) with 45 mcg HA per strain and standard-dose egg-based vaccines with 15 mcg per strain.",
+    "evidence_found": "FluBlok contains 45 mcg HA antigen per strain versus 15 mcg per strain in standard-dose vaccines.",
+    "reasoning": "The table confirms that FluBlok has three times the HA antigen content of standard-dose vaccines but does not present any data linking this increased antigen content to greater immunogenicity, and therefore does not support the claim in full.",
+    "confidence_notes": "The antigen content figures are clear, but the table lacks immunogenicity outcomes to substantiate the claimed link."
+  }
+}
