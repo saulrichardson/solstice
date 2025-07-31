@@ -56,9 +56,16 @@ The approved dose volume for Afluria Quad rival ent is 0.25 mL for children aged
 
 that any influenza vaccine (egg based or non egg based) that is otherwise appropriate for the recipient sage and health status can be used (see Persons with a History of Egg Allergy).
 
-Although a history of severe allergic reaction (e.g., anaphylaxis) to egg is a labeled contra indication to the use of egg based †
+Availability and characteristics of specific products and presentations might change or differ from what is described in this table and in the text of this report. Although a history of severe allergic reaction (e.g., anaphylaxis) to egg is a labeled contra indication to the use of egg based †
 
-Flublok Quad rival ent (San of i Pasteur) 0.5 mL PFS ≥18 yrs 45 µg/0.5 mL IM LAIV4 (egg based vaccine ) Flu mist Quad rival ent (Astr a zen eca) 0.2-mL pre filled single use intr a nasal sprayer 2 through 49 yrs 10 fluorescent focus units 0 2 mL NAS Abbreviations: ACIP = Advisory Committee on Immunization Practices; HA = hemagglutinin; IIV4 = in activated influenza vaccine, quad rival ent; IM = intramuscular; LAIV4 = live attenuated influenza vaccine, quad rival ent; MDV = multi dose vial; PFS = pre filled syringe; RIV4 = recombinant influenza vaccine, quad rival ent; SDV = single dose vial. * Manufacturer package inserts and updated CDC and ACIP guidance should be consulted for additional information concerning, but not limited to, indications, contra indications, warnings, and precautions. Package inserts for U.S.-licensed vaccines are available at https://www.fda.gov/vaccines-blood-biologics/vaccines/vaccines-licensed-use-united-states . † 6 5 7 5 
+* Manufacturer package inserts and updated CDC and ACIP guidance should be consulted for additional information concerning, but not limited to, indications, contra indications, warnings, and precautions. Package inserts for U.S.-licensed
+
+FluMist Quad rival ent (AstraZeneca) 0.2-mL pre filled single use intra nasal sprayer 2 through 49 yrs 10 fluorescent focus units 0 2 mL NAS Abbreviations: ACIP = Advisory Committee on Immunization Practices; HA = hemagglutinin; IIV4 = in activated influenza vaccine, quad rival ent; IM = intramuscular; LAIV4 = live attenuated influenza vaccine, quad rival ent; MDV = multi dose vial; PFS fill d RIV4 bfl d l SDV l d l 6 5 7 5
+
+4 (egg based vaccine )
+
+
+### (San of i Pasteur)
 
 
 ### Q (Seqirus) y µg RIV4 (recombinant HA vaccine)
@@ -68,6 +75,6 @@ Flublok Quad rival ent (San of i Pasteur) 0.5 mL PFS ≥18 yrs 45 µg/0.5 mL IM 
 
 ## Extraction Metadata
 
-- Text blocks: 13
+- Text blocks: 16
 
 - Figures/Tables: 3

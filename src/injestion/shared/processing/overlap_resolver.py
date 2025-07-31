@@ -16,6 +16,30 @@ from .box import Box
 logger = logging.getLogger(__name__)
 
 
+@dataclass
+class OverlapInfo:
+    """Immutable overlap information between two boxes.
+    
+    All fields are always present, eliminating KeyError risks.
+    For non-overlapping boxes, metrics are set to 0 or False.
+    """
+    # Basic overlap status
+    has_overlap: bool
+    overlap_area: float
+    
+    # Overlap ratios (0.0 to 1.0)
+    overlap_ratio_box1: float  # What fraction of box1 is overlapped
+    overlap_ratio_box2: float  # What fraction of box2 is overlapped
+    
+    # Derived metrics (always computed, 0 if no overlap)
+    iou: float  # Intersection over Union
+    ios: float  # Intersection over Smaller
+    
+    # Overlap classification
+    is_nested: bool    # One box contains the other (>95% overlap)
+    is_partial: bool   # Partial overlap (not nested)
+
+
 def expand_boxes(boxes: List[Box], padding: float = 10.0, page_width: float = None, page_height: float = None) -> List[Box]:
     """Expand all boxes by a fixed padding to prevent text cutoffs.
     
@@ -270,49 +294,56 @@ class OverlapStrategy(Enum):
     KEEP_BOTH = "keep_both"  # Keep both boxes without modification
 
 
-def get_overlap_info(box1: Box, box2: Box) -> Dict:
-    """Get detailed overlap information between two boxes."""
-    overlap_area = get_overlap_area(box1.bbox, box2.bbox)
-    if overlap_area == 0:
-        return {
-            "has_overlap": False,
-            "overlap_area": 0,
-            "overlap_ratio_box1": 0,
-            "overlap_ratio_box2": 0,
-            "is_nested": False,
-            "is_partial": False
-        }
+def get_overlap_info(box1: Box, box2: Box) -> OverlapInfo:
+    """Get detailed overlap information between two boxes.
     
+    This function ALWAYS returns a complete OverlapInfo object with all fields
+    populated, preventing KeyError issues downstream.
+    """
+    overlap_area = get_overlap_area(box1.bbox, box2.bbox)
     area1 = get_box_area(box1.bbox)
     area2 = get_box_area(box2.bbox)
     
+    # If no overlap, return zeros for all metrics
+    if overlap_area == 0:
+        return OverlapInfo(
+            has_overlap=False,
+            overlap_area=0.0,
+            overlap_ratio_box1=0.0,
+            overlap_ratio_box2=0.0,
+            iou=0.0,
+            ios=0.0,
+            is_nested=False,
+            is_partial=False
+        )
+    
+    # Calculate overlap ratios
     overlap_ratio1 = overlap_area / area1 if area1 > 0 else 0
     overlap_ratio2 = overlap_area / area2 if area2 > 0 else 0
     
-    # Check if one box is nested inside another
+    # Calculate IoU and IoS
+    iou = calculate_iou(box1.bbox, box2.bbox)
+    ios = max(overlap_ratio1, overlap_ratio2)  # Intersection over Smaller
+    
+    # Determine overlap type
     is_nested = overlap_ratio1 > 0.95 or overlap_ratio2 > 0.95
     
-    # Intersection-over-Union and over-smaller (IoS) help to judge mixed-type
-    # overlaps later on.
-    iou = calculate_iou(box1.bbox, box2.bbox)
-    intersection_over_smaller = max(overlap_ratio1, overlap_ratio2)
-
-    return {
-        "has_overlap": True,
-        "overlap_area": overlap_area,
-        "overlap_ratio_box1": overlap_ratio1,
-        "overlap_ratio_box2": overlap_ratio2,
-        "is_nested": is_nested,
-        "is_partial": not is_nested,
-        "iou": iou,
-        "ios": intersection_over_smaller,
-    }
+    return OverlapInfo(
+        has_overlap=True,
+        overlap_area=overlap_area,
+        overlap_ratio_box1=overlap_ratio1,
+        overlap_ratio_box2=overlap_ratio2,
+        iou=iou,
+        ios=ios,
+        is_nested=is_nested,
+        is_partial=not is_nested
+    )
 
 
 def determine_overlap_strategy(
     box1: Box, 
     box2: Box, 
-    overlap_info: Dict, 
+    overlap_info: OverlapInfo, 
     minor_overlap_threshold: float = 0.10,  # Balanced: not too strict, not too permissive
     same_type_merge_threshold: float = 0.85   # Match the text merging threshold
 ) -> OverlapStrategy:
@@ -350,7 +381,7 @@ def determine_overlap_strategy(
         # eliminates the visually overlapping duplicate without losing
         # information.
 
-        if overlap_info["ios"] > 0.9:
+        if overlap_info.ios > 0.9:
             return OverlapStrategy.MERGE
 
             # NOTE: We purposefully *do not* attempt to merge because both
@@ -370,8 +401,8 @@ def determine_overlap_strategy(
         # This preserves figure labels and captions
         if other_box.label in ["Text", "Title"]:
             # Check if the text box is mostly inside the figure
-            if (figure_box == box1 and overlap_info["overlap_ratio_box2"] > 0.8) or \
-               (figure_box == box2 and overlap_info["overlap_ratio_box1"] > 0.8):
+            if (figure_box == box1 and overlap_info.overlap_ratio_box2 > 0.8) or \
+               (figure_box == box2 and overlap_info.overlap_ratio_box1 > 0.8):
                 # Small text element inside figure - keep both
                 return OverlapStrategy.KEEP_BOTH
             # For partial overlaps with figures, keep both to preserve content
@@ -379,13 +410,13 @@ def determine_overlap_strategy(
                 return OverlapStrategy.KEEP_BOTH
     
     # Be more tolerant of small overlaps - increased threshold
-    if (overlap_info["overlap_ratio_box1"] < minor_overlap_threshold and 
-        overlap_info["overlap_ratio_box2"] < minor_overlap_threshold):
+    if (overlap_info.overlap_ratio_box1 < minor_overlap_threshold and 
+        overlap_info.overlap_ratio_box2 < minor_overlap_threshold):
         # Minor overlap - keep both boxes as-is
         return OverlapStrategy.KEEP_BOTH
     
     # If one box is nested inside another
-    if overlap_info["is_nested"]:
+    if overlap_info.is_nested:
         # Keep the outer box for containers (Figure, Table)
         if box1.label in ["Figure", "Table"] or box2.label in ["Figure", "Table"]:
             return OverlapStrategy.KEEP_HIGHER_WEIGHT
@@ -407,7 +438,7 @@ def determine_overlap_strategy(
     if box1.label == box2.label:
         # Determine intersection over the smaller box.
         intersection_ratio = max(
-            overlap_info["overlap_ratio_box1"], overlap_info["overlap_ratio_box2"]
+            overlap_info.overlap_ratio_box1, overlap_info.overlap_ratio_box2
         )
 
         # Merge only if the vast majority of the smaller box is
@@ -422,7 +453,7 @@ def determine_overlap_strategy(
             return OverlapStrategy.SHRINK_TO_NON_OVERLAP
     
     # For small overlaps between different types, keep both to preserve content
-    if overlap_info["overlap_ratio_box1"] < 0.3 and overlap_info["overlap_ratio_box2"] < 0.3:
+    if overlap_info.overlap_ratio_box1 < 0.3 and overlap_info.overlap_ratio_box2 < 0.3:
         return OverlapStrategy.KEEP_BOTH
 
     # ------------------------------------------------------------------
@@ -434,7 +465,7 @@ def determine_overlap_strategy(
 
     # Different labels → decide based on significance metrics.
     if box1.label != box2.label:
-        significant = overlap_info["iou"] >= 0.15 and overlap_info["ios"] >= 0.6
+        significant = overlap_info.iou >= 0.15 and overlap_info.ios >= 0.6
 
         if significant:
             return OverlapStrategy.KEEP_HIGHER_WEIGHT
@@ -581,7 +612,7 @@ def _handle_list_text_duplicates_with_nested(boxes: List[Box]) -> List[Box]:
                 (box2.label in ["List", "ListItem"] and box1.label in ["Text", "Paragraph"])):
                 
                 overlap_info = get_overlap_info(box1, box2)
-                if overlap_info["ios"] > 0.9:  # Nearly identical overlap
+                if overlap_info.ios > 0.9:  # Nearly identical overlap
                     list_text_pairs.append((i, j, box1, box2))
     
     if not list_text_pairs:
@@ -603,8 +634,8 @@ def _handle_list_text_duplicates_with_nested(boxes: List[Box]) -> List[Box]:
             overlap_with_2 = get_overlap_info(list_text_2, other_box)
             
             # If >80% of the small box is inside both List and Text
-            if (overlap_with_1["overlap_ratio_box2"] > 0.8 and 
-                overlap_with_2["overlap_ratio_box2"] > 0.8):
+            if (overlap_with_1.overlap_ratio_box2 > 0.8 and 
+                overlap_with_2.overlap_ratio_box2 > 0.8):
                 nested_in_both.append(k)
                 boxes_to_preserve.add(k)
         
@@ -699,7 +730,7 @@ def resolve_all_overlaps(boxes: List[Box],
                     continue
                 
                 overlap_info = get_overlap_info(box1, box2)
-                if not overlap_info["has_overlap"]:
+                if not overlap_info.has_overlap:
                     continue
                 
                 # Determine strategy
@@ -769,7 +800,7 @@ def resolve_all_overlaps(boxes: List[Box],
     for i, box1 in enumerate(working_boxes):
         for j, box2 in enumerate(working_boxes[i+1:], i+1):
             overlap_info = get_overlap_info(box1, box2)
-            if overlap_info["has_overlap"]:
+            if overlap_info.has_overlap:
                 # Skip warning for intentionally preserved overlaps
                 skip_warning = False
                 
@@ -779,13 +810,13 @@ def resolve_all_overlaps(boxes: List[Box],
                     other_box = box2 if box1.label == "Figure" else box1
                     if other_box.label in ["Text", "Title"]:
                         # Check if text is mostly inside figure
-                        if (figure_box == box1 and overlap_info["overlap_ratio_box2"] > 0.8) or \
-                           (figure_box == box2 and overlap_info["overlap_ratio_box1"] > 0.8):
+                        if (figure_box == box1 and overlap_info.overlap_ratio_box2 > 0.8) or \
+                           (figure_box == box2 and overlap_info.overlap_ratio_box1 > 0.8):
                             skip_warning = True
                 
                 # Minor overlaps
-                if (overlap_info["overlap_ratio_box1"] < 0.05 and 
-                    overlap_info["overlap_ratio_box2"] < 0.05):
+                if (overlap_info.overlap_ratio_box1 < 0.05 and 
+                    overlap_info.overlap_ratio_box2 < 0.05):
                     skip_warning = True
                 
                 if not skip_warning:

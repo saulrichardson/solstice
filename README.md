@@ -1,369 +1,134 @@
 # Solstice – Clinical Document Fact-Checking Pipeline
 
-## Overview
-
-Solstice is an LLM-powered pipeline for verifying medical and pharmaceutical claims against clinical documents. It processes PDFs using computer vision for layout detection, extracts structured text and images, then uses a series of LLM calls to find and verify evidence.
-
-### Key Features
-
-- **Sequential LLM Pipeline**: Multiple specialized prompts for evidence extraction, verification, and presentation
-- **Computer Vision Layout Detection**: Detectron2-based PDF parsing for accurate text extraction
-- **Multi-Modal Evidence**: Processes both text passages and visual elements (tables, figures, charts)
-- **Medical Text Processing**: Preserves drug names, dosages, and clinical terminology during extraction
-- **Structured Evidence Output**: JSON reports with source tracking and verification status
-
-## System Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                         Solstice System                         │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    │
-│  │   Ingestion  │    │   Gateway    │    │ Fact-Check   │    │
-│  │   Pipeline   │    │   Service    │    │   Pipeline   │    │
-│  │              │    │              │    │              │    │
-│  │ • PDF → Doc  │    │ • LLM Proxy  │    │ • Extract    │    │
-│  │ • Layout Det │    │ • Audit Log  │    │ • Verify     │    │
-│  │ • Text Ext   │    │ • Retry      │    │ • Present    │    │
-│  └──────┬───────┘    └──────┬───────┘    └──────┬───────┘    │
-│         │                    │                    │            │
-│         └────────────────────┴────────────────────┘            │
-│                              │                                  │
-│                     ┌────────▼────────┐                        │
-│                     │  Data Storage   │                        │
-│                     │                 │                        │
-│                     │ • Cache         │                        │
-│                     │ • Documents     │                        │
-│                     │ • Evidence      │                        │
-│                     └─────────────────┘                        │
-└─────────────────────────────────────────────────────────────────┘
-```
+Solstice is an LLM-powered pipeline for verifying medical claims against clinical documents. It uses computer vision for PDF layout detection, extracts structured content, and runs multi-step LLM verification.
 
 ## Quick Start
 
 ### Prerequisites
 
-- Python 3.11 or 3.12 (required for Detectron2 compatibility)
-- Docker (for running the Gateway service)
+- Python 3.11 or 3.12
+- Docker
 - OpenAI API key
-- Poppler (for PDF processing): `brew install poppler` (macOS) or `apt-get install poppler-utils` (Linux)
+- Poppler: `brew install poppler` (macOS) or `apt-get install poppler-utils` (Linux)
 
-### Installation
+### Setup
 
 ```bash
-# Clone the repository
+# Clone and enter directory
 git clone <repo-url> && cd solstice
 
-# Install Python dependencies
+# Install dependencies
 make install
-
-# Install Detectron2 for layout detection (optional but recommended)
 make install-detectron2
 
-# Create .env file with your OpenAI API key
+# Configure API key
 cp .env.example .env
 # Edit .env and add: OPENAI_API_KEY=sk-...
 
-# Start the Gateway service
+# Start gateway service
 make up
 ```
 
-### Running a Fact-Check Study
+### Running Pipelines
 
-1. **Prepare your documents** - Place PDFs in `data/clinical_files/`:
-   ```
-   data/clinical_files/
-   ├── FlublokPI.pdf
-   ├── CDC Influenza vaccines.pdf
-   └── Arunachalam et al. (2021).pdf
-   ```
+#### 1. Ingest PDFs
 
-2. **Process the PDFs** - Convert to structured documents:
-   ```bash
-   python -m src.cli ingest
-   ```
+Place PDFs in `data/clinical_files/` then run:
 
-3. **Create claims file** - Define claims to verify in `data/claims/example_claims.json`:
-   ```json
-   {
-     "study_name": "Flublok Efficacy Claims",
-     "claims": [
-       {
-         "id": "claim_001",
-         "text": "Flublok is FDA approved for adults 18 years and older"
-       },
-       {
-         "id": "claim_002", 
-         "text": "Flublok contains 3x the hemagglutinin content of standard flu vaccines"
-       }
-     ]
-   }
-   ```
+```bash
+# Process all PDFs
+python -m src.cli ingest
 
-4. **Run the fact-check**:
-   ```bash
-   python -m src.cli run-study \
-     --claims data/claims/example_claims.json \
-     --documents FlublokPI "CDC Influenza vaccines"
-   ```
-
-5. **View results** in `data/studies/Flublok_Efficacy_Claims/`
-
-## Module Documentation
-
-### 1. Ingestion Module (`src/injestion/`)
-
-The ingestion module converts PDFs into structured, analyzable documents.
-
-#### Features
-- **ML-Based Layout Detection**: Uses Detectron2 with PubLayNet/PrimaLayout models
-- **Intelligent Text Extraction**: PyMuPDF-based extraction with medical term preservation
-- **Multi-Pipeline Support**: Scientific (academic papers) and Marketing (visual materials) pipelines
-- **Quality Assurance**: Built-in visualization tools for debugging
-
-#### Usage
-```python
-from src.injestion.scientific import ingest_pdf
-
-# Process a scientific paper
-document = ingest_pdf("research_paper.pdf")
-print(f"Extracted {len(document.blocks)} text blocks")
-print(f"Found {len(document.figures)} figures/tables")
+# Process specific PDF with options
+python -m src.cli ingest --pdf "FlublokPI.pdf" --force
 ```
 
-#### Output Structure
-```
-data/cache/<PDF_NAME>/
-├── extracted/
-│   ├── content.json      # Structured document
-│   ├── document.md       # Markdown version
-│   └── figures/          # Extracted images
-├── visualizations/       # Layout detection results
-└── pages/               # Page rasterizations
-```
+#### 2. Run Fact-Check Study
 
-### 2. Gateway Module (`src/gateway/`)
-
-A lightweight proxy service for OpenAI's API with enterprise features.
-
-#### Features
-- **Unified LLM Interface**: All AI calls route through the gateway
-- **Audit Logging**: Write-only cache of all API responses
-- **Automatic Retry**: Exponential backoff for transient failures
-- **Provider Abstraction**: Extensible to support multiple LLM providers
-
-#### Architecture
-```
-Fact-Check Pipeline → Gateway → OpenAI API
-                         ↓
-                    Audit Logs
-```
-
-### 3. Fact-Check Module (`src/fact_check/`)
-
-The core fact-checking pipeline using sequential LLM calls.
-
-#### Pipeline Steps
-
-1. **EvidenceExtractor** → LLM prompt to find relevant passages in documents
-2. **EvidenceVerifierV2** → LLM verification of exact quotes and context
-3. **CompletenessChecker** → LLM check for missing evidence types
-4. **ImageEvidenceAnalyzer** → Vision LLM analysis of tables, figures, charts
-5. **EvidencePresenter** → Final LLM consolidation of evidence
-
-#### Configuration
-```python
-# Model selection in src/fact_check/config/agent_models.py
-AGENT_MODELS = {
-    "evidence_extractor": "gpt-4.1",
-    "image_evidence_analyzer": "o4-mini",  # Vision-capable
-    # ... other steps
+Create claims file `data/claims/example_claims.json`:
+```json
+{
+  "study_name": "Example Study",
+  "claims": [
+    {
+      "id": "claim_001",
+      "text": "Your claim text here"
+    }
+  ]
 }
 ```
 
-## Data Flow
+Run fact-check:
+```bash
+# Basic usage
+python -m src.cli run-study \
+  --claims data/claims/example_claims.json \
+  --documents FlublokPI
 
-```
-1. PDF Documents
-       ↓
-2. Ingestion Pipeline
-   - Layout detection
-   - Text extraction
-   - Figure extraction
-       ↓
-3. Structured Documents (JSON)
-       ↓
-4. Fact-Check Engine
-   - Evidence extraction
-   - Quote verification
-   - Image analysis
-       ↓
-5. Evidence Report
-   - Supporting evidence
-   - Contradicting evidence
-   - Confidence scores
+# Multiple documents
+python -m src.cli run-study \
+  --claims data/claims/example_claims.json \
+  --documents FlublokPI "CDC Influenza vaccines"
+
+# Custom output directory
+python -m src.cli run-study \
+  --claims data/claims/example_claims.json \
+  --documents FlublokPI \
+  --output-dir data/studies/my_study
 ```
 
-## Project Structure
+Results appear in `data/studies/<study_name>/`
 
-```
-solstice/
-├── src/
-│   ├── cli/              # Command-line interface
-│   ├── injestion/        # PDF processing pipelines
-│   │   ├── scientific/   # Academic paper pipeline
-│   │   ├── marketing/    # Marketing material pipeline
-│   │   └── shared/       # Common components
-│   ├── gateway/          # LLM proxy service
-│   │   ├── app/         # FastAPI application
-│   │   └── providers/   # LLM provider implementations
-│   ├── fact_check/       # LLM-based fact-checking
-│   │   ├── agents/      # Pipeline step implementations
-│   │   ├── orchestrators/ # Pipeline coordination
-│   │   └── config/      # Model configuration
-│   └── interfaces/       # Shared data models
-├── data/
-│   ├── clinical_files/   # Input PDFs
-│   ├── cache/           # Processed documents
-│   ├── claims/          # Claim definition files
-│   └── studies/         # Fact-check results
-├── docker/              # Docker configurations
-├── scripts/             # Setup and utility scripts
-└── docs/               # Additional documentation
-```
-
-## Advanced Usage
-
-### Custom Pipeline Configuration
-
-```python
-from src.injestion.shared.config import IngestionConfig
-from src.injestion.scientific import PDFIngestionPipeline
-
-config = IngestionConfig(
-    detection_dpi=600,              # Higher quality scanning
-    score_threshold=0.3,            # Stricter confidence
-    merge_threshold=0.5,            # Box merging threshold
-    expand_boxes=True,              # Prevent text cutoffs
-    box_padding=20                  # Pixels to expand
-)
-
-pipeline = PDFIngestionPipeline(config=config)
-document = pipeline.process_pdf("complex_layout.pdf")
-```
-
-### Batch Processing
-
-```python
-from src.fact_check.orchestrators import StudyOrchestrator
-
-study = StudyOrchestrator(
-    claims_file="data/claims/all_claims.json",
-    documents=["doc1", "doc2", "doc3"],
-    output_dir=Path("data/studies/comprehensive_study")
-)
-
-study.run()
-```
-
-### Marketing Pipeline
-
-For marketing materials with complex layouts:
+### Marketing Pipeline (Complex Layouts)
 
 ```bash
-python -m src.injestion.marketing.cli marketing_brochure.pdf \
-    --preset aggressive \
-    --box-padding 15.0
+python -m src.injestion.marketing.cli <pdf_path> \
+  --preset aggressive \
+  --box-padding 15.0
 ```
 
-## Environment Variables
+## Directory Structure
 
-```bash
-# Required
-OPENAI_API_KEY=sk-...              # Your OpenAI API key
-
-# Optional
-FILESYSTEM_CACHE_DIR=data/cache/gateway  # Gateway audit logs
-SOLSTICE_LOG_LEVEL=INFO                  # Logging level
-SOLSTICE_GATEWAY_PORT=8000               # Gateway port
-FACT_CHECK_MAX_WORKERS=10                # Parallel processing
+```
+data/
+├── clinical_files/    # Input PDFs
+├── cache/            # Processed documents
+├── claims/           # Claim JSON files
+└── studies/          # Fact-check results
 ```
 
-## Common Commands
+## Common Issues
 
+**Installation fails**: Use Python 3.11.9 via pyenv
 ```bash
-# System management
-make up                 # Start gateway service
-make down               # Stop services
-make logs               # View gateway logs
-make verify             # Check installation
-
-# Document processing
-python -m src.cli ingest              # Process all PDFs
-python -m src.cli ingest --help       # See options
-
-# Fact checking
-python -m src.cli run-study           # Run with defaults
-python -m src.cli run-study --help    # See all options
-
-# Development
-make lint               # Run code linters
-make format             # Format code
-make clean              # Clean cache files
-```
-
-## Troubleshooting
-
-### Installation Issues
-
-**Python version mismatch**:
-```bash
-# Install pyenv and Python 3.11.9
 pyenv install 3.11.9
 pyenv local 3.11.9
 ```
 
-**Detectron2 installation fails**:
+**Gateway errors**: Check logs
 ```bash
-# Use the robust installation script
-bash scripts/install-detectron2.sh
+make logs
 ```
 
-### Processing Issues
+**Poor text extraction**: Use higher DPI
+```bash
+python -m src.cli ingest --dpi 600
+```
 
-**Poor text extraction**:
-- Increase `detection_dpi` in config
-- Check PDF quality with visualization tools
-- Try marketing pipeline for complex layouts
+## Commands Reference
 
-**Missing figures/tables**:
-- Lower `score_threshold` for more detections
-- Check `data/cache/<PDF>/visualizations/` for detection results
+```bash
+# Service management
+make up        # Start gateway
+make down      # Stop gateway
+make logs      # View logs
 
-### Gateway Issues
+# Processing
+python -m src.cli ingest --help      # Ingestion options
+python -m src.cli run-study --help   # Fact-check options
 
-**Connection errors**:
-- Verify `OPENAI_API_KEY` is set correctly
-- Check gateway is running: `make logs`
-- Test health endpoint: `curl localhost:8000/health`
-
-## Contributing
-
-1. Use Python 3.11 or 3.12
-2. Install dev dependencies: `pip install -e ".[dev]"`
-3. Run formatters: `make format`
-4. Run linters: `make lint`
-5. Test changes thoroughly
-
-## Architecture Principles
-
-1. **Modularity**: Each component (ingestion, gateway, fact-check) is independent
-2. **Extensibility**: Easy to add new pipelines, agents, or LLM providers
-3. **Reliability**: Comprehensive error handling and retry logic
-4. **Observability**: Structured logging and audit trails throughout
-5. **Performance**: Parallel processing where possible, intelligent caching
-
-## License
-
-Proprietary - See LICENSE file for details
+# Development
+make lint      # Check code
+make format    # Format code
+make clean     # Clean cache
+```
