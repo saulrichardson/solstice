@@ -1,6 +1,6 @@
 # Solstice – Clinical Document Fact-Checking Pipeline
 
-Solstice is an **end-to-end research prototype** that takes a pile of PDF clinical documents (drug labels, journal articles, slide decks …) and a list of free-text claims, and returns a structured, evidence-backed verdict for every claim.
+Solstice is an **end-to-end research prototype** that takes a pile of PDF clinical documents and a list of free-text claims, and returns a structured, evidence-backed verdict for every claim.
 
 📄 **[Technical Writeup (PDF)](docs/writeup/solstice.pdf)** - Detailed system architecture, LLM pipeline, and implementation notes
 
