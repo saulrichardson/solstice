@@ -2,6 +2,59 @@
 
 Solstice is an LLM-powered pipeline for verifying medical claims against clinical documents. It uses computer vision for PDF layout detection, extracts structured content, and runs multi-step LLM verification.
 
+## System Overview
+
+### Core Services
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                         Solstice System                         │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    │
+│  │   Ingestion  │    │   Gateway    │    │ Fact-Check   │    │
+│  │   Pipeline   │    │   Service    │    │   Pipeline   │    │
+│  │              │    │              │    │              │    │
+│  │ • PDF → Doc  │    │ • LLM Proxy  │    │ • Extract    │    │
+│  │ • Layout Det │    │ • Audit Log  │    │ • Verify     │    │
+│  │ • Text Ext   │    │ • Retry      │    │ • Present    │    │
+│  └──────┬───────┘    └──────┬───────┘    └──────┬───────┘    │
+│         │                    │                    │            │
+│         └────────────────────┴────────────────────┘            │
+│                              │                                  │
+│                     ┌────────▼────────┐                        │
+│                     │  Data Storage   │                        │
+│                     │                 │                        │
+│                     │ • Cache         │                        │
+│                     │ • Documents     │                        │
+│                     │ • Evidence      │                        │
+│                     └─────────────────┘                        │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### LLM Pipeline Flow
+```
+1. PDF Documents
+       ↓
+2. Ingestion Pipeline
+   - Layout detection (Detectron2)
+   - Text extraction
+   - Figure/table extraction
+       ↓
+3. Structured Documents (JSON)
+       ↓
+4. Fact-Check Pipeline (via Gateway)
+   - Evidence extraction (LLM)
+   - Quote verification (LLM)  
+   - Completeness check (LLM)
+   - Image analysis (Vision LLM)
+   - Evidence presentation (LLM)
+       ↓
+5. Evidence Report
+   - Supporting evidence
+   - Contradicting evidence
+   - Confidence scores
+```
+
 ## Quick Start
 
 ### Prerequisites
@@ -60,21 +113,7 @@ Create claims file `data/claims/example_claims.json`:
 
 Run fact-check:
 ```bash
-# Basic usage
-python -m src.cli run-study \
-  --claims data/claims/example_claims.json \
-  --documents FlublokPI
-
-# Multiple documents
-python -m src.cli run-study \
-  --claims data/claims/example_claims.json \
-  --documents FlublokPI "CDC Influenza vaccines"
-
-# Custom output directory
-python -m src.cli run-study \
-  --claims data/claims/example_claims.json \
-  --documents FlublokPI \
-  --output-dir data/studies/my_study
+python -m src.cli run-study
 ```
 
 Results appear in `data/studies/<study_name>/`
