@@ -21,6 +21,27 @@ Solstice is an **end-to-end research prototype** that takes a pile of PDF clinic
 
 **Prerequisites:** Python 3.11–3.12, OpenAI API key, Poppler utils
 
+### Setting up Python with pyenv (Recommended)
+
+```bash
+# Install pyenv (if not already installed)
+curl https://pyenv.run | bash
+
+# Add to your shell profile (~/.bashrc, ~/.zshrc, etc.)
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Install Python 3.12
+pyenv install 3.12.0
+pyenv local 3.12.0  # Set for this project
+
+# Verify Python version
+python --version  # Should show Python 3.12.0
+```
+
+### Project Setup
+
 ```bash
 # Clone and setup
 git clone <repo-url> && cd solstice
