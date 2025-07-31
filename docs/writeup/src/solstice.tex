@@ -57,11 +57,11 @@ After all LLM processing completes, an Evidence Presenter step consolidates all 
 
 The fact-checking pipeline orchestrates multiple LLM calls in a specific sequence:
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \begin{tikzpicture}[
-    node distance=1.2cm,
-    box/.style={rectangle, draw, rounded corners, minimum width=3.5cm, minimum height=0.8cm, align=center, fill=blue!10},
+    node distance=1.5cm,
+    box/.style={rectangle, draw, rounded corners, minimum width=3.5cm, minimum height=1cm, align=center, fill=blue!10},
     arrow/.style={thick,->,>=stealth}
 ]
 
@@ -70,12 +70,12 @@ The fact-checking pipeline orchestrates multiple LLM calls in a specific sequenc
 \node[box, below=of claim] (extract) {Evidence\\Extractor};
 \node[box, below=of extract] (complete) {Completeness\\Checker};
 \node[box, below=of complete] (verify) {Evidence\\Verifier V2};
-\node[box, right=4cm of extract] (image) {Image Evidence\\Analyzer};
+\node[box, right=5cm of extract] (image) {Image Evidence\\Analyzer};
 \node[box, below=of verify] (present) {Evidence\\Presenter};
 \node[box, below=of present, fill=green!10] (result) {Consolidated\\Results};
 
 % Scientific docs
-\node[left=1.5cm of extract, align=center] (docs) {Scientific\\Documents};
+\node[left=2cm of extract, align=center] (docs) {Scientific\\Documents};
 
 % Arrows
 \draw[arrow] (claim) -- (extract);
@@ -83,16 +83,16 @@ The fact-checking pipeline orchestrates multiple LLM calls in a specific sequenc
 \draw[arrow] (complete) -- (verify);
 \draw[arrow] (verify) -- (present);
 \draw[arrow] (present) -- (result);
-\draw[arrow] (claim) -| (image);
-\draw[arrow] (image) |- (present);
+\draw[arrow] (claim.east) -- ++(1,0) |- (image);
+\draw[arrow] (image.south) -- ++(0,-3.5) -| (present);
 \draw[arrow, dashed] (docs) -- (extract);
-\draw[arrow, dashed] (docs) |- (image);
+\draw[arrow, dashed] (docs.north) -- ++(0,0.5) -| (image);
 
 % Labels
-\node[right=0.1cm of extract, font=\footnotesize] {GPT-4.1};
-\node[right=0.1cm of complete, font=\footnotesize] {GPT-4.1};
-\node[right=0.1cm of verify, font=\footnotesize] {GPT-4.1};
-\node[left=0.1cm of image, font=\footnotesize] {Vision};
+\node[right=0.2cm of extract, font=\small] {GPT-4};
+\node[right=0.2cm of complete, font=\small] {GPT-4};
+\node[right=0.2cm of verify, font=\small] {GPT-4};
+\node[below=0.1cm of image, font=\small] {Vision};
 
 \end{tikzpicture}
 \caption{LLM Pipeline: Sequential text evidence processing with parallel image analysis}
@@ -104,77 +104,76 @@ The fact-checking pipeline orchestrates multiple LLM calls in a specific sequenc
 
 Solstice is built on three core services that handle different aspects of the fact-checking pipeline:
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
+\resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[
-    node distance=2cm,
-    service/.style={rectangle, draw, rounded corners, minimum width=4cm, minimum height=2.5cm, align=center, fill=orange!10, thick},
-    component/.style={rectangle, draw, minimum width=3cm, minimum height=0.6cm, align=center, fill=gray!10},
-    api/.style={ellipse, draw, minimum width=2cm, minimum height=0.5cm, align=center, fill=yellow!10},
+    node distance=3cm,
+    service/.style={rectangle, draw, rounded corners, minimum width=4.5cm, minimum height=3cm, align=center, fill=orange!10, thick},
+    component/.style={rectangle, draw, minimum width=3.5cm, minimum height=0.8cm, align=center, fill=gray!10},
+    api/.style={ellipse, draw, minimum width=2.5cm, minimum height=0.8cm, align=center, fill=yellow!10},
     arrow/.style={thick,->,>=stealth},
     label/.style={font=\footnotesize}
 ]
 
 % Gateway Service
 \node[service] (gateway) {
-    \textbf{Gateway Service}\\
-    \vspace{0.3cm}
+    \textbf{Gateway Service}\\[0.3cm]
     HTTP API\\
     Rate Limiting\\
     Cost Tracking
 };
 
 % Ingestion Service
-\node[service, left=3cm of gateway] (ingestion) {
-    \textbf{Ingestion Service}\\
-    \vspace{0.3cm}
+\node[service, left=4cm of gateway] (ingestion) {
+    \textbf{Ingestion Service}\\[0.3cm]
     PDF Processing\\
     Layout Detection\\
     Text/Figure Extraction
 };
 
 % Fact Check Service
-\node[service, right=3cm of gateway] (factcheck) {
-    \textbf{Fact Check Service}\\
-    \vspace{0.3cm}
+\node[service, right=4cm of gateway] (factcheck) {
+    \textbf{Fact Check Service}\\[0.3cm]
     Claim Processing\\
     Evidence Analysis\\
     Result Consolidation
 };
 
 % External APIs
-\node[api, above=1.5cm of gateway] (openai) {OpenAI\\API};
-\node[api, above=0.5cm of openai] (anthropic) {Anthropic\\API};
+\node[api, above=2cm of gateway] (openai) {OpenAI API};
+\node[api, above=1cm of openai] (anthropic) {Anthropic API};
 
 % Data stores
-\node[component, below=1.5cm of ingestion] (cache) {Document\\Cache};
-\node[component, below=1.5cm of factcheck] (results) {Study\\Results};
+\node[component, below=2cm of ingestion] (cache) {Document Cache};
+\node[component, below=2cm of factcheck] (results) {Study Results};
 
 % User entry points
-\node[above=2.5cm of ingestion, label] (pdfin) {PDF Input};
-\node[above=2.5cm of factcheck, label] (claims) {Claims Input};
+\node[above=3.5cm of ingestion, label] (pdfin) {PDF Input};
+\node[above=3.5cm of factcheck, label] (claims) {Claims Input};
 
 % Arrows
 \draw[arrow] (pdfin) -- (ingestion);
 \draw[arrow] (claims) -- (factcheck);
 \draw[arrow] (ingestion) -- (cache);
 \draw[arrow] (factcheck) -- (results);
-\draw[arrow] (ingestion) -- node[label, above] {Layout API} (gateway);
-\draw[arrow] (factcheck) -- node[label, above] {LLM Calls} (gateway);
+\draw[arrow] (ingestion.east) -- node[label, above] {Layout API} (gateway.west);
+\draw[arrow] (factcheck.west) -- node[label, above] {LLM Calls} (gateway.east);
 \draw[arrow] (gateway) -- (openai);
 \draw[arrow] (gateway) -- (anthropic);
-\draw[arrow, dashed] (cache) -- (factcheck);
+\draw[arrow, dashed] (cache.east) -- (factcheck.south west);
 
 % Docker container boxes
-\draw[thick, dashed, gray] (-6.5,-2.5) rectangle (-2,1);
-\draw[thick, dashed, gray] (-2.2,-2.5) rectangle (2.2,1);
-\draw[thick, dashed, gray] (2.5,-2.5) rectangle (6.5,1);
+\draw[thick, dashed, gray] (-7.5,-3) rectangle (-1.5,2);
+\draw[thick, dashed, gray] (-2.5,-3) rectangle (2.5,2);
+\draw[thick, dashed, gray] (1.5,-3) rectangle (7.5,2);
 
-\node at (-4.25,-2.2) [label, gray] {Docker};
-\node at (0,-2.2) [label, gray] {Docker};
-\node at (4.5,-2.2) [label, gray] {Docker};
+\node at (-4.5,-2.7) [label, gray] {Docker};
+\node at (0,-2.7) [label, gray] {Docker};
+\node at (4.5,-2.7) [label, gray] {Docker};
 
 \end{tikzpicture}
+}
 \caption{Core Services Architecture: Three containerized services with Gateway as the central LLM interface}
 \end{figure}
 
