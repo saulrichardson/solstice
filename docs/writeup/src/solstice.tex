@@ -98,40 +98,22 @@ The system uses asynchronous Python with strategic architectural decisions:
 Solstice writes intermediate and final results to disk in human-readable form. This allows users to inspect the system, debug individual stages, or create visualisations without rerunning the full pipeline.
 
 \paragraph{1. Fact-Checking Study Results}
-After you run a fact-checking study (\texttt{python -m src.cli run-study}), the system creates a comprehensive directory structure containing all results:
+After you run a fact-checking study (\texttt{python -m src.cli run-study}), the main results file containing all claims with their supporting text, tables, and figures is located at:
 
 \begin{verbatim}
-data/studies/<study_name>/
-|-- study_report.json              # High-level summary across all claims
-|-- claim_1/
-|   |-- evidence_report.json       # Final formatted evidence report
-|   |-- agent_outputs/
-|   |   |-- evidence_extractor/
-|   |   |   |-- output.json        # Raw extracted quotes
-|   |   |   `-- metadata.json      # Processing metadata
-|   |   |-- completeness_checker/
-|   |   |   |-- output.json        # Additional quotes found
-|   |   |   `-- metadata.json      
-|   |   |-- evidence_verifier_v2/
-|   |   |   |-- output.json        # Verification results
-|   |   |   `-- metadata.json      
-|   |   |-- image_evidence_analyzer/
-|   |   |   |-- output.json        # Visual evidence analysis
-|   |   |   `-- metadata.json      
-|   |   `-- evidence_presenter/
-|   |       |-- output.json        # Final consolidated report
-|   |       `-- metadata.json      
-|   `-- logs/
-|       `-- orchestration.log      # Detailed processing logs
-|-- claim_2/
-|   |-- evidence_report.json
-|   |-- agent_outputs/
-|   |   |-- ...                    # Same structure as claim_1
-|   `-- logs/
-`-- ...                            # Additional claims follow same pattern
+data/studies/consolidated_results.json
 \end{verbatim}
 
-The \texttt{evidence\_report.json} file contains the final, formatted evidence ready for consumption by any UI or downstream system. Each agent's raw output is preserved in \texttt{agent\_outputs/} for debugging and analysis.
+This single JSON file contains all the verified evidence for each claim, including:
+\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
+\item The original claim text
+\item Supporting and refuting text quotes from documents
+\item References to relevant tables with extracted data
+\item References to figures with visual evidence
+\item Verification status and confidence scores
+\end{itemize}
+
+For developers who need to debug or analyze individual processing steps, the system also maintains a detailed directory structure under \texttt{data/studies/<study\_name>/} with intermediate outputs from each agent, but most users will only need the consolidated results file.
 
 \paragraph{2. Marketing Material Analysis}
 Marketing PDFs undergo specialized processing with enhanced visualization extraction. The results are stored in:
