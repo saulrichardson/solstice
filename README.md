@@ -104,27 +104,27 @@ Input objects
 • Claim list  → e.g. "Flublok is FDA approved for adults 18+".  
 • Document set → every FAISS index in `data/scientific_cache/*`.
 
-Pipeline orchestrator (`src.fact_check.orchestrators.claim_orchestrator`) executes **five specialised LLM agents** per claim:
+Pipeline orchestrator (`src.fact_check.orchestrators.claim_orchestrator`) executes these agents per claim:
 
 1. Evidence Extractor (`agents/evidence_extractor.py`)
    • Semantic search over all indexes to retrieve top-k text chunks (+ figures captions).  
-   • Uses GPT-4 to filter for relevance & returns a ranked list.
+   • Uses LLM to filter for relevance & returns a ranked list.
 
-2. Image Analyzer (`agents/image_analyzer.py`)
-   • If the extractor flagged an image region, sends the PNG crop to the OpenAI Vision model.  
-   • Produces a natural-language caption we can later cite.
+2. Completeness Checker (`agents/completeness_checker.py`)
+   • Ensures no critical evidence type was missed (RCT vs observational, safety vs efficacy).  
+   • Merges evidence from multiple sources to ensure comprehensive coverage.
 
-3. Evidence Verifier (`agents/evidence_verifier.py`)
-   • Chain-of-thought prompt: "Does the passage logically support / refute the claim?  Answer Y/N and explain."  
-   • Adds a probability score calibrated with temperature scaling.
+3. Evidence Verifier (`agents/evidence_verifier_v2.py`)
+   • Verifies that extracted quotes exist in the document.  
+   • Confirms quotes genuinely support the claim using chain-of-thought reasoning.
 
-4. Completeness Check (`agents/completeness_check.py`)
-   • Ensures no *critical* evidence type was missed (RCT vs observational, safety vs efficacy …).  
-   • May trigger a second retrieval pass if gaps are detected.
+4. Image Evidence Analyzer (`agents/image_evidence_analyzer.py`)
+   • Analyzes all images in the document after text pipeline completes.  
+   • Uses Vision model to determine if images support the claim.
 
 5. Evidence Presenter (`agents/evidence_presenter.py`)
-   • Converts everything into a compact JSON schema + a markdown snippet for UI use.  
-   • Adds clickable PDF coordinate links when run inside the Streamlit demo.
+   • Combines all verified text and image evidence.  
+   • Converts into compact JSON schema + markdown for presentation.
 
 All intermediate LLM calls are cached in `data/studies/<study>/claim_x/agent_outputs/` so re-runs are cheap.
 
@@ -134,8 +134,7 @@ Step 3: Gateway & safeguards (optional but recommended)
 
 If you started the Docker gateway (`make up`):
 • Rate limiting: honours your OpenAI quota and retries with exponential back-off.  
-• Audit log: every request / response pair saved to `data/gateway_log.sqlite`.  
-• Cost accounting: CLI command `python -m src.cli cost-report` prints spend per study.
+• Request proxying: Routes LLM requests through a central service for monitoring.
 
 --------------------------------------------------------
 Step 4: Output folder anatomy
@@ -240,7 +239,7 @@ Common pitfalls:
 • Poppler missing – `brew install poppler` (macOS) / `apt-get install poppler-utils` (Debian/Ubuntu).  
 • OpenAI rate limits – make sure the gateway is up; it automatically retries.
 
-If problems persist, run `python -m src.cli sys-info` and open an issue with the output and full stack-trace.
+If problems persist, open an issue with the full error message and stack trace.
 
 ---
 
@@ -249,9 +248,6 @@ If problems persist, run `python -m src.cli sys-info` and open an issue with the
 ```bash
 # Process PDFs into machine-readable documents
 python -m src.cli ingest
-
-# Run the scientific document pipeline
-python -m src.cli ingest-scientific
 
 # Run the marketing document pipeline  
 python -m src.cli ingest-marketing
