@@ -70,6 +70,10 @@ Solstice is an LLM-powered pipeline for verifying medical claims against clinica
 # Clone and enter directory
 git clone <repo-url> && cd solstice
 
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
 # Install dependencies
 make install
 make install-detectron2
@@ -82,84 +86,14 @@ cp .env.example .env
 make up
 ```
 
-### Running Pipelines
-
-#### 1. Ingest PDFs
-
-The repository includes sample PDFs. Process them:
+### Run
 
 ```bash
+# Process PDFs
 python -m src.cli ingest
-```
 
-This processes all PDFs in `data/clinical_files/` including:
-- FlublokPI.pdf
-- CDC Influenza vaccines.pdf
-- Arunachalam et al. (2021).pdf
-
-#### 2. Run Fact-Check Study
-
-The repository includes example claims. Run the default study:
-
-```bash
+# Run fact-check  
 python -m src.cli run-study
 ```
 
-This uses:
-- Claims from: `data/claims/flu_vaccine_claims.json`
-- Documents: All processed PDFs
-- Output: `data/studies/Flu_Vaccine_Claims_Verification/`
-
-### Marketing Pipeline (Complex Layouts)
-
-```bash
-python -m src.injestion.marketing.cli <pdf_path> \
-  --preset aggressive \
-  --box-padding 15.0
-```
-
-## Directory Structure
-
-```
-data/
-├── clinical_files/    # Input PDFs
-├── cache/            # Processed documents
-├── claims/           # Claim JSON files
-└── studies/          # Fact-check results
-```
-
-## Common Issues
-
-**Installation fails**: Use Python 3.11.9 via pyenv
-```bash
-pyenv install 3.11.9
-pyenv local 3.11.9
-```
-
-**Gateway errors**: Check logs
-```bash
-make logs
-```
-
-**Poor text extraction**: Use higher DPI
-```bash
-python -m src.cli ingest --dpi 600
-```
-
-## Commands Reference
-
-```bash
-# Service management
-make up        # Start gateway
-make down      # Stop gateway
-make logs      # View logs
-
-# Processing
-python -m src.cli ingest --help      # Ingestion options
-python -m src.cli run-study --help   # Fact-check options
-
-# Development
-make lint      # Check code
-make format    # Format code
-make clean     # Clean cache
-```
+Results in `data/studies/`

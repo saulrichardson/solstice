@@ -1,0 +1,2639 @@
+{
+  "source_pdf": "data/clinical_files/Treanor et al. (2011).pdf",
+  "blocks": [
+    {
+      "id": "det_0_000",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        1769.507568359375,
+        3428.590087890625,
+        3178.2568359375,
+        4054.773681640625
+      ],
+      "text": "at Science direct ne vier com locate vaccine nt hemagglutinin protein vaccine",
+      "metadata": {
+        "score": 0.9974929094314575,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.001580953598022461,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_005",
+      "page_index": 0,
+      "role": "Figure",
+      "bbox": [
+        295.6222229003906,
+        352.2045593261719,
+        3146.16552734375,
+        781.3980712890625
+      ],
+      "text": "[FIGURE 1 - See figure_p1_det_0_005.png]",
+      "image_path": "figures/figure_p1_det_0_005.png",
+      "metadata": {
+        "score": 0.9764562845230103,
+        "detection_dpi": 400,
+        "detector": "PubLayNet"
+      }
+    },
+    {
+      "id": "det_0_001",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        282.479736328125,
+        3268.423828125,
+        1688.3343505859375,
+        3644.509765625
+      ],
+      "text": "rot ect ive efficacy of a trivalent recombin Flublok® against influenza in healthy ad rial",
+      "metadata": {
+        "score": 0.9936467409133911,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0006048679351806641,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_002",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        1780.32666015625,
+        3145.457763671875,
+        3192.432861328125,
+        3452.839111328125
+      ],
+      "text": "nt hemagglutinin protein vaccine lts: A randomized, placebo controlled h d R i I ik e R b t K hb f",
+      "metadata": {
+        "score": 0.993091344833374,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0008349418640136719,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_004",
+      "page_index": 0,
+      "role": "Title",
+      "bbox": [
+        208.25869750976562,
+        963.0660400390625,
+        3162.9697265625,
+        1176.256103515625
+      ],
+      "text": "Although embryonated hen’seggs have been used to generate effective influenza vaccines for many years, this system does have several important drawbacks. Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg pro growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2]. Expression of proteins in insect cells using recombinant bac-",
+      "metadata": {
+        "score": 0.9844038486480713,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0017211437225341797,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_003",
+      "page_index": 0,
+      "role": "Title",
+      "bbox": [
+        278.7436218261719,
+        3158.576904296875,
+        641.771728515625,
+        3228.53271484375
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.9911860823631287,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
+      "id": "det_0_006",
+      "page_index": 0,
+      "role": "Title",
+      "bbox": [
+        1204.0003662109375,
+        1931.5281982421875,
+        1579.534423828125,
+        1995.0155029296875
+      ],
+      "text": ") uring the 2007-2008",
+      "metadata": {
+        "score": 0.9668322801589966,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00015687942504882812,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_007",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        1213.74462890625,
+        2560.413330078125,
+        3192.052490234375,
+        2936.713623046875
+      ],
+      "text": "es",
+      "metadata": {
+        "score": 0.9409058094024658,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.0
+        }
+      }
+    },
+    {
+      "id": "det_0_008",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        336.7501525878906,
+        4019.115966796875,
+        1425.195556640625,
+        4043.842041015625
+      ],
+      "text": "Con ten",
+      "metadata": {
+        "score": 0.9352166652679443,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00015211105346679688,
+          "processors_applied": [
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_009",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        1220.067626953125,
+        2037.5494384765625,
+        3195.776611328125,
+        2277.110107421875
+      ],
+      "text": "comb in ant, baculo virus expressed seasonal trivalent influenza virus hemagglutinin (rHA0) vaccine uBlok®). thods: Healthy adult subjects at 24 centers across the US were randomly assigned to receive a single ect ion of saline placebo (2304 subjects), or trivalent Flublok containing 45 mcg of each rHA0 component 344 subjects). Serum samples for assessment of immune responses by hemagglutination-inhibition",
+      "metadata": {
+        "score": 0.9128537178039551,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.003042936325073242,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_011",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        1016.6495971679688,
+        699.766357421875,
+        2421.01806640625,
+        757.6782836914062
+      ],
+      "text": "under the control of the baculovir l i ldifi i f h",
+      "metadata": {
+        "score": 0.8765965104103088,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00024890899658203125,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_012",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        331.0724792480469,
+        1290.60205078125,
+        3030.02197265625,
+        1425.8568115234375
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.7850324511528015,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
+      "id": "det_0_013",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        273.0121765136719,
+        3803.458984375,
+        1687.3665771484375,
+        3987.098876953125
+      ],
+      "text": "Vac",
+      "metadata": {
+        "score": 0.756615400314331,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.0000820159912109375
+        }
+      }
+    },
+    {
+      "id": "det_0_014",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        1218.211669921875,
+        2254.558837890625,
+        3163.57861328125,
+        2562.296142578125
+      ],
+      "text": "b s t r a c tckground: Development of influenza vaccines that do not use embryonated eggs as the substrate for ccine production is ahigh priority. We conducted this study to determine the protective efficacy acomb in ant, baculo virus expressed seasonal trivalent influenza virus hemagglutinin (rHA0) vaccine",
+      "metadata": {
+        "score": 0.7236024737358093,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0010819435119628906,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_016",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        276.0954284667969,
+        1456.485107421875,
+        1285.2059326171875,
+        1809.155517578125
+      ],
+      "text": "similar Flublok 62 6 def in it Con clu confirm",
+      "metadata": {
+        "score": 0.6217421889305115,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0002837181091308594,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_0_019",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        282.6024475097656,
+        4081.7421875,
+        1509.1746826171875,
+        4188.00048828125
+      ],
+      "text": "Vacci",
+      "metadata": {
+        "score": 0.5070337057113647,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.000080108642578125
+        }
+      }
+    },
+    {
+      "id": "det_0_024",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        2409.2587890625,
+        2947.195068359375,
+        3174.190185546875,
+        3005.391845703125
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.37605175375938416,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
+      "id": "det_0_027",
+      "page_index": 0,
+      "role": "Figure",
+      "bbox": [
+        255.1036376953125,
+        1875.8843994140625,
+        1167.64208984375,
+        3163.44775390625
+      ],
+      "text": "[FIGURE 6 - See figure_p1_det_0_027.png]",
+      "image_path": "figures/figure_p1_det_0_027.png",
+      "metadata": {
+        "score": 0.3118874132633209,
+        "detection_dpi": 400,
+        "detector": "PubLayNet"
+      }
+    },
+    {
+      "id": "det_1_010",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        215.89295959472656,
+        1414.066162109375,
+        1628.5936279296875,
+        2462.50390625
+      ],
+      "text": ". hosp hate buffer pH 7.0 ± 0.4 without a preservative. Genes were cloned into baculo virus using RT-PCR from the same Cd ce rived vaccine seed viruses used for the production of licensed nactivated influenza vaccine for that year. Sodium do de cyl sulfa teoly acrylamide gel electrophoresis of the purified mono valent materials indicated that hemagglutinin constitutes at least 90% of he total protein. Placebo consisted of normal saline for injection, SP. 2. Clinical study design The study was conducted at 24 centers located across the United tates (Appendix) during the 2007-2008 influenza season. Subjects were healthy adults aged 18-49 years inclusive, who did not belong ohigh priority target groups for influenza vaccination as defined ythe Advisory Committee on Immunization Practice [10]. Women fchild-bearing potential had a negative urine pregnancy test at hti f d iti ...t",
+      "metadata": {
+        "score": 0.9904986023902893,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0062029361724853516,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_006",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        225.10557556152344,
+        2654.398681640625,
+        1637.204345703125,
+        3432.5439453125
+      ],
+      "text": "rmulation of trivalent rHA0 vaccine in a population of healthy oung adults. Methods 1. Vaccine The vaccine (Flublok used in this study consisted of puried hemagglutinin (HA) proteins produced in insect cells using baculo virus expression system as previously described [9]. The comb in ant HA protein is not cleaved in insect cells and is fer red to as rHA0. The trivalent vaccine contained 45 mcg smeasured by the single radial immuno diffusion as say of ch purified rHA0 derived from the A/Solomon Islands 3 2006",
+      "metadata": {
+        "score": 0.992533802986145,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0017750263214111328,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_016",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        1719.0274658203125,
+        1362.4134521484375,
+        3124.849365234375,
+        2310.763427734375
+      ],
+      "text": "ore activity at 1:10 were assigned a value of 1:5. As says were er formed using turkey red blood cells (Viro med Laboratories, Mine ton ka, MN). Swabs for virus culture were stored at −70 ◦C and shipped on ry ice to a central laboratory (Cincinnati Children’s Hospital Medal Center, Cincinnati, OH) where virus isolation was performed in rimary rhesus monkey kidney (RhMK) cells (Diagnostic Hybrids c (DHI), Athens, Ohio). The presence of influenza A or B viruses the culture was determined by immu no fluorescence using type pec if ic monoclonal antibodies (DHI). All influenza isolates were ub sequently sub typed and antigenic ally characterized based on activity to ferret anti serum raised against WHO reference strains. 5. Statistical analyses The primary safety endpoints for this study were the rates d i fli i d dli i d d Th i",
+      "metadata": {
+        "score": 0.9815075993537903,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.005371809005737305,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_000",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        1712.738525390625,
+        3592.909912109375,
+        3125.047119140625,
+        4195.45263671875
+      ],
+      "text": "(2011) 77337739 enter for review of interim safety data at day 28. A final phone call ccurred at the end of the influenza season. 3. Surveillance for influenza During the influenza season, subjects completed a weekly diary orecord influenza symptoms, and after influenza was recognized nthe community, subjects received weekly phone calls to review he diary and ascertain the presence or absence of respiratory ill",
+      "metadata": {
+        "score": 0.9967817068099976,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0011801719665527344,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_003",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        209.9149627685547,
+        339.9546813964844,
+        1649.6689453125,
+        881.564697265625
+      ],
+      "text": "ocal and systemic reactions graded as mild (noticeable but not nterfering with normal activities), “moderate” (some interference with normal activities), and “severe” (symptom prevented normal daily activities). Subjects received a phone call at day 7 for eview of the memory aid, concomitant medications and medical i story. In addition, subjects from five sites (total, N = 870) part ici a ted in a serological sub study. At these sites, subjects had serum btained prior to vaccination, and returned approximately 28 days fter vaccination for assessment of serum antibody to influenza",
+      "metadata": {
+        "score": 0.9948681592941284,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0018477439880371094,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_004",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        1711.7911376953125,
+        2291.588623046875,
+        3135.595458984375,
+        2843.935546875
+      ],
+      "text": "vail able sera from vaccine recipients, and a randomly selected ubset of approximately 33% of placebo specimens were selected or testing. The antigens used in the as says were baculo virus eri ved rHAs representing the A/Solomon Islands 03 2006 (H1 N1), /Wisconsin 67 2005 (H3 N2), and B/Malaysia/2506/2004 viruses, rovided by Protein Sciences Corporation. Sera were treated with eur am in ida se (RDE, Denka-Seiken, Japan) to remove non specific nhibi tors of hem agglutination prior to testing, and were tested in erial two fold dilutions at an initial dilution of 1:10. Sera with ore activity at 1:10 were assigned a value of 1:5 As says were",
+      "metadata": {
+        "score": 0.9944629073143005,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0038318634033203125,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_008",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        1712.124267578125,
+        3008.49365234375,
+        3132.745361328125,
+        3608.633544921875
+      ],
+      "text": "he diary and ascertain the presence or absence of respiratory illess symptoms. Subjects were instructed to return to the clinic for lness evaluations if they observed any acute respiratory sympoms or fever. During these illness visits, symptoms were reviewed, brief physical exam was conducted, and combined nasal and hroat swabs for virus culture were obtained. 4. Laboratory as says Sera from the immunogen i city subset were assessed for ib...b",
+      "metadata": {
+        "score": 0.9912495613098145,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0014340877532958984,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_001",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        214.56185913085938,
+        3421.466552734375,
+        1631.2921142578125,
+        3889.20947265625
+      ],
+      "text": "7,8]. These studies have consistently shown excellent to ler a bil yand antibody responses similar to those seen with egg derived nfluenza vaccines. Finally, in a preliminary field efficacy evalation, recipients of the rHA0 vaccine had reduced rates of ulture-positive CDC-defined influenza like illness compared with lacebo recipients, although the study was small [9]. In the present study, we performed amuch larger assessment fthe immunogen i city, safety, and protective efficacy of the final or mul ation of trivalent rHA0 vaccine in a population of healthy",
+      "metadata": {
+        "score": 0.9957666397094727,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0019142627716064453,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_002",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        223.5849151611328,
+        3884.820556640625,
+        1625.9658203125,
+        4198.00146484375
+      ],
+      "text": "34 J. J. Tre an or et al. / Vaccin oung adults and adults 65 and older [3-5]. More recent studs have evaluated rHA0 vaccine formulations in healthy adults, ubjects aged 50-64 years of age [6] and subjects 65 and older ,8]. These studies have consistently shown excellent to ler a bil",
+      "metadata": {
+        "score": 0.9950785636901855,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0009028911590576172,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_015",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        1710.0467529296875,
+        647.3257446289062,
+        3141.843505859375,
+        1195.5389404296875
+      ],
+      "text": "trains comparing pre and 28 day post vaccination samples. The rimary efficacy endpoint was culture documented influenza illess, defined as development of a CDC-defined influenza like lness (CDC ILI associated with recovery of influenza virus from na so pharyngeal swab. CDC-ILI was defined as the presence of ocu men ted fever ≥100 F plus either sore throat or cough. Safety of the rHA0 vaccine was evaluated via the frequencies nd percentages of subjects experiencing adverse events, and ahi squared test at a nominal 0.05 level was performed to find ny differences in incidence rates between groups Differences",
+      "metadata": {
+        "score": 0.9837963581085205,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0040912628173828125,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_005",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        229.09559631347656,
+        864.7102661132812,
+        1629.871337890625,
+        1117.3753662109375
+      ],
+      "text": "udy site. Vaccine was administered as a single intramuscular jection in the upper deltoid. Subjects measured their oral temperature daily and maintained memory aid for 7 days after vaccination on which they recorded cal and systemic reactions graded as “mild” (noticeable but not",
+      "metadata": {
+        "score": 0.9937299489974976,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0008780956268310547,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_007",
+      "page_index": 1,
+      "role": "Title",
+      "bbox": [
+        219.2758331298828,
+        1191.140380859375,
+        492.1532287597656,
+        1259.526611328125
+      ],
+      "text": "ssigned to rece i",
+      "metadata": {
+        "score": 0.99196457862854,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00015997886657714844,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_009",
+      "page_index": 1,
+      "role": "Title",
+      "bbox": [
+        1711.3511962890625,
+        2906.2041015625,
+        2213.431884765625,
+        2972.379638671875
+      ],
+      "text": "yemagglutination-inhibit",
+      "metadata": {
+        "score": 0.990912675857544,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0006771087646484375,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_011",
+      "page_index": 1,
+      "role": "Title",
+      "bbox": [
+        1708.423095703125,
+        541.4503173828125,
+        2342.58154296875,
+        609.7896728515625
+      ],
+      "text": "etween groups in the prop or tio old increase in HAI antibody w",
+      "metadata": {
+        "score": 0.9891306161880493,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00031685829162597656,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_012",
+      "page_index": 1,
+      "role": "Title",
+      "bbox": [
+        1707.3800048828125,
+        1258.396728515625,
+        2194.814208984375,
+        1327.3006591796875
+      ],
+      "text": "ymary immunogen i city en",
+      "metadata": {
+        "score": 0.9875332117080688,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0002288818359375,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_013",
+      "page_index": 1,
+      "role": "Title",
+      "bbox": [
+        213.14453125,
+        2557.540283203125,
+        745.8653564453125,
+        2624.6279296875
+      ],
+      "text": "H1 N1), A/Wisconsin/67/20",
+      "metadata": {
+        "score": 0.9856752753257751,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0001308917999267578,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_014",
+      "page_index": 1,
+      "role": "Title",
+      "bbox": [
+        211.61325073242188,
+        1310.8758544921875,
+        486.8553466796875,
+        1375.0166015625
+      ],
+      "text": "on during the",
+      "metadata": {
+        "score": 0.9842780232429504,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00011920928955078125,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_1_017",
+      "page_index": 1,
+      "role": "Text",
+      "bbox": [
+        1697.0758056640625,
+        345.8585205078125,
+        3130.882568359375,
+        470.8102111816406
+      ],
+      "text": "est. Protective efficacy (PE) was calculated as (1-RR), where RR is he relative risk of having an event compared to the placebo group. Upper and lower confidence limits for the RR were calculated using",
+      "metadata": {
+        "score": 0.9250491261482239,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0006089210510253906,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_000",
+      "page_index": 2,
+      "role": "Figure",
+      "bbox": [
+        298.691162109375,
+        2756.44580078125,
+        1679.1019287109375,
+        4095.7275390625
+      ],
+      "text": "[FIGURE 10 - See figure_p3_det_2_000.png]",
+      "image_path": "figures/figure_p3_det_2_000.png",
+      "metadata": {
+        "score": 0.9964120984077454,
+        "detection_dpi": 400,
+        "detector": "PubLayNet"
+      }
+    },
+    {
+      "id": "det_2_009",
+      "page_index": 2,
+      "role": "Table",
+      "bbox": [
+        278.4013366699219,
+        467.1234436035156,
+        3206.687744140625,
+        1209.7886962890625
+      ],
+      "text": "[TABLE 3 - See table_p3_det_2_009.png]",
+      "image_path": "figures/table_p3_det_2_009.png",
+      "metadata": {
+        "score": 0.9834544658660889,
+        "detection_dpi": 400,
+        "detector": "PubLayNet"
+      }
+    },
+    {
+      "id": "det_2_002",
+      "page_index": 2,
+      "role": "Text",
+      "bbox": [
+        1775.5050048828125,
+        1818.4422607421875,
+        3193.366455078125,
+        2310.58935546875
+      ],
+      "text": "AE), there was 1 death in each group, and 9 and 13 subjects in he Flublok and placebo groups, respectively were discontinued for ther reasons. 1. Assessment of vaccine safety The rates and severities of local and systemic symptoms eported by subjects in the 7 days following administration of uBlok or placebo are shown in Table 1 Flublok was associated",
+      "metadata": {
+        "score": 0.9954906105995178,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0011641979217529297,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_004",
+      "page_index": 2,
+      "role": "Text",
+      "bbox": [
+        283.1445007324219,
+        1423.2381591796875,
+        1691.1192626953125,
+        1847.948974609375
+      ],
+      "text": "p y j g. 1. Of the 4648 enrolled subjects, 2344 were randomized to Subjects enrolled (n=4648)",
+      "metadata": {
+        "score": 0.9921494722366333,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0004558563232421875,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_012",
+      "page_index": 2,
+      "role": "Text",
+      "bbox": [
+        1766.7596435546875,
+        3324.975341796875,
+        3194.48046875,
+        4207.6650390625
+      ],
+      "text": "(2011) 77337739-7735 . verity in each group Placebo (N = 2304) Severe Mild Moderate Severe 34 (1) 567 (25) 130 (6) 30 (1) 4 (<1) 5 (<1) 6 (<1) 1 (<1) 12 (<1) 256 (11) 66 (3) 11 (<1) 6 (<1) 54 (2) 13 (<1) 4 (<1) 6 (<1) 67 (3) 12 (<1) 4 (<1) 6 (<1) 124 (6) 22 (<1) 8 (<1) 15 (<1) 273 (12) 68 (3) 13 (<1) 6 (<1) 74 (3) 25 (1) 10 (<1) 2 (<1) 177 (8) 3 (<1) 1 (<1)",
+      "metadata": {
+        "score": 0.970969021320343,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0010960102081298828,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_007",
+      "page_index": 2,
+      "role": "Text",
+      "bbox": [
+        1776.2110595703125,
+        1419.2242431640625,
+        3185.612060546875,
+        1840.1539306640625
+      ],
+      "text": "uBlok or placebo are shown in Table 1. Flublok was associated ith local injection site pain and muscle aches that were signifantly more frequent than after saline placebo (P <.03 for pain). owever, 94% of all complaints of pain after Flublok were rated smild. Systemic symptoms following vaccination did not occur significantly different rates in vaccine and placebo recipients P > .05 for all comparisons). The most frequently reported sysi fll ...(15% i b h",
+      "metadata": {
+        "score": 0.987708330154419,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0014760494232177734,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_005",
+      "page_index": 2,
+      "role": "Text",
+      "bbox": [
+        272.73724365234375,
+        1198.7874755859375,
+        3227.7119140625,
+        1351.02392578125
+      ],
+      "text": "groups) and fatigue or lack of energy (14.5% in both groups). The majority (76%) of complaints of headache were also mild. There were 17 reports of fever (oral temperature >100.4 F) among Flublok",
+      "metadata": {
+        "score": 0.9910064339637756,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0006661415100097656,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_001",
+      "page_index": 2,
+      "role": "Text",
+      "bbox": [
+        292.05377197265625,
+        388.6703796386719,
+        1823.5125732421875,
+        451.155517578125
+      ],
+      "text": "(n=2304) (n=2344) even",
+      "metadata": {
+        "score": 0.9962249994277954,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00024080276489257812,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_003",
+      "page_index": 2,
+      "role": "Title",
+      "bbox": [
+        275.3826904296875,
+        2321.904052734375,
+        519.853271484375,
+        2390.38671875
+      ],
+      "text": "he study, and",
+      "metadata": {
+        "score": 0.9952309727668762,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0001201629638671875,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_006",
+      "page_index": 2,
+      "role": "Title",
+      "bbox": [
+        1774.079833984375,
+        2384.278076171875,
+        2465.520263671875,
+        2449.553466796875
+      ],
+      "text": "ithdrew consent (22 (1%) and 14",
+      "metadata": {
+        "score": 0.9901680946350098,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00021123886108398438,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_008",
+      "page_index": 2,
+      "role": "Title",
+      "bbox": [
+        275.3050231933594,
+        1904.52734375,
+        745.5737915039062,
+        1971.296630859375
+      ],
+      "text": "tota o 6 8 e g bther Flublok or Placeb",
+      "metadata": {
+        "score": 0.9867042303085327,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00020122528076171875,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_011",
+      "page_index": 2,
+      "role": "Text",
+      "bbox": [
+        287.93206787109375,
+        2433.32666015625,
+        1686.948974609375,
+        2689.423828125
+      ],
+      "text": "p y g , sum ing a 5% attrition rate. 6. Informed consent",
+      "metadata": {
+        "score": 0.9729970097541809,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0003018379211425781,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_013",
+      "page_index": 2,
+      "role": "Text",
+      "bbox": [
+        295.7850341796875,
+        2013.770263671875,
+        1699.173583984375,
+        2261.398193359375
+      ],
+      "text": "ent of subjects. Results",
+      "metadata": {
+        "score": 0.9679723381996155,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00017595291137695312,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_010",
+      "page_index": 2,
+      "role": "Title",
+      "bbox": [
+        280.0830993652344,
+        345.3011169433594,
+        411.31646728515625,
+        399.0006103515625
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.9777222871780396,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
+      "id": "det_2_015",
+      "page_index": 2,
+      "role": "Text",
+      "bbox": [
+        1775.7930908203125,
+        2502.55029296875,
+        3184.88330078125,
+        3411.1923828125
+      ],
+      "text": "6 (<1) 74 (3) 25 (1) 10 (<1) 2 (<1) 177 (8) 3 (<1) 1 (<1) 1 (<1) 57 (3) 1 (<1) 1 (<1) mild, no interference with daily activities, 2 = moderate, some limitation of activity, ceive Flublok and 2304 were randomized to placebo. The majoryof subjects were white (66%) and female (59%). The mean age as 32.5 years. Three subjects were over the enrollment criteria of 9 years or less, so that the age range enrolled was 18-55 years; hese three subjects are included in both the safety and efficacy nalyses. There were no differences with respect to age, sex or race etween the groups. There were 577 subjects who did not complete the study, the majority of whom were lost to follow up (260 (11%) in the Flublok",
+      "metadata": {
+        "score": 0.9340462684631348,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0021049976348876953,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_2_014",
+      "page_index": 2,
+      "role": "Text",
+      "bbox": [
+        511.49847412109375,
+        4123.65673828125,
+        1456.9051513671875,
+        4182.158203125
+      ],
+      "text": "J. J. Tre a no",
+      "metadata": {
+        "score": 0.9562650918960571,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00016427040100097656,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_003",
+      "page_index": 3,
+      "role": "Table",
+      "bbox": [
+        201.93418884277344,
+        457.02978515625,
+        3162.193603515625,
+        1127.709228515625
+      ],
+      "text": "[TABLE 4 - See table_p4_det_3_003.png]",
+      "image_path": "figures/table_p4_det_3_003.png",
+      "metadata": {
+        "score": 0.9957928657531738,
+        "detection_dpi": 400,
+        "detector": "PubLayNet"
+      }
+    },
+    {
+      "id": "det_3_005",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        1712.5986328125,
+        3071.77099609375,
+        3124.484619140625,
+        4190.0361328125
+      ],
+      "text": "(2011) 77337739 ients with or without self reported history of prior seasonal influenza vaccination. body titer (95% CI) and response rates (95% CI) to the following vaccine antigens 7 2005 (H3 N2) B/Malaysia/2506/2004 Post %Response Pre Post %Response 15.1 3 31.1 19.8 0 (13.0, 17.6) (1, 8) (24.6, 39.4) (15.8, 24.8) (0, 3.0) 262.1 81 55.27 200 55 52 (234.9, 292 4 (77, 85) (49.3, 62.0) (181.0, 222 2 (47, 57) 185.7 57 104.6 162.4 22 (149.4, 230 9 (47, 67) (82.0, 133 5 (132 4 199 2 (13 30 286.9 87 46.76 212.0 60 (253.3, 324 8 (84, 91) (41.3, 52.9) (188.6, 238 2 (55, 65) nd point for this study was the development of culture confirmed",
+      "metadata": {
+        "score": 0.9939919114112854,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0032339096069335938,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_001",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        1714.719970703125,
+        2366.81982421875,
+        3133.03466796875,
+        3095.12744140625
+      ],
+      "text": "nd point for this study was the development of culture confirmed DC-ILI, and we also assessed the effect of vaccination on rates of ny influenza culture positive illness. A total of 582 subjects were cultured for respiratory illness, and nfluenza virus was isolated from 178 subjects. There were a total f 120 subjects from whom influenza A was isolated, the majority fwhom (82 120, 68%) met the CDC-ILI case definition. There were total of 59 subjects with positive cultures for influenza B, and the majority of these subjects (41/59, 69%) also met the CDC-ILI case ef in it ion. Only 8 isolates in the study (<5% of the total) were anti genially identical to the strains contained in the vaccine. All of these ruses were A Wisconsin 67 2005 Like H3 N2 viruses. Two of these",
+      "metadata": {
+        "score": 0.9975274205207825,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.004235029220581055,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_002",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        230.79579162597656,
+        2546.449951171875,
+        1630.101318359375,
+        3203.979736328125
+      ],
+      "text": "p yver and cough 7 days after vaccination and was hospitalized 11 ys after vaccination with a diagnosis of pericardial effusion and rdiac tampon a de. Peri car dio cent es is showed one colony of Prop ii bacterium spp.; and culture of pleural fluid grew Staphylococcus i der midis only. Viral cultures and a panel of serum antibody tests r viruses causing peri card it is were negative. The subject was dis arg ed home on Day 24 following vaccination and the event was nsidered resolved by the end of the study period. There were a total of 37 pregnancies reported during the study; in the Flublok group and 17 in the placebo group. Complete",
+      "metadata": {
+        "score": 0.9964974522590637,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0041468143463134766,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_000",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        224.22964477539062,
+        3174.00537109375,
+        1631.080078125,
+        3722.406494140625
+      ],
+      "text": "Placebo 127 20.33 18.8 3 21.5 (16.5, 25.0) (15.2, 23.3) (1, 8) (18.1, 25.4 Flublok 448 31.9 349.0 78 22.9 (28.2, 36.1) (316.9, 384 3 (74, 82) (20.7, 25.4 Flublok PVa 93 64.9 235.7 56 47.5 (51.0, 82.7) (196.1, 283 4 (46, 66) (38.6, 58.5 Flublok NPVb 355 26.5 386.7 83 18.9 (23.1, 30.4) (346.7, 431 4 (80, 87) (17.0, 21.1 Response = 4 fold or greater increase to 1:40 or greater. PV = previously vaccinated. NPV = not previously vaccinated.",
+      "metadata": {
+        "score": 0.9976104497909546,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0013959407806396484,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_006",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        219.05470275878906,
+        1789.5040283203125,
+        1625.8192138671875,
+        2395.264404296875
+      ],
+      "text": "mong placebo recipients were uneventful and resulted in the birth a normal infant at 36 weeks gestation or later. Two women in the uBlok and three in the placebo group had associated AEs during heir pregnancy which all resolved. Elective or spontaneous a boron occurred in three and four subjects in the Flublok and placebo roups, respectively. 2. Immunogen i city Serum HAI antibody titers before and after immunization in uBlok and placebo recipients are shown in Table 2. Flublok",
+      "metadata": {
+        "score": 0.9934467673301697,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0014939308166503906,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_004",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        204.65435791015625,
+        1319.847412109375,
+        1641.1932373046875,
+        1799.62646484375
+      ],
+      "text": "luBlok and placebo recipients are shown in Table 2. Flublok nduced serum antibody responses to all three components of the accine in the majority of recipients, although lower response rates were seen for the influenza B component. As expected, post vac i nation geometric mean titers were substantially higher for all hree components in Flublok than in placebo recipients (P < .001 or all comparisons). The proportion of Flublok recipients with post vaccination HAI titer of 1:40 or greater was 99% for the H1 component (95% CI, 97.1%, 99 5, 97% for the H3 component",
+      "metadata": {
+        "score": 0.9953799247741699,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.001728057861328125,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_008",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        1720.5848388671875,
+        1899.8636474609375,
+        3131.492431640625,
+        2390.894775390625
+      ],
+      "text": "ruses were A/Wisconsin/67/2005 like H3 N2 viruses. Two of these ccurred in Flublok recipients and 6 occurred in placebo rec i pints, and among these subjects one Flublok recipient and 5 placebo cipients met the CDC-ILI definition. Therefore, we were unable obtain a meaningful estimate of the efficacy of Flublok against DC-ILI due to strains represented in the vaccine. The remaining 111 influenza A viruses were characterized as ntigenic variants, i.e., they exhibited a 4 fold or greater decrease reactivity with post infection ferret anti sera in reciprocal HAI",
+      "metadata": {
+        "score": 0.9912018775939941,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0019338130950927734,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_009",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        1703.4249267578125,
+        1498.58642578125,
+        3131.07861328125,
+        1916.3836669921875
+      ],
+      "text": "y p pesting. These viruses included 12 H1 N1 viruses antigenic ally esembling H1 drift variant A/Brisbane/59/2007, 41 H3 N2 viruses ntigenically resembling the H3 drift variant A/Brisbane/10/2007, 2 H3 N2 viruses that could not be identified as either A/Wisconsinke or A/Brisbane-like, and 16 influenza viruses for which the ubtype was not determined. Fifty eight of the 59 influenza B iruses (98%) were antigenic ally similar to B/Florida/04/2006,",
+      "metadata": {
+        "score": 0.9911782145500183,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0013599395751953125,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_010",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        226.38035583496094,
+        3882.915771484375,
+        1639.9818115234375,
+        4194.2294921875
+      ],
+      "text": "36 J. J. Tre an or et al. / Vaccine ble 2 rum hemagglutination-inhibiting (HAI) antibody titers in all subjects, and in Flublok re Group N Pre (day 0) and post vaccination (day 28) geometric mean a A/Solomon Island 3 2006 (H1 N1) A/Wiscons",
+      "metadata": {
+        "score": 0.9891908168792725,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.002191781997680664,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_007",
+      "page_index": 3,
+      "role": "Title",
+      "bbox": [
+        216.07318115234375,
+        3776.997314453125,
+        698.6921997070312,
+        3845.9365234375
+      ],
+      "text": "Pre",
+      "metadata": {
+        "score": 0.9924384951591492,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.0001049041748046875
+        }
+      }
+    },
+    {
+      "id": "det_3_012",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        1729.5281982421875,
+        1330.739501953125,
+        3122.206298828125,
+        1515.9334716796875
+      ],
+      "text": "ruses (98%) were antigenic ally similar to B/Florida/04/2006, presenting a different clade from the vaccine strain, and one flu enz a B virus could not be antigenic ally characterized. The cumulative rates of culture confirmed influenza illness",
+      "metadata": {
+        "score": 0.9750093221664429,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0009810924530029297,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_011",
+      "page_index": 3,
+      "role": "Title",
+      "bbox": [
+        216.571044921875,
+        2439.640869140625,
+        663.2342529296875,
+        2504.20703125
+      ],
+      "text": "ollow up information wnd 15 in placebo). Ten",
+      "metadata": {
+        "score": 0.9818747639656067,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0002460479736328125,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_013",
+      "page_index": 3,
+      "role": "Title",
+      "bbox": [
+        218.95785522460938,
+        345.3559265136719,
+        359.5126953125,
+        397.2785339355469
+      ],
+      "text": "y p rany a",
+      "metadata": {
+        "score": 0.9656956791877747,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00009775161743164062,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_014",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        223.15721130371094,
+        1105.892578125,
+        1174.41943359375,
+        1257.0018310546875
+      ],
+      "text": "Among Flublok recipients, subjects with ase seasonal influenza vaccine in the year prio gher baseline titers of antibody against all thre",
+      "metadata": {
+        "score": 0.9396664500236511,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0004742145538330078,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_015",
+      "page_index": 3,
+      "role": "Text",
+      "bbox": [
+        204.5933074951172,
+        388.0440979003906,
+        3292.10791015625,
+        452.7984619140625
+      ],
+      "text": "( p ) weekly phone calls and instructed to return to the study clinics ture positive CDC-ILI associated with isolation of H1 N1 viruses",
+      "metadata": {
+        "score": 0.9360737204551697,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00044798851013183594,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_3_017",
+      "page_index": 3,
+      "role": "Title",
+      "bbox": [
+        217.8396453857422,
+        238.38218688964844,
+        317.6413879394531,
+        298.2676086425781
+      ],
+      "text": "nd thr",
+      "metadata": {
+        "score": 0.5060903429985046,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00014090538024902344,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_4_002",
+      "page_index": 4,
+      "role": "Figure",
+      "bbox": [
+        325.0787048339844,
+        332.8255310058594,
+        1655.4647216796875,
+        2181.74462890625
+      ],
+      "text": "[FIGURE 1 - See figure_p5_det_4_002.png]",
+      "image_path": "figures/figure_p5_det_4_002.png",
+      "metadata": {
+        "score": 0.9955096244812012,
+        "detection_dpi": 400,
+        "detector": "PubLayNet"
+      }
+    },
+    {
+      "id": "det_4_001",
+      "page_index": 4,
+      "role": "Text",
+      "bbox": [
+        1780.66943359375,
+        2593.427001953125,
+        3185.044677734375,
+        3839.591552734375
+      ],
+      "text": "eric ard it is has also been reported previously following vaccina on with licensed, egg derived influenza vaccine with a similar me course [11]. The mechanism and clinical significance of such nassociation is unclear. Flublok induced serum HAI antibody responses to all three vacne components in the majority of recipients, and the lower limit the 95% confidence interval for response rate exceeded the US DA criteria for licensure for all three components (lower limit of e 95% confidence interval for response rate >40% and lower limit the 95% confidence interval for HAI titer of 1:40 or greater >70%) 2]. Although we did not attempt to verify vaccine histories by view of medical records, significant differences in both the freuency and the magnitude of the HAI response were shown when omparing the immune response between subjects with self ported previous vaccination. Reduced antibody response rates, ecreased post vaccination titers, and decreased antibody secretgcell responses have all been observed previously in adults with rior influenza vaccine compared to those without [13 16. The xact mechanism of this effect remains uncertain, although it may present interference with antigen presentation by pre existing nti body [16].",
+      "metadata": {
+        "score": 0.9970107078552246,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00413203239440918,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_4_004",
+      "page_index": 4,
+      "role": "Text",
+      "bbox": [
+        1767.802978515625,
+        1842.913818359375,
+        3186.076171875,
+        2624.0478515625
+      ],
+      "text": "nti body [16]. Consistent with the results of national surveillance in the US uring the 2007-2008 season [17], the majority of influenza A iruses detected in this study were H3 N2 viruses that represented substantial antigenic mismatch with the vaccine. However, even nder these circumstances, Flublok had significant protective eff iacy against culture confirmed influenza illness, including those meeting the CDC-ILI case definition. Influenza B viruses isolated in his study and elsewhere in North America during the 2007-2008 eason belonged to the Yamagata lineage of influenza B viruses, gainst which vaccines representing the Victoria lineage would be xpected to have little or no efficacy. We also found that the eff iacy of Flublok against CDC-ILI associated with influenza B was ub st anti ally lower than that against influenza A.",
+      "metadata": {
+        "score": 0.9952288866043091,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.005777120590209961,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_4_009",
+      "page_index": 4,
+      "role": "Text",
+      "bbox": [
+        1774.751220703125,
+        1195.3614501953125,
+        3177.562255859375,
+        1873.7313232421875
+      ],
+      "text": "ub st anti ally lower than that against influenza A. Comparisons of these results with the results of other ssess men ts of the protective efficacy of influenza vaccines are omplica ted by differences in methodologies, populations, and nti genic match between vaccine and circulating strains in the pec if ic year that studies are carried out. Two recently published udies have evaluated egg grown in activated vaccines in healthy dults using a placebo controlled design during the 2007-2008 nfluenza season. In one study, conducted primarily in Europe, the ver all efficacy of egg grown in activated vaccine against culture on firmed illness was 63%, and the lower 95% CI was 46.7% [18]. The re dominant influenza A isolates in that study were H1 N1 viruses,",
+      "metadata": {
+        "score": 0.986968994140625,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.004991054534912109,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_4_003",
+      "page_index": 4,
+      "role": "Text",
+      "bbox": [
+        279.7139587402344,
+        2851.053955078125,
+        1688.940673828125,
+        3229.842529296875
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.9952366352081299,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
+      "id": "det_4_008",
+      "page_index": 4,
+      "role": "Text",
+      "bbox": [
+        1775.5147705078125,
+        796.9111328125,
+        3188.3310546875,
+        1206.1802978515625
+      ],
+      "text": "yhich were mostly vaccine like. In another smaller study done on ollege campuses in Michigan [19], the protective efficacy of TIV gainst culture confirmed illness was 73% (95% CI, 51%, 85%). In hat study, 90% of influenza isolates were influenza A (H3 N2), but he antigenic characterization of isolates was not reported. In other ecent randomized trials, the protective efficacy of TIV was 22.3% the 2005-2006 influenza season predominated by influenza B",
+      "metadata": {
+        "score": 0.9896323680877686,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.003072977066040039,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_4_007",
+      "page_index": 4,
+      "role": "Text",
+      "bbox": [
+        1775.990234375,
+        3822.215576171875,
+        3188.178466796875,
+        4199.5693359375
+      ],
+      "text": "(2011) 77337739-7737 HA0 vaccine produced using the baculo virus expression system healthy adults [9]. These vaccines have been well tolerated at all oses administered, and are associated with low rates of local reacons. One case of peri card it is was detected in a Flublok recipient. eric ard it is has also been reported previously following vaccina-",
+      "metadata": {
+        "score": 0.9903209805488586,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0012259483337402344,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_4_014",
+      "page_index": 4,
+      "role": "Table",
+      "bbox": [
+        284.96923828125,
+        3443.538818359375,
+        1679.3009033203125,
+        4087.514892578125
+      ],
+      "text": "[TABLE 8 - See table_p5_det_4_014.png]",
+      "image_path": "figures/table_p5_det_4_014.png",
+      "metadata": {
+        "score": 0.9730165004730225,
+        "detection_dpi": 400,
+        "detector": "PubLayNet"
+      }
+    },
+    {
+      "id": "det_4_006",
+      "page_index": 4,
+      "role": "Text",
+      "bbox": [
+        281.2660827636719,
+        2215.912841796875,
+        1679.1397705078125,
+        2377.723876953125
+      ],
+      "text": "g 2 Kaplan Meier plots of the cumulative incidence of culture positive CDC ILI",
+      "metadata": {
+        "score": 0.9940541386604309,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.0003669261932373047
+        }
+      }
+    },
+    {
+      "id": "det_4_005",
+      "page_index": 4,
+      "role": "Text",
+      "bbox": [
+        282.63519287109375,
+        4082.333984375,
+        1682.037109375,
+        4184.55615234375
+      ],
+      "text": "J. J. Tre an or et al. / Vaccin",
+      "metadata": {
+        "score": 0.9951607584953308,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00023412704467773438,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_4_000",
+      "page_index": 4,
+      "role": "Title",
+      "bbox": [
+        277.0440979003906,
+        2744.010498046875,
+        593.3485717773438,
+        2815.4140625
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.9971343278884888,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
+      "id": "det_4_013",
+      "page_index": 4,
+      "role": "Text",
+      "bbox": [
+        1766.66357421875,
+        340.2602844238281,
+        3198.127197265625,
+        818.3536987304688
+      ],
+      "text": "nthe 2005-2006 influenza season predominated by influenza B iruses and with overall low attack rates [20], and 49.3% over two easons, 2005-2007 with most cases due to antigenic ally variant iruses [21]. Because of the difficulty in conducting placebo controlled tudies of influenza vaccine especially as the target groups for vac i nation have expanded, several recent assessments of influenza accine effectiveness have utilized a test negative, case control esign. Estimates of overall in activated vaccine protective effec-",
+      "metadata": {
+        "score": 0.974493682384491,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0037059783935546875,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_4_012",
+      "page_index": 4,
+      "role": "Text",
+      "bbox": [
+        281.2515869140625,
+        2439.83544921875,
+        1706.0057373046875,
+        2688.574462890625
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.9752536416053772,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
+      "id": "det_4_011",
+      "page_index": 4,
+      "role": "Text",
+      "bbox": [
+        291.1520690917969,
+        3342.4267578125,
+        1686.003173828125,
+        3452.41845703125
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.9773026704788208,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
+      "id": "det_4_010",
+      "page_index": 4,
+      "role": "Title",
+      "bbox": [
+        283.44482421875,
+        3299.224609375,
+        420.3064270019531,
+        3355.8828125
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.9785455465316772,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
+      "id": "det_5_006",
+      "page_index": 5,
+      "role": "Text",
+      "bbox": [
+        219.21665954589844,
+        2373.20947265625,
+        1659.051513671875,
+        3834.0703125
+      ],
+      "text": "baculo virus derived HA vaccine in adults for prevention of sea onal influenza and supports that significant protection in a primed opulation can be obtained against influenza with apure hemagutinin vaccine. The efficacy results also demonstrate that in dults, the minor differences in HA glycosylation seen in insect cells ompared to mammalian cells and the synthesis of the HA as an ncleaved precursor do not preclude the generation of an effective mmune response in adults. The use of recombinant DNA techniques to express proteins cell culture has been a successful approach for generation of ghly effective vaccines for the prevention of hepatitis B (HBV) nd human papilloma virus (HPV), and baculo virus expression techology is currently used for a licensed HPV vaccine [26]. Among he available expression technologies, recombinant baculo virus is specially well suited for production of influenza vaccine because he rapidity with which genes can be cloned and inserted into this ector facilitates updating the vaccine at regular intervals. Expreson of the HA protein in insect cells using recombinant baculo virus so avoids the need to work with potentially pathogenic, live flu enz a viruses, and the attendant bio containment issues that ould be a particular concern for production of pandemic vaccines 7]. The results of the current study support the utility of insect ells for the production of well tolerated and effective vaccines for easonal influenza.",
+      "metadata": {
+        "score": 0.9840171933174133,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.004370212554931641,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_5_004",
+      "page_index": 5,
+      "role": "Text",
+      "bbox": [
+        210.578125,
+        1018.7733154296875,
+        1637.8797607421875,
+        1979.23095703125
+      ],
+      "text": "ubjects in this study: Mhorag Hay M. D., University of Rochester chool of Medicine, Rochester, NY; Mark Blatter M. D., Primary hysicians Research, Pittsburgh, PA; Stanley Block M. D., Kentucky ediatric/Adult Research, Bardstown, KY; Bruce Bowling M. D., egional Clinical Research, End well, NY; Teresa Coats M. D., Benchmark Research, Austin, TX; Hana El Sahly M. D., Baylor College of Medicine, Houston, TX; Ivor Emanuel M. D., Benchmark Research, an Francisco, CA; Brandon Essink M. D., Meridian Clinical Research, maha, NB; Larry Gil der man D. O., University Clinical Research embroke, Pines, FL; Irene Graham M. D., St. Louis University, St. ouis, MO; Matt Hall M. D., Marshfield Clinic, Marshfield, WI; Lydie azan M. D., Impact Clinical Trials, Beverly Hills, CA; Darrell Her ngt on D. O., Benchmark Research, San Angelo, TX; Steven Hull M. D., Vince and Associates Clinical Research, Overland Park, KS; obert Jeanfreau M. D., Benchmark Research Meta i rie, LA; James ing M. D., University of Maryland, Baltimore, MD; Ivan Rarick M. D., Benchmark Research, Sacramento, CA; Keith Reisinger M. D.,",
+      "metadata": {
+        "score": 0.989048957824707,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.003165006637573242,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_5_001",
+      "page_index": 5,
+      "role": "Text",
+      "bbox": [
+        214.21963500976562,
+        527.99853515625,
+        1635.591064453125,
+        1058.3009033203125
+      ],
+      "text": "M. D., Benchmark Research, Sacramento, CA; Keith Reisinger M. D., rimary Physicians Research, Pittsburgh, PA; Robert Rosen M. D., arol in a Medical Trials, Winston-Salem, NC; Gilbert Schiff M. D., terling Research, Cincinnati, OH; William Seger M. D., Benchmark esearch Fort, Worth, TX; Helen Keipp Talbot M. D., Vanderbilt Uniersity, Nashville, TN; Gilbert Podolsky M. D., Jean Brown Research alt, Lake City, UT; Birgit Win ther M. D., University of Virginia, Charottesville, VA. Conflict of interest statement: J. T. has received grant support for in ical trials from Protein Sciences Corporation Wyeth San of i",
+      "metadata": {
+        "score": 0.995051920413971,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0019860267639160156,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_5_005",
+      "page_index": 5,
+      "role": "Text",
+      "bbox": [
+        1715.72021484375,
+        335.94549560546875,
+        3123.32568359375,
+        714.440185546875
+      ],
+      "text": "2] Belong i a EA, Kieke BA, Donahue JG, Green lee RT, Balish A, Foust A, et al. Effectiveness of in activated influenza vaccines varied substantially with antigenic match from the 2004-2005 season to the 2006-2007 season. J Infect Dis 2009 199. 3] Skowr on ski DM, Masaro C, Kwindt TL, Mak A, Petric M, Li Y, et al. Estimating vaccine effectiveness against laboratory confirmed influenza using a sentinel physician network: Results from the 2005-2006 season of dual A and B vaccine mismatch in Canada. Vaccine 2007 25 2842 51. 4] Belong i a E Kieke B Coleman L Donahue J Irving S Meece J et al Interim",
+      "metadata": {
+        "score": 0.9855918884277344,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.003718137741088867,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_5_000",
+      "page_index": 5,
+      "role": "Title",
+      "bbox": [
+        215.2003173828125,
+        2093.674072265625,
+        671.1856689453125,
+        2158.872802734375
+      ],
+      "text": "aFleur, Anthony Meyer gators at the study site",
+      "metadata": {
+        "score": 0.9962499737739563,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00019311904907226562,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_5_003",
+      "page_index": 5,
+      "role": "Text",
+      "bbox": [
+        201.64051818847656,
+        345.172607421875,
+        1647.5828857421875,
+        500.16082763671875
+      ],
+      "text": "GlaxoSmithKline, PaxVax, Ligocyte, and Vax innate, and is apaid onsultant to ITS incorporated and Novartis. H. E.-S. has received rant support from GlaxoSmithKline for clinical trials. I. G., and",
+      "metadata": {
+        "score": 0.9894194602966309,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0006399154663085938,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_5_002",
+      "page_index": 5,
+      "role": "Title",
+      "bbox": [
+        1712.6226806640625,
+        837.8687744140625,
+        1970.97216796875,
+        900.0097045898438
+      ],
+      "text": "1] Jackson L, Ga ffi d",
+      "metadata": {
+        "score": 0.9907703399658203,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0001533031463623047,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_5_007",
+      "page_index": 5,
+      "role": "Text",
+      "bbox": [
+        226.70382690429688,
+        3823.712890625,
+        1619.081787109375,
+        4196.986328125
+      ],
+      "text": "38 J. J. Tre an or et al. / Vaccin eclearly impacted by antigenic differences between vaccine and rculating viruses, with highest levels of effectiveness reported for 1 viruses [25] and lowest levels for influenza B. The current study provides evidence of protective efficacy of baculo virus derived HA vaccine in adults for prevention of sea-",
+      "metadata": {
+        "score": 0.9730594158172607,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0012319087982177734,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_5_008",
+      "page_index": 5,
+      "role": "Text",
+      "bbox": [
+        226.22975158691406,
+        2203.91845703125,
+        1630.0672607421875,
+        2385.86767578125
+      ],
+      "text": "cknowledgements The authors acknowledge the efforts of Kerry Senger, Tam",
+      "metadata": {
+        "score": 0.9704602360725403,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0003819465637207031,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_5_011",
+      "page_index": 5,
+      "role": "Text",
+      "bbox": [
+        1745.8765869140625,
+        944.8573608398438,
+        3122.776123046875,
+        1132.9918212890625
+      ],
+      "text": "efficacy of in activated and live attenuated influenza vaccines. N Engl J Med 2009 361 1260 7. Beran J, Wertzova V, Honegr K, Kal is kova E, Hav lick ova M, Havlik J, et al. Challenge of conducting a placebo controlled randomized efficacy study for influenza vaccine in a season with low attack rate and a mismatched vaccine B",
+      "metadata": {
+        "score": 0.6507959365844727,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0023009777069091797,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_5_014",
+      "page_index": 5,
+      "role": "Text",
+      "bbox": [
+        1723.497314453125,
+        4083.535400390625,
+        3117.438720703125,
+        4192.052734375
+      ],
+      "text": "(2011) 77337739 nts to Protein Sciences and multiple other entities R I and M C",
+      "metadata": {
+        "score": 0.3811368942260742,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0003361701965332031,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "det_6_001",
+      "page_index": 6,
+      "role": "Text",
+      "bbox": [
+        1779.69775390625,
+        346.5368957519531,
+        3182.71337890625,
+        638.35546875
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.8423281311988831,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    },
+    {
+      "id": "det_6_002",
+      "page_index": 6,
+      "role": "Text",
+      "bbox": [
+        1328.9169921875,
+        237.19265747070312,
+        2127.79296875,
+        296.29638671875
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.7685056924819946,
+        "detection_dpi": 400,
+        "detector": "PubLayNet",
+        "extraction_status": "empty"
+      }
+    }
+  ],
+  "reading_order": [
+    [
+      "det_0_005",
+      "det_0_011",
+      "det_0_004",
+      "det_0_012",
+      "det_0_016",
+      "det_0_027",
+      "det_0_006",
+      "det_0_009",
+      "det_0_014",
+      "det_0_007",
+      "det_0_003",
+      "det_0_001",
+      "det_0_013",
+      "det_0_008",
+      "det_0_019",
+      "det_0_024",
+      "det_0_002",
+      "det_0_000"
+    ],
+    [
+      "det_1_003",
+      "det_1_005",
+      "det_1_007",
+      "det_1_014",
+      "det_1_010",
+      "det_1_013",
+      "det_1_006",
+      "det_1_001",
+      "det_1_002",
+      "det_1_017",
+      "det_1_011",
+      "det_1_015",
+      "det_1_012",
+      "det_1_016",
+      "det_1_004",
+      "det_1_009",
+      "det_1_008",
+      "det_1_000"
+    ],
+    [
+      "det_2_010",
+      "det_2_001",
+      "det_2_009",
+      "det_2_005",
+      "det_2_004",
+      "det_2_008",
+      "det_2_013",
+      "det_2_003",
+      "det_2_011",
+      "det_2_000",
+      "det_2_014",
+      "det_2_007",
+      "det_2_002",
+      "det_2_006",
+      "det_2_015",
+      "det_2_012"
+    ],
+    [
+      "det_3_017",
+      "det_3_013",
+      "det_3_015",
+      "det_3_003",
+      "det_3_014",
+      "det_3_004",
+      "det_3_006",
+      "det_3_011",
+      "det_3_002",
+      "det_3_000",
+      "det_3_007",
+      "det_3_010",
+      "det_3_012",
+      "det_3_009",
+      "det_3_008",
+      "det_3_001",
+      "det_3_005"
+    ],
+    [
+      "det_4_002",
+      "det_4_006",
+      "det_4_012",
+      "det_4_000",
+      "det_4_003",
+      "det_4_010",
+      "det_4_011",
+      "det_4_014",
+      "det_4_005",
+      "det_4_013",
+      "det_4_008",
+      "det_4_009",
+      "det_4_004",
+      "det_4_001",
+      "det_4_007"
+    ],
+    [
+      "det_5_003",
+      "det_5_001",
+      "det_5_004",
+      "det_5_000",
+      "det_5_008",
+      "det_5_006",
+      "det_5_007",
+      "det_5_005",
+      "det_5_002",
+      "det_5_011",
+      "det_5_014"
+    ],
+    [
+      "det_6_002",
+      "det_6_001"
+    ]
+  ],
+  "metadata": {
+    "pipeline": "standard",
+    "detection_dpi": 400,
+    "total_pages": 7,
+    "extraction": {
+      "text_blocks": 79,
+      "figure_blocks": 7,
+      "figures_dir": "data/cache/Treanor_et_al.__2011_/extracted/figures"
+    }
+  },
+  "pipeline_metadata": {
+    "raw_detection_count": 126,
+    "after_consolidation_count": 97,
+    "final_block_count": 97,
+    "box_tracking_enabled": true,
+    "id_format": "det_<page>_<index> for detections, mrg_<source_id> for merges"
+  }
+}
