@@ -106,29 +106,7 @@ python -m src.cli run-study
 
 ---
 
-## 4. Installation details (if you hit problems)
-
-```bash
-# Clone repository
-git clone <repo-url> && cd solstice
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-make install
-make install-detectron2
-
-# Configure OpenAI
-cp .env.example .env
-# Edit .env and add: OPENAI_API_KEY=sk-...
-
-# Start gateway service
-make up
-```
-
-## 5. Run commands (expanded)
+## 4. Run commands (expanded)
 
 ```bash
 # Process included PDFs into structured documents
@@ -138,7 +116,7 @@ python -m src.cli ingest
 python -m src.cli run-study
 ```
 
-## 6. What happens under the hood?
+## 5. What happens under the hood?
 
 Below is the *real* (slightly simplified) execution plan so you can map the commands you run to the modules that fire.
 
@@ -222,7 +200,7 @@ data/studies/Flu_Vaccine_Study/
 └── ...
 ```
 
-## 7. Project structure
+## 6. Project structure
 
 ```
 fact-check/
@@ -245,16 +223,39 @@ fact-check/
 │   ├── claims/              # Claim files
 │   └── studies/             # Results
 ├── docker/                  # Docker configurations
-└── scripts/                 # Setup utilities
-```
+ └── scripts/                 # Setup utilities
+ ```
 
 ---
 
-## 8. Contributing
+## 7. Installation details (if you hit problems)
 
-Pull-requests are welcome.  The fastest path to a merged PR is:
+The quick-start earlier should work on most systems.  If it doesn’t, follow the longer, OS-specific instructions below.
 
-1. Open a **Draft PR** early so we can discuss the approach.
-2. Follow the existing naming and folder conventions (`*_pipeline`, `agents/*`, `orchestrators/*`).
-3. Add a concise docstring that explains “why”, not only “what”.
-4. Run `make lint test` (or at the very least `pytest -q`) before marking the PR as ready.
+```bash
+# 1. Clone & enter repo
+git clone <repo-url> && cd fact-check
+
+# 2. Create a virtual environment (recommended)
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# 3. Core dependencies
+make install                # ↳ installs OpenAI, FAISS, PyMuPDF, etc.
+
+# 4. Detectron2 (layout detection)
+make install-detectron2     # uses CUDA if available, add CPU_ONLY=1 to force CPU
+
+# 5. Environment variables
+cp .env.example .env && echo "OPENAI_API_KEY=sk-..." >> .env
+
+# 6. Optional: start gateway service
+make up                     # docker-compose up -d
+```
+
+Common pitfalls:
+• macOS M-series + Detectron2 – use `make install-detectron2 CPU_ONLY=1`.  
+• Poppler missing – `brew install poppler` (macOS) / `apt-get install poppler-utils` (Debian/Ubuntu).  
+• OpenAI rate limits – make sure the gateway is up; it automatically retries.
+
+If problems persist, run `python -m src.cli sys-info` and open an issue with the output and full stack-trace.
+
