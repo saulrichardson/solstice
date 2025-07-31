@@ -83,7 +83,7 @@ The fact-checking pipeline orchestrates multiple LLM calls in a specific sequenc
 \draw[arrow] (complete) -- (verify);
 \draw[arrow] (verify) -- (result);
 \draw[arrow] (claim.east) -- ++(1.5,0) |- (image);
-\draw[arrow] (image.south) -- ++(0,-2.5) -| (result);
+\draw[arrow] (image) -- (result);
 \draw[arrow, dashed] (docs) -- (extract);
 \draw[arrow, dashed] (docs.north) -- ++(0,0.5) -| (image);
 
