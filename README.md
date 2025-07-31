@@ -17,61 +17,29 @@ Solstice is an **end-to-end research prototype** that takes a pile of PDF clinic
 
 ---
 
-## Quick-start
+## 1. Installation
 
-Prerequisites: Python 3.11–3.12, Docker (optional), an OpenAI API key, Poppler (`brew install poppler` / `apt-get install poppler-utils`).
-
-```bash
-# 1️⃣  Clone the repository
-git clone <repo-url> && cd solstice
-
-# 2️⃣  Create a virtual env (recommended)
-python -m venv .venv && source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
-
-# 3️⃣  Install dependencies (plus Detectron2 for layout detection)
-make install && make install-detectron2
-
-# 4️⃣  Configure OpenAI
-cp .env.example .env && echo "OPENAI_API_KEY=sk-..." >> .env
-
-# 5️⃣  (Optional) start gateway service for rate-limiting & audit logs
-make up   # docker-compose up -d
-```
-
-Done! You can now ingest documents and run a fact-checking study. See section 2 below for all available commands.
-
----
-
-## 1. Installation details
-
-The quick-start should work on most systems. If it doesn't, follow the longer, OS-specific instructions below.
+**Prerequisites:** Python 3.11–3.12, OpenAI API key, Poppler utils
 
 ```bash
-# 1. Clone & enter repo
+# Clone and setup
 git clone <repo-url> && cd solstice
-
-# 2. Create a virtual environment (recommended)
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
-# 3. Core dependencies
-make install                # ↳ installs OpenAI, FAISS, PyMuPDF, etc.
+# Install everything
+make install && make install-detectron2   # Add CPU_ONLY=1 for M-series Macs
 
-# 4. Detectron2 (layout detection)
-make install-detectron2     # uses CUDA if available, add CPU_ONLY=1 to force CPU
-
-# 5. Environment variables
+# Configure OpenAI
 cp .env.example .env && echo "OPENAI_API_KEY=sk-..." >> .env
 
-# 6. Optional: start gateway service
-make up                     # docker-compose up -d
+# (Optional) Start gateway service
+make up
 ```
 
-Common pitfalls:
-• macOS M-series + Detectron2 – use `make install-detectron2 CPU_ONLY=1`.  
-• Poppler missing – `brew install poppler` (macOS) / `apt-get install poppler-utils` (Debian/Ubuntu).  
-• OpenAI rate limits – make sure the gateway is up; it automatically retries.
-
-If problems persist, open an issue with the full error message and stack trace.
+**Troubleshooting:**
+- Missing Poppler: `brew install poppler` (macOS) or `apt-get install poppler-utils` (Linux)
+- M-series Mac: Use `make install-detectron2 CPU_ONLY=1`
+- See full commands with `python -m src.cli --help`
 
 ---
 
