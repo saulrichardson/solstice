@@ -66,7 +66,7 @@ The project is intentionally kept small and hackable; everything runs from the c
    - claim_002/evidence_report.json
 ```
 
-## 3. Setup
+<!-- Deprecated duplicate setup section removed -->
 
 ### Prerequisites
 
@@ -106,7 +106,7 @@ python -m src.cli run-study
 
 ---
 
-## 4. Run commands (expanded)
+<!-- Duplicate run commands section removed -->
 
 ```bash
 # Process included PDFs into structured documents

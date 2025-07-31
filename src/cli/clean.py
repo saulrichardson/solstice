@@ -7,16 +7,24 @@ from pathlib import Path
 
 def main():
     """Remove entire cache directory."""
-    cache_dir = Path("data/scientific_cache")
-    studies_dir = Path("data/studies")
+    # Directories to be fully removed in a cache clear
+    cache_dirs = [
+        Path("data/scientific_cache"),  # default scientific pipeline output
+        Path("data/marketing_cache"),   # marketing-material pipeline output
+        Path("data/gateway_cache"),     # audit logs from the gateway service
+    ]
+
+    studies_dir = Path("data/studies")  # finished fact-checking studies
     
-    if not cache_dir.exists() and not studies_dir.exists():
+    # Check if there is anything to delete
+    if not any(d.exists() for d in cache_dirs) and not studies_dir.exists():
         print("No cache or studies directories found.")
         return
     
     print("This will remove:")
-    if cache_dir.exists():
-        print(f"  • {cache_dir} (all cached documents)")
+    for d in cache_dirs:
+        if d.exists():
+            print(f"  • {d} (cache)")
     if studies_dir.exists():
         print(f"  • {studies_dir} (all study results)")
     
@@ -27,9 +35,10 @@ def main():
         return
     
     # Remove directories
-    if cache_dir.exists():
-        shutil.rmtree(cache_dir)
-        print(f"✓ Removed {cache_dir}")
+    for d in cache_dirs:
+        if d.exists():
+            shutil.rmtree(d)
+            print(f"✓ Removed {d}")
     
     if studies_dir.exists():
         shutil.rmtree(studies_dir)

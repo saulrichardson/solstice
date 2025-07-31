@@ -40,9 +40,8 @@ class BaseAgent(ABC):
         self.pdf_dir = self.cache_dir / pdf_name
         self.agents_dir = self.pdf_dir / "agents"
         
-        # Default agent directory (can be overridden by subclasses)
-        self.agent_dir = self.agents_dir / self.agent_name
-        self.agent_dir.mkdir(parents=True, exist_ok=True)
+        # Agent directory must be set by subclasses
+        self.agent_dir: Optional[Path] = None
         
         # Initialize metadata
         self.metadata = {
@@ -149,6 +148,10 @@ class BaseAgent(ABC):
         Args:
             data: Dictionary of output data to save
         """
+        if self.agent_dir is None:
+            raise AgentError(f"{self.agent_name} must set agent_dir in __init__")
+        # Ensure directory exists
+        self.agent_dir.mkdir(parents=True, exist_ok=True)
         # Save main output
         output_file = self.agent_dir / "output.json"
         with open(output_file, 'w') as f:
@@ -163,12 +166,18 @@ class BaseAgent(ABC):
     
     def save_json(self, data: Dict[str, Any], filename: str) -> None:
         """Save JSON file helper"""
+        if self.agent_dir is None:
+            raise AgentError(f"{self.agent_name} must set agent_dir in __init__")
         output_path = self.agent_dir / filename
         with open(output_path, 'w') as f:
             json.dump(data, f, indent=2)
     
     def _save_metadata(self) -> None:
         """Save agent metadata"""
+        if self.agent_dir is None:
+            raise AgentError(f"{self.agent_name} must set agent_dir in __init__")
+        # Ensure directory exists (in case subclass didn't create it)
+        self.agent_dir.mkdir(parents=True, exist_ok=True)
         metadata_file = self.agent_dir / "metadata.json"
         with open(metadata_file, 'w') as f:
             json.dump(self.metadata, f, indent=2)
