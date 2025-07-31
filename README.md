@@ -4,10 +4,6 @@ Fact Check is an **end-to-end research prototype** that takes a pile of PDF clin
 
 📄 **[Technical Writeup (PDF)](docs/writeup/solstice.pdf)** - Detailed system architecture, LLM pipeline, and implementation notes
 
-Behind the scenes Fact Check combines computer-vision layout analysis, traditional NLP, and a chain-of-thought LLM pipeline so you **don't have to read 200 pages to check a single sentence**.
-
-The project is intentionally kept small and hackable; everything runs from the command line and stores intermediate artefacts on disk so you can inspect (and tweak!) every step.
-
 ---
 
 ## 1. How Fact Check fits together
