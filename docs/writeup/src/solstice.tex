@@ -385,17 +385,6 @@ The pipeline stores intermediate data on the filesystem rather than in a databas
 
 The following examples demonstrate Solstice's layout detection capabilities on real documents.
 
-\subsection{Marketing Material Layout Detection}
-
-Figure \ref{fig:marketing-layout} shows the layout detection on a pharmaceutical marketing page. The system identifies distinct marketing elements including headers, body text, and visual design components, preserving the intended visual hierarchy.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{../../data/marketing_cache/FlublokOnePage/visualizations/page_001_layout.png}
-\caption{Layout detection on marketing material (FlublokOnePage). Different colors indicate detected elements: headers, body text, figures, and marketing-specific components. The detection preserves reading order and visual hierarchy essential for marketing documents.}
-\label{fig:marketing-layout}
-\end{figure}
-
 \subsection{Scientific PDF Layout Detection}
 
 Figure \ref{fig:scientific-layout} demonstrates the system handling a complex scientific page containing figures, tables, and dense academic text. This example from Arunachalam et al. (2021) shows successful detection of multiple distinct elements including data visualizations, methodology diagrams, and scientific text blocks.
@@ -405,6 +394,17 @@ Figure \ref{fig:scientific-layout} demonstrates the system handling a complex sc
 \includegraphics[width=0.8\textwidth]{../../data/scientific_cache/Arunachalam_et_al.__2021_/visualizations/page_003_layout.png}
 \caption{Layout detection on a complex scientific page (Arunachalam et al., 2021, page 3). The system correctly identifies and separates: (1) text blocks, (2) scientific figures, (3) figure captions, (4) methodology sections, and (5) data visualizations. The colored bounding boxes indicate different element types detected by the Detectron2 model.}
 \label{fig:scientific-layout}
+\end{figure}
+
+\subsection{Marketing Material Layout Detection}
+
+Figure \ref{fig:marketing-layout} shows the layout detection on a pharmaceutical marketing page. The system identifies distinct marketing elements including headers, body text, and visual design components, preserving the intended visual hierarchy.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../../data/marketing_cache/FlublokOnePage/visualizations/page_001_layout.png}
+\caption{Layout detection on marketing material (FlublokOnePage). Different colors indicate detected elements: headers, body text, figures, and marketing-specific components. The detection preserves reading order and visual hierarchy essential for marketing documents.}
+\label{fig:marketing-layout}
 \end{figure}
 
 These visualizations demonstrate the system's ability to handle diverse document types, from marketing materials with complex visual designs to dense scientific publications with mixed content types. The layout detection forms the foundation for accurate text extraction and evidence retrieval.
