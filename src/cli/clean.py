@@ -7,7 +7,7 @@ from pathlib import Path
 
 def main():
     """Remove entire cache directory."""
-    cache_dir = Path("data/cache")
+    cache_dir = Path("data/scientific_cache")
     studies_dir = Path("data/studies")
     
     if not cache_dir.exists() and not studies_dir.exists():

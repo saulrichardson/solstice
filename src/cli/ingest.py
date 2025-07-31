@@ -15,7 +15,7 @@ from ..core.config import settings
 
 # Default paths
 DEFAULT_INPUT_DIR = Path("data/clinical_files")
-DEFAULT_OUTPUT_DIR = Path("data/cache")
+DEFAULT_OUTPUT_DIR = Path("data/scientific_cache")
 
 
 def process_all_pdfs(output_dir: Optional[Path] = None) -> None:

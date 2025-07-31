@@ -1,0 +1,44 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": {
+    "pdf_name": "Grohskopf_et_al.__2023_",
+    "source_pdf": "data/clinical_files/Grohskopf et al. (2023).pdf",
+    "total_pages": 32,
+    "total_blocks": 295,
+    "total_characters": 110650
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 5,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total). Contraindications and Precautions for the Use of RIV4. RIV4 is contraindicated in persons who have had a severe allergic reaction (e.g., anaphylaxis) to a previous dose of any RIV of any valency or any component of RIV4. A history of a severe allergic reaction (e.g., anaphylaxis) to any other influenza vaccine (i.e., any egg based IIV, ccIIV, or LAIV of any valency) is a precaution for the use of RIV4.",
+      "relevance_explanation": "This quote establishes that Flublok Quadrivalent (RIV4) is a recombinant influenza vaccine available for the 2022-23 season, setting the context for its evaluation in clinical trials."
+    },
+    {
+      "id": 2,
+      "quote": "Substantially less experience exists with more recently licensed IIVs (e.g., quadrivalent and cell culture based vaccines) during pregnancy than with previously available products. For RIV (available as RIV3 from 2013-14 through 2017-18 and as RIV4 since 2017-18), data are limited to reports of pregnancies occurring incidentally during clinical trials, Vaccine Adverse Event Reporting System (VAERS) reports, and pregnancy registries.",
+      "relevance_explanation": "This quote confirms that Flublok Quadrivalent (RIV4) has been available since 2017-18 and has been the subject of clinical trials, supporting its evaluation in pivotal studies."
+    },
+    {
+      "id": 3,
+      "quote": "Children were randomized in a 2:1 ratio to receive either Flu cel vax Quadrivalent (0.5 mL/dose containing 15 \u00b5g HA per virus for all ages) or a licensed comparator egg based IIV4 (0.25 mL/dose containing 7.5 \u00b5g HA per virus for those aged 6 through 35 months and 0.5 mL/dose containing 15 \u00b5g HA per virus for those aged 36 through 47 months) (130).",
+      "relevance_explanation": "This quote demonstrates the use of a head-to-head randomized trial design with a licensed comparator IIV4, which is the standard approach for pivotal vaccine trials, supporting the claim that Flublok Quadrivalent was evaluated against a standard-dose quadrivalent vaccine."
+    },
+    {
+      "id": 4,
+      "quote": "Flublok Quadrivalent [Package Insert]. Meriden, CT: Protein Sciences; 2022.",
+      "relevance_explanation": "The reference to the Flublok Quadrivalent package insert indicates that clinical trial data, including pivotal trial comparisons, are documented and available, supporting the claim that Flublok Quadrivalent was evaluated in clinical studies."
+    },
+    {
+      "id": 5,
+      "quote": "A randomized clinical trial during the 2017-18 influenza season suggested that delaying IIV4 administration by 2 weeks in children receiving diphtheria and tetanus toxoids and acellular pertussis (DTaP)...",
+      "relevance_explanation": "This quote references a randomized clinical trial involving IIV4, which is the standard-dose quadrivalent vaccine, supporting the context of head-to-head evaluations in pivotal trials."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

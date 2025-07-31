@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "An excerpt from the Flublok full prescribing information showing section headings (e.g., Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Warnings and Precautions, Adverse Reactions) and listing that Flublok is supplied as a 0.5 mL injection. The table of contents and dosage form/strength section lists only the volume of the Flublok injection and section headings; it contains no information on hemagglutinin antigen content or comparisons to standard-dose vaccines, and thus does not support the claim. Note: The image is clear but does not include antigen content data, limiting any conclusions about HA dosage.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "An excerpt from the Flublok full prescribing information showing section headings (e.g., Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Warnings and Precautions, Adverse Reactions) and listing that Flublok is supplied as a 0.5 mL injection.",
+    "evidence_found": null,
+    "reasoning": "The table of contents and dosage form/strength section lists only the volume of the Flublok injection and section headings; it contains no information on hemagglutinin antigen content or comparisons to standard-dose vaccines, and thus does not support the claim.",
+    "confidence_notes": "The image is clear but does not include antigen content data, limiting any conclusions about HA dosage."
+  }
+}

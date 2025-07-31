@@ -25,7 +25,7 @@ def main():
     )
     ingest_parser.add_argument(
         "--output-dir",
-        help="Custom output directory (default: data/cache)"
+        help="Custom output directory (default: data/scientific_cache)"
     )
     
     # Run study command  
@@ -54,7 +54,7 @@ def main():
     )
     marketing_parser.add_argument(
         "--output-dir",
-        help="Custom output directory (default: data/cache)"
+        help="Custom output directory (default: data/marketing_cache)"
     )
     
     # Clear cache command

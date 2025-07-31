@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "The image is a black rectangle with no legible table data or text visible does not support the claim as no relevant data on HA antigen content or immunogenicity is visible in the image Note: Image is unreadable or missing; unable to assess content",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "The image is a black rectangle with no legible table data or text visible",
+    "evidence_found": null,
+    "reasoning": "does not support the claim as no relevant data on HA antigen content or immunogenicity is visible in the image",
+    "confidence_notes": "Image is unreadable or missing; unable to assess content"
+  }
+}

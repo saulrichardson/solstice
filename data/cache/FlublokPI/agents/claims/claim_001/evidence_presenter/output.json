@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "FlublokPI",
+  "supporting_evidence": [
+    {
+      "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/2022 (H3 N2) and B/Austria/1359417/2021.",
+      "explanation": "The quote appears in the document, specifically in the following passage: 'For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' The factual content, numbers, and technical details are preserved and match the quote to verify.. The quote directly supports the first part of the claim by explicitly stating that Flublok contains 135 mcg of HA per 0.5 mL dose, with 45 mcg HA per strain for three strains. This is three times the standard 15 mcg HA per strain in standard-dose flu vaccines (though the document does not state the standard-dose content, the quote confirms the Flublok content). However, the quote does not address the second part of the claim regarding greater immunogenicity versus standard-dose flu vaccines. Therefore, the quote fully supports the claim about antigen content but does not provide evidence for the immunogenicity comparison."
+    },
+    {
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/2022 (H3 N2) and B/Austria/1359417/2021.",
+      "explanation": "The quote appears in the document on page 3, in the following passage: 'Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' The factual content, numbers, and technical details are all present and match the quote to verify.. The quote directly states that Flublok contains 135 mcg of HA per 0.5 mL dose, with 45 mcg HA for each of three strains. This is three times the standard 15 mcg per strain found in standard-dose flu vaccines, thus supporting the claim about antigen content. However, the quote does not address immunogenicity or its comparison to standard-dose vaccines. It only supports the part of the claim regarding the HA antigen content being 3x higher."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 2,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 2,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 2
+    },
+    "rejected_count": 0
+  }
+}

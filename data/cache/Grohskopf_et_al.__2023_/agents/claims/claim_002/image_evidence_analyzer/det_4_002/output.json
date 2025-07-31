@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p5_det_4_002.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_002",
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "supports_claim": false,
+  "explanation": "A multi\u2010column table listing licensed influenza vaccines for the 2022\u201323 season, grouped by formulation type (standard\u2010dose egg\u2010based quadrivalent, cell culture\u2013based, high\u2010dose egg\u2010based, MF59\u2010adjuvanted egg\u2010based, recombinant HA, live attenuated egg\u2010based), with columns for manufacturer, presentations (e.g., 0.5\u2010mL prefilled syringe, 5.0\u2010mL multidose vial), age indications, antigen content per dose (\u00b5g of HA per virus), route of administration (intramuscular or intranasal), and HA per dose in \u00b5g/mL where applicable. The table provides dosing and presentation details for different influenza vaccines but does not mention or provide data on mutations arising during egg\u2010 or cell culture production or any impact on vaccine effectiveness; it does not support the claim. Note: Image is clear for all vaccine specifications; no statements about production\u2010related mutations or effectiveness were visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multi\u2010column table listing licensed influenza vaccines for the 2022\u201323 season, grouped by formulation type (standard\u2010dose egg\u2010based quadrivalent, cell culture\u2013based, high\u2010dose egg\u2010based, MF59\u2010adjuvanted egg\u2010based, recombinant HA, live attenuated egg\u2010based), with columns for manufacturer, presentations (e.g., 0.5\u2010mL prefilled syringe, 5.0\u2010mL multidose vial), age indications, antigen content per dose (\u00b5g of HA per virus), route of administration (intramuscular or intranasal), and HA per dose in \u00b5g/mL where applicable.",
+    "evidence_found": null,
+    "reasoning": "The table provides dosing and presentation details for different influenza vaccines but does not mention or provide data on mutations arising during egg\u2010 or cell culture production or any impact on vaccine effectiveness; it does not support the claim.",
+    "confidence_notes": "Image is clear for all vaccine specifications; no statements about production\u2010related mutations or effectiveness were visible."
+  }
+}

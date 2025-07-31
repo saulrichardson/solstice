@@ -16,7 +16,7 @@ logging.basicConfig(
 
 def get_default_documents():
     """Get list of document names from cache that have extracted content."""
-    cache_dir = Path("data/cache")
+    cache_dir = Path("data/scientific_cache")
     documents = []
     if cache_dir.exists():
         # Only include documents that have extracted content
@@ -42,7 +42,7 @@ def main(claims_file=None, documents=None):
         documents = get_default_documents()
     
     # Fixed directories
-    cache_dir = "data/cache"
+    cache_dir = "data/scientific_cache"
     output_dir = "data/studies"
     
     # Validate claims file exists

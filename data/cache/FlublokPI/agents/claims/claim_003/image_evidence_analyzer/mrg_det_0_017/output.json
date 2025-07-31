@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A partial page of full prescribing information for Flublok vaccine including section headings (Contents, Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, Patient Counseling Information) and a summary of Indications, Dosage, Dosage Forms, Contraindications, Warnings, and Adverse Reactions. The visible table is an index and basic prescribing information for Flublok and includes safety and administration details but contains no data or statements about recombinant technology producing a broader immune response or cross-protection in mismatch seasons, so it does not support the claim. Note: Only the prescribing information index and basic safety sections are visible; no clinical study data or mechanistic descriptions are shown in this excerpt.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A partial page of full prescribing information for Flublok vaccine including section headings (Contents, Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, Patient Counseling Information) and a summary of Indications, Dosage, Dosage Forms, Contraindications, Warnings, and Adverse Reactions.",
+    "evidence_found": null,
+    "reasoning": "The visible table is an index and basic prescribing information for Flublok and includes safety and administration details but contains no data or statements about recombinant technology producing a broader immune response or cross-protection in mismatch seasons, so it does not support the claim.",
+    "confidence_notes": "Only the prescribing information index and basic safety sections are visible; no clinical study data or mechanistic descriptions are shown in this excerpt."
+  }
+}

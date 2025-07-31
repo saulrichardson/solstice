@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_020.png",
+  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_020.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_020",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table presenting vaccine efficacy data for Flublok (and placebo or comparator) against CDC-defined influenza-like illness and culture-confirmed influenza, showing case counts, attack rates, relative risk, vaccine efficacy percentages with 95% confidence intervals, along with footnotes and references. The image provides efficacy data but does not present any information on hemagglutinin antigen content or direct comparisons of antigen dose between Flublok and standard-dose vaccines, and therefore does not support the claim. Note: Image does not include antigen content or immunogenicity data; only efficacy outcomes are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table presenting vaccine efficacy data for Flublok (and placebo or comparator) against CDC-defined influenza-like illness and culture-confirmed influenza, showing case counts, attack rates, relative risk, vaccine efficacy percentages with 95% confidence intervals, along with footnotes and references.",
+    "evidence_found": null,
+    "reasoning": "The image provides efficacy data but does not present any information on hemagglutinin antigen content or direct comparisons of antigen dose between Flublok and standard-dose vaccines, and therefore does not support the claim.",
+    "confidence_notes": "Image does not include antigen content or immunogenicity data; only efficacy outcomes are shown."
+  }
+}

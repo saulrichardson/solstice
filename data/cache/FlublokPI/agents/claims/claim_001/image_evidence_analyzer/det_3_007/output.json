@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_007.png",
+  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_007.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_007",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table presenting attack rates (n/N and %), number of subjects (n), relative risk (RR), and relative vaccine efficacy (rVE % with 95% CI) for FluBlok compared with a standard-dose inactivated influenza vaccine (Fluarix Quadrivalent). Footnotes define PCR-confirmed cases, comparator vaccine, calculation of rVE, and study protocol descriptions. The table provides clinical efficacy data (attack rates, RR, rVE) but does not present any information about hemagglutinin antigen content or a comparison of HA quantities. Therefore, it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table presenting attack rates (n/N and %), number of subjects (n), relative risk (RR), and relative vaccine efficacy (rVE % with 95% CI) for FluBlok compared with a standard-dose inactivated influenza vaccine (Fluarix Quadrivalent). Footnotes define PCR-confirmed cases, comparator vaccine, calculation of rVE, and study protocol descriptions.",
+    "evidence_found": null,
+    "reasoning": "The table provides clinical efficacy data (attack rates, RR, rVE) but does not present any information about hemagglutinin antigen content or a comparison of HA quantities. Therefore, it does not support the claim.",
+    "confidence_notes": null
+  }
+}
