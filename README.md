@@ -63,11 +63,6 @@ cp .env.example .env && echo "OPENAI_API_KEY=sk-..." >> .env
 make up
 ```
 
-**Troubleshooting:**
-- Missing Poppler: `brew install poppler` (macOS) or `apt-get install poppler-utils` (Linux)
-- M-series Mac: Use `make install-detectron2 CPU_ONLY=1`
-- See full commands with `python -m src.cli --help`
-
 ---
 
 ## 2. Run commands
