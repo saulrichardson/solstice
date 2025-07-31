@@ -86,35 +86,62 @@ This single JSON file contains all the verified evidence for each claim, includi
 
 For developers who need to debug or analyze individual processing steps, the system also maintains a detailed directory structure under \texttt{data/studies/<study\_name>/} with intermediate outputs from each agent, but most users will only need the consolidated results file.
 
-\paragraph{2. Marketing Material Analysis}
-Marketing PDFs undergo specialized processing with enhanced visualization extraction. The results are stored in:
+\paragraph{2. Marketing Material Cache}
+Marketing PDFs like FlublokOnePage are processed and stored with the following structure:
 
 \begin{verbatim}
-data/marketing_cache/<pdf_name>/
+data/marketing_cache/FlublokOnePage/
 |-- extracted/
-|   |-- content.json               # Full document structure and text
-|   |-- metadata.json              # Document metadata and processing info
-|   `-- reading_order.json         # Computed reading sequence
-|-- figures/
-|   |-- figure_1.png               # High-resolution figure at 400 DPI
-|   |-- figure_2.png               
-|   |-- ...
-|   `-- figure_metadata.json       # Bounding boxes and captions
-|-- tables/
-|   |-- table_1.png                # Table images for visual analysis
-|   |-- table_2.png
-|   |-- ...
-|   `-- table_content.json         # Extracted table data
-|-- visualizations/                # ** KEY DIRECTORY FOR MARKETING VISUALS **
-|   |-- layout_annotated.pdf       # PDF with layout boxes overlaid
-|   |-- text_flow_diagram.png      # Reading order visualization
-|   `-- element_hierarchy.json     # Structural hierarchy data
-`-- cache_info.json                # Processing timestamp and version
+|   |-- content.json          # Extracted text and layout structure
+|   |-- document.html         # HTML version of the document
+|   |-- document.md           # Markdown version
+|   |-- document.txt          # Plain text version
+|   `-- figures/
+|       |-- figure_p1_04314352.png
+|       |-- figure_p1_6de74a29.png
+|       `-- figure_p1_d9d91bd1.png
+|-- pages/
+|   `-- page-000.png          # Full page image
+`-- visualizations/
+    `-- page_001_layout.png   # Layout detection visualization
 \end{verbatim}
 
-The \textbf{visualizations/} directory is particularly important for marketing materials as it contains annotated versions of the document showing detected layout elements, which helps verify proper extraction of complex marketing layouts.
+\paragraph{3. Scientific Document Cache}
+Scientific papers undergo the same extraction process but may include additional agent processing for fact-checking. For example, Treanor\_et\_al.\_\_2011\_ contains:
 
-\paragraph{3. Quick Directory Cheatsheet}
+\begin{verbatim}
+data/scientific_cache/Treanor_et_al.__2011_/
+|-- extracted/
+|   |-- content.json          # Extracted text and layout structure
+|   |-- document.html         # HTML version
+|   |-- document.md           # Markdown version
+|   |-- document.txt          # Plain text version
+|   `-- figures/              # Extracted figures and tables
+|       |-- figure_p1_det_0_005.png
+|       |-- figure_p3_det_2_000.png
+|       |-- table_p3_det_2_009.png
+|       `-- table_p4_det_3_003.png
+|-- pages/                    # Individual page images
+|   |-- page-000.png
+|   |-- page-001.png
+|   `-- ...
+|-- visualizations/           # Layout detection overlays
+|   |-- all_pages_summary.png
+|   |-- page_001_layout.png
+|   `-- ...
+|-- raw_layouts/              # Intermediate layout data
+|   `-- raw_layout_boxes.json
+`-- agents/                   # Fact-checking results (if processed)
+    `-- claims/
+        `-- claim_000/
+            |-- evidence_extractor/
+            |-- completeness_checker/
+            `-- evidence_verifier_v2/
+\end{verbatim}
+
+The key difference is that scientific documents may have an \texttt{agents/} directory containing fact-checking results for individual claims.
+
+\paragraph{4. Quick Directory Cheatsheet}
 For newcomers, these are useful places to explore:
 \begin{itemize}[leftmargin=*]
   \item \texttt{src/cli/} – entry-point scripts that orchestrate the pipelines.
