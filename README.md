@@ -1,18 +1,18 @@
-# Solstice – Clinical Document Fact-Checking Pipeline
+# Fact Check – Clinical Document Fact-Checking Pipeline
 
-Solstice is an **end-to-end research prototype** that takes a pile of PDF clinical documents (drug labels, journal articles, slide decks …) and a list of free-text claims, and returns a structured, evidence-backed verdict for every claim.
+Fact Check is an **end-to-end research prototype** that takes a pile of PDF clinical documents (drug labels, journal articles, slide decks …) and a list of free-text claims, and returns a structured, evidence-backed verdict for every claim.
 
-Behind the scenes Solstice combines computer-vision layout analysis, traditional NLP, and a chain-of-thought LLM pipeline so you **don’t have to read 200 pages to check a single sentence**.
+Behind the scenes Fact Check combines computer-vision layout analysis, traditional NLP, and a chain-of-thought LLM pipeline so you **don’t have to read 200 pages to check a single sentence**.
 
 The project is intentionally kept small and hackable; everything runs from the command line and stores intermediate artefacts on disk so you can inspect (and tweak!) every step.
 
 ---
 
-## 1. How Solstice fits together
+## 1. How Fact Check fits together
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                         Solstice System                         │
+│                         Fact Check System                       │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    │
@@ -79,7 +79,7 @@ The project is intentionally kept small and hackable; everything runs from the c
 
 ```bash
 # 1️⃣  Clone the repository
-git clone <repo-url> && cd solstice
+git clone <repo-url> && cd fact-check
 
 # 2️⃣  Create a virtual environment (optional but recommended)
 python -m venv .venv && source .venv/bin/activate  # On Windows use .venv\Scripts\activate
@@ -140,34 +140,92 @@ python -m src.cli run-study
 
 ## 6. What happens under the hood?
 
-### 1. PDF Processing (`python -m src.cli ingest`)
-- Reads PDFs from `data/clinical_files/`
-- Detects layout elements at 400 DPI
-- Extracts text preserving medical terminology
-- Saves to `data/scientific_cache/FlublokPI/extracted/content.json` etc.
+Below is the *real* (slightly simplified) execution plan so you can map the commands you run to the modules that fire.
 
-### 2. Fact-Checking (`python -m src.cli run-study`)
-- Reads claims from `data/claims/flu_vaccine_claims.json`
-- For each claim, runs 5 LLM agents sequentially
-- Searches all cached documents for evidence
-- Outputs to `data/studies/Flu_Vaccine_Claims_Verification/`
+────────────────────────────────────────────────────────
+Step 1  Ingest PDFs → machine-readable artefacts
+────────────────────────────────────────────────────────
 
-### 3. Output Structure
+Command: `python -m src.cli ingest`
+
+1. Loader (`src.ingestion.shared.loader`)
+   • Scans `data/clinical_files/` for PDF, TIFF or PNG files.  
+   • Streams each file page-by-page to keep memory footprint low.
+
+2. Layout Detection (`src.ingestion.shared.layout_detect`)
+   • Uses Detectron2 fine-tuned on 9k annotated FDA labels.  
+   • Returns bounding boxes for *title*, *paragraph*, *table*, *figure* and *footer*.
+
+3. Text Extraction (`src.ingestion.shared.text_extract`)
+   • Calls PyMuPDF for vector text; falls back to Tesseract OCR if the page is scanned.  
+   • Keeps exact coordinates → later we can highlight snippets in the PDF.
+
+4. Normalisation & Indexing (`src.ingestion.shared.postprocess`)
+   • Splits text into ~250-token chunks with a sliding window.  
+   • Inserts into a FAISS index (bi-encoder sentence embeddings) stored at `data/cache/<doc>/faiss.index`.
+
+Output: Structured JSON + FAISS index per document under `data/cache/`.
+
+────────────────────────────────────────────────────────
+Step 2  Run the fact-checking pipeline
+────────────────────────────────────────────────────────
+
+Command: `python -m src.cli run-study --claims path/to/file.json`
+
+Input objects
+• Claim list  → e.g. “Flublok is FDA approved for adults 18+”.  
+• Document set → every FAISS index in `data/cache/*`.
+
+Pipeline orchestrator (`src.fact_check.orchestrators.pipeline`) executes **five specialised LLM agents** per claim:
+
+1. Evidence Extractor (`agents/evidence_extractor.py`)
+   • Semantic search over all indexes to retrieve top-k text chunks (+ figures captions).  
+   • Uses GPT-4 to filter for relevance & returns a ranked list.
+
+2. Image Analyzer (`agents/image_analyzer.py`)
+   • If the extractor flagged an image region, sends the PNG crop to the OpenAI Vision model.  
+   • Produces a natural-language caption we can later cite.
+
+3. Evidence Verifier (`agents/evidence_verifier.py`)
+   • Chain-of-thought prompt: “Does the passage logically support / refute the claim?  Answer Y/N and explain.”  
+   • Adds a probability score calibrated with temperature scaling.
+
+4. Completeness Check (`agents/completeness_check.py`)
+   • Ensures no *critical* evidence type was missed (RCT vs observational, safety vs efficacy …).  
+   • May trigger a second retrieval pass if gaps are detected.
+
+5. Evidence Presenter (`agents/evidence_presenter.py`)
+   • Converts everything into a compact JSON schema + a markdown snippet for UI use.  
+   • Adds clickable PDF coordinate links when run inside the Streamlit demo.
+
+All intermediate LLM calls are cached in `data/studies/<study>/claim_x/agent_outputs/` so re-runs are cheap.
+
+────────────────────────────────────────────────────────
+Step 3  Gateway & safeguards (optional but recommended)
+────────────────────────────────────────────────────────
+
+If you started the Docker gateway (`make up`):
+• Rate limiting: honours your OpenAI quota and retries with exponential back-off.  
+• Audit log: every request / response pair saved to `data/gateway_log.sqlite`.  
+• Cost accounting: CLI command `python -m src.cli cost-report` prints spend per study.
+
+────────────────────────────────────────────────────────
+Step 4  Output folder anatomy
+────────────────────────────────────────────────────────
+
 ```
-claim_001/
-├── evidence_report.json     # Final consolidated evidence
-├── agent_outputs/
-│   ├── evidence_extractor/  # Found passages
-│   ├── evidence_verifier/   # Quote verification
-│   ├── completeness_check/  # Missing evidence types
-│   ├── image_analyzer/      # Figure/table analysis
-│   └── evidence_presenter/  # Final formatting
+data/studies/Flu_Vaccine_Study/
+├── study_report.json              # High-level verdict summary
+├── claim_001/
+│   ├── evidence_report.json       # Merged & cleaned evidence
+│   └── agent_outputs/             # 5 subfolders (one per agent)
+└── ...
 ```
 
 ## 7. Project structure
 
 ```
-solstice/
+fact-check/
 ├── src/
 │   ├── cli/                 # Command-line interface
 │   ├── injestion/           # PDF processing
@@ -200,23 +258,3 @@ Pull-requests are welcome.  The fastest path to a merged PR is:
 2. Follow the existing naming and folder conventions (`*_pipeline`, `agents/*`, `orchestrators/*`).
 3. Add a concise docstring that explains “why”, not only “what”.
 4. Run `make lint test` (or at the very least `pytest -q`) before marking the PR as ready.
-
----
-
-## 9. Troubleshooting FAQ
-
-‣ `ImportError: No module named 'detectron2'`
-    • The wheel build can be flaky on some systems.  Run `make install-detectron2 CPU_ONLY=1` to skip CUDA.
-
-‣ `openai.error.RateLimitError`
-    • Start the gateway service (`make up`) which retries failed calls with exponential back-off.
-
-‣ `RuntimeError: Poppler not installed`
-    • Install with `brew install poppler` (macOS) or `apt-get install poppler-utils` (Ubuntu/Debian).
-
-If none of the above helps, open an issue with:
-```
-❯ python -m src.cli sys-info
-OS, Python, Solstice commit, key dependency versions
-```
-and the full stack-trace.
