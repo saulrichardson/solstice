@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_009.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p3_det_2_009.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_009",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table listing the number and percentage of subjects experiencing solicited adverse events (fever, fatigue, shivering, joint pain, muscle pain, headache, nausea, pain, bruising) by severity (mild, moderate, severe) for the Flublok (N=2344) and placebo (N=2304) groups. does not support the claim because the table presents safety and reactogenicity data and contains no information on hemagglutinin (HA) microgram content per strain in any vaccine.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing the number and percentage of subjects experiencing solicited adverse events (fever, fatigue, shivering, joint pain, muscle pain, headache, nausea, pain, bruising) by severity (mild, moderate, severe) for the Flublok (N=2344) and placebo (N=2304) groups.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table presents safety and reactogenicity data and contains no information on hemagglutinin (HA) microgram content per strain in any vaccine.",
+    "confidence_notes": null
+  }
+}

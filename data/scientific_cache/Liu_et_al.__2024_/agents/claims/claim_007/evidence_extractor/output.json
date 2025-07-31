@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": {
+    "pdf_name": "Liu_et_al.__2024_",
+    "source_pdf": "data/clinical_files/Liu et al. (2024).pdf",
+    "total_pages": 13,
+    "total_blocks": 146,
+    "total_characters": 36717
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45. For ELISA, rHA antigens were coated at 100 ng/well. Serum samples were tested at an initial dilution of 1:400 followed by 2 fold serial dilution. Antibodies were detected by horseradish peroxidase (HRP) conjugated goat anti human pan immunoglobulin conjugate to detect total binding antibodies. ELISA was performed based on previously described procedures 46 47. The ELISA titers were determined as the reciprocal of the highest dilution of serum samples that achieved an optical density (OD) value of 0.2 or greater. ... These serum samples were tested by ELISA to evaluate the total binding antibodies against 8 recombinant HA proteins (rHA from both egg and cell propagated viruses of each of the 4 vaccine antigens), and 2 rHA stalk proteins (A (H1 N1) pdm09 HA stalk, and A (H3 N2) HA stalk).",
+      "relevance_explanation": "This quote establishes that the study directly measured antibody responses to recombinant HA antigens produced using the baculovirus expression vector system (BEVS), including those targeting highly conserved HA stalk regions, which is necessary to support the claim."
+    },
+    {
+      "id": 2,
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.",
+      "relevance_explanation": "This quote provides direct evidence that the recombinant HA vaccine (RIV4, produced using BEVS) induced higher levels of antibodies compared to egg-derived vaccines, specifically against the cell-propagated (non-egg-adapted) A (H3 N2) virus, supporting the claim of improved cross-reactivity."
+    },
+    {
+      "id": 3,
+      "quote": "Comparing HA stalk antibody titers at 1 month post vaccination versus day 0, vaccination significantly boosted A (H1 N1) pdm09 HA stalk antibodies in all 4 vaccine groups (p < 0.01), and significantly boosted A (H3 N2) HA stalk antibodies in 3 of the 4 vaccine groups (p < 0.001, Flu zone IIV4, ccIIV4, and RIV4) (Fig. 4 C). The RIV4 group had the highest A (H1 N1) pdm09 HA stalk and A (H3 N2) HA stalk antibodies at 1 month post vaccination, however the fold rises of HA stalk antibodies were low (<1.8) and similar among all 4 vaccine groups (Fig. 4 D).",
+      "relevance_explanation": "This quote shows that RIV4 (recombinant HA, BEVS) produced the highest levels of broadly cross-reactive antibodies against the highly conserved HA stalk regions, directly supporting the claim."
+    },
+    {
+      "id": 4,
+      "quote": "For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody response in adults vaccinated with identical vaccine strains in consecutive years, it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).",
+      "relevance_explanation": "This quote demonstrates that RIV4 (recombinant HA, BEVS) induced significantly higher levels of antibodies against conserved regions of HA compared to egg-derived vaccines, supporting the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

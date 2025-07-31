@@ -1,0 +1,46 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "Grohskopf_et_al.__2023_",
+  "supporting_evidence": [
+    {
+      "quote": "Quad rival ent Recombinant Influenza Vaccine (RIV4) Available Vaccine. One recombinant influenza vaccine, Flublok Quad rival ent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
+      "explanation": "The quote directly states that Flublok Quadrivalent (RIV4) contains 45 micrograms (\u00b5g) of HA per strain. The document also provides, in Table 1 and elsewhere, that standard-dose influenza vaccines contain 15 \u00b5g of HA per strain. Therefore, the quote explicitly and directly supports the claim that Flublok contains 45 micrograms (mcg) of HA per strain versus 15 mcg of HA per strain in a standard-dose influenza vaccine."
+    },
+    {
+      "quote": "Standard dose, nonadjuvanted IIV4 s contain 15 \u00b5g of HA per vaccine virus in a 0.5-mL dose (7.5 \u00b5g of HA per vaccine virus in a 0.25-mL dose). For 2022-23, this category is expected to include five different vaccines (Table 1).",
+      "explanation": "The quote directly supports the claim by stating that standard-dose, nonadjuvanted IIV4 influenza vaccines contain 15 micrograms (\u00b5g) of HA per strain in a 0.5-mL dose. This is the comparator for Flublok, which is known (from other parts of the document) to contain 45 \u00b5g of HA per strain. The quote provides the specific number for standard-dose vaccines, which is the key fact needed to substantiate the claim's comparison."
+    },
+    {
+      "quote": "Higher dose vaccines include HD-IIV4 and RIV4, both of which contain a higher dose of HA antigen per virus than standard dose vaccines (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose in activated vaccines).",
+      "explanation": "The quote directly supports the claim. It explicitly states that RIV4 (Flublok) contains 45 \u00b5g of HA per virus (strain), while standard dose inactivated vaccines contain 15 \u00b5g per strain, matching the claim's numbers and comparison. No inference is required; the support is explicit."
+    },
+    {
+      "quote": "[TABLE 2 - See table_p5_det_4_002.png] Flublok Quad rival ent (Sanofi Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM ... Afluria Quad rival ent (Seqirus) 0.5-mL PFS \u22653 ... 15 \u00b5g/0.5 mL IM ...",
+      "explanation": "The quote directly supports the claim by providing a side-by-side comparison of the HA content per strain in Flublok Quadrivalent (45 mcg/0.5 mL) and a standard-dose influenza vaccine (Afluria Quadrivalent, 15 mcg/0.5 mL). This matches the claim that Flublok contains 45 mcg of HA per strain versus 15 mcg per strain in standard-dose vaccines. No inference is required; the data is explicit."
+    },
+    {
+      "quote": "Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with non adjuvanted SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines). The adjuvanted vaccine contains 15 \u00b5g of HA per virus, similarly to non adjuvanted SD-IIVs, but contains the adjuvant MF59.",
+      "explanation": "The quote directly supports the claim. It explicitly states that RIV4 (Flublok) contains 45 micrograms (mcg) of HA per strain, while standard-dose inactivated vaccines contain 15 mcg of HA per strain. This matches the claim's assertion and provides the specific numbers for both Flublok and standard-dose influenza vaccines."
+    }
+  ],
+  "image_supporting_evidence": [
+    {
+      "image_filename": "table_p5_det_4_002.png",
+      "explanation": "A table summarizing influenza vaccines by trade name and manufacturer, presentations, age indications, micrograms of hemagglutinin (HA) per dose (\u00b5g HA per 0.5 mL or specified volume), route of administration, and mercury content. It includes categories for standard-dose egg-based IIV4 (15 \u00b5g/strain), cell culture-based cIIV4 (15 \u00b5g/strain), high-dose IIV4 (60 \u00b5g/strain), adjuvanted IIV4 (15 \u00b5g/strain), recombinant HA vaccine RIV4 (Flublok, 45 \u00b5g/strain), and live attenuated LAIV4 (virus count). Evidence: Flublok Quadrivalent (RIV4) shows 45 \u00b5g/0.5 mL; standard-dose egg-based IIV4 vaccines show 15 \u00b5g/0.5 mL per strain. The table directly shows Flublok contains 45 \u00b5g HA per dose versus 15 \u00b5g per dose in standard-dose influenza vaccines, which supports the claim."
+    }
+  ],
+  "evidence_summary": {
+    "total_text_evidence_found": 5,
+    "total_image_evidence_found": 1,
+    "total_evidence_found": 6,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 5
+    },
+    "rejected_count": 0
+  }
+}

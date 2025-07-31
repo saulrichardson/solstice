@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p8_mrg_det_7_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p8_mrg_det_7_005.png",
+  "image_type": "Figure",
+  "page_number": 8,
+  "block_id": "mrg_det_7_005",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A multi-panel figure showing hemagglutination inhibition (HI) titers (log2 scale) measured at Day 0 and 1 month post-vaccination in two age groups (18\u201344 and 45\u201364 years) for egg-based virus vaccines (left columns) versus cell-based virus vaccines (right columns). Panels are organized by influenza strain (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata). Each panel shows individual data points, mean\u2009\u00b1\u2009SD bars for multiple antigens (colored symbols), and p-values indicating statistical comparisons among vaccine and challenge antigens. does not support the claim: the figure compares egg-derived versus cell-derived virus vaccines and hemagglutination inhibition titers, but does not involve recombinant HA antigens produced using BEVS nor assessment of broadly cross-reactive antibodies against conserved HA regions. Note: The image is clear and complete but does not address BEVS-produced recombinant HA or cross-reactive antibody breadth.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multi-panel figure showing hemagglutination inhibition (HI) titers (log2 scale) measured at Day 0 and 1 month post-vaccination in two age groups (18\u201344 and 45\u201364 years) for egg-based virus vaccines (left columns) versus cell-based virus vaccines (right columns). Panels are organized by influenza strain (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata). Each panel shows individual data points, mean\u2009\u00b1\u2009SD bars for multiple antigens (colored symbols), and p-values indicating statistical comparisons among vaccine and challenge antigens.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim: the figure compares egg-derived versus cell-derived virus vaccines and hemagglutination inhibition titers, but does not involve recombinant HA antigens produced using BEVS nor assessment of broadly cross-reactive antibodies against conserved HA regions.",
+    "confidence_notes": "The image is clear and complete but does not address BEVS-produced recombinant HA or cross-reactive antibody breadth."
+  }
+}

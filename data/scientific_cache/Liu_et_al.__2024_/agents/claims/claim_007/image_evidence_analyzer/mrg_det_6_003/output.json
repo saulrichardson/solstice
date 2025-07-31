@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p7_mrg_det_6_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p7_mrg_det_6_003.png",
+  "image_type": "Figure",
+  "page_number": 7,
+  "block_id": "mrg_det_6_003",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Multi-panel figure (Panels A\u2013D) showing immune response comparisons among four influenza vaccines (two egg-derived IIV4s: Fluzone and Fluarix; a cell culture\u2013derived IIV4; and a recombinant HA vaccine [RIV4]) in two age cohorts (18\u201344 and 45\u201364 years). Panels A and B plot geometric mean ratios of antibody titers against egg-grown versus cell-grown vaccine viruses for four influenza strains (A[H3N2], A[H1N1]pdm09, B/Victoria, B/Yamagata). Panels C and D show the proportion or magnitude of \u22654-fold reduced titers to cell-grown vaccine virus (egg vs. cell) pre- and post-vaccination. The figure compares titers to egg-grown versus cell-grown vaccine virus strains and shows that the recombinant vaccine (RIV4) elicits lower egg-versus-cell titer ratios for A(H3N2), indicating less egg-adaptation bias. However, it does not present data on antibodies targeting highly conserved HA regions or demonstrate broadly cross-reactive antibody levels; therefore it does not support the claim. Note: Resolution limits precise reading of annotations; no direct assay of conserved-region reactivity visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Multi-panel figure (Panels A\u2013D) showing immune response comparisons among four influenza vaccines (two egg-derived IIV4s: Fluzone and Fluarix; a cell culture\u2013derived IIV4; and a recombinant HA vaccine [RIV4]) in two age cohorts (18\u201344 and 45\u201364 years). Panels A and B plot geometric mean ratios of antibody titers against egg-grown versus cell-grown vaccine viruses for four influenza strains (A[H3N2], A[H1N1]pdm09, B/Victoria, B/Yamagata). Panels C and D show the proportion or magnitude of \u22654-fold reduced titers to cell-grown vaccine virus (egg vs. cell) pre- and post-vaccination.",
+    "evidence_found": null,
+    "reasoning": "The figure compares titers to egg-grown versus cell-grown vaccine virus strains and shows that the recombinant vaccine (RIV4) elicits lower egg-versus-cell titer ratios for A(H3N2), indicating less egg-adaptation bias. However, it does not present data on antibodies targeting highly conserved HA regions or demonstrate broadly cross-reactive antibody levels; therefore it does not support the claim.",
+    "confidence_notes": "Resolution limits precise reading of annotations; no direct assay of conserved-region reactivity visible."
+  }
+}

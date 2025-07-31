@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p9_det_8_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p9_det_8_005.png",
+  "image_type": "Figure",
+  "page_number": 9,
+  "block_id": "det_8_005",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Two-panel figure showing hemagglutination inhibition (HI) responses pre- and post-vaccination in adults aged 18\u201344 (A) and 45\u201364 (B) years against four influenza vaccine strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata). Data points compare seven vaccination regimens (ccIIV4-ccIIV4, ccIIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, IIV4-ccIIV4, IIV4-RIV4, IIV4-Fluzone IIV4), with p-values for select strain/regimen comparisons. The top panels plot HI titers and the bottom panels plot the proportion with \u22654-fold reduced HI titers to cell-grown versus egg-grown vaccine virus. does not support the claim because the figure reports strain-specific HI titers for different vaccine regimens but does not provide data on broadly cross-reactive antibodies against conserved HA regions induced by BEVS-derived recombinant HA compared with egg-derived vaccines Note: Small text and lack of explicit mention of conserved region or BEVS origin limit interpretation",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Two-panel figure showing hemagglutination inhibition (HI) responses pre- and post-vaccination in adults aged 18\u201344 (A) and 45\u201364 (B) years against four influenza vaccine strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata). Data points compare seven vaccination regimens (ccIIV4-ccIIV4, ccIIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, IIV4-ccIIV4, IIV4-RIV4, IIV4-Fluzone IIV4), with p-values for select strain/regimen comparisons. The top panels plot HI titers and the bottom panels plot the proportion with \u22654-fold reduced HI titers to cell-grown versus egg-grown vaccine virus.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the figure reports strain-specific HI titers for different vaccine regimens but does not provide data on broadly cross-reactive antibodies against conserved HA regions induced by BEVS-derived recombinant HA compared with egg-derived vaccines",
+    "confidence_notes": "Small text and lack of explicit mention of conserved region or BEVS origin limit interpretation"
+  }
+}

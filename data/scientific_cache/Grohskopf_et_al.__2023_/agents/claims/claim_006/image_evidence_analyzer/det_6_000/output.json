@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p7_det_6_000.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table listing contraindications and precautions for the 2022\u201323 influenza vaccines (egg-based IIVs and LAIV4, cell culture\u2013based ccIIV4, and recombinant RIV4) in persons with a history of severe allergic reaction to different types of vaccine (egg-based IIV/LAIV, ccIIV, RIV, or unknown). The table only presents allergy-related contraindications and precautions for various influenza vaccine formats and does not describe Flublok\u2019s production platform, recombinant HA expression in insect cells, or use of a baculovirus expression vector system, so it does not support the claim. Note: The table is clear and legible but focuses solely on allergic reaction guidance; it provides no production or manufacturing details.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing contraindications and precautions for the 2022\u201323 influenza vaccines (egg-based IIVs and LAIV4, cell culture\u2013based ccIIV4, and recombinant RIV4) in persons with a history of severe allergic reaction to different types of vaccine (egg-based IIV/LAIV, ccIIV, RIV, or unknown).",
+    "evidence_found": null,
+    "reasoning": "The table only presents allergy-related contraindications and precautions for various influenza vaccine formats and does not describe Flublok\u2019s production platform, recombinant HA expression in insect cells, or use of a baculovirus expression vector system, so it does not support the claim.",
+    "confidence_notes": "The table is clear and legible but focuses solely on allergic reaction guidance; it provides no production or manufacturing details."
+  }
+}

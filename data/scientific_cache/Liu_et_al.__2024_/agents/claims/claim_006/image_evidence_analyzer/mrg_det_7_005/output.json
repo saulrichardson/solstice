@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p8_mrg_det_7_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p8_mrg_det_7_005.png",
+  "image_type": "Figure",
+  "page_number": 8,
+  "block_id": "mrg_det_7_005",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A multi-panel figure showing hemagglutination inhibition (HI) titers (Log2 scale) at Day 0 and 1 month post-vaccination for four influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata), stratified by age group (18\u201344 years, 45\u201364 years) and by virus production platform (egg-derived vs cell-derived), with colored bar plots and p-values indicating statistical comparisons. The figure presents immunogenicity data (HI titers) by virus type, age group, and production platform but contains no information about Flublok\u2019s manufacturing process, recombinant HA expression, insect cells, or a baculovirus expression vector system, and therefore does not support the claim. Note: Image resolution limits reading of all small labels, but no mention of BEVS or insect cell production is visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multi-panel figure showing hemagglutination inhibition (HI) titers (Log2 scale) at Day 0 and 1 month post-vaccination for four influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata), stratified by age group (18\u201344 years, 45\u201364 years) and by virus production platform (egg-derived vs cell-derived), with colored bar plots and p-values indicating statistical comparisons.",
+    "evidence_found": null,
+    "reasoning": "The figure presents immunogenicity data (HI titers) by virus type, age group, and production platform but contains no information about Flublok\u2019s manufacturing process, recombinant HA expression, insect cells, or a baculovirus expression vector system, and therefore does not support the claim.",
+    "confidence_notes": "Image resolution limits reading of all small labels, but no mention of BEVS or insect cell production is visible."
+  }
+}

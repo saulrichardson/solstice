@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p6_det_5_003.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p6_det_5_003.png",
+  "image_type": "Table",
+  "page_number": 6,
+  "block_id": "det_5_003",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A narrow vertical slice of a table from page 6, showing only blank space and a partial table line with the text \u2018Table 5\u2019 at the bottom; no readable data or headings are visible. The visible portion does not contain any data or text regarding antibody levels, HA antigens, BEVS, or egg-derived vaccines and therefore does not support the claim. Note: Image is incomplete and cut off, making it impossible to extract any relevant data or conclusions.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A narrow vertical slice of a table from page 6, showing only blank space and a partial table line with the text \u2018Table 5\u2019 at the bottom; no readable data or headings are visible.",
+    "evidence_found": null,
+    "reasoning": "The visible portion does not contain any data or text regarding antibody levels, HA antigens, BEVS, or egg-derived vaccines and therefore does not support the claim.",
+    "confidence_notes": "Image is incomplete and cut off, making it impossible to extract any relevant data or conclusions."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_004.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p5_det_4_004.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_004",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table comparing adjusted vaccine effectiveness (VE) of RIV4 (Flublok) versus no vaccination and versus standard-dose inactivated influenza vaccine quadrivalent (SD-IIV4) across various subgroups (overall, sex, age groups, risk conditions, seasons) with percentages and 95% confidence intervals, including adjustments using different statistical methods. The table provides vaccine effectiveness data for Flublok (RIV4) compared to no vaccination and to SD-IIV4, but it contains no information about production methods, expression systems, or use of insect cells and baculovirus vectors, and therefore does not support the claim. Note: The table is clear and legible, but its content is limited to effectiveness metrics and lacks manufacturing or platform details.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing adjusted vaccine effectiveness (VE) of RIV4 (Flublok) versus no vaccination and versus standard-dose inactivated influenza vaccine quadrivalent (SD-IIV4) across various subgroups (overall, sex, age groups, risk conditions, seasons) with percentages and 95% confidence intervals, including adjustments using different statistical methods.",
+    "evidence_found": null,
+    "reasoning": "The table provides vaccine effectiveness data for Flublok (RIV4) compared to no vaccination and to SD-IIV4, but it contains no information about production methods, expression systems, or use of insect cells and baculovirus vectors, and therefore does not support the claim.",
+    "confidence_notes": "The table is clear and legible, but its content is limited to effectiveness metrics and lacks manufacturing or platform details."
+  }
+}

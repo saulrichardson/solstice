@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p13_det_12_007.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p13_det_12_007.png",
+  "image_type": "Table",
+  "page_number": 13,
+  "block_id": "det_12_007",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A table listing trade names and manufacturers of quadrivalent influenza vaccines with corresponding dose volumes (in mL) and HA content (in \u00b5g per vaccine virus) for children aged 6 through 35 months. This table only provides pediatric dosing information and HA quantities for various egg-derived and cell-derived influenza vaccines; it does not include any data on recombinant HA antigens, BEVS production, or antibody cross-reactivity, and thus does not support the claim. Note: The image is clear and complete regarding dosing, but contains no immunogenicity or comparative antibody data.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing trade names and manufacturers of quadrivalent influenza vaccines with corresponding dose volumes (in mL) and HA content (in \u00b5g per vaccine virus) for children aged 6 through 35 months.",
+    "evidence_found": null,
+    "reasoning": "This table only provides pediatric dosing information and HA quantities for various egg-derived and cell-derived influenza vaccines; it does not include any data on recombinant HA antigens, BEVS production, or antibody cross-reactivity, and thus does not support the claim.",
+    "confidence_notes": "The image is clear and complete regarding dosing, but contains no immunogenicity or comparative antibody data."
+  }
+}

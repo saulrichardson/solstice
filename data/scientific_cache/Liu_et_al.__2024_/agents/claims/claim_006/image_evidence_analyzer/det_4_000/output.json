@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p5_det_4_000.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p5_det_4_000.png",
+  "image_type": "Figure",
+  "page_number": 5,
+  "block_id": "det_4_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Four-panel figure showing geometric mean fold rise of antibody titers at 1 month (panels A and B) and fold reduction at 6 months (panels C and D) post-vaccination in two age groups (18\u201344 years and 45\u201364 years). Data are plotted for four vaccine formulations (Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4) across multiple influenza strains (H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/Victoria egg, B/Victoria cell, B/Yamagata egg, B/Yamagata cell) with 95% confidence intervals and p-values comparing groups. The figure presents immunogenicity data comparing antibody responses among different influenza vaccines, including RIV4, but contains no information on vaccine production methods such as baculovirus expression vector system (BEVS) or use of insect cells, and thus does not support the claim. Note: No manufacturing or production platform details are shown in the image; it focuses solely on antibody titer measurements.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Four-panel figure showing geometric mean fold rise of antibody titers at 1 month (panels A and B) and fold reduction at 6 months (panels C and D) post-vaccination in two age groups (18\u201344 years and 45\u201364 years). Data are plotted for four vaccine formulations (Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4) across multiple influenza strains (H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/Victoria egg, B/Victoria cell, B/Yamagata egg, B/Yamagata cell) with 95% confidence intervals and p-values comparing groups.",
+    "evidence_found": null,
+    "reasoning": "The figure presents immunogenicity data comparing antibody responses among different influenza vaccines, including RIV4, but contains no information on vaccine production methods such as baculovirus expression vector system (BEVS) or use of insect cells, and thus does not support the claim.",
+    "confidence_notes": "No manufacturing or production platform details are shown in the image; it focuses solely on antibody titer measurements."
+  }
+}

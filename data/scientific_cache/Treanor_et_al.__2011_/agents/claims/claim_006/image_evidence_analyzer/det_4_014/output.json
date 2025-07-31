@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_014.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p5_det_4_014.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_014",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table summarizing the number and percentage of influenza cases in study participants receiving FluBlok (N=2344) versus placebo (N=2304). Endpoints include influenza-positive CDC-defined influenza-like illness and influenza-positive illness, with breakdowns for \u2018Any\u2019, Influenza A, and Influenza B, alongside calculated vaccine efficacy percentages with 95% confidence intervals. does not support the claim because the table presents clinical efficacy data and contains no information on the Flublok production platform, insect cell expression, or use of a baculovirus expression vector system. Note: The image is clear and depicts only efficacy endpoints; no production or manufacturing details are provided.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table summarizing the number and percentage of influenza cases in study participants receiving FluBlok (N=2344) versus placebo (N=2304). Endpoints include influenza-positive CDC-defined influenza-like illness and influenza-positive illness, with breakdowns for \u2018Any\u2019, Influenza A, and Influenza B, alongside calculated vaccine efficacy percentages with 95% confidence intervals.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table presents clinical efficacy data and contains no information on the Flublok production platform, insect cell expression, or use of a baculovirus expression vector system.",
+    "confidence_notes": "The image is clear and depicts only efficacy endpoints; no production or manufacturing details are provided."
+  }
+}

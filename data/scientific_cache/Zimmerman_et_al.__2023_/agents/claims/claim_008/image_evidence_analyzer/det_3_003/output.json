@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_det_3_003.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p4_det_3_003.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "det_3_003",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table showing baseline demographic and clinical characteristics (race, sex, season, age group, influenza case status, high-risk condition) for the total cohort (N=14,590) and subgroups who received recombinant influenza vaccine (RIV4, n=3,338) versus standard-dose inactivated influenza vaccine (SD-IIV4, n=976), along with p-values for differences between RIV4 and SD-IIV4 groups. does not support the claim because the table only presents participant characteristics and contains no data on hemagglutinin (HA) content per strain in Flublok or standard-dose influenza vaccines.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing baseline demographic and clinical characteristics (race, sex, season, age group, influenza case status, high-risk condition) for the total cohort (N=14,590) and subgroups who received recombinant influenza vaccine (RIV4, n=3,338) versus standard-dose inactivated influenza vaccine (SD-IIV4, n=976), along with p-values for differences between RIV4 and SD-IIV4 groups.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table only presents participant characteristics and contains no data on hemagglutinin (HA) content per strain in Flublok or standard-dose influenza vaccines.",
+    "confidence_notes": null
+  }
+}

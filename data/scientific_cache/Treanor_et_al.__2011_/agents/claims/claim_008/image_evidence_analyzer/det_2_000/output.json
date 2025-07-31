@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_000.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p3_det_2_000.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_000",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A flowchart showing subject enrollment (n=4648), randomization into FluBlok (n=2344) and Placebo (n=2304) arms, subsequent discontinuations (number and reasons), and resulting safety population sizes. The figure provides participant flow and discontinuation details but does not present any information about HA microgram content per vaccine strain, so it does not support the claim. Note: The image is clear and complete for participant disposition but contains no dosage or formulation details.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart showing subject enrollment (n=4648), randomization into FluBlok (n=2344) and Placebo (n=2304) arms, subsequent discontinuations (number and reasons), and resulting safety population sizes.",
+    "evidence_found": null,
+    "reasoning": "The figure provides participant flow and discontinuation details but does not present any information about HA microgram content per vaccine strain, so it does not support the claim.",
+    "confidence_notes": "The image is clear and complete for participant disposition but contains no dosage or formulation details."
+  }
+}

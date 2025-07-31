@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_027.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p1_det_0_027.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_027",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "An article information section showing article history (dates received, revised, accepted, and available online) and keywords (including 'Influenza vaccine', 'Baculovirus expression', 'Recombinant protein', 'Clinical trials'). does not support the claim because the image contains only publication metadata and keywords, with no information on HA content per strain for Flublok or standard-dose vaccines.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "An article information section showing article history (dates received, revised, accepted, and available online) and keywords (including 'Influenza vaccine', 'Baculovirus expression', 'Recombinant protein', 'Clinical trials').",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image contains only publication metadata and keywords, with no information on HA content per strain for Flublok or standard-dose vaccines.",
+    "confidence_notes": null
+  }
+}

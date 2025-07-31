@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_det_9_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/figure_p10_det_9_000.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "det_9_000",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A flowchart determining influenza vaccine dosing for children based on prior vaccination history. The chart asks if the child received \u22652 doses of trivalent or quadrivalent vaccine before July 1, 2022; if yes, recommend 1 dose of 2022\u201323 vaccine; if no or unknown, recommend 2 doses of 2022\u201323 vaccine administered \u22654 weeks apart. The image provides a pediatric influenza vaccine dosing algorithm and does not mention Flublok or microgram amounts of hemagglutinin per strain, so it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart determining influenza vaccine dosing for children based on prior vaccination history. The chart asks if the child received \u22652 doses of trivalent or quadrivalent vaccine before July 1, 2022; if yes, recommend 1 dose of 2022\u201323 vaccine; if no or unknown, recommend 2 doses of 2022\u201323 vaccine administered \u22654 weeks apart.",
+    "evidence_found": null,
+    "reasoning": "The image provides a pediatric influenza vaccine dosing algorithm and does not mention Flublok or microgram amounts of hemagglutinin per strain, so it does not support the claim.",
+    "confidence_notes": null
+  }
+}

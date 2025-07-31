@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/table_p3_det_2_003.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_003",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A table listing influenza virus strains (A(H1N1)pdm09, A(H3N2), B/Victoria, B/Yamagada lineages) and showing amino acid differences at specific HA head domain positions for cell-derived, egg-derived, and egg CVV vaccine candidates across two years. does not support the claim because the table only presents amino acid sequence differences in HA head domains between cell- and egg-derived vaccine strains and provides no data on antibody induction or cross-reactive antibody levels. Note: Table content is clear, but limited to sequence comparisons; no immunogenicity or antibody response data are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing influenza virus strains (A(H1N1)pdm09, A(H3N2), B/Victoria, B/Yamagada lineages) and showing amino acid differences at specific HA head domain positions for cell-derived, egg-derived, and egg CVV vaccine candidates across two years.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table only presents amino acid sequence differences in HA head domains between cell- and egg-derived vaccine strains and provides no data on antibody induction or cross-reactive antibody levels.",
+    "confidence_notes": "Table content is clear, but limited to sequence comparisons; no immunogenicity or antibody response data are shown."
+  }
+}

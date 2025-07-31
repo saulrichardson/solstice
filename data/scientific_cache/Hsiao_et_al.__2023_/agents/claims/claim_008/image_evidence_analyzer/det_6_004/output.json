@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_004.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/table_p7_det_6_004.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_004",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table listing demographic and clinical characteristics (sex, race/ethnicity, coexisting illnesses, prior influenza vaccination) of participants who received a recombinant influenza vaccine versus a standard-dose influenza vaccine, with counts and percentages for each group. The table provides participant demographics and clinical characteristics but contains no information on hemagglutinin (HA) microgram content per vaccine strain, so it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing demographic and clinical characteristics (sex, race/ethnicity, coexisting illnesses, prior influenza vaccination) of participants who received a recombinant influenza vaccine versus a standard-dose influenza vaccine, with counts and percentages for each group.",
+    "evidence_found": null,
+    "reasoning": "The table provides participant demographics and clinical characteristics but contains no information on hemagglutinin (HA) microgram content per vaccine strain, so it does not support the claim.",
+    "confidence_notes": null
+  }
+}

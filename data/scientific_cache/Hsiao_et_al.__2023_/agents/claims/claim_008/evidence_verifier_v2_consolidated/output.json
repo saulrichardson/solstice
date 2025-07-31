@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "Hsiao_et_al.__2023_",
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "supports_claim": true,
+      "explanation": "The quote directly states that quadrivalent recombinant influenza vaccines (such as Flublok) contain three times the amount of hemagglutinin protein as standard dose egg-based vaccines. Since the standard dose is known to be 15 mcg of HA per strain, this supports the claim that Flublok contains 45 mcg of HA per strain (3 x 15 mcg = 45 mcg). The quote provides explicit comparative information about the HA content, which substantiates the claim.",
+      "presence_explanation": "The quote appears in the document on page 1: 'BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.' The wording is nearly identical to the quote provided, with only minor differences in phrasing (e.g., 'egg based' vs. 'egg-based'), but the factual content is the same.",
+      "support_explanation": "The quote directly states that quadrivalent recombinant influenza vaccines (such as Flublok) contain three times the amount of hemagglutinin protein as standard dose egg-based vaccines. Since the standard dose is known to be 15 mcg of HA per strain, this supports the claim that Flublok contains 45 mcg of HA per strain (3 x 15 mcg = 45 mcg). The quote provides explicit comparative information about the HA content, which substantiates the claim.",
+      "original_relevance": "This quote explicitly states that the recombinant influenza vaccine (Flublok) contains three times the amount of hemagglutinin protein compared to standard dose vaccines, directly supporting the claim that Flublok contains 45 mcg of HA per strain versus 15 mcg in standard-dose vaccines."
+    },
+    {
+      "id": 2,
+      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.",
+      "supports_claim": true,
+      "explanation": "The quote explicitly states that Flublok contains three times the amount of hemagglutinin protein as standard dose vaccines. While it does not provide the exact numbers (45 mcg vs 15 mcg), it directly supports the claim's core assertion about the relative HA content per strain. Since the standard dose is known to be 15 mcg, 'three times' confirms Flublok contains 45 mcg per strain, thus supporting the claim.",
+      "presence_explanation": "The quote appears in the document on page 2: 'The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.' The wording and factual content match the quote to verify, with only minor formatting differences.",
+      "support_explanation": "The quote explicitly states that Flublok contains three times the amount of hemagglutinin protein as standard dose vaccines. While it does not provide the exact numbers (45 mcg vs 15 mcg), it directly supports the claim's core assertion about the relative HA content per strain. Since the standard dose is known to be 15 mcg, 'three times' confirms Flublok contains 45 mcg per strain, thus supporting the claim.",
+      "original_relevance": "This quote confirms that Flublok contains three times the amount of hemagglutinin protein as standard dose vaccines, which, given the standard dose is 15 mcg, means Flublok contains 45 mcg per strain, directly supporting the claim."
+    }
+  ],
+  "verification_stats": {
+    "total_verified": 2
+  },
+  "image_evidence": []
+}

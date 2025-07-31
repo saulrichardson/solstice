@@ -76,23 +76,23 @@ Step 1: Ingest PDFs → machine-readable artefacts
 
 Command: `python -m src.cli ingest`
 
-1. Loader (`src.ingestion.shared.loader`)
+1. Loader (`src.injestion.shared.loader`)
    • Scans `data/clinical_files/` for PDF, TIFF or PNG files.  
    • Streams each file page-by-page to keep memory footprint low.
 
-2. Layout Detection (`src.ingestion.shared.layout_detect`)
+2. Layout Detection (`src.injestion.shared.processing.layout_detector`)
    • Uses Detectron2 fine-tuned on 9k annotated FDA labels.  
    • Returns bounding boxes for *title*, *paragraph*, *table*, *figure* and *footer*.
 
-3. Text Extraction (`src.ingestion.shared.text_extract`)
+3. Text Extraction (`src.injestion.shared.processing.text_extractors.pymupdf_extractor`)
    • Calls PyMuPDF for vector text; falls back to Tesseract OCR if the page is scanned.  
    • Keeps exact coordinates → later we can highlight snippets in the PDF.
 
-4. Normalisation & Indexing (`src.ingestion.shared.postprocess`)
+4. Normalisation & Indexing (`src.injestion.shared.processing.reading_order`)
    • Splits text into ~250-token chunks with a sliding window.  
-   • Inserts into a FAISS index (bi-encoder sentence embeddings) stored at `data/cache/<doc>/faiss.index`.
+   • Inserts into a FAISS index (bi-encoder sentence embeddings) stored at `data/scientific_cache/<doc>/faiss.index`.
 
-Output: Structured JSON + FAISS index per document under `data/cache/`.
+Output: Structured JSON + FAISS index per document under `data/scientific_cache/`.
 
 --------------------------------------------------------
 Step 2: Run the fact-checking pipeline
@@ -102,9 +102,9 @@ Command: `python -m src.cli run-study --claims path/to/file.json`
 
 Input objects
 • Claim list  → e.g. "Flublok is FDA approved for adults 18+".  
-• Document set → every FAISS index in `data/cache/*`.
+• Document set → every FAISS index in `data/scientific_cache/*`.
 
-Pipeline orchestrator (`src.fact_check.orchestrators.pipeline`) executes **five specialised LLM agents** per claim:
+Pipeline orchestrator (`src.fact_check.orchestrators.claim_orchestrator`) executes **five specialised LLM agents** per claim:
 
 1. Evidence Extractor (`agents/evidence_extractor.py`)
    • Semantic search over all indexes to retrieve top-k text chunks (+ figures captions).  

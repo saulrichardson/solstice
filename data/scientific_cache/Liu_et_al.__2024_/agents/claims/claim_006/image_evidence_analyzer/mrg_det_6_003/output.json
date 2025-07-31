@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p7_mrg_det_6_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p7_mrg_det_6_003.png",
+  "image_type": "Figure",
+  "page_number": 7,
+  "block_id": "mrg_det_6_003",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Figure with panels A\u2013D displaying geometric mean ratios of egg-to-cell virus titers (95% CI) and proportions of \u22654-fold reduced titers pre- and post-vaccination for four influenza vaccines (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) across influenza strains (A(H3N2), A(H1N1)pdm09, B/VIC, B/YAM) in two age groups (18\u201344, 45\u201364 years). does not support the claim because the image shows immunogenicity comparisons including RIV4 but provides no information on production platform, BEVS, or insect-cell expression of recombinant HA Note: No production or manufacturing details are visible in the figure; content is limited to virological assay results.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Figure with panels A\u2013D displaying geometric mean ratios of egg-to-cell virus titers (95% CI) and proportions of \u22654-fold reduced titers pre- and post-vaccination for four influenza vaccines (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) across influenza strains (A(H3N2), A(H1N1)pdm09, B/VIC, B/YAM) in two age groups (18\u201344, 45\u201364 years).",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image shows immunogenicity comparisons including RIV4 but provides no information on production platform, BEVS, or insect-cell expression of recombinant HA",
+    "confidence_notes": "No production or manufacturing details are visible in the figure; content is limited to virological assay results."
+  }
+}

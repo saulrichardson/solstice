@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p5_det_4_002.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_002",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Table listing various licensed influenza vaccines (IIV4, ccIIV4, HD-IIV4, aIIV4, RIV4, LAIV4), detailing trade names (manufacturers), presentations, age indications, HA content per dose, administration route, and mercury content. Under RIV4 (recombinant HA vaccine), Flublok Quadrivalent (Sanofi Pasteur) is listed with a 0.5-mL prefilled syringe, age \u226518 years, 45 \u00b5g/0.5 mL, IM. Evidence: Identifies Flublok as a recombinant HA vaccine but does not describe its production platform or mention insect cells or BEVS. The table does not support the claim because, although it labels Flublok as a recombinant HA vaccine, it does not provide any information on its production using a novel insect cell baculovirus expression vector system, and thus does not support the claim. Note: None",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table listing various licensed influenza vaccines (IIV4, ccIIV4, HD-IIV4, aIIV4, RIV4, LAIV4), detailing trade names (manufacturers), presentations, age indications, HA content per dose, administration route, and mercury content. Under RIV4 (recombinant HA vaccine), Flublok Quadrivalent (Sanofi Pasteur) is listed with a 0.5-mL prefilled syringe, age \u226518 years, 45 \u00b5g/0.5 mL, IM.",
+    "evidence_found": "Identifies Flublok as a recombinant HA vaccine but does not describe its production platform or mention insect cells or BEVS.",
+    "reasoning": "The table does not support the claim because, although it labels Flublok as a recombinant HA vaccine, it does not provide any information on its production using a novel insect cell baculovirus expression vector system, and thus does not support the claim.",
+    "confidence_notes": "None"
+  }
+}

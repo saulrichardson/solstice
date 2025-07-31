@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_003.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/figure_p1_det_0_003.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_003",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "The image displays the U.S. Department of Health & Human Services circular logo alongside the CDC rectangular logo on a black background. The image only shows organizational logos and does not support the claim regarding Flublok\u2019s recombinant HA production in insect cells via a baculovirus expression vector system, so it does not support the claim. Note: Image contains no text or data related to vaccine production methods.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "The image displays the U.S. Department of Health & Human Services circular logo alongside the CDC rectangular logo on a black background.",
+    "evidence_found": null,
+    "reasoning": "The image only shows organizational logos and does not support the claim regarding Flublok\u2019s recombinant HA production in insect cells via a baculovirus expression vector system, so it does not support the claim.",
+    "confidence_notes": "Image contains no text or data related to vaccine production methods."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p8_det_7_002.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/table_p8_det_7_002.png",
+  "image_type": "Table",
+  "page_number": 8,
+  "block_id": "det_7_002",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table listing clinical outcomes comparing a recombinant influenza vaccine (N=279,400) versus a standard-dose vaccine (N=395,852). Outcomes include PCR-confirmed influenza (overall, A and B), hospitalizations for PCR-confirmed influenza, community-acquired pneumonia, and cardiorespiratory events, with columns for cases per 1,000, unadjusted rate ratios, adjusted hazard ratios (95% CI), relative vaccine effectiveness (95% CI), and P values. The table presents clinical effectiveness and safety outcomes of a recombinant vaccine versus a standard-dose vaccine but contains no information on manufacturing methods or production platforms and therefore does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing clinical outcomes comparing a recombinant influenza vaccine (N=279,400) versus a standard-dose vaccine (N=395,852). Outcomes include PCR-confirmed influenza (overall, A and B), hospitalizations for PCR-confirmed influenza, community-acquired pneumonia, and cardiorespiratory events, with columns for cases per 1,000, unadjusted rate ratios, adjusted hazard ratios (95% CI), relative vaccine effectiveness (95% CI), and P values.",
+    "evidence_found": null,
+    "reasoning": "The table presents clinical effectiveness and safety outcomes of a recombinant vaccine versus a standard-dose vaccine but contains no information on manufacturing methods or production platforms and therefore does not support the claim.",
+    "confidence_notes": null
+  }
+}

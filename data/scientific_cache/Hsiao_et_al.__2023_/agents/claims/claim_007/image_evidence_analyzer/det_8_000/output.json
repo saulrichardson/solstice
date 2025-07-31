@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p9_det_8_000.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p9_det_8_000.png",
+  "image_type": "Figure",
+  "page_number": 9,
+  "block_id": "det_8_000",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Forest plot showing relative vaccine effectiveness (with 95% confidence intervals) of recombinant influenza vaccine versus egg-based vaccines across subgroups: PCR-confirmed influenza, hospitalization for PCR-confirmed influenza, and hospitalization for community-acquired pneumonia, each stratified by comorbid conditions (cardiovascular disease, respiratory disease, cardiorespiratory disease, obesity, diabetes, and any of the above). The x-axis shows percentage relative effectiveness from \u201350% to +55%. does not support the claim: the figure presents clinical relative vaccine effectiveness data across patient subgroups, but does not provide any immunogenicity measurements or data on broadly cross-reactive antibody levels against conserved HA regions induced by recombinant versus egg-derived vaccines.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Forest plot showing relative vaccine effectiveness (with 95% confidence intervals) of recombinant influenza vaccine versus egg-based vaccines across subgroups: PCR-confirmed influenza, hospitalization for PCR-confirmed influenza, and hospitalization for community-acquired pneumonia, each stratified by comorbid conditions (cardiovascular disease, respiratory disease, cardiorespiratory disease, obesity, diabetes, and any of the above). The x-axis shows percentage relative effectiveness from \u201350% to +55%.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim: the figure presents clinical relative vaccine effectiveness data across patient subgroups, but does not provide any immunogenicity measurements or data on broadly cross-reactive antibody levels against conserved HA regions induced by recombinant versus egg-derived vaccines.",
+    "confidence_notes": null
+  }
+}

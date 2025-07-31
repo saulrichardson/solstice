@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_mrg_det_1_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/figure_p2_mrg_det_1_002.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "mrg_det_1_002",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Left side shows a table of contents for a CDC MMWR report. Right side shows a section titled \u201cCDC Adoption of ACIP Recommendations for MMWR Recommendations and Reports\u2026,\u201d with text describing the ACIP and how recommendations become agency guidelines. Below is publication information and lists of CDC staff and editorial board members. does not support the claim because the image contains administrative and editorial information about CDC publications and ACIP processes, with no mention of Flublok or its production platform.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Left side shows a table of contents for a CDC MMWR report. Right side shows a section titled \u201cCDC Adoption of ACIP Recommendations for MMWR Recommendations and Reports\u2026,\u201d with text describing the ACIP and how recommendations become agency guidelines. Below is publication information and lists of CDC staff and editorial board members.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image contains administrative and editorial information about CDC publications and ACIP processes, with no mention of Flublok or its production platform.",
+    "confidence_notes": null
+  }
+}

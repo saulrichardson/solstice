@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_000.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/figure_p4_det_3_000.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_000",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "Flowchart depicting study cohort selection and categorization: initial cohort of 18,467 adults, exclusions (3,264), resulting in an analyzable cohort of 15,203, split into controls (13,385) and influenza cases (1,868), each further subdivided by vaccine type (RIV4, SD-IIV4, HD-IIV4+Adj-IV) and unvaccinated. The figure does not support the claim as it contains no information on HA microgram content per strain for Flublok or standard-dose influenza vaccines. Note: Image quality is sufficient; content is clearly unrelated to HA dosage specifications.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Flowchart depicting study cohort selection and categorization: initial cohort of 18,467 adults, exclusions (3,264), resulting in an analyzable cohort of 15,203, split into controls (13,385) and influenza cases (1,868), each further subdivided by vaccine type (RIV4, SD-IIV4, HD-IIV4+Adj-IV) and unvaccinated.",
+    "evidence_found": null,
+    "reasoning": "The figure does not support the claim as it contains no information on HA microgram content per strain for Flublok or standard-dose influenza vaccines.",
+    "confidence_notes": "Image quality is sufficient; content is clearly unrelated to HA dosage specifications."
+  }
+}

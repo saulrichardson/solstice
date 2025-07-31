@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p11_det_10_013.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/table_p11_det_10_013.png",
+  "image_type": "Table",
+  "page_number": 11,
+  "block_id": "det_10_013",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table presenting demographic characteristics (mean age, age group distribution, sex, race/ethnicity), site distribution, and prior influenza vaccination history for four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, and RIV4) with counts (n) and percentages (%) for each category. The table only provides demographic and vaccination history data for different vaccine groups and does not include any information about the production platform, recombinant HA expression, insect cells, or baculovirus expression vector system, and therefore does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table presenting demographic characteristics (mean age, age group distribution, sex, race/ethnicity), site distribution, and prior influenza vaccination history for four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, and RIV4) with counts (n) and percentages (%) for each category.",
+    "evidence_found": null,
+    "reasoning": "The table only provides demographic and vaccination history data for different vaccine groups and does not include any information about the production platform, recombinant HA expression, insect cells, or baculovirus expression vector system, and therefore does not support the claim.",
+    "confidence_notes": null
+  }
+}

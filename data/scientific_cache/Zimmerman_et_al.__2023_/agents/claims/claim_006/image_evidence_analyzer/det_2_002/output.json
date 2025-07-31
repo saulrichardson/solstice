@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_002.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/figure_p3_det_2_002.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_002",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A flowchart depicting the study cohort of adults \u226518 years (N=18,467), exclusion criteria (n=3,347), resulting in an analyzable cohort (N=14,590) split into controls (N=12,837) and influenza cases (N=1,803), each further divided into recipients of RIV4 (n=3,047 controls; n=291 cases), SD-IIV4 (n=862; n=114), and unvaccinated (n=8,878; n=1,398). does not support the claim because the figure solely outlines participant flow and vaccination groups without any information on Flublok\u2019s production platform, recombinant HA expression, insect cells, or BEVS.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart depicting the study cohort of adults \u226518 years (N=18,467), exclusion criteria (n=3,347), resulting in an analyzable cohort (N=14,590) split into controls (N=12,837) and influenza cases (N=1,803), each further divided into recipients of RIV4 (n=3,047 controls; n=291 cases), SD-IIV4 (n=862; n=114), and unvaccinated (n=8,878; n=1,398).",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the figure solely outlines participant flow and vaccination groups without any information on Flublok\u2019s production platform, recombinant HA expression, insect cells, or BEVS.",
+    "confidence_notes": null
+  }
+}

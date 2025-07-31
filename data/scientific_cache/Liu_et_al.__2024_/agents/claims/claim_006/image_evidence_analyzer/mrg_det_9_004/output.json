@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_mrg_det_9_004.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p10_mrg_det_9_004.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "mrg_det_9_004",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Multi-panel figure showing ELISA antibody titers. Panel A: log2 ELISA titers for egg-derived and cell-derived HA from influenza A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata strains at Day 0 and 1 month post-vaccination. Panel B: geometric mean ratios of egg versus cell HA ELISA titers for H3, H1, B/VIC, and B/YAM. Panel C: log2 ELISA titers against H3 and H1 HA stalk antigens at Day 0 and 1 month. Panel D: geometric mean fold-rise of HA stalk ELISA titers (1 month/Day 0) for H3 and H1 stalks. The figure presents immunogenicity data (antibody titers) comparing egg- and cell-derived HA and stalk responses but does not mention Flublok, recombinant HA production, insect cells, or baculovirus expression vector system. Therefore, it does not support the claim. Note: Image quality is sufficient to read graphs and legends; no production method information is present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Multi-panel figure showing ELISA antibody titers. Panel A: log2 ELISA titers for egg-derived and cell-derived HA from influenza A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata strains at Day 0 and 1 month post-vaccination. Panel B: geometric mean ratios of egg versus cell HA ELISA titers for H3, H1, B/VIC, and B/YAM. Panel C: log2 ELISA titers against H3 and H1 HA stalk antigens at Day 0 and 1 month. Panel D: geometric mean fold-rise of HA stalk ELISA titers (1 month/Day 0) for H3 and H1 stalks.",
+    "evidence_found": null,
+    "reasoning": "The figure presents immunogenicity data (antibody titers) comparing egg- and cell-derived HA and stalk responses but does not mention Flublok, recombinant HA production, insect cells, or baculovirus expression vector system. Therefore, it does not support the claim.",
+    "confidence_notes": "Image quality is sufficient to read graphs and legends; no production method information is present."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p9_det_8_000.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p9_det_8_000.png",
+  "image_type": "Figure",
+  "page_number": 9,
+  "block_id": "det_8_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Forest plot titled \u201cRelative Vaccine Effectiveness (95% CI)\u201d showing point estimates and confidence intervals for multiple subgroups (cardiovascular disease, respiratory disease, cardiorespiratory disease, obesity, diabetes, any of the above) under outcomes: PCR-confirmed influenza, hospitalization for PCR-confirmed influenza, and hospitalization for community-acquired pneumonia. The x-axis is percentage effectiveness from \u201350 to 55. does not support the claim because the figure presents subgroup vaccine effectiveness data and contains no information on Flublok\u2019s production method or use of recombinant HA expression in insect cells via BEVS.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Forest plot titled \u201cRelative Vaccine Effectiveness (95% CI)\u201d showing point estimates and confidence intervals for multiple subgroups (cardiovascular disease, respiratory disease, cardiorespiratory disease, obesity, diabetes, any of the above) under outcomes: PCR-confirmed influenza, hospitalization for PCR-confirmed influenza, and hospitalization for community-acquired pneumonia. The x-axis is percentage effectiveness from \u201350 to 55.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the figure presents subgroup vaccine effectiveness data and contains no information on Flublok\u2019s production method or use of recombinant HA expression in insect cells via BEVS.",
+    "confidence_notes": null
+  }
+}
