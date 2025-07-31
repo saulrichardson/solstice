@@ -49,9 +49,9 @@ The fact-checking pipeline processes text evidence through three sequential stag
 \item \textbf{Evidence Verification Step (V2)}: Validates that all extracted quotes (from both extraction and completeness steps) exist in the source document. Uses semantic matching to handle OCR variations and filters out tangentially related content, achieving high verification rates.
 
 \item \textbf{Image Evidence Analyzer}: Analyzes figures and tables using vision models to identify supporting visual evidence. Processes images in parallel with semaphore control (max 5 concurrent) and provides detailed explanations.
-
-\item \textbf{Evidence Presenter}: Consolidates all verified text and image evidence into structured JSON and HTML reports. Assesses overall evidence coverage (complete/partial/none) and produces human-readable summaries.
 \end{itemize}
+
+After all LLM processing completes, an Evidence Presenter step consolidates all verified text and image evidence into structured JSON reports with coverage assessment.
 
 \section{Design Decisions}
 
@@ -90,8 +90,6 @@ The system uses asynchronous Python with strategic architectural decisions:
 
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item \textbf{Hierarchical Orchestration}: Two-level design with StudyOrchestrator → ClaimOrchestrator → processing steps. Enables both study-level and claim-level parallelism control.
-\item \textbf{Resource-Aware Parallelism}: Default 2 concurrent claims based on empirical testing showing memory usage of ~2GB per claim with GPT-4 context windows.
-\item \textbf{Filesystem-Based State}: All intermediate results are written to disk, which makes runs resumable and easier to debug at the cost of additional disk I/O.
 \item \textbf{Step Isolation}: Each processing step runs independently with explicit input/output contracts via Pydantic models. Enables testing and development in isolation.
 \end{itemize}
 
@@ -99,14 +97,14 @@ The system uses asynchronous Python with strategic architectural decisions:
 
 Solstice writes intermediate and final results to disk in human-readable form. This allows users to inspect the system, debug individual stages, or create visualisations without rerunning the full pipeline.
 
-\paragraph{1. Formatted Claims \\& Evidence}
+\paragraph{1. Formatted Claims \& Evidence}
 After you run a fact-checking study (\texttt{python -m src.cli run-study}) the full, merged JSON for each claim is
 written to:
 \begin{verbatim}
 data/studies/<study_name>/
-├── study_report.json            # roll-up across all claims
-└── claim_<id>/
-    └── evidence_report.json     # structured claims + supporting / refuting evidence
+|-- study_report.json            # roll-up across all claims
+`-- claim_<id>/
+    `-- evidence_report.json     # structured claims + supporting / refuting evidence
 \end{verbatim}
 The \texttt{evidence\_report.json} file can be consumed directly by any UX layer.
 
@@ -117,8 +115,8 @@ If you want the raw, per-step outputs (e.g. to analyse the verifier’s chain-of
 PDFs passed through the dedicated marketing pipeline end up in:
 \begin{verbatim}
 data/marketing_cache/<pdf_name>/
-├── extracted/content.json   # text + layout (marketing-tuned)
-└── figures/                 # high-resolution figure crops
+|-- extracted/content.json   # text + layout (marketing-tuned)
+`-- figures/                 # high-resolution figure crops
 \end{verbatim}
 The structure mirrors \texttt{scientific\_cache} so the same downstream tools can ingest either kind of document.
 
@@ -127,7 +125,7 @@ For newcomers, these are useful places to explore:
 \begin{itemize}[leftmargin=*]
   \item \texttt{src/cli/} – entry-point scripts that orchestrate the pipelines.
   \item \texttt{src/injestion/shared/processing/} – layout detection, reading-order logic, text extractors.
-  \item \texttt{src/fact\_check/agents/} – implementation of the five specialised LLM calls.
+  \item \texttt{src/fact\_check/agents/} – implementation of the four specialised LLM processing steps plus formatting.
   \item \texttt{data/scientific\_cache/} – processed scientific PDFs (inspect \texttt{content.json}).
   \item \texttt{data/marketing\_cache/} – processed marketing PDFs.
   \item \texttt{data/studies/} – end-to-end fact-checking results ready for consumption.

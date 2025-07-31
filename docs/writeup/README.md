@@ -45,21 +45,22 @@ make distclean
 ### Main Writeup (`solstice.tex`)
 A concise 2-page technical summary covering:
 1. **Introduction** - System overview and purpose
-2. **System Architecture** - Document ingestion and multi-agent evidence pipeline
-3. **Technical Implementation** - Streamlined orchestration and agent design
+2. **System Architecture** - Document ingestion and multi-step LLM evidence pipeline
+3. **Technical Implementation** - Streamlined orchestration and LLM pipeline design
 4. **Key Innovations** - Evidence-based verification, multimodal analysis
 5. **Results** - Performance metrics and applications
 6. **Future Directions** - Planned enhancements
 
-#### Agent Pipeline Architecture
-The fact-checking system uses a streamlined evidence pipeline with specialized agents:
+#### LLM Pipeline Architecture
+The fact-checking system uses a streamlined evidence pipeline with specialized LLM processing steps:
 - **EvidenceExtractor**: Finds relevant passages from documents
 - **CompletenessChecker**: Ensures all aspects of claims are addressed
 - **EvidenceVerifierV2**: Validates that evidence actually supports claims
 - **ImageEvidenceAnalyzer**: Extracts evidence from charts and figures
-- **EvidencePresenter**: Synthesizes final evidence presentation
 
-The ClaimOrchestrator coordinates these agents across multiple documents, maintaining evidence trails with exact quotes and page references.
+After LLM processing, an Evidence Presenter (non-LLM) consolidates all verified evidence into the final report.
+
+The ClaimOrchestrator coordinates these LLM steps across multiple documents, maintaining evidence trails with exact quotes and page references.
 
 ### Extended Version (`solstice_v2.tex`)
 Expanded technical documentation with additional implementation details.
