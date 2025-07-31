@@ -6,6 +6,7 @@
 \usepackage{enumitem}
 \usepackage{tikz}
 \usepackage{xcolor}
+\usepackage{float}
 \usetikzlibrary{shapes,arrows,positioning}
 
 % Statistics removed - no longer auto-generated
@@ -57,7 +58,7 @@ After all LLM processing completes, an Evidence Presenter step consolidates all 
 
 The fact-checking pipeline orchestrates multiple LLM calls in a specific sequence:
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[
     node distance=1.5cm,
@@ -110,7 +111,7 @@ Solstice is built on three logical services, with the Gateway service running in
 
 The following diagram illustrates how these services interact:
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[
@@ -391,7 +392,7 @@ The following examples demonstrate Solstice's layout detection capabilities on r
 
 Figure \ref{fig:marketing-layout} shows the layout detection on a pharmaceutical marketing page. The system identifies distinct marketing elements including headers, body text, and visual design components, preserving the intended visual hierarchy.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{../../data/marketing_cache/FlublokOnePage/visualizations/page_001_layout.png}
 \caption{Layout detection on marketing material (FlublokOnePage). Different colors indicate detected elements: headers, body text, figures, and marketing-specific components. The detection preserves reading order and visual hierarchy essential for marketing documents.}
@@ -402,7 +403,7 @@ Figure \ref{fig:marketing-layout} shows the layout detection on a pharmaceutical
 
 Figure \ref{fig:scientific-layout} demonstrates the system handling a complex scientific page containing figures, tables, and dense academic text. This example from Hsiao et al. (2023) shows successful detection of 8 distinct elements including data tables, flowcharts, and figure captions.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{../../data/scientific_cache/Hsiao_et_al.__2023_/visualizations/page_003_layout.png}
 \caption{Layout detection on a complex scientific page (Hsiao et al., 2023, page 3). The system correctly identifies and separates: (1) text blocks, (2) data tables, (3) scientific figures, (4) captions, and (5) references. Numbers indicate reading order preservation.}
