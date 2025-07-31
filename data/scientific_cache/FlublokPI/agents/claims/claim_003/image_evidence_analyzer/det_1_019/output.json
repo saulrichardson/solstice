@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table displaying percentages of subjects reporting adverse events (categorized by severity: any, moderate, severe) across different studies, with rows of numeric values and footnotes describing data reporting and study details. does not support the claim because the table only shows adverse event rates and contains no immunogenicity or cross-protection data related to recombinant technology. Note: No immunogenicity or efficacy data present; table focuses solely on safety/adverse event reporting. Potentially missing context but based on visible content, claim unsupported.",
+  "explanation": "A comparative table of solicited local and systemic adverse event percentages for Flublok (recombinant influenza vaccine, N=972) versus IIV3 (egg-based trivalent inactivated influenza vaccine, N=967), listing rates of pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever by severity (any, moderate, severe). The table does not support the claim because it only presents safety and tolerability data, with no measurements of immune response breadth, cross-protective efficacy, or performance in mismatch seasons; therefore it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table displaying percentages of subjects reporting adverse events (categorized by severity: any, moderate, severe) across different studies, with rows of numeric values and footnotes describing data reporting and study details.",
+    "image_description": "A comparative table of solicited local and systemic adverse event percentages for Flublok (recombinant influenza vaccine, N=972) versus IIV3 (egg-based trivalent inactivated influenza vaccine, N=967), listing rates of pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever by severity (any, moderate, severe).",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table only shows adverse event rates and contains no immunogenicity or cross-protection data related to recombinant technology.",
-    "confidence_notes": "No immunogenicity or efficacy data present; table focuses solely on safety/adverse event reporting. Potentially missing context but based on visible content, claim unsupported."
+    "reasoning": "The table does not support the claim because it only presents safety and tolerability data, with no measurements of immune response breadth, cross-protective efficacy, or performance in mismatch seasons; therefore it does not support the claim.",
+    "confidence_notes": null
   }
 }

@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Table listing influenza vaccines by trade name, presentation, age indication, HA content per virus antigen per dose, route, and mercury content. Includes IIV4 (Fluzone Quadrivalent) with 15 \u00b5g HA per virus and RIV4 (Flublok Quadrivalent) with 45 \u00b5g HA per virus. Evidence: Flublok Quadrivalent shows 45 \u00b5g HA per virus antigen per 0.5 mL dose versus 15 \u00b5g for standard-dose IIV4 vaccines. The table demonstrates that Flublok contains 3\u00d7 the HA antigen content of standard-dose flu vaccines but does not provide any data or statements on immunogenicity, so it does not support the claim in full. Note: No immunogenicity data are presented in the image; table text is clear and legible.",
+  "explanation": "A table listing influenza vaccine products by trade name, presentations, age indication, antigen content (\u00b5g HA per 0.5 mL dose), route, and thimerosal content. It shows standard-dose IIV4 vaccines contain 15 \u00b5g HA per virus strain per dose and the recombinant RIV4 Flublok Quadrivalent contains 45 \u00b5g HA per virus strain per dose. Evidence: Flublok Quadrivalent contains 45 \u00b5g HA per 0.5 mL per virus strain versus 15 \u00b5g/0.5 mL per strain for standard-dose IIV4 vaccines. The table shows Flublok contains 3\u00d7 the HA antigen content per strain compared to standard-dose flu vaccines but does not provide any data on immunogenicity, so it does not support the claim in full. Note: Image is clear regarding antigen content but lacks immunogenicity data.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Table listing influenza vaccines by trade name, presentation, age indication, HA content per virus antigen per dose, route, and mercury content. Includes IIV4 (Fluzone Quadrivalent) with 15 \u00b5g HA per virus and RIV4 (Flublok Quadrivalent) with 45 \u00b5g HA per virus.",
-    "evidence_found": "Flublok Quadrivalent shows 45 \u00b5g HA per virus antigen per 0.5 mL dose versus 15 \u00b5g for standard-dose IIV4 vaccines.",
-    "reasoning": "The table demonstrates that Flublok contains 3\u00d7 the HA antigen content of standard-dose flu vaccines but does not provide any data or statements on immunogenicity, so it does not support the claim in full.",
-    "confidence_notes": "No immunogenicity data are presented in the image; table text is clear and legible."
+    "image_description": "A table listing influenza vaccine products by trade name, presentations, age indication, antigen content (\u00b5g HA per 0.5 mL dose), route, and thimerosal content. It shows standard-dose IIV4 vaccines contain 15 \u00b5g HA per virus strain per dose and the recombinant RIV4 Flublok Quadrivalent contains 45 \u00b5g HA per virus strain per dose.",
+    "evidence_found": "Flublok Quadrivalent contains 45 \u00b5g HA per 0.5 mL per virus strain versus 15 \u00b5g/0.5 mL per strain for standard-dose IIV4 vaccines.",
+    "reasoning": "The table shows Flublok contains 3\u00d7 the HA antigen content per strain compared to standard-dose flu vaccines but does not provide any data on immunogenicity, so it does not support the claim in full.",
+    "confidence_notes": "Image is clear regarding antigen content but lacks immunogenicity data."
   }
 }

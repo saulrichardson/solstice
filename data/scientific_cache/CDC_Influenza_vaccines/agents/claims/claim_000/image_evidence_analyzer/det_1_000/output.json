@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table listing various influenza vaccines (e.g., Fluad Quadrivalent, Flublok Quadrivalent, FluMist Quadrivalent) with columns for presentation format, age indication, antigen content per dose (\u03bcg HA or virus units), administration route, and mercury content. The image does not support the claim because it only provides vaccine formulations, dosages, age indications, and routes of administration, without any information on antigenic matching to WHO- or FDA-selected flu strains. Note: The table is clear and legible; no relevant data on antigenic match or strain selection is present.",
+  "explanation": "A table listing trade names and manufacturers of quadrivalent influenza vaccines (Fluad Quadrivalent, Flublok Quadrivalent, FluMist Quadrivalent), their presentations (e.g., 0.5-mL prefilled syringe or intranasal sprayer), age indications, hemagglutinin antigen content or virus count per dose, administration route, and presence of mercury. The table provides information on vaccine names, dosages, age indications, and administration routes but contains no information about antigenic matching or alignment with WHO- and FDA-selected flu strains, and therefore does not support the claim. Note: Table is clear and legible; no relevant data on antigenic match is present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing various influenza vaccines (e.g., Fluad Quadrivalent, Flublok Quadrivalent, FluMist Quadrivalent) with columns for presentation format, age indication, antigen content per dose (\u03bcg HA or virus units), administration route, and mercury content.",
+    "image_description": "A table listing trade names and manufacturers of quadrivalent influenza vaccines (Fluad Quadrivalent, Flublok Quadrivalent, FluMist Quadrivalent), their presentations (e.g., 0.5-mL prefilled syringe or intranasal sprayer), age indications, hemagglutinin antigen content or virus count per dose, administration route, and presence of mercury.",
     "evidence_found": null,
-    "reasoning": "The image does not support the claim because it only provides vaccine formulations, dosages, age indications, and routes of administration, without any information on antigenic matching to WHO- or FDA-selected flu strains.",
-    "confidence_notes": "The table is clear and legible; no relevant data on antigenic match or strain selection is present."
+    "reasoning": "The table provides information on vaccine names, dosages, age indications, and administration routes but contains no information about antigenic matching or alignment with WHO- and FDA-selected flu strains, and therefore does not support the claim.",
+    "confidence_notes": "Table is clear and legible; no relevant data on antigenic match is present."
   }
 }

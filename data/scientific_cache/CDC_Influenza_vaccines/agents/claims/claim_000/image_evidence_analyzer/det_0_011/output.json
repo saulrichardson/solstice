@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Solid black image with no discernible content The image does not support the claim because it contains no visible information relating to antigenic match of Flublok Note: Image appears blank or failed to load, limiting ability to assess content",
+  "explanation": "A black-and-white QR code with no visible clinical data or text about influenza vaccine antigens. The image does not support the claim because it is solely a QR code and contains no information regarding Flublok or antigenic matching with WHO- or FDA-selected flu strains. Note: The image is a QR code and lacks any clinical or regulatory content relevant to the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Solid black image with no discernible content",
+    "image_description": "A black-and-white QR code with no visible clinical data or text about influenza vaccine antigens.",
     "evidence_found": null,
-    "reasoning": "The image does not support the claim because it contains no visible information relating to antigenic match of Flublok",
-    "confidence_notes": "Image appears blank or failed to load, limiting ability to assess content"
+    "reasoning": "The image does not support the claim because it is solely a QR code and contains no information regarding Flublok or antigenic matching with WHO- or FDA-selected flu strains.",
+    "confidence_notes": "The image is a QR code and lacks any clinical or regulatory content relevant to the claim."
   }
 }

@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A table showing percentages of subjects reporting solicited adverse responses (any, moderate, severe) for different vaccine studies, with footnotes describing study populations and registration details. The table presents safety/adverse event data and does not address vaccine production methods or mutation potential, so it does not support the claim. Note: Table is clear but limited to adverse event rates; no information on cell- or egg-based production or mutation effects.",
+  "explanation": "A table displaying percentages of local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events for two vaccines: Flublok (N=972) and IIV3 (N=967), categorized by any, moderate, and severe events. does not support the claim because the table provides only reactogenicity data and contains no information about production-induced mutations or their effect on vaccine effectiveness. Note: Image is clear but limited to safety/reactogenicity outcomes; no mutation or efficacy details present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table showing percentages of subjects reporting solicited adverse responses (any, moderate, severe) for different vaccine studies, with footnotes describing study populations and registration details.",
+    "image_description": "A table displaying percentages of local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events for two vaccines: Flublok (N=972) and IIV3 (N=967), categorized by any, moderate, and severe events.",
     "evidence_found": null,
-    "reasoning": "The table presents safety/adverse event data and does not address vaccine production methods or mutation potential, so it does not support the claim.",
-    "confidence_notes": "Table is clear but limited to adverse event rates; no information on cell- or egg-based production or mutation effects."
+    "reasoning": "does not support the claim because the table provides only reactogenicity data and contains no information about production-induced mutations or their effect on vaccine effectiveness.",
+    "confidence_notes": "Image is clear but limited to safety/reactogenicity outcomes; no mutation or efficacy details present."
   }
 }

@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "Table listing influenza vaccines (trade name, manufacturer), presentations (e.g., 0.5-mL prefilled syringe), age indications, HA content per dose (\u00b5g for inactivated vaccines), route of administration, and mercury content. Evidence: Shows recombinant HA vaccine (Flublok Quadrivalent) contains 45 \u00b5g HA per dose compared to 15 \u00b5g/0.5 mL in egg-based standard-dose vaccines. does not support the claim: the table provides only HA dose comparisons and no antibody response data, so it doesn\u2019t show that a higher-dose recombinant vaccine induces a more robust antibody response. Note: No immunogenicity or antibody titer data are presented; only vaccine formulations and dosages are shown.",
+  "explanation": "Table listing influenza vaccines by trade name (manufacturer), presentation, age indication, antigen content per dose (\u03bcg HA for IIV4s and RIV4 or virus count for LAIV4), route of administration, and mercury content. Evidence: Flublok Quadrivalent (recombinant HA vaccine) contains 45 \u03bcg HA per strain per 0.5 mL dose versus 15 \u03bcg HA per strain per 0.5 mL for standard egg-based IIV4 vaccines. does not support the claim because the image only presents antigen dose differences without any antibody response or immunogenicity data, so it doesn't support evidence that the higher-dose recombinant vaccine induces a more robust antibody response. Note: No immunogenicity or antibody response data is provided; table only lists formulations and antigen content.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Table listing influenza vaccines (trade name, manufacturer), presentations (e.g., 0.5-mL prefilled syringe), age indications, HA content per dose (\u00b5g for inactivated vaccines), route of administration, and mercury content.",
-    "evidence_found": "Shows recombinant HA vaccine (Flublok Quadrivalent) contains 45 \u00b5g HA per dose compared to 15 \u00b5g/0.5 mL in egg-based standard-dose vaccines.",
-    "reasoning": "does not support the claim: the table provides only HA dose comparisons and no antibody response data, so it doesn\u2019t show that a higher-dose recombinant vaccine induces a more robust antibody response.",
-    "confidence_notes": "No immunogenicity or antibody titer data are presented; only vaccine formulations and dosages are shown."
+    "image_description": "Table listing influenza vaccines by trade name (manufacturer), presentation, age indication, antigen content per dose (\u03bcg HA for IIV4s and RIV4 or virus count for LAIV4), route of administration, and mercury content.",
+    "evidence_found": "Flublok Quadrivalent (recombinant HA vaccine) contains 45 \u03bcg HA per strain per 0.5 mL dose versus 15 \u03bcg HA per strain per 0.5 mL for standard egg-based IIV4 vaccines.",
+    "reasoning": "does not support the claim because the image only presents antigen dose differences without any antibody response or immunogenicity data, so it doesn't support evidence that the higher-dose recombinant vaccine induces a more robust antibody response.",
+    "confidence_notes": "No immunogenicity or antibody response data is provided; table only lists formulations and antigen content."
   }
 }

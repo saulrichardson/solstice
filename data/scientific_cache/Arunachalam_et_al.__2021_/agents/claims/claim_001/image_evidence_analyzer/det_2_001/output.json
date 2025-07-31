@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Schematic flow diagram depicting the baculovirus\u2013insect cell expression system used to manufacture RIV4 (Flublok), including steps: cloning of HA gene into baculovirus vector, cell seeding and infection in bioreactor, harvest by disc-stack centrifugation, extraction, depth filtration, capture, purification with DNA removal, and final TFF/formulation. The figure illustrates the production process of RIV4 (Flublok) but does not present any data on HA antigen content or comparisons to standard-dose vaccines, so it does not support the claim.",
+  "explanation": "A multi\u2010step schematic of the Flublok manufacturing process, showing PCR\u2010direct cloning of full\u2010length HA cDNA into a baculovirus (BV) expression vector, infection of insect cells in a bioreactor, harvest by disc\u2010stack centrifugation, extraction, depth filtration for clarification, capture and purification steps, DNA removal, and tangential flow filtration/formulation. does not support the claim because the figure only depicts the production workflow and contains no information on antigen dose comparisons or immunogenicity, and thus does not support the claim Note: None",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Schematic flow diagram depicting the baculovirus\u2013insect cell expression system used to manufacture RIV4 (Flublok), including steps: cloning of HA gene into baculovirus vector, cell seeding and infection in bioreactor, harvest by disc-stack centrifugation, extraction, depth filtration, capture, purification with DNA removal, and final TFF/formulation.",
+    "image_description": "A multi\u2010step schematic of the Flublok manufacturing process, showing PCR\u2010direct cloning of full\u2010length HA cDNA into a baculovirus (BV) expression vector, infection of insect cells in a bioreactor, harvest by disc\u2010stack centrifugation, extraction, depth filtration for clarification, capture and purification steps, DNA removal, and tangential flow filtration/formulation.",
     "evidence_found": null,
-    "reasoning": "The figure illustrates the production process of RIV4 (Flublok) but does not present any data on HA antigen content or comparisons to standard-dose vaccines, so it does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "does not support the claim because the figure only depicts the production workflow and contains no information on antigen dose comparisons or immunogenicity, and thus does not support the claim",
+    "confidence_notes": "None"
   }
 }

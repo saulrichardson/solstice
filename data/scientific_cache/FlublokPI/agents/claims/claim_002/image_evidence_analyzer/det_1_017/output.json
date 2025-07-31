@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A partial table of solicited adverse event rates (percentages of subjects reporting fever and other symptoms) from clinical studies of inactivated influenza vaccines (IIV3), with footnotes defining severity grades (mild, moderate, severe) and referencing study design details and trial registrations. The table presents safety and reactogenicity data (adverse event rates and fever severity) and does not mention or provide any information on vaccine production methods or mutations during manufacturing, so it does not support the claim. Note: The image is cropped and only shows reactogenicity data; no manufacturing or mutation information is visible.",
+  "explanation": "A table comparing the frequency (%) of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse events of two flu vaccines: Flublok (N=1078) and IIV3 (N=1081), with columns for any, moderate, and severe events. The table only presents safety/adverse event data for two vaccines and contains no information about mutations during production or their impact on effectiveness, and thus does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A partial table of solicited adverse event rates (percentages of subjects reporting fever and other symptoms) from clinical studies of inactivated influenza vaccines (IIV3), with footnotes defining severity grades (mild, moderate, severe) and referencing study design details and trial registrations.",
+    "image_description": "A table comparing the frequency (%) of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse events of two flu vaccines: Flublok (N=1078) and IIV3 (N=1081), with columns for any, moderate, and severe events.",
     "evidence_found": null,
-    "reasoning": "The table presents safety and reactogenicity data (adverse event rates and fever severity) and does not mention or provide any information on vaccine production methods or mutations during manufacturing, so it does not support the claim.",
-    "confidence_notes": "The image is cropped and only shows reactogenicity data; no manufacturing or mutation information is visible."
+    "reasoning": "The table only presents safety/adverse event data for two vaccines and contains no information about mutations during production or their impact on effectiveness, and thus does not support the claim.",
+    "confidence_notes": null
   }
 }

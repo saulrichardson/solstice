@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "A table summarizing data from Study 1 (NCT00539981) presenting rates of culture-confirmed CDC-defined influenza-like illness (CDC-ILI) and vaccine efficacy for Flublok Quadrivalent versus placebo, including numbers of cases, incidence rates, percent efficacy, and 95% confidence intervals, with footnotes and abbreviations. The table only shows efficacy of Flublok Quadrivalent compared to placebo in Study 1; it does not include any data or comparator arm for Fluarix quadrivalent, therefore it does not support the claim. Note: Table focuses on Flublok versus placebo and references other studies in footnotes, but no direct comparison to Fluarix is shown.",
+  "explanation": "A table titled \u2018Adults 18\u201349 Years of Age, Study 1\u2019 showing case definitions (positive culture with matched strains, any ILI, etc.), with columns for Flublok (N=2344) and saline placebo (N=2304) listing number of cases, rates (%), calculated vaccine efficacy (%) and 95% confidence intervals. The table compares Flublok with saline placebo and does not include any comparison to Fluarix quadrivalent, so it does not support the claim. Note: The visible portion of the figure clearly shows only a saline placebo comparator; no mention of Fluarix is present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table summarizing data from Study 1 (NCT00539981) presenting rates of culture-confirmed CDC-defined influenza-like illness (CDC-ILI) and vaccine efficacy for Flublok Quadrivalent versus placebo, including numbers of cases, incidence rates, percent efficacy, and 95% confidence intervals, with footnotes and abbreviations.",
+    "image_description": "A table titled \u2018Adults 18\u201349 Years of Age, Study 1\u2019 showing case definitions (positive culture with matched strains, any ILI, etc.), with columns for Flublok (N=2344) and saline placebo (N=2304) listing number of cases, rates (%), calculated vaccine efficacy (%) and 95% confidence intervals.",
     "evidence_found": null,
-    "reasoning": "The table only shows efficacy of Flublok Quadrivalent compared to placebo in Study 1; it does not include any data or comparator arm for Fluarix quadrivalent, therefore it does not support the claim.",
-    "confidence_notes": "Table focuses on Flublok versus placebo and references other studies in footnotes, but no direct comparison to Fluarix is shown."
+    "reasoning": "The table compares Flublok with saline placebo and does not include any comparison to Fluarix quadrivalent, so it does not support the claim.",
+    "confidence_notes": "The visible portion of the figure clearly shows only a saline placebo comparator; no mention of Fluarix is present."
   }
 }

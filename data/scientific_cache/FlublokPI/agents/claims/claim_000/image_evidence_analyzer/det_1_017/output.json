@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Partial table and footnotes from a clinical study showing percentages of severe adverse responses reported by subjects, grading criteria for temperature elevations (mild, moderate, severe), and notes about study populations and protocols. The image displays safety and adverse event data with footnotes, and does not include any information about antigenic match to WHO- or FDA-selected influenza strains, so it does not support the claim. Note: Image is a partial view of safety data; no relevant antigenic or strain information is present.",
+  "explanation": "A table comparing percentages of solicited local and systemic adverse events (pain, redness, firmness/swelling, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) between Flublok (N=1078) and IIV3 (N=1081). does not support the claim: the table provides adverse event rates and contains no information on antigenic matching or strain selection by WHO or FDA.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Partial table and footnotes from a clinical study showing percentages of severe adverse responses reported by subjects, grading criteria for temperature elevations (mild, moderate, severe), and notes about study populations and protocols.",
+    "image_description": "A table comparing percentages of solicited local and systemic adverse events (pain, redness, firmness/swelling, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) between Flublok (N=1078) and IIV3 (N=1081).",
     "evidence_found": null,
-    "reasoning": "The image displays safety and adverse event data with footnotes, and does not include any information about antigenic match to WHO- or FDA-selected influenza strains, so it does not support the claim.",
-    "confidence_notes": "Image is a partial view of safety data; no relevant antigenic or strain information is present."
+    "reasoning": "does not support the claim: the table provides adverse event rates and contains no information on antigenic matching or strain selection by WHO or FDA.",
+    "confidence_notes": null
   }
 }

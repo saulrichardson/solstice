@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "A partial prescribing information document for Flublok showing section headings (Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, Patient Counseling Information) and some adverse reaction incidence rates, but no detailed clinical study data. The image does not support the claim because it contains only section headings and adverse reaction summaries without any comparative data on antibody responses between higher-dose recombinant and egg-based standard-dose vaccines (does not support the claim). Note: Snippet is limited to table of contents and adverse reactions; clinical study details are not visible in the image.",
+  "explanation": "Black-and-white image showing the front page of a vaccine prescribing information document, including dosage and administration instructions for Flublok (0.5 mL intramuscular), contraindications, warnings, adverse reactions summary, and a detailed table of contents listing sections such as Clinical Pharmacology, Clinical Studies, and Efficacy Against Laboratory-Confirmed Influenza. does not support the claim Note: The image contains only administrative and section headings and does not present any comparative immunogenicity data or study results regarding higher-dose recombinant versus egg-based standard-dose flu vaccines.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A partial prescribing information document for Flublok showing section headings (Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, Patient Counseling Information) and some adverse reaction incidence rates, but no detailed clinical study data.",
+    "image_description": "Black-and-white image showing the front page of a vaccine prescribing information document, including dosage and administration instructions for Flublok (0.5 mL intramuscular), contraindications, warnings, adverse reactions summary, and a detailed table of contents listing sections such as Clinical Pharmacology, Clinical Studies, and Efficacy Against Laboratory-Confirmed Influenza.",
     "evidence_found": null,
-    "reasoning": "The image does not support the claim because it contains only section headings and adverse reaction summaries without any comparative data on antibody responses between higher-dose recombinant and egg-based standard-dose vaccines (does not support the claim).",
-    "confidence_notes": "Snippet is limited to table of contents and adverse reactions; clinical study details are not visible in the image."
+    "reasoning": "does not support the claim",
+    "confidence_notes": "The image contains only administrative and section headings and does not present any comparative immunogenicity data or study results regarding higher-dose recombinant versus egg-based standard-dose flu vaccines."
   }
 }

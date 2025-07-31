@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A partial screenshot of the first page of Flublok full prescribing information, showing the dosage forms and strengths, contraindications, warnings and precautions, adverse reactions summary, and a table of contents listing sections 1 through 17. does not support the claim Note: This image only shows the table of contents and introductory labeling information; no data on antigenic match with WHO- or FDA-selected strains is visible.",
+  "explanation": "Black-and-white image showing the first page of the Flublok full prescribing information, including the vaccine name, indications, dosage and administration instructions, contraindications, warnings and precautions, adverse reactions summary, and a detailed table of contents listing sections 1 through 17. The image only presents dosing, safety, and table of contents information and does not mention antigenic matching to WHO- or FDA-selected strains, so it does not support the claim. Note: Content is limited to prescribing information overview and table of contents; no section on antigenic matching is visible.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A partial screenshot of the first page of Flublok full prescribing information, showing the dosage forms and strengths, contraindications, warnings and precautions, adverse reactions summary, and a table of contents listing sections 1 through 17.",
+    "image_description": "Black-and-white image showing the first page of the Flublok full prescribing information, including the vaccine name, indications, dosage and administration instructions, contraindications, warnings and precautions, adverse reactions summary, and a detailed table of contents listing sections 1 through 17.",
     "evidence_found": null,
-    "reasoning": "does not support the claim",
-    "confidence_notes": "This image only shows the table of contents and introductory labeling information; no data on antigenic match with WHO- or FDA-selected strains is visible."
+    "reasoning": "The image only presents dosing, safety, and table of contents information and does not mention antigenic matching to WHO- or FDA-selected strains, so it does not support the claim.",
+    "confidence_notes": "Content is limited to prescribing information overview and table of contents; no section on antigenic matching is visible."
   }
 }

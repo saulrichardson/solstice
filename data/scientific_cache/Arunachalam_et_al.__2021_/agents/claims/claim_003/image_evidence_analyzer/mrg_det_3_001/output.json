@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A two-panel schematic comparing the structural features of native influenza HA (panel a) and recombinant HA produced in insect cells (panel b). Panel a shows the viral HA heterodimer (HA1 and HA2) with complex, sialylated N-linked glycans and cleaved fusion peptide. Panel b shows the recombinant HA0 precursor monomer with uncleaved fusion-peptide loop and simpler, paucimannosidic N-linked glycans exposing unique epitopes. The figure only illustrates structural and glycosylation differences between native and recombinant HA proteins; it provides no experimental or immunogenicity data demonstrating a broader immune response or cross-protection. Therefore, it does not support the claim. Note: Limited to structural schematics; no immunological data are presented.",
+  "explanation": "Two schematic diagrams (panels a and b) of influenza hemagglutinin (HA) proteins showing the globular head and fibrous stem domains, annotated glycan structures (polysialylated complex glycans in a; paucimannose glycans in b), fusion peptide status (cleaved in a; uncleaved in b), inter-disulfide bonds, membrane orientation, and subunit labeling (HA1/HA2 vs HA0). The figure only illustrates structural and glycosylation differences between HA produced by recombinant versus conventional methods and does not present any data on immune responses, cross-protection, or efficacy in mismatch seasons, so it does not support the claim. Note: No direct immune or clinical data are shown; the figure focuses solely on molecular structure and glycosylation.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A two-panel schematic comparing the structural features of native influenza HA (panel a) and recombinant HA produced in insect cells (panel b). Panel a shows the viral HA heterodimer (HA1 and HA2) with complex, sialylated N-linked glycans and cleaved fusion peptide. Panel b shows the recombinant HA0 precursor monomer with uncleaved fusion-peptide loop and simpler, paucimannosidic N-linked glycans exposing unique epitopes.",
+    "image_description": "Two schematic diagrams (panels a and b) of influenza hemagglutinin (HA) proteins showing the globular head and fibrous stem domains, annotated glycan structures (polysialylated complex glycans in a; paucimannose glycans in b), fusion peptide status (cleaved in a; uncleaved in b), inter-disulfide bonds, membrane orientation, and subunit labeling (HA1/HA2 vs HA0).",
     "evidence_found": null,
-    "reasoning": "The figure only illustrates structural and glycosylation differences between native and recombinant HA proteins; it provides no experimental or immunogenicity data demonstrating a broader immune response or cross-protection. Therefore, it does not support the claim.",
-    "confidence_notes": "Limited to structural schematics; no immunological data are presented."
+    "reasoning": "The figure only illustrates structural and glycosylation differences between HA produced by recombinant versus conventional methods and does not present any data on immune responses, cross-protection, or efficacy in mismatch seasons, so it does not support the claim.",
+    "confidence_notes": "No direct immune or clinical data are shown; the figure focuses solely on molecular structure and glycosylation."
   }
 }

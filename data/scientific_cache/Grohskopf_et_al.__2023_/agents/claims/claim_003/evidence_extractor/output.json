@@ -17,7 +17,7 @@
     {
       "id": 1,
       "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
-      "relevance_explanation": "This quote describes the recombinant technology used in RIV4, which is relevant because recombinant vaccines can be designed to include antigens from a broader range of influenza strains, potentially leading to a broader immune response."
+      "relevance_explanation": "This quote describes the recombinant technology used in RIV4, which is relevant because recombinant vaccines are not limited by egg-adapted changes and can be designed to match circulating strains more closely, supporting the claim that recombinant technology can lead to a broader immune response."
     },
     {
       "id": 2,
@@ -27,12 +27,12 @@
     {
       "id": 3,
       "quote": "A retrospective analysis of relative effectiveness of RIV4 versus SD-IIV4 against influenza coded hospitalizations among Medicare beneficiaries during the 2019-20 season noted a relative effectiveness of 17% (95% CI: 9\u201324; certainty level: 3, low) (72).",
-      "relevance_explanation": "This quote provides data showing that the recombinant vaccine (RIV4) was more effective than standard-dose inactivated vaccine in preventing influenza-coded hospitalizations, which supports the idea that recombinant technology can provide broader protection."
+      "relevance_explanation": "This quote provides data showing that the recombinant vaccine (RIV4) was more effective than standard-dose inactivated vaccine in preventing influenza-coded hospitalizations, which supports the claim that recombinant technology can provide broader protection, potentially including cross-protection in mismatch seasons."
     },
     {
       "id": 4,
-      "quote": "The larger of these two studies noted a relative benefit of RIV4 over nonadjuvanted SD-IIV4 in prevention of PCR-confirmed influenza among the full study population of persons aged \u226550 years (relative efficacy: 30%; 95% CI: 10\u201347) as well as in all predefined ILI subgroups aged \u226565 years (relative efficacy: 42%; 95% CI: 9%\u201365%) (68).",
-      "relevance_explanation": "This quote provides specific evidence that recombinant influenza vaccine (RIV4) was more effective than standard-dose inactivated vaccine in preventing laboratory-confirmed influenza, supporting the claim that recombinant technology leads to a broader immune response."
+      "quote": "The larger of these two studies noted a relative benefit of RIV4 over nonadjuvanted SD-IIV4 in prevention of PCR-confirmed influenza among the full study population of persons aged \u226550 years (relative efficacy: 30%; 95% CI: 10\u201347) as well as in all qualified ILI cases aged \u226565 years (relative efficacy: 42%; 95% CI: 9%\u201365%) (68).",
+      "relevance_explanation": "This quote provides specific efficacy data showing that recombinant vaccine (RIV4) had a higher relative efficacy compared to standard-dose inactivated vaccine, supporting the claim that recombinant technology can lead to a broader immune response and better protection, which may include cross-protection during mismatch seasons."
     }
   ],
   "model_used": "gpt-4.1"

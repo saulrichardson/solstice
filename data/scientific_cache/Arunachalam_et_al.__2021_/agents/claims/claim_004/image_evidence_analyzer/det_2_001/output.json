@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "A flowchart depicting the baculovirus\u2013insect cell expression system for manufacturing a recombinant influenza vaccine (RIV4). It shows genetic cloning of the HA gene into a baculovirus vector, infection of insect cell bioreactor cultures, harvest by centrifugation, extraction, depth filtration, chromatographic capture and purification steps, DNA removal, and final formulation via tangential flow filtration. The figure illustrates only the production process of a recombinant influenza vaccine and contains no data on antibody responses or comparative immunogenicity, and therefore does not support the claim Note: Image quality is sufficient to identify process steps, but no immunogenicity or clinical data are presented",
+  "explanation": "A schematic diagram of the recombinant baculovirus\u2013insect cell production process, showing PCR cloning of full-length cDNA into a transfer plasmid with a polyhedrin promoter, generation of a baculovirus (BV) expression vector carrying the HA gene by recombination, infection of insect cells in a bioreactor, harvest by disc-stack centrifugation, extraction, depth filtration for clarification, and downstream capture, purification (including DNA removal), and tangential flow filtration/formulation steps. The figure illustrates the manufacturing workflow for a recombinant flu vaccine but provides no data comparing antibody responses or immunogenicity between high-dose recombinant and egg-based standard-dose vaccines; therefore, it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A flowchart depicting the baculovirus\u2013insect cell expression system for manufacturing a recombinant influenza vaccine (RIV4). It shows genetic cloning of the HA gene into a baculovirus vector, infection of insect cell bioreactor cultures, harvest by centrifugation, extraction, depth filtration, chromatographic capture and purification steps, DNA removal, and final formulation via tangential flow filtration.",
+    "image_description": "A schematic diagram of the recombinant baculovirus\u2013insect cell production process, showing PCR cloning of full-length cDNA into a transfer plasmid with a polyhedrin promoter, generation of a baculovirus (BV) expression vector carrying the HA gene by recombination, infection of insect cells in a bioreactor, harvest by disc-stack centrifugation, extraction, depth filtration for clarification, and downstream capture, purification (including DNA removal), and tangential flow filtration/formulation steps.",
     "evidence_found": null,
-    "reasoning": "The figure illustrates only the production process of a recombinant influenza vaccine and contains no data on antibody responses or comparative immunogenicity, and therefore does not support the claim",
-    "confidence_notes": "Image quality is sufficient to identify process steps, but no immunogenicity or clinical data are presented"
+    "reasoning": "The figure illustrates the manufacturing workflow for a recombinant flu vaccine but provides no data comparing antibody responses or immunogenicity between high-dose recombinant and egg-based standard-dose vaccines; therefore, it does not support the claim.",
+    "confidence_notes": null
   }
 }

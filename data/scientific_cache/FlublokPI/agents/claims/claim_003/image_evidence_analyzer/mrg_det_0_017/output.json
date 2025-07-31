@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "Page 1 of the full prescribing information showing a table of contents with sections for indications, dosage, contraindications, warnings, adverse reactions, clinical pharmacology, nonclinical toxicology, clinical studies (14.1 efficacy against laboratory-confirmed influenza), and other standard prescribing sections. The image only shows the section headings of prescribing information and no data or statements regarding recombinant technology, broader immune responses, or cross-protection; it does not support the claim. Note: The image quality limits visibility to only section titles; no study data or narrative content is shown.",
+  "explanation": "A scanned page from the Flublok vaccine prescribing information showing dosage and administration instructions, contraindications, warnings and precautions, adverse reactions summary, and the table of contents for the full prescribing information. The image does not support the claim because it contains only dosing, contraindications, warnings, adverse reactions, and a contents list, with no discussion of recombinant technology, breadth of immune response, or cross-protection in mismatch seasons. Note: Limited to page 1; immunogenicity and clinical study data likely appear later and are not visible here.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Page 1 of the full prescribing information showing a table of contents with sections for indications, dosage, contraindications, warnings, adverse reactions, clinical pharmacology, nonclinical toxicology, clinical studies (14.1 efficacy against laboratory-confirmed influenza), and other standard prescribing sections.",
+    "image_description": "A scanned page from the Flublok vaccine prescribing information showing dosage and administration instructions, contraindications, warnings and precautions, adverse reactions summary, and the table of contents for the full prescribing information.",
     "evidence_found": null,
-    "reasoning": "The image only shows the section headings of prescribing information and no data or statements regarding recombinant technology, broader immune responses, or cross-protection; it does not support the claim.",
-    "confidence_notes": "The image quality limits visibility to only section titles; no study data or narrative content is shown."
+    "reasoning": "The image does not support the claim because it contains only dosing, contraindications, warnings, adverse reactions, and a contents list, with no discussion of recombinant technology, breadth of immune response, or cross-protection in mismatch seasons.",
+    "confidence_notes": "Limited to page 1; immunogenicity and clinical study data likely appear later and are not visible here."
   }
 }

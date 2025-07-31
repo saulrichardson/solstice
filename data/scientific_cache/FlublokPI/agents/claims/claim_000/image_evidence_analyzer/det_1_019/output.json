@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table displaying percentages of adverse events (Any, Moderate, Severe) reported by subjects across multiple studies, with footnotes explaining reporting thresholds and study details. The table presents safety and reactogenicity data (percentages of adverse events) but contains no information on antigenic matching with WHO- or FDA-selected flu strains, and thus does not support the claim.",
+  "explanation": "A table comparing solicited local and systemic adverse event rates (%) by severity (any, moderate, severe) for Flublok (N=972) versus IIV3 (N=967), listing events such as pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever. The table presents adverse event rates for Flublok and IIV3 but contains no data on antigenic match or strain selection by WHO or FDA, so it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table displaying percentages of adverse events (Any, Moderate, Severe) reported by subjects across multiple studies, with footnotes explaining reporting thresholds and study details.",
+    "image_description": "A table comparing solicited local and systemic adverse event rates (%) by severity (any, moderate, severe) for Flublok (N=972) versus IIV3 (N=967), listing events such as pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever.",
     "evidence_found": null,
-    "reasoning": "The table presents safety and reactogenicity data (percentages of adverse events) but contains no information on antigenic matching with WHO- or FDA-selected flu strains, and thus does not support the claim.",
+    "reasoning": "The table presents adverse event rates for Flublok and IIV3 but contains no data on antigenic match or strain selection by WHO or FDA, so it does not support the claim.",
     "confidence_notes": null
   }
 }
