@@ -30,23 +30,23 @@ The system is designed to handle real-world medical documentation at scale, proc
 The ingestion pipeline transforms unstructured PDFs into queryable structured documents through multiple stages:
 
 \begin{enumerate}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item \textbf{Layout Detection}: Uses Detectron2 with PubLayNet-trained models (Faster R-CNN + ResNet-50-FPN). The pipeline relies on pre-trained weights rather than custom training because PubLayNet provides extensive annotated data.
-\item \textbf{Box Consolidation}: Resolves overlapping detections through IoU-based merging (threshold 0.7) and hierarchical nesting. Medical PDFs often contain overlapping layout elements, so the implementation includes domain-specific rules.
+\item \textbf{Layout Detection}: Uses Detectron2 with PubLayNet-trained models (Mask R-CNN + ResNet-50-FPN). The pipeline relies on pre-trained weights rather than custom training because PubLayNet provides extensive annotated data.
+\item \textbf{Box Consolidation}: Resolves overlapping detections through IoU-based merging (configurable threshold, default 0.1) and hierarchical nesting. Medical PDFs often contain overlapping layout elements, so the implementation includes domain-specific rules.
 \item \textbf{Text Extraction}: Uses PyMuPDF for vector text extraction within bounding boxes, and falls back to Tesseract OCR for scanned pages. SymSpell correction fixes common OCR artefacts (e.g., "rn" → "m").
-\item \textbf{Figure/Table Extraction}: Saves visual elements as PNG at 300 DPI. Images are stored separately for later multimodal analysis rather than embedded as base64.
+\item \textbf{Figure/Table Extraction}: Saves visual elements as PNG at 400 DPI. Images are stored separately for later multimodal analysis rather than embedded as base64.
 \item \textbf{Reading Order}: Computes reading order with column detection and vertical positioning; this is necessary for the multi-column layouts common in medical journals.
 \end{enumerate}
 
 \subsection{LLM-Based Fact-Checking System}
 
-The fact-checking pipeline is composed of specialised LLM calls orchestrated to work together:
+The fact-checking pipeline processes text evidence through three sequential stages (Extract → Completeness → Verify) followed by parallel image analysis:
 
 \begin{itemize}[leftmargin=*,topsep=0pt]
-\item \textbf{Evidence Extraction Step}: Searches document text for claim-relevant quotes using GPT-4 with temperature=0. Preserves exact quotes while correcting OCR errors and returns structured evidence with relevance explanations.
+\item \textbf{Evidence Extraction Step}: Searches document text for claim-relevant quotes using gpt-4.1 with temperature=0. Preserves exact quotes while correcting OCR errors and returns structured evidence with relevance explanations.
 
-\item \textbf{Evidence Verification Step (V2)}: Validates that extracted quotes exist in the source document. Uses semantic matching to handle OCR variations and filters out tangentially related content, achieving high verification rates.
+\item \textbf{Completeness Checker}: Takes the raw extracted evidence and searches for any additional quotes that weren't initially found. Merges evidence from multiple sources to ensure comprehensive coverage.
 
-\item \textbf{Completeness Checker}: Takes the raw extracted evidence and searches for any additional quotes that weren't initially found. Uses the same extraction approach but explicitly excludes already-found quotes to expand coverage.
+\item \textbf{Evidence Verification Step (V2)}: Validates that all extracted quotes (from both extraction and completeness steps) exist in the source document. Uses semantic matching to handle OCR variations and filters out tangentially related content, achieving high verification rates.
 
 \item \textbf{Image Evidence Analyzer}: Analyzes figures and tables using vision models to identify supporting visual evidence. Processes images in parallel with semaphore control (max 5 concurrent) and provides detailed explanations.
 
@@ -108,8 +108,7 @@ data/studies/<study_name>/
 └── claim_<id>/
     └── evidence_report.json     # structured claims + supporting / refuting evidence
 \end{verbatim}
-The \texttt{evidence\_report.json} file is what drives the Streamlit demo and can be consumed directly by any UX
-layer.
+The \texttt{evidence\_report.json} file can be consumed directly by any UX layer.
 
 If you want the raw, per-step outputs (e.g. to analyse the verifier’s chain-of-thought) look under the same
 \texttt{claim\_<id>/agent\_outputs/} folder where each processing step writes an \texttt{output.json} plus helper metadata.
@@ -139,8 +138,8 @@ For newcomers, these are useful places to explore:
 Models were selected based on empirical performance:
 
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item \textbf{GPT-4 (Primary)}: Evidence extraction and verification with temperature=0 to prioritise consistency over creativity.
-\item \textbf{Vision Models}: GPT-4V for image analysis. Images are processed individually with focused prompts rather than in batches.
+\item \textbf{gpt-4.1 (Primary)}: Evidence extraction and verification with temperature=0 to prioritise consistency over creativity.
+\item \textbf{Vision Models}: o4-mini for image analysis. Images are processed individually with focused prompts rather than in batches.
 \item \textbf{Gateway Pattern}: All LLM calls go through an HTTP gateway service, which handles rate limiting, cost tracking, and provider abstraction.
 \item \textbf{Prompt Engineering}: Uses structured output formats with explicit JSON schemas. Token limits were removed after issues with truncation.
 \end{itemize}
@@ -170,8 +169,8 @@ Visual evidence is handled in a separate image extraction and analysis pipeline:
 Extraction, verification, and completeness are run as distinct LLM-driven steps:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item \textbf{Stage 1}: Extract all potentially relevant quotes (high recall)
-\item \textbf{Stage 2}: Verify quotes exist and support claim (high precision)
-\item \textbf{Stage 3}: Find additional quotes not caught in initial extraction (expand coverage)
+\item \textbf{Stage 2}: Find additional quotes not caught in initial extraction (expand coverage)
+\item \textbf{Stage 3}: Verify all quotes exist and support claim (high precision)
 \end{itemize}
 This separation allows the stages to be optimised and tested independently.
 
