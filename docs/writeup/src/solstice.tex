@@ -53,35 +53,6 @@ The fact-checking pipeline processes text evidence through three sequential stag
 
 After all LLM processing completes, an Evidence Presenter step consolidates all verified text and image evidence into structured JSON reports with coverage assessment.
 
-\section{Design Decisions}
-
-\subsection{Step Communication Pattern}
-Chose filesystem-based communication over message passing:
-\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item Each step reads inputs from disk and writes outputs to disk
-\item No shared memory or direct step-to-step communication
-\item Provides debuggability, resumability, and testability in isolation
-\item Introduces disk I/O overhead, which is acceptable at the current throughput requirements
-\end{itemize}
-
-\subsection{Prompt Strategy}
-Prompt engineering decisions:
-\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item \textbf{Structured Output}: Always request JSON with explicit schemas
-\item \textbf{Few-Shot Examples}: Avoided in favor of clear instructions (reduced token usage)
-\item \textbf{Error Context}: Include previous failures in retry prompts
-\item \textbf{Temperature=0}: Consistency critical for medical facts
-\end{itemize}
-
-\subsection{Caching Strategy}
-Multi-level caching approach:
-\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item \textbf{Document Cache}: Extracted content never re-processed
-\item \textbf{Call Cache}: Each step output stored by claim ID
-\item \textbf{No LLM Response Cache}: The pipeline always fetches fresh responses
-\item Caching is applied at semantic boundaries rather than individual API calls
-\end{itemize}
-
 \section{Technical Implementation}
 
 \subsection{Orchestration Layer}
