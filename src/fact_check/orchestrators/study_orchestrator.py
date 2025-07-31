@@ -209,9 +209,9 @@ class StudyOrchestrator:
         
         logger.info(f"\nResults saved to: {output_file}")
         
-        # Also save consolidated format
+        # Also save consolidated JSON format
         try:
-            from ..formatters import ConsolidatedJsonFormatter, MarkdownFormatter
+            from ..formatters import ConsolidatedJsonFormatter
             
             # JSON consolidated format
             json_formatter = ConsolidatedJsonFormatter(self.output_dir)
@@ -219,21 +219,8 @@ class StudyOrchestrator:
             consolidated_path = json_formatter.save(consolidated)
             logger.info(f"Consolidated results saved to: {consolidated_path}")
             
-            # Save summary
-            summary = json_formatter.create_summary(consolidated)
-            summary_path = self.output_dir / "consolidated_summary.json"
-            with open(summary_path, 'w') as f:
-                json.dump(summary, f, indent=2)
-            logger.info(f"Summary saved to: {summary_path}")
-            
-            # Markdown report
-            md_formatter = MarkdownFormatter(self.output_dir)
-            md_report = md_formatter.format(results)
-            md_path = md_formatter.save(md_report)
-            logger.info(f"Markdown report saved to: {md_path}")
-            
         except Exception as e:
-            logger.warning(f"Failed to save additional formats: {e}")
+            logger.warning(f"Failed to save consolidated format: {e}")
         
         # Print final summary
         summary = results["summary"]
