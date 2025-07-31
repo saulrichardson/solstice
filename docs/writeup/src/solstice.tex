@@ -46,7 +46,7 @@ The fact-checking pipeline employs specialized agents orchestrated to work toget
 
 \item \textbf{Evidence Verification Agent (V2)}: Validates that extracted quotes exist in the source document. Uses semantic matching to handle OCR variations and filters out tangentially related content, achieving high verification rates.
 
-\item \textbf{Completeness Checker}: Reviews verified evidence for gaps and searches for additional supporting content. Increases evidence coverage by identifying missing perspectives and feeding new findings back to verification.
+\item \textbf{Completeness Checker}: Takes the raw extracted evidence and searches for any additional quotes that weren't initially found. Uses the same extraction approach but explicitly excludes already-found quotes to expand coverage.
 
 \item \textbf{Image Evidence Analyzer}: Analyzes figures and tables using vision models to identify supporting visual evidence. Processes images in parallel with semaphore control (max 5 concurrent) and provides detailed explanations.
 
@@ -127,12 +127,12 @@ Strategic approach to visual evidence: separate image extraction and analysis pi
 \item Semaphore-limited parallel processing (max 5) prevents API rate limit issues
 \end{itemize}
 
-\subsection{Three-Stage Verification Pipeline}
+\subsection{Three-Stage Evidence Pipeline}
 Architectural choice: separate extraction, verification, and completeness into distinct agents:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item \textbf{Stage 1}: Extract all potentially relevant quotes (high recall)
 \item \textbf{Stage 2}: Verify quotes exist and support claim (high precision)
-\item \textbf{Stage 3}: Check for missing evidence types (gap analysis)
+\item \textbf{Stage 3}: Find additional quotes not caught in initial extraction (expand coverage)
 \end{itemize}
 This separation enables independent optimization and testing of each stage.
 
@@ -246,21 +246,21 @@ if parse_error:
 \textbf{Directory Structure}:
 \begin{verbatim}
 data/scientific_cache/
-├── {document_name}/
-│   ├── metadata.json
-│   ├── content.json
-│   ├── images/
-│   │   ├── figure_1.png
-│   │   └── table_1.png
-│   └── agents/
-│       └── claims/
-│           └── {claim_id}/
-│               ├── evidence_extractor/
-│               │   └── output.json
-│               ├── evidence_verifier_v2/
-│               │   └── output.json
-│               └── completeness_checker/
-│                   └── output.json
+  {document_name}/
+    metadata.json
+    content.json
+    images/
+      figure_1.png
+      table_1.png
+    agents/
+      claims/
+        {claim_id}/
+          evidence_extractor/
+            output.json
+          evidence_verifier_v2/
+            output.json
+          completeness_checker/
+            output.json
 \end{verbatim}
 
 \textbf{Cache Key Generation}:
@@ -283,11 +283,11 @@ def get_cache_key(claim_text: str) -> str:
 \textbf{Common OCR Substitutions}:
 \begin{verbatim}
 OCR_REPLACEMENTS = [
-    (r'\brn\b', 'm'),      # "rn" → "m"
-    (r'\b0\b', 'O'),       # "0" → "O" in words
-    (r'\bl\b', '1'),       # "l" → "1" in numbers
-    (r'ﬁ', 'fi'),          # ligature issues
-    (r'ﬂ', 'fl'),
+    (r'\brn\b', 'm'),      # "rn" -> "m"
+    (r'\b0\b', 'O'),       # "0" -> "O" in words
+    (r'\bl\b', '1'),       # "l" -> "1" in numbers
+    (r'fi', 'fi'),         # ligature issues
+    (r'fl', 'fl'),
     (r'\s+', ' '),         # normalize whitespace
     (r'[\u2018\u2019]', "'"),  # smart quotes
 ]
@@ -463,28 +463,33 @@ async def analyze_images(images, claim):
 \begin{verbatim}
 {
   "claim": "<medical claim>",
-  "verified_evidence": [...],
+  "extracted_evidence": [...],  // raw unverified evidence
   "document_content": "<full text>",
-  "system_prompt": "Identify gaps and find missing evidence"
+  "system_prompt": "Find additional supporting quotes"
 }
 \end{verbatim}
 
 \textbf{Output Schema}:
 \begin{verbatim}
 {
-  "coverage_assessment": {
-    "aspects_covered": ["efficacy", "safety"],
-    "aspects_missing": ["dosing", "contraindications"],
-    "overall_coverage": "partial"
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 3
   },
-  "additional_evidence": [
+  "completeness_stats": {
+    "existing_evidence": 5,
+    "new_evidence_found": 3,
+    "total_evidence": 8
+  },
+  "combined_evidence": [
     {
-      "quote": "<new evidence found>",
-      "relevance": "<fills gap in...>",
-      "aspect": "dosing"
+      "id": "comp_1",
+      "quote": "<additional quote found>",
+      "relevance_explanation": "<how supports claim>",
+      "source": "completeness_check"
     }
-  ],
-  "search_strategy": "<how gaps were addressed>"
+  ]
 }
 \end{verbatim}
 

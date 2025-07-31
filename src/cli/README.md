@@ -38,9 +38,20 @@ python -m src.cli ingest --output-dir /path/to/output
 Process marketing materials with specialized layout detection:
 
 ```bash
+# Process all PDFs in data/marketing_slide/
+python -m src.cli ingest-marketing
+
+# Process a specific marketing PDF
 python -m src.cli ingest-marketing /path/to/marketing.pdf
-python -m src.cli ingest-marketing file.pdf --output-dir /custom/output
+
+# Use custom output directory
+python -m src.cli ingest-marketing --output-dir /custom/output
 ```
+
+**Default behavior:**
+- Input: `data/marketing_slide/*.pdf` (when no file specified)
+- Output: `data/marketing_cache/`
+- Pipeline: Marketing-optimized pipeline (enhanced layout detection)
 
 ### 3. Run Fact-Checking Study (`run-study`)
 

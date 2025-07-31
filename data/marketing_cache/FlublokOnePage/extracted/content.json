@@ -1,0 +1,503 @@
+{
+  "source_pdf": "data/marketing_slide/FlublokOnePage.pdf",
+  "blocks": [
+    {
+      "id": "cbe93b08",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        83.58594512939453,
+        177.3736114501953,
+        4025.30029296875,
+        470.59930419921875
+      ],
+      "text": "Appropriate medical treatment must be immediately available to manage potential anaphylactic reactions following administration of Flublok. Please see additional Important Safety Information throughout. Before administration, please see full Prescribing Information here.",
+      "metadata": {
+        "score": 0.9999421834945679,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 1.6036877632141113,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ece25c23",
+      "page_index": 0,
+      "role": "Separator",
+      "bbox": [
+        185.28021240234375,
+        487.0151672363281,
+        3435.830322265625,
+        523.7432250976562
+      ],
+      "metadata": {
+        "score": 0.8791235089302063,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout"
+      }
+    },
+    {
+      "id": "fdda6b26",
+      "page_index": 0,
+      "role": "Figure",
+      "bbox": [
+        383.06787109375,
+        628.9065551757812,
+        727.0089111328125,
+        960.36767578125
+      ],
+      "text": "[FIGURE 3 - See figure_p1_fdda6b26.png]",
+      "image_path": "figures/figure_p1_fdda6b26.png",
+      "metadata": {
+        "score": 0.3116624355316162,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout"
+      }
+    },
+    {
+      "id": "a0674e32",
+      "page_index": 0,
+      "role": "Figure",
+      "bbox": [
+        2262.05615234375,
+        651.6678466796875,
+        2484.698486328125,
+        895.6993408203125
+      ],
+      "text": "[FIGURE 6 - See figure_p1_a0674e32.png]",
+      "image_path": "figures/figure_p1_a0674e32.png",
+      "metadata": {
+        "score": 0.17127543687820435,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout"
+      }
+    },
+    {
+      "id": "b1a52c8c",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        2619.30859375,
+        678.5943603515625,
+        3174.974365234375,
+        779.1846923828125
+      ],
+      "text": "accine.1-3",
+      "metadata": {
+        "score": 0.9869974851608276,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.00019979476928710938
+        }
+      }
+    },
+    {
+      "id": "7a1b690b",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        793.6746826171875,
+        679.970458984375,
+        1627.9437255859375,
+        779.290771484375
+      ],
+      "text": "s, which may potentially protect against grams (mcg) of HA per strain vs 15 mcg o",
+      "metadata": {
+        "score": 0.9850589036941528,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0003180503845214844,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "8ac736a4",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        2589.710693359375,
+        801.717041015625,
+        4029.463134765625,
+        1098.566162109375
+      ],
+      "text": "he efficacy of Flublok (quad rival ent is relevant to Flublok (trivalent) g abaculo virus expression vector system (BEVS). Recombinant ve antibodies against highly conserved regions of HA compared",
+      "metadata": {
+        "score": 0.9992538094520569,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0008399486541748047,
+          "processors_applied": [
+            "post_extraction_clean",
+            "symspell",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ed856792",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        769.757080078125,
+        802.5789184570312,
+        2051.16064453125,
+        1100.7481689453125
+      ],
+      "text": "as evaluated in the pivotal trial against Fluarix (quad rival ent sare manufactured using the same process and have over lapp g a novel production platform in which recombinant HA is exp sing BEVS have been shown to induce significantly higher leve",
+      "metadata": {
+        "score": 0.9997760653495789,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0008420944213867188,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "9ec29a7c",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        781.5435180664062,
+        1262.8211669921875,
+        1426.4486083984375,
+        1359.6229248046875
+      ],
+      "text": "broader immune resp id i",
+      "metadata": {
+        "score": 0.9940617680549622,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00015282630920410156,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ee6d99f0",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        2615.375732421875,
+        1264.5841064453125,
+        3544.682861328125,
+        1458.7911376953125
+      ],
+      "text": "",
+      "metadata": {
+        "score": 0.9997170567512512,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_status": "empty"
+      }
+    },
+    {
+      "id": "09db5e59",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        781.0469970703125,
+        1389.3616943359375,
+        1904.406005859375,
+        1673.553955078125
+      ],
+      "text": "MAY PROVIDE CROSS-PROTECTION4 Recombinant technology leads to a",
+      "metadata": {
+        "score": 0.999548614025116,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00046896934509277344,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "d45a0330",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        2602.709716796875,
+        1485.7027587890625,
+        3977.085205078125,
+        1844.24609375
+      ],
+      "text": "g y p yin January 2024, vaccination with a higher dose recombinant flu vaccine may induce amore robust antibody response than egg based standard dose vaccines.",
+      "metadata": {
+        "score": 0.9999418258666992,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0005948543548583984,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "43ffbc5f",
+      "page_index": 0,
+      "role": "Figure",
+      "bbox": [
+        396.5638732910156,
+        1749.2476806640625,
+        696.7835083007812,
+        2135.722900390625
+      ],
+      "text": "[FIGURE 13 - See figure_p1_43ffbc5f.png]",
+      "image_path": "figures/figure_p1_43ffbc5f.png",
+      "metadata": {
+        "score": 0.648906409740448,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout"
+      }
+    },
+    {
+      "id": "f4f90a05",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        790.6105346679688,
+        1850.372314453125,
+        1882.473876953125,
+        1952.6884765625
+      ],
+      "text": "Cell and egg based flu vaccines have the potential to develop mutations",
+      "metadata": {
+        "score": 0.9981763362884521,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0003380775451660156,
+          "processors_applied": [
+            "post_extraction_clean"
+          ]
+        }
+      }
+    },
+    {
+      "id": "e14cecf1",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        770.436767578125,
+        1957.8697509765625,
+        1856.951904296875,
+        2255.3427734375
+      ],
+      "text": "AVOIDS MUTATIONS4 Cell- and egg based flu vaccines hav",
+      "metadata": {
+        "score": 0.9993756413459778,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00021791458129882812,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "9b422e5b",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        186.2265167236328,
+        2399.302978515625,
+        4081.76611328125,
+        2744.39013671875
+      ],
+      "text": "AN EXACT STRAIN MATCH 4 5 The only recombinant flu vaccine that has known and exact antigen content, Flublok ensures identical antigenic match with WHO3 x THE ANTIGEN1-3 Flublok also contains 3 x the hemagglutinin (HA) antigen content of standard dose flu vaccines, which has been linked to greater immunogen i city 3 x",
+      "metadata": {
+        "score": 0.9788737297058105,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.0009889602661132812,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "5d2e4d74",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        178.3099822998047,
+        2819.195068359375,
+        3322.065185546875,
+        3191.70458984375
+      ],
+      "text": "Flublok COMBINES THE ADVANTAGES OF RECOMBINANT T WITH A HIGHER DOSE 2 4",
+      "metadata": {
+        "score": 0.9949674010276794,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": true,
+          "processing_time": 0.00021505355834960938,
+          "processors_applied": [
+            "post_extraction_clean",
+            "spacing_fix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "37c2b7bf",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        3504.9619140625,
+        2955.529296875,
+        4158.90380859375,
+        3147.580322265625
+      ],
+      "text": "HNOLOGY",
+      "metadata": {
+        "score": 0.9972700476646423,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.00007796287536621094
+        }
+      }
+    },
+    {
+      "id": "96a5e8a2",
+      "page_index": 0,
+      "role": "Text",
+      "bbox": [
+        3487.437744140625,
+        3134.460693359375,
+        4152.5146484375,
+        3219.48388671875
+      ],
+      "text": "CHNOLOGY",
+      "metadata": {
+        "score": 0.19282639026641846,
+        "detection_dpi": 400,
+        "detector": "PrimaLayout",
+        "extraction_confidence": 1.0,
+        "extraction": {
+          "method": "pymupdf",
+          "scale_factor": 0.18,
+          "text_modified": false,
+          "processing_time": 0.00008082389831542969
+        }
+      }
+    }
+  ],
+  "reading_order": [
+    [
+      "cbe93b08",
+      "ece25c23",
+      "fdda6b26",
+      "7a1b690b",
+      "ed856792",
+      "a0674e32",
+      "b1a52c8c",
+      "8ac736a4",
+      "9ec29a7c",
+      "09db5e59",
+      "ee6d99f0",
+      "d45a0330",
+      "43ffbc5f",
+      "f4f90a05",
+      "e14cecf1",
+      "9b422e5b",
+      "5d2e4d74",
+      "37c2b7bf",
+      "96a5e8a2"
+    ]
+  ],
+  "metadata": {
+    "pipeline": "marketing",
+    "detection_dpi": 400,
+    "total_pages": 1,
+    "extraction": {
+      "text_blocks": 14,
+      "figure_blocks": 3,
+      "figures_dir": "data/marketing_cache/FlublokOnePage/extracted/figures"
+    }
+  },
+  "pipeline_metadata": {}
+}

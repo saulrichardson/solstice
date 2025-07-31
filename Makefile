@@ -135,5 +135,7 @@ verify:
 .PHONY: writeup
 writeup:
 	@echo "Building Solstice technical documentation..."
-	@cd docs/writeup && pdflatex -interaction=nonstopmode src/solstice.tex
+	@mkdir -p docs/writeup/build
+	@cd docs/writeup && pdflatex -interaction=nonstopmode -output-directory=build src/solstice.tex
+	@cp docs/writeup/build/solstice.pdf docs/writeup/solstice.pdf
 	@echo "✓ PDF generated: docs/writeup/solstice.pdf"

@@ -137,6 +137,9 @@ data/gateway_cache/
 !docs/writeup/solstice.pdf
 !docs/writeup/output/solstice.pdf
 
+# LaTeX build directory
+docs/writeup/build/
+
 # Model outputs
 *.onnx
 *.pt

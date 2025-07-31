@@ -13,7 +13,7 @@ class ConsolidatedJsonFormatter(BaseFormatter):
     def format(self, study_results: Dict[str, Any]) -> Dict[str, Any]:
         """Format study results into consolidated structure.
         
-        Creates a flat list of claims with their matching evidence sources.
+        Creates a flat list of claims with their supporting evidence.
         """
         consolidated = {
             "study_name": study_results.get("metadata", {}).get("study_name", "unknown"),
@@ -23,12 +23,12 @@ class ConsolidatedJsonFormatter(BaseFormatter):
         
         # Process each claim
         for claim_id, claim_data in study_results.get("claims", {}).items():
-            claim_text = claim_data.get("claim", "")  # Changed from "claim_text" to "claim"
+            claim_text = claim_data.get("claim", "")
             
-            # For each claim, create an entry with all its evidence sources
+            # For each claim, create an entry with all its evidence
             claim_entry = {
                 "claim": claim_text,
-                "match_source": []
+                "evidence": []
             }
             
             # Process evidence from each document
@@ -39,39 +39,30 @@ class ConsolidatedJsonFormatter(BaseFormatter):
                 # Extract text evidence
                 text_evidence = doc_result.get("supporting_evidence", [])
                 for evidence in text_evidence:
-                    claim_entry["match_source"].append({
-                        "document_name": doc_name,
-                        "matching_text": evidence.get("quote", ""),
-                        "explanation": evidence.get("explanation", ""),
-                        "evidence_type": "text"
+                    claim_entry["evidence"].append({
+                        "type": "text",
+                        "document": doc_name,
+                        "quote": evidence.get("quote", ""),
+                        "explanation": evidence.get("explanation", "")
                     })
                 
                 # Extract image evidence
                 image_evidence = doc_result.get("image_evidence", [])
                 for img in image_evidence:
                     if img.get("supports_claim", True):  # Default to True if not specified
-                        # For images, structure the evidence differently
-                        image_entry = {
-                            "document_name": doc_name,
-                            "image_filename": img.get("image_filename", ""),
-                            "image_type": img.get("image_type", "Figure"),
-                            "page_number": img.get("page_number"),
-                            "evidence_type": "image"
-                        }
-                        
-                        # Add description/evidence if available
+                        # For images, only include key fields
                         detailed = img.get("detailed_analysis", {})
-                        if detailed.get("image_description"):
-                            image_entry["description"] = detailed["image_description"]
-                        if detailed.get("evidence_found"):
-                            image_entry["evidence_found"] = detailed["evidence_found"]
-                        if img.get("explanation"):
-                            image_entry["explanation"] = img["explanation"]
-                            
-                        claim_entry["match_source"].append(image_entry)
+                        reasoning = detailed.get("reasoning", img.get("explanation", ""))
+                        
+                        claim_entry["evidence"].append({
+                            "type": "image",
+                            "document": doc_name,
+                            "filename": img.get("image_filename", ""),
+                            "reasoning": reasoning
+                        })
             
             # Only include claims that have evidence
-            if claim_entry["match_source"]:
+            if claim_entry["evidence"]:
                 consolidated["claims"].append(claim_entry)
         
         return consolidated
@@ -90,18 +81,24 @@ class ConsolidatedJsonFormatter(BaseFormatter):
         claims = formatted_results.get("claims", [])
         
         total_claims = len(claims)
-        total_evidence = sum(len(claim["match_source"]) for claim in claims)
+        total_evidence = sum(len(claim["evidence"]) for claim in claims)
         
-        # Count evidence by document
+        # Count evidence by document and type
         doc_evidence_count = {}
+        type_count = {"text": 0, "image": 0}
+        
         for claim in claims:
-            for source in claim["match_source"]:
-                doc_name = source["document_name"]
+            for evidence in claim["evidence"]:
+                doc_name = evidence["document"]
                 doc_evidence_count[doc_name] = doc_evidence_count.get(doc_name, 0) + 1
+                
+                evidence_type = evidence.get("type", "text")
+                type_count[evidence_type] = type_count.get(evidence_type, 0) + 1
         
         return {
             "total_claims_with_evidence": total_claims,
             "total_evidence_pieces": total_evidence,
             "average_evidence_per_claim": total_evidence / total_claims if total_claims > 0 else 0,
-            "evidence_by_document": doc_evidence_count
+            "evidence_by_document": doc_evidence_count,
+            "evidence_by_type": type_count
         }

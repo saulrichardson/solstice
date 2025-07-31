@@ -50,7 +50,8 @@ def main():
     )
     marketing_parser.add_argument(
         "pdf_path",
-        help="Path to marketing PDF file"
+        nargs="?",
+        help="Path to marketing PDF file (default: process all in data/marketing_slide/)"
     )
     marketing_parser.add_argument(
         "--output-dir",
