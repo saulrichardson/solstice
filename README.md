@@ -116,7 +116,7 @@ python -m src.cli ingest
 python -m src.cli run-study
 ```
 
-## 5. What happens under the hood?
+## 3. What happens under the hood?
 
 Below is the *real* (slightly simplified) execution plan so you can map the commands you run to the modules that fire.
 
@@ -200,7 +200,7 @@ data/studies/Flu_Vaccine_Study/
 └── ...
 ```
 
-## 6. Project structure
+## 4. Project structure
 
 ```
 fact-check/
@@ -225,6 +225,43 @@ fact-check/
 ├── docker/                  # Docker configurations
  └── scripts/                 # Setup utilities
  ```
+
+---
+
+## 5. Quick-start setup (5 minutes)
+
+Prerequisites: Python 3.11–3.12, Docker (optional), an OpenAI API key, Poppler (`brew install poppler` / `apt-get install poppler-utils`).
+
+```bash
+# 1️⃣  Clone the repository
+git clone <repo-url> && cd fact-check
+
+# 2️⃣  Create a virtual env (recommended)
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
+
+# 3️⃣  Install dependencies (plus Detectron2 for layout detection)
+make install && make install-detectron2
+
+# 4️⃣  Configure OpenAI
+cp .env.example .env && echo "OPENAI_API_KEY=sk-..." >> .env
+
+# 5️⃣  (Optional) start gateway service for rate-limiting & audit logs
+make up   # docker-compose up -d
+```
+
+---
+
+## 6. Run commands
+
+```bash
+# Convert PDFs → structured JSON
+python -m src.cli ingest
+
+# Fact-check all claims against all cached documents
+python -m src.cli run-study --name Flu_Study
+```
+
+For additional options run `python -m src.cli --help`.
 
 ---
 
@@ -258,4 +295,3 @@ Common pitfalls:
 • OpenAI rate limits – make sure the gateway is up; it automatically retries.
 
 If problems persist, run `python -m src.cli sys-info` and open an issue with the output and full stack-trace.
-
