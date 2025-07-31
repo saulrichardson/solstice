@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_017.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_017",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A partial table showing percentages (<1, 6, 5, 3, 2, 0) of subjects reporting solicited local and systemic adverse reactions by severity grade, with accompanying footnotes defining severity, study identifiers, comparators, and trial registration information. The table presents safety/adverse event data and contains no information on antigenic match between Flublok and WHO- or FDA-selected influenza strains, so it does not support the claim. Note: The image is clear but only includes safety data; no antigenic match or strain-selection details are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A partial table showing percentages (<1, 6, 5, 3, 2, 0) of subjects reporting solicited local and systemic adverse reactions by severity grade, with accompanying footnotes defining severity, study identifiers, comparators, and trial registration information.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety/adverse event data and contains no information on antigenic match between Flublok and WHO- or FDA-selected influenza strains, so it does not support the claim.",
+    "confidence_notes": "The image is clear but only includes safety data; no antigenic match or strain-selection details are shown."
+  }
+}

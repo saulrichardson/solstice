@@ -1,0 +1,30 @@
+{
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "document": "CDC_Influenza_vaccines",
+  "verified_evidence": [],
+  "verification_stats": {
+    "total_verified": 0
+  },
+  "image_evidence": [
+    {
+      "image_filename": "figure_p1_det_0_011.png",
+      "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p1_det_0_011.png",
+      "image_type": "Figure",
+      "page_number": 1,
+      "block_id": "det_0_011",
+      "claim_id": "claim_002",
+      "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+      "supports_claim": true,
+      "explanation": "A side-by-side schematic diagram comparing egg-based and cell-based influenza vaccine production processes. The left panel shows virus inoculation into embryonated hen eggs leading to egg-adaptive hemagglutinin mutations; the right panel shows virus propagation in mammalian cell cultures leading to cell-adaptive mutations. Evidence: Text in the figure explicitly notes that egg-based production can introduce egg-adaptive hemagglutinin mutations and cell-based production can introduce cell-adaptive mutations, both potentially reducing vaccine effectiveness. The figure shows that both egg- and cell-based vaccine production can lead to adaptive mutations that may reduce effectiveness, which supports the claim Note: Image text is clear but limited to schematic summary; no numerical data provided",
+      "model_used": "o4-mini",
+      "detailed_analysis": {
+        "supports_claim": true,
+        "image_description": "A side-by-side schematic diagram comparing egg-based and cell-based influenza vaccine production processes. The left panel shows virus inoculation into embryonated hen eggs leading to egg-adaptive hemagglutinin mutations; the right panel shows virus propagation in mammalian cell cultures leading to cell-adaptive mutations.",
+        "evidence_found": "Text in the figure explicitly notes that egg-based production can introduce egg-adaptive hemagglutinin mutations and cell-based production can introduce cell-adaptive mutations, both potentially reducing vaccine effectiveness.",
+        "reasoning": "The figure shows that both egg- and cell-based vaccine production can lead to adaptive mutations that may reduce effectiveness, which supports the claim",
+        "confidence_notes": "Image text is clear but limited to schematic summary; no numerical data provided"
+      }
+    }
+  ]
+}

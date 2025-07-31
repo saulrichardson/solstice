@@ -1,0 +1,34 @@
+{
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "document": {
+    "pdf_name": "Grohskopf_et_al.__2023_",
+    "source_pdf": "data/clinical_files/Grohskopf et al. (2023).pdf",
+    "total_pages": 32,
+    "total_blocks": 295,
+    "total_characters": 110650
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Egg based and cell culture based vaccines differ in the substrate in which reference vaccine viruses supplied to the manufacturer are propagated in quantities sufficient to produce the needed number of doses of vaccine. For the IIV4 s Afluria Quadrivalent (43), Fluarix Quadrivalent (123), FluLaval Quadrivalent (124) and Fluzone Quadrivalent (44), reference vaccine viruses are propagated in eggs. For Flucelvax Quadrivalent, reference vaccine viruses are propagated in Madin-Darby canine kidney cells instead of eggs (125).",
+      "relevance_explanation": "This quote establishes that both egg-based and cell-based flu vaccines involve propagation of vaccine viruses in biological substrates (eggs or cell cultures), which is the context in which mutations can occur during production."
+    },
+    {
+      "id": 2,
+      "quote": "The effectiveness of influenza vaccination varies depending on several factors, such as the age and health of the recipient; the type of vaccine administered; the types, subtypes (for influenza A), and lineages (for influenza B) of circulating influenza viruses; and the degree of similarity between circulating viruses and those included in the vaccine (12).",
+      "relevance_explanation": "This quote directly links vaccine effectiveness to the similarity between circulating viruses and those included in the vaccine, which can be affected if mutations arise during vaccine production."
+    },
+    {
+      "id": 3,
+      "quote": "For the 2022-23 season, U.S. cell culture based inactivated (ccIIV4) and recombinant (RIV4) influenza vaccines will contain HA derived from an influenza A/Wisconsin/588/2019 (H1N1)pdm09-like virus. For the 2022-23 season, U.S. egg based influenza vaccines (i.e., vaccines other than ccIIV4 and RIV4) will contain HA derived from an influenza A/Victoria/2570/2019 (H1N1)pdm09-like virus.",
+      "relevance_explanation": "This quote shows that the source of the hemagglutinin (HA) antigen differs between egg-based and cell-based vaccines, which is relevant because mutations can occur during propagation in these different systems, potentially affecting the match and thus effectiveness."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

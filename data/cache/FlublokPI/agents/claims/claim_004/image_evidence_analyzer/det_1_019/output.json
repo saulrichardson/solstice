@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_019.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_019.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_019",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "A table listing percentages of subjects reporting solicited adverse events (eg, any, moderate, severe) by category and study, along with footnotes describing reporting thresholds and study identifiers. does not support the claim because the table presents safety/adverse event data rather than antibody response or immunogenicity comparisons between higher-dose recombinant and egg-based standard-dose vaccines. Note: Only safety data are shown; immunogenicity or antibody titer data are not present in the image.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing percentages of subjects reporting solicited adverse events (eg, any, moderate, severe) by category and study, along with footnotes describing reporting thresholds and study identifiers.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table presents safety/adverse event data rather than antibody response or immunogenicity comparisons between higher-dose recombinant and egg-based standard-dose vaccines.",
+    "confidence_notes": "Only safety data are shown; immunogenicity or antibody titer data are not present in the image."
+  }
+}

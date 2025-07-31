@@ -1,0 +1,25 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Arunachalam_et_al.__2021_",
+  "supporting_evidence": [
+    {
+      "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.",
+      "explanation": "The quote appears on page 2 of the document: 'The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.' The factual content, including the product names, the recombinant nature, and the 45 \u00b5g HA per strain, is preserved and matches the quote to verify.. The quote directly states that Flublok (RIV4) contains 45 \u00b5g of HA per strain, which is three times the standard 15 \u00b5g HA per strain in standard-dose flu vaccines. This substantiates the first part of the claim. However, the quote does not itself mention immunogenicity or compare it to standard-dose vaccines. The document elsewhere (page 5) does discuss that RIV4 elicits higher T-cell and antibody responses than standard vaccines, but the provided quote only supports the antigen content portion of the claim. Thus, the quote genuinely supports the claim regarding HA content, but not the immunogenicity link."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 1,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 1,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 1
+    },
+    "rejected_count": 0
+  }
+}

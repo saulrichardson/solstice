@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_011.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p1_det_0_011.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_011",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Figure depicting the number needed to vaccinate per 100,000 adults aged \u226565 years to prevent influenza-related outcomes, comparing different flu vaccines (likely standard-dose, high-dose, and recombinant) The figure reports epidemiologic outcomes (numbers needed to vaccinate) rather than detailing hemagglutinin antigen content; it does not support the claim",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Figure depicting the number needed to vaccinate per 100,000 adults aged \u226565 years to prevent influenza-related outcomes, comparing different flu vaccines (likely standard-dose, high-dose, and recombinant)",
+    "evidence_found": null,
+    "reasoning": "The figure reports epidemiologic outcomes (numbers needed to vaccinate) rather than detailing hemagglutinin antigen content; it does not support the claim",
+    "confidence_notes": null
+  }
+}

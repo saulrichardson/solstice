@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_det_1_000.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p2_det_1_000.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "det_1_000",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A table listing different quadrivalent influenza vaccines (inactivated, recombinant HA, and live attenuated), showing trade names (e.g., Flublok Quadrivalent), presentations (0.5 mL prefilled syringe), age indications, hemagglutinin content per dose (e.g., 45 \u00b5g/0.5 mL for Flublok), route of administration, and mercury content if present. The table provides formulation and dosing details for Flublok Quadrivalent but contains no information about antigenic matching to WHO- or FDA-selected strains, so it does not support the claim. Note: Only this table portion is visible; additional text elsewhere on the page might address antigenic match but is not shown here.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing different quadrivalent influenza vaccines (inactivated, recombinant HA, and live attenuated), showing trade names (e.g., Flublok Quadrivalent), presentations (0.5 mL prefilled syringe), age indications, hemagglutinin content per dose (e.g., 45 \u00b5g/0.5 mL for Flublok), route of administration, and mercury content if present.",
+    "evidence_found": null,
+    "reasoning": "The table provides formulation and dosing details for Flublok Quadrivalent but contains no information about antigenic matching to WHO- or FDA-selected strains, so it does not support the claim.",
+    "confidence_notes": "Only this table portion is visible; additional text elsewhere on the page might address antigenic match but is not shown here."
+  }
+}

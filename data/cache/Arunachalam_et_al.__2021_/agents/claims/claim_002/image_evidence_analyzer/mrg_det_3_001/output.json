@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "supports_claim": false,
+  "explanation": "A two-panel schematic showing structural features of influenza hemagglutinin (HA) proteins: (a) native HA extracted from influenza virus, depicted as HA1 and HA2 subunits linked by an inter-disulfide bond with polysiaylated complex N-linked glycans and a cleaved fusion peptide; (b) recombinant HA (rHA) produced in insect cells via baculovirus expression, shown as an uncleaved HA0 precursor with paucimannose N-linked glycans and an uncleaved fusion-peptide loop. does not support the claim because the image illustrates differences in glycosylation and cleavage between native viral HA and recombinant insect-cell HA but provides no data on mutations arising during cell- or egg-based vaccine production that could reduce effectiveness. Note: The figure focuses on glycan structure and cleavage state of HA, not genetic mutations; image quality is sufficient to see labels and annotations.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-panel schematic showing structural features of influenza hemagglutinin (HA) proteins: (a) native HA extracted from influenza virus, depicted as HA1 and HA2 subunits linked by an inter-disulfide bond with polysiaylated complex N-linked glycans and a cleaved fusion peptide; (b) recombinant HA (rHA) produced in insect cells via baculovirus expression, shown as an uncleaved HA0 precursor with paucimannose N-linked glycans and an uncleaved fusion-peptide loop.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image illustrates differences in glycosylation and cleavage between native viral HA and recombinant insect-cell HA but provides no data on mutations arising during cell- or egg-based vaccine production that could reduce effectiveness.",
+    "confidence_notes": "The figure focuses on glycan structure and cleavage state of HA, not genetic mutations; image quality is sufficient to see labels and annotations."
+  }
+}

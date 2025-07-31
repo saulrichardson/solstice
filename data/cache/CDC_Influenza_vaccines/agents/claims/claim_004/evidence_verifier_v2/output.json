@@ -1,0 +1,21 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "CDC_Influenza_vaccines",
+  "verification_stats": {
+    "total_extracted": 1,
+    "verified": 0,
+    "rejected": 1,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": 1,
+      "quote": "RIV4 (recombinant HA vaccine)",
+      "reason": "does not support claim",
+      "original_explanation": "This quote identifies the recombinant HA vaccine (RIV4), which is relevant because the claim compares recombinant (higher-dose) vaccines to standard egg-based vaccines. However, the document does not provide explicit evidence or statements about antibody response or comparative immunogenicity between higher-dose recombinant and standard-dose egg-based vaccines."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

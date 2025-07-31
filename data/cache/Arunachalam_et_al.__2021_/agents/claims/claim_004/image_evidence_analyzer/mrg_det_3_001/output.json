@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "A two-panel schematic comparing the structural features of influenza hemagglutinin (HA) extracted from virus (panel a) versus recombinant HA (rHA) produced in insect cells (panel b). It shows monomeric HA domains (HA1, HA2 or HA0), glycosylation differences (complex-type sialylated N-linked glycans vs paucimannose glycans), cleaved versus uncleaved fusion peptide loops, and inter-disulfide bonds. The figure illustrates molecular and glycosylation differences between native viral HA and baculovirus-derived rHA but provides no data on vaccine dose, immunization regimen, or antibody titers. It does not support the claim regarding higher-dose recombinant flu vaccines inducing a more robust antibody response than egg-based standard-dose vaccines. Note: The image is clear and complete for its structural focus; no immunogenicity or clinical response data are presented.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-panel schematic comparing the structural features of influenza hemagglutinin (HA) extracted from virus (panel a) versus recombinant HA (rHA) produced in insect cells (panel b). It shows monomeric HA domains (HA1, HA2 or HA0), glycosylation differences (complex-type sialylated N-linked glycans vs paucimannose glycans), cleaved versus uncleaved fusion peptide loops, and inter-disulfide bonds.",
+    "evidence_found": null,
+    "reasoning": "The figure illustrates molecular and glycosylation differences between native viral HA and baculovirus-derived rHA but provides no data on vaccine dose, immunization regimen, or antibody titers. It does not support the claim regarding higher-dose recombinant flu vaccines inducing a more robust antibody response than egg-based standard-dose vaccines.",
+    "confidence_notes": "The image is clear and complete for its structural focus; no immunogenicity or clinical response data are presented."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_019.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_019.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_019",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "The image shows a table of solicited local and systemic adverse event rates (e.g., injection site pain, erythema, swelling; fever, headache, fatigue, myalgia, etc.) reported by subjects in multiple clinical studies, broken down by severity categories and percentage of subjects. Footnotes reference Study 2 and Study 4 and the U.S.-licensed IIV3 comparator. The table presents safety and reactogenicity data only and does not support the claim about antigenic matching; there is no information on strain matching to WHO- or FDA-selected flu strains, so it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "The image shows a table of solicited local and systemic adverse event rates (e.g., injection site pain, erythema, swelling; fever, headache, fatigue, myalgia, etc.) reported by subjects in multiple clinical studies, broken down by severity categories and percentage of subjects. Footnotes reference Study 2 and Study 4 and the U.S.-licensed IIV3 comparator.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety and reactogenicity data only and does not support the claim about antigenic matching; there is no information on strain matching to WHO- or FDA-selected flu strains, so it does not support the claim.",
+    "confidence_notes": null
+  }
+}

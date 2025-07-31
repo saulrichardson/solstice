@@ -44,7 +44,7 @@ class Settings(BaseSettings):
     
     # Cache Configuration
     filesystem_cache_dir: str = Field(
-        "data/cache",
+        "data/scientific_cache",
         description="Base directory for filesystem cache"
     )
     

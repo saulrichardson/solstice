@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Two schematic diagrams comparing structural features of hemagglutinin (HA) proteins: panel a shows native HA from influenza virus as a heterodimer (HA1 and HA2) with complex-type glycosylation and cleaved fusion peptide; panel b shows recombinant HA (HA0) produced in insect cells via baculovirus expression system, with unsialylated paucimannose glycans and uncleaved fusion-peptide loop. The figure only illustrates structural and glycosylation differences between native and recombinant HA proteins and does not present any information about antigen dose levels or immunogenicity, and therefore does not support the claim. Note: Figure is clear and readable but contains no dosage or immunogenicity data.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Two schematic diagrams comparing structural features of hemagglutinin (HA) proteins: panel a shows native HA from influenza virus as a heterodimer (HA1 and HA2) with complex-type glycosylation and cleaved fusion peptide; panel b shows recombinant HA (HA0) produced in insect cells via baculovirus expression system, with unsialylated paucimannose glycans and uncleaved fusion-peptide loop.",
+    "evidence_found": null,
+    "reasoning": "The figure only illustrates structural and glycosylation differences between native and recombinant HA proteins and does not present any information about antigen dose levels or immunogenicity, and therefore does not support the claim.",
+    "confidence_notes": "Figure is clear and readable but contains no dosage or immunogenicity data."
+  }
+}

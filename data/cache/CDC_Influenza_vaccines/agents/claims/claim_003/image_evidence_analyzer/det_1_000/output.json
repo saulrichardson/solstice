@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_det_1_000.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p2_det_1_000.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "det_1_000",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table listing influenza vaccine trade names (e.g., Fluzone Quadrivalent, Flublok Quadrivalent (recombinant HA vaccine), FluMist Quadrivalent), their presentations (volume, prefilled syringe or nasal spray), age indications, hemagglutinin antigen content per dose, route of administration, and mercury content. This table only provides vaccine formulations, doses, and routes of administration and does not present any data on immune response breadth or cross-protection, so it does not support the claim. Note: No immunogenicity or cross-protection data are shown in the image; table content is clear and complete for its scope.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing influenza vaccine trade names (e.g., Fluzone Quadrivalent, Flublok Quadrivalent (recombinant HA vaccine), FluMist Quadrivalent), their presentations (volume, prefilled syringe or nasal spray), age indications, hemagglutinin antigen content per dose, route of administration, and mercury content.",
+    "evidence_found": null,
+    "reasoning": "This table only provides vaccine formulations, doses, and routes of administration and does not present any data on immune response breadth or cross-protection, so it does not support the claim.",
+    "confidence_notes": "No immunogenicity or cross-protection data are shown in the image; table content is clear and complete for its scope."
+  }
+}

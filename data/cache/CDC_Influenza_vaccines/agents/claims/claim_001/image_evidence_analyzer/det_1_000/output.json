@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_det_1_000.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p2_det_1_000.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "det_1_000",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Table listing influenza vaccines, including standard inactivated quadrivalent vaccines (IIV4) with 15 \u00b5g HA per 0.5 mL dose and Flublok Quadrivalent (recombinant HA vaccine) with 45 \u00b5g HA per 0.5 mL dose, along with age indications and routes of administration. Evidence: Flublok Quadrivalent contains 45 \u00b5g HA per 0.5 mL, whereas standard-dose IIV4 vaccines contain 15 \u00b5g HA per 0.5 mL. The table demonstrates that Flublok contains three times the HA antigen content compared to standard-dose vaccines but does not present any data on immunogenicity, so it does not support the full claim regarding linked greater immunogenicity.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table listing influenza vaccines, including standard inactivated quadrivalent vaccines (IIV4) with 15 \u00b5g HA per 0.5 mL dose and Flublok Quadrivalent (recombinant HA vaccine) with 45 \u00b5g HA per 0.5 mL dose, along with age indications and routes of administration.",
+    "evidence_found": "Flublok Quadrivalent contains 45 \u00b5g HA per 0.5 mL, whereas standard-dose IIV4 vaccines contain 15 \u00b5g HA per 0.5 mL.",
+    "reasoning": "The table demonstrates that Flublok contains three times the HA antigen content compared to standard-dose vaccines but does not present any data on immunogenicity, so it does not support the full claim regarding linked greater immunogenicity.",
+    "confidence_notes": null
+  }
+}

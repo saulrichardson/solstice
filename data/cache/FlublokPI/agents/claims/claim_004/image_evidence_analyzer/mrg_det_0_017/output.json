@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "A partial prescribing information sheet for the Flublok influenza vaccine, showing the table of contents (sections on indications, dosage, contraindications, warnings, adverse reactions, clinical pharmacology, clinical studies, etc.) and text listing common adverse reactions by age group. does not support the claim, as the visible content provides only section headings and adverse reaction rates, with no data comparing antibody responses between a higher-dose recombinant vaccine and egg-based standard-dose vaccines. Note: Only table of contents and adverse reaction information are visible; immunogenicity or dose-comparison data are not shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A partial prescribing information sheet for the Flublok influenza vaccine, showing the table of contents (sections on indications, dosage, contraindications, warnings, adverse reactions, clinical pharmacology, clinical studies, etc.) and text listing common adverse reactions by age group.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim, as the visible content provides only section headings and adverse reaction rates, with no data comparing antibody responses between a higher-dose recombinant vaccine and egg-based standard-dose vaccines.",
+    "confidence_notes": "Only table of contents and adverse reaction information are visible; immunogenicity or dose-comparison data are not shown."
+  }
+}
