@@ -44,7 +44,7 @@ The fact-checking pipeline processes text evidence through three sequential stag
 \begin{itemize}[leftmargin=*,topsep=0pt]
 \item \textbf{Evidence Extraction Step}: Searches document text for claim-relevant quotes using gpt-4.1 with temperature=0. Preserves exact quotes and returns structured evidence with relevance explanations.
 
-\item \textbf{Completeness Checker}: Takes the raw extracted evidence and searches for any additional quotes that weren't initially found. Merges evidence from multiple sources to ensure comprehensive coverage.
+\item \textbf{Completeness Checker}: Reviews the extracted evidence and searches the document again for any additional quotes that weren't initially found, ensuring comprehensive coverage.
 
 \item \textbf{Evidence Verification Step (V2)}: Validates that all extracted quotes (from both extraction and completeness steps) exist in the source document. Uses semantic matching and filters out tangentially related content, achieving high verification rates.
 
