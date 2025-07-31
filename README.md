@@ -2,15 +2,6 @@
 
 Solstice verifies medical claims against clinical documents using computer vision and multi-step LLM analysis.
 
-## What It Does
-
-Takes medical claims like "Flublok is FDA approved for adults 18+" and automatically:
-1. Extracts text and images from clinical PDFs using ML layout detection
-2. Finds relevant evidence passages via LLM
-3. Verifies exact quotes and context
-4. Analyzes figures, tables, and charts
-5. Produces structured evidence reports
-
 ## System Architecture
 
 ```
@@ -39,7 +30,37 @@ Takes medical claims like "Flublok is FDA approved for adults 18+" and automatic
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-## Quick Start
+## Processing Flow
+
+```
+1. Input PDFs (data/clinical_files/)
+   - FlublokPI.pdf
+   - CDC Influenza vaccines.pdf  
+   - Arunachalam et al. (2021).pdf
+       ↓
+2. Ingestion Pipeline
+   - Detectron2 layout detection
+   - PyMuPDF text extraction
+   - Saves to data/cache/<document_name>/
+       ↓
+3. Claims File (data/claims/flu_vaccine_claims.json)
+   - "Flublok is FDA approved for adults 18 years and older"
+   - "Flublok demonstrated 30% better efficacy vs standard dose"
+       ↓
+4. Fact-Check Pipeline (5 LLM calls per claim)
+   - Evidence extraction
+   - Quote verification  
+   - Completeness check
+   - Image analysis
+   - Evidence presentation
+       ↓
+5. Output (data/studies/Flu_Vaccine_Claims_Verification/)
+   - study_report.json
+   - claim_001/evidence_report.json
+   - claim_002/evidence_report.json
+```
+
+## Setup
 
 ### Prerequisites
 
@@ -48,7 +69,7 @@ Takes medical claims like "Flublok is FDA approved for adults 18+" and automatic
 - OpenAI API key  
 - Poppler: `brew install poppler` (macOS) or `apt-get install poppler-utils` (Linux)
 
-### Setup (One Time)
+### Installation
 
 ```bash
 # Clone repository
@@ -70,39 +91,40 @@ cp .env.example .env
 make up
 ```
 
-### Run Example
-
-The repository includes sample PDFs and claims. Just run:
+## Run
 
 ```bash
-# Process PDFs (first time only)
+# Process included PDFs into structured documents
 python -m src.cli ingest
 
-# Run fact-checking
+# Run fact-check on flu vaccine claims
 python -m src.cli run-study
 ```
 
-Results appear in `data/studies/Flu_Vaccine_Claims_Verification/`
+## What Happens
 
-## What's Included
+### 1. PDF Processing (`python -m src.cli ingest`)
+- Reads PDFs from `data/clinical_files/`
+- Detects layout elements at 400 DPI
+- Extracts text preserving medical terminology
+- Saves to `data/cache/FlublokPI/extracted/content.json` etc.
 
-### Sample Documents
-- `FlublokPI.pdf` - FDA prescribing information
-- `CDC Influenza vaccines.pdf` - CDC guidelines
-- `Arunachalam et al. (2021).pdf` - Clinical trial paper
+### 2. Fact-Checking (`python -m src.cli run-study`)
+- Reads claims from `data/claims/flu_vaccine_claims.json`
+- For each claim, runs 5 LLM agents sequentially
+- Searches all cached documents for evidence
+- Outputs to `data/studies/Flu_Vaccine_Claims_Verification/`
 
-### Sample Claims
-- `data/claims/flu_vaccine_claims.json` - Example vaccine efficacy claims
-
-### Output Structure
+### 3. Output Structure
 ```
-data/studies/Flu_Vaccine_Claims_Verification/
-├── study_report.json         # Summary of all claims
-├── claim_001/                # Per-claim evidence
-│   ├── evidence_report.json  # Structured findings
-│   └── agent_outputs/        # Intermediate results
-└── claim_002/
-    └── ...
+claim_001/
+├── evidence_report.json     # Final consolidated evidence
+├── agent_outputs/
+│   ├── evidence_extractor/  # Found passages
+│   ├── evidence_verifier/   # Quote verification
+│   ├── completeness_check/  # Missing evidence types
+│   ├── image_analyzer/      # Figure/table analysis
+│   └── evidence_presenter/  # Final formatting
 ```
 
 ## Project Structure
@@ -130,56 +152,3 @@ solstice/
 ├── docker/                  # Docker configurations
 └── scripts/                 # Setup utilities
 ```
-
-## Common Tasks
-
-**Check gateway health:**
-```bash
-make logs
-```
-
-**Process your own PDFs:**
-```bash
-# Add PDFs to data/clinical_files/
-python -m src.cli ingest --pdf "YourDocument.pdf"
-```
-
-**Create custom claims:**
-```json
-// data/claims/your_claims.json
-{
-  "study_name": "Your Study Name",
-  "claims": [
-    {
-      "id": "claim_001", 
-      "text": "Your medical claim here"
-    }
-  ]
-}
-```
-
-```bash
-python -m src.cli run-study --claims data/claims/your_claims.json
-```
-
-**Complex layouts (marketing materials):**
-```bash
-python -m src.injestion.marketing.cli YourBrochure.pdf
-```
-
-## Troubleshooting
-
-**Python version issues:** Use pyenv to install Python 3.11.9
-**Gateway connection errors:** Verify OPENAI_API_KEY in .env
-**Poor text extraction:** Increase DPI with `--dpi 600`
-
-## How It Works
-
-1. **PDF Ingestion**: Detectron2 identifies text blocks, figures, and tables
-2. **Content Extraction**: PyMuPDF extracts text while preserving medical terminology
-3. **LLM Pipeline** (via Gateway):
-   - Evidence extraction finds relevant passages
-   - Quote verification ensures accuracy
-   - Image analysis processes visual evidence
-   - Final presentation consolidates findings
-4. **Structured Output**: JSON reports with supporting/contradicting evidence
