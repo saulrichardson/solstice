@@ -72,7 +72,7 @@ The project is intentionally kept small and hackable; everything runs from the c
 Below is the *real* (slightly simplified) execution plan so you can map the commands you run to the modules that fire.
 
 ────────────────────────────────────────────────────────
-Step 1  Ingest PDFs → machine-readable artefacts
+Step 1: Ingest PDFs → machine-readable artefacts
 ────────────────────────────────────────────────────────
 
 Command: `python -m src.cli ingest`
@@ -96,7 +96,7 @@ Command: `python -m src.cli ingest`
 Output: Structured JSON + FAISS index per document under `data/cache/`.
 
 ────────────────────────────────────────────────────────
-Step 2  Run the fact-checking pipeline
+Step 2: Run the fact-checking pipeline
 ────────────────────────────────────────────────────────
 
 Command: `python -m src.cli run-study --claims path/to/file.json`
@@ -130,7 +130,7 @@ Pipeline orchestrator (`src.fact_check.orchestrators.pipeline`) executes **five 
 All intermediate LLM calls are cached in `data/studies/<study>/claim_x/agent_outputs/` so re-runs are cheap.
 
 ────────────────────────────────────────────────────────
-Step 3  Gateway & safeguards (optional but recommended)
+Step 3: Gateway & safeguards (optional but recommended)
 ────────────────────────────────────────────────────────
 
 If you started the Docker gateway (`make up`):
@@ -139,7 +139,7 @@ If you started the Docker gateway (`make up`):
 • Cost accounting: CLI command `python -m src.cli cost-report` prints spend per study.
 
 ────────────────────────────────────────────────────────
-Step 4  Output folder anatomy
+Step 4: Output folder anatomy
 ────────────────────────────────────────────────────────
 
 ```
