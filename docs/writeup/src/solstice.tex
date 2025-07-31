@@ -71,8 +71,7 @@ The fact-checking pipeline orchestrates multiple LLM calls in a specific sequenc
 \node[box, below=of extract] (complete) {Completeness\\Checker};
 \node[box, below=of complete] (verify) {Evidence\\Verifier V2};
 \node[box, right=5cm of extract] (image) {Image Evidence\\Analyzer};
-\node[box, below=of verify] (present) {Evidence\\Presenter};
-\node[box, below=of present, fill=green!10] (result) {Consolidated\\Results};
+\node[box, below=of verify, fill=green!10] (result) {Consolidated\\Results};
 
 % Scientific docs
 \node[left=2cm of extract, align=center] (docs) {Scientific\\Documents};
@@ -81,10 +80,9 @@ The fact-checking pipeline orchestrates multiple LLM calls in a specific sequenc
 \draw[arrow] (claim) -- (extract);
 \draw[arrow] (extract) -- (complete);
 \draw[arrow] (complete) -- (verify);
-\draw[arrow] (verify) -- (present);
-\draw[arrow] (present) -- (result);
+\draw[arrow] (verify) -- (result);
 \draw[arrow] (claim.east) -- ++(1,0) |- (image);
-\draw[arrow] (image.south) -- ++(0,-3.5) -| (present);
+\draw[arrow] (image.south) -- ++(0,-2.5) -| (result);
 \draw[arrow, dashed] (docs) -- (extract);
 \draw[arrow, dashed] (docs.north) -- ++(0,0.5) -| (image);
 
@@ -142,7 +140,6 @@ Solstice is built on three core services that handle different aspects of the fa
 
 % External APIs
 \node[api, above=2cm of gateway] (openai) {OpenAI API};
-\node[api, above=1cm of openai] (anthropic) {Anthropic API};
 
 % Data stores
 \node[component, below=2cm of ingestion] (cache) {Document Cache};
@@ -160,7 +157,6 @@ Solstice is built on three core services that handle different aspects of the fa
 \draw[arrow] (ingestion.east) -- node[label, above] {Layout API} (gateway.west);
 \draw[arrow] (factcheck.west) -- node[label, above] {LLM Calls} (gateway.east);
 \draw[arrow] (gateway) -- (openai);
-\draw[arrow] (gateway) -- (anthropic);
 \draw[arrow, dashed] (cache.east) -- (factcheck.south west);
 
 % Docker container boxes
