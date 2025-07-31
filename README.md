@@ -15,25 +15,26 @@ The project is intentionally kept small and hackable; everything runs from the c
 │                         Fact Check System                       │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    │
-│  │   Ingestion  │    │   Gateway    │    │ Fact-Check   │    │
-│  │   Pipeline   │    │   Service    │    │   Pipeline   │    │
-│  │              │    │              │    │              │    │
-│  │ • PDF → Doc  │    │ • LLM Proxy  │    │ • Extract    │    │
-│  │ • Layout Det │    │ • Audit Log  │    │ • Verify     │    │
-│  │ • Text Ext   │    │ • Retry      │    │ • Present    │    │
-│  └──────┬───────┘    └──────┬───────┘    └──────┬───────┘    │
-│         │                    │                    │            │
-│         └────────────────────┴────────────────────┘            │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐       │
+│  │   Ingestion  │    │   Gateway    │    │ Fact-Check   │       │
+│  │   Pipeline   │    │   Service    │    │   Pipeline   │       │
+│  │              │    │              │    │              │       │
+│  │ • PDF → Doc  │    │ • LLM Proxy  │    │ • Extract    │       │
+│  │ • Layout Det │    │ • Audit Log  │    │ • Verify     │       │
+│  │ • Text Ext   │    │ • Retry      │    │ • Present    │       │
+│  └──────┬───────┘    └──────┬───────┘    └──────┬───────┘       │
+│         │                    │                    │             │
+│         └────────────────────┴────────────────────┘             │
 │                              │                                  │
-│                     ┌────────▼────────┐                        │
-│                     │  Data Storage   │                        │
-│                     │                 │                        │
-│                     │ • Cache         │                        │
-│                     │ • Documents     │                        │
-│                     │ • Evidence      │                        │
-│                     └─────────────────┘                        │
+│                     ┌────────▼────────┐                         │
+│                     │  Data Storage   │                         │
+│                     │                 │                         │
+│                     │ • Cache         │                         │
+│                     │ • Documents     │                         │
+│                     │ • Evidence      │                         │
+│                     └─────────────────┘                         │
 └─────────────────────────────────────────────────────────────────┘
+
 ```
 
 ## 2. Processing flow
@@ -64,56 +65,6 @@ The project is intentionally kept small and hackable; everything runs from the c
    - study_report.json
    - claim_001/evidence_report.json
    - claim_002/evidence_report.json
-```
-
-<!-- Deprecated duplicate setup section removed -->
-
-### Prerequisites
-
-- Python 3.11 or 3.12
-- Docker
-- OpenAI API key  
-- Poppler: `brew install poppler` (macOS) or `apt-get install poppler-utils` (Linux)
-
-# Quick-start (5 minutes)
-
-```bash
-# 1️⃣  Clone the repository
-git clone <repo-url> && cd fact-check
-
-# 2️⃣  Create a virtual environment (optional but recommended)
-python -m venv .venv && source .venv/bin/activate  # On Windows use .venv\Scripts\activate
-
-# 3️⃣  Install python dependencies (+ Detectron2 for layout detection)
-make install && make install-detectron2
-
-# 4️⃣  Add your OpenAI API key
-cp .env.example .env && echo "OPENAI_API_KEY=sk-..." >> .env
-
-# 5️⃣  Spin up the optional gateway service (handles rate-limiting & audit logs)
-make up  # docker-compose up -d under the hood
-```
-
-Done! You can now ingest documents and run a fact-checking study:
-
-```bash
-# Convert PDFs → structured JSON
-python -m src.cli ingest
-
-# Check all flu-vaccine claims
-python -m src.cli run-study
-```
-
----
-
-<!-- Duplicate run commands section removed -->
-
-```bash
-# Process included PDFs into structured documents
-python -m src.cli ingest
-
-# Run fact-check on flu vaccine claims
-python -m src.cli run-study
 ```
 
 ## 3. What happens under the hood?
@@ -265,9 +216,8 @@ For additional options run `python -m src.cli --help`.
 
 ---
 
-## 7. Installation details (if you hit problems)
+## 7. Installation details 
 
-The quick-start earlier should work on most systems.  If it doesn’t, follow the longer, OS-specific instructions below.
 
 ```bash
 # 1. Clone & enter repo
@@ -288,10 +238,3 @@ cp .env.example .env && echo "OPENAI_API_KEY=sk-..." >> .env
 # 6. Optional: start gateway service
 make up                     # docker-compose up -d
 ```
-
-Common pitfalls:
-• macOS M-series + Detectron2 – use `make install-detectron2 CPU_ONLY=1`.  
-• Poppler missing – `brew install poppler` (macOS) / `apt-get install poppler-utils` (Debian/Ubuntu).  
-• OpenAI rate limits – make sure the gateway is up; it automatically retries.
-
-If problems persist, run `python -m src.cli sys-info` and open an issue with the output and full stack-trace.
