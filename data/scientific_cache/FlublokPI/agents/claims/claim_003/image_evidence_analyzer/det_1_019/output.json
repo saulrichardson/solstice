@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_019.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_019.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_019",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table displaying percentages of subjects reporting adverse events (categorized by severity: any, moderate, severe) across different studies, with rows of numeric values and footnotes describing data reporting and study details. does not support the claim because the table only shows adverse event rates and contains no immunogenicity or cross-protection data related to recombinant technology. Note: No immunogenicity or efficacy data present; table focuses solely on safety/adverse event reporting. Potentially missing context but based on visible content, claim unsupported.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table displaying percentages of subjects reporting adverse events (categorized by severity: any, moderate, severe) across different studies, with rows of numeric values and footnotes describing data reporting and study details.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table only shows adverse event rates and contains no immunogenicity or cross-protection data related to recombinant technology.",
+    "confidence_notes": "No immunogenicity or efficacy data present; table focuses solely on safety/adverse event reporting. Potentially missing context but based on visible content, claim unsupported."
+  }
+}

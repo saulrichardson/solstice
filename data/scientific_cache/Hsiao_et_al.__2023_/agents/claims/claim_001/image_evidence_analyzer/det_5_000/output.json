@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p6_det_5_000.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p6_det_5_000.png",
+  "image_type": "Figure",
+  "page_number": 6,
+  "block_id": "det_5_000",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A flowchart showing the number of study participants aged 18\u201364 vaccinated in each flu season (2018\u20132021), divided into those receiving a recombinant influenza vaccine versus a standard-dose vaccine, with sequential exclusion criteria leading to the final analytic cohorts and age breakdowns. The figure is a participant flow diagram and does not provide any data on hemagglutinin antigen content or comparative immunogenicity, and therefore does not support the claim. Note: None",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart showing the number of study participants aged 18\u201364 vaccinated in each flu season (2018\u20132021), divided into those receiving a recombinant influenza vaccine versus a standard-dose vaccine, with sequential exclusion criteria leading to the final analytic cohorts and age breakdowns.",
+    "evidence_found": null,
+    "reasoning": "The figure is a participant flow diagram and does not provide any data on hemagglutinin antigen content or comparative immunogenicity, and therefore does not support the claim.",
+    "confidence_notes": "None"
+  }
+}

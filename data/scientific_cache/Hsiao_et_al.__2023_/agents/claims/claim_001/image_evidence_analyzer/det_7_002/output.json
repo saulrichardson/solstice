@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p8_det_7_002.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/table_p8_det_7_002.png",
+  "image_type": "Table",
+  "page_number": 8,
+  "block_id": "det_7_002",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table summarizing clinical outcomes in two vaccine groups (Flublok, N=279,400; standard-dose vaccine, N=395,852). It lists primary and secondary outcomes (PCR-confirmed influenza A and B, hospitalizations) with number of cases per 1000, unadjusted and adjusted rate ratios, vaccine effectiveness percentages, and P values. does not support the claim because the table provides clinical outcome and effectiveness data but contains no information on hemagglutinin antigen content or a comparison of antigen doses. Note: Analysis limited to visible table; image quality is sufficient but antigen content details are not present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table summarizing clinical outcomes in two vaccine groups (Flublok, N=279,400; standard-dose vaccine, N=395,852). It lists primary and secondary outcomes (PCR-confirmed influenza A and B, hospitalizations) with number of cases per 1000, unadjusted and adjusted rate ratios, vaccine effectiveness percentages, and P values.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table provides clinical outcome and effectiveness data but contains no information on hemagglutinin antigen content or a comparison of antigen doses.",
+    "confidence_notes": "Analysis limited to visible table; image quality is sufficient but antigen content details are not present."
+  }
+}

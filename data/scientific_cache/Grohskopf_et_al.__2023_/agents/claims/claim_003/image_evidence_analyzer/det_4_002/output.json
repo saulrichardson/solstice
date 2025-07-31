@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p5_det_4_002.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_002",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table listing various influenza vaccines (standard-dose egg-based, cell culture\u2013based, high-dose, adjuvanted, recombinant HA, live attenuated) with columns for manufacturer, presentation, age indication, antigen amount per virus strain, route, and \u00b5g per mL. The table only provides vaccine formulations, dosages, and age indications; it does not present data on immune response breadth, cross-protection, or performance in mismatch seasons, and therefore does not support the claim. Note: Table content is limited to logistical and compositional details; immunogenicity or efficacy data are not included.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing various influenza vaccines (standard-dose egg-based, cell culture\u2013based, high-dose, adjuvanted, recombinant HA, live attenuated) with columns for manufacturer, presentation, age indication, antigen amount per virus strain, route, and \u00b5g per mL.",
+    "evidence_found": null,
+    "reasoning": "The table only provides vaccine formulations, dosages, and age indications; it does not present data on immune response breadth, cross-protection, or performance in mismatch seasons, and therefore does not support the claim.",
+    "confidence_notes": "Table content is limited to logistical and compositional details; immunogenicity or efficacy data are not included."
+  }
+}

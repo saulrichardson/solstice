@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p7_det_6_000.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_000",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "A table listing Advisory Committee on Immunization Practices (ACIP) recommendations for various influenza vaccine types (egg-based inactivated influenza vaccine [IIV] and live attenuated influenza vaccine [LAIV], cell culture\u2013based IIV [ccIIV], recombinant influenza vaccine [RIV]) in the context of egg allergy, showing contraindications and precautions for each vaccine type, with footnotes and abbreviations. does not support the claim because the table only addresses vaccine contraindications and precautions related to egg allergy and contains no data on antibody responses or comparisons of immunogenicity between higher-dose recombinant and standard-dose egg-based vaccines, therefore it does not support the claim Note: Limited to a contraindications/precautions table; no immunogenicity outcomes are presented",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing Advisory Committee on Immunization Practices (ACIP) recommendations for various influenza vaccine types (egg-based inactivated influenza vaccine [IIV] and live attenuated influenza vaccine [LAIV], cell culture\u2013based IIV [ccIIV], recombinant influenza vaccine [RIV]) in the context of egg allergy, showing contraindications and precautions for each vaccine type, with footnotes and abbreviations.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table only addresses vaccine contraindications and precautions related to egg allergy and contains no data on antibody responses or comparisons of immunogenicity between higher-dose recombinant and standard-dose egg-based vaccines, therefore it does not support the claim",
+    "confidence_notes": "Limited to a contraindications/precautions table; no immunogenicity outcomes are presented"
+  }
+}

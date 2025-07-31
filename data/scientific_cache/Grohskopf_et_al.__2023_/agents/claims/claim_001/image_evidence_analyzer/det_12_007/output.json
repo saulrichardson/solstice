@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p13_det_12_007.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p13_det_12_007.png",
+  "image_type": "Table",
+  "page_number": 13,
+  "block_id": "det_12_007",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table listing inactivated influenza vaccines (Afluria Quadrivalent, Fluarix Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent), their manufacturers, dose volumes in mL, and corresponding hemagglutinin (HA) antigen content in micrograms, plus footnotes regarding HA abbreviations and dosing guidelines for age groups and the exception of high-dose Fluzone. The table does not include any data on the HA antigen content of Flublok or compare it to standard-dose vaccines, so it does not support the claim. Note: Image is clear and legible; Flublok is simply not present in the data shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing inactivated influenza vaccines (Afluria Quadrivalent, Fluarix Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent), their manufacturers, dose volumes in mL, and corresponding hemagglutinin (HA) antigen content in micrograms, plus footnotes regarding HA abbreviations and dosing guidelines for age groups and the exception of high-dose Fluzone.",
+    "evidence_found": null,
+    "reasoning": "The table does not include any data on the HA antigen content of Flublok or compare it to standard-dose vaccines, so it does not support the claim.",
+    "confidence_notes": "Image is clear and legible; Flublok is simply not present in the data shown."
+  }
+}

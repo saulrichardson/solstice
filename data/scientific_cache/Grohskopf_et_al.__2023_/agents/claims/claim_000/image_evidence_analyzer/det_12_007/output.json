@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p13_det_12_007.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p13_det_12_007.png",
+  "image_type": "Table",
+  "page_number": 13,
+  "block_id": "det_12_007",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A table listing various inactivated quadrivalent influenza vaccines (by brand/manufacturer), their dose volumes (e.g., 0.5 mL, 0.25 mL) and hemagglutinin (HA) content per strain (e.g., 15 \u00b5g), with footnotes defining HA and age-based dosing recommendations. The table does not mention Flublok or any information about antigenic match to WHO- or FDA-selected flu strains, and thus does not support the claim. Note: Only dosage and content information is provided; no details on strain matching are visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing various inactivated quadrivalent influenza vaccines (by brand/manufacturer), their dose volumes (e.g., 0.5 mL, 0.25 mL) and hemagglutinin (HA) content per strain (e.g., 15 \u00b5g), with footnotes defining HA and age-based dosing recommendations.",
+    "evidence_found": null,
+    "reasoning": "The table does not mention Flublok or any information about antigenic match to WHO- or FDA-selected flu strains, and thus does not support the claim.",
+    "confidence_notes": "Only dosage and content information is provided; no details on strain matching are visible."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_017.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_017",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table reporting percentages of subjects with severe responses (<1% to 6%) across studies, with footnotes describing how results are reported, study registration details for U.S.-licensed IIV3, and definitions of fever severity (mild, moderate). The table presents safety/reactogenicity data (severe response rates) and definitions of fever severity, but contains no immunogenicity or cross-protection data and therefore does not support the claim Note: Only safety data are visible; immunogenicity or cross-protection information is not shown",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table reporting percentages of subjects with severe responses (<1% to 6%) across studies, with footnotes describing how results are reported, study registration details for U.S.-licensed IIV3, and definitions of fever severity (mild, moderate).",
+    "evidence_found": null,
+    "reasoning": "The table presents safety/reactogenicity data (severe response rates) and definitions of fever severity, but contains no immunogenicity or cross-protection data and therefore does not support the claim",
+    "confidence_notes": "Only safety data are visible; immunogenicity or cross-protection information is not shown"
+  }
+}

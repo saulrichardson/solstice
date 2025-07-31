@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p13_det_12_007.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p13_det_12_007.png",
+  "image_type": "Table",
+  "page_number": 13,
+  "block_id": "det_12_007",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table listing various quadrivalent influenza vaccine products (Afluria Quadrivalent, Fluarix Quadrivalent, Flucelvax Quadrivalent, Flulaval Quadrivalent, Fluzone Quadrivalent) with their licensed dose volumes and hemagglutinin content per dose, accompanied by footnotes on dosing for age groups and formulation availability. The table provides only product names and dosage details, with no data on immune response breadth, recombinant technology, or cross-protection in mismatch seasons, and thus doesn't support the claim. Note: Limited to a dosing table; no immunogenicity or efficacy data present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing various quadrivalent influenza vaccine products (Afluria Quadrivalent, Fluarix Quadrivalent, Flucelvax Quadrivalent, Flulaval Quadrivalent, Fluzone Quadrivalent) with their licensed dose volumes and hemagglutinin content per dose, accompanied by footnotes on dosing for age groups and formulation availability.",
+    "evidence_found": null,
+    "reasoning": "The table provides only product names and dosage details, with no data on immune response breadth, recombinant technology, or cross-protection in mismatch seasons, and thus doesn't support the claim.",
+    "confidence_notes": "Limited to a dosing table; no immunogenicity or efficacy data present."
+  }
+}

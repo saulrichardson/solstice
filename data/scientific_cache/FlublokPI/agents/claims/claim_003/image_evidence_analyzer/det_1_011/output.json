@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_011.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_011",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table of solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, chills, nausea, fever) with percentages for Flublok and comparator groups, plus footnotes on study design and definitions of severity. does not support the claim because the table presents reactogenicity/safety data rather than any information on breadth of immune response or cross-protection in mismatch seasons Note: The image only shows safety/reactogenicity data; no immunogenicity or efficacy outcomes are presented",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table of solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache, muscle pain, joint pain, chills, nausea, fever) with percentages for Flublok and comparator groups, plus footnotes on study design and definitions of severity.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table presents reactogenicity/safety data rather than any information on breadth of immune response or cross-protection in mismatch seasons",
+    "confidence_notes": "The image only shows safety/reactogenicity data; no immunogenicity or efficacy outcomes are presented"
+  }
+}

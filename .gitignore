@@ -133,6 +133,10 @@ visualizations/
 # Gateway request/response snapshots — keep them out of git
 data/gateway_cache/
 
+# Documentation PDFs should be tracked
+!docs/writeup/solstice.pdf
+!docs/writeup/output/solstice.pdf
+
 # Model outputs
 *.onnx
 *.pt
