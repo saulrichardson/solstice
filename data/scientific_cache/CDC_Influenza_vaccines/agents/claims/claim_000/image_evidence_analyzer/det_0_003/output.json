@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_003.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p1_det_0_003.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_003",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A tabular overview of standard-dose and high-dose quadrivalent influenza vaccines (egg-based, cell culture\u2013based, adjuvanted) listing product names, presentations, age indications, hemagglutinin content per dose, route of administration, and thimerosal content. The table provides product specifications (dose volume, HA content, route, age indication) for various flu vaccines but contains no information on Flublok or statements about antigenic match with WHO- or FDA-selected strains, and therefore does not support the claim. Note: Image quality is sufficient; content is limited to vaccine formulations without strain matching information.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A tabular overview of standard-dose and high-dose quadrivalent influenza vaccines (egg-based, cell culture\u2013based, adjuvanted) listing product names, presentations, age indications, hemagglutinin content per dose, route of administration, and thimerosal content.",
+    "evidence_found": null,
+    "reasoning": "The table provides product specifications (dose volume, HA content, route, age indication) for various flu vaccines but contains no information on Flublok or statements about antigenic match with WHO- or FDA-selected strains, and therefore does not support the claim.",
+    "confidence_notes": "Image quality is sufficient; content is limited to vaccine formulations without strain matching information."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p3_det_2_001.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_001",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "Diagram of the baculovirus-insect cell expression system workflow for manufacturing a recombinant HA-based quadrivalent influenza vaccine (RIV4), showing steps: cell seeding, bioreactor expansion, harvest by disc-stack centrifugation, extraction, depth filtration (clarification), capture, purification (including DNA removal), and tangential flow filtration/formulation. Accompanied by a caption referencing adaptation from a 2011 journal article. The figure illustrates the manufacturing process for a recombinant influenza vaccine but provides no immunogenicity or cross-protection data, and thus does not support the claim that recombinant technology leads to broader immune responses or cross-protection in mismatch seasons. Note: No immune response or clinical efficacy data are shown; caption text is partially cut off and no mismatch season evidence is presented.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Diagram of the baculovirus-insect cell expression system workflow for manufacturing a recombinant HA-based quadrivalent influenza vaccine (RIV4), showing steps: cell seeding, bioreactor expansion, harvest by disc-stack centrifugation, extraction, depth filtration (clarification), capture, purification (including DNA removal), and tangential flow filtration/formulation. Accompanied by a caption referencing adaptation from a 2011 journal article.",
+    "evidence_found": null,
+    "reasoning": "The figure illustrates the manufacturing process for a recombinant influenza vaccine but provides no immunogenicity or cross-protection data, and thus does not support the claim that recombinant technology leads to broader immune responses or cross-protection in mismatch seasons.",
+    "confidence_notes": "No immune response or clinical efficacy data are shown; caption text is partially cut off and no mismatch season evidence is presented."
+  }
+}

@@ -67,7 +67,7 @@ The project is intentionally kept small and hackable; everything runs from the c
    - claim_002/evidence_report.json
 ```
 
-## 3. What happens under the hood?
+## 1. Quick-start
 
 Below is the *real* (slightly simplified) execution plan so you can map the commands you run to the modules that fire.
 
@@ -151,7 +151,7 @@ data/studies/Flu_Vaccine_Study/
 └── ...
 ```
 
-## 4. Project structure
+## 2. Installation details
 
 ```
 fact-check/
@@ -179,7 +179,7 @@ fact-check/
 
 ---
 
-## 5. Quick-start setup (5 minutes)
+## 3. Run commands
 
 Prerequisites: Python 3.11–3.12, Docker (optional), an OpenAI API key, Poppler (`brew install poppler` / `apt-get install poppler-utils`).
 
@@ -202,7 +202,7 @@ make up   # docker-compose up -d
 
 ---
 
-## 6. Run commands
+## 4. What happens under the hood?
 
 ```bash
 # Convert PDFs → structured JSON
@@ -216,7 +216,7 @@ For additional options run `python -m src.cli --help`.
 
 ---
 
-## 7. Installation details 
+## 5. Project structure 
 
 
 ```bash

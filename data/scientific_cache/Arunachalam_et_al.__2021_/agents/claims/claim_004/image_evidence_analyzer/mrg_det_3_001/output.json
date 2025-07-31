@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "Two schematic illustrations (panels a and b) comparing the structural features of native hemagglutinin (HA) extracted from influenza virus (HA1 and HA2 subunits with complex-type sialylated N-linked glycans and cleaved fusion peptide) versus recombinant HA (single HA0 precursor with paucimannose N-linked glycans and uncleaved fusion peptide) produced in insect cells. The figure only depicts structural differences in glycosylation and fusion-peptide cleavage between native and recombinant HA proteins and contains no data on vaccine dose comparisons or antibody responses; it does not support the claim. Note: Limited to structural illustration; no immunogenicity or dose\u2013response data are presented.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Two schematic illustrations (panels a and b) comparing the structural features of native hemagglutinin (HA) extracted from influenza virus (HA1 and HA2 subunits with complex-type sialylated N-linked glycans and cleaved fusion peptide) versus recombinant HA (single HA0 precursor with paucimannose N-linked glycans and uncleaved fusion peptide) produced in insect cells.",
+    "evidence_found": null,
+    "reasoning": "The figure only depicts structural differences in glycosylation and fusion-peptide cleavage between native and recombinant HA proteins and contains no data on vaccine dose comparisons or antibody responses; it does not support the claim.",
+    "confidence_notes": "Limited to structural illustration; no immunogenicity or dose\u2013response data are presented."
+  }
+}

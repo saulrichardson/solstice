@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "A partial prescribing information document for Flublok showing section headings (Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, Patient Counseling Information) and some adverse reaction incidence rates, but no detailed clinical study data. The image does not support the claim because it contains only section headings and adverse reaction summaries without any comparative data on antibody responses between higher-dose recombinant and egg-based standard-dose vaccines (does not support the claim). Note: Snippet is limited to table of contents and adverse reactions; clinical study details are not visible in the image.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A partial prescribing information document for Flublok showing section headings (Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, Patient Counseling Information) and some adverse reaction incidence rates, but no detailed clinical study data.",
+    "evidence_found": null,
+    "reasoning": "The image does not support the claim because it contains only section headings and adverse reaction summaries without any comparative data on antibody responses between higher-dose recombinant and egg-based standard-dose vaccines (does not support the claim).",
+    "confidence_notes": "Snippet is limited to table of contents and adverse reactions; clinical study details are not visible in the image."
+  }
+}

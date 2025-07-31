@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_017.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_017",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A partial table showing percentages of subjects reporting solicited adverse events (e.g., mild, moderate, severe responses) for different study groups in clinical trials, with accompanying footnotes defining grading and study details. The image presents safety/reactogenicity data and does not include any information on hemagglutinin antigen content or comparative dosing, so it does not support the claim. Note: Excerpt appears limited to adverse event reporting; antigen content information is not visible in this image.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A partial table showing percentages of subjects reporting solicited adverse events (e.g., mild, moderate, severe responses) for different study groups in clinical trials, with accompanying footnotes defining grading and study details.",
+    "evidence_found": null,
+    "reasoning": "The image presents safety/reactogenicity data and does not include any information on hemagglutinin antigen content or comparative dosing, so it does not support the claim.",
+    "confidence_notes": "Excerpt appears limited to adverse event reporting; antigen content information is not visible in this image."
+  }
+}

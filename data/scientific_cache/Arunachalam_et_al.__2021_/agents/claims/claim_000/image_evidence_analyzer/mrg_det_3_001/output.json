@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A two\u2010panel schematic comparing structural features of hemagglutinin (HA) from influenza virus versus recombinant HA (rHA) produced in insect cells. Panel a shows native HA as a heterodimer of HA1 (turquoise) and HA2 (orange) with complex\u2010type sialylated N\u2010linked glycans, cleaved fusion peptide (green), and inter\u2010disulfide bonds. Panel b shows rHA as a single precursor polypeptide (HA0) with amino acid sequence identical to wildtype HA, simpler paucimannose glycans, an uncleaved fusion\u2010peptide loop, and a disulfide bond. The figure describes structural and glycosylation differences between native HA and recombinant HA but does not address or demonstrate an identical antigenic match with WHO\u2010 or FDA\u2010selected strains, and thus does not support the claim. Note: The image focuses on molecular structure and glycosylation; it does not reference regulatory strain selection criteria or antigenic matching data.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two\u2010panel schematic comparing structural features of hemagglutinin (HA) from influenza virus versus recombinant HA (rHA) produced in insect cells. Panel a shows native HA as a heterodimer of HA1 (turquoise) and HA2 (orange) with complex\u2010type sialylated N\u2010linked glycans, cleaved fusion peptide (green), and inter\u2010disulfide bonds. Panel b shows rHA as a single precursor polypeptide (HA0) with amino acid sequence identical to wildtype HA, simpler paucimannose glycans, an uncleaved fusion\u2010peptide loop, and a disulfide bond.",
+    "evidence_found": null,
+    "reasoning": "The figure describes structural and glycosylation differences between native HA and recombinant HA but does not address or demonstrate an identical antigenic match with WHO\u2010 or FDA\u2010selected strains, and thus does not support the claim.",
+    "confidence_notes": "The image focuses on molecular structure and glycosylation; it does not reference regulatory strain selection criteria or antigenic matching data."
+  }
+}

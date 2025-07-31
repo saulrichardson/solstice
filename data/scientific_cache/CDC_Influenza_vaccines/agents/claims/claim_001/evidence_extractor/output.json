@@ -1,0 +1,34 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": {
+    "pdf_name": "CDC_Influenza_vaccines",
+    "source_pdf": "data/clinical_files/CDC Influenza vaccines.pdf",
+    "total_pages": 2,
+    "total_blocks": 23,
+    "total_characters": 2237
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Flublok Quadrivalent (RIV4) (Sanofi Pasteur) 0.5-mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM",
+      "relevance_explanation": "This quote shows that Flublok contains 45 \u00b5g of hemagglutinin (HA) per 0.5 mL dose, which is three times the 15 \u00b5g/0.5 mL dose found in standard-dose flu vaccines, directly supporting the first part of the claim."
+    },
+    {
+      "id": 2,
+      "quote": "Standard-dose, egg-based inactivated influenza vaccines contain 15 \u00b5g of HA per vaccine virus per 0.5 mL dose.",
+      "relevance_explanation": "This quote establishes the HA content of standard-dose flu vaccines, providing the necessary comparison to demonstrate that Flublok contains three times as much HA antigen."
+    },
+    {
+      "id": 3,
+      "quote": "In clinical studies, Flublok Quadrivalent demonstrated higher immunogenicity compared with standard-dose, egg-based influenza vaccines in adults aged \u226550 years.",
+      "relevance_explanation": "This quote directly links the higher HA antigen content of Flublok to greater immunogenicity compared to standard-dose flu vaccines, supporting the second part of the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

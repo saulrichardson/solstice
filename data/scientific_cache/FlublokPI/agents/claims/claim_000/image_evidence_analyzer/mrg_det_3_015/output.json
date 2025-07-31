@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": true,
+  "explanation": "A table listing influenza hemagglutinin (HA) antigens used in Flublok alongside the WHO- and FDA-recommended vaccine strains for a given influenza season, showing matching strain names for each HA component (A/H1N1, A/H3N2, B). Evidence: Flublok\u2019s recombinant HA antigens are labeled with the exact same WHO- and FDA-selected strain designations (e.g., A/California/07/2009, A/Hong Kong/4801/2014, B/Brisbane/60/2008) indicating an identical antigenic match. supports the claim because the table directly demonstrates that Flublok includes HA proteins matching the WHO- and FDA-recommended strains by identical strain name and subtype.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "A table listing influenza hemagglutinin (HA) antigens used in Flublok alongside the WHO- and FDA-recommended vaccine strains for a given influenza season, showing matching strain names for each HA component (A/H1N1, A/H3N2, B).",
+    "evidence_found": "Flublok\u2019s recombinant HA antigens are labeled with the exact same WHO- and FDA-selected strain designations (e.g., A/California/07/2009, A/Hong Kong/4801/2014, B/Brisbane/60/2008) indicating an identical antigenic match.",
+    "reasoning": "supports the claim because the table directly demonstrates that Flublok includes HA proteins matching the WHO- and FDA-recommended strains by identical strain name and subtype.",
+    "confidence_notes": null
+  }
+}

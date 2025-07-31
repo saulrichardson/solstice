@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A partial screenshot of the first page of Flublok full prescribing information, showing the dosage forms and strengths, contraindications, warnings and precautions, adverse reactions summary, and a table of contents listing sections 1 through 17. does not support the claim Note: This image only shows the table of contents and introductory labeling information; no data on antigenic match with WHO- or FDA-selected strains is visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A partial screenshot of the first page of Flublok full prescribing information, showing the dosage forms and strengths, contraindications, warnings and precautions, adverse reactions summary, and a table of contents listing sections 1 through 17.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim",
+    "confidence_notes": "This image only shows the table of contents and introductory labeling information; no data on antigenic match with WHO- or FDA-selected strains is visible."
+  }
+}

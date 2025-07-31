@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "supports_claim": false,
+  "explanation": "Two schematic diagrams comparing native viral haemagglutinin (HA) heterodimer (HA1 and HA2 with complex-type glycosylation and cleaved fusion peptide) versus recombinant HA0 from insect cells (single precursor with paucimannose glycans and uncleaved fusion peptide). The figure illustrates structural and glycosylation differences between native HA and recombinant HA but does not support the claim, as it provides no evidence of mutations developing during egg- or cell-based vaccine production or of any impact on vaccine effectiveness. Note: Diagram focuses on protein structure, glycan types, and fusion-peptide processing; lacks mutation or efficacy data.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Two schematic diagrams comparing native viral haemagglutinin (HA) heterodimer (HA1 and HA2 with complex-type glycosylation and cleaved fusion peptide) versus recombinant HA0 from insect cells (single precursor with paucimannose glycans and uncleaved fusion peptide).",
+    "evidence_found": null,
+    "reasoning": "The figure illustrates structural and glycosylation differences between native HA and recombinant HA but does not support the claim, as it provides no evidence of mutations developing during egg- or cell-based vaccine production or of any impact on vaccine effectiveness.",
+    "confidence_notes": "Diagram focuses on protein structure, glycan types, and fusion-peptide processing; lacks mutation or efficacy data."
+  }
+}

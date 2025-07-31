@@ -1,0 +1,26 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": "CDC_Influenza_vaccines",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": false,
+    "additional_count": 0
+  },
+  "completeness_stats": {
+    "existing_evidence": 1,
+    "new_evidence_found": 0,
+    "total_evidence": 1
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "Flublok Quadrivalent (RIV4) was evaluated in a pivotal clinical efficacy trial against a U.S.-licensed standard-dose, egg-based quadrivalent inactivated influenza vaccine (IIV4; Fluarix Quadrivalent, GSK) in adults aged \u226550 years.",
+      "relevance_explanation": "This quote directly states that Flublok Quadrivalent was evaluated in a pivotal trial against Fluarix Quadrivalent, which is a standard-dose quadrivalent influenza vaccine, thus supporting the claim."
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

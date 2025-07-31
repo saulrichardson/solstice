@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A two-panel schematic comparing the structural features of native influenza HA (panel a) and recombinant HA produced in insect cells (panel b). Panel a shows the viral HA heterodimer (HA1 and HA2) with complex, sialylated N-linked glycans and cleaved fusion peptide. Panel b shows the recombinant HA0 precursor monomer with uncleaved fusion-peptide loop and simpler, paucimannosidic N-linked glycans exposing unique epitopes. The figure only illustrates structural and glycosylation differences between native and recombinant HA proteins; it provides no experimental or immunogenicity data demonstrating a broader immune response or cross-protection. Therefore, it does not support the claim. Note: Limited to structural schematics; no immunological data are presented.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-panel schematic comparing the structural features of native influenza HA (panel a) and recombinant HA produced in insect cells (panel b). Panel a shows the viral HA heterodimer (HA1 and HA2) with complex, sialylated N-linked glycans and cleaved fusion peptide. Panel b shows the recombinant HA0 precursor monomer with uncleaved fusion-peptide loop and simpler, paucimannosidic N-linked glycans exposing unique epitopes.",
+    "evidence_found": null,
+    "reasoning": "The figure only illustrates structural and glycosylation differences between native and recombinant HA proteins; it provides no experimental or immunogenicity data demonstrating a broader immune response or cross-protection. Therefore, it does not support the claim.",
+    "confidence_notes": "Limited to structural schematics; no immunological data are presented."
+  }
+}

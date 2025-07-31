@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p3_det_2_001.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_001",
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "supports_claim": false,
+  "explanation": "A schematic workflow illustrating the baculovirus\u2013insect cell expression system for manufacturing a recombinant influenza vaccine (RIV4). It shows steps from cloning of the HA gene into a baculovirus expression vector, infection of insect cells in a bioreactor, harvest, disc-stack centrifugation, extraction, depth filtration for clarification, capture, purification with DNA removal, and tangential flow filtration/formulation. The figure is a process diagram of a baculovirus\u2013insect cell expression system and contains no information about the occurrence of mutations during production or their impact on vaccine effectiveness, and thus does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A schematic workflow illustrating the baculovirus\u2013insect cell expression system for manufacturing a recombinant influenza vaccine (RIV4). It shows steps from cloning of the HA gene into a baculovirus expression vector, infection of insect cells in a bioreactor, harvest, disc-stack centrifugation, extraction, depth filtration for clarification, capture, purification with DNA removal, and tangential flow filtration/formulation.",
+    "evidence_found": null,
+    "reasoning": "The figure is a process diagram of a baculovirus\u2013insect cell expression system and contains no information about the occurrence of mutations during production or their impact on vaccine effectiveness, and thus does not support the claim.",
+    "confidence_notes": null
+  }
+}

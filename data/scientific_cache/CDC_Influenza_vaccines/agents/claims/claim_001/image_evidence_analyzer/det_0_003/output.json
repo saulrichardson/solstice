@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_003.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p1_det_0_003.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_003",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A tabular list of seasonal influenza vaccines including standard-dose egg-based quadrivalent vaccines (e.g., Fluzone Quadrivalent, Fluarix Quadrivalent, Flulaval Quadrivalent), a cell culture\u2013based vaccine (Flucelvax Quadrivalent), and a high-dose egg-based vaccine (Fluzone High-Dose Quadrivalent). Columns include presentation volume, age indication, hemagglutinin (HA) antigen content per vaccine virus per dose (typically 15 \u00b5g/0.5 mL for standard-dose, 60 \u00b5g/0.7 mL for high-dose), route, and thimerosal content. The visible table does not include Flublok or any vaccine with 45 \u00b5g HA antigen per strain, so this evidence does not support the claim that Flublok contains three times the HA antigen of standard-dose vaccines. Note: The image is cut off before the recombinant vaccine section; data for Flublok may lie outside the visible portion.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A tabular list of seasonal influenza vaccines including standard-dose egg-based quadrivalent vaccines (e.g., Fluzone Quadrivalent, Fluarix Quadrivalent, Flulaval Quadrivalent), a cell culture\u2013based vaccine (Flucelvax Quadrivalent), and a high-dose egg-based vaccine (Fluzone High-Dose Quadrivalent). Columns include presentation volume, age indication, hemagglutinin (HA) antigen content per vaccine virus per dose (typically 15 \u00b5g/0.5 mL for standard-dose, 60 \u00b5g/0.7 mL for high-dose), route, and thimerosal content.",
+    "evidence_found": null,
+    "reasoning": "The visible table does not include Flublok or any vaccine with 45 \u00b5g HA antigen per strain, so this evidence does not support the claim that Flublok contains three times the HA antigen of standard-dose vaccines.",
+    "confidence_notes": "The image is cut off before the recombinant vaccine section; data for Flublok may lie outside the visible portion."
+  }
+}

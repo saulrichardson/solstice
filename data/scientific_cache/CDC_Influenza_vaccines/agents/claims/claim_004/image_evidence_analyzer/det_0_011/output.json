@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_011.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p1_det_0_011.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_011",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "A slide listing key attributes of a recombinant flu vaccine (recombinant HA produced in insect cell culture, 45 \u00b5g HA per strain per 0.5 mL dose, no eggs or adjuvants, licensed in 2016 for adults \u226518 years) does not support the claim because the image only provides vaccine product characteristics and contains no comparative immunogenicity or antibody response data Note: Image quality limits detail, but no antibody titer or comparative efficacy data are presented",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A slide listing key attributes of a recombinant flu vaccine (recombinant HA produced in insect cell culture, 45 \u00b5g HA per strain per 0.5 mL dose, no eggs or adjuvants, licensed in 2016 for adults \u226518 years)",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image only provides vaccine product characteristics and contains no comparative immunogenicity or antibody response data",
+    "confidence_notes": "Image quality limits detail, but no antibody titer or comparative efficacy data are presented"
+  }
+}

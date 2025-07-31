@@ -1,0 +1,52 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Arunachalam_et_al.__2021_",
+  "verification_stats": {
+    "total_extracted": 5,
+    "verified": 2,
+    "rejected": 3,
+    "verification_rate": 0.4
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 2 of the document: 'The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.' The factual content, including the product names, the recombinant nature, and the 45 \u00b5g HA per strain, is preserved and matches the quote to verify.. The quote directly states that RIV4 (Flublok) contains 45 \u00b5g of HA per strain, which is three times the standard 15 \u00b5g HA per strain in standard-dose flu vaccines. This substantiates the first part of the claim. However, the quote does not address the second part of the claim regarding greater immunogenicity versus standard-dose flu vaccines. Therefore, the quote fully supports the first part of the claim (antigen content) but does not, by itself, support the immunogenicity comparison. Since the task is to verify if the quote supports the claim, and the claim is twofold, the quote supports the antigen content aspect explicitly and factually.",
+      "presence_explanation": "The quote appears on page 2 of the document: 'The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.' The factual content, including the product names, the recombinant nature, and the 45 \u00b5g HA per strain, is preserved and matches the quote to verify.",
+      "support_explanation": "The quote directly states that RIV4 (Flublok) contains 45 \u00b5g of HA per strain, which is three times the standard 15 \u00b5g HA per strain in standard-dose flu vaccines. This substantiates the first part of the claim. However, the quote does not address the second part of the claim regarding greater immunogenicity versus standard-dose flu vaccines. Therefore, the quote fully supports the first part of the claim (antigen content) but does not, by itself, support the immunogenicity comparison. Since the task is to verify if the quote supports the claim, and the claim is twofold, the quote supports the antigen content aspect explicitly and factually.",
+      "original_relevance": "This quote explicitly states that Flublok (RIV4) contains 45 \u00b5g of HA per strain, which is three times the standard 15 \u00b5g HA per strain found in standard-dose flu vaccines, directly supporting the first part of the claim."
+    },
+    {
+      "id": 2,
+      "quote": "Higher magnitudes of haemagglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flucelvax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60).",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 5 of the document, with only minor differences in formatting and punctuation. The document states: 'Higher magnitudes of haem agglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flu cel vax Tetra, Seq i rus, and Flu zone quad rival ent SD, San of i Pasteur 60).' This matches the quoted content in meaning and technical detail.. The quote directly supports the second part of the claim, stating that RIV4 (Flublok) elicits higher magnitudes of hemagglutination inhibitory antibody responses (a measure of immunogenicity) compared to standard-dose flu vaccines derived from eggs or mammalian cells. This is explicit evidence of greater immunogenicity. However, the quote does not address the first part of the claim regarding the 3x HA antigen content; it only addresses immunogenicity. Therefore, it supports the claim as far as immunogenicity is concerned, but not the antigen content.",
+      "presence_explanation": "The quote appears on page 5 of the document, with only minor differences in formatting and punctuation. The document states: 'Higher magnitudes of haem agglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flu cel vax Tetra, Seq i rus, and Flu zone quad rival ent SD, San of i Pasteur 60).' This matches the quoted content in meaning and technical detail.",
+      "support_explanation": "The quote directly supports the second part of the claim, stating that RIV4 (Flublok) elicits higher magnitudes of hemagglutination inhibitory antibody responses (a measure of immunogenicity) compared to standard-dose flu vaccines derived from eggs or mammalian cells. This is explicit evidence of greater immunogenicity. However, the quote does not address the first part of the claim regarding the 3x HA antigen content; it only addresses immunogenicity. Therefore, it supports the claim as far as immunogenicity is concerned, but not the antigen content.",
+      "original_relevance": "This quote provides direct evidence that RIV4 (Flublok) elicits a greater immunogenic response compared to standard-dose flu vaccines, supporting the second part of the claim regarding greater immunogenicity."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": 3,
+      "quote": "Recently Richards et al.65 examined CD4 T-cell and antibody responses in healthy adults who received egg derived split vaccine, cell derived split vaccine or RIV4 for three successive influenza seasons (2015-2016, 2016-2017, and 2017-2018 65. RIV4 elicited the most robust responses, with significantly higher T-cell and antibody levels than the other two vaccines. Authors postulated that simpler glycosylation of rHA and absence of other influenza viral proteins in RIV4 contributed to the observed robust immune response for RIV4 and emphasised the relevance of these features in determining vaccine efficacy and long term immunity 65.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote describes a study showing that RIV4 (Flublok) produced significantly higher immune responses than standard-dose vaccines, directly supporting the claim that higher HA content is linked to greater immunogenicity."
+    },
+    {
+      "id": "comp_1",
+      "quote": "A plant derived recombinant quadrivalent VLP (QVLP) at 30 \u00b5g dose per strain was found to be non inferior in terms of vaccine efficacy against respiratory illness and influenza like illness to a quadrivalent inactivated influenza vaccine (QIV; Fluarix Quadrivalent, GlaxoSmithKline) given at 15 \u00b5g dose strain in adults aged 18 to 64 years 37.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides a direct comparison of antigen content per strain between a recombinant vaccine (30 \u00b5g) and a standard-dose inactivated vaccine (15 \u00b5g), supporting the claim that recombinant vaccines can contain higher HA antigen content, which is relevant to Flublok's 3x HA content."
+    },
+    {
+      "id": "comp_2",
+      "quote": "Insect cell derived rHA (RIV4) has been studied extensively by various groups in both pre clinical models and humans. The rHA contained in RIV4 differs from that expressed in other systems in terms of specific structural features, the nature of the source material and the manufacturing process, which have an impact on certain aspects of vaccine safety and efficacy (Fig. 2). Based on these unique features RIV4 received 'product exclusivity' protection.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote highlights that RIV4 (Flublok) is distinct from other vaccines due to its unique features, which include higher HA content and manufacturing differences that impact efficacy, supporting the claim of greater immunogenicity."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

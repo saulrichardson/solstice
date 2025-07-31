@@ -1,0 +1,56 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "FlublokPI",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 2
+  },
+  "completeness_stats": {
+    "existing_evidence": 3,
+    "new_evidence_found": 2,
+    "total_evidence": 5
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains... Flublok contains no egg proteins, antibiotics, or preservatives.",
+      "relevance_explanation": "This quote establishes that Flublok is a higher-dose recombinant flu vaccine (135 mcg total HA per dose) and is not egg-based, directly supporting the claim's comparison."
+    },
+    {
+      "id": 2,
+      "quote": "5. Treanor JJ, Schiff GM, Hayden FG, et al. Safety and immunogenicity of a baculovirus-expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582.",
+      "relevance_explanation": "This reference is cited in the context of clinical studies comparing the immunogenicity (antibody response) of recombinant (higher-dose) vaccines to standard egg-based vaccines, supporting the claim that such studies exist and are relevant."
+    },
+    {
+      "id": 3,
+      "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine 2009 Vol. 28, pp. 379-385.",
+      "relevance_explanation": "This reference is cited as a comparative study of the immunogenicity (antibody response) between recombinant (higher-dose) and standard egg-based vaccines in older adults, directly supporting the claim."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Data from a randomized, controlled trial demonstrated that children 6 months to less than 3 years of age had diminished hemagglutinin inhibition (HI) responses to Flublok compared to a U.S.-licensed influenza vaccine approved for use in this population, strongly suggesting that Flublok would not be effective in children younger than 3 years of age (6).",
+      "relevance_explanation": "This quote demonstrates that the antibody response (measured by HI titers) to Flublok can be directly compared to that of a standard egg-based vaccine, supporting the use of immunogenicity as a measure of vaccine response. While it notes diminished response in a specific population, it affirms that antibody response is a key endpoint for comparison, which is relevant to the claim about robust antibody responses in other age groups.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination inhibition (HI) antibody to each virus strain.",
+      "relevance_explanation": "This quote explicitly states that Flublok induces a humoral immune response, measured by HI antibody titers, which is the standard for assessing antibody response. This supports the claim that Flublok is designed to induce a robust antibody response, which can be compared to standard-dose egg-based vaccines.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

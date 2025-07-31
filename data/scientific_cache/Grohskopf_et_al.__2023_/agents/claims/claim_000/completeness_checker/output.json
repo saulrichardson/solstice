@@ -1,0 +1,56 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": "Grohskopf_et_al.__2023_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 1
+  },
+  "completeness_stats": {
+    "existing_evidence": 5,
+    "new_evidence_found": 1,
+    "total_evidence": 6
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "All influenza vaccines licensed in the United States will contain components derived from influenza viruses antigenically similar to those recommended by FDA (https www fda gov advisory committees advisory committee calendar vaccines advisory-committees/advisory-committee-calendar/vaccines-and-related-biological-products-advisory-committee-march-3-2022-meeting-announcement). All influenza vaccines expected to be available in the United States for the 2022-23 season will be quadrivalent vaccines.",
+      "relevance_explanation": "This quote states that all US-licensed influenza vaccines, including Flublok, will contain components derived from viruses antigenically similar to those recommended by the FDA, which bases its recommendations on WHO guidance. This supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains."
+    },
+    {
+      "id": 2,
+      "quote": "For the 2022-23 season, U.S. cell culture based inactivated (ccIIV4) and recombinant (RIV4) influenza vaccines will contain HA derived from \u2022 an influenza A/Wisconsin/588/2019 (H1N1) pdm09-like virus, \u2022 an influenza A/Darwin/9/2021 (H3N2)-like virus, \u2022 an influenza B/Austria/1359417/2021 (Victoria lineage)-like virus, and \u2022 an influenza B/Phuket/3073/2013 (Yamagata lineage)-like virus.",
+      "relevance_explanation": "This quote specifies that recombinant vaccines (RIV4, i.e., Flublok) will contain hemagglutinin (HA) antigens derived from the exact strains selected for the season, matching the WHO and FDA recommendations. This directly supports the claim of identical antigenic match."
+    },
+    {
+      "id": 3,
+      "quote": "Quadivalent Recombinant Influenza Vaccine (RIV4) Available Vaccine. One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
+      "relevance_explanation": "This quote identifies Flublok as the quadrivalent recombinant influenza vaccine (RIV4) and confirms that it contains HA antigens derived from the selected vaccine viruses, supporting the claim that it matches the WHO- and FDA-selected strains."
+    },
+    {
+      "id": 4,
+      "quote": "Recommendations for the composition of Northern Hemisphere influenza vaccines are made by the World Health Organization (WHO), which organizes a consultation, usually in February of each year. Surveillance data are reviewed, and candidate vaccine viruses are discussed. Information about the WHO meeting on February 25, 2022, for selection of the 2022-23 Northern Hemisphere vaccine viruses is available at https://www.who.int/news/item/25-02-2022recommendations-announced-for-influenza-vaccinecomposition-for-the-2022-2023-northern-hemisphereinfluenza-season. Subsequently FDA, which has regulatory authority for vaccines in the United States, makes the final decision regarding vaccine virus composition for U.S.-licensed vaccines.",
+      "relevance_explanation": "This quote explains the process by which the WHO and FDA select the strains for influenza vaccines, establishing that the antigenic composition of all US-licensed vaccines, including Flublok, is determined by these authorities, supporting the claim."
+    },
+    {
+      "id": 5,
+      "quote": "All seasonal influenza vaccines expected to be available in the United States for the 2022-23 season are quadrivalent, containing hemagglutinin (HA) derived from one influenza A (H1N1) pdm09 virus, one influenza A (H3N2) virus, one influenza B/Victoria lineage virus, and one influenza B/Yamagata lineage virus. Inactivated influenza vaccines (IIV4s), recombinant influenza vaccine (RIV4), and live attenuated influenza vaccine (LAIV4) are expected to be available.",
+      "relevance_explanation": "This quote confirms that all available vaccines, including Flublok (RIV4), will contain HA antigens from the same four strains selected for the season, directly supporting the claim of identical antigenic match."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Quad rival ent Recombinant Influenza Vaccine (RIV4) Available Vaccine. One recombinant influenza vaccine, Flublok Quad rival ent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
+      "relevance_explanation": "This quote specifies that Flublok (RIV4) contains hemagglutinin (HA) derived from each vaccine virus, using genetic sequences from cell-derived influenza viruses, which are selected to match the WHO- and FDA-recommended strains. This supports the claim that Flublok ensures an identical antigenic match with the selected flu strains.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

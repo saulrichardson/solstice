@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p3_det_2_001.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_001",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": false,
+  "explanation": "A flowchart depicting the baculovirus\u2013insect cell expression system for manufacturing a recombinant influenza vaccine (RIV4). It shows genetic cloning of the HA gene into a baculovirus vector, infection of insect cell bioreactor cultures, harvest by centrifugation, extraction, depth filtration, chromatographic capture and purification steps, DNA removal, and final formulation via tangential flow filtration. The figure illustrates only the production process of a recombinant influenza vaccine and contains no data on antibody responses or comparative immunogenicity, and therefore does not support the claim Note: Image quality is sufficient to identify process steps, but no immunogenicity or clinical data are presented",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart depicting the baculovirus\u2013insect cell expression system for manufacturing a recombinant influenza vaccine (RIV4). It shows genetic cloning of the HA gene into a baculovirus vector, infection of insect cell bioreactor cultures, harvest by centrifugation, extraction, depth filtration, chromatographic capture and purification steps, DNA removal, and final formulation via tangential flow filtration.",
+    "evidence_found": null,
+    "reasoning": "The figure illustrates only the production process of a recombinant influenza vaccine and contains no data on antibody responses or comparative immunogenicity, and therefore does not support the claim",
+    "confidence_notes": "Image quality is sufficient to identify process steps, but no immunogenicity or clinical data are presented"
+  }
+}

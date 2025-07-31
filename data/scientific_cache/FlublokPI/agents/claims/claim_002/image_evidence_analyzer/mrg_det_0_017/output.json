@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "supports_claim": false,
+  "explanation": "The image shows part of the full prescribing information for Flublok, including a table of contents listing sections such as indications and usage, dosage and administration, dosage forms and strengths, contraindications, warnings and precautions, adverse reactions, use in specific populations, description, clinical pharmacology, nonclinical toxicology, clinical studies, references, how supplied/storage and handling, and patient counseling information. does not support the claim because the displayed content only lists section headings and does not provide any information about mutations during production of cell- or egg-based vaccines or their effects on effectiveness. Note: The image only shows the table of contents and part of the prescribing information; details on vaccine production or mutations are not visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "The image shows part of the full prescribing information for Flublok, including a table of contents listing sections such as indications and usage, dosage and administration, dosage forms and strengths, contraindications, warnings and precautions, adverse reactions, use in specific populations, description, clinical pharmacology, nonclinical toxicology, clinical studies, references, how supplied/storage and handling, and patient counseling information.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the displayed content only lists section headings and does not provide any information about mutations during production of cell- or egg-based vaccines or their effects on effectiveness.",
+    "confidence_notes": "The image only shows the table of contents and part of the prescribing information; details on vaccine production or mutations are not visible."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p3_det_2_001.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_001",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A schematic process flow diagram showing the baculovirus\u2013insect cell expression system used to manufacture recombinant hemagglutinin (HA) vaccine RIV4. Steps illustrated include cell seeding and expansion in a bioreactor, virus infection, harvest by disc-stack centrifugation, extraction, depth filtration for clarification, chromatographic capture and purification (including DNA removal), tangential flow filtration (TFF), and final formulation. The image depicts the upstream and downstream manufacturing steps for recombinant HA production and does not present any information about antigenic matching to WHO- or FDA-selected influenza strains, and therefore does not support the claim. Note: None",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A schematic process flow diagram showing the baculovirus\u2013insect cell expression system used to manufacture recombinant hemagglutinin (HA) vaccine RIV4. Steps illustrated include cell seeding and expansion in a bioreactor, virus infection, harvest by disc-stack centrifugation, extraction, depth filtration for clarification, chromatographic capture and purification (including DNA removal), tangential flow filtration (TFF), and final formulation.",
+    "evidence_found": null,
+    "reasoning": "The image depicts the upstream and downstream manufacturing steps for recombinant HA production and does not present any information about antigenic matching to WHO- or FDA-selected influenza strains, and therefore does not support the claim.",
+    "confidence_notes": "None"
+  }
+}

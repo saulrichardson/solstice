@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A two-panel schematic comparing structural features of native influenza hemagglutinin (HA) and recombinant HA (rHA) produced in insect cells. Panel a shows native HA as a heterodimer of HA1 and HA2 with complex sialylated N-linked glycans and a cleaved fusion peptide. Panel b shows rHA (HA0) as a single precursor polypeptide with unsialylated paucimannose glycans and an uncleaved fusion-peptide loop. does not support the claim: the figure illustrates structural and glycosylation differences between native and recombinant HA but provides no information on antigen content or the 3x HA dosing of Flublok nor any immunogenicity data. Note: No dosage or immunogenicity information is present; figure quality and labeling are clear.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-panel schematic comparing structural features of native influenza hemagglutinin (HA) and recombinant HA (rHA) produced in insect cells. Panel a shows native HA as a heterodimer of HA1 and HA2 with complex sialylated N-linked glycans and a cleaved fusion peptide. Panel b shows rHA (HA0) as a single precursor polypeptide with unsialylated paucimannose glycans and an uncleaved fusion-peptide loop.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim: the figure illustrates structural and glycosylation differences between native and recombinant HA but provides no information on antigen content or the 3x HA dosing of Flublok nor any immunogenicity data.",
+    "confidence_notes": "No dosage or immunogenicity information is present; figure quality and labeling are clear."
+  }
+}

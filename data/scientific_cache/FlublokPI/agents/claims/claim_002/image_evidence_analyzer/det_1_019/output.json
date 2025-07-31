@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_019.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_019.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_019",
+  "claim_id": "claim_002",
+  "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+  "supports_claim": false,
+  "explanation": "A table showing percentages of subjects reporting solicited adverse responses (any, moderate, severe) for different vaccine studies, with footnotes describing study populations and registration details. The table presents safety/adverse event data and does not address vaccine production methods or mutation potential, so it does not support the claim. Note: Table is clear but limited to adverse event rates; no information on cell- or egg-based production or mutation effects.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing percentages of subjects reporting solicited adverse responses (any, moderate, severe) for different vaccine studies, with footnotes describing study populations and registration details.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety/adverse event data and does not address vaccine production methods or mutation potential, so it does not support the claim.",
+    "confidence_notes": "Table is clear but limited to adverse event rates; no information on cell- or egg-based production or mutation effects."
+  }
+}

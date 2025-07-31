@@ -1,0 +1,34 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": {
+    "pdf_name": "FlublokPI",
+    "source_pdf": "data/clinical_files/FlublokPI.pdf",
+    "total_pages": 5,
+    "total_blocks": 112,
+    "total_characters": 26849
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains... Flublok contains no egg proteins, antibiotics, or preservatives.",
+      "relevance_explanation": "This quote establishes that Flublok is a higher-dose recombinant flu vaccine (135 mcg total HA per dose) and is not egg-based, directly supporting the claim's comparison."
+    },
+    {
+      "id": 2,
+      "quote": "5. Treanor JJ, Schiff GM, Hayden FG, et al. Safety and immunogenicity of a baculovirus-expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582.",
+      "relevance_explanation": "This reference is cited in the context of clinical studies comparing the immunogenicity (antibody response) of recombinant (higher-dose) vaccines to standard egg-based vaccines, supporting the claim that such studies exist and are relevant."
+    },
+    {
+      "id": 3,
+      "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine 2009 Vol. 28, pp. 379-385.",
+      "relevance_explanation": "This reference is cited as a comparative study of the immunogenicity (antibody response) between recombinant (higher-dose) and standard egg-based vaccines in older adults, directly supporting the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

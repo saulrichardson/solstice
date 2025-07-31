@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "supports_claim": false,
+  "explanation": "A screenshot of the first page of Flublok quadrivalent full prescribing information showing the table of contents (sections 1\u201317) and part of section 6 (Adverse Reactions) and section 5 (Warnings and Precautions). No clinical study tables or comparator vaccine names are visible. The image does not support the claim because it only shows the table of contents and adverse reaction data; there is no mention of Fluarix or any comparator vaccine in a pivotal trial. Note: Limited to visible content; no clinical study section details or comparator vaccine names are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A screenshot of the first page of Flublok quadrivalent full prescribing information showing the table of contents (sections 1\u201317) and part of section 6 (Adverse Reactions) and section 5 (Warnings and Precautions). No clinical study tables or comparator vaccine names are visible.",
+    "evidence_found": null,
+    "reasoning": "The image does not support the claim because it only shows the table of contents and adverse reaction data; there is no mention of Fluarix or any comparator vaccine in a pivotal trial.",
+    "confidence_notes": "Limited to visible content; no clinical study section details or comparator vaccine names are shown."
+  }
+}

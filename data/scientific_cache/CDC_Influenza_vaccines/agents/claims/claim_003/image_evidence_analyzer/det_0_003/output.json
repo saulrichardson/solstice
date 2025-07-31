@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_003.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p1_det_0_003.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_003",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table listing licensed influenza vaccine products by trade name and manufacturer, presentation (e.g., 0.5-mL prefilled syringe, multi-dose vial), age indications, antigen content per dose (\u00b5g of HA per virus strain), administration route (intramuscular), and thimerosal content if present. Vaccines include standard-dose egg-based (e.g., Fluarix, Fluzone), cell culture-based (Flucelvax), high-dose egg-based (Fluzone High-Dose), and others. This table only provides product formulations and dosing information and does not present any data on immune response breadth or cross-protection in mismatch seasons; it does not support the claim. Note: Table is clear but contains no immunogenicity or efficacy data related to recombinant technology or cross-protection.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing licensed influenza vaccine products by trade name and manufacturer, presentation (e.g., 0.5-mL prefilled syringe, multi-dose vial), age indications, antigen content per dose (\u00b5g of HA per virus strain), administration route (intramuscular), and thimerosal content if present. Vaccines include standard-dose egg-based (e.g., Fluarix, Fluzone), cell culture-based (Flucelvax), high-dose egg-based (Fluzone High-Dose), and others.",
+    "evidence_found": null,
+    "reasoning": "This table only provides product formulations and dosing information and does not present any data on immune response breadth or cross-protection in mismatch seasons; it does not support the claim.",
+    "confidence_notes": "Table is clear but contains no immunogenicity or efficacy data related to recombinant technology or cross-protection."
+  }
+}
