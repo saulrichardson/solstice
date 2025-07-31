@@ -42,13 +42,13 @@ The ingestion pipeline transforms unstructured PDFs into queryable structured do
 The fact-checking pipeline processes text evidence through three sequential stages (Extract → Completeness → Verify) followed by parallel image analysis:
 
 \begin{itemize}[leftmargin=*,topsep=0pt]
-\item \textbf{Evidence Extraction Step}: Searches document text for claim-relevant quotes using gpt-4.1 with temperature=0. Preserves exact quotes and returns structured evidence with relevance explanations.
+\item \textbf{Evidence Extraction Step}: Searches document text for claim-relevant quotes using gpt-4.1. Preserves exact quotes and returns structured evidence with relevance explanations.
 
 \item \textbf{Completeness Checker}: Reviews the extracted evidence and searches the document again for any additional quotes that weren't initially found, ensuring comprehensive coverage.
 
 \item \textbf{Evidence Verification Step (V2)}: Validates that all extracted quotes (from both extraction and completeness steps) exist in the source document. Uses semantic matching and filters out tangentially related content, achieving high verification rates.
 
-\item \textbf{Image Evidence Analyzer}: Analyzes figures and tables using vision models to identify supporting visual evidence. Processes images in parallel with semaphore control (max 5 concurrent) and provides detailed explanations.
+\item \textbf{Image Evidence Analyzer}: Analyzes figures and tables using vision models to identify supporting visual evidence and provide detailed explanations.
 \end{itemize}
 
 After all LLM processing completes, an Evidence Presenter step consolidates all verified text and image evidence into structured JSON reports with coverage assessment.
@@ -317,7 +317,7 @@ For newcomers, these are useful places to explore:
 The system uses different models for text and image analysis, reflecting a key architectural decision to process these modalities separately:
 
 \subsubsection{Text Processing with gpt-4.1}
-All text-based evidence extraction and verification uses gpt-4.1 with temperature=0. This model was chosen specifically for its needle-in-haystack capabilities:
+All text-based evidence extraction and verification uses gpt-4.1, chosen specifically for its needle-in-haystack capabilities:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item \textbf{Evidence extraction}: Searches through hundreds of pages to find exact quotes matching claims
 \item \textbf{High-precision retrieval}: Locates specific sentences in dense medical literature with minimal false positives
@@ -340,7 +340,7 @@ Processing text and images separately leverages the distinct strengths of differ
 \begin{enumerate}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item \textbf{Model specialization}: gpt-4.1 excels at needle-in-haystack tasks—finding specific quotes in massive documents—while reasoning models like o4-mini are better at interpreting visual information and drawing conclusions
 \item \textbf{Task optimization}: Text evidence extraction is fundamentally a search and retrieval problem where precision matters most. Image analysis requires reasoning about relationships, trends, and visual patterns
-\item \textbf{Prompt engineering}: Extraction tasks benefit from zero-temperature, deterministic responses. Visual reasoning tasks need more flexible interpretation capabilities
+\item \textbf{Prompt engineering}: Extraction tasks benefit from deterministic responses while visual reasoning tasks need more flexible interpretation
 \item \textbf{Performance characteristics}: gpt-4.1 can process enormous text contexts efficiently for quote extraction, while reasoning models handle the cognitive load of understanding charts, diagrams, and data visualizations
 \end{enumerate}
 
@@ -348,7 +348,7 @@ Processing text and images separately leverages the distinct strengths of differ
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item All LLM calls route through an HTTP gateway service for centralized request handling
 \item Images are stored as files (not base64) for easier inspection and debugging
-\item Parallel image processing is limited to 5 concurrent calls via semaphore
+\item Parallel image processing is limited to prevent overwhelming the API
 \item Both pipelines use structured JSON schemas for predictable output formats
 \end{itemize}
 
