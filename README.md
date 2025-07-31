@@ -86,37 +86,29 @@ make up
 
 #### 1. Ingest PDFs
 
-Place PDFs in `data/clinical_files/` then run:
+The repository includes sample PDFs. Process them:
 
 ```bash
-# Process all PDFs
 python -m src.cli ingest
-
-# Process specific PDF with options
-python -m src.cli ingest --pdf "FlublokPI.pdf" --force
 ```
+
+This processes all PDFs in `data/clinical_files/` including:
+- FlublokPI.pdf
+- CDC Influenza vaccines.pdf
+- Arunachalam et al. (2021).pdf
 
 #### 2. Run Fact-Check Study
 
-Create claims file `data/claims/example_claims.json`:
-```json
-{
-  "study_name": "Example Study",
-  "claims": [
-    {
-      "id": "claim_001",
-      "text": "Your claim text here"
-    }
-  ]
-}
-```
+The repository includes example claims. Run the default study:
 
-Run fact-check:
 ```bash
 python -m src.cli run-study
 ```
 
-Results appear in `data/studies/<study_name>/`
+This uses:
+- Claims from: `data/claims/flu_vaccine_claims.json`
+- Documents: All processed PDFs
+- Output: `data/studies/Flu_Vaccine_Claims_Verification/`
 
 ### Marketing Pipeline (Complex Layouts)
 
