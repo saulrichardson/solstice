@@ -8,7 +8,7 @@ help:
 	@echo "  make logs               Show gateway logs"
 	@echo "  make docker-status      Show Docker runtime info"
 	@echo "  make install            Install Python package for development"
-	@echo "  make install-detectron2 Install Detectron2 for layout detection (Python 3.11 required)"
+	@echo "  make install-detectron2 Install Detectron2 for layout detection (Python 3.11.9 required)"
 	@echo "  make verify             Verify installation and dependencies"
 	@echo "  make lint               Run linting"
 	@echo "  make format             Format code"
@@ -86,10 +86,8 @@ install:
 	@echo "Installing solstice package..."
 	@echo "Checking Python version..."
 	@PYTHON_VERSION=$$(python --version 2>&1 | awk '{print $$2}'); \
-	MAJOR=$$(echo $$PYTHON_VERSION | cut -d. -f1); \
-	MINOR=$$(echo $$PYTHON_VERSION | cut -d. -f2); \
-	if [ "$$MAJOR" -ne 3 ] || [ "$$MINOR" -lt 11 ] || [ "$$MINOR" -gt 12 ]; then \
-		echo "❌ Error: Python 3.11 or 3.12 required (found $$PYTHON_VERSION)"; \
+	if [ "$$PYTHON_VERSION" != "3.11.9" ]; then \
+		echo "❌ Error: Python 3.11.9 required (found $$PYTHON_VERSION)"; \
 		echo ""; \
 		echo "To fix this:"; \
 		echo "1. Install pyenv: https://github.com/pyenv/pyenv#installation"; \

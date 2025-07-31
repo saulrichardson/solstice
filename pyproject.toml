@@ -7,7 +7,7 @@ name = "solstice"
 version = "0.1.0"
 description = "Clinical document analysis and fact-checking system"
 readme = "README.md"
-requires-python = ">=3.11,<3.13"  # Detectron2 compatibility
+requires-python = "==3.11.9"  # Exact version for consistency
 dependencies = [
     "fastapi>=0.109.0",
     "uvicorn[standard]>=0.27.0",

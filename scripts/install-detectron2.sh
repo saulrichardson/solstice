@@ -7,15 +7,14 @@ echo "=== Detectron2 Installation Script ==="
 
 # Check Python version
 PYTHON_VERSION=$(python --version 2>&1 | awk '{print $2}')
-MAJOR=$(echo $PYTHON_VERSION | cut -d. -f1)
-MINOR=$(echo $PYTHON_VERSION | cut -d. -f2)
 
-if [ "$MAJOR" -ne 3 ] || [ "$MINOR" -lt 11 ] || [ "$MINOR" -gt 12 ]; then
-    echo "❌ Error: Python 3.11 or 3.12 required (found $PYTHON_VERSION)"
+if [ "$PYTHON_VERSION" != "3.11.9" ]; then
+    echo "❌ Error: Python 3.11.9 required (found $PYTHON_VERSION)"
+    echo "Please install Python 3.11.9 using pyenv"
     exit 1
 fi
 
-echo "✓ Python version $PYTHON_VERSION is compatible"
+echo "✓ Python version $PYTHON_VERSION is correct"
 
 # Ensure pip and build tools are up to date
 echo "Updating pip and build tools..."
