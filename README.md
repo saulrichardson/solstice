@@ -38,21 +38,7 @@ cp .env.example .env && echo "OPENAI_API_KEY=sk-..." >> .env
 make up   # docker-compose up -d
 ```
 
-Done! You can now ingest documents and run a fact-checking study:
-
-```bash
-# See all available commands
-python -m src.cli --help
-
-# Convert scientific PDFs → structured JSON
-python -m src.cli ingest
-
-# Process marketing materials (special layout handling)
-python -m src.cli ingest-marketing
-
-# Check all flu-vaccine claims
-python -m src.cli run-study
-```
+Done! You can now ingest documents and run a fact-checking study. See section 2 below for all available commands.
 
 ---
 
