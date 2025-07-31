@@ -10,7 +10,7 @@
 
 % Statistics removed - no longer auto-generated
 
-\title{\textbf{Solstice: Multi-Agent System for Medical Document Fact-Checking}}
+\title{\textbf{Solstice: LLM-Orchestrated System for Medical Document Fact-Checking}}
 \author{An AI-Native Approach to Evidence Extraction and Verification}
 \date{}
 
@@ -19,7 +19,7 @@
 
 \section{Introduction}
 
-Solstice is a sophisticated multi-agent system designed to automatically fact-check medical claims against scientific literature and clinical documents. By combining state-of-the-art layout detection, multimodal language models, and orchestrated agent pipelines, the system extracts and verifies evidence from complex medical PDFs containing text, tables, and figures.
+Solstice is a multi-step system that automatically fact-checks medical claims against scientific literature and clinical documents. It combines layout detection, multimodal language models, and an orchestrated chain of LLM calls to extract and verify evidence from PDFs that contain text, tables, and figures.
 
 The system is designed to handle real-world medical documentation at scale, processing complex clinical documents containing text, tables, and figures.
 
@@ -30,21 +30,21 @@ The system is designed to handle real-world medical documentation at scale, proc
 The ingestion pipeline transforms unstructured PDFs into queryable structured documents through multiple stages:
 
 \begin{enumerate}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item \textbf{Layout Detection}: Uses Detectron2 with PubLayNet-trained models (Faster R-CNN + ResNet-50-FPN). Strategic choice: pre-trained models over custom training due to PubLayNet's 360k+ annotated medical pages achieving 95\%+ mAP.
-\item \textbf{Box Consolidation}: Custom algorithm resolves overlapping detections through IoU-based merging (threshold: 0.7) and hierarchical nesting. Key insight: medical PDFs have systematic layout overlaps requiring domain-specific consolidation rules.
-\item \textbf{Text Extraction}: PyMuPDF for vector text extraction within bounding boxes, with fallback to Tesseract OCR for scanned pages. SymSpell correction handles common OCR artifacts (e.g., "rn" → "m").
-\item \textbf{Figure/Table Extraction}: Saves visual elements as PNG at 300 DPI. Strategic decision: store images separately for multimodal analysis rather than inline base64 encoding.
-\item \textbf{Reading Order}: Custom algorithm using column detection and vertical positioning. Critical for multi-column layouts common in medical journals.
+\item \textbf{Layout Detection}: Uses Detectron2 with PubLayNet-trained models (Faster R-CNN + ResNet-50-FPN). The pipeline relies on pre-trained weights rather than custom training because PubLayNet provides extensive annotated data.
+\item \textbf{Box Consolidation}: Resolves overlapping detections through IoU-based merging (threshold 0.7) and hierarchical nesting. Medical PDFs often contain overlapping layout elements, so the implementation includes domain-specific rules.
+\item \textbf{Text Extraction}: Uses PyMuPDF for vector text extraction within bounding boxes, and falls back to Tesseract OCR for scanned pages. SymSpell correction fixes common OCR artefacts (e.g., "rn" → "m").
+\item \textbf{Figure/Table Extraction}: Saves visual elements as PNG at 300 DPI. Images are stored separately for later multimodal analysis rather than embedded as base64.
+\item \textbf{Reading Order}: Computes reading order with column detection and vertical positioning; this is necessary for the multi-column layouts common in medical journals.
 \end{enumerate}
 
-\subsection{Multi-Agent Fact-Checking System}
+\subsection{LLM-Based Fact-Checking System}
 
-The fact-checking pipeline employs specialized agents orchestrated to work together:
+The fact-checking pipeline is composed of specialised LLM calls orchestrated to work together:
 
 \begin{itemize}[leftmargin=*,topsep=0pt]
-\item \textbf{Evidence Extraction Agent}: Searches document text for claim-relevant quotes using GPT-4 with temperature=0. Preserves exact quotes while correcting OCR errors and returns structured evidence with relevance explanations.
+\item \textbf{Evidence Extraction Step}: Searches document text for claim-relevant quotes using GPT-4 with temperature=0. Preserves exact quotes while correcting OCR errors and returns structured evidence with relevance explanations.
 
-\item \textbf{Evidence Verification Agent (V2)}: Validates that extracted quotes exist in the source document. Uses semantic matching to handle OCR variations and filters out tangentially related content, achieving high verification rates.
+\item \textbf{Evidence Verification Step (V2)}: Validates that extracted quotes exist in the source document. Uses semantic matching to handle OCR variations and filters out tangentially related content, achieving high verification rates.
 
 \item \textbf{Completeness Checker}: Takes the raw extracted evidence and searches for any additional quotes that weren't initially found. Uses the same extraction approach but explicitly excludes already-found quotes to expand coverage.
 
@@ -53,19 +53,19 @@ The fact-checking pipeline employs specialized agents orchestrated to work toget
 \item \textbf{Evidence Presenter}: Consolidates all verified text and image evidence into structured JSON and HTML reports. Assesses overall evidence coverage (complete/partial/none) and produces human-readable summaries.
 \end{itemize}
 
-\section{Critical Design Decisions}
+\section{Design Decisions}
 
-\subsection{Agent Communication Pattern}
+\subsection{Step Communication Pattern}
 Chose filesystem-based communication over message passing:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item Each agent reads inputs from disk and writes outputs to disk
-\item No shared memory or direct agent-to-agent communication
-\item Benefits: debuggability, resumability, testability in isolation
-\item Trade-off: Disk I/O overhead acceptable for our throughput requirements
+\item Each step reads inputs from disk and writes outputs to disk
+\item No shared memory or direct step-to-step communication
+\item Provides debuggability, resumability, and testability in isolation
+\item Introduces disk I/O overhead, which is acceptable at the current throughput requirements
 \end{itemize}
 
 \subsection{Prompt Strategy}
-Key decisions in prompt engineering:
+Prompt engineering decisions:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item \textbf{Structured Output}: Always request JSON with explicit schemas
 \item \textbf{Few-Shot Examples}: Avoided in favor of clear instructions (reduced token usage)
@@ -77,9 +77,9 @@ Key decisions in prompt engineering:
 Multi-level caching approach:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item \textbf{Document Cache}: Extracted content never re-processed
-\item \textbf{Agent Cache}: Each agent output stored by claim ID
-\item \textbf{No LLM Response Cache}: Deliberate choice to always get fresh responses
-\item Strategic insight: Caching at semantic boundaries, not API boundaries
+\item \textbf{Call Cache}: Each step output stored by claim ID
+\item \textbf{No LLM Response Cache}: The pipeline always fetches fresh responses
+\item Caching is applied at semantic boundaries rather than individual API calls
 \end{itemize}
 
 \section{Technical Implementation}
@@ -89,16 +89,15 @@ Multi-level caching approach:
 The system uses asynchronous Python with strategic architectural decisions:
 
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item \textbf{Hierarchical Orchestration}: Two-level design with StudyOrchestrator → ClaimOrchestrator → Agents. Enables both study-level and claim-level parallelism control.
+\item \textbf{Hierarchical Orchestration}: Two-level design with StudyOrchestrator → ClaimOrchestrator → processing steps. Enables both study-level and claim-level parallelism control.
 \item \textbf{Resource-Aware Parallelism}: Default 2 concurrent claims based on empirical testing showing memory usage of ~2GB per claim with GPT-4 context windows.
-\item \textbf{Filesystem-Based State}: All intermediate results persisted to disk, enabling resumability and debugging. Trade-off: disk I/O for reliability.
-\item \textbf{Agent Isolation}: Each agent runs independently with explicit input/output contracts via Pydantic models. Enables testing and development in isolation.
+\item \textbf{Filesystem-Based State}: All intermediate results are written to disk, which makes runs resumable and easier to debug at the cost of additional disk I/O.
+\item \textbf{Step Isolation}: Each processing step runs independently with explicit input/output contracts via Pydantic models. Enables testing and development in isolation.
 \end{itemize}
 
 \subsection{Where to Find the Data Artifacts}
 
-Solstice keeps \\textit{every} intermediate and final result on disk in human-readable form. This makes it easy to
-inspect the system, debug a stage, or build visualisations without rerunning heavy models.
+Solstice writes intermediate and final results to disk in human-readable form. This allows users to inspect the system, debug individual stages, or create visualisations without rerunning the full pipeline.
 
 \paragraph{1. Formatted Claims \\& Evidence}
 After you run a fact-checking study (\texttt{python -m src.cli run-study}) the full, merged JSON for each claim is
@@ -112,8 +111,8 @@ data/studies/<study_name>/
 The \texttt{evidence\_report.json} file is what drives the Streamlit demo and can be consumed directly by any UX
 layer.
 
-If you want the raw, per-agent outputs (e.g. to analyse the verifier’s chain-of-thought) look under the same
-\texttt{claim\_<id>/agent\_outputs/} folder where each agent writes an \texttt{output.json} plus helper metadata.
+If you want the raw, per-step outputs (e.g. to analyse the verifier’s chain-of-thought) look under the same
+\texttt{claim\_<id>/agent\_outputs/} folder where each processing step writes an \texttt{output.json} plus helper metadata.
 
 \paragraph{2. Marketing-Material Cache}
 PDFs passed through the dedicated marketing pipeline end up in:
@@ -125,11 +124,11 @@ data/marketing_cache/<pdf_name>/
 The structure mirrors \texttt{scientific\_cache} so the same downstream tools can ingest either kind of document.
 
 \paragraph{3. Quick Directory Cheatsheet}
-For newcomers, these are the high-leverage places to explore:
+For newcomers, these are useful places to explore:
 \begin{itemize}[leftmargin=*]
   \item \texttt{src/cli/} – entry-point scripts that orchestrate the pipelines.
   \item \texttt{src/injestion/shared/processing/} – layout detection, reading-order logic, text extractors.
-  \item \texttt{src/fact\_check/agents/} – implementation of the five specialised LLM agents.
+  \item \texttt{src/fact\_check/agents/} – implementation of the five specialised LLM calls.
   \item \texttt{data/scientific\_cache/} – processed scientific PDFs (inspect \texttt{content.json}).
   \item \texttt{data/marketing\_cache/} – processed marketing PDFs.
   \item \texttt{data/studies/} – end-to-end fact-checking results ready for consumption.
@@ -137,47 +136,47 @@ For newcomers, these are the high-leverage places to explore:
 
 \subsection{Model Integration}
 
-Strategic model selection based on empirical performance:
+Models were selected based on empirical performance:
 
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item \textbf{GPT-4 (Primary)}: Evidence extraction/verification with temperature=0 for consistency. Strategic choice: reliability over creativity for medical facts.
-\item \textbf{Vision Models}: GPT-4V for image analysis. Key decision: process images individually with focused prompts rather than batch processing.
-\item \textbf{Gateway Pattern}: All LLM calls through HTTP gateway service. Benefits: centralized rate limiting, cost tracking, and provider abstraction.
-\item \textbf{Prompt Engineering}: Structured output formats with explicit JSON schemas. Critical: removed token limits after discovering truncation issues.
+\item \textbf{GPT-4 (Primary)}: Evidence extraction and verification with temperature=0 to prioritise consistency over creativity.
+\item \textbf{Vision Models}: GPT-4V for image analysis. Images are processed individually with focused prompts rather than in batches.
+\item \textbf{Gateway Pattern}: All LLM calls go through an HTTP gateway service, which handles rate limiting, cost tracking, and provider abstraction.
+\item \textbf{Prompt Engineering}: Uses structured output formats with explicit JSON schemas. Token limits were removed after issues with truncation.
 \end{itemize}
 
 \subsection{Robust Error Handling}
 
-Multiple layers of reliability based on production experience:
+The implementation includes several measures to improve reliability:
 
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item \textbf{Defensive JSON Parsing}: Custom parser handles markdown code blocks, trailing commas, and incomplete responses. Learned from: 15\% of GPT-4 responses wrapped JSON in markdown.
-\item \textbf{Smart Retry Strategy}: Exponential backoff with error context injection. Key insight: including parsing errors in retry prompts improves success rate to 95\%+.
-\item \textbf{Pydantic Validation}: Type-safe data flow between agents. Strategic choice: fail fast with clear errors rather than propagate bad data.
-\item \textbf{Context Window Management}: Removed max\_tokens parameter after discovering 30\% of evidence was truncated. Trade-off: higher token cost for completeness.
+\item \textbf{Smart Retry Strategy}: Exponential backoff with error context injection. Including parsing errors in retry prompts increased the success rate to 95\%+.
+\item \textbf{Pydantic Validation}: Type-safe data flow between processing steps; the pipeline fails fast with clear errors rather than propagating invalid data.
+\item \textbf{Context Window Management}: The max\_tokens parameter was removed after 30\% of evidence was found to be truncated; this increases token cost but keeps responses complete.
 \end{itemize}
 
-\section{Key Technical Innovations}
+\section{Implementation Notes}
 
 \subsection{Multimodal Evidence Integration}
-Strategic approach to visual evidence: separate image extraction and analysis pipeline. Key decisions:
+Visual evidence is handled in a separate image extraction and analysis pipeline:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item Store images as files, not base64, enabling browser-based debugging
-\item Individual image analysis with focused prompts improves accuracy over batch processing
-\item Semaphore-limited parallel processing (max 5) prevents API rate limit issues
+\item Images are stored as files, not base64, which makes browser-based inspection easier
+\item Images are analysed individually with focused prompts rather than in batches
+\item Parallel processing is limited with a semaphore (max 5 concurrent calls) to avoid API rate limits
 \end{itemize}
 
 \subsection{Three-Stage Evidence Pipeline}
-Architectural choice: separate extraction, verification, and completeness into distinct agents:
+Extraction, verification, and completeness are run as distinct LLM-driven steps:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item \textbf{Stage 1}: Extract all potentially relevant quotes (high recall)
 \item \textbf{Stage 2}: Verify quotes exist and support claim (high precision)
 \item \textbf{Stage 3}: Find additional quotes not caught in initial extraction (expand coverage)
 \end{itemize}
-This separation enables independent optimization and testing of each stage.
+This separation allows the stages to be optimised and tested independently.
 
 \subsection{OCR-Resilient Text Matching}
-Custom fuzzy matching algorithm addresses medical PDF challenges:
+The pipeline includes a fuzzy matching algorithm to address common OCR issues:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item Character-level substitution rules ("0"/"O", "1"/"l", "rn"/"m")
 \item Whitespace normalization for column-spanning text
@@ -185,17 +184,17 @@ Custom fuzzy matching algorithm addresses medical PDF challenges:
 \end{itemize}
 
 \subsection{Filesystem-Centric Architecture}
-Deliberate choice of filesystem over database for intermediate storage:
+The pipeline stores intermediate data on the filesystem rather than in a database:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item Human-readable JSON enables debugging without tools
-\item Natural hierarchical organization (document/claim/agent)
-\item Zero infrastructure requirements
-\item Git-friendly for tracking changes
+\item Human-readable JSON can be inspected without extra tools
+\item Hierarchical directories (document/claim/step) reflect the processing flow
+\item No additional infrastructure is required
+\item Files can be version-controlled in Git
 \end{itemize}
 
 
 \section{Conclusion}
 
-Solstice demonstrates the power of combining modern AI capabilities—layout understanding, multimodal analysis, and orchestrated agents—to tackle the complex challenge of medical fact-checking. Processing multiple documents with numerous claims has validated the architecture's robustness and scalability for real-world medical documentation.
+Solstice combines layout understanding, multimodal analysis, and orchestrated LLM calls to perform medical fact-checking. Tests on multiple documents and claims indicate that the architecture can process real-world medical documentation at moderate scale.
 
 \end{document}

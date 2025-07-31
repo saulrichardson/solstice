@@ -155,7 +155,7 @@ orchestrator = ClaimOrchestrator(
     cache_dir=Path("data/scientific_cache")
 )
 
-results = orchestrator.process_claim()
+results = await orchestrator.process()
 
 # Access evidence
 for doc_result in results["document_results"]:
@@ -175,7 +175,7 @@ study = StudyOrchestrator(
     output_dir=Path("results/")
 )
 
-study.run()
+await study.run()
 # Generates comprehensive report with all claim-document pairs
 ```
 
@@ -192,17 +192,15 @@ study.run()
       "document": "FlublokPI",
       "supporting_evidence": [
         {
-          "text": "Exact quote from document",
-          "location": "Page 5, Section 2.1",
-          "confidence": "high"
+          "quote": "Exact quote from document",
+          "explanation": "This quote directly states that Flublok is FDA approved for adults 18 years and older"
         }
       ],
-      "contradicting_evidence": [],
-      "image_supporting_evidence": [
+      "image_evidence": [
         {
           "image_filename": "table_p1_abc123.png",
           "explanation": "Table shows age ranges including 18+",
-          "confidence": "high"
+          "supports_claim": true
         }
       ],
       "missing_evidence": {
@@ -215,21 +213,9 @@ study.run()
 
 ## Configuration
 
-### Environment Variables
+### Model Configuration
 
-```bash
-# Model selection
-FACT_CHECK_DEFAULT_MODEL=gpt-4.1
-FACT_CHECK_VISION_MODEL=o4-mini
-
-# Performance tuning
-FACT_CHECK_MAX_WORKERS=10
-FACT_CHECK_TIMEOUT=300
-
-# Debugging
-FACT_CHECK_LOG_LEVEL=INFO
-FACT_CHECK_SAVE_INTERMEDIATE=true
-```
+Models are configured in `config/agent_models.py`. To change models, edit the AGENT_MODELS dictionary in that file.
 
 ### Custom Agent Configuration
 
@@ -304,7 +290,7 @@ config = {
 ### Error Handling
 ```python
 try:
-    results = orchestrator.process_claim()
+    results = await orchestrator.process()
 except AgentError as e:
     logger.error(f"Agent failed: {e}")
     # Handle gracefully

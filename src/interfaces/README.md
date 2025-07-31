@@ -243,13 +243,19 @@ response = document.model_dump()
 
 ### Creating Documents
 ```python
-# Good: Use builder pattern for complex documents
-doc_builder = DocumentBuilder()
+# Good: Use Document model with validation
+blocks = []
 for page in pages:
     for region in page.regions:
-        block = create_block(region)
-        doc_builder.add_block(block)
-document = doc_builder.build()
+        block = Block(
+            id=f"block_{region.id}",
+            page_index=page.index,
+            role=region.type,
+            bbox=region.bbox,
+            text=region.text
+        )
+        blocks.append(block)
+document = Document(blocks=blocks, metadata={})
 
 # Bad: Manual construction without validation
 document = {"blocks": [...]}  # No type safety!

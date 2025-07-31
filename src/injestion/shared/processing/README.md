@@ -256,19 +256,6 @@ for block in document.blocks:
 
 ## Configuration
 
-### Environment Variables
-```bash
-# Layout detection
-DETECTRON2_CONFIG="PubLayNet/faster_rcnn"
-DETECTION_CONFIDENCE=0.8
-DETECTION_NMS_THRESHOLD=0.5
-
-# Text processing
-TEXT_FIX_SPACING=true
-TEXT_PRESERVE_MEDICAL=true
-TEXT_NORMALIZE_PUNCT=true
-```
-
 ### Processing Flags
 ```python
 # In pipeline configuration
