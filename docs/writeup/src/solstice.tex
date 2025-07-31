@@ -100,7 +100,7 @@ The fact-checking pipeline orchestrates multiple LLM calls in a specific sequenc
 
 \subsection{Core Services Architecture}
 
-Solstice is built on three core services that handle different aspects of the fact-checking pipeline:
+Solstice is built on three logical services, with the Gateway service running in Docker for isolation:
 
 \begin{figure}[ht]
 \centering
@@ -118,8 +118,8 @@ Solstice is built on three core services that handle different aspects of the fa
 \node[service] (gateway) {
     \textbf{Gateway Service}\\[0.3cm]
     HTTP API\\
-    Rate Limiting\\
-    Cost Tracking
+    LLM Proxy\\
+    Request Routing
 };
 
 % Ingestion Service
@@ -159,18 +159,14 @@ Solstice is built on three core services that handle different aspects of the fa
 \draw[arrow] (gateway) -- (openai);
 \draw[arrow, dashed] (cache.east) -- (factcheck.south west);
 
-% Docker container boxes
-\draw[thick, dashed, gray] (-7.5,-3) rectangle (-1.5,2);
+% Docker container box (only for Gateway)
 \draw[thick, dashed, gray] (-2.5,-3) rectangle (2.5,2);
-\draw[thick, dashed, gray] (1.5,-3) rectangle (7.5,2);
 
-\node at (-4.5,-2.7) [label, gray] {Docker};
 \node at (0,-2.7) [label, gray] {Docker};
-\node at (4.5,-2.7) [label, gray] {Docker};
 
 \end{tikzpicture}
 }
-\caption{Core Services Architecture: Three containerized services with Gateway as the central LLM interface}
+\caption{Core Services Architecture: Gateway runs in Docker as the central LLM interface}
 \end{figure}
 
 \subsection{Orchestration Layer}
@@ -322,7 +318,7 @@ Models were selected based on empirical performance:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item \textbf{gpt-4.1 (Primary)}: Evidence extraction and verification with temperature=0 to prioritise consistency over creativity.
 \item \textbf{Vision Models}: o4-mini for image analysis. Images are processed individually with focused prompts rather than in batches.
-\item \textbf{Gateway Pattern}: All LLM calls go through an HTTP gateway service, which handles rate limiting, cost tracking, and provider abstraction.
+\item \textbf{Gateway Pattern}: All LLM calls go through an HTTP gateway service, which handles request routing and provider abstraction.
 \item \textbf{Prompt Engineering}: Uses structured output formats with explicit JSON schemas. Token limits were removed after issues with truncation.
 \end{itemize}
 
@@ -334,7 +330,7 @@ Visual evidence is handled in a separate image extraction and analysis pipeline:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item Images are stored as files, not base64, which makes browser-based inspection easier
 \item Images are analysed individually with focused prompts rather than in batches
-\item Parallel processing is limited with a semaphore (max 5 concurrent calls) to avoid API rate limits
+\item Parallel processing is limited with a semaphore (max 5 concurrent calls) to avoid overwhelming the API
 \end{itemize}
 
 \subsection{Three-Stage Evidence Pipeline}
