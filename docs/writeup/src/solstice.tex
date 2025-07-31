@@ -310,29 +310,49 @@ For newcomers, these are useful places to explore:
   \item \texttt{data/studies/} – end-to-end fact-checking results ready for consumption.
 \end{itemize}
 
-\subsection{Model Integration}
-
-Models were selected based on empirical performance:
-
-\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item \textbf{gpt-4.1 (Primary)}: Evidence extraction and verification with temperature=0 to prioritise consistency over creativity.
-\item \textbf{Vision Models}: o4-mini for image analysis. Images are processed individually with focused prompts rather than in batches.
-\item \textbf{Gateway Pattern}: All LLM calls go through an HTTP gateway service, which handles request routing and provider abstraction.
-\item \textbf{Prompt Engineering}: Uses structured output formats with explicit JSON schemas. Token limits were removed after issues with truncation.
-\end{itemize}
-
-
 \section{Implementation Notes}
 
-\subsection{Multimodal Evidence Integration}
-Visual evidence is handled in a separate image extraction and analysis pipeline:
+\subsection{Model Integration and Multimodal Processing}
+
+The system uses different models for text and image analysis, reflecting a key architectural decision to process these modalities separately:
+
+\subsubsection{Text Processing with gpt-4.1}
+All text-based evidence extraction and verification uses gpt-4.1 with temperature=0 to prioritize consistency over creativity. This model handles:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item Images are stored as files, not base64, which makes browser-based inspection easier
-\item Images are analysed individually with focused prompts rather than in batches
-\item Parallel processing is limited with a semaphore (max 5 concurrent calls) to avoid overwhelming the API
+\item Evidence extraction from document text
+\item Completeness checking to find missed quotes
+\item Verification that quotes exist and support claims
+\item Structured JSON output generation
 \end{itemize}
 
-\subsection{Three-Stage Evidence Pipeline}
+\subsubsection{Image Analysis with o4-mini}
+Visual evidence (figures, tables, charts) is processed separately using o4-mini vision models. This separation provides several advantages:
+\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
+\item \textbf{Optimized prompts}: Text and image analysis require fundamentally different prompting strategies
+\item \textbf{Parallel processing}: Text pipeline can complete while images are still being analyzed
+\item \textbf{Resource efficiency}: Vision model calls are more expensive; separation allows selective processing
+\item \textbf{Debugging clarity}: Failures in one modality don't affect the other
+\end{itemize}
+
+\subsubsection{Why Separate Text and Image Processing?}
+Processing text and images separately, rather than using a single multimodal model, was a deliberate choice:
+
+\begin{enumerate}[leftmargin=*,topsep=0pt,itemsep=0pt]
+\item \textbf{Pipeline resilience}: If image analysis fails or times out, text evidence is still available
+\item \textbf{Cost optimization}: Many claims can be verified from text alone; images are processed only when needed
+\item \textbf{Specialized prompting}: Text extraction benefits from chain-of-thought reasoning, while image analysis needs spatial and visual reasoning
+\item \textbf{Incremental development}: The text pipeline was built first and thoroughly tested before adding image support
+\end{enumerate}
+
+\subsubsection{Technical Implementation}
+\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
+\item All LLM calls route through an HTTP gateway service for centralized request handling
+\item Images are stored as files (not base64) for easier inspection and debugging
+\item Parallel image processing is limited to 5 concurrent calls via semaphore
+\item Both pipelines use structured JSON schemas for predictable output formats
+\end{itemize}
+
+\subsection{Three-Stage Text Evidence Pipeline}
 Extraction, verification, and completeness are run as distinct LLM-driven steps:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
 \item \textbf{Stage 1}: Extract all potentially relevant quotes (high recall)
