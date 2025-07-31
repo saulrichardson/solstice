@@ -102,6 +102,14 @@ The fact-checking pipeline orchestrates multiple LLM calls in a specific sequenc
 
 Solstice is built on three logical services, with the Gateway service running in Docker for isolation:
 
+\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
+\item \textbf{Ingestion Service}: Handles PDF processing, layout detection, and text/figure extraction. Stores processed documents in the document cache.
+\item \textbf{Gateway Service}: Provides the HTTP API and acts as a proxy for all LLM requests. Runs in Docker to ensure consistent environment and dependencies.
+\item \textbf{Fact Check Service}: Orchestrates claim processing, manages the multi-step evidence analysis pipeline, and consolidates results into the final JSON format.
+\end{itemize}
+
+The following diagram illustrates how these services interact:
+
 \begin{figure}[ht]
 \centering
 \resizebox{\textwidth}{!}{%
