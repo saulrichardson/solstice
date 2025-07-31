@@ -5,6 +5,7 @@ from typing import Dict, Any
 from datetime import datetime
 
 from .base_formatter import BaseFormatter
+from .evidence_utils import extract_all_evidence
 
 
 class MarkdownFormatter(BaseFormatter):
@@ -63,24 +64,27 @@ class MarkdownFormatter(BaseFormatter):
                 if not doc_result.get("success"):
                     continue
                 
-                text_evidence = doc_result.get("supporting_evidence", [])
-                image_evidence = [img for img in doc_result.get("image_evidence", []) 
-                                if img.get("supports_claim", True)]
+                # Extract all evidence using utility function
+                all_evidence = extract_all_evidence(doc_result)
                 
-                if text_evidence or image_evidence:
+                if all_evidence:
                     evidence_found = True
                     md_lines.extend([
                         f"#### Source: {doc_name}",
                         ""
                     ])
                     
+                    # Group by type
+                    text_items = [e for e in all_evidence if e["type"] == "text"]
+                    image_items = [e for e in all_evidence if e["type"] == "image"]
+                    
                     # Text evidence
-                    if text_evidence:
+                    if text_items:
                         md_lines.append("**Text Evidence:**")
                         md_lines.append("")
-                        for i, evidence in enumerate(text_evidence, 1):
-                            quote = evidence.get("quote", "")
-                            explanation = evidence.get("explanation", "")
+                        for i, evidence in enumerate(text_items, 1):
+                            quote = evidence["quote"]
+                            explanation = evidence["explanation"]
                             md_lines.extend([
                                 f"{i}. > {quote}",
                                 f"   ",
@@ -89,14 +93,14 @@ class MarkdownFormatter(BaseFormatter):
                             ])
                     
                     # Image evidence
-                    if image_evidence:
+                    if image_items:
                         md_lines.append("**Visual Evidence:**")
                         md_lines.append("")
-                        for img in image_evidence:
-                            filename = img.get("image_filename", "")
-                            explanation = img.get("explanation", "")
+                        for img in image_items:
+                            filename = img["filename"]
+                            reasoning = img["reasoning"]
                             md_lines.extend([
-                                f"- **{filename}**: {explanation}",
+                                f"- **{filename}**: {reasoning}",
                                 ""
                             ])
             

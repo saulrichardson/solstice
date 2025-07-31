@@ -39,7 +39,7 @@
 
 **Visual Evidence:**
 
-- **table_p4_mrg_det_3_015.png**: A table listing influenza hemagglutinin (HA) antigens used in Flublok alongside the WHO- and FDA-recommended vaccine strains for a given influenza season, showing matching strain names for each HA component (A/H1N1, A/H3N2, B). Evidence: Flublok’s recombinant HA antigens are labeled with the exact same WHO- and FDA-selected strain designations (e.g., A/California/07/2009, A/Hong Kong/4801/2014, B/Brisbane/60/2008) indicating an identical antigenic match. supports the claim because the table directly demonstrates that Flublok includes HA proteins matching the WHO- and FDA-recommended strains by identical strain name and subtype.
+- **table_p4_mrg_det_3_015.png**: supports the claim because the table directly demonstrates that Flublok includes HA proteins matching the WHO- and FDA-recommended strains by identical strain name and subtype.
 
 #### Source: Grohskopf_et_al.__2023_
 
@@ -61,7 +61,7 @@
 
 **Visual Evidence:**
 
-- **figure_p6_det_5_006.png**: Multi-panel ELISA data showing total HA head and stalk antibody responses to egg-propagated and cell-propagated influenza virus HA at pre-vaccination, 1 month, and 6 months post-vaccination for four vaccine groups (Fluzone IIIV4, Fluarix IIIV4, cell-based IV4, and RIV4). Panel B presents geometric mean ratios of egg HA vs cell HA ELISA titers at 1 month for H3, H1, B/Victoria, and B/Yamagata HAs. Evidence: In Panel B, RIV4 (Flublok) shows egg/cell HA ELISA titer ratios close to 1 for both H3 and H1 HA, indicating equivalent binding to egg- and cell-derived antigens. The near-unity egg/cell HA titer ratios for RIV4 demonstrate no antigenic difference between vaccine HA and WHO/FDA-selected HA antigens, which supports the claim that Flublok ensures identical antigenic match. Note: Data are limited to the strains tested and timepoints shown; the figure does not explicitly reference WHO or FDA selection criteria.
+- **figure_p6_det_5_006.png**: The near-unity egg/cell HA titer ratios for RIV4 demonstrate no antigenic difference between vaccine HA and WHO/FDA-selected HA antigens, which supports the claim that Flublok ensures identical antigenic match.
 
 #### Source: Treanor_et_al.__2011_
 
@@ -237,9 +237,9 @@
 
 **Visual Evidence:**
 
-- **table_p3_det_2_003.png**: A multi-part table comparing amino acid sequences of hemagglutinin from cell-based versus egg-based influenza vaccine viruses across multiple strains (A/H1N1, A/H3N2, B/Victoria, B/Yamagata). Specific HA positions (e.g., 91, 121, 128, etc.) are listed as columns. Rows show the amino acids in cell-grown vaccine seed viruses and corresponding egg-grown candidate vaccine viruses (CVVs). Egg-adapted substitutions are highlighted in bold/italic and glycosylation motif losses are marked “(CHO-)”. Evidence: Multiple egg-based vaccine viruses (e.g., A/Singapore/INFIMH-16-0019/2016 egg CVV, A/Kansas/14/2017 egg) display egg-adapted amino acid substitutions (italic/bold) and glycosylation motif losses (CHO-), which are absent in the cell-based counterparts. The table supports the claim by directly demonstrating that egg-based vaccine strains acquire specific HA mutations (including glycosylation motif losses) during production, which could alter antigenicity and potentially reduce vaccine effectiveness, thus supports the claim.
+- **table_p3_det_2_003.png**: The table supports the claim by directly demonstrating that egg-based vaccine strains acquire specific HA mutations (including glycosylation motif losses) during production, which could alter antigenicity and potentially reduce vaccine effectiveness, thus supports the claim.
 
-- **figure_p9_det_8_005.png**: Two-panel line graph showing, for age groups 18–44 years (A) and 45–64 years (B), the proportion of participants in seven repeat‐vaccination arms with ≥4‐fold reduced hemagglutination inhibition (HI) titer against cell‐grown vaccine virus (egg/cell titer ratio ≥4) before and one month after Year 2 vaccination. Results are shown for four vaccine components (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata) with p-values for significant pre-to-post increases noted on trend lines. Seven vaccine arms (egg- and cell-based and recombinant combinations) are distinguished by different symbols and colors. Evidence: Significant increases in the proportion of participants with ≥4-fold reduced HI titer to cell-grown virus after vaccination for egg-based components (A(H1N1)pdm09 p=0.02, B/Victoria p=0.03 in 18–44 years; A(H3N2) p=0.04 in 45–64 years), indicating egg-adaptation mutations that reduce antibody recognition. The figure demonstrates that egg-based vaccine viruses acquire egg-adaptive mutations that lead to significantly reduced HI titers against the corresponding cell-grown virus, which supports the claim by showing production‐related mutations that can reduce vaccine effectiveness. Note: Some text and symbols are small and may be difficult to read, but key p-values and trends are legible.
+- **figure_p9_det_8_005.png**: The figure demonstrates that egg-based vaccine viruses acquire egg-adaptive mutations that lead to significantly reduced HI titers against the corresponding cell-grown virus, which supports the claim by showing production‐related mutations that can reduce vaccine effectiveness.
 
 #### Source: Treanor_et_al.__2011_
 
@@ -303,7 +303,7 @@
 
 **Visual Evidence:**
 
-- **figure_p4_det_3_020.png**: A multi‐row table showing vaccine efficacy data for a recombinant quadrivalent influenza vaccine (Flublok) versus a licensed inactivated quadrivalent vaccine. The table is divided into endpoints: culture‐confirmed influenza with strains represented in the vaccine, and culture‐confirmed influenza with any strain regardless of match. For each endpoint it lists case counts, attack rates per 100 subjects, vaccine efficacy (VE%) and 95% confidence intervals for matched strains and for all strains. Evidence: Vaccine efficacy of 44.6% (95% CI 18.8, 62.6) against all influenza strains regardless of match to the vaccine supports the claim because the recombinant vaccine demonstrated statistically significant protection against strains not matched to the vaccine, indicating cross‐protection even when circulating strains may be mismatched Note: The table does not explicitly specify a mismatch season; it reports efficacy against all strains irrespective of match rather than labeling a specific mismatch period.
+- **figure_p4_det_3_020.png**: supports the claim because the recombinant vaccine demonstrated statistically significant protection against strains not matched to the vaccine, indicating cross‐protection even when circulating strains may be mismatched
 
 #### Source: Liu_et_al.__2024_
 
@@ -327,11 +327,11 @@
 
 **Visual Evidence:**
 
-- **figure_p4_det_3_002.png**: Multi-panel figure showing microneutralization (MN) titers (log2 scale) for A(H3N2) viruses and hemagglutination inhibition (HI) titers for A(H1N1)pdm09, B/Victoria, and B/Yamagata viruses. Four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, and RIV4) are compared at Day 0, 1 month, and 6 months post-vaccination via scatter plots with GMTs and 95% CIs. P values above horizontal bars indicate statistical differences between groups at each time point. Evidence: At 1-month and 6-month time points against cell-propagated A(H3N2) antigens, the RIV4 group (orange) shows higher GMTs with multiple significant p values (e.g., p<0.0001, p=0.0003) compared to egg-based vaccines, indicating stronger cross-reactive antibody responses. The figure shows that the recombinant vaccine (RIV4) elicits significantly higher neutralizing antibody titers against cell-propagated, mismatched A(H3N2) strains at both 1 and 6 months post-vaccination, which supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection in mismatch seasons. Note: Sample sizes vary by group and age, data are antibody titers not clinical efficacy; some panels (e.g., B strains) show minimal differences.
+- **figure_p4_det_3_002.png**: The figure shows that the recombinant vaccine (RIV4) elicits significantly higher neutralizing antibody titers against cell-propagated, mismatched A(H3N2) strains at both 1 and 6 months post-vaccination, which supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection in mismatch seasons.
 
-- **figure_p6_det_5_006.png**: Multi-panel figure showing ELISA-measured antibody titers to HA head (egg and cell virus HA) for influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata at pre-vaccination (Day 0), 1 month, and 6 months post-vaccination (Panel A), the geometric mean ratios of egg to cell HA titers (Panel B), HA stalk-binding antibody titers for H3 and H1 stalk domains at the same time points (Panel C), and fold-rise of stalk titers from Day 0 to 1 month (Panel D). Four vaccine groups are color-coded: Fluzone IIV4 (gray), Fluarix IIV4 (blue), ccIIV4 (green), and recombinant HA vaccine RIV4 (orange). Statistical significance bars and p-values are shown. Evidence: Recombinant vaccine (RIV4) elicited significantly higher HA stalk antibody titers and greater fold-rise at 1 month post-vaccination compared to other groups, indicating a broader, cross-reactive immune response. supports the claim because the figure demonstrates that the recombinant HA vaccine induces stronger stalk-directed antibody responses—a correlate of broad cross-protection—even though mismatch-season efficacy is not directly measured, this broader immunity suggests potential cross-protection. Note: While stalk antibody responses suggest broader immunity, the figure does not directly assess clinical cross-protection in a mismatch season; efficacy data are not presented.
+- **figure_p6_det_5_006.png**: supports the claim because the figure demonstrates that the recombinant HA vaccine induces stronger stalk-directed antibody responses—a correlate of broad cross-protection—even though mismatch-season efficacy is not directly measured, this broader immunity suggests potential cross-protection.
 
-- **figure_p10_mrg_det_9_004.png**: The figure presents ELISA-measured geometric mean titers (GMTs) of hemagglutinin (HA) head and stalk binding antibodies at Day 0 and 1 month post‐vaccination across seven repeat vaccination arms: cell culture quadrivalent (ccIIV4), recombinant quadrivalent (RIV4), and egg-based quadrivalent (IIV4) used in various prime/boost combinations. Panels show head titers for H3N2, pdm09, B/Victoria, and B/Yamagata antigens, ratios of egg‐ versus cell‐based head titers, stalk titers for H3 and H1, and fold‐rise of stalk antibody titers with 95% confidence intervals and reported p values for within‐group comparisons. Evidence: Statistically significant increases in H3 stalk antibody titers at 1 month post‐vaccination in recombinant‐containing arms (ccIIV4-RIV4 p=0.0001; RIV4-RIV4 p=0.004; IIV4-RIV4 p=0.03), and in H1 stalk antibodies in at least one recombinant arm (RIV4-ccIIV4 p=0.006). The data show that vaccination regimens including recombinant vaccine (RIV4) induce significantly higher HA stalk antibody responses, which are broadly cross-reactive, supporting the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season. Note: The figure reports antibody titers and fold-rises but does not include direct clinical efficacy data in a mismatch season. Sample sizes per arm are modest, and cross-protection is inferred from stalk antibody levels rather than demonstrated by challenge or epidemiological outcomes.
+- **figure_p10_mrg_det_9_004.png**: The data show that vaccination regimens including recombinant vaccine (RIV4) induce significantly higher HA stalk antibody responses, which are broadly cross-reactive, supporting the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.
 
 #### Source: Treanor_et_al.__2011_
 
@@ -403,19 +403,19 @@
 
 **Visual Evidence:**
 
-- **figure_p4_det_3_002.png**: Multipanel figure showing antibody responses (MN titers for A(H3N2) and HI titers for H1N1pdm09, B/Victoria, B/Yamagata) on a log₂ scale at Day 0, 1 month, and 6 months post‐vaccination in four groups: Fluzone IIV4 (egg‐based), Fluarix IIV4 (egg‐based), ccIIV4 (cell‐based), and RIV4 (recombinant). Gray dots represent individual titers; colored symbols and error bars show geometric mean titers (GMTs) with 95% CI. Horizontal bars with p values from Tukey’s multiple‐comparison tests indicate significant differences between vaccine groups at each time point. Evidence: At 1 month post‐vaccination, RIV4 (recombinant) shows significantly higher GMTs compared with egg‐based Fluzone IIV4 and Fluarix IIV4 for A(H3N2) (p<0.0001) and H1N1pdm09 (p=0.003–0.015), as well as for B/Victoria and B/Yamagata strains (p=0.009–0.035). The figure supports the claim by directly showing that the higher‐dose recombinant vaccine (RIV4) induced significantly more robust antibody responses than the egg‐based standard‐dose vaccines at peak (1 month) and sustained (6 month) time points for multiple influenza strains. Note: Some text and p‐value annotations are small, but group differences and significance indicators are clear.
+- **figure_p4_det_3_002.png**: The figure supports the claim by directly showing that the higher‐dose recombinant vaccine (RIV4) induced significantly more robust antibody responses than the egg‐based standard‐dose vaccines at peak (1 month) and sustained (6 month) time points for multiple influenza strains.
 
-- **figure_p5_det_4_000.png**: Four-panel figure showing geometric mean fold-rise of microneutralization (MN) or hemagglutination-inhibition (HI) antibody titers at 1-month post-vaccination (panels A and B) and geometric mean fold-reduction of antibody titers at 6-months post-vaccination (panels C and D) for adults aged 18–44 years (A, C) and 45–64 years (B, D). Four vaccine groups are compared for each influenza virus strain/propagation method (egg- or cell-propagated H3N2, H1N1, B/Victoria, B/Yamagata): Fluzone IIV4 (egg-based standard-dose), Fluarix IIV4 (egg-based standard-dose), ccIIV4 (cell-based), and RIV4 (recombinant high-dose). Error bars denote 95% confidence intervals and p-values from Tukey’s test indicate significant differences between RIV4 and egg-based vaccines. Evidence: In panels A and B, RIV4 (recombinant vaccine) consistently shows higher geometric mean fold-rise in antibody titers at 1 month compared with Fluzone IIV4 (egg-based), with p-values <0.05 across H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/Victoria egg, B/Victoria cell, B/Yamagata egg, and B/Yamagata cell in both age groups. The figure shows that RIV4 induced significantly larger antibody responses at 1 month post-vaccination than the egg-based standard-dose Fluzone IIV4 across multiple strains and age groups, which supports the claim. Note: None
+- **figure_p5_det_4_000.png**: The figure shows that RIV4 induced significantly larger antibody responses at 1 month post-vaccination than the egg-based standard-dose Fluzone IIV4 across multiple strains and age groups, which supports the claim.
 
-- **figure_p6_det_5_006.png**: A multi-panel figure showing ELISA antibody titers to influenza HA antigens at pre-vaccination (Day 0), 1 month, and 6 months post-vaccination for four vaccine groups (Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4). Panels include: A) ELISA titers for egg-grown and cell-grown HA of A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata strains; B) geometric mean ratios of egg- to cell-derived HA ELISA titers at 1 month; C) H3 and H1 stalk-binding antibody titers; D) fold-rise in stalk titers at 1 month versus baseline. Evidence: In Panel C, RIV4 (recombinant) elicits higher H3 and H1 stalk ELISA titers at 1 month versus Fluzone and Fluarix (p<0.05). In Panel D, RIV4 shows a greater fold-rise in stalk antibody titers at 1 month compared to egg-based vaccines. supports the claim because the recombinant RIV4 vaccine group exhibited statistically significant higher antibody titers and fold-rise in HA stalk responses at 1 month compared to egg-based standard-dose vaccines. Note: Data shown are serological titers with statistical comparisons; image quality allows clear assessment of p-values, but clinical efficacy is not addressed.
+- **figure_p6_det_5_006.png**: supports the claim because the recombinant RIV4 vaccine group exhibited statistically significant higher antibody titers and fold-rise in HA stalk responses at 1 month compared to egg-based standard-dose vaccines.
 
-- **figure_p8_mrg_det_7_005.png**: Panel of four rows corresponding to influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Within each row are four subplots showing hemagglutination inhibition (HI) antibody titers (log2 scale) at Day 0 and 1 month post–year-2 vaccination against both egg-propagated and cell-propagated vaccine viruses. Box plots display geometric mean titers (GMTs) with 95% CIs for seven repeat vaccination arms (cclIV4-cclIV4, cclIV4-RIV4, RIV4-cclIV4, RIV4-RIV4, IIV4-cclIV4, IIV4-RIV4, IIV4-IIV4), and horizontal bars indicate statistically significant differences with p-values. Evidence: RIV4-RIV4 arm showed significantly higher post-vaccination GMTs compared with IIV4-IIV4 (egg-based) for cell-propagated A(H3N2) (p=0.015) and other strains (e.g., B/Yamagata p<0.0001). The figure shows that two consecutive doses of recombinant vaccine (RIV4-RIV4) induced higher HI antibody titers than two doses of egg-based standard vaccine (IIV4-IIV4), supporting the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines. Note: Only HAI titers are shown; clinical efficacy is not assessed. Dosing details are not explicit in the figure. Some text and labels are small and partially obscured.
+- **figure_p8_mrg_det_7_005.png**: The figure shows that two consecutive doses of recombinant vaccine (RIV4-RIV4) induced higher HI antibody titers than two doses of egg-based standard vaccine (IIV4-IIV4), supporting the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.
 
 #### Source: Treanor_et_al.__2011_
 
 **Visual Evidence:**
 
-- **table_p5_det_4_014.png**: Table showing hemagglutination inhibition (HI) antibody responses (geometric mean titers at Day 0 and Day 28, and seroconversion rates) in adults 18–49 years following vaccination with a recombinant high-dose (45 µg per strain) quadrivalent influenza vaccine versus an egg-based standard-dose (15 µg per strain) quadrivalent influenza vaccine across four influenza strains (A/H1N1, A/H3N2, B/Victoria, B/Yamagata). Evidence: At Day 28, the recombinant high-dose vaccine induced higher HI geometric mean titers for all four strains (e.g., 174.5 vs 134.1 for A/H3N2) and higher seroconversion rates (e.g., 79.5% vs 63.0% for A/H3N2) compared with the egg-based standard-dose vaccine. The data show consistently higher antibody titers and seroconversion rates with the higher-dose recombinant vaccine versus the egg-based standard-dose vaccine, which supports the claim
+- **table_p5_det_4_014.png**: The data show consistently higher antibody titers and seroconversion rates with the higher-dose recombinant vaccine versus the egg-based standard-dose vaccine, which supports the claim
 
 #### Source: Zimmerman_et_al.__2023_
 
@@ -455,7 +455,7 @@
 
 **Visual Evidence:**
 
-- **figure_p4_det_3_007.png**: A table summarizing influenza attack rates, relative risk (RR), and relative vaccine efficacy (rVE) comparing Flublok quadrivalent against a comparator. The footnote specifies the comparator as the U.S.-licensed influenza vaccine Fluarix Quadrivalent. Evidence: Footnote stating 'Comparator = U.S.-licensed influenza vaccine, Fluarix Quadrivalent' The table’s footnote explicitly identifies Fluarix Quadrivalent as the comparator in the pivotal trial, which supports the claim Note: Image includes only part of the table and footnotes, but the comparator identification is clear
+- **figure_p4_det_3_007.png**: The table’s footnote explicitly identifies Fluarix Quadrivalent as the comparator in the pivotal trial, which supports the claim
 
 #### Source: Hsiao_et_al.__2023_
 
@@ -495,13 +495,13 @@
 
 **Visual Evidence:**
 
-- **figure_p4_det_3_002.png**: A multi-panel figure showing microneutralization (MN) or hemagglutination inhibition (HI) antibody titers (log2 scale) at pre-vaccination (Day 0), 1 month, and 6 months post-vaccination for four vaccine groups (Fluzone IIV4, Fluarix IIV4, cell-based IIV4, and RIV4) against A(H3N2), A(H1N1)pdm09, B/Victoria (B/VIC), and B/Yamagata (B/YAM) strains. Evidence: The figure includes RIV4 (recombinant quadrivalent influenza vaccine, i.e., Flublok) and Fluarix IIV4 groups with direct statistical comparisons of antibody responses at each time point. supports the claim because the pivotal trial data shown directly compares RIV4 (Flublok quadrivalent) against Fluarix (quadrivalent standard-dose vaccine). Note: None
+- **figure_p4_det_3_002.png**: supports the claim because the pivotal trial data shown directly compares RIV4 (Flublok quadrivalent) against Fluarix (quadrivalent standard-dose vaccine).
 
-- **figure_p5_det_4_000.png**: Dot-and-error-bar plots showing geometric mean fold rise of antibody titers at 1 month post-vaccination (panels A and B) and fold reduction of antibody titers at 6 months post-vaccination (panels C and D) for four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, and RIV4) in two age cohorts (18–44 years and 45–64 years). Evidence: The figure includes RIV4 (recombinant quadrivalent vaccine, i.e., Flublok) and Fluarix IIV4 arms compared directly in the same pivotal trial. The figure supports the claim because it shows RIV4 (Flublok quadrivalent) evaluated side-by-side with Fluarix IIV4, supports the claim
+- **figure_p5_det_4_000.png**: The figure supports the claim because it shows RIV4 (Flublok quadrivalent) evaluated side-by-side with Fluarix IIV4, supports the claim
 
-- **figure_p6_det_5_006.png**: A multi-panel ELISA data figure showing geometric mean antibody titers (log2 scale) at Day 0, 1 month, and 6 months post-vaccination for four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) across influenza A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata antigens, plus head/stalk subdomain analyses and egg/cell HA titer ratios. Evidence: The figure explicitly lists Fluarix IIV4 and RIV4 (the recombinant quadrivalent vaccine, i.e., Flublok) as two of the four arms, indicating direct comparison of RIV4 versus Fluarix IIV4 in the trial data. supports the claim because the figure shows that RIV4 (Flublok quadrivalent) was evaluated alongside Fluarix IIV4 (standard-dose quadrivalent vaccine) in the same pivotal trial data. Note: The image uses the abbreviation RIV4 rather than the brand name Flublok; assuming RIV4 corresponds to Flublok QIV based on standard terminology.
+- **figure_p6_det_5_006.png**: supports the claim because the figure shows that RIV4 (Flublok quadrivalent) was evaluated alongside Fluarix IIV4 (standard-dose quadrivalent vaccine) in the same pivotal trial data.
 
-- **figure_p7_mrg_det_6_003.png**: Four-panel figure showing geometric mean ratios of egg- versus cell-grown vaccine virus titers (panels A and B) and proportions of subjects with ≥4-fold reduction in titer (panels C and D) at pre- and 1-month post-vaccination for four quadrivalent vaccines (Fluzone IIV4, Fluarix IIV4, ccIIV4, and RIV4) in two age groups (18–44 and 45–64 years). Data points and statistical comparisons are indicated for each vaccine strain (A/H3N2, A/H1N1pdm09, B/VIC, B/YAM). Evidence: The figure legend and data panels include both Fluarix IIV4 (black circles) and RIV4 (orange circles) in the same pivotal immunogenicity study, directly comparing post-vaccination antibody responses between these vaccines. The figure supports the claim by presenting immunogenicity data from the same trial that directly compares Flublok (RIV4) with Fluarix IIV4, demonstrating evaluation of RIV4 against the standard-dose Fluarix vaccine. Note: The figure clearly shows a head-to-head comparison but does not explicitly label this study as the 'pivotal trial'; interpretation assumes this is the primary immunogenicity study for licensure.
+- **figure_p7_mrg_det_6_003.png**: The figure supports the claim by presenting immunogenicity data from the same trial that directly compares Flublok (RIV4) with Fluarix IIV4, demonstrating evaluation of RIV4 against the standard-dose Fluarix vaccine.
 
 #### Source: Zimmerman_et_al.__2023_
 
@@ -553,15 +553,15 @@
 
 **Visual Evidence:**
 
-- **figure_p3_det_2_001.png**: Schematic workflow showing the production of recombinant hemagglutinin (HA) using a baculovirus–insect cell expression system, including DNA recombination into a baculovirus vector, infection of insect cells in bioreactors, harvest, extraction, clarification, purification, and formulation. Evidence: The figure is titled 'Recombinant HA using the baculovirus–insect cell expression system for the manufacture of RIV4' and depicts insertion of the HA gene into baculovirus DNA, infection of insect cells, and downstream processing steps. The figure supports the claim by directly showing that Flublok (RIV4) is produced via recombinant HA expression in insect cells using a baculovirus expression vector system.
+- **figure_p3_det_2_001.png**: The figure supports the claim by directly showing that Flublok (RIV4) is produced via recombinant HA expression in insect cells using a baculovirus expression vector system.
 
-- **figure_p4_mrg_det_3_001.png**: A two‐panel schematic comparing native influenza HA (panel a) and recombinant HA (rHA) produced in insect cells (panel b). Panel a shows HA1 and HA2 subunits with sialylated complex N‐linked glycans and a cleaved fusion peptide. Panel b shows a single HA0 precursor with uncleaved fusion peptide and simpler paucimannosidic glycans, labeled as produced in insect cells using the baculovirus expression vector system. Evidence: Caption explicitly states: “Structural features of native HA expressed on influenza virus and rHA produced in insect cells using the baculovirus expression vector system.” The figure’s caption and labels describe rHA production in insect cells via a baculovirus expression vector system, which supports the claim that Flublok is produced using this novel platform.
+- **figure_p4_mrg_det_3_001.png**: The figure’s caption and labels describe rHA production in insect cells via a baculovirus expression vector system, which supports the claim that Flublok is produced using this novel platform.
 
 #### Source: CDC_Influenza_vaccines
 
 **Visual Evidence:**
 
-- **figure_p1_det_0_011.png**: Figure with four panels. Panel A illustrates the manufacturing process: three recombinant baculovirus expression vectors (rBEVs), each with a distinct hemagglutinin (HA) gene (H3, H1, or B), infect Sf9 insect cells, express HA protein, which is then purified and combined into a trivalent vaccine. Panel B shows vials of the recombinant subunit influenza vaccine. Panels C and D show bar charts of reactogenicity in veteran and older adult populations, respectively. Evidence: Panel A explicitly states that recombinant HA is expressed in Sf9 insect cells using a baculovirus expression vector system. Panel A directly describes the use of BEVS in insect cells to produce recombinant HA for Flublok, which supports the claim.
+- **figure_p1_det_0_011.png**: Panel A directly describes the use of BEVS in insect cells to produce recombinant HA for Flublok, which supports the claim.
 
 #### Source: FlublokPI
 
@@ -581,7 +581,7 @@
 
 **Visual Evidence:**
 
-- **table_p4_mrg_det_3_015.png**: Table listing influenza strains (H3N2 A/Victoria/361/2011, H1N1 A/California/07/2009, B/Wisconsin/01/2010), their propagation systems (Egg, MDCK cells, H3/H1/B rHA in Insect cells), HA content, and results of hemagglutination inhibition, neuraminidase inhibition, and plaque reduction neutralization assays with concentrations tested. Evidence: Under “Propagation system,” the recombinant HA (rHA) entries for H3, H1, and B strains are labeled as produced in Insect cells. The table shows that the HA antigens (rHA) are produced in insect cells, which supports the claim about Flublok’s novel platform expressing recombinant HA in insect cells. Note: The table does not explicitly name baculovirus expression vector system (BEVS), but the designation of rHA production in insect cells implies BEVS use.
+- **table_p4_mrg_det_3_015.png**: The table shows that the HA antigens (rHA) are produced in insect cells, which supports the claim about Flublok’s novel platform expressing recombinant HA in insect cells.
 
 #### Source: Grohskopf_et_al.__2023_
 
@@ -641,7 +641,7 @@
 
 **Visual Evidence:**
 
-- **table_p5_det_4_014.png**: A table listing licensed quadrivalent influenza vaccines, including columns for vaccine name, manufacturer, strain selection, manufacturing platform, presentation, and storage conditions. Evidence: For Flublok Quadrivalent: "Recombinant HA produced in insect cells using baculovirus expression vector system (BEVS)" The table explicitly states that Flublok is produced using recombinant hemagglutinin expressed in insect cells via a baculovirus expression vector system, which supports the claim
+- **table_p5_det_4_014.png**: The table explicitly states that Flublok is produced using recombinant hemagglutinin expressed in insect cells via a baculovirus expression vector system, which supports the claim
 
 ---
 
@@ -667,7 +667,7 @@
 
 **Visual Evidence:**
 
-- **figure_p6_det_5_006.png**: Multi-panel figure showing ELISA-measured antibody responses to influenza HA. Panel A: total HA binding titers (log2) for egg-derived and cell-derived HA antigens (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) at Day 0, 1 month, and 6 months post-vaccination for four vaccine groups (Fluzone IIV4, Fluad IIV4, ccIIV4, RIV4). Panel B: geometric mean ratio of egg/cell HA ELISA titers at 1 month. Panel C: H3 stalk and H1 stalk antibody titers (log2) at Day 0, 1 month, 6 months post-vaccination, with pairwise p-values. Panel D: geometric mean fold-rise (1 month/Day 0) of H3 and H1 stalk titers with 95% CI. Evidence: In Panel C, at 1 month post-vaccination RIV4 (recombinant HA) elicits significantly higher H3 stalk and H1 stalk ELISA titers than egg-based Fluzone IIV4 (p<0.0001). supports the claim because the RIV4 group, produced via BEVS, shows significantly greater induction of stalk-directed (highly conserved region) antibodies compared with the egg-derived vaccine group. Note: Some p-value text is small; group labels are inferred from color legend but overall differences are clear.
+- **figure_p6_det_5_006.png**: supports the claim because the RIV4 group, produced via BEVS, shows significantly greater induction of stalk-directed (highly conserved region) antibodies compared with the egg-derived vaccine group.
 
 ---
 
@@ -699,7 +699,7 @@
 
 **Visual Evidence:**
 
-- **figure_p2_det_1_000.png**: A table listing various influenza vaccines with columns for trade name (manufacturer), presentation, age indication, μg HA per strain per dose, route, and mercury content. Under 'RIV4 (recombinant HA vaccine)' it lists Flublok Quadrivalent (Sanofi Pasteur) as 0.5-mL PFS, ≥18 yrs, 45 μg/0.5 mL, IM. Under IIV4 it lists vaccines with 15 μg/0.5 mL. Evidence: Flublok Quadrivalent (Sanofi Pasteur): 45 μg/0.5 mL; IIV4 vaccines: 15 μg/0.5 mL per strain The table directly shows Flublok contains 45 μg HA per strain per dose versus 15 μg per strain in standard-dose IIV4 vaccines, which supports the claim
+- **figure_p2_det_1_000.png**: The table directly shows Flublok contains 45 μg HA per strain per dose versus 15 μg per strain in standard-dose IIV4 vaccines, which supports the claim
 
 #### Source: FlublokPI
 
@@ -735,7 +735,7 @@
 
 **Visual Evidence:**
 
-- **table_p5_det_4_002.png**: A table of U.S.-licensed influenza vaccines listing vaccine name (by subtype and manufacturer), presentation, age indication, hemagglutinin (HA) amount per strain per dose, route, and dose volume. Categories include standard-dose egg-based, cell culture–based, high-dose egg-based, MF59-adjuvanted, recombinant HA, and intranasal vaccines. Evidence: Under the recombinant HA vaccine category, Flublok Quadrivalent is shown with 45 µg of HA per strain (0.5 mL IM); under standard-dose egg-based and cell culture–based IIV4 entries, the HA amount is 15 µg per strain (0.5 mL IM). The table shows Flublok contains 45 µg HA per strain versus 15 µg per strain in standard-dose vaccines, which supports the claim.
+- **table_p5_det_4_002.png**: The table shows Flublok contains 45 µg HA per strain versus 15 µg per strain in standard-dose vaccines, which supports the claim.
 
 #### Source: Hsiao_et_al.__2023_
 
@@ -751,7 +751,7 @@
 
 **Visual Evidence:**
 
-- **figure_p1_det_0_017.png**: Title and abstract of an article comparing recombinant and standard-dose influenza vaccines in adults under 65 years, including a sentence stating that trivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard-dose egg-based vaccines. Evidence: “Trivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard-dose egg-based vaccines.” The statement that recombinant influenza vaccines contain three times the amount of hemagglutinin protein compared to standard-dose vaccines supports the claim that Flublok (a recombinant vaccine) delivers 45 mcg per strain versus 15 mcg per strain in a standard-dose vaccine. Note: The image does not explicitly name Flublok or specify the 45 mcg and 15 mcg values; it only provides the 3-fold relationship.
+- **figure_p1_det_0_017.png**: The statement that recombinant influenza vaccines contain three times the amount of hemagglutinin protein compared to standard-dose vaccines supports the claim that Flublok (a recombinant vaccine) delivers 45 mcg per strain versus 15 mcg per strain in a standard-dose vaccine.
 
 #### Source: Liu_et_al.__2024_
 
@@ -783,6 +783,6 @@
 
 **Visual Evidence:**
 
-- **table_p5_det_4_014.png**: A table listing seasonal influenza vaccines for the 2021–2022 season, including product name, vaccine type, route, approved age, and HA per dose for each vaccine. Evidence: Flublok Quadrivalent (RIV4) is shown with 45 mcg HA per strain (180 mcg total), whereas standard-dose egg-based and cell culture–based IIV4 vaccines are listed with 15 mcg HA per strain (60 mcg total). The table explicitly shows that Flublok contains 45 mcg of HA per strain versus 15 mcg per strain in standard-dose influenza vaccines, which supports the claim.
+- **table_p5_det_4_014.png**: The table explicitly shows that Flublok contains 45 mcg of HA per strain versus 15 mcg per strain in standard-dose influenza vaccines, which supports the claim.
 
 ---

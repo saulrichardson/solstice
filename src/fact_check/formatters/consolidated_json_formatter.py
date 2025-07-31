@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Dict, Any, List
 
 from .base_formatter import BaseFormatter
+from .evidence_utils import extract_all_evidence
 
 
 class ConsolidatedJsonFormatter(BaseFormatter):
@@ -36,30 +37,13 @@ class ConsolidatedJsonFormatter(BaseFormatter):
                 if not doc_result.get("success"):
                     continue
                 
-                # Extract text evidence
-                text_evidence = doc_result.get("supporting_evidence", [])
-                for evidence in text_evidence:
-                    claim_entry["evidence"].append({
-                        "type": "text",
-                        "document": doc_name,
-                        "quote": evidence.get("quote", ""),
-                        "explanation": evidence.get("explanation", "")
-                    })
+                # Extract all evidence using utility function
+                all_evidence = extract_all_evidence(doc_result)
                 
-                # Extract image evidence
-                image_evidence = doc_result.get("image_evidence", [])
-                for img in image_evidence:
-                    if img.get("supports_claim", True):  # Default to True if not specified
-                        # For images, only include key fields
-                        detailed = img.get("detailed_analysis", {})
-                        reasoning = detailed.get("reasoning", img.get("explanation", ""))
-                        
-                        claim_entry["evidence"].append({
-                            "type": "image",
-                            "document": doc_name,
-                            "filename": img.get("image_filename", ""),
-                            "reasoning": reasoning
-                        })
+                # Add document name to each piece of evidence
+                for evidence in all_evidence:
+                    evidence["document"] = doc_name
+                    claim_entry["evidence"].append(evidence)
             
             # Only include claims that have evidence
             if claim_entry["evidence"]:
