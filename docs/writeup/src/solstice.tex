@@ -317,31 +317,31 @@ For newcomers, these are useful places to explore:
 The system uses different models for text and image analysis, reflecting a key architectural decision to process these modalities separately:
 
 \subsubsection{Text Processing with gpt-4.1}
-All text-based evidence extraction and verification uses gpt-4.1 with temperature=0 to prioritize consistency over creativity. This model handles:
+All text-based evidence extraction and verification uses gpt-4.1 with temperature=0. This model was chosen specifically for its needle-in-haystack capabilities:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item Evidence extraction from document text
-\item Completeness checking to find missed quotes
-\item Verification that quotes exist and support claims
-\item Structured JSON output generation
+\item \textbf{Evidence extraction}: Searches through hundreds of pages to find exact quotes matching claims
+\item \textbf{High-precision retrieval}: Locates specific sentences in dense medical literature with minimal false positives
+\item \textbf{Completeness checking}: Re-scans documents to catch any quotes missed in the first pass
+\item \textbf{Exact quote verification}: Confirms extracted text exists verbatim in source documents
 \end{itemize}
 
 \subsubsection{Image Analysis with o4-mini}
-Visual evidence (figures, tables, charts) is processed separately using o4-mini vision models. This separation provides several advantages:
+Visual evidence (figures, tables, charts) is processed using o4-mini, a reasoning model chosen for its ability to interpret complex visual information:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item \textbf{Optimized prompts}: Text and image analysis require fundamentally different prompting strategies
-\item \textbf{Parallel processing}: Text pipeline can complete while images are still being analyzed
-\item \textbf{Resource efficiency}: Vision model calls are more expensive; separation allows selective processing
-\item \textbf{Debugging clarity}: Failures in one modality don't affect the other
+\item \textbf{Visual reasoning}: Interprets data trends, statistical significance, and relationships shown in charts
+\item \textbf{Table comprehension}: Understands structured data and can identify relevant rows/columns supporting claims
+\item \textbf{Diagram analysis}: Reasons about flowcharts, mechanisms, and visual explanations of processes
+\item \textbf{Contextual interpretation}: Goes beyond OCR to understand what visual evidence actually demonstrates
 \end{itemize}
 
 \subsubsection{Why Separate Text and Image Processing?}
-Processing text and images separately, rather than using a single multimodal model, was a deliberate choice:
+Processing text and images separately leverages the distinct strengths of different model types:
 
 \begin{enumerate}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item \textbf{Pipeline resilience}: If image analysis fails or times out, text evidence is still available
-\item \textbf{Cost optimization}: Many claims can be verified from text alone; images are processed only when needed
-\item \textbf{Specialized prompting}: Text extraction benefits from chain-of-thought reasoning, while image analysis needs spatial and visual reasoning
-\item \textbf{Incremental development}: The text pipeline was built first and thoroughly tested before adding image support
+\item \textbf{Model specialization}: gpt-4.1 excels at needle-in-haystack tasks—finding specific quotes in massive documents—while reasoning models like o4-mini are better at interpreting visual information and drawing conclusions
+\item \textbf{Task optimization}: Text evidence extraction is fundamentally a search and retrieval problem where precision matters most. Image analysis requires reasoning about relationships, trends, and visual patterns
+\item \textbf{Prompt engineering}: Extraction tasks benefit from zero-temperature, deterministic responses. Visual reasoning tasks need more flexible interpretation capabilities
+\item \textbf{Performance characteristics}: gpt-4.1 can process enormous text contexts efficiently for quote extraction, while reasoning models handle the cognitive load of understanding charts, diagrams, and data visualizations
 \end{enumerate}
 
 \subsubsection{Technical Implementation}
