@@ -27,10 +27,16 @@ Solstice is an **end-to-end research prototype** that takes a pile of PDF clinic
 # Install pyenv (if not already installed)
 curl https://pyenv.run | bash
 
-# Add to your shell profile (~/.bashrc, ~/.zshrc, etc.)
+# Add to your shell profile:
+# For zsh (macOS default): ~/.zshrc or ~/.zprofile
+# For bash: ~/.bashrc or ~/.bash_profile
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Note: ~/.zprofile is loaded for all zsh sessions (including non-interactive)
+# while ~/.zshrc is only for interactive shells. Use ~/.zprofile if you
+# want pyenv available in scripts and cron jobs.
 
 # Install Python 3.11.9 (matches project .python-version)
 pyenv install 3.11.9
