@@ -12,6 +12,7 @@ help:
 	@echo "  make verify             Verify installation and dependencies"
 	@echo "  make lint               Run linting"
 	@echo "  make format             Format code"
+	@echo "  make writeup            Build technical documentation PDF"
 	@echo "  (no clean target anymore)"
 
 check:
@@ -129,3 +130,10 @@ verify:
 	@echo ""
 	@echo "Python: $$(python --version)"
 	@echo "Pip:    $$(pip --version)"
+
+# Build technical documentation
+.PHONY: writeup
+writeup:
+	@echo "Building Solstice technical documentation..."
+	@cd docs/writeup && pdflatex -interaction=nonstopmode src/solstice.tex
+	@echo "✓ PDF generated: docs/writeup/solstice.pdf"

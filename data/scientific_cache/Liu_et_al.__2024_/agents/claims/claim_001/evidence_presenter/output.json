@@ -1,0 +1,33 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Liu_et_al.__2024_",
+  "supporting_evidence": [
+    {
+      "quote": "a cell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain).",
+      "explanation": "The quote appears on page 2 of the document, though with some minor OCR artifacts and line breaks. The relevant passage is: 'acell culture based influenza vaccine (Flu cel vax Quad rival ent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quad rival ent by SanofiPasteur, RIV4). RIV4 contains 3 times the i d 45 HA/d / ...d'. The full intended meaning is clear: RIV4 (Flublok) contains 3 times the intended 45 \u00b5g HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). The numbers and vaccine names match the quote, and the factual content is preserved.. The quote directly supports the first part of the claim by explicitly stating that Flublok (RIV4) contains 3 times the hemagglutinin (HA) antigen content per strain compared to standard-dose flu vaccines (IIV4 and ccIIV4). The second part of the claim, regarding greater immunogenicity, is also supported elsewhere in the document (e.g., 'In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4'), but the quote itself is sufficient to substantiate the antigen content comparison."
+    },
+    {
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell-A (H3N2) virus than ccIIV4 and IIV4.",
+      "explanation": "The quote 'In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell-A (H3N2) virus than ccIIV4 and IIV4.' appears in the document, specifically in the first page of the provided text. The wording is nearly identical, and the factual content is preserved.. The quote directly supports the claim that Flublok (RIV4) leads to greater immunogenicity compared to standard-dose flu vaccines (IIV4 and ccIIV4), as it states that RIV4 induced higher neutralizing and total HA head binding antibodies to cell-A (H3N2) virus. While the quote does not explicitly mention the 3x HA antigen content, the document elsewhere confirms that RIV4 contains 3 times the HA content of standard-dose vaccines. Therefore, the quote provides direct evidence that the increased HA content in Flublok is associated with greater immunogenicity, supporting the claim."
+    },
+    {
+      "quote": "In this randomized trial (Clinical trials gov: NCT03722589), sera pre- and post vaccination with quadrivalent inactivated egg based (IIV4), cell culture based (ccIIV4), and recombinant (RIV4) influenza vaccines were compared. RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain).",
+      "explanation": "The quote appears in the document on page 1: 'In this randomized trial (Clinical trials gov: NCT03722589), sera pre- and post vaccination with quadrivalent inactivated egg based (IIV4), cell culture based (ccIIV4), and recombinant (RIV4) influenza vaccines were compared. RIV4 contains 3 times the i d 45 HA/d / ...d' and on page 9: 'IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain).' The quote as extracted is a cleaned and semantically accurate version of the original, stating that RIV4 (Flublok) contains 3 times the intended 45 \u00b5g HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain).. The quote directly supports the first part of the claim by explicitly stating that RIV4 (Flublok) contains 3 times the hemagglutinin (HA) antigen content per strain compared to standard-dose flu vaccines (IIV4 and ccIIV4). The second part of the claim, regarding greater immunogenicity, is also supported elsewhere in the document (e.g., 'In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4'), but the quote itself is focused on the antigen content. Therefore, the quote genuinely supports the claim as stated."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 3,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 3,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 3
+    },
+    "rejected_count": 0
+  }
+}

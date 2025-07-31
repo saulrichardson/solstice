@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_017.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p1_det_0_017.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_017",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "Portion of the first page of a clinical article titled \u201cRecombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age,\u201d including authors and the beginning of the abstract stating that trivalent recombinant influenza vaccines contain three times the hemagglutinin protein of standard-dose egg-based vaccines and are not susceptible to antigenic drift during manufacturing. The visible text does not provide any data or statements about a broader immune response or cross-protection in mismatch seasons, so it does not support the claim. Note: Only the title and start of the abstract are visible; no figures or detailed immunogenicity results are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Portion of the first page of a clinical article titled \u201cRecombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age,\u201d including authors and the beginning of the abstract stating that trivalent recombinant influenza vaccines contain three times the hemagglutinin protein of standard-dose egg-based vaccines and are not susceptible to antigenic drift during manufacturing.",
+    "evidence_found": null,
+    "reasoning": "The visible text does not provide any data or statements about a broader immune response or cross-protection in mismatch seasons, so it does not support the claim.",
+    "confidence_notes": "Only the title and start of the abstract are visible; no figures or detailed immunogenicity results are shown."
+  }
+}

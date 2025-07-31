@@ -1,0 +1,20 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": "Treanor_et_al.__2011_",
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "Genes were cloned into baculovirus using RT-PCR from the same CDC derived vaccine seed viruses used for the production of licensed inactivated influenza vaccine for that year.",
+      "supports_claim": true,
+      "explanation": "The quote appears on page 2 of the document, with only minor formatting and OCR differences: 'Genes were cloned into baculo virus using RT-PCR from the same Cd ce rived vaccine seed viruses used for the production of licensed nactivated influenza vaccine for that year.' This matches the quoted content in meaning and technical detail.. The quote explicitly states that the genes used for Flublok were cloned from the same CDC-derived vaccine seed viruses as those used for the production of licensed inactivated influenza vaccines for that year. Since the CDC-derived seed viruses are selected based on WHO and FDA recommendations, this directly supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains. The quote provides specific, factual evidence that the antigenic components in Flublok are sourced from the same material as standard, licensed vaccines, substantiating the claim without requiring inference.",
+      "presence_explanation": "The quote appears on page 2 of the document, with only minor formatting and OCR differences: 'Genes were cloned into baculo virus using RT-PCR from the same Cd ce rived vaccine seed viruses used for the production of licensed nactivated influenza vaccine for that year.' This matches the quoted content in meaning and technical detail.",
+      "support_explanation": "The quote explicitly states that the genes used for Flublok were cloned from the same CDC-derived vaccine seed viruses as those used for the production of licensed inactivated influenza vaccines for that year. Since the CDC-derived seed viruses are selected based on WHO and FDA recommendations, this directly supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains. The quote provides specific, factual evidence that the antigenic components in Flublok are sourced from the same material as standard, licensed vaccines, substantiating the claim without requiring inference.",
+      "original_relevance": "This quote demonstrates that Flublok's antigens are derived from the same seed viruses selected by regulatory authorities (such as WHO and FDA) for that year's licensed influenza vaccines, ensuring an identical antigenic match."
+    }
+  ],
+  "verification_stats": {
+    "total_verified": 1
+  },
+  "image_evidence": []
+}

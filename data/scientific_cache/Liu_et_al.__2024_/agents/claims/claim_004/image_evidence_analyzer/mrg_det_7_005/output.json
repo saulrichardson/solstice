@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p8_mrg_det_7_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p8_mrg_det_7_005.png",
+  "image_type": "Figure",
+  "page_number": 8,
+  "block_id": "mrg_det_7_005",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": true,
+  "explanation": "Panel of four rows corresponding to influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Within each row are four subplots showing hemagglutination inhibition (HI) antibody titers (log2 scale) at Day 0 and 1 month post\u2013year-2 vaccination against both egg-propagated and cell-propagated vaccine viruses. Box plots display geometric mean titers (GMTs) with 95% CIs for seven repeat vaccination arms (cclIV4-cclIV4, cclIV4-RIV4, RIV4-cclIV4, RIV4-RIV4, IIV4-cclIV4, IIV4-RIV4, IIV4-IIV4), and horizontal bars indicate statistically significant differences with p-values. Evidence: RIV4-RIV4 arm showed significantly higher post-vaccination GMTs compared with IIV4-IIV4 (egg-based) for cell-propagated A(H3N2) (p=0.015) and other strains (e.g., B/Yamagata p<0.0001). The figure shows that two consecutive doses of recombinant vaccine (RIV4-RIV4) induced higher HI antibody titers than two doses of egg-based standard vaccine (IIV4-IIV4), supporting the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines. Note: Only HAI titers are shown; clinical efficacy is not assessed. Dosing details are not explicit in the figure. Some text and labels are small and partially obscured.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Panel of four rows corresponding to influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Within each row are four subplots showing hemagglutination inhibition (HI) antibody titers (log2 scale) at Day 0 and 1 month post\u2013year-2 vaccination against both egg-propagated and cell-propagated vaccine viruses. Box plots display geometric mean titers (GMTs) with 95% CIs for seven repeat vaccination arms (cclIV4-cclIV4, cclIV4-RIV4, RIV4-cclIV4, RIV4-RIV4, IIV4-cclIV4, IIV4-RIV4, IIV4-IIV4), and horizontal bars indicate statistically significant differences with p-values.",
+    "evidence_found": "RIV4-RIV4 arm showed significantly higher post-vaccination GMTs compared with IIV4-IIV4 (egg-based) for cell-propagated A(H3N2) (p=0.015) and other strains (e.g., B/Yamagata p<0.0001).",
+    "reasoning": "The figure shows that two consecutive doses of recombinant vaccine (RIV4-RIV4) induced higher HI antibody titers than two doses of egg-based standard vaccine (IIV4-IIV4), supporting the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+    "confidence_notes": "Only HAI titers are shown; clinical efficacy is not assessed. Dosing details are not explicit in the figure. Some text and labels are small and partially obscured."
+  }
+}

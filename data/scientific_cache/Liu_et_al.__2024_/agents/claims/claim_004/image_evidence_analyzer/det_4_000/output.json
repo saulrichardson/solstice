@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p5_det_4_000.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p5_det_4_000.png",
+  "image_type": "Figure",
+  "page_number": 5,
+  "block_id": "det_4_000",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": true,
+  "explanation": "Four-panel figure showing geometric mean fold-rise of microneutralization (MN) or hemagglutination-inhibition (HI) antibody titers at 1-month post-vaccination (panels A and B) and geometric mean fold-reduction of antibody titers at 6-months post-vaccination (panels C and D) for adults aged 18\u201344 years (A, C) and 45\u201364 years (B, D). Four vaccine groups are compared for each influenza virus strain/propagation method (egg- or cell-propagated H3N2, H1N1, B/Victoria, B/Yamagata): Fluzone IIV4 (egg-based standard-dose), Fluarix IIV4 (egg-based standard-dose), ccIIV4 (cell-based), and RIV4 (recombinant high-dose). Error bars denote 95% confidence intervals and p-values from Tukey\u2019s test indicate significant differences between RIV4 and egg-based vaccines. Evidence: In panels A and B, RIV4 (recombinant vaccine) consistently shows higher geometric mean fold-rise in antibody titers at 1 month compared with Fluzone IIV4 (egg-based), with p-values <0.05 across H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/Victoria egg, B/Victoria cell, B/Yamagata egg, and B/Yamagata cell in both age groups. The figure shows that RIV4 induced significantly larger antibody responses at 1 month post-vaccination than the egg-based standard-dose Fluzone IIV4 across multiple strains and age groups, which supports the claim. Note: None",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Four-panel figure showing geometric mean fold-rise of microneutralization (MN) or hemagglutination-inhibition (HI) antibody titers at 1-month post-vaccination (panels A and B) and geometric mean fold-reduction of antibody titers at 6-months post-vaccination (panels C and D) for adults aged 18\u201344 years (A, C) and 45\u201364 years (B, D). Four vaccine groups are compared for each influenza virus strain/propagation method (egg- or cell-propagated H3N2, H1N1, B/Victoria, B/Yamagata): Fluzone IIV4 (egg-based standard-dose), Fluarix IIV4 (egg-based standard-dose), ccIIV4 (cell-based), and RIV4 (recombinant high-dose). Error bars denote 95% confidence intervals and p-values from Tukey\u2019s test indicate significant differences between RIV4 and egg-based vaccines.",
+    "evidence_found": "In panels A and B, RIV4 (recombinant vaccine) consistently shows higher geometric mean fold-rise in antibody titers at 1 month compared with Fluzone IIV4 (egg-based), with p-values <0.05 across H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/Victoria egg, B/Victoria cell, B/Yamagata egg, and B/Yamagata cell in both age groups.",
+    "reasoning": "The figure shows that RIV4 induced significantly larger antibody responses at 1 month post-vaccination than the egg-based standard-dose Fluzone IIV4 across multiple strains and age groups, which supports the claim.",
+    "confidence_notes": "None"
+  }
+}

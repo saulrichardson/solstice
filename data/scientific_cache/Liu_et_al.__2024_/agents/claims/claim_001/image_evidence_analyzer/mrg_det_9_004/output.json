@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_mrg_det_9_004.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p10_mrg_det_9_004.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "mrg_det_9_004",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Multi\u2010panel ELISA assay results showing hemagglutinin (HA) head and stalk binding antibody titers (log2 scale) at Day 0 and 1 month post\u2010vaccination across seven vaccine arms (combinations of cclIV4, RIV4, and IIV4). Panels include H3N2, pdm09, B/VIC, B/YAM head titers, H3 and H1 stalk titers, ratios of egg\u2010 to cell\u2010derived HA titers, and fold\u2010rise in stalk ELISA titers with statistical comparisons. The figure presents post\u2010vaccination immunogenicity data but does not provide any information on the amount of HA antigen in Flublok versus standard\u2010dose vaccines, so it does not support the claim Note: The figure is clear and complete for immunogenicity data, but lacks any annotation of HA antigen content",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Multi\u2010panel ELISA assay results showing hemagglutinin (HA) head and stalk binding antibody titers (log2 scale) at Day 0 and 1 month post\u2010vaccination across seven vaccine arms (combinations of cclIV4, RIV4, and IIV4). Panels include H3N2, pdm09, B/VIC, B/YAM head titers, H3 and H1 stalk titers, ratios of egg\u2010 to cell\u2010derived HA titers, and fold\u2010rise in stalk ELISA titers with statistical comparisons.",
+    "evidence_found": null,
+    "reasoning": "The figure presents post\u2010vaccination immunogenicity data but does not provide any information on the amount of HA antigen in Flublok versus standard\u2010dose vaccines, so it does not support the claim",
+    "confidence_notes": "The figure is clear and complete for immunogenicity data, but lacks any annotation of HA antigen content"
+  }
+}

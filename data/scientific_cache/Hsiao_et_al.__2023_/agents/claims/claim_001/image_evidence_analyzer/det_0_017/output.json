@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_017.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p1_det_0_017.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_017",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Partial page from a clinical article titled 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age,' showing the abstract stating: 'trivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard-dose egg-based vaccines\u2026' Evidence: \u2018trivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard-dose egg-based vaccines\u2019 The image shows that the recombinant vaccine has 3\u00d7 the HA antigen content of standard-dose vaccines but does not present any data or statement linking this increased antigen content to greater immunogenicity, so it does not support the claim in full. Note: Text is partially cut off and no immunogenicity results are visible",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Partial page from a clinical article titled 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age,' showing the abstract stating: 'trivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard-dose egg-based vaccines\u2026'",
+    "evidence_found": "\u2018trivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard-dose egg-based vaccines\u2019",
+    "reasoning": "The image shows that the recombinant vaccine has 3\u00d7 the HA antigen content of standard-dose vaccines but does not present any data or statement linking this increased antigen content to greater immunogenicity, so it does not support the claim in full.",
+    "confidence_notes": "Text is partially cut off and no immunogenicity results are visible"
+  }
+}

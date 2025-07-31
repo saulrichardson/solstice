@@ -1,0 +1,66 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": "Liu_et_al.__2024_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 2
+  },
+  "completeness_stats": {
+    "existing_evidence": 5,
+    "new_evidence_found": 2,
+    "total_evidence": 7
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4. In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating ...",
+      "relevance_explanation": "This quote shows that recombinant (RIV4) and cell-based vaccines induced higher and broader antibody responses to circulating (cell-propagated) viruses, supporting the claim that recombinant technology leads to a broader immune response that may provide cross-protection."
+    },
+    {
+      "id": 2,
+      "quote": "After vaccination, in both age groups, the two egg based vaccines generally reinforced the neutralizing antibody responses to egg adapted epitopes as evidenced by an increased trend in the proportion of participants with GMT egg cell titer ratio \u22654. In contrast, among RIV4 and ccIIV4 recipients, the proportion of participants with egg cell ratio \u22654 decreased or remained unchanged, suggesting that non egg based vaccines may redirect antibody responses away from egg adapted epitopes and towards epitopes present on circulating viruses.",
+      "relevance_explanation": "This quote directly supports the claim by stating that recombinant (RIV4) and cell-based vaccines shift the immune response toward epitopes on circulating viruses, rather than egg-adapted epitopes, indicating a broader and potentially more cross-protective immune response."
+    },
+    {
+      "id": 3,
+      "quote": "Comparing pre- and 1 month post vaccination, A (H3 N2) HA stalk binding antibodies were significantly boosted in ccIIV4-RIV4, RIV4-RIV4, IIV4-ccIIV4, and IIV4-RIV4 arms, while A (H1 N1) pdm09 HA stalk binding antibodies were also significantly boosted in ccIIV4-ccIIV4 and RIV4-ccIIV4 arms (Fig. 8 C).",
+      "relevance_explanation": "This quote demonstrates that recombinant and cell-based vaccine regimens boost HA stalk antibodies, which are associated with broader cross-protection, supporting the claim that recombinant technology can lead to a broader immune response."
+    },
+    {
+      "id": 4,
+      "quote": "The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45. For ELISA, rHA antigens were coated at 100 ng/well. Serum samples were tested at an initial dilution of 1:400 followed by 2 fold serial dilution. Antibodies were detected by horse radish peroxidase (HRP) conjugated goat anti human pan immunoglobulin conjugate to detect total binding antibodies. ELISA was performed based on previously described procedures 46 47. The ELISA titers were determined as the reciprocal of the highest dilution of serum samples that achieved an optical density (OD) value of 0.2 or greater.",
+      "relevance_explanation": "This methodological quote confirms that the immune response measured was specifically to recombinant HA proteins, supporting the claim that recombinant technology can elicit a broad immune response."
+    },
+    {
+      "id": 5,
+      "quote": "For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody in the 45\u221264 years group, it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).",
+      "relevance_explanation": "This quote provides evidence that recombinant vaccine (RIV4) increases both the quality and quantity of antibodies to cell-propagated (circulating) virus, supporting the claim of broader immune response and potential cross-protection."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Multiple seasons of non-egg based vaccination may be needed to redirect antibody responses from immune memory to egg adapted epitopes and re-focus the immune response towards epitopes on the circulating viruses to improve vaccine effectiveness.",
+      "relevance_explanation": "This quote directly states that non-egg based (including recombinant) vaccines can shift the immune response toward epitopes present on circulating viruses, implying a broader and potentially cross-protective immune response, especially relevant in mismatch seasons.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "In contrast, among recipients of non egg based vaccines in just one study year (IIV4-ccIIV4 or IIV4-RIV4) or in both study years (ccIIV4-ccIIV4, ccIIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4), the proportion of participants with \u22654-fold reduced titer to cell vaccine virus did not increase, suggesting that non egg based vaccines may avoid repeated boosting of antibodies to egg adapted epitopes and instead maintain or broaden responses to epitopes present on circulating viruses.",
+      "relevance_explanation": "This quote provides evidence that recombinant and cell-based vaccines do not reinforce narrow, egg-adapted responses, but rather help maintain or broaden immune responses to circulating (potentially mismatched) strains.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

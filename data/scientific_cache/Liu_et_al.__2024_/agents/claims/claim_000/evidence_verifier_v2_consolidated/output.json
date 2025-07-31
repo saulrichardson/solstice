@@ -1,0 +1,30 @@
+{
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "document": "Liu_et_al.__2024_",
+  "verified_evidence": [],
+  "verification_stats": {
+    "total_verified": 0
+  },
+  "image_evidence": [
+    {
+      "image_filename": "figure_p6_det_5_006.png",
+      "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p6_det_5_006.png",
+      "image_type": "Figure",
+      "page_number": 6,
+      "block_id": "det_5_006",
+      "claim_id": "claim_000",
+      "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+      "supports_claim": true,
+      "explanation": "Multi-panel ELISA data showing total HA head and stalk antibody responses to egg-propagated and cell-propagated influenza virus HA at pre-vaccination, 1 month, and 6 months post-vaccination for four vaccine groups (Fluzone IIIV4, Fluarix IIIV4, cell-based IV4, and RIV4). Panel B presents geometric mean ratios of egg HA vs cell HA ELISA titers at 1 month for H3, H1, B/Victoria, and B/Yamagata HAs. Evidence: In Panel B, RIV4 (Flublok) shows egg/cell HA ELISA titer ratios close to 1 for both H3 and H1 HA, indicating equivalent binding to egg- and cell-derived antigens. The near-unity egg/cell HA titer ratios for RIV4 demonstrate no antigenic difference between vaccine HA and WHO/FDA-selected HA antigens, which supports the claim that Flublok ensures identical antigenic match. Note: Data are limited to the strains tested and timepoints shown; the figure does not explicitly reference WHO or FDA selection criteria.",
+      "model_used": "o4-mini",
+      "detailed_analysis": {
+        "supports_claim": true,
+        "image_description": "Multi-panel ELISA data showing total HA head and stalk antibody responses to egg-propagated and cell-propagated influenza virus HA at pre-vaccination, 1 month, and 6 months post-vaccination for four vaccine groups (Fluzone IIIV4, Fluarix IIIV4, cell-based IV4, and RIV4). Panel B presents geometric mean ratios of egg HA vs cell HA ELISA titers at 1 month for H3, H1, B/Victoria, and B/Yamagata HAs.",
+        "evidence_found": "In Panel B, RIV4 (Flublok) shows egg/cell HA ELISA titer ratios close to 1 for both H3 and H1 HA, indicating equivalent binding to egg- and cell-derived antigens.",
+        "reasoning": "The near-unity egg/cell HA titer ratios for RIV4 demonstrate no antigenic difference between vaccine HA and WHO/FDA-selected HA antigens, which supports the claim that Flublok ensures identical antigenic match.",
+        "confidence_notes": "Data are limited to the strains tested and timepoints shown; the figure does not explicitly reference WHO or FDA selection criteria."
+      }
+    }
+  ]
+}
