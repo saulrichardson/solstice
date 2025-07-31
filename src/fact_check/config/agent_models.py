@@ -14,6 +14,9 @@ AGENT_MODELS = {
     # Image analysis - uses vision-capable model
     "image_evidence_analyzer": "o4-mini",  # o4-mini with modular capabilities support
     
+    # Evidence presentation - uses general purpose model
+    "evidence_presenter": "gpt-4.1",
+    
     # Default fallback for any agent not explicitly configured
     "default": "gpt-4.1"
 }

@@ -144,19 +144,18 @@ The pipeline generates comprehensive outputs in the cache directory:
 data/scientific_cache/<PDF_NAME>/
 ├── pages/                    # Rasterized pages at detection DPI
 ├── raw_layouts/             # Unprocessed detection results
-│   └── raw_layout_boxes.json
-├── merged/                  # Post-consolidation layouts
-│   └── merged_boxes.json    
-├── reading_order/           # Document flow analysis
-│   └── reading_order.json
+│   ├── raw_layout_boxes.json
+│   └── visualizations/      # Raw layout visualizations
 ├── extracted/               # Final outputs
 │   ├── content.json        # Structured Document object
 │   ├── document.txt        # Plain text with reading order
 │   ├── document.md         # Markdown with formatting
 │   ├── document.html       # HTML with preserved tables
 │   └── figures/            # Extracted images (PNG)
-└── visualizations/          # Debug overlays
-    └── page_*_layout.png   # Annotated layout visualizations
+├── visualizations/          # Debug overlays
+│   └── page_*_layout.png   # Annotated layout visualizations
+└── agents/                  # Fact-checking outputs (if run)
+    └── claims/              # Per-claim agent results
 ```
 
 ## Integration with Fact Checking

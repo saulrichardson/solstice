@@ -22,7 +22,7 @@ The visualization module provides comprehensive visual debugging and quality ass
 Main visualization functions for document layouts:
 
 ```python
-from src.injestion.visualization.layout_visualizer import (
+from src.injestion.shared.visualization.layout_visualizer import (
     visualize_page_layout,
     create_summary_grid,
     visualize_document
@@ -136,7 +136,7 @@ visualize_page_layout(
 
 ```python
 from PIL import Image
-from src.injestion.visualization.layout_visualizer import visualize_page_layout
+from src.injestion.shared.visualization.layout_visualizer import visualize_page_layout
 
 # Load page image
 page_img = Image.open("page-001.png")
@@ -168,7 +168,7 @@ for stage, blocks in processing_stages.items():
 
 ```python
 # Highlight overlapping regions
-from src.injestion.processing.box import Box
+from src.injestion.shared.processing.box import Box
 
 overlapping = []
 for i, box1 in enumerate(blocks):
@@ -348,7 +348,7 @@ The visualization module is called at key stages:
 ### With Storage Module
 Uses standardized paths:
 ```python
-from ..storage.paths import stage_dir, pages_dir
+from src.injestion.shared.storage.paths import stage_dir, pages_dir
 viz_dir = stage_dir("visualizations", doc_id)
 ```
 

@@ -54,9 +54,9 @@ data/
 Primary interface for path management:
 
 ```python
-from src.injestion.storage.paths import (
+from src.injestion.shared.storage.paths import (
     doc_id, pages_dir, stage_dir, 
-    save_json, load_json, set_scientific_cache_root
+    save_json, load_json, set_cache_root
 )
 
 # Get safe document ID from filename
@@ -72,7 +72,7 @@ save_json(data, stage_dir("extracted", doc_id) / "content.json")
 content = load_json(stage_dir("extracted", doc_id) / "content.json")
 
 # Change output location
-set_scientific_cache_root("/custom/output/path")
+set_cache_root("/custom/output/path")
 ```
 
 ## Implementation Details
@@ -102,7 +102,7 @@ def doc_id(pdf_filename: str | os.PathLike) -> str:
 # Global state for scientific_cache directory
 _SCIENTIFIC_CACHE_DIR = Path(settings.filesystem_cache_dir)
 
-def set_scientific_cache_root(cache_root: os.PathLike | str) -> None:
+def set_cache_root(cache_root: os.PathLike | str) -> None:
     """Override the scientific_cache directory at runtime.
     
     This allows:
@@ -181,8 +181,8 @@ for fig_path in figures_dir.glob("*.png"):
 # python -m src.cli ingest --output-dir /my/custom/path
 
 # Or programmatically
-from src.injestion.storage.paths import set_scientific_cache_root
-set_scientific_cache_root("/my/custom/path")
+from src.injestion.shared.storage.paths import set_cache_root
+set_cache_root("/my/custom/path")
 
 # All subsequent operations use new root
 pages = pages_dir(doc_id)  # /my/custom/path/<doc_id>/pages/
@@ -263,11 +263,11 @@ FILESYSTEM_CACHE_DIR=data/scientific_cache
 ### Runtime Override
 ```python
 # For testing or custom workflows
-set_scientific_cache_root("/tmp/test_scientific_cache")
+set_cache_root("/tmp/test_scientific_cache")
 
 # Reset to default
 from src.core.config import settings
-set_scientific_cache_root(settings.filesystem_cache_dir)
+set_cache_root(settings.filesystem_cache_dir)
 ```
 
 ## Performance Considerations

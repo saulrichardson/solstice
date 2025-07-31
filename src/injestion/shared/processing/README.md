@@ -17,7 +17,7 @@ The processing module contains the core algorithms and services for transforming
 Fundamental data structure for layout regions:
 
 ```python
-from src.injestion.processing.box import Box
+from src.injestion.shared.processing.box import Box
 
 box = Box(
     x1=100, y1=200, x2=300, y2=400,
@@ -36,7 +36,7 @@ merged = Box.merge_boxes([box1, box2])
 Detectron2-based layout analysis pipeline:
 
 ```python
-from src.injestion.processing.layout_detector import LayoutDetectionPipeline
+from src.injestion.shared.processing.layout_detector import LayoutDetectionPipeline
 
 detector = LayoutDetectionPipeline(
     config_path="PubLayNet/faster_rcnn",
@@ -56,7 +56,7 @@ boxes = detector.detect(image_path)
 Intelligent text extraction with multiple strategies:
 
 ```python
-from src.injestion.processing.text_extractor import extract_document_content
+from src.injestion.shared.processing.text_extractor import extract_document_content
 
 document = extract_document_content(
     pdf_path="document.pdf",
@@ -75,7 +75,7 @@ document = extract_document_content(
 Advanced text cleaning and enhancement:
 
 ```python
-from src.injestion.processing.text_processing_service import TextProcessingService
+from src.injestion.shared.processing.text_processing_service import TextProcessingService
 
 service = TextProcessingService()
 
@@ -100,7 +100,7 @@ fixed = service.process_text(text)
 Resolves conflicts between detected regions:
 
 ```python
-from src.injestion.processing.overlap_resolver import no_overlap_pipeline
+from src.injestion.shared.processing.overlap_resolver import no_overlap_pipeline
 
 # Remove overlapping boxes
 clean_boxes = no_overlap_pipeline(
@@ -120,7 +120,7 @@ clean_boxes = no_overlap_pipeline(
 Determines logical document flow:
 
 ```python
-from src.injestion.processing.reading_order import determine_reading_order_simple
+from src.injestion.shared.processing.reading_order import determine_reading_order_simple
 
 ordered_boxes = determine_reading_order_simple(boxes)
 # Returns boxes sorted by reading order
@@ -137,7 +137,7 @@ ordered_boxes = determine_reading_order_simple(boxes)
 Converts processed data to various output formats:
 
 ```python
-from src.injestion.processing.document_formatter import DocumentFormatter
+from src.injestion.shared.processing.document_formatter import DocumentFormatter
 
 formatter = DocumentFormatter(document)
 
@@ -153,7 +153,7 @@ html = formatter.to_html()
 Abstract interface for text extraction strategies:
 
 ```python
-from src.injestion.processing.text_extractors.base_extractor import BaseTextExtractor
+from src.injestion.shared.processing.text_extractors.base_extractor import BaseTextExtractor
 
 class MyExtractor(BaseTextExtractor):
     def extract_text(self, box: Box, page) -> str:

@@ -21,20 +21,13 @@ The marketing pipeline extends the base ingestion architecture with specialized 
 
 ```bash
 # Basic usage
-python run_marketing.py path/to/marketing.pdf
+python -m src.cli ingest-marketing
 
-# With custom settings
-python run_marketing.py marketing.pdf \
-    --merge-threshold 0.1 \
-    --box-padding 15.0 \
-    --no-visualizations
+# Process specific marketing PDF
+python -m src.cli ingest-marketing path/to/marketing.pdf
 
-# Use presets
-python run_marketing.py marketing.pdf --preset aggressive
-python run_marketing.py marketing.pdf --preset conservative
-
-# View all options
-python run_marketing.py --help
+# Process all PDFs in marketing directory
+python -m src.cli ingest-marketing --output-dir custom/output
 ```
 
 ### Python API

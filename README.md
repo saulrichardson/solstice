@@ -1,16 +1,16 @@
-# Fact Check – Clinical Document Fact-Checking Pipeline
+# Solstice – Clinical Document Fact-Checking Pipeline
 
-Fact Check is an **end-to-end research prototype** that takes a pile of PDF clinical documents (drug labels, journal articles, slide decks …) and a list of free-text claims, and returns a structured, evidence-backed verdict for every claim.
+Solstice is an **end-to-end research prototype** that takes a pile of PDF clinical documents (drug labels, journal articles, slide decks …) and a list of free-text claims, and returns a structured, evidence-backed verdict for every claim.
 
 📄 **[Technical Writeup (PDF)](docs/writeup/solstice.pdf)** - Detailed system architecture, LLM pipeline, and implementation notes
 
 ---
 
-## 1. How Fact Check fits together
+## 1. How Solstice fits together
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                         Fact Check System                       │
+│                         Solstice System                         │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    │
@@ -47,7 +47,7 @@ Fact Check is an **end-to-end research prototype** that takes a pile of PDF clin
    - PyMuPDF text extraction
    - Saves to data/scientific_cache/<document_name>/
        ↓
-3. Claims File (data/claims/flu_vaccine_claims.json)
+3. Claims File (data/claims/Flublok_Claims.json)
    - "Flublok is FDA approved for adults 18 years and older"
    - "Flublok demonstrated 30% better efficacy vs standard dose"
        ↓
@@ -88,9 +88,9 @@ Command: `python -m src.cli ingest`
 
 4. Normalisation & Indexing (`src.injestion.shared.processing.reading_order`)
    • Splits text into ~250-token chunks with a sliding window.  
-   • Inserts into a FAISS index (bi-encoder sentence embeddings) stored at `data/scientific_cache/<doc>/faiss.index`.
+   • Saves structured content for semantic search during fact-checking.
 
-Output: Structured JSON + FAISS index per document under `data/scientific_cache/`.
+Output: Structured JSON per document under `data/scientific_cache/`.
 
 --------------------------------------------------------
 Step 2: Run the fact-checking pipeline
@@ -100,12 +100,12 @@ Command: `python -m src.cli run-study --claims path/to/file.json`
 
 Input objects
 • Claim list  → e.g. "Flublok is FDA approved for adults 18+".  
-• Document set → every FAISS index in `data/scientific_cache/*`.
+• Document set → every processed document in `data/scientific_cache/*`.
 
 Pipeline orchestrator (`src.fact_check.orchestrators.claim_orchestrator`) executes these agents per claim:
 
 1. Evidence Extractor (`agents/evidence_extractor.py`)
-   • Semantic search over all indexes to retrieve top-k text chunks (+ figures captions).  
+   • Semantic search over all documents to retrieve top-k text chunks (+ figures captions).  
    • Uses LLM to filter for relevance & returns a ranked list.
 
 2. Completeness Checker (`agents/completeness_checker.py`)
@@ -150,7 +150,7 @@ data/studies/Flu_Vaccine_Study/
 ## 4. Project structure
 
 ```
-fact-check/
+solstice/
 ├── src/
 │   ├── cli/                 # Command-line interface
 │   ├── injestion/           # PDF processing
@@ -181,7 +181,7 @@ Prerequisites: Python 3.11–3.12, Docker (optional), an OpenAI API key, Poppler
 
 ```bash
 # 1️⃣  Clone the repository
-git clone <repo-url> && cd fact-check
+git clone <repo-url> && cd solstice
 
 # 2️⃣  Create a virtual env (recommended)
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
@@ -214,7 +214,7 @@ The quick-start should work on most systems. If it doesn't, follow the longer, O
 
 ```bash
 # 1. Clone & enter repo
-git clone <repo-url> && cd fact-check
+git clone <repo-url> && cd solstice
 
 # 2. Create a virtual environment (recommended)
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate

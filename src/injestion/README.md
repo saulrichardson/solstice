@@ -231,18 +231,17 @@ The reading order detection uses a simple algorithm (`reading_order.py`):
 data/scientific_cache/<PDF_NAME>/
 ├── pages/                  # Rasterized page images (PNG)
 ├── raw_layouts/           # Initial detection results
-│   └── raw_layout_boxes.json
-├── merged/                # Post-consolidation layouts
-│   └── merged_boxes.json
-├── reading_order/         # Reading flow analysis
-│   └── reading_order.json
+│   ├── raw_layout_boxes.json
+│   └── visualizations/    # Raw layout visualizations
 ├── extracted/             # Final outputs
 │   ├── content.json      # Structured document (Document object)
 │   ├── document.txt      # Plain text with reading order
 │   ├── document.md       # Markdown with formatting
 │   ├── document.html     # HTML with tables
 │   └── figures/          # Extracted images (PNG)
-└── visualizations/        # Debug visualizations
-    ├── page_*_layout.png # Per-page layout boxes
-    └── all_pages_summary.png
+├── visualizations/        # Debug visualizations
+│   ├── page_*_layout.png # Per-page layout boxes
+│   └── all_pages_summary.png
+└── agents/                # Fact-checking agent outputs (if run)
+    └── claims/            # Per-claim agent results
 ```

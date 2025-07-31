@@ -80,10 +80,6 @@ scientific_cache/FlublokPI/
 │   ├── raw_layout_boxes.json
 │   └── visualizations/      # Per-page detection visualizations
 │       └── page_XXX_raw_layout.png
-├── merged/                  # Post-consolidation layouts
-│   └── merged_boxes.json
-├── reading_order/           # Document flow analysis
-│   └── reading_order.json
 ├── extracted/               # Final processed content
 │   ├── content.json        # Structured document (primary output)
 │   ├── document.txt        # Plain text version
@@ -249,9 +245,6 @@ cat data/studies/study_results_*.json
 ```bash
 # Layout detection results
 cat data/scientific_cache/FlublokPI/raw_layouts/raw_layout_boxes.json
-
-# Reading order
-cat data/scientific_cache/FlublokPI/reading_order/reading_order.json
 ```
 
 ## Common Tasks
@@ -319,7 +312,6 @@ open data/scientific_cache/YourDocument/visualizations/page_001_layout.png
 ```bash
 # Remove intermediate files, keep final outputs
 rm -rf data/scientific_cache/*/raw_layouts/
-rm -rf data/scientific_cache/*/merged/
 rm -rf data/scientific_cache/*/pages/
 
 # Remove visualizations

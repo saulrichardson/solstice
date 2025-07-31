@@ -20,10 +20,9 @@ The core module serves as the foundation for the entire Solstice system, providi
 Centralized configuration management using pydantic-settings:
 
 ```python
-from src.core.config import get_settings
+from src.core.config import settings
 
 # Access settings anywhere in the codebase
-settings = get_settings()
 gateway_url = settings.gateway_url
 ```
 
@@ -40,7 +39,6 @@ gateway_url = settings.gateway_url
 - `openai_api_key`: OpenAI API key for LLM calls
 - `solstice_log_level`: Logging level (DEBUG, INFO, WARNING, ERROR)
 - `filesystem_cache_dir`: Base scientific_cache directory (default: data/scientific_cache)
-- `text_extractor`: Text extraction method (default: pymupdf)
 
 ## Usage
 
@@ -66,10 +64,9 @@ FILESYSTEM_CACHE_DIR=data/scientific_cache
 ### In Code
 
 ```python
-from src.core.config import get_settings
+from src.core.config import settings
 
 def connect_to_gateway():
-    settings = get_settings()
     url = settings.gateway_url  # Computed from URL or host/port
     
     # Use settings throughout your code
@@ -90,15 +87,10 @@ The `Settings` class (defined in `config.py`) is the central configuration objec
 
 ### Singleton Implementation
 
-The `get_settings()` function implements a thread-safe singleton pattern:
+The module creates a singleton `settings` instance at import time:
 ```python
-_settings_instance = None
-
-def get_settings() -> Settings:
-    global _settings_instance
-    if _settings_instance is None:
-        _settings_instance = Settings()
-    return _settings_instance
+# Create a singleton instance that will be imported throughout the codebase
+settings = Settings()
 ```
 
 This ensures all parts of the application share the same configuration instance.
@@ -114,7 +106,7 @@ This ensures all parts of the application share the same configuration instance.
 
 ## Integration with Other Modules
 
-- **CLI**: Commands use `get_settings()` for configuration access
+- **CLI**: Commands import `settings` for configuration access
 - **Gateway**: Reads API keys and connection settings
 - **Ingestion**: Uses scientific_cache directory and processing settings
 - **Fact Check**: Accesses model configurations and API endpoints

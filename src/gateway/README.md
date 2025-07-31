@@ -1,10 +1,10 @@
 # Solstice Gateway
 
-A lightweight proxy service for OpenAI's Responses API with audit logging and retry capabilities.
+A lightweight proxy service for OpenAI API with audit logging and retry capabilities.
 
 ## Overview
 
-The Gateway serves as a centralized access point for all LLM interactions in the Solstice system. It provides a unified interface to OpenAI's Responses API with enterprise-grade features:
+The Gateway serves as a centralized access point for all LLM interactions in the Solstice system. It provides a unified interface to OpenAI's API with enterprise-grade features:
 
 - **Write-only audit logging** - All responses saved to disk for debugging/analysis
 - **Automatic retry logic** - Handles transient failures with exponential backoff
@@ -29,8 +29,8 @@ The Gateway serves as a centralized access point for all LLM interactions in the
                       ┌──────────┴──────────┐
                       │                     │
               ┌───────▼────────┐    ┌──────▼──────┐
-              │ OpenAI Responses│    │ Filesystem  │
-              │      API        │    │ Audit Logs  │
+              │   OpenAI API    │    │ Filesystem  │
+              │                 │    │ Audit Logs  │
               └────────────────┘    └─────────────┘
 ```
 
@@ -38,8 +38,8 @@ The Gateway serves as a centralized access point for all LLM interactions in the
 
 - **`main.py`** - FastAPI application with lifecycle management and provider initialization
 - **`providers/`** - Provider abstraction layer for LLM services
-  - `base.py` - Abstract provider interface defining the Responses API contract
-  - `openai_provider.py` - OpenAI Responses API implementation with proper error handling
+  - `base.py` - Abstract provider interface defining the API contract
+  - `openai_provider.py` - OpenAI API implementation with proper error handling
 - **`middleware/`** - Cross-cutting concerns and request processing
   - `retry.py` - Automatic retry with exponential backoff for transient failures
   - `logging.py` - Structured request/response logging with correlation IDs
@@ -55,7 +55,7 @@ GET /health
 ```
 Returns provider status and configuration.
 
-### Create Response (OpenAI Responses API)
+### Create Response
 ```bash
 POST /v1/responses
 
@@ -181,7 +181,7 @@ from .base import Provider, ResponseRequest, ResponseObject
 
 class NewProvider(Provider):
     async def create_response(self, request: ResponseRequest) -> ResponseObject:
-        # Implement the Responses API contract
+        # Implement the API contract
         # Handle authentication, API calls, and error mapping
         pass
     

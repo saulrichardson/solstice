@@ -7,15 +7,12 @@ This directory contains LaTeX documentation for the Solstice medical fact-checki
 ```
 writeup/
 ├── src/              # LaTeX source files
-│   ├── solstice.tex    # Main 2-page technical document
-│   └── solstice_v2.tex # Extended version
+│   └── solstice.tex    # Main 2-page technical document
 ├── assets/           # Images and figures
 │   ├── marketing_layout_example.png
 │   └── scientific_layout_example.png
-├── output/           # Generated PDFs
-│   └── solstice.pdf
-├── build/            # Build artifacts (gitignored)
-└── Makefile          # Build automation
+├── solstice.pdf      # Generated PDF
+└── build/            # Build artifacts (gitignored)
 ```
 
 ## Building the PDF
@@ -62,12 +59,10 @@ After LLM processing, an Evidence Presenter (non-LLM) consolidates all verified 
 
 The ClaimOrchestrator coordinates these LLM steps across multiple documents, maintaining evidence trails with exact quotes and page references.
 
-### Extended Version (`solstice_v2.tex`)
-Expanded technical documentation with additional implementation details.
 
 ## Notes
 
 - Build artifacts are kept in `build/` directory
-- Final PDFs are copied to `output/`
+- Final PDF is generated as `solstice.pdf`
 - All temporary files are automatically cleaned up
 - Images referenced in documents should be placed in `assets/`

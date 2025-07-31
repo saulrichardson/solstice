@@ -101,7 +101,6 @@ AGENT_MODELS = {
 - **json_parser.py**: Robust JSON extraction from LLM responses
 - **llm_parser.py**: Model-specific response parsing
 - **report_generator.py**: HTML/Markdown report generation
-- **resource_monitor.py**: Performance tracking and optimization
 
 ## Processing Pipeline
 
