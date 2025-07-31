@@ -75,19 +75,64 @@ After you run a fact-checking study (\texttt{python -m src.cli run-study}), the 
 data/studies/consolidated_results.json
 \end{verbatim}
 
-This single JSON file contains all the verified evidence for each claim, including:
+This single JSON file contains all the verified evidence for each claim. Here's the structure with a stubbed example:
+
+\begin{verbatim}
+{
+  "study_name": "unknown",
+  "timestamp": "2025-07-30T23:47:44.122369",
+  "claims": [
+    {
+      "claim": "Flublok ensures identical antigenic match with 
+               WHO- and FDA-selected flu strains.",
+      "evidence": [
+        {
+          "type": "text",
+          "quote": "The primary amino acid sequence of the rHA 
+                   produced using baculovirus...is identical 
+                   to the HA from the wild type virus...",
+          "explanation": "The quote directly supports the claim...",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p2_det_1_000.png",
+          "reasoning": "The table provides data showing Flublok 
+                       contains 45 µg HA per strain...",
+          "document": "CDC_Influenza_vaccines"
+        }
+      ]
+    },
+    {
+      "claim": "Flublok contains 3x the hemagglutinin (HA) antigen 
+               content of standard-dose flu vaccines...",
+      "evidence": [
+        // Additional text and image evidence entries
+      ]
+    }
+    // Additional claims...
+  ]
+}
+\end{verbatim}
+
+Each claim contains an array of evidence entries that can be either:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item The original claim text
-\item Supporting and refuting text quotes from documents
-\item References to relevant tables with extracted data
-\item References to figures with visual evidence
-\item Verification status and confidence scores
+\item \textbf{Text evidence}: Exact quotes from documents with explanations of how they support or refute the claim
+\item \textbf{Image evidence}: References to figures/tables with reasoning about their relevance
 \end{itemize}
 
-For developers who need to debug or analyze individual processing steps, the system also maintains a detailed directory structure under \texttt{data/studies/<study\_name>/} with intermediate outputs from each agent, but most users will only need the consolidated results file.
+The evidence entries always include the source document name, making it easy to trace back to the original PDFs in the scientific or marketing cache.
 
 \paragraph{2. Marketing Material Cache}
-Marketing PDFs like FlublokOnePage are processed and stored with the following structure:
+Marketing PDFs like FlublokOnePage are processed with special attention to layout preservation. To see the marketing page layout, look at:
+
+\begin{verbatim}
+data/marketing_cache/FlublokOnePage/visualizations/page_001_layout.png
+\end{verbatim}
+
+This visualization shows the detected layout elements (text blocks, figures, headers) overlaid on the original page, helping verify proper extraction of complex marketing layouts.
+
+The full directory structure for marketing materials:
 
 \begin{verbatim}
 data/marketing_cache/FlublokOnePage/
@@ -101,9 +146,9 @@ data/marketing_cache/FlublokOnePage/
 |       |-- figure_p1_6de74a29.png
 |       `-- figure_p1_d9d91bd1.png
 |-- pages/
-|   `-- page-000.png          # Full page image
+|   `-- page-000.png          # Full page image  
 `-- visualizations/
-    `-- page_001_layout.png   # Layout detection visualization
+    `-- page_001_layout.png   # ** MARKETING LAYOUT VISUALIZATION **
 \end{verbatim}
 
 \paragraph{3. Scientific Document Cache}
