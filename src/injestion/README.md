@@ -1,23 +1,23 @@
 # Ingestion Module
 
-High-performance PDF processing system with ML-powered layout detection and intelligent text extraction.
+PDF processing system that converts documents into structured JSON using layout detection and text extraction.
 
 ## Overview
 
-The ingestion module is the document processing engine of Solstice, converting PDFs into structured, searchable documents for fact-checking and analysis. It employs state-of-the-art computer vision models (Detectron2) and advanced text processing algorithms to handle diverse document types.
+The ingestion module converts PDFs into structured documents for fact-checking. It uses Detectron2 for layout detection and PyMuPDF for text extraction.
 
-### Core Capabilities
+### Core Components
 
-- **ML-Based Layout Detection**: Uses pre-trained Detectron2 models for accurate region identification
-- **Intelligent Text Extraction**: Context-aware text processing with medical term preservation
-- **Multi-Pipeline Architecture**: Specialized pipelines for different document types
-- **Reading Order Detection**: Advanced algorithms for multi-column and complex layouts
-- **Quality Assurance**: Built-in visualization and validation tools
+- **Layout Detection**: Detectron2 with pre-trained models (PubLayNet, PrimaLayout)
+- **Text Extraction**: PyMuPDF with OCR artifact correction
+- **Two Pipelines**: Scientific (clinical documents) and Marketing (visual layouts)
+- **Reading Order**: Column detection and vertical ordering
+- **Output**: Structured JSON with text blocks and extracted figures
 
 ### Available Pipelines
 
-1. **Scientific Pipeline** (`scientific/`): Optimized for academic papers, clinical studies, and research documents
-2. **Marketing Pipeline** (`marketing/`): Specialized for marketing materials with complex visual layouts
+1. **Scientific Pipeline** (`scientific/`): For clinical PDFs and research documents
+2. **Marketing Pipeline** (`marketing/`): For marketing materials
 
 ## Architecture
 
@@ -54,13 +54,12 @@ injestion/
         └── layout_visualizer.py     # Generate visual layout representations
 ```
 
-### Design Patterns
+### Key Classes
 
-1. **Abstract Base Pipeline**: All pipelines inherit from `BasePipeline` for consistency
-2. **Strategy Pattern**: Different text extractors and processors can be swapped
-3. **Builder Pattern**: Pipelines assemble documents through sequential processing steps
-4. **Singleton Models**: Detectron2 models are loaded once and reused
-5. **Immutable Configuration**: `IngestionConfig` validates settings at creation
+- `BasePipeline`: Abstract base class for all pipelines
+- `IngestionConfig`: Configuration with validation
+- `Box`/`LabeledBox`: Core data structures for layout regions
+- `Document`: Output structure with blocks and reading order
 
 ## Pipeline Comparison
 
@@ -74,35 +73,14 @@ injestion/
 
 ## Scientific Pipeline
 
-### Architecture
+### Processing Steps
 
-```
-PDF Document
-    │
-    ├─► Page Rasterization (400 DPI)
-    │        │
-    │        └─► Layout Detection (PubLayNet/Detectron2)
-    │                 │
-    │                 ├─► Box Detection with Labels:
-    │                 │   - 0: Text
-    │                 │   - 1: Title
-    │                 │   - 2: List
-    │                 │   - 3: Table
-    │                 │   - 4: Figure
-    │                 │
-    │                 └─► Overlap Resolution & Box Expansion
-    │
-    └─► Text Extraction (PyMuPDF)
-             │
-             ├─► Text Processing Service
-             │    ├─► PDF Artifact Removal
-             │    ├─► WordNinja Spacing Correction
-             │    └─► Medical Term Preservation
-             │
-             └─► Document Assembly
-                      │
-                      └─► Structured Output (JSON/MD/HTML)
-```
+1. **Rasterize PDF** at 400 DPI
+2. **Detect layout** using PubLayNet model (labels: Text=0, Title=1, List=2, Table=3, Figure=4)
+3. **Resolve overlaps** and expand boxes to prevent text cutoff
+4. **Extract text** from boxes using PyMuPDF
+5. **Clean text**: Remove PDF artifacts, fix spacing with WordNinja
+6. **Save outputs**: content.json, figures/, visualizations/
 
 ### Usage
 
@@ -137,31 +115,14 @@ pipeline = PDFIngestionPipeline(config=config)
 
 ## Marketing Pipeline
 
-### Architecture
+### Processing Steps
 
-```
-Marketing PDF
-    │
-    ├─► Page Rasterization (configurable DPI)
-    │        │
-    │        └─► Layout Detection (PrimaLayout/Detectron2)
-    │                 │
-    │                 ├─► Box Detection with Labels:
-    │                 │   - 1: TextRegion
-    │                 │   - 2: ImageRegion
-    │                 │   - 3: TableRegion
-    │                 │   - 4: MathsRegion
-    │                 │   - 5: SeparatorRegion
-    │                 │   - 6: OtherRegion
-    │                 │
-    │                 └─► Advanced Box Consolidation
-    │
-    └─► Marketing-Optimized Processing
-             │
-             ├─► Logo Detection & Reclassification
-             ├─► Multi-Column Handling
-             └─► Feature-Based Reading Order
-```
+1. **Rasterize PDF** at configurable DPI
+2. **Detect layout** using PrimaLayout model (labels start at 1: TextRegion, ImageRegion, etc.)
+3. **Consolidate boxes** aggressively for marketing layouts
+4. **Detect reading order** using marketing-specific algorithm
+5. **Extract and clean text** with marketing optimizations
+6. **Save outputs** same as scientific pipeline
 
 ### Usage
 
@@ -220,10 +181,8 @@ boxes = no_overlap_pipeline(
 
 ### Reading Order Detection
 
-The reading order detection uses a simple algorithm (`reading_order.py`):
-   - Top-to-bottom, left-to-right ordering
-   - Suitable for most document layouts
-   - Handles basic column detection
+- Scientific: Simple top-to-bottom, left-to-right with column detection
+- Marketing: Custom algorithm for complex layouts
 
 ## Output Structure
 

@@ -86,7 +86,7 @@ python -m src.cli clear-all-cache
 
 - **Ingestion Pipeline**: Commands use `src.injestion` for document processing
 - **Fact Checking**: Integrates with `src.fact_check` for claim verification
-- **Storage**: Uses `src.injestion.shared.storage` for scientific_cache management
+- **Storage**: Uses `src.injestion.shared.storage` for cache management
 - **Configuration**: Leverages `src.core.config` for settings
 
 ## Adding New Commands

@@ -22,29 +22,34 @@ The fact_check module implements a sophisticated pipeline for verifying claims a
 The module uses specialized agents that inherit from `BaseAgent`:
 
 #### **EvidenceExtractor**
-- **Purpose**: Identifies relevant text passages that may support or contradict claims
+- **Purpose**: Extracts exact quotes from documents that support claims
+- **Inputs**: Document content JSON, claim text (from config)
 - **Model**: Configurable (default: gpt-4.1)
-- **Output**: List of potential evidence passages with locations
-
-#### **EvidenceVerifierV2**
-- **Purpose**: Verifies exact quotes and ensures evidence accuracy
-- **Model**: Configurable (default: gpt-4.1)
-- **Features**: Quote verification, context validation, source tracking
+- **Output**: `extracted_evidence` array containing quotes with relevance explanations
 
 #### **CompletenessChecker**
-- **Purpose**: Identifies gaps in evidence and suggests additional searches
+- **Purpose**: Finds additional supporting quotes not caught in initial extraction
+- **Inputs**: Document content JSON, evidence extractor output
 - **Model**: Configurable (default: gpt-4.1)
-- **Output**: Missing evidence types, suggested search areas
+- **Output**: `combined_evidence` array merging original + new quotes (duplicates removed)
+
+#### **EvidenceVerifierV2**
+- **Purpose**: Verifies quotes exist in the document and genuinely support the claim
+- **Inputs**: Document content JSON, completeness checker output (`combined_evidence`)
+- **Model**: Configurable (default: gpt-4.1)
+- **Output**: `verified_evidence` and `rejected_evidence` arrays with verification results
 
 #### **ImageEvidenceAnalyzer**
 - **Purpose**: Analyzes visual content (tables, figures, charts) for evidence
+- **Inputs**: Individual image file, image metadata (page, type), claim text
 - **Model**: Vision-capable (default: o4-mini)
+- **Output**: Per-image analysis with `supports_claim` boolean, reasoning, and evidence details
 - **Features**: Parallel image processing, automatic figure discovery
 
 #### **EvidencePresenter**
-- **Purpose**: Consolidates all evidence into a structured presentation
-- **Model**: Configurable (default: gpt-4.1)
-- **Output**: Final evidence report with confidence levels
+- **Purpose**: Consolidates all evidence into a structured presentation (non-LLM)
+- **Type**: Formatting agent (no LLM calls)
+- **Output**: Final evidence report with supporting_evidence and image_supporting_evidence arrays
 
 ### 2. Orchestrators (`orchestrators/`)
 
@@ -113,8 +118,8 @@ Claim Input
     │       │
     │       ├─► Text Evidence Pipeline
     │       │   ├─► EvidenceExtractor
-    │       │   ├─► EvidenceVerifierV2
-    │       │   └─► CompletenessChecker
+    │       │   ├─► CompletenessChecker
+    │       │   └─► EvidenceVerifierV2
     │       │
     │       ├─► Image Evidence Pipeline (parallel)
     │       │   └─► ImageEvidenceAnalyzer (per image)
@@ -157,10 +162,11 @@ orchestrator = ClaimOrchestrator(
 results = await orchestrator.process()
 
 # Access evidence
-for doc_result in results["document_results"]:
-    print(f"Document: {doc_result['document']}")
+for doc_name, doc_result in results["documents"].items():
+    print(f"Document: {doc_name}")
     print(f"Supporting: {doc_result['supporting_evidence']}")
-    print(f"Images: {doc_result['image_supporting_evidence']}")
+    print(f"Image evidence: {doc_result.get('image_evidence', [])}")
+    print(f"Coverage: {doc_result['evidence_summary']['coverage']}")
 ```
 
 ### Batch Processing
@@ -174,7 +180,7 @@ study = StudyOrchestrator(
     output_dir=Path("results/")
 )
 
-await study.run()
+await study.process()
 # Generates comprehensive report with all claim-document pairs
 ```
 
@@ -185,9 +191,9 @@ await study.run()
 ```json
 {
   "claim_id": "claim_001",
-  "claim_text": "...",
-  "document_results": [
-    {
+  "claim": "...",
+  "documents": {
+    "FlublokPI": {
       "document": "FlublokPI",
       "supporting_evidence": [
         {
@@ -197,16 +203,18 @@ await study.run()
       ],
       "image_evidence": [
         {
-          "image_filename": "table_p1_abc123.png",
-          "explanation": "Table shows age ranges including 18+",
-          "supports_claim": true
+          "filename": "table_p1_abc123.png",
+          "supports_claim": true,
+          "reasoning": "Table shows age ranges including 18+"
         }
       ],
-      "missing_evidence": {
-        "clinical_trials": "No trial data found for age group"
-      }
+      "evidence_summary": {
+        "coverage": "complete",
+        "total_evidence": 5
+      },
+      "success": true
     }
-  ]
+  }
 }
 ```
 
@@ -239,9 +247,9 @@ config = {
 ## Performance Optimization
 
 ### Caching Strategy
-- Agent outputs cached per claim-document pair in scientific_cache
+- Agent outputs cached per claim-document pair
 - Intermediate results saved for debugging
-- Scientific_cache invalidation on document updates
+- Cache invalidation on document updates
 
 ### Parallel Processing
 - Documents processed concurrently
@@ -256,8 +264,8 @@ config = {
 ## Integration Points
 
 ### With Ingestion Module
-- Consumes `Document` objects from ingestion
-- Reads extracted figures from scientific_cache
+- Consumes extracted content.json from cache
+- Reads extracted figures from cache directories
 - Uses document metadata for context
 
 ### With Gateway Module

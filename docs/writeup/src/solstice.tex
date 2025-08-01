@@ -40,16 +40,36 @@ The ingestion pipeline transforms unstructured PDFs into queryable structured do
 
 \subsection{LLM-Based Fact-Checking System}
 
-The fact-checking pipeline processes text evidence through three sequential stages (Extract → Completeness → Verify) followed by parallel image analysis:
+The fact-checking pipeline processes text evidence through three sequential stages (Extract → Check Completeness → Verify) followed by parallel image analysis:
 
 \begin{itemize}[leftmargin=*,topsep=0pt]
-\item \textbf{Evidence Extraction Step}: Searches document text for claim-relevant quotes using gpt-4.1. Preserves exact quotes and returns structured evidence with relevance explanations.
+\item \textbf{Evidence Extraction Step}:
+  \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
+  \item \textit{Inputs}: Document content JSON, claim text (from config)
+  \item \textit{Processing}: Searches full document text for supporting quotes using gpt-4.1
+  \item \textit{Outputs}: Array of \texttt{extracted\_evidence} with quote text and relevance explanations
+  \end{itemize}
 
-\item \textbf{Completeness Checker}: Reviews the extracted evidence and searches the document again for any additional quotes that weren't initially found, ensuring comprehensive coverage.
+\item \textbf{Completeness Checker}:
+  \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
+  \item \textit{Inputs}: Document content JSON, evidence extractor output
+  \item \textit{Processing}: Re-searches document for quotes not found in initial extraction
+  \item \textit{Outputs}: \texttt{combined\_evidence} array merging existing and new quotes (duplicates removed)
+  \end{itemize}
 
-\item \textbf{Evidence Verification Step (V2)}: Validates that all extracted quotes (from both extraction and completeness steps) exist in the source document. Uses semantic matching and filters out tangentially related content, achieving high verification rates.
+\item \textbf{Evidence Verification Step (V2)}:
+  \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
+  \item \textit{Inputs}: Document content JSON, completeness checker output
+  \item \textit{Processing}: Verifies each quote exists in document (with OCR tolerance) and supports claim
+  \item \textit{Outputs}: \texttt{verified\_evidence} and \texttt{rejected\_evidence} arrays with reasons
+  \end{itemize}
 
-\item \textbf{Image Evidence Analyzer}: Analyzes figures and tables using vision models to identify supporting visual evidence and provide detailed explanations.
+\item \textbf{Image Evidence Analyzer}:
+  \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
+  \item \textit{Inputs}: Individual image file, image metadata (page, type), claim text
+  \item \textit{Processing}: Analyzes visual content using o4-mini vision model
+  \item \textit{Outputs}: Per-image analysis with \texttt{supports\_claim} boolean, reasoning, and evidence found
+  \end{itemize}
 \end{itemize}
 
 After all LLM processing completes, an Evidence Presenter step consolidates all verified text and image evidence into structured JSON reports with coverage assessment.
@@ -94,7 +114,7 @@ The fact-checking pipeline orchestrates multiple LLM calls in a specific sequenc
 \node[below left=0.2cm and -0.5cm of image, font=\small] {o4-mini};
 
 \end{tikzpicture}
-\caption{LLM Pipeline: Sequential text evidence processing with parallel image analysis}
+\caption{LLM Pipeline: Sequential text evidence processing (Extract→Completeness→Verify) with parallel image analysis. Each step receives the previous step's output plus the full document.}
 \end{figure}
 
 \section{Technical Implementation}
@@ -331,7 +351,7 @@ All text-based evidence extraction and verification uses gpt-4.1, chosen specifi
 \item \textbf{Evidence extraction}: Searches through hundreds of pages to find exact quotes matching claims
 \item \textbf{High-precision retrieval}: Locates specific sentences in dense medical literature with minimal false positives
 \item \textbf{Completeness checking}: Re-scans documents to catch any quotes missed in the first pass
-\item \textbf{Exact quote verification}: Confirms extracted text exists verbatim in source documents
+\item \textbf{Quote verification}: Confirms extracted quotes exist in source documents (with tolerance for OCR corrections) and actually support the claims
 \end{itemize}
 
 \subsubsection{Image Analysis with o4-mini}
@@ -362,13 +382,21 @@ Processing text and images separately leverages the distinct strengths of differ
 \end{itemize}
 
 \subsection{Three-Stage Text Evidence Pipeline}
-Extraction, verification, and completeness are run as distinct LLM-driven steps:
+Extraction, completeness checking, and verification are run as distinct LLM-driven steps:
 \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
-\item \textbf{Stage 1}: Extract all potentially relevant quotes (high recall)
-\item \textbf{Stage 2}: Find additional quotes not caught in initial extraction (expand coverage)
-\item \textbf{Stage 3}: Verify all quotes exist and support claim (high precision)
+\item \textbf{Stage 1 - Extract}: Find all potentially relevant quotes from the document (optimized for high recall)
+\item \textbf{Stage 2 - Expand}: Search again for additional quotes not caught initially (maximize coverage)
+\item \textbf{Stage 3 - Verify}: Check each quote exists in document and genuinely supports claim (ensure precision)
 \end{itemize}
-This separation allows the stages to be optimised and tested independently.
+
+Each stage produces structured JSON output that feeds into the next:
+\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
+\item \textbf{Extractor→Completeness}: Passes \texttt{extracted\_evidence} array
+\item \textbf{Completeness→Verifier}: Passes \texttt{combined\_evidence} array
+\item \textbf{Verifier→Presenter}: Passes \texttt{verified\_evidence} array
+\end{itemize}
+
+This separation enables independent optimization, testing, and debugging of each stage.
 
 \subsection{Filesystem-Centric Architecture}
 The pipeline stores intermediate data on the filesystem rather than in a database:
