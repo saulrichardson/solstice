@@ -22,9 +22,13 @@ For marketing materials with complex layouts.
 data/scientific_cache/<PDF_NAME>/
 ├── extracted/
 │   ├── content.json      # Structured document
-│   ├── figures/          # Extracted images
-│   └── document.txt      # Plain text
-└── visualizations/       # Layout detection previews
+│   ├── document.txt      # Plain text version
+│   ├── document.html     # HTML version
+│   ├── document.md       # Markdown version
+│   └── figures/          # Extracted images (PNG files)
+├── pages/                # Full page images (page-000.png, etc.)
+├── visualizations/       # Layout detection previews
+└── raw_layouts/          # Raw detection data
 ```
 
 ## Usage
