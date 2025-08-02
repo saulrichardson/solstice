@@ -130,6 +130,9 @@ visualizations/
 !data/
 !data/**
 
+# But still ignore .DS_Store files everywhere, including in data/
+**/.DS_Store
+
 # Gateway request/response snapshots — keep them out of git
 data/gateway_cache/
 
