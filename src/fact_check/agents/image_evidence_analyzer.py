@@ -59,13 +59,12 @@ class ImageEvidenceAnalyzer(BaseAgent):
         self.claim_id = claim_id
         self.image_metadata = image_metadata
         
-        # Extract filename from path for backward compatibility
-        if 'image_path' in image_metadata:
-            image_path = Path(image_metadata['image_path'])
-            self.image_filename = image_path.name
-        else:
-            # Fallback to block_id or empty string
-            self.image_filename = image_metadata.get('block_id', 'unknown_image')
+        # Extract filename from image path
+        if 'image_path' not in image_metadata:
+            raise AgentError("image_path required in image_metadata")
+        
+        image_path = Path(image_metadata['image_path'])
+        self.image_filename = image_path.name
         
         # Store results per image using block_id for uniqueness
         image_id = image_metadata.get('block_id', self.image_filename.replace('.png', '').replace('.jpg', ''))
@@ -233,10 +232,10 @@ Return ONLY the JSON object above. Do NOT wrap in ```json``` or any other markdo
                 "claim_id": self.claim_id,
                 "claim": claim,
                 "supports_claim": result.supports_claim,
-                "explanation": self._format_explanation(result.dict()),
+                "explanation": self._format_explanation(result.model_dump()),
                 "model_used": self.llm_client.model,
                 # Store detailed analysis separately
-                "detailed_analysis": result.dict()
+                "detailed_analysis": result.model_dump()
             }
             
             logger.info(f"\n📊 ANALYSIS RESULT:")

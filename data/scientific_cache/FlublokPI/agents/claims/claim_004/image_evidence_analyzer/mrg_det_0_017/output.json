@@ -1,9 +1,19 @@
 {
   "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "Error analyzing image: 'type'",
-  "error": true,
-  "model_used": "o4-mini"
+  "explanation": "First page of Flublok prescribing information showing indications, dosage and administration (0.5 mL intramuscular), dosage forms and strengths, contraindications, warnings and precautions, adverse reactions, use in specific populations, and a table of contents for the full prescribing information. does not support the claim \u2014 the image contains only labeling and table of contents without any clinical or immunogenicity data comparing a higher-dose recombinant flu vaccine to egg-based standard-dose vaccines. Note: Analysis limited by the image showing only administrative and structural information; no efficacy or antibody response data are present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "First page of Flublok prescribing information showing indications, dosage and administration (0.5 mL intramuscular), dosage forms and strengths, contraindications, warnings and precautions, adverse reactions, use in specific populations, and a table of contents for the full prescribing information.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim \u2014 the image contains only labeling and table of contents without any clinical or immunogenicity data comparing a higher-dose recombinant flu vaccine to egg-based standard-dose vaccines.",
+    "confidence_notes": "Analysis limited by the image showing only administrative and structural information; no efficacy or antibody response data are present."
+  }
 }

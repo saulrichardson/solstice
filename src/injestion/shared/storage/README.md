@@ -159,7 +159,7 @@ save_json(merged_boxes, stage_dir("merged", doc_id) / "merged_boxes.json")
 
 # 4. Save final output
 output_dir = stage_dir("extracted", doc_id)
-save_json(document.dict(), output_dir / "content.json")
+save_json(document.model_dump(), output_dir / "content.json")
 ```
 
 ### Reading Results

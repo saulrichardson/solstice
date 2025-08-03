@@ -1,6 +1,6 @@
 """Pydantic models for LLM outputs in fact-checking system."""
 
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator, ValidationInfo
 from typing import List
 import logging
 
@@ -25,10 +25,11 @@ class VerifierOutput(BaseModel):
     supports_claim: bool = Field(..., description="Whether the quote supports the claim")
     support_explanation: str = Field(..., min_length=1, description="Explanation of why it does/doesn't support")
     
-    @validator('support_explanation')
-    def validate_support_explanation(cls, v, values):
+    @field_validator('support_explanation')
+    @classmethod
+    def validate_support_explanation(cls, v: str, info: ValidationInfo) -> str:
         """Validate that support explanation makes sense given quote_found status."""
-        if not values.get('quote_found') and v and 'not found' not in v.lower() and 'cannot evaluate' not in v.lower():
+        if not info.data.get('quote_found') and v and 'not found' not in v.lower() and 'cannot evaluate' not in v.lower():
             # Be lenient - just log warning
             logger.warning("Quote not found but support_explanation doesn't mention this")
         return v

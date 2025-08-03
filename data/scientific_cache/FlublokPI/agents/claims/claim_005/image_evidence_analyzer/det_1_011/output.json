@@ -1,9 +1,19 @@
 {
   "image_filename": "table_p2_det_1_011.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_011",
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "Error analyzing image: 'type'",
-  "error": true,
-  "model_used": "o4-mini"
+  "explanation": "A table summarizing solicited local and systemic adverse event rates (percentages of any, moderate, and severe events) in two arms: Flublok quadrivalent (N=2272) and Placebo (N=2231). Local events listed include pain, redness, swelling, bruising; systemic events include headache, fatigue, muscle pain, nausea, joint pain, chills, and fever. The table compares Flublok (quadrivalent) only against placebo and does not include or mention any evaluation against Fluarix (quadrivalent standard-dose vaccine), and therefore does not support the claim. Note: The image is clear and complete for the arms shown; absence of a Fluarix arm is definitive in this table.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table summarizing solicited local and systemic adverse event rates (percentages of any, moderate, and severe events) in two arms: Flublok quadrivalent (N=2272) and Placebo (N=2231). Local events listed include pain, redness, swelling, bruising; systemic events include headache, fatigue, muscle pain, nausea, joint pain, chills, and fever.",
+    "evidence_found": null,
+    "reasoning": "The table compares Flublok (quadrivalent) only against placebo and does not include or mention any evaluation against Fluarix (quadrivalent standard-dose vaccine), and therefore does not support the claim.",
+    "confidence_notes": "The image is clear and complete for the arms shown; absence of a Fluarix arm is definitive in this table."
+  }
 }

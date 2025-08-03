@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A table presenting percentages of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse events (any, moderate, severe) in two groups: Flublok (N=1078) and IIV3 (N=1081). The table only reports rates of local and systemic adverse events for Flublok versus IIV3; it contains no information on cell- or egg-based vaccine production, mutation potential, or vaccine effectiveness, and therefore does not support the claim. Note: Limited to safety/reactogenicity data; no production or mutation information present.",
+  "explanation": "A table comparing solicited local and systemic adverse event percentages (any, moderate, severe) for two influenza vaccines: Flublok (N=1078) and IIV3 (N=1081). Local events include pain, redness, firmness/swelling; systemic events include fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever. The image only presents safety/reactogenicity data for Flublok versus IIV3 and contains no information on production methods, viral mutations, or vaccine effectiveness. Therefore, it does not support the claim. Note: Analysis limited to visible table content; no text on production or mutation is present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table presenting percentages of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse events (any, moderate, severe) in two groups: Flublok (N=1078) and IIV3 (N=1081).",
+    "image_description": "A table comparing solicited local and systemic adverse event percentages (any, moderate, severe) for two influenza vaccines: Flublok (N=1078) and IIV3 (N=1081). Local events include pain, redness, firmness/swelling; systemic events include fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever.",
     "evidence_found": null,
-    "reasoning": "The table only reports rates of local and systemic adverse events for Flublok versus IIV3; it contains no information on cell- or egg-based vaccine production, mutation potential, or vaccine effectiveness, and therefore does not support the claim.",
-    "confidence_notes": "Limited to safety/reactogenicity data; no production or mutation information present."
+    "reasoning": "The image only presents safety/reactogenicity data for Flublok versus IIV3 and contains no information on production methods, viral mutations, or vaccine effectiveness. Therefore, it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible table content; no text on production or mutation is present."
   }
 }

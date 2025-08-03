@@ -1,9 +1,19 @@
 {
   "image_filename": "table_p2_det_1_019.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_019.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_019",
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "Error analyzing image: 'type'",
-  "error": true,
-  "model_used": "o4-mini"
+  "explanation": "A table comparing local and systemic adverse event percentages for Flublok (recombinant influenza vaccine, N=972) and IIV3 (inactivated influenza vaccine, N=967), listing incidence of pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever by severity category. The table presents only safety and adverse event data, with no information on immunogenicity, breadth of immune response, or cross-protection; therefore it does not support the claim. Note: Analysis limited to visible content; no immunogenicity or efficacy data present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing local and systemic adverse event percentages for Flublok (recombinant influenza vaccine, N=972) and IIV3 (inactivated influenza vaccine, N=967), listing incidence of pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever by severity category.",
+    "evidence_found": null,
+    "reasoning": "The table presents only safety and adverse event data, with no information on immunogenicity, breadth of immune response, or cross-protection; therefore it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible content; no immunogenicity or efficacy data present."
+  }
 }

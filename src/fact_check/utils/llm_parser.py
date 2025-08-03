@@ -183,7 +183,7 @@ class LLMResponseParser:
                         "input": prompt,
                         "model": getattr(llm_client, 'model', 'gpt-4.1'),
                         "temperature": temperature,
-                        "disable_request_deduplication": True
+                        "fresh_response": True
                     }
                     # Only add max_output_tokens if provided
                     if max_output_tokens is not None:

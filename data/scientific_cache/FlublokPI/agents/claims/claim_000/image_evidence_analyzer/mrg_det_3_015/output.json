@@ -1,9 +1,19 @@
 {
   "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Error analyzing image: 'type'",
-  "error": true,
-  "model_used": "o4-mini"
+  "explanation": "A table showing Flublok presentation formats (single-dose prefilled syringe), carton and component NDC numbers, followed by storage and handling instructions. The image contains only product packaging identifiers and storage/handling guidelines; it does not provide any information on antigenic match with WHO- or FDA-selected strains and therefore does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing Flublok presentation formats (single-dose prefilled syringe), carton and component NDC numbers, followed by storage and handling instructions.",
+    "evidence_found": null,
+    "reasoning": "The image contains only product packaging identifiers and storage/handling guidelines; it does not provide any information on antigenic match with WHO- or FDA-selected strains and therefore does not support the claim.",
+    "confidence_notes": null
+  }
 }

@@ -1,12 +1,12 @@
 {
   "agent_name": "evidence_verifier_v2",
   "pdf_name": "FlublokPI",
-  "started_at": "2025-08-03T14:09:09.521384",
-  "completed_at": "2025-08-03T14:09:25.403675",
-  "status": "completed",
+  "started_at": "2025-08-03T16:53:50.196288",
+  "completed_at": null,
+  "status": "running",
   "error": null,
   "config": {
-    "disable_cache": true,
+    "fresh_response": true,
     "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains."
   }
 }

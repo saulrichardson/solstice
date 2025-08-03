@@ -53,7 +53,7 @@ def main(claims_file=None, documents=None):
     # Configuration
     config = {
         "agent_config": {
-            "disable_cache": True
+            "fresh_response": True
         },
         "max_concurrent_claims": 6  # Optimal for 32GB RAM, 10 CPU cores
     }

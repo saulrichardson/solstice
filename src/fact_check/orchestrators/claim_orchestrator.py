@@ -292,19 +292,7 @@ class ClaimOrchestrator:
             logger.info("    No images found in document")
             return []
         
-        # Validate that all images have required fields
-        valid_images = []
-        for img in images:
-            if not img.get('image_path'):
-                logger.warning(f"    Skipping image {img.get('block_id', 'unknown')} - missing image_path")
-                continue
-            valid_images.append(img)
-        
-        if not valid_images:
-            logger.info("    No valid images found in document")
-            return []
-        
-        logger.info(f"    Found {len(valid_images)} valid images to analyze (skipped {len(images) - len(valid_images)} invalid)")
+        logger.info(f"    Found {len(images)} images to analyze")
         
         # Analyze each image with controlled parallelism
         import asyncio
@@ -325,8 +313,8 @@ class ClaimOrchestrator:
                 )
                 return await analyzer.run()
         
-        # Create tasks with semaphore limiting (use valid_images)
-        tasks = [analyze_image_with_limit(img) for img in valid_images]
+        # Create tasks with semaphore limiting
+        tasks = [analyze_image_with_limit(img) for img in images]
         
         # Run all image analyses with controlled parallelism
         logger.info(f"    Analyzing images with max {max_concurrent} concurrent processes...")
@@ -336,7 +324,7 @@ class ClaimOrchestrator:
         supporting_images = []
         for i, result in enumerate(results):
             # Get consistent image identifier
-            image_metadata = valid_images[i]
+            image_metadata = images[i]
             image_filename = image_metadata.get('image_filename', '')
             image_id = image_metadata.get('block_id', image_filename.replace('.png', '').replace('.jpg', '') or f"image_{i}")
             
@@ -363,5 +351,5 @@ class ClaimOrchestrator:
                 else:
                     logger.info(f"      ✗ {image_filename} does not support claim")
         
-        logger.info(f"    Found {len(supporting_images)} supporting images out of {len(valid_images)} analyzed")
+        logger.info(f"    Found {len(supporting_images)} supporting images out of {len(images)} analyzed")
         return supporting_images

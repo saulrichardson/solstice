@@ -1,9 +1,19 @@
 {
   "image_filename": "table_p2_det_1_011.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_011",
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "Error analyzing image: 'type'",
-  "error": true,
-  "model_used": "o4-mini"
+  "explanation": "A two\u2010column table comparing solicited local and systemic adverse event rates (percentages of any, moderate, and severe events) for Flublok (recombinant influenza vaccine, N=2272) versus placebo (N=2231). Local events include pain, redness, swelling, bruising; systemic events include headache, fatigue, muscle pain, nausea, joint pain, chills, and fever. The table presents safety data (rates of local and systemic adverse events) for Flublok versus placebo. It does not include any immunogenicity, antibody titers, or cross\u2010protection data. Therefore, it does not support the claim that recombinant technology leads to a broader immune response or cross\u2010protection. Note: Analysis limited to visible safety data; immunogenicity or efficacy data are not shown in this table.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two\u2010column table comparing solicited local and systemic adverse event rates (percentages of any, moderate, and severe events) for Flublok (recombinant influenza vaccine, N=2272) versus placebo (N=2231). Local events include pain, redness, swelling, bruising; systemic events include headache, fatigue, muscle pain, nausea, joint pain, chills, and fever.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety data (rates of local and systemic adverse events) for Flublok versus placebo. It does not include any immunogenicity, antibody titers, or cross\u2010protection data. Therefore, it does not support the claim that recombinant technology leads to a broader immune response or cross\u2010protection.",
+    "confidence_notes": "Analysis limited to visible safety data; immunogenicity or efficacy data are not shown in this table."
+  }
 }

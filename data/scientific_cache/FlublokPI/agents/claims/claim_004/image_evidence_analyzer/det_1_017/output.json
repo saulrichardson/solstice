@@ -1,9 +1,19 @@
 {
   "image_filename": "table_p2_det_1_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_017.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_017",
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "Error analyzing image: 'type'",
-  "error": true,
-  "model_used": "o4-mini"
+  "explanation": "A table comparing percentages of solicited local and systemic adverse events (pain, redness, swelling, fatigue, headache, muscle pain, etc.) in adult recipients of Flublok (recombinant flu vaccine, N=1078) versus IIV3 (egg-based standard-dose vaccine, N=1081), broken down by any, moderate, and severe events. The table presents safety data (adverse event rates) for Flublok versus IIV3 and does not include any immunogenicity or antibody response measurements, and therefore does not support the claim. Note: Analysis limited to visible safety endpoints; no immunogenicity data present in this image.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing percentages of solicited local and systemic adverse events (pain, redness, swelling, fatigue, headache, muscle pain, etc.) in adult recipients of Flublok (recombinant flu vaccine, N=1078) versus IIV3 (egg-based standard-dose vaccine, N=1081), broken down by any, moderate, and severe events.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety data (adverse event rates) for Flublok versus IIV3 and does not include any immunogenicity or antibody response measurements, and therefore does not support the claim.",
+    "confidence_notes": "Analysis limited to visible safety endpoints; no immunogenicity data present in this image."
+  }
 }

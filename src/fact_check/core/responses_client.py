@@ -62,7 +62,7 @@ class ResponsesClient:
         temperature: float | None = None,
         max_output_tokens: int | None = None,
         *,
-        disable_request_deduplication: bool = True,
+        fresh_response: bool = True,
         **kwargs,
     ) -> dict:
         """
@@ -80,15 +80,15 @@ class ResponsesClient:
             reasoning: Reasoning configuration for o4-mini
             temperature: Sampling temperature
             max_output_tokens: Maximum output tokens
-            disable_request_deduplication: If True (default), adds a nonce to ensure fresh 
-                responses for identical requests. If False, allows OpenAI to return cached
-                responses for identical requests, improving speed and reducing costs.
+            fresh_response: If True (default), ensures each request gets a fresh response
+                by adding a unique nonce. If False, allows cached responses for identical 
+                requests, improving speed and reducing costs.
 
         Returns:
             Response object with output, tool calls, and usage info
             
         Note on Caching:
-            - Request deduplication (controlled by disable_request_deduplication) determines
+            - Request deduplication (controlled by fresh_response parameter) determines
               whether identical API requests return identical cached responses
             - Response storage (controlled by store) determines whether responses are 
               persisted on the server for later retrieval via response_id
@@ -123,14 +123,14 @@ class ResponsesClient:
             request_data["max_output_tokens"] = max_output_tokens
 
         # ------------------------------------------------------------------
-        # Request deduplication prevention: when disable_request_deduplication=True
+        # Request deduplication prevention: when fresh_response=True (default)
         # we attach a nonce to metadata to ensure that subsequent identical calls
         # still go through the model rather than returning a cached response.
         # The nonce lives in `metadata` which is excluded from the prompt and
         # therefore does not influence the model or incur token costs.
         # ------------------------------------------------------------------
 
-        if disable_request_deduplication:
+        if fresh_response:
             from src.util.nonce import new_nonce  # local import to avoid cycles
 
             nonce = new_nonce()
@@ -142,16 +142,6 @@ class ResponsesClient:
             metadata.setdefault("nonce", nonce)
             request_data["metadata"] = metadata
 
-        # Handle backward compatibility for old parameter name
-        if "disable_cache" in kwargs:
-            import warnings
-            warnings.warn(
-                "Parameter 'disable_cache' is deprecated. Use 'disable_request_deduplication' instead.",
-                DeprecationWarning,
-                stacklevel=2
-            )
-            disable_request_deduplication = kwargs.pop("disable_cache")
-
         # Add any extra kwargs (after nonce injection so that explicit kwargs
         # always win over internal defaults).
         request_data.update(kwargs)
@@ -162,7 +152,7 @@ class ResponsesClient:
             logger.debug(f"🤖 LLM CALL - Model: {model}")
             logger.debug(f"🌡️  Temperature: {temperature if temperature is not None else 'default'}")
             logger.debug(f"📊 Max tokens: {max_output_tokens if max_output_tokens is not None else 'default'}")
-            logger.debug(f"🔄 Request deduplication: {'DISABLED' if disable_request_deduplication else 'ENABLED'}")
+            logger.debug(f"🔄 Fresh responses: {'ENABLED' if fresh_response else 'DISABLED'}")
             logger.debug(f"💾 Response storage: {'ENABLED' if store else 'DISABLED'}")
             prompt = input if isinstance(input, str) else str(input)[:500]
             logger.debug(f"📝 Prompt preview: {prompt[:200]}..." if len(prompt) > 200 else f"📝 Prompt: {prompt}")

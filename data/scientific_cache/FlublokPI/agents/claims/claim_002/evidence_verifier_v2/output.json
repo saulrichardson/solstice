@@ -17,10 +17,10 @@
       "original_explanation": "This quote explains that influenza viruses frequently develop antigenic variants, which is relevant because such changes can occur during vaccine production, potentially reducing vaccine effectiveness if the produced strains do not match circulating viruses."
     },
     {
-      "id": 2,
+      "id": "comp_1",
       "quote": "Vaccine efficacy against antigenically matched culture confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenically matched to the strains represented in the vaccine.",
       "reason": "does not support claim",
-      "original_explanation": "This quote demonstrates that a high proportion of influenza isolates did not match the vaccine strains, which can result from mutations during production, supporting the claim that such mutations may reduce vaccine effectiveness."
+      "original_explanation": "This quote shows that the majority of influenza viruses isolated from vaccinated individuals were not antigenically matched to the vaccine strains, which supports the claim that mutations or changes during production (or circulation) can result in reduced vaccine effectiveness."
     }
   ],
   "model_used": "gpt-4.1"

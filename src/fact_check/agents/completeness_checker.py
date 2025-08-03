@@ -133,7 +133,8 @@ class CompletenessChecker(BaseAgent):
                 "total_evidence": len(combined_snippets)
             },
             "combined_evidence": combined_snippets,
-            # Keep legacy key so downstream presenter doesn't break
+            # Required by evidence_presenter.py for coverage analysis
+            # Currently simplified to always mark evidence as complete
             "completeness_assessment": {
                 "missing_aspects": []
             },

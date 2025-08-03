@@ -24,23 +24,13 @@ class EvidencePresenter(BaseAgent):
     def required_inputs(self) -> List[str]:
         """Files that **must** be present before the agent can run.
 
-        A consolidated verifier output may exist when the orchestrator has
-        already merged main + additional verification results *and* appended
-        image evidence.  Prefer this when available, but accept the original
-        files as a fallback so the agent can still operate in stand-alone
-        scenarios.
+        The presenter requires both the consolidated verifier output and 
+        completeness checker output for complete evidence analysis.
         """
         base = f"agents/claims/{self.claim_id}"
-        # The presenter now exclusively depends on the orchestrator-produced
-        # consolidated verifier output.  This makes the execution flow
-        # unambiguous and prevents accidental double-merging when legacy
-        # artefacts are still present on disk.
-        # Only the consolidated verifier output is strictly required; the
-        # completeness checker is optional and therefore *not* part of the
-        # validation list (its absence should not prevent the presenter from
-        # running under the unified BaseAgent.run() execution model).
         return [
             f"{base}/evidence_verifier_v2_consolidated/output.json",
+            f"{base}/completeness_checker/output.json",
         ]
     
     def __init__(
@@ -94,17 +84,19 @@ class EvidencePresenter(BaseAgent):
         )
         verifier_data = self.load_json(consolidated_path)
         
-        # Any additional-verifier results are *already* included in the
-        # consolidated output, therefore we no longer attempt to merge them.
+        # The consolidated output already contains all text and image evidence merged.
         
-        # Load completeness assessment
+        # Load completeness assessment (required)
         completeness_path = self.pdf_dir / "agents" / "claims" / self.claim_id / "completeness_checker" / "output.json"
-        completeness_data = {}
-        if completeness_path.exists():
-            logger.info(f"\nLoading completeness assessment from: {completeness_path}")
-            completeness_data = self.load_json(completeness_path)
-        else:
-            logger.info(f"\nNo completeness assessment found at: {completeness_path}")
+        
+        if not completeness_path.exists():
+            raise AgentError(
+                "Completeness checker output not found. Run the orchestrator "
+                "to generate 'completeness_checker/output.json' before executing the presenter."
+            )
+            
+        logger.info(f"\nLoading completeness assessment from: {completeness_path}")
+        completeness_data = self.load_json(completeness_path)
         
         claim = self.config.get("claim", verifier_data.get("claim", ""))
         logger.info(f"\nClaim: '{claim}'")
@@ -117,7 +109,8 @@ class EvidencePresenter(BaseAgent):
         image_evidence = verifier_data.get("image_evidence", [])
         logger.info(f"Total image evidence pieces: {len(image_evidence)}")
         
-        # Get completeness info
+        # Get completeness info from completeness_checker output
+        # The completeness_assessment structure is required for coverage calculation
         completeness_assessment = completeness_data.get("completeness_assessment", {})
         missing_aspects = completeness_assessment.get("missing_aspects", [])
         

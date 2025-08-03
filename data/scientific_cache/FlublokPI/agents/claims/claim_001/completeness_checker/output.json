@@ -5,33 +5,33 @@
   "additional_evidence_check": {
     "checked_for_more": true,
     "found_additional": true,
-    "additional_count": 3
+    "additional_count": 2
   },
   "completeness_stats": {
     "existing_evidence": 4,
-    "new_evidence_found": 3,
+    "new_evidence_found": 2,
     "total_evidence": 6
   },
   "combined_evidence": [
     {
       "id": 1,
       "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
-      "relevance_explanation": "This quote specifies that Flublok contains a total of 135 mcg of hemagglutinin (HA) antigen per dose, with 45 mcg HA from each of three strains. This is three times the standard 15 mcg HA per strain found in standard-dose flu vaccines, directly supporting the claim about antigen content."
+      "relevance_explanation": "This quote explicitly states the total and per-strain hemagglutinin (HA) content in Flublok, confirming it contains 135 mcg HA per dose (45 mcg per strain), which is three times the standard 15 mcg per strain in standard-dose flu vaccines."
     },
     {
       "id": 2,
       "quote": "Flublok contains recombinant HA proteins of the three strains of influenza virus specified by health authorities for inclusion in the annual seasonal vaccine. These proteins function as antigens which induce a humoral immune response, measured by hemagglutination inhibition (HI) antibodies.",
-      "relevance_explanation": "This quote explains that the HA proteins in Flublok serve as antigens to induce an immune response, establishing the relevance of HA content to immunogenicity."
+      "relevance_explanation": "This quote establishes that the HA proteins in Flublok are the immunogenic components responsible for inducing an immune response, directly linking HA content to immunogenicity."
     },
     {
       "id": 3,
       "quote": "5. Treanor JJ, Schiff GM, Hayden FG, et.al. Safety and immunogenicity of a baculovirus expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582.",
-      "relevance_explanation": "This reference, cited in the context of Flublok's clinical studies, directly links the higher HA content vaccine to immunogenicity outcomes, supporting the claim that increased HA content is associated with greater immunogenicity."
+      "relevance_explanation": "This reference, cited in the context of Flublok, directly links the vaccine's hemagglutinin content to its immunogenicity, supporting the claim that higher HA content is associated with greater immunogenicity."
     },
     {
       "id": 4,
       "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine 2009 Vol 28 pp 379 385",
-      "relevance_explanation": "This reference is cited in the context of Flublok's clinical studies and specifically addresses comparative immunogenicity between Flublok (with higher HA content) and standard-dose vaccines, supporting the claim that higher HA content is linked to greater immunogenicity."
+      "relevance_explanation": "This reference is cited in the context of Flublok's clinical studies and specifically addresses comparative immunogenicity between recombinant HA vaccines (like Flublok, with higher HA content) and standard-dose TIVs, supporting the claim that higher HA content is linked to greater immunogenicity."
     },
     {
       "id": "comp_1",
@@ -44,9 +44,9 @@
       }
     },
     {
-      "id": "comp_3",
+      "id": "comp_2",
       "quote": "2. Baxter R, Patriarca PA, Ensor K, et al. Evaluation of the safety, reactogenicity and immunogenicity of Flublok trivalent recombinant baculovirus expressed hemagglutinin influenza vaccine administered intramuscularly to healthy adults 50-64 years of age. Vaccine. 2011, Vol. 29, pp. 2272-2278.",
-      "relevance_explanation": "This reference is cited in the context of clinical studies evaluating the immunogenicity of Flublok, supporting the claim that its higher HA content is linked to greater immunogenicity compared to standard-dose vaccines.",
+      "relevance_explanation": "This reference is cited in the context of clinical studies comparing the immunogenicity of Flublok to standard-dose vaccines, supporting the claim that higher HA content is linked to greater immunogenicity.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
