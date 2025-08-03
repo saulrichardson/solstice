@@ -8,9 +8,9 @@
     "additional_count": 1
   },
   "completeness_stats": {
-    "existing_evidence": 2,
+    "existing_evidence": 3,
     "new_evidence_found": 1,
-    "total_evidence": 3
+    "total_evidence": 4
   },
   "combined_evidence": [
     {
@@ -21,7 +21,12 @@
     {
       "id": 2,
       "quote": "Flublok contains no egg proteins, antibiotics, or preservatives. The single dose, pre filled syringes contain no natural rubber latex. Each 0.5 mL dose of Flublok may also contain residual amounts of baculovirus and Spodoptera frugiperda cell proteins (\u226414.3 mcg), baculovirus and cellular DNA (\u226410 ng), and Triton X-100 (\u2264100 mcg).",
-      "relevance_explanation": "This quote provides further evidence that Flublok is produced using a baculovirus system in insect cells (Spodoptera frugiperda), as it mentions residual amounts of baculovirus and insect cell proteins, supporting the claim about the novel production platform."
+      "relevance_explanation": "This quote provides further evidence that Flublok is produced using a baculovirus expression system in insect cells (Spodoptera frugiperda), as it mentions residual amounts of baculovirus and insect cell proteins, supporting the claim about the novel production platform."
+    },
+    {
+      "id": 3,
+      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains... Each of the three HAs is expressed in this cell line using a baculovirus vector (Autographa californica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further purified by column chromatography.",
+      "relevance_explanation": "This quote reiterates that the hemagglutinin proteins in Flublok are produced by expressing them in insect cells using a baculovirus vector, which is the core of the BEVS platform, directly affirming the claim."
     },
     {
       "id": "comp_1",

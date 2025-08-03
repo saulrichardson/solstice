@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p2_det_1_011.png",
-  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
-  "image_type": "Table",
-  "page_number": 2,
-  "block_id": "det_1_011",
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table displaying percentages of solicited local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events for Flublok (N=2272) versus placebo (N=2231), broken down by any, moderate, and severe reactions. The table reports safety/reactogenicity data for Flublok and placebo and contains no information on antigenic matching to WHO- or FDA-selected flu strains, and thus does not support the claim. Note: Image is clear and complete; no relevant antigenic match data present.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A table displaying percentages of solicited local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events for Flublok (N=2272) versus placebo (N=2231), broken down by any, moderate, and severe reactions.",
-    "evidence_found": null,
-    "reasoning": "The table reports safety/reactogenicity data for Flublok and placebo and contains no information on antigenic matching to WHO- or FDA-selected flu strains, and thus does not support the claim.",
-    "confidence_notes": "Image is clear and complete; no relevant antigenic match data present."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

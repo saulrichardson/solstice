@@ -1,19 +1,9 @@
 {
   "image_filename": "figure_p4_det_3_020.png",
-  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_020.png",
-  "image_type": "Figure",
-  "page_number": 4,
-  "block_id": "det_3_020",
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
-  "supports_claim": true,
-  "explanation": "A table summarizing a randomized study in adults 18\u201349 years comparing Flublok recombinant influenza vaccine (N=2344) versus saline placebo (N=2304). It reports number of cases and percentage rates of culture-confirmed influenza for strains matched to the vaccine and for any strain regardless of match, along with calculated vaccine efficacy percentages and 95% confidence intervals. Evidence: Under \u201cPositive culture with any strain, regardless of match to the vaccine,\u201d Flublok shows 44.6% efficacy (95% CI 18.8, 62.6) against all strains and 44.8% efficacy (95% CI 24.4, 60.0) against any ILI, indicating protection beyond matched strains. The table demonstrates that the recombinant Flublok vaccine reduced infections from strains not represented in the vaccine formulation, supporting the claim that recombinant technology leads to a broader immune response and cross-protection even in a mismatch season. Note: Confidence intervals are wide for some subgroups and the data are limited to one age cohort; small case numbers for matched strains limit precision.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": true,
-    "image_description": "A table summarizing a randomized study in adults 18\u201349 years comparing Flublok recombinant influenza vaccine (N=2344) versus saline placebo (N=2304). It reports number of cases and percentage rates of culture-confirmed influenza for strains matched to the vaccine and for any strain regardless of match, along with calculated vaccine efficacy percentages and 95% confidence intervals.",
-    "evidence_found": "Under \u201cPositive culture with any strain, regardless of match to the vaccine,\u201d Flublok shows 44.6% efficacy (95% CI 18.8, 62.6) against all strains and 44.8% efficacy (95% CI 24.4, 60.0) against any ILI, indicating protection beyond matched strains.",
-    "reasoning": "The table demonstrates that the recombinant Flublok vaccine reduced infections from strains not represented in the vaccine formulation, supporting the claim that recombinant technology leads to a broader immune response and cross-protection even in a mismatch season.",
-    "confidence_notes": "Confidence intervals are wide for some subgroups and the data are limited to one age cohort; small case numbers for matched strains limit precision."
-  }
+  "supports_claim": false,
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

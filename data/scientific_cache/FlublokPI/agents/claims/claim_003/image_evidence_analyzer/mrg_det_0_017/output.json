@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p1_mrg_det_0_017.png",
-  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
-  "image_type": "Table",
-  "page_number": 1,
-  "block_id": "mrg_det_0_017",
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A scanned page from the Flublok vaccine prescribing information showing dosage and administration instructions, contraindications, warnings and precautions, adverse reactions summary, and the table of contents for the full prescribing information. The image does not support the claim because it contains only dosing, contraindications, warnings, adverse reactions, and a contents list, with no discussion of recombinant technology, breadth of immune response, or cross-protection in mismatch seasons. Note: Limited to page 1; immunogenicity and clinical study data likely appear later and are not visible here.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A scanned page from the Flublok vaccine prescribing information showing dosage and administration instructions, contraindications, warnings and precautions, adverse reactions summary, and the table of contents for the full prescribing information.",
-    "evidence_found": null,
-    "reasoning": "The image does not support the claim because it contains only dosing, contraindications, warnings, adverse reactions, and a contents list, with no discussion of recombinant technology, breadth of immune response, or cross-protection in mismatch seasons.",
-    "confidence_notes": "Limited to page 1; immunogenicity and clinical study data likely appear later and are not visible here."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

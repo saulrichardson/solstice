@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p1_mrg_det_0_017.png",
-  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
-  "image_type": "Table",
-  "page_number": 1,
-  "block_id": "mrg_det_0_017",
   "claim_id": "claim_008",
   "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
   "supports_claim": false,
-  "explanation": "Two-page spread from Flublok full prescribing information showing sections including Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, and Patient Counseling Information. Page shows table of contents and bulleted contraindications and warnings for intramuscular use (0.5 mL). The image does not support the claim because it contains only section headers and general prescribing information without any details on haemagglutinin (HA) content per strain for Flublok or a standard-dose influenza vaccine, and thus does not support the claim. Note: No numerical antigen content is visible; image resolution is sufficient but no relevant data present.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "Two-page spread from Flublok full prescribing information showing sections including Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, and Patient Counseling Information. Page shows table of contents and bulleted contraindications and warnings for intramuscular use (0.5 mL).",
-    "evidence_found": null,
-    "reasoning": "The image does not support the claim because it contains only section headers and general prescribing information without any details on haemagglutinin (HA) content per strain for Flublok or a standard-dose influenza vaccine, and thus does not support the claim.",
-    "confidence_notes": "No numerical antigen content is visible; image resolution is sufficient but no relevant data present."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

@@ -1,19 +1,9 @@
 {
   "image_filename": "figure_p4_det_3_020.png",
-  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_020.png",
-  "image_type": "Figure",
-  "page_number": 4,
-  "block_id": "det_3_020",
   "claim_id": "claim_006",
   "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
   "supports_claim": false,
-  "explanation": "A table showing clinical efficacy data for Flublok vaccine versus saline placebo in adults aged 18\u201349 years, including numbers of cases, rates of influenza-like illness and laboratory-confirmed influenza, vaccine efficacy percentages, and 95% confidence intervals. The table presents clinical efficacy outcomes and does not provide any information about the production platform, expression system, or use of a baculovirus expression vector system, and therefore does not support the claim. Note: The image quality is sufficient to read the clinical efficacy data, but it contains no production or manufacturing details.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A table showing clinical efficacy data for Flublok vaccine versus saline placebo in adults aged 18\u201349 years, including numbers of cases, rates of influenza-like illness and laboratory-confirmed influenza, vaccine efficacy percentages, and 95% confidence intervals.",
-    "evidence_found": null,
-    "reasoning": "The table presents clinical efficacy outcomes and does not provide any information about the production platform, expression system, or use of a baculovirus expression vector system, and therefore does not support the claim.",
-    "confidence_notes": "The image quality is sufficient to read the clinical efficacy data, but it contains no production or manufacturing details."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

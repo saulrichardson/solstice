@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p1_mrg_det_0_017.png",
-  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
-  "image_type": "Table",
-  "page_number": 1,
-  "block_id": "mrg_det_0_017",
   "claim_id": "claim_006",
   "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
   "supports_claim": false,
-  "explanation": "A snippet of full prescribing information for Flublok, showing sections such as Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, and Patient Counseling Information. does not support the claim because the visible table of contents and section headings do not include any information on the production platform, recombinant HA expression in insect cells, or BEVS Note: Only the table of contents is visible; the detailed Description section is not shown",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A snippet of full prescribing information for Flublok, showing sections such as Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, and Patient Counseling Information.",
-    "evidence_found": null,
-    "reasoning": "does not support the claim because the visible table of contents and section headings do not include any information on the production platform, recombinant HA expression in insect cells, or BEVS",
-    "confidence_notes": "Only the table of contents is visible; the detailed Description section is not shown"
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

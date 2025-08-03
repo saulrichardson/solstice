@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p4_mrg_det_3_015.png",
-  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
-  "image_type": "Table",
-  "page_number": 4,
-  "block_id": "mrg_det_3_015",
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "A table showing presentation formats (single-dose prefilled syringe), associated carton NDC numbers and component NDC numbers, followed by storage and handling instructions (refrigerate between 2\u00b0 and 8\u00b0C, do not freeze, protect from light, discard after expiration). The image only presents packaging NDC information and storage guidelines, with no data on antibody responses or comparative immunogenicity, and therefore does not support the claim. Note: Content is clearly visible; limited to labeling and handling information without clinical efficacy data.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A table showing presentation formats (single-dose prefilled syringe), associated carton NDC numbers and component NDC numbers, followed by storage and handling instructions (refrigerate between 2\u00b0 and 8\u00b0C, do not freeze, protect from light, discard after expiration).",
-    "evidence_found": null,
-    "reasoning": "The image only presents packaging NDC information and storage guidelines, with no data on antibody responses or comparative immunogenicity, and therefore does not support the claim.",
-    "confidence_notes": "Content is clearly visible; limited to labeling and handling information without clinical efficacy data."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

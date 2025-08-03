@@ -1,6 +1,6 @@
 """Pydantic models for image analysis outputs."""
 
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator, ValidationInfo
 from typing import Optional
 
 
@@ -34,15 +34,17 @@ class ImageAnalysisOutput(BaseModel):
         description="Any caveats, limitations, or confidence issues with the analysis"
     )
     
-    @validator('evidence_found')
-    def validate_evidence_consistency(cls, v, values):
+    @field_validator('evidence_found')
+    @classmethod
+    def validate_evidence_consistency(cls, v: Optional[str], info: ValidationInfo) -> Optional[str]:
         """Ensure evidence_found is provided when supports_claim is True."""
-        if values.get('supports_claim') and not v:
+        if info.data.get('supports_claim') and not v:
             raise ValueError("evidence_found must be provided when supports_claim is True")
         return v
     
-    @validator('reasoning')
-    def validate_reasoning(cls, v, values):
+    @field_validator('reasoning')
+    @classmethod
+    def validate_reasoning(cls, v: str, info: ValidationInfo) -> str:
         """Ensure the reasoning text is consistent with the decision.
 
         If the image is marked as supporting the claim we expect the word
@@ -53,7 +55,7 @@ class ImageAnalysisOutput(BaseModel):
         catches obvious mismatches between the boolean flag and the free-text
         justification while still allowing flexible language.
         """
-        supports_claim = values.get('supports_claim')
+        supports_claim = info.data.get('supports_claim')
         reasoning_lc = v.lower()
 
         if supports_claim:

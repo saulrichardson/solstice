@@ -1,19 +1,9 @@
 {
   "image_filename": "figure_p4_det_3_007.png",
-  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_007.png",
-  "image_type": "Figure",
-  "page_number": 4,
-  "block_id": "det_3_007",
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A clinical trial results table comparing Flublok Quadrivalent (N=4303) with a comparator (N=4301). It lists the number of cases (n), attack rates (% n/N), relative risk (RR), and relative vaccine efficacy (rVE % with 95% CI) for all rtPCR-positive influenza, rtPCR-positive influenza A, rtPCR-positive influenza B, and culture-confirmed protocol-defined influenza-like illness. The table presents comparative efficacy data (attack rates, RR, rVE) but contains no information on antigenic matching or alignment with WHO- or FDA-selected flu strains, and thus does not support the claim. Note: The figure is clear but limited to efficacy outcomes; no antigenic characterization data are shown.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A clinical trial results table comparing Flublok Quadrivalent (N=4303) with a comparator (N=4301). It lists the number of cases (n), attack rates (% n/N), relative risk (RR), and relative vaccine efficacy (rVE % with 95% CI) for all rtPCR-positive influenza, rtPCR-positive influenza A, rtPCR-positive influenza B, and culture-confirmed protocol-defined influenza-like illness.",
-    "evidence_found": null,
-    "reasoning": "The table presents comparative efficacy data (attack rates, RR, rVE) but contains no information on antigenic matching or alignment with WHO- or FDA-selected flu strains, and thus does not support the claim.",
-    "confidence_notes": "The figure is clear but limited to efficacy outcomes; no antigenic characterization data are shown."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

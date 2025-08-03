@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p2_det_1_011.png",
-  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
-  "image_type": "Table",
-  "page_number": 2,
-  "block_id": "det_1_011",
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A table comparing the percentage of local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events in subjects receiving Flublok (N=2272) versus placebo (N=2231). Each event is broken down by any, moderate, and severe intensity. This safety table presents adverse event rates but does not address vaccine production methods, mutation potential, or effectiveness, and therefore does not support the claim. Note: The table focuses solely on reactogenicity and provides no information on antigenic mutations or vaccine efficacy.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A table comparing the percentage of local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events in subjects receiving Flublok (N=2272) versus placebo (N=2231). Each event is broken down by any, moderate, and severe intensity.",
-    "evidence_found": null,
-    "reasoning": "This safety table presents adverse event rates but does not address vaccine production methods, mutation potential, or effectiveness, and therefore does not support the claim.",
-    "confidence_notes": "The table focuses solely on reactogenicity and provides no information on antigenic mutations or vaccine efficacy."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

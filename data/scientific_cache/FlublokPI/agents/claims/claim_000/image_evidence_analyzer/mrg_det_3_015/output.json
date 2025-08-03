@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p4_mrg_det_3_015.png",
-  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
-  "image_type": "Table",
-  "page_number": 4,
-  "block_id": "mrg_det_3_015",
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table showing the presentation (single-dose prefilled syringe), corresponding Carton NDC number (49281-724-10), and component packaging details (ten 0.5 mL prefilled syringes with NDC 49281-724-88), followed by storage and handling instructions (refrigeration temperature, do not freeze, protect from light, expiration date). does not support the claim because the image only presents packaging and storage information and contains no data on antigenic matching with WHO- or FDA-selected flu strains. Note: Image is clear but limited to packaging details; no strain or antigenic information is shown.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A table showing the presentation (single-dose prefilled syringe), corresponding Carton NDC number (49281-724-10), and component packaging details (ten 0.5 mL prefilled syringes with NDC 49281-724-88), followed by storage and handling instructions (refrigeration temperature, do not freeze, protect from light, expiration date).",
-    "evidence_found": null,
-    "reasoning": "does not support the claim because the image only presents packaging and storage information and contains no data on antigenic matching with WHO- or FDA-selected flu strains.",
-    "confidence_notes": "Image is clear but limited to packaging details; no strain or antigenic information is shown."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

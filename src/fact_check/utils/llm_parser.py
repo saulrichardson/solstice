@@ -84,19 +84,36 @@ class LLMResponseParser:
     
     @classmethod
     def get_schema_example(cls, model: Type[BaseModel]) -> str:
-        """Get a simple example of the expected JSON structure."""
-        schema = model.schema()
+        """Get a simple example of the expected JSON structure using modern Pydantic v2."""
+        schema = model.model_json_schema()
         example = {}
         
         for field_name, field_info in schema['properties'].items():
-            if field_info['type'] == 'string':
+            field_type = field_info.get('type')
+            
+            if field_type == 'string':
                 example[field_name] = field_info.get('description', 'string value')
-            elif field_info['type'] == 'boolean':
+            elif field_type == 'boolean':
                 example[field_name] = True
-            elif field_info['type'] == 'array':
+            elif field_type == 'array':
                 example[field_name] = [{"example": "item"}]
+            elif field_type == 'null':
+                example[field_name] = None
+            elif 'anyOf' in field_info:
+                # Handle Optional[T] fields which become anyOf in v2
+                non_null_types = [t for t in field_info['anyOf'] if t.get('type') != 'null']
+                if non_null_types:
+                    first_type = non_null_types[0].get('type', 'string')
+                    if first_type == 'string':
+                        example[field_name] = field_info.get('description', 'string value')
+                    elif first_type == 'boolean':
+                        example[field_name] = True
+                    else:
+                        example[field_name] = None
+                else:
+                    example[field_name] = None
             else:
-                example[field_name] = field_info['type']
+                example[field_name] = field_info.get('description', 'value')
                 
         return json.dumps(example, indent=2)
     

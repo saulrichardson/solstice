@@ -5,25 +5,24 @@
   "supporting_evidence": [
     {
       "quote": "Vaccine efficacy against antigenically matched culture confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenically matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC-ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0). See Table 4 for a presentation of VE by case definition and antigenic similarity.",
-      "explanation": "The quote directly supports the claim. It provides explicit evidence that Flublok (a recombinant influenza vaccine) demonstrated efficacy (44.8%) against influenza strains even when 96% of circulating strains were not antigenically matched to the vaccine. This shows that the vaccine provided cross-protection in a mismatch season, which is the essence of the claim about recombinant technology leading to a broader immune response and potential cross-protection."
-    }
-  ],
-  "image_supporting_evidence": [
+      "explanation": "The quote directly supports the claim. It provides evidence that Flublok (a recombinant vaccine) showed efficacy (44.8%) against influenza strains even when 96% of circulating strains were not antigenically matched to the vaccine. This demonstrates cross-protection in a mismatch season, which is the essence of the claim about recombinant technology leading to a broader immune response and potential cross-protection."
+    },
     {
-      "image_filename": "figure_p4_det_3_020.png",
-      "explanation": "A table summarizing a randomized study in adults 18\u201349 years comparing Flublok recombinant influenza vaccine (N=2344) versus saline placebo (N=2304). It reports number of cases and percentage rates of culture-confirmed influenza for strains matched to the vaccine and for any strain regardless of match, along with calculated vaccine efficacy percentages and 95% confidence intervals. Evidence: Under \u201cPositive culture with any strain, regardless of match to the vaccine,\u201d Flublok shows 44.6% efficacy (95% CI 18.8, 62.6) against all strains and 44.8% efficacy (95% CI 24.4, 60.0) against any ILI, indicating protection beyond matched strains. The table demonstrates that the recombinant Flublok vaccine reduced infections from strains not represented in the vaccine formulation, supporting the claim that recombinant technology leads to a broader immune response and cross-protection even in a mismatch season. Note: Confidence intervals are wide for some subgroups and the data are limited to one age cohort; small case numbers for matched strains limit precision."
+      "quote": "An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC-ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0). See Table 4 for a presentation of VE by case definition and antigenic similarity.",
+      "explanation": "The quote directly states that Flublok (a recombinant vaccine) showed efficacy (44.8%) against all influenza strains, regardless of antigenic match, in subjects with influenza-like illness. This provides explicit evidence that the vaccine was effective even when the circulating strains did not match the vaccine strains, supporting the claim that recombinant technology leads to a broader immune response and potential cross-protection in a mismatch season."
     }
   ],
+  "image_supporting_evidence": [],
   "evidence_summary": {
-    "total_text_evidence_found": 1,
-    "total_image_evidence_found": 1,
+    "total_text_evidence_found": 2,
+    "total_image_evidence_found": 0,
     "total_evidence_found": 2,
     "coverage": "complete",
     "missing_aspects": []
   },
   "metadata": {
     "extraction_stats": {
-      "total_verified": 1
+      "total_verified": 2
     },
     "rejected_count": 0
   }

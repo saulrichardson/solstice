@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p4_mrg_det_3_015.png",
-  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
-  "image_type": "Table",
-  "page_number": 4,
-  "block_id": "mrg_det_3_015",
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table showing the presentation (single-dose prefilled syringe), carton and component NDC numbers, followed by storage and handling instructions (refrigeration temperature, do not freeze, protect from light, expiration date guidance). The table only lists packaging NDC numbers and storage/handling guidelines and contains no data on immune response, recombinant technology, or cross-protection, so it does not support the claim.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A table showing the presentation (single-dose prefilled syringe), carton and component NDC numbers, followed by storage and handling instructions (refrigeration temperature, do not freeze, protect from light, expiration date guidance).",
-    "evidence_found": null,
-    "reasoning": "The table only lists packaging NDC numbers and storage/handling guidelines and contains no data on immune response, recombinant technology, or cross-protection, so it does not support the claim.",
-    "confidence_notes": null
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

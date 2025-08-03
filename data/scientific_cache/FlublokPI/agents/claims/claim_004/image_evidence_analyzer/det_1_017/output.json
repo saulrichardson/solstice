@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p2_det_1_017.png",
-  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_017.png",
-  "image_type": "Table",
-  "page_number": 2,
-  "block_id": "det_1_017",
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "A table showing percentages of local and systemic adverse events (pain, redness, firmness/swelling, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) categorized as Any, moderate, and severe for two vaccine groups: Flublok (recombinant, N=1078) and IIV3 (egg-based, N=1081). does not support the claim because the table reports reactogenicity outcomes rather than antibody response or immunogenicity data, so it doesn't support the claim Note: Table only includes safety/reactogenicity data; no immunogenicity or antibody response measures are provided.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A table showing percentages of local and systemic adverse events (pain, redness, firmness/swelling, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) categorized as Any, moderate, and severe for two vaccine groups: Flublok (recombinant, N=1078) and IIV3 (egg-based, N=1081).",
-    "evidence_found": null,
-    "reasoning": "does not support the claim because the table reports reactogenicity outcomes rather than antibody response or immunogenicity data, so it doesn't support the claim",
-    "confidence_notes": "Table only includes safety/reactogenicity data; no immunogenicity or antibody response measures are provided."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

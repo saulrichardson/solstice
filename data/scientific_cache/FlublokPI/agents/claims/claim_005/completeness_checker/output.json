@@ -5,38 +5,33 @@
   "additional_evidence_check": {
     "checked_for_more": true,
     "found_additional": true,
-    "additional_count": 2
+    "additional_count": 1
   },
   "completeness_stats": {
-    "existing_evidence": 2,
-    "new_evidence_found": 2,
+    "existing_evidence": 3,
+    "new_evidence_found": 1,
     "total_evidence": 4
   },
   "combined_evidence": [
     {
       "id": 1,
       "quote": "Study 6 (NCT02285998) enrolled subjects 50 years of age and older, randomized to receive Flublok Quadrivalent or Comparator (Fluarix Quadrivalent, manufactured by GlaxoSmithKline) as an active control [see Clinical Studies (14)]. The safety analysis population included 4328 Flublok Quadrivalent recipients and 4344 Comparator vaccine recipients.",
-      "relevance_explanation": "This quote explicitly states that Flublok Quadrivalent was evaluated in a pivotal trial (Study 6) against Fluarix Quadrivalent, a standard-dose quadrivalent influenza vaccine, confirming the claim."
+      "relevance_explanation": "This quote explicitly states that Flublok Quadrivalent was evaluated in a trial (Study 6) where it was directly compared against Fluarix Quadrivalent, confirming that the pivotal trial involved these two vaccines."
     },
     {
       "id": 2,
-      "quote": "The primary efficacy endpoint of Study 6 was rtPCR-positive, protocol defined ILI due to any strain of influenza. Attack rates and relative vaccine efficacy (rVE), defined as 1 [Attack rate Flublok Quadrivalent Attack Rate Comparator], were calculated for the total efficacy population (n=8604) for the primary efficacy endpoint and for several alternative efficacy endpoints (Table 5). ... Comparator in this study was Fluarix Quadrivalent, manufactured by GlaxoSmithKline.",
-      "relevance_explanation": "This quote details the design of Study 6, specifying that Flublok Quadrivalent was directly compared to Fluarix Quadrivalent, supporting the claim that these two vaccines were evaluated against each other in the pivotal trial."
+      "quote": "The primary efficacy endpoint of Study 6 was rtPCR-positive, protocol defined ILI due to any strain of influenza. Attack rates and relative vaccine efficacy (rVE), defined as 1 - [Attack rate Flublok Quadrivalent / Attack Rate Comparator], were calculated for the total efficacy population (n=8604) for the primary efficacy endpoint and for several alternative efficacy endpoints (Table 5).",
+      "relevance_explanation": "This quote describes the design of Study 6, showing that Flublok Quadrivalent was evaluated for efficacy directly against a comparator, which is identified elsewhere as Fluarix Quadrivalent."
+    },
+    {
+      "id": 3,
+      "quote": "Abbreviations: rtPCR=reverse transcriptase polymerase chain reaction; Comparator=U.S.-licensed quadrivalent inactivated influenza vaccine, Fluarix Quadrivalent, manufactured by GlaxoSmithKline; n=number of influenza cases; N=number of subjects in treatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) \u00d7 100]. *Study 6 is registered as NCT02285998.",
+      "relevance_explanation": "This quote clarifies that the comparator in Study 6 was Fluarix Quadrivalent, directly supporting the claim that Flublok Quadrivalent was evaluated against Fluarix Quadrivalent in the pivotal trial."
     },
     {
       "id": "comp_1",
-      "quote": "Comparator, Fluarix Quadrivalent, manufactured by GlaxoSmithKline (n=4489). Among randomized subjects, 58% were female, 80% white, 18% black/African-American, other races, and 5% of Hispanic/Latino ethnicity. A total of 5186 (60%) subjects w",
-      "relevance_explanation": "This quote explicitly identifies Fluarix Quadrivalent, manufactured by GlaxoSmithKline, as the comparator in the pivotal trial, directly supporting the claim that Flublok (quadrivalent) was evaluated against Fluarix (quadrivalent standard-dose vaccine).",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    },
-    {
-      "id": "comp_2",
-      "quote": "Abbreviations: rtPCR=reverse transcriptase polymerase chain reaction; Comparator=U.S.licensed quadrivalent inactivated influenza vaccine, Fluarix Quadrivalent, manufactured by GlaxoSmithKline; n=number of influenza cases; N=number of subjects in treatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) \u00d7 100]. *Study 6 is registered as NCT02285998.",
-      "relevance_explanation": "This quote defines the comparator in Study 6 as Fluarix Quadrivalent, manufactured by GlaxoSmithKline, confirming that Flublok Quadrivalent was evaluated against this specific quadrivalent standard-dose vaccine in the pivotal trial.",
+      "quote": "The primary efficacy endpoint of Study 6 was rtPCR-positive, protocol defined ILI due to any strain of influenza. Attack rates and relative vaccine efficacy (rVE), defined as 1 [Attack rate Flublok Quadrivalent / Attack Rate Comparator], were calculated for the total efficacy population (n=8604) for the primary efficacy endpoint and for several alternative efficacy endpoints (Table 5). Antigenic and phylogenetic evaluations of the similarity (\"matching\") of clinical isolates to vaccine antigens were not performed. CDC epidemiological data for the 2014-2015 influenza season indicated that Influenza A (H3N2) viruses... Comparator, Fluarix Quadrivalent, manufactured by GlaxoSmithKline) (n=4489). Among randomized subjects, 58% were female, 80% white, 18% black/African-American, other races, and 5% of Hispanic/Latino ethnicity.",
+      "relevance_explanation": "This quote explicitly states that Study 6 compared Flublok Quadrivalent to Fluarix Quadrivalent (the comparator), confirming that the pivotal trial evaluated Flublok against a standard-dose quadrivalent vaccine.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

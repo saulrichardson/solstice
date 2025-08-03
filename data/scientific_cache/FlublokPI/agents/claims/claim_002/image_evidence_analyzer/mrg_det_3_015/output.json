@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p4_mrg_det_3_015.png",
-  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
-  "image_type": "Table",
-  "page_number": 4,
-  "block_id": "mrg_det_3_015",
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "An excerpt from a drug product labeling showing a table with presentation (Single-Dose Prefilled Syringe), carton NDC number, and components and NDC number, followed by storage and handling instructions (refrigerate between 2\u00b0 and 8\u00b0C, do not freeze, protect from light, discard if frozen, do not use after expiration). does not support the claim because the image contains only product presentation details and storage instructions without any information about vaccine production methods or mutations during production. Note: Text is clear and legible; no mention of production-related mutations or comparative effectiveness.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "An excerpt from a drug product labeling showing a table with presentation (Single-Dose Prefilled Syringe), carton NDC number, and components and NDC number, followed by storage and handling instructions (refrigerate between 2\u00b0 and 8\u00b0C, do not freeze, protect from light, discard if frozen, do not use after expiration).",
-    "evidence_found": null,
-    "reasoning": "does not support the claim because the image contains only product presentation details and storage instructions without any information about vaccine production methods or mutations during production.",
-    "confidence_notes": "Text is clear and legible; no mention of production-related mutations or comparative effectiveness."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

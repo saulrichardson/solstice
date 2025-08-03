@@ -1,19 +1,9 @@
 {
   "image_filename": "figure_p4_det_3_007.png",
-  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_007.png",
-  "image_type": "Figure",
-  "page_number": 4,
-  "block_id": "det_3_007",
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A table comparing Flublok Quadrivalent (N=4303) versus a Comparator (N=4301) showing for each group the number of rtPCR-positive influenza cases (overall, type A, type B) and culture-confirmed ILI, attack rates (n/N and %), relative risk (RR), and relative vaccine efficacy (rVE% with 95% CI). The table presents comparative efficacy data between a recombinant vaccine and a comparator but does not mention the occurrence of mutations during vaccine production or link reduced effectiveness to such mutations, so it does not support the claim. Note: The table clearly shows efficacy outcomes but offers no information on production-related mutations; the comparator is presumed egg-based but this is not explicitly stated in the figure.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A table comparing Flublok Quadrivalent (N=4303) versus a Comparator (N=4301) showing for each group the number of rtPCR-positive influenza cases (overall, type A, type B) and culture-confirmed ILI, attack rates (n/N and %), relative risk (RR), and relative vaccine efficacy (rVE% with 95% CI).",
-    "evidence_found": null,
-    "reasoning": "The table presents comparative efficacy data between a recombinant vaccine and a comparator but does not mention the occurrence of mutations during vaccine production or link reduced effectiveness to such mutations, so it does not support the claim.",
-    "confidence_notes": "The table clearly shows efficacy outcomes but offers no information on production-related mutations; the comparator is presumed egg-based but this is not explicitly stated in the figure."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

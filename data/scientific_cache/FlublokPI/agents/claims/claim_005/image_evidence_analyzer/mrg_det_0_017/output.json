@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p1_mrg_det_0_017.png",
-  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
-  "image_type": "Table",
-  "page_number": 1,
-  "block_id": "mrg_det_0_017",
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "A table of contents from a prescribing information document for Flublok (quadrivalent), listing sections such as Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, and Patient Counseling Information. The image only shows the table of contents for the Flublok prescribing information and does not mention Fluarix or any specific pivotal trial comparator. Therefore, it does not support the claim. Note: The visible content is limited to the table of contents; no trial details are shown.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A table of contents from a prescribing information document for Flublok (quadrivalent), listing sections such as Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, and Patient Counseling Information.",
-    "evidence_found": null,
-    "reasoning": "The image only shows the table of contents for the Flublok prescribing information and does not mention Fluarix or any specific pivotal trial comparator. Therefore, it does not support the claim.",
-    "confidence_notes": "The visible content is limited to the table of contents; no trial details are shown."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }

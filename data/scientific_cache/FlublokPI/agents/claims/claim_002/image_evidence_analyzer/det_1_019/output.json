@@ -1,19 +1,9 @@
 {
   "image_filename": "table_p2_det_1_019.png",
-  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_019.png",
-  "image_type": "Table",
-  "page_number": 2,
-  "block_id": "det_1_019",
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A table displaying percentages of local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events for two vaccines: Flublok (N=972) and IIV3 (N=967), categorized by any, moderate, and severe events. does not support the claim because the table provides only reactogenicity data and contains no information about production-induced mutations or their effect on vaccine effectiveness. Note: Image is clear but limited to safety/reactogenicity outcomes; no mutation or efficacy details present.",
-  "model_used": "o4-mini",
-  "detailed_analysis": {
-    "supports_claim": false,
-    "image_description": "A table displaying percentages of local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events for two vaccines: Flublok (N=972) and IIV3 (N=967), categorized by any, moderate, and severe events.",
-    "evidence_found": null,
-    "reasoning": "does not support the claim because the table provides only reactogenicity data and contains no information about production-induced mutations or their effect on vaccine effectiveness.",
-    "confidence_notes": "Image is clear but limited to safety/reactogenicity outcomes; no mutation or efficacy details present."
-  }
+  "explanation": "Error analyzing image: 'type'",
+  "error": true,
+  "model_used": "o4-mini"
 }
