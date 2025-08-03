@@ -9,9 +9,7 @@ from typing import Dict, Any, List, Optional
 from .base import BaseAgent, AgentError
 from ..core.responses_client import ResponsesClient
 from ..config.agent_models import get_model_for_agent
-from ..config.model_capabilities import build_vision_request, extract_text_from_response
 from ..models.image_outputs import ImageAnalysisOutput
-from ..utils.json_parser import parse_json_response, parse_json_with_pydantic
 
 logger = logging.getLogger(__name__)
 
@@ -194,216 +192,37 @@ Return ONLY the JSON object above. Do NOT wrap in ```json``` or any other markdo
             # Create data URI for image
             data_uri = f"data:{mime_type};base64,{image_base64}"
             
-            # Parse with retry using Pydantic model
-            response_text = None
-            result = None
+            # Use unified parser with vision support
+            logger.info(f"\n🤖 Sending vision request to LLM")
+            logger.info(f"   Model: {self.llm_client.model}")
+            logger.info(f"   Prompt length: {len(prompt)} chars")
+            logger.info(f"   Temperature: 0.0")
             
-            # First attempt with structured JSON prompt
             try:
-                # Add JSON format instruction to prompt
-                json_prompt = prompt + "\n\nReturn ONLY valid JSON, nothing else. Do NOT wrap in ```json``` or any other markdown."
+                # Use the unified retry parser with vision support
+                from ..utils.llm_parser import LLMResponseParser
                 
-                # Build and send request
-                logger.info(f"\n🤖 Sending vision request to LLM")
-                logger.info(f"   Model: {self.llm_client.model}")
-                logger.info(f"   Prompt length: {len(json_prompt)} chars")
-                logger.info(f"   Max output tokens: None (unlimited)")
-                logger.info(f"   Temperature: 0.0")
-                
-                request = build_vision_request(
-                    model=self.llm_client.model,
-                    text_prompt=json_prompt,
-                    image_data_uri=data_uri,
-                    temperature=0.0
-                    # Removed max_output_tokens - let model use what it needs
+                result = await LLMResponseParser.parse_with_retry(
+                    llm_client=self.llm_client,
+                    prompt=prompt,
+                    output_model=ImageAnalysisOutput,
+                    max_retries=2,
+                    temperature=0.0,
+                    image_data_uri=data_uri
                 )
                 
-                logger.debug(f"   Request input structure: {type(request.get('input'))}")
+                logger.info(f"✅ Successfully parsed response with unified parser")
                 
-                response = await self.llm_client.create_response(**request)
-                response_text = extract_text_from_response(response, self.llm_client.model)
-                
-                logger.info(f"✅ Received response")
-                logger.info(f"   Response length: {len(response_text)} chars")
-                logger.debug(f"   Response preview: {response_text[:200]}..." if len(response_text) > 200 else f"   Response: {response_text}")
-                
-                # Parse JSON response with Pydantic using robust parser
-                result = parse_json_with_pydantic(
-                    response_text, 
-                    ImageAnalysisOutput,
-                    strict=True
+            except ValueError as e:
+                logger.error(f"❌ All retry attempts failed: {e}")
+                # Return structured error response
+                result = ImageAnalysisOutput(
+                    supports_claim=False,
+                    image_description="Failed to analyze image",
+                    reasoning="The image does not support the claim due to analysis errors.",
+                    evidence_found=None,
+                    confidence_notes="Analysis failed after all retry attempts"
                 )
-                
-            except json.JSONDecodeError as e:
-                logger.error(f"⚠️  JSON decode error: {e}")
-                if response_text:
-                    logger.error(f"   Response text: {response_text[:500]}..." if len(response_text) > 500 else f"   Response text: {response_text}")
-                
-                # Retry with original response and fix instructions
-                logger.info(f"\n🔄 Retrying with error feedback")
-                
-                structured_prompt = prompt + f"""
-
-YOUR PREVIOUS RESPONSE HAD AN ERROR:
-{response_text[:1000] + '...' if len(response_text) > 1000 else response_text}
-
-ERROR: The response was not valid JSON. Please fix it.
-
-Return your response as valid JSON matching this exact structure:
-{{
-  "supports_claim": true or false,
-  "image_description": "Brief description of what's shown in the image",
-  "evidence_found": "Specific evidence if claim is supported, or null",
-  "reasoning": "MUST say 'supports the claim' if true OR 'does not support the claim' if false",
-  "confidence_notes": "Any limitations or caveats, or null"
-}}
-
-CRITICAL: The "reasoning" field MUST contain:
-- The phrase "supports the claim" if supports_claim is true
-- The phrase "does not support" or "doesn't support the claim" if supports_claim is false
-This is REQUIRED for validation.
-
-Return ONLY the JSON object, no other text. Do NOT wrap in ```json``` or any other markdown."""
-                
-                try:
-                    request = build_vision_request(
-                        model=self.llm_client.model,
-                        text_prompt=structured_prompt,
-                        image_data_uri=data_uri,
-                        temperature=0.0
-                        # Removed max_output_tokens - let model use what it needs
-                    )
-                    
-                    response = await self.llm_client.create_response(**request)
-                    response_text = extract_text_from_response(response, self.llm_client.model)
-                    
-                    logger.info(f"✅ Received retry response")
-                    logger.info(f"   Response length: {len(response_text)} chars")
-                    
-                    # Try parsing again with robust parser
-                    try:
-                        # Try strict parsing first
-                        result = parse_json_with_pydantic(
-                            response_text, 
-                            ImageAnalysisOutput,
-                            strict=True
-                        )
-                    except Exception as pydantic_error:
-                        logger.warning(f"Strict parsing failed: {pydantic_error}")
-                        # Try non-strict parsing
-                        result = parse_json_with_pydantic(
-                            response_text, 
-                            ImageAnalysisOutput,
-                            strict=False
-                        )
-                        # Validate minimum required fields
-                        if not all(key in result for key in ["supports_claim", "reasoning"]):
-                            raise ValueError("Missing required fields in JSON response")
-                            
-                except Exception as retry_error:
-                    logger.error(f"❌ Retry also failed: {retry_error}")
-                    # Final fallback
-                    result = {
-                        "supports_claim": False,
-                        "image_description": "Failed to analyze image",
-                        "reasoning": f"Error: {str(retry_error)}",
-                        "evidence_found": None,
-                        "confidence_notes": "Analysis failed due to errors"
-                    }
-                    
-            except Exception as e:
-                from pydantic import ValidationError
-                
-                # Handle Pydantic validation errors specially
-                if isinstance(e, ValidationError) and response_text:
-                    logger.error(f"⚠️  Pydantic validation error: {e}")
-                    logger.info(f"\n🔄 Retrying with validation feedback")
-                    
-                    # Extract the specific validation error
-                    validation_errors = []
-                    for error in e.errors():
-                        field = error['loc'][0] if error['loc'] else 'unknown'
-                        msg = error['msg']
-                        validation_errors.append(f"- {field}: {msg}")
-                    
-                    structured_prompt = prompt + f"""
-
-YOUR PREVIOUS RESPONSE:
-{response_text[:1000] + '...' if len(response_text) > 1000 else response_text}
-
-VALIDATION ERRORS:
-{chr(10).join(validation_errors)}
-
-Please fix these errors. Remember:
-- If supports_claim is true, reasoning MUST contain "supports the claim"
-- If supports_claim is false, reasoning MUST contain "does not support" or "doesn't support the claim"
-
-Return your response as valid JSON matching this exact structure:
-{{
-  "supports_claim": true or false,
-  "image_description": "Brief description of what's shown in the image",
-  "evidence_found": "Specific evidence if claim is supported, or null",
-  "reasoning": "MUST say 'supports the claim' if true OR 'does not support the claim' if false",
-  "confidence_notes": "Any limitations or caveats, or null"
-}}
-
-Return ONLY the JSON object, no other text. Do NOT wrap in ```json``` or any other markdown."""
-                    
-                    try:
-                        request = build_vision_request(
-                            model=self.llm_client.model,
-                            text_prompt=structured_prompt,
-                            image_data_uri=data_uri,
-                            # max_output_tokens=None,  # Let model use as many tokens as needed
-                            temperature=0.0
-                        )
-                        
-                        response = await self.llm_client.create_response(**request)
-                        response_text = extract_text_from_response(response, self.llm_client.model)
-                        
-                        logger.info(f"✅ Received validation retry response")
-                        
-                        # Try parsing again with robust parser
-                        result = parse_json_with_pydantic(
-                            response_text, 
-                            ImageAnalysisOutput,
-                            strict=True
-                        )
-                        
-                    except Exception as validation_retry_error:
-                        logger.error(f"❌ Validation retry also failed: {validation_retry_error}")
-                        # Try to get raw JSON and fix it
-                        try:
-                            raw_json = parse_json_response(response_text)
-                            if isinstance(raw_json, dict) and 'supports_claim' in raw_json:
-                                # Fix the reasoning to pass validation
-                                if raw_json.get('supports_claim'):
-                                    raw_json['reasoning'] = raw_json.get('reasoning', '') + ' This evidence supports the claim.'
-                                else:
-                                    raw_json['reasoning'] = raw_json.get('reasoning', '') + ' This image does not support the claim.'
-                                result = raw_json
-                            else:
-                                raise
-                        except:
-                            result = {
-                                "supports_claim": False,
-                                "image_description": "Failed to analyze image",
-                                "reasoning": "The image does not support the claim due to analysis errors.",
-                                "evidence_found": None,
-                                "confidence_notes": "Analysis failed due to validation errors"
-                            }
-                else:
-                    # Other types of errors
-                    logger.error(f"❌ Unexpected error: {e}")
-                    logger.error(f"   Error type: {type(e).__name__}")
-                    # Final fallback
-                    result = {
-                        "supports_claim": False,
-                        "image_description": "Failed to analyze image",
-                        "reasoning": f"The image does not support the claim. Error: {str(e)}",
-                        "evidence_found": None,
-                        "confidence_notes": "Analysis failed due to errors"
-                    }
             
             # Add metadata and create final output
             output = {
@@ -414,20 +233,20 @@ Return ONLY the JSON object, no other text. Do NOT wrap in ```json``` or any oth
                 "block_id": self.image_metadata.get('block_id'),
                 "claim_id": self.claim_id,
                 "claim": claim,
-                "supports_claim": result.get("supports_claim", False),
-                "explanation": self._format_explanation(result),
+                "supports_claim": result.supports_claim,
+                "explanation": self._format_explanation(result.dict()),
                 "model_used": self.llm_client.model,
                 # Store detailed analysis separately
-                "detailed_analysis": result
+                "detailed_analysis": result.dict()
             }
             
             logger.info(f"\n📊 ANALYSIS RESULT:")
-            logger.info(f"   Supports claim: {'✅ YES' if result.get('supports_claim') else '❌ NO'}")
-            if result.get('reasoning'):
-                logger.info(f"   Reasoning: {result['reasoning'][:200]}..." if len(str(result['reasoning'])) > 200 else f"   Reasoning: {result['reasoning']}")
-            if result.get('evidence_found'):
-                logger.info(f"   Evidence found: {str(result['evidence_found'])[:200]}..." if len(str(result['evidence_found'])) > 200 else f"   Evidence found: {result['evidence_found']}")
-            logger.info(f"   Confidence notes: {result.get('confidence_notes', 'N/A')}")
+            logger.info(f"   Supports claim: {'✅ YES' if result.supports_claim else '❌ NO'}")
+            if result.reasoning:
+                logger.info(f"   Reasoning: {result.reasoning[:200]}..." if len(str(result.reasoning)) > 200 else f"   Reasoning: {result.reasoning}")
+            if result.evidence_found:
+                logger.info(f"   Evidence found: {str(result.evidence_found)[:200]}..." if len(str(result.evidence_found)) > 200 else f"   Evidence found: {result.evidence_found}")
+            logger.info(f"   Confidence notes: {result.confidence_notes or 'N/A'}")
             
             return output
             

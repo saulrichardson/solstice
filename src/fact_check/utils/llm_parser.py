@@ -109,7 +109,9 @@ class LLMResponseParser:
         max_retries: int = 2,
         include_format_hint: bool = True,
         temperature: float = 0.0,
-        max_output_tokens: Optional[int] = None
+        max_output_tokens: Optional[int] = None,
+        # Vision support
+        image_data_uri: Optional[str] = None
     ) -> T:
         """
         Parse LLM response with automatic retry on validation errors.
@@ -122,6 +124,7 @@ class LLMResponseParser:
             include_format_hint: Whether to add JSON format hint to prompt
             temperature: LLM temperature setting
             max_output_tokens: Maximum tokens for response (None for unlimited)
+            image_data_uri: Optional image data URI for vision requests
             
         Returns:
             Validated Pydantic model instance
@@ -140,25 +143,43 @@ class LLMResponseParser:
         
         for attempt in range(max_retries + 1):
             try:
-                # Get LLM response
-                request_params = {
-                    "input": prompt,
-                    "model": getattr(llm_client, 'model', 'gpt-4.1'),
-                    "temperature": temperature,
-                    "disable_request_deduplication": True
-                }
-                # Only add max_output_tokens if provided
-                if max_output_tokens is not None:
-                    request_params["max_output_tokens"] = max_output_tokens
+                # Get LLM response - handle both vision and text requests
+                if image_data_uri:
+                    # Vision request - need to import build_vision_request and extract_text_from_response
+                    from ..config.model_capabilities import build_vision_request, extract_text_from_response
                     
-                response = await llm_client.create_response(**request_params)
-                
-                # Extract text content
-                if hasattr(llm_client, 'extract_text'):
-                    content = llm_client.extract_text(response)
+                    request = build_vision_request(
+                        model=getattr(llm_client, 'model', 'gpt-4.1'),
+                        text_prompt=prompt,
+                        image_data_uri=image_data_uri,
+                        temperature=temperature
+                    )
+                    # Only add max_output_tokens if provided
+                    if max_output_tokens is not None:
+                        request["max_output_tokens"] = max_output_tokens
+                        
+                    response = await llm_client.create_response(**request)
+                    content = extract_text_from_response(response, llm_client.model)
                 else:
-                    # Fallback for different response formats
-                    content = str(response)
+                    # Text-only request
+                    request_params = {
+                        "input": prompt,
+                        "model": getattr(llm_client, 'model', 'gpt-4.1'),
+                        "temperature": temperature,
+                        "disable_request_deduplication": True
+                    }
+                    # Only add max_output_tokens if provided
+                    if max_output_tokens is not None:
+                        request_params["max_output_tokens"] = max_output_tokens
+                        
+                    response = await llm_client.create_response(**request_params)
+                    
+                    # Extract text content
+                    if hasattr(llm_client, 'extract_text'):
+                        content = llm_client.extract_text(response)
+                    else:
+                        # Fallback for different response formats
+                        content = str(response)
                 
                 # Clean the JSON
                 cleaned = cls.clean_json_string(content)
