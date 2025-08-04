@@ -7,25 +7,38 @@ import os
 from typing import List, Optional
 from pathlib import Path
 
-from ..shared.base_pipeline import BasePDFPipeline
 from .processing.layout_detector import LayoutDetectionPipeline
 from .processing.overlap_resolver import no_overlap_pipeline, expand_boxes
 from ..shared.processing.box import Box
-from .processing.noop_consolidator import NoOpConsolidator
 from src.interfaces import Block, Document
 from ..shared.processing.text_extractor import extract_document_content
 from .processing.reading_order import determine_reading_order_simple
 from ..shared.storage.paths import stage_dir, save_json
-from ..shared.config import IngestionConfig
+from . import defaults
+from ..shared.pdf_utils import convert_pdf_to_images, save_merged_layouts
 
 logger = logging.getLogger(__name__)
 
 
-class StandardPipeline(BasePDFPipeline):
+class StandardPipeline:
     """Standard pipeline optimized for academic and clinical documents.
     
     Uses PubLayNet-based detection and functional box consolidation.
     """
+    
+    def __init__(self, cache_dir: str = defaults.CACHE_DIR):
+        """Initialize pipeline with scientific defaults.
+        
+        Parameters
+        ----------
+        cache_dir : str, optional
+            Cache directory for outputs. Uses scientific default if not provided.
+        """
+        self.cache_dir = cache_dir
+        self.detector = LayoutDetectionPipeline(
+            score_threshold=defaults.SCORE_THRESHOLD,
+            nms_threshold=defaults.NMS_THRESHOLD
+        )
     
     def process_pdf(self, pdf_path: str | os.PathLike[str]) -> Document:
         """Process a PDF file through the pipeline, always saving raw layouts."""
@@ -33,7 +46,7 @@ class StandardPipeline(BasePDFPipeline):
         
         # Convert PDF to images
         logger.info(f"Converting {pdf_path.name} to images...")
-        images = self._convert_to_images(pdf_path)
+        images = convert_pdf_to_images(pdf_path, self.cache_dir, defaults.DETECTION_DPI)
         
         # Run layout detection
         logger.info("Running layout detection...")
@@ -42,13 +55,13 @@ class StandardPipeline(BasePDFPipeline):
         # Always save raw layouts for the standard pipeline
         self._save_raw_layouts(layouts, pdf_path, images)
         
-        # Apply consolidation
-        logger.info("Applying box consolidation...")
+        # Apply functional consolidation (no objects needed)
+        logger.info("Applying functional box consolidation...")
         consolidated_layouts = self._apply_consolidation(layouts, images)
         
         # Save merged layouts if configured
-        if self.config.save_intermediate_states:
-            self._save_merged_layouts(consolidated_layouts, pdf_path)
+        if defaults.SAVE_INTERMEDIATE_STATES:
+            save_merged_layouts(consolidated_layouts, pdf_path, self.cache_dir)
         
         # Create document and extract content
         logger.info("Creating document structure...")
@@ -58,17 +71,6 @@ class StandardPipeline(BasePDFPipeline):
         self._save_outputs(document, pdf_path)
         
         return document
-    
-    def _create_detector(self):
-        """Create PubLayNet-based detector."""
-        return LayoutDetectionPipeline(
-            score_threshold=self.config.score_threshold,
-            nms_threshold=self.config.nms_threshold
-        )
-    
-    def _create_consolidator(self):
-        """Standard pipeline uses functional consolidation via NoOpConsolidator."""
-        return NoOpConsolidator()
     
     def _apply_consolidation(self, layouts: List, images: List) -> List:
         """Apply functional box consolidation."""
@@ -98,18 +100,18 @@ class StandardPipeline(BasePDFPipeline):
                 page_boxes.append(box)
             
             # Expand boxes if configured
-            if self.config.expand_boxes and page_boxes:
-                page_boxes = expand_boxes(page_boxes, padding=self.config.box_padding)
+            if defaults.EXPAND_BOXES and page_boxes:
+                page_boxes = expand_boxes(page_boxes, padding=defaults.BOX_PADDING)
             
             # Apply overlap resolution if configured
-            if self.config.merge_overlapping and page_boxes:
+            if defaults.MERGE_OVERLAPPING and page_boxes:
                 page_boxes = no_overlap_pipeline(
                     boxes=page_boxes,
                     merge_same_type_first=True,
-                    merge_threshold=self.config.merge_threshold,
-                    confidence_weight=self.config.confidence_weight,
-                    area_weight=self.config.area_weight,
-                    minor_overlap_threshold=self.config.minor_overlap_threshold,
+                    merge_threshold=defaults.MERGE_THRESHOLD,
+                    confidence_weight=defaults.CONFIDENCE_WEIGHT,
+                    area_weight=defaults.AREA_WEIGHT,
+                    minor_overlap_threshold=defaults.MINOR_OVERLAP_THRESHOLD,
                     same_type_merge_threshold=0.85  # Balanced threshold for text merging
                 )
             
@@ -138,7 +140,7 @@ class StandardPipeline(BasePDFPipeline):
                     bbox=box.bbox,
                     metadata={
                         "score": box.score,
-                        "detection_dpi": self.config.detection_dpi,
+                        "detection_dpi": defaults.DETECTION_DPI,
                         "detector": "PubLayNet"
                     }
                 )
@@ -150,7 +152,7 @@ class StandardPipeline(BasePDFPipeline):
             blocks=all_blocks,
             metadata={
                 "pipeline": "standard",
-                "detection_dpi": self.config.detection_dpi,
+                "detection_dpi": defaults.DETECTION_DPI,
                 "total_pages": len(layouts)
             },
             reading_order=reading_order_by_page,
@@ -164,13 +166,13 @@ class StandardPipeline(BasePDFPipeline):
         )
         
         # Extract text content
-        document = extract_document_content(document, pdf_path, self.config.detection_dpi, self.config.cache_dir)
+        document = extract_document_content(document, pdf_path, defaults.DETECTION_DPI, self.cache_dir)
         
         return document
     
     def _save_outputs(self, document: Document, pdf_path: Path):
         """Save processing outputs."""
-        output_dir = stage_dir("extracted", pdf_path, self.config.cache_dir)
+        output_dir = stage_dir("extracted", pdf_path, self.cache_dir)
         
         # Save document
         doc_path = output_dir / "content.json"
@@ -188,12 +190,12 @@ class StandardPipeline(BasePDFPipeline):
         generate_html_document(document, output_dir / "document.html", include_images=True)
         
         # Create visualizations if configured
-        if self.config.create_visualizations:
+        if defaults.CREATE_VISUALIZATIONS:
             from ..shared.visualization.layout_visualizer import visualize_document
             visualize_document(
                 document,
                 pdf_path,
-                self.config.cache_dir,
+                self.cache_dir,
                 show_labels=True,
                 show_reading_order=True
             )
@@ -202,7 +204,7 @@ class StandardPipeline(BasePDFPipeline):
     
     def _save_raw_layouts(self, layouts: List, pdf_path: Path, images: List):
         """Save raw layout detection results before any processing."""
-        raw_dir = stage_dir("raw_layouts", pdf_path, self.config.cache_dir)
+        raw_dir = stage_dir("raw_layouts", pdf_path, self.cache_dir)
         raw_dir.mkdir(parents=True, exist_ok=True)
         
         # Save raw layout data with deterministic IDs
@@ -227,7 +229,7 @@ class StandardPipeline(BasePDFPipeline):
         save_json(raw_data, raw_dir / "raw_layout_boxes.json")
         
         # Create visualization of raw layouts if configured
-        if self.config.create_visualizations:
+        if defaults.CREATE_VISUALIZATIONS:
             from ..shared.visualization.layout_visualizer import visualize_page_layout
             viz_dir = raw_dir / "visualizations"
             viz_dir.mkdir(exist_ok=True)

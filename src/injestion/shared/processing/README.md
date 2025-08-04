@@ -193,20 +193,6 @@ Final pass for spacing issues:
 - Paragraph separation
 - List formatting
 
-### noop_consolidator.py
-**Note: Moved to `src/injestion/scientific/processing/noop_consolidator.py`** - only used by scientific pipeline.
-
-No-operation consolidator for pipelines that don't need box merging:
-
-```python
-from src.injestion.scientific.processing.noop_consolidator import NoOpConsolidator
-
-# Used by scientific pipeline for functional consolidation
-consolidator = NoOpConsolidator()
-boxes = consolidator.consolidate(raw_boxes)  # Returns unchanged
-```
-
-**Purpose**: Provides a null object pattern implementation for pipelines (like scientific) that use functional consolidation instead of complex merging.
 
 ## Usage Patterns
 

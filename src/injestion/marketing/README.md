@@ -4,7 +4,7 @@ A specialized ingestion pipeline for processing marketing materials using PrimaL
 
 ## Architecture Overview
 
-The marketing pipeline extends the base ingestion architecture with specialized components optimized for complex marketing layouts, multi-column designs, and mixed text/image content. It inherits from `BasePDFPipeline` while providing marketing-specific implementations.
+The marketing pipeline is a specialized document processing system optimized for complex marketing layouts, multi-column designs, and mixed text/image content. It provides marketing-specific implementations for layout detection and box consolidation.
 
 ## Key Features
 
@@ -56,7 +56,7 @@ document = pipeline.process_pdf("marketing.pdf")
 ## Component Architecture
 
 ### 1. **MarketingPipeline** (`pipeline.py`)
-- **Inheritance**: Extends `BasePDFPipeline` from shared components
+- **Architecture**: Independent pipeline class with marketing-specific components
 - **Responsibilities**:
   - Orchestrates the complete marketing document processing flow
   - Manages PrimaLayout detector initialization
@@ -135,7 +135,7 @@ For the Flublok marketing PDF:
 ## Integration with Core System
 
 ### Shared Components Used
-- `BasePDFPipeline`: Provides PDF processing framework
+- `pdf_utils`: Common PDF processing utilities
 - `IngestionConfig`: Configuration management
 - `Document`/`Block`: Standard output format
 - `TextExtractor`: PyMuPDF-based text extraction

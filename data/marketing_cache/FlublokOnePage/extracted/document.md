@@ -14,7 +14,7 @@ Appropriate medical treatment must be immediately available to manage potential 
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_82b04086.png)
+![Figure from page 1](figures/figure_p1_2f6b487e.png)
 
 s, which may potentially protect against grams (mcg) of HA per strain vs 15 mcg o
 
@@ -23,24 +23,24 @@ as evaluated in the pivotal trial against Fluarix (quad rival ent sare manufactu
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_58bf0814.png)
+![Figure from page 1](figures/figure_p1_d41ce4ed.png)
 
 accine.1-3
 
-he efficacy of Flublok (quad rival ent is relevant to Flublok (trivalent) g abaculo virus expression vector system (BEVS). Recombinant ve antibodies against highly conserved regions of HA compared
+The efficacy of Flublok (quad rival ent is relevant to Flublok (trivalent) g abaculo virus expression vector system (BEVS). Recombinant ve antibodies against highly conserved regions of HA compared
 
-broader immune resp id i
+Recombinant technolo broader immune respo id tti
 
 MAY PROVIDE CROSS-PROTECTION4 Recombinant technology leads to a
 
-g y p yin January 2024, vaccination with a higher dose recombinant flu vaccine may induce amore robust antibody response than egg based standard dose vaccines.
+According to a study published by the CDC in January 2024, vaccination with a higher dose recombinant flu vaccine may induce amore robust antibody response than egg based standard dose vaccines.
 
 
 **[FIGURE]**
 
-![Figure from page 1](figures/figure_p1_6af79c58.png)
+![Figure from page 1](figures/figure_p1_e56b637e.png)
 
-Cell and egg based flu vaccines have the potential to develop mutations
+Cell and egg based flu vaccines have the potential to develop mutations d i d ihi h d
 
 AVOIDS MUTATIONS4 Cell- and egg based flu vaccines hav
 

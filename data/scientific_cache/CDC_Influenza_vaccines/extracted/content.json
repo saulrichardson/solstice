@@ -37,13 +37,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0009338855743408203,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
+          "scale_factor": 0.18
         }
       }
     },
@@ -65,9 +59,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": false,
-          "processing_time": 0.00019788742065429688
+          "scale_factor": 0.18
         }
       }
     },
@@ -89,13 +81,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00027489662170410156,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
+          "scale_factor": 0.18
         }
       }
     },
@@ -117,13 +103,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00026488304138183594,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
+          "scale_factor": 0.18
         }
       }
     },
@@ -217,9 +197,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": false,
-          "processing_time": 0.0001938343048095703
+          "scale_factor": 0.18
         }
       }
     },
@@ -259,13 +237,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0017201900482177734,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
+          "scale_factor": 0.18
         }
       }
     },
@@ -287,12 +259,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0001609325408935547,
-          "processors_applied": [
-            "spacing_fix"
-          ]
+          "scale_factor": 0.18
         }
       }
     },
@@ -314,13 +281,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0007941722869873047,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
+          "scale_factor": 0.18
         }
       }
     },
@@ -342,14 +303,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.002701997756958008,
-          "processors_applied": [
-            "post_extraction_clean",
-            "symspell",
-            "spacing_fix"
-          ]
+          "scale_factor": 0.18
         }
       }
     },
@@ -371,13 +325,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0007901191711425781,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
+          "scale_factor": 0.18
         }
       }
     },
@@ -399,13 +347,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.002321004867553711,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
+          "scale_factor": 0.18
         }
       }
     },
@@ -427,13 +369,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.0005509853363037109,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
+          "scale_factor": 0.18
         }
       }
     },
@@ -455,12 +391,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00023984909057617188,
-          "processors_applied": [
-            "post_extraction_clean"
-          ]
+          "scale_factor": 0.18
         }
       }
     },
@@ -482,9 +413,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": false,
-          "processing_time": 0.00017380714416503906
+          "scale_factor": 0.18
         }
       }
     },
@@ -506,12 +435,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00016021728515625,
-          "processors_applied": [
-            "spacing_fix"
-          ]
+          "scale_factor": 0.18
         }
       }
     },
@@ -533,13 +457,7 @@
         "extraction_confidence": 1.0,
         "extraction": {
           "method": "pymupdf",
-          "scale_factor": 0.18,
-          "text_modified": true,
-          "processing_time": 0.00027108192443847656,
-          "processors_applied": [
-            "post_extraction_clean",
-            "spacing_fix"
-          ]
+          "scale_factor": 0.18
         }
       }
     },

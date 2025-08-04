@@ -63,27 +63,16 @@ class PyMuPDFExtractor(TextExtractor):
         text = text.strip()
         
         # Process text through text processing functions
-        result = process_text(text, context={
-            'source': 'pymupdf',
-            'pdf_path': str(pdf_path),
-            'page_num': page_num,
-            'bbox': bbox
-        })
+        processed_text = process_text(text)
         
         # Build metadata
         metadata = {
             "method": "pymupdf",
-            "scale_factor": scale_factor,
-            "text_modified": result.was_modified,
-            "processing_time": result.processing_time
+            "scale_factor": scale_factor
         }
         
-        # Add processors applied if any modifications were made
-        if result.was_modified:
-            metadata["processors_applied"] = result.modifications
-        
         return ExtractorResult(
-            text=result.text,
+            text=processed_text,
             confidence=1.0,  # PyMuPDF doesn't provide confidence scores
             metadata=metadata
         )

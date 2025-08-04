@@ -4,7 +4,7 @@ A specialized ingestion pipeline optimized for academic papers, clinical studies
 
 ## Architecture Overview
 
-The scientific pipeline is the primary document processing system in Solstice, designed specifically for structured academic and clinical documents. It extends `BasePDFPipeline` with optimizations for research papers, clinical trials, and scientific publications.
+The scientific pipeline is the primary document processing system in Solstice, designed specifically for structured academic and clinical documents. It provides optimizations for research papers, clinical trials, and scientific publications using functional consolidation approaches.
 
 ## Key Features
 
@@ -24,7 +24,7 @@ The scientific pipeline is the primary document processing system in Solstice, d
 - **Returns**: Standard `Document` object for downstream processing
 
 ### 2. **StandardPipeline** (`standard_pipeline.py`)
-- **Inheritance**: Extends `BasePDFPipeline` from shared components
+- **Architecture**: Independent pipeline class with scientific-specific components
 - **Key Responsibilities**:
   - PDF to image conversion at configured DPI
   - Layout detection using PubLayNet model

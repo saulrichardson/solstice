@@ -9,7 +9,6 @@ from pathlib import Path
 from typing import Optional
 
 from ..injestion.scientific.standard_pipeline import StandardPipeline
-from ..injestion.shared.config import get_config
 
 
 # Default paths
@@ -23,18 +22,13 @@ def process_all_pdfs(output_dir: Optional[Path] = None) -> None:
         output_dir: Optional custom output directory. If None, uses default.
     """
     
-    # Create pipeline with clinical preset (or custom config for output_dir)
+    # Create pipeline with scientific defaults (or custom cache dir)
     if output_dir is not None:
-        config = get_config('clinical')
-        # Create a modified config with custom cache directory
-        from dataclasses import replace
-        config = replace(config, cache_dir=str(output_dir))
-        pipeline = StandardPipeline(config)
+        pipeline = StandardPipeline(cache_dir=str(output_dir))
         cache_dir = output_dir
     else:
-        config = get_config('clinical')
-        pipeline = StandardPipeline(config)
-        cache_dir = Path(pipeline.config.cache_dir)
+        pipeline = StandardPipeline()  # Uses optimized defaults
+        cache_dir = Path(pipeline.cache_dir)
     
     # Check if input directory exists
     if not DEFAULT_INPUT_DIR.exists():

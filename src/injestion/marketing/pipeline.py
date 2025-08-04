@@ -17,14 +17,14 @@ from .reading_order import determine_marketing_reading_order
 from ..shared.processing.text_extractor import extract_document_content
 from ..shared.storage.paths import stage_dir, save_json, pages_dir
 from ..shared.visualization.layout_visualizer import visualize_document
-from ..shared.config import get_config, IngestionConfig
-from ..shared.base_pipeline import BasePDFPipeline
+from . import defaults
+from ..shared.pdf_utils import convert_pdf_to_images, save_merged_layouts
 from src.interfaces import Block, Document
 import layoutparser as lp
 import uuid
 
 
-class MarketingPipeline(BasePDFPipeline):
+class MarketingPipeline:
     """Complete pipeline for marketing document processing.
     
     This pipeline:
@@ -33,30 +33,56 @@ class MarketingPipeline(BasePDFPipeline):
     3. Integrates with existing document processing infrastructure
     """
     
-    def __init__(self, config: IngestionConfig):
+    def __init__(self, cache_dir: str = defaults.CACHE_DIR):
         """Initialize marketing pipeline.
         
         Parameters
         ----------
-        config
-            IngestionConfig instance. Must be provided explicitly.
+        cache_dir : str, optional
+            Cache directory for outputs. Uses marketing default if not provided.
         """
-        super().__init__(config)
-    
-    def _create_detector(self) -> MarketingLayoutDetector:
-        """Create PrimaLayout-based detector for marketing documents."""
-        return MarketingLayoutDetector(
-            score_threshold=self.config.score_threshold,
-            nms_threshold=self.config.nms_threshold
+        self.cache_dir = cache_dir
+        self.detector = MarketingLayoutDetector(
+            score_threshold=defaults.SCORE_THRESHOLD,
+            nms_threshold=defaults.NMS_THRESHOLD
+        )
+        self.consolidator = BoxConsolidator(
+            merge_threshold=defaults.MERGE_THRESHOLD,
+            expand_padding=defaults.BOX_PADDING if defaults.EXPAND_BOXES else 0.0
         )
     
-    def _create_consolidator(self) -> BoxConsolidator:
-        """Create box consolidator for marketing layouts."""
-        return BoxConsolidator(
-            merge_threshold=self.config.merge_threshold,
-            expand_padding=self.config.box_padding if self.config.expand_boxes else 0.0
-        )
-    
+    def process_pdf(self, pdf_path: str | os.PathLike[str]) -> Document:
+        """Process a PDF file through the marketing pipeline."""
+        pdf_path = Path(pdf_path)
+        
+        # Convert PDF to images
+        logger.info(f"Converting {pdf_path.name} to images...")
+        images = convert_pdf_to_images(pdf_path, self.cache_dir, defaults.DETECTION_DPI)
+        
+        # Run layout detection
+        logger.info("Running marketing layout detection...")
+        layouts = self.detector.detect_images(images)
+        
+        # Save raw layouts if configured
+        if defaults.SAVE_INTERMEDIATE_STATES:
+            self._save_raw_layouts(layouts, pdf_path, images)
+        
+        # Apply box consolidation using real consolidator
+        logger.info("Applying box consolidation...")
+        consolidated_layouts = self._apply_consolidation(layouts, images)
+        
+        # Save merged layouts if configured
+        if defaults.SAVE_INTERMEDIATE_STATES:
+            save_merged_layouts(consolidated_layouts, pdf_path, self.cache_dir)
+        
+        # Create document and extract content
+        logger.info("Creating document structure...")
+        document = self._create_document(consolidated_layouts, pdf_path, images)
+        
+        # Save outputs and visualize
+        self._save_outputs(document, pdf_path)
+        
+        return document
     
     def _apply_consolidation(self, layouts: List, images: List) -> List[List[Box]]:
         """Apply consolidation to layouts using the BoxConsolidator.
@@ -84,7 +110,7 @@ class MarketingPipeline(BasePDFPipeline):
                 boxes.append(box)
             
             # Apply consolidation if enabled
-            if self.config.merge_overlapping and boxes:
+            if defaults.MERGE_OVERLAPPING and boxes:
                 # Fail-fast: require valid image dimensions
                 if page_idx >= len(images):
                     raise IndexError(f"Page {page_idx} not found in images list")
@@ -128,7 +154,7 @@ class MarketingPipeline(BasePDFPipeline):
             for box_idx, box in enumerate(page_boxes):
                 metadata = {
                     "score": box.score,
-                    "detection_dpi": self.config.detection_dpi,
+                    "detection_dpi": defaults.DETECTION_DPI,
                     "detector": "PrimaLayout"
                 }
                 
@@ -147,14 +173,14 @@ class MarketingPipeline(BasePDFPipeline):
             blocks=all_blocks,
             metadata={
                 "pipeline": "marketing",
-                "detection_dpi": self.config.detection_dpi,
+                "detection_dpi": defaults.DETECTION_DPI,
                 "total_pages": len(layouts)
             },
             reading_order=reading_order_by_page
         )
         
         # Extract text content
-        document = extract_document_content(document, pdf_path, self.config.detection_dpi, self.config.cache_dir)
+        document = extract_document_content(document, pdf_path, defaults.DETECTION_DPI, self.cache_dir)
         
         return document
     
@@ -172,7 +198,7 @@ class MarketingPipeline(BasePDFPipeline):
     
     def _save_outputs(self, document: Document, pdf_path: Path):
         """Save processing outputs."""
-        output_dir = stage_dir("extracted", pdf_path, self.config.cache_dir)
+        output_dir = stage_dir("extracted", pdf_path, self.cache_dir)
         
         # Save document
         doc_path = output_dir / "content.json"
@@ -190,11 +216,11 @@ class MarketingPipeline(BasePDFPipeline):
         generate_html_document(document, output_dir / "document.html", include_images=True)
         
         # Create visualizations if configured
-        if self.config.create_visualizations:
+        if defaults.CREATE_VISUALIZATIONS:
             visualize_document(
                 document,
                 pdf_path,
-                self.config.cache_dir,
+                self.cache_dir,
                 show_labels=True,
                 show_reading_order=True
             )
@@ -203,7 +229,7 @@ class MarketingPipeline(BasePDFPipeline):
     
     def _save_raw_layouts(self, layouts: List, pdf_path: Path, images: List):
         """Save raw layout detection results before any processing."""
-        raw_dir = stage_dir("raw_marketing", pdf_path, self.config.cache_dir)
+        raw_dir = stage_dir("raw_marketing", pdf_path, self.cache_dir)
         raw_dir.mkdir(parents=True, exist_ok=True)
         
         # Save raw layout data

@@ -8,6 +8,6 @@ This package provides the core functionality for:
 """
 
 # Import the main pipeline function from the scientific module
-from .scientific import ingest_pdf, PDFIngestionPipeline
+from .scientific import ingest_pdf, StandardPipeline
 
-__all__ = ["ingest_pdf", "PDFIngestionPipeline"]
+__all__ = ["ingest_pdf", "StandardPipeline"]
