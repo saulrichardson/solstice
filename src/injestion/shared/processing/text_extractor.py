@@ -72,7 +72,8 @@ def extract_figure_image(
 def extract_document_content(
     document: Document,
     pdf_path: Path,
-    dpi: int
+    dpi: int,
+    cache_dir: str
 ) -> Document:
     """Extract text and figure content for all blocks in document.
     
@@ -110,7 +111,7 @@ def extract_document_content(
     doc.close()
     
     # Create figures directory
-    figures_dir = stage_dir("extracted/figures", pdf_path)
+    figures_dir = stage_dir("extracted/figures", pdf_path, cache_dir)
     
     # Track statistics
     text_blocks = 0

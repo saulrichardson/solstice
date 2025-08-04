@@ -11,7 +11,7 @@ import logging
 from pdf2image import convert_from_path
 from src.interfaces import Document
 from .storage.paths import pages_dir, stage_dir
-from .config import IngestionConfig, DEFAULT_CONFIG
+from .config import IngestionConfig
 from .processing.box import Box
 
 logger = logging.getLogger(__name__)
@@ -24,15 +24,15 @@ class BasePDFPipeline(ABC):
     allowing specialization of detection and consolidation strategies.
     """
     
-    def __init__(self, config: Optional[IngestionConfig] = None):
+    def __init__(self, config: IngestionConfig):
         """Initialize pipeline with configuration.
         
         Parameters
         ----------
-        config : IngestionConfig, optional
-            Pipeline configuration. Uses DEFAULT_CONFIG if not provided.
+        config : IngestionConfig
+            Pipeline configuration. Must be provided explicitly.
         """
-        self.config = config or DEFAULT_CONFIG
+        self.config = config
         self.detector = self._create_detector()
         self.consolidator = self._create_consolidator()
     
@@ -100,7 +100,7 @@ class BasePDFPipeline(ABC):
         if not pdf_path.is_file():
             raise ValueError(f"Path is not a file: {pdf_path}")
             
-        page_dir = pages_dir(pdf_path)
+        page_dir = pages_dir(pdf_path, self.config.cache_dir)
         page_dir.mkdir(parents=True, exist_ok=True)
         
         try:
@@ -147,7 +147,7 @@ class BasePDFPipeline(ABC):
         """Save merged/consolidated layouts. Override in subclasses if needed."""
         from .storage.paths import stage_dir, save_json
         
-        merged_dir = stage_dir("merged", pdf_path)
+        merged_dir = stage_dir("merged", pdf_path, self.config.cache_dir)
         merged_dir.mkdir(parents=True, exist_ok=True)
         
         # Convert Box objects to JSON-serializable format

@@ -130,11 +130,11 @@ cel vax Quad rival ent Seqirus) 0.5 mL PFS ≥6 mos 15 µg/0.5 mL IM 5.0-mL MDV 
 
 ) uLaval Quad rival ent GlaxoSmithKline) 0.5-mL PFS ≥6 mos 15 µg/0.5 mL IM¶ uzone Quad rival ent San of i Pasteur) 0.5-mL PFS†† ≥6 mos†† 15 µg/0.5 mL IM¶ 0.5-mL SDV†† ≥6 mos†† 15 µg/0.5 mL IM¶ 5.0-mL MDV†† ≥6 mos†† 7.5 µg/0.25 mL IM¶ 25
 
+g y (jet injector) Fluarix Quad rival ent (Gl S i hKli ) 0.5-mL PFS ≥6 mos 15 µg/0.5 mL IM¶ -
+
 TABLE 1. Influenza vaccines - United States, 2022-23 influenza seas Trade name (manufacturer) Presentations Age indicati IIV4 (standard dose, egg based vaccines†) Afluria Quad rival ent (Seqirus) 0.5-mL PFS§ ≥3 5.0-mL MDV§ ≥6 m
 
 µg HA (IIV4 s and RIV4) or virus count (LAIV4) for each vaccine virus (per dose) Route Mercury (from thimerosal, if present), µg/0.5 mL 15 µg/0.5 mL IM¶ -** 7.5 µg/0.25 mL IM¶ 24.5
-
-g y (jet injector) Fluarix Quad rival ent (Gl S i hKli ) 0.5-mL PFS ≥6 mos 15 µg/0.5 mL IM¶ -
 
 
 ## Page 6

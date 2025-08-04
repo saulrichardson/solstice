@@ -28,45 +28,12 @@ import os
 from pathlib import Path
 from typing import Any
 
-from src.core.config import settings
-
 # ---------------------------------------------------------------------------
 # Root directories (created lazily when first used)
 # ---------------------------------------------------------------------------
 
 
 _DATA_DIR = Path(__file__).resolve().parents[3] / "data"
-_CACHE_DIR = Path(settings.filesystem_cache_dir)
-
-# ---------------------------------------------------------------------------
-# Runtime configuration
-# ---------------------------------------------------------------------------
-
-
-def set_cache_root(cache_root: os.PathLike | str) -> None:  # noqa: D401 – simple setter
-    """Override the root *cache* directory at runtime.
-
-    The ingest CLI exposes an ``--output-dir`` flag allowing users to route all
-    generated artefacts to a custom location.  We keep the default behaviour
-    (``data/scientific_cache``) while letting callers switch to an alternative path *before*
-    the first call to :func:`stage_dir` / :func:`pages_dir` / …  However, the
-    function is idempotent and can also be called later – all subsequent calls
-    to the helpers will respect the new directory.
-
-    Parameters
-    ----------
-    cache_root
-        Destination directory where pipeline artefacts will be written.
-    """
-
-    global _CACHE_DIR  # noqa: PLW0603 – allow reassignment of module-level var
-
-    # Convert eagerly to Path – makes later operations cheaper.
-    _CACHE_DIR = Path(cache_root)
-
-    # Make sure the directory exists so that later helper calls succeed.
-    _CACHE_DIR.mkdir(parents=True, exist_ok=True)
-
 
 # ---------------------------------------------------------------------------
 # Public helpers
@@ -76,8 +43,7 @@ def set_cache_root(cache_root: os.PathLike | str) -> None:  # noqa: D401 – sim
 def ensure_dirs() -> None:
     """Create *data* root folders if they do not yet exist."""
 
-    for d in (_DATA_DIR, _CACHE_DIR):
-        d.mkdir(parents=True, exist_ok=True)
+    _DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def doc_id(pdf_path: os.PathLike | str) -> str:
@@ -123,25 +89,26 @@ def doc_id(pdf_path: os.PathLike | str) -> str:
     return sanitized
 
 
-def stage_dir(stage: str, pdf_path: os.PathLike | str) -> Path:
+def stage_dir(stage: str, pdf_path: os.PathLike | str, cache_dir: os.PathLike | str) -> Path:
     """Return the cache directory for *stage* and *pdf_path* (created)."""
 
-    ensure_dirs()
-    directory = _CACHE_DIR / doc_id(pdf_path) / stage
+    cache_dir = Path(cache_dir)
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    directory = cache_dir / doc_id(pdf_path) / stage
     directory.mkdir(parents=True, exist_ok=True)
     return directory
 
 
-def pages_dir(pdf_path: os.PathLike | str) -> Path:
+def pages_dir(pdf_path: os.PathLike | str, cache_dir: os.PathLike | str) -> Path:
     """Directory where rasterised page images are stored."""
 
-    return stage_dir("pages", pdf_path)
+    return stage_dir("pages", pdf_path, cache_dir)
 
 
-def extracted_content_path(pdf_path: os.PathLike | str) -> Path:
+def extracted_content_path(pdf_path: os.PathLike | str, cache_dir: os.PathLike | str) -> Path:
     """Path to the final extracted content JSON for *pdf_path*."""
     
-    return stage_dir("extracted", pdf_path) / "content.json"
+    return stage_dir("extracted", pdf_path, cache_dir) / "content.json"
 
 
 # ---------------------------------------------------------------------------

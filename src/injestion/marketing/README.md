@@ -34,17 +34,22 @@ python -m src.cli ingest-marketing --output-dir custom/output
 
 ```python
 from src.injestion.marketing import MarketingPipeline
+from src.injestion.shared.config import get_config
 
 # Basic usage
-pipeline = MarketingPipeline()
+config = get_config('marketing')
+pipeline = MarketingPipeline(config)
 document = pipeline.process_pdf("marketing.pdf")
 
 # Custom settings
-pipeline = MarketingPipeline(
+from dataclasses import replace
+config = get_config('marketing')
+custom_config = replace(config,
     merge_threshold=0.2,          # 20% overlap triggers merge
     expand_boxes=True,            # Fix text cutoffs
     box_padding=10.0              # Expansion amount
 )
+pipeline = MarketingPipeline(custom_config)
 document = pipeline.process_pdf("marketing.pdf")
 ```
 

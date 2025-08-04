@@ -6,12 +6,11 @@ from pathlib import Path
 from typing import Optional
 
 from ..injestion.marketing import MarketingPipeline
-from ..injestion.shared.storage.paths import set_cache_root
+from ..injestion.shared.config import get_config
 
 
 # Default paths
 DEFAULT_INPUT_DIR = Path("data/marketing_slide")
-DEFAULT_OUTPUT_DIR = Path("data/marketing_cache")
 
 
 def process_single_pdf(pdf_path: Path, pipeline: MarketingPipeline, cache_dir: Path) -> bool:
@@ -43,16 +42,18 @@ def main(pdf_path=None, output_dir=None):
         pdf_path: Optional path to marketing PDF file. If None, processes all PDFs in default directory
         output_dir: Optional custom output directory
     """
-    # Set custom output directory if provided
+    # Create pipeline with marketing preset (or custom config for output_dir)
     if output_dir is not None:
-        set_cache_root(output_dir)
+        config = get_config('marketing')
+        # Create a modified config with custom cache directory
+        from dataclasses import replace
+        config = replace(config, cache_dir=str(output_dir))
+        pipeline = MarketingPipeline(config)
         cache_dir = Path(output_dir)
     else:
-        cache_dir = DEFAULT_OUTPUT_DIR
-        set_cache_root(str(cache_dir))
-    
-    # Create pipeline with marketing preset
-    pipeline = MarketingPipeline()
+        config = get_config('marketing')
+        pipeline = MarketingPipeline(config)
+        cache_dir = Path(pipeline.config.cache_dir)
     
     print(f"Using marketing-optimized settings")
     print(f"Cache directory: {cache_dir}")

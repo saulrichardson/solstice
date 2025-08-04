@@ -27,9 +27,9 @@ logger = logging.getLogger(__name__)
 class StandardPipelineFixed:
     """Fixed pipeline with consistent ID management throughout."""
     
-    def __init__(self, config: IngestionConfig = None):
+    def __init__(self, config: IngestionConfig):
         """Initialize pipeline with configuration."""
-        self.config = config or IngestionConfig()
+        self.config = config
         self.detector = self._create_detector()
         self.consolidator = NoOpConsolidator()
         self._last_raw_layouts = []
@@ -181,7 +181,7 @@ class StandardPipelineFixed:
         self.id_manager.validate_document(all_blocks, reading_order_by_page)
         
         # Extract text content
-        document = extract_document_content(document, pdf_path, self.config.detection_dpi)
+        document = extract_document_content(document, pdf_path, self.config.detection_dpi, self.config.cache_dir)
         
         return document
     
@@ -196,7 +196,7 @@ class StandardPipelineFixed:
     def _convert_to_images(self, pdf_path: Path) -> List:
         """Convert PDF to images at specified DPI."""
         from ..shared.utils.pdf_utils import pdf_to_images
-        images_dir = stage_dir("pages", pdf_path)
+        images_dir = stage_dir("pages", pdf_path, self.config.cache_dir)
         return pdf_to_images(
             pdf_path,
             output_dir=images_dir,
@@ -206,7 +206,7 @@ class StandardPipelineFixed:
     def _save_raw_layouts(self, layouts: List, pdf_path: Path, images: List):
         """Save raw layout detection results."""
         self._last_raw_layouts = layouts
-        raw_dir = stage_dir("raw_layouts", pdf_path)
+        raw_dir = stage_dir("raw_layouts", pdf_path, self.config.cache_dir)
         
         raw_data = []
         for page_idx, page_layout in enumerate(layouts):
@@ -229,7 +229,7 @@ class StandardPipelineFixed:
     
     def _save_merged_layouts(self, layouts: List[List[Box]], pdf_path: Path):
         """Save merged/consolidated layouts."""
-        merged_dir = stage_dir("merged", pdf_path)
+        merged_dir = stage_dir("merged", pdf_path, self.config.cache_dir)
         
         merged_data = []
         for page_boxes in layouts:
@@ -247,7 +247,7 @@ class StandardPipelineFixed:
     
     def _save_outputs(self, document: Document, pdf_path: Path):
         """Save processing outputs."""
-        output_dir = stage_dir("extracted", pdf_path)
+        output_dir = stage_dir("extracted", pdf_path, self.config.cache_dir)
         
         # Save document
         doc_path = output_dir / "content.json"

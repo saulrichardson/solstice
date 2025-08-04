@@ -8,14 +8,12 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-from ..injestion.scientific.pipeline import ingest_pdf
-from ..injestion.shared.storage.paths import set_cache_root
-from ..core.config import settings
+from ..injestion.scientific.standard_pipeline import StandardPipeline
+from ..injestion.shared.config import get_config
 
 
 # Default paths
 DEFAULT_INPUT_DIR = Path("data/clinical_files")
-DEFAULT_OUTPUT_DIR = Path("data/scientific_cache")
 
 
 def process_all_pdfs(output_dir: Optional[Path] = None) -> None:
@@ -24,14 +22,19 @@ def process_all_pdfs(output_dir: Optional[Path] = None) -> None:
     Args:
         output_dir: Optional custom output directory. If None, uses default.
     """
-        
-    # Use default output directory if not specified
-    if output_dir is None:
-        output_dir = DEFAULT_OUTPUT_DIR
-
-    # Ensure the pipeline writes to the requested directory
-    # (no-op if *output_dir* equals the default)
-    set_cache_root(output_dir)
+    
+    # Create pipeline with clinical preset (or custom config for output_dir)
+    if output_dir is not None:
+        config = get_config('clinical')
+        # Create a modified config with custom cache directory
+        from dataclasses import replace
+        config = replace(config, cache_dir=str(output_dir))
+        pipeline = StandardPipeline(config)
+        cache_dir = output_dir
+    else:
+        config = get_config('clinical')
+        pipeline = StandardPipeline(config)
+        cache_dir = Path(pipeline.config.cache_dir)
     
     # Check if input directory exists
     if not DEFAULT_INPUT_DIR.exists():
@@ -60,23 +63,28 @@ def process_all_pdfs(output_dir: Optional[Path] = None) -> None:
         print(f"\n{'='*60}")
         print(f"Processing [{i}/{len(pdf_files)}]: {pdf_path.name}")
         print(f"{'='*60}")
-        # Run ingestion pipeline with optimized settings
-        document = ingest_pdf(pdf_path)
         
-        print(f"✓ Successfully processed {pdf_path.name}")
-        total_pages = document.metadata.get("total_pages", "?")
-        print(f"  - Total pages: {total_pages}")
-        print(f"  - Total blocks detected: {len(document.blocks)}")
-        print(f"  - Text extractor: PyMuPDF")
-        
-        successful += 1
+        try:
+            # Run ingestion pipeline with optimized settings
+            document = pipeline.process_pdf(pdf_path)
+            
+            print(f"✓ Successfully processed {pdf_path.name}")
+            total_pages = document.metadata.get("total_pages", "?")
+            print(f"  - Total pages: {total_pages}")
+            print(f"  - Total blocks detected: {len(document.blocks)}")
+            print(f"  - Text extractor: PyMuPDF")
+            
+            successful += 1
+        except Exception as e:
+            print(f"✗ Failed to process {pdf_path.name}: {e}")
+            failed += 1
     
     # Summary
     print(f"\n{'='*60}")
     print("Processing complete!")
     print(f"  - Successful: {successful}")
     print(f"  - Failed: {failed}")
-    print(f"  - Results saved in: {output_dir}/")
+    print(f"  - Results saved in: {cache_dir}/")
 
 
 def main(output_dir=None):

@@ -164,13 +164,13 @@ class StandardPipeline(BasePDFPipeline):
         )
         
         # Extract text content
-        document = extract_document_content(document, pdf_path, self.config.detection_dpi)
+        document = extract_document_content(document, pdf_path, self.config.detection_dpi, self.config.cache_dir)
         
         return document
     
     def _save_outputs(self, document: Document, pdf_path: Path):
         """Save processing outputs."""
-        output_dir = stage_dir("extracted", pdf_path)
+        output_dir = stage_dir("extracted", pdf_path, self.config.cache_dir)
         
         # Save document
         doc_path = output_dir / "content.json"
@@ -193,6 +193,7 @@ class StandardPipeline(BasePDFPipeline):
             visualize_document(
                 document,
                 pdf_path,
+                self.config.cache_dir,
                 show_labels=True,
                 show_reading_order=True
             )
@@ -201,7 +202,7 @@ class StandardPipeline(BasePDFPipeline):
     
     def _save_raw_layouts(self, layouts: List, pdf_path: Path, images: List):
         """Save raw layout detection results before any processing."""
-        raw_dir = stage_dir("raw_layouts", pdf_path)
+        raw_dir = stage_dir("raw_layouts", pdf_path, self.config.cache_dir)
         raw_dir.mkdir(parents=True, exist_ok=True)
         
         # Save raw layout data with deterministic IDs

@@ -12,6 +12,9 @@ from typing import Dict
 class IngestionConfig:
     """Immutable configuration for PDF ingestion pipeline."""
     
+    # Cache Directory
+    cache_dir: str = "data/scientific_cache"  # Directory for storing pipeline outputs
+    
     # Detection Settings
     detection_dpi: int = 400  # DPI for PDF rasterization
     score_threshold: float = 0.2  # Detection confidence threshold
@@ -50,32 +53,37 @@ class IngestionConfig:
             })
 
 
-# Global default configuration
-DEFAULT_CONFIG = IngestionConfig()
+# Removed DEFAULT_CONFIG - all pipelines must use explicit presets
 
 # Preset configurations for different document types
 PRESETS = {
-    'clinical': IngestionConfig(),  # Default is optimized for clinical
+    'clinical': IngestionConfig(
+        cache_dir="data/scientific_cache"
+    ),
     
     'marketing': IngestionConfig(
+        cache_dir="data/marketing_cache",
         score_threshold=0.15,  # Lower to catch subtle design elements
         nms_threshold=0.4,  # Less aggressive NMS for marketing layouts
         merge_threshold=0.2,  # More aggressive merging
     ),
     
     'conservative': IngestionConfig(
+        cache_dir="data/scientific_cache",
         merge_threshold=0.5,  # Less aggressive merging
         box_padding=5.0,  # Minimal padding
         expand_boxes=False,  # Don't expand boxes
     ),
     
     'aggressive': IngestionConfig(
+        cache_dir="data/scientific_cache",
         merge_threshold=0.05,  # Very aggressive merging (was 0.1)
         box_padding=10.0,  # Moderate padding
         score_threshold=0.1,  # Catch everything
     ),
     
     'single-column': IngestionConfig(
+        cache_dir="data/scientific_cache",
         merge_threshold=0.1,  # Lower threshold for merging
         box_padding=5.0,  # Minimal padding
         score_threshold=0.2,  # Standard detection
@@ -84,7 +92,7 @@ PRESETS = {
 }
 
 
-def get_config(preset: str = 'clinical') -> IngestionConfig:
+def get_config(preset: str) -> IngestionConfig:
     """Get configuration for a specific preset.
     
     Args:
@@ -92,5 +100,11 @@ def get_config(preset: str = 'clinical') -> IngestionConfig:
         
     Returns:
         IngestionConfig instance
+        
+    Raises:
+        ValueError: If preset is not found
     """
-    return PRESETS.get(preset, DEFAULT_CONFIG)
+    if preset not in PRESETS:
+        available = ', '.join(PRESETS.keys())
+        raise ValueError(f"Unknown preset '{preset}'. Available presets: {available}")
+    return PRESETS[preset]

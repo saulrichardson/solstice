@@ -118,6 +118,7 @@ def visualize_page_layout(
 def visualize_document(
     document: Document,
     pdf_path: Path | str,
+    cache_dir: str,
     output_dir: Optional[Path] = None,
     pages_to_show: Optional[List[int]] = None,
     show_labels: bool = True,
@@ -138,13 +139,13 @@ def visualize_document(
     """
     # Determine output directory
     if output_dir is None:
-        output_dir = stage_dir("visualizations", pdf_path)
+        output_dir = stage_dir("visualizations", pdf_path, cache_dir)
     else:
         output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     
     # Load page images
-    page_images_dir = pages_dir(pdf_path)
+    page_images_dir = pages_dir(pdf_path, cache_dir)
     page_images = sorted(page_images_dir.glob("page-*.png"))
     
     if not page_images:
@@ -252,6 +253,7 @@ def create_summary_grid(
 # Convenience function to visualize from pipeline
 def visualize_pipeline_results(
     pdf_path: Path | str,
+    cache_dir: str,
     pages_to_show: Optional[List[int]] = None,
     show_labels: bool = True,
     show_reading_order: bool = True
@@ -268,7 +270,7 @@ def visualize_pipeline_results(
         List of paths to saved visualization files
     """
     # Load the processed document
-    doc_path = extracted_content_path(pdf_path)
+    doc_path = extracted_content_path(pdf_path, cache_dir)
     if not doc_path.exists():
         raise FileNotFoundError(f"No processed document found for {pdf_path}")
     
@@ -278,6 +280,7 @@ def visualize_pipeline_results(
     return visualize_document(
         document,
         pdf_path,
+        cache_dir,
         pages_to_show=pages_to_show,
         show_labels=show_labels,
         show_reading_order=show_reading_order
