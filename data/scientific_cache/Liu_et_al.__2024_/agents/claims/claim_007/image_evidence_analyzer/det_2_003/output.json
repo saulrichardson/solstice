@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/table_p3_det_2_003.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_003",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A multi\u2010row table listing influenza virus vaccine strains (A(H1N1)pdm09, A(H3N2), B/Victoria, B/Yamagata), production methods (cell, egg, egg CVV), and the specific amino acid differences at defined HA head domain positions between cell-derived and egg-derived viruses over different years. The table only presents amino acid changes in HA head domains between cell- and egg-derived vaccine seed viruses; it contains no data on recombinant HA antigens produced using BEVS or antibody responses. Therefore, it does not support the claim. Note: Analysis limited to sequence comparison data; no immunogenicity or BEVS information present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multi\u2010row table listing influenza virus vaccine strains (A(H1N1)pdm09, A(H3N2), B/Victoria, B/Yamagata), production methods (cell, egg, egg CVV), and the specific amino acid differences at defined HA head domain positions between cell-derived and egg-derived viruses over different years.",
+    "evidence_found": null,
+    "reasoning": "The table only presents amino acid changes in HA head domains between cell- and egg-derived vaccine seed viruses; it contains no data on recombinant HA antigens produced using BEVS or antibody responses. Therefore, it does not support the claim.",
+    "confidence_notes": "Analysis limited to sequence comparison data; no immunogenicity or BEVS information present."
+  }
+}

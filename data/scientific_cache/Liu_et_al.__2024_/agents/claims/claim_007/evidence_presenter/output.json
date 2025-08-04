@@ -1,0 +1,25 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": "Liu_et_al.__2024_",
+  "supporting_evidence": [],
+  "image_supporting_evidence": [
+    {
+      "image_filename": "figure_p6_det_5_006.png",
+      "explanation": "Multi\u2010panel figure showing ELISA antibody titers (log2 scale) against whole HA from egg-derived and cell-derived virus (panel A), geometric mean ratios of egg vs cell HA ELISA titers at 1 month (panel B), ELISA titers against H3 and H1 stalk domains over time (panel C), and fold-rise of stalk ELISA titers 1 month vs baseline (panel D) for four licensed vaccines (two egg-based IIV4s in black/blue, one cell-based IIV4 in green, and one recombinant HA vaccine in orange). Evidence: In panels C and D, the recombinant HA vaccine (orange) elicits significantly higher H3 and H1 stalk ELISA titers and fold-rise at 1 month compared with egg-derived vaccines (p values <0.05). The figure shows that the BEVS-produced recombinant HA vaccine induces higher levels of antibodies against the conserved HA stalk region than egg-derived vaccines (p<0.05), which supports the claim. Note: Resolution of some p-value labels is low, but the significant differences in stalk responses for the recombinant vaccine are clear."
+    }
+  ],
+  "evidence_summary": {
+    "total_text_evidence_found": 0,
+    "total_image_evidence_found": 1,
+    "total_evidence_found": 1,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 0
+    },
+    "rejected_count": 0
+  }
+}

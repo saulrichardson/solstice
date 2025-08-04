@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "An excerpt from the full prescribing information for Flublok showing the table of contents with section headings (e.g., Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Clinical Studies, etc.) does not support the claim because the image only displays a table of contents without any data on hemagglutinin antigen content or comparative immunogenicity Note: Analysis limited by the fact that only the table of contents is visible; no detailed information on antigen amounts or study results is shown",
+  "explanation": "A scanned page showing prescribing information for Flublok, including Dosage and Administration (single 0.5 mL intramuscular injection), Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, and a Table of Contents for the full prescribing information. does not support the claim because the image shows only dosing volume and table of contents and contains no information about hemagglutinin antigen content or comparisons with standard-dose vaccines Note: The image is clear but limited to the first page and table of contents; antigen content details may appear in later sections not shown here.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "An excerpt from the full prescribing information for Flublok showing the table of contents with section headings (e.g., Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Clinical Studies, etc.)",
+    "image_description": "A scanned page showing prescribing information for Flublok, including Dosage and Administration (single 0.5 mL intramuscular injection), Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, and a Table of Contents for the full prescribing information.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image only displays a table of contents without any data on hemagglutinin antigen content or comparative immunogenicity",
-    "confidence_notes": "Analysis limited by the fact that only the table of contents is visible; no detailed information on antigen amounts or study results is shown"
+    "reasoning": "does not support the claim because the image shows only dosing volume and table of contents and contains no information about hemagglutinin antigen content or comparisons with standard-dose vaccines",
+    "confidence_notes": "The image is clear but limited to the first page and table of contents; antigen content details may appear in later sections not shown here."
   }
 }

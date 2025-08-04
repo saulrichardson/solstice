@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "Liu_et_al.__2024_",
+  "supporting_evidence": [
+    {
+      "quote": "acell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the i d 45 HA/d / ...d",
+      "explanation": "The quote directly supports the claim. It states that Flublok Quadrivalent (RIV4) contains 3 times the amount of HA per dose compared to standard-dose vaccines, and references '45 HA/d', which aligns with 45 micrograms of HA per strain. Standard-dose influenza vaccines are known to contain 15 micrograms of HA per strain, so 3 times that amount is 45 micrograms, matching the claim. The document does not contradict this and provides the necessary numbers and comparison."
+    },
+    {
+      "quote": "IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody",
+      "explanation": "The quote directly states that IIV4 and ccIIV4 (standard-dose influenza vaccines) contain 15 \u00b5g HA per dose per strain. This supports the claim by providing the specific HA content for standard-dose vaccines, which is the basis for comparison with Flublok (RIV4), which is described elsewhere in the document as containing 45 \u00b5g HA per strain. Thus, the quote substantiates the claim's assertion about the HA content in standard-dose influenza vaccines."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 2,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 2,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 2
+    },
+    "rejected_count": 0
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": "Zimmerman_et_al.__2023_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 1
+  },
+  "completeness_stats": {
+    "existing_evidence": 3,
+    "new_evidence_found": 1,
+    "total_evidence": 4
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "Standard Dose Fluzone and FlucelVax. HD-IIV4 was High Dose Fluzone, RIV4 was Flublok and Adj-IV was FluAd. Other independent variables were age, influenza season (2018-2019 and 2019-2020), sex, race and presence of one or more high risk conditions. Adjusted VE was calculated for RIV4, SD-IIV4 and combined RIV4, high dose, egg based and adjuvanted vaccines. Relative VE (rVE) was calculated as 1 minus the ratio of adjusted VE times 100%. We conducted propensity adjustment analyses to reduce the potential impact of selection effects (i.e., confounding) on baseline characteristics. We estimated the propensity scores using the Generalized Boosted Regression Models (GBM) approach, which is a nonparametric model that allows for nonlinear relationships with a maximum number of iterations set to the default (i.e., 10,000) that minimized the balance statistics of interest.",
+      "relevance_explanation": "This quote explicitly identifies RIV4 as Flublok and SD-IIV4 as including Fluarix, and describes the comparative analysis between these vaccine types, supporting the claim that Flublok (quadrivalent) was evaluated against Fluarix (quadrivalent standard-dose vaccine) in the pivotal trial."
+    },
+    {
+      "id": 2,
+      "quote": "The total number of influenza test results among inpatients was 18,467 of which 530 were excluded because of missing vaccination information or vaccination < 14 days before illness, and 3,264 were excluded from the primary analyses because patients were immunocompromised or received enhanced vaccines other than RIV4 (n = 613), leaving 14,590 for the primary analysis (Fig. 1). Of these, 3,338 were vaccinated with RIV4 and 976 were vaccinated with SD-IIV4, with the balance of 10,276 being unvaccinated.",
+      "relevance_explanation": "This quote provides direct evidence that the study compared Flublok (RIV4) and standard-dose quadrivalent influenza vaccines (SD-IIV4, which includes Fluarix) in the primary analysis, confirming the claim."
+    },
+    {
+      "id": 3,
+      "quote": "SD-IIV4 included Afluria, Fluarix, FluLaval, Standard Dose Fluzone and FlucelVax. HD-IIV4 was High Dose Fluzone; RIV4: Flublok; HD IIV4: High dose Fluzone; Adj IV: FluAd.",
+      "relevance_explanation": "This quote explicitly lists Fluarix as one of the standard-dose quadrivalent influenza vaccines (SD-IIV4) used in the comparison with Flublok (RIV4), directly supporting the claim."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Two large studies have explored rVE of recombinant quadrivalent influenza vaccine (RIV4). The Medicare beneficiaries study [10] using retrospective data as described above, reported significant rVE of RIV4 vs. SD-IIV4) against influenza related hospital encounters. Secondly, a randomized controlled trial (RCT) found significant rVE of RIV4 compared with SD-IIV4 among adults 50 years old, but not for adults 65 years old [11].",
+      "relevance_explanation": "This quote explicitly states that a randomized controlled trial compared the recombinant quadrivalent influenza vaccine (RIV4, i.e., Flublok) with standard dose quadrivalent influenza vaccine (SD-IIV4, which includes Fluarix), directly supporting the claim that Flublok was evaluated against Fluarix (quadrivalent standard-dose vaccine) in a pivotal trial.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

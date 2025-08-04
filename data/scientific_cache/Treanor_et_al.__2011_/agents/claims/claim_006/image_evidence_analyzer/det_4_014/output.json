@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_014.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p5_det_4_014.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_014",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table showing influenza-positive endpoints (CDC-ILI and illness) with the number and percentage of cases in Flublok (N=2344) versus placebo (N=2304) recipients, and corresponding vaccine efficacy percentages with 95% confidence intervals. does not support the claim because the table only provides clinical efficacy data for Flublok and placebo without any information on the production platform, expression system, or use of baculovirus in insect cells. Note: The image is clear and legible, but it focuses solely on efficacy outcomes; no manufacturing or production details are presented.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing influenza-positive endpoints (CDC-ILI and illness) with the number and percentage of cases in Flublok (N=2344) versus placebo (N=2304) recipients, and corresponding vaccine efficacy percentages with 95% confidence intervals.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table only provides clinical efficacy data for Flublok and placebo without any information on the production platform, expression system, or use of baculovirus in insect cells.",
+    "confidence_notes": "The image is clear and legible, but it focuses solely on efficacy outcomes; no manufacturing or production details are presented."
+  }
+}

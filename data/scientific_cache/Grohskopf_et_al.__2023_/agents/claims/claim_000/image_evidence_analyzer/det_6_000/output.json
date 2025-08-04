@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table outlining contraindications and precautions for different 2022\u201323 influenza vaccine platforms (egg-based IIV4 and LAIV4, cell-culture ccIIV4, and recombinant RIV4) in individuals with a history of severe allergic reaction to influenza vaccines. The table provides guidance on contraindications and precautions related to vaccine allergies but contains no information on antigenic match or strain selection, so it does not support the claim.",
+  "explanation": "A table showing contraindications and precautions for individuals with previous severe allergic reactions (e.g., anaphylaxis) to different influenza vaccine types (Egg-based IIVs and LAIV4, cell culture\u2013based ccIIV4, and recombinant RIV4) for the 2022\u201323 season. does not support the claim: the table addresses allergic reaction contraindications for various vaccine platforms and does not present any information on antigenic matching of Flublok with WHO- or FDA-selected influenza strains.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table outlining contraindications and precautions for different 2022\u201323 influenza vaccine platforms (egg-based IIV4 and LAIV4, cell-culture ccIIV4, and recombinant RIV4) in individuals with a history of severe allergic reaction to influenza vaccines.",
+    "image_description": "A table showing contraindications and precautions for individuals with previous severe allergic reactions (e.g., anaphylaxis) to different influenza vaccine types (Egg-based IIVs and LAIV4, cell culture\u2013based ccIIV4, and recombinant RIV4) for the 2022\u201323 season.",
     "evidence_found": null,
-    "reasoning": "The table provides guidance on contraindications and precautions related to vaccine allergies but contains no information on antigenic match or strain selection, so it does not support the claim.",
+    "reasoning": "does not support the claim: the table addresses allergic reaction contraindications for various vaccine platforms and does not present any information on antigenic matching of Flublok with WHO- or FDA-selected influenza strains.",
     "confidence_notes": null
   }
 }

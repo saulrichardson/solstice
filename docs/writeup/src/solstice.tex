@@ -57,7 +57,7 @@ The fact-checking pipeline processes text evidence through three sequential stag
   \item \textit{Outputs}: \texttt{combined\_evidence} array merging existing and new quotes (duplicates removed)
   \end{itemize}
 
-\item \textbf{Evidence Verification Step (V2)}:
+\item \textbf{Evidence Verification Step}:
   \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=0pt]
   \item \textit{Inputs}: Document content JSON, completeness checker output
   \item \textit{Processing}: Verifies each quote exists in document (with OCR tolerance) and supports claim
@@ -90,7 +90,7 @@ The fact-checking pipeline orchestrates multiple LLM calls in a specific sequenc
 \node[box] (claim) {Medical Claim};
 \node[box, below=of claim] (extract) {Evidence\\Extractor};
 \node[box, below=of extract] (complete) {Completeness\\Checker};
-\node[box, below=of complete] (verify) {Evidence\\Verifier V2};
+\node[box, below=of complete] (verify) {Evidence\\Verifier};
 \node[box, right=5cm of extract] (image) {Image Evidence\\Analyzer};
 \node[box, below=of verify, fill=green!10] (result) {Consolidated\\Results};
 
@@ -323,7 +323,7 @@ data/scientific_cache/Treanor_et_al.__2011_/
         `-- claim_000/
             |-- evidence_extractor/
             |-- completeness_checker/
-            `-- evidence_verifier_v2/
+            `-- evidence_verifier/
 \end{verbatim}
 
 The key difference is that scientific documents may have an \texttt{agents/} directory containing fact-checking results for individual claims.

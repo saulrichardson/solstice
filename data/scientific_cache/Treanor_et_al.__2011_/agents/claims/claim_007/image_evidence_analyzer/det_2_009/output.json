@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_009.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p3_det_2_009.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_009",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Table comparing the incidence and severity (mild, moderate, severe) of solicited adverse events (Any, Fever, Fatigue, Shivering, Joint pain, Muscle pain, Headache, Nausea, Pain, Bruising) in subjects receiving FluBlok (N=2344) versus placebo (N=2304). The table presents safety/reactogenicity data for a recombinant HA vaccine versus placebo and does not include any immunogenicity or antibody response measurements, so it does not support the claim. Note: Analysis limited to visible data; table does not address antibody levels or comparisons with egg-derived vaccines.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table comparing the incidence and severity (mild, moderate, severe) of solicited adverse events (Any, Fever, Fatigue, Shivering, Joint pain, Muscle pain, Headache, Nausea, Pain, Bruising) in subjects receiving FluBlok (N=2344) versus placebo (N=2304).",
+    "evidence_found": null,
+    "reasoning": "The table presents safety/reactogenicity data for a recombinant HA vaccine versus placebo and does not include any immunogenicity or antibody response measurements, so it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible data; table does not address antibody levels or comparisons with egg-derived vaccines."
+  }
+}

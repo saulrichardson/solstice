@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p5_det_4_002.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_002",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": true,
+  "explanation": "A table listing various influenza vaccines by trade name, presentations, age indications, amount of hemagglutinin (HA) per vaccine virus per dose (\u00b5g HA/0.5 mL), route, and thimerosal content. Evidence: Under RIV4 (recombinant HA vaccine), Flublok Quadrivalent is shown as 45 \u00b5g/0.5 mL per strain; under IIV4 (standard-dose, egg-based vaccines), multiple vaccines list 15 \u00b5g/0.5 mL per strain. The table supports the claim by directly showing that Flublok contains 45 \u00b5g HA per strain compared with 15 \u00b5g HA per strain in standard-dose influenza vaccines.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "A table listing various influenza vaccines by trade name, presentations, age indications, amount of hemagglutinin (HA) per vaccine virus per dose (\u00b5g HA/0.5 mL), route, and thimerosal content.",
+    "evidence_found": "Under RIV4 (recombinant HA vaccine), Flublok Quadrivalent is shown as 45 \u00b5g/0.5 mL per strain; under IIV4 (standard-dose, egg-based vaccines), multiple vaccines list 15 \u00b5g/0.5 mL per strain.",
+    "reasoning": "The table supports the claim by directly showing that Flublok contains 45 \u00b5g HA per strain compared with 15 \u00b5g HA per strain in standard-dose influenza vaccines.",
+    "confidence_notes": null
+  }
+}

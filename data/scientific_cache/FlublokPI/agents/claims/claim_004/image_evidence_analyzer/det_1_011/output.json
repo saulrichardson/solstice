@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "A two-column table comparing Flublok (recombinant flu vaccine) and placebo groups (N=2272 vs. N=2231) listing percentages of local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events, broken down by any, moderate, and severe intensity. The table only presents safety and tolerability data (adverse event rates) for Flublok versus placebo. It contains no immunogenicity or antibody response data and no comparison to egg-based standard-dose vaccines, so it does not support the claim. Note: Analysis limited to visible safety data; no immunogenicity measures are reported in the image.",
+  "explanation": "Table listing percentages of solicited local and systemic adverse events (pain, redness, swelling, headache, fatigue, muscle pain, etc.) reported in adult participants receiving Flublok (recombinant influenza vaccine) versus placebo The table provides safety and reactogenicity data comparing Flublok to placebo and does not present any immunogenicity or antibody response results, so it does not support the claim Note: Analysis limited to safety data; immunogenicity information is not shown in this image",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A two-column table comparing Flublok (recombinant flu vaccine) and placebo groups (N=2272 vs. N=2231) listing percentages of local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events, broken down by any, moderate, and severe intensity.",
+    "image_description": "Table listing percentages of solicited local and systemic adverse events (pain, redness, swelling, headache, fatigue, muscle pain, etc.) reported in adult participants receiving Flublok (recombinant influenza vaccine) versus placebo",
     "evidence_found": null,
-    "reasoning": "The table only presents safety and tolerability data (adverse event rates) for Flublok versus placebo. It contains no immunogenicity or antibody response data and no comparison to egg-based standard-dose vaccines, so it does not support the claim.",
-    "confidence_notes": "Analysis limited to visible safety data; no immunogenicity measures are reported in the image."
+    "reasoning": "The table provides safety and reactogenicity data comparing Flublok to placebo and does not present any immunogenicity or antibody response results, so it does not support the claim",
+    "confidence_notes": "Analysis limited to safety data; immunogenicity information is not shown in this image"
   }
 }

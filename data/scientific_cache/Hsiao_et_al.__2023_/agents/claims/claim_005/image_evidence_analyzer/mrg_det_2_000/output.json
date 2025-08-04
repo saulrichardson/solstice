@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "A multi-panel schematic showing: 1) a service area with nine facilities of various sizes; 2) similar\u2013sized facilities paired and randomized into Block A or Block B; and 3) a table listing weekly alternating administration of SD-IIV4 and RIV4 across four weeks for each facility. The figure depicts cluster randomization of facilities and weekly alternation between SD-IIV4 and RIV4 vaccines but does not mention Flublok or Fluarix by name or indicate a pivotal trial comparing Flublok (quadrivalent) against Fluarix (quadrivalent). Therefore, this does not support the claim. Note: Brand names and pivotal trial context are not shown; interpretation limited to visible labels SD-IIV4 and RIV4.",
+  "explanation": "Diagram and table showing a cluster-randomized crossover design in which Kaiser Permanente Northern California facilities, matched by size into Block A or B, alternated weekly between SD-IIV4 (standard-dose inactivated quadrivalent influenza vaccine) and RIV4 (recombinant quadrivalent influenza vaccine) over four weeks. The image depicts a practical alternating-week vaccine assignment (SD-IIV4 vs RIV4) in health care facilities and does not name Flublok or Fluarix or describe a pivotal trial comparison, and therefore does not support the claim. Note: No brand names or pivotal trial context are provided; evidence is limited to a pragmatic cluster crossover design.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A multi-panel schematic showing: 1) a service area with nine facilities of various sizes; 2) similar\u2013sized facilities paired and randomized into Block A or Block B; and 3) a table listing weekly alternating administration of SD-IIV4 and RIV4 across four weeks for each facility.",
+    "image_description": "Diagram and table showing a cluster-randomized crossover design in which Kaiser Permanente Northern California facilities, matched by size into Block A or B, alternated weekly between SD-IIV4 (standard-dose inactivated quadrivalent influenza vaccine) and RIV4 (recombinant quadrivalent influenza vaccine) over four weeks.",
     "evidence_found": null,
-    "reasoning": "The figure depicts cluster randomization of facilities and weekly alternation between SD-IIV4 and RIV4 vaccines but does not mention Flublok or Fluarix by name or indicate a pivotal trial comparing Flublok (quadrivalent) against Fluarix (quadrivalent). Therefore, this does not support the claim.",
-    "confidence_notes": "Brand names and pivotal trial context are not shown; interpretation limited to visible labels SD-IIV4 and RIV4."
+    "reasoning": "The image depicts a practical alternating-week vaccine assignment (SD-IIV4 vs RIV4) in health care facilities and does not name Flublok or Fluarix or describe a pivotal trial comparison, and therefore does not support the claim.",
+    "confidence_notes": "No brand names or pivotal trial context are provided; evidence is limited to a pragmatic cluster crossover design."
   }
 }

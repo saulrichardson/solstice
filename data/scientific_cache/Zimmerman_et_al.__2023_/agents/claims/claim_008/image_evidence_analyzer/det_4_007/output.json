@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_007.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p5_det_4_007.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_007",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table listing demographic and clinical characteristics (race, sex, season, influenza case status, high-risk condition) of study participants by age group (18\u201364 and \u226565 years) and vaccine received (RIV4, SD-IIV4, HD-IIV4, Adj-IV), with counts, percentages, and P-values. The table presents participant demographics and vaccine distribution; it does not report hemagglutinin (HA) microgram content per strain and therefore does not support the claim. Note: The image is clear and complete for the table shown; no information on HA dosage is present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing demographic and clinical characteristics (race, sex, season, influenza case status, high-risk condition) of study participants by age group (18\u201364 and \u226565 years) and vaccine received (RIV4, SD-IIV4, HD-IIV4, Adj-IV), with counts, percentages, and P-values.",
+    "evidence_found": null,
+    "reasoning": "The table presents participant demographics and vaccine distribution; it does not report hemagglutinin (HA) microgram content per strain and therefore does not support the claim.",
+    "confidence_notes": "The image is clear and complete for the table shown; no information on HA dosage is present."
+  }
+}

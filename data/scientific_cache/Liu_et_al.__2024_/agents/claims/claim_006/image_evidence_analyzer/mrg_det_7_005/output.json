@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p8_mrg_det_7_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p8_mrg_det_7_005.png",
+  "image_type": "Figure",
+  "page_number": 8,
+  "block_id": "mrg_det_7_005",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A multi-panel figure of hemagglutination inhibition (HI) titers (log2 scale) against four influenza strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata) in two age cohorts (18\u201344 years and 45\u201364 years), comparing egg-derived versus cell-derived challenge viruses at Day 0 and one month post-vaccination. Box plots for six vaccine regimens (color-coded) are shown with p-value annotations. The figure shows immunogenicity (HI titer) comparisons and statistical analyses but does not describe or depict any manufacturing process, recombinant HA expression system, insect cells, or baculovirus expression vector system, and thus does not support the claim. Note: Image content is clear for immunogenicity data; no manufacturing details are visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multi-panel figure of hemagglutination inhibition (HI) titers (log2 scale) against four influenza strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata) in two age cohorts (18\u201344 years and 45\u201364 years), comparing egg-derived versus cell-derived challenge viruses at Day 0 and one month post-vaccination. Box plots for six vaccine regimens (color-coded) are shown with p-value annotations.",
+    "evidence_found": null,
+    "reasoning": "The figure shows immunogenicity (HI titer) comparisons and statistical analyses but does not describe or depict any manufacturing process, recombinant HA expression system, insect cells, or baculovirus expression vector system, and thus does not support the claim.",
+    "confidence_notes": "Image content is clear for immunogenicity data; no manufacturing details are visible."
+  }
+}

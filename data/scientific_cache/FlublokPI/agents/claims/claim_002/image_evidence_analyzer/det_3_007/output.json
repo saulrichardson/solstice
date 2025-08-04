@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A table summarizing influenza attack rates and relative vaccine efficacy (rVE) for Flublok Quadrivalent (N=4303) versus a comparator vaccine (N=4301). Columns show number of rtPCR-positive influenza cases (overall, type A, type B), attack rates (%), relative risk (RR), and rVE % with 95% confidence intervals. The table provides comparative efficacy data between Flublok and a comparator vaccine but contains no information on mutations arising during egg- or cell-based production or their impact on vaccine effectiveness. Therefore, it does not support the claim Note: The image is clear and complete for efficacy data but lacks any mechanistic or production\u2010related mutation details",
+  "explanation": "A table comparing Flublok Quadrivalent (N=4303) versus a comparator vaccine (N=4301), showing the number of cases (n), attack rates (% n/N), relative risk (RR), and relative vaccine efficacy (rVE) with 95% confidence intervals for all rtPCR-positive influenza, Influenza A, Influenza B, and culture-confirmed protocol-defined ILI. The table reports comparative efficacy outcomes but does not mention vaccine production methods or the occurrence of mutations during egg- or cell-based manufacturing, so it does not support the claim. Note: Headings are legible and data are clear, but the specific production method of the comparator vaccine is not labeled; no direct reference to mutations is present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table summarizing influenza attack rates and relative vaccine efficacy (rVE) for Flublok Quadrivalent (N=4303) versus a comparator vaccine (N=4301). Columns show number of rtPCR-positive influenza cases (overall, type A, type B), attack rates (%), relative risk (RR), and rVE % with 95% confidence intervals.",
+    "image_description": "A table comparing Flublok Quadrivalent (N=4303) versus a comparator vaccine (N=4301), showing the number of cases (n), attack rates (% n/N), relative risk (RR), and relative vaccine efficacy (rVE) with 95% confidence intervals for all rtPCR-positive influenza, Influenza A, Influenza B, and culture-confirmed protocol-defined ILI.",
     "evidence_found": null,
-    "reasoning": "The table provides comparative efficacy data between Flublok and a comparator vaccine but contains no information on mutations arising during egg- or cell-based production or their impact on vaccine effectiveness. Therefore, it does not support the claim",
-    "confidence_notes": "The image is clear and complete for efficacy data but lacks any mechanistic or production\u2010related mutation details"
+    "reasoning": "The table reports comparative efficacy outcomes but does not mention vaccine production methods or the occurrence of mutations during egg- or cell-based manufacturing, so it does not support the claim.",
+    "confidence_notes": "Headings are legible and data are clear, but the specific production method of the comparator vaccine is not labeled; no direct reference to mutations is present."
   }
 }

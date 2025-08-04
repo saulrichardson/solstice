@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Two schematic representations of influenza hemagglutinin (HA) glycoproteins showing domain organization (globular head, fibrous stem), cleavage status (HA0 vs HA1/HA2), disulfide bonds, fusion peptide location, and the types of attached glycans (complex polysialylated vs paucimannose) on each form. The figure illustrates structural and glycosylation differences of HA produced in different systems but contains no information on antigenic matching to WHO- or FDA-selected strains, so it does not support the claim. Note: Analysis limited to visible content; no strain names, antigenic assays, or regulatory matching details are shown.",
+  "explanation": "A two-panel schematic of influenza hemagglutinin (HA) glycoprotein structure. Panel a shows the cleaved HA1 (globular head) and HA2 (fibrous stem) subunits with complex, polysialylated N-linked glycans attached and the liberated fusion peptide, highlighting inter-subunit disulfide bonds. Panel b shows the uncleaved HA0 precursor with paucimannose glycans and the uncleaved fusion peptide region, also indicating disulfide bonding and membrane anchoring. The figure only depicts HA structural domains and glycosylation differences between cleaved and uncleaved HA forms; it does not present any data or statements about Flublok's antigenic match to WHO- or FDA-selected strains, and therefore does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Two schematic representations of influenza hemagglutinin (HA) glycoproteins showing domain organization (globular head, fibrous stem), cleavage status (HA0 vs HA1/HA2), disulfide bonds, fusion peptide location, and the types of attached glycans (complex polysialylated vs paucimannose) on each form.",
+    "image_description": "A two-panel schematic of influenza hemagglutinin (HA) glycoprotein structure. Panel a shows the cleaved HA1 (globular head) and HA2 (fibrous stem) subunits with complex, polysialylated N-linked glycans attached and the liberated fusion peptide, highlighting inter-subunit disulfide bonds. Panel b shows the uncleaved HA0 precursor with paucimannose glycans and the uncleaved fusion peptide region, also indicating disulfide bonding and membrane anchoring.",
     "evidence_found": null,
-    "reasoning": "The figure illustrates structural and glycosylation differences of HA produced in different systems but contains no information on antigenic matching to WHO- or FDA-selected strains, so it does not support the claim.",
-    "confidence_notes": "Analysis limited to visible content; no strain names, antigenic assays, or regulatory matching details are shown."
+    "reasoning": "The figure only depicts HA structural domains and glycosylation differences between cleaved and uncleaved HA forms; it does not present any data or statements about Flublok's antigenic match to WHO- or FDA-selected strains, and therefore does not support the claim.",
+    "confidence_notes": null
   }
 }

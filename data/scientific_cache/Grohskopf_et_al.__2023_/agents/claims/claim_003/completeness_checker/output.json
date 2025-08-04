@@ -8,35 +8,40 @@
     "additional_count": 2
   },
   "completeness_stats": {
-    "existing_evidence": 4,
+    "existing_evidence": 5,
     "new_evidence_found": 2,
-    "total_evidence": 6
+    "total_evidence": 7
   },
   "combined_evidence": [
     {
       "id": 1,
       "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
-      "relevance_explanation": "This quote describes the recombinant technology used in RIV4, which is relevant because the use of recombinant HA from cell-derived viruses is a key mechanism by which a broader immune response and potential cross-protection may be achieved, especially in mismatch seasons."
+      "relevance_explanation": "This quote describes the recombinant technology used in RIV4, which is central to the claim about recombinant vaccines. It establishes that the vaccine is made using recombinant methods, which is necessary context for understanding its potential for broader immune responses and cross-protection."
     },
     {
       "id": 2,
       "quote": "HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3. Randomized efficacy studies comparing these vaccines with nonadjuvanted SD-IIVs against laboratory confirmed influenza outcomes are few in number (66\u201368) and cover few influenza seasons. Observational studies, predominantly retrospective cohort studies using diagnostic code defined (rather than laboratory confirmed) outcomes, are more numerous and include more influenza seasons (69\u201379). Certain observational studies have reported relative benefit for HD-IIV, RIV, and aIIV in comparison with nonadjuvanted SD-IIVs, particularly in prevention of influenza associated hospitalizations. The size of this relative benefit has varied from season to season and is not seen in all studies in all seasons, making it difficult to generalize the findings to all or most seasons.",
-      "relevance_explanation": "This quote provides evidence that recombinant vaccines (RIV) have shown a relative benefit over standard-dose inactivated vaccines in some studies, supporting the claim that recombinant technology can lead to broader or more effective immune responses, which may translate to cross-protection."
+      "relevance_explanation": "This quote provides evidence that recombinant influenza vaccines (RIV) have shown a relative benefit over standard-dose inactivated vaccines in some studies, particularly in preventing hospitalizations. This supports the claim that recombinant technology can lead to a broader or more effective immune response, which may translate to cross-protection even in seasons with mismatched strains."
     },
     {
       "id": 3,
       "quote": "A retrospective analysis of relative effectiveness of RIV4 versus SD-IIV4 against influenza coded hospitalizations among Medicare beneficiaries during the 2019-20 season noted a relative effectiveness of 17% (95% CI: 9\u201324; certainty level: 3, low) (72).",
-      "relevance_explanation": "This quote provides data showing that the recombinant vaccine (RIV4) was more effective than standard-dose inactivated vaccine in preventing influenza-coded hospitalizations, which supports the idea that recombinant technology can provide broader protection, potentially including cross-protection in mismatch seasons."
+      "relevance_explanation": "This quote provides specific data showing that the recombinant vaccine (RIV4) was more effective than standard-dose inactivated vaccine (SD-IIV4) in preventing influenza-coded hospitalizations, which supports the claim that recombinant technology can provide broader protection, potentially including cross-protection in mismatch seasons."
     },
     {
       "id": 4,
-      "quote": "RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
-      "relevance_explanation": "This quote highlights that recombinant vaccines use HA from cell-derived viruses, which can be more antigenically similar to circulating strains than egg-adapted viruses, supporting the claim that recombinant technology may provide broader immune responses and cross-protection."
+      "quote": "The larger of these two studies noted a relative benefit of RIV4 over nonadjuvanted SD-IIV4 in prevention of PCR-confirmed influenza among the full study population of persons aged \u226550 years (relative efficacy: 30%; 95% CI: 10\u201347) as well as in all predefined ILI subgroups aged \u226565 years (relative efficacy: 42%; 95% CI: 9\u201365%) (68).",
+      "relevance_explanation": "This quote provides quantitative evidence that RIV4 (recombinant vaccine) was more effective than standard-dose inactivated vaccine in preventing PCR-confirmed influenza, supporting the claim that recombinant technology leads to a broader immune response and potentially better cross-protection."
+    },
+    {
+      "id": 5,
+      "quote": "For RIV (available as RIV3 from 2013-14 through 2017-18 and as RIV4 since 2017\u201318), data are limited to reports of pregnancies occurring incidentally during clinical trials, Vaccine Adverse Event Reporting System (VAERS) reports, and pregnancy registries. Pregnancy registries and surveillance studies exist for certain products, for which information can be found in package inserts.",
+      "relevance_explanation": "While this quote does not directly address cross-protection, it provides context that RIV (recombinant vaccine) has been studied in various populations, supporting its broader applicability and safety, which is relevant to the claim of broader immune response."
     },
     {
       "id": "comp_1",
-      "quote": "Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with nonadjuvanted SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines).",
-      "relevance_explanation": "This quote highlights that recombinant influenza vaccine (RIV) contains a higher dose of hemagglutinin (HA) antigen per virus, which is a mechanism that can lead to a broader immune response and potentially greater cross-protection, supporting the claim.",
+      "quote": "RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+      "relevance_explanation": "This quote describes the recombinant technology used in RIV4, which is relevant because the use of recombinant HA from cell-derived viruses (rather than egg-based or live virus) is a key mechanism by which recombinant vaccines may elicit a broader immune response, potentially providing cross-protection even in mismatch seasons.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,
@@ -45,8 +50,8 @@
     },
     {
       "id": "comp_2",
-      "quote": "RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
-      "relevance_explanation": "This quote provides details about the recombinant technology used in RIV4, including the use of recombinant HA and the higher antigen content, which are factors that can contribute to a broader immune response and potential cross-protection.",
+      "quote": "Higher dose vaccines include HD-IIV4 and RIV4, both of which contain a higher dose of HA antigen per virus than standard dose vaccines (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose in activated vaccines).",
+      "relevance_explanation": "This quote supports the claim by noting that RIV4 contains a higher dose of HA antigen, which is associated with a broader and potentially more robust immune response, a factor that may contribute to cross-protection in mismatch seasons.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_009.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p3_det_2_009.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_009",
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "supports_claim": false,
+  "explanation": "A table listing solicited local and systemic adverse events by severity (mild, moderate, severe) for two groups: FluBlok (N=2344) and Placebo (N=2304), with event types such as fever, fatigue, shivering, joint pain, muscle pain, headache, nausea, pain, and bruising. The table compares FluBlok to a placebo control and makes no mention of Fluarix (quadrivalent standard-dose vaccine), so it does not support the claim. Note: The table appears clear and complete for the two arms shown; absence of any Fluarix arm is definitive for this source.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing solicited local and systemic adverse events by severity (mild, moderate, severe) for two groups: FluBlok (N=2344) and Placebo (N=2304), with event types such as fever, fatigue, shivering, joint pain, muscle pain, headache, nausea, pain, and bruising.",
+    "evidence_found": null,
+    "reasoning": "The table compares FluBlok to a placebo control and makes no mention of Fluarix (quadrivalent standard-dose vaccine), so it does not support the claim.",
+    "confidence_notes": "The table appears clear and complete for the two arms shown; absence of any Fluarix arm is definitive for this source."
+  }
+}

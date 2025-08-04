@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p7_det_6_000.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_000",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A table outlining recommendations (Contraindication, Precaution, or Allergist consultation) for use of egg-based IIVs/LAIV4, cell culture\u2013based vaccines (ccIIV4), and recombinant influenza vaccine (RIV4) in individuals with a history of severe allergic reaction to influenza vaccine or vaccine components. The table provides guidance on contraindications and precautions related to allergic reactions for different influenza vaccine platforms; it does not present data on antibody responses or comparative immunogenicity, and therefore does not support the claim. Note: The image is clear, but it does not contain any immunogenicity or antibody response data relevant to the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table outlining recommendations (Contraindication, Precaution, or Allergist consultation) for use of egg-based IIVs/LAIV4, cell culture\u2013based vaccines (ccIIV4), and recombinant influenza vaccine (RIV4) in individuals with a history of severe allergic reaction to influenza vaccine or vaccine components.",
+    "evidence_found": null,
+    "reasoning": "The table provides guidance on contraindications and precautions related to allergic reactions for different influenza vaccine platforms; it does not present data on antibody responses or comparative immunogenicity, and therefore does not support the claim.",
+    "confidence_notes": "The image is clear, but it does not contain any immunogenicity or antibody response data relevant to the claim."
+  }
+}

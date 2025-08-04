@@ -1,0 +1,37 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Hsiao_et_al.__2023_",
+  "supporting_evidence": [
+    {
+      "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "explanation": "The quote directly states that quadrivalent recombinant influenza vaccines (such as Flublok) contain three times the amount of hemagglutinin protein as standard dose egg-based vaccines, which supports the first part of the claim. While the quote does not explicitly mention immunogenicity, elsewhere in the document (page 2) it is stated that 'the vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.' This provides direct support for the claim that the higher HA content is linked to greater immunogenicity. Therefore, the quote and the document together genuinely support the claim."
+    },
+    {
+      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.",
+      "explanation": "The quote directly supports the claim. It explicitly states that Flublok contains three times the amount of hemagglutinin protein as standard dose vaccines, and that this increased level has been correlated with increased protective hemagglutinin antibodies. This addresses both parts of the claim: the higher antigen content and its link to greater immunogenicity (as measured by protective antibodies) compared to standard-dose flu vaccines."
+    },
+    {
+      "quote": "In this study performed during two influenza seasons, participants between the ages of 50 and 64 years who received the recombinant vaccine had more protection against confirmed influenza than those who received a standard dose vaccine.",
+      "explanation": "The quote directly supports the claim that Flublok (the recombinant vaccine) provided more protection than standard-dose flu vaccines in adults aged 50-64. The document also explicitly states in the background that the recombinant vaccine contains three times the amount of hemagglutinin protein as standard-dose vaccines, and that this increased level has been correlated with increased protective hemagglutinin antibodies. Therefore, the quote, in the context of the document, supports the claim that higher HA antigen content is linked to greater immunogenicity/effectiveness compared to standard-dose vaccines."
+    },
+    {
+      "quote": "In the current study, we compared the effectiveness of the high dose recombinant vaccine with that of standard dose vaccines in patients between the ages of 18 and 64 years. The effectiveness of standard dose vaccines - especially against the influenza A H3 N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3 N2 strain circulated only during the second half of the 2018-2019 season and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines. During our study period, the observed benefit of the recombinant vaccine as compared with a standard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3 N2 than to higher effectiveness against influenza A overall, in accordance with its higher dose of hemagglutinin antigen.",
+      "explanation": "The quote is found in the document and directly links the observed benefit of the recombinant (Flublok) vaccine to its higher dose of hemagglutinin antigen. It states that the greater effectiveness of the recombinant vaccine against influenza A overall is in accordance with its higher dose of hemagglutinin antigen. This supports the claim that Flublok contains 3x the HA antigen content of standard-dose flu vaccines and that this increased HA content is associated with greater immunogenicity and protection compared to standard-dose vaccines."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 4,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 4,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 4
+    },
+    "rejected_count": 0
+  }
+}

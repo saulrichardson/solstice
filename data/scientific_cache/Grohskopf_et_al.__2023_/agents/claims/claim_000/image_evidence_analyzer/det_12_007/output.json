@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table listing trade names and manufacturers of quadrivalent influenza vaccines (Afluria, Fluarix, Flucelvax, FluLaval, Fluzone) alongside their dose volumes (\u00b5g HA per virus) for children aged 6 through 35 months The table only provides dose volumes for various quadrivalent influenza vaccines in young children and makes no mention of antigenic match, WHO or FDA strain selection, or the Flublok vaccine; therefore it does not support the claim Note: Analysis limited to visible dosing information; no strain matching data present",
+  "explanation": "A table listing trade names and manufacturers of five quadrivalent influenza vaccines and their dose volumes (mL) with corresponding HA content (\u00b5g per vaccine virus) for children aged 6 through 35 months. The table only provides pediatric dosing information (volume and HA content) for various licensed quadrivalent flu vaccines and does not address antigenic matching or WHO/FDA strain selection, so it does not support the claim. Note: No mention of Flublok or antigenic match in the table; image quality sufficient to read all entries.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing trade names and manufacturers of quadrivalent influenza vaccines (Afluria, Fluarix, Flucelvax, FluLaval, Fluzone) alongside their dose volumes (\u00b5g HA per virus) for children aged 6 through 35 months",
+    "image_description": "A table listing trade names and manufacturers of five quadrivalent influenza vaccines and their dose volumes (mL) with corresponding HA content (\u00b5g per vaccine virus) for children aged 6 through 35 months.",
     "evidence_found": null,
-    "reasoning": "The table only provides dose volumes for various quadrivalent influenza vaccines in young children and makes no mention of antigenic match, WHO or FDA strain selection, or the Flublok vaccine; therefore it does not support the claim",
-    "confidence_notes": "Analysis limited to visible dosing information; no strain matching data present"
+    "reasoning": "The table only provides pediatric dosing information (volume and HA content) for various licensed quadrivalent flu vaccines and does not address antigenic matching or WHO/FDA strain selection, so it does not support the claim.",
+    "confidence_notes": "No mention of Flublok or antigenic match in the table; image quality sufficient to read all entries."
   }
 }

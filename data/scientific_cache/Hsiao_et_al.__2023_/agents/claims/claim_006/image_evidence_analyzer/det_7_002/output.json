@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p8_det_7_002.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/table_p8_det_7_002.png",
+  "image_type": "Table",
+  "page_number": 8,
+  "block_id": "det_7_002",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table comparing clinical outcomes (PCR-confirmed influenza A and B, hospitalizations, etc.) per 1,000 persons between a recombinant influenza vaccine cohort (N=279,400) and a standard-dose vaccine cohort (N=395,852), showing unadjusted and adjusted hazard ratios, relative vaccine effectiveness percentages with 95% CIs, and p values. The table provides comparative effectiveness data for a recombinant influenza vaccine versus a standard-dose vaccine but contains no information on how the recombinant vaccine is produced. It doesn't support the claim regarding the novel baculovirus expression vector system in insect cells. Note: Analysis is limited to the visible table content; no production method details are present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing clinical outcomes (PCR-confirmed influenza A and B, hospitalizations, etc.) per 1,000 persons between a recombinant influenza vaccine cohort (N=279,400) and a standard-dose vaccine cohort (N=395,852), showing unadjusted and adjusted hazard ratios, relative vaccine effectiveness percentages with 95% CIs, and p values.",
+    "evidence_found": null,
+    "reasoning": "The table provides comparative effectiveness data for a recombinant influenza vaccine versus a standard-dose vaccine but contains no information on how the recombinant vaccine is produced. It doesn't support the claim regarding the novel baculovirus expression vector system in insect cells.",
+    "confidence_notes": "Analysis is limited to the visible table content; no production method details are present."
+  }
+}

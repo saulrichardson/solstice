@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A comparative table showing outcomes for recombinant vaccine (N=279,400) versus standard-dose vaccine (N=395,852), including number of PCR-confirmed influenza cases per 1000, unadjusted and adjusted hazard ratios, relative vaccine effectiveness percentages with 95% CIs, and P values for primary and secondary outcomes (influenza A, influenza B, hospitalizations). The table reports vaccine effectiveness and clinical outcome data but contains no information on antigenic matching or references to WHO- or FDA-selected flu strains, and therefore does not support the claim.",
+  "explanation": "A comparative table showing number of cases per 1000 for recombinant vaccine (N=279,400) versus standard-dose vaccine (N=395,852) across primary and secondary outcomes (PCR-confirmed influenza A and B, hospitalizations for influenza or related conditions), along with unadjusted rate ratios, adjusted hazard ratios (95% CI), relative vaccine effectiveness (95% CI), and P values. The table presents clinical effectiveness outcomes and statistical comparisons between a recombinant vaccine and a standard-dose vaccine, without any data or statements regarding antigenic composition or matching to WHO- or FDA-selected flu strains, and therefore does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A comparative table showing outcomes for recombinant vaccine (N=279,400) versus standard-dose vaccine (N=395,852), including number of PCR-confirmed influenza cases per 1000, unadjusted and adjusted hazard ratios, relative vaccine effectiveness percentages with 95% CIs, and P values for primary and secondary outcomes (influenza A, influenza B, hospitalizations).",
+    "image_description": "A comparative table showing number of cases per 1000 for recombinant vaccine (N=279,400) versus standard-dose vaccine (N=395,852) across primary and secondary outcomes (PCR-confirmed influenza A and B, hospitalizations for influenza or related conditions), along with unadjusted rate ratios, adjusted hazard ratios (95% CI), relative vaccine effectiveness (95% CI), and P values.",
     "evidence_found": null,
-    "reasoning": "The table reports vaccine effectiveness and clinical outcome data but contains no information on antigenic matching or references to WHO- or FDA-selected flu strains, and therefore does not support the claim.",
+    "reasoning": "The table presents clinical effectiveness outcomes and statistical comparisons between a recombinant vaccine and a standard-dose vaccine, without any data or statements regarding antigenic composition or matching to WHO- or FDA-selected flu strains, and therefore does not support the claim.",
     "confidence_notes": null
   }
 }

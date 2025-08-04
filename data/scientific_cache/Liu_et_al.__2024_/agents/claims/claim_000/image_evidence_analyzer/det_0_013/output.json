@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "The image shows the header of a journal article with received, accepted, and published online dates and a 'Check for updates' line; no table content is visible. The image does not support the claim because it contains only publication metadata and no information about Flublok or antigenic match with WHO- and FDA-selected flu strains. Note: The image appears to be the article's header without the table content; no data relevant to the claim are visible.",
+  "explanation": "Partial view of a journal article header (Received, Accepted, Published dates) and fragmentary body text on page 1; no readable table or data on antigenic matching is visible. The image does not support the claim because it contains only publication metadata and cut-off text, with no data or statements about Flublok's antigenic match to WHO- or FDA-selected influenza strains. Note: Analysis limited by the incomplete and cut-off nature of the content; no table data was visible to evaluate antigenic matching.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "The image shows the header of a journal article with received, accepted, and published online dates and a 'Check for updates' line; no table content is visible.",
+    "image_description": "Partial view of a journal article header (Received, Accepted, Published dates) and fragmentary body text on page 1; no readable table or data on antigenic matching is visible.",
     "evidence_found": null,
-    "reasoning": "The image does not support the claim because it contains only publication metadata and no information about Flublok or antigenic match with WHO- and FDA-selected flu strains.",
-    "confidence_notes": "The image appears to be the article's header without the table content; no data relevant to the claim are visible."
+    "reasoning": "The image does not support the claim because it contains only publication metadata and cut-off text, with no data or statements about Flublok's antigenic match to WHO- or FDA-selected influenza strains.",
+    "confidence_notes": "Analysis limited by the incomplete and cut-off nature of the content; no table data was visible to evaluate antigenic matching."
   }
 }

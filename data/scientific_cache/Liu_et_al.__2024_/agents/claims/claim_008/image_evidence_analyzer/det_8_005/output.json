@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p9_det_8_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p9_det_8_005.png",
+  "image_type": "Figure",
+  "page_number": 9,
+  "block_id": "det_8_005",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "Composite graphs showing pre- and post-vaccination hemagglutination inhibition titers (egg-cell vaccine virus) for four influenza strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata) in two age groups (18\u201344 years and 45\u201364 years). Multiple prime-boost vaccine sequences are plotted, including cell culture quadrivalent (ccIIV4), recombinant quadrivalent (RIV4), egg-based inactivated quadrivalent (IIV4), and Fluzone IIV4, with symbols and connecting lines indicating individual responses. The figure presents immunogenicity titre responses and vaccine sequence comparisons but does not provide any information on HA microgram dosing per strain; therefore, it does not support the claim about Flublok containing 45 mcg versus 15 mcg in a standard-dose vaccine. Note: Analysis limited to what is visible: no dosage or formulation tables are shown, only antibody titre data.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Composite graphs showing pre- and post-vaccination hemagglutination inhibition titers (egg-cell vaccine virus) for four influenza strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata) in two age groups (18\u201344 years and 45\u201364 years). Multiple prime-boost vaccine sequences are plotted, including cell culture quadrivalent (ccIIV4), recombinant quadrivalent (RIV4), egg-based inactivated quadrivalent (IIV4), and Fluzone IIV4, with symbols and connecting lines indicating individual responses.",
+    "evidence_found": null,
+    "reasoning": "The figure presents immunogenicity titre responses and vaccine sequence comparisons but does not provide any information on HA microgram dosing per strain; therefore, it does not support the claim about Flublok containing 45 mcg versus 15 mcg in a standard-dose vaccine.",
+    "confidence_notes": "Analysis limited to what is visible: no dosage or formulation tables are shown, only antibody titre data."
+  }
+}

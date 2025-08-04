@@ -1,0 +1,52 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "FlublokPI",
+  "verification_stats": {
+    "total_extracted": 5,
+    "verified": 2,
+    "rejected": 3,
+    "verification_rate": 0.4
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
+      "supports_claim": true,
+      "explanation": "The quote directly states that Flublok contains 45 micrograms (mcg) of hemagglutinin (HA) per strain for each of the three influenza virus strains in the 2024-2025 formulation. This explicitly supports the claim that Flublok contains 45 mcg of HA per strain, as compared to the standard-dose influenza vaccine (which is not directly mentioned in the quote, but the Flublok content is clearly established).",
+      "presence_explanation": "The quote appears in the document in the following passage: 'For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' This matches the quote to verify, with only minor formatting differences (e.g., line breaks, spacing), but all facts, numbers, and technical content are preserved.",
+      "support_explanation": "The quote directly states that Flublok contains 45 micrograms (mcg) of hemagglutinin (HA) per strain for each of the three influenza virus strains in the 2024-2025 formulation. This explicitly supports the claim that Flublok contains 45 mcg of HA per strain, as compared to the standard-dose influenza vaccine (which is not directly mentioned in the quote, but the Flublok content is clearly established).",
+      "original_relevance": "This quote explicitly states that Flublok contains 45 micrograms (mcg) of hemagglutinin (HA) per strain, directly supporting the claim about Flublok's HA content."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Flublok [Influenza Vaccine] is a sterile clear colorless injection containing recombinant hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. It contains purified HA proteins produced in a continuous insect cell line (expresSF+\u00ae) that is derived from Sf9 cells of the fall army worm, Spodoptera frugiperda (which is related to moths, caterpillars and butterflies), and grown in serum free medium composed of chemically defined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is expressed in this cell line using a baculovirus vector (Autographa californica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further purified by column chromatography. The purified HAs are then blended and filled into single dose syringes. Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim by explicitly stating that Flublok contains 45 mcg of HA per strain for each of the three influenza virus strains, for a total of 135 mcg HA per 0.5 mL dose. This is contrasted with the standard-dose influenza vaccine, which is commonly known to contain 15 mcg of HA per strain (though the document does not state the standard-dose value, the quote fully substantiates the Flublok portion of the claim as required).",
+      "presence_explanation": "The quote appears in the document, though not as a single contiguous paragraph. The key factual content is present and semantically equivalent. Specifically, the document states: 'Flublok [Influenza Vaccine] is a sterile clear colorless injection containing recombinant hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. It contains purified HA proteins produced in a continuous insect cell line (expresSF+\u00ae) that is derived from Sf9 cells of the fall army worm, Spodoptera frugiperda (which is related to moths, caterpillars and butterflies), and grown in serum free medium composed of chemically defined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is expressed in this cell line using a baculovirus vector (Autographa californica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further purified by column chromatography. The purified HAs are then blended and filled into single dose syringes. Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: ...' This matches the quote to be verified, with only minor formatting and line break differences.",
+      "support_explanation": "The quote directly supports the claim by explicitly stating that Flublok contains 45 mcg of HA per strain for each of the three influenza virus strains, for a total of 135 mcg HA per 0.5 mL dose. This is contrasted with the standard-dose influenza vaccine, which is commonly known to contain 15 mcg of HA per strain (though the document does not state the standard-dose value, the quote fully substantiates the Flublok portion of the claim as required).",
+      "original_relevance": "This quote provides a detailed description of Flublok's composition, explicitly stating that it contains 45 mcg of HA per strain for each of the three influenza virus strains, directly supporting the claim about its HA content."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": 2,
+      "quote": "Across three clinical trials (Studies 2 - 4, Tables 2 and 3) a total of 2050 adults age 50 years and older received Flublok and 2048 received a U.S.-licensed trivalent inactivated influenza vaccine (IIV3) comparator.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote establishes that the comparator in the studies is a standard-dose influenza vaccine, which is relevant for comparing the HA content per strain between Flublok and standard-dose vaccines."
+    },
+    {
+      "id": 3,
+      "quote": "Study 2 (NCT00539864) included 602 subjects 50 through 64 years of age for safety analysis, randomized to receive Flublok (n=300) or another U.S.-licensed trivalent influenza vaccine (Fluzone, manufactured by SanofiPasteur, Inc.) as an active control (n=302) (2). Study 3 (NCT00395174) included 869 subjects aged 65 years and older for safety analysis, randomized to receive Flublok (n=436) or another U.S.-licensed trivalent influenza vaccine (Fluzone as an active control (n=433) (3).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote further clarifies that the standard-dose comparator is Fluzone, a commonly used trivalent influenza vaccine, which is known to contain 15 mcg of HA per strain, supporting the comparison in the claim."
+    },
+    {
+      "id": "comp_2",
+      "quote": "A single 0.5 mL dose of Flublok contains sodium chloride (4.4 mg), monobasic sodium phosphate (0.2 mg), dibasic sodium phosphate (0.5 mg), and polysorbate 20 (Tween 20) (27.5 mcg). Each 0.5 mL dose of Flublok may also contain residual amounts of baculovirus and Spodoptera frugiperda cell proteins (\u226414.3 mcg), baculovirus and cellular DNA (\u226410 ng), and Triton X-100 (\u2264100 mcg). Flublok contains no egg proteins, antibiotics, or preservatives. The single dose, prefilled syringes contain no natural rubber latex.",
+      "reason": "does not support claim",
+      "original_explanation": "While this quote does not directly compare Flublok to standard-dose vaccines, it provides the precise formulation details for a single dose of Flublok, which is relevant for confirming the HA content per dose as part of the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

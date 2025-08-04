@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table listing vaccine presentation details and National Drug Code (NDC) numbers for single-dose prefilled syringes, followed by storage and handling instructions (refrigeration temperature, do not freeze, protect from light, expiration date) and a heading for patient counseling information. The image only provides packaging information and storage/handling instructions; it does not present any immunogenicity data or discussion of immune response breadth or cross-protection and therefore doesn't support the claim. Note: The image is clear and complete for the sections shown; no related immunological data is present.",
+  "explanation": "A table listing vaccine presentation (single-dose prefilled syringe), corresponding carton and component NDC numbers, followed by storage and handling instructions (refrigeration temperature, do not freeze, protect from light, discard after expiration). The table provides only product presentation details, NDC numbers, and storage/handling guidelines; it does not contain any data or discussion about immune response breadth, cross-protection, or performance in mismatch seasons, and therefore does not support the claim. Note: The image is clear and complete for the section shown; no relevant immunogenicity information is present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing vaccine presentation details and National Drug Code (NDC) numbers for single-dose prefilled syringes, followed by storage and handling instructions (refrigeration temperature, do not freeze, protect from light, expiration date) and a heading for patient counseling information.",
+    "image_description": "A table listing vaccine presentation (single-dose prefilled syringe), corresponding carton and component NDC numbers, followed by storage and handling instructions (refrigeration temperature, do not freeze, protect from light, discard after expiration).",
     "evidence_found": null,
-    "reasoning": "The image only provides packaging information and storage/handling instructions; it does not present any immunogenicity data or discussion of immune response breadth or cross-protection and therefore doesn't support the claim.",
-    "confidence_notes": "The image is clear and complete for the sections shown; no related immunological data is present."
+    "reasoning": "The table provides only product presentation details, NDC numbers, and storage/handling guidelines; it does not contain any data or discussion about immune response breadth, cross-protection, or performance in mismatch seasons, and therefore does not support the claim.",
+    "confidence_notes": "The image is clear and complete for the section shown; no relevant immunogenicity information is present."
   }
 }

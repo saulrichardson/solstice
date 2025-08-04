@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_mrg_det_1_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/figure_p2_mrg_det_1_002.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "mrg_det_1_002",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "Page 2 of an MMWR clinical recommendations document showing the table of contents, introductory text on CDC adoption of ACIP recommendations, publication attribution, suggested citation, and editorial staff listings. This page does not present any information about vaccine hemagglutinin (HA) content or specific formulations such as Flublok; it does not support the claim. Note: Only the table of contents and introductory text are visible; vaccine composition details appear on later pages not shown here.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Page 2 of an MMWR clinical recommendations document showing the table of contents, introductory text on CDC adoption of ACIP recommendations, publication attribution, suggested citation, and editorial staff listings.",
+    "evidence_found": null,
+    "reasoning": "This page does not present any information about vaccine hemagglutinin (HA) content or specific formulations such as Flublok; it does not support the claim.",
+    "confidence_notes": "Only the table of contents and introductory text are visible; vaccine composition details appear on later pages not shown here."
+  }
+}

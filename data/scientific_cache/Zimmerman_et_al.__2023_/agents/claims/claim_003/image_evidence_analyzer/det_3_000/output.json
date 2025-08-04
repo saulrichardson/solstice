@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_000.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/figure_p4_det_3_000.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_000",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "Flowchart of a clinical study cohort showing enrollment of adults (N=18,467), exclusions (n=3,264), resulting analyzable cohort (N=15,203), then division into controls (N=13,385) and influenza cases (N=1,868), with further breakdown by vaccine type (RIV4, SD-IIV4, HD-IIV4+Adjuvant, and unvaccinated) and corresponding counts. The figure only depicts participant flow and group sizes by vaccination status; it contains no immunogenicity data or evidence of breadth of immune response or cross-protection in a mismatch season and therefore does not support the claim. Note: None",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Flowchart of a clinical study cohort showing enrollment of adults (N=18,467), exclusions (n=3,264), resulting analyzable cohort (N=15,203), then division into controls (N=13,385) and influenza cases (N=1,868), with further breakdown by vaccine type (RIV4, SD-IIV4, HD-IIV4+Adjuvant, and unvaccinated) and corresponding counts.",
+    "evidence_found": null,
+    "reasoning": "The figure only depicts participant flow and group sizes by vaccination status; it contains no immunogenicity data or evidence of breadth of immune response or cross-protection in a mismatch season and therefore does not support the claim.",
+    "confidence_notes": "None"
+  }
+}

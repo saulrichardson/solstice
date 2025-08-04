@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A table listing the presentation (single-dose prefilled syringe), its carton NDC number, component NDC numbers, followed by storage and handling instructions (refrigeration temperature, do not freeze, protect from light, do not use after expiration). does not support the claim because the image provides NDC codes and storage instructions only, with no data on immune responses, antibody levels, or comparisons between BEVS-derived and egg-derived HA antigens.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing the presentation (single-dose prefilled syringe), its carton NDC number, component NDC numbers, followed by storage and handling instructions (refrigeration temperature, do not freeze, protect from light, do not use after expiration).",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image provides NDC codes and storage instructions only, with no data on immune responses, antibody levels, or comparisons between BEVS-derived and egg-derived HA antigens.",
+    "confidence_notes": null
+  }
+}

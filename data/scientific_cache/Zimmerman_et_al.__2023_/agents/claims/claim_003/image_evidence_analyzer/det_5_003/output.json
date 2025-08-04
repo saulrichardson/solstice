@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p6_det_5_003.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p6_det_5_003.png",
+  "image_type": "Table",
+  "page_number": 6,
+  "block_id": "det_5_003",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A predominantly blank image containing only a vertical label 'Table 5' on a white background. No table rows, columns, or data are visible. does not support the claim because the image does not display any data or text relating to immune responses or recombinant technology; it contains only a table label. Note: Image appears incomplete or cropped, showing only the table title without actual content; analysis limited by missing data.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A predominantly blank image containing only a vertical label 'Table 5' on a white background. No table rows, columns, or data are visible.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image does not display any data or text relating to immune responses or recombinant technology; it contains only a table label.",
+    "confidence_notes": "Image appears incomplete or cropped, showing only the table title without actual content; analysis limited by missing data."
+  }
+}

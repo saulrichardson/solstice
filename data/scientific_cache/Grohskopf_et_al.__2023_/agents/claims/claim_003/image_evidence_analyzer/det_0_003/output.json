@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A black rectangle containing the U.S. Department of Health & Human Services seal on the left and the CDC logo on the right, with no data or study results visible. The image only shows institutional logos and contains no data or information about recombinant technology, immune responses, or cross-protection, and therefore does not support the claim. Note: Analysis limited by the absence of any study data or explanatory text in the figure; only branding is present.",
+  "explanation": "Black and white image containing the logos of the U.S. Department of Health & Human Services (HHS) and the Centers for Disease Control and Prevention (CDC) on a solid background. The image only displays organizational logos and contains no data or text regarding recombinant technology, immune responses, or season mismatch; it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A black rectangle containing the U.S. Department of Health & Human Services seal on the left and the CDC logo on the right, with no data or study results visible.",
+    "image_description": "Black and white image containing the logos of the U.S. Department of Health & Human Services (HHS) and the Centers for Disease Control and Prevention (CDC) on a solid background.",
     "evidence_found": null,
-    "reasoning": "The image only shows institutional logos and contains no data or information about recombinant technology, immune responses, or cross-protection, and therefore does not support the claim.",
-    "confidence_notes": "Analysis limited by the absence of any study data or explanatory text in the figure; only branding is present."
+    "reasoning": "The image only displays organizational logos and contains no data or text regarding recombinant technology, immune responses, or season mismatch; it does not support the claim.",
+    "confidence_notes": null
   }
 }

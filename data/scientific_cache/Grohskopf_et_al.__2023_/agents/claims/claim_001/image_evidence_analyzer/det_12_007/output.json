@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table listing trade names of pediatric quadrivalent influenza vaccines and their dose volumes for children aged 6 through 35 months, showing HA content per vaccine virus (7.5 \u00b5g for Afluria Quadrivalent and 15 \u00b5g for Fluarix, Flucelvax, FluLaval, and Fluzone Quadrivalent). The table shows HA antigen content for several standard-dose pediatric flu vaccines (7.5 \u00b5g or 15 \u00b5g per virus) but does not mention Flublok or its antigen content. Therefore, the image does not support the claim. Note: The image is clear but limited to pediatric standard-dose vaccines and does not include data on Flublok or adult dosing.",
+  "explanation": "Table listing trade names and dose volumes (\u00b5g HA per vaccine virus) for quadrivalent influenza vaccines in children aged 6 through 35 months, showing Afluria Quadrivalent 0.25 mL (7.5 \u00b5g) and several others at 0.5 mL (15 \u00b5g) does not support the claim because the table does not include Flublok or any indication that it contains three times the HA antigen content versus standard-dose vaccines",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing trade names of pediatric quadrivalent influenza vaccines and their dose volumes for children aged 6 through 35 months, showing HA content per vaccine virus (7.5 \u00b5g for Afluria Quadrivalent and 15 \u00b5g for Fluarix, Flucelvax, FluLaval, and Fluzone Quadrivalent).",
+    "image_description": "Table listing trade names and dose volumes (\u00b5g HA per vaccine virus) for quadrivalent influenza vaccines in children aged 6 through 35 months, showing Afluria Quadrivalent 0.25 mL (7.5 \u00b5g) and several others at 0.5 mL (15 \u00b5g)",
     "evidence_found": null,
-    "reasoning": "The table shows HA antigen content for several standard-dose pediatric flu vaccines (7.5 \u00b5g or 15 \u00b5g per virus) but does not mention Flublok or its antigen content. Therefore, the image does not support the claim.",
-    "confidence_notes": "The image is clear but limited to pediatric standard-dose vaccines and does not include data on Flublok or adult dosing."
+    "reasoning": "does not support the claim because the table does not include Flublok or any indication that it contains three times the HA antigen content versus standard-dose vaccines",
+    "confidence_notes": null
   }
 }

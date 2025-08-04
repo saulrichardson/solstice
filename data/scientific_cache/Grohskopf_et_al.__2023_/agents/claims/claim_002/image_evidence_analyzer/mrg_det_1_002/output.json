@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "The image shows a partial table of contents for an MMWR Recommendations and Reports document (listing sections such as Introduction, Methods, Recommendations for the Use of Influenza Vaccines, Vaccine Composition and Available Vaccines, Storage and Handling, References), alongside text describing CDC adoption of ACIP recommendations and a list of CDC and MMWR editorial and production staff. The image does not support the claim because it contains only the document's table of contents, procedural text on ACIP recommendations adoption, and editorial credits, with no information about cell- or egg-based vaccine production, mutations, or effectiveness. Note: The image is clear and complete for the sections shown, but it contains no scientific data or discussion of vaccine mutations or comparative effectiveness.",
+  "explanation": "Left side shows a table of contents listing sections of an MMWR influenza vaccine recommendations document; right side shows text about CDC adoption of ACIP recommendations and a list of CDC editorial and production staff. does not support the claim because the image contains only a contents page and procedural text about ACIP recommendations, with no mention of cell- or egg-based vaccine production mutations or impacts on effectiveness. Note: Image is clear and legible; no relevant vaccine mutation information is present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "The image shows a partial table of contents for an MMWR Recommendations and Reports document (listing sections such as Introduction, Methods, Recommendations for the Use of Influenza Vaccines, Vaccine Composition and Available Vaccines, Storage and Handling, References), alongside text describing CDC adoption of ACIP recommendations and a list of CDC and MMWR editorial and production staff.",
+    "image_description": "Left side shows a table of contents listing sections of an MMWR influenza vaccine recommendations document; right side shows text about CDC adoption of ACIP recommendations and a list of CDC editorial and production staff.",
     "evidence_found": null,
-    "reasoning": "The image does not support the claim because it contains only the document's table of contents, procedural text on ACIP recommendations adoption, and editorial credits, with no information about cell- or egg-based vaccine production, mutations, or effectiveness.",
-    "confidence_notes": "The image is clear and complete for the sections shown, but it contains no scientific data or discussion of vaccine mutations or comparative effectiveness."
+    "reasoning": "does not support the claim because the image contains only a contents page and procedural text about ACIP recommendations, with no mention of cell- or egg-based vaccine production mutations or impacts on effectiveness.",
+    "confidence_notes": "Image is clear and legible; no relevant vaccine mutation information is present."
   }
 }

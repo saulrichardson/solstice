@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_det_3_003.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p4_det_3_003.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "det_3_003",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A table showing pre- and post-vaccination (day 0 and day 28) geometric mean antibody titers (with 95% CIs) and response rates (% with 4-fold rise to \u22651:40) against three influenza vaccine strains (A/Solomon Island/3/2006 H1N1, A/Wisconsin/67/2005 H3N2, B/Malaysia/2506/2004) for four study groups (Placebo, FluBlok, FluBlok PV, FluBlok NPV). The table compares immunogenicity of different FluBlok formulations versus placebo against matched strains but contains no data on antibodies to highly conserved HA regions, no assessment of broad cross-reactivity, and no comparison with egg-derived vaccines, and thus does not support the claim. Note: Analysis limited to the visible table; if other sections of the document contain relevant data, they are not shown here.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing pre- and post-vaccination (day 0 and day 28) geometric mean antibody titers (with 95% CIs) and response rates (% with 4-fold rise to \u22651:40) against three influenza vaccine strains (A/Solomon Island/3/2006 H1N1, A/Wisconsin/67/2005 H3N2, B/Malaysia/2506/2004) for four study groups (Placebo, FluBlok, FluBlok PV, FluBlok NPV).",
+    "evidence_found": null,
+    "reasoning": "The table compares immunogenicity of different FluBlok formulations versus placebo against matched strains but contains no data on antibodies to highly conserved HA regions, no assessment of broad cross-reactivity, and no comparison with egg-derived vaccines, and thus does not support the claim.",
+    "confidence_notes": "Analysis limited to the visible table; if other sections of the document contain relevant data, they are not shown here."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_det_1_000.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p2_det_1_000.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "det_1_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table listing licensed influenza vaccines, with columns for trade name (manufacturer), presentations, age indication, \u00b5g HA per dose, route, and mercury content. Under the RIV4 (recombinant HA vaccine) category, Flublok Quadrivalent (Sanofi Pasteur) 0.5-mL PFS for \u226518 yrs with 45 \u00b5g/0.5 mL IM is listed. Evidence: The table labels Flublok as an RIV4 recombinant HA vaccine. The image does not support the claim because, although it shows Flublok is a recombinant HA vaccine, it does not provide any details about expression in insect cells or use of a baculovirus expression vector system. Note: Figure is clear but contains only high-level vaccine classification and dosing information; production platform details are not included.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing licensed influenza vaccines, with columns for trade name (manufacturer), presentations, age indication, \u00b5g HA per dose, route, and mercury content. Under the RIV4 (recombinant HA vaccine) category, Flublok Quadrivalent (Sanofi Pasteur) 0.5-mL PFS for \u226518 yrs with 45 \u00b5g/0.5 mL IM is listed.",
+    "evidence_found": "The table labels Flublok as an RIV4 recombinant HA vaccine.",
+    "reasoning": "The image does not support the claim because, although it shows Flublok is a recombinant HA vaccine, it does not provide any details about expression in insect cells or use of a baculovirus expression vector system.",
+    "confidence_notes": "Figure is clear but contains only high-level vaccine classification and dosing information; production platform details are not included."
+  }
+}

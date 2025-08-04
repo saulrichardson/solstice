@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "A schematic showing 9 KPNC facilities of varying sizes grouped into two blocks (A and B) based on similar size and then randomized to alternating weekly vaccination with SD-IIV4 (egg-based standard-dose quadrivalent) or RIV4 (recombinant quadrivalent) over four illustrative weeks. It includes block diagrams and a table indicating which vaccine each facility administered in weeks 1\u20134. does not support the claim because the figure only depicts the cluster-randomized scheduling of SD-IIV4 versus RIV4 across facilities and provides no data on antibody responses or immunogenicity to compare the robustness of the immune response between higher-dose recombinant and egg-based standard-dose vaccines. Note: Analysis limited to what is visible in the schematic; no outcome or immunogenicity data are shown.",
+  "explanation": "Diagram showing service\u2010area facilities grouped by size, randomized into two blocks (A and B), and a 4-week alternating schedule of vaccine administration (standard-dose egg-based quadrivalent influenza vaccine (SD-IIV4) versus recombinant quadrivalent influenza vaccine (RIV4)) for each facility. The figure presents the study's cluster randomization and weekly alternation between SD-IIV4 and RIV4 across facilities but contains no immunogenicity or antibody response data; it does not support the claim. Note: Analysis limited to visible content; no data on antibody titers or immunogenicity are presented.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A schematic showing 9 KPNC facilities of varying sizes grouped into two blocks (A and B) based on similar size and then randomized to alternating weekly vaccination with SD-IIV4 (egg-based standard-dose quadrivalent) or RIV4 (recombinant quadrivalent) over four illustrative weeks. It includes block diagrams and a table indicating which vaccine each facility administered in weeks 1\u20134.",
+    "image_description": "Diagram showing service\u2010area facilities grouped by size, randomized into two blocks (A and B), and a 4-week alternating schedule of vaccine administration (standard-dose egg-based quadrivalent influenza vaccine (SD-IIV4) versus recombinant quadrivalent influenza vaccine (RIV4)) for each facility.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the figure only depicts the cluster-randomized scheduling of SD-IIV4 versus RIV4 across facilities and provides no data on antibody responses or immunogenicity to compare the robustness of the immune response between higher-dose recombinant and egg-based standard-dose vaccines.",
-    "confidence_notes": "Analysis limited to what is visible in the schematic; no outcome or immunogenicity data are shown."
+    "reasoning": "The figure presents the study's cluster randomization and weekly alternation between SD-IIV4 and RIV4 across facilities but contains no immunogenicity or antibody response data; it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible content; no data on antibody titers or immunogenicity are presented."
   }
 }

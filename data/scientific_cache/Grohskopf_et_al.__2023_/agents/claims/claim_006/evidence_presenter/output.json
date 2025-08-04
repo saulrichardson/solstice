@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": "Grohskopf_et_al.__2023_",
+  "supporting_evidence": [
+    {
+      "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+      "explanation": "The quote directly supports the claim. It explicitly states that Flublok (RIV4) is a recombinant influenza vaccine in which hemagglutinin (HA) is produced in an insect cell line using genetic sequences from cell-derived influenza viruses. This confirms the use of a novel production platform involving recombinant technology and insect cells. While the quote does not mention 'baculovirus expression vector system (BEVS)' by name, it does state the essential facts about recombinant HA production in insect cells, which is the core of the claim. Therefore, the quote genuinely supports the claim as stated."
+    },
+    {
+      "quote": "Quad rival ent Recombinant Influenza Vaccine (RIV4) Available Vaccine. One recombinant influenza vaccine, Flublok Quad rival ent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+      "explanation": "The quote directly supports the claim. It explicitly states that Flublok (RIV4) contains recombinant HA produced in an insect cell line, which matches the claim that Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells. The mention of 'using genetic sequences from cell derived influenza viruses' and 'manufactured without the use of influenza viruses or eggs' further supports the novelty and the use of recombinant technology. While the quote does not use the term 'baculovirus expression vector system (BEVS)' specifically, it does state the essential facts about recombinant HA production in insect cells, which is the core of the claim. Therefore, the quote genuinely and explicitly supports the claim based on what is stated in the document."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 2,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 2,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 2
+    },
+    "rejected_count": 0
+  }
+}

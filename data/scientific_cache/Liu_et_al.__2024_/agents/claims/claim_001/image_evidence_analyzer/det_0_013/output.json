@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_det_0_013.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/table_p1_det_0_013.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "det_0_013",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A portion of a clinical manuscript's first page showing received/accepted/publication dates and the beginning of the text discussing recombinant HA production, but with the main Table cut off and not visible The visible portion does not include any table data or numerical antigen content comparisons and therefore does not support the claim Note: Table content is not visible in the image; key data may be present off-screen",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A portion of a clinical manuscript's first page showing received/accepted/publication dates and the beginning of the text discussing recombinant HA production, but with the main Table cut off and not visible",
+    "evidence_found": null,
+    "reasoning": "The visible portion does not include any table data or numerical antigen content comparisons and therefore does not support the claim",
+    "confidence_notes": "Table content is not visible in the image; key data may be present off-screen"
+  }
+}

@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table comparing clinical outcomes (attack rates, relative risks, and relative vaccine effectiveness) of Flublok Quadrivalent (N=4303) versus a comparator vaccine (N=4301) for rtPCR-positive influenza (overall, A, B) and culture-confirmed influenza-like illness in a large phase III trial. The table presents clinical effectiveness data (attack rates, RR, and rVE) but contains no information on hemagglutinin antigen content or direct immunogenicity measures; therefore it does not support the claim. Note: Image is clear and legible but limited to VE outcomes; no compositional or immunogenicity data are shown.",
+  "explanation": "A clinical trial results table comparing Flublok Quadrivalent (N=4303) versus a comparator vaccine (N=4301), showing the number of cases (n), attack rates (% n/N), relative risk (RR), and relative vaccine efficacy (rVE % with 95% CI) for all rtPCR-positive influenza, influenza A, influenza B, and culture-confirmed protocol-defined influenza-like illness. The image provides efficacy outcomes (attack rates, RR, and rVE) but does not present any information on hemagglutinin antigen content or its dosage relative to standard-dose vaccines, so it does not support the claim about Flublok containing 3\u00d7 the HA antigen content linked to immunogenicity. Note: The image is clear and legible, but the absence of any antigen content data limits linking it to the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table comparing clinical outcomes (attack rates, relative risks, and relative vaccine effectiveness) of Flublok Quadrivalent (N=4303) versus a comparator vaccine (N=4301) for rtPCR-positive influenza (overall, A, B) and culture-confirmed influenza-like illness in a large phase III trial.",
+    "image_description": "A clinical trial results table comparing Flublok Quadrivalent (N=4303) versus a comparator vaccine (N=4301), showing the number of cases (n), attack rates (% n/N), relative risk (RR), and relative vaccine efficacy (rVE % with 95% CI) for all rtPCR-positive influenza, influenza A, influenza B, and culture-confirmed protocol-defined influenza-like illness.",
     "evidence_found": null,
-    "reasoning": "The table presents clinical effectiveness data (attack rates, RR, and rVE) but contains no information on hemagglutinin antigen content or direct immunogenicity measures; therefore it does not support the claim.",
-    "confidence_notes": "Image is clear and legible but limited to VE outcomes; no compositional or immunogenicity data are shown."
+    "reasoning": "The image provides efficacy outcomes (attack rates, RR, and rVE) but does not present any information on hemagglutinin antigen content or its dosage relative to standard-dose vaccines, so it does not support the claim about Flublok containing 3\u00d7 the HA antigen content linked to immunogenicity.",
+    "confidence_notes": "The image is clear and legible, but the absence of any antigen content data limits linking it to the claim."
   }
 }

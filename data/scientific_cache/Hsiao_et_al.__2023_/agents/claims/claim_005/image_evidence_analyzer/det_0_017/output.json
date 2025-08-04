@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "The image shows the header of an original research article titled \"Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age\" along with the list of authors. The image only displays the article title and authors without naming specific vaccines such as Flublok or Fluarix or indicating a quadrivalent comparison, so it does not support the claim. Note: Only the title page is visible; details about specific vaccine comparisons may appear elsewhere in the document but are not shown here.",
+  "explanation": "Title section of an original article labeled 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age' with author names. The image does not mention Flublok or Fluarix and therefore does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "The image shows the header of an original research article titled \"Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age\" along with the list of authors.",
+    "image_description": "Title section of an original article labeled 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age' with author names.",
     "evidence_found": null,
-    "reasoning": "The image only displays the article title and authors without naming specific vaccines such as Flublok or Fluarix or indicating a quadrivalent comparison, so it does not support the claim.",
-    "confidence_notes": "Only the title page is visible; details about specific vaccine comparisons may appear elsewhere in the document but are not shown here."
+    "reasoning": "The image does not mention Flublok or Fluarix and therefore does not support the claim.",
+    "confidence_notes": null
   }
 }

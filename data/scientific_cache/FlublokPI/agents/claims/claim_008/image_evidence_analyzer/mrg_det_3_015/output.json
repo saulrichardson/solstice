@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table listing the presentation of the vaccine (single-dose prefilled syringe), the carton NDC number (49281-724-10), and the component NDC number for ten 0.5 mL single-dose prefilled syringes (49281-724-88), followed by storage and handling instructions. The image does not show any information on hemagglutinin (HA) microgram content per strain and therefore does not support the claim. Note: The image is clear and legible, but it contains only packaging and handling details, not dose composition.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing the presentation of the vaccine (single-dose prefilled syringe), the carton NDC number (49281-724-10), and the component NDC number for ten 0.5 mL single-dose prefilled syringes (49281-724-88), followed by storage and handling instructions.",
+    "evidence_found": null,
+    "reasoning": "The image does not show any information on hemagglutinin (HA) microgram content per strain and therefore does not support the claim.",
+    "confidence_notes": "The image is clear and legible, but it contains only packaging and handling details, not dose composition."
+  }
+}

@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "Excerpt from the first page of a vaccine's prescribing information, showing the product name, indication, dosage and administration instructions, contraindications, warnings and precautions, adverse reactions, and a table of contents for the full prescribing information. The image contains prescribing information and a table of contents but no data or discussion of immune response breadth, cross-protection, or performance in mismatch seasons, so it does not support the claim. Note: The image quality is sufficient to read headings but no immunity or clinical effectiveness data are presented on this page.",
+  "explanation": "A table of contents from the full prescribing information for Flublok vaccine, listing section headings such as Indications and Usage, Dosage and Administration, Warnings and Precautions, Adverse Reactions, Clinical Pharmacology, Clinical Studies, etc. The image only shows the table of contents and provides no data on immune responses, recombinant technology, or cross-protection; it does not support the claim Note: Analysis limited to a table of contents without study data; no direct immunogenicity information is present",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Excerpt from the first page of a vaccine's prescribing information, showing the product name, indication, dosage and administration instructions, contraindications, warnings and precautions, adverse reactions, and a table of contents for the full prescribing information.",
+    "image_description": "A table of contents from the full prescribing information for Flublok vaccine, listing section headings such as Indications and Usage, Dosage and Administration, Warnings and Precautions, Adverse Reactions, Clinical Pharmacology, Clinical Studies, etc.",
     "evidence_found": null,
-    "reasoning": "The image contains prescribing information and a table of contents but no data or discussion of immune response breadth, cross-protection, or performance in mismatch seasons, so it does not support the claim.",
-    "confidence_notes": "The image quality is sufficient to read headings but no immunity or clinical effectiveness data are presented on this page."
+    "reasoning": "The image only shows the table of contents and provides no data on immune responses, recombinant technology, or cross-protection; it does not support the claim",
+    "confidence_notes": "Analysis limited to a table of contents without study data; no direct immunogenicity information is present"
   }
 }

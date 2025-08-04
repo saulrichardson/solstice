@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p5_det_4_002.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_002",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A multi\u2010column table listing various licensed influenza vaccines by trade name and manufacturer, presentation format, age indications, hemagglutinin antigen content (\u00b5g HA per dose or virus count for LAIV), route of administration, and mercury content. Vaccines are grouped by type: standard\u2010dose egg\u2010based, cell culture\u2013based, high\u2010dose egg\u2010based, egg\u2010based with adjuvant, recombinant HA (Flublok Quadrivalent), and live attenuated intranasal. The table provides product names, formulations, dosages, and routes of administration but contains no immunogenicity or antibody response data, much less a comparison of broadly cross\u2010reactive antibody levels between BEVS\u2010derived recombinant HA and egg\u2010derived vaccines. Therefore, it does not support the claim. Note: Analysis limited to visible table content; no sections describing study outcomes or antibody assays are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multi\u2010column table listing various licensed influenza vaccines by trade name and manufacturer, presentation format, age indications, hemagglutinin antigen content (\u00b5g HA per dose or virus count for LAIV), route of administration, and mercury content. Vaccines are grouped by type: standard\u2010dose egg\u2010based, cell culture\u2013based, high\u2010dose egg\u2010based, egg\u2010based with adjuvant, recombinant HA (Flublok Quadrivalent), and live attenuated intranasal.",
+    "evidence_found": null,
+    "reasoning": "The table provides product names, formulations, dosages, and routes of administration but contains no immunogenicity or antibody response data, much less a comparison of broadly cross\u2010reactive antibody levels between BEVS\u2010derived recombinant HA and egg\u2010derived vaccines. Therefore, it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible table content; no sections describing study outcomes or antibody assays are shown."
+  }
+}

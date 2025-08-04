@@ -1,0 +1,171 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "Liu_et_al.__2024_",
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.",
+      "supports_claim": true,
+      "explanation": "The quote directly compares the antibody responses induced by the recombinant vaccine (RIV4) to those induced by egg-based standard-dose vaccines (IIV4), showing that RIV4 produced higher neutralizing and total HA head binding antibodies to the A (H3 N2) virus. This directly supports the claim that vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "presence_explanation": "The quote 'In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.' appears in the document on page 1, with only minor formatting differences (e.g., 'cell- A (H3 N2) virus' instead of 'cell-A (H3 N2) virus'). The factual content and meaning are preserved.",
+      "support_explanation": "The quote directly compares the antibody responses induced by the recombinant vaccine (RIV4) to those induced by egg-based standard-dose vaccines (IIV4), showing that RIV4 produced higher neutralizing and total HA head binding antibodies to the A (H3 N2) virus. This directly supports the claim that vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "original_relevance": "This quote directly compares the antibody responses induced by the recombinant vaccine (RIV4) to those induced by egg-based standard-dose vaccines (IIV4), showing that RIV4 produced higher neutralizing and total HA head binding antibodies to the A (H3 N2) virus, supporting the claim."
+    },
+    {
+      "id": 2,
+      "quote": "RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody response, it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim. It explicitly states that RIV4 (the recombinant vaccine) contains three times the hemagglutinin antigen per dose per strain compared to the standard-dose egg-based vaccines (IIV4 and ccIIV4), and that for A (H3 N2), RIV4 vaccination significantly increased both the quality and quantity of antibody responses. This directly substantiates the claim that higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "presence_explanation": "The quote appears on page 9 of the document, though it is split across lines and slightly paraphrased due to formatting. The relevant passage is: 'IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody... it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).' The statement about RIV4 containing 3 times the intended 45 \u00b5g HA/dose/strain compared to IIV4 and ccIIV4 is found earlier on page 2: 'RIV4 contains 3 times the i d 45 HA/d / ...d' (intended 45 \u00b5g HA/dose/strain). The factual content, numbers, and technical details are preserved.",
+      "support_explanation": "The quote directly supports the claim. It explicitly states that RIV4 (the recombinant vaccine) contains three times the hemagglutinin antigen per dose per strain compared to the standard-dose egg-based vaccines (IIV4 and ccIIV4), and that for A (H3 N2), RIV4 vaccination significantly increased both the quality and quantity of antibody responses. This directly substantiates the claim that higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "original_relevance": "This quote specifies that the recombinant vaccine (RIV4) is a higher-dose vaccine and that it led to a significant increase in both the quality and quantity of antibody responses compared to standard-dose vaccines, directly supporting the claim."
+    },
+    {
+      "id": 3,
+      "quote": "In this randomized trial (Clinical trials gov: NCT03722589), sera pre- and post vaccination with quadrivalent inactivated egg based (IIV4), cell culture based (ccIIV4), and recombinant (RIV4) influenza vaccines were compared. RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim. It states that in a randomized trial, the recombinant vaccine (RIV4) induced higher neutralizing and total HA head binding antibodies to cell-A (H3N2) virus than both the cell culture-based (ccIIV4) and egg-based (IIV4) vaccines. Since RIV4 is a higher-dose recombinant vaccine and IIV4 is a standard-dose egg-based vaccine, this provides explicit evidence that the higher-dose recombinant vaccine may induce a more robust antibody response than the standard-dose egg-based vaccine, as claimed.",
+      "presence_explanation": "The quote is found in the document, though with minor wording differences due to formatting and OCR correction. The relevant passage appears on page 1: 'In this randomized trial (Clinical trials gov: NCT03722589), sera pre- and post vaccination with quadrivalent inactivated egg based (IIV4), cell culture based (ccIIV4), and recombinant (RIV4) influenza vaccines were compared. RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.' This matches the quoted content in all essential facts and technical details.",
+      "support_explanation": "The quote directly supports the claim. It states that in a randomized trial, the recombinant vaccine (RIV4) induced higher neutralizing and total HA head binding antibodies to cell-A (H3N2) virus than both the cell culture-based (ccIIV4) and egg-based (IIV4) vaccines. Since RIV4 is a higher-dose recombinant vaccine and IIV4 is a standard-dose egg-based vaccine, this provides explicit evidence that the higher-dose recombinant vaccine may induce a more robust antibody response than the standard-dose egg-based vaccine, as claimed.",
+      "original_relevance": "This quote describes the design of the study and the finding that RIV4, the higher-dose recombinant vaccine, induced higher antibody responses than the standard-dose egg-based vaccine, providing direct evidence for the claim."
+    },
+    {
+      "id": "comp_1",
+      "quote": "In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating viruses compared to repeat vaccination with IIV4.",
+      "supports_claim": true,
+      "explanation": "The quote directly compares repeat vaccination with RIV4 (recombinant, higher-dose) or ccIIV4 (cell-based) to repeat vaccination with IIV4 (egg-based, standard-dose), stating that RIV4 or ccIIV4 'further improved antibody responses to circulating viruses.' This supports the claim that vaccination with a higher-dose recombinant flu vaccine (RIV4) may induce a more robust antibody response than egg-based standard-dose vaccines (IIV4).",
+      "presence_explanation": "The quote appears in the document on page 1 (first paragraph): 'In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating viruses compared to repeat vaccination with IIV4.' The wording is nearly identical to the quote provided, with only minor formatting differences (e.g., 'RIV4-ccIIV4' vs 'RIV4-ccIIV4'). The factual content and meaning are preserved.",
+      "support_explanation": "The quote directly compares repeat vaccination with RIV4 (recombinant, higher-dose) or ccIIV4 (cell-based) to repeat vaccination with IIV4 (egg-based, standard-dose), stating that RIV4 or ccIIV4 'further improved antibody responses to circulating viruses.' This supports the claim that vaccination with a higher-dose recombinant flu vaccine (RIV4) may induce a more robust antibody response than egg-based standard-dose vaccines (IIV4).",
+      "original_relevance": "This quote shows that repeat vaccination with the recombinant (RIV4) vaccine, which is higher-dose, led to improved antibody responses compared to the standard egg-based vaccine, supporting the claim that higher-dose recombinant vaccines may induce a more robust antibody response."
+    },
+    {
+      "id": "comp_4",
+      "quote": "At 6 months post vaccination, waning of HA stalk antibodies were more notable in ccIIV4 and IIV4 groups than in the RIV4 group.",
+      "supports_claim": true,
+      "explanation": "The quote directly compares the durability of HA stalk antibody responses between the recombinant vaccine (RIV4) and the egg-based standard-dose vaccines (IIV4 and ccIIV4). It states that antibody waning was more notable in the egg-based and cell-based groups than in the recombinant group, indicating that RIV4 induces a more robust and durable antibody response. This directly supports the claim that vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "presence_explanation": "The quote 'At 6 months post vaccination, waning of HA stalk antibodies were more notable in ccIIV4 and IIV4 groups than in the RIV4 group.' appears on page 5 of the document. The wording is nearly identical, and the factual content is preserved.",
+      "support_explanation": "The quote directly compares the durability of HA stalk antibody responses between the recombinant vaccine (RIV4) and the egg-based standard-dose vaccines (IIV4 and ccIIV4). It states that antibody waning was more notable in the egg-based and cell-based groups than in the recombinant group, indicating that RIV4 induces a more robust and durable antibody response. This directly supports the claim that vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "original_relevance": "This quote indicates that the antibody response induced by the higher-dose recombinant vaccine (RIV4) is not only more robust initially but also more durable over time compared to the standard egg-based vaccine."
+    }
+  ],
+  "verification_stats": {
+    "total_verified": 5
+  },
+  "image_evidence": [
+    {
+      "image_filename": "figure_p4_det_3_002.png",
+      "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p4_det_3_002.png",
+      "image_type": "Figure",
+      "page_number": 4,
+      "block_id": "det_3_002",
+      "claim_id": "claim_004",
+      "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "supports_claim": true,
+      "explanation": "Figure with sixteen scatter-and-bar panels showing antibody titers (MN or HI titers on a log2 scale) against four influenza strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata) measured at Day 0, 1 month, and 6 months post-vaccination. Panels are stratified by age group (18\u201344 years, 45\u201364 years) and by virus isolate origin (egg-grown vs cell-grown). Four vaccine groups are compared: two egg-based standard-dose IIV4s (Fluzone, Fluarix), a cell-culture IIV4, and a recombinant vaccine (RIV4). P-values are annotated above comparisons indicating statistical differences in titers between RIV4 and the egg-based vaccines. Evidence: Numerous significant p-values (e.g., <0.0001, 0.003, 0.045) show that RIV4 (orange) elicits higher microneutralization titers than egg-based IIV4s at 1 and 6 months for A(H3N2) across both age groups and virus origins, as well as significant higher HI titers for A(H1N1)pdm09 and some B strains. The figure supports the claim because the recombinant vaccine (RIV4) induced significantly higher antibody responses than the egg-based standard-dose vaccines across multiple strains, age groups, and time points, demonstrating a more robust immune response. Note: While the data clearly show higher titers for RIV4 in most comparisons, the figure does not indicate actual vaccine dose levels, and some strains (e.g., B/Victoria) show no significant differences. Interpretation is limited to the visible comparisons and p-values.",
+      "model_used": "o4-mini",
+      "detailed_analysis": {
+        "supports_claim": true,
+        "image_description": "Figure with sixteen scatter-and-bar panels showing antibody titers (MN or HI titers on a log2 scale) against four influenza strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata) measured at Day 0, 1 month, and 6 months post-vaccination. Panels are stratified by age group (18\u201344 years, 45\u201364 years) and by virus isolate origin (egg-grown vs cell-grown). Four vaccine groups are compared: two egg-based standard-dose IIV4s (Fluzone, Fluarix), a cell-culture IIV4, and a recombinant vaccine (RIV4). P-values are annotated above comparisons indicating statistical differences in titers between RIV4 and the egg-based vaccines.",
+        "evidence_found": "Numerous significant p-values (e.g., <0.0001, 0.003, 0.045) show that RIV4 (orange) elicits higher microneutralization titers than egg-based IIV4s at 1 and 6 months for A(H3N2) across both age groups and virus origins, as well as significant higher HI titers for A(H1N1)pdm09 and some B strains.",
+        "reasoning": "The figure supports the claim because the recombinant vaccine (RIV4) induced significantly higher antibody responses than the egg-based standard-dose vaccines across multiple strains, age groups, and time points, demonstrating a more robust immune response.",
+        "confidence_notes": "While the data clearly show higher titers for RIV4 in most comparisons, the figure does not indicate actual vaccine dose levels, and some strains (e.g., B/Victoria) show no significant differences. Interpretation is limited to the visible comparisons and p-values."
+      }
+    },
+    {
+      "image_filename": "figure_p5_det_4_000.png",
+      "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p5_det_4_000.png",
+      "image_type": "Figure",
+      "page_number": 5,
+      "block_id": "det_4_000",
+      "claim_id": "claim_004",
+      "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "supports_claim": true,
+      "explanation": "A four\u2010panel figure showing geometric mean fold rise in antibody titers at 1 month post\u2010vaccination (panels A and B) and geometric mean fold reduction at 6 months post\u2010vaccination (panels C and D) for two age groups (18\u201344 years and 45\u201364 years). The figure compares four vaccines: Fluzone IIV4 (egg-based, open circles), Fluarix IIV4 (egg-based, black circles), ccIIV4 (cell-based, green), and RIV4 (recombinant, orange) across six influenza antigens (H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/VIC egg/cell, B/YAM egg/cell), with p-values indicating statistical differences between groups. Evidence: At 1 month post\u2010vaccination, RIV4 (recombinant) shows higher geometric mean fold rises than the egg-based Fluzone and Fluarix for multiple antigens (e.g., H3N2 cell: ~3.3 vs ~1.1\u20131.5, p<0.0001; H1N1 egg: ~2.1 vs ~1.6\u20131.8, p=0.021; B/VIC egg: ~2.0 vs ~1.5\u20131.7, p=0.017; B/YAM egg: ~2.1 vs ~1.4\u20131.6, p=0.024), and at 6 months shows less waning for some strains (e.g., H3N2 cell and H1N1 cell with p=0.015\u20130.03). The data show that the recombinant vaccine (RIV4) elicits significantly higher antibody fold rises at 1 month and reduced waning at 6 months compared with egg-based standard-dose vaccines, which supports the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines. Note: The figure provides immunogenicity data but does not display clinical efficacy or exact antigen doses. Some strain labels and p-values are small and may be hard to read in the image.",
+      "model_used": "o4-mini",
+      "detailed_analysis": {
+        "supports_claim": true,
+        "image_description": "A four\u2010panel figure showing geometric mean fold rise in antibody titers at 1 month post\u2010vaccination (panels A and B) and geometric mean fold reduction at 6 months post\u2010vaccination (panels C and D) for two age groups (18\u201344 years and 45\u201364 years). The figure compares four vaccines: Fluzone IIV4 (egg-based, open circles), Fluarix IIV4 (egg-based, black circles), ccIIV4 (cell-based, green), and RIV4 (recombinant, orange) across six influenza antigens (H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/VIC egg/cell, B/YAM egg/cell), with p-values indicating statistical differences between groups.",
+        "evidence_found": "At 1 month post\u2010vaccination, RIV4 (recombinant) shows higher geometric mean fold rises than the egg-based Fluzone and Fluarix for multiple antigens (e.g., H3N2 cell: ~3.3 vs ~1.1\u20131.5, p<0.0001; H1N1 egg: ~2.1 vs ~1.6\u20131.8, p=0.021; B/VIC egg: ~2.0 vs ~1.5\u20131.7, p=0.017; B/YAM egg: ~2.1 vs ~1.4\u20131.6, p=0.024), and at 6 months shows less waning for some strains (e.g., H3N2 cell and H1N1 cell with p=0.015\u20130.03).",
+        "reasoning": "The data show that the recombinant vaccine (RIV4) elicits significantly higher antibody fold rises at 1 month and reduced waning at 6 months compared with egg-based standard-dose vaccines, which supports the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+        "confidence_notes": "The figure provides immunogenicity data but does not display clinical efficacy or exact antigen doses. Some strain labels and p-values are small and may be hard to read in the image."
+      }
+    },
+    {
+      "image_filename": "figure_p6_det_5_006.png",
+      "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p6_det_5_006.png",
+      "image_type": "Figure",
+      "page_number": 6,
+      "block_id": "det_5_006",
+      "claim_id": "claim_004",
+      "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "supports_claim": true,
+      "explanation": "Multi-panel figure showing ELISA antibody titers (log2 scale) against egg-grown and cell-grown HA of seasonal influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) at Day 0, 1 month, and 6 months post-vaccination (Panel A), geometric mean ratios of egg vs cell HA titers at 1 month (Panel B), HA stalk ELISA titers for H3 and H1 stalks over time (Panel C), and fold-rise of stalk titers at 1 month relative to baseline (Panel D). Four vaccine groups\u2014two standard-dose egg-based (Fluzone IIV4, Fluarix IIV4), one cell-based (ccIIV4), and one recombinant (RIV4)\u2014are compared with individual datapoints, group means, and p-values for pairwise comparisons. Evidence: At 1 month post-vaccination, the recombinant vaccine group (RIV4, orange) shows higher geometric mean ELISA titers against both egg and cell HA antigens and H3/H1 stalk compared with the two standard-dose egg-based groups, with statistically significant p-values (e.g., p=0.014, p=0.013 for egg HA; p<0.0001, p=0.002 for cell HA). supports the claim because the data demonstrate that recipients of the recombinant flu vaccine mounted significantly higher antibody responses at 1 month compared with those who received egg-based standard-dose vaccines, indicating a more robust immune response. Note: Image resolution limits precise reading of every value; dose of recombinant vaccine is assumed higher but not explicitly stated in the figure.",
+      "model_used": "o4-mini",
+      "detailed_analysis": {
+        "supports_claim": true,
+        "image_description": "Multi-panel figure showing ELISA antibody titers (log2 scale) against egg-grown and cell-grown HA of seasonal influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) at Day 0, 1 month, and 6 months post-vaccination (Panel A), geometric mean ratios of egg vs cell HA titers at 1 month (Panel B), HA stalk ELISA titers for H3 and H1 stalks over time (Panel C), and fold-rise of stalk titers at 1 month relative to baseline (Panel D). Four vaccine groups\u2014two standard-dose egg-based (Fluzone IIV4, Fluarix IIV4), one cell-based (ccIIV4), and one recombinant (RIV4)\u2014are compared with individual datapoints, group means, and p-values for pairwise comparisons.",
+        "evidence_found": "At 1 month post-vaccination, the recombinant vaccine group (RIV4, orange) shows higher geometric mean ELISA titers against both egg and cell HA antigens and H3/H1 stalk compared with the two standard-dose egg-based groups, with statistically significant p-values (e.g., p=0.014, p=0.013 for egg HA; p<0.0001, p=0.002 for cell HA).",
+        "reasoning": "supports the claim because the data demonstrate that recipients of the recombinant flu vaccine mounted significantly higher antibody responses at 1 month compared with those who received egg-based standard-dose vaccines, indicating a more robust immune response.",
+        "confidence_notes": "Image resolution limits precise reading of every value; dose of recombinant vaccine is assumed higher but not explicitly stated in the figure."
+      }
+    },
+    {
+      "image_filename": "figure_p7_mrg_det_6_003.png",
+      "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p7_mrg_det_6_003.png",
+      "image_type": "Figure",
+      "page_number": 7,
+      "block_id": "mrg_det_6_003",
+      "claim_id": "claim_004",
+      "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "supports_claim": true,
+      "explanation": "Four-panel figure showing immune responses in two age cohorts (18\u201344 years in panels A and C; 45\u201364 years in panels B and D). Panels A and B plot geometric mean ratios (with 95% CI) of hemagglutination inhibition titers against egg-grown versus cell-grown vaccine viruses for four vaccines (Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4) across influenza subtypes A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Panels C and D depict the proportion of participants with \u22654-fold reduced titers to cell-grown vaccine virus before and after vaccination with each vaccine, with statistical annotations. Evidence: In both age groups, RIV4 (recombinant vaccine) shows lower egg:cell titer ratios than the egg-based vaccines (p-values ranging from 0.0014 to <0.0001) and panels C/D show significant reductions in the proportion of subjects with \u22654-fold reduced titers to cell-grown virus after RIV4 (from 58% to 26% in younger adults, p=0.0001; from 40% to 21% in older adults, p=0.005) compared to minimal change with Fluzone and Fluarix. supports the claim because RIV4, a recombinant vaccine, elicited a more robust antibody response against cell-grown influenza strains than the egg-based standard-dose vaccines, as evidenced by lower egg:cell titer ratios and larger reductions in poor (\u22654-fold reduced) responses. Note: limited to the subtypes and age ranges shown; figure details are clear but additional clinical endpoints (e.g., seroprotection rates) are not displayed here.",
+      "model_used": "o4-mini",
+      "detailed_analysis": {
+        "supports_claim": true,
+        "image_description": "Four-panel figure showing immune responses in two age cohorts (18\u201344 years in panels A and C; 45\u201364 years in panels B and D). Panels A and B plot geometric mean ratios (with 95% CI) of hemagglutination inhibition titers against egg-grown versus cell-grown vaccine viruses for four vaccines (Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4) across influenza subtypes A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Panels C and D depict the proportion of participants with \u22654-fold reduced titers to cell-grown vaccine virus before and after vaccination with each vaccine, with statistical annotations.",
+        "evidence_found": "In both age groups, RIV4 (recombinant vaccine) shows lower egg:cell titer ratios than the egg-based vaccines (p-values ranging from 0.0014 to <0.0001) and panels C/D show significant reductions in the proportion of subjects with \u22654-fold reduced titers to cell-grown virus after RIV4 (from 58% to 26% in younger adults, p=0.0001; from 40% to 21% in older adults, p=0.005) compared to minimal change with Fluzone and Fluarix.",
+        "reasoning": "supports the claim because RIV4, a recombinant vaccine, elicited a more robust antibody response against cell-grown influenza strains than the egg-based standard-dose vaccines, as evidenced by lower egg:cell titer ratios and larger reductions in poor (\u22654-fold reduced) responses.",
+        "confidence_notes": "limited to the subtypes and age ranges shown; figure details are clear but additional clinical endpoints (e.g., seroprotection rates) are not displayed here."
+      }
+    },
+    {
+      "image_filename": "figure_p8_mrg_det_7_005.png",
+      "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p8_mrg_det_7_005.png",
+      "image_type": "Figure",
+      "page_number": 8,
+      "block_id": "mrg_det_7_005",
+      "claim_id": "claim_004",
+      "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "supports_claim": true,
+      "explanation": "A 4\u00d72 panel of hemagglutination-inhibition (HI) titer plots (log2 scale) for influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Columns are age groups (18\u201344 and 45\u201364 years) tested against egg-grown virus and cell-grown virus; each plot shows baseline (Day 0) and 1-month post-vaccination titers for six vaccine sequences combining cell-based quadrivalent (ccIIV4), recombinant HA (RIV4), and egg-based standard-dose (IIV4) vaccines. Evidence: At 1 month, groups receiving two doses of the recombinant HA vaccine (RIV4\u2013RIV4) show higher geometric mean HI titers than those receiving two doses of egg-based IIV4, with multiple statistically significant comparisons (e.g., p<0.0001, p=0.007, p=0.0002) favoring recombinant over egg-based vaccine. The figure shows that recombinant HA vaccination induces significantly higher antibody titers than egg-based standard-dose vaccination in multiple age groups and strains, which supports the claim Note: Resolution limits prevented reading every group label, and data are limited to HI titers at 1 month post-vaccination in 18\u201364 year-olds and may not generalize to all populations or long-term responses.",
+      "model_used": "o4-mini",
+      "detailed_analysis": {
+        "supports_claim": true,
+        "image_description": "A 4\u00d72 panel of hemagglutination-inhibition (HI) titer plots (log2 scale) for influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Columns are age groups (18\u201344 and 45\u201364 years) tested against egg-grown virus and cell-grown virus; each plot shows baseline (Day 0) and 1-month post-vaccination titers for six vaccine sequences combining cell-based quadrivalent (ccIIV4), recombinant HA (RIV4), and egg-based standard-dose (IIV4) vaccines.",
+        "evidence_found": "At 1 month, groups receiving two doses of the recombinant HA vaccine (RIV4\u2013RIV4) show higher geometric mean HI titers than those receiving two doses of egg-based IIV4, with multiple statistically significant comparisons (e.g., p<0.0001, p=0.007, p=0.0002) favoring recombinant over egg-based vaccine.",
+        "reasoning": "The figure shows that recombinant HA vaccination induces significantly higher antibody titers than egg-based standard-dose vaccination in multiple age groups and strains, which supports the claim",
+        "confidence_notes": "Resolution limits prevented reading every group label, and data are limited to HI titers at 1 month post-vaccination in 18\u201364 year-olds and may not generalize to all populations or long-term responses."
+      }
+    },
+    {
+      "image_filename": "figure_p10_mrg_det_9_004.png",
+      "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p10_mrg_det_9_004.png",
+      "image_type": "Figure",
+      "page_number": 10,
+      "block_id": "mrg_det_9_004",
+      "claim_id": "claim_004",
+      "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "supports_claim": true,
+      "explanation": "Multi-panel figure showing ELISA antibody titers (Log\u2082 scale) to egg- and cell-derived HA antigens (panel A), egg/cell HA titer ratios (panel B), head-stalk HA titers (panel C), and HA stalk fold-rise (panel D) measured at baseline (Day 0) and one month after vaccination in seven study arms defined by vaccine type combinations (cell-based standard dose ccIIV4, egg-based standard dose IIV4, and recombinant RIV4). Each data point represents geometric mean titers with 95% confidence intervals; significant p-values are annotated for pairwise comparisons at one month. Evidence: In panel A (Cell virus HA at 1 month), the RIV4\u2013RIV4 group (orange) shows higher ELISA titers than the ccIIV4\u2013ccIIV4 (black) and IIV4\u2013IIV4 (red) groups, with statistically significant differences (e.g. p = 0.039 for H3N2, p = 0.005 and p = 0.0002 for B/Victoria, p = 0.014 and p = 0.007 for B/Yamagata). The higher post-vaccination HA antibody titers in the recombinant RIV4 groups compared to egg-based standard-dose IIV4 groups, with multiple statistically significant p-values, supports the claim. Note: Group labels are abbreviated and the figure is complex; exact vaccine dose information is inferred from labels rather than explicitly stated. ELISA titers are surrogate measures of antibody response, not direct neutralization assays.",
+      "model_used": "o4-mini",
+      "detailed_analysis": {
+        "supports_claim": true,
+        "image_description": "Multi-panel figure showing ELISA antibody titers (Log\u2082 scale) to egg- and cell-derived HA antigens (panel A), egg/cell HA titer ratios (panel B), head-stalk HA titers (panel C), and HA stalk fold-rise (panel D) measured at baseline (Day 0) and one month after vaccination in seven study arms defined by vaccine type combinations (cell-based standard dose ccIIV4, egg-based standard dose IIV4, and recombinant RIV4). Each data point represents geometric mean titers with 95% confidence intervals; significant p-values are annotated for pairwise comparisons at one month.",
+        "evidence_found": "In panel A (Cell virus HA at 1 month), the RIV4\u2013RIV4 group (orange) shows higher ELISA titers than the ccIIV4\u2013ccIIV4 (black) and IIV4\u2013IIV4 (red) groups, with statistically significant differences (e.g. p = 0.039 for H3N2, p = 0.005 and p = 0.0002 for B/Victoria, p = 0.014 and p = 0.007 for B/Yamagata).",
+        "reasoning": "The higher post-vaccination HA antibody titers in the recombinant RIV4 groups compared to egg-based standard-dose IIV4 groups, with multiple statistically significant p-values, supports the claim.",
+        "confidence_notes": "Group labels are abbreviated and the figure is complex; exact vaccine dose information is inferred from labels rather than explicitly stated. ELISA titers are surrogate measures of antibody response, not direct neutralization assays."
+      }
+    }
+  ]
+}

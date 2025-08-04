@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table listing the product presentation (single-dose prefilled syringe), its carton NDC number, and component NDC numbers, followed by storage and handling instructions (temperature, light protection, expiration). The image provides only NDC codes and storage/handling details and does not mention hemagglutinin antigen content or comparative immunogenicity, so it does not support the claim.",
+  "explanation": "A table listing the vaccine presentation (Single-Dose Prefilled Syringe), the carton NDC number (49281-724-10), and the components and NDC number (ten 0.5 mL single-dose prefilled syringes [49281-724-88]), followed by storage and handling instructions. The image only shows packaging NDC numbers and storage/handling instructions and contains no information about hemagglutinin antigen content or comparisons with standard-dose flu vaccines, so it does not support the claim. Note: Analysis is based solely on the visible packaging and storage information; no antigen content data is present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing the product presentation (single-dose prefilled syringe), its carton NDC number, and component NDC numbers, followed by storage and handling instructions (temperature, light protection, expiration).",
+    "image_description": "A table listing the vaccine presentation (Single-Dose Prefilled Syringe), the carton NDC number (49281-724-10), and the components and NDC number (ten 0.5 mL single-dose prefilled syringes [49281-724-88]), followed by storage and handling instructions.",
     "evidence_found": null,
-    "reasoning": "The image provides only NDC codes and storage/handling details and does not mention hemagglutinin antigen content or comparative immunogenicity, so it does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "The image only shows packaging NDC numbers and storage/handling instructions and contains no information about hemagglutinin antigen content or comparisons with standard-dose flu vaccines, so it does not support the claim.",
+    "confidence_notes": "Analysis is based solely on the visible packaging and storage information; no antigen content data is present."
   }
 }

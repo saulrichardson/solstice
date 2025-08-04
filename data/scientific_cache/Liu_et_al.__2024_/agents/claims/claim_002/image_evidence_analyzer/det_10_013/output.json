@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A table presenting demographic characteristics and prior influenza vaccination history of study participants across four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4), including sample size, mean age, age distribution, sex, race/ethnicity, study site, and previous vaccination rates. The table only provides participant demographics and vaccination histories and contains no data or statements regarding mutations arising during production or their impact on vaccine effectiveness, so it does not support the claim Note: Analysis limited to visible table; no production or mutation information is presented",
+  "explanation": "A table summarizing demographic characteristics (mean age, age group distribution, sex, race/ethnicity), study site distribution, and prior influenza vaccination history for four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) with sample sizes and percentages. The table only presents participant demographics and vaccination history; it does not provide any data or discussion on production-related mutations or their impact on vaccine effectiveness, and thus does not support the claim. Note: The image quality is sufficient to read all entries; however, the table content is limited to demographics and prior vaccination history and contains no information on viral mutations or effectiveness.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table presenting demographic characteristics and prior influenza vaccination history of study participants across four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4), including sample size, mean age, age distribution, sex, race/ethnicity, study site, and previous vaccination rates.",
+    "image_description": "A table summarizing demographic characteristics (mean age, age group distribution, sex, race/ethnicity), study site distribution, and prior influenza vaccination history for four vaccine groups (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) with sample sizes and percentages.",
     "evidence_found": null,
-    "reasoning": "The table only provides participant demographics and vaccination histories and contains no data or statements regarding mutations arising during production or their impact on vaccine effectiveness, so it does not support the claim",
-    "confidence_notes": "Analysis limited to visible table; no production or mutation information is presented"
+    "reasoning": "The table only presents participant demographics and vaccination history; it does not provide any data or discussion on production-related mutations or their impact on vaccine effectiveness, and thus does not support the claim.",
+    "confidence_notes": "The image quality is sufficient to read all entries; however, the table content is limited to demographics and prior vaccination history and contains no information on viral mutations or effectiveness."
   }
 }

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_003.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p1_det_0_003.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_003",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table titled 'Influenza vaccines \u2014 United States, 2023\u201324 influenza season' listing various influenza vaccine trade names (standard-dose, cell culture\u2013based, high-dose egg-based), their presentations, age indications, \u03bcg HA per vaccine virus (per dose), route, and mercury content. does not support the claim because the table segment provided does not include any entry for Flublok or its HA content to compare against the standard-dose vaccines. Note: The visible portion of the table does not show the recombinant influenza vaccine (Flublok) row; conclusions are limited by the partial view of the table.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table titled 'Influenza vaccines \u2014 United States, 2023\u201324 influenza season' listing various influenza vaccine trade names (standard-dose, cell culture\u2013based, high-dose egg-based), their presentations, age indications, \u03bcg HA per vaccine virus (per dose), route, and mercury content.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table segment provided does not include any entry for Flublok or its HA content to compare against the standard-dose vaccines.",
+    "confidence_notes": "The visible portion of the table does not show the recombinant influenza vaccine (Flublok) row; conclusions are limited by the partial view of the table."
+  }
+}

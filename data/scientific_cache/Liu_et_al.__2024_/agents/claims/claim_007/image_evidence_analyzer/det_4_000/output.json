@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p5_det_4_000.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p5_det_4_000.png",
+  "image_type": "Figure",
+  "page_number": 5,
+  "block_id": "det_4_000",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Four-panel bar/point plot showing geometric mean fold rise in antibody titers 1 month post-vaccination (panels A and B for ages 18\u201344 and 45\u201364) and geometric mean fold reduction in titers from 1 to 6 months (panels C and D) against individual influenza strains (H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/VIC egg, B/VIC cell, B/YAM egg, B/YAM cell). Four vaccine groups are compared: FluZone IIV4 (open circles), Fluarix IIV4 (closed circles), cell-culture IIV4 (green), and recombinant HA (RIV4, orange). P values are shown for pairwise comparisons of fold rises or reductions between vaccines for each strain and age group. The figure presents strain-specific antibody titer fold rises and waning for different vaccine formulations but does not measure or report broadly cross-reactive antibodies against conserved HA regions. It therefore does not support the claim. Note: Interpretation limited to what is visible; no data on cross-reactive or stem-specific antibody responses are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Four-panel bar/point plot showing geometric mean fold rise in antibody titers 1 month post-vaccination (panels A and B for ages 18\u201344 and 45\u201364) and geometric mean fold reduction in titers from 1 to 6 months (panels C and D) against individual influenza strains (H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/VIC egg, B/VIC cell, B/YAM egg, B/YAM cell). Four vaccine groups are compared: FluZone IIV4 (open circles), Fluarix IIV4 (closed circles), cell-culture IIV4 (green), and recombinant HA (RIV4, orange). P values are shown for pairwise comparisons of fold rises or reductions between vaccines for each strain and age group.",
+    "evidence_found": null,
+    "reasoning": "The figure presents strain-specific antibody titer fold rises and waning for different vaccine formulations but does not measure or report broadly cross-reactive antibodies against conserved HA regions. It therefore does not support the claim.",
+    "confidence_notes": "Interpretation limited to what is visible; no data on cross-reactive or stem-specific antibody responses are shown."
+  }
+}

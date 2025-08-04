@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Two schematic diagrams of influenza hemagglutinin (HA) showing the globular head and fibrous stem with different glycan structures attached. Panel a illustrates HA1/HA2 after cleavage with polysialylated complex N-glycans; panel b illustrates uncleaved HA0 with predominantly paucimannose glycans. Structural features such as fusion peptide, disulfide bonds, and N- and C-termini are labeled. The figure only depicts glycosylation patterns on HA produced in different systems and does not present any data on antibody responses or cross-reactivity. Therefore, it does not support the claim regarding higher levels of broadly cross-reactive antibodies induced by BEVS-derived HA. Note: Analysis limited to visible structural schematics; no immunogenicity or antibody titer data present in the image.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Two schematic diagrams of influenza hemagglutinin (HA) showing the globular head and fibrous stem with different glycan structures attached. Panel a illustrates HA1/HA2 after cleavage with polysialylated complex N-glycans; panel b illustrates uncleaved HA0 with predominantly paucimannose glycans. Structural features such as fusion peptide, disulfide bonds, and N- and C-termini are labeled.",
+    "evidence_found": null,
+    "reasoning": "The figure only depicts glycosylation patterns on HA produced in different systems and does not present any data on antibody responses or cross-reactivity. Therefore, it does not support the claim regarding higher levels of broadly cross-reactive antibodies induced by BEVS-derived HA.",
+    "confidence_notes": "Analysis limited to visible structural schematics; no immunogenicity or antibody titer data present in the image."
+  }
+}

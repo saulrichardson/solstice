@@ -1,0 +1,46 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": "Grohskopf_et_al.__2023_",
+  "verification_stats": {
+    "total_extracted": 4,
+    "verified": 2,
+    "rejected": 2,
+    "verification_rate": 0.5
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim. It explicitly states that Flublok (RIV4) is a recombinant influenza vaccine in which hemagglutinin (HA) is produced in an insect cell line using genetic sequences from cell-derived influenza viruses. This confirms the use of a novel production platform involving recombinant technology and insect cells. While the quote does not mention 'baculovirus expression vector system (BEVS)' by name, it does state the essential facts about recombinant HA production in insect cells, which is the core of the claim. Therefore, the quote genuinely supports the claim as stated.",
+      "presence_explanation": "The quote appears on page 21 of the document, in the section 'Quad rival ent Recombinant Influenza Vaccine (RIV4) Available Vaccine.' The text states: 'One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).' The wording and factual content are semantically equivalent to the quote provided, with only minor formatting differences.",
+      "support_explanation": "The quote directly supports the claim. It explicitly states that Flublok (RIV4) is a recombinant influenza vaccine in which hemagglutinin (HA) is produced in an insect cell line using genetic sequences from cell-derived influenza viruses. This confirms the use of a novel production platform involving recombinant technology and insect cells. While the quote does not mention 'baculovirus expression vector system (BEVS)' by name, it does state the essential facts about recombinant HA production in insect cells, which is the core of the claim. Therefore, the quote genuinely supports the claim as stated.",
+      "original_relevance": "This quote explicitly states that Flublok Quadrivalent (RIV4) is a recombinant influenza vaccine in which hemagglutinin (HA) is produced in an insect cell line, confirming the use of a novel production platform involving recombinant technology and insect cells."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Quad rival ent Recombinant Influenza Vaccine (RIV4) Available Vaccine. One recombinant influenza vaccine, Flublok Quad rival ent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim. It explicitly states that Flublok (RIV4) contains recombinant HA produced in an insect cell line, which matches the claim that Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells. The mention of 'using genetic sequences from cell derived influenza viruses' and 'manufactured without the use of influenza viruses or eggs' further supports the novelty and the use of recombinant technology. While the quote does not use the term 'baculovirus expression vector system (BEVS)' specifically, it does state the essential facts about recombinant HA production in insect cells, which is the core of the claim. Therefore, the quote genuinely and explicitly supports the claim based on what is stated in the document.",
+      "presence_explanation": "The quote appears on page 21 of the document: 'Quad rival ent Recombinant Influenza Vaccine (RIV4) Available Vaccine. One recombinant influenza vaccine, Flublok Quad rival ent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).' The factual content, technical details, and numbers are preserved and match the quote to verify.",
+      "support_explanation": "The quote directly supports the claim. It explicitly states that Flublok (RIV4) contains recombinant HA produced in an insect cell line, which matches the claim that Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells. The mention of 'using genetic sequences from cell derived influenza viruses' and 'manufactured without the use of influenza viruses or eggs' further supports the novelty and the use of recombinant technology. While the quote does not use the term 'baculovirus expression vector system (BEVS)' specifically, it does state the essential facts about recombinant HA production in insect cells, which is the core of the claim. Therefore, the quote genuinely and explicitly supports the claim based on what is stated in the document.",
+      "original_relevance": "This quote explicitly states that Flublok contains recombinant HA produced in an insect cell line, which directly supports the claim that Flublok is produced using a novel platform involving recombinant HA expression in insect cells."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": 2,
+      "quote": "Most available influenza vaccines, with the exception of RIV4 (Flublok Quadrivalent, licensed for those \u226518 years) and ccIIV4 (Flucelvax Quadrivalent, licensed for those aged \u22656 months), are prepared by propagation of virus in embryonated eggs and might contain trace amounts of egg proteins, such as ovalbumin.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote distinguishes Flublok (RIV4) from traditional egg-based vaccines, highlighting that it is not produced in eggs, which supports the claim that it uses a novel, non-egg-based production platform."
+    },
+    {
+      "id": 3,
+      "quote": "RIV = recombinant influenza vaccine ... Prefixes are used when necessary to refer to certain specific IIVs: ... RIV for recombinant influenza vaccine ... Vaccines that are expected to be available for the 2022-23 season are described (see Vaccines Available for the 2022-23 Season) (Table 1).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote defines RIV as recombinant influenza vaccine, which is the category Flublok belongs to, supporting the claim that Flublok is produced using recombinant technology."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

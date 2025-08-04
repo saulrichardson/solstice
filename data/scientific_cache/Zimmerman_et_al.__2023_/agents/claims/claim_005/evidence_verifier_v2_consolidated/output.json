@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": "Zimmerman_et_al.__2023_",
+  "verified_evidence": [
+    {
+      "id": 3,
+      "quote": "SD-IIV4 included Afluria, Fluarix, FluLaval, Standard Dose Fluzone and FlucelVax. HD-IIV4 was High Dose Fluzone; RIV4: Flublok; HD IIV4: High dose Fluzone; Adj IV: FluAd.",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim because it explicitly lists Fluarix as one of the standard-dose quadrivalent influenza vaccines (SD-IIV4) and Flublok as RIV4. Since the study compares RIV4 (Flublok) to SD-IIV4 (which includes Fluarix), this confirms that Flublok was evaluated against Fluarix (among other standard-dose vaccines) in the pivotal trial, as the claim asserts.",
+      "presence_explanation": "The quote, or its semantic equivalent, appears in the document on page 4: 'b RIV4: Flublok. c SD-IIV4: Afluria, Fluarix, FluLaval, Standard Dose Flu zone and FlucelVax.' and also on page 2: 'Influenza vaccines were identified through the EMR; SD-IIV4 included Afluria, Fluarix, FluLaval, Standard Dose Flu zone and FlucelVax HD-IIV4 was High Dose Flu-'. The quote lists the same vaccines, including Fluarix as part of SD-IIV4 and Flublok as RIV4, matching the factual content of the quote to verify.",
+      "support_explanation": "The quote directly supports the claim because it explicitly lists Fluarix as one of the standard-dose quadrivalent influenza vaccines (SD-IIV4) and Flublok as RIV4. Since the study compares RIV4 (Flublok) to SD-IIV4 (which includes Fluarix), this confirms that Flublok was evaluated against Fluarix (among other standard-dose vaccines) in the pivotal trial, as the claim asserts.",
+      "original_relevance": "This quote explicitly lists Fluarix as one of the standard-dose quadrivalent influenza vaccines (SD-IIV4) used in the comparison with Flublok (RIV4), directly supporting the claim."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Two large studies have explored rVE of recombinant quadrivalent influenza vaccine (RIV4). The Medicare beneficiaries study [10] using retrospective data as described above, reported significant rVE of RIV4 vs. SD-IIV4) against influenza related hospital encounters. Secondly, a randomized controlled trial (RCT) found significant rVE of RIV4 compared with SD-IIV4 among adults 50 years old, but not for adults 65 years old [11].",
+      "supports_claim": true,
+      "explanation": "The quote directly states that a randomized controlled trial (RCT) compared recombinant quadrivalent influenza vaccine (RIV4, which is Flublok) with standard dose quadrivalent influenza vaccine (SD-IIV4). The document further clarifies that SD-IIV4 includes Fluarix among other vaccines. Therefore, the quote genuinely supports the claim that Flublok (quadrivalent) was evaluated in a pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "presence_explanation": "The quote appears on page 2 of the document: 'Two large studies have explored rVE of recombinant quadrivalent influenza vaccine (RIV4). The Medicare beneficiaries study [10] using retrospective data as described above, reported significant rVE of RIV4 vs. SD-IIV4) against influenza related hospital encounters. Secondly, a randomized controlled trial (RCT) found significant rVE of RIV4 compared with SD-IIV4 among adults 50 years old, but not for adults 65 years old [11].' The content and meaning of the quote are preserved, with only minor formatting differences.",
+      "support_explanation": "The quote directly states that a randomized controlled trial (RCT) compared recombinant quadrivalent influenza vaccine (RIV4, which is Flublok) with standard dose quadrivalent influenza vaccine (SD-IIV4). The document further clarifies that SD-IIV4 includes Fluarix among other vaccines. Therefore, the quote genuinely supports the claim that Flublok (quadrivalent) was evaluated in a pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "original_relevance": "This quote explicitly states that a randomized controlled trial compared the recombinant quadrivalent influenza vaccine (RIV4, i.e., Flublok) with standard dose quadrivalent influenza vaccine (SD-IIV4, which includes Fluarix), directly supporting the claim that Flublok was evaluated against Fluarix (quadrivalent standard-dose vaccine) in a pivotal trial."
+    }
+  ],
+  "verification_stats": {
+    "total_verified": 2
+  },
+  "image_evidence": []
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_mrg_det_9_004.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p10_mrg_det_9_004.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "mrg_det_9_004",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Multi-panel figure showing ELISA titers (Log2 scale) against influenza HA antigens. Panel A compares titers to egg-propagated versus cell-propagated HA for A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata at day 0 and 1 month after various vaccine regimens. Panel B shows geometric mean ratios of egg versus cell HA ELISA titers at 1 month. Panel C shows stalk-domain ELISA titers for H3 and H1 stalk at day 0 and 1 month by regimen. Panel D shows fold-rise in stalk ELISA titers (1m/day0) for H3 and H1 stalk across regimens including cell-cell (ccIIV4-ccIIV4), cell-recombinant (ccIIV4-RIV4), recombinant-cell (RIV4-ccIIV4), recombinant-recombinant (RIV4-RIV4), egg-cell (IIV4-ccIIV4), egg-recombinant (IIV4-RIV4), and egg-egg (IIV4-IIV4). Evidence: Panels C and D present stalk-specific ELISA titers and fold-rise for recombinant vaccine regimens (RIV4) relative to egg-derived regimens (IIV4), but no statistical comparisons indicating significantly higher stalk responses for RIV4 versus IIV4 are shown. The figure does not support the claim because although stalk-binding antibody levels are plotted for recombinant (RIV4) and egg-derived (IIV4) regimens, there are no annotated p values or statistical comparisons demonstrating significantly higher broadly cross-reactive antibody responses with RIV4 compared to egg-derived vaccines; thus it doesn't support the claim. Note: The resolution is limited and some p values may be small or unlabeled; however, no clear statistical evidence for RIV4 vs IIV4 stalk responses is visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Multi-panel figure showing ELISA titers (Log2 scale) against influenza HA antigens. Panel A compares titers to egg-propagated versus cell-propagated HA for A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata at day 0 and 1 month after various vaccine regimens. Panel B shows geometric mean ratios of egg versus cell HA ELISA titers at 1 month. Panel C shows stalk-domain ELISA titers for H3 and H1 stalk at day 0 and 1 month by regimen. Panel D shows fold-rise in stalk ELISA titers (1m/day0) for H3 and H1 stalk across regimens including cell-cell (ccIIV4-ccIIV4), cell-recombinant (ccIIV4-RIV4), recombinant-cell (RIV4-ccIIV4), recombinant-recombinant (RIV4-RIV4), egg-cell (IIV4-ccIIV4), egg-recombinant (IIV4-RIV4), and egg-egg (IIV4-IIV4).",
+    "evidence_found": "Panels C and D present stalk-specific ELISA titers and fold-rise for recombinant vaccine regimens (RIV4) relative to egg-derived regimens (IIV4), but no statistical comparisons indicating significantly higher stalk responses for RIV4 versus IIV4 are shown.",
+    "reasoning": "The figure does not support the claim because although stalk-binding antibody levels are plotted for recombinant (RIV4) and egg-derived (IIV4) regimens, there are no annotated p values or statistical comparisons demonstrating significantly higher broadly cross-reactive antibody responses with RIV4 compared to egg-derived vaccines; thus it doesn't support the claim.",
+    "confidence_notes": "The resolution is limited and some p values may be small or unlabeled; however, no clear statistical evidence for RIV4 vs IIV4 stalk responses is visible."
+  }
+}

@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "A tabular summary of solicited local and systemic adverse event rates (Any, Moderate, Severe) in two groups: Flublok (N=972) and IIV3 (N=967); items listed include pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever with percentage rates for each severity category. Evidence: The comparator in the table is IIV3 (trivalent vaccine), not Fluarix quadrivalent standard-dose vaccine. The table compares Flublok to a trivalent inactivated influenza vaccine (IIV3), not to Fluarix quadrivalent; therefore it does not support the claim that Flublok was evaluated against Fluarix quadrivalent standard-dose vaccine. Note: Table appears complete for reactogenicity data but may not show all study comparators; based solely on visible content.",
+  "explanation": "A tabular summary of solicited local and systemic adverse event rates (%) comparing Flublok (N=972) with IIV3 (N=967), listing events such as injection site pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever, with columns for any, moderate, and severe events. The table presents safety data comparing Flublok to a trivalent influenza vaccine (IIV3), not a quadrivalent Fluarix comparator; it therefore does not support the claim that Flublok was evaluated against Fluarix quadrivalent in the pivotal trial.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A tabular summary of solicited local and systemic adverse event rates (Any, Moderate, Severe) in two groups: Flublok (N=972) and IIV3 (N=967); items listed include pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever with percentage rates for each severity category.",
-    "evidence_found": "The comparator in the table is IIV3 (trivalent vaccine), not Fluarix quadrivalent standard-dose vaccine.",
-    "reasoning": "The table compares Flublok to a trivalent inactivated influenza vaccine (IIV3), not to Fluarix quadrivalent; therefore it does not support the claim that Flublok was evaluated against Fluarix quadrivalent standard-dose vaccine.",
-    "confidence_notes": "Table appears complete for reactogenicity data but may not show all study comparators; based solely on visible content."
+    "image_description": "A tabular summary of solicited local and systemic adverse event rates (%) comparing Flublok (N=972) with IIV3 (N=967), listing events such as injection site pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever, with columns for any, moderate, and severe events.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety data comparing Flublok to a trivalent influenza vaccine (IIV3), not a quadrivalent Fluarix comparator; it therefore does not support the claim that Flublok was evaluated against Fluarix quadrivalent in the pivotal trial.",
+    "confidence_notes": null
   }
 }

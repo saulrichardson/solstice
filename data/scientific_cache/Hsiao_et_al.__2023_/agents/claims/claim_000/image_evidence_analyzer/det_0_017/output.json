@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Title page of an original article showing the title 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age' and a list of authors; no data, figures, or text on antigenic matching are visible. does not support the claim because the image shows only the article title and authors without any information on Flublok antigenic match or WHO/FDA strain selection Note: Only the title and author information are visible; no substantive content or results are shown",
+  "explanation": "Title page of an original article titled 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age' with a list of authors. does not support the claim because the image only shows the article title and authors, with no data or statements about antigenic match with WHO- or FDA-selected strains. Note: Image only includes title and author information; no data or text related to antigen matching is visible.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Title page of an original article showing the title 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age' and a list of authors; no data, figures, or text on antigenic matching are visible.",
+    "image_description": "Title page of an original article titled 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age' with a list of authors.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image shows only the article title and authors without any information on Flublok antigenic match or WHO/FDA strain selection",
-    "confidence_notes": "Only the title and author information are visible; no substantive content or results are shown"
+    "reasoning": "does not support the claim because the image only shows the article title and authors, with no data or statements about antigenic match with WHO- or FDA-selected strains.",
+    "confidence_notes": "Image only includes title and author information; no data or text related to antigen matching is visible."
   }
 }

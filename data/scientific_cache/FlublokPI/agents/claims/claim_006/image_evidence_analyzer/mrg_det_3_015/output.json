@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_mrg_det_3_015.png",
+  "image_path": "FlublokPI/extracted/figures/table_p4_mrg_det_3_015.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "mrg_det_3_015",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table listing the vaccine presentation (single-dose prefilled syringe), its Carton NDC number, component NDC numbers, and a section on storage and handling instructions. The table provides packaging and storage details but makes no mention of how Flublok is produced, including any reference to recombinant HA, insect cells, or a baculovirus expression vector system; it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing the vaccine presentation (single-dose prefilled syringe), its Carton NDC number, component NDC numbers, and a section on storage and handling instructions.",
+    "evidence_found": null,
+    "reasoning": "The table provides packaging and storage details but makes no mention of how Flublok is produced, including any reference to recombinant HA, insect cells, or a baculovirus expression vector system; it does not support the claim.",
+    "confidence_notes": null
+  }
+}

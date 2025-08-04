@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_007.png",
+  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_007.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_007",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Table comparing clinical efficacy outcomes between Flublok Quadrivalent (recombinant HA, N=4303) and an egg-derived comparator (N=4301), showing number of cases, attack rates (%), relative risk (RR), and relative vaccine efficacy (rVE) for rtPCR-positive influenza A, B and culture-confirmed ILI. The table presents clinical attack rates and relative vaccine efficacy but does not report antibody levels, cross-reactivity, or responses to conserved HA regions, so it does not support the claim. Note: No immunogenicity or antibody data are shown; conclusions about broadly cross-reactive antibodies cannot be drawn from these efficacy endpoints.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table comparing clinical efficacy outcomes between Flublok Quadrivalent (recombinant HA, N=4303) and an egg-derived comparator (N=4301), showing number of cases, attack rates (%), relative risk (RR), and relative vaccine efficacy (rVE) for rtPCR-positive influenza A, B and culture-confirmed ILI.",
+    "evidence_found": null,
+    "reasoning": "The table presents clinical attack rates and relative vaccine efficacy but does not report antibody levels, cross-reactivity, or responses to conserved HA regions, so it does not support the claim.",
+    "confidence_notes": "No immunogenicity or antibody data are shown; conclusions about broadly cross-reactive antibodies cannot be drawn from these efficacy endpoints."
+  }
+}

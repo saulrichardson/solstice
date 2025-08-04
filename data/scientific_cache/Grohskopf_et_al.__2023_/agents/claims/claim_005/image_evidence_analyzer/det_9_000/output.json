@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "A flowchart showing pediatric influenza vaccination dosing recommendations: a decision box asking if the child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022, leading to either 1 dose of 2022\u201323 influenza vaccine if yes, or 2 doses (\u22654 weeks apart) of 2022\u201323 influenza vaccine if no or unknown. The figure is a dosing guideline flowchart and does not provide any information about a clinical trial or comparisons between Flublok (quadrivalent) and Fluarix (quadrivalent). Therefore, it does not support the claim.",
+  "explanation": "Flowchart decision tree for pediatric influenza vaccination: asks if a child received two or more doses of trivalent or quadrivalent influenza vaccine before July 1, 2022; if yes, recommends one dose of 2022\u201323 influenza vaccine; if no or unknown, recommends two doses of 2022\u201323 influenza vaccine administered four weeks apart. does not support the claim: the figure presents a dosing algorithm for children's influenza vaccination and makes no reference to Flublok, Fluarix, or any pivotal trial comparison.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A flowchart showing pediatric influenza vaccination dosing recommendations: a decision box asking if the child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022, leading to either 1 dose of 2022\u201323 influenza vaccine if yes, or 2 doses (\u22654 weeks apart) of 2022\u201323 influenza vaccine if no or unknown.",
+    "image_description": "Flowchart decision tree for pediatric influenza vaccination: asks if a child received two or more doses of trivalent or quadrivalent influenza vaccine before July 1, 2022; if yes, recommends one dose of 2022\u201323 influenza vaccine; if no or unknown, recommends two doses of 2022\u201323 influenza vaccine administered four weeks apart.",
     "evidence_found": null,
-    "reasoning": "The figure is a dosing guideline flowchart and does not provide any information about a clinical trial or comparisons between Flublok (quadrivalent) and Fluarix (quadrivalent). Therefore, it does not support the claim.",
+    "reasoning": "does not support the claim: the figure presents a dosing algorithm for children's influenza vaccination and makes no reference to Flublok, Fluarix, or any pivotal trial comparison.",
     "confidence_notes": null
   }
 }

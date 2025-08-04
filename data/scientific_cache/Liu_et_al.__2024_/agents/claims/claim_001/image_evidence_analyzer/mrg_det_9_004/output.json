@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_mrg_det_9_004.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p10_mrg_det_9_004.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "mrg_det_9_004",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Multi-panel figure showing ELISA antibody titers (Log2 scale) to egg-derived and cell-derived HA antigens at Day 0 and 1 month post-vaccination for different vaccine combinations, geometric mean ratios of egg/cell HA ELISA titers, and stalk-specific ELISA titers and fold-rises for H3 and H1 stalks across the same vaccine groups. The figure presents comparative immunogenicity (ELISA titers and fold-rises) among vaccine groups but does not report HA antigen content or indicate a 3\u00d7 HA dose in Flublok; therefore, it does not support the claim. Note: Image panels are small and some labeling is condensed, but antigen dose information is clearly not shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Multi-panel figure showing ELISA antibody titers (Log2 scale) to egg-derived and cell-derived HA antigens at Day 0 and 1 month post-vaccination for different vaccine combinations, geometric mean ratios of egg/cell HA ELISA titers, and stalk-specific ELISA titers and fold-rises for H3 and H1 stalks across the same vaccine groups.",
+    "evidence_found": null,
+    "reasoning": "The figure presents comparative immunogenicity (ELISA titers and fold-rises) among vaccine groups but does not report HA antigen content or indicate a 3\u00d7 HA dose in Flublok; therefore, it does not support the claim.",
+    "confidence_notes": "Image panels are small and some labeling is condensed, but antigen dose information is clearly not shown."
+  }
+}

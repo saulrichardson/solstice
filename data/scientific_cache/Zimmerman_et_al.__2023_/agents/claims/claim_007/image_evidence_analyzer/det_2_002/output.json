@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_002.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/figure_p3_det_2_002.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_002",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A flowchart detailing the study cohort selection for adults \u226518 years (N=18,467), exclusions (n=3,347), resulting in an analyzable cohort (N=14,590) split into controls (N=12,837) and influenza cases (N=1,803), each further subdivided by vaccine group: recombinant influenza vaccine (RIV4), standard-dose inactivated vaccine (SD-IIV4), or unvaccinated, with participant counts at each node. The figure is solely a participant flow diagram showing cohort sizes by vaccine type and does not present any data on antibody responses or levels of broadly cross-reactive antibodies. It does not support the claim. Note: The image is clear but contains no immunogenicity or antibody measurement data; confidence in this interpretation is high.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart detailing the study cohort selection for adults \u226518 years (N=18,467), exclusions (n=3,347), resulting in an analyzable cohort (N=14,590) split into controls (N=12,837) and influenza cases (N=1,803), each further subdivided by vaccine group: recombinant influenza vaccine (RIV4), standard-dose inactivated vaccine (SD-IIV4), or unvaccinated, with participant counts at each node.",
+    "evidence_found": null,
+    "reasoning": "The figure is solely a participant flow diagram showing cohort sizes by vaccine type and does not present any data on antibody responses or levels of broadly cross-reactive antibodies. It does not support the claim.",
+    "confidence_notes": "The image is clear but contains no immunogenicity or antibody measurement data; confidence in this interpretation is high."
+  }
+}

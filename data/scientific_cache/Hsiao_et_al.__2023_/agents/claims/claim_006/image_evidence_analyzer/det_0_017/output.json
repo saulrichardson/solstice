@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_017.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p1_det_0_017.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_017",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Header of an original article titled 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age' with author names, and the beginning of the abstract section. The image only shows the article title and author list without any details on vaccine production methods; it does not support the claim. Note: The image is limited to the title page and contains no methodological or production platform information.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Header of an original article titled 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age' with author names, and the beginning of the abstract section.",
+    "evidence_found": null,
+    "reasoning": "The image only shows the article title and author list without any details on vaccine production methods; it does not support the claim.",
+    "confidence_notes": "The image is limited to the title page and contains no methodological or production platform information."
+  }
+}

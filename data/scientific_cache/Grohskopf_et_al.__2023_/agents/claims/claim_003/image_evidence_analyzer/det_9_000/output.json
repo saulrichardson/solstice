@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A flowchart outlining influenza vaccination dose recommendations for children aged 6 months\u20138 years in the 2022\u201323 season based on prior receipt of \u22652 doses of trivalent or quadrivalent vaccine before July 1, 2022, directing either one or two doses of 2022\u201323 vaccine. The figure only presents a dosing algorithm based on vaccination history and does not provide any data or discussion on recombinant vaccine technology, immune response breadth, cross-protection, or mismatch seasons, so it does not support the claim.",
+  "explanation": "A flowchart outlining pediatric influenza vaccination dosing: if a child received two or more doses of trivalent or quadrivalent influenza vaccine before July 1, 2022, then give one dose of 2022\u201323 influenza vaccine; if no or unknown prior doses, give two doses of 2022\u201323 influenza vaccine four weeks apart. The flowchart only provides dose scheduling based on prior vaccine history and does not present any data or statements about recombinant vaccine technology, immune response breadth, or cross-protection, so it does not support the claim. Note: The image is clear and fully legible; there is no mention of recombinant technology or immunogenicity data.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A flowchart outlining influenza vaccination dose recommendations for children aged 6 months\u20138 years in the 2022\u201323 season based on prior receipt of \u22652 doses of trivalent or quadrivalent vaccine before July 1, 2022, directing either one or two doses of 2022\u201323 vaccine.",
+    "image_description": "A flowchart outlining pediatric influenza vaccination dosing: if a child received two or more doses of trivalent or quadrivalent influenza vaccine before July 1, 2022, then give one dose of 2022\u201323 influenza vaccine; if no or unknown prior doses, give two doses of 2022\u201323 influenza vaccine four weeks apart.",
     "evidence_found": null,
-    "reasoning": "The figure only presents a dosing algorithm based on vaccination history and does not provide any data or discussion on recombinant vaccine technology, immune response breadth, cross-protection, or mismatch seasons, so it does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "The flowchart only provides dose scheduling based on prior vaccine history and does not present any data or statements about recombinant vaccine technology, immune response breadth, or cross-protection, so it does not support the claim.",
+    "confidence_notes": "The image is clear and fully legible; there is no mention of recombinant technology or immunogenicity data."
   }
 }

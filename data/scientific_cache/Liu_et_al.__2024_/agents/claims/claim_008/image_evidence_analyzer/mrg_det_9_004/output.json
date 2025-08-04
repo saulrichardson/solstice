@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_mrg_det_9_004.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p10_mrg_det_9_004.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "mrg_det_9_004",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "Multi\u2010panel figure presenting ELISA antibody titers (log2 scale) against egg\u2010derived HA and cell\u2010derived HA for influenza A (H3N2 and H1N1pdm09) and B (VIC and YAM) strains at Day 0 and 1 month post\u2010vaccination, plus ratios and HA stalk responses across different vaccine groups. The figure displays immunogenicity data (ELISA titers) and does not include any information on vaccine HA protein amounts per strain, so it does not support the claim about 45 mcg versus 15 mcg HA content. Note: Figure panels focus on antibody responses rather than antigen composition; no HA dosage data is visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Multi\u2010panel figure presenting ELISA antibody titers (log2 scale) against egg\u2010derived HA and cell\u2010derived HA for influenza A (H3N2 and H1N1pdm09) and B (VIC and YAM) strains at Day 0 and 1 month post\u2010vaccination, plus ratios and HA stalk responses across different vaccine groups.",
+    "evidence_found": null,
+    "reasoning": "The figure displays immunogenicity data (ELISA titers) and does not include any information on vaccine HA protein amounts per strain, so it does not support the claim about 45 mcg versus 15 mcg HA content.",
+    "confidence_notes": "Figure panels focus on antibody responses rather than antigen composition; no HA dosage data is visible."
+  }
+}

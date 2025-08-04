@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "A partial table listing vaccine presentation (single-dose prefilled syringe), National Drug Code (NDC) numbers for carton and components, followed by storage and handling instructions (refrigeration, do not freeze, protect from light, expiration guidance). The image only provides packaging (NDC) details and storage/handling instructions for a single-dose prefilled syringe; it does not present immunogenicity data or any comparison of antibody responses, and therefore does not support the claim. Note: The image is clear and legible; however, it contains no clinical or comparative immunogenicity information.",
+  "explanation": "A table listing vaccine presentation (Single-Dose Prefilled Syringe), its carton NDC number (49281-724-10), components (ten 0.5 mL single-dose prefilled syringes [49281-724-88]) followed by storage and handling instructions (refrigeration temperature, do not freeze, protect from light, discard after expiration). The table only provides packaging (NDC numbers) and storage/handling information and contains no data on immunogenicity or antibody responses of higher-dose recombinant versus egg-based standard-dose vaccines, so it does not support the claim Note: Limited to packaging/handling details; no clinical or immunogenicity data present",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A partial table listing vaccine presentation (single-dose prefilled syringe), National Drug Code (NDC) numbers for carton and components, followed by storage and handling instructions (refrigeration, do not freeze, protect from light, expiration guidance).",
+    "image_description": "A table listing vaccine presentation (Single-Dose Prefilled Syringe), its carton NDC number (49281-724-10), components (ten 0.5 mL single-dose prefilled syringes [49281-724-88]) followed by storage and handling instructions (refrigeration temperature, do not freeze, protect from light, discard after expiration).",
     "evidence_found": null,
-    "reasoning": "The image only provides packaging (NDC) details and storage/handling instructions for a single-dose prefilled syringe; it does not present immunogenicity data or any comparison of antibody responses, and therefore does not support the claim.",
-    "confidence_notes": "The image is clear and legible; however, it contains no clinical or comparative immunogenicity information."
+    "reasoning": "The table only provides packaging (NDC numbers) and storage/handling information and contains no data on immunogenicity or antibody responses of higher-dose recombinant versus egg-based standard-dose vaccines, so it does not support the claim",
+    "confidence_notes": "Limited to packaging/handling details; no clinical or immunogenicity data present"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_014.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p5_det_4_014.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_014",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table comparing the number and percentage of influenza-positive cases (CDC-defined ILI and influenza-positive illness) among participants receiving FluBlok versus placebo, along with calculated vaccine efficacy and 95% confidence intervals for any influenza, influenza A, and influenza B. The table provides data on clinical efficacy outcomes and does not present any information on the hemagglutinin (HA) content per strain in FluBlok or standard-dose influenza vaccines, so it does not support the claim. Note: Analysis limited to visible content; no dosage or composition data are shown in the image.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing the number and percentage of influenza-positive cases (CDC-defined ILI and influenza-positive illness) among participants receiving FluBlok versus placebo, along with calculated vaccine efficacy and 95% confidence intervals for any influenza, influenza A, and influenza B.",
+    "evidence_found": null,
+    "reasoning": "The table provides data on clinical efficacy outcomes and does not present any information on the hemagglutinin (HA) content per strain in FluBlok or standard-dose influenza vaccines, so it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible content; no dosage or composition data are shown in the image."
+  }
+}

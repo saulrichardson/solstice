@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table listing influenza vaccines for the 2023\u201324 US season, showing trade names, presentations, age indications, micrograms of hemagglutinin (HA) per dose for IIV4 (standard-dose egg-based), ccIIV4 (cell culture\u2013based), and HD-IIV4 (high-dose egg-based) vaccines, routes of administration, and mercury content. The portion shown does not include the recombinant influenza vaccine (RIV4) section. The image does not display Flublok or the HA content for RIV4 vaccines, so it does not support the claim Note: The table is cut off before the RIV4 (recombinant) section, so the relevant data for Flublok are not visible",
+  "explanation": "Table listing 2023\u201324 U.S. influenza vaccines by trade name, presentation, age indication, \u00b5g hemagglutinin per strain per dose, route, and mercury content. Includes standard-dose egg-based IIV4, cell-culture IIV4, and high-dose IIV4 entries (e.g., Fluzone High-Dose Quadrivalent at 60 \u00b5g/0.7 mL). The table does not include any entry for Flublok or show a 45 \u00b5g/0.5 mL HA content per strain; it only shows standard 15 \u00b5g doses and a 60 \u00b5g high-dose vaccine. Therefore, it does not support the claim Note: Visible portion of the table is cut off before any recombinant vaccine (RIV4) entries; immunogenicity data are not presented",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing influenza vaccines for the 2023\u201324 US season, showing trade names, presentations, age indications, micrograms of hemagglutinin (HA) per dose for IIV4 (standard-dose egg-based), ccIIV4 (cell culture\u2013based), and HD-IIV4 (high-dose egg-based) vaccines, routes of administration, and mercury content. The portion shown does not include the recombinant influenza vaccine (RIV4) section.",
+    "image_description": "Table listing 2023\u201324 U.S. influenza vaccines by trade name, presentation, age indication, \u00b5g hemagglutinin per strain per dose, route, and mercury content. Includes standard-dose egg-based IIV4, cell-culture IIV4, and high-dose IIV4 entries (e.g., Fluzone High-Dose Quadrivalent at 60 \u00b5g/0.7 mL).",
     "evidence_found": null,
-    "reasoning": "The image does not display Flublok or the HA content for RIV4 vaccines, so it does not support the claim",
-    "confidence_notes": "The table is cut off before the RIV4 (recombinant) section, so the relevant data for Flublok are not visible"
+    "reasoning": "The table does not include any entry for Flublok or show a 45 \u00b5g/0.5 mL HA content per strain; it only shows standard 15 \u00b5g doses and a 60 \u00b5g high-dose vaccine. Therefore, it does not support the claim",
+    "confidence_notes": "Visible portion of the table is cut off before any recombinant vaccine (RIV4) entries; immunogenicity data are not presented"
   }
 }

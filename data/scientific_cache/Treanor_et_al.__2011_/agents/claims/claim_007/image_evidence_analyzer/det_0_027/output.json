@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_027.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p1_det_0_027.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_027",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A journal article information box showing article history (submission and acceptance dates) and a list of keywords: influenza vaccine, Baculovirus expression, Recombinant protein, Clinical trials. does not support the claim because the image contains only publication metadata and keywords, with no data or results comparing antibody responses of BEVS-derived versus egg-derived HA antigens. Note: The image is limited to article metadata; no immunogenicity or antibody response data are presented.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A journal article information box showing article history (submission and acceptance dates) and a list of keywords: influenza vaccine, Baculovirus expression, Recombinant protein, Clinical trials.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image contains only publication metadata and keywords, with no data or results comparing antibody responses of BEVS-derived versus egg-derived HA antigens.",
+    "confidence_notes": "The image is limited to article metadata; no immunogenicity or antibody response data are presented."
+  }
+}

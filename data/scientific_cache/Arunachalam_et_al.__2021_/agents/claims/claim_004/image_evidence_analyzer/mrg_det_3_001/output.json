@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "Two schematic diagrams of influenza hemagglutinin glycoproteins. Panel a depicts the cleaved HA1/HA2 structure with polysialylated complex glycans and a cleaved fusion peptide (likely recombinant HA). Panel b depicts the uncleaved HA0 structure with paucimannose glycans and an uncleaved fusion peptide (likely egg-derived HA). Both show membrane anchors and disulfide bonds. The figure illustrates structural and glycosylation differences between recombinant and egg-based HA but presents no data on antibody titers, dose comparisons, or immunogenicity. Therefore, it does not support the claim. Note: Analysis limited to structural schematics without accompanying immunogenicity data. Image quality is sufficient to assess content, but no functional or clinical outcomes are shown.",
+  "explanation": "A two\u2010panel schematic showing influenza hemagglutinin (HA) glycoprotein structures: panel a depicts the cleaved HA1/HA2 on the viral surface with complex polysialylated glycans; panel b shows uncleaved HA0 with paucimannose glycans. Both diagrams label the globular head, fibrous stem, fusion peptide status, and disulfide bonds. The figure illustrates HA structural and glycosylation differences between recombinant and egg\u2010derived proteins but contains no data on antibody titers or immune responses. Therefore, it does not support the claim regarding a more robust antibody response. Note: Interpretation limited by absence of accompanying immunogenicity data and reliance solely on structural schematics.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Two schematic diagrams of influenza hemagglutinin glycoproteins. Panel a depicts the cleaved HA1/HA2 structure with polysialylated complex glycans and a cleaved fusion peptide (likely recombinant HA). Panel b depicts the uncleaved HA0 structure with paucimannose glycans and an uncleaved fusion peptide (likely egg-derived HA). Both show membrane anchors and disulfide bonds.",
+    "image_description": "A two\u2010panel schematic showing influenza hemagglutinin (HA) glycoprotein structures: panel a depicts the cleaved HA1/HA2 on the viral surface with complex polysialylated glycans; panel b shows uncleaved HA0 with paucimannose glycans. Both diagrams label the globular head, fibrous stem, fusion peptide status, and disulfide bonds.",
     "evidence_found": null,
-    "reasoning": "The figure illustrates structural and glycosylation differences between recombinant and egg-based HA but presents no data on antibody titers, dose comparisons, or immunogenicity. Therefore, it does not support the claim.",
-    "confidence_notes": "Analysis limited to structural schematics without accompanying immunogenicity data. Image quality is sufficient to assess content, but no functional or clinical outcomes are shown."
+    "reasoning": "The figure illustrates HA structural and glycosylation differences between recombinant and egg\u2010derived proteins but contains no data on antibody titers or immune responses. Therefore, it does not support the claim regarding a more robust antibody response.",
+    "confidence_notes": "Interpretation limited by absence of accompanying immunogenicity data and reliance solely on structural schematics."
   }
 }

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_mrg_det_0_007.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/figure_p1_mrg_det_0_007.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "mrg_det_0_007",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "Header of a CDC MMWR report showing the title, volume, issue number, and date (\"Centers for Disease Control and Prevention MMWR Recommendations and Reports / Vol. 71 / No. 1 Morbidity and Mortality Weekly Report August 26, 2022\"). The image only shows the report header and contains no information about antigen content of Flublok or standard-dose influenza vaccines, so it does not support the claim. Note: Limited content visible; only header information is present, no data on HA micrograms per strain.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Header of a CDC MMWR report showing the title, volume, issue number, and date (\"Centers for Disease Control and Prevention MMWR Recommendations and Reports / Vol. 71 / No. 1 Morbidity and Mortality Weekly Report August 26, 2022\").",
+    "evidence_found": null,
+    "reasoning": "The image only shows the report header and contains no information about antigen content of Flublok or standard-dose influenza vaccines, so it does not support the claim.",
+    "confidence_notes": "Limited content visible; only header information is present, no data on HA micrograms per strain."
+  }
+}

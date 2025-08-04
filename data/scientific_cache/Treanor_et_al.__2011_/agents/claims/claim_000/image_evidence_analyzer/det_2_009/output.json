@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_009.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p3_det_2_009.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_009",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "A table showing solicited systemic adverse events (e.g., fever, fatigue, shivering, joint pain, muscle pain, headache, nausea, pain, bruising) classified by severity (mild, moderate, severe) for subjects receiving Flublok (N=2344) versus placebo (N=2304). The table presents safety data on adverse events and does not include any information about antigenic matching or WHO/FDA strain selection, so it does not support the claim. Note: The image is legible and clearly limited to safety endpoints; no antigenic match data are present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing solicited systemic adverse events (e.g., fever, fatigue, shivering, joint pain, muscle pain, headache, nausea, pain, bruising) classified by severity (mild, moderate, severe) for subjects receiving Flublok (N=2344) versus placebo (N=2304).",
+    "evidence_found": null,
+    "reasoning": "The table presents safety data on adverse events and does not include any information about antigenic matching or WHO/FDA strain selection, so it does not support the claim.",
+    "confidence_notes": "The image is legible and clearly limited to safety endpoints; no antigenic match data are present."
+  }
+}

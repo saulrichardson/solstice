@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table listing Flublok presentation as a Single-Dose Prefilled Syringe with the carton NDC number and component NDC numbers, followed by Section 16.2 Storage and Handling instructions (refrigeration temperature, do not freeze, protect from light, expiration date) and a heading for Patient Counseling Information. The image only provides packaging, NDC numbers, and storage instructions; it contains no information about antigenic match or WHO/FDA strain selection and therefore does not support the claim. Note: Analysis limited to visible content; no data on antigenic composition or regulatory strain matching is present in the image.",
+  "explanation": "A table listing the presentation (single-dose prefilled syringe), corresponding Carton NDC number, components and NDC number, followed by storage and handling instructions. The image contains only product identification (NDC numbers) and storage/handling guidelines and provides no information about antigenic match or WHO/FDA strain selection, and therefore does not support the claim. Note: Analysis is based solely on the visible table, which does not address strain matching. No relevant data appears in this excerpt.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing Flublok presentation as a Single-Dose Prefilled Syringe with the carton NDC number and component NDC numbers, followed by Section 16.2 Storage and Handling instructions (refrigeration temperature, do not freeze, protect from light, expiration date) and a heading for Patient Counseling Information.",
+    "image_description": "A table listing the presentation (single-dose prefilled syringe), corresponding Carton NDC number, components and NDC number, followed by storage and handling instructions.",
     "evidence_found": null,
-    "reasoning": "The image only provides packaging, NDC numbers, and storage instructions; it contains no information about antigenic match or WHO/FDA strain selection and therefore does not support the claim.",
-    "confidence_notes": "Analysis limited to visible content; no data on antigenic composition or regulatory strain matching is present in the image."
+    "reasoning": "The image contains only product identification (NDC numbers) and storage/handling guidelines and provides no information about antigenic match or WHO/FDA strain selection, and therefore does not support the claim.",
+    "confidence_notes": "Analysis is based solely on the visible table, which does not address strain matching. No relevant data appears in this excerpt."
   }
 }

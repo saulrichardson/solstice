@@ -125,7 +125,8 @@ class StandardPipeline(BasePDFPipeline):
         for page_idx, (page_boxes, image) in enumerate(zip(layouts, images)):
             # Determine reading order
             page_width = image.width
-            reading_order = determine_reading_order_simple(page_boxes, page_width)
+            page_height = image.height
+            reading_order = determine_reading_order_simple(page_boxes, page_width, page_height)
             reading_order_by_page.append(reading_order)
             
             # Convert to Block objects

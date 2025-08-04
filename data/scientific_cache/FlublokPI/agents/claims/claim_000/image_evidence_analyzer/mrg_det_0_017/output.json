@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A prescribing information document page listing dosage, administration, contraindications, warnings, adverse reactions, and a table of contents for sections such as indications, clinical pharmacology, and clinical studies. The image does not support the claim because it contains only prescribing details and a contents list without any information about antigenic matching to WHO- or FDA-selected flu strains, so it does not support the claim.",
+  "explanation": "A two-page spread of Flublok full prescribing information showing a brief overview at the top (indications, dosage, contraindications, warnings) and a detailed table of contents listing sections such as Indications and Usage, Dosage and Administration, Clinical Pharmacology, Clinical Studies, etc. The image only presents the prescribing information overview and table of contents; it does not include any data or statements about antigenic matching with WHO- or FDA-selected flu strains, so it does not support the claim Note: The provided image is a table of contents and overview only; relevant details about strain matching, if present, would likely appear in other sections not shown",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A prescribing information document page listing dosage, administration, contraindications, warnings, adverse reactions, and a table of contents for sections such as indications, clinical pharmacology, and clinical studies.",
+    "image_description": "A two-page spread of Flublok full prescribing information showing a brief overview at the top (indications, dosage, contraindications, warnings) and a detailed table of contents listing sections such as Indications and Usage, Dosage and Administration, Clinical Pharmacology, Clinical Studies, etc.",
     "evidence_found": null,
-    "reasoning": "The image does not support the claim because it contains only prescribing details and a contents list without any information about antigenic matching to WHO- or FDA-selected flu strains, so it does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "The image only presents the prescribing information overview and table of contents; it does not include any data or statements about antigenic matching with WHO- or FDA-selected flu strains, so it does not support the claim",
+    "confidence_notes": "The provided image is a table of contents and overview only; relevant details about strain matching, if present, would likely appear in other sections not shown"
   }
 }

@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "A table listing four vaccine types (Egg-based IIV4s, ccIIV4, RIV4, and LAIV4) alongside their contraindications and precautions. The table provides safety-related contraindications and precautions for various influenza vaccines (including RIV4, the recombinant quadrivalent vaccine), but contains no information about a pivotal trial or comparison between Flublok (RIV4) and Fluarix; therefore it does not support the claim. Note: The image is clear and legible; however, it focuses solely on safety contraindications and precautions and does not address clinical trial design or comparator vaccines.",
+  "explanation": "A table listing vaccine types (Egg-based IIV4s, ccIIV4, RIV4, LAIV4) alongside their contraindications and precautions. The table only provides safety information (contraindications and precautions) for various influenza vaccines including RIV4 (Flublok quadrivalent). It does not mention Fluarix or any pivotal trial comparisons, so it does not support the claim. Note: The image is clear and legible; no trial or comparator vaccine data are present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing four vaccine types (Egg-based IIV4s, ccIIV4, RIV4, and LAIV4) alongside their contraindications and precautions.",
+    "image_description": "A table listing vaccine types (Egg-based IIV4s, ccIIV4, RIV4, LAIV4) alongside their contraindications and precautions.",
     "evidence_found": null,
-    "reasoning": "The table provides safety-related contraindications and precautions for various influenza vaccines (including RIV4, the recombinant quadrivalent vaccine), but contains no information about a pivotal trial or comparison between Flublok (RIV4) and Fluarix; therefore it does not support the claim.",
-    "confidence_notes": "The image is clear and legible; however, it focuses solely on safety contraindications and precautions and does not address clinical trial design or comparator vaccines."
+    "reasoning": "The table only provides safety information (contraindications and precautions) for various influenza vaccines including RIV4 (Flublok quadrivalent). It does not mention Fluarix or any pivotal trial comparisons, so it does not support the claim.",
+    "confidence_notes": "The image is clear and legible; no trial or comparator vaccine data are present."
   }
 }

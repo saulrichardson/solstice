@@ -1,0 +1,34 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": {
+    "pdf_name": "Liu_et_al.__2024_",
+    "source_pdf": "data/clinical_files/Liu et al. (2024).pdf",
+    "total_pages": 13,
+    "total_blocks": 146,
+    "total_characters": 36717
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "acell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4).",
+      "relevance_explanation": "This quote explicitly identifies Flublok as a recombinant influenza vaccine, which is a key aspect of the claim regarding its novel production platform."
+    },
+    {
+      "id": 2,
+      "quote": "The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45.",
+      "relevance_explanation": "This quote directly states that recombinant HA proteins (the antigen in Flublok) were expressed using the baculovirus system, supporting the claim that Flublok uses a baculovirus expression vector system (BEVS) in its production."
+    },
+    {
+      "id": 3,
+      "quote": "These serum samples were tested by ELISA to evaluate the total binding antibodies against 8 recombinant HA proteins (rHA from both egg and cell propagated viruses of each of the 4 vaccine antigens), and 2 rHA stalk proteins (A (H1N1) pdm09 HA stalk, and A (H3N2) HA stalk). rHA from egg- and cell A/Michigan/45/2015 (H1N1) pdm09, rHA head from egg- and cell- A/Singapore/INFIMH-16-0019/2016 (H3N2), B/Colorado/06/2017 (B/Victoria), and B/Phuket/3073/2013 (B/Yamagata) were tested with year 1 sera; rHA from egg- A/Brisbane/02/2018 (H1N1) pdm09 and cell-A/Idaho/7/2018 (H1N1) pdm09, rHA head from egg- and cell- A/Kansas/14/2017 (H3N2), egg- and cell- B/Colorado/06/2017 (B/Victoria), egg- and cell-B/Phuket/3073/2013 (B/Yamagata) were tested with year 2 sera. The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45.",
+      "relevance_explanation": "This quote details that the recombinant HA proteins used in the study (and by extension, in Flublok) were produced using the baculovirus system, directly supporting the claim about the production platform."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

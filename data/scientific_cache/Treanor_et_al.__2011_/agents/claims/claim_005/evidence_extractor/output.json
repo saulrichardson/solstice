@@ -1,0 +1,24 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": {
+    "pdf_name": "Treanor_et_al.__2011_",
+    "source_pdf": "data/clinical_files/Treanor et al. (2011).pdf",
+    "total_pages": 7,
+    "total_blocks": 97,
+    "total_characters": 25468
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 1,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "The study was conducted at 24 centers located across the United States (Appendix) during the 2007-2008 influenza season. Subjects were healthy adults aged 18-49 years inclusive, who did not belong to high priority target groups for influenza vaccination as defined by the Advisory Committee on Immunization Practice [10]. Women of child-bearing potential had a negative urine pregnancy test at the time of randomization. Of the 4648 enrolled subjects, 2344 were randomized to receive Flublok and 2304 were randomized to placebo.",
+      "relevance_explanation": "This quote describes the pivotal trial design for Flublok, but it specifies that the comparator was placebo, not Fluarix (quadrivalent standard-dose vaccine). It does not support the claim that Flublok was evaluated against Fluarix in the pivotal trial."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

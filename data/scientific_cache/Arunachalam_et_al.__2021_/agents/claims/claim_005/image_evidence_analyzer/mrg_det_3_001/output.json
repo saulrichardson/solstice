@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "Schematic molecular diagrams showing the structure of influenza hemagglutinin (HA) proteins, depicting the globular head and fibrous stem domains, HA1 and HA2 (or HA0) subunits, glycosylation sites (polysialylated complex glycans and paucimannose glycans), cleavage/uncleaved fusion peptides, and inter-disulfide bonds across the viral membrane. The figure illustrates the molecular structure and glycosylation of influenza HA proteins and does not provide any information about clinical trials or comparisons between Flublok (quadrivalent) and Fluarix (quadrivalent standard-dose vaccine), so it does not support the claim. Note: The image is clear and complete for molecular structure content, but it contains no clinical trial data or vaccine evaluation details.",
+  "explanation": "Two schematic diagrams (panels a and b) of influenza hemagglutinin glycoprotein structures showing the globular head and fibrous stem domains, glycan compositions (polysialylated complex glycans in the cleaved HA1/HA2 form and paucimannose glycans in the uncleaved HA0 form), fusion peptide cleavage status, inter-disulfide bonds, and membrane topology. The figure depicts structural features and glycosylation patterns of influenza hemagglutinin, with no mention of any clinical trial, vaccine names, or comparisons between Flublok (quadrivalent) and Fluarix (quadrivalent standard-dose). Therefore, it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Schematic molecular diagrams showing the structure of influenza hemagglutinin (HA) proteins, depicting the globular head and fibrous stem domains, HA1 and HA2 (or HA0) subunits, glycosylation sites (polysialylated complex glycans and paucimannose glycans), cleavage/uncleaved fusion peptides, and inter-disulfide bonds across the viral membrane.",
+    "image_description": "Two schematic diagrams (panels a and b) of influenza hemagglutinin glycoprotein structures showing the globular head and fibrous stem domains, glycan compositions (polysialylated complex glycans in the cleaved HA1/HA2 form and paucimannose glycans in the uncleaved HA0 form), fusion peptide cleavage status, inter-disulfide bonds, and membrane topology.",
     "evidence_found": null,
-    "reasoning": "The figure illustrates the molecular structure and glycosylation of influenza HA proteins and does not provide any information about clinical trials or comparisons between Flublok (quadrivalent) and Fluarix (quadrivalent standard-dose vaccine), so it does not support the claim.",
-    "confidence_notes": "The image is clear and complete for molecular structure content, but it contains no clinical trial data or vaccine evaluation details."
+    "reasoning": "The figure depicts structural features and glycosylation patterns of influenza hemagglutinin, with no mention of any clinical trial, vaccine names, or comparisons between Flublok (quadrivalent) and Fluarix (quadrivalent standard-dose). Therefore, it does not support the claim.",
+    "confidence_notes": null
   }
 }

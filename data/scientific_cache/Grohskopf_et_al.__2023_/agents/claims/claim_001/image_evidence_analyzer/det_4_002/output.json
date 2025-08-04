@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table listing trade names and manufacturers of influenza vaccines, their presentations, age indications, hemagglutinin antigen content per virus (\u00b5g HA per dose), route of administration, and mercury content. Flublok Quadrivalent (recombinant HA vaccine) is shown with 45 \u00b5g/0.5 mL, while standard-dose egg-based quadrivalents are listed with 15 \u00b5g/0.5 mL per virus. Evidence: Flublok Quadrivalent is specified as containing 45 \u00b5g HA per strain versus 15 \u00b5g HA per strain in standard-dose egg-based quadrivalent vaccines. The table demonstrates that Flublok contains 3\u00d7 the hemagglutinin antigen content of standard-dose vaccines but does not provide any information on immunogenicity or link increased antigen content to greater immunogenicity, so it does not support the claim in full. Note: Table only shows antigen content; no immunogenicity data are included.",
+  "explanation": "A table of licensed influenza vaccines listing trade names, presentations, age indications, hemagglutinin (HA) antigen content per virus per dose (\u00b5g HA/0.5 mL), administration route, and mercury content if present. Evidence: Flublok Quadrivalent (recombinant HA vaccine) is listed with 45 \u00b5g/0.5 mL HA per virus, whereas standard\u2010dose IIV4 vaccines are listed with 15 \u00b5g/0.5 mL per virus. does not support the claim: the table confirms Flublok contains three times the HA antigen content of standard\u2010dose flu vaccines but provides no information on immunogenicity or its comparison to standard\u2010dose vaccines.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing trade names and manufacturers of influenza vaccines, their presentations, age indications, hemagglutinin antigen content per virus (\u00b5g HA per dose), route of administration, and mercury content. Flublok Quadrivalent (recombinant HA vaccine) is shown with 45 \u00b5g/0.5 mL, while standard-dose egg-based quadrivalents are listed with 15 \u00b5g/0.5 mL per virus.",
-    "evidence_found": "Flublok Quadrivalent is specified as containing 45 \u00b5g HA per strain versus 15 \u00b5g HA per strain in standard-dose egg-based quadrivalent vaccines.",
-    "reasoning": "The table demonstrates that Flublok contains 3\u00d7 the hemagglutinin antigen content of standard-dose vaccines but does not provide any information on immunogenicity or link increased antigen content to greater immunogenicity, so it does not support the claim in full.",
-    "confidence_notes": "Table only shows antigen content; no immunogenicity data are included."
+    "image_description": "A table of licensed influenza vaccines listing trade names, presentations, age indications, hemagglutinin (HA) antigen content per virus per dose (\u00b5g HA/0.5 mL), administration route, and mercury content if present.",
+    "evidence_found": "Flublok Quadrivalent (recombinant HA vaccine) is listed with 45 \u00b5g/0.5 mL HA per virus, whereas standard\u2010dose IIV4 vaccines are listed with 15 \u00b5g/0.5 mL per virus.",
+    "reasoning": "does not support the claim: the table confirms Flublok contains three times the HA antigen content of standard\u2010dose flu vaccines but provides no information on immunogenicity or its comparison to standard\u2010dose vaccines.",
+    "confidence_notes": null
   }
 }

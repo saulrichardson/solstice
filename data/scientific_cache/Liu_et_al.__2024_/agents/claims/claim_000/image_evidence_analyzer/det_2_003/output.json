@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table listing influenza vaccine candidate viruses (A(H1N1)pdm09, A(H3N2), B/Victoria lineage, B/Yamagata lineage) and showing amino acid differences in the HA head domain at specified residue positions for cell- and egg-derived vaccine viruses and CVVs over two seasons. The table does not mention Flublok or recombinant vaccines and only details amino acid differences of cell- and egg-propagated candidate vaccine viruses; it does not support the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected strains.",
+  "explanation": "A table summarizing amino acid differences on the hemagglutinin (HA) head domain at specific residue positions for various WHO- and FDA-selected influenza A (H1N1, H3N2) and B (Victoria, Yamagata) strains, comparing cell-based, egg-based, and candidate vaccine virus (CVV) seed variants over two seasons. The table details amino acid differences among vaccine seed strains propagated in cells, eggs, or as CVVs, but does not mention Flublok or demonstrate that Flublok antigens exactly match WHO- and FDA-selected strains, and therefore does not support the claim. Note: Analysis based solely on visible table content; no reference to Flublok is present in the image.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing influenza vaccine candidate viruses (A(H1N1)pdm09, A(H3N2), B/Victoria lineage, B/Yamagata lineage) and showing amino acid differences in the HA head domain at specified residue positions for cell- and egg-derived vaccine viruses and CVVs over two seasons.",
+    "image_description": "A table summarizing amino acid differences on the hemagglutinin (HA) head domain at specific residue positions for various WHO- and FDA-selected influenza A (H1N1, H3N2) and B (Victoria, Yamagata) strains, comparing cell-based, egg-based, and candidate vaccine virus (CVV) seed variants over two seasons.",
     "evidence_found": null,
-    "reasoning": "The table does not mention Flublok or recombinant vaccines and only details amino acid differences of cell- and egg-propagated candidate vaccine viruses; it does not support the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected strains.",
-    "confidence_notes": null
+    "reasoning": "The table details amino acid differences among vaccine seed strains propagated in cells, eggs, or as CVVs, but does not mention Flublok or demonstrate that Flublok antigens exactly match WHO- and FDA-selected strains, and therefore does not support the claim.",
+    "confidence_notes": "Analysis based solely on visible table content; no reference to Flublok is present in the image."
   }
 }

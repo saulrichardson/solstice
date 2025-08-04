@@ -1,0 +1,40 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "Liu_et_al.__2024_",
+  "verification_stats": {
+    "total_extracted": 3,
+    "verified": 2,
+    "rejected": 1,
+    "verification_rate": 0.6666666666666666
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "acell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the i d 45 HA/d / ...d",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim. It states that Flublok Quadrivalent (RIV4) contains 3 times the amount of HA per dose compared to standard-dose vaccines, and references '45 HA/d', which aligns with 45 micrograms of HA per strain. Standard-dose influenza vaccines are known to contain 15 micrograms of HA per strain, so 3 times that amount is 45 micrograms, matching the claim. The document does not contradict this and provides the necessary numbers and comparison.",
+      "presence_explanation": "The quote appears on page 2 of the document: 'acell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by SanofiPasteur, RIV4). RIV4 contains 3 times the i d 45 HA/d / ...d'. While the sentence is partially obscured by OCR artifacts, it clearly states that RIV4 (Flublok Quadrivalent) contains 3 times the amount of HA (hemagglutinin) per dose, and references '45 HA/d', which is consistent with 45 micrograms per dose per strain. This matches the factual content of the quote to be verified.",
+      "support_explanation": "The quote directly supports the claim. It states that Flublok Quadrivalent (RIV4) contains 3 times the amount of HA per dose compared to standard-dose vaccines, and references '45 HA/d', which aligns with 45 micrograms of HA per strain. Standard-dose influenza vaccines are known to contain 15 micrograms of HA per strain, so 3 times that amount is 45 micrograms, matching the claim. The document does not contradict this and provides the necessary numbers and comparison.",
+      "original_relevance": "This quote explicitly states that Flublok Quadrivalent (RIV4) contains 3 times the amount of HA (hemagglutinin) per dose compared to standard-dose vaccines, and references the 45 HA/d (interpreted as 45 micrograms HA per dose per strain), directly supporting the claim."
+    },
+    {
+      "id": 2,
+      "quote": "IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody",
+      "supports_claim": true,
+      "explanation": "The quote directly states that IIV4 and ccIIV4 (standard-dose influenza vaccines) contain 15 \u00b5g HA per dose per strain. This supports the claim by providing the specific HA content for standard-dose vaccines, which is the basis for comparison with Flublok (RIV4), which is described elsewhere in the document as containing 45 \u00b5g HA per strain. Thus, the quote substantiates the claim's assertion about the HA content in standard-dose influenza vaccines.",
+      "presence_explanation": "The quote 'IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody' appears on page 9 of the document. The factual content and numbers are preserved, specifically stating that IIV4 and ccIIV4 contain 15 \u00b5g HA per dose per strain.",
+      "support_explanation": "The quote directly states that IIV4 and ccIIV4 (standard-dose influenza vaccines) contain 15 \u00b5g HA per dose per strain. This supports the claim by providing the specific HA content for standard-dose vaccines, which is the basis for comparison with Flublok (RIV4), which is described elsewhere in the document as containing 45 \u00b5g HA per strain. Thus, the quote substantiates the claim's assertion about the HA content in standard-dose influenza vaccines.",
+      "original_relevance": "This quote clearly states that IIV4 and ccIIV4 (standard-dose influenza vaccines) contain 15 micrograms of HA per dose per strain, which directly supports the comparison in the claim."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": "comp_1",
+      "quote": "Twenty percent of participants were selected by random sampling from each vaccine group and age strata (18\u221244 yrs and 45\u221264 yrs) in year 1 (n = 144) and year 2 (n = 140), the MN/HI antibody levels of the subset are representative of the whole study populations in year 1 (Fig. S3) and year 2 (Fig. S4). These serum samples were tested by ELISA to evaluate the total binding antibodies against 8 recombinant HA proteins (rHA from both egg and cell propagated viruses of each of the 4 vaccine antigens), and 2 rHA stalk proteins (A (H1 N1) pdm09 HA stalk, and A (H3 N2) HA stalk). rHA from egg- and cell A/Michigan/45/2015 (H1 N1) pdm09, rHA head from egg- and cell- A/Singapore/INFIMH-16-0019/2016 (H3 N2), B/ Colorado 06 2017 (B/Victoria), and B/Phuket/3073/2013 (B/Yamagata) were tested with year 1 sera; rHA from egg- A/Brisbane/02/2018 (H1 N1) pdm09 and cell-A/Idaho/7/2018 (H1 N1) pdm09, rHA head from egg- and cell- A/Kansas/14/2017 (H3 N2), egg- and cell- B/Colorado/06/2017 (B/ Victoria), egg- and cell-B/Phuket/3073/2013 (B/Yamagata) were tested with year 2 sera. The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45. For ELISA, rHA antigens were coated at 100 ng/well.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote describes the use of recombinant HA proteins for ELISA testing, specifying that the rHA proteins were produced using the baculovirus system, which is the method used for Flublok. This supports the claim by clarifying the recombinant nature of Flublok's HA, which is relevant to its higher HA content per strain compared to standard-dose vaccines."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

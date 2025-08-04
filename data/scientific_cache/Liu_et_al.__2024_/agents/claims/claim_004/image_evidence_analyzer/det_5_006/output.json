@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p6_det_5_006.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p6_det_5_006.png",
+  "image_type": "Figure",
+  "page_number": 6,
+  "block_id": "det_5_006",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": true,
+  "explanation": "Multi-panel figure showing ELISA antibody titers (log2 scale) against egg-grown and cell-grown HA of seasonal influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) at Day 0, 1 month, and 6 months post-vaccination (Panel A), geometric mean ratios of egg vs cell HA titers at 1 month (Panel B), HA stalk ELISA titers for H3 and H1 stalks over time (Panel C), and fold-rise of stalk titers at 1 month relative to baseline (Panel D). Four vaccine groups\u2014two standard-dose egg-based (Fluzone IIV4, Fluarix IIV4), one cell-based (ccIIV4), and one recombinant (RIV4)\u2014are compared with individual datapoints, group means, and p-values for pairwise comparisons. Evidence: At 1 month post-vaccination, the recombinant vaccine group (RIV4, orange) shows higher geometric mean ELISA titers against both egg and cell HA antigens and H3/H1 stalk compared with the two standard-dose egg-based groups, with statistically significant p-values (e.g., p=0.014, p=0.013 for egg HA; p<0.0001, p=0.002 for cell HA). supports the claim because the data demonstrate that recipients of the recombinant flu vaccine mounted significantly higher antibody responses at 1 month compared with those who received egg-based standard-dose vaccines, indicating a more robust immune response. Note: Image resolution limits precise reading of every value; dose of recombinant vaccine is assumed higher but not explicitly stated in the figure.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Multi-panel figure showing ELISA antibody titers (log2 scale) against egg-grown and cell-grown HA of seasonal influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) at Day 0, 1 month, and 6 months post-vaccination (Panel A), geometric mean ratios of egg vs cell HA titers at 1 month (Panel B), HA stalk ELISA titers for H3 and H1 stalks over time (Panel C), and fold-rise of stalk titers at 1 month relative to baseline (Panel D). Four vaccine groups\u2014two standard-dose egg-based (Fluzone IIV4, Fluarix IIV4), one cell-based (ccIIV4), and one recombinant (RIV4)\u2014are compared with individual datapoints, group means, and p-values for pairwise comparisons.",
+    "evidence_found": "At 1 month post-vaccination, the recombinant vaccine group (RIV4, orange) shows higher geometric mean ELISA titers against both egg and cell HA antigens and H3/H1 stalk compared with the two standard-dose egg-based groups, with statistically significant p-values (e.g., p=0.014, p=0.013 for egg HA; p<0.0001, p=0.002 for cell HA).",
+    "reasoning": "supports the claim because the data demonstrate that recipients of the recombinant flu vaccine mounted significantly higher antibody responses at 1 month compared with those who received egg-based standard-dose vaccines, indicating a more robust immune response.",
+    "confidence_notes": "Image resolution limits precise reading of every value; dose of recombinant vaccine is assumed higher but not explicitly stated in the figure."
+  }
+}

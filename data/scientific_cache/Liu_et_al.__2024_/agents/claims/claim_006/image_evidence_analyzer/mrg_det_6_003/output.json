@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p7_mrg_det_6_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p7_mrg_det_6_003.png",
+  "image_type": "Figure",
+  "page_number": 7,
+  "block_id": "mrg_det_6_003",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Four-panel figure comparing influenza vaccine preparations across two age groups (18\u201344 years and 45\u201364 years). Panels A and B show geometric mean ratios of egg-derived versus cell-derived vaccine virus titers for four products (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4). Panels C and D show the proportion of subjects with a \u22654-fold reduction in titer to cell-culture vaccine virus pre- and post-vaccination for the same four products. The figure presents comparative virus titer and serologic response data for several influenza vaccines but does not describe or label any production platform details for RIV4 (Flublok) or mention recombinant HA expression in insect cells using a baculovirus vector. Therefore, it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Four-panel figure comparing influenza vaccine preparations across two age groups (18\u201344 years and 45\u201364 years). Panels A and B show geometric mean ratios of egg-derived versus cell-derived vaccine virus titers for four products (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4). Panels C and D show the proportion of subjects with a \u22654-fold reduction in titer to cell-culture vaccine virus pre- and post-vaccination for the same four products.",
+    "evidence_found": null,
+    "reasoning": "The figure presents comparative virus titer and serologic response data for several influenza vaccines but does not describe or label any production platform details for RIV4 (Flublok) or mention recombinant HA expression in insect cells using a baculovirus vector. Therefore, it does not support the claim.",
+    "confidence_notes": null
+  }
+}

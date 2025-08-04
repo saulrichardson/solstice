@@ -3,9 +3,10 @@
 from typing import List, Tuple, Dict
 import numpy as np
 from ..shared.processing.box import Box
+from ..shared.processing.reading_order import _validate_reading_order_inputs
 
 
-def determine_marketing_reading_order(boxes: List[Box], page_width: float = 1600, page_height: float = 3000) -> List[str]:
+def determine_marketing_reading_order(boxes: List[Box], page_width: float, page_height: float) -> List[str]:
     """
     Marketing-specific reading order using feature-aware clustering.
     
@@ -18,19 +19,18 @@ def determine_marketing_reading_order(boxes: List[Box], page_width: float = 1600
     Args:
         boxes: All boxes on the page
         page_width: Width of the page
-        page_height: Height of the page (estimated from boxes if not provided)
+        page_height: Height of the page
         
     Returns:
         List of box IDs in reading order
+        
+    Raises:
+        ValueError: If page dimensions are invalid
     """
-    if not boxes:
-        return []
-    
-    # Estimate page dimensions from boxes if needed
-    if page_height == 3000 and boxes:
-        page_height = max(box.bbox[3] for box in boxes)
-    if page_width == 1600 and boxes:
-        page_width = max(box.bbox[2] for box in boxes)
+    # Validate inputs - fail fast for invalid dimensions
+    early_return = _validate_reading_order_inputs(boxes, page_width, page_height)
+    if early_return is not None:
+        return early_return
     
     # Initialize categories
     title_blocks = []

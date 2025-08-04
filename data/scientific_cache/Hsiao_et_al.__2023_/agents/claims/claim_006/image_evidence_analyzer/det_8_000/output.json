@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p9_det_8_000.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p9_det_8_000.png",
+  "image_type": "Figure",
+  "page_number": 9,
+  "block_id": "det_8_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A forest plot showing relative vaccine effectiveness (with 95% CIs) across various subgroups (cardiovascular disease, respiratory disease, cardiorespiratory disease, obesity, diabetes, any condition) for three endpoints: PCR-confirmed influenza, hospitalization for PCR-confirmed influenza, and hospitalization for community-acquired pneumonia. does not support the claim because the figure presents subgroup effectiveness data and contains no information about Flublok's production platform, recombinant HA expression system, or use of insect cells and baculovirus vectors. Note: Image is clear and focused on clinical effectiveness; no manufacturing or production details are visible.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A forest plot showing relative vaccine effectiveness (with 95% CIs) across various subgroups (cardiovascular disease, respiratory disease, cardiorespiratory disease, obesity, diabetes, any condition) for three endpoints: PCR-confirmed influenza, hospitalization for PCR-confirmed influenza, and hospitalization for community-acquired pneumonia.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the figure presents subgroup effectiveness data and contains no information about Flublok's production platform, recombinant HA expression system, or use of insect cells and baculovirus vectors.",
+    "confidence_notes": "Image is clear and focused on clinical effectiveness; no manufacturing or production details are visible."
+  }
+}

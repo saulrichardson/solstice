@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_009.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p3_det_2_009.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_009",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": false,
+  "explanation": "A table comparing the incidence and severity (mild, moderate, severe) of solicited local and systemic adverse events (eg, fever, fatigue, muscle pain, headache, pain, bruising) in subjects receiving Flublok (a recombinant influenza vaccine) versus placebo in a clinical trial (N=2344 for Flublok, N=2304 for placebo). The table presents safety and reactogenicity data but contains no measures of immune response breadth, cross-protection, or performance in mismatch seasons, and therefore does not support the claim. Note: Analysis limited to visible safety data; no immunogenicity or cross-protection information is provided in the image.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing the incidence and severity (mild, moderate, severe) of solicited local and systemic adverse events (eg, fever, fatigue, muscle pain, headache, pain, bruising) in subjects receiving Flublok (a recombinant influenza vaccine) versus placebo in a clinical trial (N=2344 for Flublok, N=2304 for placebo).",
+    "evidence_found": null,
+    "reasoning": "The table presents safety and reactogenicity data but contains no measures of immune response breadth, cross-protection, or performance in mismatch seasons, and therefore does not support the claim.",
+    "confidence_notes": "Analysis limited to visible safety data; no immunogenicity or cross-protection information is provided in the image."
+  }
+}

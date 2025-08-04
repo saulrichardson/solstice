@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_000.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/figure_p4_det_3_000.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_000",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A flowchart depicting the selection and categorization of a study cohort of adults \u226518 years (N=18,467), exclusions (n=3,264) leading to an analyzable cohort (N=15,203), which is then split into controls (N=13,385) and influenza cases (N=1,868). Each group is further divided by vaccine type: recombinant influenza vaccine (RIV4), standard-dose inactivated influenza vaccine (SD-IIV4), high-dose or adjuvanted IIV4 (HD-IIV4 + Adj-IIV), and unvaccinated. The figure is a study cohort flowchart showing participant counts by vaccine group and does not present any information on hemagglutinin antigen content or immunogenicity. Therefore, it does not support the claim. Note: None",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart depicting the selection and categorization of a study cohort of adults \u226518 years (N=18,467), exclusions (n=3,264) leading to an analyzable cohort (N=15,203), which is then split into controls (N=13,385) and influenza cases (N=1,868). Each group is further divided by vaccine type: recombinant influenza vaccine (RIV4), standard-dose inactivated influenza vaccine (SD-IIV4), high-dose or adjuvanted IIV4 (HD-IIV4 + Adj-IIV), and unvaccinated.",
+    "evidence_found": null,
+    "reasoning": "The figure is a study cohort flowchart showing participant counts by vaccine group and does not present any information on hemagglutinin antigen content or immunogenicity. Therefore, it does not support the claim.",
+    "confidence_notes": "None"
+  }
+}

@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "A table listing 2022\u201323 influenza vaccines (egg-based IIVs/LAIV4, cell culture\u2013based IIV4, and recombinant RIV4) and their contraindications or precautions in persons with previous severe allergic reactions to any egg-based IIV/LAIV, any ccIIV, any RIV, or unknown influenza vaccine. The table addresses vaccine contraindications and precautions for allergic individuals and contains no data on antibody responses or immunogenicity; it does not support the claim regarding higher-dose recombinant versus standard-dose egg-based vaccines. Note: Limited to a hypersensitivity/contraindication table; no immunogenicity or dosage information is presented.",
+  "explanation": "A table listing severe allergic reaction (e.g., anaphylaxis) to prior influenza vaccines by vaccine type (egg-based IIV4s and LAIV4, cell-culture ccIIV4, and recombinant RIV4) for the 2022\u201323 season, indicating contraindications or precautions for each vaccine in egg-allergic individuals. The table only provides allergy guidance (contraindications and precautions) for different influenza vaccine platforms and does not include any data on antibody titers, immunogenicity, or dose comparisons. It does not support the claim. Note: The image is clear and complete for allergy guidance but contains no immunogenicity or dose-response information.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing 2022\u201323 influenza vaccines (egg-based IIVs/LAIV4, cell culture\u2013based IIV4, and recombinant RIV4) and their contraindications or precautions in persons with previous severe allergic reactions to any egg-based IIV/LAIV, any ccIIV, any RIV, or unknown influenza vaccine.",
+    "image_description": "A table listing severe allergic reaction (e.g., anaphylaxis) to prior influenza vaccines by vaccine type (egg-based IIV4s and LAIV4, cell-culture ccIIV4, and recombinant RIV4) for the 2022\u201323 season, indicating contraindications or precautions for each vaccine in egg-allergic individuals.",
     "evidence_found": null,
-    "reasoning": "The table addresses vaccine contraindications and precautions for allergic individuals and contains no data on antibody responses or immunogenicity; it does not support the claim regarding higher-dose recombinant versus standard-dose egg-based vaccines.",
-    "confidence_notes": "Limited to a hypersensitivity/contraindication table; no immunogenicity or dosage information is presented."
+    "reasoning": "The table only provides allergy guidance (contraindications and precautions) for different influenza vaccine platforms and does not include any data on antibody titers, immunogenicity, or dose comparisons. It does not support the claim.",
+    "confidence_notes": "The image is clear and complete for allergy guidance but contains no immunogenicity or dose-response information."
   }
 }

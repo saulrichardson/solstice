@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p6_det_5_006.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p6_det_5_006.png",
+  "image_type": "Table",
+  "page_number": 6,
+  "block_id": "det_5_006",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A three-column table listing influenza vaccine types (egg-based IIV4s, cell culture-based IIV4 [ccIIV4], recombinant HA vaccine [RIV4], and live attenuated influenza vaccine [LAIV4]) alongside their contraindications and precautions. The table only provides contraindications and precautions for different influenza vaccine formulations and contains no data on recombinant HA antigens produced using BEVS, immunogenicity results, or antibody cross-reactivity. Therefore, it does not support the claim. Note: None",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A three-column table listing influenza vaccine types (egg-based IIV4s, cell culture-based IIV4 [ccIIV4], recombinant HA vaccine [RIV4], and live attenuated influenza vaccine [LAIV4]) alongside their contraindications and precautions.",
+    "evidence_found": null,
+    "reasoning": "The table only provides contraindications and precautions for different influenza vaccine formulations and contains no data on recombinant HA antigens produced using BEVS, immunogenicity results, or antibody cross-reactivity. Therefore, it does not support the claim.",
+    "confidence_notes": "None"
+  }
+}

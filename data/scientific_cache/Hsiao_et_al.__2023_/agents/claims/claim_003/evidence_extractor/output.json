@@ -10,29 +10,24 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 4,
+    "total_snippets_found": 3,
     "error": null
   },
   "extracted_evidence": [
     {
       "id": 1,
-      "quote": "Quadri valent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
-      "relevance_explanation": "This quote explains that recombinant vaccines are not affected by antigenic drift during manufacturing, which is a key mechanism by which vaccine mismatch occurs. This supports the claim that recombinant technology may provide broader immune responses and cross-protection in mismatch seasons."
+      "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "relevance_explanation": "This quote explains that recombinant vaccines are not susceptible to antigenic drift during manufacturing, which is a key mechanism by which vaccine mismatch occurs. This supports the claim that recombinant technology may provide broader immune responses and cross-protection in mismatch seasons."
     },
     {
       "id": 2,
       "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.",
-      "relevance_explanation": "This quote highlights that the recombinant vaccine's antigen is genetically identical to the selected strain and is not altered by egg adaptation, which can broaden the immune response and potentially provide cross-protection even when circulating strains differ from the vaccine strain."
+      "relevance_explanation": "This quote highlights that the recombinant vaccine uses a hemagglutinin protein that is genetically identical to the selected strain and is not altered by egg adaptation, which can broaden the immune response and potentially provide cross-protection even when circulating strains differ from the vaccine strain."
     },
     {
       "id": 3,
-      "quote": "The effectiveness of standard dose vaccines - especially against the influenza A H3N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift.",
-      "relevance_explanation": "This statement directly contrasts the susceptibility of standard vaccines to antigenic drift with the stability of recombinant vaccines, supporting the idea that recombinant technology can maintain effectiveness even in mismatch seasons."
-    },
-    {
-      "id": 4,
-      "quote": "Several studies have shown benefit for the recombinant vaccine and other high dose influenza vaccines as compared with standard dose vaccines in adults who are 65 years of age or older, findings that have been attributed to an improved immune response.",
-      "relevance_explanation": "This quote attributes the improved effectiveness of recombinant vaccines to an improved immune response, which is consistent with the claim that recombinant technology leads to a broader immune response."
+      "quote": "The effectiveness of standard dose vaccines - especially against the influenza A H3N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3N2 strain circulated only during the second half of the 2018-2019 season and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines. During our study period, the observed benefit of the recombinant vaccine as compared with a standard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3N2 than to higher effectiveness against influenza A overall in a mismatch season.",
+      "relevance_explanation": "This quote directly addresses the claim by stating that the recombinant vaccine showed higher effectiveness against influenza A overall, even in a season where the circulating strain was poorly matched to both vaccine types, supporting the idea of broader immune response and cross-protection."
     }
   ],
   "model_used": "gpt-4.1"

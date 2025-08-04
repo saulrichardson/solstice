@@ -1,0 +1,73 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": "Liu_et_al.__2024_",
+  "verification_stats": {
+    "total_extracted": 7,
+    "verified": 5,
+    "rejected": 2,
+    "verification_rate": 0.7142857142857143
+  },
+  "verified_evidence": [
+    {
+      "id": 2,
+      "quote": "Enrolled and Randomized n=723 vaccine Allocation Flu zone IIV4 n=122 18-44 years: n=57 45-64 years: n=65 Completed day 0 (n=110) 1 month (n=110) and 6 months (n=101) visit Fluarix IIV4 n=120 18-44 years: n=55 45-64 years: n=65 Completed day 0 (n=120) 1 month (n=118) and 6 months (n=107) visit re-enrolled in Year 2 and new enrollees randomized n=684 (139*) ccIIV4 in Year 1 n=214 RIV4 in Year 1 n=152",
+      "supports_claim": true,
+      "explanation": "The quote provides explicit evidence that Flublok (RIV4, quadrivalent recombinant influenza vaccine) and Fluarix (IIV4, quadrivalent standard-dose vaccine) were both used as comparator arms in the pivotal trial, with participant numbers and age stratification shown. This directly supports the claim that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "presence_explanation": "The quote appears on page 2 of the document, with only minor formatting differences. The content is semantically equivalent: 'Enrolled and Randomized n=723 accine Allocation Flu zone IIV4 n=122 18-44 years: n=57 45-64 years: n=65 Completed day 0 (n=110) 1 month (n=110) and 6 months (n=101) visit Fluarix IIV4 n=120 18-44 years: n=55 45-64 years: n=65 Completed day 0 (n=120) 1 month (n=118) and 6 months (n=107) visit e-enrolled in Year 2 and new enroll ees randomized n=684 (139*) ccIIV4 in Year 1 n=214 RIV4 in Year 1 n=152'. The numbers and vaccine groupings match the quote to verify.",
+      "support_explanation": "The quote provides explicit evidence that Flublok (RIV4, quadrivalent recombinant influenza vaccine) and Fluarix (IIV4, quadrivalent standard-dose vaccine) were both used as comparator arms in the pivotal trial, with participant numbers and age stratification shown. This directly supports the claim that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "original_relevance": "This quote provides the actual allocation of participants to the Fluarix IIV4 (quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent), showing that both vaccines were directly compared in the pivotal trial."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Fluarix IIV4 n=120 18-44 years: n=55 45-64 years: n=65 Completed day 0 (n=120) 1 month (n=118) and 6 months (n=107) visit e-enrolled in Year 2 and new enrollees randomized n=684 (139*) ccIIV4 in Year 1 n=214 RIV4 in Year 1 n=152",
+      "supports_claim": true,
+      "explanation": "The quote directly lists Fluarix IIV4 (a quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent) as two of the vaccine groups in the pivotal trial, with specific enrollment numbers. This demonstrates that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine), thus directly supporting the claim.",
+      "presence_explanation": "The quote appears on page 2 of the document, in the section listing the enrollment and randomization of participants: 'Fluarix IIV4 n=120 18-44 years: n=55 45-64 years: n=65 Completed day 0 (n=120) 1 month (n=118) and 6 months (n=107) visit e-enrolled in Year 2 and new enrollees randomized n=684 (139*) ccIIV4 in Year 1 n=214 RIV4 in Year 1 n=152'. The numbers and vaccine group names (Fluarix IIV4, RIV4) match the quote, and the context is the description of the pivotal trial's design and participant allocation.",
+      "support_explanation": "The quote directly lists Fluarix IIV4 (a quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent) as two of the vaccine groups in the pivotal trial, with specific enrollment numbers. This demonstrates that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine), thus directly supporting the claim.",
+      "original_relevance": "This quote lists Fluarix IIV4 and RIV4 (Flublok quadrivalent) as two of the vaccine groups in the trial, showing that both were evaluated in the pivotal study."
+    },
+    {
+      "id": "comp_3",
+      "quote": "Flu zone IIV4 Fluarix IIV4 ccIIV4 RIV4 <0 0001 <0 0001 <0 0001 <0 0001 <0 0001 0.004 Day 0 1 m 6 m 5 10 20 40 80 160 320 640 1280-2560 5120 0 0041 0 0072 Day 0 1 m 6 m 5 10 20 40 80 160 320 640 1280-2560 5120 0.032 0 0009 0 0165 10 20 40 80 160 320 640 1280-2560 5120 10 20 40 80 160 320 640 1280-2560 5120",
+      "supports_claim": true,
+      "explanation": "The quote lists Fluarix IIV4 (a quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent) as separate vaccine groups in the analysis of antibody titers, alongside other vaccines. This directly demonstrates that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine), as both are included as comparator arms in the study's immunogenicity analysis. No inference is required; the document explicitly shows both vaccines were evaluated in the same trial.",
+      "presence_explanation": "The quote appears on page 4 of the document, in the section describing antibody titers for the four vaccine groups: 'Flu zone IIV4 Fluarix IIV4 ccIIV4 RIV4 <0 0001 <0 0001 <0 0001 <0 0001 <0 0001 0.004 Day 0 1 m 6 m 5 10 20 40 80 160 320 640 1280-2560 5120 0 0041 0 0072 Day 0 1 m 6 m 5 10 20 40 80 160 320 640 1280-2560 5120 0.032 0 0009 0 0165 10 20 40 80 160 320 640 1280-2560 5120 10 20 40 80 160 320 640 1280-2560 5120'. This matches the quote to verify, with only minor formatting differences due to OCR artifacts. The factual content, vaccine group names, and numbers are all present and equivalent.",
+      "support_explanation": "The quote lists Fluarix IIV4 (a quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent) as separate vaccine groups in the analysis of antibody titers, alongside other vaccines. This directly demonstrates that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine), as both are included as comparator arms in the study's immunogenicity analysis. No inference is required; the document explicitly shows both vaccines were evaluated in the same trial.",
+      "original_relevance": "This quote lists Fluarix IIV4 and RIV4 (Flublok quadrivalent) as separate vaccine groups in the analysis of antibody titers, supporting that both were evaluated in the trial."
+    },
+    {
+      "id": "comp_4",
+      "quote": "Geometric mean fold rise of antibody titers (1 m/Day 0) from each of the four vaccine groups were calculated for egg- and cell propagated vaccine viruses, and for 18 years (Flu zone IIV4 (n = 52), Fluarix IIV4 (n = 55), ccIIV4 (n = 133), RIV4 (n = 98))",
+      "supports_claim": true,
+      "explanation": "The quote explicitly lists Fluarix IIV4 (a quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent) as two of the four vaccine groups whose antibody responses were directly compared in the pivotal trial. This directly supports the claim that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "presence_explanation": "A semantically equivalent quote appears on page 5: 'mean (GM) fold rise of antibody titers (1 m/Day 0) from each of the four vacc groups were calculated for egg- and cell propagated vaccine viruses, and for 18 years (Flu zone IIV4 (n = 52), Fluarix IIV4 (n = 55), ccIIV4 (n = 133), RIV4 (n = 98))'. The numbers and vaccine group names match the quote to verify, and the context is a direct comparison of these four vaccines.",
+      "support_explanation": "The quote explicitly lists Fluarix IIV4 (a quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent) as two of the four vaccine groups whose antibody responses were directly compared in the pivotal trial. This directly supports the claim that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "original_relevance": "This quote shows that Fluarix IIV4 and RIV4 (Flublok quadrivalent) were two of the four vaccine groups whose antibody responses were directly compared in the trial."
+    },
+    {
+      "id": "comp_5",
+      "quote": "Flu zone IIV4 Fluarix IIV4 ccIIV4 RIV4 n = 122 n = 120 n = 283 n = 198",
+      "supports_claim": true,
+      "explanation": "The quote provides the enrollment numbers for each vaccine group, specifically listing both Fluarix IIV4 (quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent). This directly confirms that both vaccines were evaluated in the pivotal trial, as the claim asserts. The explicit listing of both vaccines and their group sizes in the context of the trial supports the claim without requiring inference.",
+      "presence_explanation": "The quote 'Flu zone IIV4 Fluarix IIV4 ccIIV4 RIV4 n = 122 n = 120 n = 283 n = 198' appears on page 11 of the document, in the section listing demographic characteristics and enrollment numbers for each vaccine group. The numbers and vaccine names match exactly, and the context is the pivotal trial's participant allocation.",
+      "support_explanation": "The quote provides the enrollment numbers for each vaccine group, specifically listing both Fluarix IIV4 (quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent). This directly confirms that both vaccines were evaluated in the pivotal trial, as the claim asserts. The explicit listing of both vaccines and their group sizes in the context of the trial supports the claim without requiring inference.",
+      "original_relevance": "This quote provides the enrollment numbers for each vaccine group, including Fluarix IIV4 and RIV4 (Flublok quadrivalent), confirming both were evaluated in the pivotal trial."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": 1,
+      "quote": "In this randomized trial (Clinical trials gov: NCT03722589), sera pre- and post vaccination with quadrivalent inactivated egg based (IIV4), cell culture based (ccIIV4), and recombinant (RIV4) influenza",
+      "reason": "does not support claim",
+      "original_explanation": "This quote explicitly states that the randomized trial evaluated quadrivalent recombinant influenza vaccine (RIV4, which is Flublok) alongside quadrivalent inactivated egg-based (IIV4) and cell culture-based (ccIIV4) vaccines, confirming that Flublok (quadrivalent) was evaluated in the pivotal trial."
+    },
+    {
+      "id": 3,
+      "quote": "Abbreviations: IIV4: Inactivated influenza vaccine (Fluzone or Fluarix\u00ae Quadrivalent; ccIIV4: Cell culture based IIV ... RIV4: recombinant hemagglutinin influenza vaccine (Flublok\u00ae Quadrivalent.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote clarifies that Fluarix\u00ae Quadrivalent is the standard-dose comparator and Flublok\u00ae Quadrivalent is the recombinant vaccine (RIV4), confirming the identity of the vaccines compared in the trial."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

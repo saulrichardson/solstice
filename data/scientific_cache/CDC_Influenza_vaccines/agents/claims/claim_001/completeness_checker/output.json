@@ -4,39 +4,29 @@
   "document": "CDC_Influenza_vaccines",
   "additional_evidence_check": {
     "checked_for_more": true,
-    "found_additional": true,
-    "additional_count": 1
+    "found_additional": false,
+    "additional_count": 0
   },
   "completeness_stats": {
     "existing_evidence": 3,
-    "new_evidence_found": 1,
-    "total_evidence": 4
+    "new_evidence_found": 0,
+    "total_evidence": 3
   },
   "combined_evidence": [
     {
       "id": 1,
-      "quote": "Flublok Quadrivalent (RIV4) (Sanofi Pasteur) 0.5-mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM",
+      "quote": "Flublok Quadrivalent (RIV4) (recombinant HA vaccine) 0.5-mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM",
       "relevance_explanation": "This quote shows that Flublok contains 45 \u00b5g of hemagglutinin (HA) antigen per 0.5 mL dose, which is three times the 15 \u00b5g/0.5 mL dose found in standard-dose flu vaccines, directly supporting the first part of the claim."
     },
     {
       "id": 2,
       "quote": "Standard-dose inactivated influenza vaccines contain 15 \u00b5g of HA per virus strain per 0.5 mL dose.",
-      "relevance_explanation": "This quote establishes the HA content of standard-dose flu vaccines, providing a direct comparison to Flublok's higher HA content and supporting the claim of a 3x difference."
+      "relevance_explanation": "This quote establishes the HA content of standard-dose flu vaccines, providing the necessary comparison to demonstrate that Flublok contains three times as much HA antigen."
     },
     {
       "id": 3,
       "quote": "In clinical studies, Flublok demonstrated higher immunogenicity compared with standard-dose, egg-based inactivated influenza vaccines.",
-      "relevance_explanation": "This quote directly links the use of Flublok (with its higher HA content) to greater immunogenicity compared to standard-dose flu vaccines, supporting the second part of the claim."
-    },
-    {
-      "id": "comp_1",
-      "quote": "RIV4 (recombinant HA vaccine)",
-      "relevance_explanation": "This quote identifies Flublok as a recombinant HA vaccine (RIV4), which is relevant because recombinant vaccines like Flublok are formulated to contain higher HA antigen content compared to standard-dose, egg-based vaccines, supporting the claim about its composition and immunogenicity.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
+      "relevance_explanation": "This quote directly links the higher HA antigen content in Flublok to greater immunogenicity compared to standard-dose flu vaccines, supporting the second part of the claim."
     }
   ],
   "completeness_assessment": {

@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_005",
+  "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+  "document": "Zimmerman_et_al.__2023_",
+  "supporting_evidence": [
+    {
+      "quote": "SD-IIV4 included Afluria, Fluarix, FluLaval, Standard Dose Fluzone and FlucelVax. HD-IIV4 was High Dose Fluzone; RIV4: Flublok; HD IIV4: High dose Fluzone; Adj IV: FluAd.",
+      "explanation": "The quote directly supports the claim because it explicitly lists Fluarix as one of the standard-dose quadrivalent influenza vaccines (SD-IIV4) and Flublok as RIV4. Since the study compares RIV4 (Flublok) to SD-IIV4 (which includes Fluarix), this confirms that Flublok was evaluated against Fluarix (among other standard-dose vaccines) in the pivotal trial, as the claim asserts."
+    },
+    {
+      "quote": "Two large studies have explored rVE of recombinant quadrivalent influenza vaccine (RIV4). The Medicare beneficiaries study [10] using retrospective data as described above, reported significant rVE of RIV4 vs. SD-IIV4) against influenza related hospital encounters. Secondly, a randomized controlled trial (RCT) found significant rVE of RIV4 compared with SD-IIV4 among adults 50 years old, but not for adults 65 years old [11].",
+      "explanation": "The quote directly states that a randomized controlled trial (RCT) compared recombinant quadrivalent influenza vaccine (RIV4, which is Flublok) with standard dose quadrivalent influenza vaccine (SD-IIV4). The document further clarifies that SD-IIV4 includes Fluarix among other vaccines. Therefore, the quote genuinely supports the claim that Flublok (quadrivalent) was evaluated in a pivotal trial against Fluarix (quadrivalent standard-dose vaccine)."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 2,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 2,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 2
+    },
+    "rejected_count": 0
+  }
+}

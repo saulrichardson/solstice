@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A table summarizing influenza vaccine efficacy in adults aged 18\u201349 years in Study I, comparing Flublok (recombinant hemagglutinin vaccine) versus saline placebo. It lists numbers of culture\u2010confirmed cases and rates for matched vaccine strains and for all strains (CDC\u2010ILI and any ILI definitions), along with percent vaccine efficacy and 95% confidence intervals. The table presents efficacy data for a recombinant HA vaccine versus placebo and makes no reference to cell- or egg-based vaccine production or mutation events; it does not support the claim.",
+  "explanation": "A table titled 'Adults 18\u201349 Years of Age, Study 1' comparing Flublok (N=2344) versus saline placebo (N=2304) showing numbers and rates of influenza cases by culture-confirmed infection with strains matched to the vaccine versus any strain, along with calculated vaccine efficacy percentages and 95% confidence intervals. The table presents clinical efficacy data for the Flublok vaccine against matched and any influenza strains but makes no mention of vaccine production methods, mutations arising during egg- or cell-based manufacturing, or their impact on effectiveness; therefore it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table summarizing influenza vaccine efficacy in adults aged 18\u201349 years in Study I, comparing Flublok (recombinant hemagglutinin vaccine) versus saline placebo. It lists numbers of culture\u2010confirmed cases and rates for matched vaccine strains and for all strains (CDC\u2010ILI and any ILI definitions), along with percent vaccine efficacy and 95% confidence intervals.",
+    "image_description": "A table titled 'Adults 18\u201349 Years of Age, Study 1' comparing Flublok (N=2344) versus saline placebo (N=2304) showing numbers and rates of influenza cases by culture-confirmed infection with strains matched to the vaccine versus any strain, along with calculated vaccine efficacy percentages and 95% confidence intervals.",
     "evidence_found": null,
-    "reasoning": "The table presents efficacy data for a recombinant HA vaccine versus placebo and makes no reference to cell- or egg-based vaccine production or mutation events; it does not support the claim.",
+    "reasoning": "The table presents clinical efficacy data for the Flublok vaccine against matched and any influenza strains but makes no mention of vaccine production methods, mutations arising during egg- or cell-based manufacturing, or their impact on effectiveness; therefore it does not support the claim.",
     "confidence_notes": null
   }
 }

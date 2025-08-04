@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p8_mrg_det_7_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p8_mrg_det_7_005.png",
+  "image_type": "Figure",
+  "page_number": 8,
+  "block_id": "mrg_det_7_005",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": true,
+  "explanation": "A 4\u00d72 panel of hemagglutination-inhibition (HI) titer plots (log2 scale) for influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Columns are age groups (18\u201344 and 45\u201364 years) tested against egg-grown virus and cell-grown virus; each plot shows baseline (Day 0) and 1-month post-vaccination titers for six vaccine sequences combining cell-based quadrivalent (ccIIV4), recombinant HA (RIV4), and egg-based standard-dose (IIV4) vaccines. Evidence: At 1 month, groups receiving two doses of the recombinant HA vaccine (RIV4\u2013RIV4) show higher geometric mean HI titers than those receiving two doses of egg-based IIV4, with multiple statistically significant comparisons (e.g., p<0.0001, p=0.007, p=0.0002) favoring recombinant over egg-based vaccine. The figure shows that recombinant HA vaccination induces significantly higher antibody titers than egg-based standard-dose vaccination in multiple age groups and strains, which supports the claim Note: Resolution limits prevented reading every group label, and data are limited to HI titers at 1 month post-vaccination in 18\u201364 year-olds and may not generalize to all populations or long-term responses.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "A 4\u00d72 panel of hemagglutination-inhibition (HI) titer plots (log2 scale) for influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Columns are age groups (18\u201344 and 45\u201364 years) tested against egg-grown virus and cell-grown virus; each plot shows baseline (Day 0) and 1-month post-vaccination titers for six vaccine sequences combining cell-based quadrivalent (ccIIV4), recombinant HA (RIV4), and egg-based standard-dose (IIV4) vaccines.",
+    "evidence_found": "At 1 month, groups receiving two doses of the recombinant HA vaccine (RIV4\u2013RIV4) show higher geometric mean HI titers than those receiving two doses of egg-based IIV4, with multiple statistically significant comparisons (e.g., p<0.0001, p=0.007, p=0.0002) favoring recombinant over egg-based vaccine.",
+    "reasoning": "The figure shows that recombinant HA vaccination induces significantly higher antibody titers than egg-based standard-dose vaccination in multiple age groups and strains, which supports the claim",
+    "confidence_notes": "Resolution limits prevented reading every group label, and data are limited to HI titers at 1 month post-vaccination in 18\u201364 year-olds and may not generalize to all populations or long-term responses."
+  }
+}

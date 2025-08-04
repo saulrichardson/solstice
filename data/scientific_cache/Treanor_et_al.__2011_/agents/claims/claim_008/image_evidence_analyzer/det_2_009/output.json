@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p3_det_2_009.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p3_det_2_009.png",
+  "image_type": "Table",
+  "page_number": 3,
+  "block_id": "det_2_009",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table listing solicited adverse events (e.g., fever, fatigue, muscle pain, headache) by severity (mild, moderate, severe) for FluBlok (N=2344) versus placebo (N=2304), showing counts and percentages for each symptom. The table presents safety and reactogenicity data for FluBlok compared to placebo and does not include any information on hemagglutinin (HA) antigen content per strain, so it does not support the claim about mcg of HA. Note: Analysis limited to the visible adverse event data; antigen dosage details are not shown in this image.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing solicited adverse events (e.g., fever, fatigue, muscle pain, headache) by severity (mild, moderate, severe) for FluBlok (N=2344) versus placebo (N=2304), showing counts and percentages for each symptom.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety and reactogenicity data for FluBlok compared to placebo and does not include any information on hemagglutinin (HA) antigen content per strain, so it does not support the claim about mcg of HA.",
+    "confidence_notes": "Analysis limited to the visible adverse event data; antigen dosage details are not shown in this image."
+  }
+}

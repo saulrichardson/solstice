@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_det_1_000.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p2_det_1_000.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "det_1_000",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A tabular listing of influenza vaccine products showing trade name (manufacturer), presentations, age indication, micrograms of HA per dose or virus count, route of administration, and mercury content. Vaccines include Fluad Quadrivalent (Seqirus), Flublok Quadrivalent (Sanofi Pasteur) as the recombinant HA vaccine (RIV4), and FluMist Quadrivalent (AstraZeneca) as the egg-based LAIV4. does not support the claim \u2013 the figure is purely a product formulation and dosage table and does not present any immunogenicity data or antibody response comparisons between BEVS-derived recombinant HA antigens and egg-derived vaccines. Note: The image quality is sufficient to read all text, but no data on antibody levels or broad cross-reactivity are provided.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A tabular listing of influenza vaccine products showing trade name (manufacturer), presentations, age indication, micrograms of HA per dose or virus count, route of administration, and mercury content. Vaccines include Fluad Quadrivalent (Seqirus), Flublok Quadrivalent (Sanofi Pasteur) as the recombinant HA vaccine (RIV4), and FluMist Quadrivalent (AstraZeneca) as the egg-based LAIV4.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim \u2013 the figure is purely a product formulation and dosage table and does not present any immunogenicity data or antibody response comparisons between BEVS-derived recombinant HA antigens and egg-derived vaccines.",
+    "confidence_notes": "The image quality is sufficient to read all text, but no data on antibody levels or broad cross-reactivity are provided."
+  }
+}

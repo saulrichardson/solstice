@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "Table displaying the percentage of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse reactions classified as any, moderate, or severe in participants receiving Flublok (N=1078) versus IIV3 (N=1081). The table presents safety/reactogenicity data and contains no immunogenicity or antibody response measurements, so it does not support the claim. Note: The image is clear and complete for adverse event data; however, no antibody or immune response information is provided.",
+  "explanation": "A table listing percentages of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse events for two vaccine groups: Flublok (N=1078) and IIV3 (N=1081), broken down by any, moderate, and severe events. The table reports safety/reactogenicity outcomes only and contains no data on antibody levels, seroconversion rates, or other immunogenicity measures, so it does not support the claim Note: The table is clear but limited to adverse event data; no immunogenicity endpoints are shown",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Table displaying the percentage of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse reactions classified as any, moderate, or severe in participants receiving Flublok (N=1078) versus IIV3 (N=1081).",
+    "image_description": "A table listing percentages of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse events for two vaccine groups: Flublok (N=1078) and IIV3 (N=1081), broken down by any, moderate, and severe events.",
     "evidence_found": null,
-    "reasoning": "The table presents safety/reactogenicity data and contains no immunogenicity or antibody response measurements, so it does not support the claim.",
-    "confidence_notes": "The image is clear and complete for adverse event data; however, no antibody or immune response information is provided."
+    "reasoning": "The table reports safety/reactogenicity outcomes only and contains no data on antibody levels, seroconversion rates, or other immunogenicity measures, so it does not support the claim",
+    "confidence_notes": "The table is clear but limited to adverse event data; no immunogenicity endpoints are shown"
   }
 }

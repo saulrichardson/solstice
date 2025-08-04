@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A multi-panel schematic outlining the Flublok manufacturing process: cloning of full-length HA cDNA into a baculovirus (BV) expression vector, insect cell infection and bioreactor expansion, harvest (disc-stack centrifugation), extraction, clarification (depth filtration), chromatographic purification (capture, polish, DNA removal), and tangential flow filtration/formulation. The figure only depicts the recombinant baculovirus\u2013insect cell production workflow for HA protein and does not provide any data or statements about antigenic matching to WHO- or FDA-selected influenza strains, so it does not support the claim. Note: Analysis limited to visible content; no strain identity or matching data are shown in the image.",
+  "explanation": "A schematic flow diagram illustrating the Flublok manufacturing process, including PCR-direct cloning of full-length cDNA into a baculovirus (BV) expression vector, cell seeding, infection and expansion in a bioreactor, harvest by disc-stack centrifugation, extraction, depth filtration for clarification, chromatographic capture and purification steps, DNA removal, and tangential flow filtration/formulation. The figure depicts the production and purification workflow for Flublok but contains no data or statements about antigenic matching to WHO- or FDA-selected influenza strains, and thus does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A multi-panel schematic outlining the Flublok manufacturing process: cloning of full-length HA cDNA into a baculovirus (BV) expression vector, insect cell infection and bioreactor expansion, harvest (disc-stack centrifugation), extraction, clarification (depth filtration), chromatographic purification (capture, polish, DNA removal), and tangential flow filtration/formulation.",
+    "image_description": "A schematic flow diagram illustrating the Flublok manufacturing process, including PCR-direct cloning of full-length cDNA into a baculovirus (BV) expression vector, cell seeding, infection and expansion in a bioreactor, harvest by disc-stack centrifugation, extraction, depth filtration for clarification, chromatographic capture and purification steps, DNA removal, and tangential flow filtration/formulation.",
     "evidence_found": null,
-    "reasoning": "The figure only depicts the recombinant baculovirus\u2013insect cell production workflow for HA protein and does not provide any data or statements about antigenic matching to WHO- or FDA-selected influenza strains, so it does not support the claim.",
-    "confidence_notes": "Analysis limited to visible content; no strain identity or matching data are shown in the image."
+    "reasoning": "The figure depicts the production and purification workflow for Flublok but contains no data or statements about antigenic matching to WHO- or FDA-selected influenza strains, and thus does not support the claim.",
+    "confidence_notes": null
   }
 }

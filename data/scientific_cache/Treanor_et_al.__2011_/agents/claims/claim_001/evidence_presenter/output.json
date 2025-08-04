@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Treanor_et_al.__2011_",
+  "supporting_evidence": [
+    {
+      "quote": "The vaccine (Flublok used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The recombinant HA protein is not cleaved in insect cells and is referred to as rHA0. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses.",
+      "explanation": "The quote directly supports the first part of the claim by explicitly stating that Flublok contains 45 mcg of hemagglutinin per strain, which is three times the standard 15 mcg per strain in standard-dose flu vaccines. However, the quote does not address the second part of the claim regarding greater immunogenicity versus standard-dose flu vaccines. Therefore, it fully supports the first part of the claim (antigen content) but does not provide evidence for the immunogenicity comparison."
+    },
+    {
+      "quote": "The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses.",
+      "explanation": "The quote directly states that the trivalent Flublok vaccine contains 45 mcg of hemagglutinin (HA) antigen per strain. This is three times the standard 15 mcg per strain found in standard-dose flu vaccines, thus substantiating the claim about antigen content. While the quote does not explicitly mention immunogenicity, it provides the factual basis for the first part of the claim, which is the necessary prerequisite for the second part. The document elsewhere discusses immunogenicity, but the quote itself is sufficient to support the claim about HA content."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 2,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 2,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 2
+    },
+    "rejected_count": 0
+  }
+}

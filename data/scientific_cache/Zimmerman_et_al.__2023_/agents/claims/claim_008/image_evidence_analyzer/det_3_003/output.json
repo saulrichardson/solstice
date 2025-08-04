@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_det_3_003.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p4_det_3_003.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "det_3_003",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table summarizing demographic and clinical characteristics (race, sex, season, age group, influenza case status, high-risk condition) of study participants who received RIV4 versus standard-dose IIV4, including counts, percentages, and P-values. The table provides participant demographics and outcomes but contains no information on HA content per strain for Flublok or standard-dose influenza vaccines, and thus does not support the claim. Note: The image is clear but does not address vaccine antigen content; confidence in the assessment is high.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table summarizing demographic and clinical characteristics (race, sex, season, age group, influenza case status, high-risk condition) of study participants who received RIV4 versus standard-dose IIV4, including counts, percentages, and P-values.",
+    "evidence_found": null,
+    "reasoning": "The table provides participant demographics and outcomes but contains no information on HA content per strain for Flublok or standard-dose influenza vaccines, and thus does not support the claim.",
+    "confidence_notes": "The image is clear but does not address vaccine antigen content; confidence in the assessment is high."
+  }
+}

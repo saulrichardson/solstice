@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A two-column table comparing Flublok (N=972) and IIV3 (N=967) vaccines listing the percentages of subjects reporting local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events categorized as Any, Moderate, or Severe. The table presents safety and reactogenicity data for Flublok versus IIV3 and contains no information on antigenic match with WHO- or FDA-selected influenza strains, and therefore does not support the claim.",
+  "explanation": "A table comparing percentages of local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events of Flublok (N=972) versus IIV3 (N=967), categorized by any, moderate, and severe events. The table presents safety and reactogenicity data for Flublok and IIV3 but contains no information about antigenic matching to WHO- or FDA-selected flu strains, so it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A two-column table comparing Flublok (N=972) and IIV3 (N=967) vaccines listing the percentages of subjects reporting local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events categorized as Any, Moderate, or Severe.",
+    "image_description": "A table comparing percentages of local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events of Flublok (N=972) versus IIV3 (N=967), categorized by any, moderate, and severe events.",
     "evidence_found": null,
-    "reasoning": "The table presents safety and reactogenicity data for Flublok versus IIV3 and contains no information on antigenic match with WHO- or FDA-selected influenza strains, and therefore does not support the claim.",
+    "reasoning": "The table presents safety and reactogenicity data for Flublok and IIV3 but contains no information about antigenic matching to WHO- or FDA-selected flu strains, so it does not support the claim.",
     "confidence_notes": null
   }
 }

@@ -1,0 +1,34 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": {
+    "pdf_name": "Grohskopf_et_al.__2023_",
+    "source_pdf": "data/clinical_files/Grohskopf et al. (2023).pdf",
+    "total_pages": 32,
+    "total_blocks": 295,
+    "total_characters": 110650
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 3,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+      "relevance_explanation": "This quote explicitly states that Flublok Quadrivalent (RIV4) is a recombinant influenza vaccine in which hemagglutinin (HA) is produced in an insect cell line, confirming the use of a novel production platform involving recombinant technology and insect cells."
+    },
+    {
+      "id": 2,
+      "quote": "Most available influenza vaccines, with the exception of RIV4 (Flublok Quadrivalent, licensed for those \u226518 years) and ccIIV4 (Flucelvax Quadrivalent, licensed for those aged \u22656 months), are prepared by propagation of virus in embryonated eggs and might contain trace amounts of egg proteins, such as ovalbumin.",
+      "relevance_explanation": "This quote distinguishes Flublok (RIV4) from traditional egg-based vaccines, highlighting that it is not produced in eggs, which supports the claim that it uses a novel, non-egg-based production platform."
+    },
+    {
+      "id": 3,
+      "quote": "RIV = recombinant influenza vaccine ... Prefixes are used when necessary to refer to certain specific IIVs: ... RIV for recombinant influenza vaccine ... Vaccines that are expected to be available for the 2022-23 season are described (see Vaccines Available for the 2022-23 Season) (Table 1).",
+      "relevance_explanation": "This quote defines RIV as recombinant influenza vaccine, which is the category Flublok belongs to, supporting the claim that Flublok is produced using recombinant technology."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

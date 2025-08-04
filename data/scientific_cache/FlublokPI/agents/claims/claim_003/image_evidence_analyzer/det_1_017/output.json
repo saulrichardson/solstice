@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table comparing percentages of local and systemic adverse events (pain, redness, firmness/swelling, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) for two influenza vaccines (Flublok recombinant vaccine vs IIV3) showing rates of any, moderate, and severe reactions. does not support the claim because the table presents only safety and reactogenicity data, with no immunogenicity or cross-protection results that would demonstrate a broader immune response or efficacy in a mismatch season.",
+  "explanation": "A table summarizing solicited local and systemic adverse event rates (%) in two vaccine groups: Flublok (recombinant; N=1078) and IIV3 (inactivated; N=1081). Columns list percentages of any, moderate, and severe events for local reactions (pain, redness, firmness/swelling) and systemic reactions (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever). The table presents only safety and adverse event data, not immunogenicity or cross-protection outcomes, so it does not support the claim. Note: Analysis limited by the table's focus on adverse events; no immunogenicity or cross-protection data are presented.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table comparing percentages of local and systemic adverse events (pain, redness, firmness/swelling, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) for two influenza vaccines (Flublok recombinant vaccine vs IIV3) showing rates of any, moderate, and severe reactions.",
+    "image_description": "A table summarizing solicited local and systemic adverse event rates (%) in two vaccine groups: Flublok (recombinant; N=1078) and IIV3 (inactivated; N=1081). Columns list percentages of any, moderate, and severe events for local reactions (pain, redness, firmness/swelling) and systemic reactions (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever).",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table presents only safety and reactogenicity data, with no immunogenicity or cross-protection results that would demonstrate a broader immune response or efficacy in a mismatch season.",
-    "confidence_notes": null
+    "reasoning": "The table presents only safety and adverse event data, not immunogenicity or cross-protection outcomes, so it does not support the claim.",
+    "confidence_notes": "Analysis limited by the table's focus on adverse events; no immunogenicity or cross-protection data are presented."
   }
 }

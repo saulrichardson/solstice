@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table listing influenza vaccine types (egg-based IIV4s, cell culture-based IIV4, recombinant RIV4, live-attenuated LAIV4) alongside their contraindications and precautions. The table only provides safety information (contraindications and precautions) for different vaccine platforms and contains no data on immune response breadth, cross-protection, or mismatch season efficacy, so it does not support the claim.",
+  "explanation": "A table listing four influenza vaccine types (egg-based IIV4s, cell-culture based ccIIV4, recombinant RIV4, and live attenuated LAIV4) alongside their contraindications and precautions. The table only presents contraindications and precautions for different vaccine platforms; it does not provide any data or statements about immune response breadth or cross-protection, and therefore does not support the claim. Note: Analysis limited to visible content; no immunogenicity or efficacy data are shown in the image.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing influenza vaccine types (egg-based IIV4s, cell culture-based IIV4, recombinant RIV4, live-attenuated LAIV4) alongside their contraindications and precautions.",
+    "image_description": "A table listing four influenza vaccine types (egg-based IIV4s, cell-culture based ccIIV4, recombinant RIV4, and live attenuated LAIV4) alongside their contraindications and precautions.",
     "evidence_found": null,
-    "reasoning": "The table only provides safety information (contraindications and precautions) for different vaccine platforms and contains no data on immune response breadth, cross-protection, or mismatch season efficacy, so it does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "The table only presents contraindications and precautions for different vaccine platforms; it does not provide any data or statements about immune response breadth or cross-protection, and therefore does not support the claim.",
+    "confidence_notes": "Analysis limited to visible content; no immunogenicity or efficacy data are shown in the image."
   }
 }

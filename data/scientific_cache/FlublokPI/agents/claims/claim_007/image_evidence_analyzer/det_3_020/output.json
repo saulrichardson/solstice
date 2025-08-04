@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_020.png",
+  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_020.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_020",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A table showing influenza vaccine efficacy in adults 18\u201349 years in Study 1, comparing Flublok (recombinant HA produced in BEVS) versus saline placebo. It lists case definitions (positive culture with matched strains, any strain, CDC-ILI and ILI criteria), number of cases (n), attack rates (%), calculated vaccine efficacy (%), and 95% confidence intervals. The table presents clinical efficacy outcomes (case counts, attack rates, vaccine efficacy percentages, and confidence intervals) for Flublok versus placebo. It does not show any immunogenicity measurements, antibody levels, cross-reactivity, or direct comparisons to egg-derived vaccines, and therefore does not support the claim. Note: Analysis limited to visible table; no immunogenicity or antibody data are presented in the image.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing influenza vaccine efficacy in adults 18\u201349 years in Study 1, comparing Flublok (recombinant HA produced in BEVS) versus saline placebo. It lists case definitions (positive culture with matched strains, any strain, CDC-ILI and ILI criteria), number of cases (n), attack rates (%), calculated vaccine efficacy (%), and 95% confidence intervals.",
+    "evidence_found": null,
+    "reasoning": "The table presents clinical efficacy outcomes (case counts, attack rates, vaccine efficacy percentages, and confidence intervals) for Flublok versus placebo. It does not show any immunogenicity measurements, antibody levels, cross-reactivity, or direct comparisons to egg-derived vaccines, and therefore does not support the claim.",
+    "confidence_notes": "Analysis limited to visible table; no immunogenicity or antibody data are presented in the image."
+  }
+}

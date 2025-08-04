@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "document": {
+    "pdf_name": "Zimmerman_et_al.__2023_",
+    "source_pdf": "data/clinical_files/Zimmerman et al. (2023).pdf",
+    "total_pages": 7,
+    "total_blocks": 106,
+    "total_characters": 22573
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "RIV4 was Flublok",
+      "relevance_explanation": "This quote directly identifies Flublok as the recombinant influenza vaccine (RIV4) under study, which is necessary context for understanding subsequent statements about its production platform."
+    },
+    {
+      "id": 2,
+      "quote": "Relative effectiveness of various vaccine formulations provide important input for vaccine policy decisions. We used electronic databases to conduct a test negative case control study to determine relative vaccine effectiveness (rVE) of recombinant influenza vaccine (RIV4) compared with standard dose vaccines (SD-IIV4) against influenza hospitalization.",
+      "relevance_explanation": "This quote establishes that the study is focused on recombinant influenza vaccine (RIV4), which is Flublok, and sets the context for discussing its characteristics, including its production method."
+    },
+    {
+      "id": 3,
+      "quote": "Two large studies have explored rVE of recombinant quadrivalent influenza vaccine (RIV4). The Medicare beneficiaries study [10] using retrospective data as described above, reported significant rVE of RIV4 vs. SD-IIV4) against influenza related hospital encounters. Secondly, a randomized controlled trial (RCT) found significant rVE of RIV4 compared with SD-IIV4 among adults 50 years old, but not for adults 65 years old [11].",
+      "relevance_explanation": "This quote further clarifies that RIV4 is a recombinant vaccine, which is a key aspect of the claim regarding its novel production platform."
+    },
+    {
+      "id": 4,
+      "quote": "c RIV4: Flublok.",
+      "relevance_explanation": "This quote explicitly equates RIV4 with Flublok, confirming that all references to RIV4 in the document pertain to Flublok and its production method."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

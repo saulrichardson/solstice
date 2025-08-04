@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p6_det_5_006.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p6_det_5_006.png",
+  "image_type": "Table",
+  "page_number": 6,
+  "block_id": "det_5_006",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table showing influenza vaccine types (egg-based IIV4s, ccIIV4, RIV4, LAIV4) with associated contraindications and precautions for each vaccine. The table only lists contraindications and precautions for different influenza vaccines, including RIV4, but does not describe any production platform or mention recombinant HA expression in insect cells using a baculovirus expression vector system, so it does not support the claim. Note: Image quality is sufficient to read the table; no production details are provided.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing influenza vaccine types (egg-based IIV4s, ccIIV4, RIV4, LAIV4) with associated contraindications and precautions for each vaccine.",
+    "evidence_found": null,
+    "reasoning": "The table only lists contraindications and precautions for different influenza vaccines, including RIV4, but does not describe any production platform or mention recombinant HA expression in insect cells using a baculovirus expression vector system, so it does not support the claim.",
+    "confidence_notes": "Image quality is sufficient to read the table; no production details are provided."
+  }
+}

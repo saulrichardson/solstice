@@ -10,24 +10,29 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 3,
+    "total_snippets_found": 4,
     "error": null
   },
   "extracted_evidence": [
     {
       "id": 1,
-      "quote": "Egg based and cell culture based vaccines differ in the substrate in which reference vaccine viruses supplied to the manufacturer are propagated in quantities sufficient to produce the needed number of doses of vaccine. For the IIV4 s Afluria Quadrivalent (43), Fluarix Quadrivalent (123), FluLaval Quadrivalent (124) and Fluzone Quadrivalent (44), reference vaccine viruses are propagated in eggs. For Flucelvax Quadrivalent, reference vaccine viruses are propagated in Madin-Darby canine kidney cells instead of eggs (125).",
-      "relevance_explanation": "This quote establishes that both egg-based and cell-based flu vaccines involve propagation of the virus in biological substrates (eggs or cell cultures), which is the context in which mutations can occur during production."
+      "quote": "Egg based and cell culture based vaccines differ in the substrate in which reference vaccine viruses supplied to the manufacturer are propagated in quantities sufficient to produce the needed number of doses of vaccine. For the IIV4 s Afluria Quad rival ent (43) Fluarix Quad rival ent (123) FluLaval Quad rival ent (124) and Flu zone Quad rival ent (44), reference vaccine viruses are propagated in eggs. For Flu cel vax Quad rival ent, reference vaccine viruses are propagated in Madin-Darby canine kidney cells instead of eggs (125).",
+      "relevance_explanation": "This quote establishes that both egg-based and cell-based flu vaccines use biological substrates (eggs or cell cultures) to propagate vaccine viruses, which is the context in which mutations can occur during production."
     },
     {
       "id": 2,
-      "quote": "The effectiveness of influenza vaccination varies depending on several factors, such as the age and health of the recipient; the type of vaccine administered; the types, subtypes (for influenza A), and lineages (for influenza B) of circulating influenza viruses; and the degree of similarity between circulating viruses and those included in the vaccine (12).",
-      "relevance_explanation": "This quote directly links vaccine effectiveness to the similarity between circulating viruses and those included in the vaccine, which can be affected if mutations arise during vaccine production."
+      "quote": "Egg based and cell culture based vaccines differ in the substrate in which reference vaccine viruses supplied to the manufacturer are propagated in quantities sufficient to produce the needed number of doses of vaccine.",
+      "relevance_explanation": "This statement highlights that the process of growing vaccine viruses in eggs or cell cultures is a key step in vaccine production, which is relevant because such propagation can lead to mutations."
     },
     {
       "id": 3,
-      "quote": "In addition to the factors observed to be associated with waning immunity across studies, observed decreases in protection might be at least in part attributable to bias, unmeasured confounding, or the late season emergence of antigenic drift variants of influenza viruses that are less well matched to the vaccine viruses.",
-      "relevance_explanation": "This quote notes that the emergence of antigenic drift variants (mutations) can result in a mismatch between vaccine and circulating viruses, reducing effectiveness. Such variants can arise during vaccine production, especially in egg- or cell-based systems."
+      "quote": "For the 2022-23 season, U.S. egg based influenza vaccines (i.e., vaccines other than ccIIV4 and RIV4) will contain HA derived from an influenza A/Victoria/2570/2019 (H1 N1) pdm 09 like virus. For Flu cel vax Quad rival ent, reference vaccine viruses are propagated in Madin-Darby canine kidney cells instead of eggs (125).",
+      "relevance_explanation": "This quote clarifies that cell-based vaccines use a different propagation method (cell culture) than egg-based vaccines, both of which can introduce mutations during the production process."
+    },
+    {
+      "id": 4,
+      "quote": "The effectiveness of influenza vaccination varies depending on several factors, such as the age and health of the recipient; the type of vaccine administered; the types, subtypes (for influenza A), and lineages (for influenza B) of circulating influenza viruses; and the degree of similarity between circulating viruses and those included in the vaccine (12).",
+      "relevance_explanation": "This quote supports the claim by stating that vaccine effectiveness depends on how closely the vaccine viruses match circulating viruses, which can be affected if mutations arise during production."
     }
   ],
   "model_used": "gpt-4.1"

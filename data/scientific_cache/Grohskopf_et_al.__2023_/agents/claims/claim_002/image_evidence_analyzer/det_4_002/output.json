@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A table summarizing influenza vaccine products, including trade names, manufacturers, presentations (e.g., prefilled syringes, multi-dose vials), age indications, antigen content per dose (\u00b5g HA or virus count), administration route, and thimerosal (mercury) content. Vaccine types listed include standard-dose egg-based IIV4, cell culture\u2013based cIIV4, high-dose egg-based HD-IIV4, adjuvanted egg-based aIIV4, recombinant HA RIV4, and live attenuated egg-based LAIV4. The table provides product specifications and formulation details but contains no information about mutations arising during egg- or cell-based production or any impact on vaccine effectiveness, and therefore does not support the claim. Note: Table is legible and complete for listed fields; no mutation or efficacy data are present.",
+  "explanation": "Table listing various licensed quadrivalent influenza vaccines, grouped by vaccine type (egg-based standard-dose IIV4, cell culture-based cIIV4, high-dose egg-based HD-IIV4, adjuvanted egg-based aIIV4, recombinant HA RIV4, and egg-based live attenuated LAIV4), including trade names, manufacturers, presentations, age indications, antigen content per dose, administration route, and thimerosal content. The table provides only formulation details (manufacturing substrate, antigen dose, age indication, route, and preservative content) and does not mention mutations or changes acquired during production or any impact on vaccine effectiveness, so it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table summarizing influenza vaccine products, including trade names, manufacturers, presentations (e.g., prefilled syringes, multi-dose vials), age indications, antigen content per dose (\u00b5g HA or virus count), administration route, and thimerosal (mercury) content. Vaccine types listed include standard-dose egg-based IIV4, cell culture\u2013based cIIV4, high-dose egg-based HD-IIV4, adjuvanted egg-based aIIV4, recombinant HA RIV4, and live attenuated egg-based LAIV4.",
+    "image_description": "Table listing various licensed quadrivalent influenza vaccines, grouped by vaccine type (egg-based standard-dose IIV4, cell culture-based cIIV4, high-dose egg-based HD-IIV4, adjuvanted egg-based aIIV4, recombinant HA RIV4, and egg-based live attenuated LAIV4), including trade names, manufacturers, presentations, age indications, antigen content per dose, administration route, and thimerosal content.",
     "evidence_found": null,
-    "reasoning": "The table provides product specifications and formulation details but contains no information about mutations arising during egg- or cell-based production or any impact on vaccine effectiveness, and therefore does not support the claim.",
-    "confidence_notes": "Table is legible and complete for listed fields; no mutation or efficacy data are present."
+    "reasoning": "The table provides only formulation details (manufacturing substrate, antigen dose, age indication, route, and preservative content) and does not mention mutations or changes acquired during production or any impact on vaccine effectiveness, so it does not support the claim.",
+    "confidence_notes": null
   }
 }

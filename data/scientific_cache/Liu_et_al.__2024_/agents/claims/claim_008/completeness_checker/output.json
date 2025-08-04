@@ -1,0 +1,41 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "Liu_et_al.__2024_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 1
+  },
+  "completeness_stats": {
+    "existing_evidence": 2,
+    "new_evidence_found": 1,
+    "total_evidence": 3
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "acell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the i d 45 HA/d / ...d",
+      "relevance_explanation": "This quote explicitly states that Flublok Quadrivalent (RIV4) contains 3 times the amount of HA (hemagglutinin) per dose compared to standard-dose vaccines, and references the 45 HA/d (interpreted as 45 micrograms HA per dose per strain), directly supporting the claim."
+    },
+    {
+      "id": 2,
+      "quote": "IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody",
+      "relevance_explanation": "This quote clearly states that IIV4 and ccIIV4 (standard-dose influenza vaccines) contain 15 micrograms of HA per dose per strain, which directly supports the comparison in the claim."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Twenty percent of participants were selected by random sampling from each vaccine group and age strata (18\u221244 yrs and 45\u221264 yrs) in year 1 (n = 144) and year 2 (n = 140), the MN/HI antibody levels of the subset are representative of the whole study populations in year 1 (Fig. S3) and year 2 (Fig. S4). These serum samples were tested by ELISA to evaluate the total binding antibodies against 8 recombinant HA proteins (rHA from both egg and cell propagated viruses of each of the 4 vaccine antigens), and 2 rHA stalk proteins (A (H1 N1) pdm09 HA stalk, and A (H3 N2) HA stalk). rHA from egg- and cell A/Michigan/45/2015 (H1 N1) pdm09, rHA head from egg- and cell- A/Singapore/INFIMH-16-0019/2016 (H3 N2), B/ Colorado 06 2017 (B/Victoria), and B/Phuket/3073/2013 (B/Yamagata) were tested with year 1 sera; rHA from egg- A/Brisbane/02/2018 (H1 N1) pdm09 and cell-A/Idaho/7/2018 (H1 N1) pdm09, rHA head from egg- and cell- A/Kansas/14/2017 (H3 N2), egg- and cell- B/Colorado/06/2017 (B/ Victoria), egg- and cell-B/Phuket/3073/2013 (B/Yamagata) were tested with year 2 sera. The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45. For ELISA, rHA antigens were coated at 100 ng/well.",
+      "relevance_explanation": "This quote describes the use of recombinant HA proteins for ELISA testing, specifying that the rHA proteins were produced using the baculovirus system, which is the method used for Flublok. This supports the claim by clarifying the recombinant nature of Flublok's HA, which is relevant to its higher HA content per strain compared to standard-dose vaccines.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

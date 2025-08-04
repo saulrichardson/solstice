@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table listing trade names of quadrivalent influenza vaccines (Afluria, Fluarix, Flucelvax, FluLaval, Fluzone) with their manufacturers and dose volumes (mL and \u00b5g HA per virus) for children aged 6 through 35 months. The table provides only dose volumes and antigen content for various quadrivalent influenza vaccines in young children and contains no data on immune response breadth, recombinant technology, cross-protection, or mismatch season performance, and therefore does not support the claim. Note: Analysis limited to visible table content; no immunogenicity or technology details present.",
+  "explanation": "A table listing trade names of quadrivalent influenza vaccines from various manufacturers and their dose volumes (\u00b5g HA per vaccine virus) for children aged 6 through 35 months. The table only provides dosing information for different quadrivalent influenza vaccines in young children and contains no data on immune response breadth, cross-protection, or mismatch season effectiveness, so it does not support the claim. Note: Analysis limited to visible dosing data; no relevant immunogenicity or clinical outcome information is presented.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing trade names of quadrivalent influenza vaccines (Afluria, Fluarix, Flucelvax, FluLaval, Fluzone) with their manufacturers and dose volumes (mL and \u00b5g HA per virus) for children aged 6 through 35 months.",
+    "image_description": "A table listing trade names of quadrivalent influenza vaccines from various manufacturers and their dose volumes (\u00b5g HA per vaccine virus) for children aged 6 through 35 months.",
     "evidence_found": null,
-    "reasoning": "The table provides only dose volumes and antigen content for various quadrivalent influenza vaccines in young children and contains no data on immune response breadth, recombinant technology, cross-protection, or mismatch season performance, and therefore does not support the claim.",
-    "confidence_notes": "Analysis limited to visible table content; no immunogenicity or technology details present."
+    "reasoning": "The table only provides dosing information for different quadrivalent influenza vaccines in young children and contains no data on immune response breadth, cross-protection, or mismatch season effectiveness, so it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible dosing data; no relevant immunogenicity or clinical outcome information is presented."
   }
 }

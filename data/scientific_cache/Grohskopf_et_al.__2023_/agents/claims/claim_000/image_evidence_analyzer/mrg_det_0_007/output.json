@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Header of the CDC's Morbidity and Mortality Weekly Report (MMWR), showing title, volume, number, and date does not support the claim because the image only shows the report header and contains no data or statements about Flublok antigenic matching to WHO- or FDA-selected flu strains Note: Analysis is limited to the visible header; no figure or data related to the claim is present",
+  "explanation": "The image shows the top header of a Morbidity and Mortality Weekly Report (MMWR) from the Centers for Disease Control and Prevention, including the MMWR logo, volume and issue number, and date. The image is only the title header of an MMWR report and contains no data or text about Flublok or antigenic match, so it does not support the claim. Note: Analysis is limited because only the document header is visible; no substantive content related to vaccine antigen matching is present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Header of the CDC's Morbidity and Mortality Weekly Report (MMWR), showing title, volume, number, and date",
+    "image_description": "The image shows the top header of a Morbidity and Mortality Weekly Report (MMWR) from the Centers for Disease Control and Prevention, including the MMWR logo, volume and issue number, and date.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image only shows the report header and contains no data or statements about Flublok antigenic matching to WHO- or FDA-selected flu strains",
-    "confidence_notes": "Analysis is limited to the visible header; no figure or data related to the claim is present"
+    "reasoning": "The image is only the title header of an MMWR report and contains no data or text about Flublok or antigenic match, so it does not support the claim.",
+    "confidence_notes": "Analysis is limited because only the document header is visible; no substantive content related to vaccine antigen matching is present."
   }
 }

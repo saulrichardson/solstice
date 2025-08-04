@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_mrg_det_2_000.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p3_mrg_det_2_000.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "mrg_det_2_000",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A schematic diagram showing (1) grouping of healthcare facilities by size within service areas, (2) random assignment of similarly sized facilities into Block A or Block B, and (3) a table listing the weekly alternating administration schedule of standard-dose inactivated influenza vaccine (SD-IIV4) versus recombinant influenza vaccine (RIV4) at each facility for four weeks. The figure illustrates the study design, facility randomization, and vaccine administration schedule but provides no information on hemagglutinin antigen content or immunogenicity comparisons. Therefore, it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A schematic diagram showing (1) grouping of healthcare facilities by size within service areas, (2) random assignment of similarly sized facilities into Block A or Block B, and (3) a table listing the weekly alternating administration schedule of standard-dose inactivated influenza vaccine (SD-IIV4) versus recombinant influenza vaccine (RIV4) at each facility for four weeks.",
+    "evidence_found": null,
+    "reasoning": "The figure illustrates the study design, facility randomization, and vaccine administration schedule but provides no information on hemagglutinin antigen content or immunogenicity comparisons. Therefore, it does not support the claim.",
+    "confidence_notes": null
+  }
+}

@@ -5,28 +5,23 @@
   "additional_evidence_check": {
     "checked_for_more": true,
     "found_additional": true,
-    "additional_count": 1
+    "additional_count": 2
   },
   "completeness_stats": {
-    "existing_evidence": 1,
-    "new_evidence_found": 1,
+    "existing_evidence": 2,
+    "new_evidence_found": 2,
     "total_evidence": 2
   },
   "combined_evidence": [
     {
       "id": 1,
       "quote": "Frequent development of antigenic variants through antigenic drift is the virologic basis for seasonal epidemics and the reason for the usual replacement of one or more influenza virus strains in each year's influenza vaccine.",
-      "relevance_explanation": "This quote explains that influenza viruses frequently develop antigenic variants, which is directly relevant to the claim that mutations can occur during vaccine production, potentially affecting vaccine effectiveness."
+      "relevance_explanation": "This quote explains that influenza viruses frequently develop antigenic variants, which is relevant because such changes can occur during vaccine production, potentially reducing vaccine effectiveness if the produced strains do not match circulating viruses."
     },
     {
-      "id": "comp_1",
+      "id": 2,
       "quote": "Vaccine efficacy against antigenically matched culture confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenically matched to the strains represented in the vaccine.",
-      "relevance_explanation": "This quote demonstrates that the majority of influenza virus isolates in the study were not antigenically matched to the vaccine strains, which is consistent with the claim that mutations (such as those that can occur during production in cell- or egg-based systems) can lead to reduced vaccine effectiveness.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
+      "relevance_explanation": "This quote demonstrates that a large proportion of circulating influenza viruses did not match the vaccine strains, which can result from mutations during production, supporting the claim that such mutations may reduce vaccine effectiveness."
     }
   ],
   "completeness_assessment": {

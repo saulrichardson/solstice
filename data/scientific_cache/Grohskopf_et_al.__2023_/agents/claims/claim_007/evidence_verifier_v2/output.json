@@ -1,0 +1,45 @@
+{
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "document": "Grohskopf_et_al.__2023_",
+  "verification_stats": {
+    "total_extracted": 5,
+    "verified": 0,
+    "rejected": 5,
+    "verification_rate": 0.0
+  },
+  "verified_evidence": [],
+  "rejected_evidence": [
+    {
+      "id": 1,
+      "quote": "RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote establishes that RIV4 (recombinant HA vaccine produced using BEVS) is manufactured without the use of eggs, confirming the production method relevant to the claim."
+    },
+    {
+      "id": 2,
+      "quote": "HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3. Randomized efficacy studies comparing these vaccines with non adjuvanted SD-IIVs against laboratory confirmed influenza outcomes are few in number (66 68) and cover few influenza seasons. Observational studies, predominantly retrospective cohort studies using diagnostic code defined (rather than laboratory confirmed outcomes), are more numerous and include more influenza seasons (69 79). Certain observational studies have reported relative benefit for HD-IIV, RIV, and aIIV in comparison with non adjuvanted SD-IIVs, particularly in prevention of influenza associated hospitalizations.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides evidence that RIV (recombinant HA vaccine) has shown relative benefit compared with standard-dose egg-derived inactivated influenza vaccines (SD-IIVs), supporting the claim that recombinant HA antigens induce higher levels of protective immune responses."
+    },
+    {
+      "id": 3,
+      "quote": "A retrospective analysis of relative effectiveness of RIV4 versus SD-IIV4 against influenza coded hospitalizations among Medicare beneficiaries during the 2019-20 season noted a relative effectiveness of 17% (95% CI: 9 24; certainty level: 3, low) (72).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides direct comparative data showing that RIV4 (recombinant HA vaccine) was more effective than standard-dose egg-derived IIV4 in preventing influenza-coded hospitalizations, supporting the claim of superior immunogenicity and cross-reactivity."
+    },
+    {
+      "id": 4,
+      "quote": "A retrospective cohort analysis noted relative effectiveness of RIV4 compared with HD-IIV3 (relative effectiveness: 11%; 95% CI: 3 18; certainty level: 3, low) and with aIIV3 (relative effectiveness: 11%; 95% CI: 3 17; certainty level: 3, low); these data covered only a single influenza season.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote shows that RIV4 (recombinant HA vaccine) had a measurable relative effectiveness compared to other high-dose or adjuvanted vaccines, further supporting the claim that recombinant HA antigens can induce strong, broadly cross-reactive antibody responses."
+    },
+    {
+      "id": "comp_1",
+      "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote describes the production method of RIV4, specifying that it uses recombinant HA produced in an insect cell line (i.e., BEVS), which is directly relevant to the claim about BEVS-produced recombinant HA antigens. While it does not directly mention antibody levels, it establishes the vaccine's unique production method, which is foundational to the claim."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

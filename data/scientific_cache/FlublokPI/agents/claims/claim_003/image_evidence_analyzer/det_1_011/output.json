@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table listing percentages of solicited local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events in participants receiving Flublok (N=2272) versus placebo (N=2231). Severity is broken down into any, moderate, and severe. The table only presents safety and tolerability data (adverse event rates) for Flublok versus placebo; it provides no information on immune response breadth, cross-protection, or performance in mismatched seasons, and therefore doesn't support the claim. Note: Analysis limited by scope of image; immunogenicity or efficacy data are not included in this table.",
+  "explanation": "A two-column table comparing percentages of solicited local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events in subjects receiving Flublok (recombinant influenza vaccine, N=2272) versus placebo (N=2231), with overall, moderate, and severe event rates. The table presents safety and reactogenicity data, not immunogenicity or cross-protection results, and therefore does not support the claim. Note: Limited to safety data; no information on immune response breadth or cross-protection is provided.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing percentages of solicited local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events in participants receiving Flublok (N=2272) versus placebo (N=2231). Severity is broken down into any, moderate, and severe.",
+    "image_description": "A two-column table comparing percentages of solicited local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events in subjects receiving Flublok (recombinant influenza vaccine, N=2272) versus placebo (N=2231), with overall, moderate, and severe event rates.",
     "evidence_found": null,
-    "reasoning": "The table only presents safety and tolerability data (adverse event rates) for Flublok versus placebo; it provides no information on immune response breadth, cross-protection, or performance in mismatched seasons, and therefore doesn't support the claim.",
-    "confidence_notes": "Analysis limited by scope of image; immunogenicity or efficacy data are not included in this table."
+    "reasoning": "The table presents safety and reactogenicity data, not immunogenicity or cross-protection results, and therefore does not support the claim.",
+    "confidence_notes": "Limited to safety data; no information on immune response breadth or cross-protection is provided."
   }
 }

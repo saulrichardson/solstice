@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_027.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p1_det_0_027.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_027",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A section of a journal article's front matter showing the article history (received, revised, accepted, available dates) and a list of keywords: influenza vaccine, baculovirus expression, recombinant protein, clinical trials. The image lists general keywords including 'baculovirus expression' and 'recombinant protein' but does not mention Flublok by name, nor specify that recombinant HA is produced in insect cells using a baculovirus expression vector system, so it does not support the claim. Note: The figure only shows article metadata and keywords; no specific product or detailed production platform information is provided.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A section of a journal article's front matter showing the article history (received, revised, accepted, available dates) and a list of keywords: influenza vaccine, baculovirus expression, recombinant protein, clinical trials.",
+    "evidence_found": null,
+    "reasoning": "The image lists general keywords including 'baculovirus expression' and 'recombinant protein' but does not mention Flublok by name, nor specify that recombinant HA is produced in insect cells using a baculovirus expression vector system, so it does not support the claim.",
+    "confidence_notes": "The figure only shows article metadata and keywords; no specific product or detailed production platform information is provided."
+  }
+}

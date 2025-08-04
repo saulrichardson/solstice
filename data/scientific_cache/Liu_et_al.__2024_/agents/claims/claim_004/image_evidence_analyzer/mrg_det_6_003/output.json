@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p7_mrg_det_6_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p7_mrg_det_6_003.png",
+  "image_type": "Figure",
+  "page_number": 7,
+  "block_id": "mrg_det_6_003",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": true,
+  "explanation": "Four-panel figure showing immune responses in two age cohorts (18\u201344 years in panels A and C; 45\u201364 years in panels B and D). Panels A and B plot geometric mean ratios (with 95% CI) of hemagglutination inhibition titers against egg-grown versus cell-grown vaccine viruses for four vaccines (Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4) across influenza subtypes A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Panels C and D depict the proportion of participants with \u22654-fold reduced titers to cell-grown vaccine virus before and after vaccination with each vaccine, with statistical annotations. Evidence: In both age groups, RIV4 (recombinant vaccine) shows lower egg:cell titer ratios than the egg-based vaccines (p-values ranging from 0.0014 to <0.0001) and panels C/D show significant reductions in the proportion of subjects with \u22654-fold reduced titers to cell-grown virus after RIV4 (from 58% to 26% in younger adults, p=0.0001; from 40% to 21% in older adults, p=0.005) compared to minimal change with Fluzone and Fluarix. supports the claim because RIV4, a recombinant vaccine, elicited a more robust antibody response against cell-grown influenza strains than the egg-based standard-dose vaccines, as evidenced by lower egg:cell titer ratios and larger reductions in poor (\u22654-fold reduced) responses. Note: limited to the subtypes and age ranges shown; figure details are clear but additional clinical endpoints (e.g., seroprotection rates) are not displayed here.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Four-panel figure showing immune responses in two age cohorts (18\u201344 years in panels A and C; 45\u201364 years in panels B and D). Panels A and B plot geometric mean ratios (with 95% CI) of hemagglutination inhibition titers against egg-grown versus cell-grown vaccine viruses for four vaccines (Fluzone IIV4, Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4) across influenza subtypes A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Panels C and D depict the proportion of participants with \u22654-fold reduced titers to cell-grown vaccine virus before and after vaccination with each vaccine, with statistical annotations.",
+    "evidence_found": "In both age groups, RIV4 (recombinant vaccine) shows lower egg:cell titer ratios than the egg-based vaccines (p-values ranging from 0.0014 to <0.0001) and panels C/D show significant reductions in the proportion of subjects with \u22654-fold reduced titers to cell-grown virus after RIV4 (from 58% to 26% in younger adults, p=0.0001; from 40% to 21% in older adults, p=0.005) compared to minimal change with Fluzone and Fluarix.",
+    "reasoning": "supports the claim because RIV4, a recombinant vaccine, elicited a more robust antibody response against cell-grown influenza strains than the egg-based standard-dose vaccines, as evidenced by lower egg:cell titer ratios and larger reductions in poor (\u22654-fold reduced) responses.",
+    "confidence_notes": "limited to the subtypes and age ranges shown; figure details are clear but additional clinical endpoints (e.g., seroprotection rates) are not displayed here."
+  }
+}

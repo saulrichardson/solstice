@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p13_det_12_007.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p13_det_12_007.png",
+  "image_type": "Table",
+  "page_number": 13,
+  "block_id": "det_12_007",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table listing trade names of pediatric influenza vaccines (Afluria Quadrivalent, Fluarix Quadrivalent, Flucelvax Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent) alongside their dose volumes for children aged 6 through 35 months. The table provides dose volume information for various pediatric influenza vaccines but makes no mention of Flublok, recombinant HA expression, insect cells, or a baculovirus expression vector system; therefore, it does not support the claim. Note: The image appears to be clear and complete for the vaccines listed, but Flublok is not included in this table.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing trade names of pediatric influenza vaccines (Afluria Quadrivalent, Fluarix Quadrivalent, Flucelvax Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent) alongside their dose volumes for children aged 6 through 35 months.",
+    "evidence_found": null,
+    "reasoning": "The table provides dose volume information for various pediatric influenza vaccines but makes no mention of Flublok, recombinant HA expression, insect cells, or a baculovirus expression vector system; therefore, it does not support the claim.",
+    "confidence_notes": "The image appears to be clear and complete for the vaccines listed, but Flublok is not included in this table."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p9_det_8_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p9_det_8_005.png",
+  "image_type": "Figure",
+  "page_number": 9,
+  "block_id": "det_8_005",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Two-panel figure showing, for age groups 18\u201344 years (A) and 45\u201364 years (B), the proportion of subjects with \u22654-fold reduced hemagglutination-inhibition (HI) titers against cell-grown vaccine virus relative to egg-grown virus, measured pre- and post-vaccination for influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Different symbols represent seven vaccine sequence groups (egg-derived IIV4, cell-culture ccIIV4, recombinant RIV4, and Fluzone IIV4 in various prime-boost combinations). The figure reports strain-specific HI titer reductions for various vaccine combinations and does not measure broadly cross-reactive antibodies against conserved HA regions or directly compare recombinant BEVS vaccines with egg-derived vaccines on that endpoint, so it does not support the claim. Note: Limited to what is visible: small text but legible; no data on cross-reactive or stalk-specific antibody responses.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Two-panel figure showing, for age groups 18\u201344 years (A) and 45\u201364 years (B), the proportion of subjects with \u22654-fold reduced hemagglutination-inhibition (HI) titers against cell-grown vaccine virus relative to egg-grown virus, measured pre- and post-vaccination for influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata. Different symbols represent seven vaccine sequence groups (egg-derived IIV4, cell-culture ccIIV4, recombinant RIV4, and Fluzone IIV4 in various prime-boost combinations).",
+    "evidence_found": null,
+    "reasoning": "The figure reports strain-specific HI titer reductions for various vaccine combinations and does not measure broadly cross-reactive antibodies against conserved HA regions or directly compare recombinant BEVS vaccines with egg-derived vaccines on that endpoint, so it does not support the claim.",
+    "confidence_notes": "Limited to what is visible: small text but legible; no data on cross-reactive or stalk-specific antibody responses."
+  }
+}

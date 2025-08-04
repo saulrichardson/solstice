@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p9_det_8_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p9_det_8_005.png",
+  "image_type": "Figure",
+  "page_number": 9,
+  "block_id": "det_8_005",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A two-panel figure showing the proportion of subjects with \u22654-fold increase in hemagglutination inhibition (HI) titers to cell- or egg-derived vaccine viruses, measured before (Pre) and after (Post) vaccination, in age groups 18\u201344 years (Panel A) and 45\u201364 years (Panel B). Responses are shown for four influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) across seven prime-boost vaccine regimens: cell-culture quadrivalent (ccIIV4) and recombinant quadrivalent (RIV4, i.e. Flublok) in various sequences, egg-based IIV4, and Fluzone IIV4. Data points and lines connect Pre/Post values for each regimen with p-values indicated for select comparisons. The figure presents immunogenicity results for various vaccine sequences but does not report or compare the actual hemagglutinin antigen content of Flublok versus standard-dose vaccines; therefore it does not support the claim about Flublok containing three times the HA antigen content. Note: Limited to what is visible; antigen dose information is not provided in this figure.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-panel figure showing the proportion of subjects with \u22654-fold increase in hemagglutination inhibition (HI) titers to cell- or egg-derived vaccine viruses, measured before (Pre) and after (Post) vaccination, in age groups 18\u201344 years (Panel A) and 45\u201364 years (Panel B). Responses are shown for four influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) across seven prime-boost vaccine regimens: cell-culture quadrivalent (ccIIV4) and recombinant quadrivalent (RIV4, i.e. Flublok) in various sequences, egg-based IIV4, and Fluzone IIV4. Data points and lines connect Pre/Post values for each regimen with p-values indicated for select comparisons.",
+    "evidence_found": null,
+    "reasoning": "The figure presents immunogenicity results for various vaccine sequences but does not report or compare the actual hemagglutinin antigen content of Flublok versus standard-dose vaccines; therefore it does not support the claim about Flublok containing three times the HA antigen content.",
+    "confidence_notes": "Limited to what is visible; antigen dose information is not provided in this figure."
+  }
+}

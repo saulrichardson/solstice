@@ -5,43 +5,33 @@
   "additional_evidence_check": {
     "checked_for_more": true,
     "found_additional": true,
-    "additional_count": 3
+    "additional_count": 2
   },
   "completeness_stats": {
     "existing_evidence": 4,
-    "new_evidence_found": 3,
-    "total_evidence": 5
+    "new_evidence_found": 2,
+    "total_evidence": 4
   },
   "combined_evidence": [
     {
       "id": 1,
       "quote": "The manufacturing process can lead to egg adapted mutations in the hemagglutinin (HA) protein in IIV, that could result in altered antigenicity and reduced vaccine effectiveness (VE) in the population.",
-      "relevance_explanation": "This quote directly states that the manufacturing process for egg-based vaccines can cause mutations in the HA protein, which may change the antigenic properties of the vaccine and reduce its effectiveness, supporting the claim."
+      "relevance_explanation": "This quote directly states that the process of producing flu vaccines in eggs can cause mutations in the HA protein, which may change the antigenic properties of the vaccine and reduce its effectiveness, supporting the claim about mutation risk and impact on efficacy."
     },
     {
       "id": 2,
       "quote": "Repeat vaccination with egg based influenza vaccines could preferentially boost antibodies targeting the egg adapted epitopes and reduce immunogenicity to circulating viruses.",
-      "relevance_explanation": "This statement explains that repeated use of egg-based vaccines can enhance immune responses to egg-adapted (mutated) epitopes rather than those found on circulating viruses, potentially reducing vaccine effectiveness."
+      "relevance_explanation": "This statement explains that repeated use of egg-based vaccines can enhance immune responses to egg-adapted (mutated) viral regions, potentially at the expense of responses to the actual circulating viruses, thus reducing overall vaccine effectiveness."
     },
     {
       "id": 3,
-      "quote": "Egg adaptation can introduce mutations in the HA protein that are not present in circulating viruses, potentially leading to a mismatch between the vaccine strain and the circulating strain.",
-      "relevance_explanation": "This quote highlights that mutations arising during egg-based vaccine production can cause the vaccine strain to differ from the circulating virus, which may reduce the vaccine's effectiveness."
+      "quote": "Egg adaptation can introduce mutations in the HA protein of influenza viruses used in vaccines, which may alter antigenicity and impact immune responses.",
+      "relevance_explanation": "This quote affirms that mutations (egg adaptation) can occur during vaccine production, changing the antigenic properties of the virus and potentially affecting how well the immune system responds, which is central to the claim."
     },
     {
       "id": 4,
       "quote": "Several studies have reported that Q223R egg adapted change at the HA head domain of A (H1N1) pdm09 virus can promote virus replication in eggs, alter antigenicity and influence immune response.",
-      "relevance_explanation": "This quote provides a specific example of a mutation (Q223R) that occurs during egg-based production, which alters the antigenic properties of the virus and can affect the immune response, supporting the claim about reduced effectiveness."
-    },
-    {
-      "id": "comp_1",
-      "quote": "Table 1. Amino acid differences between egg- and cell-propagated vaccine viruses used in the study. For example, A/Brisbane/02/2018 egg virus has a G at position 45, while the cell virus has an R. These differences indicate that mutations can occur during egg or cell propagation of vaccine viruses.",
-      "relevance_explanation": "This table documents specific amino acid changes between egg- and cell-propagated vaccine viruses, directly showing that mutations arise during the production process, which is the mechanism by which effectiveness could be reduced.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
+      "relevance_explanation": "This quote provides a specific example of a mutation (Q223R) that arises during egg-based production, which changes the virus's antigenicity and can affect the immune response, supporting the claim about mutation risk and reduced effectiveness."
     }
   ],
   "completeness_assessment": {

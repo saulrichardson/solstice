@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "Page 1 of Flublok quadrivalent prescribing information showing indication, dosage and administration, contraindications, warnings, and a table of contents listing section headings (e.g., Clinical Studies, Adverse Reactions) but no detailed tables or trial comparisons. does not support the claim because the image shows only general prescribing information and a contents list without any reference to Fluarix or a pivotal trial comparison between Flublok and Fluarix. Note: The image quality is sufficient, but it only contains front\u2010matter and section headings, so no clinical trial details are present.",
+  "explanation": "First page of full prescribing information for Flublok quadrivalent, showing dosage and administration instructions, contraindications, warnings, table of contents listing sections such as Indications and Usage, Dosage and Administration, Adverse Reactions, Clinical Studies, etc. does not support the claim because the image contains only prescribing information headings and general vaccine instructions without any data or statements indicating that Flublok was evaluated against Fluarix in a pivotal trial Note: Image quality is sufficient to read headings; however, details of clinical study comparisons may appear beyond this page",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Page 1 of Flublok quadrivalent prescribing information showing indication, dosage and administration, contraindications, warnings, and a table of contents listing section headings (e.g., Clinical Studies, Adverse Reactions) but no detailed tables or trial comparisons.",
+    "image_description": "First page of full prescribing information for Flublok quadrivalent, showing dosage and administration instructions, contraindications, warnings, table of contents listing sections such as Indications and Usage, Dosage and Administration, Adverse Reactions, Clinical Studies, etc.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image shows only general prescribing information and a contents list without any reference to Fluarix or a pivotal trial comparison between Flublok and Fluarix.",
-    "confidence_notes": "The image quality is sufficient, but it only contains front\u2010matter and section headings, so no clinical trial details are present."
+    "reasoning": "does not support the claim because the image contains only prescribing information headings and general vaccine instructions without any data or statements indicating that Flublok was evaluated against Fluarix in a pivotal trial",
+    "confidence_notes": "Image quality is sufficient to read headings; however, details of clinical study comparisons may appear beyond this page"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_011.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_011",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A table comparing solicited local and systemic adverse events for Flublok (N=2272) versus placebo (N=2231), listing percentages of participants experiencing pain, redness, swelling, bruising, headache, fatigue, muscle pain, nausea, joint pain, chills, and fever, categorized by any, moderate, and severe intensity. does not support the claim because the table presents safety and reactogenicity data, not immunogenicity or antibody response measurements, and contains no information on broadly cross-reactive antibody levels or comparisons with egg-derived vaccines. Note: The image is clear and legible, but only safety data are shown; no immunogenicity endpoints are included.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing solicited local and systemic adverse events for Flublok (N=2272) versus placebo (N=2231), listing percentages of participants experiencing pain, redness, swelling, bruising, headache, fatigue, muscle pain, nausea, joint pain, chills, and fever, categorized by any, moderate, and severe intensity.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the table presents safety and reactogenicity data, not immunogenicity or antibody response measurements, and contains no information on broadly cross-reactive antibody levels or comparisons with egg-derived vaccines.",
+    "confidence_notes": "The image is clear and legible, but only safety data are shown; no immunogenicity endpoints are included."
+  }
+}

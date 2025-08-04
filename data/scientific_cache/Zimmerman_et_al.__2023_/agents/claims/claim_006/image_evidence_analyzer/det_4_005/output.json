@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_005.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p5_det_4_005.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_005",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table showing vaccine effectiveness (VE, % with 95% CI) of different influenza vaccines (RIV4, SD-IIV4, RIV4+HD-IIV4+Adj-IV) by age group (18\u201364 years and \u226565 years) and subgroups (overall, sex, risk condition, season). The image only presents clinical effectiveness data for various influenza vaccines and does not include any information on Flublok's manufacturing process or use of insect cells and a baculovirus expression vector system, and therefore does not support the claim. Note: The table content is clear and focused on effectiveness; no production or manufacturing details are provided.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing vaccine effectiveness (VE, % with 95% CI) of different influenza vaccines (RIV4, SD-IIV4, RIV4+HD-IIV4+Adj-IV) by age group (18\u201364 years and \u226565 years) and subgroups (overall, sex, risk condition, season).",
+    "evidence_found": null,
+    "reasoning": "The image only presents clinical effectiveness data for various influenza vaccines and does not include any information on Flublok's manufacturing process or use of insect cells and a baculovirus expression vector system, and therefore does not support the claim.",
+    "confidence_notes": "The table content is clear and focused on effectiveness; no production or manufacturing details are provided."
+  }
+}

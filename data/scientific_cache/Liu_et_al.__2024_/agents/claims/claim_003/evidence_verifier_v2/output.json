@@ -1,0 +1,67 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": "Liu_et_al.__2024_",
+  "verification_stats": {
+    "total_extracted": 7,
+    "verified": 3,
+    "rejected": 4,
+    "verification_rate": 0.42857142857142855
+  },
+  "verified_evidence": [
+    {
+      "id": 1,
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4. In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating ...",
+      "supports_claim": true,
+      "explanation": "The quote directly states that RIV4 (recombinant vaccine) induced higher neutralizing and total HA head binding antibodies to cell-propagated (i.e., circulating-like) A (H3N2) virus than the other vaccines, and that repeat vaccination with RIV4 or ccIIV4 further improved antibody responses. This demonstrates that recombinant technology leads to a broader immune response, which is the basis for potential cross-protection, especially in seasons where the vaccine and circulating strains may not be perfectly matched. The quote provides explicit evidence for the claim, without requiring inference beyond what is stated.",
+      "presence_explanation": "The quote appears in the document on page 1, though with some minor formatting and OCR differences. The key factual content is present: 'In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4. In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating ...' The ellipsis in both the quote and the document indicates omitted text, but the main facts are preserved.",
+      "support_explanation": "The quote directly states that RIV4 (recombinant vaccine) induced higher neutralizing and total HA head binding antibodies to cell-propagated (i.e., circulating-like) A (H3N2) virus than the other vaccines, and that repeat vaccination with RIV4 or ccIIV4 further improved antibody responses. This demonstrates that recombinant technology leads to a broader immune response, which is the basis for potential cross-protection, especially in seasons where the vaccine and circulating strains may not be perfectly matched. The quote provides explicit evidence for the claim, without requiring inference beyond what is stated.",
+      "original_relevance": "This quote shows that recombinant (RIV4) and cell-based (ccIIV4) vaccines induced higher and broader antibody responses to circulating (cell-propagated) viruses, supporting the claim that recombinant technology leads to a broader immune response that may provide cross-protection."
+    },
+    {
+      "id": 3,
+      "quote": "After vaccination, in both age groups, the two egg based vaccines generally reinforced the neutralizing antibody responses to egg adapted epitopes as evidenced by an increased trend in the proportion of participants with GMT egg cell titer ratio \u22654. In contrast, among RIV4 and ccIIV4 recipients, the proportion of participants with egg cell ratio \u22654 did not increase, suggesting a broader response.",
+      "supports_claim": true,
+      "explanation": "The quote directly compares the immune response profiles of egg-based versus recombinant (RIV4) and cell-based (ccIIV4) vaccines. It states that egg-based vaccines reinforce a response to egg-adapted epitopes (narrower), while RIV4 and ccIIV4 do not, suggesting a broader immune response. This broader response is the basis for the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season. The quote provides explicit evidence for the claim.",
+      "presence_explanation": "The quote appears on page 5 of the document, with only minor formatting differences: 'After vaccination, in both age groups, the two egg based vaccines generally reinforced the neutralizing antibody responses to egg adapted epi to pes as evidenced by an increased trend in the proportion of participants with GMT egg cell titer ratio \u22654. In contrast, among RIV4 and ccIIV4 recipients, the proportion of participants with egg cell ratio \u22654 did not increase, suggesting a broader response.' The content, numbers, and meaning are preserved.",
+      "support_explanation": "The quote directly compares the immune response profiles of egg-based versus recombinant (RIV4) and cell-based (ccIIV4) vaccines. It states that egg-based vaccines reinforce a response to egg-adapted epitopes (narrower), while RIV4 and ccIIV4 do not, suggesting a broader immune response. This broader response is the basis for the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season. The quote provides explicit evidence for the claim.",
+      "original_relevance": "This quote directly compares the immune response profiles, showing that recombinant and cell-based vaccines do not reinforce a narrow, egg-adapted response, but instead maintain a broader response, supporting the claim."
+    },
+    {
+      "id": "comp_1",
+      "quote": "In contrast, among recipients of non egg based vaccines in just one study year (IIV4-ccIIV4 or IIV4-RIV4) or in both study years (ccIIV4-ccIIV4, ccIIV4-RIV4, RIV4-IIV4, RIV4-RIV4), the proportion of participants with GMT egg cell titer ratio \u22654 did not increase, suggesting a broader response.",
+      "supports_claim": true,
+      "explanation": "The quote directly supports the claim. It states that recipients of non-egg-based vaccines (which includes recombinant vaccines) did not show an increase in the proportion of participants with a high GMT egg cell titer ratio, which is interpreted as evidence of a broader immune response. The phrase 'suggesting a broader response' explicitly links the observation to broader immunity, which is the core of the claim. The context in the document is about the immune response breadth after vaccination with recombinant and cell-based vaccines, supporting the idea that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+      "presence_explanation": "The quote appears on page 7 of the document, with only minor differences in formatting and word order due to OCR cleanup. The key factual content is present: 'In contrast, among recipients of non egg based vaccines in just one study year (IIV4-ccIIV4 or IIV4-RIV4) or in both study years (ccIIV4-ccIIV4, ccIIV4-RIV4, RIV4-IIV4, RIV4-RIV4), the proportion of participants with GMT egg cell titer ratio \u22654 did not increase, suggesting a broader response.' This matches the quote to verify.",
+      "support_explanation": "The quote directly supports the claim. It states that recipients of non-egg-based vaccines (which includes recombinant vaccines) did not show an increase in the proportion of participants with a high GMT egg cell titer ratio, which is interpreted as evidence of a broader immune response. The phrase 'suggesting a broader response' explicitly links the observation to broader immunity, which is the core of the claim. The context in the document is about the immune response breadth after vaccination with recombinant and cell-based vaccines, supporting the idea that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+      "original_relevance": "This quote directly states that non-egg-based vaccines, including recombinant vaccines, did not increase the proportion of participants with a high egg cell titer ratio, which is interpreted as evidence of a broader immune response, supporting the claim that recombinant technology leads to broader immunity."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "id": 2,
+      "quote": "Repeat vaccination with egg based influenza vaccines could preferentially boost antibodies targeting the egg adapted epitopes and reduce immunogenicity to circulating viruses.",
+      "reason": "does not support claim",
+      "original_explanation": "This statement contrasts the effect of egg-based vaccines with non-egg-based (including recombinant) vaccines, implying that recombinant vaccines avoid the narrowing of immune response seen with egg-based vaccines, thus supporting broader cross-protection."
+    },
+    {
+      "id": 4,
+      "quote": "RIV4 contains 3 times the ... HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody ... it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides evidence that recombinant vaccine (RIV4) increases both the quality and quantity of antibodies against cell-propagated (circulating) viruses, supporting a broader immune response and potential cross-protection."
+    },
+    {
+      "id": 5,
+      "quote": "The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45. For ELISA, rHA antigens were coated at 100 ng/well. Serum samples were tested ... to evaluate the total binding antibodies against 8 recombinant HA proteins (rHA from both egg and cell propagated viruses of each of the 4 vaccine antigens), and 2 rHA stalk proteins (A (H1 N1) pdm09 HA stalk, and A (H3 N2) HA stalk).",
+      "reason": "does not support claim",
+      "original_explanation": "This methodological quote shows that the immune response to recombinant antigens was measured against both egg- and cell-derived viruses, supporting the assessment of cross-protection and breadth of response induced by recombinant technology."
+    },
+    {
+      "id": "comp_2",
+      "quote": "To evaluate the total binding antibodies against 8 recombinant HA proteins (rHA from both egg and cell propagated viruses of each of the 4 vaccine antigens), and 2 rHA stalk proteins (A (H1 N1) pdm09 HA stalk, and A (H3 N2) HA stalk)... The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45. For ELISA, rHA antigens were coated at 100 ng/well. Serum samples were tested at an initial dilution of 1:400 followed by 2 fold serial dilution. Antibodies were detected by horseradish peroxidase (HRP) conjugated goat anti human pan immunoglobulin conjugate to detect total binding antibodies.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote describes the use of recombinant HA proteins from both egg and cell propagated viruses to measure total binding antibodies, indicating that the immune response elicited by recombinant vaccines is being assessed for breadth across multiple viral variants, which supports the claim of broader immune response and potential cross-protection."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_mrg_det_9_004.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p10_mrg_det_9_004.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "mrg_det_9_004",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A multi-panel figure showing ELISA antibody titers (log\u2082 scale) against egg-derived and cell-derived influenza hemagglutinin (HA) for A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata viruses at Day 0 and 1 month post-vaccination (Panel A); geometric mean ratios of egg\u2010 to cell\u2010HA ELISA titers (Panel B); ELISA titers against HA stalk domains for H3 and H1 (Panel C); and fold-rise in HA stalk ELISA titers from Day 0 to 1 month (Panel D). The legend compares combinations of cell culture\u2013based inactivated vaccine (ccIIV4), recombinant vaccine (RIV4), and egg-based vaccine (IIV4). The figure presents immunogenicity data comparing different vaccine formulations (ccIIV4, RIV4, IIV4) but does not describe or provide evidence on how Flublok (RIV4) is produced, nor does it mention insect cells or a baculovirus expression vector system. Therefore, it does not support the claim. Note: Analysis limited to visible immunogenicity data; no production methods or platform details are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multi-panel figure showing ELISA antibody titers (log\u2082 scale) against egg-derived and cell-derived influenza hemagglutinin (HA) for A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata viruses at Day 0 and 1 month post-vaccination (Panel A); geometric mean ratios of egg\u2010 to cell\u2010HA ELISA titers (Panel B); ELISA titers against HA stalk domains for H3 and H1 (Panel C); and fold-rise in HA stalk ELISA titers from Day 0 to 1 month (Panel D). The legend compares combinations of cell culture\u2013based inactivated vaccine (ccIIV4), recombinant vaccine (RIV4), and egg-based vaccine (IIV4).",
+    "evidence_found": null,
+    "reasoning": "The figure presents immunogenicity data comparing different vaccine formulations (ccIIV4, RIV4, IIV4) but does not describe or provide evidence on how Flublok (RIV4) is produced, nor does it mention insect cells or a baculovirus expression vector system. Therefore, it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible immunogenicity data; no production methods or platform details are shown."
+  }
+}

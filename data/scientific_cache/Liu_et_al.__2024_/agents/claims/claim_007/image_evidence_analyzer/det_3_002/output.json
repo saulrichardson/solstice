@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_002.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p4_det_3_002.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_002",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A multi-panel figure of hemagglutination inhibition (HI) and microneutralization (MN) titers (log2 scale) against A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata viruses at Day 0, 1 month, and 6 months post-vaccination. Panels are stratified by age group (18\u201344 yrs and 45\u201364 yrs) and by virus propagation method (egg-grown vs. cell-grown). Four vaccine groups are color-coded: Fluzone IIV4 (egg-based), Fluad IIV4, cell-culture IIV4 (ccIIV4), and recombinant HA vaccine (RIV4). P-values annotate significant differences between groups at specific time points. The figure presents overall HI and MN titers against individual virus strains but does not report responses specifically to highly conserved HA regions or demonstrate broadly cross-reactive antibody induction. Therefore, it does not support the claim. Note: The figure is clear in showing overall antibody titers but lacks epitope-specific or breadth-of-reactivity measurements; interpretation is limited to functional titer comparisons.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multi-panel figure of hemagglutination inhibition (HI) and microneutralization (MN) titers (log2 scale) against A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata viruses at Day 0, 1 month, and 6 months post-vaccination. Panels are stratified by age group (18\u201344 yrs and 45\u201364 yrs) and by virus propagation method (egg-grown vs. cell-grown). Four vaccine groups are color-coded: Fluzone IIV4 (egg-based), Fluad IIV4, cell-culture IIV4 (ccIIV4), and recombinant HA vaccine (RIV4). P-values annotate significant differences between groups at specific time points.",
+    "evidence_found": null,
+    "reasoning": "The figure presents overall HI and MN titers against individual virus strains but does not report responses specifically to highly conserved HA regions or demonstrate broadly cross-reactive antibody induction. Therefore, it does not support the claim.",
+    "confidence_notes": "The figure is clear in showing overall antibody titers but lacks epitope-specific or breadth-of-reactivity measurements; interpretation is limited to functional titer comparisons."
+  }
+}

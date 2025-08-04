@@ -1,0 +1,44 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": {
+    "pdf_name": "Liu_et_al.__2024_",
+    "source_pdf": "data/clinical_files/Liu et al. (2024).pdf",
+    "total_pages": 13,
+    "total_blocks": 146,
+    "total_characters": 36717
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 5,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4. In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating ...",
+      "relevance_explanation": "This quote shows that recombinant (RIV4) and cell-based (ccIIV4) vaccines induced higher and broader antibody responses to circulating (cell-propagated) viruses, supporting the claim that recombinant technology leads to a broader immune response that may provide cross-protection."
+    },
+    {
+      "id": 2,
+      "quote": "Repeat vaccination with egg based influenza vaccines could preferentially boost antibodies targeting the egg adapted epitopes and reduce immunogenicity to circulating viruses.",
+      "relevance_explanation": "This statement contrasts the effect of egg-based vaccines with non-egg-based (including recombinant) vaccines, implying that recombinant vaccines avoid the narrowing of immune response seen with egg-based vaccines, thus supporting broader cross-protection."
+    },
+    {
+      "id": 3,
+      "quote": "After vaccination, in both age groups, the two egg based vaccines generally reinforced the neutralizing antibody responses to egg adapted epitopes as evidenced by an increased trend in the proportion of participants with GMT egg cell titer ratio \u22654. In contrast, among RIV4 and ccIIV4 recipients, the proportion of participants with egg cell ratio \u22654 did not increase, suggesting a broader response.",
+      "relevance_explanation": "This quote directly compares the immune response profiles, showing that recombinant and cell-based vaccines do not reinforce a narrow, egg-adapted response, but instead maintain a broader response, supporting the claim."
+    },
+    {
+      "id": 4,
+      "quote": "RIV4 contains 3 times the ... HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody ... it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies.",
+      "relevance_explanation": "This quote provides evidence that recombinant vaccine (RIV4) increases both the quality and quantity of antibodies against cell-propagated (circulating) viruses, supporting a broader immune response and potential cross-protection."
+    },
+    {
+      "id": 5,
+      "quote": "The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45. For ELISA, rHA antigens were coated at 100 ng/well. Serum samples were tested ... to evaluate the total binding antibodies against 8 recombinant HA proteins (rHA from both egg and cell propagated viruses of each of the 4 vaccine antigens), and 2 rHA stalk proteins (A (H1 N1) pdm09 HA stalk, and A (H3 N2) HA stalk).",
+      "relevance_explanation": "This methodological quote shows that the immune response to recombinant antigens was measured against both egg- and cell-derived viruses, supporting the assessment of cross-protection and breadth of response induced by recombinant technology."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

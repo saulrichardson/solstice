@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "A table listing trade names of quadrivalent influenza vaccines and the dose volume (\u03bcg HA per vaccine virus) recommended for children aged 6 through 35 months, showing Afluria Quadrivalent at 0.25 mL (7.5 \u03bcg) and other vaccines (Fluarix, Flucelvax, FluLaval, Fluzone) at 0.5 mL (15 \u03bcg). The table only provides dose volumes for pediatric influenza vaccines and does not present any immunogenicity or antibody response data comparing higher-dose recombinant vaccines to egg-based standard-dose vaccines; it does not support the claim. Note: The image is clear and complete for the table shown; however, no immunogenicity outcomes are provided.",
+  "explanation": "A two-column table listing influenza vaccine trade names (e.g., Afluria Quadrivalent, Fluarix Quadrivalent, Flucelvax Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent) and the dose volume for children aged 6 through 35 months, specified in mL and corresponding \u00b5g of hemagglutinin per vaccine virus The table only provides dose volumes for various quadrivalent vaccines in young children and does not present any data on recombinant versus egg-based vaccines or comparative antibody responses, and therefore does not support the claim Note: Limited to dose volume information; no immunogenicity or comparative efficacy data are shown",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing trade names of quadrivalent influenza vaccines and the dose volume (\u03bcg HA per vaccine virus) recommended for children aged 6 through 35 months, showing Afluria Quadrivalent at 0.25 mL (7.5 \u03bcg) and other vaccines (Fluarix, Flucelvax, FluLaval, Fluzone) at 0.5 mL (15 \u03bcg).",
+    "image_description": "A two-column table listing influenza vaccine trade names (e.g., Afluria Quadrivalent, Fluarix Quadrivalent, Flucelvax Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent) and the dose volume for children aged 6 through 35 months, specified in mL and corresponding \u00b5g of hemagglutinin per vaccine virus",
     "evidence_found": null,
-    "reasoning": "The table only provides dose volumes for pediatric influenza vaccines and does not present any immunogenicity or antibody response data comparing higher-dose recombinant vaccines to egg-based standard-dose vaccines; it does not support the claim.",
-    "confidence_notes": "The image is clear and complete for the table shown; however, no immunogenicity outcomes are provided."
+    "reasoning": "The table only provides dose volumes for various quadrivalent vaccines in young children and does not present any data on recombinant versus egg-based vaccines or comparative antibody responses, and therefore does not support the claim",
+    "confidence_notes": "Limited to dose volume information; no immunogenicity or comparative efficacy data are shown"
   }
 }

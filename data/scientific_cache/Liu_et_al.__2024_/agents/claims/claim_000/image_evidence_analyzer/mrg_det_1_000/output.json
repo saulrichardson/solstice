@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A two\u2010year CONSORT flow diagram showing enrollment, randomization, and follow\u2010up of participants in four vaccine arms (ccIIV4, RIV4, Fluzone IIV4, FluARIX IIV4) in Year 1 and re\u2010randomization in Year 2. does not support the claim because the figure only presents participant allocation and study flow; it contains no data or statements about antigenic match with WHO\u2010 or FDA\u2010selected strains. Note: None.",
+  "explanation": "CONSORT flow diagram showing participant enrollment, allocation, follow-up, and re-randomization for Year 1 (2018\u20132019) and Year 2 (2019\u20132020) across four vaccine arms: cell-culture quadrivalent inactivated vaccine (cclIV4), recombinant-hemagglutinin influenza vaccine (RIV4), Fluzone IIV4, and Fluarix IIV4. It details numbers enrolled, completed visits at day 0, 1 month, and 6 months, and re-randomization into various vaccine sequences in Year 2. does not support the claim because this figure is solely a participant flow diagram and provides no information on antigenic match or strain composition for Flublok or any vaccine to WHO- or FDA-selected strains. Note: Limited to visible content; no strain details or matching data are presented in the figure.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A two\u2010year CONSORT flow diagram showing enrollment, randomization, and follow\u2010up of participants in four vaccine arms (ccIIV4, RIV4, Fluzone IIV4, FluARIX IIV4) in Year 1 and re\u2010randomization in Year 2.",
+    "image_description": "CONSORT flow diagram showing participant enrollment, allocation, follow-up, and re-randomization for Year 1 (2018\u20132019) and Year 2 (2019\u20132020) across four vaccine arms: cell-culture quadrivalent inactivated vaccine (cclIV4), recombinant-hemagglutinin influenza vaccine (RIV4), Fluzone IIV4, and Fluarix IIV4. It details numbers enrolled, completed visits at day 0, 1 month, and 6 months, and re-randomization into various vaccine sequences in Year 2.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the figure only presents participant allocation and study flow; it contains no data or statements about antigenic match with WHO\u2010 or FDA\u2010selected strains.",
-    "confidence_notes": "None."
+    "reasoning": "does not support the claim because this figure is solely a participant flow diagram and provides no information on antigenic match or strain composition for Flublok or any vaccine to WHO- or FDA-selected strains.",
+    "confidence_notes": "Limited to visible content; no strain details or matching data are presented in the figure."
   }
 }

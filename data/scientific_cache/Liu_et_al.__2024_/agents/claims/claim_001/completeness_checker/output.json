@@ -1,0 +1,56 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Liu_et_al.__2024_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 3
+  },
+  "completeness_stats": {
+    "existing_evidence": 3,
+    "new_evidence_found": 3,
+    "total_evidence": 5
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "a cell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain).",
+      "relevance_explanation": "This quote explicitly states that Flublok (RIV4) contains 3 times the hemagglutinin (HA) antigen content per strain compared to standard-dose flu vaccines (IIV4 and ccIIV4), directly supporting the first part of the claim."
+    },
+    {
+      "id": 2,
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3N2) virus than ccIIV4 and IIV4.",
+      "relevance_explanation": "This quote provides direct evidence that Flublok (RIV4), which contains 3x the HA antigen, resulted in greater immunogenicity (higher neutralizing and HA head binding antibodies) compared to standard-dose flu vaccines, supporting the second part of the claim."
+    },
+    {
+      "id": 3,
+      "quote": "For A (H3N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody response in both age groups, it also significantly increased the quantity of the total A (H3N2) cell HA head binding antibodies (Fig. 4A, Fig. S1A).",
+      "relevance_explanation": "This quote further supports the claim by stating that RIV4 (Flublok) significantly increased both the quality and quantity of antibody responses compared to standard-dose vaccines, linking higher HA content to greater immunogenicity."
+    },
+    {
+      "id": "comp_1",
+      "quote": "In this randomized trial (Clinical trials gov: NCT03722589), sera pre- and post vaccination with quad rival ent in activated egg based (IIV4), cell culture based (ccIIV4), and recombinant (RIV4) influenza vaccines were compared. RIV4 contains 45 \u00b5g HA/dose/strain, which is 3 times the amount in IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain).",
+      "relevance_explanation": "This quote explicitly states the HA antigen content of Flublok (RIV4) is 3 times that of standard-dose flu vaccines (IIV4 and ccIIV4), directly supporting the first part of the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    },
+    {
+      "id": "comp_2",
+      "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4. In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating viruses.",
+      "relevance_explanation": "This quote provides evidence that RIV4 (Flublok) is associated with greater immunogenicity compared to standard-dose vaccines, supporting the second part of the claim.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A black background with white logos of the U.S. Department of Health & Human Services and the CDC The image contains only organizational logos and no data or statements about Flublok's antigenic match; it does not support the claim Note: The image is clear but contains no relevant information beyond branding",
+  "explanation": "Black background with white Department of Health & Human Services (HHS) seal on the left and the Centers for Disease Control and Prevention (CDC) logo on the right. The figure only shows organizational logos for HHS and CDC and contains no data or statements regarding Flublok's antigenic match to WHO- or FDA-selected flu strains, and therefore does not support the claim. Note: The image quality is clear, but the content is limited to logos without any relevant scientific or regulatory details.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A black background with white logos of the U.S. Department of Health & Human Services and the CDC",
+    "image_description": "Black background with white Department of Health & Human Services (HHS) seal on the left and the Centers for Disease Control and Prevention (CDC) logo on the right.",
     "evidence_found": null,
-    "reasoning": "The image contains only organizational logos and no data or statements about Flublok's antigenic match; it does not support the claim",
-    "confidence_notes": "The image is clear but contains no relevant information beyond branding"
+    "reasoning": "The figure only shows organizational logos for HHS and CDC and contains no data or statements regarding Flublok's antigenic match to WHO- or FDA-selected flu strains, and therefore does not support the claim.",
+    "confidence_notes": "The image quality is clear, but the content is limited to logos without any relevant scientific or regulatory details."
   }
 }

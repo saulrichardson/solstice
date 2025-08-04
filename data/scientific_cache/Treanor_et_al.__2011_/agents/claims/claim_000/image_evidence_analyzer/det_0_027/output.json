@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_027.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p1_det_0_027.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_027",
+  "claim_id": "claim_000",
+  "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+  "supports_claim": false,
+  "explanation": "An article information panel showing submission and acceptance dates (Received 20 May 2011; Received in revised form 27 July 2011; Accepted 27 July 2011; Available online 9 August 2011) and keywords listing: 'Influenza vaccine', 'Baculovirus expression', 'Recombinant protein', 'Clinical trials'. does not support the claim because the image only shows publication metadata and keywords, with no mention of Flublok or matching to WHO- or FDA-selected flu strains. Note: The image is clear but contains only article metadata, so any conclusions about Flublok's antigenic matching cannot be drawn from it.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "An article information panel showing submission and acceptance dates (Received 20 May 2011; Received in revised form 27 July 2011; Accepted 27 July 2011; Available online 9 August 2011) and keywords listing: 'Influenza vaccine', 'Baculovirus expression', 'Recombinant protein', 'Clinical trials'.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image only shows publication metadata and keywords, with no mention of Flublok or matching to WHO- or FDA-selected flu strains.",
+    "confidence_notes": "The image is clear but contains only article metadata, so any conclusions about Flublok's antigenic matching cannot be drawn from it."
+  }
+}

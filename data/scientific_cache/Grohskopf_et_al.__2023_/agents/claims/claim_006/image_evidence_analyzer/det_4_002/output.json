@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p5_det_4_002.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_002",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Tabular listing of seasonal influenza vaccines (IIV4, ccIIV4, HD-IIV4, aIIV4, RIV4, LAIV4) showing trade name, manufacturer, presentations, age indication, \u03bcg HA per dose (or virus count), route, and mercury content Evidence: Flublok Quadrivalent (Sanofi Pasteur) is listed under RIV4 (recombinant HA vaccine) with dose and route details, but no mention of insect cells or baculovirus expression vector system The table confirms that Flublok is categorized as a recombinant HA vaccine but does not provide any information about a novel production platform involving expression in insect cells using BEVS, and therefore does not support the claim Note: Based solely on the visible portion of the table; footnotes or accompanying text might contain additional details not shown here",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Tabular listing of seasonal influenza vaccines (IIV4, ccIIV4, HD-IIV4, aIIV4, RIV4, LAIV4) showing trade name, manufacturer, presentations, age indication, \u03bcg HA per dose (or virus count), route, and mercury content",
+    "evidence_found": "Flublok Quadrivalent (Sanofi Pasteur) is listed under RIV4 (recombinant HA vaccine) with dose and route details, but no mention of insect cells or baculovirus expression vector system",
+    "reasoning": "The table confirms that Flublok is categorized as a recombinant HA vaccine but does not provide any information about a novel production platform involving expression in insect cells using BEVS, and therefore does not support the claim",
+    "confidence_notes": "Based solely on the visible portion of the table; footnotes or accompanying text might contain additional details not shown here"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_002.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p4_det_3_002.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_002",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": true,
+  "explanation": "Multi-panel plots of microneutralization (MN) and hemagglutination inhibition (HI) titers (log2 scale) at Day 0, 1 month, and 6 months post-vaccination. Data are shown for four vaccine groups (Fluzone IIV4, Fluad IIV4, cell culture-derived IIV4, recombinant RIV4) in two age cohorts (18\u201344 and 45\u201364 years), with titers measured against both egg-propagated and cell-propagated influenza antigens (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata). Statistical comparisons (p-values) are annotated for select group differences. Evidence: Recombinant RIV4 induced equal or higher MN titers against the cell-propagated A(H3N2) strain\u2014often with statistically significant superiority (e.g., p<0.0001 at 1 month and p=0.0038 at 6 months in the 18\u201344 yr cohort)\u2014compared with the egg-based and cell-based IIV4 vaccines. The figure demonstrates that recombinant technology (RIV4) generates robust neutralizing antibody responses not only to the vaccine (egg-propagated) strain but also to a cell-propagated variant, indicating a broader immune response with cross-reactivity; this supports the claim that recombinant vaccines may provide cross-protection in mismatch seasons. Note: Exact group comparisons and p-value pairings are small and partially ambiguous; the data are immunogenicity endpoints, not direct clinical efficacy, and mismatch is modeled only by egg vs cell propagation rather than distinct drifted strains.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Multi-panel plots of microneutralization (MN) and hemagglutination inhibition (HI) titers (log2 scale) at Day 0, 1 month, and 6 months post-vaccination. Data are shown for four vaccine groups (Fluzone IIV4, Fluad IIV4, cell culture-derived IIV4, recombinant RIV4) in two age cohorts (18\u201344 and 45\u201364 years), with titers measured against both egg-propagated and cell-propagated influenza antigens (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata). Statistical comparisons (p-values) are annotated for select group differences.",
+    "evidence_found": "Recombinant RIV4 induced equal or higher MN titers against the cell-propagated A(H3N2) strain\u2014often with statistically significant superiority (e.g., p<0.0001 at 1 month and p=0.0038 at 6 months in the 18\u201344 yr cohort)\u2014compared with the egg-based and cell-based IIV4 vaccines.",
+    "reasoning": "The figure demonstrates that recombinant technology (RIV4) generates robust neutralizing antibody responses not only to the vaccine (egg-propagated) strain but also to a cell-propagated variant, indicating a broader immune response with cross-reactivity; this supports the claim that recombinant vaccines may provide cross-protection in mismatch seasons.",
+    "confidence_notes": "Exact group comparisons and p-value pairings are small and partially ambiguous; the data are immunogenicity endpoints, not direct clinical efficacy, and mismatch is modeled only by egg vs cell propagation rather than distinct drifted strains."
+  }
+}

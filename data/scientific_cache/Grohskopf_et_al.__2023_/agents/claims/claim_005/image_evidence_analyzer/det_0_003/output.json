@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "Black background containing the U.S. Department of Health & Human Services stylized eagle logo on the left and the CDC logo on the right The image only shows organizational logos and contains no information about any clinical trial or comparison between Flublok (quadrivalent) and Fluarix (quadrivalent); it does not support the claim Note: Image is clear but provides no trial details",
+  "explanation": "A black background displaying the U.S. Department of Health & Human Services seal and the CDC logo, with no additional text or data. The image contains only the HHS and CDC logos and does not present any study design, vaccine names, or comparison data, and thus doesn't support the claim. Note: Analysis is limited by the content visible, which is solely branding without any clinical information.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Black background containing the U.S. Department of Health & Human Services stylized eagle logo on the left and the CDC logo on the right",
+    "image_description": "A black background displaying the U.S. Department of Health & Human Services seal and the CDC logo, with no additional text or data.",
     "evidence_found": null,
-    "reasoning": "The image only shows organizational logos and contains no information about any clinical trial or comparison between Flublok (quadrivalent) and Fluarix (quadrivalent); it does not support the claim",
-    "confidence_notes": "Image is clear but provides no trial details"
+    "reasoning": "The image contains only the HHS and CDC logos and does not present any study design, vaccine names, or comparison data, and thus doesn't support the claim.",
+    "confidence_notes": "Analysis is limited by the content visible, which is solely branding without any clinical information."
   }
 }

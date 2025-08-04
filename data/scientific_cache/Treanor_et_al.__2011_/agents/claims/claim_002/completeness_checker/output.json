@@ -15,13 +15,13 @@
   "combined_evidence": [
     {
       "id": 1,
-      "quote": "Although embryonated hen's eggs have been used to generate effective influenza vaccines for many years, this system does have several important drawbacks. Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg production for growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2].",
-      "relevance_explanation": "This quote explicitly states that the process of growing influenza vaccines in eggs can select for receptor variants that may not optimally represent circulating strains, directly supporting the claim that egg-based vaccines can develop mutations during production that may reduce their effectiveness."
+      "quote": "Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg production for growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2].",
+      "relevance_explanation": "This quote explicitly states that the process of growing influenza vaccines in eggs can select for receptor variants, meaning mutations may occur that make the vaccine strains less representative of the circulating viruses, thus potentially reducing effectiveness."
     },
     {
       "id": "comp_1",
-      "quote": "Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg production for growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2].",
-      "relevance_explanation": "This quote directly states that the process of growing influenza vaccines in eggs can select for receptor variants, which may differ from the circulating strains, supporting the claim that mutations can develop during production and potentially reduce vaccine effectiveness.",
+      "quote": "Although embryonated hen's eggs have been used to generate effective influenza vaccines for many years, this system does have several important drawbacks. For example, the ability to scale up egg production for growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2]. Expression of proteins in insect cells using recombinant baculovirus expression system as previously described [9].",
+      "relevance_explanation": "This quote highlights that both egg-based and cell-based (insect cell/baculovirus) vaccine production systems can result in the selection of variants that may not match circulating strains, supporting the claim that mutations or changes during production can reduce vaccine effectiveness.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

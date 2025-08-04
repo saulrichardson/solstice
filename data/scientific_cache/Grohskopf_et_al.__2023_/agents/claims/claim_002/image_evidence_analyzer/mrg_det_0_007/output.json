@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "Document header from the CDC's Morbidity and Mortality Weekly Report (MMWR), showing the title, volume, issue number, and date. does not support the claim because the image contains only the report's header and provides no information about mutations in cell- or egg-based flu vaccine production or their effectiveness. Note: Analysis limited by the fact that only the document header is visible; no substantive content is shown.",
+  "explanation": "Header from the CDC's Morbidity and Mortality Weekly Report (MMWR), showing the publication title, volume, issue number, and date. The image only displays the cover header of an MMWR report and contains no data or statements about cell- or egg-based flu vaccine production or associated mutations, so it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Document header from the CDC's Morbidity and Mortality Weekly Report (MMWR), showing the title, volume, issue number, and date.",
+    "image_description": "Header from the CDC's Morbidity and Mortality Weekly Report (MMWR), showing the publication title, volume, issue number, and date.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image contains only the report's header and provides no information about mutations in cell- or egg-based flu vaccine production or their effectiveness.",
-    "confidence_notes": "Analysis limited by the fact that only the document header is visible; no substantive content is shown."
+    "reasoning": "The image only displays the cover header of an MMWR report and contains no data or statements about cell- or egg-based flu vaccine production or associated mutations, so it does not support the claim.",
+    "confidence_notes": null
   }
 }

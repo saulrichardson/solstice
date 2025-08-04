@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p7_det_6_000.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_000",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "Table showing contraindications and precautions for 2022\u201323 influenza vaccines by vaccine type (egg-based IIV4 and LAIV4, cell culture-based ccIIV4, recombinant RIV4) in persons with prior severe allergic reactions to various influenza vaccines. The table contains information on allergic reaction contraindications for different influenza vaccine platforms and does not provide any data on hemagglutinin (HA) microgram content per strain, so it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table showing contraindications and precautions for 2022\u201323 influenza vaccines by vaccine type (egg-based IIV4 and LAIV4, cell culture-based ccIIV4, recombinant RIV4) in persons with prior severe allergic reactions to various influenza vaccines.",
+    "evidence_found": null,
+    "reasoning": "The table contains information on allergic reaction contraindications for different influenza vaccine platforms and does not provide any data on hemagglutinin (HA) microgram content per strain, so it does not support the claim.",
+    "confidence_notes": null
+  }
+}

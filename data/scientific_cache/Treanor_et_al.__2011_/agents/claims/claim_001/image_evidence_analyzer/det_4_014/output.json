@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p5_det_4_014.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/table_p5_det_4_014.png",
+  "image_type": "Table",
+  "page_number": 5,
+  "block_id": "det_4_014",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Table showing the number and percentage of influenza cases and vaccine efficacy (with 95% CI) among subjects receiving FluBlok (N=2344) versus placebo (N=2304) for endpoints of CDC-defined influenza-like illness and laboratory-confirmed influenza A and B. The table presents clinical efficacy of FluBlok versus placebo but contains no data on hemagglutinin antigen content or comparisons to standard-dose vaccines, and thus does not support the claim Note: Analysis limited to visible table; no antigen content or standard-dose comparator data present",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table showing the number and percentage of influenza cases and vaccine efficacy (with 95% CI) among subjects receiving FluBlok (N=2344) versus placebo (N=2304) for endpoints of CDC-defined influenza-like illness and laboratory-confirmed influenza A and B.",
+    "evidence_found": null,
+    "reasoning": "The table presents clinical efficacy of FluBlok versus placebo but contains no data on hemagglutinin antigen content or comparisons to standard-dose vaccines, and thus does not support the claim",
+    "confidence_notes": "Analysis limited to visible table; no antigen content or standard-dose comparator data present"
+  }
+}

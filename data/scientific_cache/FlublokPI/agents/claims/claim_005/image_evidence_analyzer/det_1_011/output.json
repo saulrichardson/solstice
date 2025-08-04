@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "A table summarizing the percentage of solicited local and systemic adverse reactions in a clinical trial, comparing Flublok (N=2272) to Placebo (N=2231), with categories such as pain, redness, swelling, headache, fatigue, muscle pain, etc. The table compares Flublok to placebo and does not include any data or mention of Fluarix, so it does not support the claim. Note: Analysis limited to the visible table; no reference to Fluarix is shown on this page.",
+  "explanation": "A two-column table presenting the incidence (%) of local and systemic adverse events for Flublok (N=2272) compared to placebo (N=2231), with rows for pain, redness, swelling, bruising, headache, fatigue, muscle pain, nausea, joint pain, chills, and fever, each subdivided into any, moderate, and severe categories. The table compares Flublok to placebo and does not include any data or mention of Fluarix, so it does not support the claim that Flublok was evaluated against Fluarix in the pivotal trial. Note: The image is clear; however, it only shows Flublok versus placebo, with no reference to a Fluarix comparator.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table summarizing the percentage of solicited local and systemic adverse reactions in a clinical trial, comparing Flublok (N=2272) to Placebo (N=2231), with categories such as pain, redness, swelling, headache, fatigue, muscle pain, etc.",
+    "image_description": "A two-column table presenting the incidence (%) of local and systemic adverse events for Flublok (N=2272) compared to placebo (N=2231), with rows for pain, redness, swelling, bruising, headache, fatigue, muscle pain, nausea, joint pain, chills, and fever, each subdivided into any, moderate, and severe categories.",
     "evidence_found": null,
-    "reasoning": "The table compares Flublok to placebo and does not include any data or mention of Fluarix, so it does not support the claim.",
-    "confidence_notes": "Analysis limited to the visible table; no reference to Fluarix is shown on this page."
+    "reasoning": "The table compares Flublok to placebo and does not include any data or mention of Fluarix, so it does not support the claim that Flublok was evaluated against Fluarix in the pivotal trial.",
+    "confidence_notes": "The image is clear; however, it only shows Flublok versus placebo, with no reference to a Fluarix comparator."
   }
 }

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p5_det_4_000.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p5_det_4_000.png",
+  "image_type": "Figure",
+  "page_number": 5,
+  "block_id": "det_4_000",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "Figure with four panels (A\u2013D) showing geometric mean fold rise in antibody titers at 1 month post-vaccination and fold reduction at 6 months post-vaccination for different influenza strains (H3N2 egg/cell, H1N1 egg/cell, B/VIC egg/cell, B/YAM egg/cell) in two age groups (18\u201344 and 45\u201364 years) and four vaccine types (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4). The figure presents immunogenicity data (antibody titer changes) but does not include any information on hemagglutinin (HA) microgram amounts per strain for any vaccine; it does not support the claim",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Figure with four panels (A\u2013D) showing geometric mean fold rise in antibody titers at 1 month post-vaccination and fold reduction at 6 months post-vaccination for different influenza strains (H3N2 egg/cell, H1N1 egg/cell, B/VIC egg/cell, B/YAM egg/cell) in two age groups (18\u201344 and 45\u201364 years) and four vaccine types (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4).",
+    "evidence_found": null,
+    "reasoning": "The figure presents immunogenicity data (antibody titer changes) but does not include any information on hemagglutinin (HA) microgram amounts per strain for any vaccine; it does not support the claim",
+    "confidence_notes": null
+  }
+}

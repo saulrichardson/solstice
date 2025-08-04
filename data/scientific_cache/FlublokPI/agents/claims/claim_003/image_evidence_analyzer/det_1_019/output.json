@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table comparing the percentages of solicited local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events for two influenza vaccines: Flublok (recombinant hemagglutinin vaccine, N=972) and IIV3 (egg-based inactivated vaccine, N=967). Severity is broken down into any, moderate, and severe for each event. The table presents safety/reactogenicity data (local and systemic adverse event rates) for Flublok versus IIV3 and contains no data on immune response breadth, cross-protection, or performance in mismatch seasons, so it does not support the claim. Note: Table is clearly legible but only covers adverse event frequencies, not immunogenicity or cross-protection outcomes.",
+  "explanation": "Table showing percentages of solicited local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events for two vaccine groups: Flublok (N=972) and IIV3 (N=967), broken down by any, moderate, and severe events. does not support the claim because the data presented are safety and reactogenicity outcomes, with no measures of immune response breadth, cross-protection, or effectiveness in mismatch seasons. Note: Table only includes adverse event rates; immunogenicity or cross-protection data are not shown.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table comparing the percentages of solicited local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events for two influenza vaccines: Flublok (recombinant hemagglutinin vaccine, N=972) and IIV3 (egg-based inactivated vaccine, N=967). Severity is broken down into any, moderate, and severe for each event.",
+    "image_description": "Table showing percentages of solicited local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events for two vaccine groups: Flublok (N=972) and IIV3 (N=967), broken down by any, moderate, and severe events.",
     "evidence_found": null,
-    "reasoning": "The table presents safety/reactogenicity data (local and systemic adverse event rates) for Flublok versus IIV3 and contains no data on immune response breadth, cross-protection, or performance in mismatch seasons, so it does not support the claim.",
-    "confidence_notes": "Table is clearly legible but only covers adverse event frequencies, not immunogenicity or cross-protection outcomes."
+    "reasoning": "does not support the claim because the data presented are safety and reactogenicity outcomes, with no measures of immune response breadth, cross-protection, or effectiveness in mismatch seasons.",
+    "confidence_notes": "Table only includes adverse event rates; immunogenicity or cross-protection data are not shown."
   }
 }

@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_019.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_019.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_019",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A comparative table listing percentages of solicited local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events for Flublok (N=972) and IIV3 (N=967), with columns for any, moderate, and severe events. The table presents safety/reactogenicity data only and contains no information on antibody levels, cross-reactivity, or immunogenicity of recombinant HA versus egg-derived vaccines, and therefore does not support the claim. Note: Analysis limited to visible data; no immunogenicity or antibody titer information is present in the image.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A comparative table listing percentages of solicited local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events for Flublok (N=972) and IIV3 (N=967), with columns for any, moderate, and severe events.",
+    "evidence_found": null,
+    "reasoning": "The table presents safety/reactogenicity data only and contains no information on antibody levels, cross-reactivity, or immunogenicity of recombinant HA versus egg-derived vaccines, and therefore does not support the claim.",
+    "confidence_notes": "Analysis limited to visible data; no immunogenicity or antibody titer information is present in the image."
+  }
+}

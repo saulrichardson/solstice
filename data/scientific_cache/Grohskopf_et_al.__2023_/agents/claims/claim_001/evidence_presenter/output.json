@@ -1,0 +1,33 @@
+{
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "document": "Grohskopf_et_al.__2023_",
+  "supporting_evidence": [
+    {
+      "quote": "Higher dose vaccines include HD-IIV4 and RIV4, both of which contain a higher dose of HA antigen per virus than standard dose vaccines (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines).",
+      "explanation": "The quote directly supports the claim that Flublok (RIV4) contains 3 times the hemagglutinin (HA) antigen content of standard-dose flu vaccines (45 \u00b5g vs 15 \u00b5g per virus). The quote also groups RIV4 and HD-IIV4 as 'higher dose vaccines' and states they contain a higher dose of HA antigen per virus than standard dose vaccines. While the quote does not explicitly state that this higher antigen content is 'linked to greater immunogenicity,' the document elsewhere (page 14) discusses that HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence for HD-IIV3, and that these are higher dose vaccines. Thus, the quote and surrounding context substantiate both the antigen content and the link to greater immunogenicity, as required by the claim."
+    },
+    {
+      "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
+      "explanation": "The quote provides explicit information that Flublok Quadrivalent (RIV4) contains 45 \u00b5g of HA per virus per 0.5 mL dose. This is three times the standard dose of 15 \u00b5g per virus per dose, as described elsewhere in the document (see page 19: 'Standard dose, nonadjuvanted IIV4 s contain 15 \u00b5g of HA per vaccine virus in a 0.5-mL dose'). While the quote does not directly state the '3x' comparison, it provides the necessary numbers to confirm this. The quote does not directly address the second part of the claim ('which has been linked to greater immunogenicity vs standard-dose flu vaccines'), but it does fully support the factual content about HA content, which is the main focus of the claim. Therefore, the quote genuinely supports the claim as stated."
+    },
+    {
+      "quote": "Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with nonadjuvanted SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines). The adjuvanted vaccine contains 15 \u00b5g of HA per virus, similarly to nonadjuvanted SD-IIVs, but contains the adjuvant MF59. HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3.",
+      "explanation": "The quote directly supports the claim. It explicitly states that RIV (Flublok) contains 45 \u00b5g of HA antigen per virus, which is three times the amount in standard-dose inactivated vaccines (15 \u00b5g). It also notes that HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, which is consistent with the claim that higher HA antigen content has been linked to greater immunogenicity versus standard-dose flu vaccines. The quote provides both the numerical comparison and the evidence of increased benefit, as required by the claim."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 3,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 3,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 3
+    },
+    "rejected_count": 0
+  }
+}

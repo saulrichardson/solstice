@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A decision-tree flowchart showing pediatric influenza vaccination recommendations: asks if a child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022, and directs to give either 1 dose of 2022\u201323 influenza vaccine if yes, or 2 doses (\u22654 weeks apart) if no or unknown. The figure does not support the claim because it contains only a dosing algorithm for children's influenza vaccination based on prior doses and does not mention Flublok, hemagglutinin antigen content, or immunogenicity. Note: Analysis limited to image content; no contextual text on antigen content or Flublok is visible.",
+  "explanation": "Flowchart showing influenza vaccination dosing recommendations for children: asks whether the child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022, and directs to either 1 dose of 2022\u201323 influenza vaccine if yes, or 2 doses of 2022\u201323 influenza vaccine (administered \u22654 weeks apart) if no or unknown. does not support the claim: the figure provides pediatric influenza dosing guidance and contains no information about Flublok, hemagglutinin antigen content, or comparative immunogenicity. Note: Analysis limited to visible content; image is clear and text is legible.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A decision-tree flowchart showing pediatric influenza vaccination recommendations: asks if a child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022, and directs to give either 1 dose of 2022\u201323 influenza vaccine if yes, or 2 doses (\u22654 weeks apart) if no or unknown.",
+    "image_description": "Flowchart showing influenza vaccination dosing recommendations for children: asks whether the child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022, and directs to either 1 dose of 2022\u201323 influenza vaccine if yes, or 2 doses of 2022\u201323 influenza vaccine (administered \u22654 weeks apart) if no or unknown.",
     "evidence_found": null,
-    "reasoning": "The figure does not support the claim because it contains only a dosing algorithm for children's influenza vaccination based on prior doses and does not mention Flublok, hemagglutinin antigen content, or immunogenicity.",
-    "confidence_notes": "Analysis limited to image content; no contextual text on antigen content or Flublok is visible."
+    "reasoning": "does not support the claim: the figure provides pediatric influenza dosing guidance and contains no information about Flublok, hemagglutinin antigen content, or comparative immunogenicity.",
+    "confidence_notes": "Analysis limited to visible content; image is clear and text is legible."
   }
 }

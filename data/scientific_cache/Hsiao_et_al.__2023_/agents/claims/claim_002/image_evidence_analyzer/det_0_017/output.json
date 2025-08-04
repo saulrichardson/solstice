@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "Title page of an original article titled 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age' with a list of authors. The image only displays the article title and authors and does not support the claim about mutations in cell- and egg-based flu vaccines during production. Note: Limited view of only the title page; no substantive content on vaccine production or effectiveness is visible.",
+  "explanation": "Failed to analyze image The image does not support the claim due to analysis errors. Note: Analysis failed after all retry attempts",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Title page of an original article titled 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age' with a list of authors.",
+    "image_description": "Failed to analyze image",
     "evidence_found": null,
-    "reasoning": "The image only displays the article title and authors and does not support the claim about mutations in cell- and egg-based flu vaccines during production.",
-    "confidence_notes": "Limited view of only the title page; no substantive content on vaccine production or effectiveness is visible."
+    "reasoning": "The image does not support the claim due to analysis errors.",
+    "confidence_notes": "Analysis failed after all retry attempts"
   }
 }

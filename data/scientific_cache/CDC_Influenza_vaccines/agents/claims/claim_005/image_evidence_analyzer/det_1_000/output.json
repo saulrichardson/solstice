@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "A table listing several licensed quadrivalent influenza vaccines, showing for each the trade name (manufacturer), presentation, age indication, hemagglutinin content per dose, route of administration, and mercury content. The entries visible include Fluad Quadrivalent (IIV4), Flublok Quadrivalent (recombinant HA vaccine, RIV4), and FluMist Quadrivalent (LAIV4). The image does not support the claim because it only catalogs vaccines and their formulations; it does not describe any pivotal trial or comparison of Flublok Quadrivalent versus Fluarix Quadrivalent. Note: The table snippet may be incomplete and does not show any trial data or mention of Fluarix Quadrivalent.",
+  "explanation": "A table listing US-licensed influenza vaccines (2024\u201325) with columns for trade name (manufacturer), presentations, age indication, antigen content per dose, route, and thimerosal content. It includes entries for Fluad Quadrivalent, Flublok Quadrivalent (Sanofi Pasteur), and FluMist Quadrivalent. The image presents a product listing and formulation table; it does not provide any data on clinical trial design or comparators, and thus does not support the claim that Flublok (quadrivalent) was evaluated against Fluarix (quadrivalent standard-dose vaccine). Note: Image quality is sufficient; table scope is formulation details only, with no clinical trial information.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing several licensed quadrivalent influenza vaccines, showing for each the trade name (manufacturer), presentation, age indication, hemagglutinin content per dose, route of administration, and mercury content. The entries visible include Fluad Quadrivalent (IIV4), Flublok Quadrivalent (recombinant HA vaccine, RIV4), and FluMist Quadrivalent (LAIV4).",
+    "image_description": "A table listing US-licensed influenza vaccines (2024\u201325) with columns for trade name (manufacturer), presentations, age indication, antigen content per dose, route, and thimerosal content. It includes entries for Fluad Quadrivalent, Flublok Quadrivalent (Sanofi Pasteur), and FluMist Quadrivalent.",
     "evidence_found": null,
-    "reasoning": "The image does not support the claim because it only catalogs vaccines and their formulations; it does not describe any pivotal trial or comparison of Flublok Quadrivalent versus Fluarix Quadrivalent.",
-    "confidence_notes": "The table snippet may be incomplete and does not show any trial data or mention of Fluarix Quadrivalent."
+    "reasoning": "The image presents a product listing and formulation table; it does not provide any data on clinical trial design or comparators, and thus does not support the claim that Flublok (quadrivalent) was evaluated against Fluarix (quadrivalent standard-dose vaccine).",
+    "confidence_notes": "Image quality is sufficient; table scope is formulation details only, with no clinical trial information."
   }
 }

@@ -52,7 +52,7 @@ A concise 2-page technical summary covering:
 The fact-checking system uses a streamlined evidence pipeline with specialized LLM processing steps:
 - **EvidenceExtractor**: Finds quotes from documents that support claims
 - **CompletenessChecker**: Searches for additional supporting quotes not found in initial extraction
-- **EvidenceVerifierV2**: Validates that quotes exist in the document and genuinely support claims
+- **EvidenceVerifier**: Validates that quotes exist in the document and genuinely support claims
 - **ImageEvidenceAnalyzer**: Extracts evidence from charts and figures
 
 After LLM processing, an Evidence Presenter (non-LLM) consolidates all verified evidence into the final report.

@@ -1,0 +1,41 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "Zimmerman_et_al.__2023_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": false,
+    "additional_count": 0
+  },
+  "completeness_stats": {
+    "existing_evidence": 4,
+    "new_evidence_found": 0,
+    "total_evidence": 4
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "b RIV4: Flublok. c SD-IIV4: Afluria, Fluarix, FluLaval, Standard Dose Fluzone and FlucelVax.",
+      "relevance_explanation": "This quote identifies RIV4 as Flublok and SD-IIV4 as standard-dose influenza vaccines, which is necessary context for understanding which products are being compared in the claim about HA content per strain."
+    },
+    {
+      "id": 2,
+      "quote": "RIV4 was Flublok and Adj-IV was FluAd. Other independent variables were age, influenza season (2018-2019 and 2019-2020), sex, race and presence of one or more high risk conditions.",
+      "relevance_explanation": "This quote confirms that RIV4 refers to Flublok, directly linking the product name to the vaccine type discussed in the claim."
+    },
+    {
+      "id": 3,
+      "quote": "Standard Dose Fluzone and FlucelVax. HD-IIV4 was High Dose Fluzone, RIV4 was Flublok and Adj-IV was FluAd.",
+      "relevance_explanation": "This quote again clarifies the naming conventions used in the document, confirming that Flublok is the RIV4 vaccine and that standard-dose vaccines include Fluzone and FlucelVax, which is necessary for interpreting any statements about HA content per strain."
+    },
+    {
+      "id": 4,
+      "quote": "RIV4 (Flublok) contains 45 mcg of HA per strain, compared to 15 mcg of HA per strain in standard-dose influenza vaccines.",
+      "relevance_explanation": "This quote directly states the HA content per strain for both Flublok (RIV4) and standard-dose influenza vaccines, explicitly supporting the claim."
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

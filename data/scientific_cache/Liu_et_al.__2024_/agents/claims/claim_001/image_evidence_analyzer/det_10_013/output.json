@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p11_det_10_013.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/table_p11_det_10_013.png",
+  "image_type": "Table",
+  "page_number": 11,
+  "block_id": "det_10_013",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Table presenting demographic characteristics and prior vaccination history for study groups receiving Fluzone IIV4, Fluarix IIV4, ccIIV4, and RIV4 (n counts, mean age, age distribution, sex, race, study site, and vaccination history). The image contains only baseline demographic and prior vaccination history data and does not present any information on HA antigen content or comparative immunogenicity. Therefore, it does not support the claim. Note: The image is clear but limited to demographic data; no antigen content or immunogenicity results are shown.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table presenting demographic characteristics and prior vaccination history for study groups receiving Fluzone IIV4, Fluarix IIV4, ccIIV4, and RIV4 (n counts, mean age, age distribution, sex, race, study site, and vaccination history).",
+    "evidence_found": null,
+    "reasoning": "The image contains only baseline demographic and prior vaccination history data and does not present any information on HA antigen content or comparative immunogenicity. Therefore, it does not support the claim.",
+    "confidence_notes": "The image is clear but limited to demographic data; no antigen content or immunogenicity results are shown."
+  }
+}

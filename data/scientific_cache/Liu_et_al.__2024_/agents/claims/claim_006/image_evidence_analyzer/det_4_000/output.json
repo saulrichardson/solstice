@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p5_det_4_000.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p5_det_4_000.png",
+  "image_type": "Figure",
+  "page_number": 5,
+  "block_id": "det_4_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Four-panel figure showing geometric mean fold rise (1 month post-vaccination) and waning fold reduction (6 months) of antibody titers against multiple influenza strains (H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/VIC egg, B/VIC cell, B/YAM egg, B/YAM cell) in adults aged 18\u201344 and 45\u201364, comparing four vaccines: Fluzone IIV4 (open circles), Fluarix IIV4 (black circles), cell-culture IIV4 (green circles), and RIV4 (orange circles). P-values for comparisons are annotated above groups. The figure only presents immunogenicity data and vaccine comparisons; it does not describe or mention that Flublok (RIV4) is produced using a baculovirus expression vector system in insect cells, so it does not support the claim. Note: Analysis limited to visible figure content; no text on production platform is present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Four-panel figure showing geometric mean fold rise (1 month post-vaccination) and waning fold reduction (6 months) of antibody titers against multiple influenza strains (H3N2 egg, H3N2 cell, H1N1 egg, H1N1 cell, B/VIC egg, B/VIC cell, B/YAM egg, B/YAM cell) in adults aged 18\u201344 and 45\u201364, comparing four vaccines: Fluzone IIV4 (open circles), Fluarix IIV4 (black circles), cell-culture IIV4 (green circles), and RIV4 (orange circles). P-values for comparisons are annotated above groups.",
+    "evidence_found": null,
+    "reasoning": "The figure only presents immunogenicity data and vaccine comparisons; it does not describe or mention that Flublok (RIV4) is produced using a baculovirus expression vector system in insect cells, so it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible figure content; no text on production platform is present."
+  }
+}

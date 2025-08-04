@@ -1,0 +1,61 @@
+{
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "document": "Zimmerman_et_al.__2023_",
+  "additional_evidence_check": {
+    "checked_for_more": true,
+    "found_additional": true,
+    "additional_count": 1
+  },
+  "completeness_stats": {
+    "existing_evidence": 6,
+    "new_evidence_found": 1,
+    "total_evidence": 7
+  },
+  "combined_evidence": [
+    {
+      "id": 1,
+      "quote": "Conclusions: Over all adults, both RIV4 and SD-IIV4 were effective against influenza hospitalization, RIV4 providing better protection compared with SD-IIV4 overall, for females, younger adults, and with no high risk conditions.",
+      "relevance_explanation": "This quote directly states that the recombinant influenza vaccine (RIV4, a higher-dose recombinant flu vaccine) provided better protection compared to the standard-dose egg-based vaccine (SD-IIV4), supporting the claim that RIV4 induces a more robust antibody response."
+    },
+    {
+      "id": 2,
+      "quote": "Two large studies have explored rVE of recombinant quadrivalent influenza vaccine (RIV4). The Medicare beneficiaries study [10] using retrospective data as described above, reported significant rVE of RIV4 vs. SD-IIV4 against influenza related hospital encounters. Secondly, a randomized controlled trial (RCT) found significant rVE of RIV4 compared with SD-IIV4 among adults 50 years old, but not for adults 65 years old [11].",
+      "relevance_explanation": "This quote references two studies that found significant relative vaccine effectiveness (rVE) of the recombinant vaccine (RIV4) compared to the standard-dose egg-based vaccine (SD-IIV4), providing evidence that RIV4 may induce a more robust antibody response."
+    },
+    {
+      "id": 3,
+      "quote": "Adjusted VEs for RIV4 for younger adults were significant across all subgroups, whereas, VE for SD-IIV4 was significant for males only.",
+      "relevance_explanation": "This quote shows that the recombinant vaccine (RIV4) had significant vaccine effectiveness across all subgroups of younger adults, while the standard-dose egg-based vaccine (SD-IIV4) was only significant for males, supporting the claim of a more robust response from RIV4."
+    },
+    {
+      "id": 4,
+      "quote": "Table 2 Vaccine effectiveness (VE) of recombinant quadrivalent influenza vaccine (RIV4) and standard dose quadrivalent influenza vaccine (SD-IIV4) and relative VE of RIV4 using propensity scores and inverse probability weighting (IPW). Group Adjusted RIV4 VE compared to no vaccination Adjusted SD-IIV4 VE compared to no vaccination ... Relative vaccine effectiveness of RIV4 compared to SD-IIV4, % (95% CI) ...",
+      "relevance_explanation": "This table provides direct comparative data on the effectiveness of RIV4 versus SD-IIV4, with calculated relative vaccine effectiveness, which is key evidence for the claim that RIV4 induces a more robust antibody response."
+    },
+    {
+      "id": 5,
+      "quote": "Relative vaccine effectiveness (rVE) of recombinant quadrivalent influenza vaccine (RIV4) and RIV4 + high dose quadrivalent influenza vaccine (HD-IIV4) + adjuvanted influenza vaccine (Adj-IV) vs. standard dose quadrivalent influenza vaccine (SD-IIV4) by age group, % (95% CI).",
+      "relevance_explanation": "This quote describes the direct comparison of the effectiveness of RIV4 (and other enhanced vaccines) versus SD-IIV4, which is relevant to the claim that higher-dose recombinant vaccines may induce a more robust antibody response."
+    },
+    {
+      "id": 6,
+      "quote": "All adults, and supports its superior effectiveness over SD IIV4 for adults 18-64 years of age.",
+      "relevance_explanation": "This statement explicitly affirms that RIV4 has superior effectiveness compared to SD-IIV4 in adults aged 18-64, directly supporting the claim."
+    },
+    {
+      "id": "comp_1",
+      "quote": "because it is not subject to mutations to the A (H3 N2) glycosylation binding site that reduce the effectiveness of egg based vaccines.",
+      "relevance_explanation": "This statement directly supports the claim by explaining a mechanistic reason why recombinant vaccines (which are not egg-based) may induce a more robust antibody response compared to egg-based standard-dose vaccines, as they avoid mutations that can reduce vaccine effectiveness.",
+      "source": "completeness_check",
+      "metadata": {
+        "extraction_round": 2,
+        "targeted_aspect": "general"
+      }
+    }
+  ],
+  "completeness_assessment": {
+    "missing_aspects": []
+  },
+  "model_used": "gpt-4.1"
+}

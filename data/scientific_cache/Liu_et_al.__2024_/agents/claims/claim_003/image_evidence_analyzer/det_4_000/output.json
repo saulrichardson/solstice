@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p5_det_4_000.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p5_det_4_000.png",
+  "image_type": "Figure",
+  "page_number": 5,
+  "block_id": "det_4_000",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": true,
+  "explanation": "Four-panel figure showing geometric mean fold rise in antibody titers 1 month post-vaccination (panels A and B) and geometric mean fold reduction in antibody titers 6 months post-vaccination (panels C and D) for four vaccine formulations (Fluzone IIV4, Fluarix IIV4, cell-culture IIV4 [ccIIV4], and recombinant HA vaccine [RIV4]) against egg-grown and cell-grown antigens of H3N2, H1N1, B/Victoria, and B/Yamagata in two age groups (18\u201344 years and 45\u201364 years). Each data point is the geometric mean with 95% confidence intervals and annotated p-values for pairwise comparisons. Evidence: RIV4 (recombinant HA vaccine) elicited significantly higher 1-month fold rises in antibody titers against both egg-grown and cell-grown H3N2 and H1N1 strains compared with egg-based and ccIIV4 vaccines (e.g., H3N2 cell: ~3.2-fold vs ~1.7\u20131.8 with p<0.0001) and demonstrated less waning at 6 months against mismatched cell-grown antigens (e.g., H1N1 cell: ~2.5-fold reduction vs ~1.5\u20131.8 with p<0.0001). The figure supports the claim because it shows that the recombinant vaccine (RIV4) induces a broader antibody response, with higher titers to both egg- and cell-derived (potentially mismatch) strains and slower waning over 6 months compared with egg-based and cell-culture vaccines, thus supporting cross-protection in mismatch settings. Note: Immunogenicity data are surrogate markers and do not directly measure clinical protection; the figure does not show actual efficacy in a mismatched season, only antibody responses.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Four-panel figure showing geometric mean fold rise in antibody titers 1 month post-vaccination (panels A and B) and geometric mean fold reduction in antibody titers 6 months post-vaccination (panels C and D) for four vaccine formulations (Fluzone IIV4, Fluarix IIV4, cell-culture IIV4 [ccIIV4], and recombinant HA vaccine [RIV4]) against egg-grown and cell-grown antigens of H3N2, H1N1, B/Victoria, and B/Yamagata in two age groups (18\u201344 years and 45\u201364 years). Each data point is the geometric mean with 95% confidence intervals and annotated p-values for pairwise comparisons.",
+    "evidence_found": "RIV4 (recombinant HA vaccine) elicited significantly higher 1-month fold rises in antibody titers against both egg-grown and cell-grown H3N2 and H1N1 strains compared with egg-based and ccIIV4 vaccines (e.g., H3N2 cell: ~3.2-fold vs ~1.7\u20131.8 with p<0.0001) and demonstrated less waning at 6 months against mismatched cell-grown antigens (e.g., H1N1 cell: ~2.5-fold reduction vs ~1.5\u20131.8 with p<0.0001).",
+    "reasoning": "The figure supports the claim because it shows that the recombinant vaccine (RIV4) induces a broader antibody response, with higher titers to both egg- and cell-derived (potentially mismatch) strains and slower waning over 6 months compared with egg-based and cell-culture vaccines, thus supporting cross-protection in mismatch settings.",
+    "confidence_notes": "Immunogenicity data are surrogate markers and do not directly measure clinical protection; the figure does not show actual efficacy in a mismatched season, only antibody responses."
+  }
+}

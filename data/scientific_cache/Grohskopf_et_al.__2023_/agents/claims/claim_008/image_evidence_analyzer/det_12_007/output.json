@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p13_det_12_007.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p13_det_12_007.png",
+  "image_type": "Table",
+  "page_number": 13,
+  "block_id": "det_12_007",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A table listing trade names and manufacturers of quadrivalent influenza vaccines and their dose volumes (\u00b5g HA per vaccine virus) for children aged 6 through 35 months, including Afluria Quadrivalent (Seqirus), Fluarix Quadrivalent (GlaxoSmithKline), Flucelvax Quadrivalent (Seqirus), FluLaval Quadrivalent (GlaxoSmithKline), and Fluzone Quadrivalent (Sanofi Pasteur) with doses of 7.5 \u00b5g or 15 \u00b5g of HA per strain. The table does not include any information about Flublok or its HA content, so it does not support the claim. Note: The image is clear and shows pediatric dosing for other vaccines; absence of Flublok in this table limits any evaluation of its HA content.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table listing trade names and manufacturers of quadrivalent influenza vaccines and their dose volumes (\u00b5g HA per vaccine virus) for children aged 6 through 35 months, including Afluria Quadrivalent (Seqirus), Fluarix Quadrivalent (GlaxoSmithKline), Flucelvax Quadrivalent (Seqirus), FluLaval Quadrivalent (GlaxoSmithKline), and Fluzone Quadrivalent (Sanofi Pasteur) with doses of 7.5 \u00b5g or 15 \u00b5g of HA per strain.",
+    "evidence_found": null,
+    "reasoning": "The table does not include any information about Flublok or its HA content, so it does not support the claim.",
+    "confidence_notes": "The image is clear and shows pediatric dosing for other vaccines; absence of Flublok in this table limits any evaluation of its HA content."
+  }
+}

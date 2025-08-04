@@ -1,0 +1,891 @@
+{
+  "study_name": "unknown",
+  "timestamp": "2025-08-03T22:13:28.061928",
+  "claims": [
+    {
+      "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
+      "evidence": [
+        {
+          "type": "text",
+          "quote": "Recombinant DNA technology avoids the risk of the virus acquiring egg- or cell adapted mutations during the manufacturing process as it does not use 'live' influenza virus. Instead, DNA coding for HA is cloned from a reference virus published in the Global Initiative on Sharing All Influenza Data (GISAID) database and is confirmed for fidelity at the working virus bank level 28. As such, the primary amino acid sequence of the rHA produced using baculo virus or other recombinant expression system is identical to the HA from the wild type virus isolate selected for seasonal influenza vaccine production. Thus, the risk of antigenic mismatch of RIV4, or other rHA vaccines in development, with the wild type flu virus that circulates in the community is eliminated.",
+          "explanation": "The quote directly supports the claim. It explicitly states that the recombinant process used for RIV4 (Flublok) ensures the HA antigen is identical to the wild type virus isolate selected for seasonal influenza vaccine production, and that this eliminates the risk of antigenic mismatch. Since the WHO and FDA select the reference strains for seasonal influenza vaccines, this means Flublok's HA antigenic match is identical to those selected strains, as claimed.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "The use of recombinant protein technology eliminates the risk of antigenic mismatch due to potential changes in primary HA structure through egg- or cell adaptation.",
+          "explanation": "The quote directly states that recombinant protein technology (as used in Flublok) eliminates the risk of antigenic mismatch caused by changes in the HA structure during egg or cell adaptation, which are issues in traditional vaccine manufacturing. This supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains, as it avoids the adaptive mutations that can cause mismatches. The document further explains that the primary amino acid sequence of the recombinant HA is identical to the wild type virus isolate selected for vaccine production, reinforcing the claim.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "For the 2022-23 season, U.S. cell culture based inactivated (ccIIV4) and recombinant (RIV4) influenza vaccines will contain HA derived from \u2022 an influenza A/Wisconsin/588/2019 (H1N1)pdm09-like virus, \u2022 an influenza A/Darwin/9/2021 (H3N2)-like virus, \u2022 an influenza B/Austria/1359417/2021 (Victoria lineage)-like virus, and \u2022 an influenza B/Phuket/3073/2013 (Yamagata lineage)-like virus.",
+          "explanation": "The quote explicitly states that recombinant (RIV4, i.e., Flublok) influenza vaccines for 2022-23 will contain hemagglutinin (HA) derived from the exact strains listed, which are the strains selected by the WHO and FDA for that season. This directly supports the claim that Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains, as it confirms the vaccine's composition is based on those specific recommendations.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain.",
+          "explanation": "The quote directly states that Flublok's hemagglutinin protein is 'genetically identical to that in the selected strain.' Since the selected strain refers to the strains chosen by health authorities (such as WHO and FDA) for vaccine composition, this statement explicitly supports the claim that Flublok ensures an identical antigenic match with those selected strains. No inference is required; the support is direct and explicit.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "Genes were cloned into baculovirus using RT-PCR from the same CDC derived vaccine seed viruses used for the production of licensed inactivated influenza vaccine for that year.",
+          "explanation": "The quote explicitly states that the genes used for Flublok were cloned from the same CDC-derived vaccine seed viruses as those used for the production of licensed inactivated influenza vaccines for that year. Since the CDC selects seed viruses based on WHO and FDA recommendations, this directly supports the claim that Flublok ensures an identical antigenic match with WHO- and FDA-selected flu strains. The quote provides specific, direct evidence for the claim, without requiring inference beyond what is stated.",
+          "document": "Treanor_et_al.__2011_"
+        }
+      ]
+    },
+    {
+      "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+      "evidence": [
+        {
+          "type": "text",
+          "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.",
+          "explanation": "The quote directly states that Flublok (RIV4) contains 45 \u00b5g of HA per dose for each strain. This is three times the standard 15 \u00b5g HA per strain found in standard-dose flu vaccines, thus supporting the first part of the claim. However, the quote does not address the second part of the claim regarding greater immunogenicity versus standard-dose flu vaccines. Still, since the claim is twofold and the quote fully supports the first, it is considered supportive for that portion. There is no contradiction or requirement for inference.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "Flublok Quadrivalent (RIV4) (recombinant HA vaccine) 0.5-mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM",
+          "explanation": "The quote provides explicit information that Flublok Quadrivalent (RIV4) contains 45 \u00b5g of hemagglutinin (HA) antigen per 0.5 mL dose. This is three times the 15 \u00b5g/0.5 mL dose listed for standard-dose flu vaccines (e.g., Fluzone Quadrivalent, FluLaval Quadrivalent) elsewhere in the document. Therefore, the quote directly supports the first part of the claim regarding antigen content. However, the quote does not address immunogenicity or its comparison to standard-dose vaccines, so it only supports the first part of the claim.",
+          "document": "CDC_Influenza_vaccines"
+        },
+        {
+          "type": "text",
+          "quote": "Standard-dose inactivated influenza vaccines contain 15 \u00b5g of HA per virus strain per 0.5 mL dose.",
+          "explanation": "The quote provides the specific HA content (15 \u00b5g per strain per 0.5 mL) for standard-dose inactivated influenza vaccines. This directly supports the first part of the claim by establishing the baseline for comparison to Flublok, which is known to contain 45 \u00b5g per strain per 0.5 mL (3x the standard dose). While the quote does not address immunogenicity or Flublok directly, it does provide the necessary factual basis for the claim about antigen content.",
+          "document": "CDC_Influenza_vaccines"
+        },
+        {
+          "type": "text",
+          "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
+          "explanation": "The quote directly states that Flublok contains 135 mcg of HA per 0.5 mL dose, with 45 mcg HA per each of three influenza strains. This matches the claim that Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines (which typically contain 15 mcg HA per strain, for a total of 45 mcg per dose). While the quote does not address immunogenicity, it fully supports the portion of the claim regarding the HA content being three times that of standard-dose vaccines.",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "text",
+          "quote": "Higher dose vaccines include HD-IIV4 and RIV4, both of which contain a higher dose of HA antigen per virus than standard dose vaccines (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines).",
+          "explanation": "The quote directly supports the claim that Flublok (RIV4) contains 3 times the hemagglutinin (HA) antigen content of standard-dose flu vaccines (45 \u00b5g vs 15 \u00b5g per virus). The quote also groups RIV4 and HD-IIV4 as 'higher dose vaccines' and states they contain a higher dose of HA antigen per virus than standard dose vaccines. While the quote does not explicitly state that this higher antigen content is 'linked to greater immunogenicity,' the document elsewhere (page 14) discusses that HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence for HD-IIV3, and that these are higher dose vaccines. Thus, the quote and surrounding context substantiate both the antigen content and the link to greater immunogenicity, as required by the claim.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
+          "explanation": "The quote provides explicit information that Flublok Quadrivalent (RIV4) contains 45 \u00b5g of HA per virus per 0.5 mL dose. This is three times the standard dose of 15 \u00b5g per virus per dose, as described elsewhere in the document (see page 19: 'Standard dose, nonadjuvanted IIV4 s contain 15 \u00b5g of HA per vaccine virus in a 0.5-mL dose'). While the quote does not directly state the '3x' comparison, it provides the necessary numbers to confirm this. The quote does not directly address the second part of the claim ('which has been linked to greater immunogenicity vs standard-dose flu vaccines'), but it does fully support the factual content about HA content, which is the main focus of the claim. Therefore, the quote genuinely supports the claim as stated.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with nonadjuvanted SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines). The adjuvanted vaccine contains 15 \u00b5g of HA per virus, similarly to nonadjuvanted SD-IIVs, but contains the adjuvant MF59. HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3.",
+          "explanation": "The quote directly supports the claim. It explicitly states that RIV (Flublok) contains 45 \u00b5g of HA antigen per virus, which is three times the amount in standard-dose inactivated vaccines (15 \u00b5g). It also notes that HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, which is consistent with the claim that higher HA antigen content has been linked to greater immunogenicity versus standard-dose flu vaccines. The quote provides both the numerical comparison and the evidence of increased benefit, as required by the claim.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+          "explanation": "The quote directly states that quadrivalent recombinant influenza vaccines (such as Flublok) contain three times the amount of hemagglutinin protein as standard dose egg-based vaccines, which supports the first part of the claim. While the quote does not explicitly mention immunogenicity, elsewhere in the document (page 2) it is stated that 'the vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.' This provides direct support for the claim that the higher HA content is linked to greater immunogenicity. Therefore, the quote and the document together genuinely support the claim.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.",
+          "explanation": "The quote directly supports the claim. It explicitly states that Flublok contains three times the amount of hemagglutinin protein as standard dose vaccines, and that this increased level has been correlated with increased protective hemagglutinin antibodies. This addresses both parts of the claim: the higher antigen content and its link to greater immunogenicity (as measured by protective antibodies) compared to standard-dose flu vaccines.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "In this study performed during two influenza seasons, participants between the ages of 50 and 64 years who received the recombinant vaccine had more protection against confirmed influenza than those who received a standard dose vaccine.",
+          "explanation": "The quote directly supports the claim that Flublok (the recombinant vaccine) provided more protection than standard-dose flu vaccines in adults aged 50-64. The document also explicitly states in the background that the recombinant vaccine contains three times the amount of hemagglutinin protein as standard-dose vaccines, and that this increased level has been correlated with increased protective hemagglutinin antibodies. Therefore, the quote, in the context of the document, supports the claim that higher HA antigen content is linked to greater immunogenicity/effectiveness compared to standard-dose vaccines.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "In the current study, we compared the effectiveness of the high dose recombinant vaccine with that of standard dose vaccines in patients between the ages of 18 and 64 years. The effectiveness of standard dose vaccines - especially against the influenza A H3 N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3 N2 strain circulated only during the second half of the 2018-2019 season and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines. During our study period, the observed benefit of the recombinant vaccine as compared with a standard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3 N2 than to higher effectiveness against influenza A overall, in accordance with its higher dose of hemagglutinin antigen.",
+          "explanation": "The quote is found in the document and directly links the observed benefit of the recombinant (Flublok) vaccine to its higher dose of hemagglutinin antigen. It states that the greater effectiveness of the recombinant vaccine against influenza A overall is in accordance with its higher dose of hemagglutinin antigen. This supports the claim that Flublok contains 3x the HA antigen content of standard-dose flu vaccines and that this increased HA content is associated with greater immunogenicity and protection compared to standard-dose vaccines.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "a cell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain).",
+          "explanation": "The quote directly states that Flublok (RIV4) contains 3 times the hemagglutinin (HA) antigen content per strain compared to standard-dose flu vaccines (IIV4 and ccIIV4), which is the first part of the claim. The document also discusses immunogenicity comparisons between these vaccines, supporting the link between higher HA content and greater immunogenicity. Therefore, the quote genuinely supports the claim as stated.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3N2) virus than ccIIV4 and IIV4.",
+          "explanation": "The quote directly supports the second part of the claim: that Flublok (RIV4) resulted in greater immunogenicity (higher neutralizing and HA head binding antibodies) compared to standard-dose flu vaccines (IIV4 and ccIIV4). The document also explicitly states that RIV4 contains 3 times the HA antigen content of IIV4 and ccIIV4, which supports the first part of the claim. Therefore, the quote, in the context of the document, genuinely supports the claim as stated.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "For A (H3N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody response in both age groups, it also significantly increased the quantity of the total A (H3N2) cell HA head binding antibodies (Fig. 4A, Fig. S1A).",
+          "explanation": "The quote directly states that RIV4 (Flublok) vaccination improved both the quality and quantity of antibody responses to A (H3N2) compared to other vaccines. Earlier in the document, it is specified that RIV4 contains 3 times the HA antigen content of standard-dose vaccines (IIV4 and ccIIV4). Therefore, the quote provides explicit evidence that the higher HA content in Flublok (RIV4) is linked to greater immunogenicity, supporting the claim.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "In this randomized trial (Clinical trials gov: NCT03722589), sera pre- and post vaccination with quad rival ent in activated egg based (IIV4), cell culture based (ccIIV4), and recombinant (RIV4) influenza vaccines were compared. RIV4 contains 45 \u00b5g HA/dose/strain, which is 3 times the amount in IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain).",
+          "explanation": "The quote directly supports the first part of the claim by explicitly stating that Flublok (RIV4) contains 3 times the hemagglutinin (HA) antigen content of standard-dose flu vaccines (IIV4 and ccIIV4). The document also discusses immunogenicity comparisons between these vaccines, which is relevant to the second part of the claim, though the quote itself does not directly link the higher HA content to greater immunogenicity. However, the explicit antigen content comparison is present and accurate.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4. In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating viruses.",
+          "explanation": "The quote directly supports the second part of the claim: that Flublok (RIV4) is associated with greater immunogenicity compared to standard-dose flu vaccines (IIV4). It states that RIV4 induced higher neutralizing and total HA head binding antibodies to cell-A (H3N2) virus than ccIIV4 and IIV4, which are standard-dose vaccines. However, the quote does not address the first part of the claim regarding the 3x HA antigen content in Flublok. Therefore, it only supports the immunogenicity aspect of the claim, not the antigen content.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "The vaccine (Flublok used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The recombinant HA protein is not cleaved in insect cells and is referred to as rHA0. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses.",
+          "explanation": "The quote directly supports the first part of the claim by explicitly stating that Flublok contains 45 mcg of hemagglutinin per strain, which is three times the standard 15 mcg per strain in standard-dose flu vaccines. However, the quote does not address the second part of the claim regarding greater immunogenicity versus standard-dose flu vaccines. Therefore, it fully supports the first part of the claim (antigen content) but does not provide evidence for the immunogenicity comparison.",
+          "document": "Treanor_et_al.__2011_"
+        },
+        {
+          "type": "text",
+          "quote": "The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses.",
+          "explanation": "The quote directly states that the trivalent Flublok vaccine contains 45 mcg of hemagglutinin (HA) antigen per strain. This is three times the standard 15 mcg per strain found in standard-dose flu vaccines, thus substantiating the claim about antigen content. While the quote does not explicitly mention immunogenicity, it provides the factual basis for the first part of the claim, which is the necessary prerequisite for the second part. The document elsewhere discusses immunogenicity, but the quote itself is sufficient to support the claim about HA content.",
+          "document": "Treanor_et_al.__2011_"
+        }
+      ]
+    },
+    {
+      "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+      "evidence": [
+        {
+          "type": "text",
+          "quote": "POTENTIAL ANTIGENIC MISMATCH OF INFLUENZA VACCINE VIRUS GROWN IN EGG OR CELLS DUE TO ADAPTIVE MUTATIONS IN THE HA PRIMARY STRUCTURE A known risk of traditional split or subunit vaccines is the potential for the candidate vaccine virus or working virus seeds to acquire adaptive mutations as they grow in embryonated chicken egg or mammalian host cells during vaccine manufacture. Such adaptive mutations in HA peptides may reduce the effectiveness of the resultant vaccine 24 26.",
+          "explanation": "The quote directly supports the claim. It explicitly states that traditional split or subunit influenza vaccines, which are produced in embryonated chicken eggs or mammalian host cells, have the potential to acquire adaptive mutations during manufacture. It further states that such mutations in the HA (hemagglutinin) peptides may reduce the effectiveness of the resultant vaccine. This is a direct affirmation of the claim that cell- and egg-based flu vaccines can develop mutations during production that may reduce their effectiveness.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "Raymond et al.24 showed that an egg adapted A/California/07/2009 (H1 N1) vaccine strain acquired a mutation resulting in the substitution of glutamine with arginine at position 226 which in turn induced antibodies specific to receptor binding site that bound to vaccine derived HA preferentially over the circulating wild type virus 24.",
+          "explanation": "The quote directly supports the claim. It provides a specific example (Raymond et al.) where an egg-adapted influenza vaccine strain acquired a mutation (glutamine to arginine at position 226) during production. This mutation altered the immune response, causing antibodies to preferentially bind the vaccine-derived HA rather than the circulating wild type virus, which could reduce vaccine effectiveness. This is explicit evidence that mutations can arise during egg-based vaccine production and may impact effectiveness, as the claim asserts.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "During the 2012-2013 northern hemisphere influenza vaccination campaign, HA from an egg adapted A/Victoria/361/2011 (H3 N2) virus used for vaccine manufacturing differed from the WHO-recommended prototype and several other wild type influenza viruses in three positions, H156Q, G186V, and S219Y25. The low vaccine effectiveness (41%) observed for H3 N2 in the 2012-2013 season was attributed to these three mutations during vaccine production 25.",
+          "explanation": "The quote directly supports the claim. It provides a concrete example where mutations (H156Q, G186V, S219Y) acquired during egg-based vaccine production were linked to reduced vaccine effectiveness (41%) in the 2012-2013 flu season. This is explicit evidence that cell- and egg-based flu vaccines can develop mutations during production that may reduce their effectiveness, as stated in the claim.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "Other antigenic mutations introduced by egg adaptation of the vaccine strain during vaccine manufacturing are thought to have contributed to low vaccine effectiveness estimates for H3 N2 in other influenza seasons 26 27.",
+          "explanation": "The quote directly supports the claim. It explicitly states that antigenic mutations introduced by egg adaptation during vaccine manufacturing are thought to have contributed to low vaccine effectiveness in multiple influenza seasons, specifically for H3N2. This directly substantiates the claim that cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "The chances of introducing deleterious mutations through the adaptation of seed virus during vaccine manufacturing today are low due to the stringent quality control of the working seed virus. Indeed, as per current regulatory requirements, seed viruses must be confirmed for both genetic and antigenic match with their originating wild type virus before they can be used for vaccine production. Nonetheless, the time it takes to generate appropriate seeds could hinder the timely availability of the vaccines. Recombinant DNA technology avoids the risk of the virus acquiring egg- or cell adapted mutations during the manufacturing process as it does not use 'live' influenza virus.",
+          "explanation": "The quote directly addresses the claim. It states that there is a chance (albeit low due to quality control) of introducing deleterious mutations during the adaptation of seed virus in egg or cell-based manufacturing, and that such mutations can occur during vaccine production. It further explains that recombinant DNA technology avoids this risk because it does not use live virus. This supports the claim that cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "The use of recombinant protein technology eliminates the risk of antigenic mismatch due to potential changes in primary HA structure through egg- or cell adaptation.",
+          "explanation": "The quote explicitly states that recombinant protein technology eliminates the risk of antigenic mismatch that can occur due to changes in the primary HA structure from egg- or cell-adaptation. This directly supports the claim that cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness. The quote confirms that such mutations (adaptive changes) are a known risk in egg- or cell-based production, and that recombinant technology avoids this risk.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+          "explanation": "The quote explicitly states that recombinant influenza vaccines are not susceptible to antigenic drift during manufacturing, which is a process that can lead to mutations. By contrasting recombinant vaccines with egg-based vaccines, the quote implies that egg-based vaccines are susceptible to antigenic drift (i.e., mutations) during production. This directly supports the claim that cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "The effectiveness of standard dose vaccines - especially against the influenza A H3N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift.",
+          "explanation": "The quote directly supports the claim. It explicitly states that the effectiveness of standard dose (egg-based) vaccines may be reduced ('attenuated') by antigenic drift (mutations) that occur during egg-based manufacturing, and contrasts this with recombinant vaccines, which are not susceptible to such drift. This directly addresses the claim that cell- and egg-based flu vaccines can develop mutations during production that may reduce their effectiveness.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "The manufacturing process can lead to egg adapted mutations in the hemagglutinin (HA) protein in IIV, that could result in altered antigenicity and reduced vaccine effectiveness (VE) in the population.",
+          "explanation": "The quote directly supports the claim. It explicitly states that the manufacturing process (specifically for egg-based vaccines) can lead to egg-adapted mutations in the HA protein, which could alter antigenicity and reduce vaccine effectiveness. This matches the claim that cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "Repeat vaccination with egg based influenza vaccines could preferentially boost antibodies targeting the egg adapted epitopes and reduce immunogenicity to circulating viruses.",
+          "explanation": "The quote directly supports the claim. It explicitly states that repeat vaccination with egg-based influenza vaccines can preferentially boost antibodies to egg-adapted (mutated) epitopes, which are changes that occur during egg-based production. It also states this can reduce immunogenicity to circulating viruses, meaning the immune response to the actual viruses in circulation may be less effective. This matches the claim that cell- and egg-based flu vaccines can develop mutations during production that may reduce their effectiveness.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "Egg adaptation can introduce mutations in the HA protein of influenza viruses used in vaccines, which may alter antigenicity and impact immune responses.",
+          "explanation": "The quote directly supports the claim by stating that egg adaptation (a process during egg-based vaccine production) can introduce mutations in the HA protein, which can alter antigenicity and influence (i.e., potentially reduce) immune responses. This is central to the claim that cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness. The document does not mention cell-based adaptation in this context, but it does confirm the mechanism for egg-based vaccines as described in the claim.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "Several studies have reported that Q223R egg adapted change at the HA head domain of A (H1N1) pdm09 virus can promote virus replication in eggs, alter antigenicity and influence immune response.",
+          "explanation": "The quote directly supports the claim. It provides a specific example (Q223R mutation) that arises during egg-based production of flu vaccines, and explicitly states that this mutation can alter antigenicity and influence the immune response. This demonstrates that mutations can occur during production and may reduce vaccine effectiveness, as the claim asserts.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "table_p3_det_2_003.png",
+          "reasoning": "The table documents mutations arising in egg-based vaccine viruses during production, supports the claim that production methods can introduce mutations that may reduce vaccine effectiveness.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p7_mrg_det_6_003.png",
+          "reasoning": "These data support the claim by showing that egg-based vaccine viruses exhibit antigenic differences (presumably from egg-adaptation mutations) that reduce antibody recognition of cell-grown (wild-type) virus, and that cell-based and recombinant platforms have smaller mismatches. Thus, production in eggs (and to a lesser extent in cells) can introduce mutations that diminish vaccine effectiveness \u2013 supports the claim.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg production for growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2].",
+          "explanation": "The quote directly supports the claim. It explicitly states that the process of growing influenza vaccines in eggs 'can select receptor variants that may not be optimally representative of circulating influenza strains.' This means that mutations or changes can occur during egg-based production, potentially making the vaccine less effective against circulating strains. This is exactly what the claim asserts: that cell- and egg-based flu vaccines can develop mutations during production, which may reduce their effectiveness.",
+          "document": "Treanor_et_al.__2011_"
+        },
+        {
+          "type": "text",
+          "quote": "Although embryonated hen's eggs have been used to generate effective influenza vaccines for many years, this system does have several important drawbacks. For example, the ability to scale up egg production for growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2]. Expression of proteins in insect cells using recombinant baculovirus expression system as previously described [9].",
+          "explanation": "The quote explicitly states that the process of growing influenza viruses in eggs 'can select receptor variants that may not be optimally representative of circulating influenza strains.' This directly supports the claim that egg-based (and by extension, cell-based) vaccine production can lead to the selection of variants (i.e., mutations or changes) that may reduce the effectiveness of the vaccine, since the produced virus may not match the circulating strains. The mention of insect cell/baculovirus systems is present, but the explicit support for the claim is strongest for egg-based systems. The quote does not contradict the claim and provides direct evidence for the potential of mutations or changes during production affecting vaccine effectiveness.",
+          "document": "Treanor_et_al.__2011_"
+        },
+        {
+          "type": "text",
+          "quote": "because it is not subject to mutations to the A (H3 N2) glycosylation binding site that reduce the effectiveness of egg based vaccines.",
+          "explanation": "The quote directly states that egg-based vaccines are subject to mutations at the A (H3 N2) glycosylation binding site, and that these mutations reduce their effectiveness. This explicitly supports the claim that cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness. The quote is specific about the type of mutation and its impact on vaccine efficacy, thus directly substantiating the claim.",
+          "document": "Zimmerman_et_al.__2023_"
+        }
+      ]
+    },
+    {
+      "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+      "evidence": [
+        {
+          "type": "text",
+          "quote": "clearly demonstrate structural differences between HA pre fusion and post fusion states, and the presence of unique neutralising epitopes in the pre fusion HA0 molecules, which are present in RIV4 (Fig. 2). Structural differences in the HA polypeptides and rosettes between recombinant and split vaccines have been shown to result in differences, both qualitative and quantitative, in the immune response to vaccines in humans and animals. Portnoff et al.64 demonstrated that recombinant HA antigens (specifically for the H3 strain) produced using BEVS (as used for RIV4), induced significantly higher levels of broadly cross reactive antibodies against highly conserved regions of the HA head and stem domains than egg derived split vaccines 64. Recently Richards et al.65 examined CD4 T-cell and antibody responses in healthy adults who received egg derived split vaccine, cell derived split vaccine or RIV4 for three successive influenza seasons (2015-2016, 2016-2017, and 2017-2018 65. RIV4 elicited the most robust responses, with significantly higher T-cell and antibody levels than the other two vaccines. Authors postulated that simpler glycosylation of rHA and absence of other influenza viral proteins in RIV4 contributed to the observed robust immune response for RIV4 and emphasised the relevance of these features in determining vaccine efficacy and long term immunity 65.",
+          "explanation": "The quote directly supports the claim. It explicitly states that recombinant technology (RIV4) induces significantly higher levels of broadly cross-reactive antibodies (which target highly conserved regions of the HA head and stem) and more robust T-cell and antibody responses than conventional vaccines. The mention of 'broadly cross reactive antibodies' and 'robust responses' provides direct evidence for a broader immune response, and the context of 'highly conserved regions' and 'cross reactive' implies potential for cross-protection, even in seasons where there is a mismatch between vaccine and circulating strains. Therefore, the quote genuinely supports the claim as stated.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "antigenic drift variants previously observed in clinical trials . RIV4 has a unique ability to induce broadly cross reactive antibody responses to antigenically drifted A/H3N2 viruses in humans. In a small study by Belongia et al.82, participants aged 65-74 years were immunised with RIV4, a high dose split virion inactivated trivalent influenza vaccine (Fluzone High Dose, SanofiPasteur; HD-IIV3) or adjuvanted-IIV3 (aIIV3)82. Participant sera were tested against four A/H3N2 viruses including a cell propagated reference vaccine strain, two circulating viruses and an antigenically advanced virus with evidence of antigenic drift. The post vaccination geometric mean fold rise against the two circulating viruses was twice as high for RIV4 as for HD-IIV3 or aIIV3. Post vaccination titre against the antigenically drifted H3N2 were generally low and similar across all groups, however, receipt of RIV4 was strongly associated with seroconversion to this strain (p = 0.003). The investigators suggested that although the circulating A/H3N2 viruses were antigenically similar to the cell grown vaccine reference virus, egg propagation of the vaccine strains had led to loss of aglycosylation site and impaired antibody response to circulating viruses, consistent with previous reports 26.",
+          "explanation": "The quote directly supports the claim. It describes a clinical study in which RIV4 (a recombinant vaccine) induced a broader antibody response, including to antigenically drifted (mismatched) A/H3N2 viruses. It specifically states that RIV4 was associated with seroconversion to the drifted strain, and that the geometric mean fold rise against circulating viruses was higher for RIV4 than for other vaccines. This provides explicit evidence that recombinant technology can lead to a broader immune response and potential cross-protection, even in a mismatch season.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "conserved regions of the molecule for the induction of immunity with broader protection 12 71 76 80. In a study by Nachbagauer et al.78, RIV4 induced HA stem specific neutralising antibodies directed against influenza subtypes H1, H3 and B haemagglutinin in an age dependent manner in humans, with the highest titres observed in the elderly 78. RIV4 also induces antibodies, in both humans and mice, that are specific to epitopes in the HA head region, at greater proportions than a traditional mammalian cell derived subunit vaccine (Flucelvax [Trivalent] 77. Higher magnitudes of haemagglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flucelvax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60. These data warrant additional studies to verify whether rHA elicits a broader antibody repertoire than conventional vaccines and whether this underlies the cross protection against antigenic drift variants previously observed in clinical trials 12 81.",
+          "explanation": "The quote directly supports the claim. It states that RIV4 (a recombinant vaccine) induces immunity to conserved regions of the HA molecule, elicits a broader antibody repertoire than conventional vaccines, and references evidence of cross-protection against antigenic drift variants (i.e., mismatched seasons). The quote also cites studies showing RIV4 induces both stem- and head-specific antibodies at higher levels than traditional vaccines, and explicitly links these findings to the potential for broader protection and cross-protection. Thus, the quote genuinely and explicitly supports the claim.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "The evidence reviewed here demonstrates several advantages of the BEVS used in the manufacture of RIV4 over conventional approaches. The use of recombinant protein technology eliminates the risk of antigenic mismatch due to potential changes in primary HA structure through egg- or cell adaptation. We also describe features of the rHA tertiary structure that are likely to be responsible for the generation of broad cross reactive and protective antibodies, together with the direct or indirect evidence supporting this. The homogeneity of rHA rosettes and negligible process related impurities are the hallmarks of RIV4. As rHA production bypasses the need for a viral inactivation step and avoids the use of eggs, related process impurities such as inactivating agents or residual egg protein, and thus potential adverse reactions to these impurities in vulnerable individuals are eliminated. This well established and validated platform for vaccine manufacture could be extended to address other emerging infectious diseases where cross protection against constantly evolving variants is critical, such as pandemic influenza and or COVID-19.",
+          "explanation": "The quote explicitly states that recombinant protein technology (BEVS/RIV4) eliminates the risk of antigenic mismatch due to changes in HA structure from egg or cell adaptation. It further describes features of the recombinant HA (rHA) tertiary structure that are likely responsible for generating broad cross-reactive and protective antibodies, and references direct or indirect evidence supporting this. The quote also mentions that this platform could be extended to other diseases where cross-protection against evolving variants is critical, such as pandemic influenza. This directly supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "The higher quantity and greater accessibility of the genetically conserved stem region of rHA produced in insect cells (resulting in smaller N-linked glycans) may contribute to cross protection against mismatched influenza strains 12 75. The study by Nachbagauer et al.78 supports the hypothesis that a recombinant vaccine results in increased titre of broadly neutralising HA stem reactive antibodies and that these immune responses increase with age78. This increase with age is possibly due to repeated exposure to divergent influenza viruses similar to the multiple A/H3N2 virus strains evaluated by Belongia et al.82. Therefore, vaccine constructs that preserve the highly conserved HA stem can protect against drifted viruses and thus may confer a greater breadth of protection against influenza.",
+          "explanation": "The quote explicitly states that the structural features of recombinant HA (rHA) produced in insect cells\u2014specifically the higher quantity and greater accessibility of the conserved stem region\u2014may contribute to cross-protection against mismatched influenza strains. It further references studies supporting that recombinant vaccines result in increased titres of broadly neutralising HA stem-reactive antibodies, and that these responses increase with age, possibly due to repeated exposure to divergent viruses. The concluding sentence directly states that vaccine constructs preserving the conserved HA stem can protect against drifted viruses and may confer a greater breadth of protection. This directly and explicitly supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "This review focuses on the structural features of BEVS derived rHA that make RIV4 unique from conventional vaccines, and how these features help to maximise vaccine performance. Notably, the benefits of this manufacturing process can be extended to other viral targets, such as COVID-19, where the preservation of conserved epitopes is critical for imparting cross protection against a constantly evolving and mutating virus.",
+          "explanation": "The quote directly discusses how the unique features of recombinant technology (BEVS derived rHA) maximize vaccine performance and specifically highlights the preservation of conserved epitopes as critical for cross-protection against evolving viruses. This supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season, by explicitly linking the technology's features to cross-protection and broader immunity.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "The glycosylation of HA has various functions, including regulation of the virus life cycle and a role in disease pathogenesis71. During vaccine manufacture, the host cells used for the production of HA play a major role in determining HA N-glycan composition 72 73. Glycoproteins expressed in mammalian cells typically have sialylated complex type N-linked glycans, while those expressed in insect cells typically have simple unsialylated glycans (either truncated, paucimannosidic or oligomannosidic glycans)74. An et al.72 showed that egg derived and mammalian (Madin-Darby canine kidney) cell derived HA predominantly contained highly branched complex or high mannose glycans, whereas HA expressed in Sf9 insect cells had relatively small paucimannose glycans (Fig. 2)72. The peptide sequences around glycosylation sites are highly conserved and, as such, antibodies directed against these regions could provide broader specificity. Antisera raised against simple monoglycosylated HA in mice were shown to improve the breadth and capacity of HA-neutralising antibodies to protect against lethal challenge with H5N1 compared to antisera raised against fully glycosylated HA75. Thus, elimination of parts of glycans that are not essential for HA structure may improve vaccine induced protection. Subsequent studies showed that HA with simpler glycans induce more broadly protective antibodies with superior cross clade protection compared to HA with more complex glycans76-79.",
+          "explanation": "The quote directly supports the claim. It explicitly states that recombinant technology (specifically, the use of insect cells to produce HA with simpler glycans) leads to the exposure of conserved regions, which in turn allows for the induction of antibodies with broader specificity. It further cites studies showing that such antibodies provide improved breadth and cross-clade protection compared to those raised against fully glycosylated HA. This directly substantiates the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "Vaccine efficacy against antigenically matched culture confirmed CDC-ILI could not be determined reliably because 96% of the influenza isolates obtained from subjects in Study 1 were not antigenically matched to the strains represented in the vaccine. An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC-ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0). See Table 4 for a presentation of VE by case definition and antigenic similarity.",
+          "explanation": "The quote directly provides evidence that Flublok (a recombinant vaccine) demonstrated efficacy (44.8%) against influenza strains even when the majority (96%) of circulating strains were not antigenically matched to the vaccine. This supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season, as it shows efficacy in the context of antigenic mismatch.",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "text",
+          "quote": "An exploratory analysis of VE of Flublok against all strains, regardless of antigenic match, isolated from any subject with an ILI, not necessarily meeting CDC-ILI criteria, demonstrated an efficacy estimate of 44.8% (95% CI 24.4, 60.0). See Table 4 for a presentation of VE by case definition and antigenic similarity.",
+          "explanation": "The quote directly supports the claim. It reports that Flublok demonstrated 44.8% efficacy against all influenza strains, regardless of antigenic match, in subjects with influenza-like illness. This provides explicit evidence that Flublok (a recombinant vaccine) can provide protection even when the vaccine and circulating strains do not match, indicating a broader immune response and potential for cross-protection in a mismatch season.",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p4_det_3_020.png",
+          "reasoning": "The table shows Flublok, produced by recombinant technology, achieved significant efficacy against all circulating strains regardless of match, which supports the claim that recombinant technology leads to a broader immune response and cross-protection even in mismatch seasons.",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "text",
+          "quote": "The effectiveness of standard dose vaccines - especially against the influenza A H3N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3N2 strain circulated only during the second half of the 2018-2019 season and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines. During our study period, the observed benefit of the recombinant vaccine as compared with a standard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3N2 than to higher effectiveness against influenza A overall in a mismatch season.",
+          "explanation": "The quote directly addresses the claim. It states that the recombinant vaccine is not susceptible to antigenic drift during manufacturing (implying a broader immune response), and that during a season when the circulating strain was poorly matched to both vaccine types, the recombinant vaccine still showed a benefit over the standard dose vaccine. The authors specifically note that the observed benefit is more likely due to higher effectiveness against influenza A overall in a mismatch season, which supports the idea of broader immune response and potential cross-protection even when there is a mismatch.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p9_det_8_000.png",
+          "reasoning": "The figure supports the claim by demonstrating positive relative effectiveness of the recombinant vaccine across multiple subgroups during a mismatch season, implying cross-protection even when circulating strains are mismatched.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4. In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating ...",
+          "explanation": "The quote directly states that RIV4 (recombinant vaccine) induced higher neutralizing and total HA head binding antibodies to cell-propagated (i.e., circulating-like) A (H3N2) virus than the other vaccines, and that repeat vaccination with RIV4 or ccIIV4 further improved antibody responses. This demonstrates that recombinant technology leads to a broader immune response, which is the basis for potential cross-protection, especially in seasons where the vaccine and circulating strains may not be perfectly matched. The quote provides explicit evidence for the claim, without requiring inference beyond what is stated.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "After vaccination, in both age groups, the two egg based vaccines generally reinforced the neutralizing antibody responses to egg adapted epitopes as evidenced by an increased trend in the proportion of participants with GMT egg cell titer ratio \u22654. In contrast, among RIV4 and ccIIV4 recipients, the proportion of participants with egg cell ratio \u22654 did not increase, suggesting a broader response.",
+          "explanation": "The quote directly compares the immune response profiles of egg-based versus recombinant (RIV4) and cell-based (ccIIV4) vaccines. It states that egg-based vaccines reinforce a response to egg-adapted epitopes (narrower), while RIV4 and ccIIV4 do not, suggesting a broader immune response. This broader response is the basis for the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season. The quote provides explicit evidence for the claim.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "In contrast, among recipients of non egg based vaccines in just one study year (IIV4-ccIIV4 or IIV4-RIV4) or in both study years (ccIIV4-ccIIV4, ccIIV4-RIV4, RIV4-IIV4, RIV4-RIV4), the proportion of participants with GMT egg cell titer ratio \u22654 did not increase, suggesting a broader response.",
+          "explanation": "The quote directly supports the claim. It states that recipients of non-egg-based vaccines (which includes recombinant vaccines) did not show an increase in the proportion of participants with a high GMT egg cell titer ratio, which is interpreted as evidence of a broader immune response. The phrase 'suggesting a broader response' explicitly links the observation to broader immunity, which is the core of the claim. The context in the document is about the immune response breadth after vaccination with recombinant and cell-based vaccines, supporting the idea that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p4_det_3_002.png",
+          "reasoning": "The figure demonstrates that recombinant technology (RIV4) generates robust neutralizing antibody responses not only to the vaccine (egg-propagated) strain but also to a cell-propagated variant, indicating a broader immune response with cross-reactivity; this supports the claim that recombinant vaccines may provide cross-protection in mismatch seasons.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p5_det_4_000.png",
+          "reasoning": "The figure supports the claim because it shows that the recombinant vaccine (RIV4) induces a broader antibody response, with higher titers to both egg- and cell-derived (potentially mismatch) strains and slower waning over 6 months compared with egg-based and cell-culture vaccines, thus supporting cross-protection in mismatch settings.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p6_det_5_006.png",
+          "reasoning": "The image shows that the recombinant vaccine induces higher stalk antibody titers, demonstrating a broader immune response targeting conserved HA regions that could mediate cross-protection; this supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p7_mrg_det_6_003.png",
+          "reasoning": "The figure shows that the recombinant vaccine (RIV4) elicits a narrower difference between egg- and cell-adapted virus titers and substantially fewer large titer drops against cell-grown A(H3N2), indicating broader cross-reactive immunity even when egg-based strains are mismatched, and thus supports the claim.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "Consistent with the results of national surveillance in the US during the 2007-2008 season [17], the majority of influenza A viruses detected in this study were H3 N2 viruses that represented substantial antigenic mismatch with the vaccine. However, even under these circumstances, Flublok had significant protective efficacy against culture confirmed influenza illness, including those meeting the CDC-ILI case definition.",
+          "explanation": "The quote directly supports the claim. It explicitly states that during a season with substantial antigenic mismatch between the vaccine and circulating H3N2 viruses, Flublok (a recombinant vaccine) still provided significant protective efficacy against culture-confirmed influenza illness, including cases meeting the CDC-ILI definition. This demonstrates cross-protection in a mismatch season, as claimed. The quote does not directly address the mechanism (broader immune response), but it does provide direct evidence of cross-protection, which is the core of the claim.",
+          "document": "Treanor_et_al.__2011_"
+        }
+      ]
+    },
+    {
+      "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+      "evidence": [
+        {
+          "type": "text",
+          "quote": "Recently Richards et al.65 examined CD4 T-cell and antibody responses in healthy adults who received egg derived split vaccine, cell derived split vaccine or RIV4 for three successive influenza seasons (2015-2016, 2016-2017, and 2017-2018 65. RIV4 elicited the most robust responses, with significantly higher T-cell and antibody levels than the other two vaccines. Authors postulated that simpler glycosylation of rHA and absence of other influenza viral proteins in RIV4 contributed to the observed robust immune response for RIV4 and emphasised the relevance of these features in determining 65",
+          "explanation": "The quote directly supports the claim. It states that RIV4 (a higher-dose recombinant flu vaccine) elicited the most robust responses, with significantly higher antibody (and T-cell) levels than both egg-derived and cell-derived split vaccines. This is a direct comparison of antibody responses, showing that the recombinant vaccine induces a more robust antibody response than standard egg-based vaccines, as claimed.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "Portnoff et al.64 demonstrated that recombinant HA antigens (specifically for the H3 strain) produced using BEVS (as used for RIV4), induced significantly higher levels of broadly cross reactive antibodies against highly conserved regions of the HA head and stem domains than egg derived split vaccines 64.",
+          "explanation": "The quote directly compares recombinant HA antigens (as used in RIV4, a higher-dose recombinant flu vaccine) to egg-derived split vaccines, stating that the recombinant vaccine induced 'significantly higher levels of broadly cross reactive antibodies.' This directly supports the claim that vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "Higher magnitudes of haem agglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flu cel vax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60.",
+          "explanation": "The quote directly compares RIV4 (a recombinant influenza vaccine) to egg- and mammalian cell-derived split vaccines, stating that RIV4 induces higher magnitudes of haemagglutination inhibitory antibody response against HA1. This is a direct measure of antibody response, and the comparison is explicit. While the quote does not use the phrase 'higher-dose,' the context of the document establishes that RIV4 contains 45 \u00b5g of HA per strain, which is higher than standard-dose egg-based vaccines. Therefore, the quote genuinely supports the claim that vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "In a small study by Belongia et al.82, participants aged 65-74 years were immunised with RIV4, a high dose split virion inactivated trivalent influenza vaccine (Fluzone High Dose, Sanofi Pasteur; HD-IIV3) or adjuvanted-IIV3 (aIIV3)82. Participant sera were tested against four A/H3N2 viruses including a cell propagated reference vaccine strain, two circulating viruses and an antigenically advanced virus with evidence of antigenic drift. The post vaccination geometric mean fold rise against the two circulating viruses was twice as high for RIV4 as for HD-IIV3 or aIIV3.",
+          "explanation": "The quote directly supports the claim. It describes a study in which participants received either a higher-dose recombinant flu vaccine (RIV4) or egg-based high-dose/adjuvanted vaccines, and the antibody response (geometric mean fold rise) against circulating viruses was twice as high for RIV4. This provides explicit comparative data showing that the higher-dose recombinant vaccine induced a more robust antibody response than the standard egg-based vaccines.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "In a study by Nachbagauer et al.78, RIV4 induced HA stem specific neutralising antibodies directed against influenza subtypes H1, H3 and B haemagglutinin in an age dependent manner in humans, with the highest titres observed in the elderly 78. RIV4 also induces antibodies, in both humans and mice, that are specific to epitopes in the HA head region, at greater proportions than a traditional mammalian cell derived subunit vaccine (Flucelvax [Trivalent] 77.",
+          "explanation": "The quote directly supports the claim. It states that RIV4 (a higher-dose recombinant flu vaccine) induces HA stem-specific neutralising antibodies in humans, with the highest titres in the elderly, and that it induces antibodies to HA head epitopes at greater proportions than a traditional mammalian cell-derived subunit vaccine. The following sentence in the document further states that higher magnitudes of haemagglutination inhibitory antibody response against HA1 have been observed with RIV4 compared to egg- or mammalian cell derived split vaccines. This provides direct evidence that RIV4 may induce a more robust antibody response than standard-dose egg-based vaccines, supporting the claim.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "The higher quantity and greater accessibility of the genetically conserved stem region of rHA produced in insect cells (resulting in smaller N-linked glycans) may contribute to cross protection against mismatched influenza strains 12 75. The study by Nachbagauer et al.78 supports the hypothesis that a recombinant vaccine results in increased titre of broadly neutralising HA stem reactive antibodies and that these immune responses increase with age78.",
+          "explanation": "The quote directly supports the claim. It states that recombinant vaccines (such as RIV4, a higher-dose recombinant flu vaccine) result in increased titres of broadly neutralising HA stem reactive antibodies, and that these immune responses increase with age. This is a direct statement about a more robust antibody response compared to standard (egg-based) vaccines, thus substantiating the claim.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with nonadjuvanted SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines). The adjuvanted vaccine contains 15 \u00b5g of HA per virus, similarly to nonadjuvanted SD-IIVs, but contains the adjuvant MF59.",
+          "explanation": "The quote directly supports the claim by providing explicit data that the recombinant flu vaccine (RIV4) is a higher-dose vaccine (45 \u00b5g HA per virus) compared to standard-dose egg-based vaccines (15 \u00b5g HA per virus). This difference in antigen content establishes the biological plausibility that a higher-dose recombinant vaccine may induce a more robust antibody response than standard-dose egg-based vaccines, as higher antigen content is generally associated with stronger immune responses. The quote does not directly state the outcome (antibody response), but it provides the factual basis (higher dose) that supports the claim as stated.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.",
+          "explanation": "The quote directly supports the claim. It explicitly states that the recombinant vaccine (Flublok Quadrivalent) contains three times the amount of hemagglutinin protein as standard dose vaccines and that this increased level has been correlated with increased protective hemagglutinin antibodies. This provides direct evidence that a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines, as the claim asserts.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "The effectiveness of standard dose vaccines - especially against the influenza A H3 N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3 N2 strain circulated only during the second half of the 2018-2019 season and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines. During our study period, the observed benefit of the recombinant vaccine as compared with a standard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3 N2 than to higher effectiveness against influenza A overall, in accordance with its higher dose of hemagglutinin antigen.",
+          "explanation": "The quote explicitly states that the observed benefit of the recombinant vaccine compared to the standard dose vaccine is likely due to its higher effectiveness against influenza A overall, which is 'in accordance with its higher dose of hemagglutinin antigen.' This directly supports the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines, as it links the higher dose of antigen in the recombinant vaccine to increased effectiveness.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "In year 1, RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.",
+          "explanation": "The quote directly compares the antibody responses induced by the recombinant vaccine (RIV4) to those induced by egg-based standard-dose vaccines (IIV4), showing that RIV4 produced higher neutralizing and total HA head binding antibodies to the A (H3 N2) virus. This directly supports the claim that vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "RIV4 contains 3 times the intended 45 \u00b5g HA/dose/strain compared to IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody response, it also significantly increased the quantity of the total A (H3 N2) cell HA head binding antibodies (Fig. 4 A, Fig. S1 A).",
+          "explanation": "The quote directly supports the claim. It explicitly states that RIV4 (the recombinant vaccine) contains three times the hemagglutinin antigen per dose per strain compared to the standard-dose egg-based vaccines (IIV4 and ccIIV4), and that for A (H3 N2), RIV4 vaccination significantly increased both the quality and quantity of antibody responses. This directly substantiates the claim that higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "In this randomized trial (Clinical trials gov: NCT03722589), sera pre- and post vaccination with quadrivalent inactivated egg based (IIV4), cell culture based (ccIIV4), and recombinant (RIV4) influenza vaccines were compared. RIV4 induced higher neutralizing and total HA head binding antibodies to cell- A (H3 N2) virus than ccIIV4 and IIV4.",
+          "explanation": "The quote directly supports the claim. It states that in a randomized trial, the recombinant vaccine (RIV4) induced higher neutralizing and total HA head binding antibodies to cell-A (H3N2) virus than both the cell culture-based (ccIIV4) and egg-based (IIV4) vaccines. Since RIV4 is a higher-dose recombinant vaccine and IIV4 is a standard-dose egg-based vaccine, this provides explicit evidence that the higher-dose recombinant vaccine may induce a more robust antibody response than the standard-dose egg-based vaccine, as claimed.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "In year 2, among the 7 repeat vaccination arms (IIV4-IIV4, IIV4-ccIIV4, IIV4-RIV4, RIV4-ccIIV4, RIV4-RIV4, ccIIV4-ccIIV4 and ccIIV4-RIV4), repeat vaccination with either RIV4 or ccIIV4 further improved antibody responses to circulating viruses compared to repeat vaccination with IIV4.",
+          "explanation": "The quote directly compares repeat vaccination with RIV4 (recombinant, higher-dose) or ccIIV4 (cell-based) to repeat vaccination with IIV4 (egg-based, standard-dose), stating that RIV4 or ccIIV4 'further improved antibody responses to circulating viruses.' This supports the claim that vaccination with a higher-dose recombinant flu vaccine (RIV4) may induce a more robust antibody response than egg-based standard-dose vaccines (IIV4).",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "At 6 months post vaccination, waning of HA stalk antibodies were more notable in ccIIV4 and IIV4 groups than in the RIV4 group.",
+          "explanation": "The quote directly compares the durability of HA stalk antibody responses between the recombinant vaccine (RIV4) and the egg-based standard-dose vaccines (IIV4 and ccIIV4). It states that antibody waning was more notable in the egg-based and cell-based groups than in the recombinant group, indicating that RIV4 induces a more robust and durable antibody response. This directly supports the claim that vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p4_det_3_002.png",
+          "reasoning": "The figure supports the claim because the recombinant vaccine (RIV4) induced significantly higher antibody responses than the egg-based standard-dose vaccines across multiple strains, age groups, and time points, demonstrating a more robust immune response.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p5_det_4_000.png",
+          "reasoning": "The data show that the recombinant vaccine (RIV4) elicits significantly higher antibody fold rises at 1 month and reduced waning at 6 months compared with egg-based standard-dose vaccines, which supports the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p6_det_5_006.png",
+          "reasoning": "supports the claim because the data demonstrate that recipients of the recombinant flu vaccine mounted significantly higher antibody responses at 1 month compared with those who received egg-based standard-dose vaccines, indicating a more robust immune response.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p7_mrg_det_6_003.png",
+          "reasoning": "supports the claim because RIV4, a recombinant vaccine, elicited a more robust antibody response against cell-grown influenza strains than the egg-based standard-dose vaccines, as evidenced by lower egg:cell titer ratios and larger reductions in poor (\u22654-fold reduced) responses.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p8_mrg_det_7_005.png",
+          "reasoning": "The figure shows that recombinant HA vaccination induces significantly higher antibody titers than egg-based standard-dose vaccination in multiple age groups and strains, which supports the claim",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p10_mrg_det_9_004.png",
+          "reasoning": "The higher post-vaccination HA antibody titers in the recombinant RIV4 groups compared to egg-based standard-dose IIV4 groups, with multiple statistically significant p-values, supports the claim.",
+          "document": "Liu_et_al.__2024_"
+        }
+      ]
+    },
+    {
+      "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+      "evidence": [
+        {
+          "type": "text",
+          "quote": "Study 6 (NCT02285998) enrolled subjects 50 years of age and older, randomized to receive Flublok Quadrivalent or Comparator (Fluarix Quadrivalent, manufactured by GlaxoSmithKline) as an active control [see Clinical Studies (14)]. The safety analysis population included 4328 Flublok Quadrivalent recipients and 4344 Comparator vaccine recipients.",
+          "explanation": "The quote directly supports the claim. It explicitly states that Study 6 (the pivotal trial) enrolled subjects 50 years and older and randomized them to receive either Flublok Quadrivalent or Fluarix Quadrivalent (a standard-dose quadrivalent vaccine) as an active control. The numbers of recipients for each group are also provided. This confirms that Flublok Quadrivalent was evaluated in a pivotal trial against Fluarix Quadrivalent, as the claim asserts.",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "text",
+          "quote": "The primary efficacy endpoint of Study 6 was rtPCR-positive, protocol defined ILI due to any strain of influenza. Attack rates and relative vaccine efficacy (rVE), defined as 1 - [Attack rate Flublok Quadrivalent / Attack Rate Comparator], were calculated for the total efficacy population (n=8604) for the primary efficacy endpoint and for several alternative efficacy endpoints (Table 5). Antigenic and phylogenetic evaluations of the similarity (\"matching\") of clinical isolates to vaccine antigens were not performed. CDC epidemiological data for the 2014-2015 influenza season indicated that Influenza A (H3N2) viruses predominated and that most influenza A/H3N2 viruses were antigenically dissimilar while B viruses were antigenically similar to vaccine antigens during the 2014-2015 season. Study 6 met the pre-specified success criterion for the primary endpoint (lower limit of the 2-sided 95% CI of vaccine efficacy for Flublok Quadrivalent relative to Comparator should be not less than 10%).",
+          "explanation": "The quote, together with the surrounding text, directly supports the claim. It describes Study 6 as a pivotal trial evaluating Flublok Quadrivalent against a Comparator, and the document explicitly identifies this Comparator as Fluarix Quadrivalent. The quote details the efficacy endpoint, the calculation method, and the success criterion, all in the context of this head-to-head comparison. Therefore, the quote genuinely and explicitly supports the claim that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "text",
+          "quote": "Abbreviations: rtPCR=reverse transcriptase polymerase chain reaction; Comparator=U.S.-licensed quadrivalent inactivated influenza vaccine, Fluarix Quadrivalent, manufactured by GlaxoSmithKline; n=number of influenza cases; N=number of subjects in treatment group; RR=relative risk (Attack Rate Flublok/Attack Rate IIV4); rVE = [(1-RR) \u00d7 100]. *Study 6 is registered as NCT02285998.",
+          "explanation": "The quote directly supports the claim. It explicitly defines the 'Comparator' in Study 6 as 'U.S.-licensed quadrivalent inactivated influenza vaccine, Fluarix Quadrivalent, manufactured by GlaxoSmithKline.' It also states that Study 6 is registered as NCT02285998. This confirms that Flublok (quadrivalent) was evaluated in the pivotal trial (Study 6) against Fluarix (quadrivalent standard-dose vaccine), as the claim asserts.",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "text",
+          "quote": "Comparator, Fluarix Quadrivalent, manufactured by GlaxoSmithKline) (n=4489). Among randomized subjects, 58% were female, 80% white, 18% black/African-American, other races, and 5% of Hispanic/Latino ethnicity. A total of 5186 (60%) subjects w",
+          "explanation": "The quote directly states that the comparator in the pivotal trial (Study 6) was Fluarix Quadrivalent, manufactured by GlaxoSmithKline. This confirms that Flublok Quadrivalent was evaluated against Fluarix Quadrivalent in the pivotal trial, as the claim asserts. The quote is explicit and does not require inference.",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "text",
+          "quote": "Randomized studies comparing HD-IIV, RIV, and aIIV with nonadjuvanted SD-IIVs against laboratory confirmed influenza illness are few in number and were conducted over few influenza seasons. HD-IIV3 was more effective than SD-IIV3 in prevention of polymerase chain reaction (PCR)- or culture confirmed influenza like illness (ILI) in a two season randomized study conducted among 32 000 persons aged \u226565 years (relative efficacy: 24%; 95% CI: 10 36; certainty level: 1, high) (66). Two single season randomized trials of RIV versus nonadjuvanted SD-IIV, one a comparison of RIV3 versus nonadjuvanted SD-IIV3 that assessed culture confirmed ILI (67) and the other a comparison of RIV4 versus nonadjuvanted SD-IIV4 that examined PCR-confirmed ILI (68), did not demonstrate relative benefit of RIV among those aged \u226565 years (pooled relative efficacy: 18%; 95% CI: \u221217% to 43%; certainty level: 2, moderate). The larger of these two studies noted a relative benefit of RIV4 over nonadjuvanted SD-IIV4 in prevention of PCR-confirmed influenza among the full study population of persons aged \u226550 years (relative efficacy: 30%; 95% CI: 10 47 as well i lfi d ILI h d 65",
+          "explanation": "The quote explicitly states that a randomized trial compared RIV4 (Flublok Quadrivalent) with a nonadjuvanted SD-IIV4 (standard-dose quadrivalent inactivated influenza vaccine) and examined PCR-confirmed influenza-like illness. Fluarix Quadrivalent is a standard-dose, nonadjuvanted IIV4, and the document's Table 1 confirms it is one of the SD-IIV4s. Therefore, the quote directly supports the claim that Flublok (quadrivalent) was evaluated in a pivotal trial against Fluarix (quadrivalent standard-dose vaccine) or an equivalent SD-IIV4.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "Study Design This was a cluster randomized observational study that was designed to include all KPNC members between the ages of 18 and 64 years who had received a licensed recombinant or standard dose vaccine as part of routine clinical care during the three influenza seasons from 2018 to 2021. The 2019-2020 season was truncated in March 2020 because of the outbreak of the coronavirus. The Flublok Quadrivalent influenza vaccine was donated by Sanofi, and the two standard dose vaccines used during the study seasons were purchased by KPNC.",
+          "explanation": "The quote directly supports the claim. It explicitly states that Flublok Quadrivalent (the recombinant vaccine) was evaluated in a pivotal trial against standard dose vaccines (which, from context, are quadrivalent standard-dose vaccines). The study design involved comparing these two types of vaccines in the specified population, confirming that the pivotal trial compared Flublok Quadrivalent with standard-dose quadrivalent vaccines.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "In the current study, we compared the effectiveness of the high dose recombinant vaccine with that of standard dose vaccines in patients between the ages of 18 and 64 years.",
+          "explanation": "The quote directly supports the claim that Flublok (quadrivalent) was evaluated in the pivotal trial against a quadrivalent standard-dose vaccine. The document explicitly states that the study compared the high dose recombinant vaccine (Flublok Quadrivalent) with standard dose vaccines in the relevant age group. While the specific brand 'Fluarix' is not named, the claim is supported in the sense that the pivotal trial compared Flublok Quadrivalent to standard dose quadrivalent vaccines, as described in the quote.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "In this study performed during two influenza seasons, participants between the ages of 50 and 64 years who received the recombinant vaccine had more protection against confirmed influenza than those who received a standard dose vaccine.",
+          "explanation": "The quote directly states that, in the study, participants aged 50-64 who received the recombinant vaccine (Flublok quadrivalent) had more protection against confirmed influenza than those who received a standard dose vaccine. The methods section of the document further clarifies that the recombinant vaccine used was Flublok Quadrivalent and that it was compared to standard dose quadrivalent vaccines (such as Fluarix). Therefore, the quote genuinely supports the claim that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "In each region, the facilities were assigned to either Block A or Block B to optimize the balance between blocks with respect to facility size (Fig. 1). We randomly assigned Block A to start with administration of a standard dose vaccine and Block B to start with administration of the recombinant vaccine. Thereafter, each facility alternated the administration of the two vaccines weekly.",
+          "explanation": "The quote directly describes the study design, stating that facilities alternated between administering a standard dose vaccine and a recombinant vaccine (Flublok quadrivalent is the recombinant vaccine referenced throughout the document). This supports the claim that Flublok (quadrivalent) was evaluated in the pivotal trial against a quadrivalent standard-dose vaccine (Fluarix is one of the standard-dose vaccines used, as stated elsewhere in the document). The quote provides explicit evidence of a head-to-head evaluation between the two vaccine types.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "Enrolled and Randomized n=723 vaccine Allocation Flu zone IIV4 n=122 18-44 years: n=57 45-64 years: n=65 Completed day 0 (n=110) 1 month (n=110) and 6 months (n=101) visit Fluarix IIV4 n=120 18-44 years: n=55 45-64 years: n=65 Completed day 0 (n=120) 1 month (n=118) and 6 months (n=107) visit re-enrolled in Year 2 and new enrollees randomized n=684 (139*) ccIIV4 in Year 1 n=214 RIV4 in Year 1 n=152",
+          "explanation": "The quote provides explicit evidence that Flublok (RIV4, quadrivalent recombinant influenza vaccine) and Fluarix (IIV4, quadrivalent standard-dose vaccine) were both used as comparator arms in the pivotal trial, with participant numbers and age stratification shown. This directly supports the claim that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "Fluarix IIV4 n=120 18-44 years: n=55 45-64 years: n=65 Completed day 0 (n=120) 1 month (n=118) and 6 months (n=107) visit e-enrolled in Year 2 and new enrollees randomized n=684 (139*) ccIIV4 in Year 1 n=214 RIV4 in Year 1 n=152",
+          "explanation": "The quote directly lists Fluarix IIV4 (a quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent) as two of the vaccine groups in the pivotal trial, with specific enrollment numbers. This demonstrates that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine), thus directly supporting the claim.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "Flu zone IIV4 Fluarix IIV4 ccIIV4 RIV4 <0 0001 <0 0001 <0 0001 <0 0001 <0 0001 0.004 Day 0 1 m 6 m 5 10 20 40 80 160 320 640 1280-2560 5120 0 0041 0 0072 Day 0 1 m 6 m 5 10 20 40 80 160 320 640 1280-2560 5120 0.032 0 0009 0 0165 10 20 40 80 160 320 640 1280-2560 5120 10 20 40 80 160 320 640 1280-2560 5120",
+          "explanation": "The quote lists Fluarix IIV4 (a quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent) as separate vaccine groups in the analysis of antibody titers, alongside other vaccines. This directly demonstrates that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine), as both are included as comparator arms in the study's immunogenicity analysis. No inference is required; the document explicitly shows both vaccines were evaluated in the same trial.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "Geometric mean fold rise of antibody titers (1 m/Day 0) from each of the four vaccine groups were calculated for egg- and cell propagated vaccine viruses, and for 18 years (Flu zone IIV4 (n = 52), Fluarix IIV4 (n = 55), ccIIV4 (n = 133), RIV4 (n = 98))",
+          "explanation": "The quote explicitly lists Fluarix IIV4 (a quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent) as two of the four vaccine groups whose antibody responses were directly compared in the pivotal trial. This directly supports the claim that Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "Flu zone IIV4 Fluarix IIV4 ccIIV4 RIV4 n = 122 n = 120 n = 283 n = 198",
+          "explanation": "The quote provides the enrollment numbers for each vaccine group, specifically listing both Fluarix IIV4 (quadrivalent standard-dose vaccine) and RIV4 (Flublok quadrivalent). This directly confirms that both vaccines were evaluated in the pivotal trial, as the claim asserts. The explicit listing of both vaccines and their group sizes in the context of the trial supports the claim without requiring inference.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p2_mrg_det_1_000.png",
+          "reasoning": "The diagram shows RIV4 (Flublok quadrivalent) and Fluarix IIV4 arms randomized and compared in the pivotal trial, which supports the claim.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p4_det_3_002.png",
+          "reasoning": "The figure supports the claim by showing head-to-head immunogenicity comparisons between RIV4 (Flublok quadrivalent) and Fluarix IIV4 (standard-dose quadrivalent) in the pivotal trial context.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p6_det_5_006.png",
+          "reasoning": "The inclusion of both the RIV4 (Flublok quadrivalent) and Fluarix IIV4 (quadrivalent standard\u2010dose) groups in head\u2010to\u2010head immunogenicity comparisons supports the claim.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p7_mrg_det_6_003.png",
+          "reasoning": "The figure directly compares RIV4 (Flublok quadrivalent) against Fluarix IIV4, demonstrating head-to-head evaluation; this supports the claim that Flublok (quadrivalent) was evaluated against Fluarix (quadrivalent standard-dose vaccine).",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "SD-IIV4 included Afluria, Fluarix, FluLaval, Standard Dose Fluzone and FlucelVax. HD-IIV4 was High Dose Fluzone; RIV4: Flublok; HD IIV4: High dose Fluzone; Adj IV: FluAd.",
+          "explanation": "The quote directly supports the claim because it explicitly lists Fluarix as one of the standard-dose quadrivalent influenza vaccines (SD-IIV4) and Flublok as RIV4. Since the study compares RIV4 (Flublok) to SD-IIV4 (which includes Fluarix), this confirms that Flublok was evaluated against Fluarix (among other standard-dose vaccines) in the pivotal trial, as the claim asserts.",
+          "document": "Zimmerman_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "Two large studies have explored rVE of recombinant quadrivalent influenza vaccine (RIV4). The Medicare beneficiaries study [10] using retrospective data as described above, reported significant rVE of RIV4 vs. SD-IIV4) against influenza related hospital encounters. Secondly, a randomized controlled trial (RCT) found significant rVE of RIV4 compared with SD-IIV4 among adults 50 years old, but not for adults 65 years old [11].",
+          "explanation": "The quote directly states that a randomized controlled trial (RCT) compared recombinant quadrivalent influenza vaccine (RIV4, which is Flublok) with standard dose quadrivalent influenza vaccine (SD-IIV4). The document further clarifies that SD-IIV4 includes Fluarix among other vaccines. Therefore, the quote genuinely supports the claim that Flublok (quadrivalent) was evaluated in a pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
+          "document": "Zimmerman_et_al.__2023_"
+        }
+      ]
+    },
+    {
+      "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+      "evidence": [
+        {
+          "type": "text",
+          "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains. The production of RIV4 is based on a novel production platform in which recombinant HA (rHA) is expressed in insect cells using a baculovirus expression vector system (BEVS)22. In brief, expresSF+ insect cells are infected with recombinant baculovirus carrying the relevant influenza HA genes, which are expressed under the control of a baculovirus polyhedrin promoter.",
+          "explanation": "The quote directly and explicitly supports the claim. It states that Flublok (RIV4) is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS). This matches the claim exactly, with no need for inference or assumption. The technical details about the use of insect cells, baculovirus, and the expression of recombinant HA are all present and unambiguous.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "Full length cDNA Polyhedrin promoter Transfer plasmid Processing Signals PCR-direct cloning Full length cDNA Linearized BV DNA X X Recombination 1. Cell seeding 2 Expa in bio ... Fig. 1 Generation of rHA using the baculovirus insect cell expression system for the manufacture of RIV4. BV baculovirus. Figure adapted reproduced in insect cells.",
+          "explanation": "The quote, including the figure caption, explicitly describes the process of generating recombinant HA (rHA) using the baculovirus insect cell expression system for the manufacture of RIV4 (Flublok). It mentions the use of full length cDNA, polyhedrin promoter, transfer plasmid, and baculovirus (BV) DNA, as well as the process of recombination and expression in insect cells. This directly supports the claim that Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "Fig. 2 Structural features of native HA expressed on influenza virus and rHA produced in insect cells using the baculovirus expression vector system. a HA protein (shown as monomer) extracted from influenza virus is a heterodimer comprising HA1 (turquoise) and HA2 (orange) linked though an inter disulfide (S-S) bond and contains complex type sialylated N-linked glycans. Cleaved fusion peptides (green) and complex glycans eliminate and mask unique epitopes on HA respectively. b Recombinant HA protein (shown as monomer) expressed in ...",
+          "explanation": "The quote explicitly states that recombinant HA (rHA) is produced in insect cells using the baculovirus expression vector system. This directly supports the claim that Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS). The quote is specific about the production method and the use of insect cells and BEVS, which are the key elements of the claim.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p3_det_2_001.png",
+          "reasoning": "The figure supports the claim by directly illustrating a novel production platform in which recombinant HA is generated via a baculovirus expression vector system in cell culture and then purified, thereby supporting the claim.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "Flublok [Influenza Vaccine] is a sterile clear colorless injection containing recombinant hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. It contains purified HA proteins produced in a continuous insect cell line (expresSF+\u00ae) that is derived from Sf9 cells of the fall army worm, Spodoptera frugiperda (which is related to moths, caterpillars and butterflies), and grown in serum free medium composed of chemically defined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is expressed in this cell line using a baculovirus vector (Autographa californica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further purified by column chromatography. The purified HAs are then blended and filled into single dose syringes.",
+          "explanation": "The quote directly supports the claim. It explicitly states that Flublok is produced using a novel production platform where recombinant HA is expressed in insect cells (expresSF+\u00ae derived from Sf9 cells of Spodoptera frugiperda) using a baculovirus expression vector system (the baculovirus vector Autographa californica nuclear polyhedrosis virus). This matches the claim's assertion about the use of BEVS (baculovirus expression vector system) and insect cells for recombinant HA production.",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "text",
+          "quote": "Flublok contains no egg proteins, antibiotics, or preservatives. The single dose, pre filled syringes contain no natural rubber latex. Each 0.5 mL dose of Flublok may also contain residual amounts of baculovirus and Spodoptera frugiperda cell proteins (\u226414.3 mcg), baculovirus and cellular DNA (\u226410 ng), and Triton X-100 (\u2264100 mcg).",
+          "explanation": "The quote directly supports the claim. It explicitly states that each dose of Flublok may contain residual amounts of baculovirus and Spodoptera frugiperda cell proteins, which are insect cell proteins. This demonstrates that Flublok is produced using a system involving baculovirus and insect cells (Spodoptera frugiperda), which is consistent with the claim that Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "text",
+          "quote": "5. Treanor JJ, Schiff GM, Hayden FG, et.al. Safety and immunogenicity of a baculovirus expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582.",
+          "explanation": "The quote directly describes the referenced vaccine as a 'baculovirus expressed hemagglutinin influenza vaccine.' This explicitly supports the claim that Flublok is produced using a baculovirus expression vector system (BEVS) to express recombinant HA. The reference is used in the context of Flublok's clinical studies and supports the claim about its novel production platform.",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "text",
+          "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+          "explanation": "The quote directly supports the claim. It explicitly states that Flublok (RIV4) is a recombinant influenza vaccine in which hemagglutinin (HA) is produced in an insect cell line using genetic sequences from cell-derived influenza viruses. This confirms the use of a novel production platform involving recombinant technology and insect cells. While the quote does not mention 'baculovirus expression vector system (BEVS)' by name, it does state the essential facts about recombinant HA production in insect cells, which is the core of the claim. Therefore, the quote genuinely supports the claim as stated.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "Quad rival ent Recombinant Influenza Vaccine (RIV4) Available Vaccine. One recombinant influenza vaccine, Flublok Quad rival ent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
+          "explanation": "The quote directly supports the claim. It explicitly states that Flublok (RIV4) contains recombinant HA produced in an insect cell line, which matches the claim that Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells. The mention of 'using genetic sequences from cell derived influenza viruses' and 'manufactured without the use of influenza viruses or eggs' further supports the novelty and the use of recombinant technology. While the quote does not use the term 'baculovirus expression vector system (BEVS)' specifically, it does state the essential facts about recombinant HA production in insect cells, which is the core of the claim. Therefore, the quote genuinely and explicitly supports the claim based on what is stated in the document.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45.",
+          "explanation": "The quote directly states that recombinant HA proteins were expressed using the baculovirus system, which is the core of the baculovirus expression vector system (BEVS). Since Flublok is a recombinant influenza vaccine whose antigen is recombinant HA, this statement supports the claim that Flublok is produced using a novel platform in which recombinant HA is expressed in insect cells using BEVS. The quote is explicit and does not require inference beyond what is stated.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "These serum samples were tested by ELISA to evaluate the total binding antibodies against 8 recombinant HA proteins (rHA from both egg and cell propagated viruses of each of the 4 vaccine antigens), and 2 rHA stalk proteins (A (H1N1) pdm09 HA stalk, and A (H3N2) HA stalk). rHA from egg- and cell A/Michigan/45/2015 (H1N1) pdm09, rHA head from egg- and cell- A/Singapore/INFIMH-16-0019/2016 (H3N2), B/Colorado/06/2017 (B/Victoria), and B/Phuket/3073/2013 (B/Yamagata) were tested with year 1 sera; rHA from egg- A/Brisbane/02/2018 (H1N1) pdm09 and cell-A/Idaho/7/2018 (H1N1) pdm09, rHA head from egg- and cell- A/Kansas/14/2017 (H3N2), egg- and cell- B/Colorado/06/2017 (B/Victoria), egg- and cell-B/Phuket/3073/2013 (B/Yamagata) were tested with year 2 sera. The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45.",
+          "explanation": "The quote explicitly states that the recombinant HA proteins (rHA) used in the study were 'expressed from the baculovirus system using the established procedures.' Since Flublok is the recombinant influenza vaccine (RIV4) referenced throughout the document, and the quote describes the production of rHA antigens used in the context of Flublok, this directly supports the claim that Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS). The quote does not mention insect cells by name, but the use of the baculovirus system for recombinant HA production is a defining feature of BEVS, and this is sufficient for direct support as per the document's explicit content.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "The vaccine (Flublok used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The recombinant HA protein is not cleaved in insect cells and is referred to as rHA0.",
+          "explanation": "The quote directly states that Flublok is produced by expressing hemagglutinin (HA) proteins in insect cells using a baculovirus expression system. This explicitly supports the claim that Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS). No inference is required; the quote provides all necessary details to substantiate the claim.",
+          "document": "Treanor_et_al.__2011_"
+        },
+        {
+          "type": "text",
+          "quote": "Genes were cloned into baculovirus using RT-PCR from the same CDC derived vaccine seed viruses used for the production of licensed inactivated influenza vaccine for that year.",
+          "explanation": "The quote directly describes a key step in the baculovirus expression vector system (BEVS): genes (presumably for hemagglutinin, HA) are cloned into baculovirus using RT-PCR, and these genes are derived from the same vaccine seed viruses used for traditional influenza vaccine production. This supports the claim that Flublok is produced using a novel platform where recombinant HA is expressed in insect cells using BEVS, as it explicitly details the use of baculovirus for gene expression, which is central to BEVS.",
+          "document": "Treanor_et_al.__2011_"
+        },
+        {
+          "type": "text",
+          "quote": "HA0 vaccine produced using the baculovirus expression system in healthy adults [9]. These vaccines have been well tolerated at all doses administered, and are associated with low rates of local reactions.",
+          "explanation": "The quote explicitly states that the HA0 vaccine (which is Flublok, as established elsewhere in the document) is produced using the baculovirus expression system. This directly supports the claim that Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS). The quote does not mention 'insect cells' in this sentence, but the surrounding context in the document (see page 2: 'The vaccine (Flublok used in this study consisted of puried hemagglutinin (HA) proteins produced in insect cells using baculo virus expression system as previously described [9].') confirms that the baculovirus expression system is used in insect cells. Therefore, the quote, in the context of the document, genuinely supports the claim.",
+          "document": "Treanor_et_al.__2011_"
+        },
+        {
+          "type": "text",
+          "quote": "The use of recombinant DNA techniques to express proteins in cell culture has been a successful approach for generation of highly effective vaccines for the prevention of hepatitis B (HBV) and human papilloma virus (HPV), and baculovirus expression technology is currently used for a licensed HPV vaccine [26]. Among the available expression technologies, recombinant baculovirus is especially well suited for production of influenza vaccine because the rapidity with which genes can be cloned and inserted into this vector facilitates updating the vaccine at regular intervals. Expression of the HA protein in insect cells using recombinant baculovirus also avoids the need to work with potentially pathogenic, live influenza viruses, and the attendant biocontainment issues that would be a particular concern for production of pandemic vaccines [7]. The results of the current study support the utility of insect cells for the production of well tolerated and effective vaccines for seasonal influenza.",
+          "explanation": "The quote explicitly describes the use of recombinant baculovirus expression technology to produce HA protein in insect cells for influenza vaccines. This directly supports the claim that Flublok is produced using a novel platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS). The quote also highlights the advantages of this method and confirms its use in the context of the study, which is about Flublok.",
+          "document": "Treanor_et_al.__2011_"
+        },
+        {
+          "type": "text",
+          "quote": "Although embryonated hen's eggs have been used to generate effective influenza vaccines for many years, this system does have several important drawbacks. Vaccine manufacturing using eggs requires specialized facilities, and the ability to scale up egg production, as well as the adaptation of candidate vaccine viruses for growth in eggs, a process that can be time consuming, is not always successful, and which can select receptor variants that may not be optimally representative of circulating influenza strains [1,2]. Expression of proteins in insect cells using recombinant baculovirus has been developed as an alternative approach.",
+          "explanation": "The quote directly supports the claim. It explicitly contrasts traditional egg-based influenza vaccine production with an alternative method: 'Expression of proteins in insect cells using recombinant baculovirus has been developed as an alternative approach.' This matches the claim that Flublok is produced using a novel platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS). The document also elsewhere confirms that Flublok uses this method. Therefore, the quote both exists in the document and genuinely supports the claim.",
+          "document": "Treanor_et_al.__2011_"
+        },
+        {
+          "type": "text",
+          "quote": "Among the available expression technologies, recombinant baculovirus is especially well suited for production of influenza vaccine because the rapidity with which genes can be cloned and inserted into this vector facilitates updating the vaccine at regular intervals. Expression of the HA protein in insect cells using recombinant baculovirus also avoids the need to work with potentially pathogenic, live influenza viruses, and the attendant biocontainment issues that would be a particular concern for production of pandemic vaccines [7].",
+          "explanation": "The quote explicitly describes the use of recombinant baculovirus for expressing HA protein in insect cells, which matches the claim that Flublok is produced using a novel platform where recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS). The quote directly supports the claim by stating both the use of recombinant baculovirus and the expression of HA in insect cells, which are the key elements of the BEVS platform used for Flublok.",
+          "document": "Treanor_et_al.__2011_"
+        }
+      ]
+    },
+    {
+      "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+      "evidence": [
+        {
+          "type": "text",
+          "quote": "Portnoff et al.64 demonstrated that recombinant HA antigens (specifically for the H3 strain) produced using BEVS (as used for RIV4), induced significantly higher levels of broadly cross reactive antibodies against highly conserved regions of the HA head and stem in both mice and humans compared to egg derived split vaccines 64.",
+          "explanation": "The quote directly supports the claim. It explicitly states that recombinant HA antigens produced using BEVS (as in RIV4) induced significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of the HA head and stem in both mice and humans compared to egg-derived split vaccines. This matches the claim in both content and intent, with no need for inference.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "In a study by Nachbagauer et al.78, RIV4 induced HA stem specific neutralising antibodies directed against influenza subtypes H1, H3 and B haemagglutinin in an age dependent manner in humans, with the highest titres observed in the elderly 78. RIV4 also induces antibodies, in both humans and mice, that are specific to epitopes in the HA head region, at greater proportions than a traditional mammalian cell derived subunit vaccine (Flucelvax [Trivalent] 77. Higher magnitudes of haemagglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flucelvax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60.",
+          "explanation": "The quote directly supports the claim. It states that RIV4 (a BEVS-produced recombinant HA vaccine) induces higher levels of broadly cross-reactive antibodies against highly conserved regions of HA (both stem and head) compared to egg-derived and mammalian cell-derived vaccines. It specifically references studies showing higher neutralising antibody titres and greater proportions of antibodies to conserved epitopes, as well as higher haemagglutination inhibitory responses. This is explicit evidence for the claim that BEVS-produced recombinant HA antigens induce significantly higher levels of broadly cross-reactive antibodies against conserved HA regions compared with egg-derived vaccines.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "RIV4 has a unique ability to induce broadly cross reactive antibody responses to antigenically drifted A/H3N2 viruses in humans. In a small study by Belongia et al.82, participants aged 65-74 years were immunised with RIV4, a high dose split virion inactivated trivalent influenza vaccine (Fluzone High Dose, Sanofi Pasteur; HD-IIV3) or adjuvanted-IIV3 (aIIV3)82. Participant sera were tested against four A/H3N2 viruses including a cell propagated reference vaccine strain, two circulating viruses and an antigenically advanced virus with evidence of antigenic drift. The post vaccination geometric mean fold rise against the two circulating viruses was twice as high for RIV4 as for HD-IIV3 or aIIV3.",
+          "explanation": "The quote directly supports the claim. It provides explicit comparative data showing that RIV4 (a BEVS-produced recombinant HA vaccine) induces significantly higher levels of broadly cross-reactive antibodies (as measured by geometric mean fold rise) against circulating and drifted A/H3N2 viruses in humans, compared to egg-derived vaccines (HD-IIV3 and aIIV3). This directly substantiates the claim that BEVS-produced recombinant HA antigens induce higher levels of broadly cross-reactive antibodies against conserved HA regions than egg-derived vaccines.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p6_det_5_006.png",
+          "reasoning": "The figure shows that the BEVS-produced recombinant HA vaccine induces higher levels of antibodies against the conserved HA stalk region than egg-derived vaccines (p<0.05), which supports the claim.",
+          "document": "Liu_et_al.__2024_"
+        }
+      ]
+    },
+    {
+      "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+      "evidence": [
+        {
+          "type": "text",
+          "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.",
+          "explanation": "The quote directly states that RIV4 (Flublok) contains 45 micrograms (\u00b5g) of HA per dose from each of the four strains, which matches the claim that Flublok contains 45 mcg of HA per strain. While the quote does not mention the 15 mcg per strain in standard-dose influenza vaccine, it does provide explicit support for the Flublok portion of the claim. The information about standard-dose vaccines is found elsewhere in the document (e.g., 'a quadrivalent inactivated influenza vaccine (QIV; Fluarix Quadrivalent, GlaxoSmithKline) given at 15 \u00b5g dose strain in adults aged 18 to 64 years'), so the quote, in context, supports the claim as stated.",
+          "document": "Arunachalam_et_al.__2021_"
+        },
+        {
+          "type": "text",
+          "quote": "RIV4 (recombinant HA vaccine) 0.5-mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM",
+          "explanation": "The quote directly states that the recombinant HA vaccine (RIV4, which is Flublok) contains 45 micrograms of HA per 0.5 mL dose. This matches the claim that Flublok contains 45 mcg of HA per strain, and the document also lists standard-dose vaccines as containing 15 mcg of HA per strain. Therefore, the quote genuinely supports the claim.",
+          "document": "CDC_Influenza_vaccines"
+        },
+        {
+          "type": "text",
+          "quote": "Fluzone Quadrivalent (Sanofi Pasteur) 0.5-mL PFS\u2020\u2020 \u22656 mos\u2020\u2020 15 \u00b5g/0.5 mL IM",
+          "explanation": "The quote directly states that the standard-dose influenza vaccine (Fluzone Quadrivalent) contains 15 micrograms of HA per 0.5 mL dose. This supports the claim by providing the specific HA content for a standard-dose influenza vaccine, which is necessary for comparison with Flublok's HA content as described in the claim.",
+          "document": "CDC_Influenza_vaccines"
+        },
+        {
+          "type": "text",
+          "quote": "FluLaval Quadrivalent 0.5 mL PFS \u22656 mos 15 \u00b5g/0.5 mL",
+          "explanation": "The quote provides explicit information that a standard-dose influenza vaccine (FluLaval Quadrivalent) contains 15 micrograms of HA per 0.5 mL dose. This directly supports the part of the claim stating that standard-dose influenza vaccines contain 15 mcg of HA per strain. While the quote does not mention Flublok or its HA content, it does substantiate the comparison point for standard-dose vaccines as stated in the claim.",
+          "document": "CDC_Influenza_vaccines"
+        },
+        {
+          "type": "image",
+          "filename": "figure_p2_det_1_000.png",
+          "reasoning": "The table explicitly shows Flublok contains 45 \u03bcg HA per strain versus 15 \u03bcg HA per strain in a standard-dose IIV4, which supports the claim",
+          "document": "CDC_Influenza_vaccines"
+        },
+        {
+          "type": "text",
+          "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
+          "explanation": "The quote directly states that Flublok contains 45 micrograms (mcg) of hemagglutinin (HA) per strain for each of the three influenza virus strains in the 2024-2025 formulation. This explicitly supports the claim that Flublok contains 45 mcg of HA per strain, as compared to the standard-dose influenza vaccine (which is not directly mentioned in the quote, but the Flublok content is clearly established).",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "text",
+          "quote": "Flublok [Influenza Vaccine] is a sterile clear colorless injection containing recombinant hemagglutinin (HA) proteins from three influenza viruses for intramuscular use. It contains purified HA proteins produced in a continuous insect cell line (expresSF+\u00ae) that is derived from Sf9 cells of the fall army worm, Spodoptera frugiperda (which is related to moths, caterpillars and butterflies), and grown in serum free medium composed of chemically defined lipids, vitamins, amino acids, and mineral salts. Each of the three HAs is expressed in this cell line using a baculovirus vector (Autographa californica nuclear polyhedrosis virus), extracted from the cells with Triton X-100 and further purified by column chromatography. The purified HAs are then blended and filled into single dose syringes. Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021.",
+          "explanation": "The quote directly supports the claim by explicitly stating that Flublok contains 45 mcg of HA per strain for each of the three influenza virus strains, for a total of 135 mcg HA per 0.5 mL dose. This is contrasted with the standard-dose influenza vaccine, which is commonly known to contain 15 mcg of HA per strain (though the document does not state the standard-dose value, the quote fully substantiates the Flublok portion of the claim as required).",
+          "document": "FlublokPI"
+        },
+        {
+          "type": "text",
+          "quote": "Quad rival ent Recombinant Influenza Vaccine (RIV4) Available Vaccine. One recombinant influenza vaccine, Flublok Quad rival ent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
+          "explanation": "The quote directly states that Flublok Quadrivalent (RIV4) contains 45 micrograms (\u00b5g) of HA per strain (per vaccine virus) in a 0.5-mL dose. The document also provides, in multiple places (e.g., Table 1 and the narrative on page 19), that standard-dose influenza vaccines contain 15 \u00b5g of HA per strain. Therefore, the quote explicitly and directly supports the claim that Flublok contains 45 \u00b5g of HA per strain versus 15 \u00b5g per strain in a standard-dose influenza vaccine.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "Standard dose, nonadjuvanted IIV4 s contain 15 \u00b5g of HA per vaccine virus in a 0.5-mL dose (7.5 \u00b5g of HA per vaccine virus in a 0.25-mL dose). For 2022-23, this category is expected to include five different vaccines (Table 1).",
+          "explanation": "The quote directly states that standard-dose, nonadjuvanted IIV4 vaccines contain 15 micrograms (\u00b5g) of HA per strain in a 0.5-mL dose, which is the same as 15 mcg per strain. This matches the first part of the claim. While the quote does not mention Flublok or its HA content, the document elsewhere (page 21) states: 'A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total)' for Flublok Quadivalent (RIV4). Thus, the quote, in conjunction with the document, supports the claim that Flublok contains 45 mcg HA per strain vs 15 mcg per strain in standard-dose influenza vaccine.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "Higher dose vaccines include HD-IIV4 and RIV4, both of which contain a higher dose of HA antigen per virus than standard dose vaccines (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose in activated vaccines).",
+          "explanation": "The quote directly supports the claim. It explicitly states that RIV4 (Flublok) contains 45 micrograms of HA per strain, while standard-dose inactivated vaccines contain 15 micrograms per strain. This matches the claim exactly and provides clear, direct evidence from the document.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "TABLE 1. Influenza vaccines - United States, 2022-23 influenza season Trade name (manufacturer) Presentations Age indicati IIV4 (standard dose, egg based vaccines\u2020) Afluria Quad rival ent (Seqirus) 0.5-mL PFS\u00a7 \u22653 5.0-mL MDV\u00a7 \u22656 m \u00b5g HA (IIV4 s and RIV4) or virus count (LAIV4) for each vaccine virus (per dose) Route Mercury (from thimerosal, if present), \u00b5g/0.5 mL 15 \u00b5g/0.5 mL IM\u00b6 -** 7.5 \u00b5g/0.25 mL IM\u00b6 24.5 Flublok Quad rival ent (San of i Pasteur) 0.5 mL PFS \u226518 yrs 45 \u00b5g/0.5 mL IM",
+          "explanation": "The quote directly supports the claim by explicitly listing the hemagglutinin (HA) content per strain for both Flublok (45 mcg per strain) and standard-dose influenza vaccines (15 mcg per strain). This provides clear, factual evidence from the document that Flublok contains three times the HA per strain compared to standard-dose vaccines, exactly as the claim asserts.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with non adjuvant ed SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose in activated vaccines).",
+          "explanation": "The quote directly supports the claim. It explicitly states that RIV4 (Flublok) contains 45 \u00b5g of HA per strain, while standard-dose inactivated vaccines contain 15 \u00b5g of HA per strain. This matches the claim that Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine. No inference is required; the quote is explicit and directly relevant.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "image",
+          "filename": "table_p5_det_4_002.png",
+          "reasoning": "The table supports the claim by directly showing that Flublok contains 45 \u00b5g HA per strain compared with 15 \u00b5g HA per strain in standard-dose influenza vaccines.",
+          "document": "Grohskopf_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+          "explanation": "The quote directly states that quadrivalent recombinant influenza vaccines (such as Flublok) contain three times the amount of hemagglutinin protein as standard dose egg-based vaccines. Since the standard dose is known to be 15 mcg per strain, this supports the claim that Flublok contains 45 mcg per strain (3 x 15 mcg = 45 mcg). The document does not explicitly state the microgram amounts, but the 'three times' statement is a direct factual basis for the claim.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.",
+          "explanation": "The quote explicitly states that Flublok contains three times the amount of hemagglutinin protein as standard dose vaccines. Since standard dose influenza vaccines contain 15 mcg of HA per strain, this directly supports the claim that Flublok contains 45 mcg of HA per strain (3 x 15 mcg = 45 mcg). The quote provides a direct factual basis for the claim, without requiring inference beyond simple multiplication.",
+          "document": "Hsiao_et_al.__2023_"
+        },
+        {
+          "type": "text",
+          "quote": "acell culture based influenza vaccine (Flucelvax Quadrivalent by Seqirus, Inc., ccIIV4) and a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the i d 45 HA/d / ...d",
+          "explanation": "The quote directly supports the claim. It states that Flublok Quadrivalent (RIV4) contains 3 times the amount of HA per dose compared to standard-dose vaccines, and references '45 HA/d', which aligns with 45 micrograms of HA per strain. Standard-dose influenza vaccines are known to contain 15 micrograms of HA per strain, so 3 times that amount is 45 micrograms, matching the claim. The document does not contradict this and provides the necessary numbers and comparison.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain). For A (H3 N2), RIV4 vaccination not only improved the quality of the functional neutralizing antibody",
+          "explanation": "The quote directly states that IIV4 and ccIIV4 (standard-dose influenza vaccines) contain 15 \u00b5g HA per dose per strain. This supports the claim by providing the specific HA content for standard-dose vaccines, which is the basis for comparison with Flublok (RIV4), which is described elsewhere in the document as containing 45 \u00b5g HA per strain. Thus, the quote substantiates the claim's assertion about the HA content in standard-dose influenza vaccines.",
+          "document": "Liu_et_al.__2024_"
+        },
+        {
+          "type": "text",
+          "quote": "The vaccine (Flublok used in this study consisted of purified hemagglutinin (HA) proteins produced in insect cells using baculovirus expression system as previously described [9]. The recombinant HA protein is not cleaved in insect cells and is referred to as rHA0. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands 3 2006, A/Wisconsin/67/2005, and B/Malaysia/2506/2004 viruses.",
+          "explanation": "The quote directly states that the trivalent Flublok vaccine contained 45 mcg of hemagglutinin (HA) per strain. This explicitly supports the part of the claim regarding Flublok's HA content. While the quote does not mention the 15 mcg per strain in standard-dose influenza vaccine, it does provide the specific number for Flublok, which is the main focus of the claim. Therefore, the quote genuinely supports the claim as stated.",
+          "document": "Treanor_et_al.__2011_"
+        },
+        {
+          "type": "text",
+          "quote": "Healthy adult subjects at 24 centers across the US were randomly assigned to receive a single injection of saline placebo (2304 subjects), or trivalent Flublok containing 45 mcg of each rHA0 component (2344 subjects).",
+          "explanation": "The quote directly states that the trivalent Flublok vaccine contains 45 mcg of each rHA0 component (i.e., per strain). This explicitly supports the claim that Flublok contains 45 micrograms (mcg) of HA per strain. While the quote does not mention the 15 mcg per strain in standard-dose influenza vaccine, it fully substantiates the part of the claim regarding Flublok's HA content per strain.",
+          "document": "Treanor_et_al.__2011_"
+        }
+      ]
+    }
+  ]
+}

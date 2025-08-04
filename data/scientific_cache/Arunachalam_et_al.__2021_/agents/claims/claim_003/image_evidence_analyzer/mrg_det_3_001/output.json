@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "Two schematic diagrams of influenza hemagglutinin (HA) proteins. Panel a shows the cleaved HA1/HA2 subunits with complex, polysialylated glycans and an exposed fusion peptide. Panel b shows the uncleaved HA0 precursor with paucimannose glycans and an uncleaved fusion peptide. Both diagrams include membrane topology and disulfide bonds. The figure illustrates structural and glycosylation differences between HA proteins (cleaved vs. uncleaved, complex vs. paucimannose glycans) but provides no data on immune response breadth, cross-protection, or effects of recombinant technology. It does not support the claim. Note: No immunogenicity or clinical data are presented; interpretation is limited to structural glycan differences.",
+  "explanation": "Schematic diagrams of influenza hemagglutinin proteins comparing a cleaved HA1/HA2 with complex polysialylated glycans (panel a) versus an uncleaved HA0 with paucimannose glycans (panel b). The diagrams label the globular head, fibrous stem, glycan types, fusion peptide status, and disulfide bonds. The figure only shows structural differences in glycosylation and cleavage of HA proteins and provides no data on immune response breadth or cross-protection in mismatch seasons, so it does not support the claim. Note: Image is clear for structural interpretation but contains no immunogenicity or cross-protection evidence.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Two schematic diagrams of influenza hemagglutinin (HA) proteins. Panel a shows the cleaved HA1/HA2 subunits with complex, polysialylated glycans and an exposed fusion peptide. Panel b shows the uncleaved HA0 precursor with paucimannose glycans and an uncleaved fusion peptide. Both diagrams include membrane topology and disulfide bonds.",
+    "image_description": "Schematic diagrams of influenza hemagglutinin proteins comparing a cleaved HA1/HA2 with complex polysialylated glycans (panel a) versus an uncleaved HA0 with paucimannose glycans (panel b). The diagrams label the globular head, fibrous stem, glycan types, fusion peptide status, and disulfide bonds.",
     "evidence_found": null,
-    "reasoning": "The figure illustrates structural and glycosylation differences between HA proteins (cleaved vs. uncleaved, complex vs. paucimannose glycans) but provides no data on immune response breadth, cross-protection, or effects of recombinant technology. It does not support the claim.",
-    "confidence_notes": "No immunogenicity or clinical data are presented; interpretation is limited to structural glycan differences."
+    "reasoning": "The figure only shows structural differences in glycosylation and cleavage of HA proteins and provides no data on immune response breadth or cross-protection in mismatch seasons, so it does not support the claim.",
+    "confidence_notes": "Image is clear for structural interpretation but contains no immunogenicity or cross-protection evidence."
   }
 }

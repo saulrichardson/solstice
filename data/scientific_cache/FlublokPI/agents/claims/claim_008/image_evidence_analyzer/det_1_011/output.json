@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p2_det_1_011.png",
+  "image_path": "FlublokPI/extracted/figures/table_p2_det_1_011.png",
+  "image_type": "Table",
+  "page_number": 2,
+  "block_id": "det_1_011",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A two-column table showing percentages of local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events for Flublok (N=2272) versus placebo (N=2231). Each adverse event is broken down by 'Any', 'Mod' (moderate), and 'Sev' (severe) categories. The table presents reactogenicity data for Flublok versus placebo and does not include any information on hemagglutinin (HA) content per strain. Therefore, it does not support the claim about HA dosage in Flublok versus standard influenza vaccines.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-column table showing percentages of local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events for Flublok (N=2272) versus placebo (N=2231). Each adverse event is broken down by 'Any', 'Mod' (moderate), and 'Sev' (severe) categories.",
+    "evidence_found": null,
+    "reasoning": "The table presents reactogenicity data for Flublok versus placebo and does not include any information on hemagglutinin (HA) content per strain. Therefore, it does not support the claim about HA dosage in Flublok versus standard influenza vaccines.",
+    "confidence_notes": null
+  }
+}

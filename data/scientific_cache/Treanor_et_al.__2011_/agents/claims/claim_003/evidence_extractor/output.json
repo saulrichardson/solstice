@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "document": {
+    "pdf_name": "Treanor_et_al.__2011_",
+    "source_pdf": "data/clinical_files/Treanor et al. (2011).pdf",
+    "total_pages": 7,
+    "total_blocks": 97,
+    "total_characters": 25468
+  },
+  "extraction_result": {
+    "success": true,
+    "total_snippets_found": 4,
+    "error": null
+  },
+  "extracted_evidence": [
+    {
+      "id": 1,
+      "quote": "Consistent with the results of national surveillance in the US during the 2007-2008 season [17], the majority of influenza A viruses detected in this study were H3 N2 viruses that represented substantial antigenic mismatch with the vaccine. However, even under these circumstances, Flublok had significant protective efficacy against culture confirmed influenza illness, including those meeting the CDC-ILI case definition.",
+      "relevance_explanation": "This quote directly states that the recombinant vaccine Flublok provided significant protection even when there was a substantial antigenic mismatch between the vaccine and circulating strains, supporting the claim of cross-protection in a mismatch season."
+    },
+    {
+      "id": 2,
+      "quote": "The current study provides evidence of protective efficacy of baculovirus derived HA vaccine in adults for prevention of seasonal influenza and supports that significant protection in a primed population can be obtained against influenza with a pure hemagglutinin vaccine.",
+      "relevance_explanation": "This statement affirms that the recombinant (baculovirus-derived) vaccine is effective in providing protection against influenza, which supports the claim that recombinant technology can lead to broader immune responses and cross-protection."
+    },
+    {
+      "id": 3,
+      "quote": "Expression of proteins in insect cells using recombinant baculovirus expression system as previously described [9]. The recombinant HA protein is not cleaved in insect cells and is referred to as rHA0. The trivalent vaccine contained 45 mcg as measured by the single radial immunodiffusion assay of each purified rHA0 derived from the A/Solomon Islands/3/2006 (H1N1), A/Wisconsin/67/2005 (H3N2), and B/Malaysia/2506/2004 viruses. These studies have consistently shown excellent tolerability and antibody responses similar to those seen with egg derived influenza vaccines. Finally, in a preliminary field efficacy evaluation, recipients of the rHA0 vaccine had reduced rates of culture-positive CDC-defined influenza like illness compared with placebo recipients, although the study was small [9].",
+      "relevance_explanation": "This quote describes the recombinant technology used and provides evidence that the resulting vaccine induces strong antibody responses and reduces illness rates, supporting the claim that recombinant technology leads to a broad immune response."
+    },
+    {
+      "id": 4,
+      "quote": "Flublok induced serum HAI antibody responses to all three vaccine components in the majority of recipients, and the lower limit of the 95% confidence interval for response rate exceeded the US FDA criteria for licensure for all three components (lower limit of the 95% confidence interval for response rate >40% and lower limit of the 95% confidence interval for HAI titer of 1:40 or greater >70%) [2].",
+      "relevance_explanation": "This quote provides data showing that the recombinant vaccine induced strong immune responses to multiple influenza strains, supporting the idea of a broader immune response."
+    }
+  ],
+  "model_used": "gpt-4.1"
+}

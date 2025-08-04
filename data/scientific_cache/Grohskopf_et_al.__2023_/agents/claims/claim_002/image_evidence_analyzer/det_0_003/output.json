@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "Black background displaying the U.S. Department of Health & Human Services seal on the left and the CDC logo on the right. does not support the claim because the image only shows organizational logos and contains no information about vaccine production, mutations, or effectiveness. Note: The image consists solely of agency logos with no substantive clinical or scientific content to evaluate.",
+  "explanation": "A black-and-white image displaying the U.S. Department of Health & Human Services seal on the left and the CDC logo on the right against a black background. The image contains only organizational logos and no information about vaccine production, mutations, or effectiveness, so it does not support the claim. Note: Analysis limited by the fact that the image only shows logos and no textual or data content related to the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Black background displaying the U.S. Department of Health & Human Services seal on the left and the CDC logo on the right.",
+    "image_description": "A black-and-white image displaying the U.S. Department of Health & Human Services seal on the left and the CDC logo on the right against a black background.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image only shows organizational logos and contains no information about vaccine production, mutations, or effectiveness.",
-    "confidence_notes": "The image consists solely of agency logos with no substantive clinical or scientific content to evaluate."
+    "reasoning": "The image contains only organizational logos and no information about vaccine production, mutations, or effectiveness, so it does not support the claim.",
+    "confidence_notes": "Analysis limited by the fact that the image only shows logos and no textual or data content related to the claim."
   }
 }

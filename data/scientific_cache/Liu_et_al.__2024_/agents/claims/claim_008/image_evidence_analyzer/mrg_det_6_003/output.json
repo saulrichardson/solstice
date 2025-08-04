@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p7_mrg_det_6_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p7_mrg_det_6_003.png",
+  "image_type": "Figure",
+  "page_number": 7,
+  "block_id": "mrg_det_6_003",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A multipanel figure (A\u2013D) showing immunogenicity comparisons across four quadrivalent influenza vaccines (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) in two age cohorts (18\u201344 and 45\u201364 years). Panels A and B plot geometric mean ratios of egg- to cell-grown virus titers for four strains (A/H3N2, A/H1N1pdm09, B/VIC, B/YAM) with p-values. Panels C and D show proportions of subjects with \u22654-fold titer reductions pre- and post-vaccination for the same strains and vaccines. The figure presents immunogenicity and titer reduction data for several influenza vaccines but does not display or mention the hemagglutinin (HA) microgram dosage per strain for any vaccine, so it does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A multipanel figure (A\u2013D) showing immunogenicity comparisons across four quadrivalent influenza vaccines (Fluzone IIV4, Fluarix IIV4, ccIIV4, RIV4) in two age cohorts (18\u201344 and 45\u201364 years). Panels A and B plot geometric mean ratios of egg- to cell-grown virus titers for four strains (A/H3N2, A/H1N1pdm09, B/VIC, B/YAM) with p-values. Panels C and D show proportions of subjects with \u22654-fold titer reductions pre- and post-vaccination for the same strains and vaccines.",
+    "evidence_found": null,
+    "reasoning": "The figure presents immunogenicity and titer reduction data for several influenza vaccines but does not display or mention the hemagglutinin (HA) microgram dosage per strain for any vaccine, so it does not support the claim.",
+    "confidence_notes": null
+  }
+}

@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "Table listing influenza vaccine products by trade name and manufacturer, presentation format, age indications, hemagglutinin antigen or virus count per dose, route of administration, and thimerosal content. The image only presents product characteristics and does not mention development of mutations during production or any impact on vaccine effectiveness, so it doesn't support the claim. Note: None.",
+  "explanation": "A table listing influenza vaccine products by trade name and manufacturer (including Seqirus Fluad Quadrivalent, Sanofi Pasteur Flublok Quadrivalent, and AstraZeneca FluMist Quadrivalent), with columns for presentations (dose volume and format), age indications, antigen content (\u00b5g HA per dose or virus count for LAIV4), administration route, and mercury content. The table provides basic formulation and presentation details for various cell-based, recombinant, and egg-based influenza vaccines but does not mention any potential for mutations during production or effects on vaccine effectiveness, and thus does not support the claim. Note: None",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Table listing influenza vaccine products by trade name and manufacturer, presentation format, age indications, hemagglutinin antigen or virus count per dose, route of administration, and thimerosal content.",
+    "image_description": "A table listing influenza vaccine products by trade name and manufacturer (including Seqirus Fluad Quadrivalent, Sanofi Pasteur Flublok Quadrivalent, and AstraZeneca FluMist Quadrivalent), with columns for presentations (dose volume and format), age indications, antigen content (\u00b5g HA per dose or virus count for LAIV4), administration route, and mercury content.",
     "evidence_found": null,
-    "reasoning": "The image only presents product characteristics and does not mention development of mutations during production or any impact on vaccine effectiveness, so it doesn't support the claim.",
-    "confidence_notes": "None."
+    "reasoning": "The table provides basic formulation and presentation details for various cell-based, recombinant, and egg-based influenza vaccines but does not mention any potential for mutations during production or effects on vaccine effectiveness, and thus does not support the claim.",
+    "confidence_notes": "None"
   }
 }

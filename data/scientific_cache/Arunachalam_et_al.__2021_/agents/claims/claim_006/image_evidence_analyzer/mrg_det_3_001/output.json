@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Two-panel schematic of influenza hemagglutinin (HA) glycoprotein structures. Panel a shows cleaved HA1 and HA2 subunits with polysialylated complex N-glycans attached at multiple sites and a cleaved fusion peptide. Panel b shows an uncleaved HA0 monomer with paucimannose-type N-glycans and an intact fusion peptide. The figure illustrates glycosylation differences between HA produced in different systems but makes no mention of Flublok, insect cells, or a baculovirus expression vector system. It doesn't support the claim. Note: Interpretation limited by lack of caption context; glycan structures imply insect-cell production but are not explicitly linked to BEVS or Flublok.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Two-panel schematic of influenza hemagglutinin (HA) glycoprotein structures. Panel a shows cleaved HA1 and HA2 subunits with polysialylated complex N-glycans attached at multiple sites and a cleaved fusion peptide. Panel b shows an uncleaved HA0 monomer with paucimannose-type N-glycans and an intact fusion peptide.",
+    "evidence_found": null,
+    "reasoning": "The figure illustrates glycosylation differences between HA produced in different systems but makes no mention of Flublok, insect cells, or a baculovirus expression vector system. It doesn't support the claim.",
+    "confidence_notes": "Interpretation limited by lack of caption context; glycan structures imply insect-cell production but are not explicitly linked to BEVS or Flublok."
+  }
+}

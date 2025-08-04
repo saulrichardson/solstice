@@ -1,0 +1,29 @@
+{
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "document": "Hsiao_et_al.__2023_",
+  "supporting_evidence": [
+    {
+      "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
+      "explanation": "The quote directly states that quadrivalent recombinant influenza vaccines (such as Flublok) contain three times the amount of hemagglutinin protein as standard dose egg-based vaccines. Since the standard dose is known to be 15 mcg per strain, this supports the claim that Flublok contains 45 mcg per strain (3 x 15 mcg = 45 mcg). The document does not explicitly state the microgram amounts, but the 'three times' statement is a direct factual basis for the claim."
+    },
+    {
+      "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.",
+      "explanation": "The quote explicitly states that Flublok contains three times the amount of hemagglutinin protein as standard dose vaccines. Since standard dose influenza vaccines contain 15 mcg of HA per strain, this directly supports the claim that Flublok contains 45 mcg of HA per strain (3 x 15 mcg = 45 mcg). The quote provides a direct factual basis for the claim, without requiring inference beyond simple multiplication."
+    }
+  ],
+  "image_supporting_evidence": [],
+  "evidence_summary": {
+    "total_text_evidence_found": 2,
+    "total_image_evidence_found": 0,
+    "total_evidence_found": 2,
+    "coverage": "complete",
+    "missing_aspects": []
+  },
+  "metadata": {
+    "extraction_stats": {
+      "total_verified": 2
+    },
+    "rejected_count": 0
+  }
+}

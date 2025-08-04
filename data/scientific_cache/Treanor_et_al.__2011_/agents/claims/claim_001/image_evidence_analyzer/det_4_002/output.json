@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p5_det_4_002.png",
+  "image_path": "Treanor_et_al.__2011_/extracted/figures/figure_p5_det_4_002.png",
+  "image_type": "Figure",
+  "page_number": 5,
+  "block_id": "det_4_002",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "Two stacked line graphs showing cumulative incidence curves (y-axis on a logarithmic scale from 0.0001 to 0.02 for the top graph and 0.0001 to 0.01 for the bottom graph) plotted against CDC-ILI dates from January to April 2008 on the x-axes. Each graph compares two groups represented by a red solid line and a blue dashed line. The figure presents cumulative incidence of influenza-like illness over time for two groups but contains no information on Flublok, hemagglutinin antigen content, vaccine dosages, or immunogenicity measures. Therefore, it does not support the claim. Note: Legend and context are missing; resolution prevents reading group labels. However, no HA dosage or immunogenicity data are evident.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Two stacked line graphs showing cumulative incidence curves (y-axis on a logarithmic scale from 0.0001 to 0.02 for the top graph and 0.0001 to 0.01 for the bottom graph) plotted against CDC-ILI dates from January to April 2008 on the x-axes. Each graph compares two groups represented by a red solid line and a blue dashed line.",
+    "evidence_found": null,
+    "reasoning": "The figure presents cumulative incidence of influenza-like illness over time for two groups but contains no information on Flublok, hemagglutinin antigen content, vaccine dosages, or immunogenicity measures. Therefore, it does not support the claim.",
+    "confidence_notes": "Legend and context are missing; resolution prevents reading group labels. However, no HA dosage or immunogenicity data are evident."
+  }
+}

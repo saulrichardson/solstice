@@ -1,11 +1,38 @@
 """Reading order detection."""
 
-from typing import List
+from typing import List, Optional
 
 from .box import Box
 
 
-def determine_reading_order_simple(boxes: List[Box], page_width: float = 1600) -> List[str]:
+def _validate_reading_order_inputs(boxes: List[Box], page_width: float, page_height: float) -> Optional[List[str]]:
+    """
+    Validate inputs for reading order functions.
+    
+    Args:
+        boxes: List of boxes to process
+        page_width: Width of the page
+        page_height: Height of the page
+        
+    Returns:
+        Empty list if no boxes, None if validation passes
+        
+    Raises:
+        ValueError: If page dimensions are invalid
+    """
+    if not boxes:
+        return []
+    
+    if page_width <= 0:
+        raise ValueError(f"Invalid page width: {page_width}. Must be positive.")
+    
+    if page_height <= 0:
+        raise ValueError(f"Invalid page height: {page_height}. Must be positive.")
+    
+    return None  # Continue processing
+
+
+def determine_reading_order_simple(boxes: List[Box], page_width: float, page_height: float) -> List[str]:
     """
     Simple reading order: left side first (top to bottom), then right side (top to bottom),
     with special handling for full-width elements at the bottom (e.g., footnotes).
@@ -13,15 +40,18 @@ def determine_reading_order_simple(boxes: List[Box], page_width: float = 1600) -
     Args:
         boxes: All boxes on the page
         page_width: Width of the page
+        page_height: Height of the page
         
     Returns:
         List of box IDs in reading order
+        
+    Raises:
+        ValueError: If page dimensions are invalid
     """
-    if not boxes:
-        return []
-    
-    # Estimate page height from boxes
-    page_height = max(box.bbox[3] for box in boxes) if boxes else 3000
+    # Validate inputs - fail fast for invalid dimensions
+    early_return = _validate_reading_order_inputs(boxes, page_width, page_height)
+    if early_return is not None:
+        return early_return
     
     # Find page midpoint
     midpoint = page_width / 2

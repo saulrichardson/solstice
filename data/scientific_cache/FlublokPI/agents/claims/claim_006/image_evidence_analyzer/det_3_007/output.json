@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_det_3_007.png",
+  "image_path": "FlublokPI/extracted/figures/figure_p4_det_3_007.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "det_3_007",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table comparing Flublok Quadrivalent (N=4303) versus a comparator vaccine (N=4301) showing the number of cases (n), attack rates (%), relative risk (RR), and relative vaccine efficacy (rVE %) with 95% confidence intervals for various influenza endpoints (all rtPCR-positive influenza, influenza A, influenza B, and culture-confirmed ILI). The table presents clinical efficacy outcomes and attack rates but contains no information on the production platform, expression system, or use of insect cells and baculovirus. Therefore, it does not support the claim. Note: Analysis limited to visible table; no production details are shown in this figure.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing Flublok Quadrivalent (N=4303) versus a comparator vaccine (N=4301) showing the number of cases (n), attack rates (%), relative risk (RR), and relative vaccine efficacy (rVE %) with 95% confidence intervals for various influenza endpoints (all rtPCR-positive influenza, influenza A, influenza B, and culture-confirmed ILI).",
+    "evidence_found": null,
+    "reasoning": "The table presents clinical efficacy outcomes and attack rates but contains no information on the production platform, expression system, or use of insect cells and baculovirus. Therefore, it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible table; no production details are shown in this figure."
+  }
+}

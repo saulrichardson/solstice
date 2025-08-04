@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_det_9_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/figure_p10_det_9_000.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "det_9_000",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A flowchart outlining influenza vaccination dosing recommendations for children: it asks if a child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022. If yes, administer 1 dose of the 2022\u201323 influenza vaccine; if no or unknown, administer 2 doses of the 2022\u201323 influenza vaccine at least 4 weeks apart. The figure is a dosing algorithm and does not mention hemagglutinin (HA) microgram content for Flublok or standard-dose vaccines, so it does not support the claim. Note: The image is clear and complete for its intended purpose, but it contains no information on antigen content per strain.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart outlining influenza vaccination dosing recommendations for children: it asks if a child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022. If yes, administer 1 dose of the 2022\u201323 influenza vaccine; if no or unknown, administer 2 doses of the 2022\u201323 influenza vaccine at least 4 weeks apart.",
+    "evidence_found": null,
+    "reasoning": "The figure is a dosing algorithm and does not mention hemagglutinin (HA) microgram content for Flublok or standard-dose vaccines, so it does not support the claim.",
+    "confidence_notes": "The image is clear and complete for its intended purpose, but it contains no information on antigen content per strain."
+  }
+}

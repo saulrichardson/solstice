@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "CONSORT flow diagram showing enrollment, randomization, and follow-up of participants in two influenza seasons (2018\u20132019 and 2019\u20132020) with allocation to four vaccine arms (cell-culture\u2013derived IIV4, recombinant HA influenza vaccine, egg-based Fluzone IIV4, and egg-based Fluarix IIV4), including participant numbers by age group and completion of visits. The diagram details trial enrollment and vaccine allocation but contains no information about mutations arising during production or their impact on vaccine effectiveness and therefore does not support the claim.",
+  "explanation": "A two-year CONSORT flow diagram showing enrollment, randomization, and follow-up of participants in a clinical trial comparing four quadrivalent influenza vaccines (cell-culture\u2013based ccIIV4, recombinant RIV4, and two egg-based IIV4s) across Year 1 (2018\u20132019) and Year 2 (2019\u20132020). It details group sizes, age strata, re-randomizations, and protocol exclusions. The figure is solely a participant flowchart and contains no data or statements about mutations arising during vaccine production or any impact on vaccine effectiveness, and therefore does not support the claim. Note: Analysis limited to visible content; no text regarding viral mutations, egg adaptation, or effectiveness was present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "CONSORT flow diagram showing enrollment, randomization, and follow-up of participants in two influenza seasons (2018\u20132019 and 2019\u20132020) with allocation to four vaccine arms (cell-culture\u2013derived IIV4, recombinant HA influenza vaccine, egg-based Fluzone IIV4, and egg-based Fluarix IIV4), including participant numbers by age group and completion of visits.",
+    "image_description": "A two-year CONSORT flow diagram showing enrollment, randomization, and follow-up of participants in a clinical trial comparing four quadrivalent influenza vaccines (cell-culture\u2013based ccIIV4, recombinant RIV4, and two egg-based IIV4s) across Year 1 (2018\u20132019) and Year 2 (2019\u20132020). It details group sizes, age strata, re-randomizations, and protocol exclusions.",
     "evidence_found": null,
-    "reasoning": "The diagram details trial enrollment and vaccine allocation but contains no information about mutations arising during production or their impact on vaccine effectiveness and therefore does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "The figure is solely a participant flowchart and contains no data or statements about mutations arising during vaccine production or any impact on vaccine effectiveness, and therefore does not support the claim.",
+    "confidence_notes": "Analysis limited to visible content; no text regarding viral mutations, egg adaptation, or effectiveness was present."
   }
 }

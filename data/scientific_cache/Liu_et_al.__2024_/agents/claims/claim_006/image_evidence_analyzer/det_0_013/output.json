@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_det_0_013.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/table_p1_det_0_013.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "det_0_013",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Partial page snippet showing manuscript metadata (Received, Accepted, Published online dates) and the beginning of a paragraph of text; no table is visible. The image does not support the claim because it contains only dates and introductory text without any information on Flublok production or use of a baculovirus expression vector system; doesn't support the claim. Note: The image is incomplete and does not include any table or specific production platform details; analysis is limited to the visible content.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Partial page snippet showing manuscript metadata (Received, Accepted, Published online dates) and the beginning of a paragraph of text; no table is visible.",
+    "evidence_found": null,
+    "reasoning": "The image does not support the claim because it contains only dates and introductory text without any information on Flublok production or use of a baculovirus expression vector system; doesn't support the claim.",
+    "confidence_notes": "The image is incomplete and does not include any table or specific production platform details; analysis is limited to the visible content."
+  }
+}

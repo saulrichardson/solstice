@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "A table titled \"Influenza vaccines \u2014 United States, 2023\u201324 influenza season\" listing trade names of influenza vaccines (standard-dose egg-based IIV4, cell culture\u2013based ccIIV4, and high-dose HD-IIV4), their presentations, age indications, hemagglutinin content per dose, route of administration, and mercury content if present. The table merely lists vaccine products and their properties; it does not present any data or notes indicating that Flublok quadrivalent was compared to or evaluated against Fluarix quadrivalent in a pivotal trial, and thus does not support the claim. Note: Table portion shown does not include any RIV4 (recombinant) section or trial data; if additional sections exist, they are not visible here.",
+  "explanation": "Table listing 2023\u201324 US influenza vaccines by trade name (manufacturer), presentations, age indications, HA content per dose, administration route, and thimerosal content. Includes IIV4 egg-based vaccines (Afluria Quadrivalent, Fluarix Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent), cell culture\u2013based cCIV4, and high-dose IIV4. The table does not mention Flublok (quadrivalent) or any evaluation against Fluarix; it only lists vaccine formulations and dosing details, so it does not support the claim Note: Image appears to be a product listing table without clinical trial comparisons",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table titled \"Influenza vaccines \u2014 United States, 2023\u201324 influenza season\" listing trade names of influenza vaccines (standard-dose egg-based IIV4, cell culture\u2013based ccIIV4, and high-dose HD-IIV4), their presentations, age indications, hemagglutinin content per dose, route of administration, and mercury content if present.",
+    "image_description": "Table listing 2023\u201324 US influenza vaccines by trade name (manufacturer), presentations, age indications, HA content per dose, administration route, and thimerosal content. Includes IIV4 egg-based vaccines (Afluria Quadrivalent, Fluarix Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent), cell culture\u2013based cCIV4, and high-dose IIV4.",
     "evidence_found": null,
-    "reasoning": "The table merely lists vaccine products and their properties; it does not present any data or notes indicating that Flublok quadrivalent was compared to or evaluated against Fluarix quadrivalent in a pivotal trial, and thus does not support the claim.",
-    "confidence_notes": "Table portion shown does not include any RIV4 (recombinant) section or trial data; if additional sections exist, they are not visible here."
+    "reasoning": "The table does not mention Flublok (quadrivalent) or any evaluation against Fluarix; it only lists vaccine formulations and dosing details, so it does not support the claim",
+    "confidence_notes": "Image appears to be a product listing table without clinical trial comparisons"
   }
 }

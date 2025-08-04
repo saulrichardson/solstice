@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p4_mrg_det_3_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p4_mrg_det_3_001.png",
+  "image_type": "Figure",
+  "page_number": 4,
+  "block_id": "mrg_det_3_001",
+  "claim_id": "claim_008",
+  "claim": "Flublok contains 45 micrograms (mcg) of HA per strain vs 15 mcg of HA per strain in a standard-dose influenza vaccine.",
+  "supports_claim": false,
+  "explanation": "A two-panel schematic diagram of influenza hemagglutinin (HA) glycoprotein showing the globular head and fibrous stem regions, HA1 and HA2 subunits, glycosylation sites (polysialylated complex glycans vs paucimannose glycans), fusion peptide cleavage state, disulfide bonds, and membrane orientation in cleaved (panel a) vs uncleaved (panel b) forms. does not support the claim because the figure only illustrates HA structure and glycosylation patterns and contains no data on the amount of HA per vaccine strain or comparisons between Flublok and standard-dose vaccines. Note: The figure is clear but primarily structural; no numerical dosing information is provided.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-panel schematic diagram of influenza hemagglutinin (HA) glycoprotein showing the globular head and fibrous stem regions, HA1 and HA2 subunits, glycosylation sites (polysialylated complex glycans vs paucimannose glycans), fusion peptide cleavage state, disulfide bonds, and membrane orientation in cleaved (panel a) vs uncleaved (panel b) forms.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the figure only illustrates HA structure and glycosylation patterns and contains no data on the amount of HA per vaccine strain or comparisons between Flublok and standard-dose vaccines.",
+    "confidence_notes": "The figure is clear but primarily structural; no numerical dosing information is provided."
+  }
+}

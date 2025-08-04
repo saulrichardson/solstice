@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p8_mrg_det_7_005.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p8_mrg_det_7_005.png",
+  "image_type": "Figure",
+  "page_number": 8,
+  "block_id": "mrg_det_7_005",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A grid of box\u2010and\u2010whisker plots showing hemagglutination\u2010inhibition (HI) antibody titers (log2 scale) against four influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) at Day 0 and 1 month post-vaccination. Data are stratified by age group (18\u201344 yrs and 45\u201364 yrs) and by whether the HI assay used egg-grown or cell-grown virus. Each colored symbol set represents one of several vaccine formulations, including cell-culture-derived inactivated vaccine (ccIIV4), recombinant HA vaccine (RIV4), and egg-based inactivated vaccine (IIV4), with p-value comparisons indicated between some groups. The figure presents strain-specific HI titers measured against egg- or cell-grown viruses for different vaccines, but it does not assess broadly cross-reactive antibodies targeting conserved HA regions or directly compare BEVS-derived recombinant HA to egg-derived vaccines on that basis; therefore it does not support the claim. Note: Limited by small font sizes and lack of direct measurement of antibody breadth or conserved-region specificity; group labels and p-value annotations are difficult to interpret in detail.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A grid of box\u2010and\u2010whisker plots showing hemagglutination\u2010inhibition (HI) antibody titers (log2 scale) against four influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) at Day 0 and 1 month post-vaccination. Data are stratified by age group (18\u201344 yrs and 45\u201364 yrs) and by whether the HI assay used egg-grown or cell-grown virus. Each colored symbol set represents one of several vaccine formulations, including cell-culture-derived inactivated vaccine (ccIIV4), recombinant HA vaccine (RIV4), and egg-based inactivated vaccine (IIV4), with p-value comparisons indicated between some groups.",
+    "evidence_found": null,
+    "reasoning": "The figure presents strain-specific HI titers measured against egg- or cell-grown viruses for different vaccines, but it does not assess broadly cross-reactive antibodies targeting conserved HA regions or directly compare BEVS-derived recombinant HA to egg-derived vaccines on that basis; therefore it does not support the claim.",
+    "confidence_notes": "Limited by small font sizes and lack of direct measurement of antibody breadth or conserved-region specificity; group labels and p-value annotations are difficult to interpret in detail."
+  }
+}

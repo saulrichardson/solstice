@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_det_9_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/figure_p10_det_9_000.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "det_9_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Flowchart outlining influenza vaccination dosing recommendations for children (determining whether a child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022, leading to either 1 dose or 2 doses of 2022\u201323 vaccine) The image shows a pediatric influenza vaccine dosing algorithm and contains no information regarding Flublok production methods, recombinant HA expression in insect cells, or use of a baculovirus expression vector system, so it does not support the claim",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Flowchart outlining influenza vaccination dosing recommendations for children (determining whether a child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022, leading to either 1 dose or 2 doses of 2022\u201323 vaccine)",
+    "evidence_found": null,
+    "reasoning": "The image shows a pediatric influenza vaccine dosing algorithm and contains no information regarding Flublok production methods, recombinant HA expression in insect cells, or use of a baculovirus expression vector system, so it does not support the claim",
+    "confidence_notes": null
+  }
+}

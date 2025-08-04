@@ -19,7 +19,7 @@ The scientific pipeline is the primary document processing system in Solstice, d
 
 ### 1. **Pipeline Entry Point** (`pipeline.py`)
 - **Function**: `ingest_pdf()` - Simple API for PDF processing
-- **Purpose**: High-level orchestration and backward compatibility
+- **Purpose**: High-level orchestration with default settings
 - **Configuration**: Uses optimized defaults for clinical documents
 - **Returns**: Standard `Document` object for downstream processing
 

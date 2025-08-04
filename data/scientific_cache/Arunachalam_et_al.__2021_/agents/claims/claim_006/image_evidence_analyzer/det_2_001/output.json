@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_det_2_001.png",
+  "image_path": "Arunachalam_et_al.__2021_/extracted/figures/figure_p3_det_2_001.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "det_2_001",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": true,
+  "explanation": "A flowchart depicting the production of recombinant HA using a baculovirus expression vector system: full-length HA cDNA is cloned into a transfer plasmid under a polyhedrin promoter, recombined into linearized baculovirus DNA to produce a BV expression vector carrying the HA gene, which is used to infect cells in a bioreactor; followed by harvest (disc-stack centrifugation), extraction, clarification (depth filtration), purification (capture, polishing, DNA removal), and TFF/formulation. Evidence: The diagram shows insertion of the HA gene into a baculovirus (BV) expression vector under a polyhedrin promoter and subsequent infection and expansion of cells in a bioreactor, indicating use of BEVS to express recombinant HA. The figure supports the claim by directly illustrating a novel production platform in which recombinant HA is generated via a baculovirus expression vector system in cell culture and then purified, thereby supporting the claim. Note: The figure does not explicitly label the cultured cells as insect cells, but the use of a baculovirus vector and polyhedrin promoter strongly implies insect cell expression.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "A flowchart depicting the production of recombinant HA using a baculovirus expression vector system: full-length HA cDNA is cloned into a transfer plasmid under a polyhedrin promoter, recombined into linearized baculovirus DNA to produce a BV expression vector carrying the HA gene, which is used to infect cells in a bioreactor; followed by harvest (disc-stack centrifugation), extraction, clarification (depth filtration), purification (capture, polishing, DNA removal), and TFF/formulation.",
+    "evidence_found": "The diagram shows insertion of the HA gene into a baculovirus (BV) expression vector under a polyhedrin promoter and subsequent infection and expansion of cells in a bioreactor, indicating use of BEVS to express recombinant HA.",
+    "reasoning": "The figure supports the claim by directly illustrating a novel production platform in which recombinant HA is generated via a baculovirus expression vector system in cell culture and then purified, thereby supporting the claim.",
+    "confidence_notes": "The figure does not explicitly label the cultured cells as insect cells, but the use of a baculovirus vector and polyhedrin promoter strongly implies insect cell expression."
+  }
+}

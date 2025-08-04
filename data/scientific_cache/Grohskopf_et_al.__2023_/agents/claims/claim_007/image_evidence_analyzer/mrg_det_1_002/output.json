@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p2_mrg_det_1_002.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/figure_p2_mrg_det_1_002.png",
+  "image_type": "Figure",
+  "page_number": 2,
+  "block_id": "mrg_det_1_002",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A two-column document page. The left column shows the Table of Contents for an MMWR report (sections like Introduction, Methods, Primary Changes and Updates, Recommendations for Use of Influenza Vaccines, Vaccine Composition and Available Vaccines, Storage and Handling, References). The right column contains text on CDC adoption of ACIP recommendations and a footer listing CDC and MMWR editorial staff and publication details. does not support the claim because the image contains only a table of contents, general policy text, and staff listings with no data or statements about recombinant HA antigens, BEVS, or antibody responses. Note: No relevant immunogenicity data is present; analysis limited to visible table of contents and policy text.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A two-column document page. The left column shows the Table of Contents for an MMWR report (sections like Introduction, Methods, Primary Changes and Updates, Recommendations for Use of Influenza Vaccines, Vaccine Composition and Available Vaccines, Storage and Handling, References). The right column contains text on CDC adoption of ACIP recommendations and a footer listing CDC and MMWR editorial staff and publication details.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim because the image contains only a table of contents, general policy text, and staff listings with no data or statements about recombinant HA antigens, BEVS, or antibody responses.",
+    "confidence_notes": "No relevant immunogenicity data is present; analysis limited to visible table of contents and policy text."
+  }
+}

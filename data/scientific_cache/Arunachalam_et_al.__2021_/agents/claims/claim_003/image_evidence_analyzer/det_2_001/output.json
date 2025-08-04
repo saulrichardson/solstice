@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "Schematic flowchart of the recombinant baculovirus influenza vaccine manufacturing process, showing steps from full-length cDNA cloning into a transfer plasmid with polyhedrin promoter, recombination to generate a baculovirus expression vector containing the HA gene, followed by cell seeding, infection in a bioreactor, harvest (disc-stack centrifugation), extraction, depth filtration/clarification, purification (capture, polish, DNA removal), and tangential flow filtration/formulation This figure outlines only the manufacturing workflow for a recombinant vaccine and provides no immunogenicity or cross-protection data; it does not support the claim",
+  "explanation": "Schematic diagram of recombinant influenza vaccine production using baculovirus expression in insect cells, including PCR cloning of full-length cDNA into a transfer plasmid under a polyhedrin promoter, recombination to generate a baculovirus (BV) expression vector containing the HA gene, cell seeding and infection in a bioreactor, downstream processing steps such as disc-stack centrifugation (harvest), extraction, depth filtration (clarification), chromatographic capture and purification (including DNA removal), and tangential flow filtration (TFF)/formulation. The figure strictly outlines the recombinant vaccine manufacturing workflow and presents no data on immune responses, breadth of protection, or cross-protection in mismatch seasons, and therefore does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Schematic flowchart of the recombinant baculovirus influenza vaccine manufacturing process, showing steps from full-length cDNA cloning into a transfer plasmid with polyhedrin promoter, recombination to generate a baculovirus expression vector containing the HA gene, followed by cell seeding, infection in a bioreactor, harvest (disc-stack centrifugation), extraction, depth filtration/clarification, purification (capture, polish, DNA removal), and tangential flow filtration/formulation",
+    "image_description": "Schematic diagram of recombinant influenza vaccine production using baculovirus expression in insect cells, including PCR cloning of full-length cDNA into a transfer plasmid under a polyhedrin promoter, recombination to generate a baculovirus (BV) expression vector containing the HA gene, cell seeding and infection in a bioreactor, downstream processing steps such as disc-stack centrifugation (harvest), extraction, depth filtration (clarification), chromatographic capture and purification (including DNA removal), and tangential flow filtration (TFF)/formulation.",
     "evidence_found": null,
-    "reasoning": "This figure outlines only the manufacturing workflow for a recombinant vaccine and provides no immunogenicity or cross-protection data; it does not support the claim",
+    "reasoning": "The figure strictly outlines the recombinant vaccine manufacturing workflow and presents no data on immune responses, breadth of protection, or cross-protection in mismatch seasons, and therefore does not support the claim.",
     "confidence_notes": null
   }
 }

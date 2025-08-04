@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p4_det_3_003.png",
+  "image_path": "Zimmerman_et_al.__2023_/extracted/figures/table_p4_det_3_003.png",
+  "image_type": "Table",
+  "page_number": 4,
+  "block_id": "det_3_003",
+  "claim_id": "claim_001",
+  "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
+  "supports_claim": false,
+  "explanation": "A table comparing baseline characteristics of study participants who received RIV4 (recombinant influenza vaccine, n=3,338) versus SD-IIV4 (standard-dose inactivated influenza vaccine, n=976), listing measures such as race, sex, season, age group, influenza case status, and high-risk condition with counts, percentages, and P-values for differences between groups. The table only presents demographic and baseline clinical characteristics of RIV4 versus SD-IIV4 recipients; it contains no information on hemagglutinin antigen content or immunogenicity outcomes and therefore does not support the claim. Note: The image quality is sufficient to confirm that no antigen content or immunogenicity data are included; analysis limited to visible table content.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table comparing baseline characteristics of study participants who received RIV4 (recombinant influenza vaccine, n=3,338) versus SD-IIV4 (standard-dose inactivated influenza vaccine, n=976), listing measures such as race, sex, season, age group, influenza case status, and high-risk condition with counts, percentages, and P-values for differences between groups.",
+    "evidence_found": null,
+    "reasoning": "The table only presents demographic and baseline clinical characteristics of RIV4 versus SD-IIV4 recipients; it contains no information on hemagglutinin antigen content or immunogenicity outcomes and therefore does not support the claim.",
+    "confidence_notes": "The image quality is sufficient to confirm that no antigen content or immunogenicity data are included; analysis limited to visible table content."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p7_mrg_det_6_003.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p7_mrg_det_6_003.png",
+  "image_type": "Figure",
+  "page_number": 7,
+  "block_id": "mrg_det_6_003",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "Four-panel figure comparing immune responses in adults aged 18\u201344 (panels A and C) and 45\u201364 (panels B and D) to four seasonal influenza vaccines: two egg-based inactivated quadrivalent vaccines (Fluzone IIV4, Fluarix IIV4), a cell-based inactivated quadrivalent vaccine (ccIIV4), and a recombinant HA vaccine produced in insect cells (RIV4). Panels A and B show the geometric mean ratio of HAI titers against egg-grown versus cell-grown virus strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata) with 95% CIs and statistical comparisons. Panels C and D show the proportion of subjects with \u22654-fold reduced titers to cell-grown vaccine virus pre- and post-vaccination for the same strains and vaccines, with p-values for changes in the proportion. does not support the claim: the figure presents strain-specific HAI titers against egg- versus cell-grown viruses and proportions of reduced titers, but it does not present any data on broadly cross-reactive antibodies targeting highly conserved HA regions induced by the recombinant HA vaccine. Note: Interpretation limited by absence of direct measurements of broad cross-reactivity or stalk-specific antibodies; figure focuses on strain-matched HAI responses rather than conserved epitope binding.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Four-panel figure comparing immune responses in adults aged 18\u201344 (panels A and C) and 45\u201364 (panels B and D) to four seasonal influenza vaccines: two egg-based inactivated quadrivalent vaccines (Fluzone IIV4, Fluarix IIV4), a cell-based inactivated quadrivalent vaccine (ccIIV4), and a recombinant HA vaccine produced in insect cells (RIV4). Panels A and B show the geometric mean ratio of HAI titers against egg-grown versus cell-grown virus strains (A(H3N2), A(H1N1)pdm09, B/Victoria, B/Yamagata) with 95% CIs and statistical comparisons. Panels C and D show the proportion of subjects with \u22654-fold reduced titers to cell-grown vaccine virus pre- and post-vaccination for the same strains and vaccines, with p-values for changes in the proportion.",
+    "evidence_found": null,
+    "reasoning": "does not support the claim: the figure presents strain-specific HAI titers against egg- versus cell-grown viruses and proportions of reduced titers, but it does not present any data on broadly cross-reactive antibodies targeting highly conserved HA regions induced by the recombinant HA vaccine.",
+    "confidence_notes": "Interpretation limited by absence of direct measurements of broad cross-reactivity or stalk-specific antibodies; figure focuses on strain-matched HAI responses rather than conserved epitope binding."
+  }
+}

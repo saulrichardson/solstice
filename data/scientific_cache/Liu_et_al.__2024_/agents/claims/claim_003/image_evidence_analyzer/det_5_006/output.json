@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p6_det_5_006.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p6_det_5_006.png",
+  "image_type": "Figure",
+  "page_number": 6,
+  "block_id": "det_5_006",
+  "claim_id": "claim_003",
+  "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+  "supports_claim": true,
+  "explanation": "Multi-panel ELISA titer data comparing four quadrivalent influenza vaccines (egg-based Fluzone IIV4, egg-based Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4). Panel A shows HA binding titers (Log2 scale) against egg-adapted and cell-produced HA antigens for A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata strains at Day 0, 1 month, and 6 months post-vaccination. Panel B shows geometric mean ratios of egg-to-cell HA ELISA titers at 1 month. Panel C shows stalk-specific ELISA titers (Log2) for H3 and H1 stalk antigens at Day 0, 1 month, and 6 months. Panel D shows geometric mean fold-rise in stalk titers at 1 month relative to Day 0. Statistical comparisons (p values) between groups are annotated. Evidence: In Panels C and D, the recombinant RIV4 vaccine (orange) elicits significantly higher H3 and H1 stalk ELISA titers and greater fold-rise in stalk antibodies compared to egg-based vaccines (p<0.0001 in multiple comparisons). The image shows that the recombinant vaccine induces higher stalk antibody titers, demonstrating a broader immune response targeting conserved HA regions that could mediate cross-protection; this supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season. Note: The data are immunogenicity endpoints (ELISA titers) rather than clinical effectiveness in a mismatch season. No direct virologic or clinical protection data are shown, only surrogate antibody measures.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Multi-panel ELISA titer data comparing four quadrivalent influenza vaccines (egg-based Fluzone IIV4, egg-based Fluarix IIV4, cell-based ccIIV4, and recombinant RIV4). Panel A shows HA binding titers (Log2 scale) against egg-adapted and cell-produced HA antigens for A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata strains at Day 0, 1 month, and 6 months post-vaccination. Panel B shows geometric mean ratios of egg-to-cell HA ELISA titers at 1 month. Panel C shows stalk-specific ELISA titers (Log2) for H3 and H1 stalk antigens at Day 0, 1 month, and 6 months. Panel D shows geometric mean fold-rise in stalk titers at 1 month relative to Day 0. Statistical comparisons (p values) between groups are annotated.",
+    "evidence_found": "In Panels C and D, the recombinant RIV4 vaccine (orange) elicits significantly higher H3 and H1 stalk ELISA titers and greater fold-rise in stalk antibodies compared to egg-based vaccines (p<0.0001 in multiple comparisons).",
+    "reasoning": "The image shows that the recombinant vaccine induces higher stalk antibody titers, demonstrating a broader immune response targeting conserved HA regions that could mediate cross-protection; this supports the claim that recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
+    "confidence_notes": "The data are immunogenicity endpoints (ELISA titers) rather than clinical effectiveness in a mismatch season. No direct virologic or clinical protection data are shown, only surrogate antibody measures."
+  }
+}

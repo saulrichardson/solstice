@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p7_det_6_000.png",
+  "image_path": "Grohskopf_et_al.__2023_/extracted/figures/table_p7_det_6_000.png",
+  "image_type": "Table",
+  "page_number": 7,
+  "block_id": "det_6_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A table showing contraindications and precautions for people with previous severe allergic reactions to influenza vaccines (any egg-based IIV or LAIV, any ccIIV, any RIV, unknown vaccine) across available 2022\u201323 influenza vaccine types (Egg-based IIVs and LAIV4, ccIIV4, RIV4). The table does not provide any information on Flublok's production platform or the use of baculovirus expression vector system in insect cells, and thus does not support the claim. Note: The table is clear and legible but focuses solely on allergy contraindications, not manufacturing details.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A table showing contraindications and precautions for people with previous severe allergic reactions to influenza vaccines (any egg-based IIV or LAIV, any ccIIV, any RIV, unknown vaccine) across available 2022\u201323 influenza vaccine types (Egg-based IIVs and LAIV4, ccIIV4, RIV4).",
+    "evidence_found": null,
+    "reasoning": "The table does not provide any information on Flublok's production platform or the use of baculovirus expression vector system in insect cells, and thus does not support the claim.",
+    "confidence_notes": "The table is clear and legible but focuses solely on allergy contraindications, not manufacturing details."
+  }
+}

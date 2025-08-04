@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p1_det_0_003.png",
+  "image_path": "CDC_Influenza_vaccines/extracted/figures/figure_p1_det_0_003.png",
+  "image_type": "Figure",
+  "page_number": 1,
+  "block_id": "det_0_003",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Table listing influenza vaccines for the United States 2023\u201324 season, including trade name, manufacturer, presentation formats, age indications, HA content per dose, administration route, and mercury content for egg-based standard-dose, cell culture\u2013based, and high-dose vaccines. The table does not mention Flublok or describe any production platform involving recombinant HA expression in insect cells via a baculovirus expression vector system, and therefore does not support the claim. Note: The visible portion of the table does not include Flublok; if the full table extends beyond the shown rows it might include additional entries, but based on the provided image no relevant production details are present.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Table listing influenza vaccines for the United States 2023\u201324 season, including trade name, manufacturer, presentation formats, age indications, HA content per dose, administration route, and mercury content for egg-based standard-dose, cell culture\u2013based, and high-dose vaccines.",
+    "evidence_found": null,
+    "reasoning": "The table does not mention Flublok or describe any production platform involving recombinant HA expression in insect cells via a baculovirus expression vector system, and therefore does not support the claim.",
+    "confidence_notes": "The visible portion of the table does not include Flublok; if the full table extends beyond the shown rows it might include additional entries, but based on the provided image no relevant production details are present."
+  }
+}

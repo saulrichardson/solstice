@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p6_det_5_000.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p6_det_5_000.png",
+  "image_type": "Figure",
+  "page_number": 6,
+  "block_id": "det_5_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "A flowchart detailing participant selection for two groups: those who received a recombinant influenza vaccine versus a standard-dose vaccine. It shows initial counts, sequential exclusion criteria (non-members, inpatient vaccinations, out-of-range dates, missing facility identifiers, inability to assign propensity scores), and final cohort sizes with age breakdowns for the 2020\u20132021 season. This figure presents cohort numbers and exclusion steps for vaccine recipients but provides no information about Flublok's production platform, expression system, or use of insect cells and baculovirus vectors, so it does not support the claim. Note: Figure is clear in showing participant flow but does not address production methods; absence of relevant labels limits any inference about manufacturing.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart detailing participant selection for two groups: those who received a recombinant influenza vaccine versus a standard-dose vaccine. It shows initial counts, sequential exclusion criteria (non-members, inpatient vaccinations, out-of-range dates, missing facility identifiers, inability to assign propensity scores), and final cohort sizes with age breakdowns for the 2020\u20132021 season.",
+    "evidence_found": null,
+    "reasoning": "This figure presents cohort numbers and exclusion steps for vaccine recipients but provides no information about Flublok's production platform, expression system, or use of insect cells and baculovirus vectors, so it does not support the claim.",
+    "confidence_notes": "Figure is clear in showing participant flow but does not address production methods; absence of relevant labels limits any inference about manufacturing."
+  }
+}

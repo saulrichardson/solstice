@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p6_det_5_000.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p6_det_5_000.png",
+  "image_type": "Figure",
+  "page_number": 6,
+  "block_id": "det_5_000",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A flowchart showing the selection and exclusion of adult participants (aged 18\u201364 years) vaccinated over three seasons (2018\u20132021), comparing those who received a recombinant vaccine (left) versus a standard-dose vaccine (right), with numbers excluded at each step and the final cohort sizes by age group. The figure only details participant enrollment, exclusions, and cohort sizes for recombinant versus standard-dose vaccine recipients; it provides no data on antibody levels, cross-reactivity, or conserved HA regions and therefore does not support the claim. Note: No immunogenicity or antibody data are presented in the flowchart; image quality is sufficient to confirm absence of related data.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A flowchart showing the selection and exclusion of adult participants (aged 18\u201364 years) vaccinated over three seasons (2018\u20132021), comparing those who received a recombinant vaccine (left) versus a standard-dose vaccine (right), with numbers excluded at each step and the final cohort sizes by age group.",
+    "evidence_found": null,
+    "reasoning": "The figure only details participant enrollment, exclusions, and cohort sizes for recombinant versus standard-dose vaccine recipients; it provides no data on antibody levels, cross-reactivity, or conserved HA regions and therefore does not support the claim.",
+    "confidence_notes": "No immunogenicity or antibody data are presented in the flowchart; image quality is sufficient to confirm absence of related data."
+  }
+}

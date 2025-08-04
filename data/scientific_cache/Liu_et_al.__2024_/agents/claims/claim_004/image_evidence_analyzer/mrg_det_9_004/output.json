@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p10_mrg_det_9_004.png",
+  "image_path": "Liu_et_al.__2024_/extracted/figures/figure_p10_mrg_det_9_004.png",
+  "image_type": "Figure",
+  "page_number": 10,
+  "block_id": "mrg_det_9_004",
+  "claim_id": "claim_004",
+  "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
+  "supports_claim": true,
+  "explanation": "Multi-panel figure showing ELISA antibody titers (Log\u2082 scale) to egg- and cell-derived HA antigens (panel A), egg/cell HA titer ratios (panel B), head-stalk HA titers (panel C), and HA stalk fold-rise (panel D) measured at baseline (Day 0) and one month after vaccination in seven study arms defined by vaccine type combinations (cell-based standard dose ccIIV4, egg-based standard dose IIV4, and recombinant RIV4). Each data point represents geometric mean titers with 95% confidence intervals; significant p-values are annotated for pairwise comparisons at one month. Evidence: In panel A (Cell virus HA at 1 month), the RIV4\u2013RIV4 group (orange) shows higher ELISA titers than the ccIIV4\u2013ccIIV4 (black) and IIV4\u2013IIV4 (red) groups, with statistically significant differences (e.g. p = 0.039 for H3N2, p = 0.005 and p = 0.0002 for B/Victoria, p = 0.014 and p = 0.007 for B/Yamagata). The higher post-vaccination HA antibody titers in the recombinant RIV4 groups compared to egg-based standard-dose IIV4 groups, with multiple statistically significant p-values, supports the claim. Note: Group labels are abbreviated and the figure is complex; exact vaccine dose information is inferred from labels rather than explicitly stated. ELISA titers are surrogate measures of antibody response, not direct neutralization assays.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": true,
+    "image_description": "Multi-panel figure showing ELISA antibody titers (Log\u2082 scale) to egg- and cell-derived HA antigens (panel A), egg/cell HA titer ratios (panel B), head-stalk HA titers (panel C), and HA stalk fold-rise (panel D) measured at baseline (Day 0) and one month after vaccination in seven study arms defined by vaccine type combinations (cell-based standard dose ccIIV4, egg-based standard dose IIV4, and recombinant RIV4). Each data point represents geometric mean titers with 95% confidence intervals; significant p-values are annotated for pairwise comparisons at one month.",
+    "evidence_found": "In panel A (Cell virus HA at 1 month), the RIV4\u2013RIV4 group (orange) shows higher ELISA titers than the ccIIV4\u2013ccIIV4 (black) and IIV4\u2013IIV4 (red) groups, with statistically significant differences (e.g. p = 0.039 for H3N2, p = 0.005 and p = 0.0002 for B/Victoria, p = 0.014 and p = 0.007 for B/Yamagata).",
+    "reasoning": "The higher post-vaccination HA antibody titers in the recombinant RIV4 groups compared to egg-based standard-dose IIV4 groups, with multiple statistically significant p-values, supports the claim.",
+    "confidence_notes": "Group labels are abbreviated and the figure is complex; exact vaccine dose information is inferred from labels rather than explicitly stated. ELISA titers are surrogate measures of antibody response, not direct neutralization assays."
+  }
+}

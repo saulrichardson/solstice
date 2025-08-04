@@ -136,7 +136,8 @@ class StandardPipelineFixed:
         for page_idx, (page_boxes, image) in enumerate(zip(layouts, images)):
             # Determine reading order using current box IDs
             page_width = image.width
-            raw_reading_order = determine_reading_order_simple(page_boxes, page_width)
+            page_height = image.height
+            raw_reading_order = determine_reading_order_simple(page_boxes, page_width, page_height)
             
             # Update reading order to ensure it uses final IDs
             final_reading_order = self.id_manager.update_reading_order(raw_reading_order)

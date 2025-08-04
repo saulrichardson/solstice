@@ -1,0 +1,19 @@
+{
+  "image_filename": "figure_p3_mrg_det_2_000.png",
+  "image_path": "Hsiao_et_al.__2023_/extracted/figures/figure_p3_mrg_det_2_000.png",
+  "image_type": "Figure",
+  "page_number": 3,
+  "block_id": "mrg_det_2_000",
+  "claim_id": "claim_006",
+  "claim": "Flublok is produced using a novel production platform in which recombinant HA is expressed in insect cells using a baculovirus expression vector system (BEVS).",
+  "supports_claim": false,
+  "explanation": "Schematic diagrams and a table showing KPNC service areas with facilities of various sizes, random assignment of similarly sized facilities into Block A or Block B, and a 4-week alternating schedule of SD-IIV4 and RIV4 across nine facilities. The figure focuses exclusively on site stratification, block randomization, and vaccine scheduling (SD-IIV4 vs. RIV4) but does not describe vaccine production methods, insect cell expression, or use of a baculovirus expression vector system, and therefore does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "Schematic diagrams and a table showing KPNC service areas with facilities of various sizes, random assignment of similarly sized facilities into Block A or Block B, and a 4-week alternating schedule of SD-IIV4 and RIV4 across nine facilities.",
+    "evidence_found": null,
+    "reasoning": "The figure focuses exclusively on site stratification, block randomization, and vaccine scheduling (SD-IIV4 vs. RIV4) but does not describe vaccine production methods, insect cell expression, or use of a baculovirus expression vector system, and therefore does not support the claim.",
+    "confidence_notes": null
+  }
+}

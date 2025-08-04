@@ -1,0 +1,19 @@
+{
+  "image_filename": "table_p1_mrg_det_0_017.png",
+  "image_path": "FlublokPI/extracted/figures/table_p1_mrg_det_0_017.png",
+  "image_type": "Table",
+  "page_number": 1,
+  "block_id": "mrg_det_0_017",
+  "claim_id": "claim_007",
+  "claim": "Recombinant HA antigens produced using BEVS have been shown to induce significantly higher levels of broadly cross-reactive antibodies against highly conserved regions of HA compared with egg-derived vaccines.",
+  "supports_claim": false,
+  "explanation": "A portion of the full prescribing information for Flublok influenza vaccine, showing dosage and administration instructions, contraindications, warnings and precautions, adverse reactions, and a table of contents listing sections such as indications, dosage, clinical pharmacology, clinical studies, and more. The image only displays administrative and structural information (dosage, contraindications, table of contents) and contains no data or study results regarding antibody responses or comparisons between BEVS-derived recombinant HA and egg-derived vaccines, and therefore does not support the claim.",
+  "model_used": "o4-mini",
+  "detailed_analysis": {
+    "supports_claim": false,
+    "image_description": "A portion of the full prescribing information for Flublok influenza vaccine, showing dosage and administration instructions, contraindications, warnings and precautions, adverse reactions, and a table of contents listing sections such as indications, dosage, clinical pharmacology, clinical studies, and more.",
+    "evidence_found": null,
+    "reasoning": "The image only displays administrative and structural information (dosage, contraindications, table of contents) and contains no data or study results regarding antibody responses or comparisons between BEVS-derived recombinant HA and egg-derived vaccines, and therefore does not support the claim.",
+    "confidence_notes": null
+  }
+}
