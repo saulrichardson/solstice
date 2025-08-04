@@ -1,7 +1,7 @@
 """No-operation consolidator for pipelines that use functional consolidation."""
 
 from typing import List, Optional
-from ..processing.box import Box
+from ...shared.processing.box import Box
 
 
 class NoOpConsolidator:

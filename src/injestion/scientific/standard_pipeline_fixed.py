@@ -10,11 +10,11 @@ from ..shared.processing.document_formatter import (
     generate_text_only_document,
     generate_html_document
 )
-from ..shared.processing.layout_detector import LayoutDetectionPipeline
-from ..shared.processing.overlap_resolver import no_overlap_pipeline, expand_boxes
+from .processing.layout_detector import LayoutDetectionPipeline
+from .processing.overlap_resolver import no_overlap_pipeline, expand_boxes
 from ..shared.processing.box import Box
-from ..shared.processing.noop_consolidator import NoOpConsolidator
-from ..shared.processing.box_id_manager import BoxIDManager
+from .processing.noop_consolidator import NoOpConsolidator
+from .processing.box_id_manager import BoxIDManager
 from src.interfaces import Block, Document
 from ..shared.processing.text_extractor import extract_document_content
 from ..shared.processing.reading_order import determine_reading_order_simple

@@ -11,7 +11,7 @@ from typing import List, Tuple, Optional, Dict
 from dataclasses import dataclass
 from enum import Enum
 
-from .box import Box
+from ...shared.processing.box import Box
 
 logger = logging.getLogger(__name__)
 

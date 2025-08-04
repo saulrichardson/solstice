@@ -33,10 +33,12 @@ merged = Box.merge_boxes([box1, box2])
 ```
 
 ### layout_detector.py
+**Note: Moved to `src/injestion/scientific/processing/layout_detector.py`** - only used by scientific pipeline.
+
 Detectron2-based layout analysis pipeline:
 
 ```python
-from src.injestion.shared.processing.layout_detector import LayoutDetectionPipeline
+from src.injestion.scientific.processing.layout_detector import LayoutDetectionPipeline
 
 detector = LayoutDetectionPipeline(
     config_path="PubLayNet/faster_rcnn",
@@ -97,10 +99,12 @@ fixed = service.process_text(text)
 4. **Whitespace Cleanup**: Consistent spacing and formatting
 
 ### overlap_resolver.py
+**Note: Moved to `src/injestion/scientific/processing/overlap_resolver.py`** - only used by scientific pipeline.
+
 Resolves conflicts between detected regions:
 
 ```python
-from src.injestion.shared.processing.overlap_resolver import no_overlap_pipeline
+from src.injestion.scientific.processing.overlap_resolver import no_overlap_pipeline
 
 # Remove overlapping boxes
 clean_boxes = no_overlap_pipeline(
@@ -190,10 +194,12 @@ Final pass for spacing issues:
 - List formatting
 
 ### noop_consolidator.py
+**Note: Moved to `src/injestion/scientific/processing/noop_consolidator.py`** - only used by scientific pipeline.
+
 No-operation consolidator for pipelines that don't need box merging:
 
 ```python
-from src.injestion.shared.processing.noop_consolidator import NoOpConsolidator
+from src.injestion.scientific.processing.noop_consolidator import NoOpConsolidator
 
 # Used by scientific pipeline for functional consolidation
 consolidator = NoOpConsolidator()

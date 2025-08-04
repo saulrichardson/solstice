@@ -87,7 +87,7 @@ PRESETS = {
         merge_threshold=0.1,  # Lower threshold for merging
         box_padding=5.0,  # Minimal padding
         score_threshold=0.2,  # Standard detection
-        # Note: The 80% same-type merge threshold is hardcoded in overlap_resolver.py
+        # Note: The 80% same-type merge threshold is hardcoded in scientific/processing/overlap_resolver.py
     ),
 }
 

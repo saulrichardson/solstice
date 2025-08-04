@@ -8,10 +8,10 @@ from typing import List, Optional
 from pathlib import Path
 
 from ..shared.base_pipeline import BasePDFPipeline
-from ..shared.processing.layout_detector import LayoutDetectionPipeline
-from ..shared.processing.overlap_resolver import no_overlap_pipeline, expand_boxes
+from .processing.layout_detector import LayoutDetectionPipeline
+from .processing.overlap_resolver import no_overlap_pipeline, expand_boxes
 from ..shared.processing.box import Box
-from ..shared.processing.noop_consolidator import NoOpConsolidator
+from .processing.noop_consolidator import NoOpConsolidator
 from src.interfaces import Block, Document
 from ..shared.processing.text_extractor import extract_document_content
 from ..shared.processing.reading_order import determine_reading_order_simple
