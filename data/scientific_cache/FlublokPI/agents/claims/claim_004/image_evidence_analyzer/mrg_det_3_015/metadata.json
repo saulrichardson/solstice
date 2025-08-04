@@ -1,12 +1,12 @@
 {
   "agent_name": "image_evidence_analyzer",
   "pdf_name": "FlublokPI",
-  "started_at": "2025-08-03T16:34:15.863715",
-  "completed_at": null,
-  "status": "running",
+  "started_at": "2025-08-03T17:34:15.266373",
+  "completed_at": "2025-08-03T17:34:23.160247",
+  "status": "completed",
   "error": null,
   "config": {
-    "disable_cache": true,
+    "fresh_response": true,
     "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines."
   }
 }

@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table listing influenza vaccines available in the United States for the 2023\u201324 season, including trade names, manufacturers, presentations, age indications, hemagglutinin content per dose, route of administration, and mercury content, grouped by vaccine type (egg-based IIV4, cell culture\u2013based ccIIV4, high-dose HD-IIV4, recombinant RIV4, and live attenuated LAIV4). The table provides formulation and dosing details for various influenza vaccines, including recombinant RIV4, but contains no data or discussion of immune response breadth or cross-protection in mismatch seasons and thus does not support the claim. Note: The table is clear and complete for vaccine specifications but does not include immunogenicity or efficacy data; image quality is sufficient for reading all table entries.",
+  "explanation": "A table listing various influenza vaccines for the 2023\u201324 U.S. season, including trade names, manufacturers, presentations, age indications, hemagglutinin (HA) content per dose, administration route, and mercury content, organized by vaccine type (egg-based, cell culture\u2013based, high-dose, adjuvanted, and recombinant). The table provides formulation and dosage details for recombinant and other influenza vaccines but contains no data on immune response breadth, cross-protection, or mismatch season effectiveness and thus does not support the claim. Note: Table shows only product specifications; lacks immunogenicity, efficacy, or cross-protection outcomes.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing influenza vaccines available in the United States for the 2023\u201324 season, including trade names, manufacturers, presentations, age indications, hemagglutinin content per dose, route of administration, and mercury content, grouped by vaccine type (egg-based IIV4, cell culture\u2013based ccIIV4, high-dose HD-IIV4, recombinant RIV4, and live attenuated LAIV4).",
+    "image_description": "A table listing various influenza vaccines for the 2023\u201324 U.S. season, including trade names, manufacturers, presentations, age indications, hemagglutinin (HA) content per dose, administration route, and mercury content, organized by vaccine type (egg-based, cell culture\u2013based, high-dose, adjuvanted, and recombinant).",
     "evidence_found": null,
-    "reasoning": "The table provides formulation and dosing details for various influenza vaccines, including recombinant RIV4, but contains no data or discussion of immune response breadth or cross-protection in mismatch seasons and thus does not support the claim.",
-    "confidence_notes": "The table is clear and complete for vaccine specifications but does not include immunogenicity or efficacy data; image quality is sufficient for reading all table entries."
+    "reasoning": "The table provides formulation and dosage details for recombinant and other influenza vaccines but contains no data on immune response breadth, cross-protection, or mismatch season effectiveness and thus does not support the claim.",
+    "confidence_notes": "Table shows only product specifications; lacks immunogenicity, efficacy, or cross-protection outcomes."
   }
 }

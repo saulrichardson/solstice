@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A multi-panel figure illustrating (1) KPNC service area facilities of various sizes represented as boxes, (2) random assignment of similarly sized facilities into Block A or Block B groups, and (3) a table showing a 4-week alternating vaccination schedule between SD-IIV4 and RIV4 for each facility. The figure depicts site grouping and randomization procedures and weekly SD-IIV4 vs RIV4 administration schedules. It does not address Flublok or its antigenic match with WHO- or FDA-selected strains and therefore does not support the claim. Note: The figure focuses solely on trial design and vaccine scheduling; there are no data or statements regarding antigenic matching or Flublok.",
+  "explanation": "Schematic diagram showing: 1) A KPNC service area with nine facilities of various sizes; 2) Random assignment of similarly sized facilities into Block A or Block B; 3) A table listing weekly alternation of two influenza vaccine formulations (SD-IIV4 and RIV4) across facilities for the first four weeks of the season. The figure illustrates the design of facility-level randomization and weekly alternation between standard-dose inactivated influenza vaccine (SD-IIV4) and recombinant influenza vaccine (RIV4). It contains no information about Flublok or its antigenic match to WHO- or FDA-selected strains, and therefore does not support the claim. Note: Figure is clear but unrelated to antigenic matching or Flublok; confidence in this assessment is high.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A multi-panel figure illustrating (1) KPNC service area facilities of various sizes represented as boxes, (2) random assignment of similarly sized facilities into Block A or Block B groups, and (3) a table showing a 4-week alternating vaccination schedule between SD-IIV4 and RIV4 for each facility.",
+    "image_description": "Schematic diagram showing: 1) A KPNC service area with nine facilities of various sizes; 2) Random assignment of similarly sized facilities into Block A or Block B; 3) A table listing weekly alternation of two influenza vaccine formulations (SD-IIV4 and RIV4) across facilities for the first four weeks of the season.",
     "evidence_found": null,
-    "reasoning": "The figure depicts site grouping and randomization procedures and weekly SD-IIV4 vs RIV4 administration schedules. It does not address Flublok or its antigenic match with WHO- or FDA-selected strains and therefore does not support the claim.",
-    "confidence_notes": "The figure focuses solely on trial design and vaccine scheduling; there are no data or statements regarding antigenic matching or Flublok."
+    "reasoning": "The figure illustrates the design of facility-level randomization and weekly alternation between standard-dose inactivated influenza vaccine (SD-IIV4) and recombinant influenza vaccine (RIV4). It contains no information about Flublok or its antigenic match to WHO- or FDA-selected strains, and therefore does not support the claim.",
+    "confidence_notes": "Figure is clear but unrelated to antigenic matching or Flublok; confidence in this assessment is high."
   }
 }

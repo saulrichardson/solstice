@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table listing trade names and manufacturers of quadrivalent influenza vaccines (Fluad Quadrivalent, Flublok Quadrivalent, FluMist Quadrivalent), their presentations (e.g., 0.5-mL prefilled syringe or intranasal sprayer), age indications, hemagglutinin antigen content or virus count per dose, administration route, and presence of mercury. The table provides information on vaccine names, dosages, age indications, and administration routes but contains no information about antigenic matching or alignment with WHO- and FDA-selected flu strains, and therefore does not support the claim. Note: Table is clear and legible; no relevant data on antigenic match is present.",
+  "explanation": "A table listing influenza vaccines (trade name, manufacturer), presentation (volume and format), age indication, hemagglutinin content per dose (\u00b5g HA), route of administration, and mercury content. Entries include Fluad Quadrivalent, Flublok Quadrivalent (recombinant HA vaccine), and FluMist Quadrivalent. The image only provides dosage, presentation, and route information for Flublok Quadrivalent and other vaccines; it does not mention antigenic matching to WHO- or FDA-selected strains and therefore does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing trade names and manufacturers of quadrivalent influenza vaccines (Fluad Quadrivalent, Flublok Quadrivalent, FluMist Quadrivalent), their presentations (e.g., 0.5-mL prefilled syringe or intranasal sprayer), age indications, hemagglutinin antigen content or virus count per dose, administration route, and presence of mercury.",
+    "image_description": "A table listing influenza vaccines (trade name, manufacturer), presentation (volume and format), age indication, hemagglutinin content per dose (\u00b5g HA), route of administration, and mercury content. Entries include Fluad Quadrivalent, Flublok Quadrivalent (recombinant HA vaccine), and FluMist Quadrivalent.",
     "evidence_found": null,
-    "reasoning": "The table provides information on vaccine names, dosages, age indications, and administration routes but contains no information about antigenic matching or alignment with WHO- and FDA-selected flu strains, and therefore does not support the claim.",
-    "confidence_notes": "Table is clear and legible; no relevant data on antigenic match is present."
+    "reasoning": "The image only provides dosage, presentation, and route information for Flublok Quadrivalent and other vaccines; it does not mention antigenic matching to WHO- or FDA-selected strains and therefore does not support the claim.",
+    "confidence_notes": null
   }
 }

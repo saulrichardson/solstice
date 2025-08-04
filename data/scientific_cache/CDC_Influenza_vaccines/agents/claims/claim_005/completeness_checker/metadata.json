@@ -1,12 +1,12 @@
 {
   "agent_name": "completeness_checker",
   "pdf_name": "CDC_Influenza_vaccines",
-  "started_at": "2025-07-30T23:35:35.006837",
-  "completed_at": "2025-07-30T23:35:35.862768",
+  "started_at": "2025-08-03T17:33:03.575089",
+  "completed_at": "2025-08-03T17:33:04.443941",
   "status": "completed",
   "error": null,
   "config": {
-    "disable_cache": true,
+    "fresh_response": true,
     "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine)."
   }
 }

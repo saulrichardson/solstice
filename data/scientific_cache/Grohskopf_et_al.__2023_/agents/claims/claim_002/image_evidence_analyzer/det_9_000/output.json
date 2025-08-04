@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A flowchart outlining pediatric influenza vaccination dosing recommendations for the 2022\u201323 season. It asks whether the child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022, and directs to either 1 dose of 2022\u201323 influenza vaccine if yes, or 2 doses \u22654 weeks apart if no or unknown. The figure contains dosing guidelines for child influenza vaccination schedules and does not mention cell-based or egg-based vaccine production methods, mutations, or effectiveness, and therefore does not support the claim.",
+  "explanation": "A flowchart determining influenza vaccination dosing in children: it asks if the child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022 and then directs to either 1 dose of 2022\u201323 influenza vaccine (if yes) or 2 doses of 2022\u201323 influenza vaccine \u22654 weeks apart (if no or unknown). The figure provides a dosing algorithm for pediatric influenza vaccination and contains no information on cell- or egg-based vaccine production, mutations, or their impact on effectiveness, so it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A flowchart outlining pediatric influenza vaccination dosing recommendations for the 2022\u201323 season. It asks whether the child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022, and directs to either 1 dose of 2022\u201323 influenza vaccine if yes, or 2 doses \u22654 weeks apart if no or unknown.",
+    "image_description": "A flowchart determining influenza vaccination dosing in children: it asks if the child received \u22652 doses of trivalent or quadrivalent influenza vaccine before July 1, 2022 and then directs to either 1 dose of 2022\u201323 influenza vaccine (if yes) or 2 doses of 2022\u201323 influenza vaccine \u22654 weeks apart (if no or unknown).",
     "evidence_found": null,
-    "reasoning": "The figure contains dosing guidelines for child influenza vaccination schedules and does not mention cell-based or egg-based vaccine production methods, mutations, or effectiveness, and therefore does not support the claim.",
+    "reasoning": "The figure provides a dosing algorithm for pediatric influenza vaccination and contains no information on cell- or egg-based vaccine production, mutations, or their impact on effectiveness, so it does not support the claim.",
     "confidence_notes": null
   }
 }

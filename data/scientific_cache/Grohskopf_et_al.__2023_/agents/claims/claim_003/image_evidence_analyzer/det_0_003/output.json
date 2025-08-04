@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "The image displays the logos of the U.S. Department of Health & Human Services and the Centers for Disease Control and Prevention on a black background. does not support the claim as the figure only contains organizational logos and provides no data or information on recombinant technology, immune response breadth, or cross-protection.",
+  "explanation": "A black rectangle containing the U.S. Department of Health & Human Services seal on the left and the CDC logo on the right, with no data or study results visible. The image only shows institutional logos and contains no data or information about recombinant technology, immune responses, or cross-protection, and therefore does not support the claim. Note: Analysis limited by the absence of any study data or explanatory text in the figure; only branding is present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "The image displays the logos of the U.S. Department of Health & Human Services and the Centers for Disease Control and Prevention on a black background.",
+    "image_description": "A black rectangle containing the U.S. Department of Health & Human Services seal on the left and the CDC logo on the right, with no data or study results visible.",
     "evidence_found": null,
-    "reasoning": "does not support the claim as the figure only contains organizational logos and provides no data or information on recombinant technology, immune response breadth, or cross-protection.",
-    "confidence_notes": null
+    "reasoning": "The image only shows institutional logos and contains no data or information about recombinant technology, immune responses, or cross-protection, and therefore does not support the claim.",
+    "confidence_notes": "Analysis limited by the absence of any study data or explanatory text in the figure; only branding is present."
   }
 }

@@ -5,20 +5,24 @@
   "supporting_evidence": [
     {
       "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.",
-      "explanation": "The quote directly states that RIV4 (Flublok) contains 45 \u00b5g of HA per dose per strain. While the quote does not explicitly compare this to the standard 15 \u00b5g per strain in standard-dose flu vaccines, it provides the specific HA content for Flublok, which is the key fact in the first part of the claim. The document elsewhere (page 3) mentions that standard-dose inactivated influenza vaccines (such as Fluarix Quadrivalent) are given at 15 \u00b5g per strain, allowing a direct comparison. However, the quote itself does not address immunogenicity or make a direct link to greater immunogenicity versus standard-dose vaccines. Therefore, the quote fully supports the first part of the claim (3x HA content), but does not, by itself, support the second part (link to greater immunogenicity)."
+      "explanation": "The quote directly states that Flublok (RIV4) contains 45 \u00b5g of HA per strain. While the quote does not explicitly compare this to the standard-dose flu vaccine (which typically contains 15 \u00b5g HA per strain), the information provided is sufficient to substantiate the first part of the claim regarding the HA content being three times higher. However, the quote does not address the second part of the claim about greater immunogenicity versus standard-dose flu vaccines. Therefore, the quote fully supports the first part of the claim (antigen content), but not the immunogenicity comparison. Since the task is to verify if the quote supports the claim, and the claim is partially supported by the explicit content, the answer is true for support of the HA content portion."
+    },
+    {
+      "quote": "Recently Richards et al.65 examined CD4 T-cell and antibody responses in healthy adults who received egg derived split vaccine, cell derived split vaccine or RIV4 for three successive influenza seasons (2015-2016, 2016-2017, and 2017-2018 65. RIV4 elicited the most robust responses, with significantly higher T-cell and antibody levels than the other two vaccines. Authors postulated that simpler glycosylation of rHA and absence of other influenza viral proteins in RIV4 contributed to the observed robust immune response for RIV4 and emphasised the relevance of these features in determining vaccine efficacy and long term immunity 65.",
+      "explanation": "The quote directly supports the second part of the claim: 'which has been linked to greater immunogenicity vs standard-dose flu vaccines.' It states that RIV4 (Flublok) elicited significantly higher T-cell and antibody responses than standard egg- or cell-derived split vaccines, and discusses possible reasons for this increased immunogenicity. However, the quote does not mention the HA antigen content (i.e., '3x the hemagglutinin (HA) antigen content') or link the higher immunogenicity specifically to the higher HA content. Therefore, while the quote supports the claim that RIV4 is more immunogenic than standard-dose vaccines, it does not provide evidence for the first part of the claim regarding the 3x HA antigen content or causally link the increased immunogenicity to the higher HA dose."
     }
   ],
   "image_supporting_evidence": [],
   "evidence_summary": {
-    "total_text_evidence_found": 1,
+    "total_text_evidence_found": 2,
     "total_image_evidence_found": 0,
-    "total_evidence_found": 1,
+    "total_evidence_found": 2,
     "coverage": "complete",
     "missing_aspects": []
   },
   "metadata": {
     "extraction_stats": {
-      "total_verified": 1
+      "total_verified": 2
     },
     "rejected_count": 0
   }

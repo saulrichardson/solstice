@@ -5,12 +5,12 @@
   "additional_evidence_check": {
     "checked_for_more": true,
     "found_additional": true,
-    "additional_count": 4
+    "additional_count": 3
   },
   "completeness_stats": {
     "existing_evidence": 4,
-    "new_evidence_found": 4,
-    "total_evidence": 6
+    "new_evidence_found": 3,
+    "total_evidence": 5
   },
   "combined_evidence": [
     {
@@ -21,32 +21,22 @@
     {
       "id": 2,
       "quote": "Repeat vaccination with egg based influenza vaccines could preferentially boost antibodies targeting the egg adapted epitopes and reduce immunogenicity to circulating viruses.",
-      "relevance_explanation": "This statement explains that repeated use of egg-based vaccines can enhance immune responses to egg-adapted (mutated) epitopes rather than those found on circulating viruses, potentially reducing the vaccine's effectiveness."
+      "relevance_explanation": "This statement explains that repeated use of egg-based vaccines can enhance immune responses to egg-adapted (mutated) epitopes rather than those found on circulating viruses, potentially reducing vaccine effectiveness."
     },
     {
       "id": 3,
-      "quote": "Egg adaptation can introduce mutations in the HA protein that are not present in circulating viruses, potentially leading to a mismatch between vaccine-induced immunity and the actual viruses causing infection.",
-      "relevance_explanation": "This quote highlights that mutations arising during egg-based vaccine production can create differences between the vaccine and circulating viruses, which may compromise the effectiveness of the vaccine."
+      "quote": "Egg adaptation can introduce mutations in the HA protein that are not present in circulating viruses, potentially leading to a mismatch between the vaccine strain and the circulating strain.",
+      "relevance_explanation": "This quote highlights that mutations arising during egg-based vaccine production can cause the vaccine strain to differ from the circulating virus, which may reduce the vaccine's effectiveness."
     },
     {
       "id": 4,
       "quote": "Several studies have reported that Q223R egg adapted change at the HA head domain of A (H1N1) pdm09 virus can promote virus replication in eggs, alter antigenicity and influence immune response.",
-      "relevance_explanation": "This quote provides a specific example of a mutation (Q223R) that occurs during egg-based vaccine production, which can alter the antigenic properties of the virus and affect the immune response, supporting the claim about mutation-induced effectiveness reduction."
+      "relevance_explanation": "This quote provides a specific example of a mutation (Q223R) that occurs during egg-based production, which alters the antigenic properties of the virus and can affect the immune response, supporting the claim about reduced effectiveness."
     },
     {
       "id": "comp_1",
-      "quote": "Egg adaptation can introduce mutations in the HA protein that are not present in circulating viruses, potentially leading to a mismatch between vaccine-induced immunity and the actual viruses causing infection. Several studies have reported that Q223R egg adapted change at the HA head domain of A (H1N1) pdm09 virus can promote virus replication in eggs, alter antigenicity and influence immune response.",
-      "relevance_explanation": "This quote directly states that egg adaptation can introduce mutations in the HA protein, which may not be present in circulating viruses, and references a specific mutation (Q223R) that affects virus replication and immune response, supporting the claim that mutations during production can reduce vaccine effectiveness.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    },
-    {
-      "id": "comp_4",
-      "quote": "Multiple seasons of non-egg based vaccination may be needed to redirect antibody responses from immune memory to egg adapted epitopes and re-focus the immune response towards epitopes on the circulating viruses to improve vaccine effectiveness.",
-      "relevance_explanation": "This quote suggests that egg-adapted epitopes from egg-based vaccines can dominate immune memory, and that switching to non-egg-based vaccines may be necessary to restore effectiveness, supporting the idea that mutations during production can reduce effectiveness.",
+      "quote": "Table 1. Amino acid differences between egg- and cell-propagated vaccine viruses used in the study. For example, A/Brisbane/02/2018 egg virus has a G at position 45, while the cell virus has an R. These differences indicate that mutations can occur during egg or cell propagation of vaccine viruses.",
+      "relevance_explanation": "This table documents specific amino acid changes between egg- and cell-propagated vaccine viruses, directly showing that mutations arise during the production process, which is the mechanism by which effectiveness could be reduced.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

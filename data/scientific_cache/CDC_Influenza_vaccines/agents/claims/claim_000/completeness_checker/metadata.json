@@ -1,12 +1,12 @@
 {
   "agent_name": "completeness_checker",
   "pdf_name": "CDC_Influenza_vaccines",
-  "started_at": "2025-07-30T23:35:53.421438",
-  "completed_at": "2025-07-30T23:35:54.236334",
+  "started_at": "2025-08-03T17:33:16.562926",
+  "completed_at": "2025-08-03T17:33:17.242733",
   "status": "completed",
   "error": null,
   "config": {
-    "disable_cache": true,
+    "fresh_response": true,
     "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains."
   }
 }

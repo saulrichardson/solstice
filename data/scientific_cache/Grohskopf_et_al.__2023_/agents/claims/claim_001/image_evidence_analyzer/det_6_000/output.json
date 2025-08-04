@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table summarizing contraindications and precautions for influenza vaccines available in 2022\u201323, categorized by vaccine type (egg-based IIVs and LAIV4, ccIIV4, RIV4) in the context of previous severe allergic reactions (e.g., anaphylaxis). does not support the claim \u2013 the table only addresses allergic reaction contraindications and precautions for different vaccine types and does not present any data on hemagglutinin antigen content or immunogenicity. Note: The image is clear but focuses exclusively on safety/contraindication information, with no mention of antigen dose or immunogenicity.",
+  "explanation": "A table listing contraindications and precautions for different types of influenza vaccines (egg-based IIVs/LAIV4, cell culture\u2013based ccIIV4, recombinant RIV4) in individuals with a history of severe allergic reactions to various vaccine types or egg, for the 2022\u201323 season. The table only addresses allergic reaction contraindications and precautions for different vaccine platforms; it does not mention antigen content or hemagglutinin (HA) dosing. Therefore, it does not support the claim. Note: The image is clear and complete regarding allergic precautions but contains no information on HA content or immunogenicity.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table summarizing contraindications and precautions for influenza vaccines available in 2022\u201323, categorized by vaccine type (egg-based IIVs and LAIV4, ccIIV4, RIV4) in the context of previous severe allergic reactions (e.g., anaphylaxis).",
+    "image_description": "A table listing contraindications and precautions for different types of influenza vaccines (egg-based IIVs/LAIV4, cell culture\u2013based ccIIV4, recombinant RIV4) in individuals with a history of severe allergic reactions to various vaccine types or egg, for the 2022\u201323 season.",
     "evidence_found": null,
-    "reasoning": "does not support the claim \u2013 the table only addresses allergic reaction contraindications and precautions for different vaccine types and does not present any data on hemagglutinin antigen content or immunogenicity.",
-    "confidence_notes": "The image is clear but focuses exclusively on safety/contraindication information, with no mention of antigen dose or immunogenicity."
+    "reasoning": "The table only addresses allergic reaction contraindications and precautions for different vaccine platforms; it does not mention antigen content or hemagglutinin (HA) dosing. Therefore, it does not support the claim.",
+    "confidence_notes": "The image is clear and complete regarding allergic precautions but contains no information on HA content or immunogenicity."
   }
 }

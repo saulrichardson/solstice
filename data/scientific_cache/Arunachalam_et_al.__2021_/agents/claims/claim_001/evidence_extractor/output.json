@@ -10,29 +10,24 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 4,
+    "total_snippets_found": 3,
     "error": null
   },
   "extracted_evidence": [
     {
       "id": 1,
       "quote": "The recombinant quadrivalent influenza vaccine (RIV4, Flublok\u00ae, Supemtek\u00ae [EU, Canada], Sanofi pasteur) was the first licensed influenza vaccine to be produced using recombinant viral proteins instead of antigens derived from live influenza virus (as for inactivated split virion and subunit vaccines). RIV4 is an unadjuvanted vaccine containing 45 \u00b5g of HA/dose from each of the four strains.",
-      "relevance_explanation": "This quote explicitly states that Flublok (RIV4) contains 45 \u00b5g of HA per dose per strain, which is three times the standard 15 \u00b5g HA per strain found in standard-dose flu vaccines, directly supporting the first part of the claim."
+      "relevance_explanation": "This quote explicitly states that Flublok (RIV4) contains 45 \u00b5g of HA per strain, which is three times the standard 15 \u00b5g HA per strain found in standard-dose flu vaccines, directly supporting the first part of the claim."
     },
     {
       "id": 2,
-      "quote": "Higher magnitudes of haemagglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flucelvax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60).",
+      "quote": "Higher magnitudes of haemagglutination inhibitory antibody response against HA1 have also been observed with RIV4 compared to egg- or mammalian cell derived split vaccines (Flucelvax Tetra, Seqirus, and Fluzone quadrivalent SD, Sanofi Pasteur 60). These data warrant additional studies to verify whether rHA elicits a broader antibody repertoire than conventional vaccines and whether this underlies the cross protection against antigenic drift variants previously observed in clinical trials 12 81.",
       "relevance_explanation": "This quote provides direct evidence that RIV4 (Flublok) elicits higher antibody responses compared to standard-dose flu vaccines, supporting the claim that increased HA content is linked to greater immunogenicity."
     },
     {
       "id": 3,
-      "quote": "Portnoff et al.64 demonstrated that recombinant HA antigens (specifically for the H3 strain) produced using BEVS (as used for RIV4), induced significantly higher levels of broadly cross reactive antibodies against highly conserved regions of the HA head and stem domains than egg derived split vaccines 64.",
-      "relevance_explanation": "This quote references a study showing that the recombinant HA in RIV4 leads to significantly higher antibody levels than standard egg-derived vaccines, supporting the link between higher HA content and greater immunogenicity."
-    },
-    {
-      "id": 4,
-      "quote": "Recently Richards et al.65 examined CD4 T-cell and antibody responses in healthy adults who received egg derived split vaccine, cell derived split vaccine or RIV4 for three successive influenza seasons (2015-2016, 2016-2017, and 2017-2018 65. RIV4 elicited the most robust responses, with significantly higher T-cell and antibody levels than the other two vaccines.",
-      "relevance_explanation": "This quote describes a direct comparison in which RIV4 (Flublok) produced significantly higher immune responses than standard-dose vaccines, supporting the claim that its higher HA content is linked to greater immunogenicity."
+      "quote": "Recently Richards et al.65 examined CD4 T-cell and antibody responses in healthy adults who received egg derived split vaccine, cell derived split vaccine or RIV4 for three successive influenza seasons (2015-2016, 2016-2017, and 2017-2018 65. RIV4 elicited the most robust responses, with significantly higher T-cell and antibody levels than the other two vaccines. Authors postulated that simpler glycosylation of rHA and absence of other influenza viral proteins in RIV4 contributed to the observed robust immune response for RIV4 and emphasised the relevance of these features in determining vaccine efficacy and long term immunity 65.",
+      "relevance_explanation": "This quote directly compares the immunogenicity of RIV4 (Flublok) to standard-dose vaccines, showing that RIV4 produces significantly higher immune responses, thus supporting the second part of the claim."
     }
   ],
   "model_used": "gpt-4.1"

@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Schematic figure showing two panels (a and b) of influenza hemagglutinin (HA) protein structures, including globular head and fibrous stem regions, glycosylation sites, HA1/HA2 subunits, cleavage and disulfide bonds. Glycan compositions and locations are illustrated. The figure depicts structural and glycosylation differences of HA proteins but provides no information on antigen dosing, Flublok content, or comparative HA quantities, and therefore does not support the claim. Note: Image is clear enough to show structural details but contains no quantitative antigen content or immunogenicity data.",
+  "explanation": "Side-by-side schematic diagrams of influenza hemagglutinin (HA) showing the globular head and fibrous stem regions with illustrations of glycan structures attached. Panel a shows cleaved HA1/HA2 with complex polysialylated glycans, while panel b shows uncleaved HA0 with paucimannose glycans, including annotations of fusion peptide status and disulfide bonds. The figure illustrates structural and glycosylation differences of HA proteins but provides no information on antigen dosing or comparisons of HA content per vaccine dose. Therefore, it does not support the claim about Flublok containing 3\u00d7 the HA antigen content. Note: Image quality is sufficient to identify content; no dosage or immunogenicity data are presented.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Schematic figure showing two panels (a and b) of influenza hemagglutinin (HA) protein structures, including globular head and fibrous stem regions, glycosylation sites, HA1/HA2 subunits, cleavage and disulfide bonds. Glycan compositions and locations are illustrated.",
+    "image_description": "Side-by-side schematic diagrams of influenza hemagglutinin (HA) showing the globular head and fibrous stem regions with illustrations of glycan structures attached. Panel a shows cleaved HA1/HA2 with complex polysialylated glycans, while panel b shows uncleaved HA0 with paucimannose glycans, including annotations of fusion peptide status and disulfide bonds.",
     "evidence_found": null,
-    "reasoning": "The figure depicts structural and glycosylation differences of HA proteins but provides no information on antigen dosing, Flublok content, or comparative HA quantities, and therefore does not support the claim.",
-    "confidence_notes": "Image is clear enough to show structural details but contains no quantitative antigen content or immunogenicity data."
+    "reasoning": "The figure illustrates structural and glycosylation differences of HA proteins but provides no information on antigen dosing or comparisons of HA content per vaccine dose. Therefore, it does not support the claim about Flublok containing 3\u00d7 the HA antigen content.",
+    "confidence_notes": "Image quality is sufficient to identify content; no dosage or immunogenicity data are presented."
   }
 }

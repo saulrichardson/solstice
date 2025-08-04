@@ -12,9 +12,9 @@
   "rejected_evidence": [
     {
       "id": 1,
-      "quote": "RIV4 (recombinant HA vaccine) ensures that the vaccine contains hemagglutinin (HA) that is an exact match to the WHO- and FDA-selected influenza virus strains for the season.",
-      "reason": "not found",
-      "original_explanation": "This quote directly states that the recombinant HA vaccine (RIV4, which is Flublok) contains hemagglutinin that is an exact match to the strains selected by WHO and FDA, supporting the claim of identical antigenic match."
+      "quote": "RIV4 (recombinant HA vaccine)",
+      "reason": "does not support claim",
+      "original_explanation": "This quote identifies Flublok as a recombinant hemagglutinin (HA) vaccine, which is relevant because recombinant technology allows for the production of antigens that are an exact match to the selected WHO- and FDA-recommended flu strains, supporting the claim of identical antigenic match."
     }
   ],
   "model_used": "gpt-4.1"

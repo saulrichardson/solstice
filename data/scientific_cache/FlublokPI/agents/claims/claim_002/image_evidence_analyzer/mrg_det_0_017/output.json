@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A table of contents from Flublok prescribing information showing section headings (e.g., Indications and Usage; Dosage and Administration; Dosage Forms and Strengths; Contraindications; Warnings and Precautions; Adverse Reactions; Use in Specific Populations; Description; Clinical Pharmacology; Nonclinical Toxicology; Clinical Studies; References; How Supplied/Storage and Handling; Patient Counseling Information). The image only shows section titles from a vaccine prescribing information document and does not include any details about production methods, mutation development during manufacturing, or impacts on vaccine effectiveness, and therefore does not support the claim. Note: Analysis limited to a table of contents; no substantive content on manufacturing or mutation provided.",
+  "explanation": "A table of contents from the full prescribing information for Flublok (an influenza vaccine), listing sections such as Indications and Usage, Dosage and Administration, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, and Handling information. The table of contents does not include any information about vaccine production methods, cell- or egg-based manufacturing, or the development of mutations during production, and therefore doesn't support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table of contents from Flublok prescribing information showing section headings (e.g., Indications and Usage; Dosage and Administration; Dosage Forms and Strengths; Contraindications; Warnings and Precautions; Adverse Reactions; Use in Specific Populations; Description; Clinical Pharmacology; Nonclinical Toxicology; Clinical Studies; References; How Supplied/Storage and Handling; Patient Counseling Information).",
+    "image_description": "A table of contents from the full prescribing information for Flublok (an influenza vaccine), listing sections such as Indications and Usage, Dosage and Administration, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, and Handling information.",
     "evidence_found": null,
-    "reasoning": "The image only shows section titles from a vaccine prescribing information document and does not include any details about production methods, mutation development during manufacturing, or impacts on vaccine effectiveness, and therefore does not support the claim.",
-    "confidence_notes": "Analysis limited to a table of contents; no substantive content on manufacturing or mutation provided."
+    "reasoning": "The table of contents does not include any information about vaccine production methods, cell- or egg-based manufacturing, or the development of mutations during production, and therefore doesn't support the claim.",
+    "confidence_notes": null
   }
 }

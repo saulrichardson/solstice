@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "Black background image displaying the U.S. Department of Health & Human Services seal on the left and the CDC logo on the right, with no text, charts, or data present. This image does not support the claim because it contains only organizational logos and no information on vaccine antibody responses. Note: The image appears to be a title or cover page with no clinical or study data, limiting its relevance to the claim.",
+  "explanation": "Black-and-white image showing the U.S. Department of Health & Human Services seal on the left and the CDC logo on the right. does not support the claim because the image contains only organizational logos and no data or study findings regarding antibody responses to different flu vaccines.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Black background image displaying the U.S. Department of Health & Human Services seal on the left and the CDC logo on the right, with no text, charts, or data present.",
+    "image_description": "Black-and-white image showing the U.S. Department of Health & Human Services seal on the left and the CDC logo on the right.",
     "evidence_found": null,
-    "reasoning": "This image does not support the claim because it contains only organizational logos and no information on vaccine antibody responses.",
-    "confidence_notes": "The image appears to be a title or cover page with no clinical or study data, limiting its relevance to the claim."
+    "reasoning": "does not support the claim because the image contains only organizational logos and no data or study findings regarding antibody responses to different flu vaccines.",
+    "confidence_notes": null
   }
 }

@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Page header of an original article showing the title \u201cRecombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age\u201d and a list of authors; no data or statements about antigenic matching are included. does not support the claim because the image is only the article title page and contains no information on antigenic match with WHO- or FDA-selected strains. Note: Image is a title page without relevant data; resolution is sufficient to confirm absence of supporting evidence.",
+  "explanation": "Title page of an original article showing the title 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age' and a list of authors; no data, figures, or text on antigenic matching are visible. does not support the claim because the image shows only the article title and authors without any information on Flublok antigenic match or WHO/FDA strain selection Note: Only the title and author information are visible; no substantive content or results are shown",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Page header of an original article showing the title \u201cRecombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age\u201d and a list of authors; no data or statements about antigenic matching are included.",
+    "image_description": "Title page of an original article showing the title 'Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age' and a list of authors; no data, figures, or text on antigenic matching are visible.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image is only the article title page and contains no information on antigenic match with WHO- or FDA-selected strains.",
-    "confidence_notes": "Image is a title page without relevant data; resolution is sufficient to confirm absence of supporting evidence."
+    "reasoning": "does not support the claim because the image shows only the article title and authors without any information on Flublok antigenic match or WHO/FDA strain selection",
+    "confidence_notes": "Only the title and author information are visible; no substantive content or results are shown"
   }
 }

@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A diagram showing 9 healthcare facilities of varying sizes grouped into service areas, randomly assigned to Block A or Block B by similar size, and a table detailing a 4-week alternating schedule of two influenza vaccine formulations (SD-IIV4 vs RIV4) given to each facility by week. The figure illustrates facility size matching, randomization into blocks, and alternating administration of two vaccine formulations (standard-dose inactivated vs recombinant), but it does not address cell- or egg-based vaccine production, mutations during manufacturing, or any effects on vaccine effectiveness, so it does not support the claim.",
+  "explanation": "A multi-panel schematic showing (1) a service area with variously sized facilities, (2) random assignment of similarly sized facilities into Block A or Block B, and (3) a table listing each facility's weekly alternating influenza vaccine formulation (SD-IIV4 vs. RIV4) over four weeks. The figure only illustrates randomization of facilities and their alternating use of two vaccine formulations; it includes no information on production-related mutations in cell- or egg-based flu vaccines or their impact on effectiveness, and therefore does not support the claim. Note: Image is clear and shows only study design and vaccine scheduling, with no mutation or effectiveness data.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A diagram showing 9 healthcare facilities of varying sizes grouped into service areas, randomly assigned to Block A or Block B by similar size, and a table detailing a 4-week alternating schedule of two influenza vaccine formulations (SD-IIV4 vs RIV4) given to each facility by week.",
+    "image_description": "A multi-panel schematic showing (1) a service area with variously sized facilities, (2) random assignment of similarly sized facilities into Block A or Block B, and (3) a table listing each facility's weekly alternating influenza vaccine formulation (SD-IIV4 vs. RIV4) over four weeks.",
     "evidence_found": null,
-    "reasoning": "The figure illustrates facility size matching, randomization into blocks, and alternating administration of two vaccine formulations (standard-dose inactivated vs recombinant), but it does not address cell- or egg-based vaccine production, mutations during manufacturing, or any effects on vaccine effectiveness, so it does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "The figure only illustrates randomization of facilities and their alternating use of two vaccine formulations; it includes no information on production-related mutations in cell- or egg-based flu vaccines or their impact on effectiveness, and therefore does not support the claim.",
+    "confidence_notes": "Image is clear and shows only study design and vaccine scheduling, with no mutation or effectiveness data."
   }
 }

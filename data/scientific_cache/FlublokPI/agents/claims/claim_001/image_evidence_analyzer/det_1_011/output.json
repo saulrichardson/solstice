@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table presenting solicited local and systemic adverse event percentages for Flublok (N=2272) versus placebo (N=2231), listing events such as pain, redness, swelling, headache, fatigue, muscle pain, etc., with columns for any, moderate, and severe incidences. The table only reports safety/reactogenicity data for Flublok versus placebo and does not present information on hemagglutinin antigen content or immunogenicity. This table does not support the claim. Note: None",
+  "explanation": "A table listing the percentages of solicited local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events in a randomized study comparing Flublok (N=2272) versus placebo (N=2231), with columns for any, moderate, and severe events. The table presents safety/tolerability data (adverse event rates) for Flublok versus placebo and does not include any information about hemagglutinin antigen content or immunogenicity comparisons to standard-dose flu vaccines, and thus does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table presenting solicited local and systemic adverse event percentages for Flublok (N=2272) versus placebo (N=2231), listing events such as pain, redness, swelling, headache, fatigue, muscle pain, etc., with columns for any, moderate, and severe incidences.",
+    "image_description": "A table listing the percentages of solicited local (pain, redness, swelling, bruising) and systemic (headache, fatigue, muscle pain, nausea, joint pain, chills, fever) adverse events in a randomized study comparing Flublok (N=2272) versus placebo (N=2231), with columns for any, moderate, and severe events.",
     "evidence_found": null,
-    "reasoning": "The table only reports safety/reactogenicity data for Flublok versus placebo and does not present information on hemagglutinin antigen content or immunogenicity. This table does not support the claim.",
-    "confidence_notes": "None"
+    "reasoning": "The table presents safety/tolerability data (adverse event rates) for Flublok versus placebo and does not include any information about hemagglutinin antigen content or immunogenicity comparisons to standard-dose flu vaccines, and thus does not support the claim.",
+    "confidence_notes": null
   }
 }

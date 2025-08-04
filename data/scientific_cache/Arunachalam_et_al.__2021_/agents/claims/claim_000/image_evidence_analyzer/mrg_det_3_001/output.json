@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "Schematic diagrams of influenza hemagglutinin (HA) glycoprotein structures. Panel (a) depicts the cleaved HA1 (blue) and HA2 (red) subunits with attached complex, polysialylated N-glycans at multiple glycosylation sites, showing a cleaved fusion peptide and inter-subunit disulfide bond. Panel (b) shows uncleaved HA0 (blue and red) with paucimannose glycans at similar positions and an uncleaved fusion peptide. The figure illustrates glycosylation patterns and structural domains of HA but contains no data or statements about antigenic matching to WHO- or FDA-selected influenza strains, therefore it does not support the claim. Note: None",
+  "explanation": "Two schematic representations of influenza hemagglutinin (HA) glycoproteins showing domain organization (globular head, fibrous stem), cleavage status (HA0 vs HA1/HA2), disulfide bonds, fusion peptide location, and the types of attached glycans (complex polysialylated vs paucimannose) on each form. The figure illustrates structural and glycosylation differences of HA produced in different systems but contains no information on antigenic matching to WHO- or FDA-selected strains, so it does not support the claim. Note: Analysis limited to visible content; no strain names, antigenic assays, or regulatory matching details are shown.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Schematic diagrams of influenza hemagglutinin (HA) glycoprotein structures. Panel (a) depicts the cleaved HA1 (blue) and HA2 (red) subunits with attached complex, polysialylated N-glycans at multiple glycosylation sites, showing a cleaved fusion peptide and inter-subunit disulfide bond. Panel (b) shows uncleaved HA0 (blue and red) with paucimannose glycans at similar positions and an uncleaved fusion peptide.",
+    "image_description": "Two schematic representations of influenza hemagglutinin (HA) glycoproteins showing domain organization (globular head, fibrous stem), cleavage status (HA0 vs HA1/HA2), disulfide bonds, fusion peptide location, and the types of attached glycans (complex polysialylated vs paucimannose) on each form.",
     "evidence_found": null,
-    "reasoning": "The figure illustrates glycosylation patterns and structural domains of HA but contains no data or statements about antigenic matching to WHO- or FDA-selected influenza strains, therefore it does not support the claim.",
-    "confidence_notes": "None"
+    "reasoning": "The figure illustrates structural and glycosylation differences of HA produced in different systems but contains no information on antigenic matching to WHO- or FDA-selected strains, so it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible content; no strain names, antigenic assays, or regulatory matching details are shown."
   }
 }

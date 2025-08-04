@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A table comparing outcomes (PCR-confirmed influenza, influenza A/B, hospitalizations) between recombinant vaccine (N=279,400) and standard-dose vaccine (N=395,852), showing cases per 1,000, unadjusted rate ratios, adjusted hazard ratios with 95% CI, relative vaccine effectiveness percentages and P values. The table presents comparative effectiveness data between recombinant and standard-dose (egg-based) vaccines but contains no information about mutations arising during production in eggs or cell cultures; therefore, it does not support the claim. Note: Table does not mention production methods or mutation data; clarity of image sufficient for outcome measures only.",
+  "explanation": "A table comparing outcomes for recombinant vaccine (N=279,400) versus standard-dose vaccine (N=395,852), showing number of cases per 1000 for PCR-confirmed influenza and various secondary outcomes, along with unadjusted rate ratios, adjusted hazard ratios, relative vaccine effectiveness percentages, and P values. The table presents comparative effectiveness data between recombinant and standard-dose (egg-based) vaccines but does not mention mutations during production or their impact on effectiveness, and therefore does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table comparing outcomes (PCR-confirmed influenza, influenza A/B, hospitalizations) between recombinant vaccine (N=279,400) and standard-dose vaccine (N=395,852), showing cases per 1,000, unadjusted rate ratios, adjusted hazard ratios with 95% CI, relative vaccine effectiveness percentages and P values.",
+    "image_description": "A table comparing outcomes for recombinant vaccine (N=279,400) versus standard-dose vaccine (N=395,852), showing number of cases per 1000 for PCR-confirmed influenza and various secondary outcomes, along with unadjusted rate ratios, adjusted hazard ratios, relative vaccine effectiveness percentages, and P values.",
     "evidence_found": null,
-    "reasoning": "The table presents comparative effectiveness data between recombinant and standard-dose (egg-based) vaccines but contains no information about mutations arising during production in eggs or cell cultures; therefore, it does not support the claim.",
-    "confidence_notes": "Table does not mention production methods or mutation data; clarity of image sufficient for outcome measures only."
+    "reasoning": "The table presents comparative effectiveness data between recombinant and standard-dose (egg-based) vaccines but does not mention mutations during production or their impact on effectiveness, and therefore does not support the claim.",
+    "confidence_notes": null
   }
 }

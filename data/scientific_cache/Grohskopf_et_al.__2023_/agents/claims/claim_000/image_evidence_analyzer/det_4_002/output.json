@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table listing various influenza vaccines by trade name and manufacturer, presentations, age indications, HA antigen content per dose, administration route, and mercury content; includes Flublok Quadrivalent among other IIV4, cIIV4, HD-IIV4, aIIV4, and LAIV4 vaccines. The table provides formulation details (dose volume, HA micrograms per strain, route) but contains no information on antigenic match or alignment with WHO- or FDA-selected flu strains, and therefore does not support the claim. Note: The table focuses solely on vaccine composition and presentation without addressing strain selection or antigenic matching.",
+  "explanation": "A multi\u2010row table listing characteristics of various seasonal influenza vaccines (egg-based, cell-culture\u2013based, high-dose, adjuvanted, recombinant HA, and live attenuated intranasal), including trade name/manufacturer, presentation volume, age indication, hemagglutinin (HA) content per dose or virus count, route of administration, and mercury content if present. The table provides formulation details (dose volume, HA content, age groups, route, thimerosal content) for Flublok and other influenza vaccines but contains no information about antigenic matching or alignment with WHO- or FDA-selected flu strains, and thus does not support the claim. Note: Table excerpt appears clear and complete for listed fields; lack of antigenic match data is not due to image cut-off.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing various influenza vaccines by trade name and manufacturer, presentations, age indications, HA antigen content per dose, administration route, and mercury content; includes Flublok Quadrivalent among other IIV4, cIIV4, HD-IIV4, aIIV4, and LAIV4 vaccines.",
+    "image_description": "A multi\u2010row table listing characteristics of various seasonal influenza vaccines (egg-based, cell-culture\u2013based, high-dose, adjuvanted, recombinant HA, and live attenuated intranasal), including trade name/manufacturer, presentation volume, age indication, hemagglutinin (HA) content per dose or virus count, route of administration, and mercury content if present.",
     "evidence_found": null,
-    "reasoning": "The table provides formulation details (dose volume, HA micrograms per strain, route) but contains no information on antigenic match or alignment with WHO- or FDA-selected flu strains, and therefore does not support the claim.",
-    "confidence_notes": "The table focuses solely on vaccine composition and presentation without addressing strain selection or antigenic matching."
+    "reasoning": "The table provides formulation details (dose volume, HA content, age groups, route, thimerosal content) for Flublok and other influenza vaccines but contains no information about antigenic matching or alignment with WHO- or FDA-selected flu strains, and thus does not support the claim.",
+    "confidence_notes": "Table excerpt appears clear and complete for listed fields; lack of antigenic match data is not due to image cut-off."
   }
 }

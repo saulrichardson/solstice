@@ -1,12 +1,12 @@
 {
   "agent_name": "image_evidence_analyzer",
   "pdf_name": "FlublokPI",
-  "started_at": "2025-08-03T16:34:06.767322",
-  "completed_at": null,
-  "status": "running",
+  "started_at": "2025-08-03T17:33:44.328451",
+  "completed_at": "2025-08-03T17:34:04.956619",
+  "status": "completed",
   "error": null,
   "config": {
-    "disable_cache": true,
+    "fresh_response": true,
     "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine)."
   }
 }

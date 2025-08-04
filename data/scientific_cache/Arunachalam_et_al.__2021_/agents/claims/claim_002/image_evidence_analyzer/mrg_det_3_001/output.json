@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A schematic comparison of influenza hemagglutinin proteins, showing a cleaved HA1/HA2 heterodimer with polysialylated complex glycans (panel a) and an uncleaved HA0 monomer with paucimannose glycans (panel b), including labels for globular head, fibrous stem, fusion peptide, disulfide bonds, and membrane topology. The figure illustrates glycosylation and cleavage differences in hemagglutinin proteins produced under different conditions but makes no mention of mutations arising during vaccine production or their impact on effectiveness, and therefore does not support the claim.",
+  "explanation": "Two schematic illustrations of influenza hemagglutinin glycoprotein structures. Panel a shows the cleaved HA1 and HA2 subunits (with a separated fusion peptide), labeled globular head and fibrous stem, displaying polysialylated complex N-glycans. Panel b shows the uncleaved HA0 precursor with fusion peptide intact, displaying predominantly paucimannose glycans. Both diagrams indicate membrane topology and disulfide bonds. The figure illustrates differences in glycosylation patterns and cleavage status of hemagglutinin but does not present any data or statements about mutations arising during cell- or egg-based vaccine production or their impact on effectiveness, so it does not support the claim. Note: Limited to what is visible: schematic glycan and cleavage comparisons only; no mention of mutations or vaccine efficacy.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A schematic comparison of influenza hemagglutinin proteins, showing a cleaved HA1/HA2 heterodimer with polysialylated complex glycans (panel a) and an uncleaved HA0 monomer with paucimannose glycans (panel b), including labels for globular head, fibrous stem, fusion peptide, disulfide bonds, and membrane topology.",
+    "image_description": "Two schematic illustrations of influenza hemagglutinin glycoprotein structures. Panel a shows the cleaved HA1 and HA2 subunits (with a separated fusion peptide), labeled globular head and fibrous stem, displaying polysialylated complex N-glycans. Panel b shows the uncleaved HA0 precursor with fusion peptide intact, displaying predominantly paucimannose glycans. Both diagrams indicate membrane topology and disulfide bonds.",
     "evidence_found": null,
-    "reasoning": "The figure illustrates glycosylation and cleavage differences in hemagglutinin proteins produced under different conditions but makes no mention of mutations arising during vaccine production or their impact on effectiveness, and therefore does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "The figure illustrates differences in glycosylation patterns and cleavage status of hemagglutinin but does not present any data or statements about mutations arising during cell- or egg-based vaccine production or their impact on effectiveness, so it does not support the claim.",
+    "confidence_notes": "Limited to what is visible: schematic glycan and cleavage comparisons only; no mention of mutations or vaccine efficacy."
   }
 }

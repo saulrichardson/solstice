@@ -3,34 +3,36 @@
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "document": "FlublokPI",
   "verification_stats": {
-    "total_extracted": 3,
-    "verified": 1,
-    "rejected": 2,
-    "verification_rate": 0.3333333333333333
+    "total_extracted": 4,
+    "verified": 0,
+    "rejected": 4,
+    "verification_rate": 0.0
   },
-  "verified_evidence": [
-    {
-      "id": "comp_1",
-      "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.",
-      "supports_claim": true,
-      "explanation": "The quote provides explicit information that Flublok (the recombinant flu vaccine) contains a total of 135 mcg of hemagglutinin (HA) per 0.5 mL dose, with 45 mcg HA from each of three strains. This is a higher antigen dose than standard-dose egg-based influenza vaccines, which typically contain 15 mcg HA per strain (45 mcg total). The claim is that a higher-dose recombinant flu vaccine may induce a more robust antibody response than standard-dose egg-based vaccines. While the quote does not directly state that the higher dose induces a more robust antibody response, it does provide the key factual support that Flublok is a higher-dose recombinant vaccine, which is the basis for the claim. Therefore, the quote genuinely supports the claim by substantiating the higher-dose aspect of the recombinant vaccine.",
-      "presence_explanation": "The quote appears in the document in the following passage: 'For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains: A/West Virginia 30 2022 (A/Wisconsin/67/2022 pdm 09 like virus) (H1 N1), A/Massachusetts/18/ 2022 (H3 N2) and B/Austria/1359417/2021.' This matches the quote to verify, with only minor formatting differences (e.g., line breaks, spacing). All factual content and numbers are preserved.",
-      "support_explanation": "The quote provides explicit information that Flublok (the recombinant flu vaccine) contains a total of 135 mcg of hemagglutinin (HA) per 0.5 mL dose, with 45 mcg HA from each of three strains. This is a higher antigen dose than standard-dose egg-based influenza vaccines, which typically contain 15 mcg HA per strain (45 mcg total). The claim is that a higher-dose recombinant flu vaccine may induce a more robust antibody response than standard-dose egg-based vaccines. While the quote does not directly state that the higher dose induces a more robust antibody response, it does provide the key factual support that Flublok is a higher-dose recombinant vaccine, which is the basis for the claim. Therefore, the quote genuinely supports the claim by substantiating the higher-dose aspect of the recombinant vaccine.",
-      "original_relevance": "This quote shows that Flublok (the recombinant flu vaccine) is formulated at a higher antigen dose (135 mcg total HA per dose) compared to standard-dose egg-based vaccines, which typically contain 45 mcg total HA per dose. This higher dose is a key factor in potentially inducing a more robust antibody response."
-    }
-  ],
+  "verified_evidence": [],
   "rejected_evidence": [
     {
       "id": 1,
       "quote": "5. Treanor JJ, Schiff GM, Hayden FG, et al. Safety and immunogenicity of a baculovirus-expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582.",
       "reason": "does not support claim",
-      "original_explanation": "This reference is cited in the context of clinical studies comparing the immunogenicity of recombinant hemagglutinin (rHA) vaccines (such as Flublok, a higher-dose recombinant flu vaccine) to standard egg-based vaccines, directly supporting the claim that recombinant vaccines may induce a more robust antibody response."
+      "original_explanation": "This reference is cited in the context of clinical studies comparing the immunogenicity (antibody response) of recombinant hemagglutinin (rHA) vaccines, such as Flublok, to standard egg-based vaccines, directly supporting the claim that higher-dose recombinant vaccines may induce a more robust antibody response."
     },
     {
       "id": 2,
-      "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine 2009 Vol. 28, pp. 379\u2013385.",
+      "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine 2009 Vol. 28, pp. 379-385.",
       "reason": "does not support claim",
-      "original_explanation": "This reference is cited as a comparative study of the immunogenicity of recombinant (higher-dose) and standard egg-based vaccines in older adults, directly supporting the claim that the recombinant vaccine may induce a more robust antibody response."
+      "original_explanation": "This reference is cited as a comparative study of the immunogenicity of recombinant (higher-dose) and standard egg-based influenza vaccines in older adults, providing direct evidence relevant to the claim."
+    },
+    {
+      "id": 3,
+      "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains... Flublok contains no egg proteins, antibiotics, or preservatives.",
+      "reason": "does not support claim",
+      "original_explanation": "This quote establishes that Flublok is a higher-dose recombinant vaccine (135 mcg total HA per dose) and is not egg-based, which is necessary context for understanding the basis of the claim regarding antibody response."
+    },
+    {
+      "id": "comp_1",
+      "quote": "Data from a randomized, controlled trial demonstrated that children 6 months to less than 3 years of age had diminished hemagglutinin inhibition (HI) responses to Flublok compared to a U.S.-licensed influenza vaccine approved for use in this population, strongly suggesting that Flublok would not be effective in children younger than 3 years of age (6).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote demonstrates that the antibody response (measured by HI) to Flublok is a key outcome in clinical trials, and that differences in HI response are used to compare vaccine immunogenicity. While this example is in children and shows a diminished response, it establishes that HI response is a relevant and measured endpoint for Flublok, supporting the context for comparing robust antibody responses between vaccine types."
     }
   ],
   "model_used": "gpt-4.1"

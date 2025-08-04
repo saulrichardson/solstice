@@ -1,12 +1,12 @@
 {
   "agent_name": "image_evidence_analyzer",
   "pdf_name": "CDC_Influenza_vaccines",
-  "started_at": "2025-07-30T23:36:13.032732",
-  "completed_at": "2025-07-30T23:36:26.256510",
+  "started_at": "2025-08-03T17:33:25.256696",
+  "completed_at": "2025-08-03T17:33:34.093860",
   "status": "completed",
   "error": null,
   "config": {
-    "disable_cache": true,
+    "fresh_response": true,
     "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines."
   }
 }

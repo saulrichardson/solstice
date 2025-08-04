@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "A table listing contraindications and precautions for different 2022\u201323 influenza vaccines (egg-based IIVs and LAIV4, cell culture\u2013based quadrivalent [ccIIV4], and recombinant quadrivalent [RIV4]) in individuals with previous severe allergic reactions (e.g., anaphylaxis) to various vaccine types. The table only provides guidance on contraindications and precautions for different influenza vaccine formats based on allergic history. It does not mention any pivotal trial or a comparison between Flublok (RIV4) and Fluarix (quadrivalent standard-dose vaccine), and therefore does not support the claim. Note: The image is clear but contains no information on clinical trial design or comparators.",
+  "explanation": "A table listing available 2022\u201323 influenza vaccines by production method (Egg-based IIV4s and LAIV4, ccIIV4, RIV4) and the corresponding contraindications or precautions for individuals with prior severe allergic reactions to different vaccine types. The table provides guidance on contraindications and precautions for various influenza vaccine technologies but contains no information about clinical trial evaluations or head-to-head comparisons between Flublok (RIV4) and Fluarix; it does not support the claim. Note: The table focuses solely on allergy-related recommendations and does not address clinical trial design or comparator vaccines.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing contraindications and precautions for different 2022\u201323 influenza vaccines (egg-based IIVs and LAIV4, cell culture\u2013based quadrivalent [ccIIV4], and recombinant quadrivalent [RIV4]) in individuals with previous severe allergic reactions (e.g., anaphylaxis) to various vaccine types.",
+    "image_description": "A table listing available 2022\u201323 influenza vaccines by production method (Egg-based IIV4s and LAIV4, ccIIV4, RIV4) and the corresponding contraindications or precautions for individuals with prior severe allergic reactions to different vaccine types.",
     "evidence_found": null,
-    "reasoning": "The table only provides guidance on contraindications and precautions for different influenza vaccine formats based on allergic history. It does not mention any pivotal trial or a comparison between Flublok (RIV4) and Fluarix (quadrivalent standard-dose vaccine), and therefore does not support the claim.",
-    "confidence_notes": "The image is clear but contains no information on clinical trial design or comparators."
+    "reasoning": "The table provides guidance on contraindications and precautions for various influenza vaccine technologies but contains no information about clinical trial evaluations or head-to-head comparisons between Flublok (RIV4) and Fluarix; it does not support the claim.",
+    "confidence_notes": "The table focuses solely on allergy-related recommendations and does not address clinical trial design or comparator vaccines."
   }
 }

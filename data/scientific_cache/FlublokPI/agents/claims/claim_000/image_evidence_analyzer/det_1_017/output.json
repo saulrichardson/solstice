@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table comparing solicited local and systemic adverse event rates (%) after vaccination with Flublok (N=1078) versus an egg-based inactivated influenza vaccine (IIV3, N=1081), listing percentages of any, moderate, and severe pain, redness, firmness/swelling, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, and fever. does not support the claim: the table presents safety and reactogenicity data, not information on antigenic match with WHO- or FDA-selected flu strains.",
+  "explanation": "A table comparing the percentage of solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache) for Flublok versus a licensed inactivated influenza vaccine (IIV3), broken down by any, moderate, and severe events. The table presents safety and reactogenicity data and contains no information on antigenic match or strain selection, so it does not support the claim. Note: Analysis limited to the visible content, which does not include any antigenic or strain-matching data.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table comparing solicited local and systemic adverse event rates (%) after vaccination with Flublok (N=1078) versus an egg-based inactivated influenza vaccine (IIV3, N=1081), listing percentages of any, moderate, and severe pain, redness, firmness/swelling, fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, and fever.",
+    "image_description": "A table comparing the percentage of solicited local and systemic adverse events (e.g., pain, redness, fatigue, headache) for Flublok versus a licensed inactivated influenza vaccine (IIV3), broken down by any, moderate, and severe events.",
     "evidence_found": null,
-    "reasoning": "does not support the claim: the table presents safety and reactogenicity data, not information on antigenic match with WHO- or FDA-selected flu strains.",
-    "confidence_notes": null
+    "reasoning": "The table presents safety and reactogenicity data and contains no information on antigenic match or strain selection, so it does not support the claim.",
+    "confidence_notes": "Analysis limited to the visible content, which does not include any antigenic or strain-matching data."
   }
 }

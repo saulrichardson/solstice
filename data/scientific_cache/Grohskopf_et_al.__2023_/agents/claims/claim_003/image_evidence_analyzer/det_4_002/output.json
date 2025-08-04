@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A tabular listing of various licensed influenza vaccines including trade names (egg-based, cell-culture based, high-dose, adjuvanted, recombinant HA, and live attenuated), their presentations (e.g., volume and formulation), approved age indications, amount of hemagglutinin antigen per dose, route of administration, and mercury content if thimerosal is present. The table provides formulation, dosing, and licensing information for different influenza vaccines but contains no immunogenicity or cross-protection data; it does not support the claim. Note: Table does not include any immune response or mismatch season performance data; image is clear but limited to vaccine specifications.",
+  "explanation": "A table listing influenza vaccine products (trade name, manufacturer), presentation formats, age indications, hemagglutinin content or virus count per dose, administration route, and thimerosal content. Vaccines are grouped by type (egg-based standard dose quadrivalent, cell culture-based, high-dose, adjuvanted, recombinant HA, and live attenuated intranasal). The table provides formulation details (dosages, routes, age groups) for various influenza vaccines, including the recombinant HA vaccine, but contains no immunogenicity or cross-protection data. Therefore it does not support the claim about broader immune response or cross-protection in mismatch seasons. Note: Analysis limited to a product specification table; no efficacy or immunologic outcome data are present.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A tabular listing of various licensed influenza vaccines including trade names (egg-based, cell-culture based, high-dose, adjuvanted, recombinant HA, and live attenuated), their presentations (e.g., volume and formulation), approved age indications, amount of hemagglutinin antigen per dose, route of administration, and mercury content if thimerosal is present.",
+    "image_description": "A table listing influenza vaccine products (trade name, manufacturer), presentation formats, age indications, hemagglutinin content or virus count per dose, administration route, and thimerosal content. Vaccines are grouped by type (egg-based standard dose quadrivalent, cell culture-based, high-dose, adjuvanted, recombinant HA, and live attenuated intranasal).",
     "evidence_found": null,
-    "reasoning": "The table provides formulation, dosing, and licensing information for different influenza vaccines but contains no immunogenicity or cross-protection data; it does not support the claim.",
-    "confidence_notes": "Table does not include any immune response or mismatch season performance data; image is clear but limited to vaccine specifications."
+    "reasoning": "The table provides formulation details (dosages, routes, age groups) for various influenza vaccines, including the recombinant HA vaccine, but contains no immunogenicity or cross-protection data. Therefore it does not support the claim about broader immune response or cross-protection in mismatch seasons.",
+    "confidence_notes": "Analysis limited to a product specification table; no efficacy or immunologic outcome data are present."
   }
 }

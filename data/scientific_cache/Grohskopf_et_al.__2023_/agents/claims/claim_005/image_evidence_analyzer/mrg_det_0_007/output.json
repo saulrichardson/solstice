@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "Header of a CDC Morbidity and Mortality Weekly Report (MMWR) showing title, volume, issue number, and date. The image only displays the MMWR report header and contains no information about clinical trials or comparisons between Flublok (quadrivalent) and Fluarix (quadrivalent); it does not support the claim. Note: The content visible is limited to the report header, with no trial details or vaccine evaluations presented.",
+  "explanation": "Header of an MMWR (Morbidity and Mortality Weekly Report) Recommendations and Reports document showing the title, volume, issue number, and date. The image only displays the report header and does not mention Flublok (quadrivalent), Fluarix (quadrivalent), or any trial comparisons, so it does not support the claim. Note: Analysis limited by the image containing only the title header; no study details are visible.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Header of a CDC Morbidity and Mortality Weekly Report (MMWR) showing title, volume, issue number, and date.",
+    "image_description": "Header of an MMWR (Morbidity and Mortality Weekly Report) Recommendations and Reports document showing the title, volume, issue number, and date.",
     "evidence_found": null,
-    "reasoning": "The image only displays the MMWR report header and contains no information about clinical trials or comparisons between Flublok (quadrivalent) and Fluarix (quadrivalent); it does not support the claim.",
-    "confidence_notes": "The content visible is limited to the report header, with no trial details or vaccine evaluations presented."
+    "reasoning": "The image only displays the report header and does not mention Flublok (quadrivalent), Fluarix (quadrivalent), or any trial comparisons, so it does not support the claim.",
+    "confidence_notes": "Analysis limited by the image containing only the title header; no study details are visible."
   }
 }

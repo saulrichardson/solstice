@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table presenting percentages of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse events for Flublok (N=1078) and IIV3 (N=1081), with columns for any, moderate, and severe events. The table reports safety data on adverse events and contains no information on hemagglutinin antigen content or immunogenicity, and thus does not support the claim.",
+  "explanation": "A table comparing solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse event rates (% any, % moderate, % severe) for Flublok (N=1078) versus a standard-dose IIV3 vaccine (N=1081). The table only presents adverse event rates for Flublok versus IIV3 and contains no data on hemagglutinin antigen content or immunogenicity outcomes, so it does not support the claim. Note: The image clearly shows safety data but no antigen content or immunogenicity information; no issues with interpretability of these data.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table presenting percentages of solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse events for Flublok (N=1078) and IIV3 (N=1081), with columns for any, moderate, and severe events.",
+    "image_description": "A table comparing solicited local (pain, redness, firmness/swelling) and systemic (fatigue, headache, muscle pain, joint pain, shivers/chills, nausea, fever) adverse event rates (% any, % moderate, % severe) for Flublok (N=1078) versus a standard-dose IIV3 vaccine (N=1081).",
     "evidence_found": null,
-    "reasoning": "The table reports safety data on adverse events and contains no information on hemagglutinin antigen content or immunogenicity, and thus does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "The table only presents adverse event rates for Flublok versus IIV3 and contains no data on hemagglutinin antigen content or immunogenicity outcomes, so it does not support the claim.",
+    "confidence_notes": "The image clearly shows safety data but no antigen content or immunogenicity information; no issues with interpretability of these data."
   }
 }

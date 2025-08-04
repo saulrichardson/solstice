@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "Black background with U.S. Department of Health & Human Services seal on left and CDC logo on right. does not support the claim Note: Image only shows organizational logos and provides no trial information.",
+  "explanation": "Black background containing the U.S. Department of Health & Human Services stylized eagle logo on the left and the CDC logo on the right The image only shows organizational logos and contains no information about any clinical trial or comparison between Flublok (quadrivalent) and Fluarix (quadrivalent); it does not support the claim Note: Image is clear but provides no trial details",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Black background with U.S. Department of Health & Human Services seal on left and CDC logo on right.",
+    "image_description": "Black background containing the U.S. Department of Health & Human Services stylized eagle logo on the left and the CDC logo on the right",
     "evidence_found": null,
-    "reasoning": "does not support the claim",
-    "confidence_notes": "Image only shows organizational logos and provides no trial information."
+    "reasoning": "The image only shows organizational logos and contains no information about any clinical trial or comparison between Flublok (quadrivalent) and Fluarix (quadrivalent); it does not support the claim",
+    "confidence_notes": "Image is clear but provides no trial details"
   }
 }

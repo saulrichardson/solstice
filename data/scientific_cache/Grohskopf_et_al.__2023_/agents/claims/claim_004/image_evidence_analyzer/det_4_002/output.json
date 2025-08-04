@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "A multi-column table listing trade names of various influenza vaccines (standard-dose egg-based IIV4, cell culture\u2013based cIIV4, high-dose egg-based HD-IIV4, adjuvanted egg-based aIIV4, recombinant HA vaccine RIV4, and live attenuated egg-based LAIV4), their presentations, age indications, antigen content per virus per dose (\u00b5g HA or virus count), administration route, and mercury content. The table provides vaccine formulations and antigen dosages but contains no data on antibody responses or comparative immunogenicity, and thus does not support the claim. Note: No immunogenicity or antibody titer data are presented in the table.",
+  "explanation": "A multi-column table listing influenza vaccines by trade name and manufacturer, presentation (e.g., prefilled syringe, multi-dose vial), age indications, micrograms of hemagglutinin per dose for each vaccine strain, route of administration, and thimerosal (mercury) content. Vaccines include standard-dose egg-based quadrivalent (IIV4), cell culture-based (ccIIV4), high-dose egg-based (HD-IIV4), standard-dose egg-based with adjuvant (aIIV4), recombinant HA (RIV4), and intranasal live attenuated (LAIV4). The table provides dosing information but contains no data on antibody titers or immunogenicity comparisons between the higher-dose recombinant vaccine and standard-dose egg-based vaccines, and thus does not support the claim. Note: No direct immunogenicity or antibody response data are shown; only antigen content per dose is listed.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A multi-column table listing trade names of various influenza vaccines (standard-dose egg-based IIV4, cell culture\u2013based cIIV4, high-dose egg-based HD-IIV4, adjuvanted egg-based aIIV4, recombinant HA vaccine RIV4, and live attenuated egg-based LAIV4), their presentations, age indications, antigen content per virus per dose (\u00b5g HA or virus count), administration route, and mercury content.",
+    "image_description": "A multi-column table listing influenza vaccines by trade name and manufacturer, presentation (e.g., prefilled syringe, multi-dose vial), age indications, micrograms of hemagglutinin per dose for each vaccine strain, route of administration, and thimerosal (mercury) content. Vaccines include standard-dose egg-based quadrivalent (IIV4), cell culture-based (ccIIV4), high-dose egg-based (HD-IIV4), standard-dose egg-based with adjuvant (aIIV4), recombinant HA (RIV4), and intranasal live attenuated (LAIV4).",
     "evidence_found": null,
-    "reasoning": "The table provides vaccine formulations and antigen dosages but contains no data on antibody responses or comparative immunogenicity, and thus does not support the claim.",
-    "confidence_notes": "No immunogenicity or antibody titer data are presented in the table."
+    "reasoning": "The table provides dosing information but contains no data on antibody titers or immunogenicity comparisons between the higher-dose recombinant vaccine and standard-dose egg-based vaccines, and thus does not support the claim.",
+    "confidence_notes": "No direct immunogenicity or antibody response data are shown; only antigen content per dose is listed."
   }
 }

@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "CONSORT flow diagram illustrating Year 1 (2018\u20132019) enrollment and randomization of 723 participants into four vaccine arms (ccIIV4, RIV, Fluzone IIV4, Fluarix IIV4) with age breakdowns and visit completion, followed by Year 2 re-enrollment and re-randomization of participants into various vaccine sequences. does not support the claim because the image only depicts participant enrollment, randomization, and visit completion; it provides no data on antigenic matching to WHO- or FDA-selected influenza strains.",
+  "explanation": "A two\u2010year CONSORT flow diagram showing enrollment, randomization, and follow\u2010up of participants in four vaccine arms (ccIIV4, RIV4, Fluzone IIV4, FluARIX IIV4) in Year 1 and re\u2010randomization in Year 2. does not support the claim because the figure only presents participant allocation and study flow; it contains no data or statements about antigenic match with WHO\u2010 or FDA\u2010selected strains. Note: None.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "CONSORT flow diagram illustrating Year 1 (2018\u20132019) enrollment and randomization of 723 participants into four vaccine arms (ccIIV4, RIV, Fluzone IIV4, Fluarix IIV4) with age breakdowns and visit completion, followed by Year 2 re-enrollment and re-randomization of participants into various vaccine sequences.",
+    "image_description": "A two\u2010year CONSORT flow diagram showing enrollment, randomization, and follow\u2010up of participants in four vaccine arms (ccIIV4, RIV4, Fluzone IIV4, FluARIX IIV4) in Year 1 and re\u2010randomization in Year 2.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the image only depicts participant enrollment, randomization, and visit completion; it provides no data on antigenic matching to WHO- or FDA-selected influenza strains.",
-    "confidence_notes": null
+    "reasoning": "does not support the claim because the figure only presents participant allocation and study flow; it contains no data or statements about antigenic match with WHO\u2010 or FDA\u2010selected strains.",
+    "confidence_notes": "None."
   }
 }

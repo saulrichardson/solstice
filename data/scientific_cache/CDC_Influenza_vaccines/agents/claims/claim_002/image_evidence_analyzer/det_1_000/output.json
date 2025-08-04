@@ -7,13 +7,13 @@
   "claim_id": "claim_002",
   "claim": "Cell- and egg-based flu vaccines have the potential to develop mutations during production, which may reduce their effectiveness.",
   "supports_claim": false,
-  "explanation": "A table summarizing influenza vaccine products, including trade names (manufacturer), presentation (dose volume and format), age indications, antigen content per dose (\u00b5g HA or virus count), administration route, and mercury content for different vaccine types: cell-based inactivated (IIV4), recombinant HA (RIV4), and egg-based live attenuated (LAIV4). The image only lists vaccine formulations, dosages, age indications, and routes of administration; it contains no information on mutations arising during production or their effect on vaccine effectiveness and therefore does not support the claim. Note: The table is purely descriptive and does not address genetic changes or production-related mutations. No limitations in interpretation beyond the absence of relevant data.",
+  "explanation": "Table listing influenza vaccine products by trade name and manufacturer, presentation format, age indications, hemagglutinin antigen or virus count per dose, route of administration, and thimerosal content. The image only presents product characteristics and does not mention development of mutations during production or any impact on vaccine effectiveness, so it doesn't support the claim. Note: None.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table summarizing influenza vaccine products, including trade names (manufacturer), presentation (dose volume and format), age indications, antigen content per dose (\u00b5g HA or virus count), administration route, and mercury content for different vaccine types: cell-based inactivated (IIV4), recombinant HA (RIV4), and egg-based live attenuated (LAIV4).",
+    "image_description": "Table listing influenza vaccine products by trade name and manufacturer, presentation format, age indications, hemagglutinin antigen or virus count per dose, route of administration, and thimerosal content.",
     "evidence_found": null,
-    "reasoning": "The image only lists vaccine formulations, dosages, age indications, and routes of administration; it contains no information on mutations arising during production or their effect on vaccine effectiveness and therefore does not support the claim.",
-    "confidence_notes": "The table is purely descriptive and does not address genetic changes or production-related mutations. No limitations in interpretation beyond the absence of relevant data."
+    "reasoning": "The image only presents product characteristics and does not mention development of mutations during production or any impact on vaccine effectiveness, so it doesn't support the claim.",
+    "confidence_notes": "None."
   }
 }

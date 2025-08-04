@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A multi\u2010step schematic of the Flublok manufacturing process, showing PCR\u2010direct cloning of full\u2010length HA cDNA into a baculovirus (BV) expression vector, infection of insect cells in a bioreactor, harvest by disc\u2010stack centrifugation, extraction, depth filtration for clarification, capture and purification steps, DNA removal, and tangential flow filtration/formulation. does not support the claim because the figure only depicts the production workflow and contains no information on antigen dose comparisons or immunogenicity, and thus does not support the claim Note: None",
+  "explanation": "A schematic flow chart showing the recombinant HA production process in insect cells using a baculovirus vector: cloning of full-length HA cDNA into a transfer plasmid, recombination into BV DNA, infection of insect cells in a bioreactor, harvest by centrifugation, extraction, depth filtration, chromatography steps (capture, purification, DNA removal), and final tangential flow filtration/formulation. The figure solely illustrates the manufacturing and purification workflow for HA antigen and does not provide any quantitative information on antigen dose or comparisons to standard-dose flu vaccines, and therefore does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A multi\u2010step schematic of the Flublok manufacturing process, showing PCR\u2010direct cloning of full\u2010length HA cDNA into a baculovirus (BV) expression vector, infection of insect cells in a bioreactor, harvest by disc\u2010stack centrifugation, extraction, depth filtration for clarification, capture and purification steps, DNA removal, and tangential flow filtration/formulation.",
+    "image_description": "A schematic flow chart showing the recombinant HA production process in insect cells using a baculovirus vector: cloning of full-length HA cDNA into a transfer plasmid, recombination into BV DNA, infection of insect cells in a bioreactor, harvest by centrifugation, extraction, depth filtration, chromatography steps (capture, purification, DNA removal), and final tangential flow filtration/formulation.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the figure only depicts the production workflow and contains no information on antigen dose comparisons or immunogenicity, and thus does not support the claim",
-    "confidence_notes": "None"
+    "reasoning": "The figure solely illustrates the manufacturing and purification workflow for HA antigen and does not provide any quantitative information on antigen dose or comparisons to standard-dose flu vaccines, and therefore does not support the claim.",
+    "confidence_notes": null
   }
 }

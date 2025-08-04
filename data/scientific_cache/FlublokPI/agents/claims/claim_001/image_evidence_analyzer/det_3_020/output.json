@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Table summarizing influenza case counts, rates, and calculated vaccine efficacy of Flublok versus saline placebo among adults 18\u201349 years in Study 1, broken down by positive culture with matched strains or any strains and by CDC-defined ILI or any ILI. The table reports clinical efficacy versus saline placebo and does not provide any data on hemagglutinin antigen content or comparisons to standard-dose flu vaccines, so it does not support the claim. Note: The image only shows efficacy outcomes against placebo, with no information on antigen dose or comparisons to standard-dose vaccines.",
+  "explanation": "A table summarizing influenza outcomes in adults aged 18\u201349 years from Study 1, comparing Flublok (N = 2344) against saline placebo (N = 2304). The table lists numbers and rates of culture-confirmed influenza-like illness (ILI) with matched and any vaccine strains, calculated vaccine efficacy percentages, and 95% confidence intervals. The table presents efficacy data comparing Flublok to saline placebo and does not provide information on hemagglutinin antigen content or comparisons versus standard-dose flu vaccines; it therefore does not support the claim. Note: The image is clear and legible but only shows placebo-controlled efficacy data, not antigen content or standard-dose vaccine comparisons.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Table summarizing influenza case counts, rates, and calculated vaccine efficacy of Flublok versus saline placebo among adults 18\u201349 years in Study 1, broken down by positive culture with matched strains or any strains and by CDC-defined ILI or any ILI.",
+    "image_description": "A table summarizing influenza outcomes in adults aged 18\u201349 years from Study 1, comparing Flublok (N = 2344) against saline placebo (N = 2304). The table lists numbers and rates of culture-confirmed influenza-like illness (ILI) with matched and any vaccine strains, calculated vaccine efficacy percentages, and 95% confidence intervals.",
     "evidence_found": null,
-    "reasoning": "The table reports clinical efficacy versus saline placebo and does not provide any data on hemagglutinin antigen content or comparisons to standard-dose flu vaccines, so it does not support the claim.",
-    "confidence_notes": "The image only shows efficacy outcomes against placebo, with no information on antigen dose or comparisons to standard-dose vaccines."
+    "reasoning": "The table presents efficacy data comparing Flublok to saline placebo and does not provide information on hemagglutinin antigen content or comparisons versus standard-dose flu vaccines; it therefore does not support the claim.",
+    "confidence_notes": "The image is clear and legible but only shows placebo-controlled efficacy data, not antigen content or standard-dose vaccine comparisons."
   }
 }

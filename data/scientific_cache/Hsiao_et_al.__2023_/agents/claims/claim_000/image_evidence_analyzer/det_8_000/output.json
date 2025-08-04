@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A forest plot showing relative vaccine effectiveness (95% CI) percentages for Flublok vs comparator across subgroups (cardiovascular disease, respiratory disease, cardiorespiratory disease, obesity, diabetes, any of the above) and outcomes (PCR-confirmed influenza, hospitalization for PCR-confirmed influenza, hospitalization for community-acquired pneumonia). The figure presents subgroup clinical effectiveness data and contains no information on antigenic matching to WHO- or FDA-selected flu strains, so it does not support the claim.",
+  "explanation": "Forest plot showing relative vaccine effectiveness (with 95% CI) expressed as percentage change for Flublok versus comparator across subgroups defined by comorbidities (cardiovascular disease, respiratory disease, cardiorespiratory disease, obesity, diabetes, any condition) and endpoints (PCR-confirmed influenza, hospitalization for PCR-confirmed influenza, hospitalization for community-acquired pneumonia). This figure presents clinical effectiveness outcomes, not data on antigenic match to WHO- or FDA-selected strains, and therefore does not support the claim",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A forest plot showing relative vaccine effectiveness (95% CI) percentages for Flublok vs comparator across subgroups (cardiovascular disease, respiratory disease, cardiorespiratory disease, obesity, diabetes, any of the above) and outcomes (PCR-confirmed influenza, hospitalization for PCR-confirmed influenza, hospitalization for community-acquired pneumonia).",
+    "image_description": "Forest plot showing relative vaccine effectiveness (with 95% CI) expressed as percentage change for Flublok versus comparator across subgroups defined by comorbidities (cardiovascular disease, respiratory disease, cardiorespiratory disease, obesity, diabetes, any condition) and endpoints (PCR-confirmed influenza, hospitalization for PCR-confirmed influenza, hospitalization for community-acquired pneumonia).",
     "evidence_found": null,
-    "reasoning": "The figure presents subgroup clinical effectiveness data and contains no information on antigenic matching to WHO- or FDA-selected flu strains, so it does not support the claim.",
+    "reasoning": "This figure presents clinical effectiveness outcomes, not data on antigenic match to WHO- or FDA-selected strains, and therefore does not support the claim",
     "confidence_notes": null
   }
 }

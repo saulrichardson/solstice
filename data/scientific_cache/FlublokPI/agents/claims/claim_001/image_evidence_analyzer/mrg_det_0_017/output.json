@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "An excerpt from the Flublok prescribing information showing section headings and table of contents (e.g., Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, Patient Counseling Information). The image contains only the table of contents and section headings of the Flublok prescribing information and does not include any data on hemagglutinin antigen content or comparisons to standard-dose flu vaccines, so it does not support the claim.",
+  "explanation": "An excerpt from the full prescribing information for Flublok showing the table of contents with section headings (e.g., Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Clinical Studies, etc.) does not support the claim because the image only displays a table of contents without any data on hemagglutinin antigen content or comparative immunogenicity Note: Analysis limited by the fact that only the table of contents is visible; no detailed information on antigen amounts or study results is shown",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "An excerpt from the Flublok prescribing information showing section headings and table of contents (e.g., Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Contraindications, Warnings and Precautions, Adverse Reactions, Use in Specific Populations, Description, Clinical Pharmacology, Nonclinical Toxicology, Clinical Studies, References, How Supplied/Storage and Handling, Patient Counseling Information).",
+    "image_description": "An excerpt from the full prescribing information for Flublok showing the table of contents with section headings (e.g., Indications and Usage, Dosage and Administration, Dosage Forms and Strengths, Clinical Studies, etc.)",
     "evidence_found": null,
-    "reasoning": "The image contains only the table of contents and section headings of the Flublok prescribing information and does not include any data on hemagglutinin antigen content or comparisons to standard-dose flu vaccines, so it does not support the claim.",
-    "confidence_notes": null
+    "reasoning": "does not support the claim because the image only displays a table of contents without any data on hemagglutinin antigen content or comparative immunogenicity",
+    "confidence_notes": "Analysis limited by the fact that only the table of contents is visible; no detailed information on antigen amounts or study results is shown"
   }
 }

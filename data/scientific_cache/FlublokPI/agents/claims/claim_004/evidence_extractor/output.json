@@ -10,29 +10,24 @@
   },
   "extraction_result": {
     "success": true,
-    "total_snippets_found": 4,
+    "total_snippets_found": 3,
     "error": null
   },
   "extracted_evidence": [
     {
       "id": 1,
       "quote": "5. Treanor JJ, Schiff GM, Hayden FG, et al. Safety and immunogenicity of a baculovirus-expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582.",
-      "relevance_explanation": "This reference is cited in the context of clinical studies comparing the immunogenicity of recombinant hemagglutinin (rHA) vaccines (such as Flublok, a higher-dose recombinant flu vaccine) to standard egg-based vaccines, directly supporting the claim that recombinant vaccines may induce a more robust antibody response."
+      "relevance_explanation": "This reference is cited in the context of clinical studies comparing the immunogenicity (antibody response) of recombinant hemagglutinin (rHA) vaccines, such as Flublok, to standard egg-based vaccines, directly supporting the claim that higher-dose recombinant vaccines may induce a more robust antibody response."
     },
     {
       "id": 2,
       "quote": "3. Keitel WA, Treanor JJ, El Sahly HM, et al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine 2009 Vol. 28, pp. 379-385.",
-      "relevance_explanation": "This reference describes a study that directly compares the immunogenicity (antibody response) of recombinant (higher-dose) and standard egg-based influenza vaccines in older adults, providing evidence relevant to the claim."
+      "relevance_explanation": "This reference is cited as a comparative study of the immunogenicity of recombinant (higher-dose) and standard egg-based influenza vaccines in older adults, providing direct evidence relevant to the claim."
     },
     {
       "id": 3,
-      "quote": "Flublok is standardized according to United States Public Health Service (USPHS) requirements. For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains... Flublok contains no egg proteins, antibiotics, or preservatives.",
-      "relevance_explanation": "This quote establishes that Flublok is a higher-dose recombinant flu vaccine (135 mcg total HA per dose) and is not egg-based, which is necessary context for understanding the basis of the claim regarding antibody response."
-    },
-    {
-      "id": 4,
-      "quote": "14 CLINICAL STUDIES 14.1 Efficacy Against Laboratory-Confirmed Influenza ... 5. Treanor JJ, Schiff GM, Hayden FG, et al. Safety and immunogenicity of a baculovirus-expressed hemagglutinin influenza vaccine: a randomized controlled trial. JAMA. 2007 Vol. 297, pp. 1577-1582. 6. Keitel WA, Treanor JJ, El Sahly HM, et al. Comparative immunogenicity of recombinant influenza hemagglutinin (rHA) and trivalent inactivated vaccines (TIVs) among persons \u226565 years old. Vaccine 2009 Vol. 28, pp. 379-385.",
-      "relevance_explanation": "This section of the document lists published clinical studies that directly compare the immunogenicity of recombinant (higher-dose) and standard egg-based influenza vaccines, supporting the claim that the recombinant vaccine may induce a more robust antibody response."
+      "quote": "For the 2024-2025 influenza season it is formulated to contain 135 mcg HA per 0.5 mL dose, with 45 mcg HA of each of the following 3 influenza virus strains... Flublok contains no egg proteins, antibiotics, or preservatives.",
+      "relevance_explanation": "This quote establishes that Flublok is a higher-dose recombinant vaccine (135 mcg total HA per dose) and is not egg-based, which is necessary context for understanding the basis of the claim regarding antibody response."
     }
   ],
   "model_used": "gpt-4.1"

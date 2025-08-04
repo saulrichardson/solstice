@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "A table summarizing solicited local and systemic adverse event rates (percentages of any, moderate, and severe events) in two arms: Flublok quadrivalent (N=2272) and Placebo (N=2231). Local events listed include pain, redness, swelling, bruising; systemic events include headache, fatigue, muscle pain, nausea, joint pain, chills, and fever. The table compares Flublok (quadrivalent) only against placebo and does not include or mention any evaluation against Fluarix (quadrivalent standard-dose vaccine), and therefore does not support the claim. Note: The image is clear and complete for the arms shown; absence of a Fluarix arm is definitive in this table.",
+  "explanation": "A table summarizing the percentage of solicited local and systemic adverse reactions in a clinical trial, comparing Flublok (N=2272) to Placebo (N=2231), with categories such as pain, redness, swelling, headache, fatigue, muscle pain, etc. The table compares Flublok to placebo and does not include any data or mention of Fluarix, so it does not support the claim. Note: Analysis limited to the visible table; no reference to Fluarix is shown on this page.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table summarizing solicited local and systemic adverse event rates (percentages of any, moderate, and severe events) in two arms: Flublok quadrivalent (N=2272) and Placebo (N=2231). Local events listed include pain, redness, swelling, bruising; systemic events include headache, fatigue, muscle pain, nausea, joint pain, chills, and fever.",
+    "image_description": "A table summarizing the percentage of solicited local and systemic adverse reactions in a clinical trial, comparing Flublok (N=2272) to Placebo (N=2231), with categories such as pain, redness, swelling, headache, fatigue, muscle pain, etc.",
     "evidence_found": null,
-    "reasoning": "The table compares Flublok (quadrivalent) only against placebo and does not include or mention any evaluation against Fluarix (quadrivalent standard-dose vaccine), and therefore does not support the claim.",
-    "confidence_notes": "The image is clear and complete for the arms shown; absence of a Fluarix arm is definitive in this table."
+    "reasoning": "The table compares Flublok to placebo and does not include any data or mention of Fluarix, so it does not support the claim.",
+    "confidence_notes": "Analysis limited to the visible table; no reference to Fluarix is shown on this page."
   }
 }

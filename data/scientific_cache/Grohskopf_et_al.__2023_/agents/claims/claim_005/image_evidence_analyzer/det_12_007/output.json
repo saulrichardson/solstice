@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "A table listing trade names and manufacturers of various quadrivalent influenza vaccines (Afluria Quadrivalent, Fluarix Quadrivalent, Flucelvax Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent) alongside their dose volumes and HA content for children aged 6 through 35 months. The table does not mention Flublok (quadrivalent) nor any comparison against Fluarix (quadrivalent). Thus, the image does not support the claim. Note: The table only covers pediatric dose volumes for specific manufacturers and does not include Flublok, limiting its relevance to the claim.",
+  "explanation": "A table listing trade names and manufacturers of quadrivalent influenza vaccines and their dose volumes (\u00b5g HA per vaccine virus) for children aged 6 through 35 months, including Afluria Quadrivalent (Seqirus), Fluarix Quadrivalent (GlaxoSmithKline), Flucelvax Quadrivalent (Seqirus), FluLaval Quadrivalent (GlaxoSmithKline), and Fluzone Quadrivalent (Sanofi Pasteur), with corresponding dose volumes. The table only provides pediatric dose volumes for listed quadrivalent influenza vaccines and does not mention Flublok or any comparison trial against Fluarix. Therefore, this evidence does not support the claim. Note: Analysis based solely on visible table content; no mention of Flublok or pivotal trial comparisons.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing trade names and manufacturers of various quadrivalent influenza vaccines (Afluria Quadrivalent, Fluarix Quadrivalent, Flucelvax Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent) alongside their dose volumes and HA content for children aged 6 through 35 months.",
+    "image_description": "A table listing trade names and manufacturers of quadrivalent influenza vaccines and their dose volumes (\u00b5g HA per vaccine virus) for children aged 6 through 35 months, including Afluria Quadrivalent (Seqirus), Fluarix Quadrivalent (GlaxoSmithKline), Flucelvax Quadrivalent (Seqirus), FluLaval Quadrivalent (GlaxoSmithKline), and Fluzone Quadrivalent (Sanofi Pasteur), with corresponding dose volumes.",
     "evidence_found": null,
-    "reasoning": "The table does not mention Flublok (quadrivalent) nor any comparison against Fluarix (quadrivalent). Thus, the image does not support the claim.",
-    "confidence_notes": "The table only covers pediatric dose volumes for specific manufacturers and does not include Flublok, limiting its relevance to the claim."
+    "reasoning": "The table only provides pediatric dose volumes for listed quadrivalent influenza vaccines and does not mention Flublok or any comparison trial against Fluarix. Therefore, this evidence does not support the claim.",
+    "confidence_notes": "Analysis based solely on visible table content; no mention of Flublok or pivotal trial comparisons."
   }
 }

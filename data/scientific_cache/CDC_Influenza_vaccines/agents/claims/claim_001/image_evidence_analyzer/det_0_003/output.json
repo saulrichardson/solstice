@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "A table listing U.S. influenza vaccines for the 2023\u201324 season, showing trade names (e.g., Afluria Quadrivalent, Fluarix Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent, Flucelvax Quadrivalent, Fluzone High-Dose Quadrivalent), presentation formats, age indications, HA antigen content per dose for each vaccine virus (e.g., 15 \u00b5g/0.5 mL for standard-dose, 60 \u00b5g/0.7 mL for high-dose), administration route, and mercury content if present. does not support the claim because the table does not include any information on Flublok or its HA antigen content, and thus provides no evidence of a 3\u00d7 antigen content for Flublok Note: The portion of the table shown does not include Flublok or any recombinant influenza vaccine entries, so antigen content for Flublok cannot be determined from this image",
+  "explanation": "A table listing influenza vaccines for the 2023\u201324 US season, showing trade names, presentations, age indications, micrograms of hemagglutinin (HA) per dose for IIV4 (standard-dose egg-based), ccIIV4 (cell culture\u2013based), and HD-IIV4 (high-dose egg-based) vaccines, routes of administration, and mercury content. The portion shown does not include the recombinant influenza vaccine (RIV4) section. The image does not display Flublok or the HA content for RIV4 vaccines, so it does not support the claim Note: The table is cut off before the RIV4 (recombinant) section, so the relevant data for Flublok are not visible",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table listing U.S. influenza vaccines for the 2023\u201324 season, showing trade names (e.g., Afluria Quadrivalent, Fluarix Quadrivalent, FluLaval Quadrivalent, Fluzone Quadrivalent, Flucelvax Quadrivalent, Fluzone High-Dose Quadrivalent), presentation formats, age indications, HA antigen content per dose for each vaccine virus (e.g., 15 \u00b5g/0.5 mL for standard-dose, 60 \u00b5g/0.7 mL for high-dose), administration route, and mercury content if present.",
+    "image_description": "A table listing influenza vaccines for the 2023\u201324 US season, showing trade names, presentations, age indications, micrograms of hemagglutinin (HA) per dose for IIV4 (standard-dose egg-based), ccIIV4 (cell culture\u2013based), and HD-IIV4 (high-dose egg-based) vaccines, routes of administration, and mercury content. The portion shown does not include the recombinant influenza vaccine (RIV4) section.",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table does not include any information on Flublok or its HA antigen content, and thus provides no evidence of a 3\u00d7 antigen content for Flublok",
-    "confidence_notes": "The portion of the table shown does not include Flublok or any recombinant influenza vaccine entries, so antigen content for Flublok cannot be determined from this image"
+    "reasoning": "The image does not display Flublok or the HA content for RIV4 vaccines, so it does not support the claim",
+    "confidence_notes": "The table is cut off before the RIV4 (recombinant) section, so the relevant data for Flublok are not visible"
   }
 }

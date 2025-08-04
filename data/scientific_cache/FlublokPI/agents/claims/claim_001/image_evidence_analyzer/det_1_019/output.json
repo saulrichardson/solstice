@@ -7,13 +7,13 @@
   "claim_id": "claim_001",
   "claim": "Flublok contains 3x the hemagglutinin (HA) antigen content of standard-dose flu vaccines, which has been linked to greater immunogenicity vs standard-dose flu vaccines.",
   "supports_claim": false,
-  "explanation": "Table comparing percentages of local and systemic adverse events following vaccination with Flublok (N=972) versus IIV3 (N=967), listing pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever by any, moderate, and severe categories. The table presents only safety data on adverse events and contains no information on hemagglutinin antigen content or immunogenicity, and therefore does not support the claim.",
+  "explanation": "A table comparing solicited local and systemic adverse event rates (any, moderate, severe) for Flublok (N=972) versus IIV3 (N=967), listing percentages for pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever. The table provides only adverse event rates and contains no information on hemagglutinin antigen content or immunogenicity outcomes, so it does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Table comparing percentages of local and systemic adverse events following vaccination with Flublok (N=972) versus IIV3 (N=967), listing pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever by any, moderate, and severe categories.",
+    "image_description": "A table comparing solicited local and systemic adverse event rates (any, moderate, severe) for Flublok (N=972) versus IIV3 (N=967), listing percentages for pain, firmness/swelling, redness, headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, and fever.",
     "evidence_found": null,
-    "reasoning": "The table presents only safety data on adverse events and contains no information on hemagglutinin antigen content or immunogenicity, and therefore does not support the claim.",
+    "reasoning": "The table provides only adverse event rates and contains no information on hemagglutinin antigen content or immunogenicity outcomes, so it does not support the claim.",
     "confidence_notes": null
   }
 }

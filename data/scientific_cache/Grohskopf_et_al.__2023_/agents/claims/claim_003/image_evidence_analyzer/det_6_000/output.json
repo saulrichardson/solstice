@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "A table outlining contraindications and precautions for various 2022\u201323 influenza vaccines (egg-based IIV4s and LAIV4, cell culture\u2013based ccIIV4, and recombinant RIV4) in persons with a history of severe allergic reactions to different vaccine types or unknown influenza vaccine history. The table addresses allergic reaction contraindications and precautions for different influenza vaccine platforms; it contains no data on immune response breadth, cross-protection, or mismatch season efficacy, and therefore does not support the claim. Note: None",
+  "explanation": "A table showing vaccination recommendations for persons with a history of severe allergic reaction to influenza vaccine of any valency. Columns list vaccine types available for 2022\u201323 (egg-based IIVs and LAIV4, cell culture\u2013based ccIIV4, and recombinant RIV4) and rows list previous vaccine type associated with allergic reaction or unknown vaccine. Entries indicate contraindications, precautions, or recommendation for allergist consultation. The table provides guidance on contraindications and precautions for individuals with egg-related vaccine allergies; it contains no data or statements about immune response breadth, cross-protection, or comparative immunogenicity of recombinant vaccines. Therefore, it does not support the claim. Note: Analysis limited to visible table content; lacks immunogenicity or efficacy data.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table outlining contraindications and precautions for various 2022\u201323 influenza vaccines (egg-based IIV4s and LAIV4, cell culture\u2013based ccIIV4, and recombinant RIV4) in persons with a history of severe allergic reactions to different vaccine types or unknown influenza vaccine history.",
+    "image_description": "A table showing vaccination recommendations for persons with a history of severe allergic reaction to influenza vaccine of any valency. Columns list vaccine types available for 2022\u201323 (egg-based IIVs and LAIV4, cell culture\u2013based ccIIV4, and recombinant RIV4) and rows list previous vaccine type associated with allergic reaction or unknown vaccine. Entries indicate contraindications, precautions, or recommendation for allergist consultation.",
     "evidence_found": null,
-    "reasoning": "The table addresses allergic reaction contraindications and precautions for different influenza vaccine platforms; it contains no data on immune response breadth, cross-protection, or mismatch season efficacy, and therefore does not support the claim.",
-    "confidence_notes": "None"
+    "reasoning": "The table provides guidance on contraindications and precautions for individuals with egg-related vaccine allergies; it contains no data or statements about immune response breadth, cross-protection, or comparative immunogenicity of recombinant vaccines. Therefore, it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible table content; lacks immunogenicity or efficacy data."
   }
 }

@@ -17,12 +17,12 @@
     {
       "id": 1,
       "quote": "BACKGROUND Quadrivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing.",
-      "relevance_explanation": "This quote explicitly states that standard dose egg-based vaccines are susceptible to antigenic drift during manufacturing, which can lead to mutations that may reduce vaccine effectiveness. It also contrasts this with recombinant vaccines, which are not susceptible to such drift, directly supporting the claim."
+      "relevance_explanation": "This quote explicitly states that recombinant vaccines are not susceptible to antigenic drift during manufacturing, implying that egg-based vaccines are susceptible to such drift, which can result from mutations during production and may reduce effectiveness."
     },
     {
       "id": 2,
       "quote": "The effectiveness of standard dose vaccines - especially against the influenza A H3N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift.",
-      "relevance_explanation": "This quote directly affirms that antigenic drift (mutations) can occur during egg-based vaccine manufacturing, potentially reducing the effectiveness of these vaccines, which supports the claim."
+      "relevance_explanation": "This quote directly supports the claim by stating that antigenic drift (mutations) can occur during egg-based vaccine manufacturing, potentially reducing vaccine effectiveness, while recombinant vaccines do not have this issue."
     }
   ],
   "model_used": "gpt-4.1"

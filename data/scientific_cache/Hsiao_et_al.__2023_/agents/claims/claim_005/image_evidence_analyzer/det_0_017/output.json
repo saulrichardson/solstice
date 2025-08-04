@@ -7,13 +7,13 @@
   "claim_id": "claim_005",
   "claim": "Flublok (quadrivalent) was evaluated in the pivotal trial against Fluarix (quadrivalent standard-dose vaccine).",
   "supports_claim": false,
-  "explanation": "Title header of an original article reading \"Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age\" along with author names, without mention of specific vaccine brands or trial comparators. The image only shows the article title comparing recombinant versus standard-dose influenza vaccines in adults under 65 years and does not mention Flublok or Fluarix, and therefore does not support the claim. Note: The image is limited to the title page and contains no trial details, brand names, or comparator information.",
+  "explanation": "The image shows the header of an original research article titled \"Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age\" along with the list of authors. The image only displays the article title and authors without naming specific vaccines such as Flublok or Fluarix or indicating a quadrivalent comparison, so it does not support the claim. Note: Only the title page is visible; details about specific vaccine comparisons may appear elsewhere in the document but are not shown here.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "Title header of an original article reading \"Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age\" along with author names, without mention of specific vaccine brands or trial comparators.",
+    "image_description": "The image shows the header of an original research article titled \"Recombinant or Standard-Dose Influenza Vaccine in Adults under 65 Years of Age\" along with the list of authors.",
     "evidence_found": null,
-    "reasoning": "The image only shows the article title comparing recombinant versus standard-dose influenza vaccines in adults under 65 years and does not mention Flublok or Fluarix, and therefore does not support the claim.",
-    "confidence_notes": "The image is limited to the title page and contains no trial details, brand names, or comparator information."
+    "reasoning": "The image only displays the article title and authors without naming specific vaccines such as Flublok or Fluarix or indicating a quadrivalent comparison, so it does not support the claim.",
+    "confidence_notes": "Only the title page is visible; details about specific vaccine comparisons may appear elsewhere in the document but are not shown here."
   }
 }

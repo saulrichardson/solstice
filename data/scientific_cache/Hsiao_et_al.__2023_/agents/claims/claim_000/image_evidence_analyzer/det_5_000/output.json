@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A flow diagram showing selection and exclusion of participants aged 18\u201364 vaccinated over three flu seasons, splitting into recombinant vaccine (Flublok) and standard-dose vaccine arms, with successive exclusion criteria and final cohort sizes. The figure is a participant flowchart and contains no information on antigenic matching with WHO- or FDA-selected flu strains, so it does not support the claim. Note: No relevant antigenic or strain-match data are present in the image.",
+  "explanation": "A flowchart diagram showing the selection and attrition of study participants aged 18\u201364 years who received either a recombinant influenza vaccine or a standard-dose vaccine across multiple influenza seasons, detailing numbers excluded for membership status, inpatient vaccinations, timing outside eligible dates, missing facility identifiers, unassigned propensity scores, and final cohort counts by age group. The image does not support the claim because it presents only participant flow and cohort selection data without any information on antigenic match to WHO- or FDA-selected flu strains. Note: The figure is clear and legible but contains no data on strain matching or antigenic analyses.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A flow diagram showing selection and exclusion of participants aged 18\u201364 vaccinated over three flu seasons, splitting into recombinant vaccine (Flublok) and standard-dose vaccine arms, with successive exclusion criteria and final cohort sizes.",
+    "image_description": "A flowchart diagram showing the selection and attrition of study participants aged 18\u201364 years who received either a recombinant influenza vaccine or a standard-dose vaccine across multiple influenza seasons, detailing numbers excluded for membership status, inpatient vaccinations, timing outside eligible dates, missing facility identifiers, unassigned propensity scores, and final cohort counts by age group.",
     "evidence_found": null,
-    "reasoning": "The figure is a participant flowchart and contains no information on antigenic matching with WHO- or FDA-selected flu strains, so it does not support the claim.",
-    "confidence_notes": "No relevant antigenic or strain-match data are present in the image."
+    "reasoning": "The image does not support the claim because it presents only participant flow and cohort selection data without any information on antigenic match to WHO- or FDA-selected flu strains.",
+    "confidence_notes": "The figure is clear and legible but contains no data on strain matching or antigenic analyses."
   }
 }

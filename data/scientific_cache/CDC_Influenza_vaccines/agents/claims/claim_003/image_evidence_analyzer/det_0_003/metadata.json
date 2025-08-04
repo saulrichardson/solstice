@@ -1,12 +1,12 @@
 {
   "agent_name": "image_evidence_analyzer",
   "pdf_name": "CDC_Influenza_vaccines",
-  "started_at": "2025-07-30T23:36:17.972900",
-  "completed_at": "2025-07-30T23:36:26.691230",
+  "started_at": "2025-08-03T17:33:48.060487",
+  "completed_at": "2025-08-03T17:34:25.566215",
   "status": "completed",
   "error": null,
   "config": {
-    "disable_cache": true,
+    "fresh_response": true,
     "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season."
   }
 }

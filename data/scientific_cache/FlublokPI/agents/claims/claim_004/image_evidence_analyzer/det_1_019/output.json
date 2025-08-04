@@ -7,13 +7,13 @@
   "claim_id": "claim_004",
   "claim": "Vaccination with a higher-dose recombinant flu vaccine may induce a more robust antibody response than egg-based standard-dose vaccines.",
   "supports_claim": false,
-  "explanation": "A two-column table comparing Flublok (recombinant vaccine, N=972) and IIV3 (egg-based vaccine, N=967) for rates (%) of solicited local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events graded as any, moderate, or severe. The table only reports adverse event rates and contains no immunogenicity or antibody response data, so it does not support the claim. Note: No immunogenicity data are presented; analysis limited to safety/tolerability outcomes.",
+  "explanation": "A two-column table comparing Flublok (N=972) and IIV3 (N=967) showing percentages of solicited local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events classified as any, moderate, or severe. The table presents safety and reactogenicity data for Flublok versus IIV3 but contains no immunogenicity or antibody response measurements; it does not support the claim about a more robust antibody response. Note: Analysis limited by absence of immunogenicity data in the provided image.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A two-column table comparing Flublok (recombinant vaccine, N=972) and IIV3 (egg-based vaccine, N=967) for rates (%) of solicited local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events graded as any, moderate, or severe.",
+    "image_description": "A two-column table comparing Flublok (N=972) and IIV3 (N=967) showing percentages of solicited local (pain, firmness/swelling, redness) and systemic (headache, fatigue, muscle pain, joint pain, nausea, shivers/chills, fever) adverse events classified as any, moderate, or severe.",
     "evidence_found": null,
-    "reasoning": "The table only reports adverse event rates and contains no immunogenicity or antibody response data, so it does not support the claim.",
-    "confidence_notes": "No immunogenicity data are presented; analysis limited to safety/tolerability outcomes."
+    "reasoning": "The table presents safety and reactogenicity data for Flublok versus IIV3 but contains no immunogenicity or antibody response measurements; it does not support the claim about a more robust antibody response.",
+    "confidence_notes": "Analysis limited by absence of immunogenicity data in the provided image."
   }
 }

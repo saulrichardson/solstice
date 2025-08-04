@@ -10,48 +10,38 @@
   "completeness_stats": {
     "existing_evidence": 5,
     "new_evidence_found": 2,
-    "total_evidence": 7
+    "total_evidence": 6
   },
   "combined_evidence": [
     {
       "id": 1,
       "quote": "Quadivalent recombinant influenza vaccines contain three times the amount of hemagglutinin protein as standard dose egg based vaccines, and the recombinant formulation is not susceptible to antigenic drift during manufacturing. Data are needed on the relative effectiveness of recombinant vaccines as compared with standard dose vaccines against influenza related outcomes in adults under the age.",
-      "relevance_explanation": "This quote establishes that the recombinant vaccine has a higher dose of hemagglutinin protein, which is a key antigen for inducing antibody responses, directly supporting the claim that the higher-dose recombinant vaccine may induce a more robust antibody response than standard-dose egg-based vaccines."
+      "relevance_explanation": "This quote establishes that the recombinant vaccine has a higher dose of hemagglutinin protein than standard-dose egg-based vaccines, which is a key mechanistic basis for expecting a more robust antibody response."
     },
     {
       "id": 2,
       "quote": "The Flublok Quadrivalent influenza vaccine (RIV4, Sanofi) is manufactured without chicken eggs, resulting in a recombinant hemagglutinin protein that is genetically identical to that in the selected strain. The vaccine also contains three times the amount of hemagglutinin protein as standard dose vaccines, an increased level that has been correlated with increased protective hemagglutinin antibodies.",
-      "relevance_explanation": "This quote explicitly states that the higher dose of hemagglutinin in the recombinant vaccine has been correlated with increased protective hemagglutinin antibodies, directly supporting the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response."
+      "relevance_explanation": "This quote directly links the higher hemagglutinin content in the recombinant vaccine to increased protective hemagglutinin antibodies, supporting the claim that a higher-dose recombinant vaccine may induce a more robust antibody response."
     },
     {
       "id": 3,
-      "quote": "For the primary objective, the relative vaccine effectiveness of the recombinant vaccine as compared with standard dose vaccines against all PCR-confirmed influenza was 15.3% (95% CI, 5.9 to 23.8; P = 0.002). The estimate of relative vaccine effectiveness for the secondary objective of PCR-confirmed influenza A was 15.7% (95% CI, 6.0 to 24.5; P = 0.002).",
-      "relevance_explanation": "This quote provides direct evidence from the study that the recombinant vaccine was more effective than the standard-dose vaccine in preventing PCR-confirmed influenza, which is a clinical outcome likely mediated by a more robust antibody response."
+      "quote": "Several studies have shown benefit for the recombinant vaccine and other high dose influenza vaccines as compared with standard dose vaccines in adults who are 65 years of age or older, findings that have been attributed to an improved immune response.",
+      "relevance_explanation": "This quote references prior studies attributing the benefit of high-dose and recombinant vaccines over standard-dose vaccines to an improved immune response, which supports the claim."
     },
     {
       "id": 4,
-      "quote": "In both seasons, participants between the ages of 50 and 64 years who received the recombinant vaccine had more protection against confirmed influenza than those who received a standard dose vaccine.",
-      "relevance_explanation": "This quote summarizes the study's finding that the higher-dose recombinant vaccine provided greater protection, which supports the claim that it induces a more robust immune response than standard-dose egg-based vaccines."
+      "quote": "In this study performed during two influenza seasons, participants between the ages of 50 and 64 years who received the recombinant vaccine had more protection against confirmed influenza than those who received a standard dose vaccine.",
+      "relevance_explanation": "This quote provides direct evidence from the study that the recombinant vaccine (which is higher dose) conferred more protection than the standard-dose vaccine, implying a more robust immune response."
     },
     {
       "id": 5,
-      "quote": "Several studies have shown benefit for the recombinant vaccine and other high dose influenza vaccines as compared with standard dose vaccines in adults who are 65 years of age or older, findings that have been attributed to an improved immune response.",
-      "relevance_explanation": "This quote references prior evidence that high-dose and recombinant vaccines provide greater benefit due to an improved immune response, supporting the claim that higher-dose recombinant vaccines may induce a more robust antibody response."
+      "quote": "For the primary objective, the relative vaccine effectiveness of the recombinant vaccine as compared with standard dose vaccines against all PCR-confirmed influenza was 15.3% (95% CI, 5.9 to 23.8; P = 0.002). The estimate of relative vaccine effectiveness for the secondary objective of PCR-confirmed influenza A was 15.7% (95% CI, 6.0 to 24.5; P = 0.002).",
+      "relevance_explanation": "This quote provides quantitative data showing that the recombinant vaccine was more effective than the standard-dose vaccine, supporting the claim that it induces a more robust antibody response."
     },
     {
       "id": "comp_1",
-      "quote": "A strength of our study is that the two study vaccine formulations were alternated in weekly intervals of time at each facility, which allowed us to balance covariates of interest as designed. In every KPNC geographic area, when influenza arrived, there were already participants who had received one of the two formulations of vaccine and who were similar with respect to demographic characteristics, coexisting illnesses, and gall associated with its higher dose of hemagglutinin antigen.",
-      "relevance_explanation": "This quote highlights that the study design allowed for a fair comparison between the high-dose recombinant and standard-dose vaccines, specifically noting the higher dose of hemagglutinin antigen in the recombinant vaccine, which is directly relevant to the claim about inducing a more robust antibody response.",
-      "source": "completeness_check",
-      "metadata": {
-        "extraction_round": 2,
-        "targeted_aspect": "general"
-      }
-    },
-    {
-      "id": "comp_2",
-      "quote": "The effectiveness of standard dose vaccines - especially against the influenza A H3 N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3 N2 strain circulated only during the second half of the 2018-2019 season and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines. During our study period, the observed benefit of the recombinant vaccine as compared with a standard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3 N2 than to higher effectiveness against influenza A overall, in accordance with its higher dose of hemagglutinin.",
-      "relevance_explanation": "This quote supports the claim by attributing the observed benefit of the recombinant vaccine over the standard-dose vaccine to its higher dose of hemagglutinin, which is linked to a more robust immune response.",
+      "quote": "The effectiveness of standard dose vaccines - especially against the influenza A H3N2 subtype - may be attenuated by antigenic drift during egg based manufacturing, whereas the recombinant vaccine is not susceptible to such drift. However, data from the California Department of Public Health showed that the H3N2 strain circulated only during the second half of the 2018-2019 season and even then, the circulating strain had drifted such that it was poorly matched to both the recombinant vaccine and the standard dose vaccines. During our study period, the observed benefit of the recombinant vaccine as compared with a standard dose vaccine seems less likely due to higher relative vaccine effectiveness against H3N2 than to higher effectiveness against influenza A overall, in accordance with its higher dose of hemagglutinin antigen.",
+      "relevance_explanation": "This quote directly links the higher effectiveness of the recombinant vaccine to its higher dose of hemagglutinin antigen, supporting the claim that a higher-dose recombinant flu vaccine may induce a more robust antibody response than standard-dose egg-based vaccines.",
       "source": "completeness_check",
       "metadata": {
         "extraction_round": 2,

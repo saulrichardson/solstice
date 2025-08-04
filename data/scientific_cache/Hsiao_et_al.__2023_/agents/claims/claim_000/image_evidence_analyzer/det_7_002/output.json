@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A table comparing recombinant vaccine versus standard-dose vaccine across primary and secondary outcomes (PCR-confirmed influenza A and B, hospitalizations for influenza, pneumonia, cardiorespiratory events), showing number of cases per 1,000, unadjusted rate ratios, adjusted hazard ratios, relative vaccine effectiveness percentages, and P values. does not support the claim because the table provides clinical effectiveness and outcome data without any information on antigenic match to WHO- or FDA-selected influenza strains.",
+  "explanation": "A comparative table showing outcomes for recombinant vaccine (N=279,400) versus standard-dose vaccine (N=395,852), including number of PCR-confirmed influenza cases per 1000, unadjusted and adjusted hazard ratios, relative vaccine effectiveness percentages with 95% CIs, and P values for primary and secondary outcomes (influenza A, influenza B, hospitalizations). The table reports vaccine effectiveness and clinical outcome data but contains no information on antigenic matching or references to WHO- or FDA-selected flu strains, and therefore does not support the claim.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A table comparing recombinant vaccine versus standard-dose vaccine across primary and secondary outcomes (PCR-confirmed influenza A and B, hospitalizations for influenza, pneumonia, cardiorespiratory events), showing number of cases per 1,000, unadjusted rate ratios, adjusted hazard ratios, relative vaccine effectiveness percentages, and P values.",
+    "image_description": "A comparative table showing outcomes for recombinant vaccine (N=279,400) versus standard-dose vaccine (N=395,852), including number of PCR-confirmed influenza cases per 1000, unadjusted and adjusted hazard ratios, relative vaccine effectiveness percentages with 95% CIs, and P values for primary and secondary outcomes (influenza A, influenza B, hospitalizations).",
     "evidence_found": null,
-    "reasoning": "does not support the claim because the table provides clinical effectiveness and outcome data without any information on antigenic match to WHO- or FDA-selected influenza strains.",
+    "reasoning": "The table reports vaccine effectiveness and clinical outcome data but contains no information on antigenic matching or references to WHO- or FDA-selected flu strains, and therefore does not support the claim.",
     "confidence_notes": null
   }
 }

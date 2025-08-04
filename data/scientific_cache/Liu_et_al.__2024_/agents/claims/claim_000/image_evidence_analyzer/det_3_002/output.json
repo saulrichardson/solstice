@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A multi-panel figure showing microneutralization (MN) and hemagglutination inhibition (HI) antibody titers (log2 scale) against four influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) in age groups 18\u201344 and 45\u201364 years. Titers are measured at Day 0, 1 month, and 6 months post-vaccination for four vaccine formulations (Fluzone IIV4, Fluarix IIV4, cell-based IIV4, recombinant RIV4), with statistical comparisons indicated between groups and time points. The figure presents immunogenicity data (antibody titers) but does not provide any information on antigenic sequence matching to WHO- or FDA-selected strains, so it does not support the claim. Note: The figure is clear in its measurement of antibody responses but contains no data on antigenic match or confirmatory sequence comparisons.",
+  "explanation": "Multi\u2010panel figure showing microneutralization (MN) and hemagglutination inhibition (HI) antibody titers (log2 scale) for four vaccine formulations (Fluzone IV-IV, Fluarix IV-IV, cclIV4, RIV4) in two age cohorts (18\u201344 years and 45\u201364 years) against egg-grown versus cell-grown viruses for influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata at Day 0, Month 1, and Month 6. The figure presents comparative antibody titers but does not provide any data on antigenic or sequence matching between Flublok and WHO- or FDA-selected strains, and therefore does not support the claim. Note: Cannot assess antigenic match from immunogenicity titers alone; no direct antigenic mapping or sequence data are shown.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A multi-panel figure showing microneutralization (MN) and hemagglutination inhibition (HI) antibody titers (log2 scale) against four influenza strains (A/H3N2, A/H1N1pdm09, B/Victoria, B/Yamagata) in age groups 18\u201344 and 45\u201364 years. Titers are measured at Day 0, 1 month, and 6 months post-vaccination for four vaccine formulations (Fluzone IIV4, Fluarix IIV4, cell-based IIV4, recombinant RIV4), with statistical comparisons indicated between groups and time points.",
+    "image_description": "Multi\u2010panel figure showing microneutralization (MN) and hemagglutination inhibition (HI) antibody titers (log2 scale) for four vaccine formulations (Fluzone IV-IV, Fluarix IV-IV, cclIV4, RIV4) in two age cohorts (18\u201344 years and 45\u201364 years) against egg-grown versus cell-grown viruses for influenza strains A(H3N2), A(H1N1)pdm09, B/Victoria, and B/Yamagata at Day 0, Month 1, and Month 6.",
     "evidence_found": null,
-    "reasoning": "The figure presents immunogenicity data (antibody titers) but does not provide any information on antigenic sequence matching to WHO- or FDA-selected strains, so it does not support the claim.",
-    "confidence_notes": "The figure is clear in its measurement of antibody responses but contains no data on antigenic match or confirmatory sequence comparisons."
+    "reasoning": "The figure presents comparative antibody titers but does not provide any data on antigenic or sequence matching between Flublok and WHO- or FDA-selected strains, and therefore does not support the claim.",
+    "confidence_notes": "Cannot assess antigenic match from immunogenicity titers alone; no direct antigenic mapping or sequence data are shown."
   }
 }

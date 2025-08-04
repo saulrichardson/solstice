@@ -7,13 +7,13 @@
   "claim_id": "claim_003",
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "supports_claim": false,
-  "explanation": "The image shows the header of a CDC Morbidity and Mortality Weekly Report (MMWR) Recommendations and Reports, including the title, volume (71), issue number (No. 1), and publication date (August 26, 2022). The image only displays the document header and contains no data or discussion about recombinant technology or immune responses, and therefore does not support the claim. Note: No figure content or study data is present in the image; only publication metadata is shown.",
+  "explanation": "The image shows the top header of a Centers for Disease Control and Prevention publication (MMWR: Morbidity and Mortality Weekly Report), including the title, series (Recommendations and Reports), volume and number, and date (August 26, 2022). The image contains only the publication header and provides no data or discussion about recombinant vaccine technology or immune response, so it does not support the claim. Note: Analysis limited by the image containing only a document header without substantive content.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "The image shows the header of a CDC Morbidity and Mortality Weekly Report (MMWR) Recommendations and Reports, including the title, volume (71), issue number (No. 1), and publication date (August 26, 2022).",
+    "image_description": "The image shows the top header of a Centers for Disease Control and Prevention publication (MMWR: Morbidity and Mortality Weekly Report), including the title, series (Recommendations and Reports), volume and number, and date (August 26, 2022).",
     "evidence_found": null,
-    "reasoning": "The image only displays the document header and contains no data or discussion about recombinant technology or immune responses, and therefore does not support the claim.",
-    "confidence_notes": "No figure content or study data is present in the image; only publication metadata is shown."
+    "reasoning": "The image contains only the publication header and provides no data or discussion about recombinant vaccine technology or immune response, so it does not support the claim.",
+    "confidence_notes": "Analysis limited by the image containing only a document header without substantive content."
   }
 }

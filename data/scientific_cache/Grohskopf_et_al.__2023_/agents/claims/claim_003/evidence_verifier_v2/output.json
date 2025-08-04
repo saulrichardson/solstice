@@ -3,9 +3,9 @@
   "claim": "Recombinant technology leads to a broader immune response that may provide cross-protection, even in a mismatch season.",
   "document": "Grohskopf_et_al.__2023_",
   "verification_stats": {
-    "total_extracted": 5,
+    "total_extracted": 6,
     "verified": 0,
-    "rejected": 5,
+    "rejected": 6,
     "verification_rate": 0.0
   },
   "verified_evidence": [],
@@ -14,31 +14,37 @@
       "id": 1,
       "quote": "One recombinant influenza vaccine, Flublok Quadrivalent (RIV4), is expected to be available during the 2022-23 influenza season. RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
       "reason": "does not support claim",
-      "original_explanation": "This quote describes the recombinant technology used in RIV4, which is relevant because recombinant vaccines are not limited by egg-adapted changes and can be designed to match circulating strains more closely, supporting the claim that recombinant technology can lead to a broader immune response."
+      "original_explanation": "This quote describes the recombinant technology used in RIV4, which is relevant because the use of recombinant HA from cell-derived viruses is a key mechanism by which a broader immune response and potential cross-protection may be achieved, especially in mismatch seasons."
     },
     {
       "id": 2,
       "quote": "HD-IIV, RIV, and aIIV have shown relative benefit compared with SD-IIVs in certain studies, with the most evidence available for HD-IIV3. Randomized efficacy studies comparing these vaccines with nonadjuvanted SD-IIVs against laboratory confirmed influenza outcomes are few in number (66\u201368) and cover few influenza seasons. Observational studies, predominantly retrospective cohort studies using diagnostic code defined (rather than laboratory confirmed) outcomes, are more numerous and include more influenza seasons (69\u201379). Certain observational studies have reported relative benefit for HD-IIV, RIV, and aIIV in comparison with nonadjuvanted SD-IIVs, particularly in prevention of influenza associated hospitalizations. The size of this relative benefit has varied from season to season and is not seen in all studies in all seasons, making it difficult to generalize the findings to all or most seasons.",
       "reason": "does not support claim",
-      "original_explanation": "This quote provides evidence that recombinant influenza vaccines (RIV) have shown a relative benefit over standard-dose inactivated vaccines in some studies, supporting the claim that recombinant technology can lead to broader or more effective immune responses, which may translate to cross-protection even in mismatch seasons."
+      "original_explanation": "This quote provides evidence that recombinant vaccines (RIV) have shown a relative benefit over standard-dose inactivated vaccines in some studies, supporting the claim that recombinant technology can lead to broader or more effective immune responses, which may translate to cross-protection."
     },
     {
       "id": 3,
       "quote": "A retrospective analysis of relative effectiveness of RIV4 versus SD-IIV4 against influenza coded hospitalizations among Medicare beneficiaries during the 2019-20 season noted a relative effectiveness of 17% (95% CI: 9\u201324; certainty level: 3, low) (72).",
       "reason": "does not support claim",
-      "original_explanation": "This quote provides data showing that the recombinant vaccine (RIV4) was more effective than standard-dose inactivated vaccine in preventing influenza-coded hospitalizations, which supports the claim that recombinant technology can provide broader protection, potentially including cross-protection in mismatch seasons."
+      "original_explanation": "This quote provides data showing that the recombinant vaccine (RIV4) was more effective than standard-dose inactivated vaccine in preventing influenza-coded hospitalizations, which supports the idea that recombinant technology can provide broader protection, potentially including cross-protection in mismatch seasons."
     },
     {
       "id": 4,
-      "quote": "The larger of these two studies noted a relative benefit of RIV4 over nonadjuvanted SD-IIV4 in prevention of PCR-confirmed influenza among the full study population of persons aged \u226550 years (relative efficacy: 30%; 95% CI: 10\u201347) as well as in all qualified ILI cases aged \u226565 years (relative efficacy: 42%; 95% CI: 9%\u201365%) (68).",
+      "quote": "RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127).",
       "reason": "does not support claim",
-      "original_explanation": "This quote provides specific efficacy data showing that recombinant vaccine (RIV4) had a higher relative efficacy compared to standard-dose inactivated vaccine, supporting the claim that recombinant technology can lead to a broader immune response and better protection, which may include cross-protection during mismatch seasons."
+      "original_explanation": "This quote highlights that recombinant vaccines use HA from cell-derived viruses, which can be more antigenically similar to circulating strains than egg-adapted viruses, supporting the claim that recombinant technology may provide broader immune responses and cross-protection."
     },
     {
       "id": "comp_1",
-      "quote": "Recombinant influenza vaccines (RIV4) are manufactured using recombinant DNA technology, which allows for the production of hemagglutinin (HA) antigens that are exact genetic matches to selected reference viruses. This process does not require the use of eggs or influenza viruses, and the resulting vaccine is free of egg proteins and other components that might be present in egg-based or cell culture-based vaccines. The use of recombinant technology allows for the rapid production of vaccine antigens and may result in a broader immune response due to the inclusion of HA antigens that are more closely matched to circulating viruses.",
-      "reason": "not found",
-      "original_explanation": "This quote directly states that recombinant technology may result in a broader immune response due to the inclusion of HA antigens that are more closely matched to circulating viruses, supporting the claim that recombinant technology leads to broader immune responses and potential cross-protection."
+      "quote": "Two of these vaccines, HD-IIV and RIV, are higher dose vaccines, which contain an increased dose of HA antigen per virus compared with nonadjuvanted SD-IIVs (60 \u00b5g for HD-IIV4 and 45 \u00b5g for RIV4, compared with 15 \u00b5g for standard dose inactivated vaccines).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote highlights that recombinant influenza vaccine (RIV) contains a higher dose of hemagglutinin (HA) antigen per virus, which is a mechanism that can lead to a broader immune response and potentially greater cross-protection, supporting the claim."
+    },
+    {
+      "id": "comp_2",
+      "quote": "RIV4 is approved for persons aged \u226518 years. This vaccine contains recombinant HA produced in an insect cell line using genetic sequences from cell derived influenza viruses and is manufactured without the use of influenza viruses or eggs (127). Dosage and Administration: RIV4 is administered by IM injection via needle and syringe. A 0.5-mL dose contains 45 \u00b5g of HA derived from each vaccine virus (180 \u00b5g total).",
+      "reason": "does not support claim",
+      "original_explanation": "This quote provides details about the recombinant technology used in RIV4, including the use of recombinant HA and the higher antigen content, which are factors that can contribute to a broader immune response and potential cross-protection."
     }
   ],
   "model_used": "gpt-4.1"

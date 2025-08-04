@@ -17,17 +17,17 @@
     {
       "id": 1,
       "quote": "a recombinant influenza vaccine (Flublok Quadrivalent by Sanofi Pasteur, RIV4). RIV4 contains 3 times the ... HA/dose/strain as IIV4 and ccIIV4 (15 \u00b5g HA/dose/strain).",
-      "relevance_explanation": "This quote identifies Flublok (RIV4) as a recombinant influenza vaccine, which is relevant because recombinant vaccines are produced without eggs and thus can ensure an antigenic match to the intended strains, as selected by WHO and FDA, without egg-adapted mutations."
+      "relevance_explanation": "This quote identifies Flublok (RIV4) as a recombinant influenza vaccine, which is relevant because recombinant vaccines are produced without eggs, allowing for precise matching to the selected strains without egg-adapted mutations."
     },
     {
       "id": 2,
       "quote": "All the testing viruses used in this study were sequenced. Sequences were analyzed against the sequences of candidate vaccine viruses (CVV) of the study vaccines as deposited in Global Initiative on Sharing Avian Influenza Data (GISAID) database by BioEdit version 7.0.9.0 (Table 1).",
-      "relevance_explanation": "This quote shows that the antigens in the vaccines, including Flublok, were directly compared to the WHO- and FDA-selected candidate vaccine virus sequences, supporting the claim that Flublok ensures an identical antigenic match."
+      "relevance_explanation": "This quote shows that the antigens in the vaccines, including Flublok, were directly compared to the reference strains selected by WHO and FDA, supporting the claim that Flublok can ensure an identical antigenic match."
     },
     {
       "id": 3,
-      "quote": "These serum samples were tested by ELISA to evaluate the total binding antibodies against 8 recombinant HA proteins (rHA from both egg and cell propagated viruses of each of the 4 vaccine antigens), and 2 rHA stalk proteins (A (H1N1) pdm09 HA stalk, and A (H3N2) HA stalk). The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45.",
-      "relevance_explanation": "This quote confirms that the recombinant HA proteins used in Flublok are produced in a baculovirus system, which does not introduce egg-adapted mutations, thus ensuring the antigenic match to the WHO- and FDA-selected strains."
+      "quote": "The purified and trimeric recombinant HA proteins were expressed from the baculovirus system using the established procedures 45.",
+      "relevance_explanation": "This quote confirms that Flublok's antigens are produced recombinantly (not in eggs), which allows for the production of HA proteins that are identical to the WHO- and FDA-selected strains, without egg-adapted changes."
     }
   ],
   "model_used": "gpt-4.1"

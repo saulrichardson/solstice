@@ -7,13 +7,13 @@
   "claim_id": "claim_000",
   "claim": "Flublok ensures identical antigenic match with WHO- and FDA-selected flu strains.",
   "supports_claim": false,
-  "explanation": "A clinical trial results table comparing Flublok Quadrivalent (N=4303) versus a comparator vaccine (N=4301) across outcomes: all rtPCR-positive influenza, influenza A, influenza B, and culture-confirmed ILI; showing number of cases, attack rates (% n/N), relative risk (RR), and relative vaccine efficacy (rVE % with 95% CI). The table presents clinical efficacy outcomes (attack rates, RR, rVE) but contains no information on antigenic matching to WHO- or FDA-selected strains. Therefore, it does not support the claim. Note: Analysis limited to the visible table; no other context on antigenic characterization is provided.",
+  "explanation": "A multi\u2010row table comparing Flublok Quadrivalent (N=4303) and a comparator vaccine (N=4301) on outcomes including all rtPCR\u2010positive influenza, influenza A, influenza B, and culture\u2010confirmed protocol\u2010defined influenza\u2010like illness. Columns report event counts (n), attack rates (% n/N), relative risk (RR), and relative vaccine efficacy (rVE % with 95% CI). The table presents clinical efficacy outcomes (attack rates, relative risk, and relative vaccine efficacy) but contains no data or commentary on antigenic matching to WHO\u2010 or FDA\u2010selected flu strains, so it does not support the claim. Note: Analysis limited to visible table; no section on antigenic characterization is shown.",
   "model_used": "o4-mini",
   "detailed_analysis": {
     "supports_claim": false,
-    "image_description": "A clinical trial results table comparing Flublok Quadrivalent (N=4303) versus a comparator vaccine (N=4301) across outcomes: all rtPCR-positive influenza, influenza A, influenza B, and culture-confirmed ILI; showing number of cases, attack rates (% n/N), relative risk (RR), and relative vaccine efficacy (rVE % with 95% CI).",
+    "image_description": "A multi\u2010row table comparing Flublok Quadrivalent (N=4303) and a comparator vaccine (N=4301) on outcomes including all rtPCR\u2010positive influenza, influenza A, influenza B, and culture\u2010confirmed protocol\u2010defined influenza\u2010like illness. Columns report event counts (n), attack rates (% n/N), relative risk (RR), and relative vaccine efficacy (rVE % with 95% CI).",
     "evidence_found": null,
-    "reasoning": "The table presents clinical efficacy outcomes (attack rates, RR, rVE) but contains no information on antigenic matching to WHO- or FDA-selected strains. Therefore, it does not support the claim.",
-    "confidence_notes": "Analysis limited to the visible table; no other context on antigenic characterization is provided."
+    "reasoning": "The table presents clinical efficacy outcomes (attack rates, relative risk, and relative vaccine efficacy) but contains no data or commentary on antigenic matching to WHO\u2010 or FDA\u2010selected flu strains, so it does not support the claim.",
+    "confidence_notes": "Analysis limited to visible table; no section on antigenic characterization is shown."
   }
 }
