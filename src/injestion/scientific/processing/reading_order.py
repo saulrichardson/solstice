@@ -1,35 +1,8 @@
 """Reading order detection."""
 
-from typing import List, Optional
+from typing import List
 
-from .box import Box
-
-
-def _validate_reading_order_inputs(boxes: List[Box], page_width: float, page_height: float) -> Optional[List[str]]:
-    """
-    Validate inputs for reading order functions.
-    
-    Args:
-        boxes: List of boxes to process
-        page_width: Width of the page
-        page_height: Height of the page
-        
-    Returns:
-        Empty list if no boxes, None if validation passes
-        
-    Raises:
-        ValueError: If page dimensions are invalid
-    """
-    if not boxes:
-        return []
-    
-    if page_width <= 0:
-        raise ValueError(f"Invalid page width: {page_width}. Must be positive.")
-    
-    if page_height <= 0:
-        raise ValueError(f"Invalid page height: {page_height}. Must be positive.")
-    
-    return None  # Continue processing
+from ...shared.processing.box import Box
 
 
 def determine_reading_order_simple(boxes: List[Box], page_width: float, page_height: float) -> List[str]:
@@ -44,14 +17,9 @@ def determine_reading_order_simple(boxes: List[Box], page_width: float, page_hei
         
     Returns:
         List of box IDs in reading order
-        
-    Raises:
-        ValueError: If page dimensions are invalid
     """
-    # Validate inputs - fail fast for invalid dimensions
-    early_return = _validate_reading_order_inputs(boxes, page_width, page_height)
-    if early_return is not None:
-        return early_return
+    if not boxes:
+        return []
     
     # Find page midpoint
     midpoint = page_width / 2

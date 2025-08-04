@@ -14,7 +14,7 @@ from ..shared.processing.box import Box
 from .processing.noop_consolidator import NoOpConsolidator
 from src.interfaces import Block, Document
 from ..shared.processing.text_extractor import extract_document_content
-from ..shared.processing.reading_order import determine_reading_order_simple
+from .processing.reading_order import determine_reading_order_simple
 from ..shared.storage.paths import stage_dir, save_json
 from ..shared.config import IngestionConfig
 

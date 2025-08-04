@@ -73,22 +73,20 @@ document = extract_document_content(
 3. Table structure preservation
 4. Figure caption extraction
 
-### text_processing_service.py
-Advanced text cleaning and enhancement:
+### text_processing.py
+Simple text cleaning and enhancement:
 
 ```python
-from src.injestion.shared.processing.text_processing_service import TextProcessingService
-
-service = TextProcessingService()
+from src.injestion.shared.processing.text_processing import process_text_simple
 
 # Fix spacing issues
 text = "Patientdatashowsimprovement"
-fixed = service.process_text(text)
+fixed = process_text_simple(text)
 # Output: "Patient data shows improvement"
 
 # Preserve medical terms
 text = "Flublok® prevents COVID-19"
-fixed = service.process_text(text)
+fixed = process_text_simple(text)
 # Output: "Flublok® prevents COVID-19" (unchanged)
 ```
 
@@ -121,10 +119,12 @@ clean_boxes = no_overlap_pipeline(
 - Preserve visual element integrity
 
 ### reading_order.py
+**Note: Moved to `src/injestion/scientific/processing/reading_order.py`** - only used by scientific pipeline.
+
 Determines logical document flow:
 
 ```python
-from src.injestion.shared.processing.reading_order import determine_reading_order_simple
+from src.injestion.scientific.processing.reading_order import determine_reading_order_simple
 
 ordered_boxes = determine_reading_order_simple(boxes)
 # Returns boxes sorted by reading order
@@ -226,19 +226,18 @@ document = extract_document_content(
     apply_text_processing=True
 )
 
-# 4. Determine reading order
+# 4. Determine reading order (scientific pipeline only)
 ordered_content = determine_reading_order_simple(document.blocks)
 ```
 
 ### Custom Text Processing
 ```python
-# Configure processing
-service = TextProcessingService(
-    fix_spacing=True,
-    normalize_punctuation=True,
-    min_word_length=2,
-    preserve_patterns=[r"COVID-\d+", r"\w+®"]
-)
+# Simple function-based processing
+from src.injestion.shared.processing.text_processing import process_text
+
+result = process_text(text, context={'preserve_medical_terms': True})
+processed_text = result.text
+modifications = result.modifications  # Which processors modified the text
 
 # Process document
 for block in document.blocks:
@@ -279,9 +278,9 @@ BOX_PADDING = 20.0
 3. Register in `text_extractor.py`
 
 ### Adding New Processing Steps
-1. Create new processor class
-2. Implement `process()` method
-3. Add to `TextProcessingService` pipeline
+1. Create new processor function in `text_extractors/`
+2. Add function to processor list in `text_processing.py`
+3. Test the new pipeline
 
 ### Custom Layout Models
 1. Train Detectron2 model

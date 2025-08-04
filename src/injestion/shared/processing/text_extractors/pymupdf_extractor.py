@@ -8,7 +8,7 @@ from PIL import Image
 from io import BytesIO
 
 from .base_extractor import TextExtractor, ExtractorResult
-from ..text_processing_service import text_processor
+from ..text_processing import process_text
 
 logger = logging.getLogger(__name__)
 
@@ -62,8 +62,8 @@ class PyMuPDFExtractor(TextExtractor):
         # Clean up extracted text
         text = text.strip()
         
-        # Process text through the text processing service
-        result = text_processor.process(text, context={
+        # Process text through text processing functions
+        result = process_text(text, context={
             'source': 'pymupdf',
             'pdf_path': str(pdf_path),
             'page_num': page_num,

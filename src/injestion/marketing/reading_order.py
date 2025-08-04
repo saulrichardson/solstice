@@ -3,7 +3,6 @@
 from typing import List, Tuple, Dict
 import numpy as np
 from ..shared.processing.box import Box
-from ..shared.processing.reading_order import _validate_reading_order_inputs
 
 
 def determine_marketing_reading_order(boxes: List[Box], page_width: float, page_height: float) -> List[str]:
@@ -23,14 +22,9 @@ def determine_marketing_reading_order(boxes: List[Box], page_width: float, page_
         
     Returns:
         List of box IDs in reading order
-        
-    Raises:
-        ValueError: If page dimensions are invalid
     """
-    # Validate inputs - fail fast for invalid dimensions
-    early_return = _validate_reading_order_inputs(boxes, page_width, page_height)
-    if early_return is not None:
-        return early_return
+    if not boxes:
+        return []
     
     # Initialize categories
     title_blocks = []
