@@ -22,6 +22,8 @@ from ..shared.pdf_utils import convert_pdf_to_images, save_merged_layouts
 from src.interfaces import Block, Document
 import layoutparser as lp
 import uuid
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 
 
 class MarketingPipeline:
@@ -250,8 +252,7 @@ class MarketingPipeline:
         viz_dir = raw_dir / "visualizations"
         viz_dir.mkdir(exist_ok=True)
         
-        import matplotlib.pyplot as plt
-        import matplotlib.patches as patches
+
         
         for page_idx, (layout, image) in enumerate(zip(layouts, images)):
             fig, ax = plt.subplots(1, 1, figsize=(12, 16))
