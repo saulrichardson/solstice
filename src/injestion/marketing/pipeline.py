@@ -12,7 +12,6 @@ logger = logging.getLogger(__name__)
 from .detector import MarketingLayoutDetector
 from .consolidation import BoxConsolidator
 from ..shared.processing.box import Box
-# already correct; ensure not using models.document; no change
 from .reading_order import determine_marketing_reading_order
 from ..shared.processing.text_extractor import extract_document_content
 from ..shared.storage.paths import stage_dir, save_json, pages_dir
